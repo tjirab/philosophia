@@ -3,6 +3,7 @@
 import React from 'react';
 import { X, Compass } from 'lucide-react';
 import { eras } from '../../lib/graph/graph-service';
+import { getEdgeTypeConfig } from '../../lib/types';
 
 interface GraphLegendModalProps {
   isOpen: boolean;
@@ -153,7 +154,7 @@ export function GraphLegendModal({ isOpen, onClose }: GraphLegendModalProps) {
                   <div>
                     <div className="text-xs font-semibold text-[var(--text-main)] flex items-center gap-2">
                       <span>{et.label}</span>
-                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[var(--bg-card)] text-[var(--gold-accent)] border border-[var(--border-main)]">
+                      <span className={`text-[10px] font-mono uppercase px-1.5 py-0.5 rounded border ${getEdgeTypeConfig(et.type).badgeClass}`}>
                         {et.type}
                       </span>
                     </div>

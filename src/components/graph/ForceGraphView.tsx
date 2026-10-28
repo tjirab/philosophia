@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { forceCollide, forceManyBody, forceLink } from 'd3-force';
 import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink } from 'lucide-react';
-import { VisualNode, VisualLink, Branch } from '../../lib/types';
+import { VisualNode, VisualLink, Branch, getEdgeTypeConfig } from '../../lib/types';
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
 
@@ -64,7 +64,8 @@ export function ForceGraphView({
   const [dimensions, setDimensions] = useState({ width: 1200, height: 800 });
   const [hoveredNode, setHoveredNode] = useState<VisualNode | null>(null);
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null);
-  const [spacingMultiplier, setSpacingMultiplier] = useState<number>(1.4); // 1.4x default generous spacing to prevent overlap
+  const [spacingMultiplier, setSpacingMultiplier] = useState<number>(1.5); // 1.5x default generous spacing to prevent overlap
+  const prevSpacingMultiplierRef = useRef<number>(1.5);
 
   // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
   const graphData = useMemo(() => ({ nodes, links }), [nodes, links]);
@@ -90,7 +91,7 @@ export function ForceGraphView({
       // 1. Anti-collision barrier: collision radius calculated with node radius + label padding
       const collisionRadius = (node: any) => {
         const size = Math.max(8, (node.val || 8) * 0.9);
-        return size + 36 * spacingMultiplier;
+        return size + 34 * spacingMultiplier;
       };
 
       fgRef.current.d3Force('collide', forceCollide().radius(collisionRadius).iterations(4));
@@ -98,14 +99,30 @@ export function ForceGraphView({
       // 2. Strong repulsion charge
       fgRef.current.d3Force(
         'charge',
-        forceManyBody().strength(-550 * spacingMultiplier).distanceMax(900)
+        forceManyBody()
+          .strength(-500 * spacingMultiplier)
+          .distanceMax(1100 * spacingMultiplier)
       );
 
       // 3. Link distance
       const linkForce = fgRef.current.d3Force('link');
       if (linkForce) {
-        linkForce.distance(110 * spacingMultiplier);
+        linkForce.distance(105 * spacingMultiplier);
       }
+
+      // 4. Physical node coordinate expansion/contraction for instant responsiveness
+      const prevMultiplier = prevSpacingMultiplierRef.current;
+      if (prevMultiplier && prevMultiplier !== spacingMultiplier && graphData?.nodes) {
+        const ratio = spacingMultiplier / prevMultiplier;
+        graphData.nodes.forEach((n: any) => {
+          if (typeof n.x === 'number') n.x *= ratio;
+          if (typeof n.y === 'number') n.y *= ratio;
+        });
+      }
+      prevSpacingMultiplierRef.current = spacingMultiplier;
+
+      // 5. Reheat simulation so D3 physics actively positions nodes into new spread
+      fgRef.current.d3ReheatSimulation();
     }
   }, [graphData, spacingMultiplier]);
 
@@ -135,7 +152,10 @@ export function ForceGraphView({
     if (fgRef.current) fgRef.current.zoomToFit(600, 60);
   };
   const toggleSpacing = () => {
-    setSpacingMultiplier((prev) => (prev >= 1.8 ? 1.0 : prev + 0.4));
+    setSpacingMultiplier((prev) => {
+      if (prev >= 2.0) return 1.0;
+      return Number((prev + 0.5).toFixed(1)); // 1.0 -> 1.5 -> 2.0 -> 1.0
+    });
   };
 
   // Node drawing on Canvas with Distinct Shapes, Monograms, and Anti-Overlap Aesthetics
@@ -327,11 +347,20 @@ export function ForceGraphView({
         {/* Spacing Spreader Toggle */}
         <button
           onClick={toggleSpacing}
-          className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] backdrop-blur-md transition shadow-sm"
-          title="Adjust spreading distance between nodes"
+          className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--gold-border)] backdrop-blur-md transition shadow-sm"
+          title={`Graph Spread: ${spacingMultiplier.toFixed(1)}x. Click to cycle node spacing (1.0x Compact, 1.5x Balanced, 2.0x Spacious).`}
         >
-          {spacingMultiplier >= 1.4 ? <Shrink className="w-3.5 h-3.5 text-[var(--gold-accent)]" /> : <Expand className="w-3.5 h-3.5 text-[var(--gold-accent)]" />}
-          <span>Spread: {spacingMultiplier.toFixed(1)}x</span>
+          {spacingMultiplier >= 1.5 ? (
+            <Shrink className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+          ) : (
+            <Expand className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+          )}
+          <span>
+            Spread: {spacingMultiplier.toFixed(1)}x{' '}
+            <span className="text-[10px] text-[var(--text-dim)] font-normal">
+              {spacingMultiplier <= 1.0 ? '(Compact)' : spacingMultiplier < 2.0 ? '(Balanced)' : '(Spacious)'}
+            </span>
+          </span>
         </button>
 
         {/* Active Path Alert */}
@@ -386,6 +415,24 @@ export function ForceGraphView({
         nodeId="id"
         nodeLabel={() => ''} /* Disable default HTML title tooltip so our custom card handles hover */
         nodeCanvasObject={paintNode}
+        linkLabel={(link: any) => {
+          const cfg = getEdgeTypeConfig(link.type);
+          const typeColor = isLight ? cfg.color : cfg.colorDark;
+          const bg = isLight ? 'rgba(247,243,234,0.97)' : 'rgba(20,18,15,0.96)';
+          const border = isLight ? 'rgba(215,205,190,0.9)' : 'rgba(229,185,76,0.35)';
+          const textMain = isLight ? '#1a1815' : '#f5f2eb';
+          const textSub = isLight ? '#524b42' : '#cfc7b8';
+          return `<div style="padding: 7px 11px; background: ${bg}; border: 1px solid ${border}; border-radius: 9px; font-family: 'EB Garamond', Georgia, serif; font-size: 12px; color: ${textMain}; box-shadow: 0 4px 16px rgba(0,0,0,0.3); max-width: 280px; pointer-events: none;">
+            <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 3px;">
+              <span style="font-weight: 700; text-transform: uppercase; font-family: monospace; font-size: 10px; color: ${typeColor}; letter-spacing: 0.06em;">
+                ${link.type || 'INFLUENCED'}
+              </span>
+            </div>
+            <div style="font-size: 11px; line-height: 1.4; color: ${textSub};">
+              ${link.label || ''}
+            </div>
+          </div>`;
+        }}
         linkDirectionalArrowLength={4.5}
         linkDirectionalArrowRelPos={0.9}
         linkCurvature={0.12}

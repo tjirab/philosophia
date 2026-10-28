@@ -22,6 +22,62 @@ export type Branch =
 
 export type EdgeType = 'INFLUENCED' | 'CRITIQUED' | 'DEVELOPED' | 'SYNTHESIZED';
 
+export interface EdgeTypeMeta {
+  type: EdgeType;
+  label: string;
+  description: string;
+  color: string;
+  colorDark: string;
+  badgeClass: string;
+  cardBorderClass: string;
+}
+
+export const EDGE_TYPE_CONFIG: Record<EdgeType, EdgeTypeMeta> = {
+  CRITIQUED: {
+    type: 'CRITIQUED',
+    label: 'Critique & Rebuttal',
+    description: 'Direct dialectical rebuttal or rejection of a predecessor’s axioms.',
+    color: '#dc2626',
+    colorDark: '#f87171',
+    badgeClass: 'bg-rose-500/10 text-rose-700 dark:text-rose-300 border-rose-500/30',
+    cardBorderClass: 'border-l-4 border-l-rose-500/80',
+  },
+  DEVELOPED: {
+    type: 'DEVELOPED',
+    label: 'Extension & Systematization',
+    description: 'Advanced, expanded, or formalized an existing line of thought.',
+    color: '#0d9488',
+    colorDark: '#2dd4bf',
+    badgeClass: 'bg-teal-500/10 text-teal-700 dark:text-teal-300 border-teal-500/30',
+    cardBorderClass: 'border-l-4 border-l-teal-500/80',
+  },
+  SYNTHESIZED: {
+    type: 'SYNTHESIZED',
+    label: 'Synthetic Integration',
+    description: 'Merged previously incompatible or disparate traditions.',
+    color: '#9333ea',
+    colorDark: '#c084fc',
+    badgeClass: 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/30',
+    cardBorderClass: 'border-l-4 border-l-purple-500/80',
+  },
+  INFLUENCED: {
+    type: 'INFLUENCED',
+    label: 'Intellectual Lineage',
+    description: 'Foundational reading, direct pedagogical mentorship, or acknowledged philosophical lineage.',
+    color: '#2563eb',
+    colorDark: '#60a5fa',
+    badgeClass: 'bg-sky-500/10 text-sky-700 dark:text-sky-300 border-sky-500/30',
+    cardBorderClass: 'border-l-4 border-l-sky-500/80',
+  },
+};
+
+export function getEdgeTypeConfig(type?: string): EdgeTypeMeta {
+  if (type && type in EDGE_TYPE_CONFIG) {
+    return EDGE_TYPE_CONFIG[type as EdgeType];
+  }
+  return EDGE_TYPE_CONFIG.INFLUENCED;
+}
+
 export type MediaType = 'podcast' | 'encyclopedia' | 'video' | 'book';
 
 export interface Era {

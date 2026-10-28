@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { X, GitFork, ArrowRight, Sparkles, Check } from 'lucide-react';
-import { Philosopher, Edge } from '../../lib/types';
+import { Philosopher, Edge, getEdgeTypeConfig } from '../../lib/types';
 import { findInfluencePath, PathResult } from '../../lib/graph/pathfinding';
 
 interface LineagePathModalProps {
@@ -178,7 +178,10 @@ export function LineagePathModal({
                               <span>{fromPhil?.name || step.fromNodeId}</span>
                               <ArrowRight className="w-3.5 h-3.5 text-[var(--gold-accent)] shrink-0" />
                               <span>{toPhil?.name || step.toNodeId}</span>
-                              <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-[var(--bg-card)] text-[var(--gold-accent)] border border-[var(--border-main)]">
+                              <span
+                                className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border ${getEdgeTypeConfig(step.edge.type).badgeClass}`}
+                                title={getEdgeTypeConfig(step.edge.type).description}
+                              >
                                 {step.edge.type}
                               </span>
                             </div>

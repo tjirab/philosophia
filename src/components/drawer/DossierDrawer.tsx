@@ -17,7 +17,7 @@ import {
   GitPullRequest,
 } from 'lucide-react';
 import { getNodeDetails } from '../../lib/graph/graph-service';
-import { Philosopher, Concept, KeyWork } from '../../lib/types';
+import { Philosopher, Concept, KeyWork, getEdgeTypeConfig } from '../../lib/types';
 import { AudioPlayer } from '../audio/AudioPlayer';
 
 interface DossierDrawerProps {
@@ -464,8 +464,8 @@ export function DossierDrawer({
 
           {/* Predecessors */}
           <div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-[var(--gold-accent)] uppercase tracking-widest mb-3">
-              <ArrowLeft className="w-3.5 h-3.5" />
+            <div className="flex items-center gap-2 text-xs font-semibold text-sky-700 dark:text-sky-300 uppercase tracking-widest mb-3">
+              <ArrowLeft className="w-3.5 h-3.5 text-sky-500" />
               <span>Influenced By ({details.predecessors.length})</span>
             </div>
 
@@ -475,33 +475,39 @@ export function DossierDrawer({
               </div>
             ) : (
               <div className="space-y-2">
-                {details.predecessors.map(({ node, edge }) => (
-                  <div
-                    key={edge.source}
-                    onClick={() => onSelectNode(node.id)}
-                    className="p-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl cursor-pointer transition group shadow-sm"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition">
-                        {(node as any).name || (node as any).title}
-                      </span>
-                      <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-[var(--bg-card)] text-[var(--gold-accent)] border border-[var(--border-main)]">
-                        {edge.type}
-                      </span>
+                {details.predecessors.map(({ node, edge }) => {
+                  const edgeConfig = getEdgeTypeConfig(edge.type);
+                  return (
+                    <div
+                      key={edge.source}
+                      onClick={() => onSelectNode(node.id)}
+                      className={`p-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl cursor-pointer transition group shadow-sm ${edgeConfig.cardBorderClass}`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition">
+                          {(node as any).name || (node as any).title}
+                        </span>
+                        <span
+                          className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors ${edgeConfig.badgeClass}`}
+                          title={edgeConfig.description}
+                        >
+                          {edge.type}
+                        </span>
+                      </div>
+                      <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-snug">
+                        {edge.label}
+                      </p>
                     </div>
-                    <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-snug">
-                      {edge.label}
-                    </p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             )}
           </div>
 
           {/* Successors */}
           <div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-[var(--gold-accent)] uppercase tracking-widest mb-3">
-              <ArrowRight className="w-3.5 h-3.5" />
+            <div className="flex items-center gap-2 text-xs font-semibold text-amber-700 dark:text-amber-300 uppercase tracking-widest mb-3">
+              <ArrowRight className="w-3.5 h-3.5 text-amber-500" />
               <span>Influenced Later Thinkers ({details.successors.length})</span>
             </div>
 
@@ -511,25 +517,31 @@ export function DossierDrawer({
               </div>
             ) : (
               <div className="space-y-2">
-                {details.successors.map(({ node, edge }) => (
-                  <div
-                    key={edge.target}
-                    onClick={() => onSelectNode(node.id)}
-                    className="p-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl cursor-pointer transition group shadow-sm"
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition">
-                        {(node as any).name || (node as any).title}
-                      </span>
-                      <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-[var(--bg-card)] text-[var(--gold-accent)] border border-[var(--border-main)]">
-                        {edge.type}
-                      </span>
+                {details.successors.map(({ node, edge }) => {
+                  const edgeConfig = getEdgeTypeConfig(edge.type);
+                  return (
+                    <div
+                      key={edge.target}
+                      onClick={() => onSelectNode(node.id)}
+                      className={`p-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl cursor-pointer transition group shadow-sm ${edgeConfig.cardBorderClass}`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition">
+                          {(node as any).name || (node as any).title}
+                        </span>
+                        <span
+                          className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors ${edgeConfig.badgeClass}`}
+                          title={edgeConfig.description}
+                        >
+                          {edge.type}
+                        </span>
+                      </div>
+                      <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-snug">
+                        {edge.label}
+                      </p>
                     </div>
-                    <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-snug">
-                      {edge.label}
-                    </p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             )}
           </div>
