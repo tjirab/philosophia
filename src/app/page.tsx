@@ -6,7 +6,6 @@ import {
   GitFork,
   Search,
   HelpCircle,
-  Sparkles,
 } from 'lucide-react';
 import {
   eras,
@@ -24,6 +23,7 @@ import { DossierDrawer } from '../components/drawer/DossierDrawer';
 import { LineagePathModal } from '../components/pathfinding/LineagePathModal';
 import { SearchPalette } from '../components/search/SearchPalette';
 import { GraphLegendModal } from '../components/legend/GraphLegendModal';
+import { AppearanceSettingsMenu } from '../components/settings/AppearanceSettingsModal';
 
 export default function HomePage() {
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
@@ -99,24 +99,24 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden flex flex-col bg-[#0e0d0b] text-[#f4efe6] font-serif">
+    <div className="relative w-screen h-screen overflow-hidden flex flex-col bg-[var(--bg-main)] text-[var(--text-main)] font-serif">
       {/* Top Classical Navigation Bar */}
-      <header className="absolute top-0 inset-x-0 z-30 h-16 bg-[#12100d]/90 backdrop-blur-md border-b border-[#2a241e] px-4 sm:px-6 flex items-center justify-between shadow-sm">
+      <header className="absolute top-0 inset-x-0 z-30 h-16 bg-[var(--bg-card)]/90 backdrop-blur-md border-b border-[var(--border-main)] px-4 sm:px-6 flex items-center justify-between shadow-sm">
         {/* Logo & Classical Title */}
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-[#25201a] border border-[#3d3328] flex items-center justify-center text-[#e5b94c] shadow-sm">
-            <Compass className="w-4 h-4 text-[#c59b27]" />
+          <div className="w-8 h-8 rounded-lg bg-[var(--bg-subtle)] border border-[var(--border-main)] flex items-center justify-center text-[var(--gold-accent)] shadow-sm">
+            <Compass className="w-4 h-4 text-[var(--gold-accent)]" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-serif font-bold text-base tracking-wider text-[#f5f0e6]">
+              <span className="font-serif font-bold text-base tracking-wider text-[var(--text-main)]">
                 PHILOSOPHIA
               </span>
-              <span className="hidden sm:inline-block text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-[#1e1b16] text-[#c59b27] border border-[#3d3328]">
+              <span className="hidden sm:inline-block text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)]">
                 Lineage of Ideas
               </span>
             </div>
-            <div className="text-[11px] text-[#a89b88] hidden sm:block">
+            <div className="text-[11px] text-[var(--text-dim)] hidden sm:block">
               Mapping intellectual influence from Antiquity to Modernity
             </div>
           </div>
@@ -135,24 +135,27 @@ export default function HomePage() {
 
         {/* Action Controls */}
         <div className="flex items-center gap-2">
+          {/* Appearance & Font Settings */}
+          <AppearanceSettingsMenu />
+
           {/* Folio Key / Legend */}
           <button
             onClick={() => setIsLegendOpen(true)}
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[#1a1714] hover:bg-[#25201a] text-[#d8cfc0] hover:text-[#e5b94c] border border-[#2a241e] hover:border-[#3d3328] rounded-xl text-xs transition font-serif"
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--border-strong)] rounded-xl text-xs transition font-serif"
             title="Folio Key (Colors, Nodes & Relations)"
           >
-            <HelpCircle className="w-3.5 h-3.5 text-[#c59b27]" />
+            <HelpCircle className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
             <span>Folio Key</span>
           </button>
 
           {/* Search Trigger */}
           <button
             onClick={() => setIsSearchOpen(true)}
-            className="flex items-center gap-2 px-3 py-1.5 bg-[#1a1714] hover:bg-[#25201a] text-[#d8cfc0] border border-[#2a241e] rounded-xl text-xs transition"
+            className="flex items-center gap-2 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] rounded-xl text-xs transition"
           >
-            <Search className="w-3.5 h-3.5 text-[#c59b27]" />
+            <Search className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
             <span className="hidden md:inline">Search Folio</span>
-            <kbd className="hidden md:inline-block text-[10px] font-mono bg-[#25201a] px-1.5 py-0.5 rounded text-[#a89b88] border border-[#3d3328]">
+            <kbd className="hidden md:inline-block text-[10px] font-mono bg-[var(--bg-card)] px-1.5 py-0.5 rounded text-[var(--text-dim)] border border-[var(--border-main)]">
               ⌘K
             </kbd>
           </button>
@@ -160,9 +163,9 @@ export default function HomePage() {
           {/* Trace Lineage Path Button */}
           <button
             onClick={() => handleOpenPathModal(selectedNodeId || 'plato')}
-            className="flex items-center gap-1.5 px-3.5 py-1.5 bg-[#2a2318] hover:bg-[#352c1e] text-[#e5b94c] border border-[#4a3b25] rounded-xl text-xs font-semibold tracking-wide transition shadow-sm"
+            className="flex items-center gap-1.5 px-3.5 py-1.5 bg-[var(--gold-bg)] hover:bg-[var(--bg-hover)] text-[var(--gold-accent)] border border-[var(--gold-border)] rounded-xl text-xs font-semibold tracking-wide transition shadow-sm"
           >
-            <GitFork className="w-3.5 h-3.5 text-[#c59b27]" />
+            <GitFork className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
             <span>Trace Lineage</span>
           </button>
         </div>
