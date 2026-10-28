@@ -444,8 +444,8 @@ export function ForceGraphView({
             </div>
           </div>`;
         }}
-        linkDirectionalArrowLength={4.5}
-        linkDirectionalArrowRelPos={0.9}
+        linkDirectionalArrowLength={7.5}
+        linkDirectionalArrowRelPos={0.92}
         linkCurvature={0.12}
         linkColor={(link: any) => {
           const srcId = typeof link.source === 'object' ? link.source.id : link.source;
@@ -455,42 +455,67 @@ export function ForceGraphView({
             const inPath = pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
             return inPath
               ? isLight ? '#9a6f14' : '#e5b94c'
-              : isLight ? 'rgba(215, 205, 190, 0.25)' : 'rgba(42, 36, 30, 0.2)';
+              : isLight ? 'rgba(215, 205, 190, 0.18)' : 'rgba(42, 36, 30, 0.15)';
+          }
+
+          const isConnectedToFocus =
+            selectedNodeId === srcId ||
+            selectedNodeId === tgtId ||
+            hoveredNode?.id === srcId ||
+            hoveredNode?.id === tgtId;
+
+          const isDimmed = (selectedNodeId || hoveredNode) && !isConnectedToFocus;
+
+          if (isDimmed) {
+            return isLight ? 'rgba(180, 168, 150, 0.2)' : 'rgba(70, 60, 50, 0.2)';
           }
 
           if (isLight) {
             switch (link.type) {
               case 'CRITIQUED':
-                return 'rgba(220, 38, 38, 0.7)';
+                return isConnectedToFocus ? 'rgba(220, 38, 38, 1.0)' : 'rgba(220, 38, 38, 0.85)';
               case 'SYNTHESIZED':
-                return 'rgba(147, 51, 234, 0.7)';
+                return isConnectedToFocus ? 'rgba(147, 51, 234, 1.0)' : 'rgba(147, 51, 234, 0.85)';
               case 'DEVELOPED':
-                return 'rgba(13, 148, 136, 0.7)';
+                return isConnectedToFocus ? 'rgba(13, 148, 136, 1.0)' : 'rgba(13, 148, 136, 0.85)';
               case 'INFLUENCED':
               default:
-                return 'rgba(37, 99, 235, 0.65)';
+                return isConnectedToFocus ? 'rgba(37, 99, 235, 1.0)' : 'rgba(37, 99, 235, 0.82)';
             }
           } else {
             switch (link.type) {
               case 'CRITIQUED':
-                return 'rgba(248, 113, 113, 0.65)';
+                return isConnectedToFocus ? 'rgba(248, 113, 113, 1.0)' : 'rgba(248, 113, 113, 0.82)';
               case 'SYNTHESIZED':
-                return 'rgba(192, 132, 252, 0.65)';
+                return isConnectedToFocus ? 'rgba(192, 132, 252, 1.0)' : 'rgba(192, 132, 252, 0.82)';
               case 'DEVELOPED':
-                return 'rgba(45, 212, 191, 0.65)';
+                return isConnectedToFocus ? 'rgba(45, 212, 191, 1.0)' : 'rgba(45, 212, 191, 0.82)';
               case 'INFLUENCED':
               default:
-                return 'rgba(96, 165, 250, 0.55)';
+                return isConnectedToFocus ? 'rgba(96, 165, 250, 1.0)' : 'rgba(96, 165, 250, 0.78)';
             }
           }
         }}
         linkWidth={(link: any) => {
           const srcId = typeof link.source === 'object' ? link.source.id : link.source;
           const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+          
           if (isPathActive && pathNodeSet.has(srcId) && pathNodeSet.has(tgtId)) {
-            return 2.5;
+            return 4.8;
           }
-          return 1.3;
+
+          const isConnectedToFocus =
+            selectedNodeId === srcId ||
+            selectedNodeId === tgtId ||
+            hoveredNode?.id === srcId ||
+            hoveredNode?.id === tgtId;
+
+          if (isConnectedToFocus) {
+            return 3.8;
+          }
+
+          const strength = typeof link.strength === 'number' ? link.strength : 3;
+          return 2.2 + (strength * 0.35); // 2.5px to 3.6px
         }}
         onNodeClick={(node: any) => {
           onSelectNode(node.id);
