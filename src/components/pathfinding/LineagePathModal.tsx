@@ -36,11 +36,11 @@ export function LineagePathModal({
   const philMap = new Map(philosophers.map((p) => [p.id, p]));
 
   const presets = [
-    { start: 'plato', target: 'arthur-schopenhauer', label: 'Plato &rarr; Schopenhauer (Forms to Will)' },
-    { start: 'socrates', target: 'immanuel-kant', label: 'Socrates &rarr; Kant (Elenchus to Critical Reason)' },
-    { start: 'rene-descartes', target: 'friedrich-nietzsche', label: 'Descartes &rarr; Nietzsche (Doubt to Will to Power)' },
-    { start: 'aristotle', target: 'thomas-aquinas', label: 'Aristotle &rarr; Aquinas (Greek Teleology to Scholasticism)' },
-    { start: 'rene-descartes', target: 'nick-bostrom', label: 'Descartes &rarr; Bostrom (Evil Demon to Simulation)' },
+    { start: 'plato', target: 'arthur-schopenhauer', label: 'Plato → Schopenhauer (Forms to Will)' },
+    { start: 'socrates', target: 'immanuel-kant', label: 'Socrates → Kant (Elenchus to Critical Reason)' },
+    { start: 'rene-descartes', target: 'friedrich-nietzsche', label: 'Descartes → Nietzsche (Doubt to Will to Power)' },
+    { start: 'aristotle', target: 'thomas-aquinas', label: 'Aristotle → Aquinas (Greek Teleology to Scholasticism)' },
+    { start: 'rene-descartes', target: 'nick-bostrom', label: 'Descartes → Bostrom (Evil Demon to Simulation)' },
   ];
 
   return (
@@ -89,7 +89,7 @@ export function LineagePathModal({
                   className="text-xs px-3 py-1.5 rounded-lg bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-muted)] hover:text-[var(--gold-accent)] border border-[var(--border-main)] hover:border-[var(--gold-border)] transition flex items-center gap-1.5"
                 >
                   <Sparkles className="w-3 h-3 text-[var(--gold-accent)]" />
-                  <span dangerouslySetInnerHTML={{ __html: p.label }} />
+                  <span>{p.label}</span>
                 </button>
               ))}
             </div>

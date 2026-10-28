@@ -35,6 +35,15 @@ interface ForceGraphViewProps {
   onOpenLegend: () => void;
 }
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 function getNodeMonogram(node: VisualNode): string {
   if (node.type === 'concept') return '✦';
   const name = node.name.replace(/^(von|de|du|of|the)\s+/i, '').trim();
@@ -422,14 +431,16 @@ export function ForceGraphView({
           const border = isLight ? 'rgba(215,205,190,0.9)' : 'rgba(229,185,76,0.35)';
           const textMain = isLight ? '#1a1815' : '#f5f2eb';
           const textSub = isLight ? '#524b42' : '#cfc7b8';
+          const safeType = escapeHtml(link.type || 'INFLUENCED');
+          const safeLabel = escapeHtml(link.label || '');
           return `<div style="padding: 7px 11px; background: ${bg}; border: 1px solid ${border}; border-radius: 9px; font-family: 'EB Garamond', Georgia, serif; font-size: 12px; color: ${textMain}; box-shadow: 0 4px 16px rgba(0,0,0,0.3); max-width: 280px; pointer-events: none;">
             <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 3px;">
               <span style="font-weight: 700; text-transform: uppercase; font-family: monospace; font-size: 10px; color: ${typeColor}; letter-spacing: 0.06em;">
-                ${link.type || 'INFLUENCED'}
+                ${safeType}
               </span>
             </div>
             <div style="font-size: 11px; line-height: 1.4; color: ${textSub};">
-              ${link.label || ''}
+              ${safeLabel}
             </div>
           </div>`;
         }}
