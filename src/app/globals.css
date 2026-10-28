@@ -21,6 +21,8 @@ html.light {
   --gold-hover: #7d590e;
   --gold-bg: #faeed4;
   --gold-border: #deb972;
+  --grid-line: rgba(140, 100, 30, 0.05);
+  --grid-dot: rgba(140, 100, 30, 0.14);
 }
 
 /* Dark Theme Variables */
@@ -38,6 +40,19 @@ html.dark {
   --gold-hover: #e5b94c;
   --gold-bg: #2a2318;
   --gold-border: #4a3b25;
+  --grid-line: rgba(229, 185, 76, 0.038);
+  --grid-dot: rgba(229, 185, 76, 0.13);
+}
+
+/* Cartographic Grid Background */
+.bg-cartographic-grid {
+  background-color: var(--bg-main);
+  background-image: 
+    radial-gradient(var(--grid-dot) 1px, transparent 1px),
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  background-position: center center;
 }
 
 body {

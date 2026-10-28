@@ -281,7 +281,7 @@ export function ForceGraphView({
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-full overflow-hidden bg-[var(--bg-main)] font-serif"
+      className="relative w-full h-full overflow-hidden bg-cartographic-grid font-serif"
     >
       {/* Top Floating Filter Bar */}
       <div className="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-2 max-w-[calc(100%-180px)]">
@@ -381,7 +381,7 @@ export function ForceGraphView({
         ref={fgRef}
         width={dimensions.width}
         height={dimensions.height}
-        backgroundColor={isLight ? '#f7f3ea' : '#0e0d0b'}
+        backgroundColor="rgba(0,0,0,0)"
         graphData={graphData}
         nodeId="id"
         nodeLabel={() => ''} /* Disable default HTML title tooltip so our custom card handles hover */
