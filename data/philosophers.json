@@ -1771,5 +1771,390 @@
     ],
     "sepSlug": "ethics-ai",
     "importanceScore": 82
+  },
+  {
+    "id": "zeno-of-elea",
+    "name": "Zeno of Elea",
+    "birthYear": -495,
+    "deathYear": -430,
+    "eraId": "pre-socratic",
+    "traditionId": "eleatic",
+    "shortBio": "Disciple of Parmenides who invented dialectical reductio ad absurdum and formulated celebrated paradoxes of motion and infinite divisibility.",
+    "centralQuestion": "How can motion and multiplicity be real if their mathematical premises yield insurmountable contradictions?",
+    "keyWorks": [
+      {
+        "title": "Paradoxes of Motion (Fragments)",
+        "year": "450 BCE",
+        "url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+        "description": "Formulation of Achilles and the Tortoise, the Dichotomy, the Arrow, and the Moving Rows."
+      }
+    ],
+    "sepSlug": "zeno-elea",
+    "importanceScore": 91
+  },
+  {
+    "id": "confucius",
+    "name": "Confucius (Kongzi)",
+    "birthYear": -551,
+    "deathYear": -479,
+    "eraId": "eastern",
+    "traditionId": "eastern-wisdom",
+    "shortBio": "Foundational teacher and philosopher of China whose ethical and political philosophy centered on humaneness (Ren), ritual propriety (Li), and moral self-cultivation.",
+    "centralQuestion": "How can individuals cultivate moral excellence and restore harmonious societal governance through ritual and virtue?",
+    "keyWorks": [
+      {
+        "title": "The Analects (Lunyu)",
+        "year": "475 BCE",
+        "url": "https://en.wikipedia.org/wiki/Analects",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Analects",
+        "description": "Collection of sayings, dialogues, and historical anecdotes compiling Confucius's moral philosophy."
+      }
+    ],
+    "sepSlug": "confucius",
+    "importanceScore": 97
+  },
+  {
+    "id": "zhuangzi",
+    "name": "Zhuangzi (Chuang Tzu)",
+    "birthYear": -369,
+    "deathYear": -286,
+    "eraId": "eastern",
+    "traditionId": "eastern-wisdom",
+    "shortBio": "Master Daoist sage whose parables, linguistic skepticism, and butterfly dream developed radical perspectivism, spiritual freedom, and effortless unity with the Dao.",
+    "centralQuestion": "How can human consciousness transcend rigid dualisms of right and wrong to wander freely in spontaneous harmony with nature?",
+    "keyWorks": [
+      {
+        "title": "Zhuangzi (The Inner Chapters)",
+        "year": "300 BCE",
+        "url": "https://en.wikipedia.org/wiki/Zhuangzi_(book)",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Zhuangzi_(book)",
+        "description": "Foundational Daoist text celebrated for its philosophical depth, literary wit, and the Butterfly Dream."
+      }
+    ],
+    "sepSlug": "zhuangzi",
+    "importanceScore": 94
+  },
+  {
+    "id": "anselm-of-canterbury",
+    "name": "Anselm of Canterbury",
+    "birthYear": 1033,
+    "deathYear": 1109,
+    "eraId": "medieval",
+    "traditionId": "scholasticism",
+    "shortBio": "Father of Scholasticism and Archbishop of Canterbury who formulated the canonical Ontological Argument for the existence of God in the Proslogion.",
+    "centralQuestion": "Can the reality of God be demonstrated through pure conceptual analysis as 'that than which nothing greater can be conceived'?",
+    "keyWorks": [
+      {
+        "title": "Proslogion",
+        "year": "1078",
+        "url": "https://en.wikipedia.org/wiki/Proslogion",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Proslogion",
+        "description": "Famous treatise containing the ontological proof of God from the concept of maximal greatness."
+      },
+      {
+        "title": "Monologion",
+        "year": "1076",
+        "url": "https://en.wikipedia.org/wiki/Monologion",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Monologion",
+        "description": "Theological meditation on divine attributes and faith seeking understanding."
+      }
+    ],
+    "sepSlug": "anselm",
+    "importanceScore": 92
+  },
+  {
+    "id": "al-ghazali",
+    "name": "Al-Ghazali (Algazel)",
+    "birthYear": 1058,
+    "deathYear": 1111,
+    "eraId": "medieval",
+    "traditionId": "islamic-golden-age",
+    "shortBio": "Influential Persian Islamic theologian and jurist who critiqued Avicennian Aristotelianism and formulated occasionalism, anticipating Humean causal skepticism.",
+    "centralQuestion": "Does human philosophical reason possess the capacity to prove necessary causal laws and transcendent metaphysical truths?",
+    "keyWorks": [
+      {
+        "title": "The Incoherence of the Philosophers (Tahafut al-Falasifa)",
+        "year": "1095",
+        "url": "https://en.wikipedia.org/wiki/The_Incoherence_of_the_Philosophers",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Incoherence_of_the_Philosophers",
+        "description": "Landmark philosophical critique of Islamic Peripatetic philosophy and necessary causal connection."
+      },
+      {
+        "title": "Deliverance from Error (Al-Munqidh min al-Dalal)",
+        "year": "1106",
+        "url": "https://en.wikipedia.org/wiki/Deliverance_from_Error",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Deliverance_from_Error",
+        "description": "Autobiographical spiritual treatise recounting his epistemological crisis and Sufi resolution."
+      }
+    ],
+    "sepSlug": "al-ghazali",
+    "importanceScore": 93
+  },
+  {
+    "id": "moses-maimonides",
+    "name": "Moses Maimonides (Rambam)",
+    "birthYear": 1138,
+    "deathYear": 1204,
+    "eraId": "medieval",
+    "traditionId": "scholasticism",
+    "shortBio": "Preeminent Sephardic Jewish philosopher and codifier whose Guide for the Perplexed reconciled Aristotelian metaphysics with biblical revelation through negative theology.",
+    "centralQuestion": "How can rational philosophy and allegorical biblical revelation be harmonized without compromising divine incorporeality and negative theology?",
+    "keyWorks": [
+      {
+        "title": "The Guide for the Perplexed (Moreh Nevukhim)",
+        "year": "1190",
+        "url": "https://en.wikipedia.org/wiki/The_Guide_for_the_Perplexed",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Guide_for_the_Perplexed",
+        "description": "Masterwork addressing philosophical perplexities arising from anthropomorphic biblical texts."
+      }
+    ],
+    "sepSlug": "maimonides",
+    "importanceScore": 92
+  },
+  {
+    "id": "michel-de-montaigne",
+    "name": "Michel de Montaigne",
+    "birthYear": 1533,
+    "deathYear": 1592,
+    "eraId": "early-modern",
+    "traditionId": "skepticism",
+    "shortBio": "French Renaissance humanist who pioneered the essay form and revived ancient Pyrrhonian skepticism with his motto 'Que sais-je?' (What do I know?), sparking modern epistemology.",
+    "centralQuestion": "What can a fallible human truly know, and how should one conduct a virtuous life free from dogmatic intolerance?",
+    "keyWorks": [
+      {
+        "title": "Essais",
+        "year": "1580",
+        "url": "https://en.wikipedia.org/wiki/Essays_(Montaigne)",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Essays_(Montaigne)",
+        "description": "Pioneering collection of introspective personal reflections, moral explorations, and skeptical inquiries."
+      },
+      {
+        "title": "Apology for Raymond Sebond",
+        "year": "1580",
+        "url": "https://en.wikipedia.org/wiki/Apology_for_Raymond_Sebond",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Apology_for_Raymond_Sebond",
+        "description": "Extended essay deploying radical Pyrrhonian skepticism against human intellectual hubris."
+      }
+    ],
+    "sepSlug": "montaigne",
+    "importanceScore": 92
+  },
+  {
+    "id": "blaise-pascal",
+    "name": "Blaise Pascal",
+    "birthYear": 1623,
+    "deathYear": 1662,
+    "eraId": "early-modern",
+    "traditionId": "rationalism",
+    "shortBio": "French mathematician, physicist, and religious philosopher who formulated Pascal's Wager, explored the tragedy of human fallenness, and declared that 'the heart has its reasons which reason knows nothing of'.",
+    "centralQuestion": "How does human consciousness navigate the abyss between nothingness and infinity, and why is faith an inescapable existential wager?",
+    "keyWorks": [
+      {
+        "title": "Pensées",
+        "year": "1670",
+        "url": "https://en.wikipedia.org/wiki/Pens%C3%A9es",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Pens%C3%A9es",
+        "description": "Fragmentary collection of thoughts on human misery without God, epistemology, and the existential wager."
+      }
+    ],
+    "sepSlug": "pascal",
+    "importanceScore": 93
+  },
+  {
+    "id": "johann-gottlieb-fichte",
+    "name": "Johann Gottlieb Fichte",
+    "birthYear": 1762,
+    "deathYear": 1814,
+    "eraId": "german-idealism",
+    "traditionId": "german-idealism",
+    "shortBio": "Pioneer of German Idealism who unified Kantian critique into the absolute self-positing Ego (Ich) in the Wissenschaftslehre, establishing dialectical striving.",
+    "centralQuestion": "How does the self-determining transcendental ego generate both moral autonomy and the objective material world through practical striving?",
+    "keyWorks": [
+      {
+        "title": "Foundations of the Science of Knowledge (Wissenschaftslehre)",
+        "year": "1794",
+        "url": "https://en.wikipedia.org/wiki/Wissenschaftslehre",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Wissenschaftslehre",
+        "description": "Foundational text establishing the self-positing Ego and the dialectic of the Not-Self."
+      }
+    ],
+    "sepSlug": "johann-fichte",
+    "importanceScore": 91
+  },
+  {
+    "id": "friedrich-schelling",
+    "name": "Friedrich Wilhelm Joseph Schelling",
+    "birthYear": 1775,
+    "deathYear": 1854,
+    "eraId": "german-idealism",
+    "traditionId": "german-idealism",
+    "shortBio": "German Idealist who formulated Naturphilosophie (Philosophy of Nature), arguing that nature is visible spirit and spirit invisible nature, bridging subjective and objective reality.",
+    "centralQuestion": "How are nature and conscious spirit reconciled as organic polar expressions of a unified Absolute ground?",
+    "keyWorks": [
+      {
+        "title": "Ideas for a Philosophy of Nature",
+        "year": "1797",
+        "url": "https://en.wikipedia.org/wiki/Philosophy_of_nature",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Philosophy_of_nature",
+        "description": "Seminal treatise developing nature as an autonomous, self-organizing dynamic organism."
+      },
+      {
+        "title": "System of Transcendental Idealism",
+        "year": "1800",
+        "url": "https://en.wikipedia.org/wiki/System_of_Transcendental_Idealism",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/System_of_Transcendental_Idealism",
+        "description": "Comprehensive synthesis of nature and transcendental self-consciousness culminating in aesthetic production."
+      }
+    ],
+    "sepSlug": "schelling",
+    "importanceScore": 91
+  },
+  {
+    "id": "charles-sanders-peirce",
+    "name": "Charles Sanders Peirce",
+    "birthYear": 1839,
+    "deathYear": 1914,
+    "eraId": "nineteenth-century",
+    "traditionId": "pragmatism",
+    "shortBio": "American logician, scientist, and founder of Pragmatism who established modern triadic semiotics, scientific fallibilism, and the pragmatic maxim.",
+    "centralQuestion": "How do the conceivable practical effects of an object constitute our entire conception of that object?",
+    "keyWorks": [
+      {
+        "title": "How to Make Our Ideas Clear",
+        "year": "1878",
+        "url": "https://en.wikipedia.org/wiki/How_to_Make_Our_Ideas_Clear",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/How_to_Make_Our_Ideas_Clear",
+        "description": "Seminal essay defining the pragmatic maxim and the community theory of truth."
+      }
+    ],
+    "sepSlug": "peirce",
+    "importanceScore": 91
+  },
+  {
+    "id": "gottlob-frege",
+    "name": "Gottlob Frege",
+    "birthYear": 1848,
+    "deathYear": 1925,
+    "eraId": "nineteenth-century",
+    "traditionId": "analytic",
+    "shortBio": "German mathematician, logician, and father of Analytic Philosophy who invented modern mathematical logic, predicate calculus, and semantic sense/reference distinction.",
+    "centralQuestion": "How can the foundations of arithmetic and logical thought be objectively secured independently of subjective human psychology?",
+    "keyWorks": [
+      {
+        "title": "Begriffsschrift (Concept Script)",
+        "year": "1879",
+        "url": "https://en.wikipedia.org/wiki/Begriffsschrift",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Begriffsschrift",
+        "description": "Revolutionary formal language introducing quantifiers, functions, and modern propositional logic."
+      },
+      {
+        "title": "On Sense and Reference (Über Sinn und Bedeutung)",
+        "year": "1892",
+        "url": "https://en.wikipedia.org/wiki/Sense_and_reference",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Sense_and_reference",
+        "description": "Landmark paper establishing the semantic distinction between sense (mode of presentation) and reference (truth value/object)."
+      }
+    ],
+    "sepSlug": "frege",
+    "importanceScore": 94
+  },
+  {
+    "id": "emmanuel-levinas",
+    "name": "Emmanuel Levinas",
+    "birthYear": 1906,
+    "deathYear": 1995,
+    "eraId": "twentieth-century",
+    "traditionId": "post-structuralism",
+    "shortBio": "French-Lithuanian philosopher who established ethics as First Philosophy, locating transcendence in the non-negotiable vulnerability and infinite demand of the Face of the Other.",
+    "centralQuestion": "Why is our ethical responsibility to the Face of the Other prior to ontology, cognition, and selfhood?",
+    "keyWorks": [
+      {
+        "title": "Totality and Infinity",
+        "year": "1961",
+        "url": "https://en.wikipedia.org/wiki/Totality_and_Infinity",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Totality_and_Infinity",
+        "description": "Masterwork arguing that ethics precedes ontology through the transcendent encounter with the Other."
+      }
+    ],
+    "sepSlug": "levinas",
+    "importanceScore": 91
+  },
+  {
+    "id": "maurice-merleau-ponty",
+    "name": "Maurice Merleau-Ponty",
+    "birthYear": 1908,
+    "deathYear": 1961,
+    "eraId": "twentieth-century",
+    "traditionId": "phenomenology",
+    "shortBio": "French phenomenologist who restored the lived body (le corps propre) and embodied sensory perception to the foundation of consciousness and reality.",
+    "centralQuestion": "How does our bodily immersion in the perceptual lifeworld precede and ground all intellectual and scientific abstraction?",
+    "keyWorks": [
+      {
+        "title": "Phenomenology of Perception",
+        "year": "1945",
+        "url": "https://en.wikipedia.org/wiki/Phenomenology_of_Perception",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Phenomenology_of_Perception",
+        "description": "Seminal study of bodily intentionality, sensory gestalt, and pre-reflective perceptual life."
+      }
+    ],
+    "sepSlug": "merleau-ponty",
+    "importanceScore": 92
+  },
+  {
+    "id": "jurgen-habermas",
+    "name": "Jürgen Habermas",
+    "birthYear": 1929,
+    "deathYear": 2026,
+    "eraId": "contemporary",
+    "traditionId": "critical-theory",
+    "shortBio": "Leading second-generation Frankfurt School philosopher who formulated the Theory of Communicative Action, discourse ethics, and constitutional deliberative democracy.",
+    "centralQuestion": "How can intersubjective communicative reason and democratic discourse secure emancipatory legitimacy against instrumental technocracy?",
+    "keyWorks": [
+      {
+        "title": "The Theory of Communicative Action",
+        "year": "1981",
+        "url": "https://en.wikipedia.org/wiki/The_Theory_of_Communicative_Action",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Theory_of_Communicative_Action",
+        "description": "Two-volume work developing rational communicative lifeworld action vs. steering media systems."
+      },
+      {
+        "title": "Between Facts and Norms",
+        "year": "1992",
+        "url": "https://en.wikipedia.org/wiki/Between_Facts_and_Norms",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Between_Facts_and_Norms",
+        "description": "Comprehensive philosophy of law and deliberative democracy."
+      }
+    ],
+    "sepSlug": "habermas",
+    "importanceScore": 93
+  },
+  {
+    "id": "derek-parfit",
+    "name": "Derek Parfit",
+    "birthYear": 1942,
+    "deathYear": 2017,
+    "eraId": "contemporary",
+    "traditionId": "analytic",
+    "shortBio": "Oxford moral philosopher famous for Reasons and Persons (psychological reductionism of personal identity) and On What Matters (unifying Kantianism, contractualism, and consequentialism).",
+    "centralQuestion": "Does personal identity consist in anything more than psychological connectedness, and what reasons do we have to care for future generations?",
+    "keyWorks": [
+      {
+        "title": "Reasons and Persons",
+        "year": "1984",
+        "url": "https://en.wikipedia.org/wiki/Reasons_and_Persons",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Reasons_and_Persons",
+        "description": "Influential treatise on personal identity, future generations, and moral rationality."
+      },
+      {
+        "title": "On What Matters",
+        "year": "2011",
+        "url": "https://en.wikipedia.org/wiki/On_What_Matters",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/On_What_Matters",
+        "description": "Monumental convergence of major normative ethical systems into triple theory."
+      }
+    ],
+    "sepSlug": "parfit",
+    "importanceScore": 90
   }
 ]
