@@ -95,12 +95,16 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
           return title.toLowerCase().includes(q);
         })
     );
-    filteredConcepts = filteredConcepts.filter(
-      (c) =>
-        c.title.toLowerCase().includes(q) ||
-        c.summary.toLowerCase().includes(q) ||
-        c.branch.toLowerCase().includes(q)
-    );
+    filteredConcepts = filteredConcepts.filter((c) => {
+      const title = c.title || (c as any).name || '';
+      const summary = c.summary || (c as any).description || '';
+      const branch = c.branch || '';
+      return (
+        title.toLowerCase().includes(q) ||
+        summary.toLowerCase().includes(q) ||
+        branch.toLowerCase().includes(q)
+      );
+    });
   }
 
   const validNodeIds = new Set<string>();

@@ -230,7 +230,7 @@ ${sources || 'None provided'}
                   <optgroup label="Concepts">
                     {concepts.map((c) => (
                       <option key={c.id} value={c.id}>
-                        {c.title}
+                        {c.title || (c as any).name || 'Concept'}
                       </option>
                     ))}
                   </optgroup>

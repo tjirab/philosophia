@@ -37,23 +37,27 @@ export function SearchPalette({
   const matchedPhilosophers = q
     ? philosophers.filter(
         (p) =>
-          p.name.toLowerCase().includes(q) ||
-          p.shortBio.toLowerCase().includes(q) ||
-          p.centralQuestion.toLowerCase().includes(q) ||
-          p.keyWorks.some((w) => {
-            const title = typeof w === 'string' ? w : (w as any).title;
+          (p.name || '').toLowerCase().includes(q) ||
+          (p.shortBio || '').toLowerCase().includes(q) ||
+          (p.centralQuestion || '').toLowerCase().includes(q) ||
+          (p.keyWorks || []).some((w) => {
+            const title = typeof w === 'string' ? w : (w as any)?.title || '';
             return title.toLowerCase().includes(q);
           })
       )
     : philosophers.slice(0, 6);
 
   const matchedConcepts = q
-    ? concepts.filter(
-        (c) =>
-          c.title.toLowerCase().includes(q) ||
-          c.summary.toLowerCase().includes(q) ||
-          c.branch.toLowerCase().includes(q)
-      )
+    ? concepts.filter((c) => {
+        const title = c.title || (c as any).name || '';
+        const summary = c.summary || (c as any).description || '';
+        const branch = c.branch || '';
+        return (
+          title.toLowerCase().includes(q) ||
+          summary.toLowerCase().includes(q) ||
+          branch.toLowerCase().includes(q)
+        );
+      })
     : concepts.slice(0, 4);
 
   return (
@@ -138,15 +142,17 @@ export function SearchPalette({
                   >
                     <div>
                       <div className="text-sm font-bold text-[var(--text-main)] group-hover:text-[#52b788] transition">
-                        {c.title}
+                        {c.title || (c as any).name || 'Concept'}
                       </div>
                       <div className="text-xs text-[var(--text-muted)] truncate max-w-md">
-                        {c.summary}
+                        {c.summary || (c as any).description || ''}
                       </div>
                     </div>
-                    <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-[var(--bg-subtle)] text-[var(--text-dim)] border border-[var(--border-main)]">
-                      {c.branch}
-                    </span>
+                    {c.branch && (
+                      <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-[var(--bg-subtle)] text-[var(--text-dim)] border border-[var(--border-main)]">
+                        {c.branch}
+                      </span>
+                    )}
                   </button>
                 ))}
               </div>
