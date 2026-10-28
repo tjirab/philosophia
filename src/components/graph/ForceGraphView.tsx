@@ -52,7 +52,10 @@ export function ForceGraphView({
   const { resolvedTheme } = useTheme();
   const [dimensions, setDimensions] = useState({ width: 1200, height: 800 });
   const [hoveredNode, setHoveredNode] = useState<VisualNode | null>(null);
-  const [mouseCoords, setMouseCoords] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null);
+
+  // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
+  const graphData = useMemo(() => ({ nodes, links }), [nodes, links]);
 
   // Resize listener
   useEffect(() => {
@@ -199,7 +202,6 @@ export function ForceGraphView({
   return (
     <div
       ref={containerRef}
-      onMouseMove={(e) => setMouseCoords({ x: e.clientX, y: e.clientY })}
       className="relative w-full h-full overflow-hidden bg-[var(--bg-main)] font-serif"
     >
       {/* Top Floating Filter Bar */}
@@ -291,7 +293,7 @@ export function ForceGraphView({
         width={dimensions.width}
         height={dimensions.height}
         backgroundColor={isLight ? '#f7f3ea' : '#0e0d0b'}
-        graphData={{ nodes, links }}
+        graphData={graphData}
         nodeId="id"
         nodeLabel={() => ''} /* Disable default HTML title tooltip so our custom card handles hover */
         nodeCanvasObject={paintNode}
@@ -351,15 +353,24 @@ export function ForceGraphView({
         }}
         onNodeHover={(node: any) => {
           setHoveredNode(node || null);
+          if (node && fgRef.current && typeof node.x === 'number' && typeof node.y === 'number') {
+            const coords = fgRef.current.graph2ScreenCoords(node.x, node.y);
+            setHoverPosition(coords);
+          } else {
+            setHoverPosition(null);
+          }
         }}
-        cooldownTicks={120}
-        d3AlphaDecay={0.02}
-        d3VelocityDecay={0.3}
+        warmupTicks={150}
+        cooldownTicks={80}
+        cooldownTime={2000}
+        d3AlphaDecay={0.06}
+        d3VelocityDecay={0.4}
+        enableNodeDrag={true}
       />
 
       {/* Floating Hover Card */}
-      {hoveredNode && (
-        <HoverNodeCard node={hoveredNode} position={mouseCoords} />
+      {hoveredNode && hoverPosition && (
+        <HoverNodeCard node={hoveredNode} position={hoverPosition} />
       )}
     </div>
   );
