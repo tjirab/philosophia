@@ -1,0 +1,23 @@
+name: Data Correction / Erratum
+description: Report a factual error, incorrect lifespan date, broken link, or citation issue
+title: "[Correction]: "
+labels: ["bug", "data-fix"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found a mistake in lifespans, links, or influence relations? Report it here.
+  - type: input
+    id: thinker-or-concept
+    attributes:
+      label: Thinker or Concept Affected
+      placeholder: "e.g. David Hume"
+    validations:
+      required: true
+  - type: textarea
+    id: correction-details
+    attributes:
+      label: What needs correction?
+      placeholder: "Describe the error and provide the correct historical/bibliographic information..."
+    validations:
+      required: true

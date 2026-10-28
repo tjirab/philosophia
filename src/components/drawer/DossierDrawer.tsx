@@ -14,6 +14,7 @@ import {
   Compass,
   FileText,
   ChevronDown,
+  GitPullRequest,
 } from 'lucide-react';
 import { getNodeDetails } from '../../lib/graph/graph-service';
 import { Philosopher, Concept, KeyWork } from '../../lib/types';
@@ -24,6 +25,7 @@ interface DossierDrawerProps {
   onClose: () => void;
   onSelectNode: (nodeId: string) => void;
   onTracePath: (startId: string) => void;
+  onOpenSuggestion?: (nodeId: string) => void;
 }
 
 export function DossierDrawer({
@@ -31,6 +33,7 @@ export function DossierDrawer({
   onClose,
   onSelectNode,
   onTracePath,
+  onOpenSuggestion,
 }: DossierDrawerProps) {
   const [activeSection, setActiveSection] = useState<string>('section-synopsis');
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
@@ -237,14 +240,24 @@ export function DossierDrawer({
             </p>
           </div>
 
-          <div className="pt-2">
+          <div className="pt-2 flex flex-col sm:flex-row gap-2">
             <button
               onClick={() => onTracePath(selectedNodeId)}
-              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-[var(--gold-bg)] hover:bg-[var(--bg-hover)] text-[var(--gold-accent)] border border-[var(--gold-border)] rounded-xl text-xs font-semibold tracking-wide transition shadow-sm"
+              className="flex-1 flex items-center justify-center gap-2 py-2 px-3 bg-[var(--gold-bg)] hover:bg-[var(--bg-hover)] text-[var(--gold-accent)] border border-[var(--gold-border)] rounded-xl text-xs font-semibold tracking-wide transition shadow-sm"
             >
-              <GitFork className="w-4 h-4 text-[var(--gold-accent)]" />
-              <span>Trace Intellectual Lineage From {isPhilosopher ? phil?.name : conc?.title}...</span>
+              <GitFork className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+              <span>Trace Lineage...</span>
             </button>
+            {onOpenSuggestion && (
+              <button
+                onClick={() => onOpenSuggestion(selectedNodeId)}
+                className="flex items-center justify-center gap-1.5 py-2 px-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-muted)] hover:text-[var(--text-main)] border border-[var(--border-main)] rounded-xl text-xs font-semibold tracking-wide transition"
+                title="Suggest an edit, link, or citation for this entry on GitHub"
+              >
+                <GitPullRequest className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+                <span>Suggest Edit</span>
+              </button>
+            )}
           </div>
         </section>
 
@@ -518,6 +531,21 @@ export function DossierDrawer({
                   </div>
                 ))}
               </div>
+            )}
+          </div>
+          {/* Folio Colophon & GitHub Edit Prompt */}
+          <div className="pt-6 pb-2 border-t border-[var(--border-main)] text-center space-y-2">
+            <div className="text-[11px] text-[var(--text-dim)]">
+              Know an influence link, book citation, or podcast episode missing for {isPhilosopher ? phil?.name : conc?.title}?
+            </div>
+            {onOpenSuggestion && (
+              <button
+                onClick={() => onOpenSuggestion(selectedNodeId)}
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--gold-accent)] border border-[var(--border-main)] rounded-xl text-xs font-semibold transition"
+              >
+                <GitPullRequest className="w-3.5 h-3.5" />
+                <span>Suggest Edit or Content on GitHub</span>
+              </button>
             )}
           </div>
         </section>

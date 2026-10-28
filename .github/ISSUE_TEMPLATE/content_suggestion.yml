@@ -1,0 +1,43 @@
+name: Content Suggestion / Addition
+description: Propose a new philosopher, concept, influence connection, or podcast episode
+title: "[Suggestion]: "
+labels: ["content-suggestion", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to the Philosophy Knowledge Graph! Please fill out the details below.
+  - type: dropdown
+    id: suggestion-type
+    attributes:
+      label: Suggestion Type
+      options:
+        - "Influence Connection (Who influenced whom)"
+        - "Podcast Episode (Philosophize This!)"
+        - "Key Primary Text / Monograph / Paper"
+        - "New Philosopher Roster Addition"
+        - "New Concept / Paradigm Shift"
+        - "Biography / Synopsis Refinement"
+    validations:
+      required: true
+  - type: input
+    id: target-thinker
+    attributes:
+      label: Target Thinker or Concept
+      placeholder: "e.g. Immanuel Kant, Theory of Forms, Arthur Schopenhauer"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of Suggestion
+      placeholder: "Detail the intellectual connection, new reading link, or proposed change..."
+    validations:
+      required: true
+  - type: input
+    id: sources
+    attributes:
+      label: Sources & Citations
+      placeholder: "e.g., Stanford Encyclopedia link, Philosophize This! episode number, paper DOI/ISBN"
+    validations:
+      required: false

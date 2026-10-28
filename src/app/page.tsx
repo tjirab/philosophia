@@ -6,6 +6,7 @@ import {
   GitFork,
   Search,
   HelpCircle,
+  GitPullRequest,
 } from 'lucide-react';
 import {
   eras,
@@ -24,6 +25,7 @@ import { LineagePathModal } from '../components/pathfinding/LineagePathModal';
 import { SearchPalette } from '../components/search/SearchPalette';
 import { GraphLegendModal } from '../components/legend/GraphLegendModal';
 import { AppearanceSettingsMenu } from '../components/settings/AppearanceSettingsModal';
+import { SuggestionModal } from '../components/submission/SuggestionModal';
 
 export default function HomePage() {
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
@@ -37,6 +39,8 @@ export default function HomePage() {
   const [isPathModalOpen, setIsPathModalOpen] = useState<boolean>(false);
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
   const [isLegendOpen, setIsLegendOpen] = useState<boolean>(false);
+  const [isSuggestionOpen, setIsSuggestionOpen] = useState<boolean>(false);
+  const [suggestionTargetId, setSuggestionTargetId] = useState<string | null>(null);
   const [pathStartId, setPathStartId] = useState<string>('plato');
 
   // Keyboard shortcut listener for Search (Cmd+K / Ctrl+K)
@@ -50,6 +54,7 @@ export default function HomePage() {
         setIsSearchOpen(false);
         setIsPathModalOpen(false);
         setIsLegendOpen(false);
+        setIsSuggestionOpen(false);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -86,6 +91,11 @@ export default function HomePage() {
     if (startId) setPathStartId(startId);
     setIsPathModalOpen(true);
   }, []);
+
+  const handleOpenSuggestion = useCallback((targetId?: string | null) => {
+    setSuggestionTargetId(targetId || selectedNodeId || null);
+    setIsSuggestionOpen(true);
+  }, [selectedNodeId]);
 
   const handleHighlightPath = useCallback((pathNodes: string[]) => {
     setHighlightedPathNodes(pathNodes);
@@ -148,6 +158,16 @@ export default function HomePage() {
             <span>Folio Key</span>
           </button>
 
+          {/* Contribute / Suggest Content */}
+          <button
+            onClick={() => handleOpenSuggestion(selectedNodeId)}
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--border-strong)] rounded-xl text-xs transition font-serif"
+            title="Suggest an edit, book citation, or podcast link via GitHub"
+          >
+            <GitPullRequest className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+            <span>Contribute</span>
+          </button>
+
           {/* Search Trigger */}
           <button
             onClick={() => setIsSearchOpen(true)}
@@ -194,6 +214,7 @@ export default function HomePage() {
         onClose={() => setSelectedNodeId(null)}
         onSelectNode={handleSelectNode}
         onTracePath={handleOpenPathModal}
+        onOpenSuggestion={handleOpenSuggestion}
       />
 
       {/* Lineage Pathfinding Modal */}
@@ -219,6 +240,15 @@ export default function HomePage() {
       <GraphLegendModal
         isOpen={isLegendOpen}
         onClose={() => setIsLegendOpen(false)}
+      />
+
+      {/* Suggestion / Contribution Modal */}
+      <SuggestionModal
+        isOpen={isSuggestionOpen}
+        onClose={() => setIsSuggestionOpen(false)}
+        philosophers={philosophers}
+        concepts={concepts}
+        initialTargetNodeId={suggestionTargetId}
       />
     </div>
   );
