@@ -108,6 +108,150 @@
     "summary": "Justice as fairness, original position behind the veil of ignorance, and political liberalism."
   },
   {
+    "id": "sep-zeno-of-elea",
+    "targetId": "zeno-of-elea",
+    "type": "encyclopedia",
+    "title": "Zeno of Elea - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/zeno-elea/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Zeno of Elea's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-confucius",
+    "targetId": "confucius",
+    "type": "encyclopedia",
+    "title": "Confucius (Kongzi) - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/confucius/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Confucius (Kongzi)'s philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-zhuangzi",
+    "targetId": "zhuangzi",
+    "type": "encyclopedia",
+    "title": "Zhuangzi (Chuang Tzu) - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/zhuangzi/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Zhuangzi (Chuang Tzu)'s philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-anselm-of-canterbury",
+    "targetId": "anselm-of-canterbury",
+    "type": "encyclopedia",
+    "title": "Anselm of Canterbury - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/anselm/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Anselm of Canterbury's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-al-ghazali",
+    "targetId": "al-ghazali",
+    "type": "encyclopedia",
+    "title": "Al-Ghazali (Algazel) - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/al-ghazali/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Al-Ghazali (Algazel)'s philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-moses-maimonides",
+    "targetId": "moses-maimonides",
+    "type": "encyclopedia",
+    "title": "Moses Maimonides (Rambam) - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/maimonides/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Moses Maimonides (Rambam)'s philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-michel-de-montaigne",
+    "targetId": "michel-de-montaigne",
+    "type": "encyclopedia",
+    "title": "Michel de Montaigne - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/montaigne/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Michel de Montaigne's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-blaise-pascal",
+    "targetId": "blaise-pascal",
+    "type": "encyclopedia",
+    "title": "Blaise Pascal - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/pascal/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Blaise Pascal's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-johann-gottlieb-fichte",
+    "targetId": "johann-gottlieb-fichte",
+    "type": "encyclopedia",
+    "title": "Johann Gottlieb Fichte - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/johann-fichte/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Johann Gottlieb Fichte's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-friedrich-schelling",
+    "targetId": "friedrich-schelling",
+    "type": "encyclopedia",
+    "title": "Friedrich Wilhelm Joseph Schelling - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/schelling/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Friedrich Wilhelm Joseph Schelling's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-charles-sanders-peirce",
+    "targetId": "charles-sanders-peirce",
+    "type": "encyclopedia",
+    "title": "Charles Sanders Peirce - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/peirce/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Charles Sanders Peirce's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-gottlob-frege",
+    "targetId": "gottlob-frege",
+    "type": "encyclopedia",
+    "title": "Gottlob Frege - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/frege/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Gottlob Frege's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-emmanuel-levinas",
+    "targetId": "emmanuel-levinas",
+    "type": "encyclopedia",
+    "title": "Emmanuel Levinas - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/levinas/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Emmanuel Levinas's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-maurice-merleau-ponty",
+    "targetId": "maurice-merleau-ponty",
+    "type": "encyclopedia",
+    "title": "Maurice Merleau-Ponty - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/merleau-ponty/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Maurice Merleau-Ponty's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-jurgen-habermas",
+    "targetId": "jurgen-habermas",
+    "type": "encyclopedia",
+    "title": "Jürgen Habermas - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/habermas/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Jürgen Habermas's philosophical life, works, and arguments."
+  },
+  {
+    "id": "sep-derek-parfit",
+    "targetId": "derek-parfit",
+    "type": "encyclopedia",
+    "title": "Derek Parfit - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/parfit/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Derek Parfit's philosophical life, works, and arguments."
+  },
+  {
     "id": "pt-ep-189-byung-chul-han",
     "targetId": "byung-chul-han",
     "type": "podcast",
@@ -315,6 +459,17 @@
     "creator": "Stephen West",
     "episodeNumber": 150,
     "duration": "22:41"
+  },
+  {
+    "id": "pt-ep-143-jurgen-habermas",
+    "targetId": "jurgen-habermas",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #143 ... Jürgen Habermas pt. 1 - The Public Sphere",
+    "url": "https://philosophizethis.libsyn.com/episode-143-jrgen-habermas-pt-1-the-public-sphere",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/habermas.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 143,
+    "duration": "25:25"
   },
   {
     "id": "pt-ep-137-john-rawls",
@@ -1329,8 +1484,30 @@
     "duration": "30:22"
   },
   {
+    "id": "pt-ep-32-blaise-pascal",
+    "targetId": "blaise-pascal",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #032 ... Blaise Pascal pt. 2 - +EV your way to success!!",
+    "url": "https://philosophizethis.libsyn.com/episode-032-blaise-pascal-pt-2-ev-your-way-to-success",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_032_..._Blaise_Pascal_pt._2_-_EV_your_way_to_success.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 32,
+    "duration": "29:54"
+  },
+  {
     "id": "pt-ep-31-rene-descartes",
     "targetId": "rene-descartes",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #031 ... Pascal's Wager",
+    "url": "https://philosophizethis.libsyn.com/episode-031-pascals-wager",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_031_..._Pascals_Wager.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 31,
+    "duration": "28:43"
+  },
+  {
+    "id": "pt-ep-31-blaise-pascal",
+    "targetId": "blaise-pascal",
     "type": "podcast",
     "title": "Philosophize This! Episode #031 ... Pascal's Wager",
     "url": "https://philosophizethis.libsyn.com/episode-031-pascals-wager",
@@ -1417,6 +1594,17 @@
     "duration": "29:44"
   },
   {
+    "id": "pt-ep-24-michel-de-montaigne",
+    "targetId": "michel-de-montaigne",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #024 ... Montaigne",
+    "url": "https://philosophizethis.libsyn.com/episode-024-montaigne",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_024_..._Montaigne.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 24,
+    "duration": "28:06"
+  },
+  {
     "id": "pt-ep-23-machiavelli",
     "targetId": "machiavelli",
     "type": "podcast",
@@ -1448,6 +1636,17 @@
     "creator": "Stephen West",
     "episodeNumber": 21,
     "duration": "26:22"
+  },
+  {
+    "id": "pt-ep-20-anselm-of-canterbury",
+    "targetId": "anselm-of-canterbury",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #020 ... Two Medieval Approaches To God",
+    "url": "https://philosophizethis.libsyn.com/episode-020-two-medieval-approaches-to-god",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_020_..._Two_Medieval_Approaches_To_God.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 20,
+    "duration": "35:37"
   },
   {
     "id": "pt-ep-18-avicenna",
@@ -1516,6 +1715,17 @@
     "duration": "47:12"
   },
   {
+    "id": "pt-ep-11-zeno-of-elea",
+    "targetId": "zeno-of-elea",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #011 ... The Hellenistic Age Pt. 2 - The Early Stoa and the Cynics",
+    "url": "https://philosophizethis.libsyn.com/episode-011-the-hellenistic-age-pt-2-the-early-stoa-and-the-cynics",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_011_..._The_Hellenistic_Age_Pt._2_-_The_Early_Stoa_and_the_Cynics.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 11,
+    "duration": "43:31"
+  },
+  {
     "id": "pt-ep-10-epicurus",
     "targetId": "epicurus",
     "type": "podcast",
@@ -1525,6 +1735,17 @@
     "creator": "Stephen West",
     "episodeNumber": 10,
     "duration": "47:56"
+  },
+  {
+    "id": "pt-ep-8-confucius",
+    "targetId": "confucius",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #008 ... Confucianism",
+    "url": "https://philosophizethis.libsyn.com/episode-008-confucianism",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_008_..._Confucianism.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 8,
+    "duration": "40:55"
   },
   {
     "id": "pt-ep-6-plato",

@@ -66,7 +66,23 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'hannah-arendt', patterns: [/\barendt\b/i, /\bbanality of evil\b/i] },
   { id: 'john-rawls', patterns: [/\brawls\b/i, /\bveil of ignorance\b/i] },
   { id: 'byung-chul-han', patterns: [/\bbyung-chul han\b/i, /\bbyung chul han\b/i, /\bburnout society\b/i] },
-  { id: 'nick-bostrom', patterns: [/\bbostrom\b/i, /\bsimulation argument\b/i] }
+  { id: 'nick-bostrom', patterns: [/\bbostrom\b/i, /\bsimulation argument\b/i] },
+  { id: 'zeno-of-elea', patterns: [/\bzeno\b/i, /\bachilles and the tortoise\b/i] },
+  { id: 'confucius', patterns: [/\bconfucius\b/i, /\bconfucianism\b/i, /\bkongzi\b/i, /\banalects\b/i] },
+  { id: 'zhuangzi', patterns: [/\bzhuangzi\b/i, /\bchuang tzu\b/i, /\bchuang-tzu\b/i] },
+  { id: 'anselm-of-canterbury', patterns: [/\banselm\b/i] },
+  { id: 'al-ghazali', patterns: [/\bal-ghazali\b/i, /\bal ghazali\b/i, /\bghazali\b/i] },
+  { id: 'moses-maimonides', patterns: [/\bmaimonides\b/i, /\bguide for the perplexed\b/i] },
+  { id: 'michel-de-montaigne', patterns: [/\bmontaigne\b/i] },
+  { id: 'blaise-pascal', patterns: [/\bpascal\b/i, /\bpens[eé]es\b/i] },
+  { id: 'johann-gottlieb-fichte', patterns: [/\bfichte\b/i] },
+  { id: 'friedrich-schelling', patterns: [/\bschelling\b/i] },
+  { id: 'charles-sanders-peirce', patterns: [/\bpeirce\b/i] },
+  { id: 'gottlob-frege', patterns: [/\bfrege\b/i] },
+  { id: 'maurice-merleau-ponty', patterns: [/\bmerleau-ponty\b/i, /\bmerleau ponty\b/i] },
+  { id: 'jurgen-habermas', patterns: [/\bhabermas\b/i] },
+  { id: 'emmanuel-levinas', patterns: [/\blevinas\b/i] },
+  { id: 'derek-parfit', patterns: [/\bparfit\b/i] }
 ];
 
 async function ingestRSS() {

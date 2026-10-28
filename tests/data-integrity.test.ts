@@ -92,6 +92,25 @@ describe('Philosophy Graph Data Integrity', () => {
     // Descartes -> Nick Bostrom
     const descToBostrom = findInfluencePath('rene-descartes', 'nick-bostrom', edgesData as any);
     expect(descToBostrom.found).toBe(true);
+
+    // Kant -> German Idealism -> Hegel
+    const kantToHegel = findInfluencePath('immanuel-kant', 'gwf-hegel', edgesData as any);
+    expect(kantToHegel.found).toBe(true);
+
+    // Kant -> Frege -> Wittgenstein
+    const kantToWitt = findInfluencePath('immanuel-kant', 'ludwig-wittgenstein', edgesData as any);
+    expect(kantToWitt.found).toBe(true);
+
+    // Avicenna -> Al-Ghazali -> Averroes -> Maimonides -> Aquinas
+    const aviToAquinas = findInfluencePath('avicenna', 'thomas-aquinas', edgesData as any);
+    expect(aviToAquinas.found).toBe(true);
+    expect(aviToAquinas.nodes).toContain('al-ghazali');
+
+    // Pyrrho -> Montaigne -> Descartes -> Pascal -> Kierkegaard
+    const pyrrhoToKierk = findInfluencePath('pyrrho', 'soren-kierkegaard', edgesData as any);
+    expect(pyrrhoToKierk.found).toBe(true);
+    expect(pyrrhoToKierk.nodes).toContain('michel-de-montaigne');
+    expect(pyrrhoToKierk.nodes).toContain('blaise-pascal');
   });
 
   it('verifies visual graph generation and node details retrieval', () => {

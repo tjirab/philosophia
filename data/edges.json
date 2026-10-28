@@ -866,5 +866,579 @@
     "type": "SYNTHESIZED",
     "label": "Schopenhauer synthesized Buddhist Sunyata and cessation of desire with Western metaphysics",
     "strength": 4
+  },
+  {
+    "source": "parmenides",
+    "target": "zeno-of-elea",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Defended Parmenidean monism through dialectical reductio paradoxes"
+  },
+  {
+    "source": "zeno-of-elea",
+    "target": "democritus",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Paradoxes of infinite divisibility spurred atomist postulate of indivisible units"
+  },
+  {
+    "source": "zeno-of-elea",
+    "target": "aristotle",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Aristotle developed potential vs actual infinity in Physics to resolve Zeno's paradoxes"
+  },
+  {
+    "source": "zeno-of-elea",
+    "target": "zenos-paradoxes",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated paradoxes of motion and plurality"
+  },
+  {
+    "source": "zenos-paradoxes",
+    "target": "aristotle",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Refuted by Aristotle's continuum physics"
+  },
+  {
+    "source": "zenos-paradoxes",
+    "target": "democritus",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Resolved via physical atomism"
+  },
+  {
+    "source": "laozi",
+    "target": "confucius",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Classical Chinese dialogue between spontaneous Dao and cultivated ritual harmony"
+  },
+  {
+    "source": "confucius",
+    "target": "ren-and-li",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated core virtue matrix of benevolence and ritual propriety"
+  },
+  {
+    "source": "confucius",
+    "target": "siddhartha-gautama",
+    "type": "SYNTHESIZED",
+    "strength": 3,
+    "label": "Parallel Axial Age moral ethics of righteous conduct and social order"
+  },
+  {
+    "source": "ren-and-li",
+    "target": "john-rawls",
+    "type": "SYNTHESIZED",
+    "strength": 3,
+    "label": "Ancient virtue ethics counterpart to modern justice and social stability"
+  },
+  {
+    "source": "laozi",
+    "target": "zhuangzi",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Elaborated Laozi's cosmological Dao into radical parables and perspectivism"
+  },
+  {
+    "source": "zhuangzi",
+    "target": "butterfly-dream",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Celebrated parable on the transformation of things and epistemic fluidity"
+  },
+  {
+    "source": "zhuangzi",
+    "target": "siddhartha-gautama",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Daoist natural spontaneity synthesized into Chinese Chan (Zen) Buddhism"
+  },
+  {
+    "source": "butterfly-dream",
+    "target": "friedrich-nietzsche",
+    "type": "SYNTHESIZED",
+    "strength": 3,
+    "label": "Radical perspectivism and joyful affirmation of becoming"
+  },
+  {
+    "source": "augustine",
+    "target": "anselm-of-canterbury",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Systematized Augustinian principle of faith seeking understanding (fides quaerens intellectum)"
+  },
+  {
+    "source": "anselm-of-canterbury",
+    "target": "ontological-argument",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the canonical Ontological Argument in Proslogion"
+  },
+  {
+    "source": "anselm-of-canterbury",
+    "target": "thomas-aquinas",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Pioneered scholastic dialectical theology"
+  },
+  {
+    "source": "ontological-argument",
+    "target": "thomas-aquinas",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Aquinas rejected Anselm's a priori proof in favor of empirical Five Ways"
+  },
+  {
+    "source": "ontological-argument",
+    "target": "rene-descartes",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Descartes revived Anselm's ontological proof in Fifth Meditation"
+  },
+  {
+    "source": "ontological-argument",
+    "target": "immanuel-kant",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Kant dismantled the ontological proof arguing existence is not a predicate"
+  },
+  {
+    "source": "avicenna",
+    "target": "al-ghazali",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Tahafut al-Falasifa refuted Avicennian eternal emanation and natural necessity"
+  },
+  {
+    "source": "al-ghazali",
+    "target": "causal-occasionalism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Dismantled necessary causal connection between fire and burning"
+  },
+  {
+    "source": "al-ghazali",
+    "target": "averroes",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Provoked Averroes' Tahafut al-Tahafut defending Aristotelian rationalism"
+  },
+  {
+    "source": "causal-occasionalism",
+    "target": "averroes",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Averroes defended Aristotelian causal efficacy and science"
+  },
+  {
+    "source": "al-ghazali",
+    "target": "david-hume",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Occasionalist causal critique anticipated Hume's Problem of Induction by 600 years"
+  },
+  {
+    "source": "causal-occasionalism",
+    "target": "david-hume",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Secularized into Humean empirical skepticism of necessary connection"
+  },
+  {
+    "source": "averroes",
+    "target": "moses-maimonides",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Shared Andalusian Aristotelian tradition harmonizing faith and reason"
+  },
+  {
+    "source": "moses-maimonides",
+    "target": "negative-theology",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated apophatic theology in Guide for the Perplexed"
+  },
+  {
+    "source": "moses-maimonides",
+    "target": "thomas-aquinas",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Crucial source for Aquinas's synthesis of Aristotle and monotheism"
+  },
+  {
+    "source": "moses-maimonides",
+    "target": "baruch-spinoza",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Maimonidean rationalism was departure point for Spinoza's Theological-Political Treatise"
+  },
+  {
+    "source": "negative-theology",
+    "target": "thomas-aquinas",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Incorporated via Aquinas's doctrine of divine analogy and apophaticism"
+  },
+  {
+    "source": "negative-theology",
+    "target": "baruch-spinoza",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Transformed into immanent pantheism (Deus sive Natura)"
+  },
+  {
+    "source": "pyrrho",
+    "target": "michel-de-montaigne",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Revived ancient Pyrrhonian skepticism in Renaissance Europe"
+  },
+  {
+    "source": "michel-de-montaigne",
+    "target": "pyrrho-skeptical-doubt",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated famous skeptical motto 'Que sais-je?' in the Essais"
+  },
+  {
+    "source": "michel-de-montaigne",
+    "target": "rene-descartes",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Montaigne's radical doubt was the challenge Descartes set out to defeat"
+  },
+  {
+    "source": "michel-de-montaigne",
+    "target": "francis-bacon",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Critique of human intellectual conceit inspired Bacon's Idols of the Mind"
+  },
+  {
+    "source": "pyrrho-skeptical-doubt",
+    "target": "rene-descartes",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Systematized into Cartesian Methodological Doubt"
+  },
+  {
+    "source": "michel-de-montaigne",
+    "target": "blaise-pascal",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Montaigne's skepticism deeply informed Pascal's view of fallen human reason"
+  },
+  {
+    "source": "rene-descartes",
+    "target": "blaise-pascal",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Rejected cold Cartesian geometric rationalism ('Descartes useless and uncertain')"
+  },
+  {
+    "source": "blaise-pascal",
+    "target": "pascals-wager",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated decision-theoretic wager on divine existence in Pensées"
+  },
+  {
+    "source": "blaise-pascal",
+    "target": "soren-kierkegaard",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Precursor to existential dread, leap of faith, and paradoxical Christianity"
+  },
+  {
+    "source": "pascals-wager",
+    "target": "william-james",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Secularized and generalized in James's Will to Believe"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "johann-gottlieb-fichte",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Radicalized Kantian transcendental apperception into Absolute Self-Positing Ego"
+  },
+  {
+    "source": "johann-gottlieb-fichte",
+    "target": "self-positing-ego",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Foundational premise of the Wissenschaftslehre"
+  },
+  {
+    "source": "johann-gottlieb-fichte",
+    "target": "friedrich-schelling",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Initial foundation for Schelling's early philosophical development"
+  },
+  {
+    "source": "johann-gottlieb-fichte",
+    "target": "gwf-hegel",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Pioneered triadic dialectical movement of thesis, antithesis, and synthesis"
+  },
+  {
+    "source": "self-positing-ego",
+    "target": "gwf-hegel",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Transformed into historical Absolute Spirit coming to self-consciousness"
+  },
+  {
+    "source": "friedrich-schelling",
+    "target": "naturphilosophie",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated philosophy of organic nature as unconscious spirit"
+  },
+  {
+    "source": "friedrich-schelling",
+    "target": "gwf-hegel",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Former roommates who split; Hegel mocked Schelling's Absolute as 'night in which all cows are black'"
+  },
+  {
+    "source": "friedrich-schelling",
+    "target": "arthur-schopenhauer",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Dynamic unconscious natural forces influenced Schopenhauer's Will"
+  },
+  {
+    "source": "naturphilosophie",
+    "target": "arthur-schopenhauer",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Nature as metaphysical striving without conscious purpose"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "charles-sanders-peirce",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Transformed Kantian categories into triadic logic and semiotics"
+  },
+  {
+    "source": "charles-sanders-peirce",
+    "target": "pragmatic-maxim",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Pragmatic Maxim in How to Make Our Ideas Clear"
+  },
+  {
+    "source": "charles-sanders-peirce",
+    "target": "william-james",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Founded Pragmatism, which James popularized and personalized"
+  },
+  {
+    "source": "charles-sanders-peirce",
+    "target": "karl-popper",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Anticipated scientific fallibilism and evolutionary epistemology"
+  },
+  {
+    "source": "pragmatic-maxim",
+    "target": "william-james",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Adopted into Jamesian pragmatism and truth as 'what works'"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "gottlob-frege",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Anti-psychologism and arithmetical objectivity expanding Kant's logic"
+  },
+  {
+    "source": "gottlob-frege",
+    "target": "sinn-und-bedeutung",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Founded modern semantics with distinction between Sense and Reference"
+  },
+  {
+    "source": "gottlob-frege",
+    "target": "bertrand-russell",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Frege's predicate logic and logicism formed the bedrock of Principia Mathematica"
+  },
+  {
+    "source": "gottlob-frege",
+    "target": "ludwig-wittgenstein",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Primary intellectual mentor alongside Russell for Wittgenstein's Tractatus"
+  },
+  {
+    "source": "sinn-und-bedeutung",
+    "target": "bertrand-russell",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Led to Russell's Theory of Definite Descriptions (On Denoting)"
+  },
+  {
+    "source": "sinn-und-bedeutung",
+    "target": "ludwig-wittgenstein",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Foundation for Picture Theory of Meaning in the Tractatus"
+  },
+  {
+    "source": "edmund-husserl",
+    "target": "maurice-merleau-ponty",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Transformed Husserlian phenomenology into study of somatic embodiment"
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "maurice-merleau-ponty",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Integrated being-in-the-world with somatic perceptual psychology"
+  },
+  {
+    "source": "maurice-merleau-ponty",
+    "target": "embodied-perception",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Established the primacy of the lived body in Phenomenology of Perception"
+  },
+  {
+    "source": "maurice-merleau-ponty",
+    "target": "michel-foucault",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Influenced French post-war focus on the disciplined historical body"
+  },
+  {
+    "source": "embodied-perception",
+    "target": "michel-foucault",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "The body as the site of political power and disciplinary conditioning"
+  },
+  {
+    "source": "theodor-adorno",
+    "target": "jurgen-habermas",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Succeeded Frankfurt School first generation, rebuilding rationality via communicative action"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "jurgen-habermas",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Reformulated Kantian categorical imperative into dialogical discourse ethics"
+  },
+  {
+    "source": "jurgen-habermas",
+    "target": "communicative-action",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Seminal theory of communicative rationality and uncoerced discourse"
+  },
+  {
+    "source": "jurgen-habermas",
+    "target": "john-rawls",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Celebrated debate reconciling communicative discourse with political liberalism"
+  },
+  {
+    "source": "communicative-action",
+    "target": "john-rawls",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Public reason and legitimate democratic deliberation"
+  },
+  {
+    "source": "edmund-husserl",
+    "target": "emmanuel-levinas",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Introduced Husserlian phenomenology to France while transcending its ego-centrism"
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "emmanuel-levinas",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Vehemently critiqued Heidegger's ontology of Being for subordinating the ethical Other"
+  },
+  {
+    "source": "emmanuel-levinas",
+    "target": "face-of-the-other",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Established Ethics as First Philosophy in Totality and Infinity"
+  },
+  {
+    "source": "emmanuel-levinas",
+    "target": "jacques-derrida",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Profoundly influenced Derrida's deconstructive ethics and hospitality"
+  },
+  {
+    "source": "face-of-the-other",
+    "target": "jacques-derrida",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Infinite ethical responsibility in deconstruction and unconditional hospitality"
+  },
+  {
+    "source": "david-hume",
+    "target": "derek-parfit",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Modern rigorous analytic formulation of the bundle theory of personal identity"
+  },
+  {
+    "source": "siddhartha-gautama",
+    "target": "derek-parfit",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Parfit explicitly identified his reductionism with Buddhist Anatta (no-self)"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "derek-parfit",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "On What Matters unified Kantian deontology, contractualism, and consequentialism"
+  },
+  {
+    "source": "derek-parfit",
+    "target": "psychological-reductionism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated psychological connectedness and non-identity problem in Reasons and Persons"
+  },
+  {
+    "source": "psychological-reductionism",
+    "target": "nick-bostrom",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Informed existential risk, future generations ethics, and transhumanist identity"
   }
 ]
