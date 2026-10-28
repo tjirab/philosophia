@@ -1,0 +1,90 @@
+[
+  {
+    "id": "pre-socratic",
+    "name": "Pre-Socratic",
+    "startYear": -624,
+    "endYear": -470,
+    "color": "#e07a5f",
+    "description": "The dawn of Western philosophy: transition from mythos to logos, cosmological inquiries into the arche (first principle) of all things."
+  },
+  {
+    "id": "classical-greek",
+    "name": "Classical Greek",
+    "startYear": -470,
+    "endYear": -322,
+    "color": "#f4a261",
+    "description": "Socrates, Plato, and Aristotle: systematic exploration of ethics, epistemology, politics, metaphysics, and logic."
+  },
+  {
+    "id": "hellenistic",
+    "name": "Hellenistic & Roman",
+    "startYear": -323,
+    "endYear": 400,
+    "color": "#e76f51",
+    "description": "Philosophy as an art of living (the therapeutic turn): Stoics, Epicureans, Skeptics, and Neoplatonists seeking tranquility and virtue."
+  },
+  {
+    "id": "eastern",
+    "name": "Eastern & Axial Traditions",
+    "startYear": -600,
+    "endYear": 800,
+    "color": "#d4a373",
+    "description": "Foundational Asian philosophical inquiry: Daoism, Confucianism, Early Buddhism, Nagarjuna, and Advaita Vedanta."
+  },
+  {
+    "id": "medieval",
+    "name": "Medieval & Islamic Golden Age",
+    "startYear": 400,
+    "endYear": 1450,
+    "color": "#2a9d8f",
+    "description": "Synthesis of classical philosophy with Abrahamic theology: Scholasticism, Avicenna, Averroes, Aquinas, and Ockham."
+  },
+  {
+    "id": "early-modern",
+    "name": "Early Modern & Scientific",
+    "startYear": 1450,
+    "endYear": 1700,
+    "color": "#264653",
+    "description": "Epistemological turn, breakdown of scholasticism, Cartesian doubt, Continental Rationalism, and British Empiricism."
+  },
+  {
+    "id": "enlightenment",
+    "name": "Enlightenment & Social Contract",
+    "startYear": 1700,
+    "endYear": 1780,
+    "color": "#457b9d",
+    "description": "Reason, liberty, political contracts, skepticism toward dogma: Locke, Hume, Voltaire, Rousseau, and Adam Smith."
+  },
+  {
+    "id": "german-idealism",
+    "name": "German Idealism & Romanticism",
+    "startYear": 1781,
+    "endYear": 1840,
+    "color": "#1d3557",
+    "description": "Kant's Copernican revolution in philosophy, reconciling rationalism and empiricism; Hegel's dialectical historical spirit."
+  },
+  {
+    "id": "nineteenth-century",
+    "name": "19th Century Divergences",
+    "startYear": 1819,
+    "endYear": 1900,
+    "color": "#6d597a",
+    "description": "Revaluations, will, alienation, and radical critique: Schopenhauer, Kierkegaard, Marx, Nietzsche, and Utilitarianism."
+  },
+  {
+    "id": "twentieth-century",
+    "name": "20th Century Phenomenon & Analysis",
+    "startYear": 1900,
+    "endYear": 1980,
+    "color": "#355070",
+    "description": "Divergence of Analytic philosophy (logic, language games) and Continental traditions (phenomenology, existentialism, critical theory)."
+  },
+  {
+    "id": "contemporary",
+    "name": "Contemporary & Post-Structural",
+    "startYear": 1980,
+    "endYear": 2026,
+    "color": "#b56576",
+    "description": "Power, deconstruction, ethics in the technological age, burnout culture, simulation, and justice."
+  }
+]

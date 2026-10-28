@@ -1,0 +1,335 @@
+[
+  {
+    "id": "theory-of-forms",
+    "title": "Theory of Forms",
+    "branch": "metaphysics",
+    "eraId": "classical-greek",
+    "introducedBy": "plato",
+    "summary": "Non-physical, timeless, perfect archetypes or essences (e.g., Justice, Beauty, Circle) represent the highest and most fundamental reality, of which material objects are imperfect copies.",
+    "sepSlug": "plato-metaphysics"
+  },
+  {
+    "id": "teleology-four-causes",
+    "title": "Teleology & The Four Causes",
+    "branch": "metaphysics",
+    "eraId": "classical-greek",
+    "introducedBy": "aristotle",
+    "summary": "Everything in nature is understood through four causes: material, formal, efficient, and final (telos - purpose or intrinsic end toward which it aims).",
+    "sepSlug": "aristotle-causality"
+  },
+  {
+    "id": "eudaimonia-virtue",
+    "title": "Eudaimonia & The Golden Mean",
+    "branch": "ethics",
+    "eraId": "classical-greek",
+    "introducedBy": "aristotle",
+    "summary": "Human flourishing achieved through habitual cultivation of virtues, which lie as a balanced mean between two extremes of excess and deficiency.",
+    "sepSlug": "aristotle-ethics"
+  },
+  {
+    "id": "ataraxia",
+    "title": "Ataraxia (Tranquility of Mind)",
+    "branch": "ethics",
+    "eraId": "hellenistic",
+    "introducedBy": "epicurus",
+    "summary": "A state of serene mental calmness free from fear, anxiety, and vain desires, considered the highest ethical state in Hellenistic philosophy.",
+    "sepSlug": "epicurus"
+  },
+  {
+    "id": "dichotomy-of-control",
+    "title": "Dichotomy of Control",
+    "branch": "ethics",
+    "eraId": "hellenistic",
+    "introducedBy": "epictetus",
+    "summary": "The foundational Stoic distinction between things in our power (beliefs, desires, impulses) and things outside our power (health, wealth, reputation).",
+    "sepSlug": "epictetus"
+  },
+  {
+    "id": "sunyata-emptiness",
+    "title": "Sunyata (Emptiness & Dependent Arising)",
+    "branch": "metaphysics",
+    "eraId": "eastern",
+    "introducedBy": "nagarjuna",
+    "summary": "All things are devoid of independent, self-contained essence (svabhava); entities exist solely in relational interdependence.",
+    "sepSlug": "nagarjuna"
+  },
+  {
+    "id": "floating-man",
+    "title": "The Floating Man Thought Experiment",
+    "branch": "mind",
+    "eraId": "medieval",
+    "introducedBy": "avicenna",
+    "summary": "If a person were created fully adult floating in a sensory void, they would still possess direct self-awareness of their soul without bodily sensory input.",
+    "sepSlug": "ibn-sina-natural"
+  },
+  {
+    "id": "ockhams-razor",
+    "title": "Ockham's Razor (Principle of Parsimony)",
+    "branch": "epistemology",
+    "eraId": "medieval",
+    "introducedBy": "william-of-ockham",
+    "summary": "Plurality should not be posited without necessity; when presented with competing hypotheses, the one that makes the fewest assumptions is preferred.",
+    "sepSlug": "ockham"
+  },
+  {
+    "id": "cogito-ergo-sum",
+    "title": "Methodological Doubt & Cogito",
+    "branch": "epistemology",
+    "eraId": "early-modern",
+    "introducedBy": "rene-descartes",
+    "summary": "Radical doubt dismantles all sensory knowledge, leaving the indubitable truth: I think, therefore I exist (the thinking ego as foundation of knowledge).",
+    "sepSlug": "descartes-epistemology"
+  },
+  {
+    "id": "cartesian-dualism",
+    "title": "Substance Dualism (Mind vs. Matter)",
+    "branch": "mind",
+    "eraId": "early-modern",
+    "introducedBy": "rene-descartes",
+    "summary": "Reality consists of two fundamentally distinct substances: thinking, non-extended substance (res cogitans) and physical extended substance (res extensa).",
+    "sepSlug": "dualism"
+  },
+  {
+    "id": "deus-sive-natura",
+    "title": "Pantheism (Deus Sive Natura)",
+    "branch": "metaphysics",
+    "eraId": "early-modern",
+    "introducedBy": "baruch-spinoza",
+    "summary": "There is only one infinite substance, of which both mind and matter are infinite attributes: God and Nature are identical.",
+    "sepSlug": "spinoza-modal"
+  },
+  {
+    "id": "tabula-rasa",
+    "title": "Tabula Rasa (The Blank Slate)",
+    "branch": "epistemology",
+    "eraId": "early-modern",
+    "introducedBy": "john-locke",
+    "summary": "The mind is born without innate ideas; all conceptual content and knowledge are derived entirely from experience (sensation and reflection).",
+    "sepSlug": "locke"
+  },
+  {
+    "id": "problem-of-induction",
+    "title": "The Problem of Induction & Hume's Fork",
+    "branch": "epistemology",
+    "eraId": "enlightenment",
+    "introducedBy": "david-hume",
+    "summary": "Past observations cannot logically guarantee future occurrences without assuming nature's uniformity, a circular premise reason cannot prove.",
+    "sepSlug": "induction-problem"
+  },
+  {
+    "id": "bundle-theory",
+    "title": "Bundle Theory of the Self",
+    "branch": "mind",
+    "eraId": "enlightenment",
+    "introducedBy": "david-hume",
+    "summary": "When we look inward, we perceive only fleeting perceptions, sensations, and emotions—there is no fixed, permanent underlying self.",
+    "sepSlug": "hume"
+  },
+  {
+    "id": "general-will",
+    "title": "The General Will & The Social Contract",
+    "branch": "political",
+    "eraId": "enlightenment",
+    "introducedBy": "jean-jacques-rousseau",
+    "summary": "Legitimate collective political authority expresses the common interest of citizens seeking the public good, rather than the sum of private interests.",
+    "sepSlug": "rousseau"
+  },
+  {
+    "id": "transcendental-idealism",
+    "title": "Transcendental Idealism (Copernican Turn)",
+    "branch": "epistemology",
+    "eraId": "german-idealism",
+    "introducedBy": "immanuel-kant",
+    "summary": "Instead of our knowledge conforming to objects, objects of experience must conform to the synthetic a priori conditions of human cognition (Space, Time, Categories).",
+    "sepSlug": "kant-transcendental"
+  },
+  {
+    "id": "noumena-phenomena",
+    "title": "Phenomena vs. Noumena (Thing-in-Itself)",
+    "branch": "metaphysics",
+    "eraId": "german-idealism",
+    "introducedBy": "immanuel-kant",
+    "summary": "We can only know reality as it appears to our sensory faculties (phenomena); the thing-in-itself (noumenon) is permanently inaccessible to theoretical reason.",
+    "sepSlug": "kant"
+  },
+  {
+    "id": "categorical-imperative",
+    "title": "The Categorical Imperative",
+    "branch": "ethics",
+    "eraId": "german-idealism",
+    "introducedBy": "immanuel-kant",
+    "summary": "Act only according to that maxim whereby you can at the same time will that it should become a universal law; treat humanity always as an end, never merely as a means.",
+    "sepSlug": "kant-moral"
+  },
+  {
+    "id": "hegelian-dialectic",
+    "title": "Dialectical Historical Reason",
+    "branch": "metaphysics",
+    "eraId": "german-idealism",
+    "introducedBy": "gwf-hegel",
+    "summary": "Concepts and historical institutions develop through internal tensions and contradictions, progressing toward higher syntheses (sublation / Aufhebung) of freedom.",
+    "sepSlug": "hegel-dialectics"
+  },
+  {
+    "id": "world-as-will",
+    "title": "The World as Will & Metaphysical Pessimism",
+    "branch": "metaphysics",
+    "eraId": "nineteenth-century",
+    "introducedBy": "arthur-schopenhauer",
+    "summary": "Kant's thing-in-itself is revealed as blind, irrational Will—an eternal striving that drives all nature, producing endless suffering alleviated only through art and asceticism.",
+    "sepSlug": "schopenhauer"
+  },
+  {
+    "id": "leap-of-faith",
+    "title": "The Leap of Faith & Existential Dread",
+    "branch": "ethics",
+    "eraId": "nineteenth-century",
+    "introducedBy": "soren-kierkegaard",
+    "summary": "Objective rational certainty cannot resolve religious or existential truth; the individual must make an agonizing, passionate leap into the absurd.",
+    "sepSlug": "kierkegaard"
+  },
+  {
+    "id": "historical-materialism",
+    "title": "Historical Materialism & Alienation",
+    "branch": "political",
+    "eraId": "nineteenth-century",
+    "introducedBy": "karl-marx",
+    "summary": "The material modes of economic production form the foundation of society; capitalism alienates workers from their labor, products, species-essence, and each other.",
+    "sepSlug": "marx"
+  },
+  {
+    "id": "will-to-power",
+    "title": "Will to Power & Revaluation of Values",
+    "branch": "metaphysics",
+    "eraId": "nineteenth-century",
+    "introducedBy": "friedrich-nietzsche",
+    "summary": "The fundamental cosmic and biological driving force is not mere survival, but expansion, self-overcoming, growth, and dominance.",
+    "sepSlug": "nietzsche-moral-political"
+  },
+  {
+    "id": "eternal-recurrence",
+    "title": "The Eternal Recurrence & Amor Fati",
+    "branch": "ethics",
+    "eraId": "nineteenth-century",
+    "introducedBy": "friedrich-nietzsche",
+    "summary": "The ultimate test of life affirmation: would you will your exact life, with every joy and sorrow, to repeat infinitely in an eternal loop?",
+    "sepSlug": "nietzsche"
+  },
+  {
+    "id": "utilitarian-principle",
+    "title": "The Principle of Utility & Harm Principle",
+    "branch": "ethics",
+    "eraId": "nineteenth-century",
+    "introducedBy": "john-stuart-mill",
+    "summary": "Actions are right in proportion to promoting happiness; society may coerce an individual only to prevent harm to others.",
+    "sepSlug": "mill-moral-political"
+  },
+  {
+    "id": "intentionality-epoche",
+    "title": "Intentionality & Phenomenological Reduction (Epoché)",
+    "branch": "mind",
+    "eraId": "twentieth-century",
+    "introducedBy": "edmund-husserl",
+    "summary": "Consciousness is always consciousness of something (intentionality); bracketing belief in the external world reveals pure structures of experience.",
+    "sepSlug": "phenomenology"
+  },
+  {
+    "id": "dasein-being-in-the-world",
+    "title": "Dasein & Being-toward-Death",
+    "branch": "metaphysics",
+    "eraId": "twentieth-century",
+    "introducedBy": "martin-heidegger",
+    "summary": "Human beings are not detached Cartesian observers, but embedded agents already 'thrown' into a world, achieving authenticity by confronting mortality.",
+    "sepSlug": "heidegger"
+  },
+  {
+    "id": "existence-precedes-essence",
+    "title": "Existence Precedes Essence & Bad Faith",
+    "branch": "ethics",
+    "eraId": "twentieth-century",
+    "introducedBy": "jean-paul-sartre",
+    "summary": "Man first exists, encounters himself in the world, and only then defines who he is; pretending we have no freedom of choice is the cowardice of bad faith.",
+    "sepSlug": "sartre"
+  },
+  {
+    "id": "the-absurd",
+    "title": "The Absurd & Sisyphus's Revolt",
+    "branch": "ethics",
+    "eraId": "twentieth-century",
+    "introducedBy": "albert-camus",
+    "summary": "The tension between human longing for inherent purpose and the cold indifference of the cosmos; revolt and defiance give life dignity.",
+    "sepSlug": "camus"
+  },
+  {
+    "id": "language-games",
+    "title": "Language Games & Forms of Life",
+    "branch": "logic",
+    "eraId": "twentieth-century",
+    "introducedBy": "ludwig-wittgenstein",
+    "summary": "The meaning of a word is its use within a shared social practice (language game); philosophical problems arise when language 'goes on holiday'.",
+    "sepSlug": "wittgenstein"
+  },
+  {
+    "id": "falsificationism",
+    "title": "Falsificationism & Demarcation",
+    "branch": "epistemology",
+    "eraId": "twentieth-century",
+    "introducedBy": "karl-popper",
+    "summary": "A scientific theory can never be conclusively verified by positive evidence; it is genuine science only if it makes risky predictions that could be proven false.",
+    "sepSlug": "popper"
+  },
+  {
+    "id": "power-knowledge-panopticon",
+    "title": "Disciplinary Power & The Panopticon",
+    "branch": "political",
+    "eraId": "contemporary",
+    "introducedBy": "michel-foucault",
+    "summary": "Modern power is not merely top-down sovereign violence; it is diffuse, institutional, shaping our bodies and concepts through internalization of constant surveillance.",
+    "sepSlug": "foucault"
+  },
+  {
+    "id": "deconstruction-differance",
+    "title": "Deconstruction & Différance",
+    "branch": "epistemology",
+    "eraId": "contemporary",
+    "introducedBy": "jacques-derrida",
+    "summary": "Language cannot offer unmediated access to reality; meaning is perpetually deferred and defined only through relational differences across texts.",
+    "sepSlug": "derrida"
+  },
+  {
+    "id": "banality-of-evil",
+    "title": "The Banality of Evil",
+    "branch": "ethics",
+    "eraId": "contemporary",
+    "introducedBy": "hannah-arendt",
+    "summary": "Catastrophic moral atrocities are often committed not by demonic sadists, but by thoughtless conformists faithfully operating within bureaucratic systems.",
+    "sepSlug": "arendt"
+  },
+  {
+    "id": "veil-of-ignorance",
+    "title": "The Veil of Ignorance & Difference Principle",
+    "branch": "political",
+    "eraId": "contemporary",
+    "introducedBy": "john-rawls",
+    "summary": "Fair societal rules are designed when deciders do not know their own class, race, gender, or abilities in advance, ensuring protection for the least advantaged.",
+    "sepSlug": "rawls"
+  },
+  {
+    "id": "burnout-society",
+    "title": "The Burnout Society & Self-Exploitation",
+    "branch": "political",
+    "eraId": "contemporary",
+    "introducedBy": "byung-chul-han",
+    "summary": "The modern achievement subject exploits themselves under the illusion of freedom, producing psychic exhaustion, depression, and endless compulsive hyper-productivity.",
+    "sepSlug": "culture-cogsci"
+  },
+  {
+    "id": "simulation-argument",
+    "title": "The Simulation Argument",
+    "branch": "metaphysics",
+    "eraId": "contemporary",
+    "introducedBy": "nick-bostrom",
+    "summary": "Trilemma showing that at least one proposition is true: civilizations go extinct before technological maturity, mature civilizations don't run ancestor simulations, or we almost certainly live in a simulation.",
+    "sepSlug": "simulations"
+  }
+]
