@@ -131,4 +131,14 @@ describe('Philosophy Graph Data Integrity', () => {
     expect(kantDetails.successors.length).toBeGreaterThan(0);
     expect(kantDetails.media.length).toBeGreaterThan(0);
   });
+
+  it('verifies search query filtering on philosophers and concepts without throwing exceptions', () => {
+    const testQueries = ['kant', 'peirce', 'ontological', 'wager', 'butterfly', 'ego', 'forms', 'zeno', 'x'];
+    for (const q of testQueries) {
+      expect(() => {
+        const result = getVisualGraph({ searchQuery: q, includeConcepts: true });
+        expect(result.nodes).toBeDefined();
+      }).not.toThrow();
+    }
+  });
 });
