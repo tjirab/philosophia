@@ -334,146 +334,162 @@
   },
   {
     "id": "zenos-paradoxes",
-    "name": "Zeno's Paradoxes",
     "eraId": "pre-socratic",
     "introducedBy": "zeno-of-elea",
-    "description": "Dialectical arguments (Achilles and Tortoise, Arrow, Dichotomy) showing that treating space and time as infinitely divisible leads to contradictory physical impossibilities.",
     "sepSlug": "zeno-elea",
-    "importanceScore": 88
+    "importanceScore": 88,
+    "title": "Zeno's Paradoxes",
+    "summary": "Dialectical arguments (Achilles and Tortoise, Arrow, Dichotomy) showing that treating space and time as infinitely divisible leads to contradictory physical impossibilities.",
+    "branch": "logic"
   },
   {
     "id": "ren-and-li",
-    "name": "Ren & Li (Benevolence and Ritual)",
     "eraId": "eastern",
     "introducedBy": "confucius",
-    "description": "Core Confucian virtue matrix: Ren (inner benevolence, humaneness, and empathy) harmonized and realized through Li (social norms, ritual propriety, and moral respect).",
     "sepSlug": "confucius",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "title": "Ren & Li (Benevolence and Ritual)",
+    "summary": "Core Confucian virtue matrix: Ren (inner benevolence, humaneness, and empathy) harmonized and realized through Li (social norms, ritual propriety, and moral respect).",
+    "branch": "ethics"
   },
   {
     "id": "butterfly-dream",
-    "name": "The Butterfly Dream (Transformation of Things)",
     "eraId": "eastern",
     "introducedBy": "zhuangzi",
-    "description": "Zhuangzi's celebrated fable questioning whether he is a man dreaming he is a butterfly or a butterfly dreaming he is a man, exemplifying radical perspectivism and the transformation of things.",
     "sepSlug": "zhuangzi",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "title": "The Butterfly Dream (Transformation of Things)",
+    "summary": "Zhuangzi's celebrated fable questioning whether he is a man dreaming he is a butterfly or a butterfly dreaming he is a man, exemplifying radical perspectivism and the transformation of things.",
+    "branch": "epistemology"
   },
   {
     "id": "ontological-argument",
-    "name": "The Ontological Argument",
     "eraId": "medieval",
     "introducedBy": "anselm-of-canterbury",
-    "description": "A priori philosophical proof of God's existence proceeding from the definition of God as 'that than which nothing greater can be conceived', whose non-existence is a conceptual contradiction.",
     "sepSlug": "ontological-arguments",
-    "importanceScore": 95
+    "importanceScore": 95,
+    "title": "The Ontological Argument",
+    "summary": "A priori philosophical proof of God's existence proceeding from the definition of God as 'that than which nothing greater can be conceived', whose non-existence is a conceptual contradiction.",
+    "branch": "metaphysics"
   },
   {
     "id": "causal-occasionalism",
-    "name": "Incoherence of Necessary Causation",
     "eraId": "medieval",
     "introducedBy": "al-ghazali",
-    "description": "Epistemological doctrine that observed temporal conjunctions between events do not prove intrinsic or necessary causal power, anticipating modern skepticism of causality.",
     "sepSlug": "al-ghazali",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "title": "Incoherence of Necessary Causation",
+    "summary": "Epistemological doctrine that observed temporal conjunctions between events do not prove intrinsic or necessary causal power, anticipating modern skepticism of causality.",
+    "branch": "epistemology"
   },
   {
     "id": "negative-theology",
-    "name": "Negative Theology (Apophaticism)",
     "eraId": "medieval",
     "introducedBy": "moses-maimonides",
-    "description": "Epistemic stance that the divine essence cannot be described by positive attributes, and that God can only be accurately characterized by what God is not.",
     "sepSlug": "maimonides",
-    "importanceScore": 89
+    "importanceScore": 89,
+    "title": "Negative Theology (Apophaticism)",
+    "summary": "Epistemic stance that the divine essence cannot be described by positive attributes, and that God can only be accurately characterized by what God is not.",
+    "branch": "metaphysics"
   },
   {
     "id": "pyrrho-skeptical-doubt",
-    "name": "Pyrrhonian Essayistic Skepticism (Que sais-je?)",
     "eraId": "early-modern",
     "introducedBy": "michel-de-montaigne",
-    "description": "Suspension of dogmatic judgment (epoche) applied to human vanity, customs, and dogmas, prompting the birth of early modern methodological inquiry.",
     "sepSlug": "montaigne",
-    "importanceScore": 90
+    "importanceScore": 90,
+    "title": "Pyrrhonian Essayistic Skepticism (Que sais-je?)",
+    "summary": "Suspension of dogmatic judgment (epoche) applied to human vanity, customs, and dogmas, prompting the birth of early modern methodological inquiry.",
+    "branch": "epistemology"
   },
   {
     "id": "pascals-wager",
-    "name": "Pascal's Wager",
     "eraId": "early-modern",
     "introducedBy": "blaise-pascal",
-    "description": "Pragmatic decision-theoretic argument that rational self-interest mandates living as if God exists because the expected utility of belief is infinite compared to finite loss.",
     "sepSlug": "pascal-wager",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "title": "Pascal's Wager",
+    "summary": "Pragmatic decision-theoretic argument that rational self-interest mandates living as if God exists because the expected utility of belief is infinite compared to finite loss.",
+    "branch": "epistemology"
   },
   {
     "id": "self-positing-ego",
-    "name": "The Absolute Self-Positing Ego (Ich)",
     "eraId": "german-idealism",
     "introducedBy": "johann-gottlieb-fichte",
-    "description": "The foundational principle of Fichte's Wissenschaftslehre: consciousness begins with the pure practical act of the Ego positing its own existence through active moral striving.",
     "sepSlug": "johann-fichte",
-    "importanceScore": 89
+    "importanceScore": 89,
+    "title": "The Absolute Self-Positing Ego (Ich)",
+    "summary": "The foundational principle of Fichte's Wissenschaftslehre: consciousness begins with the pure practical act of the Ego positing its own existence through active moral striving.",
+    "branch": "metaphysics"
   },
   {
     "id": "naturphilosophie",
-    "name": "Naturphilosophie (Organic Nature as Unconscious Spirit)",
     "eraId": "german-idealism",
     "introducedBy": "friedrich-schelling",
-    "description": "Schellingian metaphysics asserting that nature is dynamic, living, unconscious spirit evolving toward conscious self-realization in human thought and artistic creation.",
     "sepSlug": "schelling",
-    "importanceScore": 89
+    "importanceScore": 89,
+    "title": "Naturphilosophie (Organic Nature as Unconscious Spirit)",
+    "summary": "Schellingian metaphysics asserting that nature is dynamic, living, unconscious spirit evolving toward conscious self-realization in human thought and artistic creation.",
+    "branch": "metaphysics"
   },
   {
     "id": "pragmatic-maxim",
-    "name": "The Pragmatic Maxim",
     "eraId": "nineteenth-century",
     "introducedBy": "charles-sanders-peirce",
-    "description": "Rule of clarification stating that the meaning of any intellectual conception consists entirely in the conceivable practical bearings and consequences of its object.",
     "sepSlug": "peirce",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "title": "The Pragmatic Maxim",
+    "summary": "Rule of clarification stating that the meaning of any intellectual conception consists entirely in the conceivable practical bearings and consequences of its object.",
+    "branch": "epistemology"
   },
   {
     "id": "sinn-und-bedeutung",
-    "name": "Sense and Reference (Sinn und Bedeutung)",
     "eraId": "nineteenth-century",
     "introducedBy": "gottlob-frege",
-    "description": "Semantic distinction between the sense (Sinn) of a linguistic expression (its mode of presentation) and its reference (Bedeutung) (the object or truth-value designated).",
     "sepSlug": "frege",
-    "importanceScore": 95
+    "importanceScore": 95,
+    "title": "Sense and Reference (Sinn und Bedeutung)",
+    "summary": "Semantic distinction between the sense (Sinn) of a linguistic expression (its mode of presentation) and its reference (Bedeutung) (the object or truth-value designated).",
+    "branch": "logic"
   },
   {
     "id": "face-of-the-other",
-    "name": "The Face of the Other (L'Autrui)",
     "eraId": "twentieth-century",
     "introducedBy": "emmanuel-levinas",
-    "description": "The primordial ethical experience of being confronted with the vulnerability, mortality, and non-violable moral demand ('Thou shalt not kill') of the human Other.",
     "sepSlug": "levinas",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "title": "The Face of the Other (L'Autrui)",
+    "summary": "The primordial ethical experience of being confronted with the vulnerability, mortality, and non-violable moral demand ('Thou shalt not kill') of the human Other.",
+    "branch": "ethics"
   },
   {
     "id": "embodied-perception",
-    "name": "The Primacy of Embodied Perception (Le Corps Propre)",
     "eraId": "twentieth-century",
     "introducedBy": "maurice-merleau-ponty",
-    "description": "Phenomenological discovery that human consciousness is fundamentally an embodied, incarnate presence dynamically embedded within the perceptual lifeworld.",
     "sepSlug": "merleau-ponty",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "title": "The Primacy of Embodied Perception (Le Corps Propre)",
+    "summary": "Phenomenological discovery that human consciousness is fundamentally an embodied, incarnate presence dynamically embedded within the perceptual lifeworld.",
+    "branch": "mind"
   },
   {
     "id": "communicative-action",
-    "name": "Communicative Action & Discourse Ethics",
     "eraId": "contemporary",
     "introducedBy": "jurgen-habermas",
-    "description": "Social interaction oriented toward mutual consensus and uncoerced understanding, grounding moral and democratic legitimacy in open public discourse.",
     "sepSlug": "habermas",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "title": "Communicative Action & Discourse Ethics",
+    "summary": "Social interaction oriented toward mutual consensus and uncoerced understanding, grounding moral and democratic legitimacy in open public discourse.",
+    "branch": "political"
   },
   {
     "id": "psychological-reductionism",
-    "name": "Psychological Reductionism of Personal Identity",
     "eraId": "contemporary",
     "introducedBy": "derek-parfit",
-    "description": "Parfitian thesis that personal identity across time is not a deep, indivisible Cartesian soul, but consists merely in overlapping chains of psychological connectedness and memory.",
     "sepSlug": "identity-personal",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "title": "Psychological Reductionism of Personal Identity",
+    "summary": "Parfitian thesis that personal identity across time is not a deep, indivisible Cartesian soul, but consists merely in overlapping chains of psychological connectedness and memory.",
+    "branch": "mind"
   }
 ]

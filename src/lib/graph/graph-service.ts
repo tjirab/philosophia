@@ -131,13 +131,13 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     const era = eraMap.get(c.eraId);
     nodes.push({
       id: c.id,
-      name: c.title,
+      name: c.title || (c as any).name || c.id,
       type: 'concept',
       eraId: c.eraId,
       branch: c.branch,
       importanceScore: 50,
       color: era?.color ? `${era.color}cc` : '#94a3b8',
-      summary: c.summary,
+      summary: c.summary || (c as any).description || '',
       data: c,
       val: 6,
     });
