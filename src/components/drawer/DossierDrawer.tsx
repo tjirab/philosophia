@@ -12,9 +12,11 @@ import {
   GitFork,
   Calendar,
   Compass,
+  Bookmark,
+  FileText,
 } from 'lucide-react';
 import { getNodeDetails } from '../../lib/graph/graph-service';
-import { Philosopher, Concept } from '../../lib/types';
+import { Philosopher, Concept, KeyWork } from '../../lib/types';
 import { AudioPlayer } from '../audio/AudioPlayer';
 
 interface DossierDrawerProps {
@@ -30,7 +32,7 @@ export function DossierDrawer({
   onSelectNode,
   onTracePath,
 }: DossierDrawerProps) {
-  const [activeTab, setActiveTab] = useState<'overview' | 'audio' | 'sep' | 'influence'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'works' | 'audio' | 'sep' | 'influence'>('overview');
 
   if (!selectedNodeId) return null;
 
@@ -49,77 +51,103 @@ export function DossierDrawer({
     return y < 0 ? `${Math.abs(y)} BCE` : `${y} CE`;
   };
 
+  const keyWorks: KeyWork[] = isPhilosopher && phil?.keyWorks
+    ? phil.keyWorks.map((w) =>
+        typeof w === 'string'
+          ? {
+              title: w,
+              url: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(w)}`,
+              wikipediaUrl: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(w)}`,
+            }
+          : w
+      )
+    : [];
+
   return (
-    <div className="fixed inset-y-0 right-0 z-50 w-full sm:w-[480px] lg:w-[540px] bg-slate-950/95 border-l border-slate-800 backdrop-blur-xl shadow-2xl flex flex-col transition-all duration-300">
+    <div className="fixed inset-y-0 right-0 z-50 w-full sm:w-[500px] lg:w-[560px] bg-[#12100d]/95 border-l border-[#3d3328] backdrop-blur-xl shadow-2xl flex flex-col transition-all duration-300 text-[#f4efe6] font-serif">
       {/* Header */}
-      <div className="p-6 border-b border-slate-800/80 relative">
+      <div className="p-6 border-b border-[#2a241e] relative bg-[#171411]">
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition"
+          className="absolute top-5 right-5 p-2 text-[#a89b88] hover:text-[#f5f0e6] rounded-lg hover:bg-[#25201a] transition"
           aria-label="Close dossier"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <div className="flex items-center gap-2 mb-2">
+        <div className="flex items-center gap-2 mb-2 flex-wrap">
           {details.era && (
             <span
-              className="text-xs font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider text-white"
+              className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider text-white shadow-sm"
               style={{ backgroundColor: details.era.color }}
             >
               {details.era.name}
             </span>
           )}
           {details.tradition && (
-            <span className="text-xs px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+            <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[#25201a] text-[#c59b27] border border-[#3d3328]">
               {details.tradition.name}
             </span>
           )}
           {conc && (
-            <span className="text-xs px-2.5 py-0.5 rounded-full bg-indigo-900/60 text-indigo-300 border border-indigo-700/50 uppercase font-mono">
+            <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[#201d18] text-[#e5b94c] border border-[#4a3b25] uppercase font-mono">
               {conc.branch}
             </span>
           )}
         </div>
 
-        <h2 className="text-2xl font-bold text-slate-50 tracking-tight">
+        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#f5f0e6] tracking-tight">
           {isPhilosopher ? phil?.name : conc?.title}
         </h2>
 
         {isPhilosopher && phil && (
-          <div className="flex items-center gap-4 text-xs text-slate-400 mt-1">
-            <span className="flex items-center gap-1">
-              <Calendar className="w-3.5 h-3.5 text-slate-500" />
+          <div className="flex items-center gap-4 text-xs text-[#a89b88] mt-2">
+            <span className="flex items-center gap-1.5 font-mono">
+              <Calendar className="w-3.5 h-3.5 text-[#c59b27]" />
               {formatYear(phil.birthYear)} – {formatYear(phil.deathYear)}
             </span>
-            <span className="flex items-center gap-1">
-              <Compass className="w-3.5 h-3.5 text-slate-500" />
+            <span className="flex items-center gap-1.5">
+              <Compass className="w-3.5 h-3.5 text-[#c59b27]" />
               Centrality: {phil.importanceScore}/100
             </span>
           </div>
         )}
       </div>
 
-      {/* Tabs */}
-      <div className="flex border-b border-slate-800 bg-slate-900/50 px-6">
+      {/* Classical Tab Navigation */}
+      <div className="flex border-b border-[#2a241e] bg-[#171411]/80 px-6 overflow-x-auto no-scrollbar">
         <button
           onClick={() => setActiveTab('overview')}
-          className={`py-3 px-3 text-xs font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
+          className={`py-3 px-3 text-xs font-semibold border-b-2 whitespace-nowrap transition-colors flex items-center gap-1.5 ${
             activeTab === 'overview'
-              ? 'border-indigo-500 text-indigo-400'
-              : 'border-transparent text-slate-400 hover:text-slate-200'
+              ? 'border-[#c59b27] text-[#e5b94c]'
+              : 'border-transparent text-[#a89b88] hover:text-[#f5f0e6]'
           }`}
         >
           <Sparkles className="w-3.5 h-3.5" />
           Overview
         </button>
 
+        {isPhilosopher && (
+          <button
+            onClick={() => setActiveTab('works')}
+            className={`py-3 px-3 text-xs font-semibold border-b-2 whitespace-nowrap transition-colors flex items-center gap-1.5 ${
+              activeTab === 'works'
+                ? 'border-[#c59b27] text-[#e5b94c]'
+                : 'border-transparent text-[#a89b88] hover:text-[#f5f0e6]'
+            }`}
+          >
+            <BookOpen className="w-3.5 h-3.5" />
+            Key Texts ({keyWorks.length})
+          </button>
+        )}
+
         <button
           onClick={() => setActiveTab('audio')}
-          className={`py-3 px-3 text-xs font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
+          className={`py-3 px-3 text-xs font-semibold border-b-2 whitespace-nowrap transition-colors flex items-center gap-1.5 ${
             activeTab === 'audio'
-              ? 'border-indigo-500 text-indigo-400'
-              : 'border-transparent text-slate-400 hover:text-slate-200'
+              ? 'border-[#c59b27] text-[#e5b94c]'
+              : 'border-transparent text-[#a89b88] hover:text-[#f5f0e6]'
           }`}
         >
           <Headphones className="w-3.5 h-3.5" />
@@ -128,22 +156,22 @@ export function DossierDrawer({
 
         <button
           onClick={() => setActiveTab('sep')}
-          className={`py-3 px-3 text-xs font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
+          className={`py-3 px-3 text-xs font-semibold border-b-2 whitespace-nowrap transition-colors flex items-center gap-1.5 ${
             activeTab === 'sep'
-              ? 'border-indigo-500 text-indigo-400'
-              : 'border-transparent text-slate-400 hover:text-slate-200'
+              ? 'border-[#c59b27] text-[#e5b94c]'
+              : 'border-transparent text-[#a89b88] hover:text-[#f5f0e6]'
           }`}
         >
-          <BookOpen className="w-3.5 h-3.5" />
+          <FileText className="w-3.5 h-3.5" />
           SEP Encyclopedia
         </button>
 
         <button
           onClick={() => setActiveTab('influence')}
-          className={`py-3 px-3 text-xs font-medium border-b-2 transition-colors flex items-center gap-1.5 ${
+          className={`py-3 px-3 text-xs font-semibold border-b-2 whitespace-nowrap transition-colors flex items-center gap-1.5 ${
             activeTab === 'influence'
-              ? 'border-indigo-500 text-indigo-400'
-              : 'border-transparent text-slate-400 hover:text-slate-200'
+              ? 'border-[#c59b27] text-[#e5b94c]'
+              : 'border-transparent text-[#a89b88] hover:text-[#f5f0e6]'
           }`}
         >
           <GitFork className="w-3.5 h-3.5" />
@@ -156,66 +184,114 @@ export function DossierDrawer({
         {activeTab === 'overview' && (
           <div className="space-y-6">
             {isPhilosopher && phil?.centralQuestion && (
-              <div className="p-4 rounded-xl bg-indigo-950/30 border border-indigo-500/30 text-indigo-200">
-                <div className="text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">
-                  Central Philosophical Question
+              <div className="p-4 rounded-xl bg-[#1f1a14] border border-[#3d3328] text-[#f4efe6]">
+                <div className="text-[11px] font-semibold uppercase tracking-widest text-[#c59b27] mb-1">
+                  Central Philosophical Inquiry
                 </div>
-                <div className="text-sm font-serif italic">
+                <div className="text-sm font-serif italic leading-relaxed text-[#e8ded1]">
                   &ldquo;{phil.centralQuestion}&rdquo;
                 </div>
               </div>
             )}
 
             <div>
-              <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+              <h3 className="text-xs font-semibold text-[#c59b27] uppercase tracking-widest mb-2">
                 Synopsis
               </h3>
-              <p className="text-sm text-slate-300 leading-relaxed">
+              <p className="text-sm text-[#d8cfc0] leading-relaxed font-serif">
                 {isPhilosopher ? phil?.shortBio : conc?.summary}
               </p>
             </div>
-
-            {isPhilosopher && phil?.keyWorks && phil.keyWorks.length > 0 && (
-              <div>
-                <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
-                  Key Texts & Major Works
-                </h3>
-                <ul className="space-y-1.5">
-                  {phil.keyWorks.map((work, idx) => (
-                    <li
-                      key={idx}
-                      className="text-xs font-medium text-slate-200 flex items-center gap-2 p-2 rounded-lg bg-slate-900 border border-slate-800"
-                    >
-                      <BookOpen className="w-3.5 h-3.5 text-indigo-400" />
-                      {work}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
 
             {/* Quick Action: Trace Path */}
             <div className="pt-2">
               <button
                 onClick={() => onTracePath(selectedNodeId)}
-                className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-slate-900 hover:bg-slate-800 text-indigo-400 hover:text-indigo-300 border border-indigo-500/30 rounded-xl text-xs font-medium transition"
+                className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-[#1a1714] hover:bg-[#25201a] text-[#e5b94c] border border-[#4a3b25] rounded-xl text-xs font-semibold transition"
               >
-                <GitFork className="w-4 h-4" />
-                Trace Influence Path From {isPhilosopher ? phil?.name : conc?.title}...
+                <GitFork className="w-4 h-4 text-[#c59b27]" />
+                Trace Lineage Path From {isPhilosopher ? phil?.name : conc?.title}...
               </button>
             </div>
           </div>
         )}
 
+        {/* Tab 2: Key Works & Primary Texts */}
+        {activeTab === 'works' && (
+          <div className="space-y-4">
+            <div className="text-xs text-[#a89b88] leading-relaxed">
+              Canonical editions, direct online texts, Wikipedia analyses, and academic citations.
+            </div>
+
+            <div className="space-y-3">
+              {keyWorks.map((work, idx) => (
+                <div
+                  key={idx}
+                  className="p-4 rounded-xl bg-[#1a1714] border border-[#2a241e] hover:border-[#3d3328] transition space-y-2.5"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <h4 className="text-sm font-bold text-[#f5f0e6]">
+                        {work.title}
+                      </h4>
+                      {work.year && (
+                        <div className="text-[11px] font-mono text-[#a89b88] mt-0.5">
+                          Published: {work.year}
+                        </div>
+                      )}
+                    </div>
+                    {work.isbn && (
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#25201a] text-[#c59b27] border border-[#3d3328] whitespace-nowrap">
+                        ISBN {work.isbn}
+                      </span>
+                    )}
+                  </div>
+
+                  {work.description && (
+                    <p className="text-xs text-[#d8cfc0] leading-relaxed">
+                      {work.description}
+                    </p>
+                  )}
+
+                  <div className="pt-2 border-t border-[#25201a] flex items-center gap-3 text-xs">
+                    {work.url && (
+                      <a
+                        href={work.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1.5 text-[#e5b94c] hover:underline font-semibold"
+                      >
+                        <BookOpen className="w-3.5 h-3.5" />
+                        Read Primary Text <ExternalLink className="w-3 h-3 ml-0.5" />
+                      </a>
+                    )}
+                    {work.wikipediaUrl && (
+                      <a
+                        href={work.wikipediaUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 text-[#a89b88] hover:text-[#f5f0e6] transition"
+                      >
+                        Wikipedia Entry <ExternalLink className="w-3 h-3 ml-0.5" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Tab 3: Podcasts */}
         {activeTab === 'audio' && (
           <div className="space-y-4">
-            <div className="text-xs text-slate-400">
+            <div className="text-xs text-[#a89b88] leading-relaxed">
               Listen to episodes from Stephen West&apos;s <em>Philosophize This!</em> covering this thinker.
             </div>
 
             {podcasts.length === 0 ? (
-              <div className="p-8 text-center text-slate-500 border border-dashed border-slate-800 rounded-xl">
-                No direct podcast episodes mapped yet. Check the SEP tab for deep reference.
+              <div className="p-8 text-center text-[#786c5c] border border-dashed border-[#2a241e] rounded-xl text-xs">
+                No direct podcast episode matched for this node. Check the SEP tab for canonical analysis.
               </div>
             ) : (
               podcasts.map((ep) => (
@@ -228,20 +304,20 @@ export function DossierDrawer({
                       duration={ep.duration}
                     />
                   ) : (
-                    <div className="p-4 bg-slate-900 border border-slate-800 rounded-xl">
-                      <div className="text-sm font-semibold text-slate-200">{ep.title}</div>
+                    <div className="p-4 bg-[#1a1714] border border-[#2a241e] rounded-xl">
+                      <div className="text-sm font-semibold text-[#f5f0e6]">{ep.title}</div>
                       <a
                         href={ep.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-flex items-center gap-1.5 text-xs text-indigo-400 hover:text-indigo-300 mt-2"
+                        className="inline-flex items-center gap-1.5 text-xs text-[#e5b94c] hover:underline mt-2"
                       >
                         Listen on PhilosophizeThis.org <ExternalLink className="w-3 h-3" />
                       </a>
                     </div>
                   )}
                   {ep.summary && (
-                    <p className="text-xs text-slate-400 px-1 leading-relaxed">
+                    <p className="text-xs text-[#a89b88] px-1 leading-relaxed">
                       {ep.summary}
                     </p>
                   )}
@@ -251,23 +327,24 @@ export function DossierDrawer({
           </div>
         )}
 
+        {/* Tab 4: Stanford Encyclopedia */}
         {activeTab === 'sep' && (
           <div className="space-y-4">
-            <div className="text-xs text-slate-400">
+            <div className="text-xs text-[#a89b88] leading-relaxed">
               Peer-reviewed, canonical academic philosophy reference from Stanford University.
             </div>
 
             {sepResources.map((res) => (
               <div
                 key={res.id}
-                className="p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition"
+                className="p-5 rounded-xl bg-[#1a1714] border border-[#2a241e] space-y-3"
               >
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <span className="text-[10px] font-mono uppercase bg-emerald-950 text-emerald-400 border border-emerald-800/40 px-2 py-0.5 rounded">
+                    <span className="text-[10px] font-mono uppercase bg-[#1e2a22] text-[#52b788] border border-[#2d4a36] px-2 py-0.5 rounded">
                       Canonical Reference
                     </span>
-                    <h4 className="text-sm font-semibold text-slate-100 mt-2">
+                    <h4 className="text-sm font-bold text-[#f5f0e6] mt-2">
                       {res.title}
                     </h4>
                   </div>
@@ -275,24 +352,24 @@ export function DossierDrawer({
                     href={res.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-2 text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 rounded-lg transition"
+                    className="p-2 text-[#a89b88] hover:text-[#f5f0e6] bg-[#25201a] hover:bg-[#302920] rounded-lg transition"
                     title="Open in Stanford Encyclopedia of Philosophy"
                   >
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
 
-                <p className="text-xs text-slate-300 mt-3 leading-relaxed">
+                <p className="text-xs text-[#d8cfc0] leading-relaxed">
                   {res.summary}
                 </p>
 
-                <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-500">
-                  <span>Author: {res.creator || 'Stanford Encyclopedia Faculty'}</span>
+                <div className="pt-3 border-t border-[#25201a] flex items-center justify-between text-xs text-[#a89b88]">
+                  <span>Faculty: {res.creator || 'Stanford University'}</span>
                   <a
                     href={res.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-emerald-400 hover:underline flex items-center gap-1"
+                    className="text-[#52b788] hover:underline flex items-center gap-1 font-semibold"
                   >
                     Read on plato.stanford.edu &rarr;
                   </a>
@@ -301,18 +378,18 @@ export function DossierDrawer({
             ))}
 
             {sepResources.length === 0 && (details.node as any).sepSlug && (
-              <div className="p-5 rounded-xl bg-slate-900 border border-slate-800">
-                <h4 className="text-sm font-semibold text-slate-100">
+              <div className="p-5 rounded-xl bg-[#1a1714] border border-[#2a241e]">
+                <h4 className="text-sm font-semibold text-[#f5f0e6]">
                   Stanford Encyclopedia Entry
                 </h4>
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-xs text-[#a89b88] mt-1">
                   Canonical article available at Stanford Encyclopedia of Philosophy.
                 </p>
                 <a
                   href={`https://plato.stanford.edu/entries/${(details.node as any).sepSlug}/`}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-900/40 text-emerald-300 border border-emerald-700/50 rounded-lg text-xs font-medium hover:bg-emerald-900/60 transition"
+                  className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#1e2a22] text-[#52b788] border border-[#2d4a36] rounded-lg text-xs font-semibold hover:bg-[#283b30] transition"
                 >
                   Visit SEP Entry <ExternalLink className="w-3.5 h-3.5" />
                 </a>
@@ -321,17 +398,18 @@ export function DossierDrawer({
           </div>
         )}
 
+        {/* Tab 5: Influence Connections */}
         {activeTab === 'influence' && (
           <div className="space-y-6">
             {/* Predecessors */}
             <div>
-              <div className="flex items-center gap-2 text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
-                <ArrowLeft className="w-3.5 h-3.5 text-amber-400" />
+              <div className="flex items-center gap-2 text-xs font-semibold text-[#c59b27] uppercase tracking-widest mb-3">
+                <ArrowLeft className="w-3.5 h-3.5" />
                 Influenced By ({details.predecessors.length})
               </div>
 
               {details.predecessors.length === 0 ? (
-                <div className="text-xs text-slate-500 italic p-3 bg-slate-900/40 rounded-lg">
+                <div className="text-xs text-[#786c5c] italic p-3 bg-[#171411] rounded-lg">
                   No direct predecessors recorded (original foundational thinker).
                 </div>
               ) : (
@@ -340,17 +418,17 @@ export function DossierDrawer({
                     <div
                       key={edge.source}
                       onClick={() => onSelectNode(node.id)}
-                      className="p-3 bg-slate-900 hover:bg-slate-800/80 border border-slate-800 hover:border-indigo-500/50 rounded-xl cursor-pointer transition group"
+                      className="p-3 bg-[#1a1714] hover:bg-[#25201a] border border-[#2a241e] hover:border-[#c59b27]/50 rounded-xl cursor-pointer transition group"
                     >
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-semibold text-slate-200 group-hover:text-indigo-400 transition">
+                        <span className="text-xs font-bold text-[#f5f0e6] group-hover:text-[#e5b94c] transition">
                           {(node as any).name || (node as any).title}
                         </span>
-                        <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-slate-800 text-slate-400">
+                        <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-[#25201a] text-[#c59b27] border border-[#3d3328]">
                           {edge.type}
                         </span>
                       </div>
-                      <p className="text-xs text-slate-400 mt-1.5 leading-snug">
+                      <p className="text-xs text-[#a89b88] mt-1.5 leading-snug">
                         {edge.label}
                       </p>
                     </div>
@@ -361,13 +439,13 @@ export function DossierDrawer({
 
             {/* Successors */}
             <div>
-              <div className="flex items-center gap-2 text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
-                <ArrowRight className="w-3.5 h-3.5 text-indigo-400" />
+              <div className="flex items-center gap-2 text-xs font-semibold text-[#c59b27] uppercase tracking-widest mb-3">
+                <ArrowRight className="w-3.5 h-3.5" />
                 Influenced Later Thinkers ({details.successors.length})
               </div>
 
               {details.successors.length === 0 ? (
-                <div className="text-xs text-slate-500 italic p-3 bg-slate-900/40 rounded-lg">
+                <div className="text-xs text-[#786c5c] italic p-3 bg-[#171411] rounded-lg">
                   No downstream successors currently recorded in dataset.
                 </div>
               ) : (
@@ -376,17 +454,17 @@ export function DossierDrawer({
                     <div
                       key={edge.target}
                       onClick={() => onSelectNode(node.id)}
-                      className="p-3 bg-slate-900 hover:bg-slate-800/80 border border-slate-800 hover:border-indigo-500/50 rounded-xl cursor-pointer transition group"
+                      className="p-3 bg-[#1a1714] hover:bg-[#25201a] border border-[#2a241e] hover:border-[#c59b27]/50 rounded-xl cursor-pointer transition group"
                     >
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-semibold text-slate-200 group-hover:text-indigo-400 transition">
+                        <span className="text-xs font-bold text-[#f5f0e6] group-hover:text-[#e5b94c] transition">
                           {(node as any).name || (node as any).title}
                         </span>
-                        <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-slate-800 text-slate-400">
+                        <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-[#25201a] text-[#c59b27] border border-[#3d3328]">
                           {edge.type}
                         </span>
                       </div>
-                      <p className="text-xs text-slate-400 mt-1.5 leading-snug">
+                      <p className="text-xs text-[#a89b88] mt-1.5 leading-snug">
                         {edge.label}
                       </p>
                     </div>

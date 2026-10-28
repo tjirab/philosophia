@@ -90,7 +90,10 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
         p.name.toLowerCase().includes(q) ||
         p.shortBio.toLowerCase().includes(q) ||
         p.centralQuestion.toLowerCase().includes(q) ||
-        p.keyWorks.some((w) => w.toLowerCase().includes(q))
+        p.keyWorks.some((w) => {
+          const title = typeof w === 'string' ? w : w.title;
+          return title.toLowerCase().includes(q);
+        })
     );
     filteredConcepts = filteredConcepts.filter(
       (c) =>

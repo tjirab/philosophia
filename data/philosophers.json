@@ -8,7 +8,15 @@
     "traditionId": "milesian",
     "shortBio": "Considered the first Western philosopher, proposing naturalistic explanations for the cosmos rather than mythical ones.",
     "centralQuestion": "What is the primary substance (arche) underlying all change?",
-    "keyWorks": ["On the Solstice and Equinox"],
+    "keyWorks": [
+      {
+        "title": "On the Solstice and Equinox",
+        "year": "624 BCE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Solstice%20and%20Equinox",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Solstice%20and%20Equinox",
+        "description": "Major work by Thales of Miletus."
+      }
+    ],
     "sepSlug": "presocratics",
     "importanceScore": 60
   },
@@ -21,7 +29,15 @@
     "traditionId": "milesian",
     "shortBio": "Known as 'The Obscure', famous for his doctrine that universal flux is governed by an underlying cosmic Logos.",
     "centralQuestion": "How does unity emerge from perpetual change and strife?",
-    "keyWorks": ["Fragments (On Nature)"],
+    "keyWorks": [
+      {
+        "title": "Fragments (On Nature)",
+        "year": "535 BCE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Fragments%20(On%20Nature)",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Fragments%20(On%20Nature)",
+        "description": "Major work by Heraclitus of Ephesus."
+      }
+    ],
     "sepSlug": "heraclitus",
     "importanceScore": 75
   },
@@ -34,7 +50,15 @@
     "traditionId": "eleatic",
     "shortBio": "Founder of Eleatic metaphysics; argued through pure deductive logic that Being is singular, eternal, and change is an illusion.",
     "centralQuestion": "What does reason prove about the nature of What-Is versus What-Is-Not?",
-    "keyWorks": ["On Nature (Poem)"],
+    "keyWorks": [
+      {
+        "title": "On Nature (Poem)",
+        "year": "515 BCE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20Nature%20(Poem)",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20Nature%20(Poem)",
+        "description": "Major work by Parmenides of Elea."
+      }
+    ],
     "sepSlug": "parmenides",
     "importanceScore": 80
   },
@@ -47,7 +71,15 @@
     "traditionId": "atomism",
     "shortBio": "The 'Laughing Philosopher' who pioneered the mechanical atomic theory of matter moving through void space.",
     "centralQuestion": "Can macroscopic reality be reduced to indivisible physical units?",
-    "keyWorks": ["The Great Diakosmos"],
+    "keyWorks": [
+      {
+        "title": "The Great Diakosmos",
+        "year": "460 BCE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Great%20Diakosmos",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Great%20Diakosmos",
+        "description": "Major work by Democritus."
+      }
+    ],
     "sepSlug": "democritus",
     "importanceScore": 70
   },
@@ -60,7 +92,15 @@
     "traditionId": "platonism",
     "shortBio": "Athenian street philosopher who redirected philosophy from cosmology to human ethics and self-examination via the elenchus dialectic.",
     "centralQuestion": "What is virtue, and how should one live an examined life?",
-    "keyWorks": ["Oral teaching recorded by Plato and Xenophon"],
+    "keyWorks": [
+      {
+        "title": "Oral teaching recorded by Plato and Xenophon",
+        "year": "470 BCE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Oral%20teaching%20recorded%20by%20Plato%20and%20Xenophon",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Oral%20teaching%20recorded%20by%20Plato%20and%20Xenophon",
+        "description": "Major work by Socrates."
+      }
+    ],
     "sepSlug": "socrates",
     "importanceScore": 98
   },
@@ -73,7 +113,48 @@
     "traditionId": "platonism",
     "shortBio": "Founder of the Academy in Athens. Developed the Theory of Forms, the Allegory of the Cave, and ideal political constitutions.",
     "centralQuestion": "What is the true nature of reality, justice, and the immortal soul?",
-    "keyWorks": ["The Republic", "Symposium", "Phaedo", "Timaeus", "Meno"],
+    "keyWorks": [
+      {
+        "title": "The Republic",
+        "year": "-375 BCE",
+        "url": "https://standardebooks.org/ebooks/plato/the-republic/benjamin-jowett",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Republic_(Plato)",
+        "isbn": "978-0140455113",
+        "description": "Socratic dialogue on justice, the ideal city-state, the Allegory of the Cave, and the philosopher-king."
+      },
+      {
+        "title": "Symposium",
+        "year": "-385 BCE",
+        "url": "https://classics.mit.edu/Plato/symposium.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Symposium_(Plato)",
+        "isbn": "978-0872200760",
+        "description": "Dialogue exploring the nature and origin of Eros (love) and the ascent to the Form of Beauty."
+      },
+      {
+        "title": "Phaedo",
+        "year": "-360 BCE",
+        "url": "https://classics.mit.edu/Plato/phaedo.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Phaedo",
+        "isbn": "978-0199538935",
+        "description": "Recounts Socrates' final hours in prison, arguing for the immortality of the soul and the Theory of Forms."
+      },
+      {
+        "title": "Timaeus",
+        "year": "-360 BCE",
+        "url": "https://classics.mit.edu/Plato/timaeus.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Timaeus_(dialogue)",
+        "isbn": "978-0872204461",
+        "description": "Plato's speculative cosmology describing the Demiurge fashioning the cosmos according to eternal Forms."
+      },
+      {
+        "title": "Meno",
+        "year": "-380 BCE",
+        "url": "https://classics.mit.edu/Plato/meno.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Meno",
+        "isbn": "978-0872203525",
+        "description": "Investigates whether virtue can be taught, introducing the theory of recollection (anamnesis)."
+      }
+    ],
     "sepSlug": "plato",
     "importanceScore": 100
   },
@@ -86,7 +167,48 @@
     "traditionId": "aristotelianism",
     "shortBio": "Plato's greatest student and tutor to Alexander the Great. Systematized logic, biology, physics, metaphysics, and teleological virtue ethics.",
     "centralQuestion": "What is the telos (purpose) of things, and what constitutes human flourishing (eudaimonia)?",
-    "keyWorks": ["Nicomachean Ethics", "Metaphysics", "Politics", "De Anima", "Organon"],
+    "keyWorks": [
+      {
+        "title": "Nicomachean Ethics",
+        "year": "-350 BCE",
+        "url": "https://classics.mit.edu/Aristotle/nicomachaen.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Nicomachean_Ethics",
+        "isbn": "978-0140449495",
+        "description": "Foundational treatise on virtue ethics, the Golden Mean, and human flourishing (eudaimonia)."
+      },
+      {
+        "title": "Metaphysics",
+        "year": "-350 BCE",
+        "url": "https://classics.mit.edu/Aristotle/metaphysics.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Metaphysics_(Aristotle)",
+        "isbn": "978-0140446197",
+        "description": "Inquiry into 'Being qua Being', substance, potentiality and actuality, and the Unmoved Mover."
+      },
+      {
+        "title": "Politics",
+        "year": "-350 BCE",
+        "url": "https://classics.mit.edu/Aristotle/politics.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Politics_(Aristotle)",
+        "isbn": "978-0199538737",
+        "description": "Examination of political constitutions, citizenship, and man as inherently a 'political animal'."
+      },
+      {
+        "title": "De Anima",
+        "year": "-350 BCE",
+        "url": "https://classics.mit.edu/Aristotle/soul.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/On_the_Soul",
+        "isbn": "978-0140444711",
+        "description": "Aristotle's psychology: the soul as the formal actuality of an organic physical body."
+      },
+      {
+        "title": "Organon",
+        "year": "-350 BCE",
+        "url": "https://en.wikipedia.org/wiki/Organon",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Organon",
+        "isbn": "978-0674993594",
+        "description": "The six treatises establishing categorical logic and the deductive syllogism."
+      }
+    ],
     "sepSlug": "aristotle",
     "importanceScore": 100
   },
@@ -99,7 +221,22 @@
     "traditionId": "epicureanism",
     "shortBio": "Founded The Garden. Taught that the greatest good is tranquility (ataraxia) and freedom from fear of death and gods.",
     "centralQuestion": "How do we attain peace of mind through modest desires and true friendship?",
-    "keyWorks": ["Letter to Menoeceus", "Principal Doctrines"],
+    "keyWorks": [
+      {
+        "title": "Letter to Menoeceus",
+        "year": "341 BCE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Letter%20to%20Menoeceus",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Letter%20to%20Menoeceus",
+        "description": "Major work by Epicurus."
+      },
+      {
+        "title": "Principal Doctrines",
+        "year": "341 BCE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Principal%20Doctrines",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Principal%20Doctrines",
+        "description": "Major work by Epicurus."
+      }
+    ],
     "sepSlug": "epicurus",
     "importanceScore": 82
   },
@@ -112,7 +249,32 @@
     "traditionId": "stoicism",
     "shortBio": "Roman Stoic statesman, playwright, and advisor to Nero. Wrote profoundly practical treatises on anger, brevity of life, and resilience.",
     "centralQuestion": "How do we live with dignity and serenity amid political chaos and mortality?",
-    "keyWorks": ["Letters from a Stoic (Epistulae Morales)", "On the Shortness of Life", "On Anger"],
+    "keyWorks": [
+      {
+        "title": "Letters from a Stoic (Epistulae Morales)",
+        "year": "65 CE",
+        "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Epistulae_Morales_ad_Lucilium",
+        "isbn": "978-0140442106",
+        "description": "124 letters advising Lucilius on practical Stoic wisdom, overcoming fear of death, and resilience."
+      },
+      {
+        "title": "On the Shortness of Life",
+        "year": "49 CE",
+        "url": "https://en.wikisource.org/wiki/On_the_shortness_of_life",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/De_Brevitate_Vitae_(Seneca)",
+        "isbn": "978-0143036326",
+        "description": "Essay asserting life is long if spent wisely, but short if squandered on frivolous ambition."
+      },
+      {
+        "title": "On Anger",
+        "year": "41 CE",
+        "url": "https://en.wikisource.org/wiki/Of_Anger",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/De_Ira",
+        "isbn": "978-0226748412",
+        "description": "Stoic psychological analysis of anger as temporary madness and how reason can extinguish it."
+      }
+    ],
     "sepSlug": "seneca",
     "importanceScore": 85
   },
@@ -125,7 +287,24 @@
     "traditionId": "stoicism",
     "shortBio": "Born a slave in Hierapolis, Epictetus taught that mental freedom comes from distinguishing what is within our control from what is not.",
     "centralQuestion": "What is in our power, and how do we master our own judgments?",
-    "keyWorks": ["Discourses", "Enchiridion (Handbook)"],
+    "keyWorks": [
+      {
+        "title": "Discourses",
+        "year": "108 CE",
+        "url": "https://classics.mit.edu/Epictetus/discourses.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Discourses_of_Epictetus",
+        "isbn": "978-0199595181",
+        "description": "Informal lectures recorded by Arrian on Stoic ethics and the Dichotomy of Control."
+      },
+      {
+        "title": "Enchiridion (Handbook)",
+        "year": "125 CE",
+        "url": "https://classics.mit.edu/Epictetus/epicench.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus",
+        "isbn": "978-0486433592",
+        "description": "Concise practical handbook of Stoic advice for mental tranquility and moral freedom."
+      }
+    ],
     "sepSlug": "epictetus",
     "importanceScore": 86
   },
@@ -138,7 +317,16 @@
     "traditionId": "stoicism",
     "shortBio": "Roman Emperor and last of the Five Good Emperors. Recorded private journal meditations on duty, death, and cosmological solidarity.",
     "centralQuestion": "How does one rule an empire while keeping the soul uncorrupted and aligned with nature?",
-    "keyWorks": ["Meditations"],
+    "keyWorks": [
+      {
+        "title": "Meditations",
+        "year": "175 CE",
+        "url": "https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Meditations",
+        "isbn": "978-0812968255",
+        "description": "Private spiritual journal of Roman Emperor Marcus Aurelius on duty, nature, and virtue."
+      }
+    ],
     "sepSlug": "marcus-aurelius",
     "importanceScore": 90
   },
@@ -151,7 +339,15 @@
     "traditionId": "skepticism",
     "shortBio": "Pioneer of Skepticism; traveled to India with Alexander. Held that things are indifferently indeterminable, advocating epoche.",
     "centralQuestion": "Can peace of mind be attained by withholding all dogmatic belief?",
-    "keyWorks": ["Oral tradition recorded by Timon and Sextus Empiricus"],
+    "keyWorks": [
+      {
+        "title": "Oral tradition recorded by Timon and Sextus Empiricus",
+        "year": "360 BCE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Oral%20tradition%20recorded%20by%20Timon%20and%20Sextus%20Empiricus",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Oral%20tradition%20recorded%20by%20Timon%20and%20Sextus%20Empiricus",
+        "description": "Major work by Pyrrho of Elis."
+      }
+    ],
     "sepSlug": "pyrrho",
     "importanceScore": 72
   },
@@ -164,7 +360,15 @@
     "traditionId": "neoplatonism",
     "shortBio": "Architect of Neoplatonism; described reality as a luminous cascade emanating from the transcendent 'One' down to the soul.",
     "centralQuestion": "How can the embodied soul re-ascend into mystical communion with the Source?",
-    "keyWorks": ["Enneads"],
+    "keyWorks": [
+      {
+        "title": "Enneads",
+        "year": "204 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Enneads",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Enneads",
+        "description": "Major work by Plotinus."
+      }
+    ],
     "sepSlug": "plotinus",
     "importanceScore": 80
   },
@@ -177,7 +381,15 @@
     "traditionId": "eastern-wisdom",
     "shortBio": "Legendary author of the Daodejing, articulating the effortless harmony of Wu Wei and the unnameable Dao.",
     "centralQuestion": "How do we flow with the spontaneous principle of the natural cosmos?",
-    "keyWorks": ["Daodejing (Tao Te Ching)"],
+    "keyWorks": [
+      {
+        "title": "Daodejing (Tao Te Ching)",
+        "year": "571 BCE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Daodejing%20(Tao%20Te%20Ching)",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Daodejing%20(Tao%20Te%20Ching)",
+        "description": "Major work by Laozi (Lao Tzu)."
+      }
+    ],
     "sepSlug": "laozi",
     "importanceScore": 88
   },
@@ -190,7 +402,15 @@
     "traditionId": "eastern-wisdom",
     "shortBio": "Indian spiritual teacher whose Four Noble Truths and doctrine of Anatta (no-self) revolutionized eastern phenomenology.",
     "centralQuestion": "What is the root of suffering (dukkha), and how is liberation achieved?",
-    "keyWorks": ["Pali Canon Discourses"],
+    "keyWorks": [
+      {
+        "title": "Pali Canon Discourses",
+        "year": "563 BCE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Pali%20Canon%20Discourses",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Pali%20Canon%20Discourses",
+        "description": "Major work by Siddhartha Gautama (The Buddha)."
+      }
+    ],
     "sepSlug": "buddha",
     "importanceScore": 95
   },
@@ -203,7 +423,15 @@
     "traditionId": "eastern-wisdom",
     "shortBio": "Founder of Madhyamaka Buddhism; demonstrated through rigorous dialectic that all phenomena are empty (sunyata) of intrinsic essence.",
     "centralQuestion": "How does dependent origination dissolve metaphysical absolutes?",
-    "keyWorks": ["Mulamadhyamakakarika (Fundamental Verses on the Middle Way)"],
+    "keyWorks": [
+      {
+        "title": "Mulamadhyamakakarika (Fundamental Verses on the Middle Way)",
+        "year": "150 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Mulamadhyamakakarika%20(Fundamental%20Verses%20on%20the%20Middle%20Way)",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Mulamadhyamakakarika%20(Fundamental%20Verses%20on%20the%20Middle%20Way)",
+        "description": "Major work by Nagarjuna."
+      }
+    ],
     "sepSlug": "nagarjuna",
     "importanceScore": 82
   },
@@ -216,7 +444,22 @@
     "traditionId": "eastern-wisdom",
     "shortBio": "Consolidator of Advaita Vedanta philosophy, proving that Atman (individual self) and Brahman (ultimate reality) are non-dual.",
     "centralQuestion": "How does knowledge of non-duality shatter the illusion (maya) of separation?",
-    "keyWorks": ["Brahma Sutra Bhasya", "Upadesasahasri"],
+    "keyWorks": [
+      {
+        "title": "Brahma Sutra Bhasya",
+        "year": "788 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Brahma%20Sutra%20Bhasya",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Brahma%20Sutra%20Bhasya",
+        "description": "Major work by Adi Shankara."
+      },
+      {
+        "title": "Upadesasahasri",
+        "year": "788 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Upadesasahasri",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Upadesasahasri",
+        "description": "Major work by Adi Shankara."
+      }
+    ],
     "sepSlug": "shankara",
     "importanceScore": 80
   },
@@ -229,7 +472,31 @@
     "traditionId": "scholasticism",
     "shortBio": "Bishop of Hippo who synthesized Christian theology with Neoplatonism; explored memory, psychological time, original sin, and grace.",
     "centralQuestion": "What is the relation between divine eternity and the human consciousness in time?",
-    "keyWorks": ["Confessions", "City of God", "On the Trinity"],
+    "keyWorks": [
+      {
+        "title": "Confessions",
+        "year": "397 CE",
+        "url": "https://www.gutenberg.org/ebooks/3296",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Confessions_(Augustine)",
+        "isbn": "978-0199537822",
+        "description": "Autobiographical spiritual journey, theology of grace, and famous analysis of the psychological nature of time."
+      },
+      {
+        "title": "City of God",
+        "year": "426 CE",
+        "url": "https://www.gutenberg.org/ebooks/45304",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_City_of_God",
+        "isbn": "978-0140448948",
+        "description": "Philosophy of history contrasting the heavenly City of God with the earthly City of Man after the sack of Rome."
+      },
+      {
+        "title": "On the Trinity",
+        "year": "354 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Trinity",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Trinity",
+        "description": "Major work by Augustine of Hippo."
+      }
+    ],
     "sepSlug": "augustine",
     "importanceScore": 92
   },
@@ -242,7 +509,22 @@
     "traditionId": "islamic-golden-age",
     "shortBio": "Polymath of the Islamic Golden Age; authored the Floating Man thought experiment and distinction between essence and existence.",
     "centralQuestion": "Can self-consciousness exist independent of bodily senses?",
-    "keyWorks": ["The Book of Healing", "The Canon of Medicine"],
+    "keyWorks": [
+      {
+        "title": "The Book of Healing",
+        "year": "980 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Book%20of%20Healing",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Book%20of%20Healing",
+        "description": "Major work by Ibn Sina (Avicenna)."
+      },
+      {
+        "title": "The Canon of Medicine",
+        "year": "980 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Canon%20of%20Medicine",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Canon%20of%20Medicine",
+        "description": "Major work by Ibn Sina (Avicenna)."
+      }
+    ],
     "sepSlug": "ibn-sina",
     "importanceScore": 89
   },
@@ -255,7 +537,22 @@
     "traditionId": "islamic-golden-age",
     "shortBio": "The 'Great Commentator' on Aristotle whose defense of rational philosophy against Al-Ghazali shaped the European Renaissance.",
     "centralQuestion": "Can religious faith and demonstrative philosophical reasoning harmoniously coexist?",
-    "keyWorks": ["The Incoherence of the Incoherence", "The Decisive Treatise"],
+    "keyWorks": [
+      {
+        "title": "The Incoherence of the Incoherence",
+        "year": "1126 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Incoherence%20of%20the%20Incoherence",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Incoherence%20of%20the%20Incoherence",
+        "description": "Major work by Ibn Rushd (Averroes)."
+      },
+      {
+        "title": "The Decisive Treatise",
+        "year": "1126 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Decisive%20Treatise",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Decisive%20Treatise",
+        "description": "Major work by Ibn Rushd (Averroes)."
+      }
+    ],
     "sepSlug": "ibn-rushd",
     "importanceScore": 87
   },
@@ -268,7 +565,23 @@
     "traditionId": "scholasticism",
     "shortBio": "Dominican friar and prince of Scholasticism. Harmonized Christian revelation with Aristotle; formulated the Five Ways to prove God's existence.",
     "centralQuestion": "How do faith and reason cooperate in the pursuit of ultimate truth?",
-    "keyWorks": ["Summa Theologiae", "Summa contra Gentiles"],
+    "keyWorks": [
+      {
+        "title": "Summa Theologiae",
+        "year": "1274 CE",
+        "url": "https://www.newadvent.org/summa/",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Summa_Theologiae",
+        "isbn": "978-0870610639",
+        "description": "Aquinas's masterwork of medieval scholasticism, containing the Five Ways to demonstrate God's existence."
+      },
+      {
+        "title": "Summa contra Gentiles",
+        "year": "1225 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Summa%20contra%20Gentiles",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Summa%20contra%20Gentiles",
+        "description": "Major work by Thomas Aquinas."
+      }
+    ],
     "sepSlug": "aquinas",
     "importanceScore": 96
   },
@@ -281,7 +594,15 @@
     "traditionId": "scholasticism",
     "shortBio": "Franciscan philosopher famous for Ockham's Razor and Nominalism (universals are mere names, not real metaphysical entities).",
     "centralQuestion": "Should entities ever be multiplied beyond necessity?",
-    "keyWorks": ["Summa Logicae"],
+    "keyWorks": [
+      {
+        "title": "Summa Logicae",
+        "year": "1287 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Summa%20Logicae",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Summa%20Logicae",
+        "description": "Major work by William of Ockham."
+      }
+    ],
     "sepSlug": "ockham",
     "importanceScore": 84
   },
@@ -294,7 +615,23 @@
     "traditionId": "rationalism",
     "shortBio": "Florentine diplomat who established political realism, analyzing how power is practically seized and maintained.",
     "centralQuestion": "Is it better for a leader to be loved or feared, and how must virtue adapt to fortuna?",
-    "keyWorks": ["The Prince", "Discourses on Livy"],
+    "keyWorks": [
+      {
+        "title": "The Prince",
+        "year": "1513 CE",
+        "url": "https://standardebooks.org/ebooks/niccolo-machiavelli/the-prince/w-k-marriott",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Prince",
+        "isbn": "978-0140449150",
+        "description": "Realistic political treatise on statecraft, the balance of virtù and fortuna, and maintaining power."
+      },
+      {
+        "title": "Discourses on Livy",
+        "year": "1469 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Discourses%20on%20Livy",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Discourses%20on%20Livy",
+        "description": "Major work by Niccolò Machiavelli."
+      }
+    ],
     "sepSlug": "machiavelli",
     "importanceScore": 88
   },
@@ -307,7 +644,22 @@
     "traditionId": "empiricism",
     "shortBio": "Father of the scientific method and champion of empiricism; exposed the Idols of the Mind that distort human inquiry.",
     "centralQuestion": "How can systematic empirical induction give humanity mastery over nature?",
-    "keyWorks": ["Novum Organum", "The New Atlantis"],
+    "keyWorks": [
+      {
+        "title": "Novum Organum",
+        "year": "1561 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Novum%20Organum",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Novum%20Organum",
+        "description": "Major work by Francis Bacon."
+      },
+      {
+        "title": "The New Atlantis",
+        "year": "1561 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20New%20Atlantis",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20New%20Atlantis",
+        "description": "Major work by Francis Bacon."
+      }
+    ],
     "sepSlug": "francis-bacon",
     "importanceScore": 82
   },
@@ -320,7 +672,16 @@
     "traditionId": "empiricism",
     "shortBio": "Social contract theorist who described life in the state of nature as 'solitary, poor, nasty, brutish, and short'.",
     "centralQuestion": "How do self-interested individuals construct a sovereign commonwealth to escape civil war?",
-    "keyWorks": ["Leviathan"],
+    "keyWorks": [
+      {
+        "title": "Leviathan",
+        "year": "1651 CE",
+        "url": "https://www.gutenberg.org/ebooks/3207",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)",
+        "isbn": "978-0141439587",
+        "description": "Foundational political philosophy on the state of nature, the social contract, and the sovereign Leviathan."
+      }
+    ],
     "sepSlug": "hobbes",
     "importanceScore": 91
   },
@@ -333,7 +694,24 @@
     "traditionId": "rationalism",
     "shortBio": "Father of modern Western philosophy. Used radical methodical doubt to discover the bedrock certainty: 'Cogito, ergo sum'.",
     "centralQuestion": "What can be known with absolute epistemological certainty?",
-    "keyWorks": ["Meditations on First Philosophy", "Discourse on the Method"],
+    "keyWorks": [
+      {
+        "title": "Meditations on First Philosophy",
+        "year": "1641 CE",
+        "url": "https://www.gutenberg.org/ebooks/59",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Meditations_on_First_Philosophy",
+        "isbn": "978-0521558181",
+        "description": "Descartes' radical doubt, the Cogito, proof of God, and mind-body substance dualism."
+      },
+      {
+        "title": "Discourse on the Method",
+        "year": "1637 CE",
+        "url": "https://www.gutenberg.org/ebooks/59",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Discourse_on_the_Method",
+        "isbn": "978-0199540075",
+        "description": "Autobiographical treatise introducing Cartesian skepticism and the scientific method."
+      }
+    ],
     "sepSlug": "descartes",
     "importanceScore": 99
   },
@@ -346,7 +724,23 @@
     "traditionId": "rationalism",
     "shortBio": "Excommunicated Jewish-Dutch philosopher who developed geometric pantheism: God and Nature are one single infinite substance (Deus Sive Natura).",
     "centralQuestion": "How does understanding necessity and cosmic unity liberate the human mind from passive passions?",
-    "keyWorks": ["Ethics (demonstrated in geometrical order)", "Tractatus Theologico-Politicus"],
+    "keyWorks": [
+      {
+        "title": "Ethics (demonstrated in geometrical order)",
+        "year": "1677 CE",
+        "url": "https://www.gutenberg.org/ebooks/3800",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Ethics_(Spinoza_book)",
+        "isbn": "978-0140435719",
+        "description": "Geometrical proof of pantheistic monism: God and Nature as one infinite substance (Deus Sive Natura)."
+      },
+      {
+        "title": "Tractatus Theologico-Politicus",
+        "year": "1632 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tractatus%20Theologico-Politicus",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Tractatus%20Theologico-Politicus",
+        "description": "Major work by Baruch Spinoza."
+      }
+    ],
     "sepSlug": "spinoza",
     "importanceScore": 95
   },
@@ -359,7 +753,30 @@
     "traditionId": "rationalism",
     "shortBio": "Polymath co-inventor of calculus. Conceived reality as an infinite harmony of windowless spiritual atoms called monads.",
     "centralQuestion": "Why is there something rather than nothing, and is this the best of all possible worlds?",
-    "keyWorks": ["Monadology", "Discourse on Metaphysics", "Theodicy"],
+    "keyWorks": [
+      {
+        "title": "Monadology",
+        "year": "1714 CE",
+        "url": "https://en.wikisource.org/wiki/The_Monadology",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Monadology",
+        "isbn": "978-0872200623",
+        "description": "Leibniz's late metaphysical synthesis: reality composed of immaterial, perception-bearing monads in pre-established harmony."
+      },
+      {
+        "title": "Discourse on Metaphysics",
+        "year": "1646 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Discourse%20on%20Metaphysics",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Discourse%20on%20Metaphysics",
+        "description": "Major work by Gottfried Wilhelm Leibniz."
+      },
+      {
+        "title": "Theodicy",
+        "year": "1646 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Theodicy",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Theodicy",
+        "description": "Major work by Gottfried Wilhelm Leibniz."
+      }
+    ],
     "sepSlug": "leibniz",
     "importanceScore": 91
   },
@@ -372,7 +789,24 @@
     "traditionId": "empiricism",
     "shortBio": "Pioneer of British Empiricism and constitutional democracy. Argued the mind begins as a blank slate (tabula rasa).",
     "centralQuestion": "How do ideas enter the mind through sensation and reflection, and what justifies government?",
-    "keyWorks": ["An Essay Concerning Human Understanding", "Two Treatises of Government"],
+    "keyWorks": [
+      {
+        "title": "An Essay Concerning Human Understanding",
+        "year": "1689 CE",
+        "url": "https://www.gutenberg.org/ebooks/10604",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/An_Essay_Concerning_Human_Understanding",
+        "isbn": "978-0140434828",
+        "description": "Argues against innate ideas; formulates the mind as a blank slate (tabula rasa) populated through sensation."
+      },
+      {
+        "title": "Two Treatises of Government",
+        "year": "1689 CE",
+        "url": "https://www.gutenberg.org/ebooks/7370",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Two_Treatises_of_Government",
+        "isbn": "978-0521357302",
+        "description": "Foundational theory of natural rights (life, liberty, property) and government by consent of the governed."
+      }
+    ],
     "sepSlug": "locke",
     "importanceScore": 96
   },
@@ -385,7 +819,22 @@
     "traditionId": "empiricism",
     "shortBio": "Irish philosopher who advanced subjective idealism: material objects exist solely in being perceived ('Esse est percipi').",
     "centralQuestion": "Does matter exist independently of minds and perceptual experience?",
-    "keyWorks": ["A Treatise Concerning the Principles of Human Knowledge", "Three Dialogues between Hylas and Philonous"],
+    "keyWorks": [
+      {
+        "title": "A Treatise Concerning the Principles of Human Knowledge",
+        "year": "1685 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=A%20Treatise%20Concerning%20the%20Principles%20of%20Human%20Knowledge",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=A%20Treatise%20Concerning%20the%20Principles%20of%20Human%20Knowledge",
+        "description": "Major work by George Berkeley."
+      },
+      {
+        "title": "Three Dialogues between Hylas and Philonous",
+        "year": "1685 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Three%20Dialogues%20between%20Hylas%20and%20Philonous",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Three%20Dialogues%20between%20Hylas%20and%20Philonous",
+        "description": "Major work by George Berkeley."
+      }
+    ],
     "sepSlug": "berkeley",
     "importanceScore": 86
   },
@@ -398,7 +847,24 @@
     "traditionId": "empiricism",
     "shortBio": "Scottish skeptic who dismantled dogmatic rationalism, questioning causality, the unified self (bundle theory), and induction.",
     "centralQuestion": "Can reason justify our belief in cause and effect or an enduring personal self?",
-    "keyWorks": ["A Treatise of Human Nature", "An Enquiry Concerning Human Understanding"],
+    "keyWorks": [
+      {
+        "title": "A Treatise of Human Nature",
+        "year": "1739 CE",
+        "url": "https://www.gutenberg.org/ebooks/4705",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Treatise_of_Human_Nature",
+        "isbn": "978-0198751724",
+        "description": "Hume's empirical masterpiece investigating human knowledge, passions, morality, and the bundle theory of self."
+      },
+      {
+        "title": "An Enquiry Concerning Human Understanding",
+        "year": "1748 CE",
+        "url": "https://www.gutenberg.org/ebooks/9662",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/An_Enquiry_Concerning_Human_Understanding",
+        "isbn": "978-0199549900",
+        "description": "Refined presentation of Hume's epistemological skepticism, problem of induction, and critique of miracles."
+      }
+    ],
     "sepSlug": "hume",
     "importanceScore": 98
   },
@@ -411,7 +877,22 @@
     "traditionId": "enlightenment-social",
     "shortBio": "Key thinker of the Scottish Enlightenment; explored human moral psychology through sympathy and economic organization.",
     "centralQuestion": "How does mutual moral sympathy and division of labor produce social flourishing?",
-    "keyWorks": ["The Theory of Moral Sentiments", "The Wealth of Nations"],
+    "keyWorks": [
+      {
+        "title": "The Theory of Moral Sentiments",
+        "year": "1723 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Theory%20of%20Moral%20Sentiments",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Theory%20of%20Moral%20Sentiments",
+        "description": "Major work by Adam Smith."
+      },
+      {
+        "title": "The Wealth of Nations",
+        "year": "1723 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Wealth%20of%20Nations",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Wealth%20of%20Nations",
+        "description": "Major work by Adam Smith."
+      }
+    ],
     "sepSlug": "smith-moral-political",
     "importanceScore": 87
   },
@@ -424,7 +905,30 @@
     "traditionId": "enlightenment-social",
     "shortBio": "Enlightenment wit and champion of civil liberties, religious tolerance, freedom of speech, and satire against dogmatic optimism.",
     "centralQuestion": "How do we crush fanaticism and cultivate our own garden with reason?",
-    "keyWorks": ["Candide", "Philosophical Letters", "Treatise on Tolerance"],
+    "keyWorks": [
+      {
+        "title": "Candide",
+        "year": "1759 CE",
+        "url": "https://standardebooks.org/ebooks/voltaire/candide",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Candide",
+        "isbn": "978-0140440041",
+        "description": "Satirical philosophical novella mocking Leibnizian theological optimism ('best of all possible worlds')."
+      },
+      {
+        "title": "Philosophical Letters",
+        "year": "1694 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Philosophical%20Letters",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Philosophical%20Letters",
+        "description": "Major work by Voltaire (François-Marie Arouet)."
+      },
+      {
+        "title": "Treatise on Tolerance",
+        "year": "1694 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Treatise%20on%20Tolerance",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Treatise%20on%20Tolerance",
+        "description": "Major work by Voltaire (François-Marie Arouet)."
+      }
+    ],
     "sepSlug": "voltaire",
     "importanceScore": 88
   },
@@ -437,7 +941,30 @@
     "traditionId": "enlightenment-social",
     "shortBio": "Romantic political philosopher who argued man is born free but everywhere in chains, corrupted by unequal property and pride.",
     "centralQuestion": "How can human freedom and political sovereignty unite under the General Will?",
-    "keyWorks": ["The Social Contract", "Discourse on Inequality", "Emile"],
+    "keyWorks": [
+      {
+        "title": "The Social Contract",
+        "year": "1762 CE",
+        "url": "https://www.gutenberg.org/ebooks/46333",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Social_Contract",
+        "isbn": "978-0140442014",
+        "description": "'Man is born free, and he is everywhere in chains.' Articulates legitimate sovereignty and the General Will."
+      },
+      {
+        "title": "Discourse on Inequality",
+        "year": "1712 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Discourse%20on%20Inequality",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Discourse%20on%20Inequality",
+        "description": "Major work by Jean-Jacques Rousseau."
+      },
+      {
+        "title": "Emile",
+        "year": "1712 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Emile",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Emile",
+        "description": "Major work by Jean-Jacques Rousseau."
+      }
+    ],
     "sepSlug": "rousseau",
     "importanceScore": 93
   },
@@ -450,7 +977,32 @@
     "traditionId": "german-idealism",
     "shortBio": "Revolutionized philosophy through Transcendental Idealism: our mind structures phenomenal experience, while the noumenon remains beyond.",
     "centralQuestion": "What can I know? What should I do? What may I hope?",
-    "keyWorks": ["Critique of Pure Reason", "Critique of Practical Reason", "Groundwork of the Metaphysics of Morals"],
+    "keyWorks": [
+      {
+        "title": "Critique of Pure Reason",
+        "year": "1781 CE",
+        "url": "https://www.gutenberg.org/ebooks/4280",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Critique_of_Pure_Reason",
+        "isbn": "978-0521657297",
+        "description": "Copernican revolution in metaphysics: Transcendental Idealism, synthetic a priori judgments, and bounds of reason."
+      },
+      {
+        "title": "Critique of Practical Reason",
+        "year": "1788 CE",
+        "url": "https://www.gutenberg.org/ebooks/5683",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Critique_of_Practical_Reason",
+        "isbn": "978-0521599658",
+        "description": "Kant's second critique, proving freedom, immortality of the soul, and God through moral necessity."
+      },
+      {
+        "title": "Groundwork of the Metaphysics of Morals",
+        "year": "1785 CE",
+        "url": "https://www.gutenberg.org/ebooks/5682",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Groundwork_of_the_Metaphysics_of_Morals",
+        "isbn": "978-0521626958",
+        "description": "Deontological ethics introducing the Categorical Imperative and the intrinsic dignity of persons."
+      }
+    ],
     "sepSlug": "kant",
     "importanceScore": 100
   },
@@ -463,7 +1015,30 @@
     "traditionId": "german-idealism",
     "shortBio": "Architect of dialectical idealism; saw history as the progressive self-realization and freedom of Absolute Spirit (Geist).",
     "centralQuestion": "How does reason unfold dialectically through history, culture, and recognition?",
-    "keyWorks": ["Phenomenology of Spirit", "Science of Logic", "Elements of the Philosophy of Right"],
+    "keyWorks": [
+      {
+        "title": "Phenomenology of Spirit",
+        "year": "1807 CE",
+        "url": "https://en.wikipedia.org/wiki/The_Phenomenology_of_Spirit",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Phenomenology_of_Spirit",
+        "isbn": "978-0198245971",
+        "description": "Dialectical journey of consciousness toward Absolute Knowing, including the Master-Slave dialectic."
+      },
+      {
+        "title": "Science of Logic",
+        "year": "1770 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Science%20of%20Logic",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Science%20of%20Logic",
+        "description": "Major work by G.W.F. Hegel."
+      },
+      {
+        "title": "Elements of the Philosophy of Right",
+        "year": "1770 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Elements%20of%20the%20Philosophy%20of%20Right",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Elements%20of%20the%20Philosophy%20of%20Right",
+        "description": "Major work by G.W.F. Hegel."
+      }
+    ],
     "sepSlug": "hegel",
     "importanceScore": 97
   },
@@ -476,7 +1051,23 @@
     "traditionId": "existentialism-early",
     "shortBio": "Post-Kantian thinker who identified Kant's thing-in-itself as blind, insatiable Will; synthesized Western idealism with Buddhist and Upanishadic insights.",
     "centralQuestion": "How can the individual escape the suffering and striving of the metaphysical Will?",
-    "keyWorks": ["The World as Will and Representation", "On the Freedom of the Will"],
+    "keyWorks": [
+      {
+        "title": "The World as Will and Representation",
+        "year": "1818 CE",
+        "url": "https://www.gutenberg.org/ebooks/38427",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_World_as_Will_and_Representation",
+        "isbn": "978-0486217611",
+        "description": "Post-Kantian masterpiece unveiling the thing-in-itself as blind, insatiable metaphysical Will."
+      },
+      {
+        "title": "On the Freedom of the Will",
+        "year": "1788 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Freedom%20of%20the%20Will",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Freedom%20of%20the%20Will",
+        "description": "Major work by Arthur Schopenhauer."
+      }
+    ],
     "sepSlug": "schopenhauer",
     "importanceScore": 95
   },
@@ -489,7 +1080,30 @@
     "traditionId": "existentialism-early",
     "shortBio": "Father of Christian existentialism; rejected Hegel's objective systems in favor of subjective truth, dread, and the leap of faith.",
     "centralQuestion": "What does it mean for an individual to exist before God with authentic passion?",
-    "keyWorks": ["Fear and Trembling", "The Sickness Unto Death", "Either/Or"],
+    "keyWorks": [
+      {
+        "title": "Fear and Trembling",
+        "year": "1843 CE",
+        "url": "https://en.wikipedia.org/wiki/Fear_and_Trembling",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Fear_and_Trembling",
+        "isbn": "978-0140444490",
+        "description": "Kierkegaard's pseudonym Johannes de Silentio examines Abraham's sacrifice of Isaac and the leap of faith."
+      },
+      {
+        "title": "The Sickness Unto Death",
+        "year": "1813 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Sickness%20Unto%20Death",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Sickness%20Unto%20Death",
+        "description": "Major work by Søren Kierkegaard."
+      },
+      {
+        "title": "Either/Or",
+        "year": "1813 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Either%2FOr",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Either%2FOr",
+        "description": "Major work by Søren Kierkegaard."
+      }
+    ],
     "sepSlug": "kierkegaard",
     "importanceScore": 92
   },
@@ -502,7 +1116,30 @@
     "traditionId": "existentialism-early",
     "shortBio": "Turned Hegel's dialectic on its head into historical materialism; analyzed class struggle, alienation, and capitalism's contradictions.",
     "centralQuestion": "How do material economic conditions shape consciousness, and how can the working class emancipate humanity?",
-    "keyWorks": ["Das Kapital", "The Communist Manifesto", "Economic and Philosophic Manuscripts of 1844"],
+    "keyWorks": [
+      {
+        "title": "Das Kapital",
+        "year": "1867 CE",
+        "url": "https://www.marxists.org/archive/marx/works/1867-c1/",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Das_Kapital",
+        "isbn": "978-0140445688",
+        "description": "Critique of political economy, commodity fetishism, surplus value, and the mechanics of capitalist exploitation."
+      },
+      {
+        "title": "The Communist Manifesto",
+        "year": "1818 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Communist%20Manifesto",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Communist%20Manifesto",
+        "description": "Major work by Karl Marx."
+      },
+      {
+        "title": "Economic and Philosophic Manuscripts of 1844",
+        "year": "1818 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Economic%20and%20Philosophic%20Manuscripts%20of%201844",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Economic%20and%20Philosophic%20Manuscripts%20of%201844",
+        "description": "Major work by Karl Marx."
+      }
+    ],
     "sepSlug": "marx",
     "importanceScore": 98
   },
@@ -515,7 +1152,38 @@
     "traditionId": "existentialism-early",
     "shortBio": "Radical iconoclast who proclaimed the 'death of God', analyzed the will to power, master/slave morality, and the challenge of the Übermensch.",
     "centralQuestion": "How can humanity overcome nihilism and affirm life without transcendent illusions?",
-    "keyWorks": ["Thus Spoke Zarathustra", "Beyond Good and Evil", "On the Genealogy of Morality", "The Gay Science"],
+    "keyWorks": [
+      {
+        "title": "Thus Spoke Zarathustra",
+        "year": "1883 CE",
+        "url": "https://www.gutenberg.org/ebooks/1998",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra",
+        "isbn": "978-0140441185",
+        "description": "Philosophical poem proclaiming the Death of God, the Übermensch (Overman), and the Eternal Recurrence."
+      },
+      {
+        "title": "Beyond Good and Evil",
+        "year": "1886 CE",
+        "url": "https://www.gutenberg.org/ebooks/4363",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Beyond_Good_and_Evil",
+        "isbn": "978-0140449235",
+        "description": "Polemic against traditional dogmatic morality, introducing perspectivism and the Will to Power."
+      },
+      {
+        "title": "On the Genealogy of Morality",
+        "year": "1844 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Genealogy%20of%20Morality",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Genealogy%20of%20Morality",
+        "description": "Major work by Friedrich Nietzsche."
+      },
+      {
+        "title": "The Gay Science",
+        "year": "1844 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Gay%20Science",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Gay%20Science",
+        "description": "Major work by Friedrich Nietzsche."
+      }
+    ],
     "sepSlug": "nietzsche",
     "importanceScore": 100
   },
@@ -528,7 +1196,30 @@
     "traditionId": "utilitarianism",
     "shortBio": "Liberal philosopher who refined utilitarian ethics (higher vs lower pleasures) and defended individual liberty and women's rights.",
     "centralQuestion": "What is the boundary between the authority of society and the liberty of the individual?",
-    "keyWorks": ["On Liberty", "Utilitarianism", "The Subjection of Women"],
+    "keyWorks": [
+      {
+        "title": "On Liberty",
+        "year": "1859 CE",
+        "url": "https://www.gutenberg.org/ebooks/34901",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/On_Liberty",
+        "isbn": "978-0140432077",
+        "description": "Classic liberal defense of individual autonomy, free speech, and the Harm Principle."
+      },
+      {
+        "title": "Utilitarianism",
+        "year": "1806 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Utilitarianism",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Utilitarianism",
+        "description": "Major work by John Stuart Mill."
+      },
+      {
+        "title": "The Subjection of Women",
+        "year": "1806 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Subjection%20of%20Women",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Subjection%20of%20Women",
+        "description": "Major work by John Stuart Mill."
+      }
+    ],
     "sepSlug": "mill",
     "importanceScore": 92
   },
@@ -541,7 +1232,29 @@
     "traditionId": "pragmatism",
     "shortBio": "Pioneer of American pragmatism and psychology; formulated the stream of consciousness and the 'cash value' theory of truth.",
     "centralQuestion": "What difference does an idea make in concrete human experience?",
-    "keyWorks": ["Pragmatism", "The Varieties of Religious Experience", "The Will to Believe"],
+    "keyWorks": [
+      {
+        "title": "Pragmatism",
+        "year": "1842 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Pragmatism",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Pragmatism",
+        "description": "Major work by William James."
+      },
+      {
+        "title": "The Varieties of Religious Experience",
+        "year": "1842 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Varieties%20of%20Religious%20Experience",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Varieties%20of%20Religious%20Experience",
+        "description": "Major work by William James."
+      },
+      {
+        "title": "The Will to Believe",
+        "year": "1842 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Will%20to%20Believe",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Will%20to%20Believe",
+        "description": "Major work by William James."
+      }
+    ],
     "sepSlug": "james",
     "importanceScore": 88
   },
@@ -554,7 +1267,22 @@
     "traditionId": "phenomenology",
     "shortBio": "Founder of phenomenology. Advocated setting aside scientific presuppositions (epoché) to examine the intentional structures of consciousness.",
     "centralQuestion": "How does consciousness constitute meaning in lived experience?",
-    "keyWorks": ["Logical Investigations", "Ideas Pertaining to a Pure Phenomenology"],
+    "keyWorks": [
+      {
+        "title": "Logical Investigations",
+        "year": "1859 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Logical%20Investigations",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Logical%20Investigations",
+        "description": "Major work by Edmund Husserl."
+      },
+      {
+        "title": "Ideas Pertaining to a Pure Phenomenology",
+        "year": "1859 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ideas%20Pertaining%20to%20a%20Pure%20Phenomenology",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Ideas%20Pertaining%20to%20a%20Pure%20Phenomenology",
+        "description": "Major work by Edmund Husserl."
+      }
+    ],
     "sepSlug": "husserl",
     "importanceScore": 90
   },
@@ -567,7 +1295,23 @@
     "traditionId": "phenomenology",
     "shortBio": "Ontologist who revived the question of Being; analyzed human existence as Dasein ('Being-in-the-world') oriented toward death.",
     "centralQuestion": "What is the meaning of Being, and how has Western metaphysics forgotten it?",
-    "keyWorks": ["Being and Time", "The Question Concerning Technology"],
+    "keyWorks": [
+      {
+        "title": "Being and Time",
+        "year": "1927 CE",
+        "url": "https://en.wikipedia.org/wiki/Being_and_Time",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Being_and_Time",
+        "isbn": "978-0631197706",
+        "description": "Heidegger's fundamental ontology: analyzing human existence as Dasein ('Being-in-the-world') oriented toward death."
+      },
+      {
+        "title": "The Question Concerning Technology",
+        "year": "1889 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Question%20Concerning%20Technology",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Question%20Concerning%20Technology",
+        "description": "Major work by Martin Heidegger."
+      }
+    ],
     "sepSlug": "heidegger",
     "importanceScore": 96
   },
@@ -580,7 +1324,30 @@
     "traditionId": "existentialism",
     "shortBio": "Existentialist titan who declared that 'existence precedes essence'; humans are condemned to be free and prone to bad faith.",
     "centralQuestion": "How does the individual take absolute responsibility for creating selfhood without excuses?",
-    "keyWorks": ["Being and Nothingness", "Existentialism is a Humanism", "Nausea"],
+    "keyWorks": [
+      {
+        "title": "Being and Nothingness",
+        "year": "1943 CE",
+        "url": "https://en.wikipedia.org/wiki/Being_and_Nothingness",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Being_and_Nothingness",
+        "isbn": "978-0671867805",
+        "description": "Sartre's existentialist magnum opus on radical freedom, consciousness as nothingness, and bad faith."
+      },
+      {
+        "title": "Existentialism is a Humanism",
+        "year": "1905 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Existentialism%20is%20a%20Humanism",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Existentialism%20is%20a%20Humanism",
+        "description": "Major work by Jean-Paul Sartre."
+      },
+      {
+        "title": "Nausea",
+        "year": "1905 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Nausea",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Nausea",
+        "description": "Major work by Jean-Paul Sartre."
+      }
+    ],
     "sepSlug": "sartre",
     "importanceScore": 95
   },
@@ -593,7 +1360,23 @@
     "traditionId": "existentialism",
     "shortBio": "Existentialist and pioneering feminist philosopher; formulated that 'one is not born, but rather becomes, a woman'.",
     "centralQuestion": "How do social situations construct otherness and constrain human freedom?",
-    "keyWorks": ["The Second Sex", "The Ethics of Ambiguity"],
+    "keyWorks": [
+      {
+        "title": "The Second Sex",
+        "year": "1949 CE",
+        "url": "https://en.wikipedia.org/wiki/The_Second_Sex",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Second_Sex",
+        "isbn": "978-0307277787",
+        "description": "Foundational feminist philosophy: 'One is not born, but rather becomes, a woman.' Analysis of feminine otherness."
+      },
+      {
+        "title": "The Ethics of Ambiguity",
+        "year": "1908 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Ethics%20of%20Ambiguity",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Ethics%20of%20Ambiguity",
+        "description": "Major work by Simone de Beauvoir."
+      }
+    ],
     "sepSlug": "beauvoir",
     "importanceScore": 94
   },
@@ -606,7 +1389,30 @@
     "traditionId": "existentialism",
     "shortBio": "Philosopher of the Absurd: the clash between humanity's thirst for meaning and the silent indifference of the universe.",
     "centralQuestion": "Is life worth living despite the absurdity of existence?",
-    "keyWorks": ["The Myth of Sisyphus", "The Stranger", "The Rebel"],
+    "keyWorks": [
+      {
+        "title": "The Myth of Sisyphus",
+        "year": "1942 CE",
+        "url": "https://en.wikipedia.org/wiki/The_Myth_of_Sisyphus",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Myth_of_Sisyphus",
+        "isbn": "978-0679733737",
+        "description": "Camus's philosophical essay on the absurd: 'One must imagine Sisyphus happy.'"
+      },
+      {
+        "title": "The Stranger",
+        "year": "1913 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Stranger",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Stranger",
+        "description": "Major work by Albert Camus."
+      },
+      {
+        "title": "The Rebel",
+        "year": "1913 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Rebel",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Rebel",
+        "description": "Major work by Albert Camus."
+      }
+    ],
     "sepSlug": "camus",
     "importanceScore": 93
   },
@@ -619,7 +1425,24 @@
     "traditionId": "analytic",
     "shortBio": "Revolutionized philosophy twice: first with the logical picture theory of language, then with ordinary language games and forms of life.",
     "centralQuestion": "What can be said clearly, and what must be passed over in silence?",
-    "keyWorks": ["Tractatus Logico-Philosophicus", "Philosophical Investigations"],
+    "keyWorks": [
+      {
+        "title": "Tractatus Logico-Philosophicus",
+        "year": "1921 CE",
+        "url": "https://www.gutenberg.org/ebooks/5740",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus",
+        "isbn": "978-0415254083",
+        "description": "Logical picture theory of language: 'Whereof one cannot speak, thereof one must be silent.'"
+      },
+      {
+        "title": "Philosophical Investigations",
+        "year": "1953 CE",
+        "url": "https://en.wikipedia.org/wiki/Philosophical_Investigations",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Philosophical_Investigations",
+        "isbn": "978-1405159289",
+        "description": "Later Wittgenstein: rejecting formal picture theory for ordinary language games and forms of life."
+      }
+    ],
     "sepSlug": "wittgenstein",
     "importanceScore": 99
   },
@@ -632,7 +1455,29 @@
     "traditionId": "analytic",
     "shortBio": "Leader of the British revolt against idealism, co-founder of analytic philosophy, logician, peace activist, and author of Principia Mathematica.",
     "centralQuestion": "Can mathematics be grounded entirely on formal logic?",
-    "keyWorks": ["Principia Mathematica", "The Problems of Philosophy", "On Denoting"],
+    "keyWorks": [
+      {
+        "title": "Principia Mathematica",
+        "year": "1872 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Principia%20Mathematica",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Principia%20Mathematica",
+        "description": "Major work by Bertrand Russell."
+      },
+      {
+        "title": "The Problems of Philosophy",
+        "year": "1872 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Problems%20of%20Philosophy",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Problems%20of%20Philosophy",
+        "description": "Major work by Bertrand Russell."
+      },
+      {
+        "title": "On Denoting",
+        "year": "1872 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20Denoting",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20Denoting",
+        "description": "Major work by Bertrand Russell."
+      }
+    ],
     "sepSlug": "russell",
     "importanceScore": 93
   },
@@ -645,7 +1490,22 @@
     "traditionId": "analytic",
     "shortBio": "Philosopher of science who replaced verification with falsificationism; defender of the open society against totalitarianism.",
     "centralQuestion": "What demarcates genuine science from pseudo-science?",
-    "keyWorks": ["The Logic of Scientific Discovery", "The Open Society and Its Enemies"],
+    "keyWorks": [
+      {
+        "title": "The Logic of Scientific Discovery",
+        "year": "1902 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Logic%20of%20Scientific%20Discovery",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Logic%20of%20Scientific%20Discovery",
+        "description": "Major work by Karl Popper."
+      },
+      {
+        "title": "The Open Society and Its Enemies",
+        "year": "1902 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Open%20Society%20and%20Its%20Enemies",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Open%20Society%20and%20Its%20Enemies",
+        "description": "Major work by Karl Popper."
+      }
+    ],
     "sepSlug": "popper",
     "importanceScore": 89
   },
@@ -658,7 +1518,29 @@
     "traditionId": "critical-theory",
     "shortBio": "Leading figure of the Frankfurt School; critiqued the culture industry, instrumental reason, and authoritarianism.",
     "centralQuestion": "How did Enlightenment rationality turn into its opposite: barbarism and mass conformity?",
-    "keyWorks": ["Dialectic of Enlightenment", "Minima Moralia", "Negative Dialectics"],
+    "keyWorks": [
+      {
+        "title": "Dialectic of Enlightenment",
+        "year": "1903 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Dialectic%20of%20Enlightenment",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Dialectic%20of%20Enlightenment",
+        "description": "Major work by Theodor W. Adorno."
+      },
+      {
+        "title": "Minima Moralia",
+        "year": "1903 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Minima%20Moralia",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Minima%20Moralia",
+        "description": "Major work by Theodor W. Adorno."
+      },
+      {
+        "title": "Negative Dialectics",
+        "year": "1903 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Negative%20Dialectics",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Negative%20Dialectics",
+        "description": "Major work by Theodor W. Adorno."
+      }
+    ],
     "sepSlug": "adorno",
     "importanceScore": 89
   },
@@ -671,7 +1553,30 @@
     "traditionId": "post-structuralism",
     "shortBio": "French historian of systems of thought; explored how power is entwined with knowledge, surveillance (Panopticon), and biopolitics.",
     "centralQuestion": "How do disciplinary institutions and discourses construct our conceptions of sanity, sexuality, and deviance?",
-    "keyWorks": ["Discipline and Punish", "The History of Sexuality", "The Order of Things"],
+    "keyWorks": [
+      {
+        "title": "Discipline and Punish",
+        "year": "1975 CE",
+        "url": "https://en.wikipedia.org/wiki/Discipline_and_Punish",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Discipline_and_Punish",
+        "isbn": "978-0679752554",
+        "description": "Foucault's genealogy of modern penal institutions, panopticism, and the birth of disciplinary power."
+      },
+      {
+        "title": "The History of Sexuality",
+        "year": "1926 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20History%20of%20Sexuality",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20History%20of%20Sexuality",
+        "description": "Major work by Michel Foucault."
+      },
+      {
+        "title": "The Order of Things",
+        "year": "1926 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Order%20of%20Things",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Order%20of%20Things",
+        "description": "Major work by Michel Foucault."
+      }
+    ],
     "sepSlug": "foucault",
     "importanceScore": 97
   },
@@ -684,7 +1589,22 @@
     "traditionId": "post-structuralism",
     "shortBio": "Creator of deconstruction; unmasked the hidden hierarchies and instabilities in Western metaphysics of presence.",
     "centralQuestion": "How does language continuously defer fixed meaning through différance?",
-    "keyWorks": ["Of Grammatology", "Writing and Difference"],
+    "keyWorks": [
+      {
+        "title": "Of Grammatology",
+        "year": "1930 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Of%20Grammatology",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Of%20Grammatology",
+        "description": "Major work by Jacques Derrida."
+      },
+      {
+        "title": "Writing and Difference",
+        "year": "1930 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Writing%20and%20Difference",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Writing%20and%20Difference",
+        "description": "Major work by Jacques Derrida."
+      }
+    ],
     "sepSlug": "derrida",
     "importanceScore": 90
   },
@@ -697,7 +1617,29 @@
     "traditionId": "post-structuralism",
     "shortBio": "Metaphysician of immanence and multiplicity; replaced arborescent (tree-like) hierarchical thinking with rhizomatic networks.",
     "centralQuestion": "How can thought create new concepts based on difference rather than representation?",
-    "keyWorks": ["Difference and Repetition", "Anti-Oedipus", "A Thousand Plateaus"],
+    "keyWorks": [
+      {
+        "title": "Difference and Repetition",
+        "year": "1925 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Difference%20and%20Repetition",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Difference%20and%20Repetition",
+        "description": "Major work by Gilles Deleuze."
+      },
+      {
+        "title": "Anti-Oedipus",
+        "year": "1925 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Anti-Oedipus",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Anti-Oedipus",
+        "description": "Major work by Gilles Deleuze."
+      },
+      {
+        "title": "A Thousand Plateaus",
+        "year": "1925 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=A%20Thousand%20Plateaus",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=A%20Thousand%20Plateaus",
+        "description": "Major work by Gilles Deleuze."
+      }
+    ],
     "sepSlug": "deleuze",
     "importanceScore": 91
   },
@@ -710,7 +1652,29 @@
     "traditionId": "post-structuralism",
     "shortBio": "Political theorist who analyzed totalitarianism, civic action in the public realm, and the terrifying 'banality of evil'.",
     "centralQuestion": "What preserves the space of public freedom and prevents thoughtless totalitarian evil?",
-    "keyWorks": ["The Origins of Totalitarianism", "The Human Condition", "Eichmann in Jerusalem"],
+    "keyWorks": [
+      {
+        "title": "The Origins of Totalitarianism",
+        "year": "1906 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Origins%20of%20Totalitarianism",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Origins%20of%20Totalitarianism",
+        "description": "Major work by Hannah Arendt."
+      },
+      {
+        "title": "The Human Condition",
+        "year": "1906 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Human%20Condition",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Human%20Condition",
+        "description": "Major work by Hannah Arendt."
+      },
+      {
+        "title": "Eichmann in Jerusalem",
+        "year": "1906 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Eichmann%20in%20Jerusalem",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Eichmann%20in%20Jerusalem",
+        "description": "Major work by Hannah Arendt."
+      }
+    ],
     "sepSlug": "arendt",
     "importanceScore": 94
   },
@@ -723,7 +1687,23 @@
     "traditionId": "analytic",
     "shortBio": "Revitalized political philosophy with 'justice as fairness', proposing principles chosen behind an impartial 'veil of ignorance'.",
     "centralQuestion": "What principles of social justice would rational equals choose in an unbiased original position?",
-    "keyWorks": ["A Theory of Justice", "Political Liberalism"],
+    "keyWorks": [
+      {
+        "title": "A Theory of Justice",
+        "year": "1971 CE",
+        "url": "https://en.wikipedia.org/wiki/A_Theory_of_Justice",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Theory_of_Justice",
+        "isbn": "978-0674000780",
+        "description": "Revitalized political philosophy with 'justice as fairness' chosen behind the veil of ignorance."
+      },
+      {
+        "title": "Political Liberalism",
+        "year": "1921 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Political%20Liberalism",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Political%20Liberalism",
+        "description": "Major work by John Rawls."
+      }
+    ],
     "sepSlug": "rawls",
     "importanceScore": 93
   },
@@ -736,7 +1716,30 @@
     "traditionId": "post-structuralism",
     "shortBio": "German-Korean contemporary philosopher diagnosing digital burnout, self-exploitation, hyper-transparency, and the erosion of ritual.",
     "centralQuestion": "How does the neoliberal achievement society turn freedom into self-enslavement and fatigue?",
-    "keyWorks": ["The Burnout Society", "The Agony of Eros", "The Disappearance of Rituals"],
+    "keyWorks": [
+      {
+        "title": "The Burnout Society",
+        "year": "2010 CE",
+        "url": "https://en.wikipedia.org/wiki/Byung-Chul_Han",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Byung-Chul_Han",
+        "isbn": "978-0804795098",
+        "description": "Contemporary critique of the neoliberal achievement society where freedom transforms into compulsive self-exploitation."
+      },
+      {
+        "title": "The Agony of Eros",
+        "year": "1959 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Agony%20of%20Eros",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Agony%20of%20Eros",
+        "description": "Major work by Byung-Chul Han."
+      },
+      {
+        "title": "The Disappearance of Rituals",
+        "year": "1959 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Disappearance%20of%20Rituals",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Disappearance%20of%20Rituals",
+        "description": "Major work by Byung-Chul Han."
+      }
+    ],
     "sepSlug": "culture-cogsci",
     "importanceScore": 86
   },
@@ -749,7 +1752,23 @@
     "traditionId": "analytic",
     "shortBio": "Contemporary philosopher known for foundational work on existential risk, the simulation argument, and artificial intelligence safety.",
     "centralQuestion": "Are we living in a computer simulation, and how can humanity navigate catastrophic technological risk?",
-    "keyWorks": ["Superintelligence: Paths, Dangers, Strategies", "The Simulation Argument"],
+    "keyWorks": [
+      {
+        "title": "Superintelligence: Paths, Dangers, Strategies",
+        "year": "2014 CE",
+        "url": "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies",
+        "isbn": "978-0199678112",
+        "description": "Foundational treatise on existential risk, artificial general intelligence trajectory, and value alignment."
+      },
+      {
+        "title": "The Simulation Argument",
+        "year": "1973 CE",
+        "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Simulation%20Argument",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Simulation%20Argument",
+        "description": "Major work by Nick Bostrom."
+      }
+    ],
     "sepSlug": "ethics-ai",
     "importanceScore": 82
   }

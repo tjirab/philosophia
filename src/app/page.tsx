@@ -5,10 +5,7 @@ import {
   Compass,
   GitFork,
   Search,
-  Headphones,
-  BookOpen,
-  Info,
-  Layers,
+  HelpCircle,
   Sparkles,
 } from 'lucide-react';
 import {
@@ -22,15 +19,16 @@ import {
 } from '../lib/graph/graph-service';
 import { Branch, EraId } from '../lib/types';
 import { ForceGraphView } from '../components/graph/ForceGraphView';
-import { EraScrubber } from '../components/timeline/EraScrubber';
+import { EpochNavigator } from '../components/timeline/EpochNavigator';
 import { DossierDrawer } from '../components/drawer/DossierDrawer';
 import { LineagePathModal } from '../components/pathfinding/LineagePathModal';
 import { SearchPalette } from '../components/search/SearchPalette';
+import { GraphLegendModal } from '../components/legend/GraphLegendModal';
 
 export default function HomePage() {
-  const [selectedNodeId, setSelectedNodeId] = useState<string | null>('plato');
-  const [currentYear, setCurrentYear] = useState<number>(2026);
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [selectedEraId, setSelectedEraId] = useState<string>('all');
+  const [isolateEra, setIsolateEra] = useState<boolean>(true);
   const [selectedBranch, setSelectedBranch] = useState<Branch | 'all'>('all');
   const [showConcepts, setShowConcepts] = useState<boolean>(true);
   const [highlightedPathNodes, setHighlightedPathNodes] = useState<string[]>([]);
@@ -38,6 +36,7 @@ export default function HomePage() {
   // Modals state
   const [isPathModalOpen, setIsPathModalOpen] = useState<boolean>(false);
   const [isSearchOpen, setIsSearchOpen] = useState<boolean>(false);
+  const [isLegendOpen, setIsLegendOpen] = useState<boolean>(false);
   const [pathStartId, setPathStartId] = useState<string>('plato');
 
   // Keyboard shortcut listener for Search (Cmd+K / Ctrl+K)
@@ -50,6 +49,7 @@ export default function HomePage() {
       if (e.key === 'Escape') {
         setIsSearchOpen(false);
         setIsPathModalOpen(false);
+        setIsLegendOpen(false);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -58,13 +58,25 @@ export default function HomePage() {
 
   // Compute visual graph based on current filters
   const { nodes, links } = useMemo(() => {
+    let eraIdFilter: EraId | 'all' = 'all';
+    let maxYearFilter: number | undefined = undefined;
+
+    if (selectedEraId !== 'all') {
+      const eraObj = eras.find((e) => e.id === selectedEraId);
+      if (isolateEra) {
+        eraIdFilter = selectedEraId as EraId;
+      } else if (eraObj) {
+        maxYearFilter = eraObj.endYear;
+      }
+    }
+
     return getVisualGraph({
-      maxYear: currentYear,
-      eraId: selectedEraId as EraId | 'all',
+      maxYear: maxYearFilter,
+      eraId: eraIdFilter,
       branch: selectedBranch,
       includeConcepts: showConcepts,
     });
-  }, [currentYear, selectedEraId, selectedBranch, showConcepts]);
+  }, [selectedEraId, isolateEra, selectedBranch, showConcepts]);
 
   const handleSelectNode = useCallback((nodeId: string | null) => {
     setSelectedNodeId(nodeId);
@@ -87,39 +99,60 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden flex flex-col bg-slate-950 font-sans">
-      {/* Top Navigation Bar */}
-      <header className="absolute top-0 inset-x-0 z-30 h-16 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 px-4 sm:px-6 flex items-center justify-between">
-        {/* Logo & Subtitle */}
+    <div className="relative w-screen h-screen overflow-hidden flex flex-col bg-[#0e0d0b] text-[#f4efe6] font-serif">
+      {/* Top Classical Navigation Bar */}
+      <header className="absolute top-0 inset-x-0 z-30 h-16 bg-[#12100d]/90 backdrop-blur-md border-b border-[#2a241e] px-4 sm:px-6 flex items-center justify-between shadow-sm">
+        {/* Logo & Classical Title */}
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-amber-500 flex items-center justify-center text-white shadow-lg shadow-indigo-600/30">
-            <Compass className="w-5 h-5" />
+          <div className="w-8 h-8 rounded-lg bg-[#25201a] border border-[#3d3328] flex items-center justify-center text-[#e5b94c] shadow-sm">
+            <Compass className="w-4 h-4 text-[#c59b27]" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-bold text-base tracking-tight text-slate-50">
-                PHILOSOPHY GRAPH
+              <span className="font-serif font-bold text-base tracking-wider text-[#f5f0e6]">
+                PHILOSOPHIA
               </span>
-              <span className="hidden sm:inline-block text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-indigo-950 text-indigo-400 border border-indigo-800/40">
-                Interactive Lineage
+              <span className="hidden sm:inline-block text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-[#1e1b16] text-[#c59b27] border border-[#3d3328]">
+                Lineage of Ideas
               </span>
             </div>
-            <div className="text-xs text-slate-400 hidden sm:block">
-              Explore how ideas evolved from Plato & Aristotle to Kant & Schopenhauer
+            <div className="text-[11px] text-[#a89b88] hidden sm:block">
+              Mapping intellectual influence from Antiquity to Modernity
             </div>
           </div>
         </div>
 
+        {/* Central Epoch Navigator */}
+        <div className="flex items-center">
+          <EpochNavigator
+            eras={eras}
+            selectedEraId={selectedEraId}
+            onSelectEra={setSelectedEraId}
+            isolateEra={isolateEra}
+            onToggleIsolateEra={setIsolateEra}
+          />
+        </div>
+
         {/* Action Controls */}
         <div className="flex items-center gap-2">
+          {/* Folio Key / Legend */}
+          <button
+            onClick={() => setIsLegendOpen(true)}
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[#1a1714] hover:bg-[#25201a] text-[#d8cfc0] hover:text-[#e5b94c] border border-[#2a241e] hover:border-[#3d3328] rounded-xl text-xs transition font-serif"
+            title="Folio Key (Colors, Nodes & Relations)"
+          >
+            <HelpCircle className="w-3.5 h-3.5 text-[#c59b27]" />
+            <span>Folio Key</span>
+          </button>
+
           {/* Search Trigger */}
           <button
             onClick={() => setIsSearchOpen(true)}
-            className="flex items-center gap-2 px-3 py-1.5 bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 rounded-xl text-xs transition"
+            className="flex items-center gap-2 px-3 py-1.5 bg-[#1a1714] hover:bg-[#25201a] text-[#d8cfc0] border border-[#2a241e] rounded-xl text-xs transition"
           >
-            <Search className="w-3.5 h-3.5 text-slate-400" />
-            <span className="hidden sm:inline">Search Thinkers & Ideas</span>
-            <kbd className="hidden sm:inline-block text-[10px] font-mono bg-slate-800 px-1.5 py-0.5 rounded text-slate-400 border border-slate-700">
+            <Search className="w-3.5 h-3.5 text-[#c59b27]" />
+            <span className="hidden md:inline">Search Folio</span>
+            <kbd className="hidden md:inline-block text-[10px] font-mono bg-[#25201a] px-1.5 py-0.5 rounded text-[#a89b88] border border-[#3d3328]">
               ⌘K
             </kbd>
           </button>
@@ -127,9 +160,9 @@ export default function HomePage() {
           {/* Trace Lineage Path Button */}
           <button
             onClick={() => handleOpenPathModal(selectedNodeId || 'plato')}
-            className="flex items-center gap-1.5 px-3.5 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-medium transition shadow-md shadow-indigo-600/30"
+            className="flex items-center gap-1.5 px-3.5 py-1.5 bg-[#2a2318] hover:bg-[#352c1e] text-[#e5b94c] border border-[#4a3b25] rounded-xl text-xs font-semibold tracking-wide transition shadow-sm"
           >
-            <GitFork className="w-3.5 h-3.5" />
+            <GitFork className="w-3.5 h-3.5 text-[#c59b27]" />
             <span>Trace Lineage</span>
           </button>
         </div>
@@ -148,21 +181,9 @@ export default function HomePage() {
           onSelectBranch={setSelectedBranch}
           showConcepts={showConcepts}
           onToggleConcepts={() => setShowConcepts(!showConcepts)}
+          onOpenLegend={() => setIsLegendOpen(true)}
         />
       </main>
-
-      {/* Floating Bottom Era Scrubber */}
-      <div className="absolute bottom-5 inset-x-0 z-30 px-4 pointer-events-none flex justify-center">
-        <div className="pointer-events-auto w-full max-w-4xl">
-          <EraScrubber
-            eras={eras}
-            currentYear={currentYear}
-            onYearChange={setCurrentYear}
-            selectedEraId={selectedEraId}
-            onSelectEra={setSelectedEraId}
-          />
-        </div>
-      </div>
 
       {/* Slide-out Dossier Drawer */}
       <DossierDrawer
@@ -189,6 +210,12 @@ export default function HomePage() {
         philosophers={philosophers}
         concepts={concepts}
         onSelectNode={handleSelectNode}
+      />
+
+      {/* Folio Key / Legend Modal */}
+      <GraphLegendModal
+        isOpen={isLegendOpen}
+        onClose={() => setIsLegendOpen(false)}
       />
     </div>
   );

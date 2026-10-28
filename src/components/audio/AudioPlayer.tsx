@@ -19,7 +19,6 @@ export function AudioPlayer({ audioUrl, title, episodeNumber, duration }: AudioP
   const [isMuted, setIsMuted] = useState(false);
 
   useEffect(() => {
-    // Reset playback state when URL changes
     setIsPlaying(false);
     setCurrentTime(0);
     if (audioRef.current) {
@@ -92,7 +91,7 @@ export function AudioPlayer({ audioUrl, title, episodeNumber, duration }: AudioP
   };
 
   return (
-    <div className="bg-slate-900/90 border border-indigo-500/20 rounded-xl p-4 shadow-lg backdrop-blur">
+    <div className="bg-[#1a1714] border border-[#2a241e] rounded-xl p-4 shadow-lg text-[#f4efe6] font-serif">
       <audio
         ref={audioRef}
         src={audioUrl}
@@ -102,15 +101,15 @@ export function AudioPlayer({ audioUrl, title, episodeNumber, duration }: AudioP
         onEnded={() => setIsPlaying(false)}
       />
 
-      <div className="flex items-center gap-3 mb-2">
-        <div className="p-2 bg-indigo-600/20 text-indigo-400 rounded-lg">
-          <Headphones className="w-5 h-5" />
+      <div className="flex items-center gap-3 mb-2.5">
+        <div className="p-2 bg-[#25201a] text-[#c59b27] rounded-lg border border-[#3d3328]">
+          <Headphones className="w-4 h-4" />
         </div>
         <div className="flex-1 min-w-0">
-          <div className="text-xs uppercase tracking-wider text-indigo-400 font-semibold">
-            {episodeNumber ? `Episode #${episodeNumber}` : 'Philosophize This!'}
+          <div className="text-[10px] uppercase tracking-widest text-[#c59b27] font-semibold">
+            {episodeNumber ? `Philosophize This! • Episode #${episodeNumber}` : 'Philosophize This!'}
           </div>
-          <div className="text-sm font-medium text-slate-100 truncate" title={title}>
+          <div className="text-sm font-semibold text-[#f5f0e6] truncate" title={title}>
             {title}
           </div>
         </div>
@@ -118,7 +117,7 @@ export function AudioPlayer({ audioUrl, title, episodeNumber, duration }: AudioP
 
       {/* Progress slider */}
       <div className="flex items-center gap-2 mb-3">
-        <span className="text-xs font-mono text-slate-400 w-10 text-right">
+        <span className="text-[11px] font-mono text-[#a89b88] w-10 text-right">
           {formatTime(currentTime)}
         </span>
         <input
@@ -127,9 +126,9 @@ export function AudioPlayer({ audioUrl, title, episodeNumber, duration }: AudioP
           max={totalDuration || 100}
           value={currentTime}
           onChange={handleSeek}
-          className="flex-1 h-1.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-indigo-500"
+          className="flex-1 h-1.5 bg-[#25201a] rounded-lg appearance-none cursor-pointer accent-[#c59b27]"
         />
-        <span className="text-xs font-mono text-slate-400 w-10">
+        <span className="text-[11px] font-mono text-[#a89b88] w-10">
           {formatTime(totalDuration || 0)}
         </span>
       </div>
@@ -139,15 +138,15 @@ export function AudioPlayer({ audioUrl, title, episodeNumber, duration }: AudioP
         <div className="flex items-center gap-2">
           <button
             onClick={() => skipSeconds(-15)}
-            className="p-1.5 text-slate-400 hover:text-slate-100 transition-colors"
+            className="p-1.5 text-[#a89b88] hover:text-[#f5f0e6] transition"
             title="Rewind 15 seconds"
           >
-            <RotateCcw className="w-4 h-4" />
+            <RotateCcw className="w-3.5 h-3.5" />
           </button>
 
           <button
             onClick={togglePlay}
-            className="p-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full transition-transform active:scale-95 shadow-md shadow-indigo-600/30"
+            className="p-2 bg-[#2a2318] hover:bg-[#352c1e] text-[#e5b94c] border border-[#4a3b25] rounded-full transition active:scale-95 shadow-md"
             title={isPlaying ? 'Pause' : 'Play'}
           >
             {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 ml-0.5" />}
@@ -155,26 +154,26 @@ export function AudioPlayer({ audioUrl, title, episodeNumber, duration }: AudioP
 
           <button
             onClick={() => skipSeconds(30)}
-            className="p-1.5 text-slate-400 hover:text-slate-100 transition-colors"
+            className="p-1.5 text-[#a89b88] hover:text-[#f5f0e6] transition"
             title="Forward 30 seconds"
           >
-            <RotateCw className="w-4 h-4" />
+            <RotateCw className="w-3.5 h-3.5" />
           </button>
         </div>
 
         <div className="flex items-center gap-2">
           <button
             onClick={cyclePlaybackRate}
-            className="px-2 py-1 text-xs font-medium text-slate-300 bg-slate-800 hover:bg-slate-700 rounded border border-slate-700 transition"
+            className="px-2 py-0.5 text-xs font-medium text-[#d8cfc0] bg-[#25201a] hover:bg-[#302920] rounded border border-[#3d3328] transition font-mono"
           >
             {playbackRate}x
           </button>
           <button
             onClick={toggleMute}
-            className="p-1.5 text-slate-400 hover:text-slate-100 transition"
+            className="p-1.5 text-[#a89b88] hover:text-[#f5f0e6] transition"
             title={isMuted ? 'Unmute' : 'Mute'}
           >
-            {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
+            {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
           </button>
         </div>
       </div>

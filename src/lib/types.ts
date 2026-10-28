@@ -41,6 +41,15 @@ export interface Tradition {
   description: string;
 }
 
+export interface KeyWork {
+  title: string;
+  year?: number | string;
+  url?: string;
+  wikipediaUrl?: string;
+  isbn?: string;
+  description?: string;
+}
+
 export interface Philosopher {
   id: string;
   name: string;
@@ -50,7 +59,7 @@ export interface Philosopher {
   traditionId: string;
   shortBio: string;
   centralQuestion: string;
-  keyWorks: string[];
+  keyWorks: (string | KeyWork)[];
   sepSlug: string;
   importanceScore: number;
 }
