@@ -32,7 +32,7 @@ export default function HomePage() {
   const [selectedEraId, setSelectedEraId] = useState<string>('all');
   const [isolateEra, setIsolateEra] = useState<boolean>(true);
   const [selectedBranch, setSelectedBranch] = useState<Branch | 'all'>('all');
-  const [showConcepts, setShowConcepts] = useState<boolean>(true);
+  const [showConcepts, setShowConcepts] = useState<boolean>(false);
   const [highlightedPathNodes, setHighlightedPathNodes] = useState<string[]>([]);
 
   // Modals state
