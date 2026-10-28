@@ -42,6 +42,17 @@ describe('Philosophy Graph Data Integrity', () => {
     }
   });
 
+  it('validates that all concepts are connected to edges and not isolated', () => {
+    const connectedIds = new Set<string>();
+    for (const e of edgesData) {
+      connectedIds.add(e.source);
+      connectedIds.add(e.target);
+    }
+    for (const c of conceptsData) {
+      expect(connectedIds.has(c.id), `Concept ${c.id} is isolated with no edges`).toBe(true);
+    }
+  });
+
   it('validates that all edges connect existing nodes with no dangling references', () => {
     expect(edgesData.length).toBeGreaterThan(30);
 
