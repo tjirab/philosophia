@@ -1,50 +1,870 @@
 [
-  { "source": "thales", "target": "heraclitus", "type": "DEVELOPED", "label": "Shifted naturalistic arche from water to fire and flux", "strength": 3 },
-  { "source": "heraclitus", "target": "parmenides", "type": "CRITIQUED", "label": "Parmenides rejected Heraclitean flux, asserting Being is changeless", "strength": 4 },
-  { "source": "parmenides", "target": "democritus", "type": "DEVELOPED", "label": "Democritus reconciled changeless Being with change via moving atoms in void", "strength": 4 },
-  { "source": "socrates", "target": "plato", "type": "INFLUENCED", "label": "Teacher and ethical inspiration; immortalized in dialogues", "strength": 5 },
-  { "source": "plato", "target": "aristotle", "type": "INFLUENCED", "label": "20 years at the Academy; Aristotle grounded transcendent Forms into immanent matter", "strength": 5 },
-  { "source": "democritus", "target": "epicurus", "type": "INFLUENCED", "label": "Adopted physical atomism with the atomic swerve (clinamen) for free will", "strength": 4 },
-  { "source": "socrates", "target": "seneca", "type": "INFLUENCED", "label": "Socratic moral integrity and fearlessness in face of death", "strength": 3 },
-  { "source": "epictetus", "target": "marcus-aurelius", "type": "INFLUENCED", "label": "Marcus Aurelius deeply studied Epictetus's Discourses", "strength": 5 },
-  { "source": "plato", "target": "plotinus", "type": "DEVELOPED", "label": "Systematized Plato's Good into the transcendent metaphysical 'One'", "strength": 5 },
-  { "source": "plotinus", "target": "augustine", "type": "SYNTHESIZED", "label": "Synthesized Neoplatonism with Christian theology and grace", "strength": 5 },
-  { "source": "aristotle", "target": "avicenna", "type": "DEVELOPED", "label": "Expanded Aristotelian metaphysics in the Islamic world with the essence/existence distinction", "strength": 4 },
-  { "source": "aristotle", "target": "averroes", "type": "DEVELOPED", "label": "Wrote comprehensive commentaries restoring authentic Aristotelian thought", "strength": 4 },
-  { "source": "aristotle", "target": "thomas-aquinas", "type": "SYNTHESIZED", "label": "Harmonized Christian theology with Aristotelian philosophy into high Scholasticism", "strength": 5 },
-  { "source": "thomas-aquinas", "target": "william-of-ockham", "type": "CRITIQUED", "label": "Ockham rejected scholastic realism of universals in favor of parsimonious nominalism", "strength": 4 },
-  { "source": "aristotle", "target": "francis-bacon", "type": "CRITIQUED", "label": "Replaced Aristotelian deductive syllogisms with empirical inductive science", "strength": 4 },
-  { "source": "rene-descartes", "target": "thomas-hobbes", "type": "CRITIQUED", "label": "Hobbes rejected Descartes' immaterial soul, advocating strict materialism", "strength": 3 },
-  { "source": "rene-descartes", "target": "baruch-spinoza", "type": "DEVELOPED", "label": "Resolved Cartesian mind-body dualism by merging mind and extension into one divine substance", "strength": 5 },
-  { "source": "rene-descartes", "target": "gottfried-leibniz", "type": "CRITIQUED", "label": "Replaced Cartesian mechanistic physics with living dynamical monads", "strength": 4 },
-  { "source": "rene-descartes", "target": "john-locke", "type": "CRITIQUED", "label": "Locke attacked Cartesian innate ideas, asserting the mind is a tabula rasa", "strength": 5 },
-  { "source": "john-locke", "target": "george-berkeley", "type": "DEVELOPED", "label": "Extended Locke's empiricism to deny the existence of unperceived mind-independent matter", "strength": 4 },
-  { "source": "george-berkeley", "target": "david-hume", "type": "DEVELOPED", "label": "Hume pushed empiricism to skeptical conclusions regarding causality, induction, and the self", "strength": 5 },
-  { "source": "john-locke", "target": "jean-jacques-rousseau", "type": "DEVELOPED", "label": "Transformed liberal social contract theory into democratic sovereignty and the General Will", "strength": 4 },
-  { "source": "david-hume", "target": "immanuel-kant", "type": "INFLUENCED", "label": "Hume's skepticism awakened Kant from 'dogmatic slumber', inspiring the Critical Philosophy", "strength": 5 },
-  { "source": "plato", "target": "immanuel-kant", "type": "DEVELOPED", "label": "Kant re-interpreted the realm of Forms into the Noumenal realm (thing-in-itself)", "strength": 4 },
-  { "source": "immanuel-kant", "target": "gwf-hegel", "type": "DEVELOPED", "label": "Hegel overcame Kant's dualism between phenomena and noumena through dialectical idealism", "strength": 5 },
-  { "source": "immanuel-kant", "target": "arthur-schopenhauer", "type": "DEVELOPED", "label": "Schopenhauer preserved Kantian transcendental idealism but unveiled the thing-in-itself as Will", "strength": 5 },
-  { "source": "siddhartha-gautama", "target": "arthur-schopenhauer", "type": "SYNTHESIZED", "label": "Integrated Buddhist Noble Truths and cessation of desire into Western metaphysics", "strength": 4 },
-  { "source": "gwf-hegel", "target": "karl-marx", "type": "CRITIQUED", "label": "Turned Hegelian dialectic from idealist spirit right side up into historical materialism", "strength": 5 },
-  { "source": "gwf-hegel", "target": "soren-kierkegaard", "type": "CRITIQUED", "label": "Kierkegaard rejected Hegel's totalizing system in defense of subjective individual anguish", "strength": 5 },
-  { "source": "arthur-schopenhauer", "target": "friedrich-nietzsche", "type": "DEVELOPED", "label": "Transformed Schopenhauer's passive Will to Live into active, life-affirming Will to Power", "strength": 5 },
-  { "source": "david-hume", "target": "john-stuart-mill", "type": "INFLUENCED", "label": "Empirical psychological foundations of utilitarian ethics and utility", "strength": 3 },
-  { "source": "john-locke", "target": "william-james", "type": "DEVELOPED", "label": "Radicalized empiricism into pragmatic inquiry based on experiential consequences", "strength": 3 },
-  { "source": "immanuel-kant", "target": "edmund-husserl", "type": "DEVELOPED", "label": "Constructed phenomenology as a rigorous transcendental science of conscious experience", "strength": 4 },
-  { "source": "edmund-husserl", "target": "martin-heidegger", "type": "DEVELOPED", "label": "Heidegger shifted Husserlian consciousness phenomenology to fundamental ontology of Dasein", "strength": 5 },
-  { "source": "martin-heidegger", "target": "jean-paul-sartre", "type": "DEVELOPED", "label": "Applied Being-in-the-world to human freedom, anxiety, and existential choice", "strength": 5 },
-  { "source": "jean-paul-sartre", "target": "simone-de-beauvoir", "type": "DEVELOPED", "label": "Lifelong intellectual partnership; Beauvoir founded feminist existentialism", "strength": 5 },
-  { "source": "soren-kierkegaard", "target": "albert-camus", "type": "DEVELOPED", "label": "Explored the leap into absurdity without Kierkegaard's religious leap of faith", "strength": 4 },
-  { "source": "friedrich-nietzsche", "target": "albert-camus", "type": "INFLUENCED", "label": "Affirmation of life and heroic revolt against nihilism", "strength": 4 },
-  { "source": "bertrand-russell", "target": "ludwig-wittgenstein", "type": "INFLUENCED", "label": "Russell mentored early Wittgenstein; their work revolutionized formal logical analysis", "strength": 5 },
-  { "source": "ludwig-wittgenstein", "target": "karl-popper", "type": "CRITIQUED", "label": "Popper famously clashed with Wittgenstein over whether philosophical problems are real or linguistic puzzles", "strength": 4 },
-  { "source": "karl-marx", "target": "theodor-adorno", "type": "DEVELOPED", "label": "Frankfurt School combined Marxist critique with Freudian psychoanalysis and culture critique", "strength": 5 },
-  { "source": "friedrich-nietzsche", "target": "michel-foucault", "type": "INFLUENCED", "label": "Genealogical method adapted to examine institutions of power, sanity, and sexuality", "strength": 5 },
-  { "source": "martin-heidegger", "target": "jacques-derrida", "type": "DEVELOPED", "label": "Heidegger's 'destruction' of ontology developed into textual Deconstruction", "strength": 5 },
-  { "source": "baruch-spinoza", "target": "gilles-deleuze", "type": "DEVELOPED", "label": "Deleuze revitalized Spinozan univocity of being and immanence", "strength": 4 },
-  { "source": "immanuel-kant", "target": "hannah-arendt", "type": "DEVELOPED", "label": "Adapted Kant's Critique of Judgment for political philosophy and reflective civic judgment", "strength": 4 },
-  { "source": "immanuel-kant", "target": "john-rawls", "type": "DEVELOPED", "label": "Used Kantian moral autonomy to construct the original position and veil of ignorance", "strength": 5 },
-  { "source": "martin-heidegger", "target": "byung-chul-han", "type": "DEVELOPED", "label": "Critiques digital hyper-activity, calculation, and loss of profound contemplation", "strength": 4 },
-  { "source": "rene-descartes", "target": "nick-bostrom", "type": "DEVELOPED", "label": "Modern computational reformulation of Descartes' evil demon problem in the simulation argument", "strength": 3 }
+  {
+    "source": "thales",
+    "target": "heraclitus",
+    "type": "DEVELOPED",
+    "label": "Shifted naturalistic arche from water to fire and flux",
+    "strength": 3
+  },
+  {
+    "source": "heraclitus",
+    "target": "parmenides",
+    "type": "CRITIQUED",
+    "label": "Parmenides rejected Heraclitean flux, asserting Being is changeless",
+    "strength": 4
+  },
+  {
+    "source": "parmenides",
+    "target": "democritus",
+    "type": "DEVELOPED",
+    "label": "Democritus reconciled changeless Being with change via moving atoms in void",
+    "strength": 4
+  },
+  {
+    "source": "socrates",
+    "target": "plato",
+    "type": "INFLUENCED",
+    "label": "Teacher and ethical inspiration; immortalized in dialogues",
+    "strength": 5
+  },
+  {
+    "source": "plato",
+    "target": "aristotle",
+    "type": "INFLUENCED",
+    "label": "20 years at the Academy; Aristotle grounded transcendent Forms into immanent matter",
+    "strength": 5
+  },
+  {
+    "source": "democritus",
+    "target": "epicurus",
+    "type": "INFLUENCED",
+    "label": "Adopted physical atomism with the atomic swerve (clinamen) for free will",
+    "strength": 4
+  },
+  {
+    "source": "socrates",
+    "target": "seneca",
+    "type": "INFLUENCED",
+    "label": "Socratic moral integrity and fearlessness in face of death",
+    "strength": 3
+  },
+  {
+    "source": "epictetus",
+    "target": "marcus-aurelius",
+    "type": "INFLUENCED",
+    "label": "Marcus Aurelius deeply studied Epictetus's Discourses",
+    "strength": 5
+  },
+  {
+    "source": "plato",
+    "target": "plotinus",
+    "type": "DEVELOPED",
+    "label": "Systematized Plato's Good into the transcendent metaphysical 'One'",
+    "strength": 5
+  },
+  {
+    "source": "plotinus",
+    "target": "augustine",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Neoplatonism with Christian theology and grace",
+    "strength": 5
+  },
+  {
+    "source": "aristotle",
+    "target": "avicenna",
+    "type": "DEVELOPED",
+    "label": "Expanded Aristotelian metaphysics in the Islamic world with the essence/existence distinction",
+    "strength": 4
+  },
+  {
+    "source": "aristotle",
+    "target": "averroes",
+    "type": "DEVELOPED",
+    "label": "Wrote comprehensive commentaries restoring authentic Aristotelian thought",
+    "strength": 4
+  },
+  {
+    "source": "aristotle",
+    "target": "thomas-aquinas",
+    "type": "SYNTHESIZED",
+    "label": "Harmonized Christian theology with Aristotelian philosophy into high Scholasticism",
+    "strength": 5
+  },
+  {
+    "source": "thomas-aquinas",
+    "target": "william-of-ockham",
+    "type": "CRITIQUED",
+    "label": "Ockham rejected scholastic realism of universals in favor of parsimonious nominalism",
+    "strength": 4
+  },
+  {
+    "source": "aristotle",
+    "target": "francis-bacon",
+    "type": "CRITIQUED",
+    "label": "Replaced Aristotelian deductive syllogisms with empirical inductive science",
+    "strength": 4
+  },
+  {
+    "source": "rene-descartes",
+    "target": "thomas-hobbes",
+    "type": "CRITIQUED",
+    "label": "Hobbes rejected Descartes' immaterial soul, advocating strict materialism",
+    "strength": 3
+  },
+  {
+    "source": "rene-descartes",
+    "target": "baruch-spinoza",
+    "type": "DEVELOPED",
+    "label": "Resolved Cartesian mind-body dualism by merging mind and extension into one divine substance",
+    "strength": 5
+  },
+  {
+    "source": "rene-descartes",
+    "target": "gottfried-leibniz",
+    "type": "CRITIQUED",
+    "label": "Replaced Cartesian mechanistic physics with living dynamical monads",
+    "strength": 4
+  },
+  {
+    "source": "rene-descartes",
+    "target": "john-locke",
+    "type": "CRITIQUED",
+    "label": "Locke attacked Cartesian innate ideas, asserting the mind is a tabula rasa",
+    "strength": 5
+  },
+  {
+    "source": "john-locke",
+    "target": "george-berkeley",
+    "type": "DEVELOPED",
+    "label": "Extended Locke's empiricism to deny the existence of unperceived mind-independent matter",
+    "strength": 4
+  },
+  {
+    "source": "george-berkeley",
+    "target": "david-hume",
+    "type": "DEVELOPED",
+    "label": "Hume pushed empiricism to skeptical conclusions regarding causality, induction, and the self",
+    "strength": 5
+  },
+  {
+    "source": "john-locke",
+    "target": "jean-jacques-rousseau",
+    "type": "DEVELOPED",
+    "label": "Transformed liberal social contract theory into democratic sovereignty and the General Will",
+    "strength": 4
+  },
+  {
+    "source": "david-hume",
+    "target": "immanuel-kant",
+    "type": "INFLUENCED",
+    "label": "Hume's skepticism awakened Kant from 'dogmatic slumber', inspiring the Critical Philosophy",
+    "strength": 5
+  },
+  {
+    "source": "plato",
+    "target": "immanuel-kant",
+    "type": "DEVELOPED",
+    "label": "Kant re-interpreted the realm of Forms into the Noumenal realm (thing-in-itself)",
+    "strength": 4
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "gwf-hegel",
+    "type": "DEVELOPED",
+    "label": "Hegel overcame Kant's dualism between phenomena and noumena through dialectical idealism",
+    "strength": 5
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "arthur-schopenhauer",
+    "type": "DEVELOPED",
+    "label": "Schopenhauer preserved Kantian transcendental idealism but unveiled the thing-in-itself as Will",
+    "strength": 5
+  },
+  {
+    "source": "siddhartha-gautama",
+    "target": "arthur-schopenhauer",
+    "type": "SYNTHESIZED",
+    "label": "Integrated Buddhist Noble Truths and cessation of desire into Western metaphysics",
+    "strength": 4
+  },
+  {
+    "source": "gwf-hegel",
+    "target": "karl-marx",
+    "type": "CRITIQUED",
+    "label": "Turned Hegelian dialectic from idealist spirit right side up into historical materialism",
+    "strength": 5
+  },
+  {
+    "source": "gwf-hegel",
+    "target": "soren-kierkegaard",
+    "type": "CRITIQUED",
+    "label": "Kierkegaard rejected Hegel's totalizing system in defense of subjective individual anguish",
+    "strength": 5
+  },
+  {
+    "source": "arthur-schopenhauer",
+    "target": "friedrich-nietzsche",
+    "type": "DEVELOPED",
+    "label": "Transformed Schopenhauer's passive Will to Live into active, life-affirming Will to Power",
+    "strength": 5
+  },
+  {
+    "source": "david-hume",
+    "target": "john-stuart-mill",
+    "type": "INFLUENCED",
+    "label": "Empirical psychological foundations of utilitarian ethics and utility",
+    "strength": 3
+  },
+  {
+    "source": "john-locke",
+    "target": "william-james",
+    "type": "DEVELOPED",
+    "label": "Radicalized empiricism into pragmatic inquiry based on experiential consequences",
+    "strength": 3
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "edmund-husserl",
+    "type": "DEVELOPED",
+    "label": "Constructed phenomenology as a rigorous transcendental science of conscious experience",
+    "strength": 4
+  },
+  {
+    "source": "edmund-husserl",
+    "target": "martin-heidegger",
+    "type": "DEVELOPED",
+    "label": "Heidegger shifted Husserlian consciousness phenomenology to fundamental ontology of Dasein",
+    "strength": 5
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "jean-paul-sartre",
+    "type": "DEVELOPED",
+    "label": "Applied Being-in-the-world to human freedom, anxiety, and existential choice",
+    "strength": 5
+  },
+  {
+    "source": "jean-paul-sartre",
+    "target": "simone-de-beauvoir",
+    "type": "DEVELOPED",
+    "label": "Lifelong intellectual partnership; Beauvoir founded feminist existentialism",
+    "strength": 5
+  },
+  {
+    "source": "soren-kierkegaard",
+    "target": "albert-camus",
+    "type": "DEVELOPED",
+    "label": "Explored the leap into absurdity without Kierkegaard's religious leap of faith",
+    "strength": 4
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "albert-camus",
+    "type": "INFLUENCED",
+    "label": "Affirmation of life and heroic revolt against nihilism",
+    "strength": 4
+  },
+  {
+    "source": "bertrand-russell",
+    "target": "ludwig-wittgenstein",
+    "type": "INFLUENCED",
+    "label": "Russell mentored early Wittgenstein; their work revolutionized formal logical analysis",
+    "strength": 5
+  },
+  {
+    "source": "ludwig-wittgenstein",
+    "target": "karl-popper",
+    "type": "CRITIQUED",
+    "label": "Popper famously clashed with Wittgenstein over whether philosophical problems are real or linguistic puzzles",
+    "strength": 4
+  },
+  {
+    "source": "karl-marx",
+    "target": "theodor-adorno",
+    "type": "DEVELOPED",
+    "label": "Frankfurt School combined Marxist critique with Freudian psychoanalysis and culture critique",
+    "strength": 5
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "michel-foucault",
+    "type": "INFLUENCED",
+    "label": "Genealogical method adapted to examine institutions of power, sanity, and sexuality",
+    "strength": 5
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "jacques-derrida",
+    "type": "DEVELOPED",
+    "label": "Heidegger's 'destruction' of ontology developed into textual Deconstruction",
+    "strength": 5
+  },
+  {
+    "source": "baruch-spinoza",
+    "target": "gilles-deleuze",
+    "type": "DEVELOPED",
+    "label": "Deleuze revitalized Spinozan univocity of being and immanence",
+    "strength": 4
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "hannah-arendt",
+    "type": "DEVELOPED",
+    "label": "Adapted Kant's Critique of Judgment for political philosophy and reflective civic judgment",
+    "strength": 4
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "john-rawls",
+    "type": "DEVELOPED",
+    "label": "Used Kantian moral autonomy to construct the original position and veil of ignorance",
+    "strength": 5
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "byung-chul-han",
+    "type": "DEVELOPED",
+    "label": "Critiques digital hyper-activity, calculation, and loss of profound contemplation",
+    "strength": 4
+  },
+  {
+    "source": "rene-descartes",
+    "target": "nick-bostrom",
+    "type": "DEVELOPED",
+    "label": "Modern computational reformulation of Descartes' evil demon problem in the simulation argument",
+    "strength": 3
+  },
+  {
+    "source": "plato",
+    "target": "theory-of-forms",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Theory of Forms",
+    "strength": 5
+  },
+  {
+    "source": "aristotle",
+    "target": "teleology-four-causes",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Teleology & The Four Causes",
+    "strength": 5
+  },
+  {
+    "source": "aristotle",
+    "target": "eudaimonia-virtue",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Eudaimonia & The Golden Mean",
+    "strength": 5
+  },
+  {
+    "source": "epicurus",
+    "target": "ataraxia",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Ataraxia (Tranquility of Mind)",
+    "strength": 5
+  },
+  {
+    "source": "epictetus",
+    "target": "dichotomy-of-control",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Dichotomy of Control",
+    "strength": 5
+  },
+  {
+    "source": "nagarjuna",
+    "target": "sunyata-emptiness",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Sunyata (Emptiness & Dependent Arising)",
+    "strength": 5
+  },
+  {
+    "source": "avicenna",
+    "target": "floating-man",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Floating Man Thought Experiment",
+    "strength": 5
+  },
+  {
+    "source": "william-of-ockham",
+    "target": "ockhams-razor",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Ockham's Razor (Principle of Parsimony)",
+    "strength": 5
+  },
+  {
+    "source": "rene-descartes",
+    "target": "cogito-ergo-sum",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Methodological Doubt & Cogito",
+    "strength": 5
+  },
+  {
+    "source": "rene-descartes",
+    "target": "cartesian-dualism",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Substance Dualism (Mind vs. Matter)",
+    "strength": 5
+  },
+  {
+    "source": "baruch-spinoza",
+    "target": "deus-sive-natura",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Pantheism (Deus Sive Natura)",
+    "strength": 5
+  },
+  {
+    "source": "john-locke",
+    "target": "tabula-rasa",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Tabula Rasa (The Blank Slate)",
+    "strength": 5
+  },
+  {
+    "source": "david-hume",
+    "target": "problem-of-induction",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Problem of Induction & Hume's Fork",
+    "strength": 5
+  },
+  {
+    "source": "david-hume",
+    "target": "bundle-theory",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Bundle Theory of the Self",
+    "strength": 5
+  },
+  {
+    "source": "jean-jacques-rousseau",
+    "target": "general-will",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The General Will & The Social Contract",
+    "strength": 5
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "transcendental-idealism",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Transcendental Idealism (Copernican Turn)",
+    "strength": 5
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "noumena-phenomena",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Phenomena vs. Noumena (Thing-in-Itself)",
+    "strength": 5
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "categorical-imperative",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Categorical Imperative",
+    "strength": 5
+  },
+  {
+    "source": "gwf-hegel",
+    "target": "hegelian-dialectic",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Dialectical Historical Reason",
+    "strength": 5
+  },
+  {
+    "source": "arthur-schopenhauer",
+    "target": "world-as-will",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The World as Will & Metaphysical Pessimism",
+    "strength": 5
+  },
+  {
+    "source": "soren-kierkegaard",
+    "target": "leap-of-faith",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Leap of Faith & Existential Dread",
+    "strength": 5
+  },
+  {
+    "source": "karl-marx",
+    "target": "historical-materialism",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Historical Materialism & Alienation",
+    "strength": 5
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "will-to-power",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Will to Power & Revaluation of Values",
+    "strength": 5
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "eternal-recurrence",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Eternal Recurrence & Amor Fati",
+    "strength": 5
+  },
+  {
+    "source": "john-stuart-mill",
+    "target": "utilitarian-principle",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Principle of Utility & Harm Principle",
+    "strength": 5
+  },
+  {
+    "source": "edmund-husserl",
+    "target": "intentionality-epoche",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Intentionality & Phenomenological Reduction (Epoché)",
+    "strength": 5
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "dasein-being-in-the-world",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Dasein & Being-toward-Death",
+    "strength": 5
+  },
+  {
+    "source": "jean-paul-sartre",
+    "target": "existence-precedes-essence",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Existence Precedes Essence & Bad Faith",
+    "strength": 5
+  },
+  {
+    "source": "albert-camus",
+    "target": "the-absurd",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Absurd & Sisyphus's Revolt",
+    "strength": 5
+  },
+  {
+    "source": "ludwig-wittgenstein",
+    "target": "language-games",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Language Games & Forms of Life",
+    "strength": 5
+  },
+  {
+    "source": "karl-popper",
+    "target": "falsificationism",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Falsificationism & Demarcation",
+    "strength": 5
+  },
+  {
+    "source": "michel-foucault",
+    "target": "power-knowledge-panopticon",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Disciplinary Power & The Panopticon",
+    "strength": 5
+  },
+  {
+    "source": "jacques-derrida",
+    "target": "deconstruction-differance",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Deconstruction & Différance",
+    "strength": 5
+  },
+  {
+    "source": "hannah-arendt",
+    "target": "banality-of-evil",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Banality of Evil",
+    "strength": 5
+  },
+  {
+    "source": "john-rawls",
+    "target": "veil-of-ignorance",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Veil of Ignorance & Difference Principle",
+    "strength": 5
+  },
+  {
+    "source": "byung-chul-han",
+    "target": "burnout-society",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Burnout Society & Self-Exploitation",
+    "strength": 5
+  },
+  {
+    "source": "nick-bostrom",
+    "target": "simulation-argument",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Simulation Argument",
+    "strength": 5
+  },
+  {
+    "source": "theory-of-forms",
+    "target": "aristotle",
+    "type": "CRITIQUED",
+    "label": "Aristotle rejected transcendent Forms in favor of immanent substance and empirical observation",
+    "strength": 5
+  },
+  {
+    "source": "theory-of-forms",
+    "target": "plotinus",
+    "type": "DEVELOPED",
+    "label": "Plotinus integrated Platonic Forms into the Divine Intellect (Nous)",
+    "strength": 4
+  },
+  {
+    "source": "teleology-four-causes",
+    "target": "thomas-aquinas",
+    "type": "SYNTHESIZED",
+    "label": "Aquinas integrated Aristotelian teleology and prime mover into Christian theology",
+    "strength": 5
+  },
+  {
+    "source": "teleology-four-causes",
+    "target": "francis-bacon",
+    "type": "CRITIQUED",
+    "label": "Bacon discarded teleological final causes as barren, demanding empirical mechanics",
+    "strength": 4
+  },
+  {
+    "source": "cogito-ergo-sum",
+    "target": "baruch-spinoza",
+    "type": "DEVELOPED",
+    "label": "Spinoza adopted geometric rationalist deduction from self-evident axioms",
+    "strength": 4
+  },
+  {
+    "source": "cogito-ergo-sum",
+    "target": "david-hume",
+    "type": "CRITIQUED",
+    "label": "Hume disputed the Cartesian soul, arguing introspection reveals only transient perceptions",
+    "strength": 5
+  },
+  {
+    "source": "cartesian-dualism",
+    "target": "baruch-spinoza",
+    "type": "CRITIQUED",
+    "label": "Spinoza resolved mind-body dualism through substance monism (Deus sive Natura)",
+    "strength": 5
+  },
+  {
+    "source": "cartesian-dualism",
+    "target": "thomas-hobbes",
+    "type": "CRITIQUED",
+    "label": "Hobbes rejected immaterial Cartesian substance, arguing all reality is corporeal motion",
+    "strength": 4
+  },
+  {
+    "source": "tabula-rasa",
+    "target": "gottfried-leibniz",
+    "type": "CRITIQUED",
+    "label": "Leibniz defended innate ideas: Nothing in the intellect without senses, except intellect itself",
+    "strength": 5
+  },
+  {
+    "source": "tabula-rasa",
+    "target": "george-berkeley",
+    "type": "DEVELOPED",
+    "label": "Berkeley radicalized Locke empiricism into immaterialist idealism (esse est percipi)",
+    "strength": 4
+  },
+  {
+    "source": "problem-of-induction",
+    "target": "immanuel-kant",
+    "type": "INFLUENCED",
+    "label": "Hume problem of induction awakened Kant from dogmatic slumber to write the Critique of Pure Reason",
+    "strength": 5
+  },
+  {
+    "source": "problem-of-induction",
+    "target": "karl-popper",
+    "type": "DEVELOPED",
+    "label": "Popper resolved Hume induction dilemma by replacing verification with falsificationism",
+    "strength": 5
+  },
+  {
+    "source": "bundle-theory",
+    "target": "william-james",
+    "type": "DEVELOPED",
+    "label": "James adapted Hume perception bundle into the psychological stream of consciousness",
+    "strength": 4
+  },
+  {
+    "source": "general-will",
+    "target": "gwf-hegel",
+    "type": "DEVELOPED",
+    "label": "Hegel elevated Rousseau general will into the rational ethical state (Sittlichkeit)",
+    "strength": 4
+  },
+  {
+    "source": "transcendental-idealism",
+    "target": "arthur-schopenhauer",
+    "type": "DEVELOPED",
+    "label": "Schopenhauer preserved Kantian transcendental idealism while unveiling the thing-in-itself as Will",
+    "strength": 5
+  },
+  {
+    "source": "transcendental-idealism",
+    "target": "gwf-hegel",
+    "type": "DEVELOPED",
+    "label": "Hegel overcame the Kantian boundary between phenomena and noumena via dialectical spirit",
+    "strength": 5
+  },
+  {
+    "source": "noumena-phenomena",
+    "target": "arthur-schopenhauer",
+    "type": "DEVELOPED",
+    "label": "Schopenhauer identified Kant unknown Noumenon as the blind striving metaphysical Will",
+    "strength": 5
+  },
+  {
+    "source": "categorical-imperative",
+    "target": "john-stuart-mill",
+    "type": "CRITIQUED",
+    "label": "Mill criticized deontological categorical imperatives, asserting morality must weigh consequences",
+    "strength": 5
+  },
+  {
+    "source": "categorical-imperative",
+    "target": "john-rawls",
+    "type": "DEVELOPED",
+    "label": "Rawls formulated the Veil of Ignorance as a procedural Kantian constructivist ethic",
+    "strength": 5
+  },
+  {
+    "source": "hegelian-dialectic",
+    "target": "karl-marx",
+    "type": "CRITIQUED",
+    "label": "Marx inverted Hegelian idealist dialectics right side up into historical materialism",
+    "strength": 5
+  },
+  {
+    "source": "hegelian-dialectic",
+    "target": "soren-kierkegaard",
+    "type": "CRITIQUED",
+    "label": "Kierkegaard rejected Hegel totalizing system in defense of individual subjective faith",
+    "strength": 5
+  },
+  {
+    "source": "hegelian-dialectic",
+    "target": "theodor-adorno",
+    "type": "CRITIQUED",
+    "label": "Adorno formulated Negative Dialectics, rejecting the Hegelian affirmative reconciliation",
+    "strength": 4
+  },
+  {
+    "source": "world-as-will",
+    "target": "friedrich-nietzsche",
+    "type": "DEVELOPED",
+    "label": "Nietzsche transformed Schopenhauer passive Will to Live into the affirmative Will to Power",
+    "strength": 5
+  },
+  {
+    "source": "will-to-power",
+    "target": "michel-foucault",
+    "type": "DEVELOPED",
+    "label": "Foucault adapted Nietzschean will to power into ubiquitous disciplinary power-knowledge matrices",
+    "strength": 5
+  },
+  {
+    "source": "will-to-power",
+    "target": "albert-camus",
+    "type": "INFLUENCED",
+    "label": "Inspired Camus heroic lucidity and metaphysical revolt against nihilism",
+    "strength": 4
+  },
+  {
+    "source": "dasein-being-in-the-world",
+    "target": "jean-paul-sartre",
+    "type": "DEVELOPED",
+    "label": "Sartre translated Dasein thrownness into radical existential freedom and anguish",
+    "strength": 5
+  },
+  {
+    "source": "dasein-being-in-the-world",
+    "target": "byung-chul-han",
+    "type": "DEVELOPED",
+    "label": "Han contrasts Heideggerian contemplation with modern hyperactive digital restlessness",
+    "strength": 4
+  },
+  {
+    "source": "existence-precedes-essence",
+    "target": "simone-de-beauvoir",
+    "type": "DEVELOPED",
+    "label": "Beauvoir applied existence preceding essence to feminist theory: One is not born, but becomes, a woman",
+    "strength": 5
+  },
+  {
+    "source": "the-absurd",
+    "target": "jean-paul-sartre",
+    "type": "DEVELOPED",
+    "label": "Shared existentialist exploration of human contingency and metaphysical absurdity",
+    "strength": 4
+  },
+  {
+    "source": "language-games",
+    "target": "jacques-derrida",
+    "type": "DEVELOPED",
+    "label": "Derrida developed contextual language instability into deconstruction and différance",
+    "strength": 4
+  },
+  {
+    "source": "falsificationism",
+    "target": "theodor-adorno",
+    "type": "CRITIQUED",
+    "label": "Adorno challenged Popperian positivism during the German Positivism Dispute",
+    "strength": 4
+  },
+  {
+    "source": "power-knowledge-panopticon",
+    "target": "byung-chul-han",
+    "type": "DEVELOPED",
+    "label": "Han expanded physical panopticon into the digital panopticon of voluntary self-surveillance",
+    "strength": 5
+  },
+  {
+    "source": "dichotomy-of-control",
+    "target": "marcus-aurelius",
+    "type": "DEVELOPED",
+    "label": "Marcus Aurelius practiced Epictetus dichotomy of control throughout his Meditations",
+    "strength": 5
+  },
+  {
+    "source": "floating-man",
+    "target": "rene-descartes",
+    "type": "INFLUENCED",
+    "label": "Avicenna Floating Man thought experiment anticipated Descartes Cogito by six centuries",
+    "strength": 4
+  },
+  {
+    "source": "ockhams-razor",
+    "target": "bertrand-russell",
+    "type": "DEVELOPED",
+    "label": "Russell adopted Ockham razor as a foundational method in logical atomism",
+    "strength": 4
+  },
+  {
+    "source": "deus-sive-natura",
+    "target": "gilles-deleuze",
+    "type": "DEVELOPED",
+    "label": "Deleuze championed Spinoza plane of immanence against theological transcendence",
+    "strength": 4
+  },
+  {
+    "source": "intentionality-epoche",
+    "target": "martin-heidegger",
+    "type": "DEVELOPED",
+    "label": "Heidegger shifted Husserlian phenomenological reduction from mental acts to Being-in-the-world",
+    "strength": 5
+  },
+  {
+    "source": "intentionality-epoche",
+    "target": "jean-paul-sartre",
+    "type": "DEVELOPED",
+    "label": "Sartre used Husserlian intentionality to define consciousness as directed outward toward objects",
+    "strength": 4
+  },
+  {
+    "source": "sunyata-emptiness",
+    "target": "arthur-schopenhauer",
+    "type": "SYNTHESIZED",
+    "label": "Schopenhauer synthesized Buddhist Sunyata and cessation of desire with Western metaphysics",
+    "strength": 4
+  }
 ]
