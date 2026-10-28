@@ -75,6 +75,7 @@ export function ForceGraphView({
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null);
   const [spacingMultiplier, setSpacingMultiplier] = useState<number>(1.5); // 1.5x default generous spacing to prevent overlap
   const prevSpacingMultiplierRef = useRef<number>(1.5);
+  const hasInitialFitRef = useRef<boolean>(false);
 
   // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
   const graphData = useMemo(() => ({ nodes, links }), [nodes, links]);
@@ -260,26 +261,35 @@ export function ForceGraphView({
       }
     }
 
-    // 3. Node Label: Clear high-contrast text pill with year or branch tag
-    const shouldDrawLabel = globalScale > 1.0 || isSelected || isOnPath || isHovered || isPrimaryThinker;
+    // 3. Node Label: Tiered visibility to keep overview clean like a celestial atlas
+    const isAnchorThinker = (node.importanceScore && node.importanceScore >= 95) || false;
+    const isSecondaryThinker = (node.importanceScore && node.importanceScore >= 90) || false;
+    const shouldDrawLabel =
+      isSelected ||
+      isOnPath ||
+      isHovered ||
+      globalScale >= 1.8 ||
+      (globalScale >= 1.25 && isSecondaryThinker) ||
+      isAnchorThinker;
+
     if (shouldDrawLabel) {
       const fontSize = Math.max(10.5 / globalScale, 3.8);
-      ctx.font = `${isSelected || isOnPath ? 'bold' : 'normal'} ${fontSize}px "EB Garamond", Georgia, serif`;
+      ctx.font = `${isSelected || isOnPath || isAnchorThinker ? 'bold' : 'normal'} ${fontSize}px "EB Garamond", Georgia, serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'top';
 
       const labelText = node.name;
       const textWidth = ctx.measureText(labelText).width;
       const paddingX = 4;
-      const paddingY = 2;
+      const paddingY = 1.5;
 
-      // Label background pill
-      ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.94)' : 'rgba(18, 16, 13, 0.92)';
-      ctx.strokeStyle = isLight ? 'rgba(215, 205, 190, 0.8)' : 'rgba(60, 50, 40, 0.8)';
-      ctx.lineWidth = 0.8;
+      // Subtle translucent label background pill
+      ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.90)' : 'rgba(18, 16, 13, 0.88)';
+      ctx.strokeStyle = isLight ? 'rgba(215, 205, 190, 0.7)' : 'rgba(60, 50, 40, 0.7)';
+      ctx.lineWidth = 0.6;
 
       const rectX = node.x - textWidth / 2 - paddingX;
-      const rectY = node.y + size + 3;
+      const rectY = node.y + size + 2.5;
       const rectW = textWidth + paddingX * 2;
       const rectH = fontSize + paddingY * 2;
 
@@ -290,8 +300,10 @@ export function ForceGraphView({
 
       ctx.fillStyle = isSelected || isOnPath
         ? isLight ? '#9a6f14' : '#fef08a'
-        : isLight ? '#1f1b15' : '#f5f0e6';
-      ctx.fillText(labelText, node.x, node.y + size + 4);
+        : isAnchorThinker
+        ? isLight ? '#1a1815' : '#f5f2eb'
+        : isLight ? '#383228' : '#ded7cb';
+      ctx.fillText(labelText, node.x, node.y + size + 3.5);
     }
 
     ctx.restore();
@@ -444,7 +456,18 @@ export function ForceGraphView({
             </div>
           </div>`;
         }}
-        linkDirectionalArrowLength={7.5}
+        linkDirectionalArrowLength={(link: any) => {
+          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+          const isConnectedToFocus =
+            selectedNodeId === srcId ||
+            selectedNodeId === tgtId ||
+            hoveredNode?.id === srcId ||
+            hoveredNode?.id === tgtId;
+          const inPath = isPathActive && pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
+          if (inPath || isConnectedToFocus) return 7.5;
+          return 4.5;
+        }}
         linkDirectionalArrowRelPos={0.92}
         linkCurvature={0.12}
         linkColor={(link: any) => {
@@ -455,7 +478,7 @@ export function ForceGraphView({
             const inPath = pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
             return inPath
               ? isLight ? '#9a6f14' : '#e5b94c'
-              : isLight ? 'rgba(215, 205, 190, 0.18)' : 'rgba(42, 36, 30, 0.15)';
+              : isLight ? 'rgba(215, 205, 190, 0.10)' : 'rgba(42, 36, 30, 0.08)';
           }
 
           const isConnectedToFocus =
@@ -467,32 +490,32 @@ export function ForceGraphView({
           const isDimmed = (selectedNodeId || hoveredNode) && !isConnectedToFocus;
 
           if (isDimmed) {
-            return isLight ? 'rgba(180, 168, 150, 0.2)' : 'rgba(70, 60, 50, 0.2)';
+            return isLight ? 'rgba(180, 168, 150, 0.06)' : 'rgba(70, 60, 50, 0.06)';
           }
 
           if (isLight) {
             switch (link.type) {
               case 'CRITIQUED':
-                return isConnectedToFocus ? 'rgba(220, 38, 38, 1.0)' : 'rgba(220, 38, 38, 0.85)';
+                return isConnectedToFocus ? 'rgba(220, 38, 38, 1.0)' : 'rgba(220, 38, 38, 0.42)';
               case 'SYNTHESIZED':
-                return isConnectedToFocus ? 'rgba(147, 51, 234, 1.0)' : 'rgba(147, 51, 234, 0.85)';
+                return isConnectedToFocus ? 'rgba(147, 51, 234, 1.0)' : 'rgba(147, 51, 234, 0.42)';
               case 'DEVELOPED':
-                return isConnectedToFocus ? 'rgba(13, 148, 136, 1.0)' : 'rgba(13, 148, 136, 0.85)';
+                return isConnectedToFocus ? 'rgba(13, 148, 136, 1.0)' : 'rgba(13, 148, 136, 0.42)';
               case 'INFLUENCED':
               default:
-                return isConnectedToFocus ? 'rgba(37, 99, 235, 1.0)' : 'rgba(37, 99, 235, 0.82)';
+                return isConnectedToFocus ? 'rgba(37, 99, 235, 1.0)' : 'rgba(37, 99, 235, 0.35)';
             }
           } else {
             switch (link.type) {
               case 'CRITIQUED':
-                return isConnectedToFocus ? 'rgba(248, 113, 113, 1.0)' : 'rgba(248, 113, 113, 0.82)';
+                return isConnectedToFocus ? 'rgba(248, 113, 113, 1.0)' : 'rgba(248, 113, 113, 0.42)';
               case 'SYNTHESIZED':
-                return isConnectedToFocus ? 'rgba(192, 132, 252, 1.0)' : 'rgba(192, 132, 252, 0.82)';
+                return isConnectedToFocus ? 'rgba(192, 132, 252, 1.0)' : 'rgba(192, 132, 252, 0.42)';
               case 'DEVELOPED':
-                return isConnectedToFocus ? 'rgba(45, 212, 191, 1.0)' : 'rgba(45, 212, 191, 0.82)';
+                return isConnectedToFocus ? 'rgba(45, 212, 191, 1.0)' : 'rgba(45, 212, 191, 0.42)';
               case 'INFLUENCED':
               default:
-                return isConnectedToFocus ? 'rgba(96, 165, 250, 1.0)' : 'rgba(96, 165, 250, 0.78)';
+                return isConnectedToFocus ? 'rgba(96, 165, 250, 1.0)' : 'rgba(96, 165, 250, 0.35)';
             }
           }
         }}
@@ -501,7 +524,7 @@ export function ForceGraphView({
           const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
           
           if (isPathActive && pathNodeSet.has(srcId) && pathNodeSet.has(tgtId)) {
-            return 4.8;
+            return 4.2;
           }
 
           const isConnectedToFocus =
@@ -511,11 +534,11 @@ export function ForceGraphView({
             hoveredNode?.id === tgtId;
 
           if (isConnectedToFocus) {
-            return 3.8;
+            return 3.2;
           }
 
           const strength = typeof link.strength === 'number' ? link.strength : 3;
-          return 2.2 + (strength * 0.35); // 2.5px to 3.6px
+          return 1.0 + (strength * 0.16); // 1.15px to 1.8px at rest
         }}
         onNodeClick={(node: any) => {
           onSelectNode(node.id);
@@ -535,6 +558,12 @@ export function ForceGraphView({
         warmupTicks={150}
         cooldownTicks={120}
         cooldownTime={2500}
+        onEngineStop={() => {
+          if (!hasInitialFitRef.current && fgRef.current) {
+            fgRef.current.zoomToFit(700, 75);
+            hasInitialFitRef.current = true;
+          }
+        }}
         d3AlphaDecay={0.04}
         d3VelocityDecay={0.35}
         enableNodeDrag={true}
