@@ -491,5 +491,15 @@
     "title": "Psychological Reductionism of Personal Identity",
     "summary": "Parfitian thesis that personal identity across time is not a deep, indivisible Cartesian soul, but consists merely in overlapping chains of psychological connectedness and memory.",
     "branch": "mind"
+  },
+  {
+    "id": "divine-eternity-foreknowledge",
+    "title": "Divine Eternity & The Eternal Present",
+    "branch": "metaphysics",
+    "eraId": "medieval",
+    "introducedBy": "boethius",
+    "summary": "Metaphysical doctrine that God exists outside temporal succession in a timeless, eternal present, simultaneously witnessing all past, present, and future events without predetermining human free choices.",
+    "sepSlug": "boethius",
+    "importanceScore": 90
   }
 ]
