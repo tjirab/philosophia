@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --font-serif: var(--font-eb-garamond), 'EB Garamond', Garamond, 'Times New Roman', Georgia, serif;
+  --font-cinzel: var(--font-cinzel-heading), 'Cinzel', Garamond, Georgia, serif;
+}
+
 :root {
-  --font-serif: var(--font-serif), 'EB Garamond', Georgia, serif;
-  --font-cinzel: var(--font-cinzel), Cinzel, Garamond, serif;
   font-size: 17px; /* Increased default overall font */
 }
 
