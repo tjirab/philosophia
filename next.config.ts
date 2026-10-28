@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const isGithubActions = Boolean(process.env.GITHUB_ACTIONS);
-const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'philosophy-graph';
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'philosophia';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
