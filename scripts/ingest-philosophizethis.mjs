@@ -125,7 +125,6 @@ async function ingestRSS() {
           creator: 'Stephen West',
           episodeNumber: episodeNumber,
           duration: item['itunes:duration'] ? String(item['itunes:duration']) : undefined,
-          summary: cleanSummary || `Philosophize This! episode discussing ${matcher.id}.`
         });
       }
     }

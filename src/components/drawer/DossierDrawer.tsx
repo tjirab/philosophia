@@ -367,11 +367,6 @@ export function DossierDrawer({
                       </a>
                     </div>
                   )}
-                  {ep.summary && (
-                    <p className="text-xs text-[var(--text-dim)] px-1 leading-relaxed">
-                      {ep.summary}
-                    </p>
-                  )}
                 </div>
               ))}
             </div>
