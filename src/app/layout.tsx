@@ -5,13 +5,13 @@ import { ThemeProvider } from '../lib/theme-context';
 
 const ebGaramond = EB_Garamond({
   subsets: ['latin'],
-  variable: '--font-serif',
+  variable: '--font-eb-garamond',
   display: 'swap',
 });
 
 const cinzel = Cinzel({
   subsets: ['latin'],
-  variable: '--font-cinzel',
+  variable: '--font-cinzel-heading',
   display: 'swap',
 });
 
