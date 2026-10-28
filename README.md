@@ -1,4 +1,9 @@
-# Philosophy Graph 🌌
+# Philosophia 🌌
+
+[![Live Demo](https://img.shields.io/badge/live-tjirab.github.io%2Fphilosophia-d4af37.svg)](https://tjirab.github.io/philosophia/)
+[![Deploy Status](https://github.com/tjirab/philosophia/actions/workflows/deploy.yml/badge.svg)](https://github.com/tjirab/philosophia/actions/workflows/deploy.yml)
+
+> **Live Web Application**: [https://tjirab.github.io/philosophia/](https://tjirab.github.io/philosophia/)
 
 An interactive web application exploring the history of philosophy, how thinkers influenced each other, how conceptual paradigms evolved across millennia (from Plato & Aristotle to Kant & Schopenhauer), and how multimedia resources (*Philosophize This!* podcast episodes, *Stanford Encyclopedia of Philosophy* canonical entries, and classic texts) link into this knowledge network.
 
@@ -57,15 +62,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to explore
 
 ---
 
-## GitHub Pages Deployment
+## Deployment
 
-This project is configured for serverless static deployment to **GitHub Pages** with GitHub Actions:
-
-1. **Push to `main`**: Any push or PR merge into `main` automatically triggers `.github/workflows/deploy.yml`.
-2. **Static Export**: Next.js exports static HTML, CSS, and client JavaScript to `./out`.
-3. **Zero Backend Required**: Audio streams, Stanford Encyclopedia references, book links, and community contribution suggestions (via GitHub issues) run completely client-side.
-
-### GitHub Pages Setup Instructions
-1. In the repository settings on GitHub, navigate to **Settings &rarr; Pages**.
-2. Under **Build and deployment &rarr; Source**, select **GitHub Actions**.
-3. Push changes to branch `main`, and the deployment action will publish the site at `https://<username>.github.io/<repo-name>/`.
+The application is deployed continuously to **GitHub Pages**:
+- **Live URL**: [https://tjirab.github.io/philosophia/](https://tjirab.github.io/philosophia/)
+- **CI/CD**: Any push or pull request merged into `main` automatically builds the Next.js static export and deploys via `.github/workflows/deploy.yml`.
+- **Zero Backend Maintenance**: Entire app runs client-side with static JSON datasets, audio streaming, and GitHub-backed community suggestions.
