@@ -29,7 +29,7 @@ export function SuggestionModal({
   concepts,
   initialTargetNodeId,
 }: SuggestionModalProps) {
-  const repoSlug = process.env.NEXT_PUBLIC_GITHUB_REPO || 'bartschuijt/philosophy-graph';
+  const repoSlug = process.env.NEXT_PUBLIC_GITHUB_REPO || 'tjirab/philosophy-graph';
 
   const [category, setCategory] = useState<
     'influence' | 'podcast' | 'book' | 'synopsis' | 'new-thinker' | 'erratum'

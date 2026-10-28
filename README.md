@@ -54,3 +54,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to explore
 - **`data/concepts.json`**: Core philosophical concepts categorized by branch (Metaphysics, Epistemology, Ethics, Political, Mind, Logic).
 - **`data/edges.json`**: Typed directional influence relationships (`INFLUENCED`, `CRITIQUED`, `DEVELOPED`, `SYNTHESIZED`).
 - **`data/media.json`**: Curated resources, Stanford Encyclopedia links, and live-streamable *Philosophize This!* MP3 podcast enclosures.
+
+---
+
+## GitHub Pages Deployment
+
+This project is configured for serverless static deployment to **GitHub Pages** with GitHub Actions:
+
+1. **Push to `main`**: Any push or PR merge into `main` automatically triggers `.github/workflows/deploy.yml`.
+2. **Static Export**: Next.js exports static HTML, CSS, and client JavaScript to `./out`.
+3. **Zero Backend Required**: Audio streams, Stanford Encyclopedia references, book links, and community contribution suggestions (via GitHub issues) run completely client-side.
+
+### GitHub Pages Setup Instructions
+1. In the repository settings on GitHub, navigate to **Settings &rarr; Pages**.
+2. Under **Build and deployment &rarr; Source**, select **GitHub Actions**.
+3. Push changes to branch `main`, and the deployment action will publish the site at `https://<username>.github.io/<repo-name>/`.

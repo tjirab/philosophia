@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   title: 'Philosophy Graph | The Evolution of Ideas & Philosophers',
   description:
     'An interactive network and lineage explorer showing how philosophical ideas evolved from Pre-Socratics to Contemporary thought, integrated with Philosophize This! podcasts and the Stanford Encyclopedia of Philosophy.',
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+  },
 };
 
 export default function RootLayout({
