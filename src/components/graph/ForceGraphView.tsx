@@ -2,7 +2,8 @@
 
 import React, { useRef, useEffect, useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
-import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle } from 'lucide-react';
+import { forceCollide, forceManyBody, forceLink } from 'd3-force';
+import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink } from 'lucide-react';
 import { VisualNode, VisualLink, Branch } from '../../lib/types';
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
@@ -34,6 +35,16 @@ interface ForceGraphViewProps {
   onOpenLegend: () => void;
 }
 
+function getNodeMonogram(node: VisualNode): string {
+  if (node.type === 'concept') return '✦';
+  const name = node.name.replace(/^(von|de|du|of|the)\s+/i, '').trim();
+  const parts = name.split(/\s+/);
+  if (parts.length >= 2) {
+    return `${parts[0][0]}${parts[parts.length - 1][0]}`.toUpperCase();
+  }
+  return name.slice(0, 2).toUpperCase();
+}
+
 export function ForceGraphView({
   nodes,
   links,
@@ -53,6 +64,7 @@ export function ForceGraphView({
   const [dimensions, setDimensions] = useState({ width: 1200, height: 800 });
   const [hoveredNode, setHoveredNode] = useState<VisualNode | null>(null);
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null);
+  const [spacingMultiplier, setSpacingMultiplier] = useState<number>(1.4); // 1.4x default generous spacing to prevent overlap
 
   // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
   const graphData = useMemo(() => ({ nodes, links }), [nodes, links]);
@@ -72,13 +84,38 @@ export function ForceGraphView({
     return () => window.removeEventListener('resize', updateDimensions);
   }, []);
 
+  // Configure D3 anti-collision forces and generous repulsion to prevent node overlap
+  useEffect(() => {
+    if (fgRef.current) {
+      // 1. Anti-collision barrier: collision radius calculated with node radius + label padding
+      const collisionRadius = (node: any) => {
+        const size = Math.max(8, (node.val || 8) * 0.9);
+        return size + 36 * spacingMultiplier;
+      };
+
+      fgRef.current.d3Force('collide', forceCollide().radius(collisionRadius).iterations(4));
+
+      // 2. Strong repulsion charge
+      fgRef.current.d3Force(
+        'charge',
+        forceManyBody().strength(-550 * spacingMultiplier).distanceMax(900)
+      );
+
+      // 3. Link distance
+      const linkForce = fgRef.current.d3Force('link');
+      if (linkForce) {
+        linkForce.distance(110 * spacingMultiplier);
+      }
+    }
+  }, [graphData, spacingMultiplier]);
+
   // When selectedNodeId changes, center camera on it
   useEffect(() => {
     if (selectedNodeId && fgRef.current) {
       const node = nodes.find((n) => n.id === selectedNodeId);
       if (node && typeof node.x === 'number' && typeof node.y === 'number') {
         fgRef.current.centerAt(node.x, node.y, 800);
-        fgRef.current.zoom(2.2, 800);
+        fgRef.current.zoom(2.0, 800);
       }
     }
   }, [selectedNodeId, nodes]);
@@ -87,7 +124,7 @@ export function ForceGraphView({
   const isPathActive = pathNodeSet.size > 0;
   const isLight = resolvedTheme === 'light';
 
-  // Zoom controls
+  // Zoom and Spacing controls
   const handleZoomIn = () => {
     if (fgRef.current) fgRef.current.zoom(fgRef.current.zoom() * 1.3, 400);
   };
@@ -95,10 +132,13 @@ export function ForceGraphView({
     if (fgRef.current) fgRef.current.zoom(fgRef.current.zoom() / 1.3, 400);
   };
   const handleFit = () => {
-    if (fgRef.current) fgRef.current.zoomToFit(600, 50);
+    if (fgRef.current) fgRef.current.zoomToFit(600, 60);
+  };
+  const toggleSpacing = () => {
+    setSpacingMultiplier((prev) => (prev >= 1.8 ? 1.0 : prev + 0.4));
   };
 
-  // Node drawing on Canvas with Classical Aesthetic & Theme Awareness
+  // Node drawing on Canvas with Distinct Shapes, Monograms, and Anti-Overlap Aesthetics
   const paintNode = (node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
     const isSelected = node.id === selectedNodeId;
     const isHovered = hoveredNode?.id === node.id;
@@ -115,75 +155,114 @@ export function ForceGraphView({
     ctx.save();
     ctx.globalAlpha = alpha;
 
-    const size = Math.max(5, (node.val || 8) * 0.9);
+    const size = Math.max(7, (node.val || 8) * 0.95);
+    const isPrimaryThinker = node.importanceScore && node.importanceScore >= 95;
 
-    // Outer glow for selected or path nodes
-    if (isSelected || isOnPath) {
+    // 1. Outer halo for selected, path, or high-centrality foundational thinkers
+    if (isSelected || isOnPath || isPrimaryThinker) {
       ctx.beginPath();
       ctx.arc(node.x, node.y, size + 6, 0, 2 * Math.PI, false);
       ctx.fillStyle = isLight
-        ? isOnPath
-          ? 'rgba(180, 130, 24, 0.35)'
-          : 'rgba(154, 111, 20, 0.4)'
-        : isOnPath
-        ? 'rgba(229, 185, 76, 0.4)'
-        : 'rgba(197, 155, 39, 0.45)';
+        ? isSelected || isOnPath
+          ? 'rgba(154, 111, 20, 0.4)'
+          : 'rgba(215, 185, 130, 0.25)'
+        : isSelected || isOnPath
+        ? 'rgba(229, 185, 76, 0.45)'
+        : 'rgba(197, 155, 39, 0.25)';
       ctx.fill();
     }
 
-    // Node body
-    ctx.beginPath();
+    // 2. Node Shape: Distinct geometry for Thinker (Circle) vs Concept (Diamond)
     if (node.type === 'concept') {
-      // Rounded diamond for conceptual breakthroughs
-      const boxSize = size * 1.4;
-      ctx.roundRect(node.x - boxSize / 2, node.y - boxSize / 2, boxSize, boxSize, 3);
+      const boxSize = size * 1.45;
+      ctx.save();
+      ctx.translate(node.x, node.y);
+      ctx.rotate(Math.PI / 4); // 45-degree diamond lozenge
+
+      ctx.beginPath();
+      ctx.roundRect(-boxSize / 2, -boxSize / 2, boxSize, boxSize, 4);
+      ctx.fillStyle = node.color || '#2a9d8f';
+      ctx.fill();
+
+      ctx.lineWidth = isSelected ? 2.5 : 1.5;
+      ctx.strokeStyle = isSelected
+        ? isLight ? '#9a6f14' : '#fef08a'
+        : isLight ? '#3d3328' : '#ffffff';
+      ctx.stroke();
+
+      ctx.restore();
+
+      // Draw concept emblem '✦' in center
+      const iconSize = Math.max(9 / globalScale, 6);
+      ctx.font = `bold ${iconSize}px serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillStyle = '#ffffff';
+      ctx.fillText('✦', node.x, node.y);
     } else {
-      // Circle for thinkers
+      // Circle for philosophers
+      ctx.beginPath();
       ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
+      ctx.fillStyle = node.color || '#f4a261';
+      ctx.fill();
+
+      // Double ring for major thinkers
+      ctx.lineWidth = isSelected ? 2.5 : isPrimaryThinker ? 2 : 1.2;
+      ctx.strokeStyle = isSelected
+        ? isLight ? '#9a6f14' : '#fef08a'
+        : isLight ? 'rgba(50, 40, 30, 0.7)' : 'rgba(255, 245, 230, 0.75)';
+      ctx.stroke();
+
+      // Inner medallion contrast circle for initial monogram
+      if (size >= 8) {
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, size * 0.65, 0, 2 * Math.PI, false);
+        ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.85)' : 'rgba(18, 16, 13, 0.85)';
+        ctx.fill();
+
+        // Monogram initial
+        const monogram = getNodeMonogram(node);
+        const monogramSize = Math.max(size * 0.6, 6);
+        ctx.font = `bold ${monogramSize}px "Cinzel", Georgia, serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillStyle = isLight ? '#1f1b15' : '#f5f0e6';
+        ctx.fillText(monogram, node.x, node.y);
+      }
     }
 
-    ctx.fillStyle = node.color || '#f4a261';
-    ctx.fill();
-
-    // Metallic rim border
-    ctx.lineWidth = isSelected ? 2.5 : 1.2;
-    ctx.strokeStyle = isSelected
-      ? isLight
-        ? '#9a6f14'
-        : '#fef08a'
-      : isLight
-      ? 'rgba(60, 45, 30, 0.5)'
-      : 'rgba(255, 245, 230, 0.65)';
-    ctx.stroke();
-
-    // Node label (Classical serif typography)
-    const shouldDrawLabel = globalScale > 1.2 || isSelected || isOnPath || isHovered;
+    // 3. Node Label: Clear high-contrast text pill with year or branch tag
+    const shouldDrawLabel = globalScale > 1.0 || isSelected || isOnPath || isHovered || isPrimaryThinker;
     if (shouldDrawLabel) {
-      const fontSize = Math.max(10 / globalScale, 3.5);
+      const fontSize = Math.max(10.5 / globalScale, 3.8);
       ctx.font = `${isSelected || isOnPath ? 'bold' : 'normal'} ${fontSize}px "EB Garamond", Georgia, serif`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'top';
 
-      const text = node.name;
-      const textWidth = ctx.measureText(text).width;
-      const padding = 2.5;
+      const labelText = node.name;
+      const textWidth = ctx.measureText(labelText).width;
+      const paddingX = 4;
+      const paddingY = 2;
 
-      ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.92)' : 'rgba(14, 13, 11, 0.9)';
-      ctx.fillRect(
-        node.x - textWidth / 2 - padding,
-        node.y + size + 2,
-        textWidth + padding * 2,
-        fontSize + padding * 2
-      );
+      // Label background pill
+      ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.94)' : 'rgba(18, 16, 13, 0.92)';
+      ctx.strokeStyle = isLight ? 'rgba(215, 205, 190, 0.8)' : 'rgba(60, 50, 40, 0.8)';
+      ctx.lineWidth = 0.8;
+
+      const rectX = node.x - textWidth / 2 - paddingX;
+      const rectY = node.y + size + 3;
+      const rectW = textWidth + paddingX * 2;
+      const rectH = fontSize + paddingY * 2;
+
+      ctx.beginPath();
+      ctx.roundRect(rectX, rectY, rectW, rectH, 3);
+      ctx.fill();
+      ctx.stroke();
 
       ctx.fillStyle = isSelected || isOnPath
-        ? isLight
-          ? '#9a6f14'
-          : '#fef08a'
-        : isLight
-        ? '#1d1813'
-        : '#f5f0e6';
-      ctx.fillText(text, node.x, node.y + size + 3);
+        ? isLight ? '#9a6f14' : '#fef08a'
+        : isLight ? '#1f1b15' : '#f5f0e6';
+      ctx.fillText(labelText, node.x, node.y + size + 4);
     }
 
     ctx.restore();
@@ -205,7 +284,7 @@ export function ForceGraphView({
       className="relative w-full h-full overflow-hidden bg-[var(--bg-main)] font-serif"
     >
       {/* Top Floating Filter Bar */}
-      <div className="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-2 max-w-[calc(100%-140px)]">
+      <div className="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-2 max-w-[calc(100%-180px)]">
         {/* Concepts Toggle */}
         <button
           onClick={onToggleConcepts}
@@ -243,6 +322,16 @@ export function ForceGraphView({
         >
           <HelpCircle className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
           <span>Folio Key (Legend)</span>
+        </button>
+
+        {/* Spacing Spreader Toggle */}
+        <button
+          onClick={toggleSpacing}
+          className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] backdrop-blur-md transition shadow-sm"
+          title="Adjust spreading distance between nodes"
+        >
+          {spacingMultiplier >= 1.4 ? <Shrink className="w-3.5 h-3.5 text-[var(--gold-accent)]" /> : <Expand className="w-3.5 h-3.5 text-[var(--gold-accent)]" />}
+          <span>Spread: {spacingMultiplier.toFixed(1)}x</span>
         </button>
 
         {/* Active Path Alert */}
@@ -361,10 +450,10 @@ export function ForceGraphView({
           }
         }}
         warmupTicks={150}
-        cooldownTicks={80}
-        cooldownTime={2000}
-        d3AlphaDecay={0.06}
-        d3VelocityDecay={0.4}
+        cooldownTicks={120}
+        cooldownTime={2500}
+        d3AlphaDecay={0.04}
+        d3VelocityDecay={0.35}
         enableNodeDrag={true}
       />
 
