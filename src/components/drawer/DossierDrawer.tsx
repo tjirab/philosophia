@@ -149,7 +149,7 @@ export function DossierDrawer({
         </div>
 
         <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[var(--text-main)] tracking-tight">
-          {isPhilosopher ? phil?.name : conc?.title}
+          {isPhilosopher ? phil?.name : (conc?.title || (conc as any)?.name || 'Concept')}
         </h2>
 
         {isPhilosopher && phil && (
@@ -236,7 +236,7 @@ export function DossierDrawer({
 
           <div>
             <p className="text-sm sm:text-base text-[var(--text-main)] leading-relaxed font-serif">
-              {isPhilosopher ? phil?.shortBio : conc?.summary}
+              {isPhilosopher ? phil?.shortBio : (conc?.summary || (conc as any)?.description || '')}
             </p>
           </div>
 

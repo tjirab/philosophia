@@ -30,8 +30,9 @@ describe('Philosophy Graph Data Integrity', () => {
     }
   });
 
-  it('validates that concepts have valid era and introducedBy philosopher', () => {
+  it('validates that concepts have valid schema, title, summary, branch, era, and introducedBy philosopher', () => {
     expect(conceptsData.length).toBeGreaterThan(20);
+    const validBranches = new Set(['epistemology', 'metaphysics', 'ethics', 'political', 'aesthetics', 'mind', 'logic']);
 
     for (const c of conceptsData) {
       expect(validEraIds.has(c.eraId), `Concept ${c.id} has invalid eraId ${c.eraId}`).toBe(true);
@@ -39,6 +40,11 @@ describe('Philosophy Graph Data Integrity', () => {
         validPhilosopherIds.has(c.introducedBy),
         `Concept ${c.id} has unknown philosopher ${c.introducedBy}`
       ).toBe(true);
+      expect(c.title, `Concept ${c.id} is missing title`).toBeDefined();
+      expect(c.title.length, `Concept ${c.id} has empty title`).toBeGreaterThan(0);
+      expect(c.summary, `Concept ${c.id} is missing summary`).toBeDefined();
+      expect(c.summary.length, `Concept ${c.id} has empty summary`).toBeGreaterThan(0);
+      expect(validBranches.has(c.branch), `Concept ${c.id} has invalid branch ${c.branch}`).toBe(true);
     }
   });
 
