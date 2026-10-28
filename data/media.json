@@ -252,6 +252,15 @@
     "summary": "Canonical academic comprehensive overview of Derek Parfit's philosophical life, works, and arguments."
   },
   {
+    "id": "sep-boethius",
+    "targetId": "boethius",
+    "type": "encyclopedia",
+    "title": "Anicius Manlius Severinus Boethius - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/boethius/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Boethius's philosophical life, works, translations, and arguments."
+  },
+  {
     "id": "pt-ep-189-byung-chul-han",
     "targetId": "byung-chul-han",
     "type": "podcast",
@@ -1658,6 +1667,17 @@
     "creator": "Stephen West",
     "episodeNumber": 18,
     "duration": "27:34"
+  },
+  {
+    "id": "pt-ep-17-boethius",
+    "targetId": "boethius",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #017 ... Boethius",
+    "url": "https://philosophizethis.libsyn.com/episode-017-boethius",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_017_..._Boethius.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 17,
+    "duration": "24:33"
   },
   {
     "id": "pt-ep-16-plotinus",

@@ -1440,5 +1440,61 @@
     "type": "INFLUENCED",
     "strength": 4,
     "label": "Informed existential risk, future generations ethics, and transhumanist identity"
+  },
+  {
+    "source": "aristotle",
+    "target": "boethius",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Translated and commented on Aristotle's Organon, creating the Logica Vetus for medieval Europe"
+  },
+  {
+    "source": "plotinus",
+    "target": "boethius",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Synthesized Neoplatonic metaphysics and the One into the Consolation of Philosophy"
+  },
+  {
+    "source": "boethius",
+    "target": "divine-eternity-foreknowledge",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated timeless eternity to resolve the paradox between divine foreknowledge and free will"
+  },
+  {
+    "source": "divine-eternity-foreknowledge",
+    "target": "thomas-aquinas",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Adopted by Aquinas as the canonical definition of eternity and divine providence"
+  },
+  {
+    "source": "boethius",
+    "target": "anselm-of-canterbury",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Pioneered application of rigorous Aristotelian dialectic to theological inquiry"
+  },
+  {
+    "source": "boethius",
+    "target": "thomas-aquinas",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Major philosophical authority for Aquinas on the definition of person, eternity, and fortune"
+  },
+  {
+    "source": "boethius",
+    "target": "william-of-ockham",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Boethius's translation of Porphyry's Isagoge initiated the medieval Problem of Universals"
+  },
+  {
+    "source": "divine-eternity-foreknowledge",
+    "target": "rene-descartes",
+    "type": "INFLUENCED",
+    "strength": 3,
+    "label": "Informed early modern debates on divine eternal truths and timeless omnipotence"
   }
 ]

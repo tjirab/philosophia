@@ -117,6 +117,15 @@ describe('Philosophy Graph Data Integrity', () => {
     expect(pyrrhoToKierk.found).toBe(true);
     expect(pyrrhoToKierk.nodes).toContain('michel-de-montaigne');
     expect(pyrrhoToKierk.nodes).toContain('blaise-pascal');
+
+    // Aristotle -> Boethius -> Thomas Aquinas
+    const aristotleToAquinas = findInfluencePath('aristotle', 'thomas-aquinas', edgesData as any);
+    expect(aristotleToAquinas.found).toBe(true);
+
+    // Plotinus -> Boethius -> William of Ockham
+    const plotinusToOckham = findInfluencePath('plotinus', 'william-of-ockham', edgesData as any);
+    expect(plotinusToOckham.found).toBe(true);
+    expect(plotinusToOckham.nodes).toContain('boethius');
   });
 
   it('verifies visual graph generation and node details retrieval', () => {
