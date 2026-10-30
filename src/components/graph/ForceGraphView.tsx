@@ -8,6 +8,7 @@ import { VisualNode, VisualLink, Branch, getEdgeTypeConfig } from '../../lib/typ
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
 import { drawCartographicGrid } from '../../lib/graph/grid-renderer';
+import { getArrowLength, ARROW_REL_POS, getArrowColor } from '../../lib/graph/arrow-styling';
 
 // Dynamically import ForceGraph2D with ssr disabled
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
@@ -488,10 +489,21 @@ export function ForceGraphView({
             hoveredNode?.id === srcId ||
             hoveredNode?.id === tgtId;
           const inPath = isPathActive && pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
-          if (inPath || isConnectedToFocus) return 7.5;
-          return 4.5;
+          return getArrowLength(isConnectedToFocus, inPath);
         }}
-        linkDirectionalArrowRelPos={0.92}
+        linkDirectionalArrowRelPos={ARROW_REL_POS}
+        linkDirectionalArrowColor={(link: any) => {
+          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+          const isConnectedToFocus =
+            selectedNodeId === srcId ||
+            selectedNodeId === tgtId ||
+            hoveredNode?.id === srcId ||
+            hoveredNode?.id === tgtId;
+          const inPath = isPathActive && pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
+          const isDimmed = (selectedNodeId || hoveredNode) && !isConnectedToFocus && !inPath;
+          return getArrowColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath);
+        }}
         linkCurvature={0.12}
         linkColor={(link: any) => {
           const srcId = typeof link.source === 'object' ? link.source.id : link.source;
