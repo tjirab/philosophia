@@ -2126,5 +2126,89 @@
     "type": "INFLUENCED",
     "strength": 4,
     "label": "Schopenhauer explicitly acknowledged Madhyamaka and Buddhist emptiness as the historical counterpart to his metaphysics of the denial of the Will"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "alenka-zupancic",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Kantian moral formalism, radical evil, and the critique of practical reason as foundational architecture for psychoanalytic ethics"
+  },
+  {
+    "source": "alenka-zupancic",
+    "target": "immanuel-kant",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Re-reads Kantian ethics through psychoanalysis, identifying the categorical imperative with the traumatic Real of the drive"
+  },
+  {
+    "source": "gwf-hegel",
+    "target": "alenka-zupancic",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Hegelian dialectic of contradiction, the concrete universal, and the split subject of ontology"
+  },
+  {
+    "source": "alenka-zupancic",
+    "target": "gwf-hegel",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Mobilizes Hegelian contradiction to articulate the structure of comedy and the ontological impasse of sexuality"
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "alenka-zupancic",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Nietzschean critique of morality, the shortest shadow of noon, and the ascetic ideal"
+  },
+  {
+    "source": "alenka-zupancic",
+    "target": "friedrich-nietzsche",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Reinterprets Nietzsche's philosophy of the Two, arguing truth is an explosive event rather than mere perspectivism"
+  },
+  {
+    "source": "alenka-zupancic",
+    "target": "jacques-derrida",
+    "type": "CRITIQUED",
+    "strength": 3,
+    "label": "Distinguishes the Lacanian Real from deconstructive undecidability, defending the indestructible traumatic kernel of the subject"
+  },
+  {
+    "source": "alenka-zupancic",
+    "target": "gilles-deleuze",
+    "type": "CRITIQUED",
+    "strength": 3,
+    "label": "Critiques Deleuzian vitalism of positive difference, defending the negative gap and constitutive deadlock in Being"
+  },
+  {
+    "source": "alenka-zupancic",
+    "target": "byung-chul-han",
+    "type": "SYNTHESIZED",
+    "strength": 3,
+    "label": "Synthesizes psychoanalytic disavowal with critiques of the neoliberal achievement society and compulsory positivity"
+  },
+  {
+    "source": "alenka-zupancic",
+    "target": "ethics-of-the-real",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Ethics of the Real bridging Kantian deontological rigor with the Lacanian death drive"
+  },
+  {
+    "source": "categorical-imperative",
+    "target": "ethics-of-the-real",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "The categorical imperative purged of pathological inclinations is radicalized into psychoanalytic fidelity to the drive"
+  },
+  {
+    "source": "ethics-of-the-real",
+    "target": "immanuel-kant",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Reframes Kantian moral duty not as intellectual harmony but as an encounter with the terrifying Real"
   }
 ]

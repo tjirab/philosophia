@@ -432,6 +432,42 @@
     "summary": "Canonical academic comprehensive overview of Max Horkheimer's Frankfurt School leadership, Critical Theory formulation, and critique of instrumental reason."
   },
   {
+    "id": "sep-two-truths-india",
+    "targetId": "two-truths-doctrine",
+    "type": "encyclopedia",
+    "title": "Two Truths in Indian Buddhism - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/twotruths-india/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of the Two Truths doctrine (samvriti-satya and paramartha-satya) across Madhyamaka and Indian Buddhist philosophy."
+  },
+  {
+    "id": "sep-sunyata-madhyamaka",
+    "targetId": "sunyata-emptiness",
+    "type": "encyclopedia",
+    "title": "Madhyamaka and Emptiness - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/madhyamaka/",
+    "creator": "Stanford University",
+    "summary": "Comprehensive scholarly analysis of Sunyata (emptiness), dependent origination, and the Madhyamaka dialectical revolution."
+  },
+  {
+    "id": "sep-alenka-zupancic",
+    "targetId": "alenka-zupancic",
+    "type": "encyclopedia",
+    "title": "Jacques Lacan & The Ljubljana School (Alenka Zupančič) - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/lacan/",
+    "creator": "Stanford University",
+    "summary": "Academic comprehensive overview of Lacanian psychoanalytic theory, continental ethics, and the Ljubljana School's dialectical contributions."
+  },
+  {
+    "id": "sep-ethics-of-the-real",
+    "targetId": "ethics-of-the-real",
+    "type": "encyclopedia",
+    "title": "Psychoanalysis, Ethics, and the Real - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/lacan/",
+    "creator": "Stanford University",
+    "summary": "Academic analysis of the ethics of psychoanalysis, drive, and the Lacanian Real intersecting Kantian moral philosophy."
+  },
+  {
     "id": "pt-ep-189-byung-chul-han",
     "targetId": "byung-chul-han",
     "type": "podcast",
@@ -1994,6 +2030,17 @@
     "duration": "47:56"
   },
   {
+    "id": "pt-ep-9-siddhartha-gautama",
+    "targetId": "siddhartha-gautama",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #009 ... The Buddha",
+    "url": "https://philosophizethis.libsyn.com/episode-009-the-buddha",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_009_..._The_Buddha.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 9,
+    "duration": "44:28"
+  },
+  {
     "id": "pt-ep-8-confucius",
     "targetId": "confucius",
     "type": "podcast",
@@ -2113,23 +2160,5 @@
     "creator": "Stephen West",
     "episodeNumber": 1,
     "duration": "49:17"
-  },
-  {
-    "id": "sep-two-truths-india",
-    "targetId": "two-truths-doctrine",
-    "type": "encyclopedia",
-    "title": "Two Truths in Indian Buddhism - Stanford Encyclopedia of Philosophy",
-    "url": "https://plato.stanford.edu/entries/twotruths-india/",
-    "creator": "Stanford University",
-    "summary": "Canonical academic comprehensive overview of the Two Truths doctrine (samvriti-satya and paramartha-satya) across Madhyamaka and Indian Buddhist philosophy."
-  },
-  {
-    "id": "sep-sunyata-madhyamaka",
-    "targetId": "sunyata-emptiness",
-    "type": "encyclopedia",
-    "title": "Madhyamaka and Emptiness - Stanford Encyclopedia of Philosophy",
-    "url": "https://plato.stanford.edu/entries/madhyamaka/",
-    "creator": "Stanford University",
-    "summary": "Comprehensive scholarly analysis of Sunyata (emptiness), dependent origination, and the Madhyamaka dialectical revolution."
   }
 ]

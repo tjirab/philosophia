@@ -188,6 +188,16 @@ describe('Philosophy Graph Data Integrity', () => {
     expect(kantToInstrumental.found).toBe(true);
     expect(kantToInstrumental.nodes).toContain('max-horkheimer');
 
+    // Kant / Hegel -> Alenka Zupančič -> Ethics of the Real
+    const kantToZupancic = findInfluencePath('immanuel-kant', 'alenka-zupancic', edgesData as any);
+    expect(kantToZupancic.found).toBe(true);
+
+    const hegelToZupancic = findInfluencePath('gwf-hegel', 'alenka-zupancic', edgesData as any);
+    expect(hegelToZupancic.found).toBe(true);
+
+    const zupancicToEthics = findInfluencePath('alenka-zupancic', 'ethics-of-the-real', edgesData as any);
+    expect(zupancicToEthics.found).toBe(true);
+
     // David Hume -> Adam Smith -> Karl Marx
     const humeToMarx = findInfluencePath('david-hume', 'karl-marx', edgesData as any);
     expect(humeToMarx.found).toBe(true);

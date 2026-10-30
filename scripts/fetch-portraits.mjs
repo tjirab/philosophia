@@ -80,6 +80,7 @@ const WIKI_TITLES = {
   'jacques-derrida': 'Jacques_Derrida',
   'derek-parfit': 'Derek_Parfit',
   'byung-chul-han': 'Byung-Chul_Han',
+  'alenka-zupancic': 'Alenka_Zupančič',
   'nick-bostrom': 'Nick_Bostrom',
   'laozi': 'Laozi',
   'confucius': 'Confucius',
