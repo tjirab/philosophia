@@ -48,15 +48,45 @@ describe('Philosophy Graph Data Integrity', () => {
     }
   });
 
-  it('validates that all concepts are connected to edges and not isolated', () => {
+  it('validates that all philosophers and concepts are connected to edges and not isolated', () => {
     const connectedIds = new Set<string>();
     for (const e of edgesData) {
       connectedIds.add(e.source);
       connectedIds.add(e.target);
     }
-    for (const c of conceptsData) {
-      expect(connectedIds.has(c.id), `Concept ${c.id} is isolated with no edges`).toBe(true);
+    for (const p of philosophersData) {
+      expect(connectedIds.has(p.id), `Philosopher "${p.id}" is isolated with no edges`).toBe(true);
     }
+    for (const c of conceptsData) {
+      expect(connectedIds.has(c.id), `Concept "${c.id}" is isolated with no edges`).toBe(true);
+    }
+  });
+
+  it('validates that the graph is a single unified connected component', () => {
+    const adj = new Map<string, string[]>();
+    for (const id of allNodeIds) adj.set(id, []);
+    for (const e of edgesData) {
+      if (adj.has(e.source) && adj.has(e.target)) {
+        adj.get(e.source)!.push(e.target);
+        adj.get(e.target)!.push(e.source);
+      }
+    }
+    const visited = new Set<string>();
+    const firstNode = allNodeIds.values().next().value;
+    expect(firstNode).toBeDefined();
+
+    const queue = [firstNode!];
+    visited.add(firstNode!);
+    while (queue.length > 0) {
+      const curr = queue.shift()!;
+      for (const neighbor of adj.get(curr) || []) {
+        if (!visited.has(neighbor)) {
+          visited.add(neighbor);
+          queue.push(neighbor);
+        }
+      }
+    }
+    expect(visited.size).toBe(allNodeIds.size);
   });
 
   it('validates that all edges connect existing nodes with no dangling references', () => {
@@ -149,6 +179,37 @@ describe('Philosophy Graph Data Integrity', () => {
     // Adam Smith -> Impartial Spectator -> John Rawls
     const smithToRawls = findInfluencePath('adam-smith', 'john-rawls', edgesData as any);
     expect(smithToRawls.found).toBe(true);
+
+    // Aristotle -> Machiavelli -> Hobbes
+    const aristotleToHobbes = findInfluencePath('aristotle', 'thomas-hobbes', edgesData as any);
+    expect(aristotleToHobbes.found).toBe(true);
+    expect(aristotleToHobbes.nodes).toContain('machiavelli');
+
+    // John Locke -> Voltaire -> Rousseau / Kant
+    const lockeToVoltaire = findInfluencePath('john-locke', 'voltaire', edgesData as any);
+    expect(lockeToVoltaire.found).toBe(true);
+
+    const voltaireToRousseau = findInfluencePath('voltaire', 'jean-jacques-rousseau', edgesData as any);
+    expect(voltaireToRousseau.found).toBe(true);
+
+    const voltaireToKant = findInfluencePath('voltaire', 'immanuel-kant', edgesData as any);
+    expect(voltaireToKant.found).toBe(true);
+
+    // Siddhartha Gautama -> Adi Shankara -> Schopenhauer
+    const gautamaToShankara = findInfluencePath('siddhartha-gautama', 'adi-shankara', edgesData as any);
+    expect(gautamaToShankara.found).toBe(true);
+
+    const shankaraToSchop = findInfluencePath('adi-shankara', 'arthur-schopenhauer', edgesData as any);
+    expect(shankaraToSchop.found).toBe(true);
+
+    // Socrates -> Epictetus -> Spinoza
+    const socratesToSpinoza = findInfluencePath('socrates', 'baruch-spinoza', edgesData as any);
+    expect(socratesToSpinoza.found).toBe(true);
+    expect(socratesToSpinoza.nodes).toContain('epictetus');
+
+    // Marcus Aurelius -> Montaigne
+    const aureliusToMontaigne = findInfluencePath('marcus-aurelius', 'michel-de-montaigne', edgesData as any);
+    expect(aureliusToMontaigne.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {
