@@ -12,6 +12,13 @@ import { useClickOutside } from '../../lib/hooks/useClickOutside';
 import { drawCartographicGrid } from '../../lib/graph/grid-renderer';
 import { getAssetUrl } from '../../lib/assets';
 import {
+  getNodeMonogram,
+  getNodeRadius,
+  drawPortraitMedallion,
+  preloadPortrait,
+  getPortraitFromCache,
+} from '../../lib/graph/portrait-renderer';
+import {
   getArrowLength,
   ARROW_REL_POS,
   getArrowColor,
@@ -19,9 +26,6 @@ import {
   getLinkWidth,
   getLinkLineDash,
 } from '../../lib/graph/arrow-styling';
-
-// Global cache for philosopher portraits rendered on the HTML5 canvas
-const portraitCache = new Map<string, HTMLImageElement | 'loading' | 'failed'>();
 
 // Dynamically import ForceGraph2D with ssr disabled
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
@@ -64,16 +68,6 @@ function escapeHtml(str: string): string {
     .replace(/'/g, '&#039;');
 }
 
-function getNodeMonogram(node: VisualNode): string {
-  if (node.type === 'concept') return '✦';
-  const name = node.name.replace(/^(von|de|du|of|the)\s+/i, '').trim();
-  const parts = name.split(/\s+/);
-  if (parts.length >= 2) {
-    return `${parts[0][0]}${parts[parts.length - 1][0]}`.toUpperCase();
-  }
-  return name.slice(0, 2).toUpperCase();
-}
-
 export function ForceGraphView({
   nodes,
   links,
@@ -101,6 +95,8 @@ export function ForceGraphView({
   const [hoveredNode, setHoveredNode] = useState<VisualNode | null>(null);
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null);
   const [spacingMultiplier, setSpacingMultiplier] = useState<number>(1.9); // 1.9x generous balanced default to ensure zero overlap
+  const [portraitsLoadedVersion, setPortraitsLoadedVersion] = useState<number>(0);
+  const rafIdRef = useRef<number | null>(null);
   const prevSpacingMultiplierRef = useRef<number>(1.9);
   const hasInitialFitRef = useRef<boolean>(false);
   const hasConfiguredForcesRef = useRef<boolean>(false);
@@ -109,6 +105,17 @@ export function ForceGraphView({
 
   // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
   const graphData = useMemo(() => ({ nodes, links }), [nodes, links]);
+
+  // Request a canvas frame update whenever portrait images finish loading
+  const notifyLoaded = useCallback(() => {
+    if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
+    rafIdRef.current = requestAnimationFrame(() => {
+      setPortraitsLoadedVersion((v) => v + 1);
+      if (fgRef.current?.resumeAnimation) {
+        fgRef.current.resumeAnimation();
+      }
+    });
+  }, []);
 
   // Resize listener
   useEffect(() => {
@@ -128,26 +135,24 @@ export function ForceGraphView({
   // Preload philosopher portraits for instant canvas rendering
   useEffect(() => {
     if (typeof window === 'undefined') return;
+
+    let mounted = true;
+    const onAnyLoad = () => {
+      if (mounted) notifyLoaded();
+    };
+
     nodes.forEach((n) => {
       if (n.type === 'philosopher') {
         const url = getAssetUrl(n.imageUrl || `/portraits/${n.id}.jpg`);
-        if (!portraitCache.has(url)) {
-          portraitCache.set(url, 'loading');
-          const img = new Image();
-          img.src = url;
-          img.onload = () => {
-            portraitCache.set(url, img);
-            if (fgRef.current && fgRef.current.refresh) {
-              fgRef.current.refresh();
-            }
-          };
-          img.onerror = () => {
-            portraitCache.set(url, 'failed');
-          };
-        }
+        preloadPortrait(url, onAnyLoad, onAnyLoad);
       }
     });
-  }, [nodes]);
+
+    return () => {
+      mounted = false;
+      if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
+    };
+  }, [nodes, notifyLoaded]);
 
   // Configure D3 anti-collision forces and generous repulsion to prevent node overlap
   const applyForces = React.useCallback((fg: any, multiplier: number) => {
@@ -158,9 +163,9 @@ export function ForceGraphView({
 
     // 2. Anti-collision barrier: collision radius calculated with node radius + label padding
     const collisionRadius = (node: any) => {
-      const size = Math.max(8, (node.val || 8) * 0.9);
+      const size = getNodeRadius(node.val, node.importanceScore);
       const isAnchor = (node.importanceScore && node.importanceScore >= 90) || false;
-      const basePadding = isAnchor ? 54 : 46;
+      const basePadding = isAnchor ? 52 : 44;
       return size + basePadding * multiplier;
     };
 
@@ -317,189 +322,133 @@ export function ForceGraphView({
   };
 
   // Node drawing on Canvas with Distinct Shapes, Monograms, and Anti-Overlap Aesthetics
-  const paintNode = (node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
-    const isSelected = node.id === selectedNodeId;
-    const isHovered = hoveredNode?.id === node.id;
-    const isOnPath = pathNodeSet.has(node.id);
+  const paintNode = useCallback(
+    (node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
+      const isSelected = node.id === selectedNodeId;
+      const isHovered = hoveredNode?.id === node.id;
+      const isOnPath = pathNodeSet.has(node.id);
 
-    // Dimming logic
-    let alpha = 1;
-    if (isPathActive && !isOnPath) {
-      alpha = 0.12;
-    } else if (hoveredNode && !isSelected && !isHovered) {
-      alpha = 0.35;
-    }
+      // Dimming logic
+      let alpha = 1;
+      if (isPathActive && !isOnPath) {
+        alpha = 0.12;
+      } else if (hoveredNode && !isSelected && !isHovered) {
+        alpha = 0.35;
+      }
 
-    ctx.save();
-    ctx.globalAlpha = alpha;
-
-    const size = Math.max(7, (node.val || 8) * 0.95);
-    const isPrimaryThinker = node.importanceScore && node.importanceScore >= 95;
-
-    // 1. Outer halo for selected, path, or high-centrality foundational thinkers
-    if (isSelected || isOnPath || isPrimaryThinker) {
-      ctx.beginPath();
-      ctx.arc(node.x, node.y, size + 6, 0, 2 * Math.PI, false);
-      ctx.fillStyle = isLight
-        ? isSelected || isOnPath
-          ? 'rgba(154, 111, 20, 0.4)'
-          : 'rgba(215, 185, 130, 0.25)'
-        : isSelected || isOnPath
-        ? 'rgba(229, 185, 76, 0.45)'
-        : 'rgba(197, 155, 39, 0.25)';
-      ctx.fill();
-    }
-
-    // 2. Node Shape: Distinct geometry for Thinker (Circle) vs Concept (Diamond)
-    if (node.type === 'concept') {
-      const boxSize = size * 1.45;
       ctx.save();
-      ctx.translate(node.x, node.y);
-      ctx.rotate(Math.PI / 4); // 45-degree diamond lozenge
+      ctx.globalAlpha = alpha;
 
-      ctx.beginPath();
-      ctx.roundRect(-boxSize / 2, -boxSize / 2, boxSize, boxSize, 4);
-      ctx.fillStyle = node.color || '#2a9d8f';
-      ctx.fill();
+      const size = getNodeRadius(node.val, node.importanceScore);
+      const isPrimaryThinker = node.importanceScore && node.importanceScore >= 95;
 
-      ctx.lineWidth = isSelected ? 2.5 : 1.5;
-      ctx.strokeStyle = isSelected
-        ? isLight ? '#9a6f14' : '#fef08a'
-        : isLight ? '#3d3328' : '#ffffff';
-      ctx.stroke();
+      // 1. Outer halo for selected, path, or high-centrality foundational thinkers
+      if (isSelected || isOnPath || isPrimaryThinker) {
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, size + 6, 0, 2 * Math.PI, false);
+        ctx.fillStyle = isLight
+          ? isSelected || isOnPath
+            ? 'rgba(154, 111, 20, 0.4)'
+            : 'rgba(215, 185, 130, 0.25)'
+          : isSelected || isOnPath
+          ? 'rgba(229, 185, 76, 0.45)'
+          : 'rgba(197, 155, 39, 0.25)';
+        ctx.fill();
+      }
+
+      // 2. Node Shape: Distinct geometry for Thinker (Circle with Portrait) vs Concept (Diamond)
+      if (node.type === 'concept') {
+        const boxSize = size * 1.25;
+        ctx.save();
+        ctx.translate(node.x, node.y);
+        ctx.rotate(Math.PI / 4); // 45-degree diamond lozenge
+
+        ctx.beginPath();
+        ctx.roundRect(-boxSize / 2, -boxSize / 2, boxSize, boxSize, 4);
+        ctx.fillStyle = node.color || '#2a9d8f';
+        ctx.fill();
+
+        ctx.lineWidth = isSelected ? 2.5 : 1.5;
+        ctx.strokeStyle = isSelected
+          ? isLight ? '#9a6f14' : '#fef08a'
+          : isLight ? '#3d3328' : '#ffffff';
+        ctx.stroke();
+
+        ctx.restore();
+
+        // Draw concept emblem '✦' in center
+        const iconSize = Math.max(10, size * 0.65);
+        ctx.font = `bold ${iconSize}px serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillStyle = '#ffffff';
+        ctx.fillText('✦', node.x, node.y);
+      } else {
+        const portraitUrl = getAssetUrl(node.imageUrl || `/portraits/${node.id}.jpg`);
+        let cached = getPortraitFromCache(portraitUrl);
+
+        if (cached === undefined && typeof window !== 'undefined') {
+          preloadPortrait(portraitUrl, notifyLoaded, notifyLoaded);
+          cached = getPortraitFromCache(portraitUrl);
+        }
+
+        drawPortraitMedallion(ctx, node, cached, {
+          isSelected,
+          isPrimaryThinker: !!isPrimaryThinker,
+          isLight,
+          size,
+        });
+      }
+
+      // 3. Node Label: Tiered visibility to keep overview clean like a celestial atlas
+      const isAnchorThinker = (node.importanceScore && node.importanceScore >= 95) || false;
+      const isSecondaryThinker = (node.importanceScore && node.importanceScore >= 90) || false;
+      const shouldDrawLabel =
+        isSelected ||
+        isOnPath ||
+        isHovered ||
+        globalScale >= 1.8 ||
+        (globalScale >= 1.25 && isSecondaryThinker) ||
+        isAnchorThinker;
+
+      if (shouldDrawLabel) {
+        const fontSize = Math.max(10.5 / globalScale, 3.8);
+        ctx.font = `${isSelected || isOnPath || isAnchorThinker ? 'bold' : 'normal'} ${fontSize}px "EB Garamond", Georgia, serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+
+        const labelText = node.name;
+        const textWidth = ctx.measureText(labelText).width;
+        const paddingX = 4;
+        const paddingY = 1.5;
+
+        // Subtle translucent label background pill
+        ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.90)' : 'rgba(18, 16, 13, 0.88)';
+        ctx.strokeStyle = isLight ? 'rgba(215, 205, 190, 0.7)' : 'rgba(60, 50, 40, 0.7)';
+        ctx.lineWidth = 0.6;
+
+        const rectX = node.x - textWidth / 2 - paddingX;
+        const rectY = node.y + size + 2.5;
+        const rectW = textWidth + paddingX * 2;
+        const rectH = fontSize + paddingY * 2;
+
+        ctx.beginPath();
+        ctx.roundRect(rectX, rectY, rectW, rectH, 3);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = isSelected || isOnPath
+          ? isLight ? '#9a6f14' : '#fef08a'
+          : isAnchorThinker
+          ? isLight ? '#1a1815' : '#f5f2eb'
+          : isLight ? '#383228' : '#ded7cb';
+        ctx.fillText(labelText, node.x, node.y + size + 3.5);
+      }
 
       ctx.restore();
-
-      // Draw concept emblem '✦' in center
-      const iconSize = Math.max(9 / globalScale, 6);
-      ctx.font = `bold ${iconSize}px serif`;
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillStyle = '#ffffff';
-      ctx.fillText('✦', node.x, node.y);
-    } else {
-      // Circle for philosophers
-      ctx.beginPath();
-      ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
-      ctx.fillStyle = node.color || '#f4a261';
-      ctx.fill();
-
-      // Double ring for major thinkers
-      ctx.lineWidth = isSelected ? 2.5 : isPrimaryThinker ? 2 : 1.2;
-      ctx.strokeStyle = isSelected
-        ? isLight ? '#9a6f14' : '#fef08a'
-        : isLight ? 'rgba(50, 40, 30, 0.7)' : 'rgba(255, 245, 230, 0.75)';
-      ctx.stroke();
-
-      // Inner medallion: render portrait picture or monogram fallback
-      if (size >= 7) {
-        let drewPortrait = false;
-        const portraitUrl = getAssetUrl(node.imageUrl || `/portraits/${node.id}.jpg`);
-        const cached = portraitCache.get(portraitUrl);
-
-        if (cached instanceof HTMLImageElement && cached.complete && cached.naturalWidth > 0) {
-          const portraitRadius = size * 0.74;
-          ctx.save();
-          ctx.beginPath();
-          ctx.arc(node.x, node.y, portraitRadius, 0, 2 * Math.PI, false);
-          ctx.clip();
-          ctx.drawImage(
-            cached,
-            node.x - portraitRadius,
-            node.y - portraitRadius,
-            portraitRadius * 2,
-            portraitRadius * 2
-          );
-          ctx.restore();
-
-          // Delicate antique rim border around portrait
-          ctx.beginPath();
-          ctx.arc(node.x, node.y, portraitRadius, 0, 2 * Math.PI, false);
-          ctx.lineWidth = 0.8;
-          ctx.strokeStyle = isLight ? 'rgba(215, 195, 160, 0.9)' : 'rgba(90, 75, 55, 0.9)';
-          ctx.stroke();
-
-          drewPortrait = true;
-        } else if (cached === undefined && typeof window !== 'undefined') {
-          portraitCache.set(portraitUrl, 'loading');
-          const newImg = new Image();
-          newImg.src = portraitUrl;
-          newImg.onload = () => {
-            portraitCache.set(portraitUrl, newImg);
-            if (fgRef.current && fgRef.current.refresh) {
-              fgRef.current.refresh();
-            }
-          };
-          newImg.onerror = () => {
-            portraitCache.set(portraitUrl, 'failed');
-          };
-        }
-
-        if (!drewPortrait) {
-          ctx.beginPath();
-          ctx.arc(node.x, node.y, size * 0.65, 0, 2 * Math.PI, false);
-          ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.85)' : 'rgba(18, 16, 13, 0.85)';
-          ctx.fill();
-
-          // Monogram initial
-          const monogram = getNodeMonogram(node);
-          const monogramSize = Math.max(size * 0.6, 6);
-          ctx.font = `bold ${monogramSize}px "Cinzel", Georgia, serif`;
-          ctx.textAlign = 'center';
-          ctx.textBaseline = 'middle';
-          ctx.fillStyle = isLight ? '#1f1b15' : '#f5f0e6';
-          ctx.fillText(monogram, node.x, node.y);
-        }
-      }
-    }
-
-    // 3. Node Label: Tiered visibility to keep overview clean like a celestial atlas
-    const isAnchorThinker = (node.importanceScore && node.importanceScore >= 95) || false;
-    const isSecondaryThinker = (node.importanceScore && node.importanceScore >= 90) || false;
-    const shouldDrawLabel =
-      isSelected ||
-      isOnPath ||
-      isHovered ||
-      globalScale >= 1.8 ||
-      (globalScale >= 1.25 && isSecondaryThinker) ||
-      isAnchorThinker;
-
-    if (shouldDrawLabel) {
-      const fontSize = Math.max(10.5 / globalScale, 3.8);
-      ctx.font = `${isSelected || isOnPath || isAnchorThinker ? 'bold' : 'normal'} ${fontSize}px "EB Garamond", Georgia, serif`;
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'top';
-
-      const labelText = node.name;
-      const textWidth = ctx.measureText(labelText).width;
-      const paddingX = 4;
-      const paddingY = 1.5;
-
-      // Subtle translucent label background pill
-      ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.90)' : 'rgba(18, 16, 13, 0.88)';
-      ctx.strokeStyle = isLight ? 'rgba(215, 205, 190, 0.7)' : 'rgba(60, 50, 40, 0.7)';
-      ctx.lineWidth = 0.6;
-
-      const rectX = node.x - textWidth / 2 - paddingX;
-      const rectY = node.y + size + 2.5;
-      const rectW = textWidth + paddingX * 2;
-      const rectH = fontSize + paddingY * 2;
-
-      ctx.beginPath();
-      ctx.roundRect(rectX, rectY, rectW, rectH, 3);
-      ctx.fill();
-      ctx.stroke();
-
-      ctx.fillStyle = isSelected || isOnPath
-        ? isLight ? '#9a6f14' : '#fef08a'
-        : isAnchorThinker
-        ? isLight ? '#1a1815' : '#f5f2eb'
-        : isLight ? '#383228' : '#ded7cb';
-      ctx.fillText(labelText, node.x, node.y + size + 3.5);
-    }
-
-    ctx.restore();
-  };
+    },
+    [selectedNodeId, hoveredNode, pathNodeSet, isPathActive, isLight, portraitsLoadedVersion, notifyLoaded]
+  );
 
   const renderBackground = React.useCallback(
     (ctx: CanvasRenderingContext2D, globalScale: number) => {
@@ -829,7 +778,7 @@ export function ForceGraphView({
         linkCanvasObjectMode={() => 'after'}
         linkCanvasObject={paintLinkOverlay}
         nodePointerAreaPaint={(node: any, color: string, ctx: CanvasRenderingContext2D) => {
-          const size = Math.max(12, (node.val || 8) * 1.2);
+          const size = getNodeRadius(node.val, node.importanceScore);
           ctx.fillStyle = color;
           ctx.beginPath();
           ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
