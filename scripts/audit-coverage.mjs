@@ -201,6 +201,7 @@ export function auditCanon(options = {}) {
     { name: 'Confucius → Mencius → Zhuangzi', from: 'confucius', to: 'zhuangzi' },
     { name: 'Hume → Bentham → Mill', from: 'david-hume', to: 'john-stuart-mill' },
     { name: 'Wollstonecraft → Mill', from: 'mary-wollstonecraft', to: 'john-stuart-mill' },
+    { name: 'Kant → Hegel → Alenka Zupančič', from: 'immanuel-kant', to: 'alenka-zupancic' },
   ];
 
   function testPath(start, goal) {

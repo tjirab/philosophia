@@ -632,5 +632,15 @@
     "summary": "The historical degeneration of reason from an objective inquiry into truth, justice, and human flourishing into a purely calculating, technocratic instrument for mastering nature and managing society.",
     "sepSlug": "horkheimer",
     "importanceScore": 88
+  },
+  {
+    "id": "ethics-of-the-real",
+    "title": "Ethics of the Real",
+    "branch": "ethics",
+    "eraId": "contemporary",
+    "introducedBy": "alenka-zupancic",
+    "summary": "An ethical framework grounded at the intersection of Kantian rigorism and Lacanian psychoanalysis, defining the moral act not as adherence to universal norms or utilitarian goods, but as uncompromising fidelity to the traumatic encounter with the Real and the drive beyond the pleasure principle.",
+    "sepSlug": "lacan",
+    "importanceScore": 88
   }
 ]

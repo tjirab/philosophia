@@ -69,6 +69,7 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'john-rawls', patterns: [/\brawls\b/i, /\bveil of ignorance\b/i] },
   { id: 'byung-chul-han', patterns: [/\bbyung-chul han\b/i, /\bbyung chul han\b/i, /\bburnout society\b/i] },
   { id: 'jean-baudrillard', patterns: [/\bbaudrillard\b/i, /\bsimulacr\b/i, /\bhyperreal\b/i] },
+  { id: 'alenka-zupancic', patterns: [/\bzupan[cč]i[cč]\b/i] },
   { id: 'nick-bostrom', patterns: [/\bbostrom\b/i, /\bsimulation argument\b/i] },
   { id: 'zeno-of-elea', patterns: [/\bzeno\b/i, /\bachilles and the tortoise\b/i] },
   { id: 'confucius', patterns: [/\bconfucius\b/i, /\bconfucianism\b/i, /\bkongzi\b/i, /\banalects\b/i] },
