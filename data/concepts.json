@@ -551,5 +551,45 @@
     "summary": "The emergent market coordination mechanism wherein individuals pursuing their enlightened self-interest inadvertently promote the general economic welfare and optimal capital allocation.",
     "sepSlug": "smith-moral-political",
     "importanceScore": 95
+  },
+  {
+    "id": "apeiron",
+    "title": "The Apeiron (The Boundless)",
+    "branch": "metaphysics",
+    "eraId": "pre-socratic",
+    "introducedBy": "anaximander",
+    "summary": "The infinite, undefined, and boundless primary substance from which all differentiated physical opposites emerge and into which they return through cyclical cosmic justice.",
+    "sepSlug": "presocratics",
+    "importanceScore": 90
+  },
+  {
+    "id": "innate-goodness",
+    "title": "Innate Goodness of Human Nature (Xing Shan)",
+    "branch": "ethics",
+    "eraId": "eastern",
+    "introducedBy": "mencius",
+    "summary": "The thesis that human nature possesses four innate ethical sprouts (compassion, shame, deference, and discernment) that naturally grow into virtues unless corrupted by environmental neglect.",
+    "sepSlug": "mencius",
+    "importanceScore": 92
+  },
+  {
+    "id": "principle-of-utility",
+    "title": "Principle of Utility",
+    "branch": "ethics",
+    "eraId": "enlightenment",
+    "introducedBy": "jeremy-bentham",
+    "summary": "The moral axiom that actions and institutions are right in proportion as they tend to promote pleasure and mitigate pain for the greatest number of affected sentient individuals.",
+    "sepSlug": "bentham",
+    "importanceScore": 94
+  },
+  {
+    "id": "rational-equality",
+    "title": "Rational Equality of the Sexes",
+    "branch": "political",
+    "eraId": "enlightenment",
+    "introducedBy": "mary-wollstonecraft",
+    "summary": "The doctrine that human reason is not sex-differentiated; women are moral agents endowed with equal intellectual capacity whose apparent deficiencies result entirely from enforced social subjugation and deprived education.",
+    "sepSlug": "wollstonecraft",
+    "importanceScore": 93
   }
 ]

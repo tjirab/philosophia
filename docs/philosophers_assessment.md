@@ -61,47 +61,60 @@ While the current roster covers foundational pillars (from Presocratics like Tha
 ```mermaid
 flowchart TD
     subgraph Antiquity
-        Thales["Thales"] --> Anaximander["Anaximander*"]
-        Parmenides["Parmenides"] --> Zeno["Zeno of Elea*"]
+        Thales["Thales"] --> Anaximander["Anaximander"]
+        Anaximander --> Heraclitus["Heraclitus"]
+        Anaximander --> Parmenides["Parmenides"]
+        Parmenides --> Zeno["Zeno of Elea"]
         Zeno --> Democritus["Democritus"]
         Zeno --> Aristotle["Aristotle"]
-        Pyrrho["Pyrrho"] --> Montaigne["Montaigne*"]
+        Pyrrho["Pyrrho"] --> Montaigne["Montaigne"]
+    end
+
+    subgraph Eastern
+        Laozi["Laozi"] --> Confucius["Confucius"]
+        Confucius --> Mencius["Mencius"]
+        Mencius --> Zhuangzi["Zhuangzi"]
     end
 
     subgraph Islamic & Scholastic
-        Avicenna["Avicenna"] --> Ghazali["Al-Ghazali*"]
+        Avicenna["Avicenna"] --> Ghazali["Al-Ghazali"]
         Ghazali --> Averroes["Averroes"]
-        Averroes --> Maimonides["Maimonides*"]
+        Averroes --> Maimonides["Maimonides"]
         Maimonides --> Aquinas["Thomas Aquinas"]
         Maimonides --> Spinoza["Spinoza"]
     end
 
-    subgraph Early Modern
+    subgraph Early Modern & Enlightenment
         Montaigne --> Descartes["Descartes"]
-        Descartes --> Pascal["Pascal*"]
+        Descartes --> Pascal["Pascal"]
         Pascal --> Kierkegaard["Kierkegaard"]
+        Hume["David Hume"] --> Bentham["Jeremy Bentham"]
+        Bentham --> Mill["John Stuart Mill"]
+        Locke["John Locke"] --> Wollstonecraft["Mary Wollstonecraft"]
+        Rousseau["Rousseau"] --> Wollstonecraft
+        Wollstonecraft --> Mill
     end
 
     subgraph German Idealism
-        Kant["Immanuel Kant"] --> Fichte["Fichte*"]
-        Fichte --> Schelling["Schelling*"]
+        Kant["Immanuel Kant"] --> Fichte["Fichte"]
+        Fichte --> Schelling["Schelling"]
         Schelling --> Hegel["G.W.F. Hegel"]
     end
 
     subgraph Logic & Analytic
-        Kant --> Frege["Gottlob Frege*"]
+        Kant --> Frege["Gottlob Frege"]
         Frege --> Russell["Bertrand Russell"]
         Frege --> Wittgenstein["Wittgenstein"]
     end
 ```
-*\* Asterisks denote missing thinkers proposed in this assessment.*
 
 ---
 
 ## 🎯 Implementation Status
 
-All identified gaps across Tier 1, Tier 2, and Tier 3 have been successfully implemented and integrated:
-- **Roster Expansion**: Canon expanded from 58 to **74 philosophers** and from 37 to **53 concepts**.
-- **Lineage Edges**: Dialectical connections expanded from 124 to **206 edges**, closing all historical leaps between Kant & Hegel, Avicenna & Aquinas, Pyrrho & Descartes, and Kant & modern Analytic philosophy.
-- **Media & Podcasts**: Ingested Stanford Encyclopedia of Philosophy (SEP) entries and *Philosophize This!* audio episodes across all new thinkers.
+All identified gaps across Tier 1, Tier 2, Tier 3, and foundational traditions have been successfully implemented and integrated:
+- **Roster Expansion**: Canon expanded to **81 philosophers** and **63 concepts** (144 nodes total).
+- **Lineage Edges**: Dialectical connections expanded to **273 edges**, closing all historical leaps across Antiquity, Eastern thought, Scholasticism, Enlightenment, Utilitarianism, and Modern Analytic philosophy.
+- **Topological Integrity**: 100% unified graph with **0 isolated nodes** and **1 connected component**.
+- **Media & Podcasts**: Ingested Stanford Encyclopedia of Philosophy (SEP) entries and *Philosophize This!* audio episodes across all 81 thinkers (100% media coverage).
 - **Verification**: Verified with automated lineage pathfinding tests and zero isolated concepts.

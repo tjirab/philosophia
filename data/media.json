@@ -1914,5 +1914,122 @@
     "creator": "Stephen West",
     "episodeNumber": 1,
     "duration": "49:17"
+  },
+  {
+    "id": "sep-anaximander",
+    "targetId": "anaximander",
+    "type": "encyclopedia",
+    "title": "Presocratic Philosophy (Anaximander) - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/presocratics/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Anaximander's life, cosmic justice, and the boundless Apeiron."
+  },
+  {
+    "id": "sep-mencius",
+    "targetId": "mencius",
+    "type": "encyclopedia",
+    "title": "Mencius - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/mencius/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Mencius' ethics, moral psychology, and doctrine of the innate goodness of human nature."
+  },
+  {
+    "id": "sep-jeremy-bentham",
+    "targetId": "jeremy-bentham",
+    "type": "encyclopedia",
+    "title": "Jeremy Bentham - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/bentham/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Jeremy Bentham's life, utilitarian moral philosophy, and legal theory."
+  },
+  {
+    "id": "sep-mary-wollstonecraft",
+    "targetId": "mary-wollstonecraft",
+    "type": "encyclopedia",
+    "title": "Mary Wollstonecraft - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/wollstonecraft/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Mary Wollstonecraft's moral, political, and feminist philosophy."
+  },
+  {
+    "id": "sep-seneca",
+    "targetId": "seneca",
+    "type": "encyclopedia",
+    "title": "Seneca - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/seneca/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Lucius Annaeus Seneca's Stoic ethics, moral essays, and tragedies."
+  },
+  {
+    "id": "sep-epictetus",
+    "targetId": "epictetus",
+    "type": "encyclopedia",
+    "title": "Epictetus - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/epictetus/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Epictetus' Stoic philosophy, the dichotomy of control, and moral freedom."
+  },
+  {
+    "id": "sep-laozi",
+    "targetId": "laozi",
+    "type": "encyclopedia",
+    "title": "Laozi - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/laozi/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of the Daodejing, classical Daoist metaphysics, and Wu Wei."
+  },
+  {
+    "id": "sep-siddhartha-gautama",
+    "targetId": "siddhartha-gautama",
+    "type": "encyclopedia",
+    "title": "The Buddha - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/buddha/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of the philosophical teachings of Siddhartha Gautama (The Buddha)."
+  },
+  {
+    "id": "sep-nagarjuna",
+    "targetId": "nagarjuna",
+    "type": "encyclopedia",
+    "title": "Nagarjuna - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/nagarjuna/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Nagarjuna's Madhyamaka philosophy and the doctrine of emptiness (Sunyata)."
+  },
+  {
+    "id": "sep-adi-shankara",
+    "targetId": "adi-shankara",
+    "type": "encyclopedia",
+    "title": "Adi Shankara (Advaita Vedanta) - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/shankara/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Adi Shankara's non-dual Advaita Vedanta philosophy."
+  },
+  {
+    "id": "sep-averroes",
+    "targetId": "averroes",
+    "type": "encyclopedia",
+    "title": "Ibn Rushd (Averroes) - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/ibn-rushd/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Averroes' Aristotelian commentaries, metaphysics, and harmony of religion and philosophy."
+  },
+  {
+    "id": "sep-william-of-ockham",
+    "targetId": "william-of-ockham",
+    "type": "encyclopedia",
+    "title": "William of Ockham - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/ockham/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of William of Ockham's nominalism, logic, and epistemological razor."
+  },
+  {
+    "id": "sep-bertrand-russell",
+    "targetId": "bertrand-russell",
+    "type": "encyclopedia",
+    "title": "Bertrand Russell - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/russell/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Bertrand Russell's logicism, theory of descriptions, and epistemological atomism."
   }
 ]

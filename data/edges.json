@@ -1783,5 +1783,131 @@
     "type": "INFLUENCED",
     "strength": 4,
     "label": "Advaita Vedanta metaphysics and the concept of the illusory phenomenal world as Maya directly influenced Schopenhauer's World as Will and Representation"
+  },
+  {
+    "source": "thales",
+    "target": "anaximander",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Pupil of Thales who succeeded him at Miletus, replacing single physical arche (water) with the transcendent, limitless Apeiron"
+  },
+  {
+    "source": "anaximander",
+    "target": "apeiron",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated and introduced the concept of the Apeiron"
+  },
+  {
+    "source": "apeiron",
+    "target": "heraclitus",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Anaximander's doctrine of opposing forces and cosmic retribution directly influenced Heraclitus' unity of opposites and cosmic fire"
+  },
+  {
+    "source": "anaximander",
+    "target": "parmenides",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Anaximander's boundless, eternal substrate provided the conceptual archetype for Parmenidean ungenerated Being"
+  },
+  {
+    "source": "confucius",
+    "target": "mencius",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Revered as the 'Second Sage', Mencius defended, extended, and systematized Confucius' moral philosophy across Warring States China"
+  },
+  {
+    "source": "mencius",
+    "target": "innate-goodness",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the foundational doctrine of Xing Shan (innate goodness of human nature)"
+  },
+  {
+    "source": "innate-goodness",
+    "target": "zhuangzi",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Classical Daoism contested Mencius' normative moral cultivation, championing spontaneous naturalness (Ziran) over prescriptive virtues"
+  },
+  {
+    "source": "mencius",
+    "target": "zhuangzi",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Engaged in Warring States dialectic over human nature, spontaneous instinct, and the artificiality of moral rituals"
+  },
+  {
+    "source": "david-hume",
+    "target": "jeremy-bentham",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Hume's Treatise of Human Nature awoke Bentham to utility as the foundational criterion of public morality and justice"
+  },
+  {
+    "source": "jeremy-bentham",
+    "target": "principle-of-utility",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated and codified the Principle of Utility and felicific calculus"
+  },
+  {
+    "source": "jeremy-bentham",
+    "target": "john-stuart-mill",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Direct pedagogical mentor and patron to Mill, establishing the utilitarian foundation that Mill subsequently refined into qualitative liberalism"
+  },
+  {
+    "source": "principle-of-utility",
+    "target": "john-stuart-mill",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Mill defended and refined Bentham's principle of utility, introducing qualitative distinctions between higher intellectual and lower bodily pleasures"
+  },
+  {
+    "source": "principle-of-utility",
+    "target": "john-rawls",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Rawls formulated his Theory of Justice as a direct critique of aggregate utilitarianism, arguing justice as fairness cannot sacrifice individual liberty for net pleasure"
+  },
+  {
+    "source": "john-locke",
+    "target": "mary-wollstonecraft",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Applied Locke's tabula rasa empiricism and natural rights to demonstrate that female inferiority is an artificial product of socialization and denied education"
+  },
+  {
+    "source": "jean-jacques-rousseau",
+    "target": "mary-wollstonecraft",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Fiercely refuted Rousseau's sexist educational thesis in Émile, rejecting the notion that women exist solely to please and serve men"
+  },
+  {
+    "source": "mary-wollstonecraft",
+    "target": "rational-equality",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated and championed the rational equality of the sexes in A Vindication of the Rights of Woman"
+  },
+  {
+    "source": "rational-equality",
+    "target": "john-stuart-mill",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Wollstonecraft's arguments on rational equality and institutional subjugation laid the essential groundwork for Mill's The Subjection of Women"
+  },
+  {
+    "source": "mary-wollstonecraft",
+    "target": "john-stuart-mill",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Pioneered philosophical feminist argumentation that directly informed Mill and Harriet Taylor Mill's utilitarian campaign for female emancipation"
   }
 ]

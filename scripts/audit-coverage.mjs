@@ -193,6 +193,10 @@ export function auditCanon(options = {}) {
     { name: 'Siddhartha Gautama → Adi Shankara → Schopenhauer', from: 'siddhartha-gautama', to: 'arthur-schopenhauer' },
     { name: 'Hume → Adam Smith → Marx', from: 'david-hume', to: 'karl-marx' },
     { name: 'Epictetus → Spinoza', from: 'epictetus', to: 'baruch-spinoza' },
+    { name: 'Thales → Anaximander → Heraclitus', from: 'thales', to: 'heraclitus' },
+    { name: 'Confucius → Mencius → Zhuangzi', from: 'confucius', to: 'zhuangzi' },
+    { name: 'Hume → Bentham → Mill', from: 'david-hume', to: 'john-stuart-mill' },
+    { name: 'Wollstonecraft → Mill', from: 'mary-wollstonecraft', to: 'john-stuart-mill' },
   ];
 
   function testPath(start, goal) {
