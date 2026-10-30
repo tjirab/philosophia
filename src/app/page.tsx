@@ -19,7 +19,6 @@ import {
 } from '../lib/graph/graph-service';
 import { Branch, EraId } from '../lib/types';
 import { ForceGraphView } from '../components/graph/ForceGraphView';
-import { EpochNavigator } from '../components/timeline/EpochNavigator';
 import { DossierDrawer } from '../components/drawer/DossierDrawer';
 import { LineagePathModal } from '../components/pathfinding/LineagePathModal';
 import { SearchPalette } from '../components/search/SearchPalette';
@@ -132,17 +131,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Central Epoch Navigator */}
-        <div className="flex items-center">
-          <EpochNavigator
-            eras={eras}
-            selectedEraId={selectedEraId}
-            onSelectEra={setSelectedEraId}
-            isolateEra={isolateEra}
-            onToggleIsolateEra={setIsolateEra}
-          />
-        </div>
-
         {/* Action Controls */}
         <div className="flex items-center gap-2">
           {/* Appearance & Font Settings */}
@@ -151,11 +139,11 @@ export default function HomePage() {
           {/* Folio Key / Legend */}
           <button
             onClick={() => setIsLegendOpen(true)}
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--border-strong)] rounded-xl text-xs transition font-serif"
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--border-strong)] rounded-xl text-xs transition font-serif"
             title="Folio Key (Colors, Nodes & Relations)"
           >
             <HelpCircle className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-            <span>Folio Key</span>
+            <span className="hidden sm:inline">Folio Key</span>
           </button>
 
           {/* Contribute / Suggest Content */}
@@ -205,6 +193,11 @@ export default function HomePage() {
           showConcepts={showConcepts}
           onToggleConcepts={() => setShowConcepts(!showConcepts)}
           onOpenLegend={() => setIsLegendOpen(true)}
+          eras={eras}
+          selectedEraId={selectedEraId}
+          onSelectEra={setSelectedEraId}
+          isolateEra={isolateEra}
+          onToggleIsolateEra={setIsolateEra}
         />
       </main>
 
