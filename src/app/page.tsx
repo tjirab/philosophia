@@ -215,6 +215,7 @@ export default function HomePage() {
         isOpen={isPathModalOpen}
         onClose={() => setIsPathModalOpen(false)}
         philosophers={philosophers}
+        concepts={concepts}
         edges={edges}
         initialStartId={pathStartId}
         onHighlightPath={handleHighlightPath}

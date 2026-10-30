@@ -17,7 +17,7 @@ import {
   GitPullRequest,
 } from 'lucide-react';
 import { getNodeDetails } from '../../lib/graph/graph-service';
-import { Philosopher, Concept, KeyWork, getEdgeTypeConfig } from '../../lib/types';
+import { Philosopher, Concept, Edge, KeyWork, getEdgeTypeConfig } from '../../lib/types';
 import { AudioPlayer } from '../audio/AudioPlayer';
 import { getAssetUrl } from '../../lib/assets';
 
@@ -504,112 +504,192 @@ export function DossierDrawer({
           </div>
 
           {/* Predecessors */}
-          <div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-sky-700 dark:text-sky-300 uppercase tracking-widest mb-3">
-              <ArrowLeft className="w-3.5 h-3.5 text-sky-500" />
-              <span>Influenced By ({details.predecessors.length})</span>
-            </div>
+          {(() => {
+            const isConceptNode = (item: Philosopher | Concept): item is Concept => 'title' in item;
+            const thinkerPredecessors = details.predecessors.filter(({ node }) => !isConceptNode(node));
+            const conceptPredecessors = details.predecessors.filter(({ node }) => isConceptNode(node));
 
-            {details.predecessors.length === 0 ? (
-              <div className="text-xs text-[var(--text-dim)] italic p-3 bg-[var(--bg-subtle)] rounded-lg">
-                No direct predecessors recorded (original foundational thinker).
-              </div>
-            ) : (
-              <div className="space-y-2">
-                {details.predecessors.map(({ node, edge }) => {
-                  const edgeConfig = getEdgeTypeConfig(edge.type);
-                  return (
-                    <div
-                      key={edge.source}
-                      onClick={() => onSelectNode(node.id)}
-                      className={`p-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl cursor-pointer transition group shadow-sm ${edgeConfig.cardBorderClass}`}
-                    >
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-2 min-w-0">
-                          {(node as any).type === 'philosopher' && (
-                            <img
-                              src={getAssetUrl((node as any).imageUrl || `/portraits/${node.id}.jpg`)}
-                              alt=""
-                              className="w-5 h-5 rounded-full object-cover shrink-0 border border-[var(--gold-border)]"
-                              onError={(e) => {
-                                (e.target as HTMLElement).style.display = 'none';
-                              }}
-                            />
-                          )}
-                          <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition truncate">
-                            {(node as any).name || (node as any).title}
-                          </span>
+            const renderCard = (node: Philosopher | Concept, edge: Edge) => {
+              const edgeConfig = getEdgeTypeConfig(edge.type);
+              const isConcept = isConceptNode(node);
+              return (
+                <div
+                  key={`${edge.source}-${edge.target}-${edge.type}`}
+                  onClick={() => onSelectNode(node.id)}
+                  className={`p-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl cursor-pointer transition group shadow-sm ${edgeConfig.cardBorderClass}`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 min-w-0">
+                      {!isConcept ? (
+                        <img
+                          src={getAssetUrl((node as any).imageUrl || `/portraits/${node.id}.jpg`)}
+                          alt=""
+                          className="w-5 h-5 rounded-full object-cover shrink-0 border border-[var(--gold-border)]"
+                          onError={(e) => {
+                            (e.target as HTMLElement).style.display = 'none';
+                          }}
+                        />
+                      ) : (
+                        <div className="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0">
+                          <Sparkles className="w-3 h-3 text-emerald-500" />
                         </div>
-                        <span
-                          className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors shrink-0 ml-2 ${edgeConfig.badgeClass}`}
-                          title={edgeConfig.description}
-                        >
-                          {edge.type}
-                        </span>
-                      </div>
-                      <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-snug">
-                        {edge.label}
-                      </p>
+                      )}
+                      <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition truncate">
+                        {isConcept ? (node as Concept).title : (node as Philosopher).name}
+                      </span>
+                      <span className={`text-[9px] font-mono uppercase px-1.5 py-0.2 rounded border shrink-0 ${isConcept ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30' : 'bg-sky-500/10 text-sky-600 dark:text-sky-400 border-sky-500/30'}`}>
+                        {isConcept ? 'Concept' : 'Thinker'}
+                      </span>
                     </div>
-                  );
-                })}
+                    <span
+                      className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors shrink-0 ml-2 ${edgeConfig.badgeClass}`}
+                      title={edgeConfig.description}
+                    >
+                      {edge.type}
+                    </span>
+                  </div>
+                  <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-snug">
+                    {edge.label}
+                  </p>
+                </div>
+              );
+            };
+
+            return (
+              <div>
+                {details.predecessors.length === 0 ? (
+                  <div>
+                    <div className="flex items-center gap-2 text-xs font-semibold text-sky-700 dark:text-sky-300 uppercase tracking-widest mb-3">
+                      <ArrowLeft className="w-3.5 h-3.5 text-sky-500" />
+                      <span>Influenced By (0)</span>
+                    </div>
+                    <div className="text-xs text-[var(--text-dim)] italic p-3 bg-[var(--bg-subtle)] rounded-lg">
+                      No direct predecessors recorded (original foundational thinker).
+                    </div>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    {thinkerPredecessors.length > 0 && (
+                      <div>
+                        <div className="flex items-center gap-2 text-xs font-semibold text-sky-700 dark:text-sky-300 uppercase tracking-widest mb-3">
+                          <ArrowLeft className="w-3.5 h-3.5 text-sky-500" />
+                          <span>Influenced By Thinkers ({thinkerPredecessors.length})</span>
+                        </div>
+                        <div className="space-y-2">
+                          {thinkerPredecessors.map(({ node, edge }) => renderCard(node, edge))}
+                        </div>
+                      </div>
+                    )}
+                    {conceptPredecessors.length > 0 && (
+                      <div>
+                        <div className="flex items-center gap-2 text-xs font-semibold text-emerald-700 dark:text-emerald-300 uppercase tracking-widest mb-3">
+                          <Sparkles className="w-3.5 h-3.5 text-emerald-500" />
+                          <span>Derived From Concepts ({conceptPredecessors.length})</span>
+                        </div>
+                        <div className="space-y-2">
+                          {conceptPredecessors.map(({ node, edge }) => renderCard(node, edge))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
-            )}
-          </div>
+            );
+          })()}
 
           {/* Successors */}
-          <div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-amber-700 dark:text-amber-300 uppercase tracking-widest mb-3">
-              <ArrowRight className="w-3.5 h-3.5 text-amber-500" />
-              <span>Influenced Later Thinkers ({details.successors.length})</span>
-            </div>
+          {(() => {
+            const isConceptNode = (item: Philosopher | Concept): item is Concept => 'title' in item;
+            const thinkerSuccessors = details.successors.filter(({ node }) => !isConceptNode(node));
+            const conceptSuccessors = details.successors.filter(({ node }) => isConceptNode(node));
 
-            {details.successors.length === 0 ? (
-              <div className="text-xs text-[var(--text-dim)] italic p-3 bg-[var(--bg-subtle)] rounded-lg">
-                No downstream successors currently recorded in dataset.
-              </div>
-            ) : (
-              <div className="space-y-2">
-                {details.successors.map(({ node, edge }) => {
-                  const edgeConfig = getEdgeTypeConfig(edge.type);
-                  return (
-                    <div
-                      key={edge.target}
-                      onClick={() => onSelectNode(node.id)}
-                      className={`p-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl cursor-pointer transition group shadow-sm ${edgeConfig.cardBorderClass}`}
-                    >
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-2 min-w-0">
-                          {(node as any).type === 'philosopher' && (
-                            <img
-                              src={getAssetUrl((node as any).imageUrl || `/portraits/${node.id}.jpg`)}
-                              alt=""
-                              className="w-5 h-5 rounded-full object-cover shrink-0 border border-[var(--gold-border)]"
-                              onError={(e) => {
-                                (e.target as HTMLElement).style.display = 'none';
-                              }}
-                            />
-                          )}
-                          <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition truncate">
-                            {(node as any).name || (node as any).title}
-                          </span>
+            const renderCard = (node: Philosopher | Concept, edge: Edge) => {
+              const edgeConfig = getEdgeTypeConfig(edge.type);
+              const isConcept = isConceptNode(node);
+              return (
+                <div
+                  key={`${edge.source}-${edge.target}-${edge.type}`}
+                  onClick={() => onSelectNode(node.id)}
+                  className={`p-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl cursor-pointer transition group shadow-sm ${edgeConfig.cardBorderClass}`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 min-w-0">
+                      {!isConcept ? (
+                        <img
+                          src={getAssetUrl((node as any).imageUrl || `/portraits/${node.id}.jpg`)}
+                          alt=""
+                          className="w-5 h-5 rounded-full object-cover shrink-0 border border-[var(--gold-border)]"
+                          onError={(e) => {
+                            (e.target as HTMLElement).style.display = 'none';
+                          }}
+                        />
+                      ) : (
+                        <div className="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0">
+                          <Sparkles className="w-3 h-3 text-emerald-500" />
                         </div>
-                        <span
-                          className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors shrink-0 ml-2 ${edgeConfig.badgeClass}`}
-                          title={edgeConfig.description}
-                        >
-                          {edge.type}
-                        </span>
-                      </div>
-                      <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-snug">
-                        {edge.label}
-                      </p>
+                      )}
+                      <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition truncate">
+                        {isConcept ? (node as Concept).title : (node as Philosopher).name}
+                      </span>
+                      <span className={`text-[9px] font-mono uppercase px-1.5 py-0.2 rounded border shrink-0 ${isConcept ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30' : 'bg-sky-500/10 text-sky-600 dark:text-sky-400 border-sky-500/30'}`}>
+                        {isConcept ? 'Concept' : 'Thinker'}
+                      </span>
                     </div>
-                  );
-                })}
+                    <span
+                      className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors shrink-0 ml-2 ${edgeConfig.badgeClass}`}
+                      title={edgeConfig.description}
+                    >
+                      {edge.type}
+                    </span>
+                  </div>
+                  <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-snug">
+                    {edge.label}
+                  </p>
+                </div>
+              );
+            };
+
+            return (
+              <div>
+                {details.successors.length === 0 ? (
+                  <div>
+                    <div className="flex items-center gap-2 text-xs font-semibold text-amber-700 dark:text-amber-300 uppercase tracking-widest mb-3">
+                      <ArrowRight className="w-3.5 h-3.5 text-amber-500" />
+                      <span>Downstream Influence (0)</span>
+                    </div>
+                    <div className="text-xs text-[var(--text-dim)] italic p-3 bg-[var(--bg-subtle)] rounded-lg">
+                      No downstream successors currently recorded in dataset.
+                    </div>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    {conceptSuccessors.length > 0 && (
+                      <div>
+                        <div className="flex items-center gap-2 text-xs font-semibold text-emerald-700 dark:text-emerald-300 uppercase tracking-widest mb-3">
+                          <Sparkles className="w-3.5 h-3.5 text-emerald-500" />
+                          <span>Key Concepts Formulated ({conceptSuccessors.length})</span>
+                        </div>
+                        <div className="space-y-2">
+                          {conceptSuccessors.map(({ node, edge }) => renderCard(node, edge))}
+                        </div>
+                      </div>
+                    )}
+                    {thinkerSuccessors.length > 0 && (
+                      <div>
+                        <div className="flex items-center gap-2 text-xs font-semibold text-amber-700 dark:text-amber-300 uppercase tracking-widest mb-3">
+                          <ArrowRight className="w-3.5 h-3.5 text-amber-500" />
+                          <span>Influenced Later Thinkers ({thinkerSuccessors.length})</span>
+                        </div>
+                        <div className="space-y-2">
+                          {thinkerSuccessors.map(({ node, edge }) => renderCard(node, edge))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
-            )}
-          </div>
+            );
+          })()}
           {/* Folio Colophon & GitHub Edit Prompt */}
           <div className="pt-6 pb-2 border-t border-[var(--border-main)] text-center space-y-2">
             <div className="text-[11px] text-[var(--text-dim)]">

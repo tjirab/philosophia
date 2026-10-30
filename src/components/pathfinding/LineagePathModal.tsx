@@ -2,13 +2,14 @@
 
 import React, { useState } from 'react';
 import { X, GitFork, ArrowRight, Sparkles, Check } from 'lucide-react';
-import { Philosopher, Edge, getEdgeTypeConfig } from '../../lib/types';
+import { Philosopher, Concept, Edge, getEdgeTypeConfig } from '../../lib/types';
 import { findInfluencePath, PathResult } from '../../lib/graph/pathfinding';
 
 interface LineagePathModalProps {
   isOpen: boolean;
   onClose: () => void;
   philosophers: Philosopher[];
+  concepts?: Concept[];
   edges: Edge[];
   initialStartId?: string;
   onHighlightPath: (pathNodes: string[]) => void;
@@ -18,6 +19,7 @@ export function LineagePathModal({
   isOpen,
   onClose,
   philosophers,
+  concepts = [],
   edges,
   initialStartId,
   onHighlightPath,
@@ -34,6 +36,7 @@ export function LineagePathModal({
   };
 
   const philMap = new Map(philosophers.map((p) => [p.id, p]));
+  const concMap = new Map(concepts.map((c) => [c.id, c]));
 
   const presets = [
     { start: 'plato', target: 'arthur-schopenhauer', label: 'Plato → Schopenhauer (Forms to Will)' },
@@ -164,7 +167,13 @@ export function LineagePathModal({
                   <div className="space-y-3">
                     {pathResult.steps.map((step, idx) => {
                       const fromPhil = philMap.get(step.fromNodeId);
+                      const fromConc = concMap.get(step.fromNodeId);
                       const toPhil = philMap.get(step.toNodeId);
+                      const toConc = concMap.get(step.toNodeId);
+
+                      const fromName = fromPhil?.name || fromConc?.title || step.fromNodeId;
+                      const toName = toPhil?.name || toConc?.title || step.toNodeId;
+
                       return (
                         <div
                           key={idx}
@@ -175,9 +184,23 @@ export function LineagePathModal({
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-2 text-sm font-semibold text-[var(--text-main)] flex-wrap">
-                              <span>{fromPhil?.name || step.fromNodeId}</span>
+                              <span className="flex items-center gap-1.5">
+                                <span>{fromName}</span>
+                                {fromConc && (
+                                  <span className="text-[9px] font-mono uppercase px-1.5 py-0.2 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+                                    Concept
+                                  </span>
+                                )}
+                              </span>
                               <ArrowRight className="w-3.5 h-3.5 text-[var(--gold-accent)] shrink-0" />
-                              <span>{toPhil?.name || step.toNodeId}</span>
+                              <span className="flex items-center gap-1.5">
+                                <span>{toName}</span>
+                                {toConc && (
+                                  <span className="text-[9px] font-mono uppercase px-1.5 py-0.2 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+                                    Concept
+                                  </span>
+                                )}
+                              </span>
                               <span
                                 className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border ${getEdgeTypeConfig(step.edge.type).badgeClass}`}
                                 title={getEdgeTypeConfig(step.edge.type).description}
