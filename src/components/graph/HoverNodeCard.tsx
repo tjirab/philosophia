@@ -46,7 +46,7 @@ export function HoverNodeCard({ node, position }: HoverNodeCardProps) {
     >
       <div className="flex items-start gap-3">
         {isPhilosopher && phil && (
-          <div className="w-13 h-13 shrink-0 rounded-xl overflow-hidden border border-[var(--gold-border)] shadow-md bg-[var(--bg-subtle)] flex items-center justify-center relative">
+          <div className="w-14 h-14 shrink-0 rounded-xl overflow-hidden border border-[var(--gold-border)] shadow-md bg-[var(--bg-subtle)] flex items-center justify-center relative">
             <img
               src={getAssetUrl(phil.imageUrl || `/portraits/${phil.id}.jpg`)}
               alt={node.name}
