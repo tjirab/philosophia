@@ -2184,5 +2184,61 @@
     ],
     "sepSlug": "boethius",
     "importanceScore": 92
+  },
+  {
+    "id": "montesquieu",
+    "name": "Baron de Montesquieu",
+    "birthYear": 1689,
+    "deathYear": 1755,
+    "eraId": "enlightenment",
+    "traditionId": "enlightenment-social",
+    "shortBio": "French Enlightenment jurist and political philosopher who pioneered comparative political sociology and formulated the canonical doctrine of the separation of powers.",
+    "centralQuestion": "How can the powers of government be distributed and balanced so that freedom is preserved and tyranny prevented?",
+    "keyWorks": [
+      {
+        "title": "The Spirit of the Laws (De l'esprit des lois)",
+        "year": "1748",
+        "url": "https://en.wikipedia.org/wiki/The_Spirit_of_Law",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Spirit_of_Law",
+        "description": "Comparative treatise on constitutional systems and the tripartite separation of executive, legislative, and judicial powers."
+      },
+      {
+        "title": "Persian Letters (Lettres persanes)",
+        "year": "1721",
+        "url": "https://en.wikipedia.org/wiki/Persian_Letters",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Persian_Letters",
+        "description": "Epistolary satire recounting the observations of two Persian travelers critiquing French absolutist society."
+      }
+    ],
+    "sepSlug": "montesquieu",
+    "importanceScore": 93
+  },
+  {
+    "id": "ludwig-feuerbach",
+    "name": "Ludwig Feuerbach",
+    "birthYear": 1804,
+    "deathYear": 1872,
+    "eraId": "nineteenth-century",
+    "traditionId": "existentialism-early",
+    "shortBio": "Young Hegelian philosopher and materialist whose critique of religion as human self-alienation directly catalyzed Marx's historical materialism and secular humanism.",
+    "centralQuestion": "Is theology anything more than humanity's alienated projection of its own species-essence into an imaginary heaven?",
+    "keyWorks": [
+      {
+        "title": "The Essence of Christianity (Das Wesen des Christentums)",
+        "year": "1841",
+        "url": "https://en.wikipedia.org/wiki/The_Essence_of_Christianity",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Essence_of_Christianity",
+        "description": "Landmark critique demonstrating that the divine is a projection of alienated human consciousness."
+      },
+      {
+        "title": "Principles of the Philosophy of the Future",
+        "year": "1843",
+        "url": "https://en.wikipedia.org/wiki/Principles_of_the_Philosophy_of_the_Future",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Principles_of_the_Philosophy_of_the_Future",
+        "description": "Radical materialist manifesto advocating sensory embodiment, dialogical I-Thou relation, and naturalism."
+      }
+    ],
+    "sepSlug": "ludwig-feuerbach",
+    "importanceScore": 91
   }
 ]
