@@ -2,7 +2,7 @@
 
 import React, { useRef, useEffect, useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
-import { forceCollide, forceManyBody, forceLink } from 'd3-force';
+import { forceCollide, forceManyBody, forceLink, forceX, forceY } from 'd3-force';
 import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink } from 'lucide-react';
 import { VisualNode, VisualLink, Branch, getEdgeTypeConfig } from '../../lib/types';
 import { useTheme } from '../../lib/theme-context';
@@ -73,8 +73,8 @@ export function ForceGraphView({
   const [dimensions, setDimensions] = useState({ width: 1200, height: 800 });
   const [hoveredNode, setHoveredNode] = useState<VisualNode | null>(null);
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null);
-  const [spacingMultiplier, setSpacingMultiplier] = useState<number>(1.5); // 1.5x default generous spacing to prevent overlap
-  const prevSpacingMultiplierRef = useRef<number>(1.5);
+  const [spacingMultiplier, setSpacingMultiplier] = useState<number>(1.8); // 1.8x default generous spacing to prevent overlap
+  const prevSpacingMultiplierRef = useRef<number>(1.8);
   const hasInitialFitRef = useRef<boolean>(false);
 
   // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
@@ -101,7 +101,7 @@ export function ForceGraphView({
       // 1. Anti-collision barrier: collision radius calculated with node radius + label padding
       const collisionRadius = (node: any) => {
         const size = Math.max(8, (node.val || 8) * 0.9);
-        return size + 34 * spacingMultiplier;
+        return size + 36 * spacingMultiplier;
       };
 
       fgRef.current.d3Force('collide', forceCollide().radius(collisionRadius).iterations(4));
@@ -110,17 +110,31 @@ export function ForceGraphView({
       fgRef.current.d3Force(
         'charge',
         forceManyBody()
-          .strength(-500 * spacingMultiplier)
-          .distanceMax(1100 * spacingMultiplier)
+          .strength(-600 * spacingMultiplier)
+          .distanceMax(1800 * spacingMultiplier)
       );
 
       // 3. Link distance
       const linkForce = fgRef.current.d3Force('link');
       if (linkForce) {
-        linkForce.distance(105 * spacingMultiplier);
+        linkForce.distance(115 * spacingMultiplier);
       }
 
-      // 4. Physical node coordinate expansion/contraction for instant responsiveness
+      // 4. Chronological horizontal flow and gentle vertical centering
+      const minYear = -650;
+      const totalSpan = 2020 - minYear;
+      fgRef.current.d3Force(
+        'x',
+        forceX((node: any) => {
+          const year = typeof node.year === 'number' ? node.year : 1500;
+          const norm = Math.max(0, Math.min(1, (year - minYear) / totalSpan));
+          return (norm - 0.5) * 3200;
+        }).strength(0.15)
+      );
+
+      fgRef.current.d3Force('y', forceY(0).strength(0.04));
+
+      // 5. Physical node coordinate expansion/contraction for instant responsiveness
       const prevMultiplier = prevSpacingMultiplierRef.current;
       if (prevMultiplier && prevMultiplier !== spacingMultiplier && graphData?.nodes) {
         const ratio = spacingMultiplier / prevMultiplier;
@@ -131,7 +145,7 @@ export function ForceGraphView({
       }
       prevSpacingMultiplierRef.current = spacingMultiplier;
 
-      // 5. Reheat simulation so D3 physics actively positions nodes into new spread
+      // 6. Reheat simulation so D3 physics actively positions nodes into new spread
       fgRef.current.d3ReheatSimulation();
     }
   }, [graphData, spacingMultiplier]);
@@ -159,12 +173,12 @@ export function ForceGraphView({
     if (fgRef.current) fgRef.current.zoom(fgRef.current.zoom() / 1.3, 400);
   };
   const handleFit = () => {
-    if (fgRef.current) fgRef.current.zoomToFit(600, 60);
+    if (fgRef.current) fgRef.current.zoomToFit(600, 120);
   };
   const toggleSpacing = () => {
     setSpacingMultiplier((prev) => {
-      if (prev >= 2.0) return 1.0;
-      return Number((prev + 0.5).toFixed(1)); // 1.0 -> 1.5 -> 2.0 -> 1.0
+      if (prev >= 2.2) return 1.4;
+      return Number((prev + 0.4).toFixed(1)); // 1.4 -> 1.8 -> 2.2 -> 1.4
     });
   };
 
@@ -369,9 +383,9 @@ export function ForceGraphView({
         <button
           onClick={toggleSpacing}
           className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--gold-border)] backdrop-blur-md transition shadow-sm"
-          title={`Graph Spread: ${spacingMultiplier.toFixed(1)}x. Click to cycle node spacing (1.0x Compact, 1.5x Balanced, 2.0x Spacious).`}
+          title={`Graph Spread: ${spacingMultiplier.toFixed(1)}x. Click to cycle node spacing (1.4x Compact, 1.8x Balanced, 2.2x Spacious).`}
         >
-          {spacingMultiplier >= 1.5 ? (
+          {spacingMultiplier >= 1.8 ? (
             <Shrink className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
           ) : (
             <Expand className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
@@ -379,7 +393,7 @@ export function ForceGraphView({
           <span>
             Spread: {spacingMultiplier.toFixed(1)}x{' '}
             <span className="text-[10px] text-[var(--text-dim)] font-normal">
-              {spacingMultiplier <= 1.0 ? '(Compact)' : spacingMultiplier < 2.0 ? '(Balanced)' : '(Spacious)'}
+              {spacingMultiplier <= 1.4 ? '(Compact)' : spacingMultiplier < 2.0 ? '(Balanced)' : '(Spacious)'}
             </span>
           </span>
         </button>
@@ -540,6 +554,13 @@ export function ForceGraphView({
           const strength = typeof link.strength === 'number' ? link.strength : 3;
           return 1.0 + (strength * 0.16); // 1.15px to 1.8px at rest
         }}
+        nodePointerAreaPaint={(node: any, color: string, ctx: CanvasRenderingContext2D) => {
+          const size = Math.max(12, (node.val || 8) * 1.2);
+          ctx.fillStyle = color;
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
+          ctx.fill();
+        }}
         onNodeClick={(node: any) => {
           onSelectNode(node.id);
         }}
@@ -555,16 +576,16 @@ export function ForceGraphView({
             setHoverPosition(null);
           }
         }}
-        warmupTicks={150}
-        cooldownTicks={120}
-        cooldownTime={2500}
+        warmupTicks={0}
+        cooldownTicks={140}
+        cooldownTime={3000}
         onEngineStop={() => {
           if (!hasInitialFitRef.current && fgRef.current) {
-            fgRef.current.zoomToFit(700, 75);
+            fgRef.current.zoomToFit(700, 120);
             hasInitialFitRef.current = true;
           }
         }}
-        d3AlphaDecay={0.04}
+        d3AlphaDecay={0.03}
         d3VelocityDecay={0.35}
         enableNodeDrag={true}
       />
