@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useEffect, useState, useMemo } from 'react';
+import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import { forceCollide, forceManyBody, forceLink, forceX, forceY } from 'd3-force';
 import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink } from 'lucide-react';
@@ -8,7 +8,14 @@ import { VisualNode, VisualLink, Branch, getEdgeTypeConfig } from '../../lib/typ
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
 import { drawCartographicGrid } from '../../lib/graph/grid-renderer';
-import { getArrowLength, ARROW_REL_POS, getArrowColor } from '../../lib/graph/arrow-styling';
+import {
+  getArrowLength,
+  ARROW_REL_POS,
+  getArrowColor,
+  getLinkColor,
+  getLinkWidth,
+  getLinkLineDash,
+} from '../../lib/graph/arrow-styling';
 
 // Dynamically import ForceGraph2D with ssr disabled
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
@@ -212,6 +219,42 @@ export function ForceGraphView({
   const isPathActive = pathNodeSet.size > 0;
   const isLight = resolvedTheme === 'light';
 
+  // Compute set of directed and undirected hop keys in the sequential lineage
+  const pathEdgeKeySet = useMemo(() => {
+    const set = new Set<string>();
+    for (let i = 0; i < highlightedPathNodes.length - 1; i++) {
+      const a = highlightedPathNodes[i];
+      const b = highlightedPathNodes[i + 1];
+      set.add(`${a}->${b}`);
+      set.add(`${b}->${a}`);
+    }
+    return set;
+  }, [highlightedPathNodes]);
+
+  const isLinkInPath = useCallback(
+    (srcId: string, tgtId: string) => {
+      if (!isPathActive) return false;
+      if (pathEdgeKeySet.size > 0) {
+        return pathEdgeKeySet.has(`${srcId}->${tgtId}`) || pathEdgeKeySet.has(`${tgtId}->${srcId}`);
+      }
+      return pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
+    },
+    [isPathActive, pathEdgeKeySet, pathNodeSet]
+  );
+
+  const pathEdgeTypes = useMemo(() => {
+    if (!isPathActive) return [];
+    const types = new Set<string>();
+    links.forEach((l: any) => {
+      const srcId = typeof l.source === 'object' ? l.source.id : l.source;
+      const tgtId = typeof l.target === 'object' ? l.target.id : l.target;
+      if (isLinkInPath(srcId, tgtId) && l.type) {
+        types.add(l.type);
+      }
+    });
+    return Array.from(types);
+  }, [isPathActive, links, isLinkInPath]);
+
   // Zoom and Spacing controls
   const handleZoomIn = () => {
     if (fgRef.current) fgRef.current.zoom(fgRef.current.zoom() * 1.3, 400);
@@ -381,6 +424,70 @@ export function ForceGraphView({
     [applyForces, isLight, spacingMultiplier]
   );
 
+  // Render classical badge pills directly on active lineage path edges
+  const paintLinkOverlay = useCallback(
+    (link: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
+      const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+      const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+      const inPath = isLinkInPath(srcId, tgtId);
+
+      // Render prominent dialectical badge along edges in the active lineage path
+      if (!inPath) return;
+
+      const start = link.source;
+      const end = link.target;
+      if (!start || !end || typeof start.x !== 'number' || typeof end.x !== 'number') return;
+
+      let midX = (start.x + end.x) / 2;
+      let midY = (start.y + end.y) / 2;
+
+      if (link.__controlPoints && link.__controlPoints.length >= 2) {
+        const cpX = link.__controlPoints[0];
+        const cpY = link.__controlPoints[1];
+        midX = 0.25 * start.x + 0.5 * cpX + 0.25 * end.x;
+        midY = 0.25 * start.y + 0.5 * cpY + 0.25 * end.y;
+      }
+
+      const cfg = getEdgeTypeConfig(link.type);
+      const typeColor = isLight ? cfg.color : cfg.colorDark;
+      const text = (link.type || 'INFLUENCED').toUpperCase();
+
+      ctx.save();
+      const fontSize = Math.max(8.5 / globalScale, 3.2);
+      ctx.font = `bold ${fontSize}px "Cinzel", Georgia, serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+
+      const textMetrics = ctx.measureText(text);
+      const textWidth = textMetrics.width;
+      const padX = 4.5 / Math.min(globalScale, 1.4);
+      const padY = 2 / Math.min(globalScale, 1.4);
+
+      const rectW = textWidth + padX * 2;
+      const rectH = fontSize + padY * 2;
+      const rectX = midX - rectW / 2;
+      const rectY = midY - rectH / 2;
+
+      // Translucent pill background
+      ctx.beginPath();
+      ctx.roundRect(rectX, rectY, rectW, rectH, 3);
+      ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.95)' : 'rgba(18, 16, 13, 0.95)';
+      ctx.fill();
+
+      // Edge type color border
+      ctx.lineWidth = Math.max(1.2 / globalScale, 0.8);
+      ctx.strokeStyle = typeColor;
+      ctx.stroke();
+
+      // Edge type label text
+      ctx.fillStyle = typeColor;
+      ctx.fillText(text, midX, midY + 0.5 / globalScale);
+
+      ctx.restore();
+    },
+    [isLight, isLinkInPath]
+  );
+
   const branches: Array<{ id: Branch | 'all'; label: string }> = [
     { id: 'all', label: 'All Branches' },
     { id: 'epistemology', label: 'Epistemology' },
@@ -458,13 +565,29 @@ export function ForceGraphView({
 
         {/* Active Path Alert */}
         {isPathActive && (
-          <div className="flex items-center gap-2 px-3 py-1.5 bg-[var(--gold-bg)] border border-[var(--gold-border)] rounded-xl text-[var(--gold-accent)] text-xs backdrop-blur-md shadow-lg">
-            <span>
-              Lineage Isolated ({highlightedPathNodes.length} nodes)
+          <div className="flex items-center gap-2 px-3 py-1.5 bg-[var(--bg-card)] border border-[var(--gold-border)] rounded-xl text-xs backdrop-blur-md shadow-lg">
+            <span className="text-[var(--gold-accent)] font-semibold flex items-center gap-1.5">
+              <span>✦</span> Lineage: {highlightedPathNodes.length} Thinkers
             </span>
+            {pathEdgeTypes.length > 0 && (
+              <div className="hidden sm:flex items-center gap-1.5 pl-1.5 border-l border-[var(--border-main)]">
+                {pathEdgeTypes.map((t) => {
+                  const c = getEdgeTypeConfig(t);
+                  return (
+                    <span
+                      key={t}
+                      className={`text-[9px] font-mono uppercase px-1.5 py-0.5 rounded border ${c.badgeClass}`}
+                      title={c.label}
+                    >
+                      {t}
+                    </span>
+                  );
+                })}
+              </div>
+            )}
             <button
               onClick={onClearPath}
-              className="text-[var(--gold-accent)] hover:text-[var(--text-main)] font-bold ml-1 text-xs"
+              className="text-[var(--text-dim)] hover:text-[var(--text-main)] font-bold ml-1 text-xs"
               title="Clear Highlight"
             >
               &times;
@@ -543,8 +666,8 @@ export function ForceGraphView({
             selectedNodeId === tgtId ||
             hoveredNode?.id === srcId ||
             hoveredNode?.id === tgtId;
-          const inPath = isPathActive && pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
-          return getArrowLength(isConnectedToFocus, inPath);
+          const inPath = isLinkInPath(srcId, tgtId);
+          return getArrowLength(isConnectedToFocus, inPath, isPathActive);
         }}
         linkDirectionalArrowRelPos={ARROW_REL_POS}
         linkDirectionalArrowColor={(link: any) => {
@@ -555,81 +678,42 @@ export function ForceGraphView({
             selectedNodeId === tgtId ||
             hoveredNode?.id === srcId ||
             hoveredNode?.id === tgtId;
-          const inPath = isPathActive && pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
+          const inPath = isLinkInPath(srcId, tgtId);
           const isDimmed = (selectedNodeId || hoveredNode) && !isConnectedToFocus && !inPath;
-          return getArrowColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath);
+          return getArrowColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath, isPathActive);
+        }}
+        linkLineDash={(link: any) => {
+          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+          const inPath = isLinkInPath(srcId, tgtId);
+          return getLinkLineDash(link.type, inPath, isPathActive);
         }}
         linkCurvature={0.12}
         linkColor={(link: any) => {
           const srcId = typeof link.source === 'object' ? link.source.id : link.source;
           const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
-
-          if (isPathActive) {
-            const inPath = pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
-            return inPath
-              ? isLight ? '#9a6f14' : '#e5b94c'
-              : isLight ? 'rgba(215, 205, 190, 0.10)' : 'rgba(42, 36, 30, 0.08)';
-          }
-
+          const inPath = isLinkInPath(srcId, tgtId);
           const isConnectedToFocus =
             selectedNodeId === srcId ||
             selectedNodeId === tgtId ||
             hoveredNode?.id === srcId ||
             hoveredNode?.id === tgtId;
-
-          const isDimmed = (selectedNodeId || hoveredNode) && !isConnectedToFocus;
-
-          if (isDimmed) {
-            return isLight ? 'rgba(180, 168, 150, 0.06)' : 'rgba(70, 60, 50, 0.06)';
-          }
-
-          if (isLight) {
-            switch (link.type) {
-              case 'CRITIQUED':
-                return isConnectedToFocus ? 'rgba(220, 38, 38, 1.0)' : 'rgba(220, 38, 38, 0.42)';
-              case 'SYNTHESIZED':
-                return isConnectedToFocus ? 'rgba(147, 51, 234, 1.0)' : 'rgba(147, 51, 234, 0.42)';
-              case 'DEVELOPED':
-                return isConnectedToFocus ? 'rgba(13, 148, 136, 1.0)' : 'rgba(13, 148, 136, 0.42)';
-              case 'INFLUENCED':
-              default:
-                return isConnectedToFocus ? 'rgba(37, 99, 235, 1.0)' : 'rgba(37, 99, 235, 0.35)';
-            }
-          } else {
-            switch (link.type) {
-              case 'CRITIQUED':
-                return isConnectedToFocus ? 'rgba(248, 113, 113, 1.0)' : 'rgba(248, 113, 113, 0.42)';
-              case 'SYNTHESIZED':
-                return isConnectedToFocus ? 'rgba(192, 132, 252, 1.0)' : 'rgba(192, 132, 252, 0.42)';
-              case 'DEVELOPED':
-                return isConnectedToFocus ? 'rgba(45, 212, 191, 1.0)' : 'rgba(45, 212, 191, 0.42)';
-              case 'INFLUENCED':
-              default:
-                return isConnectedToFocus ? 'rgba(96, 165, 250, 1.0)' : 'rgba(96, 165, 250, 0.35)';
-            }
-          }
+          const isDimmed = (selectedNodeId || hoveredNode) && !isConnectedToFocus && !inPath;
+          return getLinkColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath, isPathActive);
         }}
         linkWidth={(link: any) => {
           const srcId = typeof link.source === 'object' ? link.source.id : link.source;
           const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
-          
-          if (isPathActive && pathNodeSet.has(srcId) && pathNodeSet.has(tgtId)) {
-            return 4.2;
-          }
-
+          const inPath = isLinkInPath(srcId, tgtId);
           const isConnectedToFocus =
             selectedNodeId === srcId ||
             selectedNodeId === tgtId ||
             hoveredNode?.id === srcId ||
             hoveredNode?.id === tgtId;
-
-          if (isConnectedToFocus) {
-            return 3.2;
-          }
-
-          const strength = typeof link.strength === 'number' ? link.strength : 3;
-          return 1.0 + (strength * 0.16); // 1.15px to 1.8px at rest
+          return getLinkWidth(link.strength, isConnectedToFocus, inPath, isPathActive);
         }}
+        linkCanvasObjectMode={() => 'after'}
+        linkCanvasObject={paintLinkOverlay}
         nodePointerAreaPaint={(node: any, color: string, ctx: CanvasRenderingContext2D) => {
           const size = Math.max(12, (node.val || 8) * 1.2);
           ctx.fillStyle = color;
