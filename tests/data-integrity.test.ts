@@ -198,6 +198,31 @@ describe('Philosophy Graph Data Integrity', () => {
     const zupancicToEthics = findInfluencePath('alenka-zupancic', 'ethics-of-the-real', edgesData as any);
     expect(zupancicToEthics.found).toBe(true);
 
+    // Verify chronological directionality for Zupančič relations
+    const zupancicDetails = getNodeDetails('alenka-zupancic');
+    const zupancicSuccessorIds = zupancicDetails.successors.map((s) => s.node.id);
+    const zupancicPredecessorIds = zupancicDetails.predecessors.map((p) => p.node.id);
+
+    // Zupančič should not have historical predecessors as her successors
+    expect(zupancicSuccessorIds).not.toContain('immanuel-kant');
+    expect(zupancicSuccessorIds).not.toContain('gwf-hegel');
+    expect(zupancicSuccessorIds).not.toContain('friedrich-nietzsche');
+    expect(zupancicSuccessorIds).not.toContain('jacques-derrida');
+    expect(zupancicSuccessorIds).not.toContain('gilles-deleuze');
+    expect(zupancicSuccessorIds).toContain('ethics-of-the-real');
+
+    expect(zupancicPredecessorIds).toContain('immanuel-kant');
+    expect(zupancicPredecessorIds).toContain('gwf-hegel');
+    expect(zupancicPredecessorIds).toContain('friedrich-nietzsche');
+    expect(zupancicPredecessorIds).toContain('jacques-derrida');
+    expect(zupancicPredecessorIds).toContain('gilles-deleuze');
+
+    // Kant must not have 21st-century thinkers or concepts as predecessors
+    const kantDetails = getNodeDetails('immanuel-kant');
+    const kantPredecessorIds = kantDetails.predecessors.map((p) => p.node.id);
+    expect(kantPredecessorIds).not.toContain('alenka-zupancic');
+    expect(kantPredecessorIds).not.toContain('ethics-of-the-real');
+
     // Hegel -> Marcuse -> Habermas
     const hegelToHabermas = findInfluencePath('gwf-hegel', 'jurgen-habermas', edgesData as any);
     expect(hegelToHabermas.found).toBe(true);
