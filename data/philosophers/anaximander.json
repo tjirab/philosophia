@@ -1,0 +1,22 @@
+{
+  "id": "anaximander",
+  "name": "Anaximander of Miletus",
+  "birthYear": -610,
+  "deathYear": -546,
+  "eraId": "pre-socratic",
+  "traditionId": "milesian",
+  "shortBio": "Milesian philosopher and pupil of Thales who authored the earliest surviving prose work in Western philosophy and introduced the boundless Apeiron as the foundational source of all cosmic generation and dissolution.",
+  "centralQuestion": "How can the diverse, warring elements of our finite world arise from and return to a single, limitless, and ungenerated origin?",
+  "keyWorks": [
+    {
+      "title": "On Nature",
+      "year": "-548 BCE",
+      "url": "https://en.wikipedia.org/wiki/Anaximander#On_Nature",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Anaximander",
+      "description": "The earliest known Greek philosophical treatise, positing the boundless Apeiron as arche and establishing cosmological equilibrium through natural law."
+    }
+  ],
+  "sepSlug": "presocratics",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/anaximander.jpg"
+}

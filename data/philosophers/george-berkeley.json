@@ -1,0 +1,29 @@
+{
+  "id": "george-berkeley",
+  "name": "George Berkeley",
+  "birthYear": 1685,
+  "deathYear": 1753,
+  "eraId": "early-modern",
+  "traditionId": "empiricism",
+  "shortBio": "Irish philosopher who advanced subjective idealism: material objects exist solely in being perceived ('Esse est percipi').",
+  "centralQuestion": "Does matter exist independently of minds and perceptual experience?",
+  "keyWorks": [
+    {
+      "title": "A Treatise Concerning the Principles of Human Knowledge",
+      "year": "1685 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=A%20Treatise%20Concerning%20the%20Principles%20of%20Human%20Knowledge",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=A%20Treatise%20Concerning%20the%20Principles%20of%20Human%20Knowledge",
+      "description": "Major work by George Berkeley."
+    },
+    {
+      "title": "Three Dialogues between Hylas and Philonous",
+      "year": "1685 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Three%20Dialogues%20between%20Hylas%20and%20Philonous",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Three%20Dialogues%20between%20Hylas%20and%20Philonous",
+      "description": "Major work by George Berkeley."
+    }
+  ],
+  "sepSlug": "berkeley",
+  "importanceScore": 86,
+  "imageUrl": "/portraits/george-berkeley.jpg"
+}

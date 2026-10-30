@@ -1,0 +1,29 @@
+{
+  "id": "edmund-husserl",
+  "name": "Edmund Husserl",
+  "birthYear": 1859,
+  "deathYear": 1938,
+  "eraId": "twentieth-century",
+  "traditionId": "phenomenology",
+  "shortBio": "Founder of phenomenology. Advocated setting aside scientific presuppositions (epoché) to examine the intentional structures of consciousness.",
+  "centralQuestion": "How does consciousness constitute meaning in lived experience?",
+  "keyWorks": [
+    {
+      "title": "Logical Investigations",
+      "year": "1859 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Logical%20Investigations",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Logical%20Investigations",
+      "description": "Major work by Edmund Husserl."
+    },
+    {
+      "title": "Ideas Pertaining to a Pure Phenomenology",
+      "year": "1859 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Ideas%20Pertaining%20to%20a%20Pure%20Phenomenology",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Ideas%20Pertaining%20to%20a%20Pure%20Phenomenology",
+      "description": "Major work by Edmund Husserl."
+    }
+  ],
+  "sepSlug": "husserl",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/edmund-husserl.jpg"
+}

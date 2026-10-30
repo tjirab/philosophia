@@ -1,0 +1,22 @@
+{
+  "id": "laozi",
+  "name": "Laozi (Lao Tzu)",
+  "birthYear": -571,
+  "deathYear": -471,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Legendary author of the Daodejing, articulating the effortless harmony of Wu Wei and the unnameable Dao.",
+  "centralQuestion": "How do we flow with the spontaneous principle of the natural cosmos?",
+  "keyWorks": [
+    {
+      "title": "Daodejing (Tao Te Ching)",
+      "year": "571 BCE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Daodejing%20(Tao%20Te%20Ching)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Daodejing%20(Tao%20Te%20Ching)",
+      "description": "Major work by Laozi (Lao Tzu)."
+    }
+  ],
+  "sepSlug": "laozi",
+  "importanceScore": 88,
+  "imageUrl": "/portraits/laozi.jpg"
+}

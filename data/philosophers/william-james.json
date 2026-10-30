@@ -1,0 +1,36 @@
+{
+  "id": "william-james",
+  "name": "William James",
+  "birthYear": 1842,
+  "deathYear": 1910,
+  "eraId": "nineteenth-century",
+  "traditionId": "pragmatism",
+  "shortBio": "Pioneer of American pragmatism and psychology; formulated the stream of consciousness and the 'cash value' theory of truth.",
+  "centralQuestion": "What difference does an idea make in concrete human experience?",
+  "keyWorks": [
+    {
+      "title": "Pragmatism",
+      "year": "1842 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Pragmatism",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Pragmatism",
+      "description": "Major work by William James."
+    },
+    {
+      "title": "The Varieties of Religious Experience",
+      "year": "1842 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Varieties%20of%20Religious%20Experience",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Varieties%20of%20Religious%20Experience",
+      "description": "Major work by William James."
+    },
+    {
+      "title": "The Will to Believe",
+      "year": "1842 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Will%20to%20Believe",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Will%20to%20Believe",
+      "description": "Major work by William James."
+    }
+  ],
+  "sepSlug": "james",
+  "importanceScore": 88,
+  "imageUrl": "/portraits/william-james.jpg"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "sinn-und-bedeutung",
+    "target": "bertrand-russell",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Led to Russell's Theory of Definite Descriptions (On Denoting)"
+  },
+  {
+    "source": "sinn-und-bedeutung",
+    "target": "ludwig-wittgenstein",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Foundation for Picture Theory of Meaning in the Tractatus"
+  }
+]

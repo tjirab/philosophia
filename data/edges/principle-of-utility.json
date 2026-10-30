@@ -1,0 +1,16 @@
+[
+  {
+    "source": "principle-of-utility",
+    "target": "john-stuart-mill",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Mill defended and refined Bentham's principle of utility, introducing qualitative distinctions between higher intellectual and lower bodily pleasures"
+  },
+  {
+    "source": "principle-of-utility",
+    "target": "john-rawls",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Rawls formulated his Theory of Justice as a direct critique of aggregate utilitarianism, arguing justice as fairness cannot sacrifice individual liberty for net pleasure"
+  }
+]

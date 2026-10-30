@@ -1,0 +1,36 @@
+{
+  "id": "jean-baudrillard",
+  "name": "Jean Baudrillard",
+  "birthYear": 1929,
+  "deathYear": 2007,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "shortBio": "French sociologist and cultural theorist of postmodernity. Formulated the concepts of simulacra, hyperreality, and the precession of models over the real in late consumer society.",
+  "centralQuestion": "In a media-saturated world where signs refer only to other signs, does reality still exist, or has hyperreality replaced the real?",
+  "keyWorks": [
+    {
+      "title": "Simulacra and Simulation",
+      "year": "1981",
+      "url": "https://en.wikipedia.org/wiki/Simulacra_and_Simulation",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Simulacra_and_Simulation",
+      "description": "Seminal philosophical treatise exploring the replacement of reality with signs and symbols (hyperreality), famously identifying four successive phases of the image."
+    },
+    {
+      "title": "The Consumer Society: Myths and Structures",
+      "year": "1970",
+      "url": "https://en.wikipedia.org/wiki/The_Consumer_Society:_Myths_and_Structures",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Consumer_Society:_Myths_and_Structures",
+      "description": "Sociological and semiotic critique of late capitalism where commodities are consumed not for their use-value or exchange-value, but for their sign-value within social hierarchies."
+    },
+    {
+      "title": "The System of Objects",
+      "year": "1968",
+      "url": "https://en.wikipedia.org/wiki/The_System_of_Objects",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_System_of_Objects",
+      "description": "Pioneering semiotic analysis demonstrating how everyday consumer objects function primarily as an articulated language of signs rather than functional tools."
+    }
+  ],
+  "sepSlug": "baudrillard",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/jean-baudrillard.jpg"
+}

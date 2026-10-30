@@ -1,0 +1,16 @@
+[
+  {
+    "source": "intentionality-epoche",
+    "target": "martin-heidegger",
+    "type": "DEVELOPED",
+    "label": "Heidegger shifted Husserlian phenomenological reduction from mental acts to Being-in-the-world",
+    "strength": 5
+  },
+  {
+    "source": "intentionality-epoche",
+    "target": "jean-paul-sartre",
+    "type": "DEVELOPED",
+    "label": "Sartre used Husserlian intentionality to define consciousness as directed outward toward objects",
+    "strength": 4
+  }
+]

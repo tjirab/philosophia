@@ -1,0 +1,16 @@
+[
+  {
+    "source": "epicurus",
+    "target": "ataraxia",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Ataraxia (Tranquility of Mind)",
+    "strength": 5
+  },
+  {
+    "source": "epicurus",
+    "target": "karl-marx",
+    "type": "INFLUENCED",
+    "label": "Analyzed Epicurean atomism and the swerve (clinamen) in his 1841 doctoral dissertation on Democritean and Epicurean natural philosophy",
+    "strength": 4
+  }
+]

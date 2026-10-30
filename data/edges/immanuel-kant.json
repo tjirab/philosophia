@@ -1,0 +1,114 @@
+[
+  {
+    "source": "immanuel-kant",
+    "target": "gwf-hegel",
+    "type": "DEVELOPED",
+    "label": "Hegel overcame Kant's dualism between phenomena and noumena through dialectical idealism",
+    "strength": 5
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "arthur-schopenhauer",
+    "type": "DEVELOPED",
+    "label": "Schopenhauer preserved Kantian transcendental idealism but unveiled the thing-in-itself as Will",
+    "strength": 5
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "edmund-husserl",
+    "type": "DEVELOPED",
+    "label": "Constructed phenomenology as a rigorous transcendental science of conscious experience",
+    "strength": 4
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "hannah-arendt",
+    "type": "DEVELOPED",
+    "label": "Adapted Kant's Critique of Judgment for political philosophy and reflective civic judgment",
+    "strength": 4
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "john-rawls",
+    "type": "DEVELOPED",
+    "label": "Used Kantian moral autonomy to construct the original position and veil of ignorance",
+    "strength": 5
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "transcendental-idealism",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Transcendental Idealism (Copernican Turn)",
+    "strength": 5
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "noumena-phenomena",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Phenomena vs. Noumena (Thing-in-Itself)",
+    "strength": 5
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "categorical-imperative",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Categorical Imperative",
+    "strength": 5
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "johann-gottlieb-fichte",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Radicalized Kantian transcendental apperception into Absolute Self-Positing Ego"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "charles-sanders-peirce",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Transformed Kantian categories into triadic logic and semiotics"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "gottlob-frege",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Anti-psychologism and arithmetical objectivity expanding Kant's logic"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "jurgen-habermas",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Reformulated Kantian categorical imperative into dialogical discourse ethics"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "derek-parfit",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "On What Matters unified Kantian deontology, contractualism, and consequentialism"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "ferdinand-de-saussure",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Kantian transcendental idealism informed Saussure's shift from empirical historical philology to language as an a priori conceptual system"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "max-horkheimer",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Critiqued Kantian formal rationality for divorcing moral judgment from socioeconomic reality, leaving it vulnerable to instrumentalization"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "alenka-zupancic",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Zupančič re-reads Kantian ethics through psychoanalysis, identifying the categorical imperative with the traumatic Real of the drive"
+  }
+]

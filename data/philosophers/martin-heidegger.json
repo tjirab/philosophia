@@ -1,0 +1,30 @@
+{
+  "id": "martin-heidegger",
+  "name": "Martin Heidegger",
+  "birthYear": 1889,
+  "deathYear": 1976,
+  "eraId": "twentieth-century",
+  "traditionId": "phenomenology",
+  "shortBio": "Ontologist who revived the question of Being; analyzed human existence as Dasein ('Being-in-the-world') oriented toward death.",
+  "centralQuestion": "What is the meaning of Being, and how has Western metaphysics forgotten it?",
+  "keyWorks": [
+    {
+      "title": "Being and Time",
+      "year": "1927 CE",
+      "url": "https://en.wikipedia.org/wiki/Being_and_Time",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Being_and_Time",
+      "isbn": "978-0631197706",
+      "description": "Heidegger's fundamental ontology: analyzing human existence as Dasein ('Being-in-the-world') oriented toward death."
+    },
+    {
+      "title": "The Question Concerning Technology",
+      "year": "1889 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Question%20Concerning%20Technology",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Question%20Concerning%20Technology",
+      "description": "Major work by Martin Heidegger."
+    }
+  ],
+  "sepSlug": "heidegger",
+  "importanceScore": 96,
+  "imageUrl": "/portraits/martin-heidegger.jpg"
+}

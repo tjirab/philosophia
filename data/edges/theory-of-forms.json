@@ -1,0 +1,16 @@
+[
+  {
+    "source": "theory-of-forms",
+    "target": "aristotle",
+    "type": "CRITIQUED",
+    "label": "Aristotle rejected transcendent Forms in favor of immanent substance and empirical observation",
+    "strength": 5
+  },
+  {
+    "source": "theory-of-forms",
+    "target": "plotinus",
+    "type": "DEVELOPED",
+    "label": "Plotinus integrated Platonic Forms into the Divine Intellect (Nous)",
+    "strength": 4
+  }
+]

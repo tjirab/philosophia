@@ -1,0 +1,16 @@
+[
+  {
+    "source": "soren-kierkegaard",
+    "target": "albert-camus",
+    "type": "DEVELOPED",
+    "label": "Explored the leap into absurdity without Kierkegaard's religious leap of faith",
+    "strength": 4
+  },
+  {
+    "source": "soren-kierkegaard",
+    "target": "leap-of-faith",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Leap of Faith & Existential Dread",
+    "strength": 5
+  }
+]

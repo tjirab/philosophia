@@ -1,0 +1,22 @@
+{
+  "id": "plotinus",
+  "name": "Plotinus",
+  "birthYear": 204,
+  "deathYear": 270,
+  "eraId": "hellenistic",
+  "traditionId": "neoplatonism",
+  "shortBio": "Architect of Neoplatonism; described reality as a luminous cascade emanating from the transcendent 'One' down to the soul.",
+  "centralQuestion": "How can the embodied soul re-ascend into mystical communion with the Source?",
+  "keyWorks": [
+    {
+      "title": "Enneads",
+      "year": "204 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Enneads",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Enneads",
+      "description": "Major work by Plotinus."
+    }
+  ],
+  "sepSlug": "plotinus",
+  "importanceScore": 80,
+  "imageUrl": "/portraits/plotinus.jpg"
+}

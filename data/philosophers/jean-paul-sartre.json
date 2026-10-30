@@ -1,0 +1,37 @@
+{
+  "id": "jean-paul-sartre",
+  "name": "Jean-Paul Sartre",
+  "birthYear": 1905,
+  "deathYear": 1980,
+  "eraId": "twentieth-century",
+  "traditionId": "existentialism",
+  "shortBio": "Existentialist titan who declared that 'existence precedes essence'; humans are condemned to be free and prone to bad faith.",
+  "centralQuestion": "How does the individual take absolute responsibility for creating selfhood without excuses?",
+  "keyWorks": [
+    {
+      "title": "Being and Nothingness",
+      "year": "1943 CE",
+      "url": "https://en.wikipedia.org/wiki/Being_and_Nothingness",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Being_and_Nothingness",
+      "isbn": "978-0671867805",
+      "description": "Sartre's existentialist magnum opus on radical freedom, consciousness as nothingness, and bad faith."
+    },
+    {
+      "title": "Existentialism is a Humanism",
+      "year": "1905 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Existentialism%20is%20a%20Humanism",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Existentialism%20is%20a%20Humanism",
+      "description": "Major work by Jean-Paul Sartre."
+    },
+    {
+      "title": "Nausea",
+      "year": "1905 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Nausea",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Nausea",
+      "description": "Major work by Jean-Paul Sartre."
+    }
+  ],
+  "sepSlug": "sartre",
+  "importanceScore": 95,
+  "imageUrl": "/portraits/jean-paul-sartre.jpg"
+}

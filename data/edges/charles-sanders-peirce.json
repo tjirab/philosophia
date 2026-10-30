@@ -1,0 +1,23 @@
+[
+  {
+    "source": "charles-sanders-peirce",
+    "target": "pragmatic-maxim",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Pragmatic Maxim in How to Make Our Ideas Clear"
+  },
+  {
+    "source": "charles-sanders-peirce",
+    "target": "william-james",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Founded Pragmatism, which James popularized and personalized"
+  },
+  {
+    "source": "charles-sanders-peirce",
+    "target": "karl-popper",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Anticipated scientific fallibilism and evolutionary epistemology"
+  }
+]

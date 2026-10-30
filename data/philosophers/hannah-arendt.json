@@ -1,0 +1,36 @@
+{
+  "id": "hannah-arendt",
+  "name": "Hannah Arendt",
+  "birthYear": 1906,
+  "deathYear": 1975,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "shortBio": "Political theorist who analyzed totalitarianism, civic action in the public realm, and the terrifying 'banality of evil'.",
+  "centralQuestion": "What preserves the space of public freedom and prevents thoughtless totalitarian evil?",
+  "keyWorks": [
+    {
+      "title": "The Origins of Totalitarianism",
+      "year": "1906 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Origins%20of%20Totalitarianism",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Origins%20of%20Totalitarianism",
+      "description": "Major work by Hannah Arendt."
+    },
+    {
+      "title": "The Human Condition",
+      "year": "1906 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Human%20Condition",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Human%20Condition",
+      "description": "Major work by Hannah Arendt."
+    },
+    {
+      "title": "Eichmann in Jerusalem",
+      "year": "1906 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Eichmann%20in%20Jerusalem",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Eichmann%20in%20Jerusalem",
+      "description": "Major work by Hannah Arendt."
+    }
+  ],
+  "sepSlug": "arendt",
+  "importanceScore": 94,
+  "imageUrl": "/portraits/hannah-arendt.jpg"
+}

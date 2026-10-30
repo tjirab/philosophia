@@ -1,0 +1,16 @@
+[
+  {
+    "source": "instrumental-reason",
+    "target": "jurgen-habermas",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Habermas responded to Horkheimer's diagnosis of instrumental reason by proposing the paradigm of communicative rationality"
+  },
+  {
+    "source": "instrumental-reason",
+    "target": "one-dimensional-man",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Marcuse extended Horkheimer's instrumental reason into the pervasive technocratic rationality of advanced industrial society"
+  }
+]

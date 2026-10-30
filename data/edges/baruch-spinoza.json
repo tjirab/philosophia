@@ -1,0 +1,23 @@
+[
+  {
+    "source": "baruch-spinoza",
+    "target": "gilles-deleuze",
+    "type": "DEVELOPED",
+    "label": "Deleuze revitalized Spinozan univocity of being and immanence",
+    "strength": 4
+  },
+  {
+    "source": "baruch-spinoza",
+    "target": "deus-sive-natura",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Pantheism (Deus Sive Natura)",
+    "strength": 5
+  },
+  {
+    "source": "baruch-spinoza",
+    "target": "ludwig-feuerbach",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Transformed Spinozist pantheistic naturalism into embodied, humanistic sensory materialism"
+  }
+]

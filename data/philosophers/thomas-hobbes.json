@@ -1,0 +1,23 @@
+{
+  "id": "thomas-hobbes",
+  "name": "Thomas Hobbes",
+  "birthYear": 1588,
+  "deathYear": 1679,
+  "eraId": "early-modern",
+  "traditionId": "empiricism",
+  "shortBio": "Social contract theorist who described life in the state of nature as 'solitary, poor, nasty, brutish, and short'.",
+  "centralQuestion": "How do self-interested individuals construct a sovereign commonwealth to escape civil war?",
+  "keyWorks": [
+    {
+      "title": "Leviathan",
+      "year": "1651 CE",
+      "url": "https://www.gutenberg.org/ebooks/3207",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)",
+      "isbn": "978-0141439587",
+      "description": "Foundational political philosophy on the state of nature, the social contract, and the sovereign Leviathan."
+    }
+  ],
+  "sepSlug": "hobbes",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/thomas-hobbes.jpg"
+}

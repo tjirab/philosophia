@@ -1,0 +1,30 @@
+[
+  {
+    "source": "ludwig-feuerbach",
+    "target": "anthropological-projection",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Argued in The Essence of Christianity that God is the externalized projection of human species-powers"
+  },
+  {
+    "source": "ludwig-feuerbach",
+    "target": "karl-marx",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Catalyzed Marx's decisive break from Hegelian idealism to historical materialism, prompting Theses on Feuerbach"
+  },
+  {
+    "source": "ludwig-feuerbach",
+    "target": "friedrich-nietzsche",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Pioneered the psychological reduction of religious transcendence, anticipating Nietzsche's critique of Christian morality"
+  },
+  {
+    "source": "ludwig-feuerbach",
+    "target": "theodor-adorno",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Feuerbachian somatic materialism and critique of reification informed Frankfurt School critical theory"
+  }
+]

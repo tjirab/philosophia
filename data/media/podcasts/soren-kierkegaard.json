@@ -1,0 +1,46 @@
+[
+  {
+    "id": "pt-ep-160-soren-kierkegaard",
+    "targetId": "soren-kierkegaard",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #160 ... The Creation of Meaning - Kierkegaard - Silence, Obedience and Joy",
+    "url": "https://philosophizethis.libsyn.com/episode-160-the-creation-of-meaning-kierkegaard-silence-obedience-and-joy",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/creation-kierkegaard.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 160,
+    "duration": "36:20"
+  },
+  {
+    "id": "pt-ep-79-soren-kierkegaard",
+    "targetId": "soren-kierkegaard",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #079 ... Kierkegaard on Anxiety",
+    "url": "https://philosophizethis.libsyn.com/079-kierkegaard-on-anxiety",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/kierkegaard2.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 79,
+    "duration": "22:33"
+  },
+  {
+    "id": "pt-ep-78-soren-kierkegaard",
+    "targetId": "soren-kierkegaard",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #078 ... Marx and Kierkegaard on Religion pt. 2",
+    "url": "https://philosophizethis.libsyn.com/078-marx-and-kierkegaard-on-religion-pt-2",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/kierkegaard.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 78,
+    "duration": "25:24"
+  },
+  {
+    "id": "pt-ep-77-soren-kierkegaard",
+    "targetId": "soren-kierkegaard",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #077 ... Marx and Kierkegaard on Religion pt. 1",
+    "url": "https://philosophizethis.libsyn.com/077-marx-and-kierkegaard-on-religion-pt-1",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Marx_On_Religion.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 77,
+    "duration": "27:17"
+  }
+]

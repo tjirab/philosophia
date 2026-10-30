@@ -1,0 +1,30 @@
+[
+  {
+    "source": "plato",
+    "target": "aristotle",
+    "type": "INFLUENCED",
+    "label": "20 years at the Academy; Aristotle grounded transcendent Forms into immanent matter",
+    "strength": 5
+  },
+  {
+    "source": "plato",
+    "target": "plotinus",
+    "type": "DEVELOPED",
+    "label": "Systematized Plato's Good into the transcendent metaphysical 'One'",
+    "strength": 5
+  },
+  {
+    "source": "plato",
+    "target": "immanuel-kant",
+    "type": "DEVELOPED",
+    "label": "Kant re-interpreted the realm of Forms into the Noumenal realm (thing-in-itself)",
+    "strength": 4
+  },
+  {
+    "source": "plato",
+    "target": "theory-of-forms",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Theory of Forms",
+    "strength": 5
+  }
+]

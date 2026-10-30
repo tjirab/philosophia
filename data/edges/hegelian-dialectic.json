@@ -1,0 +1,23 @@
+[
+  {
+    "source": "hegelian-dialectic",
+    "target": "karl-marx",
+    "type": "CRITIQUED",
+    "label": "Marx inverted Hegelian idealist dialectics right side up into historical materialism",
+    "strength": 5
+  },
+  {
+    "source": "hegelian-dialectic",
+    "target": "soren-kierkegaard",
+    "type": "CRITIQUED",
+    "label": "Kierkegaard rejected Hegel totalizing system in defense of individual subjective faith",
+    "strength": 5
+  },
+  {
+    "source": "hegelian-dialectic",
+    "target": "theodor-adorno",
+    "type": "CRITIQUED",
+    "label": "Adorno formulated Negative Dialectics, rejecting the Hegelian affirmative reconciliation",
+    "strength": 4
+  }
+]

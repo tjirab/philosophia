@@ -1,0 +1,51 @@
+[
+  {
+    "source": "martin-heidegger",
+    "target": "jean-paul-sartre",
+    "type": "DEVELOPED",
+    "label": "Applied Being-in-the-world to human freedom, anxiety, and existential choice",
+    "strength": 5
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "jacques-derrida",
+    "type": "DEVELOPED",
+    "label": "Heidegger's 'destruction' of ontology developed into textual Deconstruction",
+    "strength": 5
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "byung-chul-han",
+    "type": "DEVELOPED",
+    "label": "Critiques digital hyper-activity, calculation, and loss of profound contemplation",
+    "strength": 4
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "dasein-being-in-the-world",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Dasein & Being-toward-Death",
+    "strength": 5
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "maurice-merleau-ponty",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Integrated being-in-the-world with somatic perceptual psychology"
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "emmanuel-levinas",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Vehemently critiqued Heidegger's ontology of Being for subordinating the ethical Other"
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "herbert-marcuse",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Studied under Heidegger, pursuing an early phenomenological Marxism before breaking decisively over Heidegger's support for National Socialism"
+  }
+]

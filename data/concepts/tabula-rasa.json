@@ -1,0 +1,9 @@
+{
+  "id": "tabula-rasa",
+  "title": "Tabula Rasa (The Blank Slate)",
+  "branch": "epistemology",
+  "eraId": "early-modern",
+  "introducedBy": "john-locke",
+  "summary": "The mind is born without innate ideas; all conceptual content and knowledge are derived entirely from experience (sensation and reflection).",
+  "sepSlug": "locke"
+}

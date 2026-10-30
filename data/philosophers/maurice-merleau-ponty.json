@@ -1,0 +1,22 @@
+{
+  "id": "maurice-merleau-ponty",
+  "name": "Maurice Merleau-Ponty",
+  "birthYear": 1908,
+  "deathYear": 1961,
+  "eraId": "twentieth-century",
+  "traditionId": "phenomenology",
+  "shortBio": "French phenomenologist who restored the lived body (le corps propre) and embodied sensory perception to the foundation of consciousness and reality.",
+  "centralQuestion": "How does our bodily immersion in the perceptual lifeworld precede and ground all intellectual and scientific abstraction?",
+  "keyWorks": [
+    {
+      "title": "Phenomenology of Perception",
+      "year": "1945",
+      "url": "https://en.wikipedia.org/wiki/Phenomenology_of_Perception",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Phenomenology_of_Perception",
+      "description": "Seminal study of bodily intentionality, sensory gestalt, and pre-reflective perceptual life."
+    }
+  ],
+  "sepSlug": "merleau-ponty",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/maurice-merleau-ponty.jpg"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pt-ep-187-gilles-deleuze",
+    "targetId": "gilles-deleuze",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #187 ... How much freedom would you trade for security? (Foucault, Hobbes, Mill, Agamben)",
+    "url": "https://philosophizethis.libsyn.com/episode-187-how-much-freedom-would-you-trade-for-security-foucault-hobbes-mill-agamben",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/freedom-security_01.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 187,
+    "duration": "39:08"
+  },
+  {
+    "id": "pt-ep-129-gilles-deleuze",
+    "targetId": "gilles-deleuze",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #129 ... Gilles Deleuze pt. 5 - Difference",
+    "url": "https://philosophizethis.libsyn.com/episode-129-deleuze-pt-5-difference",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Deleuze_pt_5YM.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 129,
+    "duration": "22:24"
+  },
+  {
+    "id": "pt-ep-128-gilles-deleuze",
+    "targetId": "gilles-deleuze",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #128 ... Gilles Deleuze pt. 4 - Flows",
+    "url": "https://philosophizethis.libsyn.com/episode-128-gilles-deleuze-pt-4-flows",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Deleuze_pt_4_YM.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 128,
+    "duration": "22:54"
+  },
+  {
+    "id": "pt-ep-127-gilles-deleuze",
+    "targetId": "gilles-deleuze",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #127 ... Gilles Deleuze pt. 3 - Anti-Oedipus",
+    "url": "https://philosophizethis.libsyn.com/episode-127-gilles-deleuze-pt-3-anti-oedipus",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Deleuze_3_YM.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 127,
+    "duration": "29:31"
+  },
+  {
+    "id": "pt-ep-126-gilles-deleuze",
+    "targetId": "gilles-deleuze",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #126 ... Gilles Deleuze pt. 2 - Immanence",
+    "url": "https://philosophizethis.libsyn.com/episode-126-gilles-deleuze-pt-2-immanence",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Deleuze_pt._2_YM.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 126,
+    "duration": "22:37"
+  },
+  {
+    "id": "pt-ep-125-gilles-deleuze",
+    "targetId": "gilles-deleuze",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #125 ... Gilles Deleuze pt. 1 - What is Philosophy?",
+    "url": "https://philosophizethis.libsyn.com/episode-125-gilles-deleuze-pt-1-what-is-philosophy",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Deleuze_pt._1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 125,
+    "duration": "22:31"
+  }
+]

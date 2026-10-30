@@ -1,0 +1,22 @@
+{
+  "id": "pyrrho",
+  "name": "Pyrrho of Elis",
+  "birthYear": -360,
+  "deathYear": -270,
+  "eraId": "hellenistic",
+  "traditionId": "skepticism",
+  "shortBio": "Pioneer of Skepticism; traveled to India with Alexander. Held that things are indifferently indeterminable, advocating epoche.",
+  "centralQuestion": "Can peace of mind be attained by withholding all dogmatic belief?",
+  "keyWorks": [
+    {
+      "title": "Oral tradition recorded by Timon and Sextus Empiricus",
+      "year": "360 BCE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Oral%20tradition%20recorded%20by%20Timon%20and%20Sextus%20Empiricus",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Oral%20tradition%20recorded%20by%20Timon%20and%20Sextus%20Empiricus",
+      "description": "Major work by Pyrrho of Elis."
+    }
+  ],
+  "sepSlug": "pyrrho",
+  "importanceScore": 72,
+  "imageUrl": "/portraits/pyrrho.jpg"
+}

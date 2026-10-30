@@ -1,0 +1,16 @@
+[
+  {
+    "source": "teleology-four-causes",
+    "target": "thomas-aquinas",
+    "type": "SYNTHESIZED",
+    "label": "Aquinas integrated Aristotelian teleology and prime mover into Christian theology",
+    "strength": 5
+  },
+  {
+    "source": "teleology-four-causes",
+    "target": "francis-bacon",
+    "type": "CRITIQUED",
+    "label": "Bacon discarded teleological final causes as barren, demanding empirical mechanics",
+    "strength": 4
+  }
+]

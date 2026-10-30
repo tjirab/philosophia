@@ -1,0 +1,16 @@
+[
+  {
+    "source": "causal-occasionalism",
+    "target": "averroes",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Averroes defended Aristotelian causal efficacy and science"
+  },
+  {
+    "source": "causal-occasionalism",
+    "target": "david-hume",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Secularized into Humean empirical skepticism of necessary connection"
+  }
+]

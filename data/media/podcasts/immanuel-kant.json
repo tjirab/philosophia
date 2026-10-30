@@ -1,0 +1,90 @@
+[
+  {
+    "id": "pt-ep-63-immanuel-kant",
+    "targetId": "immanuel-kant",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #063 ... Kant pt. 8 - Limits of Knowledge",
+    "url": "https://philosophizethis.libsyn.com/episode-063-kant-pt-8-limits-of-knowledge",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_063_..._Kant_pt._8.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 63,
+    "duration": "28:48"
+  },
+  {
+    "id": "pt-ep-62-immanuel-kant",
+    "targetId": "immanuel-kant",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #062 ... Kant pt. 7 - Suicide",
+    "url": "https://philosophizethis.libsyn.com/episode-062-kant-pt-7-suicide",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_062_..._Kant_pt._8.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 62,
+    "duration": "33:20"
+  },
+  {
+    "id": "pt-ep-61-immanuel-kant",
+    "targetId": "immanuel-kant",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #061 ... Kant pt. 6 - What is Enlightenment?",
+    "url": "https://philosophizethis.libsyn.com/episode-061-what-is-enlightenment",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_061_..._What_is_Enlightenment.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 61,
+    "duration": "27:02"
+  },
+  {
+    "id": "pt-ep-60-immanuel-kant",
+    "targetId": "immanuel-kant",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #060 ... Kant pt. 5 - The Sublime",
+    "url": "https://philosophizethis.libsyn.com/episode-060-the-sublime",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_060_..._The_Sublime.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 60,
+    "duration": "30:49"
+  },
+  {
+    "id": "pt-ep-59-immanuel-kant",
+    "targetId": "immanuel-kant",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #059 ... Kant pt. 4 - Categorical Trolley Cars",
+    "url": "https://philosophizethis.libsyn.com/episode-059-kant-pt-4-categorical-trolley-cars",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_059_..._Kant_pt._4_-_Categorical_Trolley_Cars.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 59,
+    "duration": "27:48"
+  },
+  {
+    "id": "pt-ep-58-immanuel-kant",
+    "targetId": "immanuel-kant",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #058 ... Kant pt. 3 - Deontology vs Consequentialism",
+    "url": "https://philosophizethis.libsyn.com/episode-058-deontology-vs-consequentialism",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_058_..._Deontology_vs_Consequentialism.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 58,
+    "duration": "27:26"
+  },
+  {
+    "id": "pt-ep-57-immanuel-kant",
+    "targetId": "immanuel-kant",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #057 ... Kant pt. 2 - The Actual Introduction",
+    "url": "https://philosophizethis.libsyn.com/episode-057-kant-pt-2-the-actual-introduction",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_057_..._Kant_pt._2_-_The_Actual_Introduction.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 57,
+    "duration": "25:37"
+  },
+  {
+    "id": "pt-ep-56-immanuel-kant",
+    "targetId": "immanuel-kant",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #056 ... Kant pt. 1 - An Introduction to the Introduction",
+    "url": "https://philosophizethis.libsyn.com/episode-056-kant-pt-1-an-introduction-to-the-introduction",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_056_..._Kant_pt._1_-_An_Introduction_to_the_Introduction.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 56,
+    "duration": "26:22"
+  }
+]

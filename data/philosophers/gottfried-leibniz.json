@@ -1,0 +1,37 @@
+{
+  "id": "gottfried-leibniz",
+  "name": "Gottfried Wilhelm Leibniz",
+  "birthYear": 1646,
+  "deathYear": 1716,
+  "eraId": "early-modern",
+  "traditionId": "rationalism",
+  "shortBio": "Polymath co-inventor of calculus. Conceived reality as an infinite harmony of windowless spiritual atoms called monads.",
+  "centralQuestion": "Why is there something rather than nothing, and is this the best of all possible worlds?",
+  "keyWorks": [
+    {
+      "title": "Monadology",
+      "year": "1714 CE",
+      "url": "https://en.wikisource.org/wiki/The_Monadology",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Monadology",
+      "isbn": "978-0872200623",
+      "description": "Leibniz's late metaphysical synthesis: reality composed of immaterial, perception-bearing monads in pre-established harmony."
+    },
+    {
+      "title": "Discourse on Metaphysics",
+      "year": "1646 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Discourse%20on%20Metaphysics",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Discourse%20on%20Metaphysics",
+      "description": "Major work by Gottfried Wilhelm Leibniz."
+    },
+    {
+      "title": "Theodicy",
+      "year": "1646 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Theodicy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Theodicy",
+      "description": "Major work by Gottfried Wilhelm Leibniz."
+    }
+  ],
+  "sepSlug": "leibniz",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/gottfried-leibniz.jpg"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mencius",
+  "name": "Mencius (Mengzi)",
+  "birthYear": -372,
+  "deathYear": -289,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Foremost classical successor to Confucius, revered as the 'Second Sage', who argued for the innate goodness of human nature and defended moral governance through benevolence rather than tyranny.",
+  "centralQuestion": "Is human nature inherently predisposed toward goodness, like water naturally flowing downward, requiring only moral cultivation to blossom?",
+  "keyWorks": [
+    {
+      "title": "Mengzi (The Works of Mencius)",
+      "year": "-310 BCE",
+      "url": "https://ctext.org/mengzi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mencius_(book)",
+      "description": "Dialogue exploring human nature, ethical cultivation (ren and yi), righteous governance, and the four sprouts of virtue."
+    }
+  ],
+  "sepSlug": "mencius",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/mencius.jpg"
+}

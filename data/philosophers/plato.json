@@ -1,0 +1,55 @@
+{
+  "id": "plato",
+  "name": "Plato",
+  "birthYear": -427,
+  "deathYear": -347,
+  "eraId": "classical-greek",
+  "traditionId": "platonism",
+  "shortBio": "Founder of the Academy in Athens. Developed the Theory of Forms, the Allegory of the Cave, and ideal political constitutions.",
+  "centralQuestion": "What is the true nature of reality, justice, and the immortal soul?",
+  "keyWorks": [
+    {
+      "title": "The Republic",
+      "year": "-375 BCE",
+      "url": "https://standardebooks.org/ebooks/plato/the-republic/benjamin-jowett",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Republic_(Plato)",
+      "isbn": "978-0140455113",
+      "description": "Socratic dialogue on justice, the ideal city-state, the Allegory of the Cave, and the philosopher-king."
+    },
+    {
+      "title": "Symposium",
+      "year": "-385 BCE",
+      "url": "https://classics.mit.edu/Plato/symposium.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Symposium_(Plato)",
+      "isbn": "978-0872200760",
+      "description": "Dialogue exploring the nature and origin of Eros (love) and the ascent to the Form of Beauty."
+    },
+    {
+      "title": "Phaedo",
+      "year": "-360 BCE",
+      "url": "https://classics.mit.edu/Plato/phaedo.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Phaedo",
+      "isbn": "978-0199538935",
+      "description": "Recounts Socrates' final hours in prison, arguing for the immortality of the soul and the Theory of Forms."
+    },
+    {
+      "title": "Timaeus",
+      "year": "-360 BCE",
+      "url": "https://classics.mit.edu/Plato/timaeus.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Timaeus_(dialogue)",
+      "isbn": "978-0872204461",
+      "description": "Plato's speculative cosmology describing the Demiurge fashioning the cosmos according to eternal Forms."
+    },
+    {
+      "title": "Meno",
+      "year": "-380 BCE",
+      "url": "https://classics.mit.edu/Plato/meno.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Meno",
+      "isbn": "978-0872203525",
+      "description": "Investigates whether virtue can be taught, introducing the theory of recollection (anamnesis)."
+    }
+  ],
+  "sepSlug": "plato",
+  "importanceScore": 100,
+  "imageUrl": "/portraits/plato.jpg"
+}

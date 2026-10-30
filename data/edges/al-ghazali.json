@@ -1,0 +1,23 @@
+[
+  {
+    "source": "al-ghazali",
+    "target": "causal-occasionalism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Dismantled necessary causal connection between fire and burning"
+  },
+  {
+    "source": "al-ghazali",
+    "target": "averroes",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Provoked Averroes' Tahafut al-Tahafut defending Aristotelian rationalism"
+  },
+  {
+    "source": "al-ghazali",
+    "target": "david-hume",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Occasionalist causal critique anticipated Hume's Problem of Induction by 600 years"
+  }
+]

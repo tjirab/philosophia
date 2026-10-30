@@ -1,0 +1,31 @@
+{
+  "id": "david-hume",
+  "name": "David Hume",
+  "birthYear": 1711,
+  "deathYear": 1776,
+  "eraId": "enlightenment",
+  "traditionId": "empiricism",
+  "shortBio": "Scottish skeptic who dismantled dogmatic rationalism, questioning causality, the unified self (bundle theory), and induction.",
+  "centralQuestion": "Can reason justify our belief in cause and effect or an enduring personal self?",
+  "keyWorks": [
+    {
+      "title": "A Treatise of Human Nature",
+      "year": "1739 CE",
+      "url": "https://www.gutenberg.org/ebooks/4705",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Treatise_of_Human_Nature",
+      "isbn": "978-0198751724",
+      "description": "Hume's empirical masterpiece investigating human knowledge, passions, morality, and the bundle theory of self."
+    },
+    {
+      "title": "An Enquiry Concerning Human Understanding",
+      "year": "1748 CE",
+      "url": "https://www.gutenberg.org/ebooks/9662",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/An_Enquiry_Concerning_Human_Understanding",
+      "isbn": "978-0199549900",
+      "description": "Refined presentation of Hume's epistemological skepticism, problem of induction, and critique of miracles."
+    }
+  ],
+  "sepSlug": "hume",
+  "importanceScore": 98,
+  "imageUrl": "/portraits/david-hume.jpg"
+}

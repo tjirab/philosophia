@@ -1,0 +1,36 @@
+{
+  "id": "theodor-adorno",
+  "name": "Theodor W. Adorno",
+  "birthYear": 1903,
+  "deathYear": 1969,
+  "eraId": "twentieth-century",
+  "traditionId": "critical-theory",
+  "shortBio": "Leading figure of the Frankfurt School; critiqued the culture industry, instrumental reason, and authoritarianism.",
+  "centralQuestion": "How did Enlightenment rationality turn into its opposite: barbarism and mass conformity?",
+  "keyWorks": [
+    {
+      "title": "Dialectic of Enlightenment",
+      "year": "1947",
+      "url": "https://en.wikipedia.org/wiki/Dialectic_of_Enlightenment",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Dialectic_of_Enlightenment",
+      "description": "Major work co-authored with Max Horkheimer diagnosing the dialectic of reason and the rise of the culture industry."
+    },
+    {
+      "title": "Minima Moralia",
+      "year": "1951",
+      "url": "https://en.wikipedia.org/wiki/Minima_Moralia",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Minima_Moralia",
+      "description": "Reflections from damaged life examining the alienation of subjective experience under late capitalism."
+    },
+    {
+      "title": "Negative Dialectics",
+      "year": "1966",
+      "url": "https://en.wikipedia.org/wiki/Negative_Dialectics",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Negative_Dialectics",
+      "description": "Critique of Hegelian affirmative synthesis, preserving non-identity and resisting totalizing conceptual systems."
+    }
+  ],
+  "sepSlug": "adorno",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/theodor-adorno.jpg"
+}

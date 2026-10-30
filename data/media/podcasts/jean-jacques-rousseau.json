@@ -1,0 +1,46 @@
+[
+  {
+    "id": "pt-ep-47-jean-jacques-rousseau",
+    "targetId": "jean-jacques-rousseau",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #047 ... Rousseau pt. 3 - The General Will",
+    "url": "https://philosophizethis.libsyn.com/episode-047-rousseau-pt-3-the-general-will",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_047_..._Rousseau_pt._3_-_The_General_Will.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 47,
+    "duration": "25:21"
+  },
+  {
+    "id": "pt-ep-46-jean-jacques-rousseau",
+    "targetId": "jean-jacques-rousseau",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #046 ... Rousseau pt. 2 - Democracy, Aristocracy or Monarchy?",
+    "url": "https://philosophizethis.libsyn.com/episode-046-rousseau-pt-2-democracy-aristocracy-or-monarchy",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_046_..._Rousseau_pt._2_-_Democracy_Aristocracy_or_Monarchy.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 46,
+    "duration": "29:52"
+  },
+  {
+    "id": "pt-ep-45-jean-jacques-rousseau",
+    "targetId": "jean-jacques-rousseau",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #045 ... Rousseau Government pt. 1",
+    "url": "https://philosophizethis.libsyn.com/episode-045-rousseau-government-pt-1",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_045_..._Rousseau_Government_pt._1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 45,
+    "duration": "27:13"
+  },
+  {
+    "id": "pt-ep-26-jean-jacques-rousseau",
+    "targetId": "jean-jacques-rousseau",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #026 ... Thomas Hobbes pt. 1 - The Social Contract",
+    "url": "https://philosophizethis.libsyn.com/episode-026-thomas-hobbes-pt-1-the-social-contract",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_026_..._Thomas_Hobbes_pt._1_-_The_Social_Contract.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 26,
+    "duration": "30:31"
+  }
+]

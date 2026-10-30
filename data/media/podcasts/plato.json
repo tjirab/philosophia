@@ -1,0 +1,35 @@
+[
+  {
+    "id": "pt-ep-14-plato",
+    "targetId": "plato",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #014 ... The Hellenistic Age Pt. 5 - A Race To The Dark Ages",
+    "url": "https://philosophizethis.libsyn.com/episode-014-the-hellenistic-age-pt-5-a-race-to-the-dark-ages",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_014_..._The_Hellenistic_Age_Pt._5_-_A_Race_To_The_Dark_Ages.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 14,
+    "duration": "44:37"
+  },
+  {
+    "id": "pt-ep-6-plato",
+    "targetId": "plato",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #006 ... Aristotle Pt. 2",
+    "url": "https://philosophizethis.libsyn.com/episode-006-aristotle-pt-2",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_006_..._Aristotle_Pt._2.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 6,
+    "duration": "39:18"
+  },
+  {
+    "id": "pt-ep-4-plato",
+    "targetId": "plato",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #004 ... Plato",
+    "url": "https://philosophizethis.libsyn.com/episode-004-plato",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_004_..._Plato.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 4,
+    "duration": "45:02"
+  }
+]

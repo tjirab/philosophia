@@ -1,0 +1,30 @@
+{
+  "id": "arthur-schopenhauer",
+  "name": "Arthur Schopenhauer",
+  "birthYear": 1788,
+  "deathYear": 1860,
+  "eraId": "nineteenth-century",
+  "traditionId": "existentialism-early",
+  "shortBio": "Post-Kantian thinker who identified Kant's thing-in-itself as blind, insatiable Will; synthesized Western idealism with Buddhist and Upanishadic insights.",
+  "centralQuestion": "How can the individual escape the suffering and striving of the metaphysical Will?",
+  "keyWorks": [
+    {
+      "title": "The World as Will and Representation",
+      "year": "1818 CE",
+      "url": "https://www.gutenberg.org/ebooks/38427",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_World_as_Will_and_Representation",
+      "isbn": "978-0486217611",
+      "description": "Post-Kantian masterpiece unveiling the thing-in-itself as blind, insatiable metaphysical Will."
+    },
+    {
+      "title": "On the Freedom of the Will",
+      "year": "1788 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Freedom%20of%20the%20Will",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Freedom%20of%20the%20Will",
+      "description": "Major work by Arthur Schopenhauer."
+    }
+  ],
+  "sepSlug": "schopenhauer",
+  "importanceScore": 95,
+  "imageUrl": "/portraits/arthur-schopenhauer.jpg"
+}

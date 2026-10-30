@@ -1,0 +1,10 @@
+{
+  "id": "zenos-paradoxes",
+  "eraId": "pre-socratic",
+  "introducedBy": "zeno-of-elea",
+  "sepSlug": "zeno-elea",
+  "importanceScore": 88,
+  "title": "Zeno's Paradoxes",
+  "summary": "Dialectical arguments (Achilles and Tortoise, Arrow, Dichotomy) showing that treating space and time as infinitely divisible leads to contradictory physical impossibilities.",
+  "branch": "logic"
+}

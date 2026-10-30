@@ -1,0 +1,37 @@
+{
+  "id": "soren-kierkegaard",
+  "name": "Søren Kierkegaard",
+  "birthYear": 1813,
+  "deathYear": 1855,
+  "eraId": "nineteenth-century",
+  "traditionId": "existentialism-early",
+  "shortBio": "Father of Christian existentialism; rejected Hegel's objective systems in favor of subjective truth, dread, and the leap of faith.",
+  "centralQuestion": "What does it mean for an individual to exist before God with authentic passion?",
+  "keyWorks": [
+    {
+      "title": "Fear and Trembling",
+      "year": "1843 CE",
+      "url": "https://en.wikipedia.org/wiki/Fear_and_Trembling",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Fear_and_Trembling",
+      "isbn": "978-0140444490",
+      "description": "Kierkegaard's pseudonym Johannes de Silentio examines Abraham's sacrifice of Isaac and the leap of faith."
+    },
+    {
+      "title": "The Sickness Unto Death",
+      "year": "1813 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Sickness%20Unto%20Death",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Sickness%20Unto%20Death",
+      "description": "Major work by Søren Kierkegaard."
+    },
+    {
+      "title": "Either/Or",
+      "year": "1813 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Either%2FOr",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Either%2FOr",
+      "description": "Major work by Søren Kierkegaard."
+    }
+  ],
+  "sepSlug": "kierkegaard",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/soren-kierkegaard.jpg"
+}

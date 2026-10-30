@@ -1,0 +1,23 @@
+[
+  {
+    "source": "categorical-imperative",
+    "target": "john-stuart-mill",
+    "type": "CRITIQUED",
+    "label": "Mill criticized deontological categorical imperatives, asserting morality must weigh consequences",
+    "strength": 5
+  },
+  {
+    "source": "categorical-imperative",
+    "target": "john-rawls",
+    "type": "DEVELOPED",
+    "label": "Rawls formulated the Veil of Ignorance as a procedural Kantian constructivist ethic",
+    "strength": 5
+  },
+  {
+    "source": "categorical-imperative",
+    "target": "ethics-of-the-real",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "The categorical imperative purged of pathological inclinations is radicalized into psychoanalytic fidelity to the drive"
+  }
+]

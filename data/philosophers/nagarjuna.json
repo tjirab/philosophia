@@ -1,0 +1,29 @@
+{
+  "id": "nagarjuna",
+  "name": "Nagarjuna",
+  "birthYear": 150,
+  "deathYear": 250,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Founder of the Madhyamaka ('Middle Way') school of Mahāyāna Buddhism; demonstrated through rigorous reductio ad absurdum (prasaṅga) that all phenomena are empty (śūnyatā) of intrinsic essence (svabhāva) due to dependent origination.",
+  "centralQuestion": "How does dependent origination dissolve metaphysical absolutes while preserving conventional truth and ethical action?",
+  "keyWorks": [
+    {
+      "title": "Mulamadhyamakakarika (Fundamental Verses on the Middle Way)",
+      "year": "150 CE",
+      "url": "https://en.wikipedia.org/wiki/M%C5%ABlamadhyamakak%C4%81rik%C4%81",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/M%C5%ABlamadhyamakak%C4%81rik%C4%81",
+      "description": "Foundational treatise of Madhyamaka, dismantling metaphysical concepts of causation, motion, identity, and essence through relentless dialectic."
+    },
+    {
+      "title": "Vigrahavyavartani (The Dispeller of Objections)",
+      "year": "175 CE",
+      "url": "https://en.wikipedia.org/wiki/Nagarjuna#Philosophy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nagarjuna#Philosophy",
+      "description": "Epistemological masterwork defending the Madhyamaka method against Nyāya realist accusations of self-refuting nihilism."
+    }
+  ],
+  "sepSlug": "nagarjuna",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/nagarjuna.jpg"
+}

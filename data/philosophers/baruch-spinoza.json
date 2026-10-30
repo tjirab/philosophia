@@ -1,0 +1,30 @@
+{
+  "id": "baruch-spinoza",
+  "name": "Baruch Spinoza",
+  "birthYear": 1632,
+  "deathYear": 1677,
+  "eraId": "early-modern",
+  "traditionId": "rationalism",
+  "shortBio": "Excommunicated Jewish-Dutch philosopher who developed geometric pantheism: God and Nature are one single infinite substance (Deus Sive Natura).",
+  "centralQuestion": "How does understanding necessity and cosmic unity liberate the human mind from passive passions?",
+  "keyWorks": [
+    {
+      "title": "Ethics (demonstrated in geometrical order)",
+      "year": "1677 CE",
+      "url": "https://www.gutenberg.org/ebooks/3800",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ethics_(Spinoza_book)",
+      "isbn": "978-0140435719",
+      "description": "Geometrical proof of pantheistic monism: God and Nature as one infinite substance (Deus Sive Natura)."
+    },
+    {
+      "title": "Tractatus Theologico-Politicus",
+      "year": "1632 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Tractatus%20Theologico-Politicus",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Tractatus%20Theologico-Politicus",
+      "description": "Major work by Baruch Spinoza."
+    }
+  ],
+  "sepSlug": "spinoza",
+  "importanceScore": 95,
+  "imageUrl": "/portraits/baruch-spinoza.jpg"
+}

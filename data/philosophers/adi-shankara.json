@@ -1,0 +1,29 @@
+{
+  "id": "adi-shankara",
+  "name": "Adi Shankara",
+  "birthYear": 788,
+  "deathYear": 820,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Consolidator of Advaita Vedanta philosophy, proving that Atman (individual self) and Brahman (ultimate reality) are non-dual.",
+  "centralQuestion": "How does knowledge of non-duality shatter the illusion (maya) of separation?",
+  "keyWorks": [
+    {
+      "title": "Brahma Sutra Bhasya",
+      "year": "788 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Brahma%20Sutra%20Bhasya",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Brahma%20Sutra%20Bhasya",
+      "description": "Major work by Adi Shankara."
+    },
+    {
+      "title": "Upadesasahasri",
+      "year": "788 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Upadesasahasri",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Upadesasahasri",
+      "description": "Major work by Adi Shankara."
+    }
+  ],
+  "sepSlug": "shankara",
+  "importanceScore": 80,
+  "imageUrl": "/portraits/adi-shankara.jpg"
+}

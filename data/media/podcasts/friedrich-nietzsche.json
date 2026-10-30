@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pt-ep-159-friedrich-nietzsche",
+    "targetId": "friedrich-nietzsche",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #159 ... The Creation of Meaning - Nietzsche - Amor Fati",
+    "url": "https://philosophizethis.libsyn.com/episode-159-the-creation-of-meaning-nietzsche-amor-fati",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/amor_fati.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 159,
+    "duration": "29:18"
+  },
+  {
+    "id": "pt-ep-158-friedrich-nietzsche",
+    "targetId": "friedrich-nietzsche",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #158 ... The Creation of Meaning - Nietzsche - The Ascetic Ideal",
+    "url": "https://philosophizethis.libsyn.com/episode-158-the-creation-of-meaning-nietzsche-the-ascetic-ideal",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/creation_nietzsche1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 158,
+    "duration": "30:53"
+  },
+  {
+    "id": "pt-ep-93-friedrich-nietzsche",
+    "targetId": "friedrich-nietzsche",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #093 ... Nietzsche pt. 4 - Love",
+    "url": "https://philosophizethis.libsyn.com/episode-093-nietzsche-pt-4-love",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Nietzsche_On_Love.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 93,
+    "duration": "26:40"
+  },
+  {
+    "id": "pt-ep-92-friedrich-nietzsche",
+    "targetId": "friedrich-nietzsche",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #092 ... Nietzsche pt. 3 - Thus Spoke Zarathustra",
+    "url": "https://philosophizethis.libsyn.com/episode-092-nietzsche-pt-3-thus-spoke-zarathustra",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Thus_Spoke_Zarathustra.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 92,
+    "duration": "29:55"
+  },
+  {
+    "id": "pt-ep-91-friedrich-nietzsche",
+    "targetId": "friedrich-nietzsche",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #091 ... Nietzsche pt. 2 - The Will to Power",
+    "url": "https://philosophizethis.libsyn.com/episode-091-nietzsche-pt-2-the-will-to-power",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Will_to_Power.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 91,
+    "duration": "27:54"
+  },
+  {
+    "id": "pt-ep-90-friedrich-nietzsche",
+    "targetId": "friedrich-nietzsche",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #090 ... Nietzsche pt. 1 - God is dead and so is Captain Morgan",
+    "url": "https://philosophizethis.libsyn.com/episode-090-nietzsche-pt-1-god-is-dead-and-so-is-captain-morgan",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Nietzsche_Part_1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 90,
+    "duration": "27:12"
+  }
+]

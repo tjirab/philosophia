@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-62-thomas-aquinas",
+    "targetId": "thomas-aquinas",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #062 ... Kant pt. 7 - Suicide",
+    "url": "https://philosophizethis.libsyn.com/episode-062-kant-pt-7-suicide",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_062_..._Kant_pt._8.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 62,
+    "duration": "33:20"
+  },
+  {
+    "id": "pt-ep-21-thomas-aquinas",
+    "targetId": "thomas-aquinas",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #021 ... One God - St. Thomas Aquinas",
+    "url": "https://philosophizethis.libsyn.com/episode-021-one-god-st-thomas-aquinas",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_021_..._One_God_-_St._Thomas_Aquinas.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 21,
+    "duration": "26:22"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "source": "gwf-hegel",
+    "target": "karl-marx",
+    "type": "CRITIQUED",
+    "label": "Turned Hegelian dialectic from idealist spirit right side up into historical materialism",
+    "strength": 5
+  },
+  {
+    "source": "gwf-hegel",
+    "target": "soren-kierkegaard",
+    "type": "CRITIQUED",
+    "label": "Kierkegaard rejected Hegel's totalizing system in defense of subjective individual anguish",
+    "strength": 5
+  },
+  {
+    "source": "gwf-hegel",
+    "target": "hegelian-dialectic",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Dialectical Historical Reason",
+    "strength": 5
+  },
+  {
+    "source": "gwf-hegel",
+    "target": "ludwig-feuerbach",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Inverted Hegel's Absolute Idealism, insisting that material being precedes abstract consciousness"
+  },
+  {
+    "source": "gwf-hegel",
+    "target": "alenka-zupancic",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Zupančič mobilizes Hegelian contradiction and the concrete universal to articulate the structure of comedy and the ontological impasse of sexuality"
+  },
+  {
+    "source": "gwf-hegel",
+    "target": "herbert-marcuse",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Defended Hegelian negative dialectics in Reason and Revolution, arguing authentic philosophical reason is inherently critical and subversive"
+  }
+]

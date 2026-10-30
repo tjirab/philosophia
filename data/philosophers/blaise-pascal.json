@@ -1,0 +1,22 @@
+{
+  "id": "blaise-pascal",
+  "name": "Blaise Pascal",
+  "birthYear": 1623,
+  "deathYear": 1662,
+  "eraId": "early-modern",
+  "traditionId": "rationalism",
+  "shortBio": "French mathematician, physicist, and religious philosopher who formulated Pascal's Wager, explored the tragedy of human fallenness, and declared that 'the heart has its reasons which reason knows nothing of'.",
+  "centralQuestion": "How does human consciousness navigate the abyss between nothingness and infinity, and why is faith an inescapable existential wager?",
+  "keyWorks": [
+    {
+      "title": "Pensées",
+      "year": "1670",
+      "url": "https://en.wikipedia.org/wiki/Pens%C3%A9es",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pens%C3%A9es",
+      "description": "Fragmentary collection of thoughts on human misery without God, epistemology, and the existential wager."
+    }
+  ],
+  "sepSlug": "pascal",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/blaise-pascal.jpg"
+}

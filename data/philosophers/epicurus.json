@@ -1,0 +1,29 @@
+{
+  "id": "epicurus",
+  "name": "Epicurus",
+  "birthYear": -341,
+  "deathYear": -270,
+  "eraId": "hellenistic",
+  "traditionId": "epicureanism",
+  "shortBio": "Founded The Garden. Taught that the greatest good is tranquility (ataraxia) and freedom from fear of death and gods.",
+  "centralQuestion": "How do we attain peace of mind through modest desires and true friendship?",
+  "keyWorks": [
+    {
+      "title": "Letter to Menoeceus",
+      "year": "341 BCE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Letter%20to%20Menoeceus",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Letter%20to%20Menoeceus",
+      "description": "Major work by Epicurus."
+    },
+    {
+      "title": "Principal Doctrines",
+      "year": "341 BCE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Principal%20Doctrines",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Principal%20Doctrines",
+      "description": "Major work by Epicurus."
+    }
+  ],
+  "sepSlug": "epicurus",
+  "importanceScore": 82,
+  "imageUrl": "/portraits/epicurus.jpg"
+}

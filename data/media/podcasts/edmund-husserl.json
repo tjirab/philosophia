@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-103-edmund-husserl",
+    "targetId": "edmund-husserl",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #103 ... Sartre and Camus pt. 4 - The Quest For Certainty",
+    "url": "https://philosophizethis.libsyn.com/episode-103-sartre-and-camus-pt-4-the-quest-for-certainty",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Sarte4_Final.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 103,
+    "duration": "32:03"
+  },
+  {
+    "id": "pt-ep-100-edmund-husserl",
+    "targetId": "edmund-husserl",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #100 ... Heidegger pt. 1 - Phenomenology and Dasein",
+    "url": "https://philosophizethis.libsyn.com/episode-100-heidegger-pt-1-phenomenology-and-dasein",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Heidegger_pt._1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 100,
+    "duration": "31:06"
+  }
+]

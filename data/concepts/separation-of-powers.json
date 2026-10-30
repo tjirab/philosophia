@@ -1,0 +1,10 @@
+{
+  "id": "separation-of-powers",
+  "title": "Separation of Powers (Trias Politica)",
+  "branch": "political",
+  "eraId": "enlightenment",
+  "introducedBy": "montesquieu",
+  "summary": "Constitutional architecture dividing state authority into independent legislative, executive, and judicial branches, each checking and balancing the others to preserve political liberty and prevent tyranny.",
+  "sepSlug": "montesquieu",
+  "importanceScore": 95
+}

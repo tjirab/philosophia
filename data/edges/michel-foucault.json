@@ -1,0 +1,16 @@
+[
+  {
+    "source": "michel-foucault",
+    "target": "power-knowledge-panopticon",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Disciplinary Power & The Panopticon",
+    "strength": 5
+  },
+  {
+    "source": "michel-foucault",
+    "target": "jean-baudrillard",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Critiqued Foucault's model of disciplinary power in Forget Foucault (1977), arguing power itself has become simulated"
+  }
+]

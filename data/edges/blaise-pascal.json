@@ -1,0 +1,16 @@
+[
+  {
+    "source": "blaise-pascal",
+    "target": "pascals-wager",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated decision-theoretic wager on divine existence in Pensées"
+  },
+  {
+    "source": "blaise-pascal",
+    "target": "soren-kierkegaard",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Precursor to existential dread, leap of faith, and paradoxical Christianity"
+  }
+]

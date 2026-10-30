@@ -1,0 +1,22 @@
+{
+  "id": "moses-maimonides",
+  "name": "Moses Maimonides (Rambam)",
+  "birthYear": 1138,
+  "deathYear": 1204,
+  "eraId": "medieval",
+  "traditionId": "scholasticism",
+  "shortBio": "Preeminent Sephardic Jewish philosopher and codifier whose Guide for the Perplexed reconciled Aristotelian metaphysics with biblical revelation through negative theology.",
+  "centralQuestion": "How can rational philosophy and allegorical biblical revelation be harmonized without compromising divine incorporeality and negative theology?",
+  "keyWorks": [
+    {
+      "title": "The Guide for the Perplexed (Moreh Nevukhim)",
+      "year": "1190",
+      "url": "https://en.wikipedia.org/wiki/The_Guide_for_the_Perplexed",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Guide_for_the_Perplexed",
+      "description": "Masterwork addressing philosophical perplexities arising from anthropomorphic biblical texts."
+    }
+  ],
+  "sepSlug": "maimonides",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/moses-maimonides.jpg"
+}

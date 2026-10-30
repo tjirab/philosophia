@@ -1,0 +1,35 @@
+[
+  {
+    "id": "pt-ep-102-martin-heidegger",
+    "targetId": "martin-heidegger",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #102 ... Heidegger pt. 3 - Authenticity",
+    "url": "https://philosophizethis.libsyn.com/episode-102-heidegger-pt-3-authenticity",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Heidegger3_Final_amp.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 102,
+    "duration": "31:20"
+  },
+  {
+    "id": "pt-ep-101-martin-heidegger",
+    "targetId": "martin-heidegger",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #101 ... Heidegger pt. 2 - Science and Technology",
+    "url": "https://philosophizethis.libsyn.com/episode-101-heidegger-pt-2-science-and-technology",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Heidegger_pt._2.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 101,
+    "duration": "26:00"
+  },
+  {
+    "id": "pt-ep-100-martin-heidegger",
+    "targetId": "martin-heidegger",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #100 ... Heidegger pt. 1 - Phenomenology and Dasein",
+    "url": "https://philosophizethis.libsyn.com/episode-100-heidegger-pt-1-phenomenology-and-dasein",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Heidegger_pt._1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 100,
+    "duration": "31:06"
+  }
+]

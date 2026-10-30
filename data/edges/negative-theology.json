@@ -1,0 +1,16 @@
+[
+  {
+    "source": "negative-theology",
+    "target": "thomas-aquinas",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Incorporated via Aquinas's doctrine of divine analogy and apophaticism"
+  },
+  {
+    "source": "negative-theology",
+    "target": "baruch-spinoza",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Transformed into immanent pantheism (Deus sive Natura)"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "source": "karl-marx",
+    "target": "theodor-adorno",
+    "type": "DEVELOPED",
+    "label": "Frankfurt School combined Marxist critique with Freudian psychoanalysis and culture critique",
+    "strength": 5
+  },
+  {
+    "source": "karl-marx",
+    "target": "historical-materialism",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Historical Materialism & Alienation",
+    "strength": 5
+  },
+  {
+    "source": "karl-marx",
+    "target": "jean-baudrillard",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Radicalized Marx's critique of political economy, arguing that in consumer capitalism sign-exchange value eclipses use-value"
+  },
+  {
+    "source": "karl-marx",
+    "target": "max-horkheimer",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Adapted Marxian political economy into an interdisciplinary Critical Theory diagnosing alienation and cultural hegemony"
+  },
+  {
+    "source": "karl-marx",
+    "target": "herbert-marcuse",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Synthesized Marxian historical materialism with Freudian psychoanalysis to diagnose consumer capitalism and technocratic alienation"
+  }
+]

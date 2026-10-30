@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-99-arthur-schopenhauer",
+    "targetId": "arthur-schopenhauer",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #099 ... Schopenhauer pt. 2 - Ethics",
+    "url": "https://philosophizethis.libsyn.com/episode-099-schopenhauer-pt-2-ethics",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Schopenhauer_part_2_-_Ethics.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 99,
+    "duration": "22:48"
+  },
+  {
+    "id": "pt-ep-98-arthur-schopenhauer",
+    "targetId": "arthur-schopenhauer",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #098 ... Schopenhauer pt. 1 - Metaphysics and Love",
+    "url": "https://philosophizethis.libsyn.com/episode-098-schopenhauer-pt-1-metaphysics-and-love",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Schopenhauer_Episode_1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 98,
+    "duration": "22:37"
+  }
+]

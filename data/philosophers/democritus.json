@@ -1,0 +1,22 @@
+{
+  "id": "democritus",
+  "name": "Democritus",
+  "birthYear": -460,
+  "deathYear": -370,
+  "eraId": "pre-socratic",
+  "traditionId": "atomism",
+  "shortBio": "The 'Laughing Philosopher' who pioneered the mechanical atomic theory of matter moving through void space.",
+  "centralQuestion": "Can macroscopic reality be reduced to indivisible physical units?",
+  "keyWorks": [
+    {
+      "title": "The Great Diakosmos",
+      "year": "460 BCE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Great%20Diakosmos",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Great%20Diakosmos",
+      "description": "Major work by Democritus."
+    }
+  ],
+  "sepSlug": "democritus",
+  "importanceScore": 70,
+  "imageUrl": "/portraits/democritus.jpg"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-38-gottfried-leibniz",
+    "targetId": "gottfried-leibniz",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #038 ... Leibniz pt. 2 - The Best of All Possible Worlds",
+    "url": "https://philosophizethis.libsyn.com/episode-038-leibniz-pt-2-the-best-of-all-possible-worlds",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_038_..._Leibniz_pt._2_-_The_Best_of_All_Possible_Worlds.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 38,
+    "duration": "27:45"
+  },
+  {
+    "id": "pt-ep-37-gottfried-leibniz",
+    "targetId": "gottfried-leibniz",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #037 ... Leibniz pt. 1 - A Million Points of Light",
+    "url": "https://philosophizethis.libsyn.com/episode-037-leibniz-pt-1-a-million-points-of-light",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_037_..._Leibniz_pt._1_-_A_Million_Points_of_Light.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 37,
+    "duration": "33:30"
+  }
+]

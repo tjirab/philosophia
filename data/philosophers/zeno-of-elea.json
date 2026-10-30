@@ -1,0 +1,22 @@
+{
+  "id": "zeno-of-elea",
+  "name": "Zeno of Elea",
+  "birthYear": -495,
+  "deathYear": -430,
+  "eraId": "pre-socratic",
+  "traditionId": "eleatic",
+  "shortBio": "Disciple of Parmenides who invented dialectical reductio ad absurdum and formulated celebrated paradoxes of motion and infinite divisibility.",
+  "centralQuestion": "How can motion and multiplicity be real if their mathematical premises yield insurmountable contradictions?",
+  "keyWorks": [
+    {
+      "title": "Paradoxes of Motion (Fragments)",
+      "year": "450 BCE",
+      "url": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Zeno%27s_paradoxes",
+      "description": "Formulation of Achilles and the Tortoise, the Dichotomy, the Arrow, and the Moving Rows."
+    }
+  ],
+  "sepSlug": "zeno-elea",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/zeno-of-elea.jpg"
+}

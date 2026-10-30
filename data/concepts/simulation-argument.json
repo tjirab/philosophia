@@ -1,0 +1,9 @@
+{
+  "id": "simulation-argument",
+  "title": "The Simulation Argument",
+  "branch": "metaphysics",
+  "eraId": "contemporary",
+  "introducedBy": "nick-bostrom",
+  "summary": "Trilemma showing that at least one proposition is true: civilizations go extinct before technological maturity, mature civilizations don't run ancestor simulations, or we almost certainly live in a simulation.",
+  "sepSlug": "simulations"
+}

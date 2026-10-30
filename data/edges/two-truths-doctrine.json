@@ -1,0 +1,16 @@
+[
+  {
+    "source": "two-truths-doctrine",
+    "target": "adi-shankara",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Directly inspired Śaṅkara's foundational Advaita distinction between transactional empirical truth (Vyavahārika) and ultimate transcendental truth (Pāramārthika)"
+  },
+  {
+    "source": "two-truths-doctrine",
+    "target": "jacques-derrida",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Parallels the deconstructive strategy of operating within inherited metaphysical structures while demonstrating their contingent and ungrounded nature"
+  }
+]

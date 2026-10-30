@@ -1,0 +1,36 @@
+{
+  "id": "gilles-deleuze",
+  "name": "Gilles Deleuze",
+  "birthYear": 1925,
+  "deathYear": 1995,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "shortBio": "Metaphysician of immanence and multiplicity; replaced arborescent (tree-like) hierarchical thinking with rhizomatic networks.",
+  "centralQuestion": "How can thought create new concepts based on difference rather than representation?",
+  "keyWorks": [
+    {
+      "title": "Difference and Repetition",
+      "year": "1925 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Difference%20and%20Repetition",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Difference%20and%20Repetition",
+      "description": "Major work by Gilles Deleuze."
+    },
+    {
+      "title": "Anti-Oedipus",
+      "year": "1925 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Anti-Oedipus",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Anti-Oedipus",
+      "description": "Major work by Gilles Deleuze."
+    },
+    {
+      "title": "A Thousand Plateaus",
+      "year": "1925 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=A%20Thousand%20Plateaus",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=A%20Thousand%20Plateaus",
+      "description": "Major work by Gilles Deleuze."
+    }
+  ],
+  "sepSlug": "deleuze",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/gilles-deleuze.jpg"
+}

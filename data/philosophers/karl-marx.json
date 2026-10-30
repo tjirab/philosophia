@@ -1,0 +1,37 @@
+{
+  "id": "karl-marx",
+  "name": "Karl Marx",
+  "birthYear": 1818,
+  "deathYear": 1883,
+  "eraId": "nineteenth-century",
+  "traditionId": "existentialism-early",
+  "shortBio": "Turned Hegel's dialectic on its head into historical materialism; analyzed class struggle, alienation, and capitalism's contradictions.",
+  "centralQuestion": "How do material economic conditions shape consciousness, and how can the working class emancipate humanity?",
+  "keyWorks": [
+    {
+      "title": "Das Kapital",
+      "year": "1867 CE",
+      "url": "https://www.marxists.org/archive/marx/works/1867-c1/",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Das_Kapital",
+      "isbn": "978-0140445688",
+      "description": "Critique of political economy, commodity fetishism, surplus value, and the mechanics of capitalist exploitation."
+    },
+    {
+      "title": "The Communist Manifesto",
+      "year": "1818 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Communist%20Manifesto",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Communist%20Manifesto",
+      "description": "Major work by Karl Marx."
+    },
+    {
+      "title": "Economic and Philosophic Manuscripts of 1844",
+      "year": "1818 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Economic%20and%20Philosophic%20Manuscripts%20of%201844",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Economic%20and%20Philosophic%20Manuscripts%20of%201844",
+      "description": "Major work by Karl Marx."
+    }
+  ],
+  "sepSlug": "marx",
+  "importanceScore": 98,
+  "imageUrl": "/portraits/karl-marx.jpg"
+}

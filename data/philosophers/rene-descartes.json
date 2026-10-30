@@ -1,0 +1,31 @@
+{
+  "id": "rene-descartes",
+  "name": "René Descartes",
+  "birthYear": 1596,
+  "deathYear": 1650,
+  "eraId": "early-modern",
+  "traditionId": "rationalism",
+  "shortBio": "Father of modern Western philosophy. Used radical methodical doubt to discover the bedrock certainty: 'Cogito, ergo sum'.",
+  "centralQuestion": "What can be known with absolute epistemological certainty?",
+  "keyWorks": [
+    {
+      "title": "Meditations on First Philosophy",
+      "year": "1641 CE",
+      "url": "https://www.gutenberg.org/ebooks/59",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Meditations_on_First_Philosophy",
+      "isbn": "978-0521558181",
+      "description": "Descartes' radical doubt, the Cogito, proof of God, and mind-body substance dualism."
+    },
+    {
+      "title": "Discourse on the Method",
+      "year": "1637 CE",
+      "url": "https://www.gutenberg.org/ebooks/59",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Discourse_on_the_Method",
+      "isbn": "978-0199540075",
+      "description": "Autobiographical treatise introducing Cartesian skepticism and the scientific method."
+    }
+  ],
+  "sepSlug": "descartes",
+  "importanceScore": 99,
+  "imageUrl": "/portraits/rene-descartes.jpg"
+}

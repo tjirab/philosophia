@@ -1,0 +1,16 @@
+[
+  {
+    "source": "will-to-power",
+    "target": "michel-foucault",
+    "type": "DEVELOPED",
+    "label": "Foucault adapted Nietzschean will to power into ubiquitous disciplinary power-knowledge matrices",
+    "strength": 5
+  },
+  {
+    "source": "will-to-power",
+    "target": "albert-camus",
+    "type": "INFLUENCED",
+    "label": "Inspired Camus heroic lucidity and metaphysical revolt against nihilism",
+    "strength": 4
+  }
+]

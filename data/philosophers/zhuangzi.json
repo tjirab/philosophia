@@ -1,0 +1,22 @@
+{
+  "id": "zhuangzi",
+  "name": "Zhuangzi (Chuang Tzu)",
+  "birthYear": -369,
+  "deathYear": -286,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Master Daoist sage whose parables, linguistic skepticism, and butterfly dream developed radical perspectivism, spiritual freedom, and effortless unity with the Dao.",
+  "centralQuestion": "How can human consciousness transcend rigid dualisms of right and wrong to wander freely in spontaneous harmony with nature?",
+  "keyWorks": [
+    {
+      "title": "Zhuangzi (The Inner Chapters)",
+      "year": "300 BCE",
+      "url": "https://en.wikipedia.org/wiki/Zhuangzi_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Zhuangzi_(book)",
+      "description": "Foundational Daoist text celebrated for its philosophical depth, literary wit, and the Butterfly Dream."
+    }
+  ],
+  "sepSlug": "zhuangzi",
+  "importanceScore": 94,
+  "imageUrl": "/portraits/zhuangzi.jpg"
+}

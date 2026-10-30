@@ -1,0 +1,23 @@
+{
+  "id": "marcus-aurelius",
+  "name": "Marcus Aurelius",
+  "birthYear": 121,
+  "deathYear": 180,
+  "eraId": "hellenistic",
+  "traditionId": "stoicism",
+  "shortBio": "Roman Emperor and last of the Five Good Emperors. Recorded private journal meditations on duty, death, and cosmological solidarity.",
+  "centralQuestion": "How does one rule an empire while keeping the soul uncorrupted and aligned with nature?",
+  "keyWorks": [
+    {
+      "title": "Meditations",
+      "year": "175 CE",
+      "url": "https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Meditations",
+      "isbn": "978-0812968255",
+      "description": "Private spiritual journal of Roman Emperor Marcus Aurelius on duty, nature, and virtue."
+    }
+  ],
+  "sepSlug": "marcus-aurelius",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/marcus-aurelius.jpg"
+}

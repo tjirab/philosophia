@@ -1,0 +1,22 @@
+{
+  "id": "thales",
+  "name": "Thales of Miletus",
+  "birthYear": -624,
+  "deathYear": -546,
+  "eraId": "pre-socratic",
+  "traditionId": "milesian",
+  "shortBio": "Considered the first Western philosopher, proposing naturalistic explanations for the cosmos rather than mythical ones.",
+  "centralQuestion": "What is the primary substance (arche) underlying all change?",
+  "keyWorks": [
+    {
+      "title": "On the Solstice and Equinox",
+      "year": "624 BCE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Solstice%20and%20Equinox",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Solstice%20and%20Equinox",
+      "description": "Major work by Thales of Miletus."
+    }
+  ],
+  "sepSlug": "presocratics",
+  "importanceScore": 60,
+  "imageUrl": "/portraits/thales.jpg"
+}

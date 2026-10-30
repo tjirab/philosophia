@@ -1,0 +1,46 @@
+[
+  {
+    "id": "pt-ep-55-aristotle",
+    "targetId": "aristotle",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #055 ... Interview on Hume with Massimo Pigliucci",
+    "url": "https://philosophizethis.libsyn.com/episode-054-interview-on-hume-with-massimo-pigliucci",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_055_..._Interview_on_Hume_with_Massimo_Pigliucci.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 55,
+    "duration": "30:35"
+  },
+  {
+    "id": "pt-ep-21-aristotle",
+    "targetId": "aristotle",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #021 ... One God - St. Thomas Aquinas",
+    "url": "https://philosophizethis.libsyn.com/episode-021-one-god-st-thomas-aquinas",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_021_..._One_God_-_St._Thomas_Aquinas.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 21,
+    "duration": "26:22"
+  },
+  {
+    "id": "pt-ep-6-aristotle",
+    "targetId": "aristotle",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #006 ... Aristotle Pt. 2",
+    "url": "https://philosophizethis.libsyn.com/episode-006-aristotle-pt-2",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_006_..._Aristotle_Pt._2.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 6,
+    "duration": "39:18"
+  },
+  {
+    "id": "pt-ep-5-aristotle",
+    "targetId": "aristotle",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #005 ... Aristotle Pt. 1",
+    "url": "https://philosophizethis.libsyn.com/episode-005-aristotle-pt-1",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_005_..._Aristotle_Pt._1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 5,
+    "duration": "38:53"
+  }
+]

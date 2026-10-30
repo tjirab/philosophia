@@ -1,0 +1,16 @@
+[
+  {
+    "source": "zenos-paradoxes",
+    "target": "aristotle",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Refuted by Aristotle's continuum physics"
+  },
+  {
+    "source": "zenos-paradoxes",
+    "target": "democritus",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Resolved via physical atomism"
+  }
+]

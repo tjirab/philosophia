@@ -1,0 +1,16 @@
+[
+  {
+    "source": "jean-baudrillard",
+    "target": "simulacra-and-hyperreality",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the four orders of simulacra and the concept of hyperreality in Simulacra and Simulation"
+  },
+  {
+    "source": "jean-baudrillard",
+    "target": "byung-chul-han",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Influenced Han's critique of hyper-communication, digital transparency, and the vanishing of otherness in late capitalism"
+  }
+]

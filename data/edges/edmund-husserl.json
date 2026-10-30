@@ -1,0 +1,30 @@
+[
+  {
+    "source": "edmund-husserl",
+    "target": "martin-heidegger",
+    "type": "DEVELOPED",
+    "label": "Heidegger shifted Husserlian consciousness phenomenology to fundamental ontology of Dasein",
+    "strength": 5
+  },
+  {
+    "source": "edmund-husserl",
+    "target": "intentionality-epoche",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Intentionality & Phenomenological Reduction (Epoché)",
+    "strength": 5
+  },
+  {
+    "source": "edmund-husserl",
+    "target": "maurice-merleau-ponty",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Transformed Husserlian phenomenology into study of somatic embodiment"
+  },
+  {
+    "source": "edmund-husserl",
+    "target": "emmanuel-levinas",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Introduced Husserlian phenomenology to France while transcending its ego-centrism"
+  }
+]

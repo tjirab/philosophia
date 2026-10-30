@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-62-augustine",
+    "targetId": "augustine",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #062 ... Kant pt. 7 - Suicide",
+    "url": "https://philosophizethis.libsyn.com/episode-062-kant-pt-7-suicide",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_062_..._Kant_pt._8.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 62,
+    "duration": "33:20"
+  },
+  {
+    "id": "pt-ep-16-augustine",
+    "targetId": "augustine",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #016 ... Saint Augustine",
+    "url": "https://philosophizethis.libsyn.com/episode-016-saint-augustine",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_016_..._Saint_Augustine.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 16,
+    "duration": "30:15"
+  }
+]

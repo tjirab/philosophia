@@ -1,0 +1,29 @@
+{
+  "id": "nick-bostrom",
+  "name": "Nick Bostrom",
+  "birthYear": 1973,
+  "eraId": "contemporary",
+  "traditionId": "analytic",
+  "shortBio": "Contemporary philosopher known for foundational work on existential risk, the simulation argument, and artificial intelligence safety.",
+  "centralQuestion": "Are we living in a computer simulation, and how can humanity navigate catastrophic technological risk?",
+  "keyWorks": [
+    {
+      "title": "Superintelligence: Paths, Dangers, Strategies",
+      "year": "2014 CE",
+      "url": "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies",
+      "isbn": "978-0199678112",
+      "description": "Foundational treatise on existential risk, artificial general intelligence trajectory, and value alignment."
+    },
+    {
+      "title": "The Simulation Argument",
+      "year": "1973 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Simulation%20Argument",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Simulation%20Argument",
+      "description": "Major work by Nick Bostrom."
+    }
+  ],
+  "sepSlug": "ethics-ai",
+  "importanceScore": 82,
+  "imageUrl": "/portraits/nick-bostrom.jpg"
+}

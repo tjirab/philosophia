@@ -1,0 +1,16 @@
+[
+  {
+    "source": "mencius",
+    "target": "innate-goodness",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the foundational doctrine of Xing Shan (innate goodness of human nature)"
+  },
+  {
+    "source": "mencius",
+    "target": "zhuangzi",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Engaged in Warring States dialectic over human nature, spontaneous instinct, and the artificiality of moral rituals"
+  }
+]

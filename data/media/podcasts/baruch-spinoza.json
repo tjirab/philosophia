@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-34-baruch-spinoza",
+    "targetId": "baruch-spinoza",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #034 ... Spinoza pt. 2 - Force of Nature",
+    "url": "https://philosophizethis.libsyn.com/episode-034-spinoza-pt-2-force-of-nature",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_034_..._Spinoza_pt._2_-_Force_of_Nature.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 34,
+    "duration": "28:51"
+  },
+  {
+    "id": "pt-ep-33-baruch-spinoza",
+    "targetId": "baruch-spinoza",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #033 ... Spinoza pt. 1 - From Baruch to Benedicto",
+    "url": "https://philosophizethis.libsyn.com/episode-033-spinoza-pt-1-from-baruch-to-benedicto",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_033_..._Spinoza_pt._1_-_From_Baruch_to_Benedicto.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 33,
+    "duration": "30:22"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "transcendental-idealism",
+    "target": "arthur-schopenhauer",
+    "type": "DEVELOPED",
+    "label": "Schopenhauer preserved Kantian transcendental idealism while unveiling the thing-in-itself as Will",
+    "strength": 5
+  },
+  {
+    "source": "transcendental-idealism",
+    "target": "gwf-hegel",
+    "type": "DEVELOPED",
+    "label": "Hegel overcame the Kantian boundary between phenomena and noumena via dialectical spirit",
+    "strength": 5
+  }
+]

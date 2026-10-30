@@ -1,0 +1,16 @@
+[
+  {
+    "source": "tabula-rasa",
+    "target": "gottfried-leibniz",
+    "type": "CRITIQUED",
+    "label": "Leibniz defended innate ideas: Nothing in the intellect without senses, except intellect itself",
+    "strength": 5
+  },
+  {
+    "source": "tabula-rasa",
+    "target": "george-berkeley",
+    "type": "DEVELOPED",
+    "label": "Berkeley radicalized Locke empiricism into immaterialist idealism (esse est percipi)",
+    "strength": 4
+  }
+]

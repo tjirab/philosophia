@@ -1,0 +1,16 @@
+[
+  {
+    "source": "arthur-schopenhauer",
+    "target": "friedrich-nietzsche",
+    "type": "DEVELOPED",
+    "label": "Transformed Schopenhauer's passive Will to Live into active, life-affirming Will to Power",
+    "strength": 5
+  },
+  {
+    "source": "arthur-schopenhauer",
+    "target": "world-as-will",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The World as Will & Metaphysical Pessimism",
+    "strength": 5
+  }
+]

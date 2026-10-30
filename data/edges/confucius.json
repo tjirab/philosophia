@@ -1,0 +1,23 @@
+[
+  {
+    "source": "confucius",
+    "target": "ren-and-li",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated core virtue matrix of benevolence and ritual propriety"
+  },
+  {
+    "source": "confucius",
+    "target": "siddhartha-gautama",
+    "type": "SYNTHESIZED",
+    "strength": 3,
+    "label": "Parallel Axial Age moral ethics of righteous conduct and social order"
+  },
+  {
+    "source": "confucius",
+    "target": "mencius",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Revered as the 'Second Sage', Mencius defended, extended, and systematized Confucius' moral philosophy across Warring States China"
+  }
+]

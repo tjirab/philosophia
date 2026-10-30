@@ -1,0 +1,23 @@
+[
+  {
+    "source": "zeno-of-elea",
+    "target": "democritus",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Paradoxes of infinite divisibility spurred atomist postulate of indivisible units"
+  },
+  {
+    "source": "zeno-of-elea",
+    "target": "aristotle",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Aristotle developed potential vs actual infinity in Physics to resolve Zeno's paradoxes"
+  },
+  {
+    "source": "zeno-of-elea",
+    "target": "zenos-paradoxes",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated paradoxes of motion and plurality"
+  }
+]

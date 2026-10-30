@@ -1,0 +1,16 @@
+[
+  {
+    "source": "laozi",
+    "target": "confucius",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Classical Chinese dialogue between spontaneous Dao and cultivated ritual harmony"
+  },
+  {
+    "source": "laozi",
+    "target": "zhuangzi",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Elaborated Laozi's cosmological Dao into radical parables and perspectivism"
+  }
+]

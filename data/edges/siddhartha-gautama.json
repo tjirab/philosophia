@@ -1,0 +1,30 @@
+[
+  {
+    "source": "siddhartha-gautama",
+    "target": "arthur-schopenhauer",
+    "type": "SYNTHESIZED",
+    "label": "Integrated Buddhist Noble Truths and cessation of desire into Western metaphysics",
+    "strength": 4
+  },
+  {
+    "source": "siddhartha-gautama",
+    "target": "derek-parfit",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Parfit explicitly identified his reductionism with Buddhist Anatta (no-self)"
+  },
+  {
+    "source": "siddhartha-gautama",
+    "target": "adi-shankara",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Engaged with Buddhist dialectics and the doctrine of non-self (Anatta) to formulate orthodox non-dual Advaita Vedanta (Atman is Brahman)"
+  },
+  {
+    "source": "siddhartha-gautama",
+    "target": "nagarjuna",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Systematized the Buddha's core insights of Pratītyasamutpāda (dependent origination) and Anatta into the radical dialectic of Madhyamaka emptiness"
+  }
+]

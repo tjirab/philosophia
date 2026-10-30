@@ -1,0 +1,29 @@
+{
+  "id": "jeremy-bentham",
+  "name": "Jeremy Bentham",
+  "birthYear": 1748,
+  "deathYear": 1832,
+  "eraId": "enlightenment",
+  "traditionId": "utilitarianism",
+  "shortBio": "English philosopher, jurist, and social reformer who formulated classical utilitarianism, defining moral rightness by the principle of utility and the maximization of net pleasure over pain.",
+  "centralQuestion": "Can human morality and legislation be rationally organized around a single objective metric: the greatest happiness of the greatest number?",
+  "keyWorks": [
+    {
+      "title": "An Introduction to the Principles of Morals and Legislation",
+      "year": "1789",
+      "url": "https://www.utilitarianism.com/jeremy-bentham/index.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/An_Introduction_to_the_Principles_of_Morals_and_Legislation",
+      "description": "Seminal text founding classical utilitarianism, articulating the principle of utility, psychological hedonism, and the felicific calculus."
+    },
+    {
+      "title": "Panopticon; or, The Inspection-House",
+      "year": "1791",
+      "url": "https://en.wikipedia.org/wiki/Panopticon",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Panopticon",
+      "description": "Architectural and penal proposal exploring surveillance, disciplinary power, and behavioral modification."
+    }
+  ],
+  "sepSlug": "bentham",
+  "importanceScore": 94,
+  "imageUrl": "/portraits/jeremy-bentham.jpg"
+}

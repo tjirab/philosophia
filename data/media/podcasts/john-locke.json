@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-36-john-locke",
+    "targetId": "john-locke",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #036 ... John Locke pt. 2 - The Blank Slate",
+    "url": "https://philosophizethis.libsyn.com/episode-036-john-locke-pt-2-the-blank-slate",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_036_..._John_Locke_pt._2_-_The_Blank_Slate.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 36,
+    "duration": "29:05"
+  },
+  {
+    "id": "pt-ep-35-john-locke",
+    "targetId": "john-locke",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #035 ... John Locke pt. 1",
+    "url": "https://philosophizethis.libsyn.com/episode-035-john-locke-pt-1-from-sea-to-shining-sea",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_035_..._John_Locke_pt._1_-_From_Sea_to_Shining_Sea.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 35,
+    "duration": "31:50"
+  }
+]

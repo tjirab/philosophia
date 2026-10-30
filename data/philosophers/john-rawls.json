@@ -1,0 +1,30 @@
+{
+  "id": "john-rawls",
+  "name": "John Rawls",
+  "birthYear": 1921,
+  "deathYear": 2002,
+  "eraId": "contemporary",
+  "traditionId": "analytic",
+  "shortBio": "Revitalized political philosophy with 'justice as fairness', proposing principles chosen behind an impartial 'veil of ignorance'.",
+  "centralQuestion": "What principles of social justice would rational equals choose in an unbiased original position?",
+  "keyWorks": [
+    {
+      "title": "A Theory of Justice",
+      "year": "1971 CE",
+      "url": "https://en.wikipedia.org/wiki/A_Theory_of_Justice",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Theory_of_Justice",
+      "isbn": "978-0674000780",
+      "description": "Revitalized political philosophy with 'justice as fairness' chosen behind the veil of ignorance."
+    },
+    {
+      "title": "Political Liberalism",
+      "year": "1921 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Political%20Liberalism",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Political%20Liberalism",
+      "description": "Major work by John Rawls."
+    }
+  ],
+  "sepSlug": "rawls",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/john-rawls.jpg"
+}

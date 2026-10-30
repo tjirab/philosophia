@@ -1,0 +1,44 @@
+[
+  {
+    "source": "nagarjuna",
+    "target": "sunyata-emptiness",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Sunyata (Emptiness & Dependent Arising)",
+    "strength": 5
+  },
+  {
+    "source": "nagarjuna",
+    "target": "two-truths-doctrine",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Two Truths doctrine (conventional vs. ultimate truth) to resolve the apparent paradox between emptiness and empirical causality"
+  },
+  {
+    "source": "nagarjuna",
+    "target": "adi-shankara",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Śaṅkara adopted Nāgārjuna's negative dialectical method while rejecting Śūnyatā as crypto-nihilism, positing immutable Brahman as the transcendent witness behind illusion (Māyā)"
+  },
+  {
+    "source": "nagarjuna",
+    "target": "jacques-derrida",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Nāgārjuna's deconstruction of intrinsic essence (svabhāva) anticipated Derrida's deconstruction of the metaphysics of presence and origin"
+  },
+  {
+    "source": "nagarjuna",
+    "target": "ludwig-wittgenstein",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Parallel therapeutic methods: Nāgārjuna used dialectic to dissolve metaphysical dogmas just as Wittgenstein sought to dissolve language-bewitchment"
+  },
+  {
+    "source": "nagarjuna",
+    "target": "arthur-schopenhauer",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Schopenhauer explicitly acknowledged Madhyamaka and Buddhist emptiness as the historical counterpart to his metaphysics of the denial of the Will"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "id": "ludwig-feuerbach",
+  "name": "Ludwig Feuerbach",
+  "birthYear": 1804,
+  "deathYear": 1872,
+  "eraId": "nineteenth-century",
+  "traditionId": "existentialism-early",
+  "shortBio": "Young Hegelian philosopher and materialist whose critique of religion as human self-alienation directly catalyzed Marx's historical materialism and secular humanism.",
+  "centralQuestion": "Is theology anything more than humanity's alienated projection of its own species-essence into an imaginary heaven?",
+  "keyWorks": [
+    {
+      "title": "The Essence of Christianity (Das Wesen des Christentums)",
+      "year": "1841",
+      "url": "https://en.wikipedia.org/wiki/The_Essence_of_Christianity",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Essence_of_Christianity",
+      "description": "Landmark critique demonstrating that the divine is a projection of alienated human consciousness."
+    },
+    {
+      "title": "Principles of the Philosophy of the Future",
+      "year": "1843",
+      "url": "https://en.wikipedia.org/wiki/Principles_of_the_Philosophy_of_the_Future",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Principles_of_the_Philosophy_of_the_Future",
+      "description": "Radical materialist manifesto advocating sensory embodiment, dialogical I-Thou relation, and naturalism."
+    }
+  ],
+  "sepSlug": "ludwig-feuerbach",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/ludwig-feuerbach.jpg"
+}

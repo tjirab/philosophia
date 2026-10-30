@@ -1,0 +1,16 @@
+[
+  {
+    "source": "theodor-adorno",
+    "target": "jurgen-habermas",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Succeeded Frankfurt School first generation, rebuilding rationality via communicative action"
+  },
+  {
+    "source": "theodor-adorno",
+    "target": "jean-baudrillard",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Extended Adorno's critique of the culture industry into an analysis of pervasive mass-media simulation"
+  }
+]

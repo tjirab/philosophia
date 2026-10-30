@@ -1,0 +1,30 @@
+[
+  {
+    "source": "max-horkheimer",
+    "target": "instrumental-reason",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the critique of subjective instrumental reason in Eclipse of Reason and Dialectic of Enlightenment"
+  },
+  {
+    "source": "max-horkheimer",
+    "target": "theodor-adorno",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Co-authored Dialectic of Enlightenment, fusing social theory, philosophical critique, and psychoanalysis to analyze the culture industry"
+  },
+  {
+    "source": "max-horkheimer",
+    "target": "jurgen-habermas",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Directly influenced Habermas at the Frankfurt Institute, who later sought to reconstruct Critical Theory on communicative rather than instrumental grounds"
+  },
+  {
+    "source": "max-horkheimer",
+    "target": "herbert-marcuse",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Recruited Marcuse to the Institute for Social Research in 1933, collaboratively developing Critical Theory and the critique of modern authority"
+  }
+]

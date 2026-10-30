@@ -1,0 +1,36 @@
+{
+  "id": "byung-chul-han",
+  "name": "Byung-Chul Han",
+  "birthYear": 1959,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "shortBio": "German-Korean contemporary philosopher diagnosing digital burnout, self-exploitation, hyper-transparency, and the erosion of ritual.",
+  "centralQuestion": "How does the neoliberal achievement society turn freedom into self-enslavement and fatigue?",
+  "keyWorks": [
+    {
+      "title": "The Burnout Society",
+      "year": "2010 CE",
+      "url": "https://en.wikipedia.org/wiki/Byung-Chul_Han",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Byung-Chul_Han",
+      "isbn": "978-0804795098",
+      "description": "Contemporary critique of the neoliberal achievement society where freedom transforms into compulsive self-exploitation."
+    },
+    {
+      "title": "The Agony of Eros",
+      "year": "1959 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Agony%20of%20Eros",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Agony%20of%20Eros",
+      "description": "Major work by Byung-Chul Han."
+    },
+    {
+      "title": "The Disappearance of Rituals",
+      "year": "1959 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Disappearance%20of%20Rituals",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Disappearance%20of%20Rituals",
+      "description": "Major work by Byung-Chul Han."
+    }
+  ],
+  "sepSlug": "culture-cogsci",
+  "importanceScore": 86,
+  "imageUrl": "/portraits/byung-chul-han.jpg"
+}

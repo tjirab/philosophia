@@ -1,0 +1,65 @@
+[
+  {
+    "source": "aristotle",
+    "target": "avicenna",
+    "type": "DEVELOPED",
+    "label": "Expanded Aristotelian metaphysics in the Islamic world with the essence/existence distinction",
+    "strength": 4
+  },
+  {
+    "source": "aristotle",
+    "target": "averroes",
+    "type": "DEVELOPED",
+    "label": "Wrote comprehensive commentaries restoring authentic Aristotelian thought",
+    "strength": 4
+  },
+  {
+    "source": "aristotle",
+    "target": "thomas-aquinas",
+    "type": "SYNTHESIZED",
+    "label": "Harmonized Christian theology with Aristotelian philosophy into high Scholasticism",
+    "strength": 5
+  },
+  {
+    "source": "aristotle",
+    "target": "francis-bacon",
+    "type": "CRITIQUED",
+    "label": "Replaced Aristotelian deductive syllogisms with empirical inductive science",
+    "strength": 4
+  },
+  {
+    "source": "aristotle",
+    "target": "teleology-four-causes",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Teleology & The Four Causes",
+    "strength": 5
+  },
+  {
+    "source": "aristotle",
+    "target": "eudaimonia-virtue",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Eudaimonia & The Golden Mean",
+    "strength": 5
+  },
+  {
+    "source": "aristotle",
+    "target": "boethius",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Translated and commented on Aristotle's Organon, creating the Logica Vetus for medieval Europe"
+  },
+  {
+    "source": "aristotle",
+    "target": "montesquieu",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Adapted Aristotle's constitutional classifications and mixed government into modern political sociology"
+  },
+  {
+    "source": "aristotle",
+    "target": "machiavelli",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Adapted Aristotle's political realism and constitutional taxonomy from the Politics into pragmatic Renaissance statecraft"
+  }
+]

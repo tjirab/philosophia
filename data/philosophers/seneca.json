@@ -1,0 +1,39 @@
+{
+  "id": "seneca",
+  "name": "Lucius Annaeus Seneca",
+  "birthYear": -4,
+  "deathYear": 65,
+  "eraId": "hellenistic",
+  "traditionId": "stoicism",
+  "shortBio": "Roman Stoic statesman, playwright, and advisor to Nero. Wrote profoundly practical treatises on anger, brevity of life, and resilience.",
+  "centralQuestion": "How do we live with dignity and serenity amid political chaos and mortality?",
+  "keyWorks": [
+    {
+      "title": "Letters from a Stoic (Epistulae Morales)",
+      "year": "65 CE",
+      "url": "https://en.wikisource.org/wiki/Moral_letters_to_Lucilius",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Epistulae_Morales_ad_Lucilium",
+      "isbn": "978-0140442106",
+      "description": "124 letters advising Lucilius on practical Stoic wisdom, overcoming fear of death, and resilience."
+    },
+    {
+      "title": "On the Shortness of Life",
+      "year": "49 CE",
+      "url": "https://en.wikisource.org/wiki/On_the_shortness_of_life",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/De_Brevitate_Vitae_(Seneca)",
+      "isbn": "978-0143036326",
+      "description": "Essay asserting life is long if spent wisely, but short if squandered on frivolous ambition."
+    },
+    {
+      "title": "On Anger",
+      "year": "41 CE",
+      "url": "https://en.wikisource.org/wiki/Of_Anger",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/De_Ira",
+      "isbn": "978-0226748412",
+      "description": "Stoic psychological analysis of anger as temporary madness and how reason can extinguish it."
+    }
+  ],
+  "sepSlug": "seneca",
+  "importanceScore": 85,
+  "imageUrl": "/portraits/seneca.jpg"
+}

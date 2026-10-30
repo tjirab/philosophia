@@ -1,0 +1,22 @@
+{
+  "id": "emmanuel-levinas",
+  "name": "Emmanuel Levinas",
+  "birthYear": 1906,
+  "deathYear": 1995,
+  "eraId": "twentieth-century",
+  "traditionId": "post-structuralism",
+  "shortBio": "French-Lithuanian philosopher who established ethics as First Philosophy, locating transcendence in the non-negotiable vulnerability and infinite demand of the Face of the Other.",
+  "centralQuestion": "Why is our ethical responsibility to the Face of the Other prior to ontology, cognition, and selfhood?",
+  "keyWorks": [
+    {
+      "title": "Totality and Infinity",
+      "year": "1961",
+      "url": "https://en.wikipedia.org/wiki/Totality_and_Infinity",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Totality_and_Infinity",
+      "description": "Masterwork arguing that ethics precedes ontology through the transcendent encounter with the Other."
+    }
+  ],
+  "sepSlug": "levinas",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/emmanuel-levinas.jpg"
+}

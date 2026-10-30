@@ -1,0 +1,46 @@
+[
+  {
+    "id": "pt-ep-82-karl-marx",
+    "targetId": "karl-marx",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #082 ... Austrians and Marx",
+    "url": "https://philosophizethis.libsyn.com/082-austrians-and-marx",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_082_..._Austrians_and_Marx_final.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 82,
+    "duration": "25:36"
+  },
+  {
+    "id": "pt-ep-81-karl-marx",
+    "targetId": "karl-marx",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #081 ... Capitalism vs. Communism",
+    "url": "https://philosophizethis.libsyn.com/episode-081-capitalism-vs-communism",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_081_Capitalism_vs_Communism.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 81,
+    "duration": "24:35"
+  },
+  {
+    "id": "pt-ep-78-karl-marx",
+    "targetId": "karl-marx",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #078 ... Marx and Kierkegaard on Religion pt. 2",
+    "url": "https://philosophizethis.libsyn.com/078-marx-and-kierkegaard-on-religion-pt-2",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/kierkegaard.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 78,
+    "duration": "25:24"
+  },
+  {
+    "id": "pt-ep-77-karl-marx",
+    "targetId": "karl-marx",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #077 ... Marx and Kierkegaard on Religion pt. 1",
+    "url": "https://philosophizethis.libsyn.com/077-marx-and-kierkegaard-on-religion-pt-1",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Marx_On_Religion.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 77,
+    "duration": "27:17"
+  }
+]

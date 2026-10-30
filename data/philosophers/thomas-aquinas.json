@@ -1,0 +1,30 @@
+{
+  "id": "thomas-aquinas",
+  "name": "Thomas Aquinas",
+  "birthYear": 1225,
+  "deathYear": 1274,
+  "eraId": "medieval",
+  "traditionId": "scholasticism",
+  "shortBio": "Dominican friar and prince of Scholasticism. Harmonized Christian revelation with Aristotle; formulated the Five Ways to prove God's existence.",
+  "centralQuestion": "How do faith and reason cooperate in the pursuit of ultimate truth?",
+  "keyWorks": [
+    {
+      "title": "Summa Theologiae",
+      "year": "1274 CE",
+      "url": "https://www.newadvent.org/summa/",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Summa_Theologiae",
+      "isbn": "978-0870610639",
+      "description": "Aquinas's masterwork of medieval scholasticism, containing the Five Ways to demonstrate God's existence."
+    },
+    {
+      "title": "Summa contra Gentiles",
+      "year": "1225 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Summa%20contra%20Gentiles",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Summa%20contra%20Gentiles",
+      "description": "Major work by Thomas Aquinas."
+    }
+  ],
+  "sepSlug": "aquinas",
+  "importanceScore": 96,
+  "imageUrl": "/portraits/thomas-aquinas.jpg"
+}

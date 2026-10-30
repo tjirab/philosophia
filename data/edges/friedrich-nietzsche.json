@@ -1,0 +1,44 @@
+[
+  {
+    "source": "friedrich-nietzsche",
+    "target": "albert-camus",
+    "type": "INFLUENCED",
+    "label": "Affirmation of life and heroic revolt against nihilism",
+    "strength": 4
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "michel-foucault",
+    "type": "INFLUENCED",
+    "label": "Genealogical method adapted to examine institutions of power, sanity, and sexuality",
+    "strength": 5
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "will-to-power",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Will to Power & Revaluation of Values",
+    "strength": 5
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "eternal-recurrence",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Eternal Recurrence & Amor Fati",
+    "strength": 5
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "jean-baudrillard",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Adopted Nietzsche's fable of the 'true world' to diagnose the fatal disappearance of metaphysical reality"
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "alenka-zupancic",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Zupančič reinterprets Nietzsche's philosophy of the Two and critique of the ascetic ideal, arguing truth is an explosive event rather than mere perspectivism"
+  }
+]

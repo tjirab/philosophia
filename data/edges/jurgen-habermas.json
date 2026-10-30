@@ -1,0 +1,16 @@
+[
+  {
+    "source": "jurgen-habermas",
+    "target": "communicative-action",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Seminal theory of communicative rationality and uncoerced discourse"
+  },
+  {
+    "source": "jurgen-habermas",
+    "target": "john-rawls",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Celebrated debate reconciling communicative discourse with political liberalism"
+  }
+]

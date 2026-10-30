@@ -1,0 +1,16 @@
+[
+  {
+    "source": "separation-of-powers",
+    "target": "jean-jacques-rousseau",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Rousseau challenged divided powers, arguing for the indivisible sovereignty of the General Will"
+  },
+  {
+    "source": "separation-of-powers",
+    "target": "john-rawls",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Underpins the institutional design of basic democratic liberties and constitutional justice in A Theory of Justice"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "charles-sanders-peirce",
+  "name": "Charles Sanders Peirce",
+  "birthYear": 1839,
+  "deathYear": 1914,
+  "eraId": "nineteenth-century",
+  "traditionId": "pragmatism",
+  "shortBio": "American logician, scientist, and founder of Pragmatism who established modern triadic semiotics, scientific fallibilism, and the pragmatic maxim.",
+  "centralQuestion": "How do the conceivable practical effects of an object constitute our entire conception of that object?",
+  "keyWorks": [
+    {
+      "title": "How to Make Our Ideas Clear",
+      "year": "1878",
+      "url": "https://en.wikipedia.org/wiki/How_to_Make_Our_Ideas_Clear",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/How_to_Make_Our_Ideas_Clear",
+      "description": "Seminal essay defining the pragmatic maxim and the community theory of truth."
+    }
+  ],
+  "sepSlug": "peirce",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/charles-sanders-peirce.jpg"
+}
