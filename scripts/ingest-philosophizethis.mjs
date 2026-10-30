@@ -59,6 +59,7 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'ludwig-wittgenstein', patterns: [/\bwittgenstein\b/i, /\btractatus\b/i, /\blanguage game\b/i] },
   { id: 'bertrand-russell', patterns: [/\brussell\b/i, /\bprincipia\b/i] },
   { id: 'karl-popper', patterns: [/\bpopper\b/i, /\bfalsifi\b/i] },
+  { id: 'ferdinand-de-saussure', patterns: [/\bsaussure\b/i, /\bsemiotics\b/i, /\bstructuralism\b/i] },
   { id: 'theodor-adorno', patterns: [/\badorno\b/i, /\bfrankfurt school\b/i, /\bhorkheimer\b/i] },
   { id: 'michel-foucault', patterns: [/\bfoucault\b/i, /\bpanopticon\b/i, /\bdiscipline and punish\b/i] },
   { id: 'jacques-derrida', patterns: [/\bderrida\b/i, /\bdeconstruction\b/i] },

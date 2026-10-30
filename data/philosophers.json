@@ -1308,6 +1308,35 @@
     "imageUrl": "/portraits/william-james.jpg"
   },
   {
+    "id": "ferdinand-de-saussure",
+    "name": "Ferdinand de Saussure",
+    "birthYear": 1857,
+    "deathYear": 1913,
+    "eraId": "twentieth-century",
+    "traditionId": "structuralism",
+    "shortBio": "Swiss linguist and philosopher recognized as the founder of modern linguistics and semiology. Established that linguistic signs are arbitrary and meaning emerges from differential relations within a closed system.",
+    "centralQuestion": "How do arbitrary linguistic signs generate meaning purely through differences within a formal system rather than reference to external reality?",
+    "keyWorks": [
+      {
+        "title": "Course in General Linguistics",
+        "year": "1916",
+        "url": "https://en.wikipedia.org/wiki/Course_in_General_Linguistics",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Course_in_General_Linguistics",
+        "description": "Foundational text of structuralism and semiology, establishing the distinction between langue and parole, and the signifier and signified."
+      },
+      {
+        "title": "Memoir on the Primitive System of Vowels in the Indo-European Languages",
+        "year": "1878",
+        "url": "https://en.wikipedia.org/wiki/Ferdinand_de_Saussure",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Ferdinand_de_Saussure",
+        "description": "Groundbreaking comparative philological work reconstructing Proto-Indo-European vowel systems using structural algebraic methods."
+      }
+    ],
+    "sepSlug": "linguistics",
+    "importanceScore": 92,
+    "imageUrl": "/portraits/ferdinand-de-saussure.jpg"
+  },
+  {
     "id": "edmund-husserl",
     "name": "Edmund Husserl",
     "birthYear": 1859,

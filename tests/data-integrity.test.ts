@@ -178,6 +178,11 @@ describe('Philosophy Graph Data Integrity', () => {
     const baudrillardToBostrom = findInfluencePath('jean-baudrillard', 'nick-bostrom', edgesData as any);
     expect(baudrillardToBostrom.found).toBe(true);
 
+    // Kant -> Saussure -> Semiology
+    const kantToSemiology = findInfluencePath('immanuel-kant', 'semiology-signifier-signified', edgesData as any);
+    expect(kantToSemiology.found).toBe(true);
+    expect(kantToSemiology.nodes).toContain('ferdinand-de-saussure');
+
     // David Hume -> Adam Smith -> Karl Marx
     const humeToMarx = findInfluencePath('david-hume', 'karl-marx', edgesData as any);
     expect(humeToMarx.found).toBe(true);

@@ -22,5 +22,6 @@
   { "id": "existentialism", "name": "Existentialism", "eraId": "twentieth-century", "color": "#4a4e69", "description": "Existence precedes essence: radical freedom, anxiety, bad faith, and the creation of personal meaning." },
   { "id": "analytic", "name": "Analytic Philosophy & Logic", "eraId": "twentieth-century", "color": "#0077b6", "description": "Conceptual clarification through formal logic, linguistics, and critique of metaphysical pseudo-problems." },
   { "id": "critical-theory", "name": "Frankfurt School & Critical Theory", "eraId": "twentieth-century", "color": "#9d0208", "description": "Critique of modern rationalization, cultural commodification, and capitalist alienation." },
+  { "id": "structuralism", "name": "Structuralism & Semiotics", "eraId": "twentieth-century", "color": "#7b2cbf", "description": "Analysis of culture, language, and meaning as relational systems of signs, binary oppositions, and differential structures." },
   { "id": "post-structuralism", "name": "Post-Structuralism & Contemporary", "eraId": "contemporary", "color": "#b56576", "description": "Decentering the subject, deconstruction of binary hierarchies, surveillance, biopolitics, and simulation." }
 ]
