@@ -1965,5 +1965,47 @@
     "type": "INFLUENCED",
     "strength": 5,
     "label": "Influenced Han's critique of hyper-communication, digital transparency, and the vanishing of otherness in late capitalism"
+  },
+  {
+    "source": "ferdinand-de-saussure",
+    "target": "semiology-signifier-signified",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the foundational dyadic sign model (signifier/signified) and differential value in Course in General Linguistics"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "ferdinand-de-saussure",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Kantian transcendental idealism informed Saussure's shift from empirical historical philology to language as an a priori conceptual system"
+  },
+  {
+    "source": "ferdinand-de-saussure",
+    "target": "michel-foucault",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Saussure's structuralism provided the epistemic framework for Foucault's analysis of discursive formations in The Order of Things"
+  },
+  {
+    "source": "ferdinand-de-saussure",
+    "target": "jacques-derrida",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Derrida radicalized Saussure's thesis that in language there are only differences without positive terms into différance"
+  },
+  {
+    "source": "semiology-signifier-signified",
+    "target": "jacques-derrida",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Derrida deconstructed Saussure's phonocentrism and assumption of signified stability, demonstrating the infinite deferral of the sign"
+  },
+  {
+    "source": "ferdinand-de-saussure",
+    "target": "jean-baudrillard",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Baudrillard applied Saussurean structural semiotics to consumer capitalism and the precession of simulacra"
   }
 ]

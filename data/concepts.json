@@ -601,5 +601,15 @@
     "summary": "The condition in which signs, media representations, and cultural models precede and generate the real (precession of simulacra), collapsing the distinction between reality and representation into a self-referential hyperreality.",
     "sepSlug": "baudrillard",
     "importanceScore": 90
+  },
+  {
+    "id": "semiology-signifier-signified",
+    "title": "Semiology & The Arbitrary Sign",
+    "branch": "epistemology",
+    "eraId": "twentieth-century",
+    "introducedBy": "ferdinand-de-saussure",
+    "summary": "Language is a structured system of differential values (la langue) where the sign unites an acoustic form (signifier) with a mental concept (signified), characterized by arbitrary connection and negative difference.",
+    "sepSlug": "linguistics",
+    "importanceScore": 92
   }
 ]

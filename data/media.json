@@ -414,6 +414,15 @@
     "summary": "Academic comprehensive overview of Jean Baudrillard's philosophy of simulacra, simulation, hyperreality, and media theory."
   },
   {
+    "id": "sep-ferdinand-de-saussure",
+    "targetId": "ferdinand-de-saussure",
+    "type": "encyclopedia",
+    "title": "Philosophy of Linguistics (Saussure) - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/linguistics/",
+    "creator": "Stanford University",
+    "summary": "Academic comprehensive overview of structural linguistics, semiology, and Ferdinand de Saussure's foundational concepts."
+  },
+  {
     "id": "pt-ep-189-byung-chul-han",
     "targetId": "byung-chul-han",
     "type": "podcast",
@@ -764,6 +773,39 @@
     "creator": "Stephen West",
     "episodeNumber": 119,
     "duration": "20:34"
+  },
+  {
+    "id": "pt-ep-117-ferdinand-de-saussure",
+    "targetId": "ferdinand-de-saussure",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #117 ... Structuralism and Mythology pt. 2",
+    "url": "https://philosophizethis.libsyn.com/episode-117-structuralism-and-mythology-pt-2",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/struc_pt_2_01_01.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 117,
+    "duration": "26:35"
+  },
+  {
+    "id": "pt-ep-116-ferdinand-de-saussure",
+    "targetId": "ferdinand-de-saussure",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #116 ... Structuralism and Mythology pt. 1",
+    "url": "https://philosophizethis.libsyn.com/episode-116-structuralism-and-mythology-pt-1",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/struc_pt_1_01_01.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 116,
+    "duration": "27:31"
+  },
+  {
+    "id": "pt-ep-115-ferdinand-de-saussure",
+    "targetId": "ferdinand-de-saussure",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #115 ... Structuralism and Context",
+    "url": "https://philosophizethis.libsyn.com/episode-115-structuralism-and-context",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/SaC_Final.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 115,
+    "duration": "32:00"
   },
   {
     "id": "pt-ep-114-theodor-adorno",
