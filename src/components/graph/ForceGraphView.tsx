@@ -3,10 +3,12 @@
 import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import { forceCollide, forceManyBody, forceLink, forceX, forceY } from 'd3-force';
-import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink } from 'lucide-react';
-import { VisualNode, VisualLink, Branch, getEdgeTypeConfig } from '../../lib/types';
+import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink, BookOpen, Check } from 'lucide-react';
+import { VisualNode, VisualLink, Branch, Era, getEdgeTypeConfig } from '../../lib/types';
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
+import { EpochNavigator } from '../timeline/EpochNavigator';
+import { useClickOutside } from '../../lib/hooks/useClickOutside';
 import { drawCartographicGrid } from '../../lib/graph/grid-renderer';
 import {
   getArrowLength,
@@ -42,6 +44,11 @@ interface ForceGraphViewProps {
   showConcepts: boolean;
   onToggleConcepts: () => void;
   onOpenLegend: () => void;
+  eras: Era[];
+  selectedEraId: string;
+  onSelectEra: (eraId: string) => void;
+  isolateEra: boolean;
+  onToggleIsolateEra: (isolate: boolean) => void;
 }
 
 function escapeHtml(str: string): string {
@@ -75,10 +82,17 @@ export function ForceGraphView({
   showConcepts,
   onToggleConcepts,
   onOpenLegend,
+  eras,
+  selectedEraId,
+  onSelectEra,
+  isolateEra,
+  onToggleIsolateEra,
 }: ForceGraphViewProps) {
   const fgRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const branchMenuRef = useRef<HTMLDivElement | null>(null);
   const { resolvedTheme } = useTheme();
+  const [isBranchMenuOpen, setIsBranchMenuOpen] = useState(false);
   const [dimensions, setDimensions] = useState({ width: 1200, height: 800 });
   const [hoveredNode, setHoveredNode] = useState<VisualNode | null>(null);
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null);
@@ -86,6 +100,8 @@ export function ForceGraphView({
   const prevSpacingMultiplierRef = useRef<number>(1.9);
   const hasInitialFitRef = useRef<boolean>(false);
   const hasConfiguredForcesRef = useRef<boolean>(false);
+
+  useClickOutside(branchMenuRef, () => setIsBranchMenuOpen(false), isBranchMenuOpen);
 
   // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
   const graphData = useMemo(() => ({ nodes, links }), [nodes, links]);
@@ -503,46 +519,72 @@ export function ForceGraphView({
       ref={containerRef}
       className="relative w-full h-full overflow-hidden bg-[var(--bg-main)] font-serif"
     >
-      {/* Top Floating Filter Bar */}
+      {/* Top Floating Filter Bar (Unified Canvas Dock) */}
       <div className="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-2 max-w-[calc(100%-180px)]">
+        {/* Chronological Era Filter */}
+        <EpochNavigator
+          eras={eras}
+          selectedEraId={selectedEraId}
+          onSelectEra={onSelectEra}
+          isolateEra={isolateEra}
+          onToggleIsolateEra={onToggleIsolateEra}
+        />
+
         {/* Concepts Toggle */}
         <button
           onClick={onToggleConcepts}
           className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border backdrop-blur-md transition ${
             showConcepts
               ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] border-[var(--gold-border)] shadow-sm'
-              : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)] hover:text-[var(--text-main)]'
+              : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)] hover:text-[var(--text-main)] hover:border-[var(--gold-border)]'
           }`}
+          title="Toggle between philosopher-only network and combined philosopher-concept network"
         >
-          <Layers className="w-3.5 h-3.5" />
+          <Layers className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
           <span>{showConcepts ? 'Concepts Visible' : 'Philosophers Only'}</span>
         </button>
 
-        {/* Branch Filter Pills */}
-        <div className="hidden lg:flex items-center gap-1 bg-[var(--bg-card)] p-1 rounded-xl border border-[var(--border-main)] backdrop-blur-md">
-          {branches.map((b) => (
-            <button
-              key={b.id}
-              onClick={() => onSelectBranch(b.id)}
-              className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition ${
-                selectedBranch === b.id
-                  ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] font-semibold border border-[var(--gold-border)]'
-                  : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-subtle)]'
-              }`}
-            >
-              {b.label}
-            </button>
-          ))}
-        </div>
+        {/* Branch Filter Dropdown */}
+        <div className="relative font-serif" ref={branchMenuRef}>
+          <button
+            onClick={() => setIsBranchMenuOpen(!isBranchMenuOpen)}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border backdrop-blur-md transition shadow-sm ${
+              selectedBranch !== 'all'
+                ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] border-[var(--gold-border)] font-semibold'
+                : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)] hover:text-[var(--text-main)] hover:border-[var(--gold-border)]'
+            }`}
+            title="Filter by philosophical branch / discipline"
+          >
+            <BookOpen className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+            <span>{branches.find((b) => b.id === selectedBranch)?.label || 'All Branches'}</span>
+            <span className="text-[10px] text-[var(--text-dim)] ml-0.5">▾</span>
+          </button>
 
-        {/* Map Legend Trigger Button */}
-        <button
-          onClick={onOpenLegend}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] backdrop-blur-md transition shadow-sm"
-        >
-          <HelpCircle className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-          <span>Folio Key (Legend)</span>
-        </button>
+          {isBranchMenuOpen && (
+            <div className="absolute top-full left-0 mt-2 z-50 w-52 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl shadow-2xl p-2 text-[var(--text-main)] font-serif backdrop-blur-xl">
+              <div className="text-[10px] font-semibold uppercase tracking-wider text-[var(--text-dim)] px-2.5 py-1 mb-1">
+                Philosophical Branch
+              </div>
+              {branches.map((b) => (
+                <button
+                  key={b.id}
+                  onClick={() => {
+                    onSelectBranch(b.id);
+                    setIsBranchMenuOpen(false);
+                  }}
+                  className={`w-full text-left px-2.5 py-1.5 rounded-xl text-xs flex items-center justify-between transition ${
+                    selectedBranch === b.id
+                      ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] font-semibold border border-[var(--gold-border)]'
+                      : 'text-[var(--text-muted)] hover:bg-[var(--bg-hover)] hover:text-[var(--text-main)]'
+                  }`}
+                >
+                  <span>{b.label}</span>
+                  {selectedBranch === b.id && <Check className="w-3.5 h-3.5" />}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
 
         {/* Spacing Spreader Toggle */}
         <button

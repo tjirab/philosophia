@@ -1,12 +1,16 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Sun, Moon, Laptop, Type, Check } from 'lucide-react';
 import { useTheme, ThemeMode, FontSize } from '../../lib/theme-context';
+import { useClickOutside } from '../../lib/hooks/useClickOutside';
 
 export function AppearanceSettingsMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
   const { theme, setTheme, fontSize, setFontSize } = useTheme();
+
+  useClickOutside(menuRef, () => setIsOpen(false), isOpen);
 
   const themeOptions: Array<{ id: ThemeMode; label: string; icon: any }> = [
     { id: 'light', label: 'Parchment (Light)', icon: Sun },
@@ -21,7 +25,7 @@ export function AppearanceSettingsMenu() {
   ];
 
   return (
-    <div className="relative font-serif">
+    <div className="relative font-serif" ref={menuRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border transition shadow-sm bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border-[var(--border-main)] text-[var(--text-main)]"

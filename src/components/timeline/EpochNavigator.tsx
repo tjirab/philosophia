@@ -11,6 +11,7 @@ import {
   Check,
 } from 'lucide-react';
 import { Era } from '../../lib/types';
+import { useClickOutside } from '../../lib/hooks/useClickOutside';
 
 interface EpochNavigatorProps {
   eras: Era[];
@@ -31,6 +32,9 @@ export function EpochNavigator({
   const [isPlaying, setIsPlaying] = useState(false);
   const playTimerRef = useRef<NodeJS.Timeout | null>(null);
   const selectedEraIdRef = useRef(selectedEraId);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useClickOutside(menuRef, () => setIsOpen(false), isOpen);
 
   useEffect(() => {
     selectedEraIdRef.current = selectedEraId;
@@ -85,11 +89,15 @@ export function EpochNavigator({
 
   return (
     <>
-      {/* Top Header Selector Button */}
-      <div className="relative font-serif">
+      {/* Canvas / Header Selector Button */}
+      <div className="relative font-serif" ref={menuRef}>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-2 px-3.5 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl text-xs text-[var(--text-main)] transition shadow-sm font-serif"
+          className={`flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs transition shadow-sm font-serif border backdrop-blur-md ${
+            selectedEraId !== 'all'
+              ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] border-[var(--gold-border)] font-semibold'
+              : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)] hover:text-[var(--text-main)] hover:border-[var(--gold-border)]'
+          }`}
         >
           <Clock className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
           <span>
@@ -212,9 +220,9 @@ export function EpochNavigator({
         )}
       </div>
 
-      {/* Floating Understated Banner when an Era is selected or Guided Journey is Playing */}
+      {/* Floating Understated Transport Banner when an Era is selected or Guided Journey is Playing */}
       {currentEra && (
-        <div className="absolute top-20 left-1/2 -translate-x-1/2 z-20 max-w-xl w-[90%] sm:w-auto bg-[var(--bg-card)]/95 border border-[var(--border-strong)] rounded-full py-1.5 px-4 shadow-xl backdrop-blur-md flex items-center gap-3 text-xs font-serif text-[var(--text-main)]">
+        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-20 max-w-2xl w-[90%] sm:w-auto bg-[var(--bg-card)]/95 border border-[var(--border-strong)] rounded-full py-1.5 px-4 shadow-2xl backdrop-blur-md flex items-center gap-3 text-xs font-serif text-[var(--text-main)] pointer-events-auto">
           <button
             onClick={() => handleStepEra('prev')}
             className="p-1 text-[var(--text-dim)] hover:text-[var(--text-main)] transition"
@@ -245,8 +253,8 @@ export function EpochNavigator({
 
           <button
             onClick={() => onSelectEra('all')}
-            className="text-[10px] text-[var(--text-dim)] hover:text-[var(--text-main)] ml-1 pl-2 border-l border-[var(--border-main)]"
-            title="Show All"
+            className="text-[10px] text-[var(--text-dim)] hover:text-[var(--gold-accent)] ml-1 pl-2 border-l border-[var(--border-main)] transition font-sans"
+            title="Show All Epochs"
           >
             Show All
           </button>
