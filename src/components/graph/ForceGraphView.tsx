@@ -7,6 +7,8 @@ import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink } from '
 import { VisualNode, VisualLink, Branch, getEdgeTypeConfig } from '../../lib/types';
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
+import { drawCartographicGrid } from '../../lib/graph/grid-renderer';
+import { getArrowLength, ARROW_REL_POS, getArrowColor } from '../../lib/graph/arrow-styling';
 
 // Dynamically import ForceGraph2D with ssr disabled
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
@@ -323,6 +325,13 @@ export function ForceGraphView({
     ctx.restore();
   };
 
+  const renderBackground = React.useCallback(
+    (ctx: CanvasRenderingContext2D, globalScale: number) => {
+      drawCartographicGrid(ctx, globalScale, isLight);
+    },
+    [isLight]
+  );
+
   const branches: Array<{ id: Branch | 'all'; label: string }> = [
     { id: 'all', label: 'All Branches' },
     { id: 'epistemology', label: 'Epistemology' },
@@ -336,7 +345,7 @@ export function ForceGraphView({
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-full overflow-hidden bg-cartographic-grid font-serif"
+      className="relative w-full h-full overflow-hidden bg-[var(--bg-main)] font-serif"
     >
       {/* Top Floating Filter Bar */}
       <div className="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-2 max-w-[calc(100%-180px)]">
@@ -447,6 +456,7 @@ export function ForceGraphView({
         height={dimensions.height}
         backgroundColor="rgba(0,0,0,0)"
         graphData={graphData}
+        onRenderFramePre={renderBackground}
         nodeId="id"
         nodeLabel={() => ''} /* Disable default HTML title tooltip so our custom card handles hover */
         nodeCanvasObject={paintNode}
@@ -479,10 +489,21 @@ export function ForceGraphView({
             hoveredNode?.id === srcId ||
             hoveredNode?.id === tgtId;
           const inPath = isPathActive && pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
-          if (inPath || isConnectedToFocus) return 7.5;
-          return 4.5;
+          return getArrowLength(isConnectedToFocus, inPath);
         }}
-        linkDirectionalArrowRelPos={0.92}
+        linkDirectionalArrowRelPos={ARROW_REL_POS}
+        linkDirectionalArrowColor={(link: any) => {
+          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+          const isConnectedToFocus =
+            selectedNodeId === srcId ||
+            selectedNodeId === tgtId ||
+            hoveredNode?.id === srcId ||
+            hoveredNode?.id === tgtId;
+          const inPath = isPathActive && pathNodeSet.has(srcId) && pathNodeSet.has(tgtId);
+          const isDimmed = (selectedNodeId || hoveredNode) && !isConnectedToFocus && !inPath;
+          return getArrowColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath);
+        }}
         linkCurvature={0.12}
         linkColor={(link: any) => {
           const srcId = typeof link.source === 'object' ? link.source.id : link.source;
