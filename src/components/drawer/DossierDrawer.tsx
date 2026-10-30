@@ -200,7 +200,7 @@ export function DossierDrawer({
               <div className="flex items-center gap-4 text-xs text-[var(--text-muted)] mt-2 flex-wrap">
                 <span className="flex items-center gap-1.5 font-mono">
                   <Calendar className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-                  {formatYear(phil.birthYear)} – {formatYear(phil.deathYear)}
+                  {formatYear(phil.birthYear)} – {phil.deathYear !== undefined && phil.deathYear !== null ? formatYear(phil.deathYear) : 'present'}
                 </span>
 
                 {/* Centrality with Hover Explanation */}

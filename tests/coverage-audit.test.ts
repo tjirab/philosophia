@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { auditCanon, generateMarkdownReport } from '../scripts/audit-coverage.mjs';
 
 describe('Philosophia Canon Coverage & Audit Engine', () => {
-  const report = auditCanon();
+  const report: any = auditCanon();
 
   it('audits total inventory and confirms nodes & edges presence', () => {
     expect(report.totals.philosophers).toBeGreaterThan(70);

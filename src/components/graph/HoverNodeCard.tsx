@@ -94,7 +94,7 @@ export function HoverNodeCard({ node, position }: HoverNodeCardProps) {
             <div className="flex items-center gap-2.5 text-[11px] text-[var(--text-muted)] mb-1.5 font-mono flex-wrap">
               <span className="flex items-center gap-1">
                 <Calendar className="w-3 h-3 text-[var(--gold-accent)]" />
-                {formatYear(phil.birthYear)} – {formatYear(phil.deathYear)}
+                {formatYear(phil.birthYear)} – {phil.deathYear !== undefined && phil.deathYear !== null ? formatYear(phil.deathYear) : 'present'}
               </span>
               <span
                 className="flex items-center gap-1 text-[var(--gold-accent)] font-semibold"

@@ -26,7 +26,9 @@ describe('Philosophy Graph Data Integrity', () => {
       ).toBe(true);
       expect(p.name.length).toBeGreaterThan(0);
       expect(p.sepSlug.length).toBeGreaterThan(0);
-      expect(p.deathYear).toBeGreaterThanOrEqual(p.birthYear);
+      if (p.deathYear !== undefined && p.deathYear !== null) {
+        expect(p.deathYear).toBeGreaterThanOrEqual(p.birthYear);
+      }
       expect(p.imageUrl, `Philosopher ${p.id} is missing imageUrl`).toBeDefined();
       expect(p.imageUrl).toMatch(/^\/portraits\/[a-z0-9-]+\.jpg$/);
     }
@@ -305,14 +307,14 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const kantDetails = getNodeDetails('immanuel-kant');
     expect(kantDetails.node).toBeDefined();
-    expect(kantDetails.node?.name).toBe('Immanuel Kant');
+    expect((kantDetails.node as any)?.name).toBe('Immanuel Kant');
     expect(kantDetails.predecessors.length).toBeGreaterThan(0);
     expect(kantDetails.successors.length).toBeGreaterThan(0);
     expect(kantDetails.media.length).toBeGreaterThan(0);
 
     const smithDetails = getNodeDetails('adam-smith');
     expect(smithDetails.node).toBeDefined();
-    expect(smithDetails.node?.name).toBe('Adam Smith');
+    expect((smithDetails.node as any)?.name).toBe('Adam Smith');
     expect(smithDetails.predecessors.length).toBeGreaterThan(0);
     expect(smithDetails.successors.length).toBeGreaterThan(0);
     expect(smithDetails.media.length).toBeGreaterThan(0);
@@ -373,5 +375,27 @@ describe('Philosophy Graph Data Integrity', () => {
     // karl-marx has 'name' and 'birthYear' (Philosopher)
     expect('name' in marxSuccessor!.node).toBe(true);
     expect('birthYear' in marxSuccessor!.node).toBe(true);
+  });
+
+  it('validates that living philosophers do not have a deathYear set', () => {
+    const livingIds = ['byung-chul-han', 'alenka-zupancic', 'nick-bostrom', 'jurgen-habermas'];
+    for (const id of livingIds) {
+      const phil = philosophersData.find((p) => p.id === id);
+      expect(phil, `Living philosopher ${id} should exist in dataset`).toBeDefined();
+      expect(phil?.deathYear, `Living philosopher ${id} must not have a deathYear marked`).toBeUndefined();
+    }
+  });
+
+  it('correctly includes living philosophers when filtering graph by minYear', () => {
+    // When minYear is 2000, deceased thinkers who died before 2000 are excluded,
+    // but living thinkers (Habermas, Han, etc.) should not be filtered out
+    const { nodes } = getVisualGraph({ minYear: 2000, includeConcepts: false });
+    const nodeIds = new Set(nodes.map((n) => n.id));
+
+    expect(nodeIds.has('jurgen-habermas')).toBe(true);
+    expect(nodeIds.has('byung-chul-han')).toBe(true);
+    expect(nodeIds.has('alenka-zupancic')).toBe(true);
+    expect(nodeIds.has('nick-bostrom')).toBe(true);
+    expect(nodeIds.has('michel-foucault')).toBe(false); // died 1984
   });
 });
