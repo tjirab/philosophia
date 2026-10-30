@@ -136,6 +136,19 @@ describe('Philosophy Graph Data Integrity', () => {
     const hegelToProj = findInfluencePath('gwf-hegel', 'anthropological-projection', edgesData as any);
     expect(hegelToProj.found).toBe(true);
     expect(hegelToProj.nodes).toContain('ludwig-feuerbach');
+
+    // David Hume -> Adam Smith -> Karl Marx
+    const humeToMarx = findInfluencePath('david-hume', 'karl-marx', edgesData as any);
+    expect(humeToMarx.found).toBe(true);
+    expect(humeToMarx.nodes).toContain('adam-smith');
+
+    // Adam Smith -> John Stuart Mill
+    const smithToMill = findInfluencePath('adam-smith', 'john-stuart-mill', edgesData as any);
+    expect(smithToMill.found).toBe(true);
+
+    // Adam Smith -> Impartial Spectator -> John Rawls
+    const smithToRawls = findInfluencePath('adam-smith', 'john-rawls', edgesData as any);
+    expect(smithToRawls.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {
@@ -149,6 +162,13 @@ describe('Philosophy Graph Data Integrity', () => {
     expect(kantDetails.predecessors.length).toBeGreaterThan(0);
     expect(kantDetails.successors.length).toBeGreaterThan(0);
     expect(kantDetails.media.length).toBeGreaterThan(0);
+
+    const smithDetails = getNodeDetails('adam-smith');
+    expect(smithDetails.node).toBeDefined();
+    expect(smithDetails.node?.name).toBe('Adam Smith');
+    expect(smithDetails.predecessors.length).toBeGreaterThan(0);
+    expect(smithDetails.successors.length).toBeGreaterThan(0);
+    expect(smithDetails.media.length).toBeGreaterThan(0);
   });
 
   it('verifies search query filtering on philosophers and concepts without throwing exceptions', () => {
