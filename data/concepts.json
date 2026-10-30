@@ -611,5 +611,15 @@
     "summary": "Language is a structured system of differential values (la langue) where the sign unites an acoustic form (signifier) with a mental concept (signified), characterized by arbitrary connection and negative difference.",
     "sepSlug": "linguistics",
     "importanceScore": 92
+  },
+  {
+    "id": "instrumental-reason",
+    "title": "Instrumental Reason & Eclipse of Reason",
+    "branch": "political",
+    "eraId": "twentieth-century",
+    "introducedBy": "max-horkheimer",
+    "summary": "The historical degeneration of reason from an objective inquiry into truth, justice, and human flourishing into a purely calculating, technocratic instrument for mastering nature and managing society.",
+    "sepSlug": "horkheimer",
+    "importanceScore": 88
   }
 ]

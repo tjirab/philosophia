@@ -1607,29 +1607,65 @@
     "keyWorks": [
       {
         "title": "Dialectic of Enlightenment",
-        "year": "1903 CE",
-        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Dialectic%20of%20Enlightenment",
-        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Dialectic%20of%20Enlightenment",
-        "description": "Major work by Theodor W. Adorno."
+        "year": "1947",
+        "url": "https://en.wikipedia.org/wiki/Dialectic_of_Enlightenment",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Dialectic_of_Enlightenment",
+        "description": "Major work co-authored with Max Horkheimer diagnosing the dialectic of reason and the rise of the culture industry."
       },
       {
         "title": "Minima Moralia",
-        "year": "1903 CE",
-        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Minima%20Moralia",
-        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Minima%20Moralia",
-        "description": "Major work by Theodor W. Adorno."
+        "year": "1951",
+        "url": "https://en.wikipedia.org/wiki/Minima_Moralia",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Minima_Moralia",
+        "description": "Reflections from damaged life examining the alienation of subjective experience under late capitalism."
       },
       {
         "title": "Negative Dialectics",
-        "year": "1903 CE",
-        "url": "https://en.wikipedia.org/wiki/Special:Search?search=Negative%20Dialectics",
-        "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Negative%20Dialectics",
-        "description": "Major work by Theodor W. Adorno."
+        "year": "1966",
+        "url": "https://en.wikipedia.org/wiki/Negative_Dialectics",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Negative_Dialectics",
+        "description": "Critique of Hegelian affirmative synthesis, preserving non-identity and resisting totalizing conceptual systems."
       }
     ],
     "sepSlug": "adorno",
     "importanceScore": 89,
     "imageUrl": "/portraits/theodor-adorno.jpg"
+  },
+  {
+    "id": "max-horkheimer",
+    "name": "Max Horkheimer",
+    "birthYear": 1895,
+    "deathYear": 1973,
+    "eraId": "twentieth-century",
+    "traditionId": "critical-theory",
+    "shortBio": "Director of the Frankfurt Institute for Social Research and architect of Critical Theory. Co-authored Dialectic of Enlightenment with Adorno, diagnosing how instrumental reason converts enlightenment into domination.",
+    "centralQuestion": "How can reason liberate humanity from suffering rather than becoming a technical tool for totalitarian control and domination over nature?",
+    "keyWorks": [
+      {
+        "title": "Dialectic of Enlightenment",
+        "year": "1947",
+        "url": "https://en.wikipedia.org/wiki/Dialectic_of_Enlightenment",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Dialectic_of_Enlightenment",
+        "description": "Foundational text of Critical Theory diagnosing how the project of enlightenment inverted into myth, mass culture, and bureaucratic barbarism."
+      },
+      {
+        "title": "Eclipse of Reason",
+        "year": "1947",
+        "url": "https://en.wikipedia.org/wiki/Eclipse_of_Reason",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Eclipse_of_Reason",
+        "description": "Critique of the historical transformation from objective reason to subjective instrumental reason concerned with means and operational efficiency."
+      },
+      {
+        "title": "Traditional and Critical Theory",
+        "year": "1937",
+        "url": "https://en.wikipedia.org/wiki/Max_Horkheimer",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Max_Horkheimer",
+        "description": "Seminal essay demarcating positivistic, passive 'traditional theory' from emancipatory, reflective 'critical theory' oriented toward human freedom."
+      }
+    ],
+    "sepSlug": "horkheimer",
+    "importanceScore": 88,
+    "imageUrl": "/portraits/max-horkheimer.jpg"
   },
   {
     "id": "michel-foucault",

@@ -2007,5 +2007,47 @@
     "type": "INFLUENCED",
     "strength": 5,
     "label": "Baudrillard applied Saussurean structural semiotics to consumer capitalism and the precession of simulacra"
+  },
+  {
+    "source": "max-horkheimer",
+    "target": "instrumental-reason",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the critique of subjective instrumental reason in Eclipse of Reason and Dialectic of Enlightenment"
+  },
+  {
+    "source": "karl-marx",
+    "target": "max-horkheimer",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Adapted Marxian political economy into an interdisciplinary Critical Theory diagnosing alienation and cultural hegemony"
+  },
+  {
+    "source": "immanuel-kant",
+    "target": "max-horkheimer",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Critiqued Kantian formal rationality for divorcing moral judgment from socioeconomic reality, leaving it vulnerable to instrumentalization"
+  },
+  {
+    "source": "max-horkheimer",
+    "target": "theodor-adorno",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Co-authored Dialectic of Enlightenment, fusing social theory, philosophical critique, and psychoanalysis to analyze the culture industry"
+  },
+  {
+    "source": "max-horkheimer",
+    "target": "jurgen-habermas",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Directly influenced Habermas at the Frankfurt Institute, who later sought to reconstruct Critical Theory on communicative rather than instrumental grounds"
+  },
+  {
+    "source": "instrumental-reason",
+    "target": "jurgen-habermas",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Habermas responded to Horkheimer's diagnosis of instrumental reason by proposing the paradigm of communicative rationality"
   }
 ]
