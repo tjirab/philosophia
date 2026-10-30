@@ -210,6 +210,32 @@ describe('Philosophy Graph Data Integrity', () => {
     // Marcus Aurelius -> Montaigne
     const aureliusToMontaigne = findInfluencePath('marcus-aurelius', 'michel-de-montaigne', edgesData as any);
     expect(aureliusToMontaigne.found).toBe(true);
+
+    // Thales -> Anaximander -> Parmenides
+    const thalesToAnax = findInfluencePath('thales', 'anaximander', edgesData as any);
+    expect(thalesToAnax.found).toBe(true);
+
+    const anaxToParm = findInfluencePath('anaximander', 'parmenides', edgesData as any);
+    expect(anaxToParm.found).toBe(true);
+
+    // Confucius -> Mencius -> Zhuangzi
+    const confuciusToZhuang = findInfluencePath('confucius', 'zhuangzi', edgesData as any);
+    expect(confuciusToZhuang.found).toBe(true);
+    expect(confuciusToZhuang.nodes).toContain('mencius');
+
+    // David Hume -> Jeremy Bentham -> John Stuart Mill
+    const humeToBentham = findInfluencePath('david-hume', 'jeremy-bentham', edgesData as any);
+    expect(humeToBentham.found).toBe(true);
+
+    const benthamToMill = findInfluencePath('jeremy-bentham', 'john-stuart-mill', edgesData as any);
+    expect(benthamToMill.found).toBe(true);
+
+    // John Locke -> Mary Wollstonecraft -> John Stuart Mill
+    const lockeToMill = findInfluencePath('john-locke', 'john-stuart-mill', edgesData as any);
+    expect(lockeToMill.found).toBe(true);
+
+    const wollstonecraftToMill = findInfluencePath('mary-wollstonecraft', 'john-stuart-mill', edgesData as any);
+    expect(wollstonecraftToMill.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {

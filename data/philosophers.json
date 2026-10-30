@@ -2247,5 +2247,103 @@
     ],
     "sepSlug": "ludwig-feuerbach",
     "importanceScore": 91
+  },
+  {
+    "id": "anaximander",
+    "name": "Anaximander of Miletus",
+    "birthYear": -610,
+    "deathYear": -546,
+    "eraId": "pre-socratic",
+    "traditionId": "milesian",
+    "shortBio": "Milesian philosopher and pupil of Thales who authored the earliest surviving prose work in Western philosophy and introduced the boundless Apeiron as the foundational source of all cosmic generation and dissolution.",
+    "centralQuestion": "How can the diverse, warring elements of our finite world arise from and return to a single, limitless, and ungenerated origin?",
+    "keyWorks": [
+      {
+        "title": "On Nature",
+        "year": "-548 BCE",
+        "url": "https://en.wikipedia.org/wiki/Anaximander#On_Nature",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Anaximander",
+        "description": "The earliest known Greek philosophical treatise, positing the boundless Apeiron as arche and establishing cosmological equilibrium through natural law."
+      }
+    ],
+    "sepSlug": "presocratics",
+    "importanceScore": 90
+  },
+  {
+    "id": "mencius",
+    "name": "Mencius (Mengzi)",
+    "birthYear": -372,
+    "deathYear": -289,
+    "eraId": "eastern",
+    "traditionId": "eastern-wisdom",
+    "shortBio": "Foremost classical successor to Confucius, revered as the 'Second Sage', who argued for the innate goodness of human nature and defended moral governance through benevolence rather than tyranny.",
+    "centralQuestion": "Is human nature inherently predisposed toward goodness, like water naturally flowing downward, requiring only moral cultivation to blossom?",
+    "keyWorks": [
+      {
+        "title": "Mengzi (The Works of Mencius)",
+        "year": "-310 BCE",
+        "url": "https://ctext.org/mengzi",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Mencius_(book)",
+        "description": "Dialogue exploring human nature, ethical cultivation (ren and yi), righteous governance, and the four sprouts of virtue."
+      }
+    ],
+    "sepSlug": "mencius",
+    "importanceScore": 93
+  },
+  {
+    "id": "jeremy-bentham",
+    "name": "Jeremy Bentham",
+    "birthYear": 1748,
+    "deathYear": 1832,
+    "eraId": "enlightenment",
+    "traditionId": "utilitarianism",
+    "shortBio": "English philosopher, jurist, and social reformer who formulated classical utilitarianism, defining moral rightness by the principle of utility and the maximization of net pleasure over pain.",
+    "centralQuestion": "Can human morality and legislation be rationally organized around a single objective metric: the greatest happiness of the greatest number?",
+    "keyWorks": [
+      {
+        "title": "An Introduction to the Principles of Morals and Legislation",
+        "year": "1789",
+        "url": "https://www.utilitarianism.com/jeremy-bentham/index.html",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/An_Introduction_to_the_Principles_of_Morals_and_Legislation",
+        "description": "Seminal text founding classical utilitarianism, articulating the principle of utility, psychological hedonism, and the felicific calculus."
+      },
+      {
+        "title": "Panopticon; or, The Inspection-House",
+        "year": "1791",
+        "url": "https://en.wikipedia.org/wiki/Panopticon",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/Panopticon",
+        "description": "Architectural and penal proposal exploring surveillance, disciplinary power, and behavioral modification."
+      }
+    ],
+    "sepSlug": "bentham",
+    "importanceScore": 94
+  },
+  {
+    "id": "mary-wollstonecraft",
+    "name": "Mary Wollstonecraft",
+    "birthYear": 1759,
+    "deathYear": 1797,
+    "eraId": "enlightenment",
+    "traditionId": "enlightenment-social",
+    "shortBio": "Pioneering Enlightenment moral and political philosopher whose seminal works asserted that women are rational beings entitled to equal education, moral autonomy, and fundamental human rights.",
+    "centralQuestion": "How can an Enlightenment society claim to champion reason, liberty, and justice while systematically subordinating half of humanity through artificial educational deprivation?",
+    "keyWorks": [
+      {
+        "title": "A Vindication of the Rights of Woman",
+        "year": "1792",
+        "url": "https://standardebooks.org/ebooks/mary-wollstonecraft/a-vindication-of-the-rights-of-woman",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Vindication_of_the_Rights_of_Woman",
+        "description": "Landmark philosophical defense of gender equality, universal education, and female moral autonomy against Rousseau's educational domesticity."
+      },
+      {
+        "title": "A Vindication of the Rights of Men",
+        "year": "1790",
+        "url": "https://en.wikipedia.org/wiki/A_Vindication_of_the_Rights_of_Men",
+        "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Vindication_of_the_Rights_of_Men",
+        "description": "Passionate Enlightenment rebuttal of Edmund Burke's conservative critique of the French Revolution, defending human equality and aristocracy critique."
+      }
+    ],
+    "sepSlug": "wollstonecraft",
+    "importanceScore": 92
   }
 ]
