@@ -88,7 +88,10 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'derek-parfit', patterns: [/\bparfit\b/i] },
   { id: 'boethius', patterns: [/\bboethius\b/i, /\bconsolation of philosophy\b/i] },
   { id: 'montesquieu', patterns: [/\bmontesquieu\b/i, /\bspirit of the laws\b/i] },
-  { id: 'ludwig-feuerbach', patterns: [/\bfeuerbach\b/i] }
+  { id: 'ludwig-feuerbach', patterns: [/\bfeuerbach\b/i] },
+  { id: 'siddhartha-gautama', patterns: [/\bbuddha\b/i, /\bbuddhism\b/i, /\bsiddhartha\b/i] },
+  { id: 'nagarjuna', patterns: [/\bnagarjuna\b/i, /\bmadhyamaka\b/i, /\bmiddle way\b/i, /\bsunyata\b/i] },
+  { id: 'adi-shankara', patterns: [/\bshankara\b/i, /\badvaita\b/i, /\bvedanta\b/i] }
 ];
 
 async function ingestRSS() {

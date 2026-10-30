@@ -2049,5 +2049,82 @@
     "type": "CRITIQUED",
     "strength": 4,
     "label": "Habermas responded to Horkheimer's diagnosis of instrumental reason by proposing the paradigm of communicative rationality"
+  },
+  {
+    "source": "siddhartha-gautama",
+    "target": "nagarjuna",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Systematized the Buddha's core insights of Pratītyasamutpāda (dependent origination) and Anatta into the radical dialectic of Madhyamaka emptiness"
+  },
+  {
+    "source": "nagarjuna",
+    "target": "two-truths-doctrine",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Two Truths doctrine (conventional vs. ultimate truth) to resolve the apparent paradox between emptiness and empirical causality"
+  },
+  {
+    "source": "two-truths-doctrine",
+    "target": "adi-shankara",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Directly inspired Śaṅkara's foundational Advaita distinction between transactional empirical truth (Vyavahārika) and ultimate transcendental truth (Pāramārthika)"
+  },
+  {
+    "source": "nagarjuna",
+    "target": "adi-shankara",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Śaṅkara adopted Nāgārjuna's negative dialectical method while rejecting Śūnyatā as crypto-nihilism, positing immutable Brahman as the transcendent witness behind illusion (Māyā)"
+  },
+  {
+    "source": "sunyata-emptiness",
+    "target": "adi-shankara",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Śaṅkara contended that relational emptiness without an absolute positive ground (Brahman) fails to account for consciousness and epistemic certainty"
+  },
+  {
+    "source": "pyrrho",
+    "target": "nagarjuna",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Deep historical convergence between Pyrrhonian epochē (suspension of judgment via the tetralemma) and Madhyamaka prasaṅga rejecting all four positions of the Catuṣkoṭi"
+  },
+  {
+    "source": "nagarjuna",
+    "target": "jacques-derrida",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Nāgārjuna's deconstruction of intrinsic essence (svabhāva) anticipated Derrida's deconstruction of the metaphysics of presence and origin"
+  },
+  {
+    "source": "sunyata-emptiness",
+    "target": "jacques-derrida",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Comparative thinkers identify strong structural homologies between Buddhist relational emptiness (Śūnyatā) and Derrida's différance (endless deferral of fixed identity)"
+  },
+  {
+    "source": "two-truths-doctrine",
+    "target": "jacques-derrida",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Parallels the deconstructive strategy of operating within inherited metaphysical structures while demonstrating their contingent and ungrounded nature"
+  },
+  {
+    "source": "nagarjuna",
+    "target": "ludwig-wittgenstein",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Parallel therapeutic methods: Nāgārjuna used dialectic to dissolve metaphysical dogmas just as Wittgenstein sought to dissolve language-bewitchment"
+  },
+  {
+    "source": "nagarjuna",
+    "target": "arthur-schopenhauer",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Schopenhauer explicitly acknowledged Madhyamaka and Buddhist emptiness as the historical counterpart to his metaphysics of the denial of the Will"
   }
 ]
