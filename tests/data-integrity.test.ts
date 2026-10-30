@@ -296,4 +296,24 @@ describe('Philosophy Graph Data Integrity', () => {
     expect(plato!.x!).toBeLessThan(kant!.x!);
     expect(kant!.x!).toBeLessThan(wittgenstein!.x!);
   });
+
+  it('verifies distinction between concepts and thinkers in node relations', () => {
+    const epicurusDetails = getNodeDetails('epicurus');
+    expect(epicurusDetails.node).toBeDefined();
+
+    // Epicurus formulated ataraxia (concept) and influenced Marx (thinker)
+    const ataraxiaSuccessor = epicurusDetails.successors.find((s) => s.node.id === 'ataraxia');
+    const marxSuccessor = epicurusDetails.successors.find((s) => s.node.id === 'karl-marx');
+
+    expect(ataraxiaSuccessor).toBeDefined();
+    expect(marxSuccessor).toBeDefined();
+
+    // ataraxia has 'title' and 'branch' (Concept)
+    expect('title' in ataraxiaSuccessor!.node).toBe(true);
+    expect('branch' in ataraxiaSuccessor!.node).toBe(true);
+
+    // karl-marx has 'name' and 'birthYear' (Philosopher)
+    expect('name' in marxSuccessor!.node).toBe(true);
+    expect('birthYear' in marxSuccessor!.node).toBe(true);
+  });
 });

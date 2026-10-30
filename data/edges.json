@@ -364,6 +364,13 @@
     "strength": 5
   },
   {
+    "source": "epicurus",
+    "target": "karl-marx",
+    "type": "INFLUENCED",
+    "label": "Analyzed Epicurean atomism and the swerve (clinamen) in his 1841 doctoral dissertation on Democritean and Epicurean natural philosophy",
+    "strength": 4
+  },
+  {
     "source": "epictetus",
     "target": "dichotomy-of-control",
     "type": "DEVELOPED",
