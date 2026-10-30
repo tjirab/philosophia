@@ -67,6 +67,7 @@ const WIKI_TITLES = {
   'martin-heidegger': 'Martin_Heidegger',
   'ludwig-wittgenstein': 'Ludwig_Wittgenstein',
   'theodor-adorno': 'Theodor_W._Adorno',
+  'herbert-marcuse': 'Herbert_Marcuse',
   'jean-paul-sartre': 'Jean-Paul_Sartre',
   'simone-de-beauvoir': 'Simone_de_Beauvoir',
   'albert-camus': 'Albert_Camus',

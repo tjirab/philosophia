@@ -62,6 +62,7 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'ferdinand-de-saussure', patterns: [/\bsaussure\b/i, /\bsemiotics\b/i, /\bstructuralism\b/i] },
   { id: 'theodor-adorno', patterns: [/\badorno\b/i, /\bfrankfurt school\b/i] },
   { id: 'max-horkheimer', patterns: [/\bhorkheimer\b/i, /\beclipse of reason\b/i, /\bdialectic of enlightenment\b/i] },
+  { id: 'herbert-marcuse', patterns: [/\bmarcuse\b/i, /\bone-dimensional man\b/i, /\beros and civilization\b/i] },
   { id: 'michel-foucault', patterns: [/\bfoucault\b/i, /\bpanopticon\b/i, /\bdiscipline and punish\b/i] },
   { id: 'jacques-derrida', patterns: [/\bderrida\b/i, /\bdeconstruction\b/i] },
   { id: 'gilles-deleuze', patterns: [/\bdeleuze\b/i, /\brhizome\b/i] },
