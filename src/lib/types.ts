@@ -110,7 +110,7 @@ export interface Philosopher {
   id: string;
   name: string;
   birthYear: number;
-  deathYear: number;
+  deathYear?: number;
   eraId: EraId;
   traditionId: string;
   shortBio: string;

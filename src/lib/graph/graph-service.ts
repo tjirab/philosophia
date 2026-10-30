@@ -65,7 +65,7 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
 
   // Filter philosophers
   let filteredPhilosophers = philosophers.filter((p) => {
-    if (minYear !== undefined && p.deathYear < minYear) return false;
+    if (minYear !== undefined && p.deathYear !== undefined && p.deathYear !== null && p.deathYear < minYear) return false;
     if (maxYear !== undefined && p.birthYear > maxYear) return false;
     if (eraId !== 'all' && p.eraId !== eraId) return false;
     if (traditionId !== 'all' && p.traditionId !== traditionId) return false;
