@@ -1,0 +1,22 @@
+{
+  "id": "parmenides",
+  "name": "Parmenides of Elea",
+  "birthYear": -515,
+  "deathYear": -450,
+  "eraId": "pre-socratic",
+  "traditionId": "eleatic",
+  "shortBio": "Founder of Eleatic metaphysics; argued through pure deductive logic that Being is singular, eternal, and change is an illusion.",
+  "centralQuestion": "What does reason prove about the nature of What-Is versus What-Is-Not?",
+  "keyWorks": [
+    {
+      "title": "On Nature (Poem)",
+      "year": "515 BCE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20Nature%20(Poem)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20Nature%20(Poem)",
+      "description": "Major work by Parmenides of Elea."
+    }
+  ],
+  "sepSlug": "parmenides",
+  "importanceScore": 80,
+  "imageUrl": "/portraits/parmenides.jpg"
+}

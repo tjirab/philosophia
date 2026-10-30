@@ -1,0 +1,23 @@
+[
+  {
+    "source": "ontological-argument",
+    "target": "thomas-aquinas",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Aquinas rejected Anselm's a priori proof in favor of empirical Five Ways"
+  },
+  {
+    "source": "ontological-argument",
+    "target": "rene-descartes",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Descartes revived Anselm's ontological proof in Fifth Meditation"
+  },
+  {
+    "source": "ontological-argument",
+    "target": "immanuel-kant",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Kant dismantled the ontological proof arguing existence is not a predicate"
+  }
+]

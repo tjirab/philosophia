@@ -1,0 +1,16 @@
+[
+  {
+    "source": "jeremy-bentham",
+    "target": "principle-of-utility",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated and codified the Principle of Utility and felicific calculus"
+  },
+  {
+    "source": "jeremy-bentham",
+    "target": "john-stuart-mill",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Direct pedagogical mentor and patron to Mill, establishing the utilitarian foundation that Mill subsequently refined into qualitative liberalism"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-32-blaise-pascal",
+    "targetId": "blaise-pascal",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #032 ... Blaise Pascal pt. 2 - +EV your way to success!!",
+    "url": "https://philosophizethis.libsyn.com/episode-032-blaise-pascal-pt-2-ev-your-way-to-success",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_032_..._Blaise_Pascal_pt._2_-_EV_your_way_to_success.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 32,
+    "duration": "29:54"
+  },
+  {
+    "id": "pt-ep-31-blaise-pascal",
+    "targetId": "blaise-pascal",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #031 ... Pascal's Wager",
+    "url": "https://philosophizethis.libsyn.com/episode-031-pascals-wager",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_031_..._Pascals_Wager.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 31,
+    "duration": "28:43"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-154-william-james",
+    "targetId": "william-james",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #154 ... Pragmatism and Truth",
+    "url": "https://philosophizethis.libsyn.com/episode-154-pragmatism-and-truth",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Pragmatist_Truth_Final.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 154,
+    "duration": "21:04"
+  },
+  {
+    "id": "pt-ep-84-william-james",
+    "targetId": "william-james",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #084 ... William James on Truth",
+    "url": "https://philosophizethis.libsyn.com/episode-084-william-james-on-truth",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_084_..._William_James_on_Truth.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 84,
+    "duration": "26:44"
+  }
+]

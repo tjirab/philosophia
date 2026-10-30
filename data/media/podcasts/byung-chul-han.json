@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-189-byung-chul-han",
+    "targetId": "byung-chul-han",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #189 ... Everything that connects us is slowly disappearing. - Byung Chul Han pt. 2",
+    "url": "https://philosophizethis.libsyn.com/episode-189-everything-that-connects-us-is-slowly-disappearing-byung-chul-han-pt-2",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/han_part_2.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 189,
+    "duration": "32:43"
+  },
+  {
+    "id": "pt-ep-188-byung-chul-han",
+    "targetId": "byung-chul-han",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #188 ... Achievement Society and the rise of narcissism, depression and anxiety - Byung-Chul Han",
+    "url": "https://philosophizethis.libsyn.com/episode-188-achievement-society-and-the-rise-of-narcissism-depression-and-anxiety-byung-chul-han",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/byung-chul-han_master.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 188,
+    "duration": "36:00"
+  }
+]

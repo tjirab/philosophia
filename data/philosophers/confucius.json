@@ -1,0 +1,22 @@
+{
+  "id": "confucius",
+  "name": "Confucius (Kongzi)",
+  "birthYear": -551,
+  "deathYear": -479,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Foundational teacher and philosopher of China whose ethical and political philosophy centered on humaneness (Ren), ritual propriety (Li), and moral self-cultivation.",
+  "centralQuestion": "How can individuals cultivate moral excellence and restore harmonious societal governance through ritual and virtue?",
+  "keyWorks": [
+    {
+      "title": "The Analects (Lunyu)",
+      "year": "475 BCE",
+      "url": "https://en.wikipedia.org/wiki/Analects",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Analects",
+      "description": "Collection of sayings, dialogues, and historical anecdotes compiling Confucius's moral philosophy."
+    }
+  ],
+  "sepSlug": "confucius",
+  "importanceScore": 97,
+  "imageUrl": "/portraits/confucius.jpg"
+}

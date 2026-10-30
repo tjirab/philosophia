@@ -1,0 +1,23 @@
+[
+  {
+    "source": "sunyata-emptiness",
+    "target": "arthur-schopenhauer",
+    "type": "SYNTHESIZED",
+    "label": "Schopenhauer synthesized Buddhist Sunyata and cessation of desire with Western metaphysics",
+    "strength": 4
+  },
+  {
+    "source": "sunyata-emptiness",
+    "target": "adi-shankara",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Śaṅkara contended that relational emptiness without an absolute positive ground (Brahman) fails to account for consciousness and epistemic certainty"
+  },
+  {
+    "source": "sunyata-emptiness",
+    "target": "jacques-derrida",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Comparative thinkers identify strong structural homologies between Buddhist relational emptiness (Śūnyatā) and Derrida's différance (endless deferral of fixed identity)"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "id": "friedrich-nietzsche",
+  "name": "Friedrich Nietzsche",
+  "birthYear": 1844,
+  "deathYear": 1900,
+  "eraId": "nineteenth-century",
+  "traditionId": "existentialism-early",
+  "shortBio": "Radical iconoclast who proclaimed the 'death of God', analyzed the will to power, master/slave morality, and the challenge of the Übermensch.",
+  "centralQuestion": "How can humanity overcome nihilism and affirm life without transcendent illusions?",
+  "keyWorks": [
+    {
+      "title": "Thus Spoke Zarathustra",
+      "year": "1883 CE",
+      "url": "https://www.gutenberg.org/ebooks/1998",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra",
+      "isbn": "978-0140441185",
+      "description": "Philosophical poem proclaiming the Death of God, the Übermensch (Overman), and the Eternal Recurrence."
+    },
+    {
+      "title": "Beyond Good and Evil",
+      "year": "1886 CE",
+      "url": "https://www.gutenberg.org/ebooks/4363",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Beyond_Good_and_Evil",
+      "isbn": "978-0140449235",
+      "description": "Polemic against traditional dogmatic morality, introducing perspectivism and the Will to Power."
+    },
+    {
+      "title": "On the Genealogy of Morality",
+      "year": "1844 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Genealogy%20of%20Morality",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Genealogy%20of%20Morality",
+      "description": "Major work by Friedrich Nietzsche."
+    },
+    {
+      "title": "The Gay Science",
+      "year": "1844 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Gay%20Science",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Gay%20Science",
+      "description": "Major work by Friedrich Nietzsche."
+    }
+  ],
+  "sepSlug": "nietzsche",
+  "importanceScore": 100,
+  "imageUrl": "/portraits/friedrich-nietzsche.jpg"
+}

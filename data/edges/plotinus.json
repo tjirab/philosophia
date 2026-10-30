@@ -1,0 +1,16 @@
+[
+  {
+    "source": "plotinus",
+    "target": "augustine",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Neoplatonism with Christian theology and grace",
+    "strength": 5
+  },
+  {
+    "source": "plotinus",
+    "target": "boethius",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Synthesized Neoplatonic metaphysics and the One into the Consolation of Philosophy"
+  }
+]

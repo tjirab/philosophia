@@ -1,0 +1,10 @@
+{
+  "id": "pascals-wager",
+  "eraId": "early-modern",
+  "introducedBy": "blaise-pascal",
+  "sepSlug": "pascal-wager",
+  "importanceScore": 93,
+  "title": "Pascal's Wager",
+  "summary": "Pragmatic decision-theoretic argument that rational self-interest mandates living as if God exists because the expected utility of belief is infinite compared to finite loss.",
+  "branch": "epistemology"
+}

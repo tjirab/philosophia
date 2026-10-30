@@ -1,0 +1,23 @@
+[
+  {
+    "source": "jean-jacques-rousseau",
+    "target": "general-will",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The General Will & The Social Contract",
+    "strength": 5
+  },
+  {
+    "source": "jean-jacques-rousseau",
+    "target": "adam-smith",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Smith critiqued Rousseau's Discourse on Inequality, defending commercial interdependence and mutual sympathy against pastoral nostalgia"
+  },
+  {
+    "source": "jean-jacques-rousseau",
+    "target": "mary-wollstonecraft",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Fiercely refuted Rousseau's sexist educational thesis in Émile, rejecting the notion that women exist solely to please and serve men"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "jean-paul-sartre",
+    "target": "simone-de-beauvoir",
+    "type": "DEVELOPED",
+    "label": "Lifelong intellectual partnership; Beauvoir founded feminist existentialism",
+    "strength": 5
+  },
+  {
+    "source": "jean-paul-sartre",
+    "target": "existence-precedes-essence",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Existence Precedes Essence & Bad Faith",
+    "strength": 5
+  }
+]

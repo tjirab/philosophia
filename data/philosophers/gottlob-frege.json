@@ -1,0 +1,29 @@
+{
+  "id": "gottlob-frege",
+  "name": "Gottlob Frege",
+  "birthYear": 1848,
+  "deathYear": 1925,
+  "eraId": "nineteenth-century",
+  "traditionId": "analytic",
+  "shortBio": "German mathematician, logician, and father of Analytic Philosophy who invented modern mathematical logic, predicate calculus, and semantic sense/reference distinction.",
+  "centralQuestion": "How can the foundations of arithmetic and logical thought be objectively secured independently of subjective human psychology?",
+  "keyWorks": [
+    {
+      "title": "Begriffsschrift (Concept Script)",
+      "year": "1879",
+      "url": "https://en.wikipedia.org/wiki/Begriffsschrift",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Begriffsschrift",
+      "description": "Revolutionary formal language introducing quantifiers, functions, and modern propositional logic."
+    },
+    {
+      "title": "On Sense and Reference (Über Sinn und Bedeutung)",
+      "year": "1892",
+      "url": "https://en.wikipedia.org/wiki/Sense_and_reference",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sense_and_reference",
+      "description": "Landmark paper establishing the semantic distinction between sense (mode of presentation) and reference (truth value/object)."
+    }
+  ],
+  "sepSlug": "frege",
+  "importanceScore": 94,
+  "imageUrl": "/portraits/gottlob-frege.jpg"
+}

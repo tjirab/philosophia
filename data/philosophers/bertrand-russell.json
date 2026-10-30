@@ -1,0 +1,36 @@
+{
+  "id": "bertrand-russell",
+  "name": "Bertrand Russell",
+  "birthYear": 1872,
+  "deathYear": 1970,
+  "eraId": "twentieth-century",
+  "traditionId": "analytic",
+  "shortBio": "Leader of the British revolt against idealism, co-founder of analytic philosophy, logician, peace activist, and author of Principia Mathematica.",
+  "centralQuestion": "Can mathematics be grounded entirely on formal logic?",
+  "keyWorks": [
+    {
+      "title": "Principia Mathematica",
+      "year": "1872 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Principia%20Mathematica",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Principia%20Mathematica",
+      "description": "Major work by Bertrand Russell."
+    },
+    {
+      "title": "The Problems of Philosophy",
+      "year": "1872 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Problems%20of%20Philosophy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Problems%20of%20Philosophy",
+      "description": "Major work by Bertrand Russell."
+    },
+    {
+      "title": "On Denoting",
+      "year": "1872 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20Denoting",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20Denoting",
+      "description": "Major work by Bertrand Russell."
+    }
+  ],
+  "sepSlug": "russell",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/bertrand-russell.jpg"
+}

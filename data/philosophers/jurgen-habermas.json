@@ -1,0 +1,28 @@
+{
+  "id": "jurgen-habermas",
+  "name": "Jürgen Habermas",
+  "birthYear": 1929,
+  "eraId": "contemporary",
+  "traditionId": "critical-theory",
+  "shortBio": "Leading second-generation Frankfurt School philosopher who formulated the Theory of Communicative Action, discourse ethics, and constitutional deliberative democracy.",
+  "centralQuestion": "How can intersubjective communicative reason and democratic discourse secure emancipatory legitimacy against instrumental technocracy?",
+  "keyWorks": [
+    {
+      "title": "The Theory of Communicative Action",
+      "year": "1981",
+      "url": "https://en.wikipedia.org/wiki/The_Theory_of_Communicative_Action",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Theory_of_Communicative_Action",
+      "description": "Two-volume work developing rational communicative lifeworld action vs. steering media systems."
+    },
+    {
+      "title": "Between Facts and Norms",
+      "year": "1992",
+      "url": "https://en.wikipedia.org/wiki/Between_Facts_and_Norms",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Between_Facts_and_Norms",
+      "description": "Comprehensive philosophy of law and deliberative democracy."
+    }
+  ],
+  "sepSlug": "habermas",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/jurgen-habermas.jpg"
+}

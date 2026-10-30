@@ -1,0 +1,23 @@
+[
+  {
+    "source": "johann-gottlieb-fichte",
+    "target": "self-positing-ego",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Foundational premise of the Wissenschaftslehre"
+  },
+  {
+    "source": "johann-gottlieb-fichte",
+    "target": "friedrich-schelling",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Initial foundation for Schelling's early philosophical development"
+  },
+  {
+    "source": "johann-gottlieb-fichte",
+    "target": "gwf-hegel",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Pioneered triadic dialectical movement of thesis, antithesis, and synthesis"
+  }
+]

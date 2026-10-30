@@ -1,0 +1,10 @@
+{
+  "id": "invisible-hand",
+  "title": "The Invisible Hand",
+  "branch": "political",
+  "eraId": "enlightenment",
+  "introducedBy": "adam-smith",
+  "summary": "The emergent market coordination mechanism wherein individuals pursuing their enlightened self-interest inadvertently promote the general economic welfare and optimal capital allocation.",
+  "sepSlug": "smith-moral-political",
+  "importanceScore": 95
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "divine-eternity-foreknowledge",
+    "target": "thomas-aquinas",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Adopted by Aquinas as the canonical definition of eternity and divine providence"
+  },
+  {
+    "source": "divine-eternity-foreknowledge",
+    "target": "rene-descartes",
+    "type": "INFLUENCED",
+    "strength": 3,
+    "label": "Informed early modern debates on divine eternal truths and timeless omnipotence"
+  }
+]

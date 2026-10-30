@@ -1,0 +1,11 @@
+[
+  {
+    "id": "sep-aristotle",
+    "targetId": "aristotle",
+    "type": "encyclopedia",
+    "title": "Aristotle - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/aristotle/",
+    "creator": "Stanford University",
+    "summary": "Detailed survey of Aristotle's natural philosophy, four causes, hylomorphism, categorical logic, and Nichomachean virtue theory."
+  }
+]

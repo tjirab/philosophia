@@ -1,0 +1,16 @@
+[
+  {
+    "source": "cartesian-dualism",
+    "target": "baruch-spinoza",
+    "type": "CRITIQUED",
+    "label": "Spinoza resolved mind-body dualism through substance monism (Deus sive Natura)",
+    "strength": 5
+  },
+  {
+    "source": "cartesian-dualism",
+    "target": "thomas-hobbes",
+    "type": "CRITIQUED",
+    "label": "Hobbes rejected immaterial Cartesian substance, arguing all reality is corporeal motion",
+    "strength": 4
+  }
+]

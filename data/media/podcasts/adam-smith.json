@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-49-adam-smith",
+    "targetId": "adam-smith",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #049 ... Adam Smith pt. 2 - The Tip of the Iceberg of Wealth",
+    "url": "https://philosophizethis.libsyn.com/episode-049-adam-smith-pt-2-the-tip-of-the-iceberg-of-wealth",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_049_..._Adam_Smith_pt.2.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 49,
+    "duration": "29:33"
+  },
+  {
+    "id": "pt-ep-48-adam-smith",
+    "targetId": "adam-smith",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #048 ... Adam Smith pt. 1 - Specialization",
+    "url": "https://philosophizethis.libsyn.com/episode-048-adam-smith-pt-1-specialization",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_048_..._Adam_Smith_pt._1_-_Specialization.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 48,
+    "duration": "24:13"
+  }
+]

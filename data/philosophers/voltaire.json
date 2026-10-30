@@ -1,0 +1,37 @@
+{
+  "id": "voltaire",
+  "name": "Voltaire (François-Marie Arouet)",
+  "birthYear": 1694,
+  "deathYear": 1778,
+  "eraId": "enlightenment",
+  "traditionId": "enlightenment-social",
+  "shortBio": "Enlightenment wit and champion of civil liberties, religious tolerance, freedom of speech, and satire against dogmatic optimism.",
+  "centralQuestion": "How do we crush fanaticism and cultivate our own garden with reason?",
+  "keyWorks": [
+    {
+      "title": "Candide",
+      "year": "1759 CE",
+      "url": "https://standardebooks.org/ebooks/voltaire/candide",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Candide",
+      "isbn": "978-0140440041",
+      "description": "Satirical philosophical novella mocking Leibnizian theological optimism ('best of all possible worlds')."
+    },
+    {
+      "title": "Philosophical Letters",
+      "year": "1694 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Philosophical%20Letters",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Philosophical%20Letters",
+      "description": "Major work by Voltaire (François-Marie Arouet)."
+    },
+    {
+      "title": "Treatise on Tolerance",
+      "year": "1694 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Treatise%20on%20Tolerance",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Treatise%20on%20Tolerance",
+      "description": "Major work by Voltaire (François-Marie Arouet)."
+    }
+  ],
+  "sepSlug": "voltaire",
+  "importanceScore": 88,
+  "imageUrl": "/portraits/voltaire.jpg"
+}

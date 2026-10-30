@@ -1,0 +1,29 @@
+{
+  "id": "friedrich-schelling",
+  "name": "Friedrich Wilhelm Joseph Schelling",
+  "birthYear": 1775,
+  "deathYear": 1854,
+  "eraId": "german-idealism",
+  "traditionId": "german-idealism",
+  "shortBio": "German Idealist who formulated Naturphilosophie (Philosophy of Nature), arguing that nature is visible spirit and spirit invisible nature, bridging subjective and objective reality.",
+  "centralQuestion": "How are nature and conscious spirit reconciled as organic polar expressions of a unified Absolute ground?",
+  "keyWorks": [
+    {
+      "title": "Ideas for a Philosophy of Nature",
+      "year": "1797",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_nature",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Philosophy_of_nature",
+      "description": "Seminal treatise developing nature as an autonomous, self-organizing dynamic organism."
+    },
+    {
+      "title": "System of Transcendental Idealism",
+      "year": "1800",
+      "url": "https://en.wikipedia.org/wiki/System_of_Transcendental_Idealism",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/System_of_Transcendental_Idealism",
+      "description": "Comprehensive synthesis of nature and transcendental self-consciousness culminating in aesthetic production."
+    }
+  ],
+  "sepSlug": "schelling",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/friedrich-schelling.jpg"
+}

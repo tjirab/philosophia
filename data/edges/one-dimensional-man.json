@@ -1,0 +1,16 @@
+[
+  {
+    "source": "one-dimensional-man",
+    "target": "michel-foucault",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Foucault rejected the Marcusean 'repressive hypothesis' in The History of Sexuality, arguing power produces and incites discourse rather than simply repressing desire"
+  },
+  {
+    "source": "one-dimensional-man",
+    "target": "jean-baudrillard",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Baudrillard extended Marcuse's critique of false consumer needs and repressive desublimation into his semiotic analysis of consumer society and hyperreality"
+  }
+]

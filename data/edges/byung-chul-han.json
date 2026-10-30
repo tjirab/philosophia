@@ -1,0 +1,16 @@
+[
+  {
+    "source": "byung-chul-han",
+    "target": "burnout-society",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Burnout Society & Self-Exploitation",
+    "strength": 5
+  },
+  {
+    "source": "byung-chul-han",
+    "target": "alenka-zupancic",
+    "type": "SYNTHESIZED",
+    "strength": 3,
+    "label": "Synthesizes psychoanalytic disavowal with critiques of the neoliberal achievement society and compulsory positivity"
+  }
+]

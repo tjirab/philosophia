@@ -1,0 +1,55 @@
+{
+  "id": "aristotle",
+  "name": "Aristotle",
+  "birthYear": -384,
+  "deathYear": -322,
+  "eraId": "classical-greek",
+  "traditionId": "aristotelianism",
+  "shortBio": "Plato's greatest student and tutor to Alexander the Great. Systematized logic, biology, physics, metaphysics, and teleological virtue ethics.",
+  "centralQuestion": "What is the telos (purpose) of things, and what constitutes human flourishing (eudaimonia)?",
+  "keyWorks": [
+    {
+      "title": "Nicomachean Ethics",
+      "year": "-350 BCE",
+      "url": "https://classics.mit.edu/Aristotle/nicomachaen.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nicomachean_Ethics",
+      "isbn": "978-0140449495",
+      "description": "Foundational treatise on virtue ethics, the Golden Mean, and human flourishing (eudaimonia)."
+    },
+    {
+      "title": "Metaphysics",
+      "year": "-350 BCE",
+      "url": "https://classics.mit.edu/Aristotle/metaphysics.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Metaphysics_(Aristotle)",
+      "isbn": "978-0140446197",
+      "description": "Inquiry into 'Being qua Being', substance, potentiality and actuality, and the Unmoved Mover."
+    },
+    {
+      "title": "Politics",
+      "year": "-350 BCE",
+      "url": "https://classics.mit.edu/Aristotle/politics.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Politics_(Aristotle)",
+      "isbn": "978-0199538737",
+      "description": "Examination of political constitutions, citizenship, and man as inherently a 'political animal'."
+    },
+    {
+      "title": "De Anima",
+      "year": "-350 BCE",
+      "url": "https://classics.mit.edu/Aristotle/soul.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/On_the_Soul",
+      "isbn": "978-0140444711",
+      "description": "Aristotle's psychology: the soul as the formal actuality of an organic physical body."
+    },
+    {
+      "title": "Organon",
+      "year": "-350 BCE",
+      "url": "https://en.wikipedia.org/wiki/Organon",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Organon",
+      "isbn": "978-0674993594",
+      "description": "The six treatises establishing categorical logic and the deductive syllogism."
+    }
+  ],
+  "sepSlug": "aristotle",
+  "importanceScore": 100,
+  "imageUrl": "/portraits/aristotle.jpg"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "albert-camus",
+  "name": "Albert Camus",
+  "birthYear": 1913,
+  "deathYear": 1960,
+  "eraId": "twentieth-century",
+  "traditionId": "existentialism",
+  "shortBio": "Philosopher of the Absurd: the clash between humanity's thirst for meaning and the silent indifference of the universe.",
+  "centralQuestion": "Is life worth living despite the absurdity of existence?",
+  "keyWorks": [
+    {
+      "title": "The Myth of Sisyphus",
+      "year": "1942 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Myth_of_Sisyphus",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Myth_of_Sisyphus",
+      "isbn": "978-0679733737",
+      "description": "Camus's philosophical essay on the absurd: 'One must imagine Sisyphus happy.'"
+    },
+    {
+      "title": "The Stranger",
+      "year": "1913 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Stranger",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Stranger",
+      "description": "Major work by Albert Camus."
+    },
+    {
+      "title": "The Rebel",
+      "year": "1913 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Rebel",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Rebel",
+      "description": "Major work by Albert Camus."
+    }
+  ],
+  "sepSlug": "camus",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/albert-camus.jpg"
+}

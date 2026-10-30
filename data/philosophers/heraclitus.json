@@ -1,0 +1,22 @@
+{
+  "id": "heraclitus",
+  "name": "Heraclitus of Ephesus",
+  "birthYear": -535,
+  "deathYear": -475,
+  "eraId": "pre-socratic",
+  "traditionId": "milesian",
+  "shortBio": "Known as 'The Obscure', famous for his doctrine that universal flux is governed by an underlying cosmic Logos.",
+  "centralQuestion": "How does unity emerge from perpetual change and strife?",
+  "keyWorks": [
+    {
+      "title": "Fragments (On Nature)",
+      "year": "535 BCE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Fragments%20(On%20Nature)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Fragments%20(On%20Nature)",
+      "description": "Major work by Heraclitus of Ephesus."
+    }
+  ],
+  "sepSlug": "heraclitus",
+  "importanceScore": 75,
+  "imageUrl": "/portraits/heraclitus.jpg"
+}

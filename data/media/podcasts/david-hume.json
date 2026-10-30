@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pt-ep-56-david-hume",
+    "targetId": "david-hume",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #056 ... Kant pt. 1 - An Introduction to the Introduction",
+    "url": "https://philosophizethis.libsyn.com/episode-056-kant-pt-1-an-introduction-to-the-introduction",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_056_..._Kant_pt._1_-_An_Introduction_to_the_Introduction.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 56,
+    "duration": "26:22"
+  },
+  {
+    "id": "pt-ep-55-david-hume",
+    "targetId": "david-hume",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #055 ... Interview on Hume with Massimo Pigliucci",
+    "url": "https://philosophizethis.libsyn.com/episode-054-interview-on-hume-with-massimo-pigliucci",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_055_..._Interview_on_Hume_with_Massimo_Pigliucci.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 55,
+    "duration": "30:35"
+  },
+  {
+    "id": "pt-ep-54-david-hume",
+    "targetId": "david-hume",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #054 ... Hume pt. 4 - Art",
+    "url": "https://philosophizethis.libsyn.com/episode-054-hume-pt-4-art",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_054_..._Hume_pt._4_-_Art.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 54,
+    "duration": "30:22"
+  },
+  {
+    "id": "pt-ep-53-david-hume",
+    "targetId": "david-hume",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #053 ... David Hume pt. 3 - Custom",
+    "url": "https://philosophizethis.libsyn.com/episode-053-david-hume-pt-3-custom",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_053_..._David_Hume_pt._3_-_Custom.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 53,
+    "duration": "24:25"
+  },
+  {
+    "id": "pt-ep-52-david-hume",
+    "targetId": "david-hume",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #052 ... David Hume pt. 2 - Design",
+    "url": "https://philosophizethis.libsyn.com/episode-052-david-hume-pt-2-design",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_052_..._David_Hume_pt._2_-_Design.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 52,
+    "duration": "29:57"
+  },
+  {
+    "id": "pt-ep-51-david-hume",
+    "targetId": "david-hume",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #051 ... David Hume pt. 1",
+    "url": "https://philosophizethis.libsyn.com/episode-051-david-hume-pt-1",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_051_..._David_Hume_pt._1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 51,
+    "duration": "30:25"
+  }
+]

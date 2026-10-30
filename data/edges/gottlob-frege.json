@@ -1,0 +1,23 @@
+[
+  {
+    "source": "gottlob-frege",
+    "target": "sinn-und-bedeutung",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Founded modern semantics with distinction between Sense and Reference"
+  },
+  {
+    "source": "gottlob-frege",
+    "target": "bertrand-russell",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Frege's predicate logic and logicism formed the bedrock of Principia Mathematica"
+  },
+  {
+    "source": "gottlob-frege",
+    "target": "ludwig-wittgenstein",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Primary intellectual mentor alongside Russell for Wittgenstein's Tractatus"
+  }
+]

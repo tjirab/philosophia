@@ -1,0 +1,30 @@
+[
+  {
+    "source": "ferdinand-de-saussure",
+    "target": "semiology-signifier-signified",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the foundational dyadic sign model (signifier/signified) and differential value in Course in General Linguistics"
+  },
+  {
+    "source": "ferdinand-de-saussure",
+    "target": "michel-foucault",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Saussure's structuralism provided the epistemic framework for Foucault's analysis of discursive formations in The Order of Things"
+  },
+  {
+    "source": "ferdinand-de-saussure",
+    "target": "jacques-derrida",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Derrida radicalized Saussure's thesis that in language there are only differences without positive terms into différance"
+  },
+  {
+    "source": "ferdinand-de-saussure",
+    "target": "jean-baudrillard",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Baudrillard applied Saussurean structural semiotics to consumer capitalism and the precession of simulacra"
+  }
+]

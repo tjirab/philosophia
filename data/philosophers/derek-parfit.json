@@ -1,0 +1,29 @@
+{
+  "id": "derek-parfit",
+  "name": "Derek Parfit",
+  "birthYear": 1942,
+  "deathYear": 2017,
+  "eraId": "contemporary",
+  "traditionId": "analytic",
+  "shortBio": "Oxford moral philosopher famous for Reasons and Persons (psychological reductionism of personal identity) and On What Matters (unifying Kantianism, contractualism, and consequentialism).",
+  "centralQuestion": "Does personal identity consist in anything more than psychological connectedness, and what reasons do we have to care for future generations?",
+  "keyWorks": [
+    {
+      "title": "Reasons and Persons",
+      "year": "1984",
+      "url": "https://en.wikipedia.org/wiki/Reasons_and_Persons",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Reasons_and_Persons",
+      "description": "Influential treatise on personal identity, future generations, and moral rationality."
+    },
+    {
+      "title": "On What Matters",
+      "year": "2011",
+      "url": "https://en.wikipedia.org/wiki/On_What_Matters",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/On_What_Matters",
+      "description": "Monumental convergence of major normative ethical systems into triple theory."
+    }
+  ],
+  "sepSlug": "parfit",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/derek-parfit.jpg"
+}

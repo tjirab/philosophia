@@ -1,0 +1,10 @@
+{
+  "id": "sinn-und-bedeutung",
+  "eraId": "nineteenth-century",
+  "introducedBy": "gottlob-frege",
+  "sepSlug": "frege",
+  "importanceScore": 95,
+  "title": "Sense and Reference (Sinn und Bedeutung)",
+  "summary": "Semantic distinction between the sense (Sinn) of a linguistic expression (its mode of presentation) and its reference (Bedeutung) (the object or truth-value designated).",
+  "branch": "logic"
+}

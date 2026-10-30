@@ -1,0 +1,16 @@
+[
+  {
+    "source": "parmenides",
+    "target": "democritus",
+    "type": "DEVELOPED",
+    "label": "Democritus reconciled changeless Being with change via moving atoms in void",
+    "strength": 4
+  },
+  {
+    "source": "parmenides",
+    "target": "zeno-of-elea",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Defended Parmenidean monism through dialectical reductio paradoxes"
+  }
+]

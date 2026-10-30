@@ -1,0 +1,38 @@
+{
+  "id": "augustine",
+  "name": "Augustine of Hippo",
+  "birthYear": 354,
+  "deathYear": 430,
+  "eraId": "medieval",
+  "traditionId": "scholasticism",
+  "shortBio": "Bishop of Hippo who synthesized Christian theology with Neoplatonism; explored memory, psychological time, original sin, and grace.",
+  "centralQuestion": "What is the relation between divine eternity and the human consciousness in time?",
+  "keyWorks": [
+    {
+      "title": "Confessions",
+      "year": "397 CE",
+      "url": "https://www.gutenberg.org/ebooks/3296",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Confessions_(Augustine)",
+      "isbn": "978-0199537822",
+      "description": "Autobiographical spiritual journey, theology of grace, and famous analysis of the psychological nature of time."
+    },
+    {
+      "title": "City of God",
+      "year": "426 CE",
+      "url": "https://www.gutenberg.org/ebooks/45304",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_City_of_God",
+      "isbn": "978-0140448948",
+      "description": "Philosophy of history contrasting the heavenly City of God with the earthly City of Man after the sack of Rome."
+    },
+    {
+      "title": "On the Trinity",
+      "year": "354 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Trinity",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=On%20the%20Trinity",
+      "description": "Major work by Augustine of Hippo."
+    }
+  ],
+  "sepSlug": "augustine",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/augustine.jpg"
+}

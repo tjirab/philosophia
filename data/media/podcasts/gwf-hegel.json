@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pt-ep-110-gwf-hegel",
+    "targetId": "gwf-hegel",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #110 ... The Frankfurt School pt. 3 - The Culture Industry",
+    "url": "https://philosophizethis.libsyn.com/episode-110-the-frankfurt-school-pt-3-the-culture-industry",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/culture_industry.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 110,
+    "duration": "28:07"
+  },
+  {
+    "id": "pt-ep-77-gwf-hegel",
+    "targetId": "gwf-hegel",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #077 ... Marx and Kierkegaard on Religion pt. 1",
+    "url": "https://philosophizethis.libsyn.com/077-marx-and-kierkegaard-on-religion-pt-1",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Marx_On_Religion.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 77,
+    "duration": "27:17"
+  },
+  {
+    "id": "pt-ep-76-gwf-hegel",
+    "targetId": "gwf-hegel",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #076 ... Hegel's God",
+    "url": "https://philosophizethis.libsyn.com/episode-076-hegels-god",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_076_..._Hegels_God.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 76,
+    "duration": "24:56"
+  },
+  {
+    "id": "pt-ep-74-gwf-hegel",
+    "targetId": "gwf-hegel",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #074 ... Hegel Returns",
+    "url": "https://philosophizethis.libsyn.com/074-hegel-returns",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/074_..._Hegel_Returns.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 74,
+    "duration": "27:38"
+  },
+  {
+    "id": "pt-ep-67-gwf-hegel",
+    "targetId": "gwf-hegel",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #067 ... What Hegel Was Saying!",
+    "url": "https://philosophizethis.libsyn.com/episode-067-what-hegel-was-saying",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_067_..._What_Hegel_Was_Saying.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 67,
+    "duration": "22:13"
+  },
+  {
+    "id": "pt-ep-66-gwf-hegel",
+    "targetId": "gwf-hegel",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #066 ... Hegel pt. 1 - Introduction",
+    "url": "https://philosophizethis.libsyn.com/066-hegel-pt-1-introduction",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/066_..._Hegel_pt._1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 66,
+    "duration": "19:15"
+  }
+]

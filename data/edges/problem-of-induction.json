@@ -1,0 +1,16 @@
+[
+  {
+    "source": "problem-of-induction",
+    "target": "immanuel-kant",
+    "type": "INFLUENCED",
+    "label": "Hume problem of induction awakened Kant from dogmatic slumber to write the Critique of Pure Reason",
+    "strength": 5
+  },
+  {
+    "source": "problem-of-induction",
+    "target": "karl-popper",
+    "type": "DEVELOPED",
+    "label": "Popper resolved Hume induction dilemma by replacing verification with falsificationism",
+    "strength": 5
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "ockhams-razor",
+  "title": "Ockham's Razor (Principle of Parsimony)",
+  "branch": "epistemology",
+  "eraId": "medieval",
+  "introducedBy": "william-of-ockham",
+  "summary": "Plurality should not be posited without necessity; when presented with competing hypotheses, the one that makes the fewest assumptions is preferred.",
+  "sepSlug": "ockham"
+}

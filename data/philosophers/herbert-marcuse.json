@@ -1,0 +1,36 @@
+{
+  "id": "herbert-marcuse",
+  "name": "Herbert Marcuse",
+  "birthYear": 1898,
+  "deathYear": 1979,
+  "eraId": "twentieth-century",
+  "traditionId": "critical-theory",
+  "shortBio": "German-American philosopher, political theorist, and leading member of the Frankfurt School whose critique of advanced capitalism and technocracy became the intellectual catalyst of the New Left.",
+  "centralQuestion": "\"How can authentic human liberation be achieved when advanced industrial society pacifies dissent through consumerism and false needs?\"",
+  "keyWorks": [
+    {
+      "title": "Reason and Revolution: Hegel and the Rise of Social Theory",
+      "year": "1941",
+      "url": "https://en.wikipedia.org/wiki/Reason_and_Revolution",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Reason_and_Revolution",
+      "description": "Groundbreaking defense of Hegelian negative dialectics as critical thinking that resists positivist and authoritarian social theories."
+    },
+    {
+      "title": "Eros and Civilization: A Philosophical Inquiry into Freud",
+      "year": "1955",
+      "url": "https://en.wikipedia.org/wiki/Eros_and_Civilization",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Eros_and_Civilization",
+      "description": "Synthesizes Marx and Freud, arguing modern technological productivity renders surplus repression obsolete, opening the possibility of non-repressive civilization."
+    },
+    {
+      "title": "One-Dimensional Man: Studies in the Ideology of Advanced Industrial Society",
+      "year": "1964",
+      "url": "https://en.wikipedia.org/wiki/One-Dimensional_Man",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/One-Dimensional_Man",
+      "description": "Seminal diagnosis of consumer capitalism and technocratic rationality creating a totalitarian consensus through repressive desublimation."
+    }
+  ],
+  "sepSlug": "marcuse",
+  "importanceScore": 88,
+  "imageUrl": "/portraits/herbert-marcuse.jpg"
+}

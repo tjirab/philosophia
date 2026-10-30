@@ -1,0 +1,39 @@
+{
+  "id": "immanuel-kant",
+  "name": "Immanuel Kant",
+  "birthYear": 1724,
+  "deathYear": 1804,
+  "eraId": "german-idealism",
+  "traditionId": "german-idealism",
+  "shortBio": "Revolutionized philosophy through Transcendental Idealism: our mind structures phenomenal experience, while the noumenon remains beyond.",
+  "centralQuestion": "What can I know? What should I do? What may I hope?",
+  "keyWorks": [
+    {
+      "title": "Critique of Pure Reason",
+      "year": "1781 CE",
+      "url": "https://www.gutenberg.org/ebooks/4280",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Critique_of_Pure_Reason",
+      "isbn": "978-0521657297",
+      "description": "Copernican revolution in metaphysics: Transcendental Idealism, synthetic a priori judgments, and bounds of reason."
+    },
+    {
+      "title": "Critique of Practical Reason",
+      "year": "1788 CE",
+      "url": "https://www.gutenberg.org/ebooks/5683",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Critique_of_Practical_Reason",
+      "isbn": "978-0521599658",
+      "description": "Kant's second critique, proving freedom, immortality of the soul, and God through moral necessity."
+    },
+    {
+      "title": "Groundwork of the Metaphysics of Morals",
+      "year": "1785 CE",
+      "url": "https://www.gutenberg.org/ebooks/5682",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Groundwork_of_the_Metaphysics_of_Morals",
+      "isbn": "978-0521626958",
+      "description": "Deontological ethics introducing the Categorical Imperative and the intrinsic dignity of persons."
+    }
+  ],
+  "sepSlug": "kant",
+  "importanceScore": 100,
+  "imageUrl": "/portraits/immanuel-kant.jpg"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "anselm-of-canterbury",
+  "name": "Anselm of Canterbury",
+  "birthYear": 1033,
+  "deathYear": 1109,
+  "eraId": "medieval",
+  "traditionId": "scholasticism",
+  "shortBio": "Father of Scholasticism and Archbishop of Canterbury who formulated the canonical Ontological Argument for the existence of God in the Proslogion.",
+  "centralQuestion": "Can the reality of God be demonstrated through pure conceptual analysis as 'that than which nothing greater can be conceived'?",
+  "keyWorks": [
+    {
+      "title": "Proslogion",
+      "year": "1078",
+      "url": "https://en.wikipedia.org/wiki/Proslogion",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Proslogion",
+      "description": "Famous treatise containing the ontological proof of God from the concept of maximal greatness."
+    },
+    {
+      "title": "Monologion",
+      "year": "1076",
+      "url": "https://en.wikipedia.org/wiki/Monologion",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Monologion",
+      "description": "Theological meditation on divine attributes and faith seeking understanding."
+    }
+  ],
+  "sepSlug": "anselm",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/anselm-of-canterbury.jpg"
+}

@@ -2,10 +2,12 @@ import { XMLParser } from 'fast-xml-parser';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildData } from './build-data.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
+const MEDIA_PODCASTS_DIR = path.join(ROOT_DIR, 'data', 'media', 'podcasts');
 const MEDIA_FILE = path.join(ROOT_DIR, 'data', 'media.json');
 
 const RSS_URL = 'https://philosophizethis.libsyn.com/rss';
@@ -159,23 +161,25 @@ async function ingestRSS() {
 
   console.log(`Mapped ${mediaItems.length} podcast items to philosophers.`);
 
-  // Load existing media file if present to preserve manual curated resources
-  let existingMedia = [];
-  if (fs.existsSync(MEDIA_FILE)) {
-    try {
-      const content = fs.readFileSync(MEDIA_FILE, 'utf-8');
-      existingMedia = JSON.parse(content);
-    } catch {
-      existingMedia = [];
+  // Group podcasts by targetId and write to modular files
+  fs.mkdirSync(MEDIA_PODCASTS_DIR, { recursive: true });
+  const podcastsByTarget = new Map();
+  for (const item of mediaItems) {
+    if (!podcastsByTarget.has(item.targetId)) {
+      podcastsByTarget.set(item.targetId, []);
     }
+    podcastsByTarget.get(item.targetId).push(item);
   }
 
-  // Filter out older auto-generated podcast items, keep curated books/videos/SEP links
-  const curatedNonPodcasts = existingMedia.filter(m => m.type !== 'podcast');
-  const merged = [...curatedNonPodcasts, ...mediaItems];
+  for (const [targetId, items] of podcastsByTarget.entries()) {
+    const targetFile = path.join(MEDIA_PODCASTS_DIR, `${targetId}.json`);
+    fs.writeFileSync(targetFile, JSON.stringify(items, null, 2) + '\n', 'utf-8');
+  }
 
-  fs.writeFileSync(MEDIA_FILE, JSON.stringify(merged, null, 2), 'utf-8');
-  console.log(`Successfully updated ${MEDIA_FILE} (Total media items: ${merged.length})`);
+  console.log(`✓ Saved podcast feeds across ${podcastsByTarget.size} modular files in data/media/podcasts/`);
+
+  // Rebuild the compiled data/media.json and other datasets
+  buildData();
 }
 
 function hashCode(str) {

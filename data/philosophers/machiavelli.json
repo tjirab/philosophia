@@ -1,0 +1,30 @@
+{
+  "id": "machiavelli",
+  "name": "Niccolò Machiavelli",
+  "birthYear": 1469,
+  "deathYear": 1527,
+  "eraId": "early-modern",
+  "traditionId": "rationalism",
+  "shortBio": "Florentine diplomat who established political realism, analyzing how power is practically seized and maintained.",
+  "centralQuestion": "Is it better for a leader to be loved or feared, and how must virtue adapt to fortuna?",
+  "keyWorks": [
+    {
+      "title": "The Prince",
+      "year": "1513 CE",
+      "url": "https://standardebooks.org/ebooks/niccolo-machiavelli/the-prince/w-k-marriott",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Prince",
+      "isbn": "978-0140449150",
+      "description": "Realistic political treatise on statecraft, the balance of virtù and fortuna, and maintaining power."
+    },
+    {
+      "title": "Discourses on Livy",
+      "year": "1469 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Discourses%20on%20Livy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Discourses%20on%20Livy",
+      "description": "Major work by Niccolò Machiavelli."
+    }
+  ],
+  "sepSlug": "machiavelli",
+  "importanceScore": 88,
+  "imageUrl": "/portraits/machiavelli.jpg"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "avicenna",
+    "target": "floating-man",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Floating Man Thought Experiment",
+    "strength": 5
+  },
+  {
+    "source": "avicenna",
+    "target": "al-ghazali",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Tahafut al-Falasifa refuted Avicennian eternal emanation and natural necessity"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "id": "jacques-derrida",
+  "name": "Jacques Derrida",
+  "birthYear": 1930,
+  "deathYear": 2004,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "shortBio": "Creator of deconstruction; unmasked the hidden hierarchies and instabilities in Western metaphysics of presence.",
+  "centralQuestion": "How does language continuously defer fixed meaning through différance?",
+  "keyWorks": [
+    {
+      "title": "Of Grammatology",
+      "year": "1930 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Of%20Grammatology",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Of%20Grammatology",
+      "description": "Major work by Jacques Derrida."
+    },
+    {
+      "title": "Writing and Difference",
+      "year": "1930 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Writing%20and%20Difference",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Writing%20and%20Difference",
+      "description": "Major work by Jacques Derrida."
+    }
+  ],
+  "sepSlug": "derrida",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/jacques-derrida.jpg"
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "source": "herbert-marcuse",
+    "target": "theodor-adorno",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Frankfurt School allies who clashed during the 1968 New Left student protests over political activism versus aesthetic withdrawal"
+  },
+  {
+    "source": "herbert-marcuse",
+    "target": "one-dimensional-man",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the critique of one-dimensional society, repressive desublimation, and the Great Refusal in One-Dimensional Man and Eros and Civilization"
+  },
+  {
+    "source": "herbert-marcuse",
+    "target": "jurgen-habermas",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Directly influenced Habermas, who engaged Marcuse's critique of technology and technocracy to formulate communicative action"
+  }
+]

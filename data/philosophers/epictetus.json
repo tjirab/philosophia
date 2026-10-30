@@ -1,0 +1,31 @@
+{
+  "id": "epictetus",
+  "name": "Epictetus",
+  "birthYear": 50,
+  "deathYear": 135,
+  "eraId": "hellenistic",
+  "traditionId": "stoicism",
+  "shortBio": "Born a slave in Hierapolis, Epictetus taught that mental freedom comes from distinguishing what is within our control from what is not.",
+  "centralQuestion": "What is in our power, and how do we master our own judgments?",
+  "keyWorks": [
+    {
+      "title": "Discourses",
+      "year": "108 CE",
+      "url": "https://classics.mit.edu/Epictetus/discourses.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Discourses_of_Epictetus",
+      "isbn": "978-0199595181",
+      "description": "Informal lectures recorded by Arrian on Stoic ethics and the Dichotomy of Control."
+    },
+    {
+      "title": "Enchiridion (Handbook)",
+      "year": "125 CE",
+      "url": "https://classics.mit.edu/Epictetus/epicench.html",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Enchiridion_of_Epictetus",
+      "isbn": "978-0486433592",
+      "description": "Concise practical handbook of Stoic advice for mental tranquility and moral freedom."
+    }
+  ],
+  "sepSlug": "epictetus",
+  "importanceScore": 86,
+  "imageUrl": "/portraits/epictetus.jpg"
+}

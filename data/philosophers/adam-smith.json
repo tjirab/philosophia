@@ -1,0 +1,36 @@
+{
+  "id": "adam-smith",
+  "name": "Adam Smith",
+  "birthYear": 1723,
+  "deathYear": 1790,
+  "eraId": "enlightenment",
+  "traditionId": "enlightenment-social",
+  "shortBio": "Scottish Enlightenment moral philosopher and political economist whose landmark treatises unified moral sentiment with decentralized commercial society.",
+  "centralQuestion": "How do innate sympathy and decentralized self-interest produce moral harmony and social flourishing?",
+  "keyWorks": [
+    {
+      "title": "The Theory of Moral Sentiments",
+      "year": "1759 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Theory_of_Moral_Sentiments",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Theory_of_Moral_Sentiments",
+      "description": "Foundational moral philosophy treatise arguing that ethical judgment arises from mutual sympathy and the internal guidance of the impartial spectator."
+    },
+    {
+      "title": "The Wealth of Nations",
+      "year": "1776 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Wealth_of_Nations",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Wealth_of_Nations",
+      "description": "Groundbreaking treatise of classical economics analyzing the division of labor, productivity, market mechanisms, and the invisible hand."
+    },
+    {
+      "title": "Essays on Philosophical Subjects",
+      "year": "1795 CE",
+      "url": "https://en.wikipedia.org/wiki/Essays_on_Philosophical_Subjects",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Essays_on_Philosophical_Subjects",
+      "description": "Posthumously collected essays containing his pioneering psychological and historical study of the principles that lead and direct philosophical inquiries."
+    }
+  ],
+  "sepSlug": "smith-moral-political",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/adam-smith.jpg"
+}

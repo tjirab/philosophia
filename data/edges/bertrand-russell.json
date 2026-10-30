@@ -1,0 +1,9 @@
+[
+  {
+    "source": "bertrand-russell",
+    "target": "ludwig-wittgenstein",
+    "type": "INFLUENCED",
+    "label": "Russell mentored early Wittgenstein; their work revolutionized formal logical analysis",
+    "strength": 5
+  }
+]

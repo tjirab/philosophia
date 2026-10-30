@@ -1,0 +1,29 @@
+{
+  "id": "boethius",
+  "name": "Anicius Manlius Severinus Boethius",
+  "birthYear": 477,
+  "deathYear": 524,
+  "eraId": "medieval",
+  "traditionId": "scholasticism",
+  "shortBio": "Roman statesman and philosopher regarded as the last of the Romans and first of the scholastics, whose Consolation of Philosophy and translations of Aristotle transmitted classical logic to the medieval West.",
+  "centralQuestion": "How can human free will and moral responsibility coexist with divine omniscience and the eternal present?",
+  "keyWorks": [
+    {
+      "title": "The Consolation of Philosophy (De consolatione philosophiae)",
+      "year": "524 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Consolation_of_Philosophy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Consolation_of_Philosophy",
+      "description": "Masterpiece on divine eternity, fortune, virtue, and providence written in prison awaiting execution."
+    },
+    {
+      "title": "Commentaries on Aristotle's Categories and De Interpretatione",
+      "year": "510 CE",
+      "url": "https://en.wikipedia.org/wiki/Organon",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Organon",
+      "description": "Foundational Latin translations and commentaries forming the medieval Logica Vetus (Old Logic)."
+    }
+  ],
+  "sepSlug": "boethius",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/boethius.jpg"
+}

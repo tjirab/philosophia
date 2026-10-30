@@ -1,0 +1,16 @@
+[
+  {
+    "source": "ludwig-wittgenstein",
+    "target": "karl-popper",
+    "type": "CRITIQUED",
+    "label": "Popper famously clashed with Wittgenstein over whether philosophical problems are real or linguistic puzzles",
+    "strength": 4
+  },
+  {
+    "source": "ludwig-wittgenstein",
+    "target": "language-games",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Language Games & Forms of Life",
+    "strength": 5
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "id": "michel-foucault",
+  "name": "Michel Foucault",
+  "birthYear": 1926,
+  "deathYear": 1984,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "shortBio": "French historian of systems of thought; explored how power is entwined with knowledge, surveillance (Panopticon), and biopolitics.",
+  "centralQuestion": "How do disciplinary institutions and discourses construct our conceptions of sanity, sexuality, and deviance?",
+  "keyWorks": [
+    {
+      "title": "Discipline and Punish",
+      "year": "1975 CE",
+      "url": "https://en.wikipedia.org/wiki/Discipline_and_Punish",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Discipline_and_Punish",
+      "isbn": "978-0679752554",
+      "description": "Foucault's genealogy of modern penal institutions, panopticism, and the birth of disciplinary power."
+    },
+    {
+      "title": "The History of Sexuality",
+      "year": "1926 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20History%20of%20Sexuality",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20History%20of%20Sexuality",
+      "description": "Major work by Michel Foucault."
+    },
+    {
+      "title": "The Order of Things",
+      "year": "1926 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Order%20of%20Things",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Order%20of%20Things",
+      "description": "Major work by Michel Foucault."
+    }
+  ],
+  "sepSlug": "foucault",
+  "importanceScore": 97,
+  "imageUrl": "/portraits/michel-foucault.jpg"
+}

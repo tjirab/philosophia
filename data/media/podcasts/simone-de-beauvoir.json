@@ -1,0 +1,46 @@
+[
+  {
+    "id": "pt-ep-157-simone-de-beauvoir",
+    "targetId": "simone-de-beauvoir",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #157 ... The Creation of Meaning - Beauvoir",
+    "url": "https://philosophizethis.libsyn.com/episode-157-the-creation-of-meaning-beauvoir",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/The_Creation_of__Meaning.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 157,
+    "duration": "24:55"
+  },
+  {
+    "id": "pt-ep-107-simone-de-beauvoir",
+    "targetId": "simone-de-beauvoir",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #107 ... Simone De Beauvoir pt .3 - Responsibility",
+    "url": "https://philosophizethis.libsyn.com/episode-107-simone-de-beauvoir-pt-3-responsibility",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Beauvoir_pt_3.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 107,
+    "duration": "26:31"
+  },
+  {
+    "id": "pt-ep-106-simone-de-beauvoir",
+    "targetId": "simone-de-beauvoir",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #106 ... Simone De Beauvoir pt. 2 - The Ethics of Ambiguity",
+    "url": "https://philosophizethis.libsyn.com/episode-106-simone-de-beauvoir-pt-2-the-ethics-of-ambiguity",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Simone_Ethics.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 106,
+    "duration": "24:18"
+  },
+  {
+    "id": "pt-ep-89-simone-de-beauvoir",
+    "targetId": "simone-de-beauvoir",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #089 ... Simone De Beauvoir - The Second Sex",
+    "url": "https://philosophizethis.libsyn.com/episode-089-simone-de-beauvoir-the-second-sex",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Simone_Second.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 89,
+    "duration": "30:50"
+  }
+]

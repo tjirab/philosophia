@@ -1,0 +1,31 @@
+{
+  "id": "ludwig-wittgenstein",
+  "name": "Ludwig Wittgenstein",
+  "birthYear": 1889,
+  "deathYear": 1951,
+  "eraId": "twentieth-century",
+  "traditionId": "analytic",
+  "shortBio": "Revolutionized philosophy twice: first with the logical picture theory of language, then with ordinary language games and forms of life.",
+  "centralQuestion": "What can be said clearly, and what must be passed over in silence?",
+  "keyWorks": [
+    {
+      "title": "Tractatus Logico-Philosophicus",
+      "year": "1921 CE",
+      "url": "https://www.gutenberg.org/ebooks/5740",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Tractatus_Logico-Philosophicus",
+      "isbn": "978-0415254083",
+      "description": "Logical picture theory of language: 'Whereof one cannot speak, thereof one must be silent.'"
+    },
+    {
+      "title": "Philosophical Investigations",
+      "year": "1953 CE",
+      "url": "https://en.wikipedia.org/wiki/Philosophical_Investigations",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Philosophical_Investigations",
+      "isbn": "978-1405159289",
+      "description": "Later Wittgenstein: rejecting formal picture theory for ordinary language games and forms of life."
+    }
+  ],
+  "sepSlug": "wittgenstein",
+  "importanceScore": 99,
+  "imageUrl": "/portraits/ludwig-wittgenstein.jpg"
+}

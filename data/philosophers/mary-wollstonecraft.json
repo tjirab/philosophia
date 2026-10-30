@@ -1,0 +1,29 @@
+{
+  "id": "mary-wollstonecraft",
+  "name": "Mary Wollstonecraft",
+  "birthYear": 1759,
+  "deathYear": 1797,
+  "eraId": "enlightenment",
+  "traditionId": "enlightenment-social",
+  "shortBio": "Pioneering Enlightenment moral and political philosopher whose seminal works asserted that women are rational beings entitled to equal education, moral autonomy, and fundamental human rights.",
+  "centralQuestion": "How can an Enlightenment society claim to champion reason, liberty, and justice while systematically subordinating half of humanity through artificial educational deprivation?",
+  "keyWorks": [
+    {
+      "title": "A Vindication of the Rights of Woman",
+      "year": "1792",
+      "url": "https://standardebooks.org/ebooks/mary-wollstonecraft/a-vindication-of-the-rights-of-woman",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Vindication_of_the_Rights_of_Woman",
+      "description": "Landmark philosophical defense of gender equality, universal education, and female moral autonomy against Rousseau's educational domesticity."
+    },
+    {
+      "title": "A Vindication of the Rights of Men",
+      "year": "1790",
+      "url": "https://en.wikipedia.org/wiki/A_Vindication_of_the_Rights_of_Men",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Vindication_of_the_Rights_of_Men",
+      "description": "Passionate Enlightenment rebuttal of Edmund Burke's conservative critique of the French Revolution, defending human equality and aristocracy critique."
+    }
+  ],
+  "sepSlug": "wollstonecraft",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/mary-wollstonecraft.jpg"
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "source": "friedrich-schelling",
+    "target": "naturphilosophie",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated philosophy of organic nature as unconscious spirit"
+  },
+  {
+    "source": "friedrich-schelling",
+    "target": "gwf-hegel",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Former roommates who split; Hegel mocked Schelling's Absolute as 'night in which all cows are black'"
+  },
+  {
+    "source": "friedrich-schelling",
+    "target": "arthur-schopenhauer",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Dynamic unconscious natural forces influenced Schopenhauer's Will"
+  }
+]

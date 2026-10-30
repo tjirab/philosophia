@@ -1,0 +1,16 @@
+[
+  {
+    "source": "thales",
+    "target": "heraclitus",
+    "type": "DEVELOPED",
+    "label": "Shifted naturalistic arche from water to fire and flux",
+    "strength": 3
+  },
+  {
+    "source": "thales",
+    "target": "anaximander",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Pupil of Thales who succeeded him at Miletus, replacing single physical arche (water) with the transcendent, limitless Apeiron"
+  }
+]

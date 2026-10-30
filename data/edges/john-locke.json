@@ -1,0 +1,58 @@
+[
+  {
+    "source": "john-locke",
+    "target": "george-berkeley",
+    "type": "DEVELOPED",
+    "label": "Extended Locke's empiricism to deny the existence of unperceived mind-independent matter",
+    "strength": 4
+  },
+  {
+    "source": "john-locke",
+    "target": "jean-jacques-rousseau",
+    "type": "DEVELOPED",
+    "label": "Transformed liberal social contract theory into democratic sovereignty and the General Will",
+    "strength": 4
+  },
+  {
+    "source": "john-locke",
+    "target": "william-james",
+    "type": "DEVELOPED",
+    "label": "Radicalized empiricism into pragmatic inquiry based on experiential consequences",
+    "strength": 3
+  },
+  {
+    "source": "john-locke",
+    "target": "tabula-rasa",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Tabula Rasa (The Blank Slate)",
+    "strength": 5
+  },
+  {
+    "source": "john-locke",
+    "target": "montesquieu",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Expanded Locke's bipartite legislative/executive distinction into the tripartite checks and balances doctrine"
+  },
+  {
+    "source": "john-locke",
+    "target": "adam-smith",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Smith extended Locke's labor theory of property into a labor theory of value and commercial liberty"
+  },
+  {
+    "source": "john-locke",
+    "target": "voltaire",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Introduced Locke's empiricism, epistemological humility, and religious toleration to France via the Letters on the English"
+  },
+  {
+    "source": "john-locke",
+    "target": "mary-wollstonecraft",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Applied Locke's tabula rasa empiricism and natural rights to demonstrate that female inferiority is an artificial product of socialization and denied education"
+  }
+]

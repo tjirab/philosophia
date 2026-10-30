@@ -1,0 +1,31 @@
+{
+  "id": "john-locke",
+  "name": "John Locke",
+  "birthYear": 1632,
+  "deathYear": 1704,
+  "eraId": "early-modern",
+  "traditionId": "empiricism",
+  "shortBio": "Pioneer of British Empiricism and constitutional democracy. Argued the mind begins as a blank slate (tabula rasa).",
+  "centralQuestion": "How do ideas enter the mind through sensation and reflection, and what justifies government?",
+  "keyWorks": [
+    {
+      "title": "An Essay Concerning Human Understanding",
+      "year": "1689 CE",
+      "url": "https://www.gutenberg.org/ebooks/10604",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/An_Essay_Concerning_Human_Understanding",
+      "isbn": "978-0140434828",
+      "description": "Argues against innate ideas; formulates the mind as a blank slate (tabula rasa) populated through sensation."
+    },
+    {
+      "title": "Two Treatises of Government",
+      "year": "1689 CE",
+      "url": "https://www.gutenberg.org/ebooks/7370",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Two_Treatises_of_Government",
+      "isbn": "978-0521357302",
+      "description": "Foundational theory of natural rights (life, liberty, property) and government by consent of the governed."
+    }
+  ],
+  "sepSlug": "locke",
+  "importanceScore": 96,
+  "imageUrl": "/portraits/john-locke.jpg"
+}

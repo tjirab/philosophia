@@ -1,0 +1,46 @@
+[
+  {
+    "id": "pt-ep-31-rene-descartes",
+    "targetId": "rene-descartes",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #031 ... Pascal's Wager",
+    "url": "https://philosophizethis.libsyn.com/episode-031-pascals-wager",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_031_..._Pascals_Wager.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 31,
+    "duration": "28:43"
+  },
+  {
+    "id": "pt-ep-30-rene-descartes",
+    "targetId": "rene-descartes",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #030 ... Descartes pt. 3 - God Exists",
+    "url": "https://philosophizethis.libsyn.com/episode-030-descartes-pt-3-god-exists",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_030_..._Descartes_pt._3_-_God_Exists.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 30,
+    "duration": "25:46"
+  },
+  {
+    "id": "pt-ep-29-rene-descartes",
+    "targetId": "rene-descartes",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #029 ... Descartes pt. 2 - See episode description",
+    "url": "https://philosophizethis.libsyn.com/episode-029-descartes-pt-2-visionary-genius",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_029_..._Descartes_pt._2_-_Visionary_Genius2.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 29,
+    "duration": "28:09"
+  },
+  {
+    "id": "pt-ep-28-rene-descartes",
+    "targetId": "rene-descartes",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #028 ... Rene Descartes pt. 1 - Context",
+    "url": "https://philosophizethis.libsyn.com/episode-028-rene-descartes-pt-1-a-little-context",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_029_..._Descartes_pt._2_-_Visionary_Genius.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 28,
+    "duration": "28:09"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "jacques-derrida",
+    "target": "deconstruction-differance",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Deconstruction & Différance",
+    "strength": 5
+  },
+  {
+    "source": "jacques-derrida",
+    "target": "alenka-zupancic",
+    "type": "CRITIQUED",
+    "strength": 3,
+    "label": "Zupančič distinguishes the Lacanian Real from deconstructive undecidability, defending the indestructible traumatic kernel of the subject"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "source": "michel-de-montaigne",
+    "target": "pyrrho-skeptical-doubt",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated famous skeptical motto 'Que sais-je?' in the Essais"
+  },
+  {
+    "source": "michel-de-montaigne",
+    "target": "rene-descartes",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Montaigne's radical doubt was the challenge Descartes set out to defeat"
+  },
+  {
+    "source": "michel-de-montaigne",
+    "target": "francis-bacon",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Critique of human intellectual conceit inspired Bacon's Idols of the Mind"
+  },
+  {
+    "source": "michel-de-montaigne",
+    "target": "blaise-pascal",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Montaigne's skepticism deeply informed Pascal's view of fallen human reason"
+  }
+]

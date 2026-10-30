@@ -1,0 +1,16 @@
+[
+  {
+    "source": "zhuangzi",
+    "target": "butterfly-dream",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Celebrated parable on the transformation of things and epistemic fluidity"
+  },
+  {
+    "source": "zhuangzi",
+    "target": "siddhartha-gautama",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Daoist natural spontaneity synthesized into Chinese Chan (Zen) Buddhism"
+  }
+]

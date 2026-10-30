@@ -1,0 +1,22 @@
+{
+  "id": "siddhartha-gautama",
+  "name": "Siddhartha Gautama (The Buddha)",
+  "birthYear": -563,
+  "deathYear": -483,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Indian spiritual teacher whose Four Noble Truths and doctrine of Anatta (no-self) revolutionized eastern phenomenology.",
+  "centralQuestion": "What is the root of suffering (dukkha), and how is liberation achieved?",
+  "keyWorks": [
+    {
+      "title": "Pali Canon Discourses",
+      "year": "563 BCE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Pali%20Canon%20Discourses",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Pali%20Canon%20Discourses",
+      "description": "Major work by Siddhartha Gautama (The Buddha)."
+    }
+  ],
+  "sepSlug": "buddha",
+  "importanceScore": 95,
+  "imageUrl": "/portraits/siddhartha-gautama.jpg"
+}

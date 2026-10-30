@@ -1,0 +1,29 @@
+{
+  "id": "francis-bacon",
+  "name": "Francis Bacon",
+  "birthYear": 1561,
+  "deathYear": 1626,
+  "eraId": "early-modern",
+  "traditionId": "empiricism",
+  "shortBio": "Father of the scientific method and champion of empiricism; exposed the Idols of the Mind that distort human inquiry.",
+  "centralQuestion": "How can systematic empirical induction give humanity mastery over nature?",
+  "keyWorks": [
+    {
+      "title": "Novum Organum",
+      "year": "1561 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Novum%20Organum",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Novum%20Organum",
+      "description": "Major work by Francis Bacon."
+    },
+    {
+      "title": "The New Atlantis",
+      "year": "1561 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20New%20Atlantis",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20New%20Atlantis",
+      "description": "Major work by Francis Bacon."
+    }
+  ],
+  "sepSlug": "francis-bacon",
+  "importanceScore": 82,
+  "imageUrl": "/portraits/francis-bacon.jpg"
+}

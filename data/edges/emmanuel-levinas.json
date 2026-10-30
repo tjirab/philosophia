@@ -1,0 +1,16 @@
+[
+  {
+    "source": "emmanuel-levinas",
+    "target": "face-of-the-other",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Established Ethics as First Philosophy in Totality and Infinity"
+  },
+  {
+    "source": "emmanuel-levinas",
+    "target": "jacques-derrida",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Profoundly influenced Derrida's deconstructive ethics and hospitality"
+  }
+]

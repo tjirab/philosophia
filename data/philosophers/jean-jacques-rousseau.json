@@ -1,0 +1,37 @@
+{
+  "id": "jean-jacques-rousseau",
+  "name": "Jean-Jacques Rousseau",
+  "birthYear": 1712,
+  "deathYear": 1778,
+  "eraId": "enlightenment",
+  "traditionId": "enlightenment-social",
+  "shortBio": "Romantic political philosopher who argued man is born free but everywhere in chains, corrupted by unequal property and pride.",
+  "centralQuestion": "How can human freedom and political sovereignty unite under the General Will?",
+  "keyWorks": [
+    {
+      "title": "The Social Contract",
+      "year": "1762 CE",
+      "url": "https://www.gutenberg.org/ebooks/46333",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Social_Contract",
+      "isbn": "978-0140442014",
+      "description": "'Man is born free, and he is everywhere in chains.' Articulates legitimate sovereignty and the General Will."
+    },
+    {
+      "title": "Discourse on Inequality",
+      "year": "1712 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Discourse%20on%20Inequality",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Discourse%20on%20Inequality",
+      "description": "Major work by Jean-Jacques Rousseau."
+    },
+    {
+      "title": "Emile",
+      "year": "1712 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Emile",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Emile",
+      "description": "Major work by Jean-Jacques Rousseau."
+    }
+  ],
+  "sepSlug": "rousseau",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/jean-jacques-rousseau.jpg"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "mary-wollstonecraft",
+    "target": "rational-equality",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated and championed the rational equality of the sexes in A Vindication of the Rights of Woman"
+  },
+  {
+    "source": "mary-wollstonecraft",
+    "target": "john-stuart-mill",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Pioneered philosophical feminist argumentation that directly informed Mill and Harriet Taylor Mill's utilitarian campaign for female emancipation"
+  }
+]

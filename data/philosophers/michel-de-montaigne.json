@@ -1,0 +1,29 @@
+{
+  "id": "michel-de-montaigne",
+  "name": "Michel de Montaigne",
+  "birthYear": 1533,
+  "deathYear": 1592,
+  "eraId": "early-modern",
+  "traditionId": "skepticism",
+  "shortBio": "French Renaissance humanist who pioneered the essay form and revived ancient Pyrrhonian skepticism with his motto 'Que sais-je?' (What do I know?), sparking modern epistemology.",
+  "centralQuestion": "What can a fallible human truly know, and how should one conduct a virtuous life free from dogmatic intolerance?",
+  "keyWorks": [
+    {
+      "title": "Essais",
+      "year": "1580",
+      "url": "https://en.wikipedia.org/wiki/Essays_(Montaigne)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Essays_(Montaigne)",
+      "description": "Pioneering collection of introspective personal reflections, moral explorations, and skeptical inquiries."
+    },
+    {
+      "title": "Apology for Raymond Sebond",
+      "year": "1580",
+      "url": "https://en.wikipedia.org/wiki/Apology_for_Raymond_Sebond",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Apology_for_Raymond_Sebond",
+      "description": "Extended essay deploying radical Pyrrhonian skepticism against human intellectual hubris."
+    }
+  ],
+  "sepSlug": "montaigne",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/michel-de-montaigne.jpg"
+}

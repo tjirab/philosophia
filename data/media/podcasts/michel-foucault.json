@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pt-ep-188-michel-foucault",
+    "targetId": "michel-foucault",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #188 ... Achievement Society and the rise of narcissism, depression and anxiety - Byung-Chul Han",
+    "url": "https://philosophizethis.libsyn.com/episode-188-achievement-society-and-the-rise-of-narcissism-depression-and-anxiety-byung-chul-han",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/byung-chul-han_master.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 188,
+    "duration": "36:00"
+  },
+  {
+    "id": "pt-ep-187-michel-foucault",
+    "targetId": "michel-foucault",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #187 ... How much freedom would you trade for security? (Foucault, Hobbes, Mill, Agamben)",
+    "url": "https://philosophizethis.libsyn.com/episode-187-how-much-freedom-would-you-trade-for-security-foucault-hobbes-mill-agamben",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/freedom-security_01.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 187,
+    "duration": "39:08"
+  },
+  {
+    "id": "pt-ep-186-michel-foucault",
+    "targetId": "michel-foucault",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #186 ... Are we heading for a digital prison? - Panopticon (Foucault, Bentham, Cave)",
+    "url": "https://philosophizethis.libsyn.com/episode-186-are-we-heading-for-a-digital-prison-panopticon-foucault-bentham-cave",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Panopticon_master.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 186,
+    "duration": "40:15"
+  },
+  {
+    "id": "pt-ep-123-michel-foucault",
+    "targetId": "michel-foucault",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #123 ... Michel Foucault pt. 3 - Power",
+    "url": "https://philosophizethis.libsyn.com/episode-123-michel-foucault-pt-3-power",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Foucault_Power.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 123,
+    "duration": "21:14"
+  },
+  {
+    "id": "pt-ep-122-michel-foucault",
+    "targetId": "michel-foucault",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #122 ... Michel Foucault pt. 2 - The Order of Things",
+    "url": "https://philosophizethis.libsyn.com/episode-122-michel-foucault-pt-2-the-order-of-things",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/The_Order_of_Things.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 122,
+    "duration": "22:36"
+  },
+  {
+    "id": "pt-ep-121-michel-foucault",
+    "targetId": "michel-foucault",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #121 ... Michel Foucault pt. 1",
+    "url": "https://philosophizethis.libsyn.com/episode-121-michel-foucault-pt-1",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Foucault_pt._1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 121,
+    "duration": "34:24"
+  }
+]

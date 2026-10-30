@@ -1,0 +1,46 @@
+[
+  {
+    "id": "pt-ep-187-thomas-hobbes",
+    "targetId": "thomas-hobbes",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #187 ... How much freedom would you trade for security? (Foucault, Hobbes, Mill, Agamben)",
+    "url": "https://philosophizethis.libsyn.com/episode-187-how-much-freedom-would-you-trade-for-security-foucault-hobbes-mill-agamben",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/freedom-security_01.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 187,
+    "duration": "39:08"
+  },
+  {
+    "id": "pt-ep-45-thomas-hobbes",
+    "targetId": "thomas-hobbes",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #045 ... Rousseau Government pt. 1",
+    "url": "https://philosophizethis.libsyn.com/episode-045-rousseau-government-pt-1",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_045_..._Rousseau_Government_pt._1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 45,
+    "duration": "27:13"
+  },
+  {
+    "id": "pt-ep-27-thomas-hobbes",
+    "targetId": "thomas-hobbes",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #027 ... Thomas Hobbes pt. 2",
+    "url": "https://philosophizethis.libsyn.com/episode-027-thomas-hobbes-pt-2",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_027_..._Thomas_Hobbes_pt._2.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 27,
+    "duration": "29:36"
+  },
+  {
+    "id": "pt-ep-26-thomas-hobbes",
+    "targetId": "thomas-hobbes",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #026 ... Thomas Hobbes pt. 1 - The Social Contract",
+    "url": "https://philosophizethis.libsyn.com/episode-026-thomas-hobbes-pt-1-the-social-contract",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_026_..._Thomas_Hobbes_pt._1_-_The_Social_Contract.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 26,
+    "duration": "30:31"
+  }
+]

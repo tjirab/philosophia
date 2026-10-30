@@ -1,0 +1,16 @@
+[
+  {
+    "source": "cogito-ergo-sum",
+    "target": "baruch-spinoza",
+    "type": "DEVELOPED",
+    "label": "Spinoza adopted geometric rationalist deduction from self-evident axioms",
+    "strength": 4
+  },
+  {
+    "source": "cogito-ergo-sum",
+    "target": "david-hume",
+    "type": "CRITIQUED",
+    "label": "Hume disputed the Cartesian soul, arguing introspection reveals only transient perceptions",
+    "strength": 5
+  }
+]

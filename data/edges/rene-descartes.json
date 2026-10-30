@@ -1,0 +1,58 @@
+[
+  {
+    "source": "rene-descartes",
+    "target": "thomas-hobbes",
+    "type": "CRITIQUED",
+    "label": "Hobbes rejected Descartes' immaterial soul, advocating strict materialism",
+    "strength": 3
+  },
+  {
+    "source": "rene-descartes",
+    "target": "baruch-spinoza",
+    "type": "DEVELOPED",
+    "label": "Resolved Cartesian mind-body dualism by merging mind and extension into one divine substance",
+    "strength": 5
+  },
+  {
+    "source": "rene-descartes",
+    "target": "gottfried-leibniz",
+    "type": "CRITIQUED",
+    "label": "Replaced Cartesian mechanistic physics with living dynamical monads",
+    "strength": 4
+  },
+  {
+    "source": "rene-descartes",
+    "target": "john-locke",
+    "type": "CRITIQUED",
+    "label": "Locke attacked Cartesian innate ideas, asserting the mind is a tabula rasa",
+    "strength": 5
+  },
+  {
+    "source": "rene-descartes",
+    "target": "nick-bostrom",
+    "type": "DEVELOPED",
+    "label": "Modern computational reformulation of Descartes' evil demon problem in the simulation argument",
+    "strength": 3
+  },
+  {
+    "source": "rene-descartes",
+    "target": "cogito-ergo-sum",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Methodological Doubt & Cogito",
+    "strength": 5
+  },
+  {
+    "source": "rene-descartes",
+    "target": "cartesian-dualism",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Substance Dualism (Mind vs. Matter)",
+    "strength": 5
+  },
+  {
+    "source": "rene-descartes",
+    "target": "blaise-pascal",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Rejected cold Cartesian geometric rationalism ('Descartes useless and uncertain')"
+  }
+]

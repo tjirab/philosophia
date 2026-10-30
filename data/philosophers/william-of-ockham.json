@@ -1,0 +1,22 @@
+{
+  "id": "william-of-ockham",
+  "name": "William of Ockham",
+  "birthYear": 1287,
+  "deathYear": 1347,
+  "eraId": "medieval",
+  "traditionId": "scholasticism",
+  "shortBio": "Franciscan philosopher famous for Ockham's Razor and Nominalism (universals are mere names, not real metaphysical entities).",
+  "centralQuestion": "Should entities ever be multiplied beyond necessity?",
+  "keyWorks": [
+    {
+      "title": "Summa Logicae",
+      "year": "1287 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Summa%20Logicae",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Summa%20Logicae",
+      "description": "Major work by William of Ockham."
+    }
+  ],
+  "sepSlug": "ockham",
+  "importanceScore": 84,
+  "imageUrl": "/portraits/william-of-ockham.jpg"
+}

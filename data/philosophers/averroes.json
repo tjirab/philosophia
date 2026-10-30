@@ -1,0 +1,29 @@
+{
+  "id": "averroes",
+  "name": "Ibn Rushd (Averroes)",
+  "birthYear": 1126,
+  "deathYear": 1198,
+  "eraId": "medieval",
+  "traditionId": "islamic-golden-age",
+  "shortBio": "The 'Great Commentator' on Aristotle whose defense of rational philosophy against Al-Ghazali shaped the European Renaissance.",
+  "centralQuestion": "Can religious faith and demonstrative philosophical reasoning harmoniously coexist?",
+  "keyWorks": [
+    {
+      "title": "The Incoherence of the Incoherence",
+      "year": "1126 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Incoherence%20of%20the%20Incoherence",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Incoherence%20of%20the%20Incoherence",
+      "description": "Major work by Ibn Rushd (Averroes)."
+    },
+    {
+      "title": "The Decisive Treatise",
+      "year": "1126 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Decisive%20Treatise",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Decisive%20Treatise",
+      "description": "Major work by Ibn Rushd (Averroes)."
+    }
+  ],
+  "sepSlug": "ibn-rushd",
+  "importanceScore": 87,
+  "imageUrl": "/portraits/averroes.jpg"
+}

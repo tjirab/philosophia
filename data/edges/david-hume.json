@@ -1,0 +1,51 @@
+[
+  {
+    "source": "david-hume",
+    "target": "immanuel-kant",
+    "type": "INFLUENCED",
+    "label": "Hume's skepticism awakened Kant from 'dogmatic slumber', inspiring the Critical Philosophy",
+    "strength": 5
+  },
+  {
+    "source": "david-hume",
+    "target": "john-stuart-mill",
+    "type": "INFLUENCED",
+    "label": "Empirical psychological foundations of utilitarian ethics and utility",
+    "strength": 3
+  },
+  {
+    "source": "david-hume",
+    "target": "problem-of-induction",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced The Problem of Induction & Hume's Fork",
+    "strength": 5
+  },
+  {
+    "source": "david-hume",
+    "target": "bundle-theory",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Bundle Theory of the Self",
+    "strength": 5
+  },
+  {
+    "source": "david-hume",
+    "target": "derek-parfit",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Modern rigorous analytic formulation of the bundle theory of personal identity"
+  },
+  {
+    "source": "david-hume",
+    "target": "adam-smith",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Lifelong friendship and mutual influence; Hume's sentimentalist ethics and economic essays directly informed Smith's moral psychology and political economy"
+  },
+  {
+    "source": "david-hume",
+    "target": "jeremy-bentham",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Hume's Treatise of Human Nature awoke Bentham to utility as the foundational criterion of public morality and justice"
+  }
+]

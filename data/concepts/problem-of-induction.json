@@ -1,0 +1,9 @@
+{
+  "id": "problem-of-induction",
+  "title": "The Problem of Induction & Hume's Fork",
+  "branch": "epistemology",
+  "eraId": "enlightenment",
+  "introducedBy": "david-hume",
+  "summary": "Past observations cannot logically guarantee future occurrences without assuming nature's uniformity, a circular premise reason cannot prove.",
+  "sepSlug": "induction-problem"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "al-ghazali",
+  "name": "Al-Ghazali (Algazel)",
+  "birthYear": 1058,
+  "deathYear": 1111,
+  "eraId": "medieval",
+  "traditionId": "islamic-golden-age",
+  "shortBio": "Influential Persian Islamic theologian and jurist who critiqued Avicennian Aristotelianism and formulated occasionalism, anticipating Humean causal skepticism.",
+  "centralQuestion": "Does human philosophical reason possess the capacity to prove necessary causal laws and transcendent metaphysical truths?",
+  "keyWorks": [
+    {
+      "title": "The Incoherence of the Philosophers (Tahafut al-Falasifa)",
+      "year": "1095",
+      "url": "https://en.wikipedia.org/wiki/The_Incoherence_of_the_Philosophers",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Incoherence_of_the_Philosophers",
+      "description": "Landmark philosophical critique of Islamic Peripatetic philosophy and necessary causal connection."
+    },
+    {
+      "title": "Deliverance from Error (Al-Munqidh min al-Dalal)",
+      "year": "1106",
+      "url": "https://en.wikipedia.org/wiki/Deliverance_from_Error",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Deliverance_from_Error",
+      "description": "Autobiographical spiritual treatise recounting his epistemological crisis and Sufi resolution."
+    }
+  ],
+  "sepSlug": "al-ghazali",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/al-ghazali.jpg"
+}

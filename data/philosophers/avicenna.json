@@ -1,0 +1,29 @@
+{
+  "id": "avicenna",
+  "name": "Ibn Sina (Avicenna)",
+  "birthYear": 980,
+  "deathYear": 1037,
+  "eraId": "medieval",
+  "traditionId": "islamic-golden-age",
+  "shortBio": "Polymath of the Islamic Golden Age; authored the Floating Man thought experiment and distinction between essence and existence.",
+  "centralQuestion": "Can self-consciousness exist independent of bodily senses?",
+  "keyWorks": [
+    {
+      "title": "The Book of Healing",
+      "year": "980 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Book%20of%20Healing",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Book%20of%20Healing",
+      "description": "Major work by Ibn Sina (Avicenna)."
+    },
+    {
+      "title": "The Canon of Medicine",
+      "year": "980 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Canon%20of%20Medicine",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Canon%20of%20Medicine",
+      "description": "Major work by Ibn Sina (Avicenna)."
+    }
+  ],
+  "sepSlug": "ibn-sina",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/avicenna.jpg"
+}

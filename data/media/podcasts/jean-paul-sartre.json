@@ -1,0 +1,68 @@
+[
+  {
+    "id": "pt-ep-105-jean-paul-sartre",
+    "targetId": "jean-paul-sartre",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #105 ... Sartre and Camus pt. 6 - The Self",
+    "url": "https://philosophizethis.libsyn.com/episode-105-sartre-and-camus-pt-6-the-self",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/SartreSelf.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 105,
+    "duration": "26:37"
+  },
+  {
+    "id": "pt-ep-104-jean-paul-sartre",
+    "targetId": "jean-paul-sartre",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #104 ... Sartre and Camus pt. 5 - Consciousness is Freedom",
+    "url": "https://philosophizethis.libsyn.com/episode-104-sartre-and-camus-pt-5-consciousness-is-freedom",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Sartre_and_Camus_part_5.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 104,
+    "duration": "29:27"
+  },
+  {
+    "id": "pt-ep-103-jean-paul-sartre",
+    "targetId": "jean-paul-sartre",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #103 ... Sartre and Camus pt. 4 - The Quest For Certainty",
+    "url": "https://philosophizethis.libsyn.com/episode-103-sartre-and-camus-pt-4-the-quest-for-certainty",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Sarte4_Final.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 103,
+    "duration": "32:03"
+  },
+  {
+    "id": "pt-ep-88-jean-paul-sartre",
+    "targetId": "jean-paul-sartre",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #088 ... Sartre and Camus pt. 3 - The Great Debate",
+    "url": "https://philosophizethis.libsyn.com/episode-088-sartre-and-camus-pt-3-the-great-debate",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/sartre_and_camus_pt3.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 88,
+    "duration": "26:49"
+  },
+  {
+    "id": "pt-ep-87-jean-paul-sartre",
+    "targetId": "jean-paul-sartre",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #087 ... Sartre and Camus pt. 2",
+    "url": "https://philosophizethis.libsyn.com/episode-087-sartre-and-camus-pt-2",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Sartre_and_Camus_pt._2.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 87,
+    "duration": "23:15"
+  },
+  {
+    "id": "pt-ep-86-jean-paul-sartre",
+    "targetId": "jean-paul-sartre",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #086 ... Sartre and Camus pt. 1 - Freedom",
+    "url": "https://philosophizethis.libsyn.com/episode-086-sartre-and-camus-pt-1-freedom",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Sartre_on_Freedom.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 86,
+    "duration": "23:46"
+  }
+]

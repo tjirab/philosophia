@@ -340,30 +340,30 @@ ${sources || 'None provided'}
                   <span>Direct Data Files:</span>
                   <div className="flex items-center gap-2 font-mono">
                     <a
-                      href={`https://github.com/${repoSlug}/edit/main/data/philosophers.json`}
+                      href={`https://github.com/${repoSlug}/tree/main/data/philosophers`}
                       target="_blank"
                       rel="noreferrer"
                       className="hover:text-[var(--gold-accent)] underline"
                     >
-                      philosophers.json
+                      data/philosophers
                     </a>
                     <span>•</span>
                     <a
-                      href={`https://github.com/${repoSlug}/edit/main/data/edges.json`}
+                      href={`https://github.com/${repoSlug}/tree/main/data/edges`}
                       target="_blank"
                       rel="noreferrer"
                       className="hover:text-[var(--gold-accent)] underline"
                     >
-                      edges.json
+                      data/edges
                     </a>
                     <span>•</span>
                     <a
-                      href={`https://github.com/${repoSlug}/edit/main/data/media.json`}
+                      href={`https://github.com/${repoSlug}/tree/main/data/media`}
                       target="_blank"
                       rel="noreferrer"
                       className="hover:text-[var(--gold-accent)] underline"
                     >
-                      media.json
+                      data/media
                     </a>
                   </div>
                 </div>

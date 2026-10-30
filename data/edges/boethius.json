@@ -1,0 +1,30 @@
+[
+  {
+    "source": "boethius",
+    "target": "divine-eternity-foreknowledge",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated timeless eternity to resolve the paradox between divine foreknowledge and free will"
+  },
+  {
+    "source": "boethius",
+    "target": "anselm-of-canterbury",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Pioneered application of rigorous Aristotelian dialectic to theological inquiry"
+  },
+  {
+    "source": "boethius",
+    "target": "thomas-aquinas",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Major philosophical authority for Aquinas on the definition of person, eternity, and fortune"
+  },
+  {
+    "source": "boethius",
+    "target": "william-of-ockham",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Boethius's translation of Porphyry's Isagoge initiated the medieval Problem of Universals"
+  }
+]

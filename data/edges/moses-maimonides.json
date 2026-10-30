@@ -1,0 +1,23 @@
+[
+  {
+    "source": "moses-maimonides",
+    "target": "negative-theology",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated apophatic theology in Guide for the Perplexed"
+  },
+  {
+    "source": "moses-maimonides",
+    "target": "thomas-aquinas",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Crucial source for Aquinas's synthesis of Aristotle and monotheism"
+  },
+  {
+    "source": "moses-maimonides",
+    "target": "baruch-spinoza",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Maimonidean rationalism was departure point for Spinoza's Theological-Political Treatise"
+  }
+]

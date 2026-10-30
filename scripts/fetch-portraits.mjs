@@ -1,10 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildData } from './build-data.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
+const PHILOSOPHERS_DIR = path.join(ROOT_DIR, 'data', 'philosophers');
 const PHILOSOPHERS_PATH = path.join(ROOT_DIR, 'data', 'philosophers.json');
 const PORTRAITS_DIR = path.join(ROOT_DIR, 'public', 'portraits');
 
@@ -155,6 +157,15 @@ async function fetchPortraits() {
       if (buffer.length > 2000) {
         fs.writeFileSync(localFilePath, buffer);
         phil.imageUrl = publicUrl;
+
+        // Persist to individual modular philosopher file
+        const modularPhilPath = path.join(PHILOSOPHERS_DIR, `${phil.id}.json`);
+        if (fs.existsSync(modularPhilPath)) {
+          const modularData = JSON.parse(fs.readFileSync(modularPhilPath, 'utf-8'));
+          modularData.imageUrl = publicUrl;
+          fs.writeFileSync(modularPhilPath, JSON.stringify(modularData, null, 2) + '\n', 'utf-8');
+        }
+
         successCount++;
         console.log(`[${i + 1}/${philosophers.length}] Saved portrait for ${phil.name} (${Math.round(buffer.length / 1024)} KB)`);
       } else {
@@ -170,7 +181,8 @@ async function fetchPortraits() {
     await new Promise((r) => setTimeout(r, 80));
   }
 
-  fs.writeFileSync(PHILOSOPHERS_PATH, JSON.stringify(philosophers, null, 2) + '\n', 'utf-8');
+  // Rebuild the compiled dataset
+  buildData();
   console.log(`\n🎉 Portrait ingestion complete! Success: ${successCount}, Skipped/Missing: ${skippedCount}`);
 }
 

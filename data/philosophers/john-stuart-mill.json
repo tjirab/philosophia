@@ -1,0 +1,37 @@
+{
+  "id": "john-stuart-mill",
+  "name": "John Stuart Mill",
+  "birthYear": 1806,
+  "deathYear": 1873,
+  "eraId": "nineteenth-century",
+  "traditionId": "utilitarianism",
+  "shortBio": "Liberal philosopher who refined utilitarian ethics (higher vs lower pleasures) and defended individual liberty and women's rights.",
+  "centralQuestion": "What is the boundary between the authority of society and the liberty of the individual?",
+  "keyWorks": [
+    {
+      "title": "On Liberty",
+      "year": "1859 CE",
+      "url": "https://www.gutenberg.org/ebooks/34901",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/On_Liberty",
+      "isbn": "978-0140432077",
+      "description": "Classic liberal defense of individual autonomy, free speech, and the Harm Principle."
+    },
+    {
+      "title": "Utilitarianism",
+      "year": "1806 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Utilitarianism",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Utilitarianism",
+      "description": "Major work by John Stuart Mill."
+    },
+    {
+      "title": "The Subjection of Women",
+      "year": "1806 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Subjection%20of%20Women",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Subjection%20of%20Women",
+      "description": "Major work by John Stuart Mill."
+    }
+  ],
+  "sepSlug": "mill",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/john-stuart-mill.jpg"
+}

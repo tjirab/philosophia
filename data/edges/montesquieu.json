@@ -1,0 +1,37 @@
+[
+  {
+    "source": "montesquieu",
+    "target": "separation-of-powers",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the definitive doctrine of tripartite separation of executive, legislative, and judicial powers"
+  },
+  {
+    "source": "montesquieu",
+    "target": "jean-jacques-rousseau",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Provided the comparative framework of civic liberty and political regimes analyzed in The Social Contract"
+  },
+  {
+    "source": "montesquieu",
+    "target": "immanuel-kant",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Informed Kant's republican political philosophy and legal doctrine of tripartite state authority"
+  },
+  {
+    "source": "montesquieu",
+    "target": "gwf-hegel",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Inspired Hegel's conception of the 'spirit' (Geist) of laws and ethical life (Sittlichkeit) embodied in institutions"
+  },
+  {
+    "source": "montesquieu",
+    "target": "adam-smith",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Montesquieu's sociological analysis of commerce (doux commerce) and legal institutions influenced Smith's political economy and stages of society"
+  }
+]

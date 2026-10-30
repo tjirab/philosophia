@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-16-plotinus",
+    "targetId": "plotinus",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #016 ... Saint Augustine",
+    "url": "https://philosophizethis.libsyn.com/episode-016-saint-augustine",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_016_..._Saint_Augustine.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 16,
+    "duration": "30:15"
+  },
+  {
+    "id": "pt-ep-15-plotinus",
+    "targetId": "plotinus",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #015 ... A Period of Transition - Plotinus",
+    "url": "https://philosophizethis.libsyn.com/episode-015-a-period-of-transition-plotinus",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Episode_015_..._A_Period_of_Transition_-_Plotinus.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 15,
+    "duration": "38:06"
+  }
+]

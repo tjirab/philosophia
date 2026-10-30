@@ -1,0 +1,23 @@
+[
+  {
+    "source": "epictetus",
+    "target": "marcus-aurelius",
+    "type": "INFLUENCED",
+    "label": "Marcus Aurelius deeply studied Epictetus's Discourses",
+    "strength": 5
+  },
+  {
+    "source": "epictetus",
+    "target": "dichotomy-of-control",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Dichotomy of Control",
+    "strength": 5
+  },
+  {
+    "source": "epictetus",
+    "target": "baruch-spinoza",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Stoic rational determinism, freedom through understanding necessity, and emotional mastery directly influenced Spinoza's Ethics"
+  }
+]

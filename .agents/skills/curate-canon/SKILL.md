@@ -38,9 +38,12 @@ Before writing data, collect verified metadata from authoritative scholarly sour
 
 ## 📋 3. Schema Specifications & Ingestion Rules
 
-All data files live in `data/`. Adhere strictly to the TypeScript interfaces in `src/lib/types.ts`:
+All data entities live as **modular per-entity JSON files** in `data/` to prevent merge conflicts when collaborating across parallel branches. The build system compiles them into unified bundles via `scripts/build-data.mjs` (automatically run during `npm test`, `npm run dev`, and `npm run build`).
 
-### A. Philosopher (`data/philosophers.json`)
+Adhere strictly to the TypeScript interfaces in `src/lib/types.ts`:
+
+### A. Philosopher (`data/philosophers/<id>.json`)
+Create `data/philosophers/<id>.json`:
 ```json
 {
   "id": "kebab-case-id",
@@ -61,15 +64,17 @@ All data files live in `data/`. Adhere strictly to the TypeScript interfaces in 
     }
   ],
   "sepSlug": "canonical-sep-slug",
-  "importanceScore": 92
+  "importanceScore": 92,
+  "imageUrl": "/portraits/kebab-case-id.jpg"
 }
 ```
 *Valid `eraId`: `pre-socratic`, `classical-greek`, `hellenistic`, `eastern`, `medieval`, `early-modern`, `enlightenment`, `german-idealism`, `nineteenth-century`, `twentieth-century`, `contemporary`.*
 *Valid `traditionId`: Consult `data/traditions.json`.*
 
-### B. Concept (`data/concepts.json`)
+### B. Concept (`data/concepts/<id>.json`)
 > [!CAUTION]
 > Concepts MUST use `title`, `summary`, and `branch`. Never use `name` or `description`. Missing these fields causes client-side runtime errors.
+Create `data/concepts/<id>.json`:
 ```json
 {
   "id": "kebab-case-concept",
@@ -84,17 +89,20 @@ All data files live in `data/`. Adhere strictly to the TypeScript interfaces in 
 ```
 *Valid `branch`: `'epistemology' | 'metaphysics' | 'ethics' | 'political' | 'aesthetics' | 'mind' | 'logic'`.*
 
-### C. Edge (`data/edges.json`)
+### C. Edge (`data/edges/<philosopher-id>.json`)
 > [!IMPORTANT]
 > **Zero Isolated Nodes Rule**: Every philosopher and concept must be connected to the graph. No dangling references are permitted.
+Create `data/edges/<philosopher-id>.json` containing the new dialectical edges:
 ```json
-{
-  "source": "source-id",
-  "target": "target-id",
-  "type": "DEVELOPED",
-  "strength": 5,
-  "label": "Specific description of the dialectical relationship"
-}
+[
+  {
+    "source": "source-id",
+    "target": "target-id",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Specific description of the dialectical relationship"
+  }
+]
 ```
 *Valid `type`:*
 - `INFLUENCED`: Direct historical mentorship, transmission, or general conceptual inheritance.
@@ -102,22 +110,24 @@ All data files live in `data/`. Adhere strictly to the TypeScript interfaces in 
 - `DEVELOPED`: Extended, systematized, or carried a precursor's premise forward.
 - `SYNTHESIZED`: Reconciled two seemingly incompatible traditions or opposing premises.
 
-### D. Media & Audio Podcast Ingestion (`data/media.json`)
-1. Add SEP entry in `data/media.json`:
+### D. Media & Audio Podcast Ingestion (`data/media/curated/<id>.json`)
+1. Add SEP entry in `data/media/curated/<philosopher-id>.json`:
    ```json
-   {
-     "id": "sep-<philosopher-id>",
-     "targetId": "<philosopher-id>",
-     "type": "encyclopedia",
-     "title": "<Name> - Stanford Encyclopedia of Philosophy",
-     "url": "https://plato.stanford.edu/entries/<sepSlug>/",
-     "creator": "Stanford University",
-     "summary": "Canonical academic comprehensive overview of <Name>'s philosophical life, works, and arguments."
-   }
+   [
+     {
+       "id": "sep-<philosopher-id>",
+       "targetId": "<philosopher-id>",
+       "type": "encyclopedia",
+       "title": "<Name> - Stanford Encyclopedia of Philosophy",
+       "url": "https://plato.stanford.edu/entries/<sepSlug>/",
+       "creator": "Stanford University",
+       "summary": "Canonical academic comprehensive overview of <Name>'s philosophical life, works, and arguments."
+     }
+   ]
    ```
 2. In `scripts/ingest-philosophizethis.mjs`:
    Add the philosopher matcher regex to `PHILOSOPHER_MATCHERS`.
-3. Run ingestion:
+3. Run ingestion (persists to `data/media/podcasts/<id>.json` and compiles bundles):
    ```bash
    npm run ingest
    ```
@@ -134,19 +144,20 @@ All data files live in `data/`. Adhere strictly to the TypeScript interfaces in 
    cd "$WORKTREE_DIR" && ln -s ../../philosophy-graph/node_modules ./node_modules
    ```
 
-2. **Implement Data & Add Pathfinding Tests**:
-   - Update `data/philosophers.json`, `data/concepts.json`, `data/edges.json`, and `data/media.json`.
+2. **Implement Modular Data & Add Pathfinding Tests**:
+   - Add `data/philosophers/<id>.json`, `data/concepts/<id>.json`, `data/edges/<id>.json`, and `data/media/curated/<id>.json`.
    - Update `tests/data-integrity.test.ts` to assert that the new thinker/concept resolves in lineage pathfinding tests (e.g. `findInfluencePath`).
+   - Run `npm test` (which triggers `pretest` compilation to verify everything cleanly).
 
 3. **Verify Test Suite & Production Build**:
    ```bash
-   npm test       # Validates schemas, no dangling edges, no isolated concepts, pathfinding
+   npm test       # Validates modular schemas, compiler, no dangling edges, no isolated concepts, pathfinding
    npm run build  # Validates Next.js static site generation and zero type errors
    ```
 
 4. **Atomic Commit & Pull Request**:
    ```bash
-   git add data/ scripts/ tests/ docs/
+   git add data/ scripts/ tests/ .agents/
    git commit -m "feat(canon): add <Name>, <concept>, and dialectical bridges"
    git push -u origin "feat/add-<name>"
    gh pr create --title "feat(canon): add <Name> and dialectical bridges" --body "<summary>"

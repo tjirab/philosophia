@@ -1,0 +1,35 @@
+{
+  "id": "alenka-zupancic",
+  "name": "Alenka Zupančič",
+  "birthYear": 1966,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "shortBio": "Slovenian philosopher and leading figure of the Ljubljana School of Psychoanalysis who bridges German Idealism with Lacanian theory, investigating the ethics of the Real, the ontological deadlock of sexuality, and the dialectics of comedy.",
+  "centralQuestion": "How does the encounter with the Lacanian Real restructure Kantian ethics and reveal sexuality not as biology, but as an ontological deadlock of Being?",
+  "keyWorks": [
+    {
+      "title": "Ethics of the Real: Kant, Lacan",
+      "year": "2000",
+      "url": "https://en.wikipedia.org/wiki/Alenka_Zupan%C4%8Di%C4%8D",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Alenka_Zupan%C4%8Di%C4%8D",
+      "description": "Landmark reinterpretation of Kantian moral philosophy through Lacanian psychoanalysis, arguing the categorical imperative confronts the subject with the traumatic Real of the drive."
+    },
+    {
+      "title": "The Odd One In: On Comedy",
+      "year": "2008",
+      "url": "https://en.wikipedia.org/wiki/Alenka_Zupan%C4%8Di%C4%8D",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Alenka_Zupan%C4%8Di%C4%8D",
+      "description": "Philosophical treatise on comedy defining the comic not as mere ridicule or relief, but as a Hegelian concrete universal where contradiction itself becomes incarnate."
+    },
+    {
+      "title": "What IS Sex?",
+      "year": "2017",
+      "url": "https://en.wikipedia.org/wiki/Alenka_Zupan%C4%8Di%C4%8D",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Alenka_Zupan%C4%8Di%C4%8D",
+      "description": "Groundbreaking ontological inquiry positing that sexuality is not an empirical, biological, or discursive attribute, but the fundamental stumbling block and ontological impasse of Being itself."
+    }
+  ],
+  "sepSlug": "lacan",
+  "importanceScore": 85,
+  "imageUrl": "/portraits/alenka-zupancic.jpg"
+}

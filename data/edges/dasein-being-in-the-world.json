@@ -1,0 +1,16 @@
+[
+  {
+    "source": "dasein-being-in-the-world",
+    "target": "jean-paul-sartre",
+    "type": "DEVELOPED",
+    "label": "Sartre translated Dasein thrownness into radical existential freedom and anguish",
+    "strength": 5
+  },
+  {
+    "source": "dasein-being-in-the-world",
+    "target": "byung-chul-han",
+    "type": "DEVELOPED",
+    "label": "Han contrasts Heideggerian contemplation with modern hyperactive digital restlessness",
+    "strength": 4
+  }
+]

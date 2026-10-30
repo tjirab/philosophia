@@ -1,0 +1,29 @@
+{
+  "id": "montesquieu",
+  "name": "Baron de Montesquieu",
+  "birthYear": 1689,
+  "deathYear": 1755,
+  "eraId": "enlightenment",
+  "traditionId": "enlightenment-social",
+  "shortBio": "French Enlightenment jurist and political philosopher who pioneered comparative political sociology and formulated the canonical doctrine of the separation of powers.",
+  "centralQuestion": "How can the powers of government be distributed and balanced so that freedom is preserved and tyranny prevented?",
+  "keyWorks": [
+    {
+      "title": "The Spirit of the Laws (De l'esprit des lois)",
+      "year": "1748",
+      "url": "https://en.wikipedia.org/wiki/The_Spirit_of_Law",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Spirit_of_Law",
+      "description": "Comparative treatise on constitutional systems and the tripartite separation of executive, legislative, and judicial powers."
+    },
+    {
+      "title": "Persian Letters (Lettres persanes)",
+      "year": "1721",
+      "url": "https://en.wikipedia.org/wiki/Persian_Letters",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Persian_Letters",
+      "description": "Epistolary satire recounting the observations of two Persian travelers critiquing French absolutist society."
+    }
+  ],
+  "sepSlug": "montesquieu",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/montesquieu.jpg"
+}

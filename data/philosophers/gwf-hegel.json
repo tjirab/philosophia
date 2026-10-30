@@ -1,0 +1,37 @@
+{
+  "id": "gwf-hegel",
+  "name": "G.W.F. Hegel",
+  "birthYear": 1770,
+  "deathYear": 1831,
+  "eraId": "german-idealism",
+  "traditionId": "german-idealism",
+  "shortBio": "Architect of dialectical idealism; saw history as the progressive self-realization and freedom of Absolute Spirit (Geist).",
+  "centralQuestion": "How does reason unfold dialectically through history, culture, and recognition?",
+  "keyWorks": [
+    {
+      "title": "Phenomenology of Spirit",
+      "year": "1807 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Phenomenology_of_Spirit",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Phenomenology_of_Spirit",
+      "isbn": "978-0198245971",
+      "description": "Dialectical journey of consciousness toward Absolute Knowing, including the Master-Slave dialectic."
+    },
+    {
+      "title": "Science of Logic",
+      "year": "1770 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Science%20of%20Logic",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Science%20of%20Logic",
+      "description": "Major work by G.W.F. Hegel."
+    },
+    {
+      "title": "Elements of the Philosophy of Right",
+      "year": "1770 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Elements%20of%20the%20Philosophy%20of%20Right",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Elements%20of%20the%20Philosophy%20of%20Right",
+      "description": "Major work by G.W.F. Hegel."
+    }
+  ],
+  "sepSlug": "hegel",
+  "importanceScore": 97,
+  "imageUrl": "/portraits/gwf-hegel.jpg"
+}

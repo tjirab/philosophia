@@ -1,0 +1,22 @@
+{
+  "id": "johann-gottlieb-fichte",
+  "name": "Johann Gottlieb Fichte",
+  "birthYear": 1762,
+  "deathYear": 1814,
+  "eraId": "german-idealism",
+  "traditionId": "german-idealism",
+  "shortBio": "Pioneer of German Idealism who unified Kantian critique into the absolute self-positing Ego (Ich) in the Wissenschaftslehre, establishing dialectical striving.",
+  "centralQuestion": "How does the self-determining transcendental ego generate both moral autonomy and the objective material world through practical striving?",
+  "keyWorks": [
+    {
+      "title": "Foundations of the Science of Knowledge (Wissenschaftslehre)",
+      "year": "1794",
+      "url": "https://en.wikipedia.org/wiki/Wissenschaftslehre",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Wissenschaftslehre",
+      "description": "Foundational text establishing the self-positing Ego and the dialectic of the Not-Self."
+    }
+  ],
+  "sepSlug": "johann-fichte",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/johann-gottlieb-fichte.jpg"
+}

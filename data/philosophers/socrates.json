@@ -1,0 +1,22 @@
+{
+  "id": "socrates",
+  "name": "Socrates",
+  "birthYear": -470,
+  "deathYear": -399,
+  "eraId": "classical-greek",
+  "traditionId": "platonism",
+  "shortBio": "Athenian street philosopher who redirected philosophy from cosmology to human ethics and self-examination via the elenchus dialectic.",
+  "centralQuestion": "What is virtue, and how should one live an examined life?",
+  "keyWorks": [
+    {
+      "title": "Oral teaching recorded by Plato and Xenophon",
+      "year": "470 BCE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Oral%20teaching%20recorded%20by%20Plato%20and%20Xenophon",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Oral%20teaching%20recorded%20by%20Plato%20and%20Xenophon",
+      "description": "Major work by Socrates."
+    }
+  ],
+  "sepSlug": "socrates",
+  "importanceScore": 98,
+  "imageUrl": "/portraits/socrates.jpg"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "anaximander",
+    "target": "apeiron",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated and introduced the concept of the Apeiron"
+  },
+  {
+    "source": "anaximander",
+    "target": "parmenides",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Anaximander's boundless, eternal substrate provided the conceptual archetype for Parmenidean ungenerated Being"
+  }
+]

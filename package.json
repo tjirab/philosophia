@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build:data": "node scripts/build-data.mjs",
+    "predev": "node scripts/build-data.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/build-data.mjs",
     "build": "next build",
-    "start": "next start",
+    "pretest": "node scripts/build-data.mjs",
     "test": "vitest run",
+    "postinstall": "node scripts/build-data.mjs",
     "ingest": "node scripts/ingest-philosophizethis.mjs",
     "audit": "node scripts/audit-coverage.mjs",
     "audit:report": "node scripts/audit-coverage.mjs --report"

@@ -1,0 +1,29 @@
+{
+  "id": "karl-popper",
+  "name": "Karl Popper",
+  "birthYear": 1902,
+  "deathYear": 1994,
+  "eraId": "twentieth-century",
+  "traditionId": "analytic",
+  "shortBio": "Philosopher of science who replaced verification with falsificationism; defender of the open society against totalitarianism.",
+  "centralQuestion": "What demarcates genuine science from pseudo-science?",
+  "keyWorks": [
+    {
+      "title": "The Logic of Scientific Discovery",
+      "year": "1902 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Logic%20of%20Scientific%20Discovery",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Logic%20of%20Scientific%20Discovery",
+      "description": "Major work by Karl Popper."
+    },
+    {
+      "title": "The Open Society and Its Enemies",
+      "year": "1902 CE",
+      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Open%20Society%20and%20Its%20Enemies",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Open%20Society%20and%20Its%20Enemies",
+      "description": "Major work by Karl Popper."
+    }
+  ],
+  "sepSlug": "popper",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/karl-popper.jpg"
+}
