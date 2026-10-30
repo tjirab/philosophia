@@ -2113,5 +2113,23 @@
     "creator": "Stephen West",
     "episodeNumber": 1,
     "duration": "49:17"
+  },
+  {
+    "id": "sep-two-truths-india",
+    "targetId": "two-truths-doctrine",
+    "type": "encyclopedia",
+    "title": "Two Truths in Indian Buddhism - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/twotruths-india/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of the Two Truths doctrine (samvriti-satya and paramartha-satya) across Madhyamaka and Indian Buddhist philosophy."
+  },
+  {
+    "id": "sep-sunyata-madhyamaka",
+    "targetId": "sunyata-emptiness",
+    "type": "encyclopedia",
+    "title": "Madhyamaka and Emptiness - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/madhyamaka/",
+    "creator": "Stanford University",
+    "summary": "Comprehensive scholarly analysis of Sunyata (emptiness), dependent origination, and the Madhyamaka dialectical revolution."
   }
 ]

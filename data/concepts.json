@@ -50,8 +50,19 @@
     "branch": "metaphysics",
     "eraId": "eastern",
     "introducedBy": "nagarjuna",
-    "summary": "All things are devoid of independent, self-contained essence (svabhava); entities exist solely in relational interdependence.",
-    "sepSlug": "nagarjuna"
+    "summary": "The foundational Madhyamaka insight that all phenomena are devoid of independent, self-contained essence (svabhāva) because they arise exclusively in relational interdependence (pratītyasamutpāda).",
+    "sepSlug": "nagarjuna",
+    "importanceScore": 95
+  },
+  {
+    "id": "two-truths-doctrine",
+    "title": "The Two Truths Doctrine",
+    "branch": "epistemology",
+    "eraId": "eastern",
+    "introducedBy": "nagarjuna",
+    "summary": "Nāgārjuna's distinction between conventional reality (saṃvṛti-satya)—where language, empirical causality, and ethical practices operate coherently—and ultimate reality (paramārtha-satya), the direct realization of emptiness. Demonstrates that emptiness does not annihilate the everyday world, but is the very ground that makes change, moral agency, and liberation possible.",
+    "sepSlug": "twotruths-india",
+    "importanceScore": 92
   },
   {
     "id": "floating-man",

@@ -216,12 +216,30 @@ describe('Philosophy Graph Data Integrity', () => {
     const voltaireToKant = findInfluencePath('voltaire', 'immanuel-kant', edgesData as any);
     expect(voltaireToKant.found).toBe(true);
 
-    // Siddhartha Gautama -> Adi Shankara -> Schopenhauer
+    // Siddhartha Gautama -> Nagarjuna -> Adi Shankara -> Schopenhauer
+    const gautamaToNagarjuna = findInfluencePath('siddhartha-gautama', 'nagarjuna', edgesData as any);
+    expect(gautamaToNagarjuna.found).toBe(true);
+
+    const nagarjunaToShankara = findInfluencePath('nagarjuna', 'adi-shankara', edgesData as any);
+    expect(nagarjunaToShankara.found).toBe(true);
+
     const gautamaToShankara = findInfluencePath('siddhartha-gautama', 'adi-shankara', edgesData as any);
     expect(gautamaToShankara.found).toBe(true);
 
     const shankaraToSchop = findInfluencePath('adi-shankara', 'arthur-schopenhauer', edgesData as any);
     expect(shankaraToSchop.found).toBe(true);
+
+    // Pyrrho -> Nagarjuna
+    const pyrrhoToNagarjuna = findInfluencePath('pyrrho', 'nagarjuna', edgesData as any);
+    expect(pyrrhoToNagarjuna.found).toBe(true);
+
+    // Nagarjuna -> Derrida
+    const nagarjunaToDerrida = findInfluencePath('nagarjuna', 'jacques-derrida', edgesData as any);
+    expect(nagarjunaToDerrida.found).toBe(true);
+
+    // Nagarjuna -> Wittgenstein
+    const nagarjunaToWitt = findInfluencePath('nagarjuna', 'ludwig-wittgenstein', edgesData as any);
+    expect(nagarjunaToWitt.found).toBe(true);
 
     // Socrates -> Epictetus -> Spinoza
     const socratesToSpinoza = findInfluencePath('socrates', 'baruch-spinoza', edgesData as any);
