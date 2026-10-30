@@ -2210,5 +2210,75 @@
     "type": "DEVELOPED",
     "strength": 4,
     "label": "Reframes Kantian moral duty not as intellectual harmony but as an encounter with the terrifying Real"
+  },
+  {
+    "source": "karl-marx",
+    "target": "herbert-marcuse",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Synthesized Marxian historical materialism with Freudian psychoanalysis to diagnose consumer capitalism and technocratic alienation"
+  },
+  {
+    "source": "gwf-hegel",
+    "target": "herbert-marcuse",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Defended Hegelian negative dialectics in Reason and Revolution, arguing authentic philosophical reason is inherently critical and subversive"
+  },
+  {
+    "source": "martin-heidegger",
+    "target": "herbert-marcuse",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Studied under Heidegger, pursuing an early phenomenological Marxism before breaking decisively over Heidegger's support for National Socialism"
+  },
+  {
+    "source": "max-horkheimer",
+    "target": "herbert-marcuse",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Recruited Marcuse to the Institute for Social Research in 1933, collaboratively developing Critical Theory and the critique of modern authority"
+  },
+  {
+    "source": "herbert-marcuse",
+    "target": "theodor-adorno",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Frankfurt School allies who clashed during the 1968 New Left student protests over political activism versus aesthetic withdrawal"
+  },
+  {
+    "source": "herbert-marcuse",
+    "target": "one-dimensional-man",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the critique of one-dimensional society, repressive desublimation, and the Great Refusal in One-Dimensional Man and Eros and Civilization"
+  },
+  {
+    "source": "instrumental-reason",
+    "target": "one-dimensional-man",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Marcuse extended Horkheimer's instrumental reason into the pervasive technocratic rationality of advanced industrial society"
+  },
+  {
+    "source": "herbert-marcuse",
+    "target": "jurgen-habermas",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Directly influenced Habermas, who engaged Marcuse's critique of technology and technocracy to formulate communicative action"
+  },
+  {
+    "source": "one-dimensional-man",
+    "target": "michel-foucault",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Foucault rejected the Marcusean 'repressive hypothesis' in The History of Sexuality, arguing power produces and incites discourse rather than simply repressing desire"
+  },
+  {
+    "source": "one-dimensional-man",
+    "target": "jean-baudrillard",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Baudrillard extended Marcuse's critique of false consumer needs and repressive desublimation into his semiotic analysis of consumer society and hyperreality"
   }
 ]

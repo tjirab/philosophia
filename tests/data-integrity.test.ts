@@ -198,6 +198,17 @@ describe('Philosophy Graph Data Integrity', () => {
     const zupancicToEthics = findInfluencePath('alenka-zupancic', 'ethics-of-the-real', edgesData as any);
     expect(zupancicToEthics.found).toBe(true);
 
+    // Hegel -> Marcuse -> Habermas
+    const hegelToHabermas = findInfluencePath('gwf-hegel', 'jurgen-habermas', edgesData as any);
+    expect(hegelToHabermas.found).toBe(true);
+
+    // Marx -> Marcuse -> One-Dimensional Man -> Foucault
+    const marxToFoucault = findInfluencePath('karl-marx', 'michel-foucault', edgesData as any);
+    expect(marxToFoucault.found).toBe(true);
+
+    const marcuseToOneDim = findInfluencePath('herbert-marcuse', 'one-dimensional-man', edgesData as any);
+    expect(marcuseToOneDim.found).toBe(true);
+
     // David Hume -> Adam Smith -> Karl Marx
     const humeToMarx = findInfluencePath('david-hume', 'karl-marx', edgesData as any);
     expect(humeToMarx.found).toBe(true);
