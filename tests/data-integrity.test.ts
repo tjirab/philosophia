@@ -150,4 +150,31 @@ describe('Philosophy Graph Data Integrity', () => {
       }).not.toThrow();
     }
   });
+
+  it('verifies chronological coordinate seeding for visual nodes', () => {
+    const { nodes } = getVisualGraph({ includeConcepts: true });
+    
+    // Every node must have seeded x and y coordinates
+    for (const node of nodes) {
+      expect(typeof node.x).toBe('number');
+      expect(typeof node.y).toBe('number');
+      expect(Number.isFinite(node.x)).toBe(true);
+      expect(Number.isFinite(node.y)).toBe(true);
+    }
+
+    // Antiquity thinkers should be positioned to the left of Modern/Contemporary thinkers
+    const thales = nodes.find((n) => n.id === 'thales');
+    const plato = nodes.find((n) => n.id === 'plato');
+    const kant = nodes.find((n) => n.id === 'immanuel-kant');
+    const wittgenstein = nodes.find((n) => n.id === 'ludwig-wittgenstein');
+
+    expect(thales?.x).toBeDefined();
+    expect(plato?.x).toBeDefined();
+    expect(kant?.x).toBeDefined();
+    expect(wittgenstein?.x).toBeDefined();
+
+    expect(thales!.x!).toBeLessThan(plato!.x!);
+    expect(plato!.x!).toBeLessThan(kant!.x!);
+    expect(kant!.x!).toBeLessThan(wittgenstein!.x!);
+  });
 });

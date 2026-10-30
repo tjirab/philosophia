@@ -108,13 +108,25 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
   }
 
   const validNodeIds = new Set<string>();
-
   const nodes: VisualNode[] = [];
 
-  for (const p of filteredPhilosophers) {
+  const timelineStartYear = -650;
+  const timelineEndYear = 2020;
+  const totalSpan = timelineEndYear - timelineStartYear;
+  const philosopherMap = new Map(philosophers.map((p) => [p.id, p]));
+
+  for (let idx = 0; idx < filteredPhilosophers.length; idx++) {
+    const p = filteredPhilosophers[idx];
     validNodeIds.add(p.id);
     const era = eraMap.get(p.eraId);
     const tradition = traditionMap.get(p.traditionId);
+
+    // Deterministic chronological coordinate seeding:
+    // Antiquity starts on the left (-1600), Modernity progresses to the right (+1600).
+    const norm = Math.max(0, Math.min(1, (p.birthYear - timelineStartYear) / totalSpan));
+    const x = (norm - 0.5) * 3200 + Math.sin(idx * 3.1) * 45;
+    const y = Math.sin(idx * 4.7) * 350;
+
     nodes.push({
       id: p.id,
       name: p.name,
@@ -127,23 +139,42 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
       summary: p.shortBio,
       data: p,
       val: Math.max(8, Math.round(p.importanceScore / 8)),
+      x,
+      y,
     });
   }
 
-  for (const c of filteredConcepts) {
+  for (let idx = 0; idx < filteredConcepts.length; idx++) {
+    const c = filteredConcepts[idx];
     validNodeIds.add(c.id);
     const era = eraMap.get(c.eraId);
+
+    // Concept chronology: anchor near introducing philosopher or era midpoint
+    const introducingPhil = c.introducedBy ? philosopherMap.get(c.introducedBy) : undefined;
+    const conceptYear = introducingPhil
+      ? introducingPhil.birthYear + 25
+      : era
+      ? Math.round((era.startYear + era.endYear) / 2)
+      : 1500;
+
+    const norm = Math.max(0, Math.min(1, (conceptYear - timelineStartYear) / totalSpan));
+    const x = (norm - 0.5) * 3200 + Math.cos(idx * 2.9) * 55;
+    const y = Math.sin((idx + 50) * 4.1) * 400;
+
     nodes.push({
       id: c.id,
       name: c.title || (c as any).name || c.id,
       type: 'concept',
       eraId: c.eraId,
       branch: c.branch,
+      year: conceptYear,
       importanceScore: 50,
       color: era?.color ? `${era.color}cc` : '#94a3b8',
       summary: c.summary || (c as any).description || '',
       data: c,
       val: 6,
+      x,
+      y,
     });
   }
 
