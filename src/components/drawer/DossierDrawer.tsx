@@ -19,6 +19,7 @@ import {
 import { getNodeDetails } from '../../lib/graph/graph-service';
 import { Philosopher, Concept, KeyWork, getEdgeTypeConfig } from '../../lib/types';
 import { AudioPlayer } from '../audio/AudioPlayer';
+import { getAssetUrl } from '../../lib/assets';
 
 interface DossierDrawerProps {
   selectedNodeId: string | null;
@@ -121,66 +122,98 @@ export function DossierDrawer({
       <div className="p-6 border-b border-[var(--border-main)] relative bg-[var(--bg-card)]">
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition"
+          className="absolute top-5 right-5 p-2 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition z-10"
           aria-label="Close dossier"
         >
           <X className="w-5 h-5" />
         </button>
 
-        <div className="flex items-center gap-2 mb-2 flex-wrap">
-          {details.era && (
-            <span
-              className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider text-white shadow-sm"
-              style={{ backgroundColor: details.era.color }}
-            >
-              {details.era.name}
-            </span>
-          )}
-          {details.tradition && (
-            <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] font-semibold">
-              {details.tradition.name}
-            </span>
-          )}
-          {conc && (
-            <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] uppercase font-mono">
-              {conc.branch}
-            </span>
-          )}
-        </div>
-
-        <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[var(--text-main)] tracking-tight">
-          {isPhilosopher ? phil?.name : (conc?.title || (conc as any)?.name || 'Concept')}
-        </h2>
-
-        {isPhilosopher && phil && (
-          <div className="flex items-center gap-4 text-xs text-[var(--text-muted)] mt-2">
-            <span className="flex items-center gap-1.5 font-mono">
-              <Calendar className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-              {formatYear(phil.birthYear)} – {formatYear(phil.deathYear)}
-            </span>
-
-            {/* Centrality with Hover Explanation */}
-            <div className="relative group/centrality flex items-center gap-1.5 cursor-help">
-              <Compass className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-              <span className="font-semibold text-[var(--gold-accent)]">
-                Centrality: {phil.importanceScore}/100
-              </span>
-              <span className="text-[10px] text-[var(--text-dim)] font-mono border border-[var(--border-main)] rounded px-1">
-                ?
-              </span>
-
-              {/* Tooltip Popup */}
-              <div className="absolute left-0 top-full mt-1.5 hidden group-hover/centrality:block z-50 w-72 p-3 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed">
-                <div className="font-bold text-[var(--gold-accent)] mb-1 flex items-center gap-1">
-                  <span>✦ What is Degree Centrality?</span>
-                </div>
-                <p className="text-[var(--text-muted)]">
-                  Measures historical influence density (0–100) based on total incoming and outgoing intellectual connections (mentorships, critiques, extensions, and syntheses). A higher score indicates a pivotal thinker who shaped or challenged multiple philosophical traditions.
-                </p>
+        <div className="flex items-start gap-4">
+          {isPhilosopher && phil && (
+            <div className="relative shrink-0">
+              <div
+                className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-[var(--gold-border)] shadow-lg bg-[var(--bg-subtle)] flex items-center justify-center relative group/portrait"
+                style={{
+                  boxShadow: `0 4px 16px -2px ${details.era?.color ? details.era.color + '40' : 'rgba(0,0,0,0.2)'}`,
+                }}
+              >
+                <img
+                  src={getAssetUrl(phil.imageUrl || `/portraits/${phil.id}.jpg`)}
+                  alt={phil.name}
+                  className="w-full h-full object-cover object-top transition duration-300 group-hover/portrait:scale-105"
+                  onError={(e) => {
+                    (e.target as HTMLElement).style.display = 'none';
+                  }}
+                />
+                <span className="font-serif font-bold text-2xl text-[var(--gold-accent)] absolute -z-0">
+                  {phil.name.slice(0, 2).toUpperCase()}
+                </span>
               </div>
+              <div
+                className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full border-2 border-[var(--bg-card)] shadow-sm"
+                style={{ backgroundColor: details.era?.color || 'var(--gold-accent)' }}
+                title={details.era?.name}
+              />
             </div>
+          )}
+
+          <div className="flex-1 min-w-0 pr-6">
+            <div className="flex items-center gap-2 mb-2 flex-wrap">
+              {details.era && (
+                <span
+                  className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider text-white shadow-sm"
+                  style={{ backgroundColor: details.era.color }}
+                >
+                  {details.era.name}
+                </span>
+              )}
+              {details.tradition && (
+                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] font-semibold">
+                  {details.tradition.name}
+                </span>
+              )}
+              {conc && (
+                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] uppercase font-mono">
+                  {conc.branch}
+                </span>
+              )}
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[var(--text-main)] tracking-tight">
+              {isPhilosopher ? phil?.name : (conc?.title || (conc as any)?.name || 'Concept')}
+            </h2>
+
+            {isPhilosopher && phil && (
+              <div className="flex items-center gap-4 text-xs text-[var(--text-muted)] mt-2 flex-wrap">
+                <span className="flex items-center gap-1.5 font-mono">
+                  <Calendar className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+                  {formatYear(phil.birthYear)} – {formatYear(phil.deathYear)}
+                </span>
+
+                {/* Centrality with Hover Explanation */}
+                <div className="relative group/centrality flex items-center gap-1.5 cursor-help">
+                  <Compass className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+                  <span className="font-semibold text-[var(--gold-accent)]">
+                    Centrality: {phil.importanceScore}/100
+                  </span>
+                  <span className="text-[10px] text-[var(--text-dim)] font-mono border border-[var(--border-main)] rounded px-1">
+                    ?
+                  </span>
+
+                  {/* Tooltip Popup */}
+                  <div className="absolute left-0 top-full mt-1.5 hidden group-hover/centrality:block z-50 w-72 p-3 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed">
+                    <div className="font-bold text-[var(--gold-accent)] mb-1 flex items-center gap-1">
+                      <span>✦ What is Degree Centrality?</span>
+                    </div>
+                    <p className="text-[var(--text-muted)]">
+                      Measures historical influence density (0–100) based on total incoming and outgoing intellectual connections (mentorships, critiques, extensions, and syntheses). A higher score indicates a pivotal thinker who shaped or challenged multiple philosophical traditions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
 
       {/* Sticky Table of Contents Jump Bar */}
@@ -479,11 +512,23 @@ export function DossierDrawer({
                       className={`p-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl cursor-pointer transition group shadow-sm ${edgeConfig.cardBorderClass}`}
                     >
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition">
-                          {(node as any).name || (node as any).title}
-                        </span>
+                        <div className="flex items-center gap-2 min-w-0">
+                          {(node as any).type === 'philosopher' && (
+                            <img
+                              src={getAssetUrl((node as any).imageUrl || `/portraits/${node.id}.jpg`)}
+                              alt=""
+                              className="w-5 h-5 rounded-full object-cover shrink-0 border border-[var(--gold-border)]"
+                              onError={(e) => {
+                                (e.target as HTMLElement).style.display = 'none';
+                              }}
+                            />
+                          )}
+                          <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition truncate">
+                            {(node as any).name || (node as any).title}
+                          </span>
+                        </div>
                         <span
-                          className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors ${edgeConfig.badgeClass}`}
+                          className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors shrink-0 ml-2 ${edgeConfig.badgeClass}`}
                           title={edgeConfig.description}
                         >
                           {edge.type}
@@ -521,11 +566,23 @@ export function DossierDrawer({
                       className={`p-3 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] rounded-xl cursor-pointer transition group shadow-sm ${edgeConfig.cardBorderClass}`}
                     >
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition">
-                          {(node as any).name || (node as any).title}
-                        </span>
+                        <div className="flex items-center gap-2 min-w-0">
+                          {(node as any).type === 'philosopher' && (
+                            <img
+                              src={getAssetUrl((node as any).imageUrl || `/portraits/${node.id}.jpg`)}
+                              alt=""
+                              className="w-5 h-5 rounded-full object-cover shrink-0 border border-[var(--gold-border)]"
+                              onError={(e) => {
+                                (e.target as HTMLElement).style.display = 'none';
+                              }}
+                            />
+                          )}
+                          <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition truncate">
+                            {(node as any).name || (node as any).title}
+                          </span>
+                        </div>
                         <span
-                          className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors ${edgeConfig.badgeClass}`}
+                          className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors shrink-0 ml-2 ${edgeConfig.badgeClass}`}
                           title={edgeConfig.description}
                         >
                           {edge.type}

@@ -140,6 +140,7 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
       importanceScore: p.importanceScore,
       color: tradition?.color || era?.color || '#3b82f6',
       summary: p.shortBio,
+      imageUrl: p.imageUrl || `/portraits/${p.id}.jpg`,
       data: p,
       val: Math.max(8, Math.round(p.importanceScore / 8)),
       x,

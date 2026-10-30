@@ -18,7 +18,8 @@
       }
     ],
     "sepSlug": "presocratics",
-    "importanceScore": 60
+    "importanceScore": 60,
+    "imageUrl": "/portraits/thales.jpg"
   },
   {
     "id": "heraclitus",
@@ -39,7 +40,8 @@
       }
     ],
     "sepSlug": "heraclitus",
-    "importanceScore": 75
+    "importanceScore": 75,
+    "imageUrl": "/portraits/heraclitus.jpg"
   },
   {
     "id": "parmenides",
@@ -60,7 +62,8 @@
       }
     ],
     "sepSlug": "parmenides",
-    "importanceScore": 80
+    "importanceScore": 80,
+    "imageUrl": "/portraits/parmenides.jpg"
   },
   {
     "id": "democritus",
@@ -81,7 +84,8 @@
       }
     ],
     "sepSlug": "democritus",
-    "importanceScore": 70
+    "importanceScore": 70,
+    "imageUrl": "/portraits/democritus.jpg"
   },
   {
     "id": "socrates",
@@ -102,7 +106,8 @@
       }
     ],
     "sepSlug": "socrates",
-    "importanceScore": 98
+    "importanceScore": 98,
+    "imageUrl": "/portraits/socrates.jpg"
   },
   {
     "id": "plato",
@@ -156,7 +161,8 @@
       }
     ],
     "sepSlug": "plato",
-    "importanceScore": 100
+    "importanceScore": 100,
+    "imageUrl": "/portraits/plato.jpg"
   },
   {
     "id": "aristotle",
@@ -210,7 +216,8 @@
       }
     ],
     "sepSlug": "aristotle",
-    "importanceScore": 100
+    "importanceScore": 100,
+    "imageUrl": "/portraits/aristotle.jpg"
   },
   {
     "id": "epicurus",
@@ -238,7 +245,8 @@
       }
     ],
     "sepSlug": "epicurus",
-    "importanceScore": 82
+    "importanceScore": 82,
+    "imageUrl": "/portraits/epicurus.jpg"
   },
   {
     "id": "seneca",
@@ -276,7 +284,8 @@
       }
     ],
     "sepSlug": "seneca",
-    "importanceScore": 85
+    "importanceScore": 85,
+    "imageUrl": "/portraits/seneca.jpg"
   },
   {
     "id": "epictetus",
@@ -306,7 +315,8 @@
       }
     ],
     "sepSlug": "epictetus",
-    "importanceScore": 86
+    "importanceScore": 86,
+    "imageUrl": "/portraits/epictetus.jpg"
   },
   {
     "id": "marcus-aurelius",
@@ -328,7 +338,8 @@
       }
     ],
     "sepSlug": "marcus-aurelius",
-    "importanceScore": 90
+    "importanceScore": 90,
+    "imageUrl": "/portraits/marcus-aurelius.jpg"
   },
   {
     "id": "pyrrho",
@@ -349,7 +360,8 @@
       }
     ],
     "sepSlug": "pyrrho",
-    "importanceScore": 72
+    "importanceScore": 72,
+    "imageUrl": "/portraits/pyrrho.jpg"
   },
   {
     "id": "plotinus",
@@ -370,7 +382,8 @@
       }
     ],
     "sepSlug": "plotinus",
-    "importanceScore": 80
+    "importanceScore": 80,
+    "imageUrl": "/portraits/plotinus.jpg"
   },
   {
     "id": "laozi",
@@ -391,7 +404,8 @@
       }
     ],
     "sepSlug": "laozi",
-    "importanceScore": 88
+    "importanceScore": 88,
+    "imageUrl": "/portraits/laozi.jpg"
   },
   {
     "id": "siddhartha-gautama",
@@ -412,7 +426,8 @@
       }
     ],
     "sepSlug": "buddha",
-    "importanceScore": 95
+    "importanceScore": 95,
+    "imageUrl": "/portraits/siddhartha-gautama.jpg"
   },
   {
     "id": "nagarjuna",
@@ -433,7 +448,8 @@
       }
     ],
     "sepSlug": "nagarjuna",
-    "importanceScore": 82
+    "importanceScore": 82,
+    "imageUrl": "/portraits/nagarjuna.jpg"
   },
   {
     "id": "adi-shankara",
@@ -461,7 +477,8 @@
       }
     ],
     "sepSlug": "shankara",
-    "importanceScore": 80
+    "importanceScore": 80,
+    "imageUrl": "/portraits/adi-shankara.jpg"
   },
   {
     "id": "augustine",
@@ -498,7 +515,8 @@
       }
     ],
     "sepSlug": "augustine",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "imageUrl": "/portraits/augustine.jpg"
   },
   {
     "id": "avicenna",
@@ -526,7 +544,8 @@
       }
     ],
     "sepSlug": "ibn-sina",
-    "importanceScore": 89
+    "importanceScore": 89,
+    "imageUrl": "/portraits/avicenna.jpg"
   },
   {
     "id": "averroes",
@@ -554,7 +573,8 @@
       }
     ],
     "sepSlug": "ibn-rushd",
-    "importanceScore": 87
+    "importanceScore": 87,
+    "imageUrl": "/portraits/averroes.jpg"
   },
   {
     "id": "thomas-aquinas",
@@ -583,7 +603,8 @@
       }
     ],
     "sepSlug": "aquinas",
-    "importanceScore": 96
+    "importanceScore": 96,
+    "imageUrl": "/portraits/thomas-aquinas.jpg"
   },
   {
     "id": "william-of-ockham",
@@ -604,7 +625,8 @@
       }
     ],
     "sepSlug": "ockham",
-    "importanceScore": 84
+    "importanceScore": 84,
+    "imageUrl": "/portraits/william-of-ockham.jpg"
   },
   {
     "id": "machiavelli",
@@ -633,7 +655,8 @@
       }
     ],
     "sepSlug": "machiavelli",
-    "importanceScore": 88
+    "importanceScore": 88,
+    "imageUrl": "/portraits/machiavelli.jpg"
   },
   {
     "id": "francis-bacon",
@@ -661,7 +684,8 @@
       }
     ],
     "sepSlug": "francis-bacon",
-    "importanceScore": 82
+    "importanceScore": 82,
+    "imageUrl": "/portraits/francis-bacon.jpg"
   },
   {
     "id": "thomas-hobbes",
@@ -683,7 +707,8 @@
       }
     ],
     "sepSlug": "hobbes",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "imageUrl": "/portraits/thomas-hobbes.jpg"
   },
   {
     "id": "rene-descartes",
@@ -713,7 +738,8 @@
       }
     ],
     "sepSlug": "descartes",
-    "importanceScore": 99
+    "importanceScore": 99,
+    "imageUrl": "/portraits/rene-descartes.jpg"
   },
   {
     "id": "baruch-spinoza",
@@ -742,7 +768,8 @@
       }
     ],
     "sepSlug": "spinoza",
-    "importanceScore": 95
+    "importanceScore": 95,
+    "imageUrl": "/portraits/baruch-spinoza.jpg"
   },
   {
     "id": "gottfried-leibniz",
@@ -778,7 +805,8 @@
       }
     ],
     "sepSlug": "leibniz",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "imageUrl": "/portraits/gottfried-leibniz.jpg"
   },
   {
     "id": "john-locke",
@@ -808,7 +836,8 @@
       }
     ],
     "sepSlug": "locke",
-    "importanceScore": 96
+    "importanceScore": 96,
+    "imageUrl": "/portraits/john-locke.jpg"
   },
   {
     "id": "george-berkeley",
@@ -836,7 +865,8 @@
       }
     ],
     "sepSlug": "berkeley",
-    "importanceScore": 86
+    "importanceScore": 86,
+    "imageUrl": "/portraits/george-berkeley.jpg"
   },
   {
     "id": "david-hume",
@@ -866,7 +896,8 @@
       }
     ],
     "sepSlug": "hume",
-    "importanceScore": 98
+    "importanceScore": 98,
+    "imageUrl": "/portraits/david-hume.jpg"
   },
   {
     "id": "adam-smith",
@@ -901,7 +932,8 @@
       }
     ],
     "sepSlug": "smith-moral-political",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "imageUrl": "/portraits/adam-smith.jpg"
   },
   {
     "id": "voltaire",
@@ -937,7 +969,8 @@
       }
     ],
     "sepSlug": "voltaire",
-    "importanceScore": 88
+    "importanceScore": 88,
+    "imageUrl": "/portraits/voltaire.jpg"
   },
   {
     "id": "jean-jacques-rousseau",
@@ -973,7 +1006,8 @@
       }
     ],
     "sepSlug": "rousseau",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "imageUrl": "/portraits/jean-jacques-rousseau.jpg"
   },
   {
     "id": "immanuel-kant",
@@ -1011,7 +1045,8 @@
       }
     ],
     "sepSlug": "kant",
-    "importanceScore": 100
+    "importanceScore": 100,
+    "imageUrl": "/portraits/immanuel-kant.jpg"
   },
   {
     "id": "gwf-hegel",
@@ -1047,7 +1082,8 @@
       }
     ],
     "sepSlug": "hegel",
-    "importanceScore": 97
+    "importanceScore": 97,
+    "imageUrl": "/portraits/gwf-hegel.jpg"
   },
   {
     "id": "arthur-schopenhauer",
@@ -1076,7 +1112,8 @@
       }
     ],
     "sepSlug": "schopenhauer",
-    "importanceScore": 95
+    "importanceScore": 95,
+    "imageUrl": "/portraits/arthur-schopenhauer.jpg"
   },
   {
     "id": "soren-kierkegaard",
@@ -1112,7 +1149,8 @@
       }
     ],
     "sepSlug": "kierkegaard",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "imageUrl": "/portraits/soren-kierkegaard.jpg"
   },
   {
     "id": "karl-marx",
@@ -1148,7 +1186,8 @@
       }
     ],
     "sepSlug": "marx",
-    "importanceScore": 98
+    "importanceScore": 98,
+    "imageUrl": "/portraits/karl-marx.jpg"
   },
   {
     "id": "friedrich-nietzsche",
@@ -1192,7 +1231,8 @@
       }
     ],
     "sepSlug": "nietzsche",
-    "importanceScore": 100
+    "importanceScore": 100,
+    "imageUrl": "/portraits/friedrich-nietzsche.jpg"
   },
   {
     "id": "john-stuart-mill",
@@ -1228,7 +1268,8 @@
       }
     ],
     "sepSlug": "mill",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "imageUrl": "/portraits/john-stuart-mill.jpg"
   },
   {
     "id": "william-james",
@@ -1263,7 +1304,8 @@
       }
     ],
     "sepSlug": "james",
-    "importanceScore": 88
+    "importanceScore": 88,
+    "imageUrl": "/portraits/william-james.jpg"
   },
   {
     "id": "edmund-husserl",
@@ -1291,7 +1333,8 @@
       }
     ],
     "sepSlug": "husserl",
-    "importanceScore": 90
+    "importanceScore": 90,
+    "imageUrl": "/portraits/edmund-husserl.jpg"
   },
   {
     "id": "martin-heidegger",
@@ -1320,7 +1363,8 @@
       }
     ],
     "sepSlug": "heidegger",
-    "importanceScore": 96
+    "importanceScore": 96,
+    "imageUrl": "/portraits/martin-heidegger.jpg"
   },
   {
     "id": "jean-paul-sartre",
@@ -1356,7 +1400,8 @@
       }
     ],
     "sepSlug": "sartre",
-    "importanceScore": 95
+    "importanceScore": 95,
+    "imageUrl": "/portraits/jean-paul-sartre.jpg"
   },
   {
     "id": "simone-de-beauvoir",
@@ -1385,7 +1430,8 @@
       }
     ],
     "sepSlug": "beauvoir",
-    "importanceScore": 94
+    "importanceScore": 94,
+    "imageUrl": "/portraits/simone-de-beauvoir.jpg"
   },
   {
     "id": "albert-camus",
@@ -1421,7 +1467,8 @@
       }
     ],
     "sepSlug": "camus",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "imageUrl": "/portraits/albert-camus.jpg"
   },
   {
     "id": "ludwig-wittgenstein",
@@ -1451,7 +1498,8 @@
       }
     ],
     "sepSlug": "wittgenstein",
-    "importanceScore": 99
+    "importanceScore": 99,
+    "imageUrl": "/portraits/ludwig-wittgenstein.jpg"
   },
   {
     "id": "bertrand-russell",
@@ -1486,7 +1534,8 @@
       }
     ],
     "sepSlug": "russell",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "imageUrl": "/portraits/bertrand-russell.jpg"
   },
   {
     "id": "karl-popper",
@@ -1514,7 +1563,8 @@
       }
     ],
     "sepSlug": "popper",
-    "importanceScore": 89
+    "importanceScore": 89,
+    "imageUrl": "/portraits/karl-popper.jpg"
   },
   {
     "id": "theodor-adorno",
@@ -1549,7 +1599,8 @@
       }
     ],
     "sepSlug": "adorno",
-    "importanceScore": 89
+    "importanceScore": 89,
+    "imageUrl": "/portraits/theodor-adorno.jpg"
   },
   {
     "id": "michel-foucault",
@@ -1585,7 +1636,8 @@
       }
     ],
     "sepSlug": "foucault",
-    "importanceScore": 97
+    "importanceScore": 97,
+    "imageUrl": "/portraits/michel-foucault.jpg"
   },
   {
     "id": "jacques-derrida",
@@ -1613,7 +1665,8 @@
       }
     ],
     "sepSlug": "derrida",
-    "importanceScore": 90
+    "importanceScore": 90,
+    "imageUrl": "/portraits/jacques-derrida.jpg"
   },
   {
     "id": "gilles-deleuze",
@@ -1648,7 +1701,8 @@
       }
     ],
     "sepSlug": "deleuze",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "imageUrl": "/portraits/gilles-deleuze.jpg"
   },
   {
     "id": "hannah-arendt",
@@ -1683,7 +1737,8 @@
       }
     ],
     "sepSlug": "arendt",
-    "importanceScore": 94
+    "importanceScore": 94,
+    "imageUrl": "/portraits/hannah-arendt.jpg"
   },
   {
     "id": "john-rawls",
@@ -1712,7 +1767,8 @@
       }
     ],
     "sepSlug": "rawls",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "imageUrl": "/portraits/john-rawls.jpg"
   },
   {
     "id": "byung-chul-han",
@@ -1748,7 +1804,8 @@
       }
     ],
     "sepSlug": "culture-cogsci",
-    "importanceScore": 86
+    "importanceScore": 86,
+    "imageUrl": "/portraits/byung-chul-han.jpg"
   },
   {
     "id": "nick-bostrom",
@@ -1777,7 +1834,8 @@
       }
     ],
     "sepSlug": "ethics-ai",
-    "importanceScore": 82
+    "importanceScore": 82,
+    "imageUrl": "/portraits/nick-bostrom.jpg"
   },
   {
     "id": "zeno-of-elea",
@@ -1798,7 +1856,8 @@
       }
     ],
     "sepSlug": "zeno-elea",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "imageUrl": "/portraits/zeno-of-elea.jpg"
   },
   {
     "id": "confucius",
@@ -1819,7 +1878,8 @@
       }
     ],
     "sepSlug": "confucius",
-    "importanceScore": 97
+    "importanceScore": 97,
+    "imageUrl": "/portraits/confucius.jpg"
   },
   {
     "id": "zhuangzi",
@@ -1840,7 +1900,8 @@
       }
     ],
     "sepSlug": "zhuangzi",
-    "importanceScore": 94
+    "importanceScore": 94,
+    "imageUrl": "/portraits/zhuangzi.jpg"
   },
   {
     "id": "anselm-of-canterbury",
@@ -1868,7 +1929,8 @@
       }
     ],
     "sepSlug": "anselm",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "imageUrl": "/portraits/anselm-of-canterbury.jpg"
   },
   {
     "id": "al-ghazali",
@@ -1896,7 +1958,8 @@
       }
     ],
     "sepSlug": "al-ghazali",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "imageUrl": "/portraits/al-ghazali.jpg"
   },
   {
     "id": "moses-maimonides",
@@ -1917,7 +1980,8 @@
       }
     ],
     "sepSlug": "maimonides",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "imageUrl": "/portraits/moses-maimonides.jpg"
   },
   {
     "id": "michel-de-montaigne",
@@ -1945,7 +2009,8 @@
       }
     ],
     "sepSlug": "montaigne",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "imageUrl": "/portraits/michel-de-montaigne.jpg"
   },
   {
     "id": "blaise-pascal",
@@ -1966,7 +2031,8 @@
       }
     ],
     "sepSlug": "pascal",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "imageUrl": "/portraits/blaise-pascal.jpg"
   },
   {
     "id": "johann-gottlieb-fichte",
@@ -1987,7 +2053,8 @@
       }
     ],
     "sepSlug": "johann-fichte",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "imageUrl": "/portraits/johann-gottlieb-fichte.jpg"
   },
   {
     "id": "friedrich-schelling",
@@ -2015,7 +2082,8 @@
       }
     ],
     "sepSlug": "schelling",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "imageUrl": "/portraits/friedrich-schelling.jpg"
   },
   {
     "id": "charles-sanders-peirce",
@@ -2036,7 +2104,8 @@
       }
     ],
     "sepSlug": "peirce",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "imageUrl": "/portraits/charles-sanders-peirce.jpg"
   },
   {
     "id": "gottlob-frege",
@@ -2064,7 +2133,8 @@
       }
     ],
     "sepSlug": "frege",
-    "importanceScore": 94
+    "importanceScore": 94,
+    "imageUrl": "/portraits/gottlob-frege.jpg"
   },
   {
     "id": "emmanuel-levinas",
@@ -2085,7 +2155,8 @@
       }
     ],
     "sepSlug": "levinas",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "imageUrl": "/portraits/emmanuel-levinas.jpg"
   },
   {
     "id": "maurice-merleau-ponty",
@@ -2106,7 +2177,8 @@
       }
     ],
     "sepSlug": "merleau-ponty",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "imageUrl": "/portraits/maurice-merleau-ponty.jpg"
   },
   {
     "id": "jurgen-habermas",
@@ -2134,7 +2206,8 @@
       }
     ],
     "sepSlug": "habermas",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "imageUrl": "/portraits/jurgen-habermas.jpg"
   },
   {
     "id": "derek-parfit",
@@ -2162,7 +2235,8 @@
       }
     ],
     "sepSlug": "parfit",
-    "importanceScore": 90
+    "importanceScore": 90,
+    "imageUrl": "/portraits/derek-parfit.jpg"
   },
   {
     "id": "boethius",
@@ -2190,7 +2264,8 @@
       }
     ],
     "sepSlug": "boethius",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "imageUrl": "/portraits/boethius.jpg"
   },
   {
     "id": "montesquieu",
@@ -2218,7 +2293,8 @@
       }
     ],
     "sepSlug": "montesquieu",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "imageUrl": "/portraits/montesquieu.jpg"
   },
   {
     "id": "ludwig-feuerbach",
@@ -2246,7 +2322,8 @@
       }
     ],
     "sepSlug": "ludwig-feuerbach",
-    "importanceScore": 91
+    "importanceScore": 91,
+    "imageUrl": "/portraits/ludwig-feuerbach.jpg"
   },
   {
     "id": "anaximander",
@@ -2267,7 +2344,8 @@
       }
     ],
     "sepSlug": "presocratics",
-    "importanceScore": 90
+    "importanceScore": 90,
+    "imageUrl": "/portraits/anaximander.jpg"
   },
   {
     "id": "mencius",
@@ -2288,7 +2366,8 @@
       }
     ],
     "sepSlug": "mencius",
-    "importanceScore": 93
+    "importanceScore": 93,
+    "imageUrl": "/portraits/mencius.jpg"
   },
   {
     "id": "jeremy-bentham",
@@ -2316,7 +2395,8 @@
       }
     ],
     "sepSlug": "bentham",
-    "importanceScore": 94
+    "importanceScore": 94,
+    "imageUrl": "/portraits/jeremy-bentham.jpg"
   },
   {
     "id": "mary-wollstonecraft",
@@ -2344,6 +2424,7 @@
       }
     ],
     "sepSlug": "wollstonecraft",
-    "importanceScore": 92
+    "importanceScore": 92,
+    "imageUrl": "/portraits/mary-wollstonecraft.jpg"
   }
 ]

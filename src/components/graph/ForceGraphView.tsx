@@ -10,6 +10,7 @@ import { HoverNodeCard } from './HoverNodeCard';
 import { EpochNavigator } from '../timeline/EpochNavigator';
 import { useClickOutside } from '../../lib/hooks/useClickOutside';
 import { drawCartographicGrid } from '../../lib/graph/grid-renderer';
+import { getAssetUrl } from '../../lib/assets';
 import {
   getArrowLength,
   ARROW_REL_POS,
@@ -18,6 +19,9 @@ import {
   getLinkWidth,
   getLinkLineDash,
 } from '../../lib/graph/arrow-styling';
+
+// Global cache for philosopher portraits rendered on the HTML5 canvas
+const portraitCache = new Map<string, HTMLImageElement | 'loading' | 'failed'>();
 
 // Dynamically import ForceGraph2D with ssr disabled
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
@@ -120,6 +124,30 @@ export function ForceGraphView({
     window.addEventListener('resize', updateDimensions);
     return () => window.removeEventListener('resize', updateDimensions);
   }, []);
+
+  // Preload philosopher portraits for instant canvas rendering
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    nodes.forEach((n) => {
+      if (n.type === 'philosopher') {
+        const url = getAssetUrl(n.imageUrl || `/portraits/${n.id}.jpg`);
+        if (!portraitCache.has(url)) {
+          portraitCache.set(url, 'loading');
+          const img = new Image();
+          img.src = url;
+          img.onload = () => {
+            portraitCache.set(url, img);
+            if (fgRef.current && fgRef.current.refresh) {
+              fgRef.current.refresh();
+            }
+          };
+          img.onerror = () => {
+            portraitCache.set(url, 'failed');
+          };
+        }
+      }
+    });
+  }, [nodes]);
 
   // Configure D3 anti-collision forces and generous repulsion to prevent node overlap
   const applyForces = React.useCallback((fg: any, multiplier: number) => {
@@ -363,21 +391,65 @@ export function ForceGraphView({
         : isLight ? 'rgba(50, 40, 30, 0.7)' : 'rgba(255, 245, 230, 0.75)';
       ctx.stroke();
 
-      // Inner medallion contrast circle for initial monogram
-      if (size >= 8) {
-        ctx.beginPath();
-        ctx.arc(node.x, node.y, size * 0.65, 0, 2 * Math.PI, false);
-        ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.85)' : 'rgba(18, 16, 13, 0.85)';
-        ctx.fill();
+      // Inner medallion: render portrait picture or monogram fallback
+      if (size >= 7) {
+        let drewPortrait = false;
+        const portraitUrl = getAssetUrl(node.imageUrl || `/portraits/${node.id}.jpg`);
+        const cached = portraitCache.get(portraitUrl);
 
-        // Monogram initial
-        const monogram = getNodeMonogram(node);
-        const monogramSize = Math.max(size * 0.6, 6);
-        ctx.font = `bold ${monogramSize}px "Cinzel", Georgia, serif`;
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillStyle = isLight ? '#1f1b15' : '#f5f0e6';
-        ctx.fillText(monogram, node.x, node.y);
+        if (cached instanceof HTMLImageElement && cached.complete && cached.naturalWidth > 0) {
+          const portraitRadius = size * 0.74;
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, portraitRadius, 0, 2 * Math.PI, false);
+          ctx.clip();
+          ctx.drawImage(
+            cached,
+            node.x - portraitRadius,
+            node.y - portraitRadius,
+            portraitRadius * 2,
+            portraitRadius * 2
+          );
+          ctx.restore();
+
+          // Delicate antique rim border around portrait
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, portraitRadius, 0, 2 * Math.PI, false);
+          ctx.lineWidth = 0.8;
+          ctx.strokeStyle = isLight ? 'rgba(215, 195, 160, 0.9)' : 'rgba(90, 75, 55, 0.9)';
+          ctx.stroke();
+
+          drewPortrait = true;
+        } else if (cached === undefined && typeof window !== 'undefined') {
+          portraitCache.set(portraitUrl, 'loading');
+          const newImg = new Image();
+          newImg.src = portraitUrl;
+          newImg.onload = () => {
+            portraitCache.set(portraitUrl, newImg);
+            if (fgRef.current && fgRef.current.refresh) {
+              fgRef.current.refresh();
+            }
+          };
+          newImg.onerror = () => {
+            portraitCache.set(portraitUrl, 'failed');
+          };
+        }
+
+        if (!drewPortrait) {
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, size * 0.65, 0, 2 * Math.PI, false);
+          ctx.fillStyle = isLight ? 'rgba(255, 253, 250, 0.85)' : 'rgba(18, 16, 13, 0.85)';
+          ctx.fill();
+
+          // Monogram initial
+          const monogram = getNodeMonogram(node);
+          const monogramSize = Math.max(size * 0.6, 6);
+          ctx.font = `bold ${monogramSize}px "Cinzel", Georgia, serif`;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillStyle = isLight ? '#1f1b15' : '#f5f0e6';
+          ctx.fillText(monogram, node.x, node.y);
+        }
       }
     }
 

@@ -27,6 +27,8 @@ describe('Philosophy Graph Data Integrity', () => {
       expect(p.name.length).toBeGreaterThan(0);
       expect(p.sepSlug.length).toBeGreaterThan(0);
       expect(p.deathYear).toBeGreaterThanOrEqual(p.birthYear);
+      expect(p.imageUrl, `Philosopher ${p.id} is missing imageUrl`).toBeDefined();
+      expect(p.imageUrl).toMatch(/^\/portraits\/[a-z0-9-]+\.jpg$/);
     }
   });
 
