@@ -169,6 +169,15 @@ describe('Philosophy Graph Data Integrity', () => {
     expect(hegelToProj.found).toBe(true);
     expect(hegelToProj.nodes).toContain('ludwig-feuerbach');
 
+    // Marx -> Baudrillard -> Simulacra
+    const marxToSimulacra = findInfluencePath('karl-marx', 'simulacra-and-hyperreality', edgesData as any);
+    expect(marxToSimulacra.found).toBe(true);
+    expect(marxToSimulacra.nodes).toContain('jean-baudrillard');
+
+    // Baudrillard -> Bostrom
+    const baudrillardToBostrom = findInfluencePath('jean-baudrillard', 'nick-bostrom', edgesData as any);
+    expect(baudrillardToBostrom.found).toBe(true);
+
     // David Hume -> Adam Smith -> Karl Marx
     const humeToMarx = findInfluencePath('david-hume', 'karl-marx', edgesData as any);
     expect(humeToMarx.found).toBe(true);
