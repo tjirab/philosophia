@@ -75,9 +75,10 @@ export function ForceGraphView({
   const [dimensions, setDimensions] = useState({ width: 1200, height: 800 });
   const [hoveredNode, setHoveredNode] = useState<VisualNode | null>(null);
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null);
-  const [spacingMultiplier, setSpacingMultiplier] = useState<number>(1.8); // 1.8x default generous spacing to prevent overlap
-  const prevSpacingMultiplierRef = useRef<number>(1.8);
+  const [spacingMultiplier, setSpacingMultiplier] = useState<number>(1.9); // 1.9x generous balanced default to ensure zero overlap
+  const prevSpacingMultiplierRef = useRef<number>(1.9);
   const hasInitialFitRef = useRef<boolean>(false);
+  const hasConfiguredForcesRef = useRef<boolean>(false);
 
   // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
   const graphData = useMemo(() => ({ nodes, links }), [nodes, links]);
@@ -98,45 +99,80 @@ export function ForceGraphView({
   }, []);
 
   // Configure D3 anti-collision forces and generous repulsion to prevent node overlap
+  const applyForces = React.useCallback((fg: any, multiplier: number) => {
+    if (!fg) return;
+
+    // 1. Remove default center force so it doesn't drag nodes into central clump
+    fg.d3Force('center', null);
+
+    // 2. Anti-collision barrier: collision radius calculated with node radius + label padding
+    const collisionRadius = (node: any) => {
+      const size = Math.max(8, (node.val || 8) * 0.9);
+      const isAnchor = (node.importanceScore && node.importanceScore >= 90) || false;
+      const basePadding = isAnchor ? 54 : 46;
+      return size + basePadding * multiplier;
+    };
+
+    fg.d3Force('collide', forceCollide().radius(collisionRadius).iterations(4));
+
+    // 3. Generous repulsion charge
+    fg.d3Force(
+      'charge',
+      forceManyBody()
+        .strength(-750 * multiplier)
+        .distanceMax(2600 * multiplier)
+    );
+
+    // 4. Link distance
+    const linkForce = fg.d3Force('link');
+    if (linkForce) {
+      linkForce.distance(135 * multiplier);
+    }
+
+    // 5. Gentle chronological guidance along X (strength 0.05 rather than rigid 0.15)
+    const minYear = -650;
+    const totalSpan = 2020 - minYear;
+    fg.d3Force(
+      'x',
+      forceX((node: any) => {
+        const year = typeof node.year === 'number' ? node.year : 1500;
+        const norm = Math.max(0, Math.min(1, (year - minYear) / totalSpan));
+        return (norm - 0.5) * 3400;
+      }).strength(0.05)
+    );
+
+    // 6. Gentle vertical centering allowing full 2D expansion
+    fg.d3Force('y', forceY(0).strength(0.015));
+
+    // Reheat simulation so D3 physics actively positions nodes into new spread
+    fg.d3ReheatSimulation();
+  }, []);
+
+  // Ensure forces are applied the instant ForceGraph2D mounts (polling raf until ref is bound)
+  useEffect(() => {
+    let animId: number;
+    let cancelled = false;
+
+    const initForces = () => {
+      if (cancelled) return;
+      if (fgRef.current) {
+        hasConfiguredForcesRef.current = true;
+        applyForces(fgRef.current, spacingMultiplier);
+      } else {
+        animId = requestAnimationFrame(initForces);
+      }
+    };
+
+    initForces();
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(animId);
+    };
+  }, [applyForces, spacingMultiplier]);
+
   useEffect(() => {
     if (fgRef.current) {
-      // 1. Anti-collision barrier: collision radius calculated with node radius + label padding
-      const collisionRadius = (node: any) => {
-        const size = Math.max(8, (node.val || 8) * 0.9);
-        return size + 36 * spacingMultiplier;
-      };
-
-      fgRef.current.d3Force('collide', forceCollide().radius(collisionRadius).iterations(4));
-
-      // 2. Strong repulsion charge
-      fgRef.current.d3Force(
-        'charge',
-        forceManyBody()
-          .strength(-600 * spacingMultiplier)
-          .distanceMax(1800 * spacingMultiplier)
-      );
-
-      // 3. Link distance
-      const linkForce = fgRef.current.d3Force('link');
-      if (linkForce) {
-        linkForce.distance(115 * spacingMultiplier);
-      }
-
-      // 4. Chronological horizontal flow and gentle vertical centering
-      const minYear = -650;
-      const totalSpan = 2020 - minYear;
-      fgRef.current.d3Force(
-        'x',
-        forceX((node: any) => {
-          const year = typeof node.year === 'number' ? node.year : 1500;
-          const norm = Math.max(0, Math.min(1, (year - minYear) / totalSpan));
-          return (norm - 0.5) * 3200;
-        }).strength(0.15)
-      );
-
-      fgRef.current.d3Force('y', forceY(0).strength(0.04));
-
-      // 5. Physical node coordinate expansion/contraction for instant responsiveness
+      // Physical node coordinate expansion/contraction for instant responsiveness
       const prevMultiplier = prevSpacingMultiplierRef.current;
       if (prevMultiplier && prevMultiplier !== spacingMultiplier && graphData?.nodes) {
         const ratio = spacingMultiplier / prevMultiplier;
@@ -147,10 +183,19 @@ export function ForceGraphView({
       }
       prevSpacingMultiplierRef.current = spacingMultiplier;
 
-      // 6. Reheat simulation so D3 physics actively positions nodes into new spread
-      fgRef.current.d3ReheatSimulation();
+      applyForces(fgRef.current, spacingMultiplier);
     }
-  }, [graphData, spacingMultiplier]);
+  }, [graphData, spacingMultiplier, applyForces]);
+
+  // Initial camera fit once nodes settle into their spacious layout
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (fgRef.current && !hasInitialFitRef.current) {
+        fgRef.current.zoomToFit(700, 100);
+      }
+    }, 600);
+    return () => clearTimeout(timer);
+  }, []);
 
   // When selectedNodeId changes, center camera on it
   useEffect(() => {
@@ -175,12 +220,12 @@ export function ForceGraphView({
     if (fgRef.current) fgRef.current.zoom(fgRef.current.zoom() / 1.3, 400);
   };
   const handleFit = () => {
-    if (fgRef.current) fgRef.current.zoomToFit(600, 120);
+    if (fgRef.current) fgRef.current.zoomToFit(600, 100);
   };
   const toggleSpacing = () => {
     setSpacingMultiplier((prev) => {
-      if (prev >= 2.2) return 1.4;
-      return Number((prev + 0.4).toFixed(1)); // 1.4 -> 1.8 -> 2.2 -> 1.4
+      if (prev >= 2.4) return 1.4;
+      return Number((prev + 0.5).toFixed(1)); // 1.4 -> 1.9 -> 2.4 -> 1.4
     });
   };
 
@@ -327,9 +372,13 @@ export function ForceGraphView({
 
   const renderBackground = React.useCallback(
     (ctx: CanvasRenderingContext2D, globalScale: number) => {
+      if (!hasConfiguredForcesRef.current && fgRef.current) {
+        hasConfiguredForcesRef.current = true;
+        applyForces(fgRef.current, spacingMultiplier);
+      }
       drawCartographicGrid(ctx, globalScale, isLight);
     },
-    [isLight]
+    [applyForces, isLight, spacingMultiplier]
   );
 
   const branches: Array<{ id: Branch | 'all'; label: string }> = [
@@ -392,9 +441,9 @@ export function ForceGraphView({
         <button
           onClick={toggleSpacing}
           className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--gold-border)] backdrop-blur-md transition shadow-sm"
-          title={`Graph Spread: ${spacingMultiplier.toFixed(1)}x. Click to cycle node spacing (1.4x Compact, 1.8x Balanced, 2.2x Spacious).`}
+          title={`Graph Spread: ${spacingMultiplier.toFixed(1)}x. Click to cycle node spacing (1.4x Compact, 1.9x Balanced default, 2.4x Spacious).`}
         >
-          {spacingMultiplier >= 1.8 ? (
+          {spacingMultiplier >= 1.9 ? (
             <Shrink className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
           ) : (
             <Expand className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
@@ -402,7 +451,7 @@ export function ForceGraphView({
           <span>
             Spread: {spacingMultiplier.toFixed(1)}x{' '}
             <span className="text-[10px] text-[var(--text-dim)] font-normal">
-              {spacingMultiplier <= 1.4 ? '(Compact)' : spacingMultiplier < 2.0 ? '(Balanced)' : '(Spacious)'}
+              {spacingMultiplier <= 1.4 ? '(Compact)' : spacingMultiplier < 2.4 ? '(Balanced)' : '(Spacious)'}
             </span>
           </span>
         </button>
@@ -456,6 +505,12 @@ export function ForceGraphView({
         height={dimensions.height}
         backgroundColor="rgba(0,0,0,0)"
         graphData={graphData}
+        onEngineTick={() => {
+          if (!hasConfiguredForcesRef.current && fgRef.current) {
+            hasConfiguredForcesRef.current = true;
+            applyForces(fgRef.current, spacingMultiplier);
+          }
+        }}
         onRenderFramePre={renderBackground}
         nodeId="id"
         nodeLabel={() => ''} /* Disable default HTML title tooltip so our custom card handles hover */
@@ -602,7 +657,7 @@ export function ForceGraphView({
         cooldownTime={3000}
         onEngineStop={() => {
           if (!hasInitialFitRef.current && fgRef.current) {
-            fgRef.current.zoomToFit(700, 120);
+            fgRef.current.zoomToFit(700, 100);
             hasInitialFitRef.current = true;
           }
         }}
