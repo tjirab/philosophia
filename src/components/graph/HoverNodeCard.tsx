@@ -50,7 +50,7 @@ export function HoverNodeCard({ node, position }: HoverNodeCardProps) {
             <img
               src={getAssetUrl(phil.imageUrl || `/portraits/${phil.id}.jpg`)}
               alt={node.name}
-              className="w-full h-full object-cover object-top relative z-10"
+              className="w-full h-full object-cover object-top relative z-10 bg-[var(--bg-subtle)]"
               onError={(e) => {
                 (e.target as HTMLElement).style.display = 'none';
               }}
