@@ -521,5 +521,35 @@
     "summary": "Materialist thesis that religious doctrines are externalized, alienated projections of humanity's own species-powers (reason, love, and will) outward into an idealized, transcendent deity.",
     "sepSlug": "ludwig-feuerbach",
     "importanceScore": 91
+  },
+  {
+    "id": "impartial-spectator",
+    "title": "The Impartial Spectator",
+    "branch": "ethics",
+    "eraId": "enlightenment",
+    "introducedBy": "adam-smith",
+    "summary": "An internalized moral arbiter and conscience through which individuals evaluate conduct and character by imaginatively adopting the perspective of a disinterested, well-informed observer.",
+    "sepSlug": "smith-moral-political",
+    "importanceScore": 92
+  },
+  {
+    "id": "division-of-labor",
+    "title": "Division of Labor",
+    "branch": "political",
+    "eraId": "enlightenment",
+    "introducedBy": "adam-smith",
+    "summary": "The specialization of cooperative production into discrete tasks, exponentially increasing labor productivity, social interdependence, and universal opulence in commercial societies.",
+    "sepSlug": "smith-moral-political",
+    "importanceScore": 94
+  },
+  {
+    "id": "invisible-hand",
+    "title": "The Invisible Hand",
+    "branch": "political",
+    "eraId": "enlightenment",
+    "introducedBy": "adam-smith",
+    "summary": "The emergent market coordination mechanism wherein individuals pursuing their enlightened self-interest inadvertently promote the general economic welfare and optimal capital allocation.",
+    "sepSlug": "smith-moral-political",
+    "importanceScore": 95
   }
 ]

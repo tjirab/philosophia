@@ -1554,6 +1554,13 @@
     "label": "Underpins the institutional design of basic democratic liberties and constitutional justice in A Theory of Justice"
   },
   {
+    "source": "montesquieu",
+    "target": "adam-smith",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Montesquieu's sociological analysis of commerce (doux commerce) and legal institutions influenced Smith's political economy and stages of society"
+  },
+  {
     "source": "gwf-hegel",
     "target": "ludwig-feuerbach",
     "type": "CRITIQUED",
@@ -1601,5 +1608,103 @@
     "type": "INFLUENCED",
     "strength": 4,
     "label": "Feuerbachian somatic materialism and critique of reification informed Frankfurt School critical theory"
+  },
+  {
+    "source": "david-hume",
+    "target": "adam-smith",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Lifelong friendship and mutual influence; Hume's sentimentalist ethics and economic essays directly informed Smith's moral psychology and political economy"
+  },
+  {
+    "source": "john-locke",
+    "target": "adam-smith",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Smith extended Locke's labor theory of property into a labor theory of value and commercial liberty"
+  },
+  {
+    "source": "thomas-hobbes",
+    "target": "adam-smith",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Smith refuted Hobbes's psychological egoism, asserting that natural sympathy and benevolence are foundational to human social life"
+  },
+  {
+    "source": "jean-jacques-rousseau",
+    "target": "adam-smith",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Smith critiqued Rousseau's Discourse on Inequality, defending commercial interdependence and mutual sympathy against pastoral nostalgia"
+  },
+  {
+    "source": "adam-smith",
+    "target": "impartial-spectator",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Impartial Spectator as the foundation of conscience and objective moral judgment"
+  },
+  {
+    "source": "adam-smith",
+    "target": "division-of-labor",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Systematized the division of labor as the primary catalyst of productivity and national wealth"
+  },
+  {
+    "source": "adam-smith",
+    "target": "invisible-hand",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Introduced the invisible hand to theorize spontaneous market order and decentralized resource coordination"
+  },
+  {
+    "source": "adam-smith",
+    "target": "immanuel-kant",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Smith's Theory of Moral Sentiments and impartial spectator directly influenced Kant's moral philosophy and formulations of conscience"
+  },
+  {
+    "source": "adam-smith",
+    "target": "gwf-hegel",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Hegel drew upon Smith's political economy to construct his concept of civil society (bürgerliche Gesellschaft) and the system of needs"
+  },
+  {
+    "source": "adam-smith",
+    "target": "karl-marx",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Marx studied Smith's political economy intensively, developing Smith's labor theory while critiquing capitalist exploitation and class antagonism"
+  },
+  {
+    "source": "division-of-labor",
+    "target": "karl-marx",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Marx critiqued Smith's division of labor as the institutional root of worker estrangement, deskilling, and alienation"
+  },
+  {
+    "source": "adam-smith",
+    "target": "john-stuart-mill",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Mill systematized and expanded Smith's classical economic framework, integrating competitive market dynamics with utilitarian liberalism"
+  },
+  {
+    "source": "invisible-hand",
+    "target": "john-stuart-mill",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Mill refined Smith's invisible hand doctrine, analyzing market equilibrium while establishing the necessity of state intervention for public goods"
+  },
+  {
+    "source": "impartial-spectator",
+    "target": "john-rawls",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Rawls contrasted his 'original position' with Smith's 'impartial spectator', arguing the spectator conflates separate persons into one generalized observer"
   }
 ]
