@@ -37,7 +37,14 @@ export function DossierDrawer({
   onOpenSuggestion,
 }: DossierDrawerProps) {
   const [activeSection, setActiveSection] = useState<string>('section-synopsis');
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const [imgError, setImgError] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    setImgLoaded(false);
+    setImgError(false);
+  }, [selectedNodeId]);
 
   const details = selectedNodeId ? getNodeDetails(selectedNodeId) : null;
   const isPhilosopher = details?.type === 'philosopher';
@@ -137,20 +144,26 @@ export function DossierDrawer({
                   boxShadow: `0 4px 16px -2px ${details.era?.color ? details.era.color + '40' : 'rgba(0,0,0,0.2)'}`,
                 }}
               >
-                <img
-                  src={getAssetUrl(phil.imageUrl || `/portraits/${phil.id}.jpg`)}
-                  alt={phil.name}
-                  className="w-full h-full object-cover object-top transition duration-300 group-hover/portrait:scale-105"
-                  onError={(e) => {
-                    (e.target as HTMLElement).style.display = 'none';
-                  }}
-                />
-                <span className="font-serif font-bold text-2xl text-[var(--gold-accent)] absolute -z-0">
-                  {phil.name.slice(0, 2).toUpperCase()}
-                </span>
+                {!imgError && (
+                  <img
+                    key={phil.id}
+                    src={getAssetUrl(phil.imageUrl || `/portraits/${phil.id}.jpg`)}
+                    alt={phil.name}
+                    className={`w-full h-full object-cover object-top transition duration-300 group-hover/portrait:scale-105 relative z-10 ${
+                      imgLoaded ? 'opacity-100' : 'opacity-0'
+                    }`}
+                    onLoad={() => setImgLoaded(true)}
+                    onError={() => setImgError(true)}
+                  />
+                )}
+                {(!imgLoaded || imgError) && (
+                  <span className="font-serif font-bold text-2xl text-[var(--gold-accent)] absolute z-0 select-none">
+                    {phil.name.slice(0, 2).toUpperCase()}
+                  </span>
+                )}
               </div>
               <div
-                className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full border-2 border-[var(--bg-card)] shadow-sm"
+                className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full border-2 border-[var(--bg-card)] shadow-sm z-20"
                 style={{ backgroundColor: details.era?.color || 'var(--gold-accent)' }}
                 title={details.era?.name}
               />

@@ -50,12 +50,12 @@ export function HoverNodeCard({ node, position }: HoverNodeCardProps) {
             <img
               src={getAssetUrl(phil.imageUrl || `/portraits/${phil.id}.jpg`)}
               alt={node.name}
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-top relative z-10"
               onError={(e) => {
                 (e.target as HTMLElement).style.display = 'none';
               }}
             />
-            <span className="font-serif font-bold text-xs text-[var(--gold-accent)] absolute -z-0">
+            <span className="font-serif font-bold text-xs text-[var(--gold-accent)] absolute z-0 select-none">
               {node.name.slice(0, 2).toUpperCase()}
             </span>
           </div>
