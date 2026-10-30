@@ -1,6 +1,6 @@
 # 📜 Philosophia Canon Coverage & Assessment Report
 
-> **Generated:** `2026-10-30T15:30:19.700Z`  
+> **Generated:** `2026-10-30T15:55:04.540Z`  
 > **Status:** 🟢 Healthy (0 isolated nodes, 1 unified graph)
 
 ---
@@ -33,6 +33,7 @@
 | **Central Question** | **100.0%** | Core inquiry phrased as inquiry question |
 | **Structured Key Works** | **100.0%** | 166 works total (100.0% with primary/Wikipedia links) |
 | **Key Works Spread** | **100% $\ge 1$ work** | • 1 work: `24`<br>• 2 works: `34`<br>• 3+ works: `23` |
+| **Portrait Profiles** | **100.0%** | Classical medallion portraits for nodes & dossiers (81 thinkers) |
 | **Audio / Media Coverage** | **100.0%** | Podcast episodes, encyclopedia entries, and classic archives |
 
 

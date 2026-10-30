@@ -153,6 +153,7 @@ export function auditCanon(options = {}) {
   }
   const philosophersWithMedia = philosophers.filter((p) => mediaTargetIds.has(p.id));
   const missingMedia = philosophers.filter((p) => !mediaTargetIds.has(p.id));
+  const philosophersWithPortrait = philosophers.filter((p) => p.imageUrl && p.imageUrl.trim() !== '');
 
   // 3. Era & Tradition Distribution
   const eraStats = eras.map((era) => {
@@ -264,6 +265,7 @@ export function auditCanon(options = {}) {
       worksWithUrlPct: ((worksWithUrlCount / totalWorksCount) * 100).toFixed(1),
       worksDistribution,
       mediaCoveragePct: ((philosophersWithMedia.length / philosophers.length) * 100).toFixed(1),
+      portraitCoveragePct: ((philosophersWithPortrait.length / philosophers.length) * 100).toFixed(1),
       mediaTypeCounts,
       missingMedia: missingMedia.map((p) => p.id),
     },
@@ -338,6 +340,7 @@ export function generateMarkdownReport(report) {
 | **Central Question** | **${completeness.questionCoveragePct}%** | Core inquiry phrased as inquiry question |
 | **Structured Key Works** | **${completeness.structuredWorksPct}%** | ${completeness.totalWorksCount} works total (${completeness.worksWithUrlPct}% with primary/Wikipedia links) |
 | **Key Works Spread** | **100% $\\ge 1$ work** | • 1 work: \`${completeness.worksDistribution[1]}\`<br>• 2 works: \`${completeness.worksDistribution[2]}\`<br>• 3+ works: \`${completeness.worksDistribution['3+']}\` |
+| **Portrait Profiles** | **${completeness.portraitCoveragePct}%** | Classical medallion portraits for nodes & dossiers (${totals.philosophers} thinkers) |
 | **Audio / Media Coverage** | **${completeness.mediaCoveragePct}%** | Podcast episodes, encyclopedia entries, and classic archives |
 
 ${completeness.missingMedia.length > 0 ? `> [!NOTE]\n> Thinkers awaiting media/podcast integration: \`${completeness.missingMedia.join('`, `')}\`.` : ''}

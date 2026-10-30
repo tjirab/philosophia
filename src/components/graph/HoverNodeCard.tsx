@@ -4,6 +4,7 @@ import React from 'react';
 import { HelpCircle, Sparkles, BookOpen, User, Calendar, Compass } from 'lucide-react';
 import { VisualNode, Philosopher, Concept } from '../../lib/types';
 import { eras, traditions } from '../../lib/graph/graph-service';
+import { getAssetUrl } from '../../lib/assets';
 
 interface HoverNodeCardProps {
   node: VisualNode;
@@ -43,49 +44,69 @@ export function HoverNodeCard({ node, position }: HoverNodeCardProps) {
       }}
       className="z-40 pointer-events-none bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl shadow-2xl p-4 text-[var(--text-main)] font-serif backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150"
     >
-      {/* Header Badges */}
-      <div className="flex items-center gap-1.5 mb-2 flex-wrap">
-        {era && (
-          <span
-            className="text-[10px] font-semibold px-2 py-0.5 rounded-full text-white uppercase tracking-wider shadow-sm"
-            style={{ backgroundColor: era.color }}
-          >
-            {era.name}
-          </span>
+      <div className="flex items-start gap-3">
+        {isPhilosopher && phil && (
+          <div className="w-13 h-13 shrink-0 rounded-xl overflow-hidden border border-[var(--gold-border)] shadow-md bg-[var(--bg-subtle)] flex items-center justify-center relative">
+            <img
+              src={getAssetUrl(phil.imageUrl || `/portraits/${phil.id}.jpg`)}
+              alt={node.name}
+              className="w-full h-full object-cover object-top"
+              onError={(e) => {
+                (e.target as HTMLElement).style.display = 'none';
+              }}
+            />
+            <span className="font-serif font-bold text-xs text-[var(--gold-accent)] absolute -z-0">
+              {node.name.slice(0, 2).toUpperCase()}
+            </span>
+          </div>
         )}
-        {tradition && (
-          <span className="text-[10px] px-2 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)]">
-            {tradition.name}
-          </span>
-        )}
-        {conc && (
-          <span className="text-[10px] px-2 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] uppercase font-mono">
-            {conc.branch}
-          </span>
-        )}
-      </div>
 
-      {/* Title */}
-      <h3 className="text-base font-bold text-[var(--text-main)] leading-tight font-serif mb-1">
-        {node.name}
-      </h3>
+        <div className="flex-1 min-w-0">
+          {/* Header Badges */}
+          <div className="flex items-center gap-1.5 mb-1.5 flex-wrap">
+            {era && (
+              <span
+                className="text-[10px] font-semibold px-2 py-0.5 rounded-full text-white uppercase tracking-wider shadow-sm"
+                style={{ backgroundColor: era.color }}
+              >
+                {era.name}
+              </span>
+            )}
+            {tradition && (
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)]">
+                {tradition.name}
+              </span>
+            )}
+            {conc && (
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] uppercase font-mono">
+                {conc.branch}
+              </span>
+            )}
+          </div>
 
-      {/* Lifespan & Centrality for Philosopher */}
-      {isPhilosopher && phil && (
-        <div className="flex items-center gap-3 text-[11px] text-[var(--text-muted)] mb-2 font-mono">
-          <span className="flex items-center gap-1">
-            <Calendar className="w-3 h-3 text-[var(--gold-accent)]" />
-            {formatYear(phil.birthYear)} – {formatYear(phil.deathYear)}
-          </span>
-          <span
-            className="flex items-center gap-1 text-[var(--gold-accent)] font-semibold"
-            title="Degree Centrality: Historical influence density based on total incoming and outgoing connections"
-          >
-            <Compass className="w-3 h-3" />
-            Centrality: {phil.importanceScore}/100
-          </span>
+          {/* Title */}
+          <h3 className="text-base font-bold text-[var(--text-main)] leading-tight font-serif mb-1">
+            {node.name}
+          </h3>
+
+          {/* Lifespan & Centrality for Philosopher */}
+          {isPhilosopher && phil && (
+            <div className="flex items-center gap-2.5 text-[11px] text-[var(--text-muted)] mb-1.5 font-mono flex-wrap">
+              <span className="flex items-center gap-1">
+                <Calendar className="w-3 h-3 text-[var(--gold-accent)]" />
+                {formatYear(phil.birthYear)} – {formatYear(phil.deathYear)}
+              </span>
+              <span
+                className="flex items-center gap-1 text-[var(--gold-accent)] font-semibold"
+                title="Degree Centrality: Historical influence density based on total incoming and outgoing connections"
+              >
+                <Compass className="w-3 h-3" />
+                {phil.importanceScore}/100
+              </span>
+            </div>
+          )}
         </div>
-      )}
+      </div>
 
       {/* Quote / Summary */}
       <div className="text-xs text-[var(--text-muted)] leading-relaxed mb-3 line-clamp-3">

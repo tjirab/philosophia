@@ -25,6 +25,7 @@ describe('Philosophia Canon Coverage & Audit Engine', () => {
     expect(report.completeness.missingSep).toHaveLength(0);
     expect(parseFloat(report.completeness.questionCoveragePct)).toBe(100.0);
     expect(report.completeness.missingQuestion).toHaveLength(0);
+    expect(parseFloat(report.completeness.portraitCoveragePct)).toBe(100.0);
   });
 
   it('verifies key works quality and spread', () => {

@@ -118,6 +118,7 @@ export interface Philosopher {
   keyWorks: (string | KeyWork)[];
   sepSlug: string;
   importanceScore: number;
+  imageUrl?: string;
 }
 
 export interface Concept {
@@ -171,6 +172,7 @@ export interface VisualNode {
   importanceScore: number;
   color: string;
   summary: string;
+  imageUrl?: string;
   data: Philosopher | Concept;
   // Graph engine coordinates
   x?: number;
