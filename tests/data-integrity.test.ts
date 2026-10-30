@@ -183,6 +183,11 @@ describe('Philosophy Graph Data Integrity', () => {
     expect(kantToSemiology.found).toBe(true);
     expect(kantToSemiology.nodes).toContain('ferdinand-de-saussure');
 
+    // Kant -> Horkheimer -> Instrumental Reason
+    const kantToInstrumental = findInfluencePath('immanuel-kant', 'instrumental-reason', edgesData as any);
+    expect(kantToInstrumental.found).toBe(true);
+    expect(kantToInstrumental.nodes).toContain('max-horkheimer');
+
     // David Hume -> Adam Smith -> Karl Marx
     const humeToMarx = findInfluencePath('david-hume', 'karl-marx', edgesData as any);
     expect(humeToMarx.found).toBe(true);
