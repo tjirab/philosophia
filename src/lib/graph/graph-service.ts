@@ -122,10 +122,13 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     const tradition = traditionMap.get(p.traditionId);
 
     // Deterministic chronological coordinate seeding:
-    // Antiquity starts on the left (-1600), Modernity progresses to the right (+1600).
+    // Antiquity starts on the left (-1700), Modernity progresses to the right (+1700).
     const norm = Math.max(0, Math.min(1, (p.birthYear - timelineStartYear) / totalSpan));
-    const x = (norm - 0.5) * 3200 + Math.sin(idx * 3.1) * 45;
-    const y = Math.sin(idx * 4.7) * 350;
+    const x = (norm - 0.5) * 3400 + Math.sin(idx * 3.1) * 55;
+    // Alternate polarity and stagger vertically across [-550, 550] so adjacent thinkers never collide initially
+    const ySign = idx % 2 === 0 ? 1 : -1;
+    const yMagnitude = 160 + ((idx * 89) % 380);
+    const y = ySign * yMagnitude;
 
     nodes.push({
       id: p.id,
@@ -158,8 +161,11 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
       : 1500;
 
     const norm = Math.max(0, Math.min(1, (conceptYear - timelineStartYear) / totalSpan));
-    const x = (norm - 0.5) * 3200 + Math.cos(idx * 2.9) * 55;
-    const y = Math.sin((idx + 50) * 4.1) * 400;
+    const x = (norm - 0.5) * 3400 + Math.cos(idx * 2.9) * 65;
+    // Place concepts in distinct vertical alternating bands offset from thinkers
+    const ySign = idx % 2 === 0 ? -1 : 1;
+    const yMagnitude = 120 + ((idx * 73) % 420);
+    const y = ySign * yMagnitude;
 
     nodes.push({
       id: c.id,
