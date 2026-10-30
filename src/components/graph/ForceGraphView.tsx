@@ -7,6 +7,7 @@ import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink } from '
 import { VisualNode, VisualLink, Branch, getEdgeTypeConfig } from '../../lib/types';
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
+import { drawCartographicGrid } from '../../lib/graph/grid-renderer';
 
 // Dynamically import ForceGraph2D with ssr disabled
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), {
@@ -323,6 +324,13 @@ export function ForceGraphView({
     ctx.restore();
   };
 
+  const renderBackground = React.useCallback(
+    (ctx: CanvasRenderingContext2D, globalScale: number) => {
+      drawCartographicGrid(ctx, globalScale, isLight);
+    },
+    [isLight]
+  );
+
   const branches: Array<{ id: Branch | 'all'; label: string }> = [
     { id: 'all', label: 'All Branches' },
     { id: 'epistemology', label: 'Epistemology' },
@@ -336,7 +344,7 @@ export function ForceGraphView({
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-full overflow-hidden bg-cartographic-grid font-serif"
+      className="relative w-full h-full overflow-hidden bg-[var(--bg-main)] font-serif"
     >
       {/* Top Floating Filter Bar */}
       <div className="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-2 max-w-[calc(100%-180px)]">
@@ -447,6 +455,7 @@ export function ForceGraphView({
         height={dimensions.height}
         backgroundColor="rgba(0,0,0,0)"
         graphData={graphData}
+        onRenderFramePre={renderBackground}
         nodeId="id"
         nodeLabel={() => ''} /* Disable default HTML title tooltip so our custom card handles hover */
         nodeCanvasObject={paintNode}
