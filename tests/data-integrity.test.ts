@@ -126,6 +126,16 @@ describe('Philosophy Graph Data Integrity', () => {
     const plotinusToOckham = findInfluencePath('plotinus', 'william-of-ockham', edgesData as any);
     expect(plotinusToOckham.found).toBe(true);
     expect(plotinusToOckham.nodes).toContain('boethius');
+
+    // John Locke -> Montesquieu -> Separation of Powers
+    const lockeToSep = findInfluencePath('john-locke', 'separation-of-powers', edgesData as any);
+    expect(lockeToSep.found).toBe(true);
+    expect(lockeToSep.nodes).toContain('montesquieu');
+
+    // Hegel -> Feuerbach -> Anthropological Projection
+    const hegelToProj = findInfluencePath('gwf-hegel', 'anthropological-projection', edgesData as any);
+    expect(hegelToProj.found).toBe(true);
+    expect(hegelToProj.nodes).toContain('ludwig-feuerbach');
   });
 
   it('verifies visual graph generation and node details retrieval', () => {

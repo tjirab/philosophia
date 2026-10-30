@@ -261,6 +261,24 @@
     "summary": "Canonical academic comprehensive overview of Boethius's philosophical life, works, translations, and arguments."
   },
   {
+    "id": "sep-montesquieu",
+    "targetId": "montesquieu",
+    "type": "encyclopedia",
+    "title": "Baron de Montesquieu - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/montesquieu/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Montesquieu's life, political philosophy, and separation of powers doctrine."
+  },
+  {
+    "id": "sep-ludwig-feuerbach",
+    "targetId": "ludwig-feuerbach",
+    "type": "encyclopedia",
+    "title": "Ludwig Feuerbach - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/ludwig-feuerbach/",
+    "creator": "Stanford University",
+    "summary": "Canonical academic comprehensive overview of Feuerbach's philosophy of religion, critique of Hegel, and sensory materialism."
+  },
+  {
     "id": "pt-ep-189-byung-chul-han",
     "targetId": "byung-chul-han",
     "type": "podcast",
@@ -1029,6 +1047,17 @@
     "creator": "Stephen West",
     "episodeNumber": 81,
     "duration": "24:35"
+  },
+  {
+    "id": "pt-ep-80-ludwig-feuerbach",
+    "targetId": "ludwig-feuerbach",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #80 ... Feuerbach on Religion",
+    "url": "https://philosophizethis.libsyn.com/80-feuerbach-on-religion",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/feuerbach.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 80,
+    "duration": "28:00"
   },
   {
     "id": "pt-ep-79-soren-kierkegaard",
