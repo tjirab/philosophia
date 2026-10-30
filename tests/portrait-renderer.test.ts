@@ -153,6 +153,32 @@ describe('portrait-renderer', () => {
       });
     });
 
+    it('handles immediately completed / memory-cached images', () => {
+      class SynchronousCachedImage {
+        naturalWidth = 300;
+        naturalHeight = 400;
+        complete = true;
+        private _src = '';
+
+        get src() {
+          return this._src;
+        }
+        set src(v: string) {
+          this._src = v;
+        }
+      }
+
+      vi.stubGlobal('Image', SynchronousCachedImage);
+      vi.stubGlobal('window', {});
+
+      const onLoaded = vi.fn();
+      preloadPortrait('/portraits/plato.jpg', onLoaded);
+
+      expect(onLoaded).toHaveBeenCalled();
+      const cached = getPortraitFromCache('/portraits/plato.jpg');
+      expect(isImageReady(cached)).toBe(true);
+    });
+
     it('handles image loading failure', () => {
       class FailingImage {
         crossOrigin = '';

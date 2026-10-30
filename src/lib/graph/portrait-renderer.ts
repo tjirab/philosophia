@@ -107,7 +107,6 @@ export function preloadPortrait(
 
   portraitCache.set(url, 'loading');
   const img = new Image();
-  img.crossOrigin = 'anonymous';
 
   img.onload = () => {
     portraitCache.set(url, img);

@@ -149,9 +149,12 @@ export function DossierDrawer({
                     key={phil.id}
                     src={getAssetUrl(phil.imageUrl || `/portraits/${phil.id}.jpg`)}
                     alt={phil.name}
-                    className={`w-full h-full object-cover object-top transition duration-300 group-hover/portrait:scale-105 relative z-10 ${
-                      imgLoaded ? 'opacity-100' : 'opacity-0'
-                    }`}
+                    className="w-full h-full object-cover object-top transition duration-300 group-hover/portrait:scale-105 relative z-10 bg-[var(--bg-subtle)]"
+                    ref={(el) => {
+                      if (el && el.complete && el.naturalWidth > 0 && !imgLoaded) {
+                        setImgLoaded(true);
+                      }
+                    }}
                     onLoad={() => setImgLoaded(true)}
                     onError={() => setImgError(true)}
                   />
@@ -521,14 +524,19 @@ export function DossierDrawer({
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2 min-w-0">
                       {!isConcept ? (
-                        <img
-                          src={getAssetUrl((node as any).imageUrl || `/portraits/${node.id}.jpg`)}
-                          alt=""
-                          className="w-5 h-5 rounded-full object-cover shrink-0 border border-[var(--gold-border)]"
-                          onError={(e) => {
-                            (e.target as HTMLElement).style.display = 'none';
-                          }}
-                        />
+                        <div className="w-5 h-5 rounded-full overflow-hidden shrink-0 border border-[var(--gold-border)] bg-[var(--bg-card)] flex items-center justify-center relative">
+                          <img
+                            src={getAssetUrl((node as any).imageUrl || `/portraits/${node.id}.jpg`)}
+                            alt=""
+                            className="w-full h-full object-cover relative z-10 bg-[var(--bg-card)]"
+                            onError={(e) => {
+                              (e.target as HTMLElement).style.display = 'none';
+                            }}
+                          />
+                          <span className="font-serif font-bold text-[8px] text-[var(--gold-accent)] absolute z-0 select-none">
+                            {((node as Philosopher).name || '').slice(0, 2).toUpperCase()}
+                          </span>
+                        </div>
                       ) : (
                         <div className="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0">
                           <Sparkles className="w-3 h-3 text-emerald-500" />
@@ -615,14 +623,19 @@ export function DossierDrawer({
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2 min-w-0">
                       {!isConcept ? (
-                        <img
-                          src={getAssetUrl((node as any).imageUrl || `/portraits/${node.id}.jpg`)}
-                          alt=""
-                          className="w-5 h-5 rounded-full object-cover shrink-0 border border-[var(--gold-border)]"
-                          onError={(e) => {
-                            (e.target as HTMLElement).style.display = 'none';
-                          }}
-                        />
+                        <div className="w-5 h-5 rounded-full overflow-hidden shrink-0 border border-[var(--gold-border)] bg-[var(--bg-card)] flex items-center justify-center relative">
+                          <img
+                            src={getAssetUrl((node as any).imageUrl || `/portraits/${node.id}.jpg`)}
+                            alt=""
+                            className="w-full h-full object-cover relative z-10 bg-[var(--bg-card)]"
+                            onError={(e) => {
+                              (e.target as HTMLElement).style.display = 'none';
+                            }}
+                          />
+                          <span className="font-serif font-bold text-[8px] text-[var(--gold-accent)] absolute z-0 select-none">
+                            {((node as Philosopher).name || '').slice(0, 2).toUpperCase()}
+                          </span>
+                        </div>
                       ) : (
                         <div className="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0">
                           <Sparkles className="w-3 h-3 text-emerald-500" />

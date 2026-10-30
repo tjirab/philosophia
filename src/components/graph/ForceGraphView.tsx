@@ -111,8 +111,13 @@ export function ForceGraphView({
     if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
     rafIdRef.current = requestAnimationFrame(() => {
       setPortraitsLoadedVersion((v) => v + 1);
-      if (fgRef.current?.resumeAnimation) {
-        fgRef.current.resumeAnimation();
+      if (fgRef.current) {
+        if (typeof fgRef.current.d3ReheatSimulation === 'function') {
+          fgRef.current.d3ReheatSimulation();
+        }
+        if (typeof fgRef.current.resumeAnimation === 'function') {
+          fgRef.current.resumeAnimation();
+        }
       }
     });
   }, []);
@@ -687,6 +692,7 @@ export function ForceGraphView({
       {/* 2D Force Directed Graph Canvas */}
       <ForceGraph2D
         ref={fgRef}
+        autoPauseRedraw={false}
         width={dimensions.width}
         height={dimensions.height}
         backgroundColor="rgba(0,0,0,0)"
