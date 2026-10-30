@@ -591,5 +591,15 @@
     "summary": "The doctrine that human reason is not sex-differentiated; women are moral agents endowed with equal intellectual capacity whose apparent deficiencies result entirely from enforced social subjugation and deprived education.",
     "sepSlug": "wollstonecraft",
     "importanceScore": 93
+  },
+  {
+    "id": "simulacra-and-hyperreality",
+    "title": "Simulacra, Simulation & Hyperreality",
+    "branch": "metaphysics",
+    "eraId": "contemporary",
+    "introducedBy": "jean-baudrillard",
+    "summary": "The condition in which signs, media representations, and cultural models precede and generate the real (precession of simulacra), collapsing the distinction between reality and representation into a self-referential hyperreality.",
+    "sepSlug": "baudrillard",
+    "importanceScore": 90
   }
 ]

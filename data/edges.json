@@ -1916,5 +1916,54 @@
     "type": "INFLUENCED",
     "strength": 5,
     "label": "Pioneered philosophical feminist argumentation that directly informed Mill and Harriet Taylor Mill's utilitarian campaign for female emancipation"
+  },
+  {
+    "source": "jean-baudrillard",
+    "target": "simulacra-and-hyperreality",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the four orders of simulacra and the concept of hyperreality in Simulacra and Simulation"
+  },
+  {
+    "source": "karl-marx",
+    "target": "jean-baudrillard",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Radicalized Marx's critique of political economy, arguing that in consumer capitalism sign-exchange value eclipses use-value"
+  },
+  {
+    "source": "theodor-adorno",
+    "target": "jean-baudrillard",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Extended Adorno's critique of the culture industry into an analysis of pervasive mass-media simulation"
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "jean-baudrillard",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Adopted Nietzsche's fable of the 'true world' to diagnose the fatal disappearance of metaphysical reality"
+  },
+  {
+    "source": "michel-foucault",
+    "target": "jean-baudrillard",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Critiqued Foucault's model of disciplinary power in Forget Foucault (1977), arguing power itself has become simulated"
+  },
+  {
+    "source": "simulacra-and-hyperreality",
+    "target": "nick-bostrom",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Baudrillard's ontology of simulation served as a primary philosophical precursor to the contemporary simulation hypothesis"
+  },
+  {
+    "source": "jean-baudrillard",
+    "target": "byung-chul-han",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Influenced Han's critique of hyper-communication, digital transparency, and the vanishing of otherness in late capitalism"
   }
 ]
