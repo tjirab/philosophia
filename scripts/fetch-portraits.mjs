@@ -97,6 +97,7 @@ const WIKI_TITLES = {
   'adi-shankara': 'Adi_Shankara',
   'michel-de-montaigne': 'Michel_de_Montaigne',
   'blaise-pascal': 'Blaise_Pascal',
+  'thomas-kuhn': 'Thomas_Kuhn',
 };
 
 async function fetchPortraits() {

@@ -1,0 +1,10 @@
+{
+  "id": "normal-science",
+  "title": "Normal Science & Puzzle-Solving",
+  "branch": "epistemology",
+  "eraId": "twentieth-century",
+  "introducedBy": "thomas-kuhn",
+  "summary": "The routine, cumulative research governed by an entrenched scientific paradigm, where scientists solve puzzles and articulate theoretical frameworks rather than challenging foundational assumptions.",
+  "sepSlug": "thomas-kuhn",
+  "importanceScore": 86
+}

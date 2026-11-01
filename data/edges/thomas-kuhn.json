@@ -1,0 +1,37 @@
+[
+  {
+    "source": "thomas-kuhn",
+    "target": "paradigm-shift",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Introduced the paradigm shift model to explain discontinuous revolutionary ruptures in scientific history"
+  },
+  {
+    "source": "thomas-kuhn",
+    "target": "normal-science",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Defined normal science as cumulative puzzle-solving conducted within an unchallenged paradigm"
+  },
+  {
+    "source": "thomas-kuhn",
+    "target": "incommensurability",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Articulated semantic and taxonomic incommensurability between successive scientific paradigms"
+  },
+  {
+    "source": "thomas-kuhn",
+    "target": "michel-foucault",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Kuhn's historicist critique of cumulative science and paradigm shifts paralleled and informed Foucault's archaeology of epistemes"
+  },
+  {
+    "source": "thomas-kuhn",
+    "target": "jurgen-habermas",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Kuhn's demonstration of science as a communicative community grounded in consensus paradigms informed Habermas's theory of communicative rationality"
+  }
+]

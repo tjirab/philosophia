@@ -12,5 +12,12 @@
     "type": "DEVELOPED",
     "label": "Formulated and introduced Language Games & Forms of Life",
     "strength": 5
+  },
+  {
+    "source": "ludwig-wittgenstein",
+    "target": "thomas-kuhn",
+    "type": "INFLUENCED",
+    "label": "Wittgenstein's later philosophy of language games and family resemblance influenced Kuhn's account of scientific paradigms",
+    "strength": 4
   }
 ]

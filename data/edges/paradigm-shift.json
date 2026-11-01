@@ -1,0 +1,16 @@
+[
+  {
+    "source": "paradigm-shift",
+    "target": "incommensurability",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Revolutionary paradigm shifts cause conceptual reorientations that render competing paradigms incommensurable"
+  },
+  {
+    "source": "paradigm-shift",
+    "target": "michel-foucault",
+    "type": "INFLUENCED",
+    "strength": 3,
+    "label": "The paradigm shift model informed post-structuralist critiques of cumulative enlightenment progress"
+  }
+]
