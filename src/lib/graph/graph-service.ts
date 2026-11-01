@@ -236,7 +236,7 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
         target: edge.target,
         type: edge.type,
         label: edge.label,
-        strength: edge.strength || 3,
+        strength: Math.min(5, Math.max(1, edge.strength || 3)),
         edge,
       });
     }

@@ -1142,7 +1142,7 @@ console.log('\nWriting Edges...');
 for (const [key, edgeList] of Object.entries(EDGES)) {
   const normalizedEdges = edgeList.map((e) => ({
     ...e,
-    strength: typeof e.strength === 'number' ? e.strength : 85,
+    strength: typeof e.strength === 'number' && e.strength <= 5 ? e.strength : (e.type === 'DEVELOPED' || e.type === 'CRITIQUED' ? 5 : 4),
   }));
   const filePath = path.join(EDGES_DIR, `${key}.json`);
   fs.writeFileSync(filePath, JSON.stringify(normalizedEdges, null, 2) + '\n', 'utf-8');
