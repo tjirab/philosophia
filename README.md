@@ -12,6 +12,7 @@ An interactive web application exploring the history of philosophy, how thinkers
 ## Features
 
 - **Interactive Organic Force Network**: 2D force-directed canvas with custom node rendering, tradition color coding, degree centrality scaling, and smooth camera navigation.
+- **Cartography of Thought (Fog of War & Terra Incognita)**: Age-of-Discovery cartographic overlay quantifying research depth (0–100) across 4 terrains (Canonical Citadels, Disputed Frontiers, Pioneer Outposts, and Terra Incognita) with dynamic lantern dispel fields, cardinal compass beacons, and a Historiographical Methodology Switcher. See [Cartography of Thought Guide](docs/cartography_of_thought.md).
 - **Chronological Era Scrubber**: Scrub through history from 624 BCE to present day, or click **Play Evolution** to watch the history of ideas unfold dynamically.
 - **Influence & Lineage Pathfinding**: Select any origin and target thinker (e.g. *Plato &rarr; Arthur Schopenhauer*) to calculate and highlight the shortest intellectual path across history.
 - **Integrated Multimedia Dossier**:
