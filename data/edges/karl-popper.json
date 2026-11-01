@@ -5,5 +5,12 @@
     "type": "DEVELOPED",
     "label": "Formulated and introduced Falsificationism & Demarcation",
     "strength": 5
+  },
+  {
+    "source": "karl-popper",
+    "target": "thomas-kuhn",
+    "type": "CRITIQUED",
+    "label": "Popper debated Kuhn vigorously over scientific rationality, rejecting normal science as dogmatic and defending critical falsificationism",
+    "strength": 5
   }
 ]

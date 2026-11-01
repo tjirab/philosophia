@@ -5,5 +5,12 @@
     "type": "DEVELOPED",
     "label": "Derrida developed contextual language instability into deconstruction and différance",
     "strength": 4
+  },
+  {
+    "source": "language-games",
+    "target": "thomas-kuhn",
+    "type": "INFLUENCED",
+    "label": "Kuhn applied Wittgenstein's family resemblance and language-game concepts to explain how scientific paradigms are internalized through practice",
+    "strength": 4
   }
 ]

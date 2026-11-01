@@ -1,0 +1,36 @@
+{
+  "id": "thomas-kuhn",
+  "name": "Thomas Kuhn",
+  "birthYear": 1922,
+  "deathYear": 1996,
+  "eraId": "twentieth-century",
+  "traditionId": "analytic",
+  "shortBio": "Historian and philosopher of science whose Structure of Scientific Revolutions challenged cumulative models of scientific progress with paradigm shifts.",
+  "centralQuestion": "Does science progress cumulatively toward objective truth, or does it transform through discontinuous revolutions between incommensurable paradigms?",
+  "keyWorks": [
+    {
+      "title": "The Structure of Scientific Revolutions",
+      "year": "1962 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Structure_of_Scientific_Revolutions",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Structure_of_Scientific_Revolutions",
+      "description": "Seminal text arguing that science progresses not through cumulative accretion, but through episodic revolutionary paradigm shifts."
+    },
+    {
+      "title": "The Copernican Revolution",
+      "year": "1957 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Copernican_Revolution_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Copernican_Revolution_(book)",
+      "description": "Historical case study examining the shift from Ptolemaic geocentrism to heliocentric astronomy as a total conceptual reorientation."
+    },
+    {
+      "title": "The Essential Tension",
+      "year": "1977 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Essential_Tension",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Essential_Tension",
+      "description": "Selected studies in scientific tradition and change examining the balance between convergent tradition and divergent innovation."
+    }
+  ],
+  "sepSlug": "thomas-kuhn",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/thomas-kuhn.jpg"
+}

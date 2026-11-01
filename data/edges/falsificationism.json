@@ -5,5 +5,19 @@
     "type": "CRITIQUED",
     "label": "Adorno challenged Popperian positivism during the German Positivism Dispute",
     "strength": 4
+  },
+  {
+    "source": "falsificationism",
+    "target": "thomas-kuhn",
+    "type": "CRITIQUED",
+    "label": "Kuhn challenged falsificationism, demonstrating that working scientists protect paradigms against anomalies rather than abandoning them",
+    "strength": 5
+  },
+  {
+    "source": "falsificationism",
+    "target": "paradigm-shift",
+    "type": "CRITIQUED",
+    "label": "Kuhn's paradigm shift model rejected Popper's continuous falsification schema in favor of episodic community conversions",
+    "strength": 4
   }
 ]

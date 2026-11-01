@@ -236,6 +236,52 @@ describe('Philosophy Graph Data Integrity', () => {
     const marcuseToOneDim = findInfluencePath('herbert-marcuse', 'one-dimensional-man', edgesData as any);
     expect(marcuseToOneDim.found).toBe(true);
 
+    // Popper -> Kuhn -> Paradigm Shift
+    const popperToKuhn = findInfluencePath('karl-popper', 'thomas-kuhn', edgesData as any);
+    expect(popperToKuhn.found).toBe(true);
+
+    const kuhnToShift = findInfluencePath('thomas-kuhn', 'paradigm-shift', edgesData as any);
+    expect(kuhnToShift.found).toBe(true);
+
+    const kuhnToNormal = findInfluencePath('thomas-kuhn', 'normal-science', edgesData as any);
+    expect(kuhnToNormal.found).toBe(true);
+
+    const kuhnToIncommensurability = findInfluencePath('thomas-kuhn', 'incommensurability', edgesData as any);
+    expect(kuhnToIncommensurability.found).toBe(true);
+
+    // Hume -> Popper -> Kuhn
+    const humeToKuhn = findInfluencePath('david-hume', 'thomas-kuhn', edgesData as any);
+    expect(humeToKuhn.found).toBe(true);
+    expect(humeToKuhn.nodes).toContain('karl-popper');
+
+    // Popper -> Kuhn -> Foucault & Habermas
+    const popperToFoucault = findInfluencePath('karl-popper', 'michel-foucault', edgesData as any);
+    expect(popperToFoucault.found).toBe(true);
+    expect(popperToFoucault.nodes).toContain('thomas-kuhn');
+
+    const kuhnToHabermas = findInfluencePath('thomas-kuhn', 'jurgen-habermas', edgesData as any);
+    expect(kuhnToHabermas.found).toBe(true);
+
+    // Verify chronological directionality for Kuhn relations
+    const kuhnDetails = getNodeDetails('thomas-kuhn');
+    const kuhnSuccessorIds = kuhnDetails.successors.map((s) => s.node.id);
+    const kuhnPredecessorIds = kuhnDetails.predecessors.map((p) => p.node.id);
+
+    expect(kuhnSuccessorIds).toContain('paradigm-shift');
+    expect(kuhnSuccessorIds).toContain('normal-science');
+    expect(kuhnSuccessorIds).toContain('incommensurability');
+    expect(kuhnSuccessorIds).toContain('michel-foucault');
+    expect(kuhnSuccessorIds).toContain('jurgen-habermas');
+
+    expect(kuhnSuccessorIds).not.toContain('karl-popper');
+    expect(kuhnSuccessorIds).not.toContain('ludwig-wittgenstein');
+    expect(kuhnSuccessorIds).not.toContain('david-hume');
+
+    expect(kuhnPredecessorIds).toContain('karl-popper');
+    expect(kuhnPredecessorIds).toContain('falsificationism');
+    expect(kuhnPredecessorIds).toContain('ludwig-wittgenstein');
+    expect(kuhnPredecessorIds).toContain('language-games');
+
     // David Hume -> Adam Smith -> Karl Marx
     const humeToMarx = findInfluencePath('david-hume', 'karl-marx', edgesData as any);
     expect(humeToMarx.found).toBe(true);
