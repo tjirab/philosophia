@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { auditCanon, generateMarkdownReport } from '../scripts/audit-coverage.mjs';
+import { auditCanon, generateMarkdownReport, generatePrSummary } from '../scripts/audit-coverage.mjs';
 
 describe('Philosophia Canon Coverage & Audit Engine', () => {
   const report: any = auditCanon();
@@ -54,5 +54,20 @@ describe('Philosophia Canon Coverage & Audit Engine', () => {
     expect(md).toContain('4. Critical Dialectical Lineage Verification');
     expect(md).toContain('5. Network Hubs & Centrality');
     expect(md).toContain('✅ Verified');
+  });
+
+  it('generates a concise, high-level PR summary without emojis', () => {
+    const summary = generatePrSummary(report);
+    expect(summary).toContain('<!-- philosophia-pr-audit-bot -->');
+    expect(summary).toContain('### Philosophia Canon & Graph Verification');
+    expect(summary).toContain('| Thinkers | 117 | Complete |');
+    expect(summary).toContain('| Concepts | 96 | Complete |');
+    expect(summary).toContain('| Total Graph Nodes | 213 | Verified (0 isolated nodes) |');
+    expect(summary).toContain('| Dialectical Edges | 436 (mean degree 2.05) | Verified (0 dangling edges) |');
+    expect(summary).toContain('Critical Lineage Paths');
+
+    // Strictly ensure zero emojis are present in PR summary
+    const emojiRegex = /[\p{Extended_Pictographic}\u2600-\u26FF\u2700-\u27BF]/u;
+    expect(emojiRegex.test(summary)).toBe(false);
   });
 });
