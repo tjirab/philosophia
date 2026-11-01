@@ -510,6 +510,25 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const fanonToPhenomenology = findInfluencePath('frantz-fanon', 'decolonial-phenomenology', edgesData as any);
     expect(fanonToPhenomenology.found).toBe(true);
+
+    // C. Thi Nguyen: Wittgenstein / Foucault / Han / Kahneman -> C. Thi Nguyen -> Value Capture & Agency as Art
+    const wittToNguyen = findInfluencePath('ludwig-wittgenstein', 'c-thi-nguyen', edgesData as any);
+    expect(wittToNguyen.found).toBe(true);
+
+    const foucaultToNguyen = findInfluencePath('michel-foucault', 'c-thi-nguyen', edgesData as any);
+    expect(foucaultToNguyen.found).toBe(true);
+
+    const hanToNguyen = findInfluencePath('byung-chul-han', 'c-thi-nguyen', edgesData as any);
+    expect(hanToNguyen.found).toBe(true);
+
+    const kahnemanToNguyen = findInfluencePath('daniel-kahneman', 'c-thi-nguyen', edgesData as any);
+    expect(kahnemanToNguyen.found).toBe(true);
+
+    const nguyenToValueCapture = findInfluencePath('c-thi-nguyen', 'value-capture', edgesData as any);
+    expect(nguyenToValueCapture.found).toBe(true);
+
+    const nguyenToAgencyAsArt = findInfluencePath('c-thi-nguyen', 'agency-as-art', edgesData as any);
+    expect(nguyenToAgencyAsArt.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {

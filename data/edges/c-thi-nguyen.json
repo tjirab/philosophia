@@ -1,0 +1,202 @@
+[
+  {
+    "id": "c-thi-nguyen--value-capture",
+    "source": "c-thi-nguyen",
+    "target": "value-capture",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Value Capture",
+    "strength": 5,
+    "description": "C. Thi Nguyen formulated and introduced the concept of 'Value Capture', diagnosing how external metrics, scorekeeping, and rankings displace authentic personal values and direct human agency.",
+    "dialecticalTension": "Formulating an epistemic and ethical framework to critique metric fixation and algorithmic gamification.",
+    "historicalContext": "Introduced in contemporary social epistemology and ethics as part of C. Thi Nguyen's scholarship in the 2020s.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "C. Thi Nguyen",
+        "work": "Value Capture",
+        "sectionOrPage": "Journal of Ethics and Social Philosophy 27(3)",
+        "year": "2024",
+        "url": "https://doi.org/10.26556/jesp.v27i3.3048"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Trust",
+        "sectionOrPage": "Epistemic Trust and Social Dependence",
+        "year": "2023",
+        "url": "https://plato.stanford.edu/entries/trust/"
+      }
+    ]
+  },
+  {
+    "id": "c-thi-nguyen--agency-as-art",
+    "source": "c-thi-nguyen",
+    "target": "agency-as-art",
+    "type": "DEVELOPED",
+    "label": "Formulated and introduced Agency as Art & Striving Play",
+    "strength": 5,
+    "description": "C. Thi Nguyen developed the aesthetic theory that games function as the art form of agency, where designers engineer motivational structures and players inhabit temporary practical purposes for experiential beauty.",
+    "dialecticalTension": "Challenging traditional fine art aesthetics to recognize interactive agency and voluntary struggles as genuine aesthetic media.",
+    "historicalContext": "Presented in Games: Agency as Art (Oxford University Press, 2020), which received the 2021 APA Book Prize.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "C. Thi Nguyen",
+        "work": "Games: Agency as Art",
+        "sectionOrPage": "Chapter 1: The Arts of Action",
+        "year": "2020",
+        "url": "https://doi.org/10.1093/oso/9780190052089.001.0001"
+      }
+    ]
+  },
+  {
+    "id": "ludwig-wittgenstein--c-thi-nguyen",
+    "source": "ludwig-wittgenstein",
+    "target": "c-thi-nguyen",
+    "type": "DEVELOPED",
+    "label": "Develops ordinary language philosophy into an ontology of games and rule-structured agency",
+    "strength": 4,
+    "description": "Nguyen builds upon Wittgenstein's philosophy of rules, language-games, and forms of life, applying ordinary language analysis to how players enter game rules and temporarily alter their motivational stances.",
+    "dialecticalTension": "Moving from Wittgensteinian grammatical therapy to systematic aesthetic ontology of interactive systems.",
+    "historicalContext": "From mid-20th-century Oxford/Cambridge ordinary language philosophy to contemporary analytic aesthetics.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ludwig Wittgenstein",
+        "work": "Philosophical Investigations",
+        "sectionOrPage": "§§66–71",
+        "year": "1953",
+        "url": "https://plato.stanford.edu/entries/wittgenstein/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "C. Thi Nguyen",
+        "work": "Games: Agency as Art",
+        "sectionOrPage": "Chapter 2: The Structure of Games",
+        "year": "2020",
+        "url": "https://doi.org/10.1093/oso/9780190052089.001.0001"
+      }
+    ]
+  },
+  {
+    "id": "ludwig-wittgenstein--agency-as-art",
+    "source": "ludwig-wittgenstein",
+    "target": "agency-as-art",
+    "type": "CRITIQUED",
+    "label": "Challenges Wittgenstein's anti-essentialist thesis that games share no unifying feature",
+    "strength": 4,
+    "description": "Wittgenstein famously held in Philosophical Investigations that games share only loose 'family resemblances' and cannot be defined; Nguyen's Agency as Art refutes this anti-essentialism by providing a rigorous unified account of games as the aesthetic medium of agency.",
+    "dialecticalTension": "Wittgenstein's skepticism regarding game definitions versus Nguyen's functional aesthetic specification of striving play.",
+    "historicalContext": "Re-evaluation of the classical family resemblance argument through contemporary philosophy of action and aesthetics.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ludwig Wittgenstein",
+        "work": "Philosophical Investigations",
+        "sectionOrPage": "§66",
+        "year": "1953",
+        "quote": "Don't say: 'There must be something common, or they would not be called 'games''—but look and see whether there is anything common to all.",
+        "url": "https://plato.stanford.edu/entries/wittgenstein/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "C. Thi Nguyen",
+        "work": "Games and the Art of Agency",
+        "sectionOrPage": "Philosophical Review 128(4): 423-462",
+        "year": "2019",
+        "url": "https://doi.org/10.1215/00318108-7697883"
+      }
+    ]
+  },
+  {
+    "id": "michel-foucault--c-thi-nguyen",
+    "source": "michel-foucault",
+    "target": "c-thi-nguyen",
+    "type": "DEVELOPED",
+    "label": "Translates panoptic surveillance and disciplinary power into the epistemology of metrics and forced transparency",
+    "strength": 4,
+    "description": "Nguyen extends Foucault's analysis of panopticism and institutional discipline into the modern information sphere, showing in 'Transparency is Surveillance' that institutional demands for transparency function as panoptic mechanisms that enforce conformity.",
+    "dialecticalTension": "Bridging continental theories of biopolitics and disciplinary power with analytic social epistemology.",
+    "historicalContext": "Extending 20th-century French post-structuralist critique of institutions into 21st-century metric-driven governance.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Michel Foucault",
+        "work": "Discipline and Punish: The Birth of the Prison",
+        "year": "1975",
+        "url": "https://plato.stanford.edu/entries/foucault/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "C. Thi Nguyen",
+        "work": "Transparency is Surveillance",
+        "sectionOrPage": "Philosophy and Phenomenological Research",
+        "year": "2023",
+        "url": "https://doi.org/10.1111/phpr.12948"
+      }
+    ]
+  },
+  {
+    "id": "byung-chul-han--c-thi-nguyen",
+    "source": "byung-chul-han",
+    "target": "c-thi-nguyen",
+    "type": "SYNTHESIZED",
+    "label": "Synthesizes critiques of digital self-optimization and burnout with analytic agency theory and value capture",
+    "strength": 4,
+    "description": "Both Han and Nguyen diagnose how contemporary subjects voluntarily embrace external regimes of quantification and gamified performance—Han via the critique of neoliberal positivity and Nguyen via the mechanics of value capture.",
+    "dialecticalTension": "Harmonizing continental cultural diagnosis of self-exploitation with analytic action theory and the psychology of scoring.",
+    "historicalContext": "Contemporaneous parallel analyses of gamification, burnout, and metric capture in 21st-century technological capitalism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Byung-Chul Han",
+        "work": "The Burnout Society",
+        "year": "2010",
+        "url": "https://en.wikipedia.org/wiki/The_Burnout_Society"
+      },
+      {
+        "citationType": "secondary",
+        "author": "C. Thi Nguyen",
+        "work": "The Score: How to Stop Playing Somebody Else's Game",
+        "sectionOrPage": "Part II: The Seduction of Scores",
+        "year": "2026",
+        "url": "https://www.penguin.com/books/the-score-c-thi-nguyen"
+      }
+    ]
+  },
+  {
+    "id": "daniel-kahneman--c-thi-nguyen",
+    "source": "daniel-kahneman",
+    "target": "c-thi-nguyen",
+    "type": "DEVELOPED",
+    "label": "Applies cognitive heuristics and bias frameworks to social echo chambers and epistemic bubbles",
+    "strength": 3,
+    "description": "Nguyen incorporates insights from behavioral decision research to distinguish between epistemic bubbles (informational exclusion) and echo chambers (pre-emptive epistemic trust manipulation and external discrediting).",
+    "dialecticalTension": "Expanding individual cognitive bias research into structural, collective social epistemology.",
+    "historicalContext": "Integration of empirical behavioral economics and social psychology into contemporary analytic epistemology.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Daniel Kahneman",
+        "work": "Thinking, Fast and Slow",
+        "year": "2011",
+        "url": "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow"
+      },
+      {
+        "citationType": "secondary",
+        "author": "C. Thi Nguyen",
+        "work": "Echo Chambers and Epistemic Bubbles",
+        "sectionOrPage": "Episteme 17(2): 141-161",
+        "year": "2018",
+        "url": "https://doi.org/10.1017/epi.2018.32"
+      }
+    ]
+  }
+]

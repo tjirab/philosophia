@@ -1,0 +1,43 @@
+{
+  "id": "c-thi-nguyen",
+  "name": "C. Thi Nguyen",
+  "birthYear": 1978,
+  "eraId": "contemporary",
+  "traditionId": "analytic",
+  "domains": ["philosophy"],
+  "primaryDomain": "philosophy",
+  "shortBio": "American philosopher of games, aesthetics, and social epistemology investigating how games function as the art form of agency, how external metrics provoke value capture, and how echo chambers systematically isolate epistemic trust.",
+  "centralQuestion": "How do games sculpt human agency, and how do quantified metrics and echo chambers capture and distort our epistemic lives?",
+  "keyWorks": [
+    {
+      "title": "Games: Agency as Art",
+      "year": "2020",
+      "url": "https://en.wikipedia.org/wiki/C._Thi_Nguyen",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/C._Thi_Nguyen",
+      "isbn": "978-0190052089",
+      "description": "Winner of the 2021 APA Book Prize, arguing that games are the distinct art form whose medium is human agency, engineering temporary goals, constraints, and motivational states for aesthetic struggle."
+    },
+    {
+      "title": "The Score: How to Stop Playing Somebody Else’s Game",
+      "year": "2026",
+      "url": "https://en.wikipedia.org/wiki/The_Score_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Score_(book)",
+      "isbn": "978-0593655658",
+      "description": "Comprehensive inquiry into gamification, metrics, and value capture, exploring how institutional scores and algorithmic rankings usurp authentic human values and autonomy."
+    },
+    {
+      "title": "Echo Chambers and Epistemic Bubbles",
+      "year": "2018",
+      "url": "https://doi.org/10.1017/epi.2018.32",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/C._Thi_Nguyen",
+      "description": "Seminal paper in social epistemology delineating epistemic bubbles (informational exclusion solvable by exposure) from echo chambers (dogmatic structures that systematically discredit outside testimony)."
+    }
+  ],
+  "sepSlug": "trust",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/trust/",
+    "wikipedia": "https://en.wikipedia.org/wiki/C._Thi_Nguyen"
+  },
+  "importanceScore": 84,
+  "imageUrl": "/portraits/c-thi-nguyen.jpg"
+}
