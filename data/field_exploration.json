@@ -1,0 +1,300 @@
+{
+  "version": "1.0.0",
+  "branches": [
+    {
+      "id": "metaphysics",
+      "name": "Metaphysics",
+      "historicalWeight": 96,
+      "contemporaryVelocity": 78,
+      "estimatedPublications": 160000,
+      "baseExplorationScore": 88,
+      "defaultState": "citadel",
+      "exploredSummary": "Centuries of ontology, substance dualism, causality, universals, and teleology from Classical Greece through German Idealism.",
+      "frontierSummary": "Contemporary digital ontology, quantum metaphysics, ground and essence theory, panpsychism, and non-Western mereology.",
+      "openProblems": [
+        "The Grounding Problem: What constitutes metaphysical ground vs logical implication?",
+        "Quantum Indeterminacy: Do superpositions imply metaphysical indeterminacy or multiple worlds?",
+        "Digital Ontology: Is informational reality fundamental (Wheeler's 'It from Bit')?"
+      ]
+    },
+    {
+      "id": "epistemology",
+      "name": "Epistemology",
+      "historicalWeight": 94,
+      "contemporaryVelocity": 82,
+      "estimatedPublications": 175000,
+      "baseExplorationScore": 89,
+      "defaultState": "citadel",
+      "exploredSummary": "Thoroughly systematized models of epistemic justification, Cartesian foundationalism, Humean skepticism, and Kantian synthetic a priori.",
+      "frontierSummary": "Epistemic injustice, testimony in oral/indigenous traditions, formal Bayesian epistemology, and epistemic agency in AI systems.",
+      "openProblems": [
+        "The Gettier Problem Variants: What non-defective condition guarantees genuine knowledge?",
+        "Epistemic Injustice: How do social biases systematically devalue testimony and epistemic credibility?",
+        "Algorithmic Epistemology: Can neural networks possess or confer epistemic warrant?"
+      ]
+    },
+    {
+      "id": "ethics",
+      "name": "Ethics & Moral Theory",
+      "historicalWeight": 92,
+      "contemporaryVelocity": 94,
+      "estimatedPublications": 210000,
+      "baseExplorationScore": 87,
+      "defaultState": "citadel",
+      "exploredSummary": "Exhaustively mapped deontological systems, Aristotelian virtue ethics, and utilitarian / consequentialist calculi.",
+      "frontierSummary": "Longtermism, AI alignment ethics, intergenerational justice, animal sentience thresholds, and non-anthropocentric indigenous stewardship.",
+      "openProblems": [
+        "The Repugnant Conclusion: How to resolve infinite population axiologies in population ethics?",
+        "Machine Moral Patienthood: When does a synthetic intelligence possess ethical claims on moral agents?",
+        "Metaethical Grounding: Can normative facts be naturalized without the is-ought fallacy?"
+      ]
+    },
+    {
+      "id": "mind",
+      "name": "Philosophy of Mind",
+      "historicalWeight": 70,
+      "contemporaryVelocity": 95,
+      "estimatedPublications": 140000,
+      "baseExplorationScore": 72,
+      "defaultState": "frontier",
+      "exploredSummary": "Cartesian dualism, functionalism, mind-brain identity theory, and intentionality.",
+      "frontierSummary": "The Hard Problem of Consciousness, 4E cognition (embodied, embedded, enactive, extended), phenomenal qualia, and panpsychist integrated information theory.",
+      "openProblems": [
+        "The Hard Problem: Why should physical processing be accompanied by inner phenomenal experience?",
+        "Extended Mind & Exocortex: Do external digital systems constitute literal cognitive substrates?",
+        "The Binding Problem: How are distributed neural events integrated into a single unified conscious scene?"
+      ]
+    },
+    {
+      "id": "political",
+      "name": "Political Philosophy",
+      "historicalWeight": 88,
+      "contemporaryVelocity": 86,
+      "estimatedPublications": 130000,
+      "baseExplorationScore": 82,
+      "defaultState": "citadel",
+      "exploredSummary": "Classical social contracts (Hobbes, Locke, Rousseau), Rawlsian distributive justice, Marxism, and liberal democratic theories.",
+      "frontierSummary": "Post-colonial political sovereignty, surveillance capitalism, global border ethics, and algorithmic governance.",
+      "openProblems": [
+        "Global Distributive Justice: Do national boundaries justify arbitrary distributions of birth wealth?",
+        "Democratic Legitimization under AI: How do algorithmic recommendation systems alter public deliberation?",
+        "Non-Ideal Political Theory: How to bridge theoretical justice and institutional legacy oppressions?"
+      ]
+    },
+    {
+      "id": "logic",
+      "name": "Logic & Language",
+      "historicalWeight": 85,
+      "contemporaryVelocity": 75,
+      "estimatedPublications": 115000,
+      "baseExplorationScore": 80,
+      "defaultState": "citadel",
+      "exploredSummary": "Aristotelian syllogistics, Frege-Russell mathematical logic, modal logic, and truth-conditional semantics.",
+      "frontierSummary": "Paraconsistent and dialetheic logics, Buddhist Catuskoti (fourfold negation), and non-classical truth values in quantum computing.",
+      "openProblems": [
+        "The Liar Paradox & Dialetheism: Can certain propositions be both strictly true and false simultaneously?",
+        "Indian Logic (Nyaya & Buddhist Pramana): Formalization of valid cognition without Aristotelian law of excluded middle.",
+        "Hyperintensionality: What semantic structures distinguish propositions that are necessarily coextensive?"
+      ]
+    },
+    {
+      "id": "aesthetics",
+      "name": "Aesthetics & Philosophy of Art",
+      "historicalWeight": 65,
+      "contemporaryVelocity": 60,
+      "estimatedPublications": 45000,
+      "baseExplorationScore": 58,
+      "defaultState": "emerging",
+      "exploredSummary": "Platonic mimesis, Kantian disinterested judgment, and Romantic notions of the sublime.",
+      "frontierSummary": "Generative AI authorship, computational creativity, environmental aesthetics, and cross-cultural aesthetics of imperfection (Wabi-sabi).",
+      "openProblems": [
+        "Synthetic Authorship: Can art exist without intentional human consciousness or phenomenological struggle?",
+        "Everyday Aesthetics: Do mundane lived environments possess rigorous aesthetic ontology?",
+        "Aesthetic Moralism: Does moral defect in an artwork diminish its aesthetic value?"
+      ]
+    }
+  ],
+  "traditionOverrides": {
+    "eastern-wisdom": {
+      "state": "uncharted",
+      "score": 38,
+      "tagline": "Rich 3,000-year canonical traditions systematically under-represented in Western academic curricula.",
+      "openQuestions": [
+        "Madhyamaka Two Truths Doctrine: How to interface Sunyata (Emptiness) with contemporary analytic mereology?",
+        "Daoist Non-Action (Wu Wei) as a viable cognitive and environmental governance paradigm.",
+        "Pramana Epistemology: Classical Indian models of perception, inference, and testimony."
+      ]
+    },
+    "islamic-golden-age": {
+      "state": "emerging",
+      "score": 52,
+      "tagline": "Crucial philosophical bridges frequently overlooked between late antiquity and early modern Europe.",
+      "openQuestions": [
+        "Ibn Sina's Flying Man experiment as precursor to Cartesian cogito and internal self-awareness.",
+        "Ibn Rushd's radical secularization of Aristotelian intellect."
+      ]
+    },
+    "critical-theory": {
+      "state": "frontier",
+      "score": 72,
+      "tagline": "Dialectical interrogation of modern capitalist rationalization, ideology, and mass media hegemony.",
+      "openQuestions": [
+        "Communicative rationality under platform monopolies and algorithmic attention capture.",
+        "Instrumental reason and the technological domination of nature."
+      ]
+    },
+    "post-structuralism": {
+      "state": "frontier",
+      "score": 75,
+      "tagline": "Radical deconstruction of logocentrism, power-knowledge apparatuses, and linguistic determinism.",
+      "openQuestions": [
+        "Hyperreality and Baudrillardian simulacra in generative synthesis.",
+        "Foucault's biopolitics in modern algorithmic surveillance."
+      ]
+    },
+    "existentialism": {
+      "state": "frontier",
+      "score": 79,
+      "tagline": "Passionate exploration of human freedom, absurdity, anguish, and bad faith."
+    },
+    "platonism": {
+      "state": "citadel",
+      "score": 96,
+      "tagline": "Foundational bedrock of Western metaphysics, epistemology, and political idealism."
+    },
+    "aristotelianism": {
+      "state": "citadel",
+      "score": 98,
+      "tagline": "Exhaustively systematized empirical teleology, virtue ethics, and formal logic."
+    },
+    "rationalism": {
+      "state": "citadel",
+      "score": 92,
+      "tagline": "Substantial mathematical metaphysics and innate ideas of Descartes, Spinoza, and Leibniz."
+    },
+    "empiricism": {
+      "state": "citadel",
+      "score": 93,
+      "tagline": "Foundational sensory epistemology from Locke and Berkeley to Hume's skepticism."
+    },
+    "german-idealism": {
+      "state": "citadel",
+      "score": 94,
+      "tagline": "Monumental synthetic systems of Kant, Fichte, Schelling, and Hegel."
+    },
+    "analytic": {
+      "state": "citadel",
+      "score": 95,
+      "tagline": "Rigorous logical analysis, linguistic clarification, and formal propositional rigor."
+    }
+  },
+  "nodeOverrides": {
+    "nagarjuna": {
+      "state": "uncharted",
+      "score": 36,
+      "tagline": "Radical Buddhist dialetheism and dependent origination (Pratityasamutpada).",
+      "openQuestions": [
+        "Tetralemma (Catuskoti): Formal validity of neither assertion, negation, both, nor neither.",
+        "Emptiness of Emptiness: Preventing metaphysical nihilism in non-foundational ontology."
+      ]
+    },
+    "zhuangzi": {
+      "state": "uncharted",
+      "score": 34,
+      "tagline": "Classical Daoist skepticism, spontaneous responsiveness (Wu Wei), and epistemological relativism.",
+      "openQuestions": [
+        "The Butterfly Dream: Irresolvable boundary between dreaming subjectivity and waking identity."
+      ]
+    },
+    "ibn-sina": {
+      "state": "emerging",
+      "score": 58,
+      "tagline": "Monolithic Avicennian synthesis of Neoplatonism, Aristotelianism, and Islamic theology.",
+      "openQuestions": [
+        "The Flying Man thought experiment and direct incorporeal self-awareness."
+      ]
+    },
+    "fanon": {
+      "state": "frontier",
+      "score": 62,
+      "tagline": "Decolonial phenomenology, psychic alienation, and the ontology of Blackness.",
+      "openQuestions": [
+        "The Zone of Non-Being: The limits of Hegelian recognition in colonial racial hierarchies."
+      ]
+    },
+    "chalmers-david": {
+      "state": "frontier",
+      "score": 76,
+      "tagline": "The Hard Problem of Consciousness and the Explanatory Gap.",
+      "openQuestions": [
+        "Philosophical Zombies: Logical conceivability vs metaphysical possibility.",
+        "Type-F Monism and Panpsychism: Grounding consciousness in intrinsic physical properties."
+      ]
+    },
+    "turing": {
+      "state": "emerging",
+      "score": 66,
+      "tagline": "Foundations of computational theory, machine intelligence, and morphogenesis.",
+      "openQuestions": [
+        "The Imitation Game: Behavioral indistinguishability vs genuine subjective intentionality."
+      ]
+    },
+    "kuhn": {
+      "state": "frontier",
+      "score": 78,
+      "tagline": "Structure of Scientific Revolutions, paradigm shifts, and incommensurability.",
+      "openQuestions": [
+        "Kuhnian Incommensurability: Can competing paradigms ever achieve neutral rational comparison?"
+      ]
+    },
+    "sunyata-emptiness": {
+      "state": "uncharted",
+      "score": 32,
+      "tagline": "All phenomena lack intrinsic, independent existence (Svabhava) and arise dependently.",
+      "openQuestions": [
+        "How can dependent origination coexist with functional conventional reality without nihilism?"
+      ]
+    },
+    "butterfly-dream": {
+      "state": "uncharted",
+      "score": 30,
+      "tagline": "Radical subjective perspectivism: Did Zhuangzi dream the butterfly, or does the butterfly dream Zhuangzi?",
+      "openQuestions": [
+        "Epistemic criteria to adjudicate higher-order cognitive wakefulness."
+      ]
+    },
+    "hard-problem-consciousness": {
+      "state": "frontier",
+      "score": 74,
+      "tagline": "Why does physical neural firing feel like anything at all from the inside?",
+      "openQuestions": [
+        "Closing the Explanatory Gap: Is physicalism complete without phenomenal qualia?"
+      ]
+    },
+    "plato": {
+      "state": "citadel",
+      "score": 99,
+      "tagline": "The eternal fountainhead of Western metaphysical forms, dialectic, and the Republic."
+    },
+    "aristotle": {
+      "state": "citadel",
+      "score": 99,
+      "tagline": "The master of those who know: teleology, hylomorphism, syllogism, and the Golden Mean."
+    },
+    "kant": {
+      "state": "citadel",
+      "score": 99,
+      "tagline": "The Copernican Revolution in philosophy: transcendental idealism and moral autonomy."
+    },
+    "descartes": {
+      "state": "citadel",
+      "score": 96,
+      "tagline": "Methodological skepticism, the Cogito, and Cartesian substance dualism."
+    },
+    "hume": {
+      "state": "citadel",
+      "score": 95,
+      "tagline": "Radical sensory empiricism, critique of induction, and the is-ought divide."
+    }
+  }
+}

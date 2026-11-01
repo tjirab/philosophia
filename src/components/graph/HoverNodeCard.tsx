@@ -82,6 +82,14 @@ export function HoverNodeCard({ node, position }: HoverNodeCardProps) {
                 {conc.branch}
               </span>
             )}
+            {node.exploration && (
+              <span
+                className="text-[10px] px-2 py-0.5 rounded-full bg-[var(--bg-subtle)] border border-[var(--border-main)] font-mono text-[var(--text-main)]"
+                title={node.exploration.tagline}
+              >
+                {node.exploration.badgeIcon} {node.exploration.label} ({node.exploration.score}/100)
+              </span>
+            )}
           </div>
 
           {/* Title */}
@@ -117,10 +125,17 @@ export function HoverNodeCard({ node, position }: HoverNodeCardProps) {
         )}
       </div>
 
-      {/* Centrality Explanation Pill */}
+      {/* Centrality & Exploration Explanation Pill */}
       {isPhilosopher && (
-        <div className="p-2 rounded-lg bg-[var(--bg-subtle)] border border-[var(--border-main)] text-[10px] text-[var(--text-dim)] leading-tight mb-2">
-          <strong className="text-[var(--gold-accent)]">Centrality {phil?.importanceScore}/100:</strong> Measures historical influence density (number of mentors, disciples, refutations & syntheses).
+        <div className="p-2 rounded-lg bg-[var(--bg-subtle)] border border-[var(--border-main)] text-[10px] text-[var(--text-dim)] leading-tight mb-2 space-y-1">
+          <div>
+            <strong className="text-[var(--gold-accent)]">Centrality {phil?.importanceScore}/100:</strong> Measures historical influence density (mentors, disciples, refutations & syntheses).
+          </div>
+          {node.exploration && (
+            <div>
+              <strong className="text-[var(--text-main)]">Research Horizon ({node.exploration.score}/100):</strong> {node.exploration.tagline}
+            </div>
+          )}
         </div>
       )}
 

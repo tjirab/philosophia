@@ -4,12 +4,14 @@ import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react'
 import dynamic from 'next/dynamic';
 import { forceCollide, forceManyBody, forceLink, forceX, forceY } from 'd3-force';
 import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink, BookOpen, Check } from 'lucide-react';
-import { VisualNode, VisualLink, Branch, Era, getEdgeTypeConfig } from '../../lib/types';
+import { VisualNode, VisualLink, Branch, Era, ExplorationState, getEdgeTypeConfig } from '../../lib/types';
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
 import { EpochNavigator } from '../timeline/EpochNavigator';
+import { ExplorationHud } from '../exploration/ExplorationHud';
 import { useClickOutside } from '../../lib/hooks/useClickOutside';
 import { drawCartographicGrid } from '../../lib/graph/grid-renderer';
+import { drawExplorationAtmosphere, drawCartographicBeacon } from '../../lib/graph/fog-renderer';
 import { getAssetUrl } from '../../lib/assets';
 import {
   getNodeMonogram,
@@ -59,6 +61,10 @@ interface ForceGraphViewProps {
   onSelectEra: (eraId: string) => void;
   isolateEra: boolean;
   onToggleIsolateEra: (isolate: boolean) => void;
+  isExplorationMode?: boolean;
+  onToggleExplorationMode?: (enabled: boolean) => void;
+  explorationFilter?: ExplorationState | 'all';
+  onSelectExplorationFilter?: (filter: ExplorationState | 'all') => void;
 }
 
 function escapeHtml(str: string): string {
@@ -89,6 +95,10 @@ export function ForceGraphView({
   onSelectEra,
   isolateEra,
   onToggleIsolateEra,
+  isExplorationMode,
+  onToggleExplorationMode,
+  explorationFilter,
+  onSelectExplorationFilter,
 }: ForceGraphViewProps) {
   const fgRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -104,6 +114,39 @@ export function ForceGraphView({
   const prevSpacingMultiplierRef = useRef<number>(1.9);
   const hasInitialFitRef = useRef<boolean>(false);
   const hasConfiguredForcesRef = useRef<boolean>(false);
+
+  // Local exploration state with props fallback
+  const [internalExplorationMode, setInternalExplorationMode] = useState<boolean>(false);
+  const [internalExplorationFilter, setInternalExplorationFilter] = useState<ExplorationState | 'all'>('all');
+
+  const isExplorationActive = isExplorationMode !== undefined ? isExplorationMode : internalExplorationMode;
+  const toggleExploration = onToggleExplorationMode || setInternalExplorationMode;
+
+  const currentExplorationFilter = explorationFilter !== undefined ? explorationFilter : internalExplorationFilter;
+  const setExplorationFilter = onSelectExplorationFilter || setInternalExplorationFilter;
+
+  const [mouseWorldPos, setMouseWorldPos] = useState<{ x: number; y: number } | null>(null);
+
+  const handleMouseMove = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (!isExplorationActive || !fgRef.current) return;
+      const rect = containerRef.current?.getBoundingClientRect();
+      if (!rect) return;
+      const clientX = e.clientX - rect.left;
+      const clientY = e.clientY - rect.top;
+      if (typeof fgRef.current.screen2GraphCoords === 'function') {
+        const coords = fgRef.current.screen2GraphCoords(clientX, clientY);
+        if (coords && Number.isFinite(coords.x) && Number.isFinite(coords.y)) {
+          setMouseWorldPos(coords);
+        }
+      }
+    },
+    [isExplorationActive]
+  );
+
+  const handleMouseLeave = useCallback(() => {
+    setMouseWorldPos(null);
+  }, []);
 
   useClickOutside(branchMenuRef, () => setIsBranchMenuOpen(false), isBranchMenuOpen);
 
@@ -469,6 +512,11 @@ export function ForceGraphView({
         });
       }
 
+      // Draw exploration beacon rings or citadel ramparts when cartography mode is active
+      if (isExplorationActive) {
+        drawCartographicBeacon(ctx, node, size, isLight, globalScale);
+      }
+
       // 3. Node Label: Tiered visibility to keep overview clean like a celestial atlas
       const isAnchorThinker = (node.importanceScore && node.importanceScore >= 95) || false;
       const isSecondaryThinker = (node.importanceScore && node.importanceScore >= 90) || false;
@@ -487,7 +535,10 @@ export function ForceGraphView({
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
 
-        const labelText = node.name;
+        const explorationPrefix = isExplorationActive && node.exploration?.badgeIcon
+          ? `${node.exploration.badgeIcon} `
+          : '';
+        const labelText = `${explorationPrefix}${node.name}`;
         const textWidth = ctx.measureText(labelText).width;
         const paddingX = 4;
         const paddingY = 1.5;
@@ -517,7 +568,7 @@ export function ForceGraphView({
 
       ctx.restore();
     },
-    [selectedNodeId, selectedEdgeId, selectedEdgeEndpoints, hoveredNode, pathNodeSet, isPathActive, isLight, portraitsLoadedVersion, notifyLoaded]
+    [selectedNodeId, selectedEdgeId, selectedEdgeEndpoints, hoveredNode, pathNodeSet, isPathActive, isLight, portraitsLoadedVersion, notifyLoaded, isExplorationActive]
   );
 
   const renderBackground = React.useCallback(
@@ -527,8 +578,19 @@ export function ForceGraphView({
         applyForces(fgRef.current, spacingMultiplier);
       }
       drawCartographicGrid(ctx, globalScale, isLight);
+
+      if (isExplorationActive) {
+        drawExplorationAtmosphere(ctx, {
+          nodes: graphData.nodes,
+          globalScale,
+          isLight,
+          mouseWorldPos: hoveredNode ? { x: hoveredNode.x!, y: hoveredNode.y! } : mouseWorldPos,
+          hoveredNodeId: hoveredNode?.id,
+          fogIntensity: 0.75,
+        });
+      }
     },
-    [applyForces, isLight, spacingMultiplier]
+    [applyForces, isLight, spacingMultiplier, isExplorationActive, graphData.nodes, hoveredNode, mouseWorldPos]
   );
 
   // Render classical badge pills directly on active lineage path edges or selected edge
@@ -622,6 +684,8 @@ export function ForceGraphView({
   return (
     <div
       ref={containerRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
       className="relative w-full h-full overflow-hidden bg-[var(--bg-main)] font-serif"
     >
       {/* Top Floating Filter Bar (Unified Canvas Dock) */}
@@ -709,6 +773,16 @@ export function ForceGraphView({
             </span>
           </span>
         </button>
+
+        {/* Cartography of Thought: Fog of War Exploration HUD */}
+        <ExplorationHud
+          nodes={nodes}
+          isExplorationMode={isExplorationActive}
+          onToggleExplorationMode={toggleExploration}
+          explorationFilter={currentExplorationFilter}
+          onSelectExplorationFilter={setExplorationFilter}
+          onSelectBranch={onSelectBranch}
+        />
 
         {/* Active Path Alert */}
         {isPathActive && (

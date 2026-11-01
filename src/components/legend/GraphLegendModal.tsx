@@ -166,6 +166,57 @@ export function GraphLegendModal({ isOpen, onClose }: GraphLegendModalProps) {
               ))}
             </div>
           </div>
+
+          {/* Section 4: Exploration Cartography & Terra Incognita */}
+          <div className="pt-2 border-t border-[var(--border-main)]">
+            <div className="text-xs uppercase tracking-widest text-[var(--gold-accent)] font-semibold mb-3 flex items-center gap-2">
+              <span>✦</span> Cartography of Thought: Terra Incognita & Research Depth
+            </div>
+            <p className="text-xs text-[var(--text-muted)] mb-3 leading-relaxed">
+              When toggled into <strong>Terra Incognita</strong> mode, the graph reveals well-charted canonical citadels vs. less explored or marginalized frontiers:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-xl">
+                <div className="text-xs font-semibold text-amber-700 dark:text-amber-300 flex items-center gap-1.5 mb-1">
+                  <span>🏛️</span>
+                  <span>Canonical Citadels (82–100)</span>
+                </div>
+                <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                  Centuries of scholarship, thousands of published treatises, and foundational Western canon. Bathed in radiant golden halos.
+                </p>
+              </div>
+
+              <div className="p-3 bg-rose-500/10 border border-rose-500/30 rounded-xl">
+                <div className="text-xs font-semibold text-rose-700 dark:text-rose-300 flex items-center gap-1.5 mb-1">
+                  <span>⚔️</span>
+                  <span>Disputed Frontiers (60–81)</span>
+                </div>
+                <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                  Intensely contested intellectual battlegrounds with competing paradigms (e.g. Philosophy of Mind, Free Will).
+                </p>
+              </div>
+
+              <div className="p-3 bg-teal-500/10 border border-teal-500/30 rounded-xl">
+                <div className="text-xs font-semibold text-teal-700 dark:text-teal-300 flex items-center gap-1.5 mb-1">
+                  <span>🧭</span>
+                  <span>Pioneer Outposts (40–59)</span>
+                </div>
+                <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                  Rapidly expanding 20th–21st century inquiries interfacing with empirical sciences, computing, and social critique.
+                </p>
+              </div>
+
+              <div className="p-3 bg-indigo-500/10 border border-indigo-500/30 rounded-xl">
+                <div className="text-xs font-semibold text-indigo-700 dark:text-indigo-300 flex items-center gap-1.5 mb-1">
+                  <span>🌫️</span>
+                  <span>Terra Incognita (&lt; 40)</span>
+                </div>
+                <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
+                  Historically marginalized traditions (classical non-Western philosophies) or open unresolved conceptual voids. Moving your cursor acts as a torchlight dispelling the mist.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
