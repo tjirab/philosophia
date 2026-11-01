@@ -217,7 +217,7 @@ function HomePageContent() {
                 : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
             }`}
           >
-            <Compass className="w-3.5 h-3.5" />
+            <Compass className="w-3.5 h-3.5 text-blue-500" />
             <span>Philosophy</span>
           </button>
           <button
@@ -227,12 +227,10 @@ function HomePageContent() {
                 ? 'bg-teal-500/15 text-teal-600 dark:text-teal-400 font-semibold border border-teal-500/30 shadow-sm'
                 : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
             }`}
+            title="Psychology: Intellectual lineage and cognitive theories (Curated canon)"
           >
-            <Brain className="w-3.5 h-3.5" />
+            <Brain className="w-3.5 h-3.5 text-teal-500" />
             <span>Psychology</span>
-            <span className="text-[9px] uppercase px-1.5 py-0.5 rounded-md bg-amber-500/20 text-amber-600 dark:text-amber-400 font-mono tracking-tight font-medium border border-amber-500/30">
-              Experimental
-            </span>
           </button>
           <button
             onClick={() => setSelectedDomain('sociology')}
@@ -241,12 +239,10 @@ function HomePageContent() {
                 ? 'bg-purple-500/15 text-purple-600 dark:text-purple-400 font-semibold border border-purple-500/30 shadow-sm'
                 : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
             }`}
+            title="Sociology: Social theory and critical frameworks (Curated canon)"
           >
-            <Users className="w-3.5 h-3.5" />
+            <Users className="w-3.5 h-3.5 text-purple-500" />
             <span>Sociology</span>
-            <span className="text-[9px] uppercase px-1.5 py-0.5 rounded-md bg-amber-500/20 text-amber-600 dark:text-amber-400 font-mono tracking-tight font-medium border border-amber-500/30">
-              Experimental
-            </span>
           </button>
           <div className="w-px h-4 bg-[var(--border-main)] mx-0.5" />
           <button

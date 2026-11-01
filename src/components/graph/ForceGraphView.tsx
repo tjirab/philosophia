@@ -3,10 +3,11 @@
 import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import { forceCollide, forceManyBody, forceLink, forceX, forceY } from 'd3-force';
-import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink, BookOpen, Check } from 'lucide-react';
+import { ZoomIn, ZoomOut, Maximize2 } from 'lucide-react';
 import { VisualNode, VisualLink, Branch, Era, ExplorationState, ScoringMethodology, getEdgeTypeConfig } from '../../lib/types';
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
+import { GraphLayersMenu } from './GraphLayersMenu';
 import { EpochNavigator } from '../timeline/EpochNavigator';
 import { ExplorationHud } from '../exploration/ExplorationHud';
 import { useClickOutside } from '../../lib/hooks/useClickOutside';
@@ -106,9 +107,7 @@ export function ForceGraphView({
 }: ForceGraphViewProps) {
   const fgRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const branchMenuRef = useRef<HTMLDivElement | null>(null);
   const { resolvedTheme } = useTheme();
-  const [isBranchMenuOpen, setIsBranchMenuOpen] = useState(false);
   const [dimensions, setDimensions] = useState({ width: 1200, height: 800 });
   const [hoveredNode, setHoveredNode] = useState<VisualNode | null>(null);
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null);
@@ -159,7 +158,6 @@ export function ForceGraphView({
     }
   }, [methodology]);
 
-  useClickOutside(branchMenuRef, () => setIsBranchMenuOpen(false), isBranchMenuOpen);
 
   // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
   const graphData = useMemo(() => ({ nodes, links }), [nodes, links]);
@@ -700,7 +698,7 @@ export function ForceGraphView({
       className="relative w-full h-full overflow-hidden bg-[var(--bg-main)] font-serif"
     >
       {/* Top Floating Filter Bar (Unified Canvas Dock) */}
-      <div className="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-2 max-w-[calc(100%-180px)]">
+      <div className="absolute top-4 left-4 z-20 flex flex-wrap items-center gap-2 max-w-[calc(100%-32px)] pointer-events-auto">
         {/* Chronological Era Filter */}
         <EpochNavigator
           eras={eras}
@@ -710,82 +708,18 @@ export function ForceGraphView({
           onToggleIsolateEra={onToggleIsolateEra}
         />
 
-        {/* Concepts Toggle */}
-        <button
-          onClick={onToggleConcepts}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border backdrop-blur-md transition ${
-            showConcepts
-              ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] border-[var(--gold-border)] shadow-sm'
-              : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)] hover:text-[var(--text-main)] hover:border-[var(--gold-border)]'
-          }`}
-          title="Toggle between philosopher-only network and combined philosopher-concept network"
-        >
-          <Layers className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-          <span>{showConcepts ? 'Concepts Visible' : 'Philosophers Only'}</span>
-        </button>
+        {/* Unified Layers & Viewing Controls */}
+        <GraphLayersMenu
+          showConcepts={showConcepts}
+          onToggleConcepts={onToggleConcepts}
+          selectedBranch={selectedBranch}
+          onSelectBranch={onSelectBranch}
+          branches={branches}
+          spacingMultiplier={spacingMultiplier}
+          onSetSpacingMultiplier={setSpacingMultiplier}
+        />
 
-        {/* Branch Filter Dropdown */}
-        <div className="relative font-serif" ref={branchMenuRef}>
-          <button
-            onClick={() => setIsBranchMenuOpen(!isBranchMenuOpen)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold border backdrop-blur-md transition shadow-sm ${
-              selectedBranch !== 'all'
-                ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] border-[var(--gold-border)] font-semibold'
-                : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)] hover:text-[var(--text-main)] hover:border-[var(--gold-border)]'
-            }`}
-            title="Filter by philosophical branch / discipline"
-          >
-            <BookOpen className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-            <span>{branches.find((b) => b.id === selectedBranch)?.label || 'All Branches'}</span>
-            <span className="text-[10px] text-[var(--text-dim)] ml-0.5">▾</span>
-          </button>
-
-          {isBranchMenuOpen && (
-            <div className="absolute top-full left-0 mt-2 z-50 w-52 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl shadow-2xl p-2 text-[var(--text-main)] font-serif backdrop-blur-xl">
-              <div className="text-[10px] font-semibold uppercase tracking-wider text-[var(--text-dim)] px-2.5 py-1 mb-1">
-                Philosophical Branch
-              </div>
-              {branches.map((b) => (
-                <button
-                  key={b.id}
-                  onClick={() => {
-                    onSelectBranch(b.id);
-                    setIsBranchMenuOpen(false);
-                  }}
-                  className={`w-full text-left px-2.5 py-1.5 rounded-xl text-xs flex items-center justify-between transition ${
-                    selectedBranch === b.id
-                      ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] font-semibold border border-[var(--gold-border)]'
-                      : 'text-[var(--text-muted)] hover:bg-[var(--bg-hover)] hover:text-[var(--text-main)]'
-                  }`}
-                >
-                  <span>{b.label}</span>
-                  {selectedBranch === b.id && <Check className="w-3.5 h-3.5" />}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Spacing Spreader Toggle */}
-        <button
-          onClick={toggleSpacing}
-          className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--gold-border)] backdrop-blur-md transition shadow-sm"
-          title={`Graph Spread: ${spacingMultiplier.toFixed(1)}x. Click to cycle node spacing (1.4x Compact, 1.9x Balanced default, 2.4x Spacious).`}
-        >
-          {spacingMultiplier >= 1.9 ? (
-            <Shrink className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-          ) : (
-            <Expand className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-          )}
-          <span>
-            Spread: {spacingMultiplier.toFixed(1)}x{' '}
-            <span className="text-[10px] text-[var(--text-dim)] font-normal">
-              {spacingMultiplier <= 1.4 ? '(Compact)' : spacingMultiplier < 2.4 ? '(Balanced)' : '(Spacious)'}
-            </span>
-          </span>
-        </button>
-
-        {/* Cartography of Thought: Fog of War Exploration HUD */}
+        {/* Cartography of Thought: Fog of War & Methodology Lens */}
         <ExplorationHud
           nodes={nodes}
           isExplorationMode={isExplorationActive}
@@ -799,7 +733,7 @@ export function ForceGraphView({
 
         {/* Active Path Alert */}
         {isPathActive && (
-          <div className="flex items-center gap-2 px-3 py-1.5 bg-[var(--bg-card)] border border-[var(--gold-border)] rounded-xl text-xs backdrop-blur-md shadow-lg">
+          <div className="flex items-center gap-2 px-3 py-1.5 bg-[var(--bg-card)]/90 border border-[var(--gold-border)] rounded-xl text-xs backdrop-blur-md shadow-lg">
             <span className="text-[var(--gold-accent)] font-semibold flex items-center gap-1.5">
               <span>✦</span> Lineage: {highlightedPathNodes.length} Thinkers
             </span>
@@ -830,25 +764,25 @@ export function ForceGraphView({
         )}
       </div>
 
-      {/* Floating Canvas Controls (Right) */}
-      <div className="absolute top-4 right-4 z-20 flex flex-col gap-1.5 bg-[var(--bg-card)] border border-[var(--border-main)] p-1.5 rounded-xl backdrop-blur-md shadow-xl text-[var(--text-main)]">
+      {/* Floating Canvas Controls (Bottom-Right, non-colliding cluster) */}
+      <div className="absolute bottom-6 right-6 z-20 flex flex-col gap-1.5 bg-[var(--bg-card)]/90 border border-[var(--border-main)] p-1.5 rounded-2xl backdrop-blur-md shadow-xl text-[var(--text-main)]">
         <button
           onClick={handleZoomIn}
-          className="p-2 hover:text-[var(--gold-accent)] hover:bg-[var(--bg-hover)] rounded-lg transition"
+          className="p-2 hover:text-[var(--gold-accent)] hover:bg-[var(--bg-hover)] rounded-xl transition"
           title="Zoom In"
         >
           <ZoomIn className="w-4 h-4" />
         </button>
         <button
           onClick={handleZoomOut}
-          className="p-2 hover:text-[var(--gold-accent)] hover:bg-[var(--bg-hover)] rounded-lg transition"
+          className="p-2 hover:text-[var(--gold-accent)] hover:bg-[var(--bg-hover)] rounded-xl transition"
           title="Zoom Out"
         >
           <ZoomOut className="w-4 h-4" />
         </button>
         <button
           onClick={handleFit}
-          className="p-2 hover:text-[var(--gold-accent)] hover:bg-[var(--bg-hover)] rounded-lg transition"
+          className="p-2 hover:text-[var(--gold-accent)] hover:bg-[var(--bg-hover)] rounded-xl transition"
           title="Fit Constellation to View"
         >
           <Maximize2 className="w-4 h-4" />
