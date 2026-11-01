@@ -4,13 +4,13 @@
     "target": "viktor-frankl",
     "type": "INFLUENCED",
     "label": "Adopted Nietzsche's maxim: He who has a why to live can bear almost any how",
-    "strength": 85
+    "strength": 4
   },
   {
     "source": "martin-heidegger",
     "target": "viktor-frankl",
     "type": "SYNTHESIZED",
     "label": "Integrated existential Dasein and thrownness into clinical logotherapy",
-    "strength": 85
+    "strength": 4
   }
 ]

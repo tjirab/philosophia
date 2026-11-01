@@ -4,20 +4,20 @@
     "target": "ivan-pavlov",
     "type": "DEVELOPED",
     "label": "Materialized the Cartesian reflex arc into empirical neuro-physiological conditioning",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "ivan-pavlov",
     "target": "classical-conditioning",
     "type": "DEVELOPED",
     "label": "Formulated classical stimulus-response conditioning through salivary reflex experiments",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "ivan-pavlov",
     "target": "john-b-watson",
     "type": "INFLUENCED",
     "label": "Provided the physiological and experimental foundation for American behaviorism",
-    "strength": 85
+    "strength": 4
   }
 ]

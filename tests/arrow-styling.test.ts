@@ -134,6 +134,12 @@ describe('Edge & Arrow Styling', () => {
       expect(getLinkWidth(5, false, false, false)).toBeCloseTo(1.8);
       expect(getLinkWidth(undefined, false, false, false)).toBeCloseTo(1.48);
     });
+
+    it('clamps edge strength exceeding 5 so lines never blow up', () => {
+      expect(getLinkWidth(100, false, false, false)).toBeCloseTo(1.8);
+      expect(getLinkWidth(85, false, false, false)).toBeCloseTo(1.8);
+      expect(getLinkWidth(-10, false, false, false)).toBeCloseTo(1.16);
+    });
   });
 
   describe('getLinkLineDash', () => {

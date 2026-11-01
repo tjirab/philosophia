@@ -4,27 +4,27 @@
     "target": "wilhelm-wundt",
     "type": "DEVELOPED",
     "label": "Developed Leibnizian active apperception into experimental introspective psychology",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "immanuel-kant",
     "target": "wilhelm-wundt",
     "type": "DEVELOPED",
     "label": "Grounded psychological voluntarism in Kantian transcendental forms of consciousness",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "wilhelm-wundt",
     "target": "william-james",
     "type": "CRITIQUED",
     "label": "James rejected Wundtian structural elements in favor of a continuous stream of consciousness",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "wilhelm-wundt",
     "target": "jean-piaget",
     "type": "DEVELOPED",
     "label": "Transmitted experimental laboratory inquiry into cognitive operations",
-    "strength": 85
+    "strength": 5
   }
 ]

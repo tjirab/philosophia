@@ -4,20 +4,20 @@
     "target": "talcott-parsons",
     "type": "DEVELOPED",
     "label": "Parsons translated Weber into English and systematized the voluntaristic theory of action",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "talcott-parsons",
     "target": "anthony-giddens",
     "type": "CRITIQUED",
     "label": "Giddens formulated structuration theory specifically to overcome Parsons' functionalist determinism",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "talcott-parsons",
     "target": "jurgen-habermas",
     "type": "SYNTHESIZED",
     "label": "Habermas synthesized Parsonian system equilibrium with phenomenological lifeworld theory",
-    "strength": 85
+    "strength": 4
   }
 ]

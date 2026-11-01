@@ -4,20 +4,20 @@
     "target": "noam-chomsky",
     "type": "DEVELOPED",
     "label": "Reconnected modern cognitive science with Cartesian rationalism and innate mental faculties",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "noam-chomsky",
     "target": "generative-grammar",
     "type": "DEVELOPED",
     "label": "Formulated universal generative grammar and recursive syntactic mental structures",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "noam-chomsky",
     "target": "daniel-kahneman",
     "type": "SYNTHESIZED",
     "label": "Contributed foundational cognitive architecture models to the Cognitive Revolution",
-    "strength": 85
+    "strength": 4
   }
 ]

@@ -4,13 +4,13 @@
     "target": "john-b-watson",
     "type": "DEVELOPED",
     "label": "Radicalized the tabula rasa empirical postulate into observable behavioral conditioning",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "john-b-watson",
     "target": "b-f-skinner",
     "type": "DEVELOPED",
     "label": "Watson's methodological behaviorism paved the way for Skinner's operant behaviorism",
-    "strength": 85
+    "strength": 5
   }
 ]

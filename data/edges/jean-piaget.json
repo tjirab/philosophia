@@ -4,20 +4,20 @@
     "target": "jean-piaget",
     "type": "DEVELOPED",
     "label": "Kantian categories of space, time, and causality operationalized into developmental stages",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "jean-piaget",
     "target": "genetic-epistemology",
     "type": "DEVELOPED",
     "label": "Formulated the developmental construction of cognitive schemas from infancy to adulthood",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "jean-piaget",
     "target": "lev-vygotsky",
     "type": "CRITIQUED",
     "label": "Vygotsky challenged Piaget's individualist egocentric speech model with social mediation",
-    "strength": 85
+    "strength": 5
   }
 ]

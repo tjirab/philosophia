@@ -4,20 +4,20 @@
     "target": "zygmunt-bauman",
     "type": "INFLUENCED",
     "label": "Adorno's critique of bureaucratic instrumental rationality informed Modernity and the Holocaust",
-    "strength": 85
+    "strength": 4
   },
   {
     "source": "zygmunt-bauman",
     "target": "liquid-modernity",
     "type": "DEVELOPED",
     "label": "Diagnosed the liquefaction of modern institutions, employment securities, and human commitments",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "zygmunt-bauman",
     "target": "byung-chul-han",
     "type": "INFLUENCED",
     "label": "Bauman's analysis of liquid consumerism directly links to Han's burnout and achievement society",
-    "strength": 85
+    "strength": 4
   }
 ]

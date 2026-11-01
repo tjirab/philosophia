@@ -4,27 +4,27 @@
     "target": "georg-simmel",
     "type": "DEVELOPED",
     "label": "Applied Kantian transcendental forms to the geometries of human sociation",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "georg-simmel",
     "target": "the-stranger-simmel",
     "type": "DEVELOPED",
     "label": "Formulated the sociological archetype of the stranger and spatial boundary mechanics",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "georg-simmel",
     "target": "george-h-mead",
     "type": "INFLUENCED",
     "label": "Simmel's interactionist sociology deeply influenced Mead and the Chicago School",
-    "strength": 85
+    "strength": 4
   },
   {
     "source": "georg-simmel",
     "target": "erving-goffman",
     "type": "DEVELOPED",
     "label": "Simmel's microsociological essays provided the direct inspiration for Goffman's interaction order",
-    "strength": 85
+    "strength": 5
   }
 ]

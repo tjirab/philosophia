@@ -114,13 +114,17 @@ describe('Philosophy Graph Data Integrity', () => {
     expect(visited.size).toBe(allNodeIds.size);
   });
 
-  it('validates that all edges connect existing nodes with no dangling references', () => {
+  it('validates that all edges connect existing nodes with no dangling references and strengths between 1 and 5', () => {
     expect(edgesData.length).toBeGreaterThan(30);
 
     for (const edge of edgesData) {
       expect(allNodeIds.has(edge.source), `Edge source "${edge.source}" does not exist`).toBe(true);
       expect(allNodeIds.has(edge.target), `Edge target "${edge.target}" does not exist`).toBe(true);
       expect(['INFLUENCED', 'CRITIQUED', 'DEVELOPED', 'SYNTHESIZED']).toContain(edge.type);
+      if (edge.strength !== undefined) {
+        expect(edge.strength, `Edge ${edge.source} -> ${edge.target} weight exceeds maximum of 5`).toBeLessThanOrEqual(5);
+        expect(edge.strength, `Edge ${edge.source} -> ${edge.target} weight is below minimum of 1`).toBeGreaterThanOrEqual(1);
+      }
     }
   });
 

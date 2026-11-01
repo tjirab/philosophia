@@ -4,48 +4,48 @@
     "target": "sigmund-freud",
     "type": "INFLUENCED",
     "label": "Schopenhauer's blind, striving Will provided the philosophical blueprint for the unconscious id",
-    "strength": 85
+    "strength": 4
   },
   {
     "source": "friedrich-nietzsche",
     "target": "sigmund-freud",
     "type": "INFLUENCED",
     "label": "Nietzschean insights into repression, sublimation, and unconscious drives directly shaped psychoanalysis",
-    "strength": 85
+    "strength": 4
   },
   {
     "source": "sigmund-freud",
     "target": "carl-jung",
     "type": "INFLUENCED",
     "label": "Freud mentored Jung and established psychoanalytic theory before their theoretical split",
-    "strength": 85
+    "strength": 4
   },
   {
     "source": "sigmund-freud",
     "target": "unconscious-psychoanalysis",
     "type": "DEVELOPED",
     "label": "Formulated the dynamic unconscious and structural model of id, ego, and super-ego",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "sigmund-freud",
     "target": "theodor-adorno",
     "type": "INFLUENCED",
     "label": "Freudian psychoanalysis formed the clinical bedrock for Frankfurt School authoritarian personality research",
-    "strength": 85
+    "strength": 4
   },
   {
     "source": "sigmund-freud",
     "target": "michel-foucault",
     "type": "CRITIQUED",
     "label": "Foucault dismantled the repressive hypothesis and psychoanalytic confession techniques in History of Sexuality",
-    "strength": 85
+    "strength": 5
   },
   {
     "source": "sigmund-freud",
     "target": "alenka-zupancic",
     "type": "DEVELOPED",
     "label": "Lacanian and Freudian psychoanalysis applied to philosophical ethics and comedic aesthetics",
-    "strength": 85
+    "strength": 5
   }
 ]
