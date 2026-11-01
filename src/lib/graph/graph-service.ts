@@ -254,8 +254,9 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     }
   }
 
-  // Attach hybrid exploration metadata to all nodes
-  let finalNodes = attachExplorationMetadata(nodes, links);
+  // Attach hybrid exploration metadata to all nodes using the canonical edge corpus
+  // to ensure consistent terrain classification regardless of active visibility filters
+  let finalNodes = attachExplorationMetadata(nodes, edges);
 
   // Apply active scoring methodology (canonical, topology PageRank, or dialectical friction)
   finalNodes = applyScoringMethodology(finalNodes, links, methodology);
