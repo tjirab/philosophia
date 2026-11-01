@@ -96,32 +96,32 @@ export function EdgeDossierDrawer({
       {/* Top Header */}
       <div className="p-5 border-b border-[var(--border-main)] bg-[var(--bg-card)] relative shrink-0">
         <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap min-w-0">
             <span
               className={`text-[10px] font-mono uppercase px-2.5 py-0.5 rounded-full border font-semibold ${edgeConfig.badgeClass}`}
             >
               {edge.type}
             </span>
-            <span className="text-xs text-[var(--text-dim)] font-mono">
+            <span className="text-xs text-[var(--text-dim)] font-mono whitespace-nowrap">
               Strength {edge.strength || 3}/5
             </span>
           </div>
 
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 shrink-0">
             <Link
               href={`/influence/${edge.id || `${edge.source}--${edge.target}`}`}
-              className="p-2 text-[var(--text-dim)] hover:text-[var(--gold-accent)] rounded-lg hover:bg-[var(--bg-hover)] transition flex items-center gap-1 text-xs"
+              className="p-1.5 sm:px-2.5 sm:py-1.5 text-[var(--text-dim)] hover:text-[var(--gold-accent)] rounded-lg hover:bg-[var(--bg-hover)] border border-transparent hover:border-[var(--border-main)] transition flex items-center gap-1.5 text-xs"
               title="Expand into full scholarly folio page"
             >
-              <Maximize2 className="w-4 h-4" />
+              <Maximize2 className="w-4 h-4 shrink-0" />
               <span className="hidden sm:inline font-sans text-[11px] font-medium">Expand Page</span>
             </Link>
             <button
               onClick={onClose}
-              className="p-2 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition"
+              className="p-1.5 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition"
               aria-label="Close influence drawer"
             >
-              <X className="w-5 h-5" />
+              <X className="w-5 h-5 shrink-0" />
             </button>
           </div>
         </div>

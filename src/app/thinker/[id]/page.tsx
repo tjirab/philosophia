@@ -96,16 +96,17 @@ export default async function ThinkerPage({ params }: PageProps) {
     <div className="min-h-screen w-full overflow-y-auto bg-[var(--bg-main)] text-[var(--text-main)] font-serif">
       {/* Top Navigation Bar */}
       <header className="sticky top-0 z-40 bg-[var(--bg-card)]/90 backdrop-blur-md border-b border-[var(--border-main)]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-xs font-sans text-[var(--text-dim)] hover:text-[var(--gold-accent)] transition"
+            className="inline-flex items-center gap-2 text-xs font-sans text-[var(--text-dim)] hover:text-[var(--gold-accent)] transition shrink-0"
           >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Return to Constellation Graph</span>
+            <ArrowLeft className="w-4 h-4 shrink-0" />
+            <span className="hidden sm:inline">Return to Constellation Graph</span>
+            <span className="sm:hidden font-medium">Constellation</span>
           </Link>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <span className="hidden sm:inline-block text-xs font-mono uppercase tracking-widest text-[var(--text-dim)]">
               Folio Thinker
             </span>
@@ -113,8 +114,9 @@ export default async function ThinkerPage({ params }: PageProps) {
               href={`/?node=${thinker.id}`}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[var(--gold-accent)] text-stone-900 rounded-lg text-xs font-bold font-sans hover:brightness-110 transition shadow-xs"
             >
-              <Compass className="w-3.5 h-3.5" />
-              <span>Locate in Graph</span>
+              <Compass className="w-3.5 h-3.5 shrink-0" />
+              <span className="hidden sm:inline">Locate in Graph</span>
+              <span className="sm:hidden">Locate</span>
             </Link>
           </div>
         </div>
