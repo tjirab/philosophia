@@ -46,6 +46,19 @@ function loadJsonDir(dir, { recursive = false } = {}) {
   return results;
 }
 
+/**
+ * Write a JSON file atomically using a temporary file and rename to prevent
+ * partial reads or race conditions during parallel test execution.
+ */
+function writeJsonAtomic(filePath, data) {
+  const content = typeof data === 'string' ? data : JSON.stringify(data, null, 2) + '\n';
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  const tmpPath = `${filePath}.tmp.${process.pid}.${Math.random().toString(36).slice(2)}`;
+  fs.writeFileSync(tmpPath, content, 'utf-8');
+  fs.renameSync(tmpPath, filePath);
+}
+
 export function buildData() {
   const startTime = Date.now();
 
@@ -72,7 +85,7 @@ export function buildData() {
       return a.id.localeCompare(b.id);
     });
     const targetFile = path.join(DATA_DIR, 'philosophers.json');
-    fs.writeFileSync(targetFile, JSON.stringify(philosophers, null, 2) + '\n', 'utf-8');
+    writeJsonAtomic(targetFile, philosophers);
     console.log(`✓ Compiled ${philosophers.length} philosophers -> data/philosophers.json`);
   }
 
@@ -81,7 +94,7 @@ export function buildData() {
     concepts = loadJsonDir(CONCEPTS_DIR);
     concepts.sort((a, b) => a.id.localeCompare(b.id));
     const targetFile = path.join(DATA_DIR, 'concepts.json');
-    fs.writeFileSync(targetFile, JSON.stringify(concepts, null, 2) + '\n', 'utf-8');
+    writeJsonAtomic(targetFile, concepts);
     console.log(`✓ Compiled ${concepts.length} concepts -> data/concepts.json`);
   }
 
@@ -102,7 +115,7 @@ export function buildData() {
       }
     }
     const targetFile = path.join(DATA_DIR, 'edges.json');
-    fs.writeFileSync(targetFile, JSON.stringify(edges, null, 2) + '\n', 'utf-8');
+    writeJsonAtomic(targetFile, edges);
     console.log(`✓ Compiled ${edges.length} edges (deduplicated from ${rawEdges.length}) -> data/edges.json`);
   }
 
@@ -119,7 +132,7 @@ export function buildData() {
       }
     }
     const targetFile = path.join(DATA_DIR, 'media.json');
-    fs.writeFileSync(targetFile, JSON.stringify(media, null, 2) + '\n', 'utf-8');
+    writeJsonAtomic(targetFile, media);
     console.log(`✓ Compiled ${media.length} media items -> data/media.json`);
   }
 
@@ -146,11 +159,7 @@ export function buildData() {
       ...p,
       media: mediaByTarget.get(p.id) || [],
     };
-    fs.writeFileSync(
-      path.join(thinkersChunkDir, `${p.id}.json`),
-      JSON.stringify(chunkData, null, 2) + '\n',
-      'utf-8'
-    );
+    writeJsonAtomic(path.join(thinkersChunkDir, `${p.id}.json`), chunkData);
   }
 
   // Write per-concept chunks
@@ -159,21 +168,13 @@ export function buildData() {
       ...c,
       media: mediaByTarget.get(c.id) || [],
     };
-    fs.writeFileSync(
-      path.join(conceptsChunkDir, `${c.id}.json`),
-      JSON.stringify(chunkData, null, 2) + '\n',
-      'utf-8'
-    );
+    writeJsonAtomic(path.join(conceptsChunkDir, `${c.id}.json`), chunkData);
   }
 
   // Write per-edge chunks
   for (const e of edges) {
     const edgeId = e.id || `${e.source}--${e.target}`;
-    fs.writeFileSync(
-      path.join(edgesChunkDir, `${edgeId}.json`),
-      JSON.stringify(e, null, 2) + '\n',
-      'utf-8'
-    );
+    writeJsonAtomic(path.join(edgesChunkDir, `${edgeId}.json`), e);
   }
 
   // Generate lightweight graph-index.json manifest (~35 KB)
@@ -235,7 +236,7 @@ export function buildData() {
   };
 
   const graphIndexFile = path.join(CHUNKS_DIR, 'graph-index.json');
-  fs.writeFileSync(graphIndexFile, JSON.stringify(graphIndex, null, 2) + '\n', 'utf-8');
+  writeJsonAtomic(graphIndexFile, graphIndex);
   console.log(`✓ Compiled Stage 2 static chunks (${philosophers.length} thinkers, ${concepts.length} concepts, ${edges.length} edges, graph-index.json) -> public/data/chunks/`);
 
   const elapsed = Date.now() - startTime;

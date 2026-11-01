@@ -13,7 +13,8 @@
     "postinstall": "node scripts/build-data.mjs",
     "ingest": "node scripts/ingest-philosophizethis.mjs",
     "audit": "node scripts/audit-coverage.mjs",
-    "audit:report": "node scripts/audit-coverage.mjs --report"
+    "audit:report": "node scripts/audit-coverage.mjs --report",
+    "prepare": "git config core.hooksPath .githooks 2>/dev/null || true"
   },
   "dependencies": {
     "d3-force": "^3.0.0",
