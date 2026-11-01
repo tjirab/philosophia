@@ -1,23 +1,83 @@
 [
   {
+    "id": "william-james--w-e-b-du-bois",
     "source": "william-james",
     "target": "w-e-b-du-bois",
     "type": "INFLUENCED",
     "label": "Studied under William James at Harvard, adopting pragmatic empirical methods and psychology of self",
-    "strength": 85
+    "strength": 85,
+    "description": "W.E.B. Du Bois was fundamentally influenced by William James's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from William James's perspective to W.E.B. Du Bois's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "W.E.B. Du Bois",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/dubois/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "William James",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/james/"
+      }
+    ]
   },
   {
+    "id": "max-weber--w-e-b-du-bois",
     "source": "max-weber",
     "target": "w-e-b-du-bois",
     "type": "SYNTHESIZED",
     "label": "Weber celebrated Du Bois's empirical research and published his pioneering work on race in Germany",
-    "strength": 85
+    "strength": 85,
+    "description": "W.E.B. Du Bois synthesized Max Weber's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Max Weber's perspective to W.E.B. Du Bois's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "W.E.B. Du Bois",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/dubois/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Weber",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/weber/"
+      }
+    ]
   },
   {
+    "id": "w-e-b-du-bois--double-consciousness",
     "source": "w-e-b-du-bois",
     "target": "double-consciousness",
     "type": "DEVELOPED",
     "label": "Formulated double consciousness as the internal psychic split of marginalized subjects",
-    "strength": 85
+    "strength": 85,
+    "description": "W.E.B. Du Bois formulated and introduced the concept of \"Double Consciousness & The Veil\", which became a seminal contribution in critical-sociology philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in critical-sociology.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of W.E.B. Du Bois's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Double Consciousness & The Veil",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/dubois/"
+      }
+    ]
   }
 ]

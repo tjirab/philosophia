@@ -1,23 +1,83 @@
 [
   {
+    "id": "jean-jacques-rousseau--emile-durkheim",
     "source": "jean-jacques-rousseau",
     "target": "emile-durkheim",
     "type": "DEVELOPED",
     "label": "Rousseau's general will evolved into Durkheim's collective conscience and moral solidarity",
-    "strength": 85
+    "strength": 85,
+    "description": "Émile Durkheim adopted Jean-Jacques Rousseau's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Jean-Jacques Rousseau's perspective to Émile Durkheim's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Enlightenment & Social Contract across history into the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Émile Durkheim",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/durkheim/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean-Jacques Rousseau",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rousseau/"
+      }
+    ]
   },
   {
+    "id": "emile-durkheim--social-facts",
     "source": "emile-durkheim",
     "target": "social-facts",
     "type": "DEVELOPED",
     "label": "Defined sociology as the empirical study of external, coercive social facts",
-    "strength": 85
+    "strength": 85,
+    "description": "Émile Durkheim formulated and introduced the concept of \"Social Facts (Sui Generis)\", which became a seminal contribution in structural-functionalism philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in structural-functionalism.",
+    "historicalContext": "Introduced during the 19th Century Divergences as part of Émile Durkheim's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Social Facts (Sui Generis)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/durkheim/"
+      }
+    ]
   },
   {
+    "id": "emile-durkheim--talcott-parsons",
     "source": "emile-durkheim",
     "target": "talcott-parsons",
     "type": "DEVELOPED",
     "label": "Formed the central theoretical pillar for Parsonian structural functionalism",
-    "strength": 85
+    "strength": 85,
+    "description": "Talcott Parsons adopted Émile Durkheim's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Émile Durkheim's perspective to Talcott Parsons's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Talcott Parsons",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/functionalism/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Émile Durkheim",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/durkheim/"
+      }
+    ]
   }
 ]

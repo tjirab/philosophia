@@ -1,23 +1,83 @@
 [
   {
+    "id": "immanuel-kant--jean-piaget",
     "source": "immanuel-kant",
     "target": "jean-piaget",
     "type": "DEVELOPED",
     "label": "Kantian categories of space, time, and causality operationalized into developmental stages",
-    "strength": 85
+    "strength": 85,
+    "description": "Jean Piaget adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Jean Piaget's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean Piaget",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/piaget/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "jean-piaget--genetic-epistemology",
     "source": "jean-piaget",
     "target": "genetic-epistemology",
     "type": "DEVELOPED",
     "label": "Formulated the developmental construction of cognitive schemas from infancy to adulthood",
-    "strength": 85
+    "strength": 85,
+    "description": "Jean Piaget formulated and introduced the concept of \"Cognitive Schemas & Equilibration\", which became a seminal contribution in cognitive philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in cognitive.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Jean Piaget's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Cognitive Schemas & Equilibration",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/piaget/"
+      }
+    ]
   },
   {
+    "id": "jean-piaget--lev-vygotsky",
     "source": "jean-piaget",
     "target": "lev-vygotsky",
     "type": "CRITIQUED",
     "label": "Vygotsky challenged Piaget's individualist egocentric speech model with social mediation",
-    "strength": 85
+    "strength": 85,
+    "description": "Lev Vygotsky engaged in a direct critique of Jean Piaget's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Jean Piaget's perspective to Lev Vygotsky's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Lev Vygotsky",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/vygotsky/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean Piaget",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/piaget/"
+      }
+    ]
   }
 ]

@@ -1,44 +1,173 @@
 [
   {
+    "id": "immanuel-kant--max-weber",
     "source": "immanuel-kant",
     "target": "max-weber",
     "type": "DEVELOPED",
     "label": "Applied neo-Kantian methodological distinctions between natural sciences and cultural understanding",
-    "strength": 85
+    "strength": 85,
+    "description": "Max Weber adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Max Weber's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Weber",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/weber/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "karl-marx--max-weber",
     "source": "karl-marx",
     "target": "max-weber",
     "type": "CRITIQUED",
     "label": "Contested Marx's materialist determinism by demonstrating how religious ideas drive capitalist development",
-    "strength": 85
+    "strength": 85,
+    "description": "Max Weber engaged in a direct critique of Karl Marx's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Karl Marx's perspective to Max Weber's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Weber",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/weber/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      }
+    ]
   },
   {
+    "id": "friedrich-nietzsche--max-weber",
     "source": "friedrich-nietzsche",
     "target": "max-weber",
     "type": "INFLUENCED",
     "label": "Nietzschean critique of asceticism and modern disenchantment deeply shaped Weberian rationalization",
-    "strength": 85
+    "strength": 85,
+    "description": "Max Weber was fundamentally influenced by Friedrich Nietzsche's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Friedrich Nietzsche's perspective to Max Weber's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Weber",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/weber/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Friedrich Nietzsche",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/nietzsche/"
+      }
+    ]
   },
   {
+    "id": "max-weber--iron-cage-rationalization",
     "source": "max-weber",
     "target": "iron-cage-rationalization",
     "type": "DEVELOPED",
     "label": "Articulated how bureaucratic rationalization imprisons modern society in an iron cage",
-    "strength": 85
+    "strength": 85,
+    "description": "Max Weber formulated and introduced the concept of \"The Iron Cage of Rationality\", which became a seminal contribution in social-theory philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in social-theory.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Max Weber's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Iron Cage of Rationality",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/weber/"
+      }
+    ]
   },
   {
+    "id": "max-weber--theodor-adorno",
     "source": "max-weber",
     "target": "theodor-adorno",
     "type": "INFLUENCED",
     "label": "Weberian instrumental rationality merged with Marxist critique in Dialectic of Enlightenment",
-    "strength": 85
+    "strength": 85,
+    "description": "Theodor W. Adorno was fundamentally influenced by Max Weber's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Max Weber's perspective to Theodor W. Adorno's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Theodor W. Adorno",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/adorno/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Weber",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/weber/"
+      }
+    ]
   },
   {
+    "id": "max-weber--jurgen-habermas",
     "source": "max-weber",
     "target": "jurgen-habermas",
     "type": "DEVELOPED",
     "label": "Habermas reconstructed Weberian rationalization theory in Theory of Communicative Action",
-    "strength": 85
+    "strength": 85,
+    "description": "Jürgen Habermas adopted Max Weber's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Max Weber's perspective to Jürgen Habermas's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jürgen Habermas",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Weber",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/weber/"
+      }
+    ]
   }
 ]

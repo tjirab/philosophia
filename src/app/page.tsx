@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, Suspense } from 'react';
+import { useSearchParams } from 'next/navigation';
 import {
   Compass,
   GitFork,
@@ -32,7 +33,8 @@ import { GraphLegendModal } from '../components/legend/GraphLegendModal';
 import { AppearanceSettingsMenu } from '../components/settings/AppearanceSettingsModal';
 import { SuggestionModal } from '../components/submission/SuggestionModal';
 
-export default function HomePage() {
+function HomePageContent() {
+  const searchParams = useSearchParams();
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [selectedEdgeId, setSelectedEdgeId] = useState<string | null>(null);
   const [selectedEraId, setSelectedEraId] = useState<string>('all');
@@ -53,16 +55,38 @@ export default function HomePage() {
 
   // Deep-linking URL parameter handler (e.g. ?focusEdge=socrates--plato or ?node=plato)
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const searchParams = new URLSearchParams(window.location.search);
+    const syncFromUrl = () => {
       const edgeParam = searchParams.get('focusEdge') || searchParams.get('edge');
       const nodeParam = searchParams.get('node');
       if (edgeParam) {
         setSelectedEdgeId(edgeParam);
+        setSelectedNodeId(null);
       } else if (nodeParam) {
         setSelectedNodeId(nodeParam);
+        setSelectedEdgeId(null);
       }
-    }
+    };
+
+    syncFromUrl();
+  }, [searchParams]);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      if (typeof window !== 'undefined') {
+        const sp = new URLSearchParams(window.location.search);
+        const edge = sp.get('focusEdge') || sp.get('edge');
+        const node = sp.get('node');
+        if (edge) {
+          setSelectedEdgeId(edge);
+          setSelectedNodeId(null);
+        } else if (node) {
+          setSelectedNodeId(node);
+          setSelectedEdgeId(null);
+        }
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
   // Keyboard shortcut listener for Search (Cmd+K / Ctrl+K)
@@ -359,5 +383,13 @@ export default function HomePage() {
         initialTargetNodeId={suggestionTargetId}
       />
     </div>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <Suspense fallback={null}>
+      <HomePageContent />
+    </Suspense>
   );
 }

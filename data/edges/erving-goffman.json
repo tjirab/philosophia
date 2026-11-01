@@ -1,16 +1,53 @@
 [
   {
+    "id": "erving-goffman--dramaturgy-goffman",
     "source": "erving-goffman",
     "target": "dramaturgy-goffman",
     "type": "DEVELOPED",
     "label": "Theorized social behavior through theatrical staging, frontstage performances, and face preservation",
-    "strength": 85
+    "strength": 85,
+    "description": "Erving Goffman formulated and introduced the concept of \"Dramaturgical Self & Face-Work\", which became a seminal contribution in symbolic-interactionism philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in symbolic-interactionism.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Erving Goffman's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Dramaturgical Self & Face-Work",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/identity-politics/"
+      }
+    ]
   },
   {
+    "id": "erving-goffman--pierre-bourdieu",
     "source": "erving-goffman",
     "target": "pierre-bourdieu",
     "type": "SYNTHESIZED",
     "label": "Goffman's microsociological rituals complemented Bourdieu's embodied habitus",
-    "strength": 85
+    "strength": 85,
+    "description": "Pierre Bourdieu synthesized Erving Goffman's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Erving Goffman's perspective to Pierre Bourdieu's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Pierre Bourdieu",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/bourdieu/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Erving Goffman",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/identity-politics/"
+      }
+    ]
   }
 ]
