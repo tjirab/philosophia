@@ -25,6 +25,7 @@ interface DossierDrawerProps {
   selectedNodeId: string | null;
   onClose: () => void;
   onSelectNode: (nodeId: string) => void;
+  onSelectEdge?: (edgeId: string) => void;
   onTracePath: (startId: string) => void;
   onOpenSuggestion?: (nodeId: string) => void;
 }
@@ -33,6 +34,7 @@ export function DossierDrawer({
   selectedNodeId,
   onClose,
   onSelectNode,
+  onSelectEdge,
   onTracePath,
   onOpenSuggestion,
 }: DossierDrawerProps) {
@@ -549,12 +551,26 @@ export function DossierDrawer({
                         {isConcept ? 'Concept' : 'Thinker'}
                       </span>
                     </div>
-                    <span
-                      className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors shrink-0 ml-2 ${edgeConfig.badgeClass}`}
-                      title={edgeConfig.description}
-                    >
-                      {edge.type}
-                    </span>
+                    <div className="flex items-center gap-1.5 shrink-0 ml-2">
+                      <span
+                        className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors ${edgeConfig.badgeClass}`}
+                        title={edgeConfig.description}
+                      >
+                        {edge.type}
+                      </span>
+                      {onSelectEdge && (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onSelectEdge(edge.id || `${edge.source}--${edge.target}`);
+                          }}
+                          className="p-1 text-[var(--text-dim)] hover:text-[var(--gold-accent)] bg-[var(--bg-card)] rounded hover:bg-[var(--bg-hover)] border border-[var(--border-main)] transition"
+                          title="Inspect Academic Proof"
+                        >
+                          <BookOpen className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                    </div>
                   </div>
                   <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-snug">
                     {edge.label}
@@ -648,12 +664,26 @@ export function DossierDrawer({
                         {isConcept ? 'Concept' : 'Thinker'}
                       </span>
                     </div>
-                    <span
-                      className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors shrink-0 ml-2 ${edgeConfig.badgeClass}`}
-                      title={edgeConfig.description}
-                    >
-                      {edge.type}
-                    </span>
+                    <div className="flex items-center gap-1.5 shrink-0 ml-2">
+                      <span
+                        className={`text-[10px] font-mono uppercase px-2 py-0.5 rounded border transition-colors ${edgeConfig.badgeClass}`}
+                        title={edgeConfig.description}
+                      >
+                        {edge.type}
+                      </span>
+                      {onSelectEdge && (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onSelectEdge(edge.id || `${edge.source}--${edge.target}`);
+                          }}
+                          className="p-1 text-[var(--text-dim)] hover:text-[var(--gold-accent)] bg-[var(--bg-card)] rounded hover:bg-[var(--bg-hover)] border border-[var(--border-main)] transition"
+                          title="Inspect Academic Proof"
+                        >
+                          <BookOpen className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                    </div>
                   </div>
                   <p className="text-xs text-[var(--text-muted)] mt-1.5 leading-snug">
                     {edge.label}

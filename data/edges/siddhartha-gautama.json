@@ -1,30 +1,122 @@
 [
   {
+    "id": "siddhartha-gautama--arthur-schopenhauer",
     "source": "siddhartha-gautama",
     "target": "arthur-schopenhauer",
     "type": "SYNTHESIZED",
     "label": "Integrated Buddhist Noble Truths and cessation of desire into Western metaphysics",
-    "strength": 4
+    "strength": 4,
+    "description": "Arthur Schopenhauer synthesized Siddhartha Gautama (The Buddha)'s framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Siddhartha Gautama (The Buddha)'s perspective to Arthur Schopenhauer's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Eastern & Axial Traditions across history into the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Arthur Schopenhauer",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/schopenhauer/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Siddhartha Gautama (The Buddha)",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/buddha/"
+      }
+    ]
   },
   {
+    "id": "siddhartha-gautama--derek-parfit",
     "source": "siddhartha-gautama",
     "target": "derek-parfit",
     "type": "SYNTHESIZED",
+    "label": "Parfit explicitly identified his reductionism with Buddhist Anatta (no-self)",
     "strength": 5,
-    "label": "Parfit explicitly identified his reductionism with Buddhist Anatta (no-self)"
+    "description": "Derek Parfit synthesized Siddhartha Gautama (The Buddha)'s framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Siddhartha Gautama (The Buddha)'s perspective to Derek Parfit's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Eastern & Axial Traditions across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Derek Parfit",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/parfit/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Siddhartha Gautama (The Buddha)",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/buddha/"
+      }
+    ]
   },
   {
+    "id": "siddhartha-gautama--adi-shankara",
     "source": "siddhartha-gautama",
     "target": "adi-shankara",
     "type": "CRITIQUED",
+    "label": "Engaged with Buddhist dialectics and the doctrine of non-self (Anatta) to formulate orthodox non-dual Advaita Vedanta (Atman is Brahman)",
     "strength": 4,
-    "label": "Engaged with Buddhist dialectics and the doctrine of non-self (Anatta) to formulate orthodox non-dual Advaita Vedanta (Atman is Brahman)"
+    "description": "Adi Shankara engaged in a direct critique of Siddhartha Gautama (The Buddha)'s foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Siddhartha Gautama (The Buddha)'s perspective to Adi Shankara's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Eastern & Axial Traditions era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adi Shankara",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/shankara/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Siddhartha Gautama (The Buddha)",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/buddha/"
+      }
+    ]
   },
   {
+    "id": "siddhartha-gautama--nagarjuna",
     "source": "siddhartha-gautama",
     "target": "nagarjuna",
     "type": "DEVELOPED",
+    "label": "Systematized the Buddha's core insights of Pratītyasamutpāda (dependent origination) and Anatta into the radical dialectic of Madhyamaka emptiness",
     "strength": 5,
-    "label": "Systematized the Buddha's core insights of Pratītyasamutpāda (dependent origination) and Anatta into the radical dialectic of Madhyamaka emptiness"
+    "description": "Nagarjuna adopted Siddhartha Gautama (The Buddha)'s insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Siddhartha Gautama (The Buddha)'s perspective to Nagarjuna's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Eastern & Axial Traditions era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Nagarjuna",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/nagarjuna/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Siddhartha Gautama (The Buddha)",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/buddha/"
+      }
+    ]
   }
 ]

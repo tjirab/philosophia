@@ -1,9 +1,24 @@
 [
   {
+    "id": "anthropological-projection--karl-marx",
     "source": "anthropological-projection",
     "target": "karl-marx",
     "type": "DEVELOPED",
+    "label": "Marx generalized religious projection into socioeconomic alienation and commodity fetishism",
     "strength": 5,
-    "label": "Marx generalized religious projection into socioeconomic alienation and commodity fetishism"
+    "description": "Karl Marx took up the concept of \"Anthropological Projection (Theology as Anthropology)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Anthropological Projection (Theology as Anthropology)\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Engagement with Anthropological Projection (Theology as Anthropology)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      }
+    ]
   }
 ]

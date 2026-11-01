@@ -1,9 +1,24 @@
 [
   {
+    "id": "innate-goodness--zhuangzi",
     "source": "innate-goodness",
     "target": "zhuangzi",
     "type": "CRITIQUED",
+    "label": "Classical Daoism contested Mencius' normative moral cultivation, championing spontaneous naturalness (Ziran) over prescriptive virtues",
     "strength": 4,
-    "label": "Classical Daoism contested Mencius' normative moral cultivation, championing spontaneous naturalness (Ziran) over prescriptive virtues"
+    "description": "Zhuangzi (Chuang Tzu) formulated a fundamental critique of \"Innate Goodness of Human Nature (Xing Shan)\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Innate Goodness of Human Nature (Xing Shan)\".",
+    "historicalContext": "Inherited and re-evaluated during the Eastern & Axial Traditions.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Zhuangzi (Chuang Tzu)",
+        "sectionOrPage": "Engagement with Innate Goodness of Human Nature (Xing Shan)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/zhuangzi/"
+      }
+    ]
   }
 ]

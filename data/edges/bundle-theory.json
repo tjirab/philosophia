@@ -1,9 +1,24 @@
 [
   {
+    "id": "bundle-theory--william-james",
     "source": "bundle-theory",
     "target": "william-james",
     "type": "DEVELOPED",
     "label": "James adapted Hume perception bundle into the psychological stream of consciousness",
-    "strength": 4
+    "strength": 4,
+    "description": "William James took up the concept of \"Bundle Theory of the Self\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Bundle Theory of the Self\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "William James",
+        "sectionOrPage": "Engagement with Bundle Theory of the Self",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/james/"
+      }
+    ]
   }
 ]

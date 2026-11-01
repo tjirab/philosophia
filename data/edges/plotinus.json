@@ -1,16 +1,62 @@
 [
   {
+    "id": "plotinus--augustine",
     "source": "plotinus",
     "target": "augustine",
     "type": "SYNTHESIZED",
     "label": "Synthesized Neoplatonism with Christian theology and grace",
-    "strength": 5
+    "strength": 5,
+    "description": "Augustine of Hippo synthesized Plotinus's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Plotinus's perspective to Augustine of Hippo's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Hellenistic & Roman across history into the Medieval & Islamic Golden Age.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Augustine of Hippo",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/augustine/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Plotinus",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/plotinus/"
+      }
+    ]
   },
   {
+    "id": "plotinus--boethius",
     "source": "plotinus",
     "target": "boethius",
     "type": "SYNTHESIZED",
+    "label": "Synthesized Neoplatonic metaphysics and the One into the Consolation of Philosophy",
     "strength": 4,
-    "label": "Synthesized Neoplatonic metaphysics and the One into the Consolation of Philosophy"
+    "description": "Anicius Manlius Severinus Boethius synthesized Plotinus's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Plotinus's perspective to Anicius Manlius Severinus Boethius's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Hellenistic & Roman across history into the Medieval & Islamic Golden Age.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Anicius Manlius Severinus Boethius",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/boethius/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Plotinus",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/plotinus/"
+      }
+    ]
   }
 ]

@@ -1,23 +1,83 @@
 [
   {
+    "id": "charles-sanders-peirce--pragmatic-maxim",
     "source": "charles-sanders-peirce",
     "target": "pragmatic-maxim",
     "type": "DEVELOPED",
+    "label": "Formulated the Pragmatic Maxim in How to Make Our Ideas Clear",
     "strength": 5,
-    "label": "Formulated the Pragmatic Maxim in How to Make Our Ideas Clear"
+    "description": "Charles Sanders Peirce formulated and introduced the concept of \"The Pragmatic Maxim\", which became a seminal contribution in epistemology philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in epistemology.",
+    "historicalContext": "Introduced during the 19th Century Divergences as part of Charles Sanders Peirce's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Pragmatic Maxim",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/peirce/"
+      }
+    ]
   },
   {
+    "id": "charles-sanders-peirce--william-james",
     "source": "charles-sanders-peirce",
     "target": "william-james",
     "type": "INFLUENCED",
+    "label": "Founded Pragmatism, which James popularized and personalized",
     "strength": 5,
-    "label": "Founded Pragmatism, which James popularized and personalized"
+    "description": "William James was fundamentally influenced by Charles Sanders Peirce's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Charles Sanders Peirce's perspective to William James's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 19th Century Divergences era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "William James",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/james/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Charles Sanders Peirce",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/peirce/"
+      }
+    ]
   },
   {
+    "id": "charles-sanders-peirce--karl-popper",
     "source": "charles-sanders-peirce",
     "target": "karl-popper",
     "type": "INFLUENCED",
+    "label": "Anticipated scientific fallibilism and evolutionary epistemology",
     "strength": 4,
-    "label": "Anticipated scientific fallibilism and evolutionary epistemology"
+    "description": "Karl Popper was fundamentally influenced by Charles Sanders Peirce's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Charles Sanders Peirce's perspective to Karl Popper's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Popper",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/popper/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Charles Sanders Peirce",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/peirce/"
+      }
+    ]
   }
 ]

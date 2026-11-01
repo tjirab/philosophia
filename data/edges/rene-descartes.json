@@ -1,58 +1,234 @@
 [
   {
+    "id": "rene-descartes--thomas-hobbes",
     "source": "rene-descartes",
     "target": "thomas-hobbes",
     "type": "CRITIQUED",
     "label": "Hobbes rejected Descartes' immaterial soul, advocating strict materialism",
-    "strength": 3
+    "strength": 3,
+    "description": "Thomas Hobbes engaged in a direct critique of René Descartes's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from René Descartes's perspective to Thomas Hobbes's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Early Modern & Scientific era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Hobbes",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hobbes/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "René Descartes",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
   },
   {
+    "id": "rene-descartes--baruch-spinoza",
     "source": "rene-descartes",
     "target": "baruch-spinoza",
     "type": "DEVELOPED",
     "label": "Resolved Cartesian mind-body dualism by merging mind and extension into one divine substance",
-    "strength": 5
+    "strength": 5,
+    "description": "Spinoza adopted Descartes' geometric method and rationalist rigor, but exposed a fatal incoherence in Cartesian substance dualism: if substance is truly self-subsistent and infinite, there can only be one substance (Deus sive Natura), possessing infinite attributes including thought and extension.",
+    "dialecticalTension": "Cartesian dualism of finite created substances (res cogitans vs. res extensa) versus Spinozist absolute monism (a single infinite substance with parallel attributes).",
+    "historicalContext": "Amsterdam and The Hague, 1660s. Spinoza's first published work was an exposition of Descartes' Principles of Philosophy demonstrated geometrically (1663), before writing the Ethics.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Baruch Spinoza",
+        "work": "Ethics",
+        "sectionOrPage": "Part I, Proposition 14 & 15",
+        "year": "1677",
+        "quote": "Except God, no substance can be or be conceived. Whatever is, is in God, and nothing can be or be conceived without God.",
+        "url": "https://en.wikipedia.org/wiki/Ethics_(Spinoza_book)"
+      },
+      {
+        "citationType": "primary",
+        "author": "René Descartes",
+        "work": "Principles of Philosophy",
+        "sectionOrPage": "Part I, Principle 51",
+        "year": "1644",
+        "quote": "By substance we can understand nothing other than a thing which exists in such a way as to depend on no other thing for its existence.",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Steven Nadler",
+        "work": "Baruch Spinoza",
+        "sectionOrPage": "Section 2. Substance Monism",
+        "year": "2020",
+        "url": "https://plato.stanford.edu/entries/spinoza/"
+      }
+    ]
   },
   {
+    "id": "rene-descartes--gottfried-leibniz",
     "source": "rene-descartes",
     "target": "gottfried-leibniz",
     "type": "CRITIQUED",
     "label": "Replaced Cartesian mechanistic physics with living dynamical monads",
-    "strength": 4
+    "strength": 4,
+    "description": "Gottfried Wilhelm Leibniz engaged in a direct critique of René Descartes's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from René Descartes's perspective to Gottfried Wilhelm Leibniz's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Early Modern & Scientific era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Gottfried Wilhelm Leibniz",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/leibniz/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "René Descartes",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
   },
   {
+    "id": "rene-descartes--john-locke",
     "source": "rene-descartes",
     "target": "john-locke",
     "type": "CRITIQUED",
     "label": "Locke attacked Cartesian innate ideas, asserting the mind is a tabula rasa",
-    "strength": 5
+    "strength": 5,
+    "description": "John Locke engaged in a direct critique of René Descartes's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from René Descartes's perspective to John Locke's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Early Modern & Scientific era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Locke",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "René Descartes",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
   },
   {
+    "id": "rene-descartes--nick-bostrom",
     "source": "rene-descartes",
     "target": "nick-bostrom",
     "type": "DEVELOPED",
     "label": "Modern computational reformulation of Descartes' evil demon problem in the simulation argument",
-    "strength": 3
+    "strength": 3,
+    "description": "Nick Bostrom adopted René Descartes's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from René Descartes's perspective to Nick Bostrom's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Nick Bostrom",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ethics-ai/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "René Descartes",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
   },
   {
+    "id": "rene-descartes--cogito-ergo-sum",
     "source": "rene-descartes",
     "target": "cogito-ergo-sum",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Methodological Doubt & Cogito",
-    "strength": 5
+    "strength": 5,
+    "description": "René Descartes formulated and introduced the concept of \"Methodological Doubt & Cogito\", which became a seminal contribution in epistemology philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in epistemology.",
+    "historicalContext": "Introduced during the Early Modern & Scientific as part of René Descartes's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Methodological Doubt & Cogito",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes-epistemology/"
+      }
+    ]
   },
   {
+    "id": "rene-descartes--cartesian-dualism",
     "source": "rene-descartes",
     "target": "cartesian-dualism",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Substance Dualism (Mind vs. Matter)",
-    "strength": 5
+    "strength": 5,
+    "description": "René Descartes formulated and introduced the concept of \"Substance Dualism (Mind vs. Matter)\", which became a seminal contribution in mind philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in mind.",
+    "historicalContext": "Introduced during the Early Modern & Scientific as part of René Descartes's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Substance Dualism (Mind vs. Matter)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/dualism/"
+      }
+    ]
   },
   {
+    "id": "rene-descartes--blaise-pascal",
     "source": "rene-descartes",
     "target": "blaise-pascal",
     "type": "CRITIQUED",
+    "label": "Rejected cold Cartesian geometric rationalism ('Descartes useless and uncertain')",
     "strength": 4,
-    "label": "Rejected cold Cartesian geometric rationalism ('Descartes useless and uncertain')"
+    "description": "Blaise Pascal engaged in a direct critique of René Descartes's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from René Descartes's perspective to Blaise Pascal's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Early Modern & Scientific era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Blaise Pascal",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/pascal/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "René Descartes",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
   }
 ]

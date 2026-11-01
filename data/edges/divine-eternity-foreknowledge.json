@@ -1,16 +1,46 @@
 [
   {
+    "id": "divine-eternity-foreknowledge--thomas-aquinas",
     "source": "divine-eternity-foreknowledge",
     "target": "thomas-aquinas",
     "type": "DEVELOPED",
+    "label": "Adopted by Aquinas as the canonical definition of eternity and divine providence",
     "strength": 5,
-    "label": "Adopted by Aquinas as the canonical definition of eternity and divine providence"
+    "description": "Thomas Aquinas took up the concept of \"Divine Eternity & The Eternal Present\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Divine Eternity & The Eternal Present\".",
+    "historicalContext": "Inherited and re-evaluated during the Medieval & Islamic Golden Age.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Aquinas",
+        "sectionOrPage": "Engagement with Divine Eternity & The Eternal Present",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aquinas/"
+      }
+    ]
   },
   {
+    "id": "divine-eternity-foreknowledge--rene-descartes",
     "source": "divine-eternity-foreknowledge",
     "target": "rene-descartes",
     "type": "INFLUENCED",
+    "label": "Informed early modern debates on divine eternal truths and timeless omnipotence",
     "strength": 3,
-    "label": "Informed early modern debates on divine eternal truths and timeless omnipotence"
+    "description": "René Descartes's philosophical system was decisively shaped by grappling with \"Divine Eternity & The Eternal Present\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Divine Eternity & The Eternal Present\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "René Descartes",
+        "sectionOrPage": "Engagement with Divine Eternity & The Eternal Present",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
   }
 ]

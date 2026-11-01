@@ -1,16 +1,44 @@
 [
   {
+    "id": "instrumental-reason--jurgen-habermas",
     "source": "instrumental-reason",
     "target": "jurgen-habermas",
     "type": "CRITIQUED",
+    "label": "Habermas responded to Horkheimer's diagnosis of instrumental reason by proposing the paradigm of communicative rationality",
     "strength": 4,
-    "label": "Habermas responded to Horkheimer's diagnosis of instrumental reason by proposing the paradigm of communicative rationality"
+    "description": "Jürgen Habermas formulated a fundamental critique of \"Instrumental Reason & Eclipse of Reason\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Instrumental Reason & Eclipse of Reason\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jürgen Habermas",
+        "sectionOrPage": "Engagement with Instrumental Reason & Eclipse of Reason",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      }
+    ]
   },
   {
+    "id": "instrumental-reason--one-dimensional-man",
     "source": "instrumental-reason",
     "target": "one-dimensional-man",
     "type": "DEVELOPED",
+    "label": "Marcuse extended Horkheimer's instrumental reason into the pervasive technocratic rationality of advanced industrial society",
     "strength": 5,
-    "label": "Marcuse extended Horkheimer's instrumental reason into the pervasive technocratic rationality of advanced industrial society"
+    "description": "The concept of \"Instrumental Reason & Eclipse of Reason\" provided the logical and dialectical basis for the emergence of \"One-Dimensional Man & Repressive Desublimation\".",
+    "dialecticalTension": "Conceptual evolution from \"Instrumental Reason & Eclipse of Reason\" to \"One-Dimensional Man & Repressive Desublimation\".",
+    "historicalContext": "Conceptual development across philosophical history.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "History of Philosophy Archive",
+        "work": "Instrumental Reason & Eclipse of Reason and One-Dimensional Man & Repressive Desublimation",
+        "year": "2022"
+      }
+    ]
   }
 ]

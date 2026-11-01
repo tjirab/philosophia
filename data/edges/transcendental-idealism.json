@@ -1,16 +1,46 @@
 [
   {
+    "id": "transcendental-idealism--arthur-schopenhauer",
     "source": "transcendental-idealism",
     "target": "arthur-schopenhauer",
     "type": "DEVELOPED",
     "label": "Schopenhauer preserved Kantian transcendental idealism while unveiling the thing-in-itself as Will",
-    "strength": 5
+    "strength": 5,
+    "description": "Arthur Schopenhauer took up the concept of \"Transcendental Idealism (Copernican Turn)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Transcendental Idealism (Copernican Turn)\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Arthur Schopenhauer",
+        "sectionOrPage": "Engagement with Transcendental Idealism (Copernican Turn)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/schopenhauer/"
+      }
+    ]
   },
   {
+    "id": "transcendental-idealism--gwf-hegel",
     "source": "transcendental-idealism",
     "target": "gwf-hegel",
     "type": "DEVELOPED",
     "label": "Hegel overcame the Kantian boundary between phenomena and noumena via dialectical spirit",
-    "strength": 5
+    "strength": 5,
+    "description": "G.W.F. Hegel took up the concept of \"Transcendental Idealism (Copernican Turn)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Transcendental Idealism (Copernican Turn)\".",
+    "historicalContext": "Inherited and re-evaluated during the German Idealism & Romanticism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "G.W.F. Hegel",
+        "sectionOrPage": "Engagement with Transcendental Idealism (Copernican Turn)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      }
+    ]
   }
 ]

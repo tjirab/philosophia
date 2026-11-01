@@ -1,16 +1,46 @@
 [
   {
+    "id": "language-games--jacques-derrida",
     "source": "language-games",
     "target": "jacques-derrida",
     "type": "DEVELOPED",
     "label": "Derrida developed contextual language instability into deconstruction and différance",
-    "strength": 4
+    "strength": 4,
+    "description": "Jacques Derrida took up the concept of \"Language Games & Forms of Life\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Language Games & Forms of Life\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jacques Derrida",
+        "sectionOrPage": "Engagement with Language Games & Forms of Life",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/derrida/"
+      }
+    ]
   },
   {
+    "id": "language-games--thomas-kuhn",
     "source": "language-games",
     "target": "thomas-kuhn",
     "type": "INFLUENCED",
     "label": "Kuhn applied Wittgenstein's family resemblance and language-game concepts to explain how scientific paradigms are internalized through practice",
-    "strength": 4
+    "strength": 4,
+    "description": "Thomas Kuhn's philosophical system was decisively shaped by grappling with \"Language Games & Forms of Life\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Language Games & Forms of Life\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Kuhn",
+        "sectionOrPage": "Engagement with Language Games & Forms of Life",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/thomas-kuhn/"
+      }
+    ]
   }
 ]

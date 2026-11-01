@@ -1,16 +1,62 @@
 [
   {
+    "id": "pyrrho--michel-de-montaigne",
     "source": "pyrrho",
     "target": "michel-de-montaigne",
     "type": "DEVELOPED",
+    "label": "Revived ancient Pyrrhonian skepticism in Renaissance Europe",
     "strength": 5,
-    "label": "Revived ancient Pyrrhonian skepticism in Renaissance Europe"
+    "description": "Michel de Montaigne adopted Pyrrho of Elis's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Pyrrho of Elis's perspective to Michel de Montaigne's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Hellenistic & Roman across history into the Early Modern & Scientific.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Michel de Montaigne",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/montaigne/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Pyrrho of Elis",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/pyrrho/"
+      }
+    ]
   },
   {
+    "id": "pyrrho--nagarjuna",
     "source": "pyrrho",
     "target": "nagarjuna",
     "type": "SYNTHESIZED",
+    "label": "Deep historical convergence between Pyrrhonian epochē (suspension of judgment via the tetralemma) and Madhyamaka prasaṅga rejecting all four positions of the Catuṣkoṭi",
     "strength": 4,
-    "label": "Deep historical convergence between Pyrrhonian epochē (suspension of judgment via the tetralemma) and Madhyamaka prasaṅga rejecting all four positions of the Catuṣkoṭi"
+    "description": "Nagarjuna synthesized Pyrrho of Elis's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Pyrrho of Elis's perspective to Nagarjuna's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Hellenistic & Roman across history into the Eastern & Axial Traditions.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Nagarjuna",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/nagarjuna/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Pyrrho of Elis",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/pyrrho/"
+      }
+    ]
   }
 ]

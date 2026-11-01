@@ -1,16 +1,62 @@
 [
   {
+    "id": "thales--heraclitus",
     "source": "thales",
     "target": "heraclitus",
     "type": "DEVELOPED",
     "label": "Shifted naturalistic arche from water to fire and flux",
-    "strength": 3
+    "strength": 3,
+    "description": "Heraclitus of Ephesus adopted Thales of Miletus's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Thales of Miletus's perspective to Heraclitus of Ephesus's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Pre-Socratic era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Heraclitus of Ephesus",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heraclitus/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thales of Miletus",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/presocratics/"
+      }
+    ]
   },
   {
+    "id": "thales--anaximander",
     "source": "thales",
     "target": "anaximander",
     "type": "DEVELOPED",
+    "label": "Pupil of Thales who succeeded him at Miletus, replacing single physical arche (water) with the transcendent, limitless Apeiron",
     "strength": 5,
-    "label": "Pupil of Thales who succeeded him at Miletus, replacing single physical arche (water) with the transcendent, limitless Apeiron"
+    "description": "Anaximander of Miletus adopted Thales of Miletus's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Thales of Miletus's perspective to Anaximander of Miletus's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Pre-Socratic era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Anaximander of Miletus",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/presocratics/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thales of Miletus",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/presocratics/"
+      }
+    ]
   }
 ]

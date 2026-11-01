@@ -1,16 +1,46 @@
 [
   {
+    "id": "tabula-rasa--gottfried-leibniz",
     "source": "tabula-rasa",
     "target": "gottfried-leibniz",
     "type": "CRITIQUED",
     "label": "Leibniz defended innate ideas: Nothing in the intellect without senses, except intellect itself",
-    "strength": 5
+    "strength": 5,
+    "description": "Gottfried Wilhelm Leibniz formulated a fundamental critique of \"Tabula Rasa (The Blank Slate)\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Tabula Rasa (The Blank Slate)\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Gottfried Wilhelm Leibniz",
+        "sectionOrPage": "Engagement with Tabula Rasa (The Blank Slate)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/leibniz/"
+      }
+    ]
   },
   {
+    "id": "tabula-rasa--george-berkeley",
     "source": "tabula-rasa",
     "target": "george-berkeley",
     "type": "DEVELOPED",
     "label": "Berkeley radicalized Locke empiricism into immaterialist idealism (esse est percipi)",
-    "strength": 4
+    "strength": 4,
+    "description": "George Berkeley took up the concept of \"Tabula Rasa (The Blank Slate)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Tabula Rasa (The Blank Slate)\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "George Berkeley",
+        "sectionOrPage": "Engagement with Tabula Rasa (The Blank Slate)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/berkeley/"
+      }
+    ]
   }
 ]

@@ -1,16 +1,46 @@
 [
   {
+    "id": "sinn-und-bedeutung--bertrand-russell",
     "source": "sinn-und-bedeutung",
     "target": "bertrand-russell",
     "type": "DEVELOPED",
+    "label": "Led to Russell's Theory of Definite Descriptions (On Denoting)",
     "strength": 5,
-    "label": "Led to Russell's Theory of Definite Descriptions (On Denoting)"
+    "description": "Bertrand Russell took up the concept of \"Sense and Reference (Sinn und Bedeutung)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Sense and Reference (Sinn und Bedeutung)\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Bertrand Russell",
+        "sectionOrPage": "Engagement with Sense and Reference (Sinn und Bedeutung)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/russell/"
+      }
+    ]
   },
   {
+    "id": "sinn-und-bedeutung--ludwig-wittgenstein",
     "source": "sinn-und-bedeutung",
     "target": "ludwig-wittgenstein",
     "type": "DEVELOPED",
+    "label": "Foundation for Picture Theory of Meaning in the Tractatus",
     "strength": 5,
-    "label": "Foundation for Picture Theory of Meaning in the Tractatus"
+    "description": "Ludwig Wittgenstein took up the concept of \"Sense and Reference (Sinn und Bedeutung)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Sense and Reference (Sinn und Bedeutung)\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ludwig Wittgenstein",
+        "sectionOrPage": "Engagement with Sense and Reference (Sinn und Bedeutung)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/wittgenstein/"
+      }
+    ]
   }
 ]

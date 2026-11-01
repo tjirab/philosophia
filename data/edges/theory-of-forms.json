@@ -1,16 +1,46 @@
 [
   {
+    "id": "theory-of-forms--aristotle",
     "source": "theory-of-forms",
     "target": "aristotle",
     "type": "CRITIQUED",
     "label": "Aristotle rejected transcendent Forms in favor of immanent substance and empirical observation",
-    "strength": 5
+    "strength": 5,
+    "description": "Aristotle formulated a fundamental critique of \"Theory of Forms\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Theory of Forms\".",
+    "historicalContext": "Inherited and re-evaluated during the Classical Greek.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Aristotle",
+        "sectionOrPage": "Engagement with Theory of Forms",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aristotle/"
+      }
+    ]
   },
   {
+    "id": "theory-of-forms--plotinus",
     "source": "theory-of-forms",
     "target": "plotinus",
     "type": "DEVELOPED",
     "label": "Plotinus integrated Platonic Forms into the Divine Intellect (Nous)",
-    "strength": 4
+    "strength": 4,
+    "description": "Plotinus took up the concept of \"Theory of Forms\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Theory of Forms\".",
+    "historicalContext": "Inherited and re-evaluated during the Hellenistic & Roman.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Plotinus",
+        "sectionOrPage": "Engagement with Theory of Forms",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/plotinus/"
+      }
+    ]
   }
 ]

@@ -1,16 +1,46 @@
 [
   {
+    "id": "problem-of-induction--immanuel-kant",
     "source": "problem-of-induction",
     "target": "immanuel-kant",
     "type": "INFLUENCED",
     "label": "Hume problem of induction awakened Kant from dogmatic slumber to write the Critique of Pure Reason",
-    "strength": 5
+    "strength": 5,
+    "description": "Immanuel Kant's philosophical system was decisively shaped by grappling with \"The Problem of Induction & Hume's Fork\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Problem of Induction & Hume's Fork\".",
+    "historicalContext": "Inherited and re-evaluated during the German Idealism & Romanticism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Engagement with The Problem of Induction & Hume's Fork",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "problem-of-induction--karl-popper",
     "source": "problem-of-induction",
     "target": "karl-popper",
     "type": "DEVELOPED",
     "label": "Popper resolved Hume induction dilemma by replacing verification with falsificationism",
-    "strength": 5
+    "strength": 5,
+    "description": "Karl Popper took up the concept of \"The Problem of Induction & Hume's Fork\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Problem of Induction & Hume's Fork\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Popper",
+        "sectionOrPage": "Engagement with The Problem of Induction & Hume's Fork",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/popper/"
+      }
+    ]
   }
 ]

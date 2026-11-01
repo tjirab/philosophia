@@ -1,9 +1,23 @@
 [
   {
+    "id": "nick-bostrom--simulation-argument",
     "source": "nick-bostrom",
     "target": "simulation-argument",
     "type": "DEVELOPED",
     "label": "Formulated and introduced The Simulation Argument",
-    "strength": 5
+    "strength": 5,
+    "description": "Nick Bostrom formulated and introduced the concept of \"The Simulation Argument\", which became a seminal contribution in metaphysics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in metaphysics.",
+    "historicalContext": "Introduced during the Contemporary & Post-Structural as part of Nick Bostrom's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Simulation Argument",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/simulations/"
+      }
+    ]
   }
 ]

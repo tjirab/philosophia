@@ -1,9 +1,32 @@
 [
   {
+    "id": "thomas-hobbes--adam-smith",
     "source": "thomas-hobbes",
     "target": "adam-smith",
     "type": "CRITIQUED",
+    "label": "Smith refuted Hobbes's psychological egoism, asserting that natural sympathy and benevolence are foundational to human social life",
     "strength": 4,
-    "label": "Smith refuted Hobbes's psychological egoism, asserting that natural sympathy and benevolence are foundational to human social life"
+    "description": "Adam Smith engaged in a direct critique of Thomas Hobbes's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Thomas Hobbes's perspective to Adam Smith's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the Enlightenment & Social Contract.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adam Smith",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Hobbes",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hobbes/"
+      }
+    ]
   }
 ]

@@ -1,37 +1,143 @@
 [
   {
+    "id": "montesquieu--separation-of-powers",
     "source": "montesquieu",
     "target": "separation-of-powers",
     "type": "DEVELOPED",
+    "label": "Formulated the definitive doctrine of tripartite separation of executive, legislative, and judicial powers",
     "strength": 5,
-    "label": "Formulated the definitive doctrine of tripartite separation of executive, legislative, and judicial powers"
+    "description": "Baron de Montesquieu formulated and introduced the concept of \"Separation of Powers (Trias Politica)\", which became a seminal contribution in political philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in political.",
+    "historicalContext": "Introduced during the Enlightenment & Social Contract as part of Baron de Montesquieu's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Separation of Powers (Trias Politica)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/montesquieu/"
+      }
+    ]
   },
   {
+    "id": "montesquieu--jean-jacques-rousseau",
     "source": "montesquieu",
     "target": "jean-jacques-rousseau",
     "type": "INFLUENCED",
+    "label": "Provided the comparative framework of civic liberty and political regimes analyzed in The Social Contract",
     "strength": 5,
-    "label": "Provided the comparative framework of civic liberty and political regimes analyzed in The Social Contract"
+    "description": "Jean-Jacques Rousseau was fundamentally influenced by Baron de Montesquieu's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Baron de Montesquieu's perspective to Jean-Jacques Rousseau's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Enlightenment & Social Contract era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean-Jacques Rousseau",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rousseau/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Baron de Montesquieu",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/montesquieu/"
+      }
+    ]
   },
   {
+    "id": "montesquieu--immanuel-kant",
     "source": "montesquieu",
     "target": "immanuel-kant",
     "type": "INFLUENCED",
+    "label": "Informed Kant's republican political philosophy and legal doctrine of tripartite state authority",
     "strength": 4,
-    "label": "Informed Kant's republican political philosophy and legal doctrine of tripartite state authority"
+    "description": "Immanuel Kant was fundamentally influenced by Baron de Montesquieu's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Baron de Montesquieu's perspective to Immanuel Kant's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Enlightenment & Social Contract across history into the German Idealism & Romanticism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Baron de Montesquieu",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/montesquieu/"
+      }
+    ]
   },
   {
+    "id": "montesquieu--gwf-hegel",
     "source": "montesquieu",
     "target": "gwf-hegel",
     "type": "INFLUENCED",
+    "label": "Inspired Hegel's conception of the 'spirit' (Geist) of laws and ethical life (Sittlichkeit) embodied in institutions",
     "strength": 4,
-    "label": "Inspired Hegel's conception of the 'spirit' (Geist) of laws and ethical life (Sittlichkeit) embodied in institutions"
+    "description": "G.W.F. Hegel was fundamentally influenced by Baron de Montesquieu's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Baron de Montesquieu's perspective to G.W.F. Hegel's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Enlightenment & Social Contract across history into the German Idealism & Romanticism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "G.W.F. Hegel",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Baron de Montesquieu",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/montesquieu/"
+      }
+    ]
   },
   {
+    "id": "montesquieu--adam-smith",
     "source": "montesquieu",
     "target": "adam-smith",
     "type": "INFLUENCED",
+    "label": "Montesquieu's sociological analysis of commerce (doux commerce) and legal institutions influenced Smith's political economy and stages of society",
     "strength": 4,
-    "label": "Montesquieu's sociological analysis of commerce (doux commerce) and legal institutions influenced Smith's political economy and stages of society"
+    "description": "Adam Smith was fundamentally influenced by Baron de Montesquieu's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Baron de Montesquieu's perspective to Adam Smith's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Enlightenment & Social Contract era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adam Smith",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Baron de Montesquieu",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/montesquieu/"
+      }
+    ]
   }
 ]

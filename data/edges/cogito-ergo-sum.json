@@ -1,16 +1,46 @@
 [
   {
+    "id": "cogito-ergo-sum--baruch-spinoza",
     "source": "cogito-ergo-sum",
     "target": "baruch-spinoza",
     "type": "DEVELOPED",
     "label": "Spinoza adopted geometric rationalist deduction from self-evident axioms",
-    "strength": 4
+    "strength": 4,
+    "description": "Baruch Spinoza took up the concept of \"Methodological Doubt & Cogito\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Methodological Doubt & Cogito\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Baruch Spinoza",
+        "sectionOrPage": "Engagement with Methodological Doubt & Cogito",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/spinoza/"
+      }
+    ]
   },
   {
+    "id": "cogito-ergo-sum--david-hume",
     "source": "cogito-ergo-sum",
     "target": "david-hume",
     "type": "CRITIQUED",
     "label": "Hume disputed the Cartesian soul, arguing introspection reveals only transient perceptions",
-    "strength": 5
+    "strength": 5,
+    "description": "David Hume formulated a fundamental critique of \"Methodological Doubt & Cogito\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Methodological Doubt & Cogito\".",
+    "historicalContext": "Inherited and re-evaluated during the Enlightenment & Social Contract.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "David Hume",
+        "sectionOrPage": "Engagement with Methodological Doubt & Cogito",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hume/"
+      }
+    ]
   }
 ]

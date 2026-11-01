@@ -1,51 +1,203 @@
 [
   {
+    "id": "martin-heidegger--jean-paul-sartre",
     "source": "martin-heidegger",
     "target": "jean-paul-sartre",
     "type": "DEVELOPED",
     "label": "Applied Being-in-the-world to human freedom, anxiety, and existential choice",
-    "strength": 5
+    "strength": 5,
+    "description": "Jean-Paul Sartre adopted Martin Heidegger's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Martin Heidegger's perspective to Jean-Paul Sartre's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean-Paul Sartre",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/sartre/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Martin Heidegger",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heidegger/"
+      }
+    ]
   },
   {
+    "id": "martin-heidegger--jacques-derrida",
     "source": "martin-heidegger",
     "target": "jacques-derrida",
     "type": "DEVELOPED",
     "label": "Heidegger's 'destruction' of ontology developed into textual Deconstruction",
-    "strength": 5
+    "strength": 5,
+    "description": "Jacques Derrida adopted Martin Heidegger's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Martin Heidegger's perspective to Jacques Derrida's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jacques Derrida",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/derrida/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Martin Heidegger",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heidegger/"
+      }
+    ]
   },
   {
+    "id": "martin-heidegger--byung-chul-han",
     "source": "martin-heidegger",
     "target": "byung-chul-han",
     "type": "DEVELOPED",
     "label": "Critiques digital hyper-activity, calculation, and loss of profound contemplation",
-    "strength": 4
+    "strength": 4,
+    "description": "Byung-Chul Han adopted Martin Heidegger's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Martin Heidegger's perspective to Byung-Chul Han's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Byung-Chul Han",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/culture-cogsci/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Martin Heidegger",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heidegger/"
+      }
+    ]
   },
   {
+    "id": "martin-heidegger--dasein-being-in-the-world",
     "source": "martin-heidegger",
     "target": "dasein-being-in-the-world",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Dasein & Being-toward-Death",
-    "strength": 5
+    "strength": 5,
+    "description": "Martin Heidegger formulated and introduced the concept of \"Dasein & Being-toward-Death\", which became a seminal contribution in metaphysics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in metaphysics.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Martin Heidegger's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Dasein & Being-toward-Death",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heidegger/"
+      }
+    ]
   },
   {
+    "id": "martin-heidegger--maurice-merleau-ponty",
     "source": "martin-heidegger",
     "target": "maurice-merleau-ponty",
     "type": "SYNTHESIZED",
+    "label": "Integrated being-in-the-world with somatic perceptual psychology",
     "strength": 4,
-    "label": "Integrated being-in-the-world with somatic perceptual psychology"
+    "description": "Maurice Merleau-Ponty synthesized Martin Heidegger's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Martin Heidegger's perspective to Maurice Merleau-Ponty's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Maurice Merleau-Ponty",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/merleau-ponty/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Martin Heidegger",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heidegger/"
+      }
+    ]
   },
   {
+    "id": "martin-heidegger--emmanuel-levinas",
     "source": "martin-heidegger",
     "target": "emmanuel-levinas",
     "type": "CRITIQUED",
+    "label": "Vehemently critiqued Heidegger's ontology of Being for subordinating the ethical Other",
     "strength": 5,
-    "label": "Vehemently critiqued Heidegger's ontology of Being for subordinating the ethical Other"
+    "description": "Emmanuel Levinas engaged in a direct critique of Martin Heidegger's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Martin Heidegger's perspective to Emmanuel Levinas's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Emmanuel Levinas",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/levinas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Martin Heidegger",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heidegger/"
+      }
+    ]
   },
   {
+    "id": "martin-heidegger--herbert-marcuse",
     "source": "martin-heidegger",
     "target": "herbert-marcuse",
     "type": "INFLUENCED",
+    "label": "Studied under Heidegger, pursuing an early phenomenological Marxism before breaking decisively over Heidegger's support for National Socialism",
     "strength": 4,
-    "label": "Studied under Heidegger, pursuing an early phenomenological Marxism before breaking decisively over Heidegger's support for National Socialism"
+    "description": "Herbert Marcuse was fundamentally influenced by Martin Heidegger's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Martin Heidegger's perspective to Herbert Marcuse's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Herbert Marcuse",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marcuse/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Martin Heidegger",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heidegger/"
+      }
+    ]
   }
 ]

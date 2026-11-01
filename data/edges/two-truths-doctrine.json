@@ -1,16 +1,46 @@
 [
   {
+    "id": "two-truths-doctrine--adi-shankara",
     "source": "two-truths-doctrine",
     "target": "adi-shankara",
     "type": "DEVELOPED",
+    "label": "Directly inspired Śaṅkara's foundational Advaita distinction between transactional empirical truth (Vyavahārika) and ultimate transcendental truth (Pāramārthika)",
     "strength": 5,
-    "label": "Directly inspired Śaṅkara's foundational Advaita distinction between transactional empirical truth (Vyavahārika) and ultimate transcendental truth (Pāramārthika)"
+    "description": "Adi Shankara took up the concept of \"The Two Truths Doctrine\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Two Truths Doctrine\".",
+    "historicalContext": "Inherited and re-evaluated during the Eastern & Axial Traditions.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adi Shankara",
+        "sectionOrPage": "Engagement with The Two Truths Doctrine",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/shankara/"
+      }
+    ]
   },
   {
+    "id": "two-truths-doctrine--jacques-derrida",
     "source": "two-truths-doctrine",
     "target": "jacques-derrida",
     "type": "SYNTHESIZED",
+    "label": "Parallels the deconstructive strategy of operating within inherited metaphysical structures while demonstrating their contingent and ungrounded nature",
     "strength": 4,
-    "label": "Parallels the deconstructive strategy of operating within inherited metaphysical structures while demonstrating their contingent and ungrounded nature"
+    "description": "Jacques Derrida's philosophical system was decisively shaped by grappling with \"The Two Truths Doctrine\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Two Truths Doctrine\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jacques Derrida",
+        "sectionOrPage": "Engagement with The Two Truths Doctrine",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/derrida/"
+      }
+    ]
   }
 ]

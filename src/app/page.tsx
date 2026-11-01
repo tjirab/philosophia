@@ -20,6 +20,7 @@ import {
 import { Branch, EraId } from '../lib/types';
 import { ForceGraphView } from '../components/graph/ForceGraphView';
 import { DossierDrawer } from '../components/drawer/DossierDrawer';
+import { EdgeDossierDrawer } from '../components/drawer/EdgeDossierDrawer';
 import { LineagePathModal } from '../components/pathfinding/LineagePathModal';
 import { SearchPalette } from '../components/search/SearchPalette';
 import { GraphLegendModal } from '../components/legend/GraphLegendModal';
@@ -28,6 +29,7 @@ import { SuggestionModal } from '../components/submission/SuggestionModal';
 
 export default function HomePage() {
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  const [selectedEdgeId, setSelectedEdgeId] = useState<string | null>(null);
   const [selectedEraId, setSelectedEraId] = useState<string>('all');
   const [isolateEra, setIsolateEra] = useState<boolean>(true);
   const [selectedBranch, setSelectedBranch] = useState<Branch | 'all'>('all');
@@ -42,6 +44,20 @@ export default function HomePage() {
   const [suggestionTargetId, setSuggestionTargetId] = useState<string | null>(null);
   const [pathStartId, setPathStartId] = useState<string>('plato');
 
+  // Deep-linking URL parameter handler (e.g. ?focusEdge=socrates--plato or ?node=plato)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const searchParams = new URLSearchParams(window.location.search);
+      const edgeParam = searchParams.get('focusEdge') || searchParams.get('edge');
+      const nodeParam = searchParams.get('node');
+      if (edgeParam) {
+        setSelectedEdgeId(edgeParam);
+      } else if (nodeParam) {
+        setSelectedNodeId(nodeParam);
+      }
+    }
+  }, []);
+
   // Keyboard shortcut listener for Search (Cmd+K / Ctrl+K)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -54,6 +70,7 @@ export default function HomePage() {
         setIsPathModalOpen(false);
         setIsLegendOpen(false);
         setIsSuggestionOpen(false);
+        setSelectedEdgeId(null);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -84,9 +101,19 @@ export default function HomePage() {
 
   const handleSelectNode = useCallback((nodeId: string | null) => {
     setSelectedNodeId(nodeId);
+    if (nodeId) {
+      setSelectedEdgeId(null);
+    }
   }, []);
 
-  const handleOpenPathModal = useCallback((startId?: string) => {
+  const handleSelectEdge = useCallback((edgeId: string | null) => {
+    setSelectedEdgeId(edgeId);
+    if (edgeId) {
+      setSelectedNodeId(null);
+    }
+  }, []);
+
+  const handleOpenPathModal = useCallback((startId?: string, targetId?: string) => {
     if (startId) setPathStartId(startId);
     setIsPathModalOpen(true);
   }, []);
@@ -186,6 +213,8 @@ export default function HomePage() {
           links={links}
           selectedNodeId={selectedNodeId}
           onSelectNode={handleSelectNode}
+          selectedEdgeId={selectedEdgeId}
+          onSelectEdge={handleSelectEdge}
           highlightedPathNodes={highlightedPathNodes}
           onClearPath={handleClearPath}
           selectedBranch={selectedBranch}
@@ -201,13 +230,22 @@ export default function HomePage() {
         />
       </main>
 
-      {/* Slide-out Dossier Drawer */}
+      {/* Slide-out Node Dossier Drawer */}
       <DossierDrawer
         selectedNodeId={selectedNodeId}
         onClose={() => setSelectedNodeId(null)}
         onSelectNode={handleSelectNode}
+        onSelectEdge={handleSelectEdge}
         onTracePath={handleOpenPathModal}
         onOpenSuggestion={handleOpenSuggestion}
+      />
+
+      {/* Slide-out Edge Academic Proof Dossier Drawer */}
+      <EdgeDossierDrawer
+        selectedEdgeId={selectedEdgeId}
+        onClose={() => setSelectedEdgeId(null)}
+        onSelectNode={handleSelectNode}
+        onTracePath={handleOpenPathModal}
       />
 
       {/* Lineage Pathfinding Modal */}

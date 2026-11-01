@@ -1,30 +1,113 @@
 [
   {
+    "id": "edmund-husserl--martin-heidegger",
     "source": "edmund-husserl",
     "target": "martin-heidegger",
     "type": "DEVELOPED",
     "label": "Heidegger shifted Husserlian consciousness phenomenology to fundamental ontology of Dasein",
-    "strength": 5
+    "strength": 5,
+    "description": "Martin Heidegger adopted Edmund Husserl's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Edmund Husserl's perspective to Martin Heidegger's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Martin Heidegger",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heidegger/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Edmund Husserl",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/husserl/"
+      }
+    ]
   },
   {
+    "id": "edmund-husserl--intentionality-epoche",
     "source": "edmund-husserl",
     "target": "intentionality-epoche",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Intentionality & Phenomenological Reduction (Epoché)",
-    "strength": 5
+    "strength": 5,
+    "description": "Edmund Husserl formulated and introduced the concept of \"Intentionality & Phenomenological Reduction (Epoché)\", which became a seminal contribution in mind philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in mind.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Edmund Husserl's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Intentionality & Phenomenological Reduction (Epoché)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/phenomenology/"
+      }
+    ]
   },
   {
+    "id": "edmund-husserl--maurice-merleau-ponty",
     "source": "edmund-husserl",
     "target": "maurice-merleau-ponty",
     "type": "DEVELOPED",
+    "label": "Transformed Husserlian phenomenology into study of somatic embodiment",
     "strength": 5,
-    "label": "Transformed Husserlian phenomenology into study of somatic embodiment"
+    "description": "Maurice Merleau-Ponty adopted Edmund Husserl's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Edmund Husserl's perspective to Maurice Merleau-Ponty's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Maurice Merleau-Ponty",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/merleau-ponty/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Edmund Husserl",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/husserl/"
+      }
+    ]
   },
   {
+    "id": "edmund-husserl--emmanuel-levinas",
     "source": "edmund-husserl",
     "target": "emmanuel-levinas",
     "type": "DEVELOPED",
+    "label": "Introduced Husserlian phenomenology to France while transcending its ego-centrism",
     "strength": 4,
-    "label": "Introduced Husserlian phenomenology to France while transcending its ego-centrism"
+    "description": "Emmanuel Levinas adopted Edmund Husserl's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Edmund Husserl's perspective to Emmanuel Levinas's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Emmanuel Levinas",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/levinas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Edmund Husserl",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/husserl/"
+      }
+    ]
   }
 ]

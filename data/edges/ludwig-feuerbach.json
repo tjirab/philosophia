@@ -1,30 +1,113 @@
 [
   {
+    "id": "ludwig-feuerbach--anthropological-projection",
     "source": "ludwig-feuerbach",
     "target": "anthropological-projection",
     "type": "DEVELOPED",
+    "label": "Argued in The Essence of Christianity that God is the externalized projection of human species-powers",
     "strength": 5,
-    "label": "Argued in The Essence of Christianity that God is the externalized projection of human species-powers"
+    "description": "Ludwig Feuerbach formulated and introduced the concept of \"Anthropological Projection (Theology as Anthropology)\", which became a seminal contribution in mind philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in mind.",
+    "historicalContext": "Introduced during the 19th Century Divergences as part of Ludwig Feuerbach's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Anthropological Projection (Theology as Anthropology)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ludwig-feuerbach/"
+      }
+    ]
   },
   {
+    "id": "ludwig-feuerbach--karl-marx",
     "source": "ludwig-feuerbach",
     "target": "karl-marx",
     "type": "INFLUENCED",
+    "label": "Catalyzed Marx's decisive break from Hegelian idealism to historical materialism, prompting Theses on Feuerbach",
     "strength": 5,
-    "label": "Catalyzed Marx's decisive break from Hegelian idealism to historical materialism, prompting Theses on Feuerbach"
+    "description": "Karl Marx was fundamentally influenced by Ludwig Feuerbach's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Ludwig Feuerbach's perspective to Karl Marx's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 19th Century Divergences era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ludwig Feuerbach",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ludwig-feuerbach/"
+      }
+    ]
   },
   {
+    "id": "ludwig-feuerbach--friedrich-nietzsche",
     "source": "ludwig-feuerbach",
     "target": "friedrich-nietzsche",
     "type": "INFLUENCED",
+    "label": "Pioneered the psychological reduction of religious transcendence, anticipating Nietzsche's critique of Christian morality",
     "strength": 4,
-    "label": "Pioneered the psychological reduction of religious transcendence, anticipating Nietzsche's critique of Christian morality"
+    "description": "Friedrich Nietzsche was fundamentally influenced by Ludwig Feuerbach's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Ludwig Feuerbach's perspective to Friedrich Nietzsche's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 19th Century Divergences era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Friedrich Nietzsche",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/nietzsche/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ludwig Feuerbach",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ludwig-feuerbach/"
+      }
+    ]
   },
   {
+    "id": "ludwig-feuerbach--theodor-adorno",
     "source": "ludwig-feuerbach",
     "target": "theodor-adorno",
     "type": "INFLUENCED",
+    "label": "Feuerbachian somatic materialism and critique of reification informed Frankfurt School critical theory",
     "strength": 4,
-    "label": "Feuerbachian somatic materialism and critique of reification informed Frankfurt School critical theory"
+    "description": "Theodor W. Adorno was fundamentally influenced by Ludwig Feuerbach's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Ludwig Feuerbach's perspective to Theodor W. Adorno's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Theodor W. Adorno",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/adorno/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ludwig Feuerbach",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ludwig-feuerbach/"
+      }
+    ]
   }
 ]

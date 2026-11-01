@@ -1,9 +1,24 @@
 [
   {
+    "id": "world-as-will--friedrich-nietzsche",
     "source": "world-as-will",
     "target": "friedrich-nietzsche",
     "type": "DEVELOPED",
     "label": "Nietzsche transformed Schopenhauer passive Will to Live into the affirmative Will to Power",
-    "strength": 5
+    "strength": 5,
+    "description": "Friedrich Nietzsche took up the concept of \"The World as Will & Metaphysical Pessimism\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The World as Will & Metaphysical Pessimism\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Friedrich Nietzsche",
+        "sectionOrPage": "Engagement with The World as Will & Metaphysical Pessimism",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/nietzsche/"
+      }
+    ]
   }
 ]

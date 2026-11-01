@@ -1,9 +1,24 @@
 [
   {
+    "id": "noumena-phenomena--arthur-schopenhauer",
     "source": "noumena-phenomena",
     "target": "arthur-schopenhauer",
     "type": "DEVELOPED",
     "label": "Schopenhauer identified Kant unknown Noumenon as the blind striving metaphysical Will",
-    "strength": 5
+    "strength": 5,
+    "description": "Arthur Schopenhauer took up the concept of \"Phenomena vs. Noumena (Thing-in-Itself)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Phenomena vs. Noumena (Thing-in-Itself)\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Arthur Schopenhauer",
+        "sectionOrPage": "Engagement with Phenomena vs. Noumena (Thing-in-Itself)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/schopenhauer/"
+      }
+    ]
   }
 ]

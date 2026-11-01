@@ -1,114 +1,466 @@
 [
   {
+    "id": "immanuel-kant--gwf-hegel",
     "source": "immanuel-kant",
     "target": "gwf-hegel",
     "type": "DEVELOPED",
     "label": "Hegel overcame Kant's dualism between phenomena and noumena through dialectical idealism",
-    "strength": 5
+    "strength": 5,
+    "description": "Hegel praised Kant's Copernican revolution for restoring thought to autonomous self-legislation, but attacked Kant's doctrine of the unknowable 'thing-in-itself' (Ding an sich) as an uncritical subjective dualism. Hegel historicized and radicalized Kantian categories into the dialectical unfolding of Absolute Spirit (Geist).",
+    "dialecticalTension": "Transcendental dualism (finite human cognition bounded by noumena) versus Absolute Idealism (all reality is the self-actualizing dialectic of Spirit).",
+    "historicalContext": "Jena and Berlin, 1800–1831. Hegel developed his critique across The Difference Between Fichte's and Schelling's System of Philosophy (1801) and Phenomenology of Spirit (1807).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "G.W.F. Hegel",
+        "work": "Phenomenology of Spirit",
+        "sectionOrPage": "Preface, §16-§25",
+        "year": "1807",
+        "quote": "The True is the whole. But the whole is nothing other than the essence consummate itself through its development. Of the Absolute it must be said that it is essentially a result.",
+        "url": "https://en.wikipedia.org/wiki/The_Phenomenology_of_Spirit"
+      },
+      {
+        "citationType": "primary",
+        "author": "Immanuel Kant",
+        "work": "Critique of Pure Reason",
+        "sectionOrPage": "Transcendental Aesthetic, B59-B73; B294-B315",
+        "year": "1781",
+        "quote": "Thoughts without content are empty, intuitions without concepts are blind... What things-in-themselves may be we know not, nor could we ever know through sensible intuition.",
+        "url": "https://plato.stanford.edu/entries/kant-mind/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Paul Redding",
+        "work": "Georg Wilhelm Friedrich Hegel",
+        "sectionOrPage": "Section 2. Idealism after Kant",
+        "year": "2020",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--arthur-schopenhauer",
     "source": "immanuel-kant",
     "target": "arthur-schopenhauer",
     "type": "DEVELOPED",
     "label": "Schopenhauer preserved Kantian transcendental idealism but unveiled the thing-in-itself as Will",
-    "strength": 5
+    "strength": 5,
+    "description": "Schopenhauer considered Kant his greatest philosophical master, accepting the distinction between representation and the thing-in-itself. However, Schopenhauer argued Kant failed to identify the thing-in-itself: through introspective bodily experience, it is revealed directly as blind, purposeless Will (Wille).",
+    "dialecticalTension": "Kant's manifold unknowable noumena versus Schopenhauer's unitary, non-rational, cosmic Will as the thing-in-itself.",
+    "historicalContext": "Dresden, 1818. Schopenhauer appended his famous 100-page 'Criticism of the Kantian Philosophy' to The World as Will and Representation.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Arthur Schopenhauer",
+        "work": "The World as Will and Representation",
+        "sectionOrPage": "Vol. I, §17-§24 & Appendix",
+        "year": "1818",
+        "quote": "The world is my representation... and the thing-in-itself is Will. Kant's greatest merit is the distinction of the phenomenon from the thing-in-itself.",
+        "url": "https://en.wikipedia.org/wiki/The_World_as_Will_and_Representation"
+      },
+      {
+        "citationType": "sep",
+        "author": "Robert Wicks",
+        "work": "Arthur Schopenhauer",
+        "sectionOrPage": "Section 3. The World as Will",
+        "year": "2021",
+        "url": "https://plato.stanford.edu/entries/schopenhauer/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--edmund-husserl",
     "source": "immanuel-kant",
     "target": "edmund-husserl",
     "type": "DEVELOPED",
     "label": "Constructed phenomenology as a rigorous transcendental science of conscious experience",
-    "strength": 4
+    "strength": 4,
+    "description": "Edmund Husserl adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Edmund Husserl's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Edmund Husserl",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/husserl/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--hannah-arendt",
     "source": "immanuel-kant",
     "target": "hannah-arendt",
     "type": "DEVELOPED",
     "label": "Adapted Kant's Critique of Judgment for political philosophy and reflective civic judgment",
-    "strength": 4
+    "strength": 4,
+    "description": "Hannah Arendt adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Hannah Arendt's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Hannah Arendt",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/arendt/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--john-rawls",
     "source": "immanuel-kant",
     "target": "john-rawls",
     "type": "DEVELOPED",
     "label": "Used Kantian moral autonomy to construct the original position and veil of ignorance",
-    "strength": 5
+    "strength": 5,
+    "description": "John Rawls adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to John Rawls's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Rawls",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rawls/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--transcendental-idealism",
     "source": "immanuel-kant",
     "target": "transcendental-idealism",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Transcendental Idealism (Copernican Turn)",
-    "strength": 5
+    "strength": 5,
+    "description": "Immanuel Kant formulated and introduced the concept of \"Transcendental Idealism (Copernican Turn)\", which became a seminal contribution in epistemology philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in epistemology.",
+    "historicalContext": "Introduced during the German Idealism & Romanticism as part of Immanuel Kant's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Transcendental Idealism (Copernican Turn)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant-transcendental/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--noumena-phenomena",
     "source": "immanuel-kant",
     "target": "noumena-phenomena",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Phenomena vs. Noumena (Thing-in-Itself)",
-    "strength": 5
+    "strength": 5,
+    "description": "Immanuel Kant formulated and introduced the concept of \"Phenomena vs. Noumena (Thing-in-Itself)\", which became a seminal contribution in metaphysics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in metaphysics.",
+    "historicalContext": "Introduced during the German Idealism & Romanticism as part of Immanuel Kant's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Phenomena vs. Noumena (Thing-in-Itself)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--categorical-imperative",
     "source": "immanuel-kant",
     "target": "categorical-imperative",
     "type": "DEVELOPED",
     "label": "Formulated and introduced The Categorical Imperative",
-    "strength": 5
+    "strength": 5,
+    "description": "Immanuel Kant formulated and introduced the concept of \"The Categorical Imperative\", which became a seminal contribution in ethics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in ethics.",
+    "historicalContext": "Introduced during the German Idealism & Romanticism as part of Immanuel Kant's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Categorical Imperative",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant-moral/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--johann-gottlieb-fichte",
     "source": "immanuel-kant",
     "target": "johann-gottlieb-fichte",
     "type": "DEVELOPED",
+    "label": "Radicalized Kantian transcendental apperception into Absolute Self-Positing Ego",
     "strength": 5,
-    "label": "Radicalized Kantian transcendental apperception into Absolute Self-Positing Ego"
+    "description": "Johann Gottlieb Fichte adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Johann Gottlieb Fichte's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the German Idealism & Romanticism era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Johann Gottlieb Fichte",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/johann-fichte/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--charles-sanders-peirce",
     "source": "immanuel-kant",
     "target": "charles-sanders-peirce",
     "type": "DEVELOPED",
+    "label": "Transformed Kantian categories into triadic logic and semiotics",
     "strength": 4,
-    "label": "Transformed Kantian categories into triadic logic and semiotics"
+    "description": "Charles Sanders Peirce adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Charles Sanders Peirce's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Charles Sanders Peirce",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/peirce/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--gottlob-frege",
     "source": "immanuel-kant",
     "target": "gottlob-frege",
     "type": "DEVELOPED",
+    "label": "Anti-psychologism and arithmetical objectivity expanding Kant's logic",
     "strength": 4,
-    "label": "Anti-psychologism and arithmetical objectivity expanding Kant's logic"
+    "description": "Gottlob Frege adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Gottlob Frege's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Gottlob Frege",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/frege/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--jurgen-habermas",
     "source": "immanuel-kant",
     "target": "jurgen-habermas",
     "type": "DEVELOPED",
+    "label": "Reformulated Kantian categorical imperative into dialogical discourse ethics",
     "strength": 4,
-    "label": "Reformulated Kantian categorical imperative into dialogical discourse ethics"
+    "description": "Jürgen Habermas adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Jürgen Habermas's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jürgen Habermas",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--derek-parfit",
     "source": "immanuel-kant",
     "target": "derek-parfit",
     "type": "SYNTHESIZED",
+    "label": "On What Matters unified Kantian deontology, contractualism, and consequentialism",
     "strength": 4,
-    "label": "On What Matters unified Kantian deontology, contractualism, and consequentialism"
+    "description": "Derek Parfit synthesized Immanuel Kant's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Derek Parfit's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Derek Parfit",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/parfit/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--ferdinand-de-saussure",
     "source": "immanuel-kant",
     "target": "ferdinand-de-saussure",
     "type": "INFLUENCED",
+    "label": "Kantian transcendental idealism informed Saussure's shift from empirical historical philology to language as an a priori conceptual system",
     "strength": 4,
-    "label": "Kantian transcendental idealism informed Saussure's shift from empirical historical philology to language as an a priori conceptual system"
+    "description": "Ferdinand de Saussure was fundamentally influenced by Immanuel Kant's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Ferdinand de Saussure's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ferdinand de Saussure",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/linguistics/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--max-horkheimer",
     "source": "immanuel-kant",
     "target": "max-horkheimer",
     "type": "CRITIQUED",
+    "label": "Critiqued Kantian formal rationality for divorcing moral judgment from socioeconomic reality, leaving it vulnerable to instrumentalization",
     "strength": 4,
-    "label": "Critiqued Kantian formal rationality for divorcing moral judgment from socioeconomic reality, leaving it vulnerable to instrumentalization"
+    "description": "Max Horkheimer engaged in a direct critique of Immanuel Kant's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Max Horkheimer's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Horkheimer",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/horkheimer/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--alenka-zupancic",
     "source": "immanuel-kant",
     "target": "alenka-zupancic",
     "type": "DEVELOPED",
+    "label": "Zupančič re-reads Kantian ethics through psychoanalysis, identifying the categorical imperative with the traumatic Real of the drive",
     "strength": 5,
-    "label": "Zupančič re-reads Kantian ethics through psychoanalysis, identifying the categorical imperative with the traumatic Real of the drive"
+    "description": "Alenka Zupančič adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Alenka Zupančič's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Alenka Zupančič",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/lacan/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   }
 ]

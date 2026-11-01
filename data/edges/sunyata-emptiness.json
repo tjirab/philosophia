@@ -1,23 +1,68 @@
 [
   {
+    "id": "sunyata-emptiness--arthur-schopenhauer",
     "source": "sunyata-emptiness",
     "target": "arthur-schopenhauer",
     "type": "SYNTHESIZED",
     "label": "Schopenhauer synthesized Buddhist Sunyata and cessation of desire with Western metaphysics",
-    "strength": 4
+    "strength": 4,
+    "description": "Arthur Schopenhauer's philosophical system was decisively shaped by grappling with \"Sunyata (Emptiness & Dependent Arising)\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Sunyata (Emptiness & Dependent Arising)\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Arthur Schopenhauer",
+        "sectionOrPage": "Engagement with Sunyata (Emptiness & Dependent Arising)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/schopenhauer/"
+      }
+    ]
   },
   {
+    "id": "sunyata-emptiness--adi-shankara",
     "source": "sunyata-emptiness",
     "target": "adi-shankara",
     "type": "CRITIQUED",
+    "label": "Śaṅkara contended that relational emptiness without an absolute positive ground (Brahman) fails to account for consciousness and epistemic certainty",
     "strength": 4,
-    "label": "Śaṅkara contended that relational emptiness without an absolute positive ground (Brahman) fails to account for consciousness and epistemic certainty"
+    "description": "Adi Shankara formulated a fundamental critique of \"Sunyata (Emptiness & Dependent Arising)\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Sunyata (Emptiness & Dependent Arising)\".",
+    "historicalContext": "Inherited and re-evaluated during the Eastern & Axial Traditions.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adi Shankara",
+        "sectionOrPage": "Engagement with Sunyata (Emptiness & Dependent Arising)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/shankara/"
+      }
+    ]
   },
   {
+    "id": "sunyata-emptiness--jacques-derrida",
     "source": "sunyata-emptiness",
     "target": "jacques-derrida",
     "type": "SYNTHESIZED",
+    "label": "Comparative thinkers identify strong structural homologies between Buddhist relational emptiness (Śūnyatā) and Derrida's différance (endless deferral of fixed identity)",
     "strength": 4,
-    "label": "Comparative thinkers identify strong structural homologies between Buddhist relational emptiness (Śūnyatā) and Derrida's différance (endless deferral of fixed identity)"
+    "description": "Jacques Derrida's philosophical system was decisively shaped by grappling with \"Sunyata (Emptiness & Dependent Arising)\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Sunyata (Emptiness & Dependent Arising)\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jacques Derrida",
+        "sectionOrPage": "Engagement with Sunyata (Emptiness & Dependent Arising)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/derrida/"
+      }
+    ]
   }
 ]

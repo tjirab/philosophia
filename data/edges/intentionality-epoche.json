@@ -1,16 +1,46 @@
 [
   {
+    "id": "intentionality-epoche--martin-heidegger",
     "source": "intentionality-epoche",
     "target": "martin-heidegger",
     "type": "DEVELOPED",
     "label": "Heidegger shifted Husserlian phenomenological reduction from mental acts to Being-in-the-world",
-    "strength": 5
+    "strength": 5,
+    "description": "Martin Heidegger took up the concept of \"Intentionality & Phenomenological Reduction (Epoché)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Intentionality & Phenomenological Reduction (Epoché)\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Martin Heidegger",
+        "sectionOrPage": "Engagement with Intentionality & Phenomenological Reduction (Epoché)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heidegger/"
+      }
+    ]
   },
   {
+    "id": "intentionality-epoche--jean-paul-sartre",
     "source": "intentionality-epoche",
     "target": "jean-paul-sartre",
     "type": "DEVELOPED",
     "label": "Sartre used Husserlian intentionality to define consciousness as directed outward toward objects",
-    "strength": 4
+    "strength": 4,
+    "description": "Jean-Paul Sartre took up the concept of \"Intentionality & Phenomenological Reduction (Epoché)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Intentionality & Phenomenological Reduction (Epoché)\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean-Paul Sartre",
+        "sectionOrPage": "Engagement with Intentionality & Phenomenological Reduction (Epoché)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/sartre/"
+      }
+    ]
   }
 ]

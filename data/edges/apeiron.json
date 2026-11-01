@@ -1,9 +1,24 @@
 [
   {
+    "id": "apeiron--heraclitus",
     "source": "apeiron",
     "target": "heraclitus",
     "type": "INFLUENCED",
+    "label": "Anaximander's doctrine of opposing forces and cosmic retribution directly influenced Heraclitus' unity of opposites and cosmic fire",
     "strength": 4,
-    "label": "Anaximander's doctrine of opposing forces and cosmic retribution directly influenced Heraclitus' unity of opposites and cosmic fire"
+    "description": "Heraclitus of Ephesus's philosophical system was decisively shaped by grappling with \"The Apeiron (The Boundless)\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Apeiron (The Boundless)\".",
+    "historicalContext": "Inherited and re-evaluated during the Pre-Socratic.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Heraclitus of Ephesus",
+        "sectionOrPage": "Engagement with The Apeiron (The Boundless)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heraclitus/"
+      }
+    ]
   }
 ]

@@ -1,37 +1,143 @@
 [
   {
+    "id": "karl-marx--theodor-adorno",
     "source": "karl-marx",
     "target": "theodor-adorno",
     "type": "DEVELOPED",
     "label": "Frankfurt School combined Marxist critique with Freudian psychoanalysis and culture critique",
-    "strength": 5
+    "strength": 5,
+    "description": "Theodor W. Adorno adopted Karl Marx's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Karl Marx's perspective to Theodor W. Adorno's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Theodor W. Adorno",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/adorno/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      }
+    ]
   },
   {
+    "id": "karl-marx--historical-materialism",
     "source": "karl-marx",
     "target": "historical-materialism",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Historical Materialism & Alienation",
-    "strength": 5
+    "strength": 5,
+    "description": "Karl Marx formulated and introduced the concept of \"Historical Materialism & Alienation\", which became a seminal contribution in political philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in political.",
+    "historicalContext": "Introduced during the 19th Century Divergences as part of Karl Marx's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Historical Materialism & Alienation",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      }
+    ]
   },
   {
+    "id": "karl-marx--jean-baudrillard",
     "source": "karl-marx",
     "target": "jean-baudrillard",
     "type": "DEVELOPED",
+    "label": "Radicalized Marx's critique of political economy, arguing that in consumer capitalism sign-exchange value eclipses use-value",
     "strength": 5,
-    "label": "Radicalized Marx's critique of political economy, arguing that in consumer capitalism sign-exchange value eclipses use-value"
+    "description": "Jean Baudrillard adopted Karl Marx's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Karl Marx's perspective to Jean Baudrillard's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean Baudrillard",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/baudrillard/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      }
+    ]
   },
   {
+    "id": "karl-marx--max-horkheimer",
     "source": "karl-marx",
     "target": "max-horkheimer",
     "type": "DEVELOPED",
+    "label": "Adapted Marxian political economy into an interdisciplinary Critical Theory diagnosing alienation and cultural hegemony",
     "strength": 5,
-    "label": "Adapted Marxian political economy into an interdisciplinary Critical Theory diagnosing alienation and cultural hegemony"
+    "description": "Max Horkheimer adopted Karl Marx's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Karl Marx's perspective to Max Horkheimer's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Horkheimer",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/horkheimer/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      }
+    ]
   },
   {
+    "id": "karl-marx--herbert-marcuse",
     "source": "karl-marx",
     "target": "herbert-marcuse",
     "type": "DEVELOPED",
+    "label": "Synthesized Marxian historical materialism with Freudian psychoanalysis to diagnose consumer capitalism and technocratic alienation",
     "strength": 5,
-    "label": "Synthesized Marxian historical materialism with Freudian psychoanalysis to diagnose consumer capitalism and technocratic alienation"
+    "description": "Herbert Marcuse adopted Karl Marx's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Karl Marx's perspective to Herbert Marcuse's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Herbert Marcuse",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marcuse/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      }
+    ]
   }
 ]

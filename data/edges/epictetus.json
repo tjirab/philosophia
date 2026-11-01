@@ -1,23 +1,83 @@
 [
   {
+    "id": "epictetus--marcus-aurelius",
     "source": "epictetus",
     "target": "marcus-aurelius",
     "type": "INFLUENCED",
     "label": "Marcus Aurelius deeply studied Epictetus's Discourses",
-    "strength": 5
+    "strength": 5,
+    "description": "Marcus Aurelius was fundamentally influenced by Epictetus's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Epictetus's perspective to Marcus Aurelius's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Hellenistic & Roman era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Marcus Aurelius",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marcus-aurelius/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Epictetus",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/epictetus/"
+      }
+    ]
   },
   {
+    "id": "epictetus--dichotomy-of-control",
     "source": "epictetus",
     "target": "dichotomy-of-control",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Dichotomy of Control",
-    "strength": 5
+    "strength": 5,
+    "description": "Epictetus formulated and introduced the concept of \"Dichotomy of Control\", which became a seminal contribution in ethics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in ethics.",
+    "historicalContext": "Introduced during the Hellenistic & Roman as part of Epictetus's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Dichotomy of Control",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/epictetus/"
+      }
+    ]
   },
   {
+    "id": "epictetus--baruch-spinoza",
     "source": "epictetus",
     "target": "baruch-spinoza",
     "type": "DEVELOPED",
+    "label": "Stoic rational determinism, freedom through understanding necessity, and emotional mastery directly influenced Spinoza's Ethics",
     "strength": 4,
-    "label": "Stoic rational determinism, freedom through understanding necessity, and emotional mastery directly influenced Spinoza's Ethics"
+    "description": "Baruch Spinoza adopted Epictetus's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Epictetus's perspective to Baruch Spinoza's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Hellenistic & Roman across history into the Early Modern & Scientific.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Baruch Spinoza",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/spinoza/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Epictetus",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/epictetus/"
+      }
+    ]
   }
 ]

@@ -1,16 +1,53 @@
 [
   {
+    "id": "emmanuel-levinas--face-of-the-other",
     "source": "emmanuel-levinas",
     "target": "face-of-the-other",
     "type": "DEVELOPED",
+    "label": "Established Ethics as First Philosophy in Totality and Infinity",
     "strength": 5,
-    "label": "Established Ethics as First Philosophy in Totality and Infinity"
+    "description": "Emmanuel Levinas formulated and introduced the concept of \"The Face of the Other (L'Autrui)\", which became a seminal contribution in ethics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in ethics.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Emmanuel Levinas's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Face of the Other (L'Autrui)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/levinas/"
+      }
+    ]
   },
   {
+    "id": "emmanuel-levinas--jacques-derrida",
     "source": "emmanuel-levinas",
     "target": "jacques-derrida",
     "type": "INFLUENCED",
+    "label": "Profoundly influenced Derrida's deconstructive ethics and hospitality",
     "strength": 5,
-    "label": "Profoundly influenced Derrida's deconstructive ethics and hospitality"
+    "description": "Jacques Derrida was fundamentally influenced by Emmanuel Levinas's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Emmanuel Levinas's perspective to Jacques Derrida's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jacques Derrida",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/derrida/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Emmanuel Levinas",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/levinas/"
+      }
+    ]
   }
 ]

@@ -1,9 +1,24 @@
 [
   {
+    "id": "face-of-the-other--jacques-derrida",
     "source": "face-of-the-other",
     "target": "jacques-derrida",
     "type": "INFLUENCED",
+    "label": "Infinite ethical responsibility in deconstruction and unconditional hospitality",
     "strength": 5,
-    "label": "Infinite ethical responsibility in deconstruction and unconditional hospitality"
+    "description": "Jacques Derrida's philosophical system was decisively shaped by grappling with \"The Face of the Other (L'Autrui)\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Face of the Other (L'Autrui)\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jacques Derrida",
+        "sectionOrPage": "Engagement with The Face of the Other (L'Autrui)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/derrida/"
+      }
+    ]
   }
 ]

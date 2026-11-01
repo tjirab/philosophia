@@ -1,9 +1,24 @@
 [
   {
+    "id": "pyrrho-skeptical-doubt--rene-descartes",
     "source": "pyrrho-skeptical-doubt",
     "target": "rene-descartes",
     "type": "DEVELOPED",
+    "label": "Systematized into Cartesian Methodological Doubt",
     "strength": 5,
-    "label": "Systematized into Cartesian Methodological Doubt"
+    "description": "René Descartes took up the concept of \"Pyrrhonian Essayistic Skepticism (Que sais-je?)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Pyrrhonian Essayistic Skepticism (Que sais-je?)\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "René Descartes",
+        "sectionOrPage": "Engagement with Pyrrhonian Essayistic Skepticism (Que sais-je?)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
   }
 ]

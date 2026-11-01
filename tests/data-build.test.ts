@@ -61,6 +61,9 @@ describe('Modular Data Architecture & Compiler', () => {
       for (const edge of edgeList) {
         expect(edge.source, `File ${file} has edge missing source`).toBeDefined();
         expect(edge.target, `File ${file} has edge missing target`).toBeDefined();
+        expect(edge.id, `File ${file} has edge missing id`).toBeDefined();
+        expect(edge.description, `File ${file} has edge missing description`).toBeDefined();
+        expect(Array.isArray(edge.citations), `File ${file} has edge missing citations`).toBe(true);
         expect(validTypes.has(edge.type), `File ${file} has invalid edge type ${edge.type}`).toBe(true);
         expect(typeof edge.strength).toBe('number');
         totalEdges++;

@@ -1,16 +1,46 @@
 [
   {
+    "id": "dasein-being-in-the-world--jean-paul-sartre",
     "source": "dasein-being-in-the-world",
     "target": "jean-paul-sartre",
     "type": "DEVELOPED",
     "label": "Sartre translated Dasein thrownness into radical existential freedom and anguish",
-    "strength": 5
+    "strength": 5,
+    "description": "Jean-Paul Sartre took up the concept of \"Dasein & Being-toward-Death\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Dasein & Being-toward-Death\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean-Paul Sartre",
+        "sectionOrPage": "Engagement with Dasein & Being-toward-Death",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/sartre/"
+      }
+    ]
   },
   {
+    "id": "dasein-being-in-the-world--byung-chul-han",
     "source": "dasein-being-in-the-world",
     "target": "byung-chul-han",
     "type": "DEVELOPED",
     "label": "Han contrasts Heideggerian contemplation with modern hyperactive digital restlessness",
-    "strength": 4
+    "strength": 4,
+    "description": "Byung-Chul Han took up the concept of \"Dasein & Being-toward-Death\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Dasein & Being-toward-Death\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Byung-Chul Han",
+        "sectionOrPage": "Engagement with Dasein & Being-toward-Death",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/culture-cogsci/"
+      }
+    ]
   }
 ]

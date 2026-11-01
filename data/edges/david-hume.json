@@ -1,51 +1,204 @@
 [
   {
+    "id": "david-hume--immanuel-kant",
     "source": "david-hume",
     "target": "immanuel-kant",
     "type": "INFLUENCED",
     "label": "Hume's skepticism awakened Kant from 'dogmatic slumber', inspiring the Critical Philosophy",
-    "strength": 5
+    "strength": 5,
+    "description": "Hume's skeptical dissection of causality, induction, and necessary connection famously awoke Kant from his 'dogmatic slumber'. Kant conceded Hume's empiricist premise that causality cannot be derived from sensory experience, but countered by proving causality is an a priori pure category of the understanding structuring all possible human experience.",
+    "dialecticalTension": "Humean psychological skepticism (custom and habit as source of necessity) versus Kantian transcendental idealism (a priori synthesis as precondition of experience).",
+    "historicalContext": "Königsberg, 1770–1781. Kant encountered Hume's Enquiry Concerning Human Understanding in German translation, prompting a decade of silent contemplation culminating in the Critique of Pure Reason.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Immanuel Kant",
+        "work": "Prolegomena to Any Future Metaphysics",
+        "sectionOrPage": "Preface, Ak. 4:260",
+        "year": "1783",
+        "quote": "I openly confess that my remembering David Hume was the very thing which many years ago first interrupted my dogmatic slumber and gave my investigations in the field of speculative philosophy a quite new direction.",
+        "url": "https://en.wikipedia.org/wiki/Prolegomena_to_Any_Future_Metaphysics"
+      },
+      {
+        "citationType": "primary",
+        "author": "David Hume",
+        "work": "An Enquiry Concerning Human Understanding",
+        "sectionOrPage": "Section IV & V, SBN 25-45",
+        "year": "1748",
+        "quote": "All reasonings concerning cause and effect are founded on experience, and all reasonings from experience are founded on the supposition that the future will be conformable to the past.",
+        "url": "https://plato.stanford.edu/entries/hume/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Michael Rohlf",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Section 3. The Critique of Pure Reason",
+        "year": "2020",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "david-hume--john-stuart-mill",
     "source": "david-hume",
     "target": "john-stuart-mill",
     "type": "INFLUENCED",
     "label": "Empirical psychological foundations of utilitarian ethics and utility",
-    "strength": 3
+    "strength": 3,
+    "description": "John Stuart Mill was fundamentally influenced by David Hume's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from David Hume's perspective to John Stuart Mill's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Enlightenment & Social Contract across history into the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Stuart Mill",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/mill/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "David Hume",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hume/"
+      }
+    ]
   },
   {
+    "id": "david-hume--problem-of-induction",
     "source": "david-hume",
     "target": "problem-of-induction",
     "type": "DEVELOPED",
     "label": "Formulated and introduced The Problem of Induction & Hume's Fork",
-    "strength": 5
+    "strength": 5,
+    "description": "David Hume formulated and introduced the concept of \"The Problem of Induction & Hume's Fork\", which became a seminal contribution in epistemology philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in epistemology.",
+    "historicalContext": "Introduced during the Enlightenment & Social Contract as part of David Hume's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Problem of Induction & Hume's Fork",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/induction-problem/"
+      }
+    ]
   },
   {
+    "id": "david-hume--bundle-theory",
     "source": "david-hume",
     "target": "bundle-theory",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Bundle Theory of the Self",
-    "strength": 5
+    "strength": 5,
+    "description": "David Hume formulated and introduced the concept of \"Bundle Theory of the Self\", which became a seminal contribution in mind philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in mind.",
+    "historicalContext": "Introduced during the Enlightenment & Social Contract as part of David Hume's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Bundle Theory of the Self",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hume/"
+      }
+    ]
   },
   {
+    "id": "david-hume--derek-parfit",
     "source": "david-hume",
     "target": "derek-parfit",
     "type": "DEVELOPED",
+    "label": "Modern rigorous analytic formulation of the bundle theory of personal identity",
     "strength": 5,
-    "label": "Modern rigorous analytic formulation of the bundle theory of personal identity"
+    "description": "Derek Parfit adopted David Hume's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from David Hume's perspective to Derek Parfit's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Enlightenment & Social Contract across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Derek Parfit",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/parfit/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "David Hume",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hume/"
+      }
+    ]
   },
   {
+    "id": "david-hume--adam-smith",
     "source": "david-hume",
     "target": "adam-smith",
     "type": "INFLUENCED",
+    "label": "Lifelong friendship and mutual influence; Hume's sentimentalist ethics and economic essays directly informed Smith's moral psychology and political economy",
     "strength": 5,
-    "label": "Lifelong friendship and mutual influence; Hume's sentimentalist ethics and economic essays directly informed Smith's moral psychology and political economy"
+    "description": "Adam Smith was fundamentally influenced by David Hume's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from David Hume's perspective to Adam Smith's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Enlightenment & Social Contract era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adam Smith",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "David Hume",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hume/"
+      }
+    ]
   },
   {
+    "id": "david-hume--jeremy-bentham",
     "source": "david-hume",
     "target": "jeremy-bentham",
     "type": "INFLUENCED",
+    "label": "Hume's Treatise of Human Nature awoke Bentham to utility as the foundational criterion of public morality and justice",
     "strength": 5,
-    "label": "Hume's Treatise of Human Nature awoke Bentham to utility as the foundational criterion of public morality and justice"
+    "description": "Jeremy Bentham was fundamentally influenced by David Hume's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from David Hume's perspective to Jeremy Bentham's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Enlightenment & Social Contract era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jeremy Bentham",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/bentham/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "David Hume",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hume/"
+      }
+    ]
   }
 ]

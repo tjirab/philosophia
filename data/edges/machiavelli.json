@@ -1,16 +1,62 @@
 [
   {
+    "id": "machiavelli--thomas-hobbes",
     "source": "machiavelli",
     "target": "thomas-hobbes",
     "type": "DEVELOPED",
+    "label": "Pioneered secular political realism and human self-interest, setting the groundwork for Hobbes' Leviathan and state of nature",
     "strength": 5,
-    "label": "Pioneered secular political realism and human self-interest, setting the groundwork for Hobbes' Leviathan and state of nature"
+    "description": "Thomas Hobbes adopted Niccolò Machiavelli's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Niccolò Machiavelli's perspective to Thomas Hobbes's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Early Modern & Scientific era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Hobbes",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hobbes/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Niccolò Machiavelli",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/machiavelli/"
+      }
+    ]
   },
   {
+    "id": "machiavelli--francis-bacon",
     "source": "machiavelli",
     "target": "francis-bacon",
     "type": "INFLUENCED",
+    "label": "Bacon praised Machiavelli for describing what men do rather than what they ought to do, establishing empirical political observation",
     "strength": 4,
-    "label": "Bacon praised Machiavelli for describing what men do rather than what they ought to do, establishing empirical political observation"
+    "description": "Francis Bacon was fundamentally influenced by Niccolò Machiavelli's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Niccolò Machiavelli's perspective to Francis Bacon's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Early Modern & Scientific era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Francis Bacon",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/francis-bacon/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Niccolò Machiavelli",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/machiavelli/"
+      }
+    ]
   }
 ]

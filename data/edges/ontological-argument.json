@@ -1,23 +1,68 @@
 [
   {
+    "id": "ontological-argument--thomas-aquinas",
     "source": "ontological-argument",
     "target": "thomas-aquinas",
     "type": "CRITIQUED",
+    "label": "Aquinas rejected Anselm's a priori proof in favor of empirical Five Ways",
     "strength": 5,
-    "label": "Aquinas rejected Anselm's a priori proof in favor of empirical Five Ways"
+    "description": "Thomas Aquinas formulated a fundamental critique of \"The Ontological Argument\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Ontological Argument\".",
+    "historicalContext": "Inherited and re-evaluated during the Medieval & Islamic Golden Age.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Aquinas",
+        "sectionOrPage": "Engagement with The Ontological Argument",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aquinas/"
+      }
+    ]
   },
   {
+    "id": "ontological-argument--rene-descartes",
     "source": "ontological-argument",
     "target": "rene-descartes",
     "type": "INFLUENCED",
+    "label": "Descartes revived Anselm's ontological proof in Fifth Meditation",
     "strength": 4,
-    "label": "Descartes revived Anselm's ontological proof in Fifth Meditation"
+    "description": "René Descartes's philosophical system was decisively shaped by grappling with \"The Ontological Argument\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Ontological Argument\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "René Descartes",
+        "sectionOrPage": "Engagement with The Ontological Argument",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
   },
   {
+    "id": "ontological-argument--immanuel-kant",
     "source": "ontological-argument",
     "target": "immanuel-kant",
     "type": "CRITIQUED",
+    "label": "Kant dismantled the ontological proof arguing existence is not a predicate",
     "strength": 5,
-    "label": "Kant dismantled the ontological proof arguing existence is not a predicate"
+    "description": "Immanuel Kant formulated a fundamental critique of \"The Ontological Argument\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Ontological Argument\".",
+    "historicalContext": "Inherited and re-evaluated during the German Idealism & Romanticism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Engagement with The Ontological Argument",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   }
 ]

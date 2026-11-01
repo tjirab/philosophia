@@ -1,9 +1,22 @@
 [
   {
+    "id": "normal-science--paradigm-shift",
     "source": "normal-science",
     "target": "paradigm-shift",
     "type": "DEVELOPED",
+    "label": "Anomalies accumulating during normal science precipitate theoretical crisis, culminating in a paradigm shift",
     "strength": 4,
-    "label": "Anomalies accumulating during normal science precipitate theoretical crisis, culminating in a paradigm shift"
+    "description": "The concept of \"Normal Science & Puzzle-Solving\" provided the logical and dialectical basis for the emergence of \"Paradigm Shift & Scientific Revolutions\".",
+    "dialecticalTension": "Conceptual evolution from \"Normal Science & Puzzle-Solving\" to \"Paradigm Shift & Scientific Revolutions\".",
+    "historicalContext": "Conceptual development across philosophical history.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "History of Philosophy Archive",
+        "work": "Normal Science & Puzzle-Solving and Paradigm Shift & Scientific Revolutions",
+        "year": "2022"
+      }
+    ]
   }
 ]

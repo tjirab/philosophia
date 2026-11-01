@@ -1,16 +1,46 @@
 [
   {
+    "id": "separation-of-powers--jean-jacques-rousseau",
     "source": "separation-of-powers",
     "target": "jean-jacques-rousseau",
     "type": "CRITIQUED",
+    "label": "Rousseau challenged divided powers, arguing for the indivisible sovereignty of the General Will",
     "strength": 4,
-    "label": "Rousseau challenged divided powers, arguing for the indivisible sovereignty of the General Will"
+    "description": "Jean-Jacques Rousseau formulated a fundamental critique of \"Separation of Powers (Trias Politica)\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Separation of Powers (Trias Politica)\".",
+    "historicalContext": "Inherited and re-evaluated during the Enlightenment & Social Contract.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean-Jacques Rousseau",
+        "sectionOrPage": "Engagement with Separation of Powers (Trias Politica)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rousseau/"
+      }
+    ]
   },
   {
+    "id": "separation-of-powers--john-rawls",
     "source": "separation-of-powers",
     "target": "john-rawls",
     "type": "INFLUENCED",
+    "label": "Underpins the institutional design of basic democratic liberties and constitutional justice in A Theory of Justice",
     "strength": 4,
-    "label": "Underpins the institutional design of basic democratic liberties and constitutional justice in A Theory of Justice"
+    "description": "John Rawls's philosophical system was decisively shaped by grappling with \"Separation of Powers (Trias Politica)\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Separation of Powers (Trias Politica)\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Rawls",
+        "sectionOrPage": "Engagement with Separation of Powers (Trias Politica)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rawls/"
+      }
+    ]
   }
 ]

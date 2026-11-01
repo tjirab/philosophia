@@ -1,58 +1,233 @@
 [
   {
+    "id": "john-locke--george-berkeley",
     "source": "john-locke",
     "target": "george-berkeley",
     "type": "DEVELOPED",
     "label": "Extended Locke's empiricism to deny the existence of unperceived mind-independent matter",
-    "strength": 4
+    "strength": 4,
+    "description": "George Berkeley adopted John Locke's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from John Locke's perspective to George Berkeley's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Early Modern & Scientific era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "George Berkeley",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/berkeley/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Locke",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
   },
   {
+    "id": "john-locke--jean-jacques-rousseau",
     "source": "john-locke",
     "target": "jean-jacques-rousseau",
     "type": "DEVELOPED",
     "label": "Transformed liberal social contract theory into democratic sovereignty and the General Will",
-    "strength": 4
+    "strength": 4,
+    "description": "Jean-Jacques Rousseau adopted John Locke's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from John Locke's perspective to Jean-Jacques Rousseau's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the Enlightenment & Social Contract.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean-Jacques Rousseau",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rousseau/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Locke",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
   },
   {
+    "id": "john-locke--william-james",
     "source": "john-locke",
     "target": "william-james",
     "type": "DEVELOPED",
     "label": "Radicalized empiricism into pragmatic inquiry based on experiential consequences",
-    "strength": 3
+    "strength": 3,
+    "description": "William James adopted John Locke's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from John Locke's perspective to William James's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "William James",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/james/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Locke",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
   },
   {
+    "id": "john-locke--tabula-rasa",
     "source": "john-locke",
     "target": "tabula-rasa",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Tabula Rasa (The Blank Slate)",
-    "strength": 5
+    "strength": 5,
+    "description": "John Locke formulated and introduced the concept of \"Tabula Rasa (The Blank Slate)\", which became a seminal contribution in epistemology philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in epistemology.",
+    "historicalContext": "Introduced during the Early Modern & Scientific as part of John Locke's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Tabula Rasa (The Blank Slate)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
   },
   {
+    "id": "john-locke--montesquieu",
     "source": "john-locke",
     "target": "montesquieu",
     "type": "DEVELOPED",
+    "label": "Expanded Locke's bipartite legislative/executive distinction into the tripartite checks and balances doctrine",
     "strength": 5,
-    "label": "Expanded Locke's bipartite legislative/executive distinction into the tripartite checks and balances doctrine"
+    "description": "Baron de Montesquieu adopted John Locke's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from John Locke's perspective to Baron de Montesquieu's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the Enlightenment & Social Contract.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Baron de Montesquieu",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/montesquieu/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Locke",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
   },
   {
+    "id": "john-locke--adam-smith",
     "source": "john-locke",
     "target": "adam-smith",
     "type": "DEVELOPED",
+    "label": "Smith extended Locke's labor theory of property into a labor theory of value and commercial liberty",
     "strength": 4,
-    "label": "Smith extended Locke's labor theory of property into a labor theory of value and commercial liberty"
+    "description": "Adam Smith adopted John Locke's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from John Locke's perspective to Adam Smith's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the Enlightenment & Social Contract.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adam Smith",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Locke",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
   },
   {
+    "id": "john-locke--voltaire",
     "source": "john-locke",
     "target": "voltaire",
     "type": "INFLUENCED",
+    "label": "Introduced Locke's empiricism, epistemological humility, and religious toleration to France via the Letters on the English",
     "strength": 5,
-    "label": "Introduced Locke's empiricism, epistemological humility, and religious toleration to France via the Letters on the English"
+    "description": "Voltaire (François-Marie Arouet) was fundamentally influenced by John Locke's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from John Locke's perspective to Voltaire (François-Marie Arouet)'s reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the Enlightenment & Social Contract.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Voltaire (François-Marie Arouet)",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/voltaire/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Locke",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
   },
   {
+    "id": "john-locke--mary-wollstonecraft",
     "source": "john-locke",
     "target": "mary-wollstonecraft",
     "type": "DEVELOPED",
+    "label": "Applied Locke's tabula rasa empiricism and natural rights to demonstrate that female inferiority is an artificial product of socialization and denied education",
     "strength": 5,
-    "label": "Applied Locke's tabula rasa empiricism and natural rights to demonstrate that female inferiority is an artificial product of socialization and denied education"
+    "description": "Mary Wollstonecraft adopted John Locke's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from John Locke's perspective to Mary Wollstonecraft's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the Enlightenment & Social Contract.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Mary Wollstonecraft",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/wollstonecraft/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Locke",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
   }
 ]

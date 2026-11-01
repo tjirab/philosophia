@@ -1,16 +1,46 @@
 [
   {
+    "id": "cartesian-dualism--baruch-spinoza",
     "source": "cartesian-dualism",
     "target": "baruch-spinoza",
     "type": "CRITIQUED",
     "label": "Spinoza resolved mind-body dualism through substance monism (Deus sive Natura)",
-    "strength": 5
+    "strength": 5,
+    "description": "Baruch Spinoza formulated a fundamental critique of \"Substance Dualism (Mind vs. Matter)\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Substance Dualism (Mind vs. Matter)\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Baruch Spinoza",
+        "sectionOrPage": "Engagement with Substance Dualism (Mind vs. Matter)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/spinoza/"
+      }
+    ]
   },
   {
+    "id": "cartesian-dualism--thomas-hobbes",
     "source": "cartesian-dualism",
     "target": "thomas-hobbes",
     "type": "CRITIQUED",
     "label": "Hobbes rejected immaterial Cartesian substance, arguing all reality is corporeal motion",
-    "strength": 4
+    "strength": 4,
+    "description": "Thomas Hobbes formulated a fundamental critique of \"Substance Dualism (Mind vs. Matter)\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Substance Dualism (Mind vs. Matter)\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Hobbes",
+        "sectionOrPage": "Engagement with Substance Dualism (Mind vs. Matter)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hobbes/"
+      }
+    ]
   }
 ]

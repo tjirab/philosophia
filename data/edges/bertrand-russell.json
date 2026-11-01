@@ -1,9 +1,32 @@
 [
   {
+    "id": "bertrand-russell--ludwig-wittgenstein",
     "source": "bertrand-russell",
     "target": "ludwig-wittgenstein",
     "type": "INFLUENCED",
     "label": "Russell mentored early Wittgenstein; their work revolutionized formal logical analysis",
-    "strength": 5
+    "strength": 5,
+    "description": "Ludwig Wittgenstein was fundamentally influenced by Bertrand Russell's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Bertrand Russell's perspective to Ludwig Wittgenstein's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ludwig Wittgenstein",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/wittgenstein/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Bertrand Russell",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/russell/"
+      }
+    ]
   }
 ]

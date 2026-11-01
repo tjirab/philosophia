@@ -1,16 +1,46 @@
 [
   {
+    "id": "teleology-four-causes--thomas-aquinas",
     "source": "teleology-four-causes",
     "target": "thomas-aquinas",
     "type": "SYNTHESIZED",
     "label": "Aquinas integrated Aristotelian teleology and prime mover into Christian theology",
-    "strength": 5
+    "strength": 5,
+    "description": "Thomas Aquinas's philosophical system was decisively shaped by grappling with \"Teleology & The Four Causes\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Teleology & The Four Causes\".",
+    "historicalContext": "Inherited and re-evaluated during the Medieval & Islamic Golden Age.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Aquinas",
+        "sectionOrPage": "Engagement with Teleology & The Four Causes",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aquinas/"
+      }
+    ]
   },
   {
+    "id": "teleology-four-causes--francis-bacon",
     "source": "teleology-four-causes",
     "target": "francis-bacon",
     "type": "CRITIQUED",
     "label": "Bacon discarded teleological final causes as barren, demanding empirical mechanics",
-    "strength": 4
+    "strength": 4,
+    "description": "Francis Bacon formulated a fundamental critique of \"Teleology & The Four Causes\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Teleology & The Four Causes\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Francis Bacon",
+        "sectionOrPage": "Engagement with Teleology & The Four Causes",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/francis-bacon/"
+      }
+    ]
   }
 ]

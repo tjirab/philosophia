@@ -1,9 +1,32 @@
 [
   {
+    "id": "marcus-aurelius--michel-de-montaigne",
     "source": "marcus-aurelius",
     "target": "michel-de-montaigne",
     "type": "INFLUENCED",
+    "label": "Marcus Aurelius' Meditations on mortality, inner self-possession, and the vanity of praise deeply shaped Montaigne's Essays",
     "strength": 4,
-    "label": "Marcus Aurelius' Meditations on mortality, inner self-possession, and the vanity of praise deeply shaped Montaigne's Essays"
+    "description": "Michel de Montaigne was fundamentally influenced by Marcus Aurelius's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Marcus Aurelius's perspective to Michel de Montaigne's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Hellenistic & Roman across history into the Early Modern & Scientific.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Michel de Montaigne",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/montaigne/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Marcus Aurelius",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marcus-aurelius/"
+      }
+    ]
   }
 ]

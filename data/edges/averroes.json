@@ -1,9 +1,32 @@
 [
   {
+    "id": "averroes--moses-maimonides",
     "source": "averroes",
     "target": "moses-maimonides",
     "type": "INFLUENCED",
+    "label": "Shared Andalusian Aristotelian tradition harmonizing faith and reason",
     "strength": 4,
-    "label": "Shared Andalusian Aristotelian tradition harmonizing faith and reason"
+    "description": "Moses Maimonides (Rambam) was fundamentally influenced by Ibn Rushd (Averroes)'s central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Ibn Rushd (Averroes)'s perspective to Moses Maimonides (Rambam)'s reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Medieval & Islamic Golden Age era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Moses Maimonides (Rambam)",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ibn Rushd (Averroes)",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ibn-rushd/"
+      }
+    ]
   }
 ]

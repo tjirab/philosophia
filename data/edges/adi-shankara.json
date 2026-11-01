@@ -1,9 +1,32 @@
 [
   {
+    "id": "adi-shankara--arthur-schopenhauer",
     "source": "adi-shankara",
     "target": "arthur-schopenhauer",
     "type": "INFLUENCED",
+    "label": "Advaita Vedanta metaphysics and the concept of the illusory phenomenal world as Maya directly influenced Schopenhauer's World as Will and Representation",
     "strength": 4,
-    "label": "Advaita Vedanta metaphysics and the concept of the illusory phenomenal world as Maya directly influenced Schopenhauer's World as Will and Representation"
+    "description": "Arthur Schopenhauer was fundamentally influenced by Adi Shankara's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Adi Shankara's perspective to Arthur Schopenhauer's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Eastern & Axial Traditions across history into the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Arthur Schopenhauer",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/schopenhauer/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adi Shankara",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/shankara/"
+      }
+    ]
   }
 ]

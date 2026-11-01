@@ -1,16 +1,62 @@
 [
   {
+    "id": "laozi--confucius",
     "source": "laozi",
     "target": "confucius",
     "type": "SYNTHESIZED",
+    "label": "Classical Chinese dialogue between spontaneous Dao and cultivated ritual harmony",
     "strength": 4,
-    "label": "Classical Chinese dialogue between spontaneous Dao and cultivated ritual harmony"
+    "description": "Confucius (Kongzi) synthesized Laozi (Lao Tzu)'s framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Laozi (Lao Tzu)'s perspective to Confucius (Kongzi)'s reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Eastern & Axial Traditions era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Confucius (Kongzi)",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/confucius/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Laozi (Lao Tzu)",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/laozi/"
+      }
+    ]
   },
   {
+    "id": "laozi--zhuangzi",
     "source": "laozi",
     "target": "zhuangzi",
     "type": "DEVELOPED",
+    "label": "Elaborated Laozi's cosmological Dao into radical parables and perspectivism",
     "strength": 5,
-    "label": "Elaborated Laozi's cosmological Dao into radical parables and perspectivism"
+    "description": "Zhuangzi (Chuang Tzu) adopted Laozi (Lao Tzu)'s insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Laozi (Lao Tzu)'s perspective to Zhuangzi (Chuang Tzu)'s reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Eastern & Axial Traditions era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Zhuangzi (Chuang Tzu)",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/zhuangzi/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Laozi (Lao Tzu)",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/laozi/"
+      }
+    ]
   }
 ]

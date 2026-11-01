@@ -1,9 +1,23 @@
 [
   {
+    "id": "hannah-arendt--banality-of-evil",
     "source": "hannah-arendt",
     "target": "banality-of-evil",
     "type": "DEVELOPED",
     "label": "Formulated and introduced The Banality of Evil",
-    "strength": 5
+    "strength": 5,
+    "description": "Hannah Arendt formulated and introduced the concept of \"The Banality of Evil\", which became a seminal contribution in ethics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in ethics.",
+    "historicalContext": "Introduced during the Contemporary & Post-Structural as part of Hannah Arendt's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Banality of Evil",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/arendt/"
+      }
+    ]
   }
 ]

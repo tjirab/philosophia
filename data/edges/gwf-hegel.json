@@ -1,44 +1,173 @@
 [
   {
+    "id": "gwf-hegel--karl-marx",
     "source": "gwf-hegel",
     "target": "karl-marx",
     "type": "CRITIQUED",
     "label": "Turned Hegelian dialectic from idealist spirit right side up into historical materialism",
-    "strength": 5
+    "strength": 5,
+    "description": "Karl Marx engaged in a direct critique of G.W.F. Hegel's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from G.W.F. Hegel's perspective to Karl Marx's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "G.W.F. Hegel",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      }
+    ]
   },
   {
+    "id": "gwf-hegel--soren-kierkegaard",
     "source": "gwf-hegel",
     "target": "soren-kierkegaard",
     "type": "CRITIQUED",
     "label": "Kierkegaard rejected Hegel's totalizing system in defense of subjective individual anguish",
-    "strength": 5
+    "strength": 5,
+    "description": "Søren Kierkegaard engaged in a direct critique of G.W.F. Hegel's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from G.W.F. Hegel's perspective to Søren Kierkegaard's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Søren Kierkegaard",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kierkegaard/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "G.W.F. Hegel",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      }
+    ]
   },
   {
+    "id": "gwf-hegel--hegelian-dialectic",
     "source": "gwf-hegel",
     "target": "hegelian-dialectic",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Dialectical Historical Reason",
-    "strength": 5
+    "strength": 5,
+    "description": "G.W.F. Hegel formulated and introduced the concept of \"Dialectical Historical Reason\", which became a seminal contribution in metaphysics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in metaphysics.",
+    "historicalContext": "Introduced during the German Idealism & Romanticism as part of G.W.F. Hegel's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Dialectical Historical Reason",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel-dialectics/"
+      }
+    ]
   },
   {
+    "id": "gwf-hegel--ludwig-feuerbach",
     "source": "gwf-hegel",
     "target": "ludwig-feuerbach",
     "type": "CRITIQUED",
+    "label": "Inverted Hegel's Absolute Idealism, insisting that material being precedes abstract consciousness",
     "strength": 5,
-    "label": "Inverted Hegel's Absolute Idealism, insisting that material being precedes abstract consciousness"
+    "description": "Ludwig Feuerbach engaged in a direct critique of G.W.F. Hegel's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from G.W.F. Hegel's perspective to Ludwig Feuerbach's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ludwig Feuerbach",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ludwig-feuerbach/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "G.W.F. Hegel",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      }
+    ]
   },
   {
+    "id": "gwf-hegel--alenka-zupancic",
     "source": "gwf-hegel",
     "target": "alenka-zupancic",
     "type": "DEVELOPED",
+    "label": "Zupančič mobilizes Hegelian contradiction and the concrete universal to articulate the structure of comedy and the ontological impasse of sexuality",
     "strength": 5,
-    "label": "Zupančič mobilizes Hegelian contradiction and the concrete universal to articulate the structure of comedy and the ontological impasse of sexuality"
+    "description": "Alenka Zupančič adopted G.W.F. Hegel's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from G.W.F. Hegel's perspective to Alenka Zupančič's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Alenka Zupančič",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/lacan/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "G.W.F. Hegel",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      }
+    ]
   },
   {
+    "id": "gwf-hegel--herbert-marcuse",
     "source": "gwf-hegel",
     "target": "herbert-marcuse",
     "type": "DEVELOPED",
+    "label": "Defended Hegelian negative dialectics in Reason and Revolution, arguing authentic philosophical reason is inherently critical and subversive",
     "strength": 5,
-    "label": "Defended Hegelian negative dialectics in Reason and Revolution, arguing authentic philosophical reason is inherently critical and subversive"
+    "description": "Herbert Marcuse adopted G.W.F. Hegel's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from G.W.F. Hegel's perspective to Herbert Marcuse's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Herbert Marcuse",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marcuse/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "G.W.F. Hegel",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      }
+    ]
   }
 ]

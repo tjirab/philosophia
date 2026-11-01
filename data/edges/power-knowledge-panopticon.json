@@ -1,9 +1,24 @@
 [
   {
+    "id": "power-knowledge-panopticon--byung-chul-han",
     "source": "power-knowledge-panopticon",
     "target": "byung-chul-han",
     "type": "DEVELOPED",
     "label": "Han expanded physical panopticon into the digital panopticon of voluntary self-surveillance",
-    "strength": 5
+    "strength": 5,
+    "description": "Byung-Chul Han took up the concept of \"Disciplinary Power & The Panopticon\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Disciplinary Power & The Panopticon\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Byung-Chul Han",
+        "sectionOrPage": "Engagement with Disciplinary Power & The Panopticon",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/culture-cogsci/"
+      }
+    ]
   }
 ]

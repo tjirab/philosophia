@@ -1,65 +1,254 @@
 [
   {
+    "id": "aristotle--avicenna",
     "source": "aristotle",
     "target": "avicenna",
     "type": "DEVELOPED",
     "label": "Expanded Aristotelian metaphysics in the Islamic world with the essence/existence distinction",
-    "strength": 4
+    "strength": 4,
+    "description": "Ibn Sina (Avicenna) adopted Aristotle's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Aristotle's perspective to Ibn Sina (Avicenna)'s reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Classical Greek across history into the Medieval & Islamic Golden Age.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ibn Sina (Avicenna)",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ibn-sina/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Aristotle",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aristotle/"
+      }
+    ]
   },
   {
+    "id": "aristotle--averroes",
     "source": "aristotle",
     "target": "averroes",
     "type": "DEVELOPED",
     "label": "Wrote comprehensive commentaries restoring authentic Aristotelian thought",
-    "strength": 4
+    "strength": 4,
+    "description": "Ibn Rushd (Averroes) adopted Aristotle's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Aristotle's perspective to Ibn Rushd (Averroes)'s reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Classical Greek across history into the Medieval & Islamic Golden Age.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ibn Rushd (Averroes)",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ibn-rushd/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Aristotle",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aristotle/"
+      }
+    ]
   },
   {
+    "id": "aristotle--thomas-aquinas",
     "source": "aristotle",
     "target": "thomas-aquinas",
     "type": "SYNTHESIZED",
     "label": "Harmonized Christian theology with Aristotelian philosophy into high Scholasticism",
-    "strength": 5
+    "strength": 5,
+    "description": "Thomas Aquinas synthesized Aristotle's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Aristotle's perspective to Thomas Aquinas's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Classical Greek across history into the Medieval & Islamic Golden Age.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Aquinas",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aquinas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Aristotle",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aristotle/"
+      }
+    ]
   },
   {
+    "id": "aristotle--francis-bacon",
     "source": "aristotle",
     "target": "francis-bacon",
     "type": "CRITIQUED",
     "label": "Replaced Aristotelian deductive syllogisms with empirical inductive science",
-    "strength": 4
+    "strength": 4,
+    "description": "Francis Bacon engaged in a direct critique of Aristotle's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Aristotle's perspective to Francis Bacon's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Classical Greek across history into the Early Modern & Scientific.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Francis Bacon",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/francis-bacon/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Aristotle",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aristotle/"
+      }
+    ]
   },
   {
+    "id": "aristotle--teleology-four-causes",
     "source": "aristotle",
     "target": "teleology-four-causes",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Teleology & The Four Causes",
-    "strength": 5
+    "strength": 5,
+    "description": "Aristotle formulated and introduced the concept of \"Teleology & The Four Causes\", which became a seminal contribution in metaphysics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in metaphysics.",
+    "historicalContext": "Introduced during the Classical Greek as part of Aristotle's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Teleology & The Four Causes",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aristotle-causality/"
+      }
+    ]
   },
   {
+    "id": "aristotle--eudaimonia-virtue",
     "source": "aristotle",
     "target": "eudaimonia-virtue",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Eudaimonia & The Golden Mean",
-    "strength": 5
+    "strength": 5,
+    "description": "Aristotle formulated and introduced the concept of \"Eudaimonia & The Golden Mean\", which became a seminal contribution in ethics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in ethics.",
+    "historicalContext": "Introduced during the Classical Greek as part of Aristotle's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Eudaimonia & The Golden Mean",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aristotle-ethics/"
+      }
+    ]
   },
   {
+    "id": "aristotle--boethius",
     "source": "aristotle",
     "target": "boethius",
     "type": "DEVELOPED",
+    "label": "Translated and commented on Aristotle's Organon, creating the Logica Vetus for medieval Europe",
     "strength": 5,
-    "label": "Translated and commented on Aristotle's Organon, creating the Logica Vetus for medieval Europe"
+    "description": "Anicius Manlius Severinus Boethius adopted Aristotle's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Aristotle's perspective to Anicius Manlius Severinus Boethius's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Classical Greek across history into the Medieval & Islamic Golden Age.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Anicius Manlius Severinus Boethius",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/boethius/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Aristotle",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aristotle/"
+      }
+    ]
   },
   {
+    "id": "aristotle--montesquieu",
     "source": "aristotle",
     "target": "montesquieu",
     "type": "DEVELOPED",
+    "label": "Adapted Aristotle's constitutional classifications and mixed government into modern political sociology",
     "strength": 4,
-    "label": "Adapted Aristotle's constitutional classifications and mixed government into modern political sociology"
+    "description": "Baron de Montesquieu adopted Aristotle's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Aristotle's perspective to Baron de Montesquieu's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Classical Greek across history into the Enlightenment & Social Contract.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Baron de Montesquieu",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/montesquieu/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Aristotle",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aristotle/"
+      }
+    ]
   },
   {
+    "id": "aristotle--machiavelli",
     "source": "aristotle",
     "target": "machiavelli",
     "type": "INFLUENCED",
+    "label": "Adapted Aristotle's political realism and constitutional taxonomy from the Politics into pragmatic Renaissance statecraft",
     "strength": 4,
-    "label": "Adapted Aristotle's political realism and constitutional taxonomy from the Politics into pragmatic Renaissance statecraft"
+    "description": "Niccolò Machiavelli was fundamentally influenced by Aristotle's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Aristotle's perspective to Niccolò Machiavelli's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Classical Greek across history into the Early Modern & Scientific.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Niccolò Machiavelli",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/machiavelli/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Aristotle",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aristotle/"
+      }
+    ]
   }
 ]

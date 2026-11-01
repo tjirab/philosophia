@@ -1,9 +1,24 @@
 [
   {
+    "id": "existence-precedes-essence--simone-de-beauvoir",
     "source": "existence-precedes-essence",
     "target": "simone-de-beauvoir",
     "type": "DEVELOPED",
     "label": "Beauvoir applied existence preceding essence to feminist theory: One is not born, but becomes, a woman",
-    "strength": 5
+    "strength": 5,
+    "description": "Simone de Beauvoir took up the concept of \"Existence Precedes Essence & Bad Faith\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Existence Precedes Essence & Bad Faith\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Simone de Beauvoir",
+        "sectionOrPage": "Engagement with Existence Precedes Essence & Bad Faith",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/beauvoir/"
+      }
+    ]
   }
 ]

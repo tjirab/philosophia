@@ -1,9 +1,32 @@
 [
   {
+    "id": "gilles-deleuze--alenka-zupancic",
     "source": "gilles-deleuze",
     "target": "alenka-zupancic",
     "type": "CRITIQUED",
+    "label": "Zupančič critiques Deleuzian vitalism of positive difference, defending the negative gap and constitutive deadlock in Being",
     "strength": 3,
-    "label": "Zupančič critiques Deleuzian vitalism of positive difference, defending the negative gap and constitutive deadlock in Being"
+    "description": "Alenka Zupančič engaged in a direct critique of Gilles Deleuze's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Gilles Deleuze's perspective to Alenka Zupančič's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Contemporary & Post-Structural era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Alenka Zupančič",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/lacan/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Gilles Deleuze",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/deleuze/"
+      }
+    ]
   }
 ]

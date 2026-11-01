@@ -1,37 +1,125 @@
 [
   {
+    "id": "thomas-kuhn--paradigm-shift",
     "source": "thomas-kuhn",
     "target": "paradigm-shift",
     "type": "DEVELOPED",
+    "label": "Introduced the paradigm shift model to explain discontinuous revolutionary ruptures in scientific history",
     "strength": 5,
-    "label": "Introduced the paradigm shift model to explain discontinuous revolutionary ruptures in scientific history"
+    "description": "Thomas Kuhn formulated and introduced the concept of \"Paradigm Shift & Scientific Revolutions\", which became a seminal contribution in epistemology philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in epistemology.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Thomas Kuhn's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Paradigm Shift & Scientific Revolutions",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/thomas-kuhn/"
+      }
+    ]
   },
   {
+    "id": "thomas-kuhn--normal-science",
     "source": "thomas-kuhn",
     "target": "normal-science",
     "type": "DEVELOPED",
+    "label": "Defined normal science as cumulative puzzle-solving conducted within an unchallenged paradigm",
     "strength": 5,
-    "label": "Defined normal science as cumulative puzzle-solving conducted within an unchallenged paradigm"
+    "description": "Thomas Kuhn formulated and introduced the concept of \"Normal Science & Puzzle-Solving\", which became a seminal contribution in epistemology philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in epistemology.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Thomas Kuhn's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Normal Science & Puzzle-Solving",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/thomas-kuhn/"
+      }
+    ]
   },
   {
+    "id": "thomas-kuhn--incommensurability",
     "source": "thomas-kuhn",
     "target": "incommensurability",
     "type": "DEVELOPED",
+    "label": "Articulated semantic and taxonomic incommensurability between successive scientific paradigms",
     "strength": 5,
-    "label": "Articulated semantic and taxonomic incommensurability between successive scientific paradigms"
+    "description": "Thomas Kuhn formulated and introduced the concept of \"Incommensurability\", which became a seminal contribution in epistemology philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in epistemology.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Thomas Kuhn's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Incommensurability",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/incommensurability/"
+      }
+    ]
   },
   {
+    "id": "thomas-kuhn--michel-foucault",
     "source": "thomas-kuhn",
     "target": "michel-foucault",
     "type": "INFLUENCED",
+    "label": "Kuhn's historicist critique of cumulative science and paradigm shifts paralleled and informed Foucault's archaeology of epistemes",
     "strength": 4,
-    "label": "Kuhn's historicist critique of cumulative science and paradigm shifts paralleled and informed Foucault's archaeology of epistemes"
+    "description": "Michel Foucault was fundamentally influenced by Thomas Kuhn's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Thomas Kuhn's perspective to Michel Foucault's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Michel Foucault",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/foucault/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Kuhn",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/thomas-kuhn/"
+      }
+    ]
   },
   {
+    "id": "thomas-kuhn--jurgen-habermas",
     "source": "thomas-kuhn",
     "target": "jurgen-habermas",
     "type": "INFLUENCED",
+    "label": "Kuhn's demonstration of science as a communicative community grounded in consensus paradigms informed Habermas's theory of communicative rationality",
     "strength": 4,
-    "label": "Kuhn's demonstration of science as a communicative community grounded in consensus paradigms informed Habermas's theory of communicative rationality"
+    "description": "Jürgen Habermas was fundamentally influenced by Thomas Kuhn's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Thomas Kuhn's perspective to Jürgen Habermas's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jürgen Habermas",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Kuhn",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/thomas-kuhn/"
+      }
+    ]
   }
 ]

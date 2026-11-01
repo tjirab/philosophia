@@ -1,9 +1,32 @@
 [
   {
+    "id": "augustine--anselm-of-canterbury",
     "source": "augustine",
     "target": "anselm-of-canterbury",
     "type": "DEVELOPED",
+    "label": "Systematized Augustinian principle of faith seeking understanding (fides quaerens intellectum)",
     "strength": 5,
-    "label": "Systematized Augustinian principle of faith seeking understanding (fides quaerens intellectum)"
+    "description": "Anselm of Canterbury adopted Augustine of Hippo's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Augustine of Hippo's perspective to Anselm of Canterbury's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Medieval & Islamic Golden Age era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Anselm of Canterbury",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/anselm/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Augustine of Hippo",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/augustine/"
+      }
+    ]
   }
 ]

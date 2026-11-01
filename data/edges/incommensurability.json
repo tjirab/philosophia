@@ -1,9 +1,24 @@
 [
   {
+    "id": "incommensurability--jurgen-habermas",
     "source": "incommensurability",
     "target": "jurgen-habermas",
     "type": "CRITIQUED",
+    "label": "Habermas formulated universal pragmatics in part to overcome relativistic threats posed by Kuhnian incommensurability",
     "strength": 3,
-    "label": "Habermas formulated universal pragmatics in part to overcome relativistic threats posed by Kuhnian incommensurability"
+    "description": "Jürgen Habermas formulated a fundamental critique of \"Incommensurability\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Incommensurability\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jürgen Habermas",
+        "sectionOrPage": "Engagement with Incommensurability",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      }
+    ]
   }
 ]
