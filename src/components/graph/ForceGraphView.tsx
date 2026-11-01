@@ -12,7 +12,7 @@ import { EpochNavigator } from '../timeline/EpochNavigator';
 import { ExplorationHud } from '../exploration/ExplorationHud';
 import { useClickOutside } from '../../lib/hooks/useClickOutside';
 import { drawCartographicGrid } from '../../lib/graph/grid-renderer';
-import { drawExplorationAtmosphere, drawCartographicBeacon } from '../../lib/graph/fog-renderer';
+import { drawExplorationAtmosphere, drawCartographicBeacon, drawAmbientParchmentMist } from '../../lib/graph/fog-renderer';
 import { getAssetUrl } from '../../lib/assets';
 import {
   getNodeMonogram,
@@ -602,6 +602,24 @@ export function ForceGraphView({
     [applyForces, isLight, spacingMultiplier, isExplorationActive, graphData.nodes, hoveredNode, mouseWorldPos]
   );
 
+  const renderForegroundAtmosphere = React.useCallback(
+    (ctx: CanvasRenderingContext2D, globalScale: number) => {
+      if (!isExplorationActive) return;
+
+      drawAmbientParchmentMist(ctx, {
+        nodes: graphData.nodes,
+        globalScale,
+        isLight,
+        mouseWorldPos: hoveredNode ? { x: hoveredNode.x!, y: hoveredNode.y! } : mouseWorldPos,
+        hoveredNodeId: hoveredNode?.id,
+        selectedNodeId: selectedNodeId || undefined,
+        highlightedNodeIds: pathNodeSet,
+        fogIntensity: 0.75,
+      });
+    },
+    [isExplorationActive, graphData.nodes, isLight, hoveredNode, mouseWorldPos, selectedNodeId, pathNodeSet]
+  );
+
   // Render classical badge pills directly on active lineage path edges or selected edge
   const paintLinkOverlay = useCallback(
     (link: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
@@ -804,6 +822,7 @@ export function ForceGraphView({
           }
         }}
         onRenderFramePre={renderBackground}
+        onRenderFramePost={renderForegroundAtmosphere}
         nodeId="id"
         nodeLabel={() => ''} /* Disable default HTML title tooltip so our custom card handles hover */
         nodeCanvasObject={paintNode}
