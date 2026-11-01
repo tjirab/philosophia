@@ -14,6 +14,7 @@ import {
   Concept,
   Edge,
   MediaResource,
+  AcademicCitation,
   GraphData,
   VisualNode,
   VisualLink,
@@ -444,5 +445,85 @@ export function getEdgeDetails(edgeId: string): {
     targetTradition,
     connectedConcepts,
     relatedEdges,
+  };
+}
+
+export function getConceptDetails(conceptId: string): {
+  concept: Concept;
+  era?: Era;
+  domain?: DomainId;
+  introducedByPhilosopher?: Philosopher;
+  introducedByTradition?: Tradition;
+  predecessors: Array<{ node: Philosopher | Concept; edge: Edge }>;
+  successors: Array<{ node: Philosopher | Concept; edge: Edge }>;
+  citations: AcademicCitation[];
+  relatedEdges: Edge[];
+  coIntroducedConcepts: Concept[];
+  media: MediaResource[];
+  exploration?: ExplorationMeta;
+  scoreBreakdown?: NodeScoreBreakdown;
+} | null {
+  const concept = concepts.find((c) => c.id === conceptId);
+  if (!concept) return null;
+
+  const nodeDetails = getNodeDetails(conceptId);
+
+  const era = eras.find((e) => e.id === concept.eraId) || nodeDetails.era;
+  const introducedByPhilosopher = philosophers.find((p) => p.id === concept.introducedBy);
+  const introducedByTradition = introducedByPhilosopher
+    ? traditions.find((t) => t.id === introducedByPhilosopher.traditionId)
+    : undefined;
+
+  const domain: DomainId =
+    concept.domainId ||
+    (introducedByPhilosopher?.domains && introducedByPhilosopher.domains.length > 0
+      ? introducedByPhilosopher.domains[0]
+      : 'philosophy');
+
+  const coIntroducedConcepts = concepts.filter(
+    (c) => c.id !== conceptId && c.introducedBy === concept.introducedBy
+  );
+
+  // Extract unique citations across predecessors and successors
+  const citations: AcademicCitation[] = [];
+  const seenCitations = new Set<string>();
+  for (const { edge } of [...nodeDetails.predecessors, ...nodeDetails.successors]) {
+    if (edge.citations) {
+      for (const cite of edge.citations) {
+        const key = `${cite.author}--${cite.work}--${cite.sectionOrPage || ''}`;
+        if (!seenCitations.has(key)) {
+          seenCitations.add(key);
+          citations.push(cite);
+        }
+      }
+    }
+  }
+
+  // Related edges: edges connecting to this concept or to its formulating philosopher
+  const relatedEdges = edges.filter(
+    (e) =>
+      e.source === conceptId ||
+      e.target === conceptId ||
+      (introducedByPhilosopher &&
+        (e.source === introducedByPhilosopher.id || e.target === introducedByPhilosopher.id))
+  );
+
+  // Media targeting this concept
+  const mediaItems = media.filter((m) => m.targetId === conceptId);
+
+  return {
+    concept,
+    era,
+    domain,
+    introducedByPhilosopher,
+    introducedByTradition,
+    predecessors: nodeDetails.predecessors,
+    successors: nodeDetails.successors,
+    citations,
+    relatedEdges,
+    coIntroducedConcepts,
+    media: mediaItems,
+    exploration: nodeDetails.exploration,
+    scoreBreakdown: nodeDetails.scoreBreakdown,
   };
 }

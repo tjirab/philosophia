@@ -64,9 +64,16 @@ function HomePageContent() {
       if (edgeParam) {
         setSelectedEdgeId(edgeParam);
         setSelectedNodeId(null);
+        const edge = edges.find((e) => e.id === edgeParam || `${e.source}--${e.target}` === edgeParam);
+        if (edge && concepts.some((c) => c.id === edge.source || c.id === edge.target)) {
+          setShowConcepts(true);
+        }
       } else if (nodeParam) {
         setSelectedNodeId(nodeParam);
         setSelectedEdgeId(null);
+        if (concepts.some((c) => c.id === nodeParam)) {
+          setShowConcepts(true);
+        }
       }
     };
 
@@ -82,9 +89,16 @@ function HomePageContent() {
         if (edge) {
           setSelectedEdgeId(edge);
           setSelectedNodeId(null);
+          const e = edges.find((item) => item.id === edge || `${item.source}--${item.target}` === edge);
+          if (e && concepts.some((c) => c.id === e.source || c.id === e.target)) {
+            setShowConcepts(true);
+          }
         } else if (node) {
           setSelectedNodeId(node);
           setSelectedEdgeId(null);
+          if (concepts.some((c) => c.id === node)) {
+            setShowConcepts(true);
+          }
         }
       }
     };
