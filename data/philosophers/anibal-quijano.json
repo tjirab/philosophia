@@ -1,0 +1,34 @@
+{
+  "id": "anibal-quijano",
+  "name": "Aníbal Quijano",
+  "birthYear": 1928,
+  "deathYear": 2018,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "shortBio": "Peruvian sociologist and social theorist whose formulation of the 'coloniality of power' reshaped contemporary sociology, world-systems theory, and global decolonial philosophy.",
+  "centralQuestion": "How does the racialized hierarchy born out of the conquest of the Americas continue to structure global capitalism, knowledge, and subjectivity?",
+  "keyWorks": [
+    {
+      "title": "Coloniality of Power, Eurocentrism, and Latin America",
+      "year": "2000",
+      "url": "https://en.wikipedia.org/wiki/Coloniality_of_power",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Coloniality_of_power",
+      "description": "Foundational essay outlining coloniality as the fundamental organizing axis of world capitalism, racial division of labor, and epistemological hegemony."
+    },
+    {
+      "title": "Coloniality and Modernity/Rationality",
+      "year": "1991",
+      "url": "https://en.wikipedia.org/wiki/An%C3%ADbal_Quijano",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/An%C3%ADbal_Quijano",
+      "description": "Critique of Eurocentric rationality as an epistemology that conceals colonial domination by projecting itself as universal and timeless."
+    }
+  ],
+  "sepSlug": "latin-american-philosophy",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/anibal-quijano.jpg",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology"
+}

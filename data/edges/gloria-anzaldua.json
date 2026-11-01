@@ -1,0 +1,91 @@
+[
+  {
+    "id": "gloria-anzaldua--mestiza-consciousness",
+    "source": "gloria-anzaldua",
+    "target": "mestiza-consciousness",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Articulated Mestiza consciousness and Borderlands epistemology",
+    "description": "Anzaldúa developed mestiza consciousness to describe a transformative mode of thinking that inhabits the liminal spaces between cultures, breaking down binary dualisms and synthesizing contradictions.",
+    "historicalContext": "Published in 1987 in Borderlands/La Frontera: The New Mestiza, written in the Texas-Mexico borderlands.",
+    "dialecticalTension": "Subverts the Western philosophical demand for homogeneous identity by affirming the epistemic fertility of contradiction and multiplicity.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Gloria Anzaldúa",
+        "work": "Borderlands/La Frontera: The New Mestiza",
+        "year": 1987,
+        "sectionOrPage": "Chapter 7 (La conciencia de la mestiza)",
+        "quote": "The new mestiza copes by developing a tolerance for contradictions, a tolerance for ambiguity... She has a plural personality, she operates in a pluralistic mode.",
+        "url": "https://en.wikipedia.org/wiki/Borderlands/La_Frontera:_The_New_Mestiza"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Mariana Ortega",
+        "work": "In-Between: Latina Feminist Phenomenology, Multiplicity, and the Self",
+        "year": 2016,
+        "sectionOrPage": "pp. 55–84"
+      }
+    ]
+  },
+  {
+    "id": "anibal-quijano--gloria-anzaldua",
+    "source": "anibal-quijano",
+    "target": "gloria-anzaldua",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Decolonial intersection of the coloniality of power and borderland feminism",
+    "description": "Anzaldúa's lived border epistemology directly intersects with Quijano's critique of the coloniality of power, inspiring María Lugones's formulation of the 'coloniality of gender'.",
+    "historicalContext": "The cross-pollination of Chicana feminist thought with Latin American decolonial philosophy in the 1990s and 2000s.",
+    "dialecticalTension": "Deepens the critique of coloniality by demonstrating how geopolitical and psychological borders fracture gendered, sexualized, and indigenous bodies.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "María Lugones",
+        "work": "Heterosexualism and the Colonial / Modern Gender System",
+        "year": 2007,
+        "sectionOrPage": "Hypatia 22(1), pp. 186–209",
+        "quote": "In analyzing the coloniality of power, Quijano understands race as a modern classification... I expand this to show how Anzaldúa's borderland critique reveals the coloniality of gender."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Walter D. Mignolo",
+        "work": "Local Histories/Global Designs",
+        "year": 2000,
+        "sectionOrPage": "pp. 197–214"
+      }
+    ]
+  },
+  {
+    "id": "michel-foucault--gloria-anzaldua",
+    "source": "michel-foucault",
+    "target": "gloria-anzaldua",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Synthesized post-structural discursive power with embodied border resistance",
+    "description": "Anzaldúa engaged with theories of disciplinary power and somatic normalization, transmuting post-structural insights into embodied, decolonial healing practices through the Coatlicue state and Nepantla.",
+    "historicalContext": "Conceived during Anzaldúa's doctoral studies in literature and feminist philosophy at the University of California, Santa Cruz in the 1980s.",
+    "dialecticalTension": "Challenges Foucault's secular, Eurocentric pessimism by invoking Indigenous Nahuatl spirituality and creative somatic agency.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Gloria Anzaldúa",
+        "work": "Borderlands/La Frontera: The New Mestiza",
+        "year": 1987,
+        "sectionOrPage": "Chapter 4 (La herencia de Coatlicue)",
+        "quote": "Coatlicue depicts the contradictory. In her figure is the synthesis of duality... The Coatlicue state is a prelude to a crossing.",
+        "url": "https://en.wikipedia.org/wiki/Borderlands/La_Frontera:_The_New_Mestiza"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Chela Sandoval",
+        "work": "Methodology of the Oppressed",
+        "year": 2000,
+        "sectionOrPage": "pp. 67–82"
+      }
+    ]
+  }
+]

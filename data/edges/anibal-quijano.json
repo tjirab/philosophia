@@ -1,0 +1,120 @@
+[
+  {
+    "id": "anibal-quijano--coloniality-of-power",
+    "source": "anibal-quijano",
+    "target": "coloniality-of-power",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Coloniality of Power matrix",
+    "description": "Quijano articulated how the invention of 'race' as an instrument of domination during the conquest of the Americas constituted the foundational matrix of modern global capitalism and Eurocentric knowledge.",
+    "historicalContext": "Published in 2000 in Nepantla: Views from South, emerging from decades of sociological field research in Peru and across Latin America.",
+    "dialecticalTension": "Distinguishes historical colonialism (which can formally end via administrative independence) from coloniality (the pervasive civilizational power matrix that endures).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Aníbal Quijano",
+        "work": "Coloniality of Power, Eurocentrism, and Latin America",
+        "year": 2000,
+        "sectionOrPage": "Nepantla: Views from South 1.3",
+        "quote": "The racial axis has a colonial origin and character, but it has proven to be more durable and stable than the colonialism in whose matrix it was established.",
+        "url": "https://en.wikipedia.org/wiki/Coloniality_of_power"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Walter D. Mignolo",
+        "work": "The Darker Side of Western Modernity: Global Futures, Decolonial Options",
+        "year": 2011,
+        "sectionOrPage": "pp. 1–25"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--anibal-quijano",
+    "source": "karl-marx",
+    "target": "anibal-quijano",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Re-theorized global capitalism through racial division of labor",
+    "description": "Quijano expanded Marx's analysis of primitive accumulation and capital, showing that world capital has always integrated heterogeneous forms of unfree labor articulated along racialized lines.",
+    "historicalContext": "Developed in critical dialogue with Latin American orthodox Marxism and dependency theorists throughout the 1980s and 1990s.",
+    "dialecticalTension": "Critiques orthodox Marxist class reductionism by proving that race and coloniality are constitutive, not merely superstructural, to the capitalist world-system.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Aníbal Quijano",
+        "work": "Coloniality and Modernity/Rationality",
+        "year": 1991,
+        "sectionOrPage": "Peru Indígena 13(29)",
+        "quote": "Capitalism became from its origin a world system articulating all forms of labor control around capital, organized along racial hierarchies.",
+        "url": "https://en.wikipedia.org/wiki/An%C3%ADbal_Quijano"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Immanuel Wallerstein",
+        "work": "Historical Capitalism with Capitalist Civilization",
+        "year": 1995,
+        "sectionOrPage": "pp. 80–92"
+      }
+    ]
+  },
+  {
+    "id": "w-e-b-du-bois--anibal-quijano",
+    "source": "w-e-b-du-bois",
+    "target": "anibal-quijano",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Elevated the color line to the foundational axis of global modernity",
+    "description": "Quijano resonated with Du Bois's prophetic insight that 'the problem of the twentieth century is the problem of the color line', formalizing it into a worldwide sociological matrix of power.",
+    "historicalContext": "Comparative sociological synthesis of Pan-African and Latin American critical theories of race and empire.",
+    "dialecticalTension": "Synthesizes Du Bois's double consciousness and racial capitalism with Latin American historical dependency and coloniality.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "W.E.B. Du Bois",
+        "work": "The Souls of Black Folk",
+        "year": 1903,
+        "sectionOrPage": "Forethought",
+        "quote": "The problem of the twentieth century is the problem of the color-line,—the relation of the darker to the lighter races of men in Asia and Africa, in America and the islands of the sea."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Ramón Grosfoguel",
+        "work": "The Epistemic Decolonial Turn: Beyond Political-Economy Paradigms",
+        "year": 2007,
+        "sectionOrPage": "Cultural Studies 21(2-3), pp. 211–223"
+      }
+    ]
+  },
+  {
+    "id": "enrique-dussel--anibal-quijano",
+    "source": "enrique-dussel",
+    "target": "anibal-quijano",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Collaborated on the Modernity/Coloniality Decolonial Research Program",
+    "description": "Dussel and Quijano forged the collaborative intellectual core of the Latin American Decolonial collective, weaving the philosophy of liberation with the sociological critique of the coloniality of power.",
+    "historicalContext": "Formed through the Modernity/Coloniality/Decoloniality (MCD) working group meetings across Binghamton, Caracas, and Mexico City in the late 1990s and 2000s.",
+    "dialecticalTension": "Harmonizes philosophical ethics of exteriority with structural sociological mapping of global capitalist racialization.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Enrique Dussel",
+        "work": "World System and 'Trans'-Modernity",
+        "year": 2002,
+        "sectionOrPage": "Nepantla: Views from South 3.2",
+        "quote": "Quijano has demonstrated that the coloniality of power is the other face of modernity; there is no modernity without coloniality."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Arturo Escobar",
+        "work": "Worlds and Knowledges Otherwise: The Latin American Modernity/Coloniality Research Program",
+        "year": 2007,
+        "sectionOrPage": "Cultural Studies 21(2-3), pp. 179–210"
+      }
+    ]
+  }
+]

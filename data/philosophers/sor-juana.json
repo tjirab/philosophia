@@ -1,0 +1,33 @@
+{
+  "id": "sor-juana",
+  "name": "Sor Juana Inés de la Cruz",
+  "birthYear": 1648,
+  "deathYear": 1695,
+  "eraId": "early-modern",
+  "traditionId": "latin-american-philosophy",
+  "shortBio": "Hieronymite nun, polymath, and Mexican early modern philosopher whose epistemological poetry and treatises defended universal intellectual agency and women's right to philosophical inquiry.",
+  "centralQuestion": "Can reason and the pursuit of knowledge be legitimately denied to women by theological or patriarchal authority?",
+  "keyWorks": [
+    {
+      "title": "Primero Sueño (First Dream)",
+      "year": "1692",
+      "url": "https://en.wikipedia.org/wiki/Primero_sue%C3%B1o",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Primero_sue%C3%B1o",
+      "description": "Epistemological dream poem exploring the soul's ascent toward the cosmos, confronting the limits and noble ambition of human cognition."
+    },
+    {
+      "title": "Respuesta a Sor Filotea de la Cruz",
+      "year": "1691",
+      "url": "https://en.wikipedia.org/wiki/Respuesta_a_Sor_Filotea_de_la_Cruz",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Respuesta_a_Sor_Filotea_de_la_Cruz",
+      "description": "Landmark philosophical and autobiographical defense of women's right to study, teach, and interpret philosophy and scripture."
+    }
+  ],
+  "sepSlug": "philosophy-mexico",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/sor-juana.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

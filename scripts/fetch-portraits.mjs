@@ -104,6 +104,12 @@ const WIKI_TITLES = {
   'g-e-m-anscombe': 'G._E._M._Anscombe',
   'philippa-foot': 'Philippa_Foot',
   'frantz-fanon': 'Frantz_Fanon',
+  // Latin American & Decolonial Philosophy
+  'sor-juana': 'Sor_Juana_Inés_de_la_Cruz',
+  'paulo-freire': 'Paulo_Freire',
+  'enrique-dussel': 'Enrique_Dussel',
+  'anibal-quijano': 'Aníbal_Quijano',
+  'gloria-anzaldua': 'Gloria_E._Anzaldúa',
   // Psychology
   'wilhelm-wundt': 'Wilhelm_Wundt',
   'sigmund-freud': 'Sigmund_Freud',

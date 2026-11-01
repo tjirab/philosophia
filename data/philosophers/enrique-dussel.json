@@ -1,0 +1,40 @@
+{
+  "id": "enrique-dussel",
+  "name": "Enrique Dussel",
+  "birthYear": 1934,
+  "deathYear": 2023,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "shortBio": "Argentine-Mexican philosopher and primary architect of the Philosophy of Liberation, who critiqued Eurocentric modernity's ontological totality from the exteriority of the colonized victim.",
+  "centralQuestion": "What is an ethical philosophy constructed not from the imperial center, but from the geopolitical exteriority and suffering of the oppressed?",
+  "keyWorks": [
+    {
+      "title": "Philosophy of Liberation",
+      "year": "1977",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_Liberation",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Philosophy_of_Liberation",
+      "description": "Systematic treatise proposing the 'analectical' method, prioritizing the metaphysical exteriority of the Other over imperial ontology."
+    },
+    {
+      "title": "1492: The Concealment of the Other",
+      "year": "1992",
+      "url": "https://en.wikipedia.org/wiki/Enrique_Dussel",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Enrique_Dussel",
+      "description": "Historical-philosophical deconstruction showing that Descartes' ego cogito was historically founded upon the imperial ego conquiro."
+    },
+    {
+      "title": "Ethics of Liberation in the Age of Globalization and Exclusion",
+      "year": "1998",
+      "url": "https://en.wikipedia.org/wiki/Enrique_Dussel",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Enrique_Dussel",
+      "description": "Architectural ethical framework grounding normative validity in the production, reproduction, and development of vulnerable human life."
+    }
+  ],
+  "sepSlug": "liberation",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/enrique-dussel.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

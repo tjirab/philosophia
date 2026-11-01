@@ -1,0 +1,40 @@
+{
+  "id": "gloria-anzaldua",
+  "name": "Gloria Anzaldúa",
+  "birthYear": 1942,
+  "deathYear": 2004,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "shortBio": "Chicana feminist theorist and philosopher whose pioneering concepts of 'borderlands', 'mestiza consciousness', and 'nepantla' redefined continental feminism, epistemology, and queer theory.",
+  "centralQuestion": "How can thinking from geopolitical, cultural, and embodied borderlands dismantle rigid dualisms and cultivate transformative pluralistic consciousness?",
+  "keyWorks": [
+    {
+      "title": "Borderlands/La Frontera: The New Mestiza",
+      "year": "1987",
+      "url": "https://en.wikipedia.org/wiki/Borderlands/La_Frontera:_The_New_Mestiza",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Borderlands/La_Frontera:_The_New_Mestiza",
+      "description": "Groundbreaking text blending prose, poetry, and Nahuatl philosophy to articulate a theory of borderland identity and liminal epistemology."
+    },
+    {
+      "title": "This Bridge Called My Back: Writings by Radical Women of Color",
+      "year": "1981",
+      "url": "https://en.wikipedia.org/wiki/This_Bridge_Called_My_Back",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/This_Bridge_Called_My_Back",
+      "description": "Seminal intersectional anthology co-edited with Cherríe Moraga, centering the philosophical and political voices of women of color."
+    },
+    {
+      "title": "Light in the Dark/Luz en lo Oscuro: Rewriting Identity, Spirituality, Reality",
+      "year": "2015",
+      "url": "https://en.wikipedia.org/wiki/Gloria_E._Anzald%C3%BAa",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Gloria_E._Anzald%C3%BAa",
+      "description": "Posthumously published philosophical treatise articulating the epistemology of conocimiento and transformative healing through nepantla."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/gloria-anzaldua.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}
