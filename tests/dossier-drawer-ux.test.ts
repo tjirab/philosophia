@@ -7,7 +7,7 @@ describe('Dossier Drawer UX & Academic Proof Integration', () => {
     // David Hume is a prime example of an empirical thinker with profound dialectical critiques
     const humeDetails = getNodeDetails('david-hume', 'canonical');
     expect(humeDetails).not.toBeNull();
-    expect(humeDetails?.node?.name).toBe('David Hume');
+    expect((humeDetails?.node as any)?.name).toBe('David Hume');
     expect(humeDetails?.exploration).toBeDefined();
 
     // Verify exploration metadata
@@ -97,5 +97,31 @@ describe('Dossier Drawer UX & Academic Proof Integration', () => {
     expect(unchartedMeta.state).toBe('uncharted');
     expect(unchartedMeta.label).toBe('Terra Incognita');
     expect(unchartedMeta.score).toBeLessThan(40);
+  });
+
+  it('provides accessible breakdown anchors and exploration metadata for both philosophers and concepts', () => {
+    // Check philosopher node
+    const hume = getNodeDetails('david-hume');
+    expect(hume.exploration).toBeDefined();
+    expect(hume.exploration?.tagline.length).toBeGreaterThan(0);
+    expect(hume.exploration?.label).toBeDefined();
+
+    // Check concept node (e.g. cartesian-skepticism or problem-of-induction)
+    const inductionConcept = getNodeDetails('problem-of-induction');
+    expect(inductionConcept.exploration).toBeDefined();
+    expect(typeof inductionConcept.exploration?.score).toBe('number');
+    expect(inductionConcept.exploration?.score).toBeGreaterThanOrEqual(0);
+
+    // Verify Disputed Frontier nodes have defined open questions or academic consensus
+    const frontierNodes = [...philosophers, ...concepts]
+      .map((item) => getNodeDetails(item.id))
+      .filter((d) => d.exploration?.state === 'frontier');
+
+    expect(frontierNodes.length).toBeGreaterThan(0);
+    for (const fNode of frontierNodes) {
+      expect(fNode.exploration?.label).toBe('Disputed Frontier');
+      expect(fNode.exploration?.score).toBeGreaterThanOrEqual(60);
+      expect(fNode.exploration?.score).toBeLessThan(82);
+    }
   });
 });
