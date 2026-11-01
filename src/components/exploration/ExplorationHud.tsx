@@ -331,7 +331,7 @@ export function ExplorationHud({
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
           <div
             ref={helpRef}
-            className="w-full max-w-lg bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl shadow-2xl p-6 text-[var(--text-main)] font-serif"
+            className="w-full max-w-lg bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl shadow-2xl p-6 text-[var(--text-main)] font-serif max-h-[85vh] overflow-y-auto"
           >
             <div className="flex items-center justify-between border-b border-[var(--border-main)] pb-3 mb-4">
               <div className="flex items-center gap-2">
@@ -353,12 +353,25 @@ export function ExplorationHud({
                 controversy, and modern academic publication volume.
               </p>
 
+              {/* Lantern Spotlight Callout */}
+              <div className="p-3 rounded-xl border border-[var(--gold-border)] bg-[var(--gold-bg)] text-[var(--text-main)]">
+                <div className="font-bold text-[var(--gold-accent)] flex items-center gap-1.5 mb-1">
+                  <span>🕯️</span>
+                  <span>What is the circular halo around the cursor? (Lantern Spotlight)</span>
+                </div>
+                <p className="text-[11px] text-[var(--text-muted)]">
+                  Moving your cursor across the canvas acts as an explorer’s torchlight. It casts an active
+                  ~240px lantern dispel field over the parchment, revealing node halos and beacon glyphs as
+                  you travel through history.
+                </p>
+              </div>
+
               <div className="space-y-2.5">
                 <div className="p-2.5 rounded-xl border border-amber-500/30 bg-amber-500/10">
                   <span className="font-bold text-amber-700 dark:text-amber-300">🏛️ Canonical Citadels (82–100):</span>
                   <p className="mt-0.5">
                     Regions with centuries of continuous scholarship, massive literature volumes, and foundational consensus
-                    (e.g., Plato, Aristotle, Kant, Descartes). Bathed in warm golden hearth halos.
+                    (e.g., Plato, Aristotle, Kant, Descartes). Bathed in warm golden hearth halos with fortified crenellated ramparts.
                   </p>
                 </div>
 
@@ -374,17 +387,29 @@ export function ExplorationHud({
                   <span className="font-bold text-teal-700 dark:text-teal-300">🧭 Pioneer Outposts (40–59):</span>
                   <p className="mt-0.5">
                     Rapidly developing modern frontiers interfacing with empirical sciences, computing, and social changes
-                    (e.g., AI ethics, cognitive science, philosophy of science).
+                    (e.g., AI ethics, cognitive science, philosophy of science). Marked with teal dashed rings.
                   </p>
                 </div>
 
                 <div className="p-2.5 rounded-xl border border-indigo-500/30 bg-indigo-500/10">
                   <span className="font-bold text-indigo-700 dark:text-indigo-300">🌫️ Terra Incognita (&lt; 40):</span>
                   <p className="mt-0.5">
-                    Historically marginalized traditions (classical non-Western philosophies) or radical open conceptual voids.
-                    Marked with antique dashed compass beacons (✦). Moving your cursor across them acts as a torchlight that dispels the mist.
+                    Historically marginalized traditions (classical non-Western philosophies) or radical open conceptual voids
+                    (e.g., Nagarjuna, Zhuangzi, Sunyata). Marked with antique dashed compass beacons and celestial star glyphs (✦).
                   </p>
                 </div>
+              </div>
+
+              {/* Filtering & Interaction Tip */}
+              <div className="pt-2 border-t border-[var(--border-main)] text-[11px] space-y-1">
+                <p>
+                  <strong>Terrain Filtering:</strong> Clicking quick pills above (e.g. <em>Citadels</em> or <em>Terra Incognita</em>)
+                  filters the graph down to only nodes of that terrain class.
+                </p>
+                <p>
+                  <strong>Field Almanac & Dossiers:</strong> Click <em>Field Almanac</em> in the HUD to view publication counts and
+                  open research problems per philosophical branch, or click any node to read its quantified research depth in the dossier drawer.
+                </p>
               </div>
             </div>
           </div>

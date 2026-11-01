@@ -212,8 +212,16 @@ export function GraphLegendModal({ isOpen, onClose }: GraphLegendModalProps) {
                   <span>Terra Incognita (&lt; 40)</span>
                 </div>
                 <p className="text-[11px] text-[var(--text-muted)] leading-relaxed">
-                  Historically marginalized traditions (classical non-Western philosophies) or open unresolved conceptual voids. Moving your cursor acts as a torchlight dispelling the mist.
+                  Historically marginalized traditions (classical non-Western philosophies) or open unresolved conceptual voids. Marked with dashed compass rings and star glyphs (✦).
                 </p>
+              </div>
+            </div>
+
+            {/* Dynamic Lantern Spotlight Callout */}
+            <div className="mt-3 p-3 bg-[var(--bg-subtle)] border border-[var(--gold-border)] rounded-xl flex items-start gap-2.5">
+              <span className="text-base shrink-0">🕯️</span>
+              <div className="text-[11px] leading-relaxed text-[var(--text-muted)]">
+                <strong className="text-[var(--text-main)]">Dynamic Lantern Spotlight:</strong> As you move your mouse across the canvas in exploration mode, your cursor casts a circular torchlight dispel field (~240px radius) across the parchment, illuminating nearby nodes, halos, and beacons.
               </div>
             </div>
           </div>
