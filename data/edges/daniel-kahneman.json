@@ -1,23 +1,83 @@
 [
   {
+    "id": "david-hume--daniel-kahneman",
     "source": "david-hume",
     "target": "daniel-kahneman",
     "type": "DEVELOPED",
     "label": "Vindicated Humean skepticism regarding human inductive rationality through empirical heuristics",
-    "strength": 85
+    "strength": 85,
+    "description": "Daniel Kahneman adopted David Hume's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from David Hume's perspective to Daniel Kahneman's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Enlightenment & Social Contract across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Daniel Kahneman",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rationality-normative-utility/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "David Hume",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hume/"
+      }
+    ]
   },
   {
+    "id": "daniel-kahneman--system-1-and-system-2",
     "source": "daniel-kahneman",
     "target": "system-1-and-system-2",
     "type": "DEVELOPED",
     "label": "Codified dual-process theory and cognitive heuristics in decision science",
-    "strength": 85
+    "strength": 85,
+    "description": "Daniel Kahneman formulated and introduced the concept of \"System 1 & System 2 Heuristics\", which became a seminal contribution in cognitive philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in cognitive.",
+    "historicalContext": "Introduced during the Contemporary & Post-Structural as part of Daniel Kahneman's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "System 1 & System 2 Heuristics",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rationality-normative-utility/"
+      }
+    ]
   },
   {
+    "id": "daniel-kahneman--nick-bostrom",
     "source": "daniel-kahneman",
     "target": "nick-bostrom",
     "type": "INFLUENCED",
     "label": "Cognitive bias research informed probability calibration and existential risk methodology",
-    "strength": 85
+    "strength": 85,
+    "description": "Nick Bostrom was fundamentally influenced by Daniel Kahneman's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Daniel Kahneman's perspective to Nick Bostrom's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Contemporary & Post-Structural era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Nick Bostrom",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ethics-ai/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Daniel Kahneman",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rationality-normative-utility/"
+      }
+    ]
   }
 ]

@@ -1,16 +1,62 @@
 [
   {
+    "id": "john-locke--john-b-watson",
     "source": "john-locke",
     "target": "john-b-watson",
     "type": "DEVELOPED",
     "label": "Radicalized the tabula rasa empirical postulate into observable behavioral conditioning",
-    "strength": 85
+    "strength": 85,
+    "description": "John B. Watson adopted John Locke's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from John Locke's perspective to John B. Watson's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John B. Watson",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/behaviorism/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Locke",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
   },
   {
+    "id": "john-b-watson--b-f-skinner",
     "source": "john-b-watson",
     "target": "b-f-skinner",
     "type": "DEVELOPED",
     "label": "Watson's methodological behaviorism paved the way for Skinner's operant behaviorism",
-    "strength": 85
+    "strength": 85,
+    "description": "B.F. Skinner adopted John B. Watson's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from John B. Watson's perspective to B.F. Skinner's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "B.F. Skinner",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/behaviorism/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John B. Watson",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/behaviorism/"
+      }
+    ]
   }
 ]

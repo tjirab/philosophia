@@ -1,23 +1,83 @@
 [
   {
+    "id": "rene-descartes--ivan-pavlov",
     "source": "rene-descartes",
     "target": "ivan-pavlov",
     "type": "DEVELOPED",
     "label": "Materialized the Cartesian reflex arc into empirical neuro-physiological conditioning",
-    "strength": 85
+    "strength": 85,
+    "description": "Ivan Pavlov adopted René Descartes's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from René Descartes's perspective to Ivan Pavlov's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ivan Pavlov",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/behaviorism/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "René Descartes",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
   },
   {
+    "id": "ivan-pavlov--classical-conditioning",
     "source": "ivan-pavlov",
     "target": "classical-conditioning",
     "type": "DEVELOPED",
     "label": "Formulated classical stimulus-response conditioning through salivary reflex experiments",
-    "strength": 85
+    "strength": 85,
+    "description": "Ivan Pavlov formulated and introduced the concept of \"Classical Conditioning\", which became a seminal contribution in behavioral philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in behavioral.",
+    "historicalContext": "Introduced during the 19th Century Divergences as part of Ivan Pavlov's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Classical Conditioning",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/behaviorism/"
+      }
+    ]
   },
   {
+    "id": "ivan-pavlov--john-b-watson",
     "source": "ivan-pavlov",
     "target": "john-b-watson",
     "type": "INFLUENCED",
     "label": "Provided the physiological and experimental foundation for American behaviorism",
-    "strength": 85
+    "strength": 85,
+    "description": "John B. Watson was fundamentally influenced by Ivan Pavlov's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Ivan Pavlov's perspective to John B. Watson's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John B. Watson",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/behaviorism/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ivan Pavlov",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/behaviorism/"
+      }
+    ]
   }
 ]

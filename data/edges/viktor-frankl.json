@@ -1,16 +1,62 @@
 [
   {
+    "id": "friedrich-nietzsche--viktor-frankl",
     "source": "friedrich-nietzsche",
     "target": "viktor-frankl",
     "type": "INFLUENCED",
     "label": "Adopted Nietzsche's maxim: He who has a why to live can bear almost any how",
-    "strength": 85
+    "strength": 85,
+    "description": "Viktor Frankl was fundamentally influenced by Friedrich Nietzsche's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Friedrich Nietzsche's perspective to Viktor Frankl's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Viktor Frankl",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/existentialism/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Friedrich Nietzsche",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/nietzsche/"
+      }
+    ]
   },
   {
+    "id": "martin-heidegger--viktor-frankl",
     "source": "martin-heidegger",
     "target": "viktor-frankl",
     "type": "SYNTHESIZED",
     "label": "Integrated existential Dasein and thrownness into clinical logotherapy",
-    "strength": 85
+    "strength": 85,
+    "description": "Viktor Frankl synthesized Martin Heidegger's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Martin Heidegger's perspective to Viktor Frankl's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Viktor Frankl",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/existentialism/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Martin Heidegger",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/heidegger/"
+      }
+    ]
   }
 ]

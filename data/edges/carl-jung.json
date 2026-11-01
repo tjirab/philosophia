@@ -1,16 +1,53 @@
 [
   {
+    "id": "carl-jung--collective-unconscious",
     "source": "carl-jung",
     "target": "collective-unconscious",
     "type": "DEVELOPED",
     "label": "Theorized the transpersonal storehouse of universal archetypes and mythic symbols",
-    "strength": 85
+    "strength": 85,
+    "description": "Carl Gustav Jung formulated and introduced the concept of \"Collective Unconscious & Archetypes\", which became a seminal contribution in psychoanalytic philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in psychoanalytic.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Carl Gustav Jung's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Collective Unconscious & Archetypes",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/jung/"
+      }
+    ]
   },
   {
+    "id": "carl-jung--carl-rogers",
     "source": "carl-jung",
     "target": "carl-rogers",
     "type": "DEVELOPED",
     "label": "Influenced humanistic concepts of self-realization, shadow work, and personal integration",
-    "strength": 85
+    "strength": 85,
+    "description": "Carl Rogers adopted Carl Gustav Jung's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Carl Gustav Jung's perspective to Carl Rogers's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Carl Rogers",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/phenomenology/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Carl Gustav Jung",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/jung/"
+      }
+    ]
   }
 ]

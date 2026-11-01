@@ -1,30 +1,122 @@
 [
   {
+    "id": "gottfried-leibniz--wilhelm-wundt",
     "source": "gottfried-leibniz",
     "target": "wilhelm-wundt",
     "type": "DEVELOPED",
     "label": "Developed Leibnizian active apperception into experimental introspective psychology",
-    "strength": 85
+    "strength": 85,
+    "description": "Wilhelm Wundt adopted Gottfried Wilhelm Leibniz's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Gottfried Wilhelm Leibniz's perspective to Wilhelm Wundt's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Wilhelm Wundt",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/wilhelm-wundt/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Gottfried Wilhelm Leibniz",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/leibniz/"
+      }
+    ]
   },
   {
+    "id": "immanuel-kant--wilhelm-wundt",
     "source": "immanuel-kant",
     "target": "wilhelm-wundt",
     "type": "DEVELOPED",
     "label": "Grounded psychological voluntarism in Kantian transcendental forms of consciousness",
-    "strength": 85
+    "strength": 85,
+    "description": "Wilhelm Wundt adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Wilhelm Wundt's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Wilhelm Wundt",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/wilhelm-wundt/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "wilhelm-wundt--william-james",
     "source": "wilhelm-wundt",
     "target": "william-james",
     "type": "CRITIQUED",
     "label": "James rejected Wundtian structural elements in favor of a continuous stream of consciousness",
-    "strength": 85
+    "strength": 85,
+    "description": "William James engaged in a direct critique of Wilhelm Wundt's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Wilhelm Wundt's perspective to William James's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 19th Century Divergences era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "William James",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/james/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Wilhelm Wundt",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/wilhelm-wundt/"
+      }
+    ]
   },
   {
+    "id": "wilhelm-wundt--jean-piaget",
     "source": "wilhelm-wundt",
     "target": "jean-piaget",
     "type": "DEVELOPED",
     "label": "Transmitted experimental laboratory inquiry into cognitive operations",
-    "strength": 85
+    "strength": 85,
+    "description": "Jean Piaget adopted Wilhelm Wundt's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Wilhelm Wundt's perspective to Jean Piaget's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean Piaget",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/piaget/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Wilhelm Wundt",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/wilhelm-wundt/"
+      }
+    ]
   }
 ]

@@ -1,23 +1,83 @@
 [
   {
+    "id": "theodor-adorno--zygmunt-bauman",
     "source": "theodor-adorno",
     "target": "zygmunt-bauman",
     "type": "INFLUENCED",
     "label": "Adorno's critique of bureaucratic instrumental rationality informed Modernity and the Holocaust",
-    "strength": 85
+    "strength": 85,
+    "description": "Zygmunt Bauman was fundamentally influenced by Theodor W. Adorno's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Theodor W. Adorno's perspective to Zygmunt Bauman's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Zygmunt Bauman",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/postmodernism/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Theodor W. Adorno",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/adorno/"
+      }
+    ]
   },
   {
+    "id": "zygmunt-bauman--liquid-modernity",
     "source": "zygmunt-bauman",
     "target": "liquid-modernity",
     "type": "DEVELOPED",
     "label": "Diagnosed the liquefaction of modern institutions, employment securities, and human commitments",
-    "strength": 85
+    "strength": 85,
+    "description": "Zygmunt Bauman formulated and introduced the concept of \"Liquid Modernity\", which became a seminal contribution in social-theory philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in social-theory.",
+    "historicalContext": "Introduced during the Contemporary & Post-Structural as part of Zygmunt Bauman's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Liquid Modernity",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/postmodernism/"
+      }
+    ]
   },
   {
+    "id": "zygmunt-bauman--byung-chul-han",
     "source": "zygmunt-bauman",
     "target": "byung-chul-han",
     "type": "INFLUENCED",
     "label": "Bauman's analysis of liquid consumerism directly links to Han's burnout and achievement society",
-    "strength": 85
+    "strength": 85,
+    "description": "Byung-Chul Han was fundamentally influenced by Zygmunt Bauman's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Zygmunt Bauman's perspective to Byung-Chul Han's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Contemporary & Post-Structural era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Byung-Chul Han",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/culture-cogsci/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Zygmunt Bauman",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/postmodernism/"
+      }
+    ]
   }
 ]

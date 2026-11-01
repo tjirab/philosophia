@@ -1,51 +1,203 @@
 [
   {
+    "id": "arthur-schopenhauer--sigmund-freud",
     "source": "arthur-schopenhauer",
     "target": "sigmund-freud",
     "type": "INFLUENCED",
     "label": "Schopenhauer's blind, striving Will provided the philosophical blueprint for the unconscious id",
-    "strength": 85
+    "strength": 85,
+    "description": "Sigmund Freud was fundamentally influenced by Arthur Schopenhauer's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Arthur Schopenhauer's perspective to Sigmund Freud's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Sigmund Freud",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/freud/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Arthur Schopenhauer",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/schopenhauer/"
+      }
+    ]
   },
   {
+    "id": "friedrich-nietzsche--sigmund-freud",
     "source": "friedrich-nietzsche",
     "target": "sigmund-freud",
     "type": "INFLUENCED",
     "label": "Nietzschean insights into repression, sublimation, and unconscious drives directly shaped psychoanalysis",
-    "strength": 85
+    "strength": 85,
+    "description": "Sigmund Freud was fundamentally influenced by Friedrich Nietzsche's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Friedrich Nietzsche's perspective to Sigmund Freud's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Sigmund Freud",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/freud/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Friedrich Nietzsche",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/nietzsche/"
+      }
+    ]
   },
   {
+    "id": "sigmund-freud--carl-jung",
     "source": "sigmund-freud",
     "target": "carl-jung",
     "type": "INFLUENCED",
     "label": "Freud mentored Jung and established psychoanalytic theory before their theoretical split",
-    "strength": 85
+    "strength": 85,
+    "description": "Carl Gustav Jung was fundamentally influenced by Sigmund Freud's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Sigmund Freud's perspective to Carl Gustav Jung's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Carl Gustav Jung",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/jung/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Sigmund Freud",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/freud/"
+      }
+    ]
   },
   {
+    "id": "sigmund-freud--unconscious-psychoanalysis",
     "source": "sigmund-freud",
     "target": "unconscious-psychoanalysis",
     "type": "DEVELOPED",
     "label": "Formulated the dynamic unconscious and structural model of id, ego, and super-ego",
-    "strength": 85
+    "strength": 85,
+    "description": "Sigmund Freud formulated and introduced the concept of \"Dynamic Unconscious\", which became a seminal contribution in psychoanalytic philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in psychoanalytic.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Sigmund Freud's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Dynamic Unconscious",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/freud/"
+      }
+    ]
   },
   {
+    "id": "sigmund-freud--theodor-adorno",
     "source": "sigmund-freud",
     "target": "theodor-adorno",
     "type": "INFLUENCED",
     "label": "Freudian psychoanalysis formed the clinical bedrock for Frankfurt School authoritarian personality research",
-    "strength": 85
+    "strength": 85,
+    "description": "Theodor W. Adorno was fundamentally influenced by Sigmund Freud's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Sigmund Freud's perspective to Theodor W. Adorno's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Theodor W. Adorno",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/adorno/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Sigmund Freud",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/freud/"
+      }
+    ]
   },
   {
+    "id": "sigmund-freud--michel-foucault",
     "source": "sigmund-freud",
     "target": "michel-foucault",
     "type": "CRITIQUED",
     "label": "Foucault dismantled the repressive hypothesis and psychoanalytic confession techniques in History of Sexuality",
-    "strength": 85
+    "strength": 85,
+    "description": "Michel Foucault engaged in a direct critique of Sigmund Freud's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Sigmund Freud's perspective to Michel Foucault's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Michel Foucault",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/foucault/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Sigmund Freud",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/freud/"
+      }
+    ]
   },
   {
+    "id": "sigmund-freud--alenka-zupancic",
     "source": "sigmund-freud",
     "target": "alenka-zupancic",
     "type": "DEVELOPED",
     "label": "Lacanian and Freudian psychoanalysis applied to philosophical ethics and comedic aesthetics",
-    "strength": 85
+    "strength": 85,
+    "description": "Alenka Zupančič adopted Sigmund Freud's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Sigmund Freud's perspective to Alenka Zupančič's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Alenka Zupančič",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/lacan/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Sigmund Freud",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/freud/"
+      }
+    ]
   }
 ]

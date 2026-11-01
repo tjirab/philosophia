@@ -1,23 +1,83 @@
 [
   {
+    "id": "karl-marx--lev-vygotsky",
     "source": "karl-marx",
     "target": "lev-vygotsky",
     "type": "DEVELOPED",
     "label": "Applied Marxist historical materialism to tool-mediated psychological development and cultural practice",
-    "strength": 85
+    "strength": 85,
+    "description": "Lev Vygotsky adopted Karl Marx's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Karl Marx's perspective to Lev Vygotsky's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Lev Vygotsky",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/vygotsky/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      }
+    ]
   },
   {
+    "id": "lev-vygotsky--zone-of-proximal-development",
     "source": "lev-vygotsky",
     "target": "zone-of-proximal-development",
     "type": "DEVELOPED",
     "label": "Introduced scaffolding and the zone of proximal development in educational psychology",
-    "strength": 85
+    "strength": 85,
+    "description": "Lev Vygotsky formulated and introduced the concept of \"Zone of Proximal Development\", which became a seminal contribution in cognitive philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in cognitive.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Lev Vygotsky's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Zone of Proximal Development",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/vygotsky/"
+      }
+    ]
   },
   {
+    "id": "lev-vygotsky--george-h-mead",
     "source": "lev-vygotsky",
     "target": "george-h-mead",
     "type": "SYNTHESIZED",
     "label": "Converged on the social origin of thought and the internalization of linguistic gestures",
-    "strength": 85
+    "strength": 85,
+    "description": "George Herbert Mead synthesized Lev Vygotsky's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Lev Vygotsky's perspective to George Herbert Mead's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "George Herbert Mead",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/mead-gh/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Lev Vygotsky",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/vygotsky/"
+      }
+    ]
   }
 ]

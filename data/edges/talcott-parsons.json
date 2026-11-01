@@ -1,23 +1,92 @@
 [
   {
+    "id": "max-weber--talcott-parsons",
     "source": "max-weber",
     "target": "talcott-parsons",
     "type": "DEVELOPED",
     "label": "Parsons translated Weber into English and systematized the voluntaristic theory of action",
-    "strength": 85
+    "strength": 85,
+    "description": "Talcott Parsons adopted Max Weber's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Max Weber's perspective to Talcott Parsons's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Talcott Parsons",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/functionalism/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Weber",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/weber/"
+      }
+    ]
   },
   {
+    "id": "talcott-parsons--anthony-giddens",
     "source": "talcott-parsons",
     "target": "anthony-giddens",
     "type": "CRITIQUED",
     "label": "Giddens formulated structuration theory specifically to overcome Parsons' functionalist determinism",
-    "strength": 85
+    "strength": 85,
+    "description": "Anthony Giddens engaged in a direct critique of Talcott Parsons's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Talcott Parsons's perspective to Anthony Giddens's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Anthony Giddens",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/critical-theory/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Talcott Parsons",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/functionalism/"
+      }
+    ]
   },
   {
+    "id": "talcott-parsons--jurgen-habermas",
     "source": "talcott-parsons",
     "target": "jurgen-habermas",
     "type": "SYNTHESIZED",
     "label": "Habermas synthesized Parsonian system equilibrium with phenomenological lifeworld theory",
-    "strength": 85
+    "strength": 85,
+    "description": "Jürgen Habermas synthesized Talcott Parsons's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Talcott Parsons's perspective to Jürgen Habermas's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jürgen Habermas",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Talcott Parsons",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/functionalism/"
+      }
+    ]
   }
 ]

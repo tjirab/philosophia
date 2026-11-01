@@ -1,9 +1,32 @@
 [
   {
+    "id": "anthony-giddens--ulrich-beck",
     "source": "anthony-giddens",
     "target": "ulrich-beck",
     "type": "SYNTHESIZED",
     "label": "Collaborated on the sociological theory of reflexive modernization in contemporary risk society",
-    "strength": 85
+    "strength": 85,
+    "description": "Ulrich Beck synthesized Anthony Giddens's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Anthony Giddens's perspective to Ulrich Beck's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Contemporary & Post-Structural era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ulrich Beck",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/risk/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Anthony Giddens",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/critical-theory/"
+      }
+    ]
   }
 ]

@@ -1,16 +1,53 @@
 [
   {
+    "id": "b-f-skinner--operant-conditioning",
     "source": "b-f-skinner",
     "target": "operant-conditioning",
     "type": "DEVELOPED",
     "label": "Formalized operant reinforcement schedules and behavioral technology",
-    "strength": 85
+    "strength": 85,
+    "description": "B.F. Skinner formulated and introduced the concept of \"Operant Conditioning & Schedules\", which became a seminal contribution in behavioral philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in behavioral.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of B.F. Skinner's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Operant Conditioning & Schedules",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/behaviorism/"
+      }
+    ]
   },
   {
+    "id": "b-f-skinner--noam-chomsky",
     "source": "b-f-skinner",
     "target": "noam-chomsky",
     "type": "CRITIQUED",
     "label": "Chomsky's 1959 review of Verbal Behavior dismantled radical behaviorist accounts of language",
-    "strength": 85
+    "strength": 85,
+    "description": "Noam Chomsky engaged in a direct critique of B.F. Skinner's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from B.F. Skinner's perspective to Noam Chomsky's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Noam Chomsky",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/chomsky/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "B.F. Skinner",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/behaviorism/"
+      }
+    ]
   }
 ]

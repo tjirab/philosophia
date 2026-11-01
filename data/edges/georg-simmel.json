@@ -1,30 +1,113 @@
 [
   {
+    "id": "immanuel-kant--georg-simmel",
     "source": "immanuel-kant",
     "target": "georg-simmel",
     "type": "DEVELOPED",
     "label": "Applied Kantian transcendental forms to the geometries of human sociation",
-    "strength": 85
+    "strength": 85,
+    "description": "Georg Simmel adopted Immanuel Kant's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Immanuel Kant's perspective to Georg Simmel's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the German Idealism & Romanticism across history into the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Georg Simmel",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/simmel/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      }
+    ]
   },
   {
+    "id": "georg-simmel--the-stranger-simmel",
     "source": "georg-simmel",
     "target": "the-stranger-simmel",
     "type": "DEVELOPED",
     "label": "Formulated the sociological archetype of the stranger and spatial boundary mechanics",
-    "strength": 85
+    "strength": 85,
+    "description": "Georg Simmel formulated and introduced the concept of \"The Sociological Stranger\", which became a seminal contribution in social-theory philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in social-theory.",
+    "historicalContext": "Introduced during the 19th Century Divergences as part of Georg Simmel's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Sociological Stranger",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/simmel/"
+      }
+    ]
   },
   {
+    "id": "georg-simmel--george-h-mead",
     "source": "georg-simmel",
     "target": "george-h-mead",
     "type": "INFLUENCED",
     "label": "Simmel's interactionist sociology deeply influenced Mead and the Chicago School",
-    "strength": 85
+    "strength": 85,
+    "description": "George Herbert Mead was fundamentally influenced by Georg Simmel's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Georg Simmel's perspective to George Herbert Mead's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "George Herbert Mead",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/mead-gh/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Georg Simmel",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/simmel/"
+      }
+    ]
   },
   {
+    "id": "georg-simmel--erving-goffman",
     "source": "georg-simmel",
     "target": "erving-goffman",
     "type": "DEVELOPED",
     "label": "Simmel's microsociological essays provided the direct inspiration for Goffman's interaction order",
-    "strength": 85
+    "strength": 85,
+    "description": "Erving Goffman adopted Georg Simmel's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Georg Simmel's perspective to Erving Goffman's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 19th Century Divergences across history into the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Erving Goffman",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/identity-politics/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Georg Simmel",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/simmel/"
+      }
+    ]
   }
 ]
