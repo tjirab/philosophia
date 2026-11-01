@@ -27,25 +27,38 @@ An interactive web application exploring the history of philosophy, how thinkers
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+ (tested on Node 24)
+- Node.js 18+ (tested on Node 20 & 24)
 - npm 9+
+- Make (optional, standard on macOS/Linux)
 
-### Installation & Development
+### Automated Setup (Recommended)
 ```bash
-# Install dependencies
-npm install
+# Clone the repository
+git clone https://github.com/tjirab/philosophia.git
+cd philosophia
 
-# Ingest / update latest podcast episodes from Philosophize This! RSS
-npm run ingest
+# Complete automated setup: dependencies, pre-push git hooks, and verification
+make setup
+```
+> [!TIP]
+> `make setup` automatically runs `npm install`, binds `.githooks/pre-push` to your local git configuration, compiles modular data entities, and verifies the test suite. If `make` is unavailable on your system, run `npm install && npm run setup`.
 
-# Run development server
-npm run dev
+### Development & Workflows
+```bash
+# Launch Next.js local development server (or: npm run dev)
+make dev
 
-# Run test suite
-npm test
+# Run Vitest test suites (or: npm test)
+make test
 
-# Build for production
-npm run build
+# Run canon coverage and dialectical pathfinding audit (or: npm run audit)
+make audit
+
+# Build static production export (or: npm run build)
+make build
+
+# View all available targets
+make help
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to explore the graph.
