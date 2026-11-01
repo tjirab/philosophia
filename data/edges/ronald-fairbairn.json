@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ronald-fairbairn--endopsychic-structure",
+    "source": "ronald-fairbairn",
+    "target": "endopsychic-structure",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated endopsychic structure based on object-seeking libido and ego splitting",
+    "description": "Fairbairn replaced Freud's id-ego-superego with a dynamic structural model composed of Central Ego, Libidinal Ego, and Anti-Libidinal Ego.",
+    "historicalContext": "Published in 'A Revised Psychopathology of the Psychoses and Psychoneuroses' (1941) and 'Endopsychic Structure' (1944).",
+    "dialecticalTension": "Libido is essentially object-seeking, not pleasure-seeking; pleasure is a signpost toward relational connection.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "W.R.D. Fairbairn",
+        "work": "Psychoanalytic Studies of the Personality",
+        "sectionOrPage": "Chapter 4: Endopsychic Structure Considered in Terms of Object-Relationships",
+        "year": "1952",
+        "url": "https://en.wikipedia.org/wiki/Ronald_Fairbairn"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--ronald-fairbairn",
+    "source": "sigmund-freud",
+    "target": "ronald-fairbairn",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Overturned Freud's tension-reduction drive theory in favor of an inherently object-seeking libido",
+    "description": "Fairbairn directly refuted Freud's hedonistic pleasure principle, arguing that impulses cannot be separated from object relations.",
+    "historicalContext": "Fairbairn's papers written in Edinburgh during the 1940s marked a radical departure from classical energy mechanics.",
+    "dialecticalTension": "Energy and structure are inseparable: energy is an inherent attribute of ego structures seeking human objects.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Jay R. Greenberg and Stephen A. Mitchell",
+        "work": "Object Relations in Psychoanalytic Theory",
+        "sectionOrPage": "Chapter 6: W.R.D. Fairbairn",
+        "year": "1983",
+        "url": "https://en.wikipedia.org/wiki/Ronald_Fairbairn"
+      }
+    ]
+  },
+  {
+    "id": "ronald-fairbairn--stephen-mitchell",
+    "source": "ronald-fairbairn",
+    "target": "stephen-mitchell",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Fairbairn's pure object-relations model provided the cornerstone for Relational Psychoanalysis",
+    "description": "Stephen Mitchell identified Fairbairn as the purest relational theorist in the psychoanalytic tradition.",
+    "historicalContext": "Mitchell made Fairbairn the central pivot of his 1983 treatise 'Object Relations in Psychoanalytic Theory'.",
+    "dialecticalTension": "Translating Fairbairn's intrapsychic internalized bad objects into active relational enactments.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jay R. Greenberg and Stephen A. Mitchell",
+        "work": "Object Relations in Psychoanalytic Theory",
+        "sectionOrPage": "pp. 151-188",
+        "year": "1983",
+        "url": "https://en.wikipedia.org/wiki/Stephen_A._Mitchell_(psychoanalyst)"
+      }
+    ]
+  },
+  {
+    "id": "ronald-fairbairn--otto-kernberg",
+    "source": "ronald-fairbairn",
+    "target": "otto-kernberg",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Endopsychic ego splitting and internalized object units informed Kernberg's structural diagnosis",
+    "description": "Kernberg integrated Fairbairn's structural units of self-representation, object-representation, and connecting affect into his borderline theory.",
+    "historicalContext": "Kernberg synthesized Fairbairn with Freud and Klein in 'Internal World and External Reality' (1980).",
+    "dialecticalTension": "Reconciling Fairbairn's object-seeking structure with Freudian biological drive foundations.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Otto F. Kernberg",
+        "work": "Internal World and External Reality",
+        "sectionOrPage": "Chapter 2: Fairbairn's Structural Theory",
+        "year": "1980",
+        "url": "https://en.wikipedia.org/wiki/Otto_F._Kernberg"
+      }
+    ]
+  }
+]

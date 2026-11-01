@@ -1,0 +1,46 @@
+[
+  {
+    "id": "stephen-mitchell--relational-matrix",
+    "source": "stephen-mitchell",
+    "target": "relational-matrix",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the relational matrix uniting intrapsychic structures with interactive intersubjectivity",
+    "description": "Mitchell established the concept of the relational matrix where intrapsychic fantasy and interpersonal reality are inextricably entwined.",
+    "historicalContext": "Articulated in 'Relational Concepts in Psychoanalysis' (1988) and founding the Relational track at NYU Postdoctoral Program.",
+    "dialecticalTension": "Transcendence of the dichotomy between internal fantasy and external reality into a co-constructed relational field.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Stephen A. Mitchell",
+        "work": "Relational Concepts in Psychoanalysis",
+        "sectionOrPage": "Chapter 1: The Relational Matrix",
+        "year": "1988",
+        "url": "https://en.wikipedia.org/wiki/Stephen_A._Mitchell_(psychoanalyst)"
+      }
+    ]
+  },
+  {
+    "id": "heinz-kohut--stephen-mitchell",
+    "source": "heinz-kohut",
+    "target": "stephen-mitchell",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Synthesized Kohut's self psychology and selfobject attunement into the broader relational matrix",
+    "description": "Mitchell integrated Kohut's selfobject functions with Sullivan's interpersonal field and British object relations into relational psychoanalysis.",
+    "historicalContext": "Mitchell critically examined Kohutian self psychology in 'Relational Concepts in Psychoanalysis' (1988).",
+    "dialecticalTension": "Moving from Kohut's developmental arrest model to a dialectical conflict model of relational enactments.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Stephen A. Mitchell",
+        "work": "Relational Concepts in Psychoanalysis",
+        "sectionOrPage": "Chapter 6: Narcissism and the Self",
+        "year": "1988",
+        "url": "https://en.wikipedia.org/wiki/Stephen_A._Mitchell_(psychoanalyst)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "id": "jacques-lacan",
+  "name": "Jacques Lacan",
+  "birthYear": 1901,
+  "deathYear": 1981,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology",
+    "philosophy"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "French psychoanalyst and psychiatrist whose radical 'return to Freud' integrated structural linguistics and Hegelian dialectics, declaring that 'the unconscious is structured like a language' and articulating the Imaginary, Symbolic, and Real registers.",
+  "centralQuestion": "How is the human subject constituted through alienation in the specular mirror image, castration in the Symbolic order of language, and unending desire for the impossible Real?",
+  "keyWorks": [
+    {
+      "title": "Écrits",
+      "year": "1966 CE",
+      "url": "https://en.wikipedia.org/wiki/%C3%89crits",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/%C3%89crits",
+      "description": "Monumental collection containing 'The Mirror Stage', 'The Agency of the Letter in the Unconscious', and 'The Subversion of the Subject'."
+    },
+    {
+      "title": "The Four Fundamental Concepts of Psychoanalysis (Seminar XI)",
+      "year": "1973 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Four_Fundamental_Concepts_of_Psychoanalysis",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Four_Fundamental_Concepts_of_Psychoanalysis",
+      "description": "Explicates the four structural pillars: the unconscious, repetition, the transference, and the drive."
+    },
+    {
+      "title": "The Ethics of Psychoanalysis (Seminar VII)",
+      "year": "1986 CE",
+      "url": "https://en.wikipedia.org/wiki/Jacques_Lacan",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jacques_Lacan",
+      "description": "Explores the relationship of desire to the Real, Antigone, and the ethical maxim 'do not cede on your desire'."
+    }
+  ],
+  "sepSlug": "lacan",
+  "externalRefs": {
+    "sep": "lacan",
+    "wikipedia": "Jacques_Lacan"
+  },
+  "importanceScore": 97,
+  "imageUrl": "/portraits/jacques-lacan.jpg"
+}

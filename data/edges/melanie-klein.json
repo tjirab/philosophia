@@ -1,0 +1,112 @@
+[
+  {
+    "id": "melanie-klein--paranoid-schizoid-and-depressive-positions",
+    "source": "melanie-klein",
+    "target": "paranoid-schizoid-and-depressive-positions",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the paranoid-schizoid and depressive positions governing internal object relations",
+    "description": "Melanie Klein formulated the paranoid-schizoid and depressive positions as the primary developmental postures of the human psyche.",
+    "historicalContext": "Published in 'A Contribution to the Psychogenesis of Manic-Depressive States' (1935) and 'Notes on Some Schizoid Mechanisms' (1946).",
+    "dialecticalTension": "Moving from defensive splitting and persecutory anxiety toward integrated whole objects and reparative guilt.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Hanna Segal",
+        "work": "Introduction to the Work of Melanie Klein",
+        "sectionOrPage": "pp. 24-53",
+        "year": "1973",
+        "url": "https://en.wikipedia.org/wiki/Melanie_Klein"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--melanie-klein",
+    "source": "sigmund-freud",
+    "target": "melanie-klein",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Developed Freud's death instinct and early unconscious phantasy into internal object relations",
+    "description": "Melanie Klein extended Sigmund Freud's concepts of the death instinct and primary narcissism into an active internal world of phantasized part-objects.",
+    "historicalContext": "Klein built upon Freud's 'Beyond the Pleasure Principle' (1920) and 'The Ego and the Id' (1923), moving the focus to early infancy.",
+    "dialecticalTension": "Transforming somatic biological drives into relational internal objects and unconscious phantasies.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Melanie Klein",
+        "work": "The Psycho-Analysis of Children",
+        "sectionOrPage": "Chapters 8-9",
+        "year": "1932",
+        "url": "https://en.wikipedia.org/wiki/The_Psycho-Analysis_of_Children"
+      }
+    ]
+  },
+  {
+    "id": "melanie-klein--d-w-winnicott",
+    "source": "melanie-klein",
+    "target": "d-w-winnicott",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Supervised and mentored Winnicott in child play analysis and primitive emotional development",
+    "description": "Klein supervised Donald Winnicott for years in the British Psychoanalytical Society, deeply shaping his understanding of early infant psychic life.",
+    "historicalContext": "Winnicott was analyzed by James Strachey and supervised by Melanie Klein from 1935 to 1940.",
+    "dialecticalTension": "Winnicott retained Kleinian concepts of fantasy and reparation while shifting focus from innate constitutional aggression to the maternal environment.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Adam Phillips",
+        "work": "Winnicott",
+        "sectionOrPage": "Chapter 3: The Kleinian Heritage",
+        "year": "1988",
+        "url": "https://en.wikipedia.org/wiki/Donald_Winnicott"
+      }
+    ]
+  },
+  {
+    "id": "melanie-klein--ronald-fairbairn",
+    "source": "melanie-klein",
+    "target": "ronald-fairbairn",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Klein's schizoid splitting and internal objects inspired Fairbairn's endopsychic model",
+    "description": "Fairbairn built his revision of psychoanalysis directly upon Klein's observations of early schizoid mechanisms and internal part-objects.",
+    "historicalContext": "Fairbairn acknowledged Klein's 1946 paper on schizoid mechanisms as the proximate catalyst for his structural theory.",
+    "dialecticalTension": "Fairbairn rejected Klein's biological death drive while adopting and systematizing her concept of internal split objects.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "W.R.D. Fairbairn",
+        "work": "Psychoanalytic Studies of the Personality",
+        "sectionOrPage": "pp. 82-132",
+        "year": "1952",
+        "url": "https://en.wikipedia.org/wiki/Ronald_Fairbairn"
+      }
+    ]
+  },
+  {
+    "id": "melanie-klein--heinrich-racker",
+    "source": "melanie-klein",
+    "target": "heinrich-racker",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Projective identification provided the theoretical mechanism for Racker's countertransference",
+    "description": "Heinrich Racker applied Klein's concept of projective identification to explain how the patient induces complementary affective states in the analyst.",
+    "historicalContext": "Racker developed these insights in Buenos Aires during the 1950s under the strong influence of the Kleinian British school.",
+    "dialecticalTension": "Transforming projective identification from a purely intrapsychic defense into an interpersonal clinical communication channel.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Heinrich Racker",
+        "work": "Transference and Countertransference",
+        "sectionOrPage": "Chapter 4: The Meanings and Uses of Countertransference",
+        "year": "1968",
+        "url": "https://en.wikipedia.org/wiki/Heinrich_Racker"
+      }
+    ]
+  }
+]

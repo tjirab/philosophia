@@ -1,0 +1,90 @@
+[
+  {
+    "id": "d-w-winnicott--transitional-object",
+    "source": "d-w-winnicott",
+    "target": "transitional-object",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Conceptualized the transitional object, potential space, and creative play",
+    "description": "Donald Winnicott formulated transitional phenomena as the bridge between internal reality and external shared world.",
+    "historicalContext": "First presented to the British Psychoanalytical Society in 1951, culminating in 'Playing and Reality' (1971).",
+    "dialecticalTension": "Sustaining the paradox of the object: neither created from within nor found entirely from outside.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Donald Winnicott",
+        "work": "Playing and Reality",
+        "sectionOrPage": "Chapter 1: Transitional Objects and Transitional Phenomena",
+        "year": "1971",
+        "url": "https://en.wikipedia.org/wiki/Playing_and_Reality"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--d-w-winnicott",
+    "source": "sigmund-freud",
+    "target": "d-w-winnicott",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Reinterpreted Freudian primary narcissism into maternal holding and primary maternal preoccupation",
+    "description": "Winnicott replaced Freud's solipsistic primary narcissism with an environmental-infant matrix: 'there is no such thing as a baby [without a mother]'.",
+    "historicalContext": "Winnicott's 1940 Address to the British Psychoanalytical Society: 'The Theory of the Parent-Infant Relationship'.",
+    "dialecticalTension": "Drive reduction versus environmental holding and the emergence of the authentic True Self.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Donald Winnicott",
+        "work": "The Maturational Processes and the Facilitating Environment",
+        "sectionOrPage": "pp. 37-55",
+        "year": "1965",
+        "url": "https://en.wikipedia.org/wiki/Donald_Winnicott"
+      }
+    ]
+  },
+  {
+    "id": "d-w-winnicott--stephen-mitchell",
+    "source": "d-w-winnicott",
+    "target": "stephen-mitchell",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Winnicott's potential space and relational holding became foundational for Relational Psychoanalysis",
+    "description": "Stephen Mitchell utilized Winnicott's concepts of potential space, illusion, and play to articulate the intersubjective field of relational psychoanalysis.",
+    "historicalContext": "Detailed extensively in Greenberg & Mitchell's 'Object Relations in Psychoanalytic Theory' (1983).",
+    "dialecticalTension": "Extending maternal environmental holding to clinical mutual influence and therapeutic enactment.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Stephen A. Mitchell",
+        "work": "Relational Concepts in Psychoanalysis",
+        "sectionOrPage": "Chapter 7: The True Self and the Relational Matrix",
+        "year": "1988",
+        "url": "https://en.wikipedia.org/wiki/Stephen_A._Mitchell_(psychoanalyst)"
+      }
+    ]
+  },
+  {
+    "id": "d-w-winnicott--juliet-mitchell",
+    "source": "d-w-winnicott",
+    "target": "juliet-mitchell",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Winnicott's maternal matrix and transitional phenomena enriched feminist psychoanalytic critique",
+    "description": "Juliet Mitchell engaged Winnicott's account of maternal care to evaluate how maternal labor is socially naturalized under patriarchy.",
+    "historicalContext": "Engaged in Mitchell's essays on psychoanalytic feminism and object relations throughout the 1970s and 1980s.",
+    "dialecticalTension": "Deconstructing the good-enough mother to reveal ideological demands placed on maternal functioning.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Juliet Mitchell",
+        "work": "Psychoanalysis and Feminism",
+        "sectionOrPage": "Part III",
+        "year": "1974",
+        "url": "https://en.wikipedia.org/wiki/Psychoanalysis_and_Feminism"
+      }
+    ]
+  }
+]

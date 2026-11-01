@@ -1,0 +1,43 @@
+{
+  "id": "heinz-kohut",
+  "name": "Heinz Kohut",
+  "birthYear": 1913,
+  "deathYear": 1981,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Austrian-American psychoanalyst who founded Self Psychology, re-theorizing narcissism as an autonomous developmental line and defining selfobjects and empathetic attunement.",
+  "centralQuestion": "How do selfobject experiences of mirroring, idealizing, and twinship preserve the coherence, vitality, and harmony of the nuclear self against disintegration anxiety?",
+  "keyWorks": [
+    {
+      "title": "The Analysis of the Self",
+      "year": "1971 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Analysis_of_the_Self",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Analysis_of_the_Self",
+      "description": "Landmark monograph introducing mirror and idealizing transferences in the psychoanalytic treatment of narcissistic disorders."
+    },
+    {
+      "title": "The Restoration of the Self",
+      "year": "1977 CE",
+      "url": "https://en.wikipedia.org/wiki/Heinz_Kohut",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Heinz_Kohut",
+      "description": "Formalizes self psychology as an independent conceptual framework replacing classical drive psychology."
+    },
+    {
+      "title": "How Does Analysis Cure?",
+      "year": "1984 CE",
+      "url": "https://en.wikipedia.org/wiki/Heinz_Kohut",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Heinz_Kohut",
+      "description": "Posthumous text defining optimal frustration, transmuting internalizations, and empathetic understanding as the curative agents."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "wikipedia": "Heinz_Kohut"
+  },
+  "importanceScore": 93,
+  "imageUrl": "/portraits/heinz-kohut.jpg"
+}

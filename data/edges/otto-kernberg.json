@@ -1,0 +1,68 @@
+[
+  {
+    "id": "otto-kernberg--borderline-personality-organization",
+    "source": "otto-kernberg",
+    "target": "borderline-personality-organization",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the structural diagnosis of Borderline Personality Organization and primitive splitting",
+    "description": "Kernberg developed structural diagnosis based on identity diffusion, primitive defense mechanisms, and intact reality testing.",
+    "historicalContext": "Published in 'Borderline Conditions and Pathological Narcissism' (1975) and refined in 'Severe Personality Disorders' (1984).",
+    "dialecticalTension": "Primitive splitting prevents integration of all-good and all-bad internalized object relations, protecting against primitive rage at the expense of ego fragmentation.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Otto F. Kernberg",
+        "work": "Borderline Conditions and Pathological Narcissism",
+        "sectionOrPage": "Chapter 1: The Syndrome",
+        "year": "1975",
+        "url": "https://en.wikipedia.org/wiki/Otto_F._Kernberg"
+      }
+    ]
+  },
+  {
+    "id": "melanie-klein--otto-kernberg",
+    "source": "melanie-klein",
+    "target": "otto-kernberg",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Synthesized Kleinian primitive splitting and projective identification with ego structural diagnosis",
+    "description": "Kernberg took Klein's paranoid-schizoid defense mechanisms and integrated them into a rigorous psychiatric diagnostic continuum.",
+    "historicalContext": "Kernberg synthesized Kleinian object relations with Hartmann, Rapaport, and Jacobson's American ego psychology in the 1960s and 1970s.",
+    "dialecticalTension": "Anchoring Kleinian instinctive part-object fantasy within neurobiological affect systems and structured psychic ego units.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Otto F. Kernberg",
+        "work": "Internal World and External Reality",
+        "sectionOrPage": "Chapters 1 & 4",
+        "year": "1980",
+        "url": "https://en.wikipedia.org/wiki/Otto_F._Kernberg"
+      }
+    ]
+  },
+  {
+    "id": "anna-freud--otto-kernberg",
+    "source": "anna-freud",
+    "target": "otto-kernberg",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Contrasted Anna Freud's high-level neurotic defenses with primitive pre-oedipal splitting mechanisms",
+    "description": "Kernberg distinguished Anna Freud's higher-level neurotic defenses (repression, reaction formation, isolation) from borderline primitive defenses (splitting, projective identification).",
+    "historicalContext": "Kernberg's structural diagnosis explicitly relies on Anna Freud's defense taxonomy to demarcate neurotic from borderline personality organization.",
+    "dialecticalTension": "Repression preserves ego integration; splitting actively fragments ego identity to ward off intolerable contradictory affect.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Otto F. Kernberg",
+        "work": "Borderline Conditions and Pathological Narcissism",
+        "sectionOrPage": "Chapter 1",
+        "year": "1975",
+        "url": "https://en.wikipedia.org/wiki/Otto_F._Kernberg"
+      }
+    ]
+  }
+]

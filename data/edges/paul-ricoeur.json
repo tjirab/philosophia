@@ -1,0 +1,112 @@
+[
+  {
+    "id": "paul-ricoeur--hermeneutics-of-suspicion",
+    "source": "paul-ricoeur",
+    "target": "hermeneutics-of-suspicion",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Hermeneutics of Suspicion and narrative identity bridging sameness and selfhood",
+    "description": "Ricoeur established the hermeneutics of suspicion (Marx, Nietzsche, Freud) to decipher how false consciousness and repressed desire mask truth.",
+    "historicalContext": "Introduced in 'Freud and Philosophy: An Essay on Interpretation' (1965) and expanded in 'Oneself as Another' (1990).",
+    "dialecticalTension": "Reconciling the archaeological critique of suspicion with the teleological recollection of meaning in narrative identity.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Paul Ricoeur",
+        "work": "Freud and Philosophy: An Essay on Interpretation",
+        "sectionOrPage": "Book I: Problematic",
+        "year": "1965",
+        "url": "https://en.wikipedia.org/wiki/Freud_and_Philosophy"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--paul-ricoeur",
+    "source": "sigmund-freud",
+    "target": "paul-ricoeur",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Analyzed Freud as a master of suspicion, synthesizing energetic drives with linguistic hermeneutics",
+    "description": "Ricoeur's 'Freud and Philosophy' synthesized Freud's energetic drive economics with a phenomenology of symbolic language.",
+    "historicalContext": "The Terry Lectures at Yale University in 1961 published as 'Freud and Philosophy' in 1965.",
+    "dialecticalTension": "Connecting the mechanical energetics of libido with the semantic interpretation of symbols and dreams.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Paul Ricoeur",
+        "work": "Freud and Philosophy",
+        "sectionOrPage": "Book II: Analytic",
+        "year": "1965",
+        "url": "https://en.wikipedia.org/wiki/Freud_and_Philosophy"
+      }
+    ]
+  },
+  {
+    "id": "edmund-husserl--paul-ricoeur",
+    "source": "edmund-husserl",
+    "target": "paul-ricoeur",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Translated Husserl's Ideas I and developed pure phenomenological reduction toward hermeneutics",
+    "description": "Ricoeur translated Husserl's 'Ideen I' while imprisoned in Germany during World War II, later transforming Husserlian intentionality into textual hermeneutics.",
+    "historicalContext": "Ricoeur published his monumental French translation and commentary of Husserl's Ideen I in 1950.",
+    "dialecticalTension": "Overcoming Husserl's ideal of immediate intuitive consciousness by insisting that self-understanding is always mediated by cultural signs and texts.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Domenico Jervolino",
+        "work": "The Cogito and Hermeneutics: The Work of Paul Ricoeur",
+        "sectionOrPage": "pp. 15-42",
+        "year": "1990",
+        "url": "https://en.wikipedia.org/wiki/Paul_Ricoeur"
+      }
+    ]
+  },
+  {
+    "id": "martin-heidegger--paul-ricoeur",
+    "source": "martin-heidegger",
+    "target": "paul-ricoeur",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Extended Heidegger's fundamental ontology of Dasein into narrative emplotment and historical time",
+    "description": "Ricoeur adopted Heidegger's temporality from 'Being and Time', developing it through narrative mimesis in 'Time and Narrative'.",
+    "historicalContext": "Ricoeur's 'Time and Narrative' (1983-1985) directly responds to Heidegger's Sein und Zeit §72-83 on within-time-ness and historicality.",
+    "dialecticalTension": "Replacing Heidegger's existential ontology of Being-towards-death with a mediated cultural narrative poetics of human acting and suffering.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Paul Ricoeur",
+        "work": "Time and Narrative, Vol. 3",
+        "sectionOrPage": "Part IV: Temporal Experience",
+        "year": "1985",
+        "url": "https://en.wikipedia.org/wiki/Time_and_Narrative"
+      }
+    ]
+  },
+  {
+    "id": "paul-ricoeur--jurgen-habermas",
+    "source": "paul-ricoeur",
+    "target": "jurgen-habermas",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Ricoeur's critical hermeneutics and suspicion influenced Habermas's communicative action theory",
+    "description": "Habermas engaged Ricoeur's synthesis of hermeneutics and psychoanalysis in 'Knowledge and Human Interests', viewing psychoanalysis as self-reflection.",
+    "historicalContext": "Habermas participated in discussions with Ricoeur on ideology critique and systematically distorted communication in the 1970s.",
+    "dialecticalTension": "Communicative rational discourse free from distortion versus the inevitable historical conditionedness of textual interpretation.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Jürgen Habermas",
+        "work": "Knowledge and Human Interests",
+        "sectionOrPage": "Chapter 10: Self-Reflection as Science",
+        "year": "1971",
+        "url": "https://en.wikipedia.org/wiki/J%C3%BCrgen_Habermas"
+      }
+    ]
+  }
+]

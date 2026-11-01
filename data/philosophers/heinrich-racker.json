@@ -1,0 +1,43 @@
+{
+  "id": "heinrich-racker",
+  "name": "Heinrich Racker",
+  "birthYear": 1910,
+  "deathYear": 1961,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Austrian-Argentine psychoanalyst and musicologist who transformed clinical psychoanalysis by conceptualizing countertransference as the primary diagnostic instrument of the therapeutic process.",
+  "centralQuestion": "How does the analyst's emotional countertransference reflect the patient's split internal object relations through concordant and complementary identifications?",
+  "keyWorks": [
+    {
+      "title": "Transference and Countertransference",
+      "year": "1968 CE",
+      "url": "https://en.wikipedia.org/wiki/Heinrich_Racker",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Heinrich_Racker",
+      "description": "Classic clinical monograph systematizing countertransference as a vital compass of the patient's internal object world."
+    },
+    {
+      "title": "The Countertransference Neurosis",
+      "year": "1953 CE",
+      "url": "https://en.wikipedia.org/wiki/Heinrich_Racker",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Heinrich_Racker",
+      "description": "Examines the interpsychic dynamics between the patient's neurosis and the analyst's unconscious responses."
+    },
+    {
+      "title": "Classical and Present Techniques of Psychoanalysis",
+      "year": "1957 CE",
+      "url": "https://en.wikipedia.org/wiki/Heinrich_Racker",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Heinrich_Racker",
+      "description": "Contrasts classical detached neutrality with modern intersubjective countertransference utilization."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "wikipedia": "Heinrich_Racker"
+  },
+  "importanceScore": 89,
+  "imageUrl": "/portraits/heinrich-racker.jpg"
+}

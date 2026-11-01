@@ -1,0 +1,43 @@
+{
+  "id": "john-bowlby",
+  "name": "John Bowlby",
+  "birthYear": 1907,
+  "deathYear": 1990,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "British psychoanalyst and psychiatrist who synthesized psychoanalysis with ethology, evolutionary biology, and control theory to create Attachment Theory.",
+  "centralQuestion": "How does instinctual proximity-seeking between infant and caregiver establish cognitive-affective internal working models that regulate emotional security and intimacy?",
+  "keyWorks": [
+    {
+      "title": "Attachment and Loss, Vol. 1: Attachment",
+      "year": "1969 CE",
+      "url": "https://en.wikipedia.org/wiki/Attachment_and_Loss",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Attachment_and_Loss",
+      "description": "Establishes the ethological basis of instinctive human attachment behaviors and evolutionary survival value."
+    },
+    {
+      "title": "Attachment and Loss, Vol. 2: Separation: Anxiety and Anger",
+      "year": "1973 CE",
+      "url": "https://en.wikipedia.org/wiki/Attachment_and_Loss",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Attachment_and_Loss",
+      "description": "Investigates the traumatic phases of separation: protest, despair, and detachment."
+    },
+    {
+      "title": "Attachment and Loss, Vol. 3: Loss: Sadness and Depression",
+      "year": "1980 CE",
+      "url": "https://en.wikipedia.org/wiki/Attachment_and_Loss",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Attachment_and_Loss",
+      "description": "Examines pathological mourning, defensive exclusion, and internal working models of self and other."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "wikipedia": "John_Bowlby"
+  },
+  "importanceScore": 95,
+  "imageUrl": "/portraits/john-bowlby.jpg"
+}

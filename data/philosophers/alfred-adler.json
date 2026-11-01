@@ -1,0 +1,43 @@
+{
+  "id": "alfred-adler",
+  "name": "Alfred Adler",
+  "birthYear": 1870,
+  "deathYear": 1937,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Austrian physician and founder of Individual Psychology; argued that human striving is motivated not by sexual libido but by the urge to overcome inferiority and cultivate social interest.",
+  "centralQuestion": "How do individuals overcome universal feelings of inferiority to construct a unique, teleological style of life in communion with their social world?",
+  "keyWorks": [
+    {
+      "title": "The Neurotic Constitution",
+      "year": "1912 CE",
+      "url": "https://en.wikipedia.org/wiki/Alfred_Adler",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Alfred_Adler",
+      "description": "Introduces individual psychology, organ inferiority, and psychological compensation mechanisms."
+    },
+    {
+      "title": "Understanding Human Nature",
+      "year": "1927 CE",
+      "url": "https://en.wikipedia.org/wiki/Understanding_Human_Nature_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Understanding_Human_Nature_(book)",
+      "description": "Examines personality development through the interplay of inferiority feelings and social feeling."
+    },
+    {
+      "title": "What Life Could Mean to You",
+      "year": "1931 CE",
+      "url": "https://en.wikipedia.org/wiki/Alfred_Adler",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Alfred_Adler",
+      "description": "Addresses the three life tasks: work, friendship, and love, guided by Gemeinschaftsgefühl."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "wikipedia": "Alfred_Adler"
+  },
+  "importanceScore": 94,
+  "imageUrl": "/portraits/alfred-adler.jpg"
+}

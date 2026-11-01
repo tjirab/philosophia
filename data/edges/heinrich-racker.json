@@ -1,0 +1,68 @@
+[
+  {
+    "id": "heinrich-racker--concordant-and-complementary-countertransference",
+    "source": "heinrich-racker",
+    "target": "concordant-and-complementary-countertransference",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated concordant and complementary countertransference as the core diagnostic instrument",
+    "description": "Racker established that the analyst's emotional countertransference is an indispensable instrument for diagnosing the patient's split internal object world.",
+    "historicalContext": "Published in 'Transference and Countertransference' (1968), based on clinical papers presented in Buenos Aires in 1953-1957.",
+    "dialecticalTension": "Transforming countertransference from an analyst's neurotic blindspot into an objective epistemological compass.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Heinrich Racker",
+        "work": "Transference and Countertransference",
+        "sectionOrPage": "Chapter 4: The Meanings and Uses of Countertransference",
+        "year": "1968",
+        "url": "https://en.wikipedia.org/wiki/Heinrich_Racker"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--heinrich-racker",
+    "source": "sigmund-freud",
+    "target": "heinrich-racker",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Radically inverted Freud's warning against countertransference into the primary therapeutic guide",
+    "description": "Freud viewed countertransference as a blind spot to be overcome; Racker proved it to be the royal road to the patient's unconscious object relations.",
+    "historicalContext": "Racker critiqued Freud's 1910 paper 'The Future Prospects of Psycho-Analytic Therapy' to establish modern countertransference utilization.",
+    "dialecticalTension": "From classical surgical impassivity (the analyst as blank mirror) to interactive emotional resonance.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Heinrich Racker",
+        "work": "Transference and Countertransference",
+        "sectionOrPage": "Chapter 1",
+        "year": "1968",
+        "url": "https://en.wikipedia.org/wiki/Heinrich_Racker"
+      }
+    ]
+  },
+  {
+    "id": "heinrich-racker--otto-kernberg",
+    "source": "heinrich-racker",
+    "target": "otto-kernberg",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Racker's countertransference taxonomy formed the clinical core of Transference-Focused Psychotherapy",
+    "description": "Otto Kernberg made Racker's concordant and complementary countertransference analysis the centerpiece of treating borderline personality organization.",
+    "historicalContext": "Kernberg credited Racker in 'Borderline Conditions and Pathological Narcissism' (1975) and clinical manuals.",
+    "dialecticalTension": "Using the therapist's complementary countertransference dread and rage to diagnose primitive projective identification.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Otto F. Kernberg",
+        "work": "Borderline Conditions and Pathological Narcissism",
+        "sectionOrPage": "Chapter 2: Treatment of the Borderline Personality",
+        "year": "1975",
+        "url": "https://en.wikipedia.org/wiki/Otto_F._Kernberg"
+      }
+    ]
+  }
+]

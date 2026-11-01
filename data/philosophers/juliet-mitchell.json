@@ -1,0 +1,43 @@
+{
+  "id": "juliet-mitchell",
+  "name": "Juliet Mitchell",
+  "birthYear": 1940,
+  "eraId": "contemporary",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology",
+    "philosophy"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "British psychoanalyst and feminist theorist who reclaimed Freudian and Lacanian psychoanalysis as an indispensable structural critique of patriarchal oppression and pioneered the lateral sibling axis in psychic formation.",
+  "centralQuestion": "How does the unconscious internalize and reproduce patriarchal kinship structures, and how do lateral sibling bonds structure identity alongside vertical parental authority?",
+  "keyWorks": [
+    {
+      "title": "Psychoanalysis and Feminism: Freud, Reich, Laing and Women",
+      "year": "1974 CE",
+      "url": "https://en.wikipedia.org/wiki/Psychoanalysis_and_Feminism",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Psychoanalysis_and_Feminism",
+      "description": "Groundbreaking defense of psychoanalysis demonstrating that Freud describes patriarchal oppression rather than prescriptive biology."
+    },
+    {
+      "title": "Mad Men and Medusas: Reclaiming Hysteria",
+      "year": "2000 CE",
+      "url": "https://en.wikipedia.org/wiki/Juliet_Mitchell",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Juliet_Mitchell",
+      "description": "Re-evaluates hysteria as a fundamental psychological response to lateral and sibling disempowerment."
+    },
+    {
+      "title": "Siblings: Sex and Violence",
+      "year": "2003 CE",
+      "url": "https://en.wikipedia.org/wiki/Juliet_Mitchell",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Juliet_Mitchell",
+      "description": "Introduces the lateral axis as an autonomous dimension of unconscious desire, rivalry, and identification distinct from parental verticality."
+    }
+  ],
+  "sepSlug": "feminist-psychoanalysis",
+  "externalRefs": {
+    "wikipedia": "Juliet_Mitchell"
+  },
+  "importanceScore": 90,
+  "imageUrl": "/portraits/juliet-mitchell.jpg"
+}

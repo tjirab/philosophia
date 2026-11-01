@@ -1,0 +1,45 @@
+{
+  "id": "paul-ricoeur",
+  "name": "Paul Ricoeur",
+  "birthYear": 1913,
+  "deathYear": 2005,
+  "eraId": "twentieth-century",
+  "traditionId": "phenomenology",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "French philosopher who bridged phenomenological hermeneutics, narrative identity, and psychoanalysis, famously conceptualizing Freud, Marx, and Nietzsche as the 'masters of suspicion'.",
+  "centralQuestion": "How can hermeneutic interpretation decipher the symbols, narratives, and unconscious displacements through which the indirect self attains narrative self-understanding?",
+  "keyWorks": [
+    {
+      "title": "Freud and Philosophy: An Essay on Interpretation",
+      "year": "1965 CE",
+      "url": "https://en.wikipedia.org/wiki/Freud_and_Philosophy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Freud_and_Philosophy",
+      "description": "Major treatise exploring psychoanalysis as an archeological hermeneutics of suspicion contrasted with a teleology of desire."
+    },
+    {
+      "title": "Time and Narrative",
+      "year": "1983 CE",
+      "url": "https://en.wikipedia.org/wiki/Time_and_Narrative",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Time_and_Narrative",
+      "description": "Three-volume synthesis connecting human temporal experience, historical discourse, and fictional emplotment."
+    },
+    {
+      "title": "Oneself as Another",
+      "year": "1990 CE",
+      "url": "https://en.wikipedia.org/wiki/Oneself_as_Another",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Oneself_as_Another",
+      "description": "Articulates narrative identity through the dialectic of sameness (idem) and selfhood (ipse) in relation to the other."
+    }
+  ],
+  "sepSlug": "ricoeur",
+  "externalRefs": {
+    "sep": "ricoeur",
+    "wikipedia": "Paul_Ricoeur"
+  },
+  "importanceScore": 94,
+  "imageUrl": "/portraits/paul-ricoeur.jpg"
+}

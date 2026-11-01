@@ -1,0 +1,46 @@
+[
+  {
+    "id": "bruce-fink--the-divided-subject-and-jouissance",
+    "source": "bruce-fink",
+    "target": "the-divided-subject-and-jouissance",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formalized the Lacanian divided subject ($) and the clinical ethics of Jouissance",
+    "description": "Bruce Fink systematically explicated the structural division of the subject ($) alienated between speech and paradoxical jouissance.",
+    "historicalContext": "Published in 'The Lacanian Subject: Between Language and Jouissance' (1995).",
+    "dialecticalTension": "Navigating between the symbolic castration of desire and the bodily demands of jouissance beyond the pleasure principle.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Bruce Fink",
+        "work": "The Lacanian Subject: Between Language and Jouissance",
+        "sectionOrPage": "Chapters 1 & 4",
+        "year": "1995",
+        "url": "https://en.wikipedia.org/wiki/Bruce_Fink"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--bruce-fink",
+    "source": "sigmund-freud",
+    "target": "bruce-fink",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Systematized Freudian dream-work and parapraxes through Lacanian linguistic clinical technique",
+    "description": "Fink demonstrated how Freud's clinical discoveries of condensation, displacement, and jokes operate as pure signifier mechanics.",
+    "historicalContext": "Fink elucidated Freud's case histories (Dora, Little Hans, Rat Man) in 'Clinical Introduction' (1997).",
+    "dialecticalTension": "Applying classical Freudian texts to contemporary Lacanian technique with variable-length sessions.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Bruce Fink",
+        "work": "A Clinical Introduction to Lacanian Psychoanalysis",
+        "sectionOrPage": "Chapters 2-3",
+        "year": "1997",
+        "url": "https://en.wikipedia.org/wiki/Bruce_Fink"
+      }
+    ]
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "anna-freud--ego-defense-mechanisms",
+    "source": "anna-freud",
+    "target": "ego-defense-mechanisms",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Systematized the taxonomy and developmental hierarchy of ego defense mechanisms",
+    "description": "Anna Freud established the definitive psychoanalytic categorization of ego defenses against instinctual unpleasure.",
+    "historicalContext": "Published in 'The Ego and the Mechanisms of Defence' (1936), presented to the Vienna Psychoanalytic Society on Sigmund Freud's 80th birthday.",
+    "dialecticalTension": "Shifting clinical focus from unearthing the id to analyzing the defensive maneuvers deployed by the ego.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Anna Freud",
+        "work": "The Ego and the Mechanisms of Defence",
+        "sectionOrPage": "Part I & II",
+        "year": "1936",
+        "url": "https://en.wikipedia.org/wiki/The_Ego_and_the_Mechanisms_of_Defence"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--anna-freud",
+    "source": "sigmund-freud",
+    "target": "anna-freud",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Pioneered ego psychology and child psychoanalysis following pedagogical mentorship by Freud",
+    "description": "Anna Freud was analyzed and mentored by Sigmund Freud, advancing his tripartite structural model into clinical ego psychology.",
+    "historicalContext": "Sigmund Freud's 'Inhibitions, Symptoms and Anxiety' (1926) directly invited Anna Freud's systematic inquiry into ego defenses.",
+    "dialecticalTension": "Deepening the autonomy and defensive repertory of the ego within the Freudian structural paradigm.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Elisabeth Young-Bruehl",
+        "work": "Anna Freud: A Biography",
+        "sectionOrPage": "pp. 145-188",
+        "year": "1988",
+        "url": "https://en.wikipedia.org/wiki/Anna_Freud"
+      }
+    ]
+  },
+  {
+    "id": "anna-freud--melanie-klein",
+    "source": "anna-freud",
+    "target": "melanie-klein",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Contested Klein's premature dating of the superego and deep interpretation in child analysis",
+    "description": "Anna Freud and Melanie Klein engaged in the historic Controversial Discussions over the nature of child analysis, transferences in children, and early fantasy.",
+    "historicalContext": "The Freud-Klein Controversies took place within the British Psychoanalytical Society between 1941 and 1945.",
+    "dialecticalTension": "Anna Freud's developmental ego pedagogy versus Klein's immediate interpretative confrontation with primitive death drive phantasies.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Pearl King and Riccardo Steiner",
+        "work": "The Freud-Klein Controversies 1941-45",
+        "sectionOrPage": "Introduction & Plenary Debates",
+        "year": "1991",
+        "url": "https://en.wikipedia.org/wiki/Anna_Freud"
+      }
+    ]
+  },
+  {
+    "id": "anna-freud--erik-erikson",
+    "source": "anna-freud",
+    "target": "erik-erikson",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Mentored Erikson at the Vienna Psychoanalytic Institute, instilling ego developmental theory",
+    "description": "Anna Freud analyzed Erik Erikson in Vienna and recruited him into child psychoanalysis, laying the technical foundation for his lifecycle model.",
+    "historicalContext": "Erikson trained at the Vienna Psychoanalytic Institute under Anna Freud and August Aichhorn from 1927 to 1933.",
+    "dialecticalTension": "Erikson expanded Anna Freud's child ego defenses into sociocultural identity crises across the entire lifespan.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Lawrence J. Friedman",
+        "work": "Identity's Architect: A Biography of Erik H. Erikson",
+        "sectionOrPage": "pp. 60-85",
+        "year": "1999",
+        "url": "https://en.wikipedia.org/wiki/Erik_Erikson"
+      }
+    ]
+  }
+]

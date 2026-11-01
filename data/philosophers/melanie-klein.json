@@ -1,0 +1,43 @@
+{
+  "id": "melanie-klein",
+  "name": "Melanie Klein",
+  "birthYear": 1882,
+  "deathYear": 1960,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Austrian-British psychoanalyst who founded object relations theory, pioneered child play analysis, and conceptualized the paranoid-schizoid and depressive positions.",
+  "centralQuestion": "How do early phantasized relations with internal part-objects and unconscious splitting mechanisms structure the infant's psychic life, primal anxiety, and capacity for reparation?",
+  "keyWorks": [
+    {
+      "title": "The Psycho-Analysis of Children",
+      "year": "1932 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Psycho-Analysis_of_Children",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Psycho-Analysis_of_Children",
+      "description": "Seminal work establishing play technique as child psychoanalysis and charting early superego formation."
+    },
+    {
+      "title": "Mourning and its Relation to Manic-Depressive States",
+      "year": "1940 CE",
+      "url": "https://en.wikipedia.org/wiki/Melanie_Klein",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Melanie_Klein",
+      "description": "Defines the depressive position, whole-object relations, and the reparative drive."
+    },
+    {
+      "title": "Envy and Gratitude",
+      "year": "1957 CE",
+      "url": "https://en.wikipedia.org/wiki/Envy_and_Gratitude",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Envy_and_Gratitude",
+      "description": "Articulates innate constitutional envy as a destructive force against the good object, counterbalanced by gratitude."
+    }
+  ],
+  "sepSlug": "klein",
+  "externalRefs": {
+    "wikipedia": "Melanie_Klein"
+  },
+  "importanceScore": 94,
+  "imageUrl": "/portraits/melanie-klein.jpg"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "stephen-mitchell",
+  "name": "Stephen A. Mitchell",
+  "birthYear": 1946,
+  "deathYear": 2000,
+  "eraId": "contemporary",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "American psychoanalyst and psychologist who founded Relational Psychoanalysis, synthesizing interpersonal psychoanalysis and British object relations into a co-constructed two-person field.",
+  "centralQuestion": "How does replacing classical drive theory with a relational matrix transform psychoanalysis into an interactive, mutually negotiated two-person intersubjective field?",
+  "keyWorks": [
+    {
+      "title": "Object Relations in Psychoanalytic Theory",
+      "year": "1983 CE",
+      "url": "https://en.wikipedia.org/wiki/Stephen_A._Mitchell_(psychoanalyst)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Stephen_A._Mitchell_(psychoanalyst)",
+      "description": "Co-authored with Jay Greenberg, establishing the fundamental distinction between drive/structural and relational/conflict paradigms."
+    },
+    {
+      "title": "Relational Concepts in Psychoanalysis: An Integration",
+      "year": "1988 CE",
+      "url": "https://en.wikipedia.org/wiki/Stephen_A._Mitchell_(psychoanalyst)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Stephen_A._Mitchell_(psychoanalyst)",
+      "description": "Articulates the core relational paradigm where mind is constituted within an intersubjective matrix."
+    },
+    {
+      "title": "Hope and Dread in Psychoanalysis",
+      "year": "1993 CE",
+      "url": "https://en.wikipedia.org/wiki/Stephen_A._Mitchell_(psychoanalyst)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Stephen_A._Mitchell_(psychoanalyst)",
+      "description": "Explores clinical enactments, the dialectic of agency and surrender, and the co-construction of meaning."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "wikipedia": "Stephen_A._Mitchell_(psychoanalyst)"
+  },
+  "importanceScore": 90,
+  "imageUrl": "/portraits/stephen-mitchell.jpg"
+}

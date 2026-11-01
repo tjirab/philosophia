@@ -1,0 +1,43 @@
+{
+  "id": "ronald-fairbairn",
+  "name": "Ronald Fairbairn (W.R.D. Fairbairn)",
+  "birthYear": 1889,
+  "deathYear": 1964,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Scottish psychiatrist and psychoanalyst who revolutionized psychoanalytic drive theory by establishing that libido is fundamentally object-seeking rather than pleasure-seeking.",
+  "centralQuestion": "Is psychic motivation fundamentally oriented toward bodily drive discharge or toward relational connection with another human being?",
+  "keyWorks": [
+    {
+      "title": "Psychoanalytic Studies of the Personality",
+      "year": "1952 CE",
+      "url": "https://en.wikipedia.org/wiki/Ronald_Fairbairn",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ronald_Fairbairn",
+      "description": "Magnum opus proposing an endopsychic structural model based entirely on internalized object relations."
+    },
+    {
+      "title": "A Revised Psychopathology of the Psychoses and Psychoneuroses",
+      "year": "1941 CE",
+      "url": "https://en.wikipedia.org/wiki/Ronald_Fairbairn",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ronald_Fairbairn",
+      "description": "Establishes schizoid mechanisms and splitting of the ego as the primary foundation of psychic pathology."
+    },
+    {
+      "title": "The Repression and the Return of Bad Objects",
+      "year": "1943 CE",
+      "url": "https://en.wikipedia.org/wiki/Ronald_Fairbairn",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ronald_Fairbairn",
+      "description": "Demonstrates that what is repressed is not impulses in isolation, but dynamic internalized bad object ties."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "wikipedia": "Ronald_Fairbairn"
+  },
+  "importanceScore": 91,
+  "imageUrl": "/portraits/ronald-fairbairn.jpg"
+}

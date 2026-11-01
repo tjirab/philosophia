@@ -1,0 +1,43 @@
+{
+  "id": "erik-erikson",
+  "name": "Erik Erikson",
+  "birthYear": 1902,
+  "deathYear": 1994,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "German-American psychoanalyst and developmental psychologist who formulated the epigenetic eight stages of psychosocial development and coined the 'identity crisis'.",
+  "centralQuestion": "How does the human ego navigate sequential, culturally mediated psychosocial crises across the entire lifecycle to forge ego identity and virtues?",
+  "keyWorks": [
+    {
+      "title": "Childhood and Society",
+      "year": "1950 CE",
+      "url": "https://en.wikipedia.org/wiki/Childhood_and_Society",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Childhood_and_Society",
+      "description": "Outlines the eight stages of psychosocial development from basic trust to ego integrity."
+    },
+    {
+      "title": "Young Man Luther: A Study in Psychoanalysis and History",
+      "year": "1958 CE",
+      "url": "https://en.wikipedia.org/wiki/Young_Man_Luther",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Young_Man_Luther",
+      "description": "Pioneers psychohistory by analyzing Martin Luther's acute identity crisis and historical transformation."
+    },
+    {
+      "title": "Identity: Youth and Crisis",
+      "year": "1968 CE",
+      "url": "https://en.wikipedia.org/wiki/Identity:_Youth_and_Crisis",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Identity:_Youth_and_Crisis",
+      "description": "Systematizes adolescent identity formation, psychosocial moratorium, and identity confusion."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "wikipedia": "Erik_Erikson"
+  },
+  "importanceScore": 93,
+  "imageUrl": "/portraits/erik-erikson.jpg"
+}

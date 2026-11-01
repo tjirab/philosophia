@@ -97,7 +97,11 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'siddhartha-gautama', patterns: [/\bbuddha\b/i, /\bbuddhism\b/i, /\bsiddhartha\b/i] },
   { id: 'nagarjuna', patterns: [/\bnagarjuna\b/i, /\bmadhyamaka\b/i, /\bmiddle way\b/i, /\bsunyata\b/i] },
   { id: 'adi-shankara', patterns: [/\bshankara\b/i, /\badvaita\b/i, /\bvedanta\b/i] },
-  { id: 'c-thi-nguyen', patterns: [/\bc\.?\s*thi\s*nguyen\b/i, /\bthi nguyen\b/i] }
+  { id: 'c-thi-nguyen', patterns: [/\bc\.?\s*thi\s*nguyen\b/i, /\bthi nguyen\b/i] },
+  { id: 'jacques-lacan', patterns: [/\blacan\b/i, /\blacanian\b/i] },
+  { id: 'paul-ricoeur', patterns: [/\bricoeur\b/i, /\bricœur\b/i] },
+  { id: 'melanie-klein', patterns: [/\bmelanie klein\b/i] },
+  { id: 'alfred-adler', patterns: [/\balfred adler\b/i] }
 ];
 
 async function ingestRSS() {

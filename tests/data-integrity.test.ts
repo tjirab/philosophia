@@ -529,6 +529,58 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const nguyenToAgencyAsArt = findInfluencePath('c-thi-nguyen', 'agency-as-art', edgesData as any);
     expect(nguyenToAgencyAsArt.found).toBe(true);
+
+    // Psychoanalytic lineages
+    const freudToKlein = findInfluencePath('sigmund-freud', 'melanie-klein', edgesData as any);
+    expect(freudToKlein.found).toBe(true);
+
+    const kleinToWinnicott = findInfluencePath('melanie-klein', 'd-w-winnicott', edgesData as any);
+    expect(kleinToWinnicott.found).toBe(true);
+
+    const winnicottToMitchell = findInfluencePath('d-w-winnicott', 'stephen-mitchell', edgesData as any);
+    expect(winnicottToMitchell.found).toBe(true);
+
+    const freudToAnna = findInfluencePath('sigmund-freud', 'anna-freud', edgesData as any);
+    expect(freudToAnna.found).toBe(true);
+
+    const annaToErikson = findInfluencePath('anna-freud', 'erik-erikson', edgesData as any);
+    expect(annaToErikson.found).toBe(true);
+
+    const freudToAdler = findInfluencePath('sigmund-freud', 'alfred-adler', edgesData as any);
+    expect(freudToAdler.found).toBe(true);
+
+    const adlerToFrankl = findInfluencePath('alfred-adler', 'viktor-frankl', edgesData as any);
+    expect(adlerToFrankl.found).toBe(true);
+
+    const freudToLacan = findInfluencePath('sigmund-freud', 'jacques-lacan', edgesData as any);
+    expect(freudToLacan.found).toBe(true);
+
+    const lacanToFink = findInfluencePath('jacques-lacan', 'bruce-fink', edgesData as any);
+    expect(lacanToFink.found).toBe(true);
+
+    const lacanToJuliet = findInfluencePath('jacques-lacan', 'juliet-mitchell', edgesData as any);
+    expect(lacanToJuliet.found).toBe(true);
+
+    const husserlToRicoeur = findInfluencePath('edmund-husserl', 'paul-ricoeur', edgesData as any);
+    expect(husserlToRicoeur.found).toBe(true);
+
+    const ricoeurToHabermas = findInfluencePath('paul-ricoeur', 'jurgen-habermas', edgesData as any);
+    expect(ricoeurToHabermas.found).toBe(true);
+
+    const kleinToRacker = findInfluencePath('melanie-klein', 'heinrich-racker', edgesData as any);
+    expect(kleinToRacker.found).toBe(true);
+
+    const rackerToKernberg = findInfluencePath('heinrich-racker', 'otto-kernberg', edgesData as any);
+    expect(rackerToKernberg.found).toBe(true);
+
+    const kohutToKernberg = findInfluencePath('heinz-kohut', 'otto-kernberg', edgesData as any);
+    expect(kohutToKernberg.found).toBe(true);
+
+    const bowlbyToMitchell = findInfluencePath('john-bowlby', 'stephen-mitchell', edgesData as any);
+    expect(bowlbyToMitchell.found).toBe(true);
+
+    const fairbairnToMitchell = findInfluencePath('ronald-fairbairn', 'stephen-mitchell', edgesData as any);
+    expect(fairbairnToMitchell.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {
