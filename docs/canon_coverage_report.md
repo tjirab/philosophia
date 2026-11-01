@@ -1,6 +1,6 @@
 # 📜 Philosophia Canon Coverage & Assessment Report
 
-> **Generated:** `2026-11-01T16:35:57.017Z`  
+> **Generated:** `2026-11-01T17:24:20.984Z`  
 > **Status:** 🟢 Healthy (0 isolated nodes, 1 unified graph)
 
 ---
@@ -86,7 +86,7 @@ Automated pathfinding verification across canonical historical transitions:
 | **Wollstonecraft → Mill** | ✅ Verified | 1 hops | `mary-wollstonecraft → john-stuart-mill` |
 | **Kant → Hegel → Alenka Zupančič** | ✅ Verified | 1 hops | `immanuel-kant → alenka-zupancic` |
 | **Popper → Kuhn → Foucault** | ✅ Verified | 2 hops | `karl-popper → thomas-kuhn → michel-foucault` |
-| **Aristotle → Al-Farabi → Avicenna** | ✅ Verified | 1 hops | `aristotle → avicenna` |
+| **Al-Farabi → Avicenna** | ✅ Verified | 1 hops | `al-farabi → avicenna` |
 | **Aristotle → Ibn Khaldun → Comte** | ✅ Verified | 2 hops | `aristotle → francis-bacon → auguste-comte` |
 | **Descartes → Elisabeth of Bohemia → Spinoza** | ✅ Verified | 1 hops | `rene-descartes → baruch-spinoza` |
 | **Aristotle → Anscombe → Foot** | ✅ Verified | 2 hops | `aristotle → thomas-aquinas → philippa-foot` |
