@@ -127,7 +127,8 @@ export function getLinkWidth(
     return 3.2;
   }
 
-  const s = typeof strength === 'number' ? strength : 3;
+  // Defensively clamp edge weight / strength between 1 and 5
+  const s = Math.min(5, Math.max(1, typeof strength === 'number' ? strength : 3));
   return 1.0 + s * 0.16;
 }
 

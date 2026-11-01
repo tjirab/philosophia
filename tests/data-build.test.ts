@@ -87,6 +87,8 @@ describe('Modular Data Architecture & Compiler', () => {
         expect(Array.isArray(edge.citations), `File ${file} has edge missing citations`).toBe(true);
         expect(validTypes.has(edge.type), `File ${file} has invalid edge type ${edge.type}`).toBe(true);
         expect(typeof edge.strength).toBe('number');
+        expect(edge.strength, `File ${file} edge ${edge.source}->${edge.target} strength exceeds max weight of 5`).toBeLessThanOrEqual(5);
+        expect(edge.strength, `File ${file} edge ${edge.source}->${edge.target} strength below min weight of 1`).toBeGreaterThanOrEqual(1);
         totalEdges++;
       }
     }
