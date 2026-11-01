@@ -85,9 +85,9 @@ export function HoverNodeCard({ node, position }: HoverNodeCardProps) {
             {node.exploration && (
               <span
                 className="text-[10px] px-2 py-0.5 rounded-full bg-[var(--bg-subtle)] border border-[var(--border-main)] font-mono text-[var(--text-main)]"
-                title={node.exploration.tagline}
+                title={`${node.exploration.tagline} (Consensus Depth: ${node.exploration.score}/100)`}
               >
-                {node.exploration.badgeIcon} {node.exploration.label} ({node.exploration.score}/100)
+                {node.exploration.badgeIcon} {node.exploration.label}
               </span>
             )}
           </div>
