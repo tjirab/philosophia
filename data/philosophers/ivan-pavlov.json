@@ -1,0 +1,30 @@
+{
+  "id": "ivan-pavlov",
+  "name": "Ivan Pavlov",
+  "birthYear": 1849,
+  "deathYear": 1936,
+  "eraId": "nineteenth-century",
+  "traditionId": "behaviorism",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Russian physiologist who discovered classical conditioning through his landmark salivation experiments with dogs, laying the bedrock for scientific behaviorism.",
+  "centralQuestion": "How can physiological and autonomic reflexes be systematically conditioned through neutral stimulus association?",
+  "keyWorks": [
+    {
+      "title": "Conditioned Reflexes",
+      "year": "1927 CE",
+      "url": "https://en.wikipedia.org/wiki/Conditioned_reflex",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Conditioned_reflex",
+      "description": "Definitive physiological investigation of cortical associative reflexes."
+    }
+  ],
+  "sepSlug": "behaviorism",
+  "externalRefs": {
+    "sep": "behaviorism",
+    "wikipedia": "Ivan_Pavlov"
+  },
+  "importanceScore": 90,
+  "imageUrl": "/portraits/ivan-pavlov.jpg"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "source": "francis-bacon",
+    "target": "auguste-comte",
+    "type": "DEVELOPED",
+    "label": "Applied Baconian scientific empiricism to the systemic study of human society",
+    "strength": 85
+  },
+  {
+    "source": "auguste-comte",
+    "target": "law-of-three-stages",
+    "type": "DEVELOPED",
+    "label": "Formulated the theological, metaphysical, and positive stages of civilizational development",
+    "strength": 85
+  },
+  {
+    "source": "auguste-comte",
+    "target": "john-stuart-mill",
+    "type": "INFLUENCED",
+    "label": "Mill engaged with and critiqued Comte's positivism in formulating his own sociological logic",
+    "strength": 85
+  },
+  {
+    "source": "auguste-comte",
+    "target": "emile-durkheim",
+    "type": "DEVELOPED",
+    "label": "Durkheim transformed Comtean positivist sociology into institutional academic research",
+    "strength": 85
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "id": "talcott-parsons",
+  "name": "Talcott Parsons",
+  "birthYear": 1902,
+  "deathYear": 1979,
+  "eraId": "twentieth-century",
+  "traditionId": "structural-functionalism",
+  "domains": [
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "American sociologist who synthesized Weber, Durkheim, and Pareto into the Action Frame of Reference and the grand AGIL structural-functionalist system.",
+  "centralQuestion": "What functional prerequisites must a social action system satisfy to maintain equilibrium and institutional order?",
+  "keyWorks": [
+    {
+      "title": "The Structure of Social Action",
+      "year": "1937 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Structure_of_Social_Action",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Structure_of_Social_Action",
+      "description": "Major synthesis of classical European sociology establishing structural functionalism."
+    },
+    {
+      "title": "The Social System",
+      "year": "1951 CE",
+      "url": "https://en.wikipedia.org/wiki/Talcott_Parsons",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Talcott_Parsons",
+      "description": "Articulates the comprehensive functional requirements of social equilibrium."
+    }
+  ],
+  "sepSlug": "functionalism",
+  "externalRefs": {
+    "sep": "functionalism",
+    "wikipedia": "Talcott_Parsons"
+  },
+  "importanceScore": 90,
+  "imageUrl": "/portraits/talcott-parsons.jpg"
+}

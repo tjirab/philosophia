@@ -1,0 +1,30 @@
+[
+  {
+    "source": "karl-marx",
+    "target": "pierre-bourdieu",
+    "type": "DEVELOPED",
+    "label": "Expanded economic capital into cultural, social, and symbolic forms of capital",
+    "strength": 85
+  },
+  {
+    "source": "maurice-merleau-ponty",
+    "target": "pierre-bourdieu",
+    "type": "DEVELOPED",
+    "label": "Merleau-Ponty's bodily intentionality provided the phenomenological grounding for habitus",
+    "strength": 85
+  },
+  {
+    "source": "pierre-bourdieu",
+    "target": "habitus-bourdieu",
+    "type": "DEVELOPED",
+    "label": "Formulated habitus and social field theory to explain the reproduction of class hierarchy",
+    "strength": 85
+  },
+  {
+    "source": "pierre-bourdieu",
+    "target": "michel-foucault",
+    "type": "SYNTHESIZED",
+    "label": "Shared deep critique of institutional disciplinary power, bodily norms, and symbolic domination",
+    "strength": 85
+  }
+]

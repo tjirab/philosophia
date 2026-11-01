@@ -1,0 +1,38 @@
+{
+  "id": "georg-simmel",
+  "name": "Georg Simmel",
+  "birthYear": 1858,
+  "deathYear": 1918,
+  "eraId": "nineteenth-century",
+  "traditionId": "formal-sociology",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "German sociologist and neo-Kantian philosopher; pioneered formal sociology, social geometry (dyads, triads), analysis of the stranger, and the psychology of the metropolis.",
+  "centralQuestion": "How does the intensification of nervous stimulation in modern metropolitan money economies transform the individual's inner mental life?",
+  "keyWorks": [
+    {
+      "title": "The Philosophy of Money",
+      "year": "1900 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Philosophy_of_Money",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Philosophy_of_Money",
+      "description": "Philosophical and sociological analysis of economic exchange and alienation."
+    },
+    {
+      "title": "The Metropolis and Mental Life",
+      "year": "1903 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Metropolis_and_Mental_Life",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Metropolis_and_Mental_Life",
+      "description": "Classic essay on urban blase attitude and sensory overload in modern cities."
+    }
+  ],
+  "sepSlug": "simmel",
+  "externalRefs": {
+    "sep": "simmel",
+    "wikipedia": "Georg_Simmel"
+  },
+  "importanceScore": 91,
+  "imageUrl": "/portraits/georg-simmel.jpg"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "source": "soren-kierkegaard",
+    "target": "carl-rogers",
+    "type": "INFLUENCED",
+    "label": "Kierkegaard's phenomenology of authentic self-becoming inspired person-centered humanistic therapy",
+    "strength": 85
+  },
+  {
+    "source": "carl-rogers",
+    "target": "viktor-frankl",
+    "type": "SYNTHESIZED",
+    "label": "Shared humanistic commitment to human agency, self-determination, and personal dignity",
+    "strength": 85
+  }
+]

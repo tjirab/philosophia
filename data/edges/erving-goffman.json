@@ -1,0 +1,16 @@
+[
+  {
+    "source": "erving-goffman",
+    "target": "dramaturgy-goffman",
+    "type": "DEVELOPED",
+    "label": "Theorized social behavior through theatrical staging, frontstage performances, and face preservation",
+    "strength": 85
+  },
+  {
+    "source": "erving-goffman",
+    "target": "pierre-bourdieu",
+    "type": "SYNTHESIZED",
+    "label": "Goffman's microsociological rituals complemented Bourdieu's embodied habitus",
+    "strength": 85
+  }
+]

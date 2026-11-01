@@ -1,0 +1,30 @@
+[
+  {
+    "source": "william-james",
+    "target": "george-h-mead",
+    "type": "DEVELOPED",
+    "label": "Transformed Jamesian pragmatism and stream of consciousness into social interactionist psychology",
+    "strength": 85
+  },
+  {
+    "source": "george-h-mead",
+    "target": "generalized-other",
+    "type": "DEVELOPED",
+    "label": "Theorized how role-taking and the generalized other construct self-consciousness",
+    "strength": 85
+  },
+  {
+    "source": "george-h-mead",
+    "target": "erving-goffman",
+    "type": "DEVELOPED",
+    "label": "Goffman developed Mead's social self into dramaturgical impression management",
+    "strength": 85
+  },
+  {
+    "source": "george-h-mead",
+    "target": "jurgen-habermas",
+    "type": "DEVELOPED",
+    "label": "Habermas integrated Mead's communicative gestures into the theory of communicative action",
+    "strength": 85
+  }
+]

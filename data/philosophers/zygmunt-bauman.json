@@ -1,0 +1,38 @@
+{
+  "id": "zygmunt-bauman",
+  "name": "Zygmunt Bauman",
+  "birthYear": 1925,
+  "deathYear": 2017,
+  "eraId": "contemporary",
+  "traditionId": "contemporary-sociology",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Polish-British sociologist and philosopher; theorized 'liquid modernity' where human bonds, institutions, and identities dissolve into precarious and fleeting forms.",
+  "centralQuestion": "How does the fluid, precarious nature of consumerist liquid modernity dissolve lasting human solidarity and moral commitment?",
+  "keyWorks": [
+    {
+      "title": "Modernity and the Holocaust",
+      "year": "1989 CE",
+      "url": "https://en.wikipedia.org/wiki/Modernity_and_the_Holocaust",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Modernity_and_the_Holocaust",
+      "description": "Argues the Holocaust was not a breakdown of modernity, but a product of bureaucratic rationalization."
+    },
+    {
+      "title": "Liquid Modernity",
+      "year": "2000 CE",
+      "url": "https://en.wikipedia.org/wiki/Zygmunt_Bauman",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Zygmunt_Bauman",
+      "description": "Diagnoses the shift from hardware-solid modernity to software-liquid consumption."
+    }
+  ],
+  "sepSlug": "postmodernism",
+  "externalRefs": {
+    "sep": "postmodernism",
+    "wikipedia": "Zygmunt_Bauman"
+  },
+  "importanceScore": 91,
+  "imageUrl": "/portraits/zygmunt-bauman.jpg"
+}

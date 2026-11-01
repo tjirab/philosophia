@@ -1,0 +1,44 @@
+{
+  "id": "noam-chomsky",
+  "name": "Noam Chomsky",
+  "birthYear": 1928,
+  "eraId": "contemporary",
+  "traditionId": "cognitive-revolution",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Linguist, cognitive scientist, and philosopher; sparked the Cognitive Revolution with his critique of Skinnerian behaviorism and his theory of universal innate grammar.",
+  "centralQuestion": "What innate biological structures of the human mind make the rapid and creative acquisition of language possible from impoverished sensory input?",
+  "keyWorks": [
+    {
+      "title": "Syntactic Structures",
+      "year": "1957 CE",
+      "url": "https://en.wikipedia.org/wiki/Syntactic_Structures",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Syntactic_Structures",
+      "description": "Revolutionized theoretical linguistics with transformational generative grammar."
+    },
+    {
+      "title": "Review of B. F. Skinner's Verbal Behavior",
+      "year": "1959 CE",
+      "url": "https://en.wikipedia.org/wiki/A_Review_of_B._F._Skinner%27s_Verbal_Behavior",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Review_of_B._F._Skinner%27s_Verbal_Behavior",
+      "description": "Decisive critique initiating the Cognitive Revolution."
+    },
+    {
+      "title": "Language and Mind",
+      "year": "1968 CE",
+      "url": "https://en.wikipedia.org/wiki/Language_and_Mind",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Language_and_Mind",
+      "description": "Connects linguistic competence to philosophical rationalism and innate mental architecture."
+    }
+  ],
+  "sepSlug": "chomsky",
+  "externalRefs": {
+    "sep": "chomsky",
+    "wikipedia": "Noam_Chomsky"
+  },
+  "importanceScore": 96,
+  "imageUrl": "/portraits/noam-chomsky.jpg"
+}

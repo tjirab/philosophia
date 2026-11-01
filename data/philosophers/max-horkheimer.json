@@ -5,6 +5,8 @@
   "deathYear": 1973,
   "eraId": "twentieth-century",
   "traditionId": "critical-theory",
+  "domains": ["philosophy", "sociology"],
+  "primaryDomain": "philosophy",
   "shortBio": "Director of the Frankfurt Institute for Social Research and architect of Critical Theory. Co-authored Dialectic of Enlightenment with Adorno, diagnosing how instrumental reason converts enlightenment into domination.",
   "centralQuestion": "How can reason liberate humanity from suffering rather than becoming a technical tool for totalitarian control and domination over nature?",
   "keyWorks": [

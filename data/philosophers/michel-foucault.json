@@ -5,6 +5,8 @@
   "deathYear": 1984,
   "eraId": "contemporary",
   "traditionId": "post-structuralism",
+  "domains": ["philosophy", "sociology", "psychology"],
+  "primaryDomain": "philosophy",
   "shortBio": "French historian of systems of thought; explored how power is entwined with knowledge, surveillance (Panopticon), and biopolitics.",
   "centralQuestion": "How do disciplinary institutions and discourses construct our conceptions of sanity, sexuality, and deviance?",
   "keyWorks": [

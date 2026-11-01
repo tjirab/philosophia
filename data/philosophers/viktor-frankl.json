@@ -1,0 +1,38 @@
+{
+  "id": "viktor-frankl",
+  "name": "Viktor Frankl",
+  "birthYear": 1905,
+  "deathYear": 1997,
+  "eraId": "twentieth-century",
+  "traditionId": "humanistic-psychology",
+  "domains": [
+    "psychology",
+    "philosophy"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Austrian neurologist, psychiatrist, and Holocaust survivor; founded logotherapy rooted in the human will to meaning and spiritual resilience.",
+  "centralQuestion": "How can human beings discover meaning and retain spiritual freedom even amid unavoidable suffering and existential despair?",
+  "keyWorks": [
+    {
+      "title": "Man's Search for Meaning",
+      "year": "1946 CE",
+      "url": "https://en.wikipedia.org/wiki/Man%27s_Search_for_Meaning",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Man%27s_Search_for_Meaning",
+      "description": "Chronicles survival in concentration camps and formulates logotherapy."
+    },
+    {
+      "title": "The Doctor and the Soul",
+      "year": "1955 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Doctor_and_the_Soul",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Doctor_and_the_Soul",
+      "description": "Comprehensive philosophical exposition of existential psychotherapy."
+    }
+  ],
+  "sepSlug": "existentialism",
+  "externalRefs": {
+    "sep": "existentialism",
+    "wikipedia": "Viktor_Frankl"
+  },
+  "importanceScore": 91,
+  "imageUrl": "/portraits/viktor-frankl.jpg"
+}

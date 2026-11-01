@@ -1,0 +1,38 @@
+{
+  "id": "auguste-comte",
+  "name": "Auguste Comte",
+  "birthYear": 1798,
+  "deathYear": 1857,
+  "eraId": "nineteenth-century",
+  "traditionId": "positivism-sociology",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "French philosopher who coined the term 'sociology' and established positivism; proposed the Law of the Three Stages of intellectual development.",
+  "centralQuestion": "What immutable scientific laws govern social statics and social dynamics across historical epochs?",
+  "keyWorks": [
+    {
+      "title": "The Course in Positive Philosophy",
+      "year": "1830 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Course_in_Positive_Philosophy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Course_in_Positive_Philosophy",
+      "description": "Foundational treatise articulating the positive hierarchy of sciences and sociology."
+    },
+    {
+      "title": "A General View of Positivism",
+      "year": "1848 CE",
+      "url": "https://en.wikipedia.org/wiki/Auguste_Comte",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Auguste_Comte",
+      "description": "Formulates moral reorganization of society around empirical scientific observation."
+    }
+  ],
+  "sepSlug": "comte",
+  "externalRefs": {
+    "sep": "comte",
+    "wikipedia": "Auguste_Comte"
+  },
+  "importanceScore": 93,
+  "imageUrl": "/portraits/auguste-comte.jpg"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "carl-rogers",
+  "name": "Carl Rogers",
+  "birthYear": 1902,
+  "deathYear": 1987,
+  "eraId": "twentieth-century",
+  "traditionId": "humanistic-psychology",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "American psychologist and founder of person-centered humanistic therapy; highlighted unconditional positive regard, empathy, and the self-actualizing tendency.",
+  "centralQuestion": "Under what interpersonal conditions does a person's organic drive toward self-actualization and personal growth naturally flourish?",
+  "keyWorks": [
+    {
+      "title": "Client-Centered Therapy",
+      "year": "1951 CE",
+      "url": "https://en.wikipedia.org/wiki/Person-centered_therapy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Person-centered_therapy",
+      "description": "Establishes the non-directive, empathic therapeutic relationship."
+    },
+    {
+      "title": "On Becoming a Person",
+      "year": "1961 CE",
+      "url": "https://en.wikipedia.org/wiki/On_Becoming_a_Person",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/On_Becoming_a_Person",
+      "description": "Classic articulation of humanistic psychology and the fully functioning person."
+    }
+  ],
+  "sepSlug": "phenomenology",
+  "externalRefs": {
+    "sep": "phenomenology",
+    "wikipedia": "Carl_Rogers"
+  },
+  "importanceScore": 89,
+  "imageUrl": "/portraits/carl-rogers.jpg"
+}

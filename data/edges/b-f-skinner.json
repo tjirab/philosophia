@@ -1,0 +1,16 @@
+[
+  {
+    "source": "b-f-skinner",
+    "target": "operant-conditioning",
+    "type": "DEVELOPED",
+    "label": "Formalized operant reinforcement schedules and behavioral technology",
+    "strength": 85
+  },
+  {
+    "source": "b-f-skinner",
+    "target": "noam-chomsky",
+    "type": "CRITIQUED",
+    "label": "Chomsky's 1959 review of Verbal Behavior dismantled radical behaviorist accounts of language",
+    "strength": 85
+  }
+]

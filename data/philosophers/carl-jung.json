@@ -1,0 +1,37 @@
+{
+  "id": "carl-jung",
+  "name": "Carl Gustav Jung",
+  "birthYear": 1875,
+  "deathYear": 1961,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Swiss psychiatrist and founder of analytical psychology; introduced archetypes, the collective unconscious, extraversion/introversion, and psychological individuation.",
+  "centralQuestion": "What universal mythological archetypes and symbolic contents reside within the transpersonal collective unconscious?",
+  "keyWorks": [
+    {
+      "title": "Psychological Types",
+      "year": "1921 CE",
+      "url": "https://en.wikipedia.org/wiki/Psychological_Types",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Psychological_Types",
+      "description": "Proposes personality dimensions of introversion, extraversion, and cognitive functions."
+    },
+    {
+      "title": "The Archetypes and the Collective Unconscious",
+      "year": "1959 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Archetypes_and_the_Collective_Unconscious",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Archetypes_and_the_Collective_Unconscious",
+      "description": "Explores primal universal motifs shaping human dreams, myth, and culture."
+    }
+  ],
+  "sepSlug": "jung",
+  "externalRefs": {
+    "sep": "jung",
+    "wikipedia": "Carl_Jung"
+  },
+  "importanceScore": 92,
+  "imageUrl": "/portraits/carl-jung.jpg"
+}

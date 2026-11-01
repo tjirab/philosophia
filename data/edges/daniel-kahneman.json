@@ -1,0 +1,23 @@
+[
+  {
+    "source": "david-hume",
+    "target": "daniel-kahneman",
+    "type": "DEVELOPED",
+    "label": "Vindicated Humean skepticism regarding human inductive rationality through empirical heuristics",
+    "strength": 85
+  },
+  {
+    "source": "daniel-kahneman",
+    "target": "system-1-and-system-2",
+    "type": "DEVELOPED",
+    "label": "Codified dual-process theory and cognitive heuristics in decision science",
+    "strength": 85
+  },
+  {
+    "source": "daniel-kahneman",
+    "target": "nick-bostrom",
+    "type": "INFLUENCED",
+    "label": "Cognitive bias research informed probability calibration and existential risk methodology",
+    "strength": 85
+  }
+]

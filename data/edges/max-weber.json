@@ -1,0 +1,44 @@
+[
+  {
+    "source": "immanuel-kant",
+    "target": "max-weber",
+    "type": "DEVELOPED",
+    "label": "Applied neo-Kantian methodological distinctions between natural sciences and cultural understanding",
+    "strength": 85
+  },
+  {
+    "source": "karl-marx",
+    "target": "max-weber",
+    "type": "CRITIQUED",
+    "label": "Contested Marx's materialist determinism by demonstrating how religious ideas drive capitalist development",
+    "strength": 85
+  },
+  {
+    "source": "friedrich-nietzsche",
+    "target": "max-weber",
+    "type": "INFLUENCED",
+    "label": "Nietzschean critique of asceticism and modern disenchantment deeply shaped Weberian rationalization",
+    "strength": 85
+  },
+  {
+    "source": "max-weber",
+    "target": "iron-cage-rationalization",
+    "type": "DEVELOPED",
+    "label": "Articulated how bureaucratic rationalization imprisons modern society in an iron cage",
+    "strength": 85
+  },
+  {
+    "source": "max-weber",
+    "target": "theodor-adorno",
+    "type": "INFLUENCED",
+    "label": "Weberian instrumental rationality merged with Marxist critique in Dialectic of Enlightenment",
+    "strength": 85
+  },
+  {
+    "source": "max-weber",
+    "target": "jurgen-habermas",
+    "type": "DEVELOPED",
+    "label": "Habermas reconstructed Weberian rationalization theory in Theory of Communicative Action",
+    "strength": 85
+  }
+]

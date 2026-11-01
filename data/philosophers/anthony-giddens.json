@@ -1,0 +1,36 @@
+{
+  "id": "anthony-giddens",
+  "name": "Anthony Giddens",
+  "birthYear": 1938,
+  "eraId": "contemporary",
+  "traditionId": "contemporary-sociology",
+  "domains": [
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "British sociologist known for his theory of structuration reconciling agency and structure, the Third Way political philosophy, and analysis of reflexive modernity.",
+  "centralQuestion": "How do human agents simultaneously produce, reproduce, and transform the very social structures that constrain them?",
+  "keyWorks": [
+    {
+      "title": "The Constitution of Society",
+      "year": "1984 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Constitution_of_Society",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Constitution_of_Society",
+      "description": "Comprehensive statement of structuration theory and the duality of structure."
+    },
+    {
+      "title": "The Consequences of Modernity",
+      "year": "1990 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Consequences_of_Modernity",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Consequences_of_Modernity",
+      "description": "Analyzes high modernity as a runaway engine of disembedding mechanisms and risk."
+    }
+  ],
+  "sepSlug": "critical-theory",
+  "externalRefs": {
+    "sep": "critical-theory",
+    "wikipedia": "Anthony_Giddens"
+  },
+  "importanceScore": 89,
+  "imageUrl": "/portraits/anthony-giddens.jpg"
+}

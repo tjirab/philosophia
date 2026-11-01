@@ -1,0 +1,16 @@
+[
+  {
+    "source": "ulrich-beck",
+    "target": "risk-society",
+    "type": "DEVELOPED",
+    "label": "Theorized how modernization reflexively produces catastrophic ecological and technological risks",
+    "strength": 85
+  },
+  {
+    "source": "ulrich-beck",
+    "target": "nick-bostrom",
+    "type": "SYNTHESIZED",
+    "label": "Sociological risk theory connects directly to philosophical study of existential risk",
+    "strength": 85
+  }
+]

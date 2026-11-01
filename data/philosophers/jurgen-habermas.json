@@ -4,6 +4,8 @@
   "birthYear": 1929,
   "eraId": "contemporary",
   "traditionId": "critical-theory",
+  "domains": ["philosophy", "sociology"],
+  "primaryDomain": "philosophy",
   "shortBio": "Leading second-generation Frankfurt School philosopher who formulated the Theory of Communicative Action, discourse ethics, and constitutional deliberative democracy.",
   "centralQuestion": "How can intersubjective communicative reason and democratic discourse secure emancipatory legitimacy against instrumental technocracy?",
   "keyWorks": [

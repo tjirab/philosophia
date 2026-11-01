@@ -1,0 +1,16 @@
+[
+  {
+    "source": "carl-jung",
+    "target": "collective-unconscious",
+    "type": "DEVELOPED",
+    "label": "Theorized the transpersonal storehouse of universal archetypes and mythic symbols",
+    "strength": 85
+  },
+  {
+    "source": "carl-jung",
+    "target": "carl-rogers",
+    "type": "DEVELOPED",
+    "label": "Influenced humanistic concepts of self-realization, shadow work, and personal integration",
+    "strength": 85
+  }
+]

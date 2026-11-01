@@ -1,0 +1,23 @@
+[
+  {
+    "source": "william-james",
+    "target": "w-e-b-du-bois",
+    "type": "INFLUENCED",
+    "label": "Studied under William James at Harvard, adopting pragmatic empirical methods and psychology of self",
+    "strength": 85
+  },
+  {
+    "source": "max-weber",
+    "target": "w-e-b-du-bois",
+    "type": "SYNTHESIZED",
+    "label": "Weber celebrated Du Bois's empirical research and published his pioneering work on race in Germany",
+    "strength": 85
+  },
+  {
+    "source": "w-e-b-du-bois",
+    "target": "double-consciousness",
+    "type": "DEVELOPED",
+    "label": "Formulated double consciousness as the internal psychic split of marginalized subjects",
+    "strength": 85
+  }
+]

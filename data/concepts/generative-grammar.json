@@ -1,0 +1,10 @@
+{
+  "id": "generative-grammar",
+  "title": "Innate Generative Grammar",
+  "branch": "cognitive",
+  "eraId": "contemporary",
+  "introducedBy": "noam-chomsky",
+  "domainId": "psychology",
+  "summary": "The biological language acquisition faculty in the human brain that generates infinite linguistic expressions using innate, recursive syntactic rules.",
+  "sepSlug": "chomsky"
+}

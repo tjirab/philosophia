@@ -1,0 +1,10 @@
+{
+  "id": "classical-conditioning",
+  "title": "Classical Conditioning",
+  "branch": "behavioral",
+  "eraId": "nineteenth-century",
+  "introducedBy": "ivan-pavlov",
+  "domainId": "psychology",
+  "summary": "A learning process in which a biologically potent stimulus is paired with a previously neutral stimulus to elicit an involuntary conditioned physiological response.",
+  "sepSlug": "behaviorism"
+}

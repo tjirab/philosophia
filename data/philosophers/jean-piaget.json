@@ -1,0 +1,38 @@
+{
+  "id": "jean-piaget",
+  "name": "Jean Piaget",
+  "birthYear": 1896,
+  "deathYear": 1980,
+  "eraId": "twentieth-century",
+  "traditionId": "genetic-epistemology",
+  "domains": [
+    "psychology",
+    "philosophy"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Swiss psychologist and philosopher of knowledge who pioneered genetic epistemology; formulated the developmental stages of cognitive schemas in children.",
+  "centralQuestion": "How does the child construct mental models of reality, space, causality, and logical operations through assimilation and accommodation?",
+  "keyWorks": [
+    {
+      "title": "The Origins of Intelligence in Children",
+      "year": "1952 CE",
+      "url": "https://en.wikipedia.org/wiki/Jean_Piaget",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jean_Piaget",
+      "description": "Detailed analysis of sensorimotor intelligence and early childhood cognitive structures."
+    },
+    {
+      "title": "Genetic Epistemology",
+      "year": "1970 CE",
+      "url": "https://en.wikipedia.org/wiki/Genetic_epistemology",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Genetic_epistemology",
+      "description": "Philosophical synthesis of how scientific reasoning develops biologically."
+    }
+  ],
+  "sepSlug": "piaget",
+  "externalRefs": {
+    "sep": "piaget",
+    "wikipedia": "Jean_Piaget"
+  },
+  "importanceScore": 93,
+  "imageUrl": "/portraits/jean-piaget.jpg"
+}

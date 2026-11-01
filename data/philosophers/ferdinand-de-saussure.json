@@ -5,6 +5,8 @@
   "deathYear": 1913,
   "eraId": "twentieth-century",
   "traditionId": "structuralism",
+  "domains": ["philosophy", "sociology"],
+  "primaryDomain": "philosophy",
   "shortBio": "Swiss linguist and philosopher recognized as the founder of modern linguistics and semiology. Established that linguistic signs are arbitrary and meaning emerges from differential relations within a closed system.",
   "centralQuestion": "How do arbitrary linguistic signs generate meaning purely through differences within a formal system rather than reference to external reality?",
   "keyWorks": [

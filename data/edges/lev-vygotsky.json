@@ -1,0 +1,23 @@
+[
+  {
+    "source": "karl-marx",
+    "target": "lev-vygotsky",
+    "type": "DEVELOPED",
+    "label": "Applied Marxist historical materialism to tool-mediated psychological development and cultural practice",
+    "strength": 85
+  },
+  {
+    "source": "lev-vygotsky",
+    "target": "zone-of-proximal-development",
+    "type": "DEVELOPED",
+    "label": "Introduced scaffolding and the zone of proximal development in educational psychology",
+    "strength": 85
+  },
+  {
+    "source": "lev-vygotsky",
+    "target": "george-h-mead",
+    "type": "SYNTHESIZED",
+    "label": "Converged on the social origin of thought and the internalization of linguistic gestures",
+    "strength": 85
+  }
+]

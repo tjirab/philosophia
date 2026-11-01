@@ -5,6 +5,8 @@
   "deathYear": 1969,
   "eraId": "twentieth-century",
   "traditionId": "critical-theory",
+  "domains": ["philosophy", "sociology"],
+  "primaryDomain": "philosophy",
   "shortBio": "Leading figure of the Frankfurt School; critiqued the culture industry, instrumental reason, and authoritarianism.",
   "centralQuestion": "How did Enlightenment rationality turn into its opposite: barbarism and mass conformity?",
   "keyWorks": [

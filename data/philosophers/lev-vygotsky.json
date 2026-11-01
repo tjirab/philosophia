@@ -1,0 +1,38 @@
+{
+  "id": "lev-vygotsky",
+  "name": "Lev Vygotsky",
+  "birthYear": 1896,
+  "deathYear": 1934,
+  "eraId": "twentieth-century",
+  "traditionId": "genetic-epistemology",
+  "domains": [
+    "psychology",
+    "sociology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Soviet psychologist who founded cultural-historical psychology; formulated the zone of proximal development and the social origin of inner speech and thought.",
+  "centralQuestion": "How do cultural tools, language mediation, and social interaction internalize into higher psychological functions?",
+  "keyWorks": [
+    {
+      "title": "Thought and Language",
+      "year": "1934 CE",
+      "url": "https://en.wikipedia.org/wiki/Thought_and_Language",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Thought_and_Language",
+      "description": "Landmark investigation into the dialectical relationship of speech and cognition."
+    },
+    {
+      "title": "Mind in Society",
+      "year": "1978 CE",
+      "url": "https://en.wikipedia.org/wiki/Lev_Vygotsky",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lev_Vygotsky",
+      "description": "Introduces the zone of proximal development and cultural tool mediation."
+    }
+  ],
+  "sepSlug": "vygotsky",
+  "externalRefs": {
+    "sep": "vygotsky",
+    "wikipedia": "Lev_Vygotsky"
+  },
+  "importanceScore": 90,
+  "imageUrl": "/portraits/lev-vygotsky.jpg"
+}

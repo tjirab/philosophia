@@ -1,0 +1,38 @@
+{
+  "id": "max-weber",
+  "name": "Max Weber",
+  "birthYear": 1864,
+  "deathYear": 1920,
+  "eraId": "twentieth-century",
+  "traditionId": "interpretive-sociology",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "German sociologist and political economist; formulated interpretive sociology (Verstehen), the Protestant Ethic thesis, ideal types, and the 'iron cage' of rationalization.",
+  "centralQuestion": "How did Western rationalization, religious asceticism, and bureaucratic disenchantment trap modern humanity inside an iron cage of formal order?",
+  "keyWorks": [
+    {
+      "title": "The Protestant Ethic and the Spirit of Capitalism",
+      "year": "1905 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Protestant_Ethic_and_the_Spirit_of_Capitalism",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Protestant_Ethic_and_the_Spirit_of_Capitalism",
+      "description": "Seminal thesis connecting Calvinist inner-worldly asceticism to capitalist rational enterprise."
+    },
+    {
+      "title": "Economy and Society",
+      "year": "1922 CE",
+      "url": "https://en.wikipedia.org/wiki/Economy_and_Society",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Economy_and_Society",
+      "description": "Monumental sociological treatise covering types of authority, law, religion, and bureaucracy."
+    }
+  ],
+  "sepSlug": "weber",
+  "externalRefs": {
+    "sep": "weber",
+    "wikipedia": "Max_Weber"
+  },
+  "importanceScore": 98,
+  "imageUrl": "/portraits/max-weber.jpg"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "erving-goffman",
+  "name": "Erving Goffman",
+  "birthYear": 1922,
+  "deathYear": 1982,
+  "eraId": "twentieth-century",
+  "traditionId": "symbolic-interactionism",
+  "domains": [
+    "sociology",
+    "psychology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Canadian-American sociologist who developed dramaturgical analysis; analyzed social life as theatrical performances, impression management, stigma, and total institutions.",
+  "centralQuestion": "How do human actors stage manage impressions, navigate social rituals, and protect face in the micro-encounters of everyday life?",
+  "keyWorks": [
+    {
+      "title": "The Presentation of Self in Everyday Life",
+      "year": "1956 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Presentation_of_Self_in_Everyday_Life",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Presentation_of_Self_in_Everyday_Life",
+      "description": "Groundbreaking dramaturgical analysis of social interaction as theatrical performance."
+    },
+    {
+      "title": "Asylums",
+      "year": "1961 CE",
+      "url": "https://en.wikipedia.org/wiki/Asylums_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Asylums_(book)",
+      "description": "Classic sociological analysis of total institutions and mortification of the self."
+    },
+    {
+      "title": "Stigma",
+      "year": "1963 CE",
+      "url": "https://en.wikipedia.org/wiki/Stigma_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Stigma_(book)",
+      "description": "Exploration of spoiled identity and management of social information."
+    }
+  ],
+  "sepSlug": "identity-politics",
+  "externalRefs": {
+    "sep": "identity-politics",
+    "wikipedia": "Erving_Goffman"
+  },
+  "importanceScore": 94,
+  "imageUrl": "/portraits/erving-goffman.jpg"
+}
