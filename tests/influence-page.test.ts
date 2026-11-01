@@ -23,8 +23,8 @@ describe('Influence & Academic Proof Folio Engine', () => {
     expect(socratesPlato).not.toBeNull();
     expect(socratesPlato?.edge.source).toBe('socrates');
     expect(socratesPlato?.edge.target).toBe('plato');
-    expect(socratesPlato?.sourceNode?.name).toBe('Socrates');
-    expect(socratesPlato?.targetNode?.name).toBe('Plato');
+    expect((socratesPlato?.sourceNode as any)?.name).toBe('Socrates');
+    expect((socratesPlato?.targetNode as any)?.name).toBe('Plato');
     expect(socratesPlato?.sourceEra?.id).toBe('classical-greek');
     expect(socratesPlato?.edge.citations?.length).toBeGreaterThanOrEqual(2);
     expect(socratesPlato?.edge.academicConsensus).toBe('unanimous');
@@ -48,7 +48,7 @@ describe('Influence & Academic Proof Folio Engine', () => {
   it('correctly handles concept-to-thinker and thinker-to-concept relations', () => {
     const descartesCogito = getEdgeDetails('rene-descartes--cogito-ergo-sum');
     expect(descartesCogito).not.toBeNull();
-    expect(descartesCogito?.sourceNode?.name).toBe('René Descartes');
+    expect((descartesCogito?.sourceNode as any)?.name).toBe('René Descartes');
     expect((descartesCogito?.targetNode as any)?.title).toBe('Methodological Doubt & Cogito');
     expect(descartesCogito?.edge.citations?.length).toBeGreaterThanOrEqual(1);
   });

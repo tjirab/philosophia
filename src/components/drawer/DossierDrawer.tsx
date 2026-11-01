@@ -44,12 +44,33 @@ export function DossierDrawer({
   const [activeSection, setActiveSection] = useState<string>('section-synopsis');
   const [imgLoaded, setImgLoaded] = useState(false);
   const [imgError, setImgError] = useState(false);
+  const [pinnedTooltip, setPinnedTooltip] = useState<'centrality' | 'exploration' | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     setImgLoaded(false);
     setImgError(false);
+    setPinnedTooltip(null);
   }, [selectedNodeId]);
+
+  useEffect(() => {
+    if (!pinnedTooltip) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setPinnedTooltip(null);
+    };
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (target && !target.closest('.group\\/centrality') && !target.closest('.group\\/exploration')) {
+        setPinnedTooltip(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('click', handleClickOutside);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('click', handleClickOutside);
+    };
+  }, [pinnedTooltip]);
 
   const details = selectedNodeId ? getNodeDetails(selectedNodeId, methodology) : null;
   const isPhilosopher = details?.type === 'philosopher';
@@ -105,7 +126,7 @@ export function DossierDrawer({
   if (!selectedNodeId || !details?.node) return null;
 
   const scrollToSection = (sectionId: string) => {
-    setActiveSection(sectionId);
+    setActiveSection(sectionId.startsWith('section-cartography') ? 'section-synopsis' : sectionId);
     const el = document.getElementById(sectionId);
     if (el && scrollContainerRef.current) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -218,110 +239,154 @@ export function DossierDrawer({
               {isPhilosopher ? phil?.name : (conc?.title || (conc as any)?.name || 'Concept')}
             </h2>
 
-            {isPhilosopher && phil && (
-              <div className="flex items-center gap-4 text-xs text-[var(--text-muted)] mt-2 flex-wrap">
+            <div className="flex items-center gap-4 text-xs text-[var(--text-muted)] mt-2 flex-wrap">
+              {isPhilosopher && phil && (
                 <span className="flex items-center gap-1.5 font-mono">
                   <Calendar className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
                   {formatYear(phil.birthYear)} – {phil.deathYear !== undefined && phil.deathYear !== null ? formatYear(phil.deathYear) : 'present'}
                 </span>
+              )}
 
-                {/* Centrality with Hover Explanation */}
-                <div className="relative group/centrality flex items-center gap-1.5 cursor-help">
-                  <Compass className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-                  <span className="font-semibold text-[var(--gold-accent)]">
-                    {details?.scoreBreakdown ? (
-                      <>
-                        <span className="capitalize">{details.scoreBreakdown.methodology}</span>: {details.scoreBreakdown.score}/100
-                        <span className="text-[10px] text-[var(--text-dim)] font-mono ml-1">
-                          (#{details.scoreBreakdown.rank})
-                        </span>
-                      </>
-                    ) : (
-                      `Centrality: ${phil.importanceScore}/100`
+              {/* Centrality with Hover Explanation & Click-to-Pin */}
+              <div
+                className="relative group/centrality flex items-center gap-1.5 cursor-pointer select-none"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setPinnedTooltip((prev) => (prev === 'centrality' ? null : 'centrality'));
+                }}
+                role="button"
+                tabIndex={0}
+                aria-expanded={pinnedTooltip === 'centrality'}
+                aria-haspopup="dialog"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setPinnedTooltip((prev) => (prev === 'centrality' ? null : 'centrality'));
+                  }
+                }}
+              >
+                <Compass className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+                <span className="font-semibold text-[var(--gold-accent)]">
+                  {details?.scoreBreakdown ? (
+                    <>
+                      <span className="capitalize">{details.scoreBreakdown.methodology}</span>: {details.scoreBreakdown.score}/100
+                      <span className="text-[10px] text-[var(--text-dim)] font-mono ml-1">
+                        (#{details.scoreBreakdown.rank})
+                      </span>
+                    </>
+                  ) : (
+                    `Centrality: ${phil ? phil.importanceScore : 50}/100`
+                  )}
+                </span>
+                <span className="text-[10px] text-[var(--text-dim)] font-mono border border-[var(--border-main)] rounded px-1 group-hover/centrality:border-[var(--gold-border)] transition-colors">
+                  ?
+                </span>
+
+                {/* Tooltip Popup with invisible bridge so hover is never lost when moving cursor into tooltip */}
+                <div
+                  onClick={(e) => e.stopPropagation()}
+                  className={`absolute left-0 top-full mt-1.5 z-50 w-80 p-3.5 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 ${
+                    pinnedTooltip === 'centrality' ? 'block' : 'hidden group-hover/centrality:block'
+                  }`}
+                >
+                  <div className="font-bold text-[var(--gold-accent)] mb-1 flex items-center justify-between">
+                    <span className="flex items-center gap-1">
+                      <span>✦</span>
+                      <span className="capitalize">{details?.scoreBreakdown?.methodology || 'Canonical'} Scoring Lens</span>
+                    </span>
+                    {details?.scoreBreakdown && (
+                      <span className="text-[10px] font-mono font-semibold text-[var(--gold-accent)]">
+                        Rank #{details.scoreBreakdown.rank} of {details.scoreBreakdown.totalNodes}
+                      </span>
                     )}
+                  </div>
+                  {details?.scoreBreakdown ? (
+                    <div className="space-y-1.5 mt-2">
+                      <p className="text-[var(--text-muted)] text-[10px]">
+                        {METHODOLOGY_CONFIG[details.scoreBreakdown.methodology]?.description}
+                      </p>
+                      <div className="pt-1.5 border-t border-[var(--border-main)] space-y-1">
+                        {details.scoreBreakdown.components.map((comp, idx) => (
+                          <div key={idx} className="flex items-center justify-between text-[10px]">
+                            <span className="text-[var(--text-dim)]">{comp.label}:</span>
+                            <span className="font-mono font-semibold text-[var(--text-main)]">{comp.value}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <p className="text-[var(--text-muted)]">
+                      Measures historical influence density (0–100) based on total incoming and outgoing intellectual connections (mentorships, critiques, extensions, and syntheses).
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* Exploration State Badge with Clarification Tooltip & Click-to-Pin */}
+              {details?.exploration && (
+                <div
+                  className="relative group/exploration flex items-center gap-1.5 cursor-pointer select-none"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setPinnedTooltip((prev) => (prev === 'exploration' ? null : 'exploration'));
+                  }}
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={pinnedTooltip === 'exploration'}
+                  aria-haspopup="dialog"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      setPinnedTooltip((prev) => (prev === 'exploration' ? null : 'exploration'));
+                    }
+                  }}
+                >
+                  <span className="text-[var(--gold-accent)]">{details.exploration.badgeIcon}</span>
+                  <span className="font-semibold text-[var(--text-main)] font-mono">
+                    {details.exploration.label}
                   </span>
-                  <span className="text-[10px] text-[var(--text-dim)] font-mono border border-[var(--border-main)] rounded px-1">
+                  <span className="text-[10px] text-[var(--text-dim)] font-mono border border-[var(--border-main)] rounded px-1 group-hover/exploration:border-[var(--gold-border)] transition-colors">
                     ?
                   </span>
 
-                  {/* Tooltip Popup */}
-                  <div className="absolute left-0 top-full mt-1.5 hidden group-hover/centrality:block z-50 w-80 p-3.5 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed">
+                  {/* Tooltip Popup with invisible bridge so hover is never lost when moving cursor into tooltip */}
+                  <div
+                    onClick={(e) => e.stopPropagation()}
+                    className={`absolute left-0 top-full mt-1.5 z-50 w-80 p-3.5 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 ${
+                      pinnedTooltip === 'exploration' ? 'block' : 'hidden group-hover/exploration:block'
+                    }`}
+                  >
                     <div className="font-bold text-[var(--gold-accent)] mb-1 flex items-center justify-between">
                       <span className="flex items-center gap-1">
-                        <span>✦</span>
-                        <span className="capitalize">{details?.scoreBreakdown?.methodology || 'Canonical'} Scoring Lens</span>
+                        <span>{details.exploration.badgeIcon}</span>
+                        <span>{details.exploration.label}</span>
                       </span>
-                      {details?.scoreBreakdown && (
-                        <span className="text-[10px] font-mono font-semibold text-[var(--gold-accent)]">
-                          Rank #{details.scoreBreakdown.rank} of {details.scoreBreakdown.totalNodes}
-                        </span>
-                      )}
+                      <span className="text-[10px] font-mono font-semibold text-[var(--gold-accent)]">
+                        Consensus Depth: {details.exploration.score}/100
+                      </span>
                     </div>
-                    {details?.scoreBreakdown ? (
-                      <div className="space-y-1.5 mt-2">
-                        <p className="text-[var(--text-muted)] text-[10px]">
-                          {METHODOLOGY_CONFIG[details.scoreBreakdown.methodology]?.description}
-                        </p>
-                        <div className="pt-1.5 border-t border-[var(--border-main)] space-y-1">
-                          {details.scoreBreakdown.components.map((comp, idx) => (
-                            <div key={idx} className="flex items-center justify-between text-[10px]">
-                              <span className="text-[var(--text-dim)]">{comp.label}:</span>
-                              <span className="font-mono font-semibold text-[var(--text-main)]">{comp.value}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    ) : (
-                      <p className="text-[var(--text-muted)]">
-                        Measures historical influence density (0–100) based on total incoming and outgoing intellectual connections (mentorships, critiques, extensions, and syntheses).
-                      </p>
-                    )}
+                    <p className="text-[var(--text-muted)] text-[10px] leading-relaxed">
+                      {details.exploration.tagline}
+                    </p>
+                    <div className="pt-2 mt-2 border-t border-[var(--border-main)] text-[10px] text-[var(--text-dim)] flex items-center justify-between">
+                      <span>Terra Incognita Cartography</span>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setPinnedTooltip(null);
+                          scrollToSection('section-cartography-breakdown');
+                        }}
+                        className="text-[var(--gold-accent)] hover:underline font-sans cursor-pointer font-semibold inline-flex items-center gap-1"
+                      >
+                        <span>View Breakdown</span>
+                        <span>&rarr;</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-
-                {/* Exploration State Badge with Clarification Tooltip */}
-                {details?.exploration && (
-                  <div className="relative group/exploration flex items-center gap-1.5 cursor-help">
-                    <span className="text-[var(--gold-accent)]">{details.exploration.badgeIcon}</span>
-                    <span className="font-semibold text-[var(--text-main)] font-mono">
-                      {details.exploration.label}
-                    </span>
-                    <span className="text-[10px] text-[var(--text-dim)] font-mono border border-[var(--border-main)] rounded px-1">
-                      ?
-                    </span>
-
-                    {/* Tooltip Popup */}
-                    <div className="absolute left-0 top-full mt-1.5 hidden group-hover/exploration:block z-50 w-80 p-3.5 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed">
-                      <div className="font-bold text-[var(--gold-accent)] mb-1 flex items-center justify-between">
-                        <span className="flex items-center gap-1">
-                          <span>{details.exploration.badgeIcon}</span>
-                          <span>{details.exploration.label}</span>
-                        </span>
-                        <span className="text-[10px] font-mono font-semibold text-[var(--gold-accent)]">
-                          Consensus Depth: {details.exploration.score}/100
-                        </span>
-                      </div>
-                      <p className="text-[var(--text-muted)] text-[10px] leading-relaxed">
-                        {details.exploration.tagline}
-                      </p>
-                      <div className="pt-2 mt-2 border-t border-[var(--border-main)] text-[10px] text-[var(--text-dim)] flex items-center justify-between">
-                        <span>Terra Incognita Cartography</span>
-                        <button
-                          type="button"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            scrollToSection('section-synopsis');
-                          }}
-                          className="text-[var(--gold-accent)] hover:underline font-sans"
-                        >
-                          View Breakdown &rarr;
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -395,7 +460,10 @@ export function DossierDrawer({
             ).length;
 
             return (
-              <div className="p-4 rounded-xl border border-[var(--border-main)] bg-[var(--bg-subtle)] text-xs space-y-3 shadow-xs">
+              <div
+                id="section-cartography-breakdown"
+                className="p-4 rounded-xl border border-[var(--border-main)] bg-[var(--bg-subtle)] text-xs space-y-3 shadow-xs scroll-mt-6"
+              >
                 <div className="flex items-center justify-between flex-wrap gap-2">
                   <div className="flex items-center gap-2 font-bold text-[var(--text-main)]">
                     <span className="text-base">{details.exploration.badgeIcon}</span>
