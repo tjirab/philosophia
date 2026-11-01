@@ -1,3 +1,48 @@
+export type DomainId = 'philosophy' | 'psychology' | 'sociology';
+
+export interface DomainMeta {
+  id: DomainId;
+  name: string;
+  shortName: string;
+  description: string;
+  color: string;
+  colorDark: string;
+  icon: string;
+  experimental?: boolean;
+}
+
+export const DOMAINS: DomainMeta[] = [
+  {
+    id: 'philosophy',
+    name: 'Philosophy',
+    shortName: 'Phil',
+    description: 'Metaphysics, Epistemology, Ethics, Mind, and the Foundations of Reason',
+    color: '#2563eb',
+    colorDark: '#60a5fa',
+    icon: 'Compass',
+  },
+  {
+    id: 'psychology',
+    name: 'Psychology',
+    shortName: 'Psych',
+    description: 'Consciousness, Cognition, the Unconscious, and Human Behavior',
+    color: '#0d9488',
+    colorDark: '#2dd4bf',
+    icon: 'Brain',
+    experimental: true,
+  },
+  {
+    id: 'sociology',
+    name: 'Sociology',
+    shortName: 'Soc',
+    description: 'Social Structures, Collective Dynamics, Institutions, and Power',
+    color: '#9333ea',
+    colorDark: '#c084fc',
+    icon: 'Users',
+    experimental: true,
+  },
+];
+
 export type EraId =
   | 'pre-socratic'
   | 'classical-greek'
@@ -11,7 +56,7 @@ export type EraId =
   | 'twentieth-century'
   | 'contemporary';
 
-export type Branch =
+export type PhilosophyBranch =
   | 'epistemology'
   | 'metaphysics'
   | 'ethics'
@@ -19,6 +64,25 @@ export type Branch =
   | 'aesthetics'
   | 'mind'
   | 'logic';
+
+export type PsychologyBranch =
+  | 'psychoanalytic'
+  | 'behavioral'
+  | 'cognitive'
+  | 'developmental'
+  | 'humanistic'
+  | 'social-psychology'
+  | 'neuropsychology';
+
+export type SociologyBranch =
+  | 'social-theory'
+  | 'structural-functionalism'
+  | 'conflict-theory'
+  | 'symbolic-interactionism'
+  | 'critical-sociology'
+  | 'macrosociology';
+
+export type Branch = PhilosophyBranch | PsychologyBranch | SociologyBranch;
 
 export type EdgeType = 'INFLUENCED' | 'CRITIQUED' | 'DEVELOPED' | 'SYNTHESIZED';
 
@@ -106,6 +170,14 @@ export interface KeyWork {
   description?: string;
 }
 
+export interface ExternalReferences {
+  sep?: string;
+  iep?: string;
+  apa?: string;
+  sociologyRef?: string;
+  wikipedia?: string;
+}
+
 export interface Philosopher {
   id: string;
   name: string;
@@ -113,13 +185,18 @@ export interface Philosopher {
   deathYear?: number;
   eraId: EraId;
   traditionId: string;
+  domains?: DomainId[];
+  primaryDomain?: DomainId;
   shortBio: string;
   centralQuestion: string;
   keyWorks: (string | KeyWork)[];
   sepSlug: string;
+  externalRefs?: ExternalReferences;
   importanceScore: number;
   imageUrl?: string;
 }
+
+export type Thinker = Philosopher;
 
 export interface Concept {
   id: string;
@@ -129,6 +206,7 @@ export interface Concept {
   introducedBy: string; // Philosopher ID
   summary: string;
   sepSlug?: string;
+  domainId?: DomainId;
 }
 
 export interface Edge {
@@ -173,6 +251,8 @@ export interface VisualNode {
   color: string;
   summary: string;
   imageUrl?: string;
+  domains?: DomainId[];
+  isInterdisciplinary?: boolean;
   data: Philosopher | Concept;
   // Graph engine coordinates
   x?: number;

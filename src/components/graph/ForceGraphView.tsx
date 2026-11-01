@@ -347,18 +347,30 @@ export function ForceGraphView({
       const size = getNodeRadius(node.val, node.importanceScore);
       const isPrimaryThinker = node.importanceScore && node.importanceScore >= 95;
 
-      // 1. Outer halo for selected, path, or high-centrality foundational thinkers
-      if (isSelected || isOnPath || isPrimaryThinker) {
+      // 1. Outer halo for selected, path, high-centrality thinkers, or interdisciplinary bridge figures
+      if (isSelected || isOnPath || isPrimaryThinker || node.isInterdisciplinary) {
         ctx.beginPath();
-        ctx.arc(node.x, node.y, size + 6, 0, 2 * Math.PI, false);
+        ctx.arc(node.x, node.y, size + (node.isInterdisciplinary ? 7 : 6), 0, 2 * Math.PI, false);
         ctx.fillStyle = isLight
           ? isSelected || isOnPath
             ? 'rgba(154, 111, 20, 0.4)'
+            : node.isInterdisciplinary
+            ? 'rgba(13, 148, 136, 0.25)'
             : 'rgba(215, 185, 130, 0.25)'
           : isSelected || isOnPath
           ? 'rgba(229, 185, 76, 0.45)'
+          : node.isInterdisciplinary
+          ? 'rgba(45, 212, 191, 0.35)'
           : 'rgba(197, 155, 39, 0.25)';
         ctx.fill();
+
+        if (node.isInterdisciplinary) {
+          ctx.strokeStyle = isLight ? 'rgba(13, 148, 136, 0.6)' : 'rgba(45, 212, 191, 0.7)';
+          ctx.lineWidth = 1;
+          ctx.setLineDash([3, 2]);
+          ctx.stroke();
+          ctx.setLineDash([]);
+        }
       }
 
       // 2. Node Shape: Distinct geometry for Thinker (Circle with Portrait) vs Concept (Diamond)
@@ -532,12 +544,23 @@ export function ForceGraphView({
 
   const branches: Array<{ id: Branch | 'all'; label: string }> = [
     { id: 'all', label: 'All Branches' },
+    // Philosophy
     { id: 'epistemology', label: 'Epistemology' },
     { id: 'metaphysics', label: 'Metaphysics' },
     { id: 'ethics', label: 'Ethics' },
-    { id: 'political', label: 'Political' },
-    { id: 'mind', label: 'Mind' },
-    { id: 'logic', label: 'Logic' },
+    { id: 'political', label: 'Political Philosophy' },
+    { id: 'mind', label: 'Philosophy of Mind' },
+    { id: 'logic', label: 'Logic & Language' },
+    // Psychology
+    { id: 'psychoanalytic', label: 'Psychoanalysis' },
+    { id: 'behavioral', label: 'Behaviorism' },
+    { id: 'cognitive', label: 'Cognitive Science' },
+    { id: 'humanistic', label: 'Humanistic Psychology' },
+    // Sociology
+    { id: 'social-theory', label: 'Social Theory' },
+    { id: 'structural-functionalism', label: 'Structural Functionalism' },
+    { id: 'symbolic-interactionism', label: 'Symbolic Interactionism' },
+    { id: 'critical-sociology', label: 'Critical Sociology' },
   ];
 
   return (

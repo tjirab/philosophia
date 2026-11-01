@@ -1,0 +1,38 @@
+{
+  "id": "pierre-bourdieu",
+  "name": "Pierre Bourdieu",
+  "birthYear": 1930,
+  "deathYear": 2002,
+  "eraId": "contemporary",
+  "traditionId": "genetic-structuralism",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "French sociologist and public intellectual; formulated habitus, cultural capital, social fields, and symbolic violence to explain how social hierarchies reproduce.",
+  "centralQuestion": "How do unconscious bodily dispositions (habitus) and unequal cultural capital reproduce class domination without conscious coercion?",
+  "keyWorks": [
+    {
+      "title": "Outline of a Theory of Practice",
+      "year": "1972 CE",
+      "url": "https://en.wikipedia.org/wiki/Pierre_Bourdieu",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pierre_Bourdieu",
+      "description": "Develops habitus and practical sense in opposition to both objectivism and subjectivism."
+    },
+    {
+      "title": "Distinction: A Social Critique of the Judgement of Taste",
+      "year": "1979 CE",
+      "url": "https://en.wikipedia.org/wiki/Distinction_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Distinction_(book)",
+      "description": "Voted one of the 20th century's most important sociological works on cultural taste."
+    }
+  ],
+  "sepSlug": "bourdieu",
+  "externalRefs": {
+    "sep": "bourdieu",
+    "wikipedia": "Pierre_Bourdieu"
+  },
+  "importanceScore": 95,
+  "imageUrl": "/portraits/pierre-bourdieu.jpg"
+}

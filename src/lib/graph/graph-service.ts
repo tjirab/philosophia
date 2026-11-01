@@ -1,5 +1,6 @@
 import erasData from '../../../data/eras.json';
 import traditionsData from '../../../data/traditions.json';
+import domainsData from '../../../data/domains.json';
 import philosophersData from '../../../data/philosophers.json';
 import conceptsData from '../../../data/concepts.json';
 import edgesData from '../../../data/edges.json';
@@ -7,6 +8,8 @@ import mediaData from '../../../data/media.json';
 import {
   Era,
   Tradition,
+  DomainMeta,
+  DomainId,
   Philosopher,
   Concept,
   Edge,
@@ -20,6 +23,7 @@ import {
 
 export const eras: Era[] = erasData as Era[];
 export const traditions: Tradition[] = traditionsData as Tradition[];
+export const domains: DomainMeta[] = domainsData as DomainMeta[];
 export const philosophers: Philosopher[] = philosophersData as Philosopher[];
 export const concepts: Concept[] = conceptsData as Concept[];
 export const edges: Edge[] = edgesData as Edge[];
@@ -40,6 +44,8 @@ export interface GraphFilterOptions {
   maxYear?: number;
   minYear?: number;
   eraId?: EraId | 'all';
+  domainId?: DomainId | 'all';
+  interdisciplinaryOnly?: boolean;
   traditionId?: string | 'all';
   branch?: Branch | 'all';
   includeConcepts?: boolean;
@@ -54,6 +60,8 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     maxYear,
     minYear,
     eraId = 'all',
+    domainId = 'all',
+    interdisciplinaryOnly = false,
     traditionId = 'all',
     branch = 'all',
     includeConcepts = true,
@@ -69,8 +77,15 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     if (maxYear !== undefined && p.birthYear > maxYear) return false;
     if (eraId !== 'all' && p.eraId !== eraId) return false;
     if (traditionId !== 'all' && p.traditionId !== traditionId) return false;
+
+    const pDomains = p.domains && p.domains.length > 0 ? p.domains : ['philosophy'];
+    if (domainId !== 'all' && !pDomains.includes(domainId)) return false;
+    if (interdisciplinaryOnly && pDomains.length < 2) return false;
+
     return true;
   });
+
+  const philosopherMap = new Map(philosophers.map((p) => [p.id, p]));
 
   // Filter concepts
   let filteredConcepts: Concept[] = [];
@@ -78,6 +93,19 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     filteredConcepts = concepts.filter((c) => {
       if (eraId !== 'all' && c.eraId !== eraId) return false;
       if (branch !== 'all' && c.branch !== branch) return false;
+
+      const introducingPhil = c.introducedBy ? philosopherMap.get(c.introducedBy) : undefined;
+      const cDomains = c.domainId
+        ? [c.domainId]
+        : introducingPhil?.domains && introducingPhil.domains.length > 0
+        ? introducingPhil.domains
+        : ['philosophy'];
+
+      if (domainId !== 'all' && !cDomains.includes(domainId)) return false;
+      if (interdisciplinaryOnly && (!introducingPhil || (introducingPhil.domains && introducingPhil.domains.length < 2))) {
+        return false;
+      }
+
       return true;
     });
   }
@@ -113,7 +141,6 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
   const timelineStartYear = -650;
   const timelineEndYear = 2020;
   const totalSpan = timelineEndYear - timelineStartYear;
-  const philosopherMap = new Map(philosophers.map((p) => [p.id, p]));
 
   for (let idx = 0; idx < filteredPhilosophers.length; idx++) {
     const p = filteredPhilosophers[idx];
@@ -130,6 +157,9 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     const yMagnitude = 160 + ((idx * 89) % 380);
     const y = ySign * yMagnitude;
 
+    const pDomains: DomainId[] = (p.domains && p.domains.length > 0 ? p.domains : ['philosophy']) as DomainId[];
+    const isInterdisciplinary = pDomains.length >= 2;
+
     nodes.push({
       id: p.id,
       name: p.name,
@@ -141,6 +171,8 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
       color: tradition?.color || era?.color || '#3b82f6',
       summary: p.shortBio,
       imageUrl: p.imageUrl || `/portraits/${p.id}.jpg`,
+      domains: pDomains,
+      isInterdisciplinary,
       data: p,
       val: Math.max(8, Math.round(p.importanceScore / 8)),
       x,
@@ -155,6 +187,13 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
 
     // Concept chronology: anchor near introducing philosopher or era midpoint
     const introducingPhil = c.introducedBy ? philosopherMap.get(c.introducedBy) : undefined;
+    const cDomains: DomainId[] = (
+      c.domainId
+        ? [c.domainId]
+        : introducingPhil?.domains && introducingPhil.domains.length > 0
+        ? introducingPhil.domains
+        : ['philosophy']
+    ) as DomainId[];
     const conceptYear = introducingPhil
       ? introducingPhil.birthYear + 25
       : era
@@ -178,6 +217,8 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
       importanceScore: 50,
       color: era?.color ? `${era.color}cc` : '#94a3b8',
       summary: c.summary || (c as any).description || '',
+      domains: cDomains,
+      isInterdisciplinary: false,
       data: c,
       val: 6,
       x,

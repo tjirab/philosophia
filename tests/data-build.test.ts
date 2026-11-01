@@ -33,7 +33,28 @@ describe('Modular Data Architecture & Compiler', () => {
   it('validates that every concept file matches its id and schema', () => {
     const files = fs.readdirSync(CONCEPTS_DIR).filter((f) => f.endsWith('.json'));
     expect(files.length).toBeGreaterThan(50);
-    const validBranches = new Set(['epistemology', 'metaphysics', 'ethics', 'political', 'aesthetics', 'mind', 'logic']);
+    const validBranches = new Set([
+      'epistemology',
+      'metaphysics',
+      'ethics',
+      'political',
+      'aesthetics',
+      'mind',
+      'logic',
+      'psychoanalytic',
+      'behavioral',
+      'cognitive',
+      'developmental',
+      'humanistic',
+      'social-psychology',
+      'neuropsychology',
+      'social-theory',
+      'structural-functionalism',
+      'conflict-theory',
+      'symbolic-interactionism',
+      'critical-sociology',
+      'macrosociology',
+    ]);
 
     for (const file of files) {
       const fullPath = path.join(CONCEPTS_DIR, file);

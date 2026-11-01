@@ -4,6 +4,8 @@
   "birthYear": 1966,
   "eraId": "contemporary",
   "traditionId": "post-structuralism",
+  "domains": ["philosophy", "psychology"],
+  "primaryDomain": "philosophy",
   "shortBio": "Slovenian philosopher and leading figure of the Ljubljana School of Psychoanalysis who bridges German Idealism with Lacanian theory, investigating the ethics of the Real, the ontological deadlock of sexuality, and the dialectics of comedy.",
   "centralQuestion": "How does the encounter with the Lacanian Real restructure Kantian ethics and reveal sexuality not as biology, but as an ontological deadlock of Being?",
   "keyWorks": [

@@ -1,0 +1,37 @@
+{
+  "id": "john-b-watson",
+  "name": "John B. Watson",
+  "birthYear": 1878,
+  "deathYear": 1958,
+  "eraId": "twentieth-century",
+  "traditionId": "behaviorism",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "American psychologist who codified behaviorism as a purely objective, natural science of observable stimulus-response contingencies, rejecting introspection.",
+  "centralQuestion": "Can psychology become a purely objective natural science by studying overt behavior and abandoning the pseudo-concept of consciousness?",
+  "keyWorks": [
+    {
+      "title": "Psychology as the Behaviorist Views It",
+      "year": "1913 CE",
+      "url": "https://en.wikipedia.org/wiki/Psychology_as_the_Behaviorist_Views_It",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Psychology_as_the_Behaviorist_Views_It",
+      "description": "Known as the Behaviorist Manifesto, launching the behaviorist movement in America."
+    },
+    {
+      "title": "Behaviorism",
+      "year": "1924 CE",
+      "url": "https://en.wikipedia.org/wiki/John_B._Watson",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/John_B._Watson",
+      "description": "Popular synthesis of environmental conditioning and child habit training."
+    }
+  ],
+  "sepSlug": "behaviorism",
+  "externalRefs": {
+    "sep": "behaviorism",
+    "wikipedia": "John_B._Watson"
+  },
+  "importanceScore": 88,
+  "imageUrl": "/portraits/john-b-watson.jpg"
+}

@@ -98,6 +98,32 @@ const WIKI_TITLES = {
   'michel-de-montaigne': 'Michel_de_Montaigne',
   'blaise-pascal': 'Blaise_Pascal',
   'thomas-kuhn': 'Thomas_Kuhn',
+  // Psychology
+  'wilhelm-wundt': 'Wilhelm_Wundt',
+  'sigmund-freud': 'Sigmund_Freud',
+  'carl-jung': 'Carl_Jung',
+  'ivan-pavlov': 'Ivan_Pavlov',
+  'john-b-watson': 'John_B._Watson',
+  'b-f-skinner': 'B._F._Skinner',
+  'jean-piaget': 'Jean_Piaget',
+  'lev-vygotsky': 'Lev_Vygotsky',
+  'noam-chomsky': 'Noam_Chomsky',
+  'carl-rogers': 'Carl_Rogers',
+  'viktor-frankl': 'Viktor_Frankl',
+  'daniel-kahneman': 'Daniel_Kahneman',
+  // Sociology
+  'auguste-comte': 'Auguste_Comte',
+  'emile-durkheim': 'Émile_Durkheim',
+  'max-weber': 'Max_Weber',
+  'georg-simmel': 'Georg_Simmel',
+  'w-e-b-du-bois': 'W._E._B._Du_Bois',
+  'george-h-mead': 'George_Herbert_Mead',
+  'talcott-parsons': 'Talcott_Parsons',
+  'erving-goffman': 'Erving_Goffman',
+  'pierre-bourdieu': 'Pierre_Bourdieu',
+  'anthony-giddens': 'Anthony_Giddens',
+  'zygmunt-bauman': 'Zygmunt_Bauman',
+  'ulrich-beck': 'Ulrich_Beck',
 };
 
 async function fetchPortraits() {

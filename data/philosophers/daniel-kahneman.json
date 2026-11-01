@@ -1,0 +1,38 @@
+{
+  "id": "daniel-kahneman",
+  "name": "Daniel Kahneman",
+  "birthYear": 1934,
+  "deathYear": 2024,
+  "eraId": "contemporary",
+  "traditionId": "behavioral-economics",
+  "domains": [
+    "psychology",
+    "philosophy"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Nobel laureate psychologist who integrated psychological insights into economic science; demonstrated systematic human cognitive biases, heuristics, and prospect theory.",
+  "centralQuestion": "How do fast, intuitive heuristics (System 1) and deliberate reasoning (System 2) systematically diverge from normative rationality?",
+  "keyWorks": [
+    {
+      "title": "Judgment Under Uncertainty: Heuristics and Biases",
+      "year": "1982 CE",
+      "url": "https://en.wikipedia.org/wiki/Judgment_under_Uncertainty:_Heuristics_and_Biases",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Judgment_under_Uncertainty:_Heuristics_and_Biases",
+      "description": "Seminal collection mapping availability, representativeness, and anchoring heuristics."
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "year": "2011 CE",
+      "url": "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow",
+      "description": "Comprehensive synthesis of two-system cognitive architecture and decision theory."
+    }
+  ],
+  "sepSlug": "rationality-normative-utility",
+  "externalRefs": {
+    "sep": "rationality-normative-utility",
+    "wikipedia": "Daniel_Kahneman"
+  },
+  "importanceScore": 94,
+  "imageUrl": "/portraits/daniel-kahneman.jpg"
+}

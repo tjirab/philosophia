@@ -36,7 +36,28 @@ describe('Philosophy Graph Data Integrity', () => {
 
   it('validates that concepts have valid schema, title, summary, branch, era, and introducedBy philosopher', () => {
     expect(conceptsData.length).toBeGreaterThan(20);
-    const validBranches = new Set(['epistemology', 'metaphysics', 'ethics', 'political', 'aesthetics', 'mind', 'logic']);
+    const validBranches = new Set([
+      'epistemology',
+      'metaphysics',
+      'ethics',
+      'political',
+      'aesthetics',
+      'mind',
+      'logic',
+      'psychoanalytic',
+      'behavioral',
+      'cognitive',
+      'developmental',
+      'humanistic',
+      'social-psychology',
+      'neuropsychology',
+      'social-theory',
+      'structural-functionalism',
+      'conflict-theory',
+      'symbolic-interactionism',
+      'critical-sociology',
+      'macrosociology',
+    ]);
 
     for (const c of conceptsData) {
       expect(validEraIds.has(c.eraId), `Concept ${c.id} has invalid eraId ${c.eraId}`).toBe(true);
@@ -468,5 +489,90 @@ describe('Philosophy Graph Data Integrity', () => {
     expect(nodeIds.has('alenka-zupancic')).toBe(true);
     expect(nodeIds.has('nick-bostrom')).toBe(true);
     expect(nodeIds.has('michel-foucault')).toBe(false); // died 1984
+  });
+
+  it('validates multi-domain assignments and interdisciplinary bridge figures', () => {
+    const validDomains = new Set(['philosophy', 'psychology', 'sociology']);
+    
+    // Every philosopher/thinker has valid domain(s)
+    for (const p of philosophersData) {
+      const domains = p.domains || ['philosophy'];
+      expect(domains.length).toBeGreaterThan(0);
+      for (const d of domains) {
+        expect(validDomains.has(d), `Thinker ${p.id} has invalid domain ${d}`).toBe(true);
+      }
+    }
+
+    // William James is both Philosophy and Psychology
+    const james = philosophersData.find((p) => p.id === 'william-james');
+    expect(james?.domains).toContain('philosophy');
+    expect(james?.domains).toContain('psychology');
+
+    // Karl Marx is both Philosophy and Sociology
+    const marx = philosophersData.find((p) => p.id === 'karl-marx');
+    expect(marx?.domains).toContain('philosophy');
+    expect(marx?.domains).toContain('sociology');
+
+    // Michel Foucault bridges Philosophy, Psychology, and Sociology
+    const foucault = philosophersData.find((p) => p.id === 'michel-foucault');
+    expect(foucault?.domains).toContain('philosophy');
+    expect(foucault?.domains).toContain('psychology');
+    expect(foucault?.domains).toContain('sociology');
+
+    // Test domain filtering in getVisualGraph
+    const psychGraph = getVisualGraph({ domainId: 'psychology', includeConcepts: false });
+    const psychIds = new Set(psychGraph.nodes.map((n) => n.id));
+    expect(psychIds.has('sigmund-freud')).toBe(true);
+    expect(psychIds.has('b-f-skinner')).toBe(true);
+    expect(psychIds.has('william-james')).toBe(true);
+    expect(psychIds.has('thales')).toBe(false);
+
+    const socGraph = getVisualGraph({ domainId: 'sociology', includeConcepts: false });
+    const socIds = new Set(socGraph.nodes.map((n) => n.id));
+    expect(socIds.has('emile-durkheim')).toBe(true);
+    expect(socIds.has('max-weber')).toBe(true);
+    expect(socIds.has('karl-marx')).toBe(true);
+    expect(socIds.has('b-f-skinner')).toBe(false);
+
+    // Test interdisciplinary filter
+    const interdisciplinaryGraph = getVisualGraph({ interdisciplinaryOnly: true, includeConcepts: false });
+    const interIds = new Set(interdisciplinaryGraph.nodes.map((n) => n.id));
+    expect(interIds.has('william-james')).toBe(true);
+    expect(interIds.has('karl-marx')).toBe(true);
+    expect(interIds.has('michel-foucault')).toBe(true);
+    expect(interIds.has('sigmund-freud')).toBe(false); // Psychology only
+  });
+
+  it('verifies critical cross-disciplinary pathfinding lineages between philosophy, psychology, and sociology', () => {
+    // 1. Philosophy -> Psychology: Plato -> Schopenhauer -> Freud
+    const platoToFreud = findInfluencePath('plato', 'sigmund-freud', edgesData as any);
+    expect(platoToFreud.found).toBe(true);
+    expect(platoToFreud.nodes).toContain('plato');
+    expect(platoToFreud.nodes).toContain('sigmund-freud');
+
+    // 2. Philosophy -> Psychology: Descartes -> Pavlov -> Skinner
+    const descToSkinner = findInfluencePath('rene-descartes', 'b-f-skinner', edgesData as any);
+    expect(descToSkinner.found).toBe(true);
+    expect(descToSkinner.nodes[0]).toBe('rene-descartes');
+    expect(descToSkinner.nodes[descToSkinner.nodes.length - 1]).toBe('b-f-skinner');
+
+    // 3. Philosophy -> Sociology: Aristotle -> Rousseau -> Comte -> Durkheim
+    const aristotleToDurkheim = findInfluencePath('aristotle', 'emile-durkheim', edgesData as any);
+    expect(aristotleToDurkheim.found).toBe(true);
+    expect(aristotleToDurkheim.nodes).toContain('aristotle');
+    expect(aristotleToDurkheim.nodes).toContain('emile-durkheim');
+
+    // 4. Philosophy -> Psychology: Kant -> Piaget
+    const kantToPiaget = findInfluencePath('immanuel-kant', 'jean-piaget', edgesData as any);
+    expect(kantToPiaget.found).toBe(true);
+    expect(kantToPiaget.nodes).toContain('immanuel-kant');
+    expect(kantToPiaget.nodes).toContain('jean-piaget');
+
+    // 5. Philosophy -> Sociology: Hegel -> Marx -> Weber -> Bourdieu
+    const hegelToBourdieu = findInfluencePath('gwf-hegel', 'pierre-bourdieu', edgesData as any);
+    expect(hegelToBourdieu.found).toBe(true);
+    expect(hegelToBourdieu.nodes).toContain('gwf-hegel');
+    expect(hegelToBourdieu.nodes).toContain('karl-marx');
+    expect(hegelToBourdieu.nodes).toContain('pierre-bourdieu');
   });
 });

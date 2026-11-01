@@ -1,0 +1,32 @@
+{
+  "id": "george-h-mead",
+  "name": "George Herbert Mead",
+  "birthYear": 1863,
+  "deathYear": 1931,
+  "eraId": "twentieth-century",
+  "traditionId": "symbolic-interactionism",
+  "domains": [
+    "sociology",
+    "psychology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "American philosopher and social psychologist; father of symbolic interactionism; theorized the social emergence of the 'I' and the 'Me' through role-taking.",
+  "centralQuestion": "How does individual self-consciousness emerge out of social communication and language gestures in the community?",
+  "keyWorks": [
+    {
+      "title": "Mind, Self, and Society",
+      "year": "1934 CE",
+      "url": "https://en.wikipedia.org/wiki/Mind,_Self,_and_Society",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mind,_Self,_and_Society",
+      "description": "Foundational text of symbolic interactionism, role taking, and the generalized other."
+    }
+  ],
+  "sepSlug": "mead-gh",
+  "externalRefs": {
+    "sep": "mead-gh",
+    "wikipedia": "George_Herbert_Mead"
+  },
+  "importanceScore": 92,
+  "imageUrl": "/portraits/george-h-mead.jpg"
+}

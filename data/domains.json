@@ -1,0 +1,32 @@
+[
+  {
+    "id": "philosophy",
+    "name": "Philosophy",
+    "shortName": "Phil",
+    "description": "Metaphysics, Epistemology, Ethics, Mind, and the Foundations of Reason",
+    "color": "#2563eb",
+    "colorDark": "#60a5fa",
+    "icon": "Compass",
+    "experimental": false
+  },
+  {
+    "id": "psychology",
+    "name": "Psychology",
+    "shortName": "Psych",
+    "description": "Consciousness, Cognition, the Unconscious, and Human Behavior",
+    "color": "#0d9488",
+    "colorDark": "#2dd4bf",
+    "icon": "Brain",
+    "experimental": true
+  },
+  {
+    "id": "sociology",
+    "name": "Sociology",
+    "shortName": "Soc",
+    "tagline": "Social Structures, Collective Dynamics, Institutions, and Power",
+    "color": "#9333ea",
+    "colorDark": "#c084fc",
+    "icon": "Users",
+    "experimental": true
+  }
+]

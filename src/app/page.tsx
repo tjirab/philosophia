@@ -7,17 +7,22 @@ import {
   Search,
   HelpCircle,
   GitPullRequest,
+  Globe,
+  Brain,
+  Users,
+  Sparkles,
 } from 'lucide-react';
 import {
   eras,
   traditions,
+  domains,
   philosophers,
   concepts,
   edges,
   media,
   getVisualGraph,
 } from '../lib/graph/graph-service';
-import { Branch, EraId } from '../lib/types';
+import { Branch, EraId, DomainId } from '../lib/types';
 import { ForceGraphView } from '../components/graph/ForceGraphView';
 import { DossierDrawer } from '../components/drawer/DossierDrawer';
 import { LineagePathModal } from '../components/pathfinding/LineagePathModal';
@@ -30,6 +35,8 @@ export default function HomePage() {
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [selectedEraId, setSelectedEraId] = useState<string>('all');
   const [isolateEra, setIsolateEra] = useState<boolean>(true);
+  const [selectedDomain, setSelectedDomain] = useState<DomainId | 'all'>('all');
+  const [interdisciplinaryOnly, setInterdisciplinaryOnly] = useState<boolean>(false);
   const [selectedBranch, setSelectedBranch] = useState<Branch | 'all'>('all');
   const [showConcepts, setShowConcepts] = useState<boolean>(false);
   const [highlightedPathNodes, setHighlightedPathNodes] = useState<string[]>([]);
@@ -77,10 +84,12 @@ export default function HomePage() {
     return getVisualGraph({
       maxYear: maxYearFilter,
       eraId: eraIdFilter,
+      domainId: selectedDomain,
+      interdisciplinaryOnly,
       branch: selectedBranch,
       includeConcepts: showConcepts,
     });
-  }, [selectedEraId, isolateEra, selectedBranch, showConcepts]);
+  }, [selectedEraId, isolateEra, selectedDomain, interdisciplinaryOnly, selectedBranch, showConcepts]);
 
   const handleSelectNode = useCallback((nodeId: string | null) => {
     setSelectedNodeId(nodeId);
@@ -129,6 +138,73 @@ export default function HomePage() {
               Mapping intellectual influence from Antiquity to Modernity
             </div>
           </div>
+        </div>
+
+        {/* Global Domain Selector Pill Bar */}
+        <div className="hidden lg:flex items-center gap-1 p-1 bg-[var(--bg-subtle)] border border-[var(--border-main)] rounded-2xl shadow-inner font-serif text-xs">
+          <button
+            onClick={() => setSelectedDomain('all')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
+              selectedDomain === 'all'
+                ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] font-semibold border border-[var(--gold-border)] shadow-sm'
+                : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
+            }`}
+          >
+            <Globe className="w-3.5 h-3.5" />
+            <span>All Disciplines</span>
+          </button>
+          <button
+            onClick={() => setSelectedDomain('philosophy')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
+              selectedDomain === 'philosophy'
+                ? 'bg-blue-500/15 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/30 shadow-sm'
+                : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
+            }`}
+          >
+            <Compass className="w-3.5 h-3.5" />
+            <span>Philosophy</span>
+          </button>
+          <button
+            onClick={() => setSelectedDomain('psychology')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
+              selectedDomain === 'psychology'
+                ? 'bg-teal-500/15 text-teal-600 dark:text-teal-400 font-semibold border border-teal-500/30 shadow-sm'
+                : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
+            }`}
+          >
+            <Brain className="w-3.5 h-3.5" />
+            <span>Psychology</span>
+            <span className="text-[9px] uppercase px-1.5 py-0.5 rounded-md bg-amber-500/20 text-amber-600 dark:text-amber-400 font-mono tracking-tight font-medium border border-amber-500/30">
+              Experimental
+            </span>
+          </button>
+          <button
+            onClick={() => setSelectedDomain('sociology')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
+              selectedDomain === 'sociology'
+                ? 'bg-purple-500/15 text-purple-600 dark:text-purple-400 font-semibold border border-purple-500/30 shadow-sm'
+                : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
+            }`}
+          >
+            <Users className="w-3.5 h-3.5" />
+            <span>Sociology</span>
+            <span className="text-[9px] uppercase px-1.5 py-0.5 rounded-md bg-amber-500/20 text-amber-600 dark:text-amber-400 font-mono tracking-tight font-medium border border-amber-500/30">
+              Experimental
+            </span>
+          </button>
+          <div className="w-px h-4 bg-[var(--border-main)] mx-0.5" />
+          <button
+            onClick={() => setInterdisciplinaryOnly(!interdisciplinaryOnly)}
+            className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl transition ${
+              interdisciplinaryOnly
+                ? 'bg-amber-500/15 text-amber-600 dark:text-amber-400 font-semibold border border-amber-500/40 shadow-sm'
+                : 'text-[var(--text-dim)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
+            }`}
+            title="Filter to thinkers whose work bridges across multiple disciplines"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+            <span>Bridges</span>
+          </button>
         </div>
 
         {/* Action Controls */}

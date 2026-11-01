@@ -1,0 +1,44 @@
+{
+  "id": "emile-durkheim",
+  "name": "Émile Durkheim",
+  "birthYear": 1858,
+  "deathYear": 1917,
+  "eraId": "nineteenth-century",
+  "traditionId": "structural-functionalism",
+  "domains": [
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Principal architect of modern social science and academic sociology; established social facts as sui generis realities and investigated mechanical/organic solidarity and anomie.",
+  "centralQuestion": "How do external, coercive social facts and collective moral conscience maintain societal integration in an individualistic modern world?",
+  "keyWorks": [
+    {
+      "title": "The Division of Labour in Society",
+      "year": "1893 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Division_of_Labour_in_Society",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Division_of_Labour_in_Society",
+      "description": "Contrast between mechanical solidarity and modern organic division of labor."
+    },
+    {
+      "title": "The Rules of Sociological Method",
+      "year": "1895 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Rules_of_Sociological_Method",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Rules_of_Sociological_Method",
+      "description": "Defines sociological methodology: treat social facts as things."
+    },
+    {
+      "title": "Suicide: A Study in Sociology",
+      "year": "1897 CE",
+      "url": "https://en.wikipedia.org/wiki/Suicide_(Durkheim_book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Suicide_(Durkheim_book)",
+      "description": "Pioneering statistical study showing social integration rates govern individual suicide."
+    }
+  ],
+  "sepSlug": "durkheim",
+  "externalRefs": {
+    "sep": "durkheim",
+    "wikipedia": "Émile_Durkheim"
+  },
+  "importanceScore": 97,
+  "imageUrl": "/portraits/emile-durkheim.jpg"
+}

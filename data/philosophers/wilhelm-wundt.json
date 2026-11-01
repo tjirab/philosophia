@@ -1,0 +1,38 @@
+{
+  "id": "wilhelm-wundt",
+  "name": "Wilhelm Wundt",
+  "birthYear": 1832,
+  "deathYear": 1920,
+  "eraId": "nineteenth-century",
+  "traditionId": "experimental-psychology",
+  "domains": [
+    "psychology",
+    "philosophy"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Founding father of modern experimental psychology; established the first formal psychological research laboratory at Leipzig in 1879.",
+  "centralQuestion": "How can the immediate contents of conscious experience and psychological apperception be systematically analyzed and measured?",
+  "keyWorks": [
+    {
+      "title": "Principles of Physiological Psychology",
+      "year": "1874 CE",
+      "url": "https://en.wikipedia.org/wiki/Principles_of_Physiological_Psychology",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Principles_of_Physiological_Psychology",
+      "description": "Seminal textbook establishing psychology as an independent laboratory discipline."
+    },
+    {
+      "title": "Outlines of Psychology",
+      "year": "1896 CE",
+      "url": "https://en.wikipedia.org/wiki/Wilhelm_Wundt",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Wilhelm_Wundt",
+      "description": "Systematic overview of psychical processes, apperception, and voluntarism."
+    }
+  ],
+  "sepSlug": "wilhelm-wundt",
+  "externalRefs": {
+    "sep": "wilhelm-wundt",
+    "wikipedia": "Wilhelm_Wundt"
+  },
+  "importanceScore": 92,
+  "imageUrl": "/portraits/wilhelm-wundt.jpg"
+}

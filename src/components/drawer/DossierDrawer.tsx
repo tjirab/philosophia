@@ -188,6 +188,20 @@ export function DossierDrawer({
                   {details.tradition.name}
                 </span>
               )}
+              {isPhilosopher && phil?.domains && phil.domains.map((d) => (
+                <span
+                  key={d}
+                  className={`text-[10px] uppercase font-mono px-2 py-0.5 rounded-full border font-semibold ${
+                    d === 'psychology'
+                      ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
+                      : d === 'sociology'
+                      ? 'bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/30'
+                      : 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/30'
+                  }`}
+                >
+                  {d}
+                </span>
+              ))}
               {conc && (
                 <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] uppercase font-mono">
                   {conc.branch}

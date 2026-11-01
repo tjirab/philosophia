@@ -5,6 +5,8 @@
   "deathYear": 1910,
   "eraId": "nineteenth-century",
   "traditionId": "pragmatism",
+  "domains": ["philosophy", "psychology"],
+  "primaryDomain": "philosophy",
   "shortBio": "Pioneer of American pragmatism and psychology; formulated the stream of consciousness and the 'cash value' theory of truth.",
   "centralQuestion": "What difference does an idea make in concrete human experience?",
   "keyWorks": [

@@ -1,0 +1,44 @@
+{
+  "id": "sigmund-freud",
+  "name": "Sigmund Freud",
+  "birthYear": 1856,
+  "deathYear": 1939,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Austrian neurologist and founder of psychoanalysis; pioneered theories of the dynamic unconscious, infantile sexuality, repression, and dream analysis.",
+  "centralQuestion": "How do repressed instinctual drives in the unconscious manifest in neuroses, dreams, culture, and the discontents of civilization?",
+  "keyWorks": [
+    {
+      "title": "The Interpretation of Dreams",
+      "year": "1899 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Interpretation_of_Dreams",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Interpretation_of_Dreams",
+      "description": "Foundational psychoanalytic text introducing dream censorship and wish-fulfillment."
+    },
+    {
+      "title": "The Ego and the Id",
+      "year": "1923 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Ego_and_the_Id",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Ego_and_the_Id",
+      "description": "Introduces the structural model of the psyche: id, ego, and super-ego."
+    },
+    {
+      "title": "Civilization and Its Discontents",
+      "year": "1930 CE",
+      "url": "https://en.wikipedia.org/wiki/Civilization_and_Its_Discontents",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Civilization_and_Its_Discontents",
+      "description": "Analyzes the fundamental clash between instinctual desires and societal sublimation."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "sep": "freud",
+    "wikipedia": "Sigmund_Freud"
+  },
+  "importanceScore": 98,
+  "imageUrl": "/portraits/sigmund-freud.jpg"
+}

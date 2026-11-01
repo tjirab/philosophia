@@ -1,0 +1,23 @@
+[
+  {
+    "source": "jean-jacques-rousseau",
+    "target": "emile-durkheim",
+    "type": "DEVELOPED",
+    "label": "Rousseau's general will evolved into Durkheim's collective conscience and moral solidarity",
+    "strength": 85
+  },
+  {
+    "source": "emile-durkheim",
+    "target": "social-facts",
+    "type": "DEVELOPED",
+    "label": "Defined sociology as the empirical study of external, coercive social facts",
+    "strength": 85
+  },
+  {
+    "source": "emile-durkheim",
+    "target": "talcott-parsons",
+    "type": "DEVELOPED",
+    "label": "Formed the central theoretical pillar for Parsonian structural functionalism",
+    "strength": 85
+  }
+]

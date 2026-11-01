@@ -1,0 +1,38 @@
+{
+  "id": "w-e-b-du-bois",
+  "name": "W.E.B. Du Bois",
+  "birthYear": 1868,
+  "deathYear": 1963,
+  "eraId": "twentieth-century",
+  "traditionId": "critical-race-sociology",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "American sociologist, historian, and civil rights leader; pioneered empirical urban sociology, the color line problem, and the concept of double consciousness.",
+  "centralQuestion": "What does it mean to gaze at one's soul through the veil of a world that looks on in amused contempt and pity?",
+  "keyWorks": [
+    {
+      "title": "The Philadelphia Negro",
+      "year": "1899 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Philadelphia_Negro",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Philadelphia_Negro",
+      "description": "First scientific empirical sociological case study of an African American urban community."
+    },
+    {
+      "title": "The Souls of Black Folk",
+      "year": "1903 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Souls_of_Black_Folk",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Souls_of_Black_Folk",
+      "description": "Seminal essays introducing the veil and double consciousness in American racial life."
+    }
+  ],
+  "sepSlug": "dubois",
+  "externalRefs": {
+    "sep": "dubois",
+    "wikipedia": "W._E._B._Du_Bois"
+  },
+  "importanceScore": 95,
+  "imageUrl": "/portraits/w-e-b-du-bois.jpg"
+}

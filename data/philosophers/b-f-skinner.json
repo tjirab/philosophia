@@ -1,0 +1,44 @@
+{
+  "id": "b-f-skinner",
+  "name": "B.F. Skinner",
+  "birthYear": 1904,
+  "deathYear": 1990,
+  "eraId": "twentieth-century",
+  "traditionId": "behaviorism",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Pioneered radical behaviorism, operant conditioning, and reinforcement schedules; argued free will is an illusion and behavior is governed by environmental consequences.",
+  "centralQuestion": "How do schedules of operant reinforcement select and shape complex human behavior without invoking autonomous inner agency?",
+  "keyWorks": [
+    {
+      "title": "The Behavior of Organisms",
+      "year": "1938 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Behavior_of_Organisms",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Behavior_of_Organisms",
+      "description": "Establishes operant conditioning through experimental analysis of behavior."
+    },
+    {
+      "title": "Science and Human Behavior",
+      "year": "1953 CE",
+      "url": "https://en.wikipedia.org/wiki/Science_and_Human_Behavior",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Science_and_Human_Behavior",
+      "description": "Extends radical behaviorism to government, education, religion, and culture."
+    },
+    {
+      "title": "Beyond Freedom and Dignity",
+      "year": "1971 CE",
+      "url": "https://en.wikipedia.org/wiki/Beyond_Freedom_and_Dignity",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Beyond_Freedom_and_Dignity",
+      "description": "Critiques traditional concepts of autonomous human dignity in favor of behavioral technology."
+    }
+  ],
+  "sepSlug": "behaviorism",
+  "externalRefs": {
+    "sep": "behaviorism",
+    "wikipedia": "B._F._Skinner"
+  },
+  "importanceScore": 94,
+  "imageUrl": "/portraits/b-f-skinner.jpg"
+}

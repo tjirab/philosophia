@@ -50,6 +50,15 @@ export function buildData() {
   // 1. Philosophers
   if (fs.existsSync(PHILOSOPHERS_DIR)) {
     const philosophers = loadJsonDir(PHILOSOPHERS_DIR);
+    // Ensure default domains and primaryDomain
+    for (const p of philosophers) {
+      if (!p.domains || !Array.isArray(p.domains) || p.domains.length === 0) {
+        p.domains = ['philosophy'];
+      }
+      if (!p.primaryDomain) {
+        p.primaryDomain = p.domains[0];
+      }
+    }
     // Sort chronologically by birthYear (and then by id)
     philosophers.sort((a, b) => {
       if (a.birthYear !== b.birthYear) return a.birthYear - b.birthYear;

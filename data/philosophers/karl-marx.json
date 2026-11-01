@@ -5,6 +5,8 @@
   "deathYear": 1883,
   "eraId": "nineteenth-century",
   "traditionId": "existentialism-early",
+  "domains": ["philosophy", "sociology"],
+  "primaryDomain": "philosophy",
   "shortBio": "Turned Hegel's dialectic on its head into historical materialism; analyzed class struggle, alienation, and capitalism's contradictions.",
   "centralQuestion": "How do material economic conditions shape consciousness, and how can the working class emancipate humanity?",
   "keyWorks": [
