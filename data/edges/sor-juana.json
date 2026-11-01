@@ -1,0 +1,59 @@
+[
+  {
+    "id": "rene-descartes--sor-juana",
+    "source": "rene-descartes",
+    "target": "sor-juana",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Engaged Cartesian natural philosophy and the defense of autonomous reason",
+    "description": "Sor Juana was deeply versed in early modern Cartesian natural philosophy, using the Cartesian emphasis on rational clarity to argue that the human intellect has no sex.",
+    "historicalContext": "Written in New Spain during the late 17th century amid the arrival of early modern European scientific and philosophical treatises in the viceregal court.",
+    "dialecticalTension": "Applies Cartesian rational agency against the gendered scholastic hierarchies of the colonial Catholic institution.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Sor Juana Inés de la Cruz",
+        "work": "Respuesta a Sor Filotea de la Cruz",
+        "year": 1691,
+        "quote": "Women are quite capable of philosophical contemplation; God has endowed them with intellect equal to men.",
+        "url": "https://en.wikipedia.org/wiki/Respuesta_a_Sor_Filotea_de_la_Cruz"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Octavio Paz",
+        "work": "Sor Juana: Or, the Traps of Faith",
+        "year": 1982,
+        "sectionOrPage": "Part IV (The World and the Convent)"
+      }
+    ]
+  },
+  {
+    "id": "sor-juana--gloria-anzaldua",
+    "source": "sor-juana",
+    "target": "gloria-anzaldua",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Inspirited Chicana feminist intellectual rebellion and epistemic autonomy",
+    "description": "Anzaldúa explicitly claimed Sor Juana as a primordial spiritual and intellectual ancestor of Mexican and Chicana women speaking truth against patriarchal and colonial orthodoxy.",
+    "historicalContext": "Chicana feminist intellectual renaissance in the late 20th century recovering suppressed Mexican women philosophers.",
+    "dialecticalTension": "Transposes Sor Juana's baroque epistemic resistance into 20th-century mestiza borderland theory and queer decolonial critique.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Gloria Anzaldúa",
+        "work": "Borderlands/La Frontera: The New Mestiza",
+        "year": 1987,
+        "sectionOrPage": "Ch. 2 (Movimientos de rebeldía y las culturas que traicionan)"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Alicia Gaspar de Alba",
+        "work": "Chicano Art Inside/Outside the Master's House: Cultural Politics and the CARA Exhibition",
+        "year": 1998,
+        "sectionOrPage": "pp. 128–132"
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "id": "paulo-freire",
+  "name": "Paulo Freire",
+  "birthYear": 1921,
+  "deathYear": 1997,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "shortBio": "Brazilian educator and critical philosopher who revolutionized epistemology and political praxis by formulating critical pedagogy, dialogical problem-posing education, and conscientização.",
+  "centralQuestion": "How can education become the practice of freedom rather than an instrument for the reproduction of oppressive consciousness?",
+  "keyWorks": [
+    {
+      "title": "Pedagogy of the Oppressed",
+      "year": "1968",
+      "url": "https://en.wikipedia.org/wiki/Pedagogy_of_the_Oppressed",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pedagogy_of_the_Oppressed",
+      "description": "Foundational critique of the banking concept of education, proposing dialogical problem-posing praxis for collective liberation."
+    },
+    {
+      "title": "Education for Critical Consciousness",
+      "year": "1973",
+      "url": "https://en.wikipedia.org/wiki/Paulo_Freire",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Paulo_Freire",
+      "description": "Exploration of conscientização, democratic participation, and the dismantling of internalized fatalism among marginalized communities."
+    },
+    {
+      "title": "Pedagogy of Hope: Reliving Pedagogy of the Oppressed",
+      "year": "1992",
+      "url": "https://en.wikipedia.org/wiki/Paulo_Freire",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Paulo_Freire",
+      "description": "Deep philosophical re-examination of historical possibility, ethical indignation, and affective solidarity."
+    }
+  ],
+  "sepSlug": "liberation",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/paulo-freire.jpg",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy"
+}

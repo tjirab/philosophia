@@ -581,6 +581,41 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const fairbairnToMitchell = findInfluencePath('ronald-fairbairn', 'stephen-mitchell', edgesData as any);
     expect(fairbairnToMitchell.found).toBe(true);
+
+    // Latin American & Decolonial lineages
+    // 1. Descartes -> Sor Juana -> Anzaldúa
+    const descToSorJuana = findInfluencePath('rene-descartes', 'sor-juana', edgesData as any);
+    expect(descToSorJuana.found).toBe(true);
+
+    const sorJuanaToAnzaldua = findInfluencePath('sor-juana', 'gloria-anzaldua', edgesData as any);
+    expect(sorJuanaToAnzaldua.found).toBe(true);
+
+    // 2. Fanon -> Freire -> Dussel -> philosophy-of-liberation
+    const fanonToFreire = findInfluencePath('frantz-fanon', 'paulo-freire', edgesData as any);
+    expect(fanonToFreire.found).toBe(true);
+
+    const freireToDussel = findInfluencePath('paulo-freire', 'enrique-dussel', edgesData as any);
+    expect(freireToDussel.found).toBe(true);
+
+    const freireToPedagogy = findInfluencePath('paulo-freire', 'critical-pedagogy', edgesData as any);
+    expect(freireToPedagogy.found).toBe(true);
+
+    const dusselToLiberation = findInfluencePath('enrique-dussel', 'philosophy-of-liberation', edgesData as any);
+    expect(dusselToLiberation.found).toBe(true);
+
+    // 3. Du Bois -> Quijano -> coloniality-of-power
+    const duBoisToQuijano = findInfluencePath('w-e-b-du-bois', 'anibal-quijano', edgesData as any);
+    expect(duBoisToQuijano.found).toBe(true);
+
+    const quijanoToColoniality = findInfluencePath('anibal-quijano', 'coloniality-of-power', edgesData as any);
+    expect(quijanoToColoniality.found).toBe(true);
+
+    // 4. Quijano -> Anzaldúa -> mestiza-consciousness
+    const quijanoToAnzaldua = findInfluencePath('anibal-quijano', 'gloria-anzaldua', edgesData as any);
+    expect(quijanoToAnzaldua.found).toBe(true);
+
+    const anzalduaToMestiza = findInfluencePath('gloria-anzaldua', 'mestiza-consciousness', edgesData as any);
+    expect(anzalduaToMestiza.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {

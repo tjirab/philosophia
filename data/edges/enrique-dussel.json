@@ -1,0 +1,122 @@
+[
+  {
+    "id": "enrique-dussel--philosophy-of-liberation",
+    "source": "enrique-dussel",
+    "target": "philosophy-of-liberation",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Systematized the Philosophy of Liberation and the analectical method",
+    "description": "Dussel formalized the Philosophy of Liberation, introducing the analectical method where the ethical interpellation of the excluded Other disrupts and deconstructs ontological totality from exteriority.",
+    "historicalContext": "Written in 1977 during Dussel's exile in Mexico following the bombing of his home by right-wing paramilitaries in Argentina.",
+    "dialecticalTension": "Opposes Hegelian dialectics (which subsume difference into a totalizing synthesis) with analectics (where the transcendent alterity of the victim remains unassimilable).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Enrique Dussel",
+        "work": "Philosophy of Liberation",
+        "year": 1977,
+        "sectionOrPage": "Section 5.3 (The Analectical Method)",
+        "quote": "The analectical method is the movement that starts from the Other as free, as someone exterior to the totality; it is the acceptance of their word, their revelation.",
+        "url": "https://en.wikipedia.org/wiki/Philosophy_of_Liberation"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Linda Martín Alcoff",
+        "work": "Visible Identities: Race, Gender, and the Self",
+        "year": 2006,
+        "sectionOrPage": "pp. 125–134"
+      }
+    ]
+  },
+  {
+    "id": "emmanuel-levinas--enrique-dussel",
+    "source": "emmanuel-levinas",
+    "target": "enrique-dussel",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Geopoliticized Levinasian alterity into the liberation of the Global South",
+    "description": "Dussel embraced Levinas's ethics of the Face and the Other as First Philosophy, but radically geopoliticalized Levinas, demonstrating that the Other is not an abstract metaphysical neighbor but the concrete historically colonized and impoverished victim.",
+    "historicalContext": "Dussel met Levinas in Leuven and Paris in the early 1970s, engaging in profound philosophical dialogue.",
+    "dialecticalTension": "Rebukes European phenomenology for universalizing the continental subject while remaining blind to the coloniality of the periphery.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Enrique Dussel",
+        "work": "Philosophy of Liberation",
+        "year": 1977,
+        "sectionOrPage": "Section 2.4 (The Exteriority of the Other)",
+        "quote": "Levinas made the ontological breakthrough to the Other, but he remained in the center. We must think the Other from the periphery.",
+        "url": "https://en.wikipedia.org/wiki/Philosophy_of_Liberation"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Nelson Maldonado-Torres",
+        "work": "Against War: Views from the Underside of Modernity",
+        "year": 2008,
+        "sectionOrPage": "pp. 137–160"
+      }
+    ]
+  },
+  {
+    "id": "rene-descartes--enrique-dussel",
+    "source": "rene-descartes",
+    "target": "enrique-dussel",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Exposed the imperial 'ego conquiro' underlying the Cartesian 'ego cogito'",
+    "description": "Dussel famously demonstrated that Descartes' 1637 ego cogito ('I think') was historically predicated upon and enabled by 150 years of the imperial ego conquiro ('I conquer') initiated in 1492.",
+    "historicalContext": "Developed in Dussel's 1992 Frankfurt lectures commemorating the 500th anniversary of Columbus's landfall, published as 1492: The Concealment of the Other.",
+    "dialecticalTension": "De-transcendentalizes Cartesian modern subjectivity, demonstrating that solipsistic rationality is a philosophical sublimation of colonial world dominion.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Enrique Dussel",
+        "work": "1492: The Concealment of the Other: The Origin of the Myth of Modernity",
+        "year": 1992,
+        "sectionOrPage": "Lecture 2",
+        "quote": "The 'I conquer' is the practical foundation of the 'I think'... Spain was the first modern nation, and Cortes was the first modern subjective figure.",
+        "url": "https://en.wikipedia.org/wiki/Enrique_Dussel"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Santiago Castro-Gómez",
+        "work": "La hybris del punto cero: ciencia, raza e ilustración en la Nueva Granada",
+        "year": 2005,
+        "sectionOrPage": "pp. 24–48"
+      }
+    ]
+  },
+  {
+    "id": "gwf-hegel--enrique-dussel",
+    "source": "gwf-hegel",
+    "target": "enrique-dussel",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Critiqued Hegelian Eurocentric teleology of World History",
+    "description": "Dussel refuted Hegel's Lectures on the Philosophy of History, demonstrating how Hegel constructed Europe as the culmination of universal Spirit by dismissing the Americas, Africa, and Asia as immature or outside World History.",
+    "historicalContext": "A sustained theme throughout Dussel's 1990s lectures and his magnum opus Ethics of Liberation (1998).",
+    "dialecticalTension": "Counters Hegelian totalizing historical dialectic with a pluriversal, transmodern conception of human history.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Enrique Dussel",
+        "work": "The Invention of the Americas: Eclipse of the Other and the Myth of Modernity",
+        "year": 1995,
+        "sectionOrPage": "Chapter 1 (Eurocentrism)",
+        "quote": "Hegel falls into ideological Eurocentrism when he writes that World History travels from East to West, for Europe is the absolute end of history.",
+        "url": "https://en.wikipedia.org/wiki/Enrique_Dussel"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Walter D. Mignolo",
+        "work": "Local Histories/Global Designs: Coloniality, Subaltern Knowledges, and Border Thinking",
+        "year": 2000,
+        "sectionOrPage": "pp. 52–68"
+      }
+    ]
+  }
+]

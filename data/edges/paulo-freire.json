@@ -1,0 +1,122 @@
+[
+  {
+    "id": "paulo-freire--critical-pedagogy",
+    "source": "paulo-freire",
+    "target": "critical-pedagogy",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the pedagogy of the oppressed and dialogical problem-posing education",
+    "description": "Freire established critical pedagogy by rejecting the authoritarian banking model of education and creating a method where learners decode social reality into transformative praxis.",
+    "historicalContext": "Developed during mass adult literacy campaigns in Northeastern Brazil in the early 1960s and codified during his exile in Chile (1968).",
+    "dialecticalTension": "Overcomes the contradiction between teacher (as absolute possessor of knowledge) and student (as passive depository) through mutual dialogical inquiry.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Paulo Freire",
+        "work": "Pedagogy of the Oppressed",
+        "year": 1968,
+        "sectionOrPage": "Chapter 2",
+        "quote": "Education must begin with the solution of the teacher-student contradiction, by reconciling the poles of the contradiction so that both are simultaneously teachers and students.",
+        "url": "https://en.wikipedia.org/wiki/Pedagogy_of_the_Oppressed"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Henry A. Giroux",
+        "work": "Teachers as Intellectuals: Toward a Critical Pedagogy of Learning",
+        "year": 1988,
+        "sectionOrPage": "pp. 89–110"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--paulo-freire",
+    "source": "karl-marx",
+    "target": "paulo-freire",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Applied historical-materialist alienation to pedagogical praxis",
+    "description": "Freire adapted Marx's concepts of alienation, historical consciousness, and praxis—insisting that human reflection without action is mere verbalism, and action without reflection is blind activism.",
+    "historicalContext": "Formulated in dialogue with 20th-century Latin American Marxist liberation movements and Third World solidarity struggles.",
+    "dialecticalTension": "Transforms Marxist structural analysis into an educational and dialogical method centered on humanization rather than vanguardist coercion.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Paulo Freire",
+        "work": "Pedagogy of the Oppressed",
+        "year": 1968,
+        "sectionOrPage": "Chapter 1",
+        "quote": "Functionally, oppression is domesticating. To no longer be prey to its force, one must emerge from it and turn upon it. This can be done only by means of the praxis: reflection and action upon the world in order to transform it.",
+        "url": "https://en.wikipedia.org/wiki/Pedagogy_of_the_Oppressed"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Peter McLaren",
+        "work": "Che Guevara, Paulo Freire, and the Pedagogy of Revolution",
+        "year": 2000,
+        "sectionOrPage": "pp. 145–182"
+      }
+    ]
+  },
+  {
+    "id": "frantz-fanon--paulo-freire",
+    "source": "frantz-fanon",
+    "target": "paulo-freire",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Integrated Fanonian psychology of colonial internalization",
+    "description": "Freire drew directly on Fanon's The Wretched of the Earth to explain how the oppressed internalize the image of the oppressor, producing an existential duality that fears authentic freedom.",
+    "historicalContext": "Freire read Fanon intensely while writing Pedagogy of the Oppressed in Santiago, Chile in 1967–1968.",
+    "dialecticalTension": "Deepens Fanon's critique of the internalized colonizer by providing an educational praxis for therapeutic and political de-alienation.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Paulo Freire",
+        "work": "Pedagogy of the Oppressed",
+        "year": 1968,
+        "sectionOrPage": "Chapter 1",
+        "quote": "The oppressed suffer from the duality which has established itself in their innermost being... They have adopted the guidelines of the oppressor.",
+        "url": "https://en.wikipedia.org/wiki/Pedagogy_of_the_Oppressed"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Lewis R. Gordon",
+        "work": "What Fanon Said: A Philosophical Introduction to His Life and Thought",
+        "year": 2015,
+        "sectionOrPage": "pp. 120–135"
+      }
+    ]
+  },
+  {
+    "id": "paulo-freire--enrique-dussel",
+    "source": "paulo-freire",
+    "target": "enrique-dussel",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Supplied the pedagogical and dialogical foundation for the Philosophy of Liberation",
+    "description": "Dussel incorporated Freire's dialogical problem-posing praxis as the pedagogical moment of liberation philosophy, connecting theoretical ethics with popular consciousness.",
+    "historicalContext": "Both thinkers collaborated in Latin American liberation philosophy circles and ecumenical reflection groups throughout the 1970s.",
+    "dialecticalTension": "Extends Freire's educational pedagogy into a comprehensive geopolitical architecture of Latin American transmodern ethics.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Enrique Dussel",
+        "work": "Philosophy of Liberation",
+        "year": 1977,
+        "sectionOrPage": "Section 4.3 (Pedagogics of Liberation)",
+        "quote": "Freire has clearly demonstrated how the teacher-student relation can reproduce domination or unleash the liberating Word.",
+        "url": "https://en.wikipedia.org/wiki/Philosophy_of_Liberation"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Walter D. Mignolo",
+        "work": "The Darker Side of Western Modernity: Global Futures, Decolonial Options",
+        "year": 2011,
+        "sectionOrPage": "pp. 118–142"
+      }
+    ]
+  }
+]

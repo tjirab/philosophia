@@ -101,7 +101,12 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'jacques-lacan', patterns: [/\blacan\b/i, /\blacanian\b/i] },
   { id: 'paul-ricoeur', patterns: [/\bricoeur\b/i, /\bricœur\b/i] },
   { id: 'melanie-klein', patterns: [/\bmelanie klein\b/i] },
-  { id: 'alfred-adler', patterns: [/\balfred adler\b/i] }
+  { id: 'alfred-adler', patterns: [/\balfred adler\b/i] },
+  { id: 'sor-juana', patterns: [/\bsor juana\b/i] },
+  { id: 'paulo-freire', patterns: [/\bpaulo freire\b/i, /\bfreire\b/i, /\bpedagogy of the oppressed\b/i] },
+  { id: 'enrique-dussel', patterns: [/\benrique dussel\b/i, /\bdussel\b/i, /\bphilosophy of liberation\b/i] },
+  { id: 'anibal-quijano', patterns: [/\ban[ií]bal quijano\b/i, /\bquijano\b/i, /\bcoloniality of power\b/i] },
+  { id: 'gloria-anzaldua', patterns: [/\bgloria anzald[uú]a\b/i, /\banzald[uú]a\b/i, /\bborderlands\b/i] }
 ];
 
 async function ingestRSS() {
