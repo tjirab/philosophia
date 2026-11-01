@@ -154,37 +154,76 @@ export function DossierDrawer({
   return (
     <div className="fixed inset-y-0 right-0 z-50 w-full sm:w-[540px] lg:w-[600px] bg-[var(--bg-card)] border-l border-[var(--border-strong)] backdrop-blur-xl shadow-2xl flex flex-col transition-all duration-300 text-[var(--text-main)] font-serif">
       {/* Header */}
-      <div className="p-6 border-b border-[var(--border-main)] relative bg-[var(--bg-card)]">
-        <div className="absolute top-5 right-5 flex items-center gap-1 z-10">
-          {isPhilosopher && phil && (
-            <Link
-              href={`/thinker/${phil.id}`}
-              className="p-2 text-[var(--text-dim)] hover:text-[var(--gold-accent)] rounded-lg hover:bg-[var(--bg-hover)] transition flex items-center gap-1 text-xs"
-              title="Expand into full thinker folio page"
+      <div className="p-5 sm:p-6 border-b border-[var(--border-main)] bg-[var(--bg-card)] relative shrink-0">
+        {/* Top utility row: Badges on left, Expand & Close on right */}
+        <div className="flex items-center justify-between gap-3 mb-3">
+          <div className="flex items-center gap-2 flex-wrap min-w-0">
+            {details.era && (
+              <span
+                className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider text-white shadow-sm"
+                style={{ backgroundColor: details.era.color }}
+              >
+                {details.era.name}
+              </span>
+            )}
+            {details.tradition && (
+              <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] font-semibold">
+                {details.tradition.name}
+              </span>
+            )}
+            {isPhilosopher && phil?.domains && phil.domains.map((d) => (
+              <span
+                key={d}
+                className={`text-[10px] uppercase font-mono px-2 py-0.5 rounded-full border font-semibold ${
+                  d === 'psychology'
+                    ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
+                    : d === 'sociology'
+                    ? 'bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/30'
+                    : 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/30'
+                }`}
+              >
+                {d}
+              </span>
+            ))}
+            {conc && (
+              <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] uppercase font-mono">
+                {conc.branch}
+              </span>
+            )}
+          </div>
+
+          <div className="flex items-center gap-1 shrink-0">
+            {isPhilosopher && phil && (
+              <Link
+                href={`/thinker/${phil.id}`}
+                className="p-1.5 sm:px-2.5 sm:py-1.5 text-[var(--text-dim)] hover:text-[var(--gold-accent)] rounded-lg hover:bg-[var(--bg-hover)] border border-transparent hover:border-[var(--border-main)] transition flex items-center gap-1.5 text-xs"
+                title="Expand into full thinker folio page"
+              >
+                <Maximize2 className="w-4 h-4 shrink-0" />
+                <span className="hidden sm:inline font-sans text-[11px] font-medium">Expand Page</span>
+              </Link>
+            )}
+            {!isPhilosopher && conc && (
+              <Link
+                href={`/concept/${conc.id}`}
+                className="p-1.5 sm:px-2.5 sm:py-1.5 text-[var(--text-dim)] hover:text-[var(--gold-accent)] rounded-lg hover:bg-[var(--bg-hover)] border border-transparent hover:border-[var(--border-main)] transition flex items-center gap-1.5 text-xs"
+                title="Expand into full concept folio page"
+              >
+                <Maximize2 className="w-4 h-4 shrink-0" />
+                <span className="hidden sm:inline font-sans text-[11px] font-medium">Expand Page</span>
+              </Link>
+            )}
+            <button
+              onClick={onClose}
+              className="p-1.5 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition"
+              aria-label="Close dossier"
             >
-              <Maximize2 className="w-4 h-4" />
-              <span className="hidden sm:inline font-sans text-[11px] font-medium">Expand Page</span>
-            </Link>
-          )}
-          {!isPhilosopher && conc && (
-            <Link
-              href={`/concept/${conc.id}`}
-              className="p-2 text-[var(--text-dim)] hover:text-[var(--gold-accent)] rounded-lg hover:bg-[var(--bg-hover)] transition flex items-center gap-1 text-xs"
-              title="Expand into full concept folio page"
-            >
-              <Maximize2 className="w-4 h-4" />
-              <span className="hidden sm:inline font-sans text-[11px] font-medium">Expand Page</span>
-            </Link>
-          )}
-          <button
-            onClick={onClose}
-            className="p-2 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition"
-            aria-label="Close dossier"
-          >
-            <X className="w-5 h-5" />
-          </button>
+              <X className="w-5 h-5 shrink-0" />
+            </button>
+          </div>
         </div>
 
+        {/* Hero Identity: Portrait + Title + Metadata */}
         <div className="flex items-start gap-4">
           {isPhilosopher && phil && (
             <div className="relative shrink-0">
@@ -223,42 +262,7 @@ export function DossierDrawer({
             </div>
           )}
 
-          <div className="flex-1 min-w-0 pr-6">
-            <div className="flex items-center gap-2 mb-2 flex-wrap">
-              {details.era && (
-                <span
-                  className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full uppercase tracking-wider text-white shadow-sm"
-                  style={{ backgroundColor: details.era.color }}
-                >
-                  {details.era.name}
-                </span>
-              )}
-              {details.tradition && (
-                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] font-semibold">
-                  {details.tradition.name}
-                </span>
-              )}
-              {isPhilosopher && phil?.domains && phil.domains.map((d) => (
-                <span
-                  key={d}
-                  className={`text-[10px] uppercase font-mono px-2 py-0.5 rounded-full border font-semibold ${
-                    d === 'psychology'
-                      ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
-                      : d === 'sociology'
-                      ? 'bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/30'
-                      : 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/30'
-                  }`}
-                >
-                  {d}
-                </span>
-              ))}
-              {conc && (
-                <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] uppercase font-mono">
-                  {conc.branch}
-                </span>
-              )}
-            </div>
-
+          <div className="flex-1 min-w-0">
             <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[var(--text-main)] tracking-tight">
               {isPhilosopher ? phil?.name : (conc?.title || (conc as any)?.name || 'Concept')}
             </h2>

@@ -189,29 +189,29 @@ function HomePageContent() {
   return (
     <div className="relative w-screen h-screen overflow-hidden flex flex-col bg-[var(--bg-main)] text-[var(--text-main)] font-serif">
       {/* Top Classical Navigation Bar */}
-      <header className="absolute top-0 inset-x-0 z-30 h-16 bg-[var(--bg-card)]/90 backdrop-blur-md border-b border-[var(--border-main)] px-4 sm:px-6 flex items-center justify-between shadow-sm">
+      <header className="absolute top-0 inset-x-0 z-30 h-16 bg-[var(--bg-card)]/90 backdrop-blur-md border-b border-[var(--border-main)] px-3 sm:px-6 flex items-center justify-between shadow-sm">
         {/* Logo & Classical Title */}
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-[var(--bg-subtle)] border border-[var(--border-main)] flex items-center justify-center text-[var(--gold-accent)] shadow-sm">
+        <div className="flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0">
+          <div className="w-8 h-8 rounded-lg bg-[var(--bg-subtle)] border border-[var(--border-main)] flex items-center justify-center text-[var(--gold-accent)] shadow-sm shrink-0">
             <Compass className="w-4 h-4 text-[var(--gold-accent)]" />
           </div>
-          <div>
+          <div className="min-w-0">
             <div className="flex items-center gap-2">
-              <span className="font-serif font-bold text-base tracking-wider text-[var(--text-main)]">
+              <span className="font-serif font-bold text-base tracking-wider text-[var(--text-main)] shrink-0">
                 PHILOSOPHIA
               </span>
-              <span className="hidden sm:inline-block text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)]">
+              <span className="hidden md:inline-block text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-[var(--bg-subtle)] text-[var(--gold-accent)] border border-[var(--border-main)] whitespace-nowrap">
                 Lineage of Ideas
               </span>
             </div>
-            <div className="text-[11px] text-[var(--text-dim)] hidden sm:block">
+            <div className="text-[11px] text-[var(--text-dim)] hidden xl:block truncate">
               Mapping intellectual influence from Antiquity to Modernity
             </div>
           </div>
         </div>
 
         {/* Global Domain Selector Pill Bar */}
-        <div className="hidden lg:flex items-center gap-1 p-1 bg-[var(--bg-subtle)] border border-[var(--border-main)] rounded-2xl shadow-inner font-serif text-xs">
+        <div className="hidden xl:flex items-center gap-1 p-1 bg-[var(--bg-subtle)] border border-[var(--border-main)] rounded-2xl shadow-inner font-serif text-xs shrink-0 mx-2">
           <button
             onClick={() => setSelectedDomain('all')}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
@@ -274,24 +274,24 @@ function HomePageContent() {
         </div>
 
         {/* Action Controls */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           {/* Appearance & Font Settings */}
           <AppearanceSettingsMenu />
 
           {/* Folio Key / Legend */}
           <button
             onClick={() => setIsLegendOpen(true)}
-            className="flex items-center gap-1.5 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--border-strong)] rounded-xl text-xs transition font-serif"
+            className="flex items-center gap-1.5 p-2 sm:px-3 sm:py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--border-strong)] rounded-xl text-xs transition font-serif"
             title="Folio Key (Colors, Nodes & Relations)"
           >
             <HelpCircle className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-            <span className="hidden sm:inline">Folio Key</span>
+            <span className="hidden md:inline">Folio Key</span>
           </button>
 
           {/* Contribute / Suggest Content */}
           <button
             onClick={() => handleOpenSuggestion(selectedNodeId)}
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--border-strong)] rounded-xl text-xs transition font-serif"
+            className="hidden lg:flex items-center gap-1.5 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] hover:border-[var(--border-strong)] rounded-xl text-xs transition font-serif"
             title="Suggest an edit, book citation, or podcast link via GitHub"
           >
             <GitPullRequest className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
@@ -301,10 +301,11 @@ function HomePageContent() {
           {/* Search Trigger */}
           <button
             onClick={() => setIsSearchOpen(true)}
-            className="flex items-center gap-2 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] rounded-xl text-xs transition"
+            className="flex items-center gap-1.5 sm:gap-2 p-2 sm:px-3 sm:py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-main)] border border-[var(--border-main)] rounded-xl text-xs transition"
+            title="Search Folio (⌘K)"
           >
             <Search className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-            <span className="hidden md:inline">Search Folio</span>
+            <span className="hidden sm:inline">Search</span>
             <kbd className="hidden md:inline-block text-[10px] font-mono bg-[var(--bg-card)] px-1.5 py-0.5 rounded text-[var(--text-dim)] border border-[var(--border-main)]">
               ⌘K
             </kbd>
@@ -313,10 +314,11 @@ function HomePageContent() {
           {/* Trace Lineage Path Button */}
           <button
             onClick={() => handleOpenPathModal(selectedNodeId || 'plato')}
-            className="flex items-center gap-1.5 px-3.5 py-1.5 bg-[var(--gold-bg)] hover:bg-[var(--bg-hover)] text-[var(--gold-accent)] border border-[var(--gold-border)] rounded-xl text-xs font-semibold tracking-wide transition shadow-sm"
+            className="flex items-center gap-1.5 p-2 sm:px-3.5 sm:py-1.5 bg-[var(--gold-bg)] hover:bg-[var(--bg-hover)] text-[var(--gold-accent)] border border-[var(--gold-border)] rounded-xl text-xs font-semibold tracking-wide transition shadow-sm"
+            title="Trace Lineage Path"
           >
-            <GitFork className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-            <span>Trace Lineage</span>
+            <GitFork className="w-3.5 h-3.5 text-[var(--gold-accent)] shrink-0" />
+            <span className="hidden sm:inline">Trace Lineage</span>
           </button>
         </div>
       </header>
