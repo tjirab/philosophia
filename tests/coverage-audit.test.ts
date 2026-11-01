@@ -60,10 +60,12 @@ describe('Philosophia Canon Coverage & Audit Engine', () => {
     const summary = generatePrSummary(report);
     expect(summary).toContain('<!-- philosophia-pr-audit-bot -->');
     expect(summary).toContain('### Philosophia Canon & Graph Verification');
-    expect(summary).toContain('| Thinkers | 117 | Complete |');
-    expect(summary).toContain('| Concepts | 96 | Complete |');
-    expect(summary).toContain('| Total Graph Nodes | 213 | Verified (0 isolated nodes) |');
-    expect(summary).toContain('| Dialectical Edges | 436 (mean degree 2.05) | Verified (0 dangling edges) |');
+    expect(summary).toContain(`| Thinkers | ${report.totals.philosophers} | Complete |`);
+    expect(summary).toContain(`| Concepts | ${report.totals.concepts} | Complete |`);
+    expect(summary).toContain(`| Total Graph Nodes | ${report.totals.totalNodes} | Verified (0 isolated nodes) |`);
+    expect(summary).toContain(
+      `| Dialectical Edges | ${report.totals.edges} (mean degree ${report.totals.meanDegree}) | Verified (${report.topology.danglingEdgesCount} dangling edges) |`
+    );
     expect(summary).toContain('Critical Lineage Paths');
 
     // Strictly ensure zero emojis are present in PR summary
