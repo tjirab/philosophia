@@ -267,11 +267,53 @@ export function ForceGraphView({
     if (selectedNodeId && fgRef.current) {
       const node = nodes.find((n) => n.id === selectedNodeId);
       if (node && typeof node.x === 'number' && typeof node.y === 'number') {
+        hasInitialFitRef.current = true;
         fgRef.current.centerAt(node.x, node.y, 800);
         fgRef.current.zoom(2.0, 800);
       }
     }
   }, [selectedNodeId, nodes]);
+
+  const selectedEdgeEndpoints = useMemo(() => {
+    if (!selectedEdgeId) return null;
+    const parts = selectedEdgeId.split('--');
+    if (parts.length >= 2) {
+      return { source: parts[0], target: parts.slice(1).join('--') };
+    }
+    return null;
+  }, [selectedEdgeId]);
+
+  // When selectedEdgeId changes, center and zoom camera on the connection between source and target
+  useEffect(() => {
+    if (selectedEdgeId && fgRef.current && selectedEdgeEndpoints) {
+      const centerOnEdge = () => {
+        const srcNode = nodes.find((n) => n.id === selectedEdgeEndpoints.source);
+        const tgtNode = nodes.find((n) => n.id === selectedEdgeEndpoints.target);
+        if (
+          srcNode &&
+          tgtNode &&
+          typeof srcNode.x === 'number' &&
+          typeof srcNode.y === 'number' &&
+          typeof tgtNode.x === 'number' &&
+          typeof tgtNode.y === 'number'
+        ) {
+          const midX = (srcNode.x + tgtNode.x) / 2;
+          const midY = (srcNode.y + tgtNode.y) / 2;
+          hasInitialFitRef.current = true;
+          fgRef.current.centerAt(midX, midY, 800);
+          fgRef.current.zoom(2.5, 800);
+        }
+      };
+
+      centerOnEdge();
+      const t1 = setTimeout(centerOnEdge, 200);
+      const t2 = setTimeout(centerOnEdge, 600);
+      return () => {
+        clearTimeout(t1);
+        clearTimeout(t2);
+      };
+    }
+  }, [selectedEdgeId, selectedEdgeEndpoints, nodes]);
 
   const pathNodeSet = useMemo(() => new Set(highlightedPathNodes), [highlightedPathNodes]);
   const isPathActive = pathNodeSet.size > 0;
@@ -336,12 +378,18 @@ export function ForceGraphView({
       const isSelected = node.id === selectedNodeId;
       const isHovered = hoveredNode?.id === node.id;
       const isOnPath = pathNodeSet.has(node.id);
+      const isEdgeEndpoint = Boolean(
+        selectedEdgeEndpoints &&
+        (node.id === selectedEdgeEndpoints.source || node.id === selectedEdgeEndpoints.target)
+      );
 
       // Dimming logic
       let alpha = 1;
       if (isPathActive && !isOnPath) {
         alpha = 0.12;
-      } else if (hoveredNode && !isSelected && !isHovered) {
+      } else if (selectedEdgeId && !isEdgeEndpoint) {
+        alpha = 0.12;
+      } else if (hoveredNode && !isSelected && !isHovered && !isEdgeEndpoint) {
         alpha = 0.35;
       }
 
@@ -351,16 +399,16 @@ export function ForceGraphView({
       const size = getNodeRadius(node.val, node.importanceScore);
       const isPrimaryThinker = node.importanceScore && node.importanceScore >= 95;
 
-      // 1. Outer halo for selected, path, or high-centrality foundational thinkers
-      if (isSelected || isOnPath || isPrimaryThinker) {
+      // 1. Outer halo for selected, path, edge endpoints, or high-centrality foundational thinkers
+      if (isSelected || isEdgeEndpoint || isOnPath || isPrimaryThinker) {
         ctx.beginPath();
-        ctx.arc(node.x, node.y, size + 6, 0, 2 * Math.PI, false);
+        ctx.arc(node.x, node.y, size + (isEdgeEndpoint ? 8 : 6), 0, 2 * Math.PI, false);
         ctx.fillStyle = isLight
-          ? isSelected || isOnPath
-            ? 'rgba(154, 111, 20, 0.4)'
+          ? isSelected || isOnPath || isEdgeEndpoint
+            ? 'rgba(180, 83, 9, 0.45)'
             : 'rgba(215, 185, 130, 0.25)'
-          : isSelected || isOnPath
-          ? 'rgba(229, 185, 76, 0.45)'
+          : isSelected || isOnPath || isEdgeEndpoint
+          ? 'rgba(245, 158, 11, 0.55)'
           : 'rgba(197, 155, 39, 0.25)';
         ctx.fill();
       }
@@ -402,7 +450,7 @@ export function ForceGraphView({
         }
 
         drawPortraitMedallion(ctx, node, cached, {
-          isSelected,
+          isSelected: isSelected || isEdgeEndpoint,
           isPrimaryThinker: !!isPrimaryThinker,
           isLight,
           size,
@@ -414,6 +462,7 @@ export function ForceGraphView({
       const isSecondaryThinker = (node.importanceScore && node.importanceScore >= 90) || false;
       const shouldDrawLabel =
         isSelected ||
+        isEdgeEndpoint ||
         isOnPath ||
         isHovered ||
         globalScale >= 1.8 ||
@@ -422,7 +471,7 @@ export function ForceGraphView({
 
       if (shouldDrawLabel) {
         const fontSize = Math.max(10.5 / globalScale, 3.8);
-        ctx.font = `${isSelected || isOnPath || isAnchorThinker ? 'bold' : 'normal'} ${fontSize}px "EB Garamond", Georgia, serif`;
+        ctx.font = `${isSelected || isEdgeEndpoint || isOnPath || isAnchorThinker ? 'bold' : 'normal'} ${fontSize}px "EB Garamond", Georgia, serif`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
 
@@ -446,7 +495,7 @@ export function ForceGraphView({
         ctx.fill();
         ctx.stroke();
 
-        ctx.fillStyle = isSelected || isOnPath
+        ctx.fillStyle = isSelected || isEdgeEndpoint || isOnPath
           ? isLight ? '#9a6f14' : '#fef08a'
           : isAnchorThinker
           ? isLight ? '#1a1815' : '#f5f2eb'
@@ -456,7 +505,7 @@ export function ForceGraphView({
 
       ctx.restore();
     },
-    [selectedNodeId, hoveredNode, pathNodeSet, isPathActive, isLight, portraitsLoadedVersion, notifyLoaded]
+    [selectedNodeId, selectedEdgeId, selectedEdgeEndpoints, hoveredNode, pathNodeSet, isPathActive, isLight, portraitsLoadedVersion, notifyLoaded]
   );
 
   const renderBackground = React.useCallback(
@@ -470,15 +519,18 @@ export function ForceGraphView({
     [applyForces, isLight, spacingMultiplier]
   );
 
-  // Render classical badge pills directly on active lineage path edges
+  // Render classical badge pills directly on active lineage path edges or selected edge
   const paintLinkOverlay = useCallback(
     (link: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
       const srcId = typeof link.source === 'object' ? link.source.id : link.source;
       const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
       const inPath = isLinkInPath(srcId, tgtId);
+      const isEdgeSelected =
+        Boolean(selectedEdgeId) &&
+        (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
 
-      // Render prominent dialectical badge along edges in the active lineage path
-      if (!inPath) return;
+      // Render prominent dialectical badge along edges in the active lineage path or if selected
+      if (!inPath && !isEdgeSelected) return;
 
       const start = link.source;
       const end = link.target;
@@ -521,17 +573,17 @@ export function ForceGraphView({
       ctx.fill();
 
       // Edge type color border
-      ctx.lineWidth = Math.max(1.2 / globalScale, 0.8);
-      ctx.strokeStyle = typeColor;
+      ctx.lineWidth = isEdgeSelected ? Math.max(1.8 / globalScale, 1.2) : Math.max(1.2 / globalScale, 0.8);
+      ctx.strokeStyle = isEdgeSelected ? (isLight ? '#b45309' : '#fbbf24') : typeColor;
       ctx.stroke();
 
       // Edge type label text
-      ctx.fillStyle = typeColor;
+      ctx.fillStyle = isEdgeSelected ? (isLight ? '#b45309' : '#fbbf24') : typeColor;
       ctx.fillText(text, midX, midY + 0.5 / globalScale);
 
       ctx.restore();
     },
-    [isLight, isLinkInPath]
+    [isLight, isLinkInPath, selectedEdgeId]
   );
 
   const branches: Array<{ id: Branch | 'all'; label: string }> = [
@@ -740,7 +792,7 @@ export function ForceGraphView({
           const isEdgeSelected =
             Boolean(selectedEdgeId) &&
             (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
-          if (isEdgeSelected) return 8.5;
+          if (isEdgeSelected) return 11.0;
           const isConnectedToFocus =
             selectedNodeId === srcId ||
             selectedNodeId === tgtId ||
@@ -763,7 +815,7 @@ export function ForceGraphView({
             hoveredNode?.id === srcId ||
             hoveredNode?.id === tgtId;
           const inPath = isLinkInPath(srcId, tgtId);
-          const isDimmed = (selectedNodeId || hoveredNode) && !isConnectedToFocus && !inPath;
+          const isDimmed = (selectedNodeId || hoveredNode || selectedEdgeId) && !isConnectedToFocus && !inPath && !isEdgeSelected;
           return getArrowColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath, isPathActive);
         }}
         linkLineDash={(link: any) => {
@@ -795,7 +847,7 @@ export function ForceGraphView({
           const isEdgeSelected =
             Boolean(selectedEdgeId) &&
             (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
-          if (isEdgeSelected) return 4.5;
+          if (isEdgeSelected) return 5.5;
           const inPath = isLinkInPath(srcId, tgtId);
           const isConnectedToFocus =
             selectedNodeId === srcId ||
@@ -840,7 +892,7 @@ export function ForceGraphView({
         cooldownTicks={140}
         cooldownTime={3000}
         onEngineStop={() => {
-          if (!hasInitialFitRef.current && fgRef.current) {
+          if (!hasInitialFitRef.current && !selectedEdgeId && !selectedNodeId && fgRef.current) {
             fgRef.current.zoomToFit(700, 100);
             hasInitialFitRef.current = true;
           }
