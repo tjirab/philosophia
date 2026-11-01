@@ -1,0 +1,42 @@
+name: Pull Request CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Test, Audit & Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Verify Modular Data Compilation
+        run: npm run build:data
+
+      - name: Run Coverage & Dialectical Graph Audit
+        run: npm run audit
+
+      - name: Run Vitest Test Suite
+        run: npm test
+
+      - name: Build Next.js Static Export
+        env:
+          NEXT_PUBLIC_BASE_PATH: ''
+        run: npm run build
