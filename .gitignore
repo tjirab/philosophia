@@ -36,4 +36,5 @@ next-env.d.ts
 /data/concepts.json
 /data/edges.json
 /data/media.json
+/public/data/
 

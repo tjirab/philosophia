@@ -6,6 +6,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
+const PUBLIC_DIR = path.join(ROOT_DIR, 'public');
+const CHUNKS_DIR = path.join(PUBLIC_DIR, 'data', 'chunks');
 
 const PHILOSOPHERS_DIR = path.join(DATA_DIR, 'philosophers');
 const CONCEPTS_DIR = path.join(DATA_DIR, 'concepts');
@@ -47,9 +49,14 @@ function loadJsonDir(dir, { recursive = false } = {}) {
 export function buildData() {
   const startTime = Date.now();
 
+  let philosophers = [];
+  let concepts = [];
+  let edges = [];
+  let media = [];
+
   // 1. Philosophers
   if (fs.existsSync(PHILOSOPHERS_DIR)) {
-    const philosophers = loadJsonDir(PHILOSOPHERS_DIR);
+    philosophers = loadJsonDir(PHILOSOPHERS_DIR);
     // Ensure default domains and primaryDomain
     for (const p of philosophers) {
       if (!p.domains || !Array.isArray(p.domains) || p.domains.length === 0) {
@@ -71,7 +78,7 @@ export function buildData() {
 
   // 2. Concepts
   if (fs.existsSync(CONCEPTS_DIR)) {
-    const concepts = loadJsonDir(CONCEPTS_DIR);
+    concepts = loadJsonDir(CONCEPTS_DIR);
     concepts.sort((a, b) => a.id.localeCompare(b.id));
     const targetFile = path.join(DATA_DIR, 'concepts.json');
     fs.writeFileSync(targetFile, JSON.stringify(concepts, null, 2) + '\n', 'utf-8');
@@ -83,7 +90,6 @@ export function buildData() {
     const rawEdges = loadJsonDir(EDGES_DIR, { recursive: true });
     // Deduplicate by source + target + type
     const seenEdges = new Set();
-    const edges = [];
     for (const edge of rawEdges) {
       if (!edge || !edge.source || !edge.target || !edge.type) continue;
       const key = `${edge.source}->${edge.target}:${edge.type}`;
@@ -105,7 +111,6 @@ export function buildData() {
     const rawMedia = loadJsonDir(MEDIA_DIR, { recursive: true });
     // Deduplicate by media item id
     const seenMedia = new Set();
-    const media = [];
     for (const item of rawMedia) {
       if (!item || !item.id) continue;
       if (!seenMedia.has(item.id)) {
@@ -117,6 +122,121 @@ export function buildData() {
     fs.writeFileSync(targetFile, JSON.stringify(media, null, 2) + '\n', 'utf-8');
     console.log(`✓ Compiled ${media.length} media items -> data/media.json`);
   }
+
+  // 5. Stage 2: Static Chunks Compilation
+  const thinkersChunkDir = path.join(CHUNKS_DIR, 'thinkers');
+  const conceptsChunkDir = path.join(CHUNKS_DIR, 'concepts');
+  const edgesChunkDir = path.join(CHUNKS_DIR, 'edges');
+
+  fs.mkdirSync(thinkersChunkDir, { recursive: true });
+  fs.mkdirSync(conceptsChunkDir, { recursive: true });
+  fs.mkdirSync(edgesChunkDir, { recursive: true });
+
+  // Map media by targetId
+  const mediaByTarget = new Map();
+  for (const m of media) {
+    if (!m.targetId) continue;
+    if (!mediaByTarget.has(m.targetId)) mediaByTarget.set(m.targetId, []);
+    mediaByTarget.get(m.targetId).push(m);
+  }
+
+  // Write per-thinker chunks
+  for (const p of philosophers) {
+    const chunkData = {
+      ...p,
+      media: mediaByTarget.get(p.id) || [],
+    };
+    fs.writeFileSync(
+      path.join(thinkersChunkDir, `${p.id}.json`),
+      JSON.stringify(chunkData, null, 2) + '\n',
+      'utf-8'
+    );
+  }
+
+  // Write per-concept chunks
+  for (const c of concepts) {
+    const chunkData = {
+      ...c,
+      media: mediaByTarget.get(c.id) || [],
+    };
+    fs.writeFileSync(
+      path.join(conceptsChunkDir, `${c.id}.json`),
+      JSON.stringify(chunkData, null, 2) + '\n',
+      'utf-8'
+    );
+  }
+
+  // Write per-edge chunks
+  for (const e of edges) {
+    const edgeId = e.id || `${e.source}--${e.target}`;
+    fs.writeFileSync(
+      path.join(edgesChunkDir, `${edgeId}.json`),
+      JSON.stringify(e, null, 2) + '\n',
+      'utf-8'
+    );
+  }
+
+  // Generate lightweight graph-index.json manifest (~35 KB)
+  let eras = [];
+  let traditions = [];
+  let domains = [];
+  try {
+    eras = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'eras.json'), 'utf-8'));
+    traditions = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'traditions.json'), 'utf-8'));
+    domains = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'domains.json'), 'utf-8'));
+  } catch (err) {
+    console.warn('[WARN] Failed to read auxiliary metadata for graph-index:', err.message);
+  }
+
+  const lightweightNodes = [
+    ...philosophers.map((p) => ({
+      id: p.id,
+      name: p.name,
+      type: 'philosopher',
+      birthYear: p.birthYear,
+      deathYear: p.deathYear,
+      eraId: p.eraId,
+      traditionId: p.traditionId,
+      domains: p.domains,
+      primaryDomain: p.primaryDomain,
+      importanceScore: p.importanceScore,
+      imageUrl: p.imageUrl,
+    })),
+    ...concepts.map((c) => ({
+      id: c.id,
+      name: c.title,
+      type: 'concept',
+      eraId: c.eraId,
+      branch: c.branch,
+      introducedBy: c.introducedBy,
+      importanceScore: c.importanceScore,
+    })),
+  ];
+
+  const lightweightEdges = edges.map((e) => ({
+    id: e.id || `${e.source}--${e.target}`,
+    source: e.source,
+    target: e.target,
+    type: e.type,
+    label: e.label,
+    strength: e.strength,
+  }));
+
+  const graphIndex = {
+    version: '2.0-chunked',
+    generatedAt: new Date().toISOString(),
+    nodeCount: lightweightNodes.length,
+    edgeCount: lightweightEdges.length,
+    nodes: lightweightNodes,
+    edges: lightweightEdges,
+    eras,
+    traditions,
+    domains,
+  };
+
+  const graphIndexFile = path.join(CHUNKS_DIR, 'graph-index.json');
+  fs.writeFileSync(graphIndexFile, JSON.stringify(graphIndex, null, 2) + '\n', 'utf-8');
+  console.log(`✓ Compiled Stage 2 static chunks (${philosophers.length} thinkers, ${concepts.length} concepts, ${edges.length} edges, graph-index.json) -> public/data/chunks/`);
 
   const elapsed = Date.now() - startTime;
   console.log(`✨ Philosophia data compilation completed in ${elapsed}ms\n`);
