@@ -1,9 +1,42 @@
 [
   {
+    "id": "heraclitus--parmenides",
     "source": "heraclitus",
     "target": "parmenides",
     "type": "CRITIQUED",
     "label": "Parmenides rejected Heraclitean flux, asserting Being is changeless",
-    "strength": 4
+    "strength": 4,
+    "description": "Parmenides developed the Eleatic doctrine of changeless, indivisible, eternal Being as an explicit dialectical counter to Heraclitus's philosophy of universal flux, strife, and becoming.",
+    "dialecticalTension": "Becoming and radical temporal flux (Panta Rhei) versus absolute, ungenerated, and immutable Being (To Eon).",
+    "historicalContext": "Early 5th century BCE Magna Graecia and Ionia. Parmenides composed his hexameter poem On Nature to refute dual-headed mortals who assert 'to be and not to be are the same and not the same.'",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Parmenides",
+        "work": "On Nature (Peri Physeos)",
+        "sectionOrPage": "Fragment B6, B8 (Diels-Kranz 28 B8)",
+        "year": "-480 BCE",
+        "quote": "One path only is left for us to speak of, namely, that It Is. In this path are very many tokens that what is is uncreated and indestructible.",
+        "url": "https://plato.stanford.edu/entries/parmenides/"
+      },
+      {
+        "citationType": "primary",
+        "author": "Heraclitus",
+        "work": "Fragments",
+        "sectionOrPage": "Fragment B12, B30 (Diels-Kranz 22 B30)",
+        "year": "-500 BCE",
+        "quote": "This cosmos did none of gods or men make, but it always was and is and shall be: an ever-living fire, kindling in measures and going out in measures.",
+        "url": "https://plato.stanford.edu/entries/heraclitus/"
+      },
+      {
+        "citationType": "sep",
+        "author": "John Palmer",
+        "work": "Parmenides",
+        "sectionOrPage": "Section 3. The Way of Truth",
+        "year": "2020",
+        "url": "https://plato.stanford.edu/entries/parmenides/"
+      }
+    ]
   }
 ]

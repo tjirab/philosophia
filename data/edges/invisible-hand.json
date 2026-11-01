@@ -1,9 +1,24 @@
 [
   {
+    "id": "invisible-hand--john-stuart-mill",
     "source": "invisible-hand",
     "target": "john-stuart-mill",
     "type": "DEVELOPED",
+    "label": "Mill refined Smith's invisible hand doctrine, analyzing market equilibrium while establishing the necessity of state intervention for public goods",
     "strength": 4,
-    "label": "Mill refined Smith's invisible hand doctrine, analyzing market equilibrium while establishing the necessity of state intervention for public goods"
+    "description": "John Stuart Mill took up the concept of \"The Invisible Hand\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Invisible Hand\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Stuart Mill",
+        "sectionOrPage": "Engagement with The Invisible Hand",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/mill/"
+      }
+    ]
   }
 ]

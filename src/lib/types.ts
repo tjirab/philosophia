@@ -21,6 +21,19 @@ export type Branch =
   | 'logic';
 
 export type EdgeType = 'INFLUENCED' | 'CRITIQUED' | 'DEVELOPED' | 'SYNTHESIZED';
+export type AcademicConsensus = 'unanimous' | 'broad-consensus' | 'debated' | 'revisionist';
+export type CitationType = 'primary' | 'secondary' | 'sep' | 'iep';
+
+export interface AcademicCitation {
+  id?: string;
+  citationType: CitationType;
+  author: string;
+  work: string;
+  sectionOrPage?: string;      // e.g. "Bekker 1003a20-32", "Stephanus 514a-520a", "B132", "DK 22 B30"
+  year?: number | string;
+  quote?: string;              // Direct translated excerpt or key axiom
+  url?: string;                // External link (SEP, Perseus, Gutenberg, PhilPapers, etc.)
+}
 
 export interface EdgeTypeMeta {
   type: EdgeType;
@@ -132,11 +145,18 @@ export interface Concept {
 }
 
 export interface Edge {
+  id?: string;
   source: string;
   target: string;
   type: EdgeType;
   label: string;
   strength?: number;
+  description?: string;
+  historicalContext?: string;
+  dialecticalTension?: string;
+  academicConsensus?: AcademicConsensus;
+  citations?: AcademicCitation[];
+  keyConcepts?: string[];
 }
 
 export interface MediaResource {
@@ -183,9 +203,11 @@ export interface VisualNode {
 }
 
 export interface VisualLink {
+  id?: string;
   source: string | VisualNode;
   target: string | VisualNode;
   type: EdgeType;
   label: string;
   strength?: number;
+  edge?: Edge;
 }

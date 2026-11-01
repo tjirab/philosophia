@@ -1,16 +1,44 @@
 [
   {
+    "id": "paradigm-shift--incommensurability",
     "source": "paradigm-shift",
     "target": "incommensurability",
     "type": "DEVELOPED",
+    "label": "Revolutionary paradigm shifts cause conceptual reorientations that render competing paradigms incommensurable",
     "strength": 4,
-    "label": "Revolutionary paradigm shifts cause conceptual reorientations that render competing paradigms incommensurable"
+    "description": "The concept of \"Paradigm Shift & Scientific Revolutions\" provided the logical and dialectical basis for the emergence of \"Incommensurability\".",
+    "dialecticalTension": "Conceptual evolution from \"Paradigm Shift & Scientific Revolutions\" to \"Incommensurability\".",
+    "historicalContext": "Conceptual development across philosophical history.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "History of Philosophy Archive",
+        "work": "Paradigm Shift & Scientific Revolutions and Incommensurability",
+        "year": "2022"
+      }
+    ]
   },
   {
+    "id": "paradigm-shift--michel-foucault",
     "source": "paradigm-shift",
     "target": "michel-foucault",
     "type": "INFLUENCED",
+    "label": "The paradigm shift model informed post-structuralist critiques of cumulative enlightenment progress",
     "strength": 3,
-    "label": "The paradigm shift model informed post-structuralist critiques of cumulative enlightenment progress"
+    "description": "Michel Foucault's philosophical system was decisively shaped by grappling with \"Paradigm Shift & Scientific Revolutions\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Paradigm Shift & Scientific Revolutions\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Michel Foucault",
+        "sectionOrPage": "Engagement with Paradigm Shift & Scientific Revolutions",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/foucault/"
+      }
+    ]
   }
 ]

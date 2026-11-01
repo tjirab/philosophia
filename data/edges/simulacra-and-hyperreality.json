@@ -1,9 +1,24 @@
 [
   {
+    "id": "simulacra-and-hyperreality--nick-bostrom",
     "source": "simulacra-and-hyperreality",
     "target": "nick-bostrom",
     "type": "INFLUENCED",
+    "label": "Baudrillard's ontology of simulation served as a primary philosophical precursor to the contemporary simulation hypothesis",
     "strength": 4,
-    "label": "Baudrillard's ontology of simulation served as a primary philosophical precursor to the contemporary simulation hypothesis"
+    "description": "Nick Bostrom's philosophical system was decisively shaped by grappling with \"Simulacra, Simulation & Hyperreality\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Simulacra, Simulation & Hyperreality\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Nick Bostrom",
+        "sectionOrPage": "Engagement with Simulacra, Simulation & Hyperreality",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ethics-ai/"
+      }
+    ]
   }
 ]

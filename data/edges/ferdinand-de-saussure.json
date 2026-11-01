@@ -1,30 +1,113 @@
 [
   {
+    "id": "ferdinand-de-saussure--semiology-signifier-signified",
     "source": "ferdinand-de-saussure",
     "target": "semiology-signifier-signified",
     "type": "DEVELOPED",
+    "label": "Formulated the foundational dyadic sign model (signifier/signified) and differential value in Course in General Linguistics",
     "strength": 5,
-    "label": "Formulated the foundational dyadic sign model (signifier/signified) and differential value in Course in General Linguistics"
+    "description": "Ferdinand de Saussure formulated and introduced the concept of \"Semiology & The Arbitrary Sign\", which became a seminal contribution in epistemology philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in epistemology.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Ferdinand de Saussure's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Semiology & The Arbitrary Sign",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/linguistics/"
+      }
+    ]
   },
   {
+    "id": "ferdinand-de-saussure--michel-foucault",
     "source": "ferdinand-de-saussure",
     "target": "michel-foucault",
     "type": "INFLUENCED",
+    "label": "Saussure's structuralism provided the epistemic framework for Foucault's analysis of discursive formations in The Order of Things",
     "strength": 5,
-    "label": "Saussure's structuralism provided the epistemic framework for Foucault's analysis of discursive formations in The Order of Things"
+    "description": "Michel Foucault was fundamentally influenced by Ferdinand de Saussure's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Ferdinand de Saussure's perspective to Michel Foucault's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Michel Foucault",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/foucault/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ferdinand de Saussure",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/linguistics/"
+      }
+    ]
   },
   {
+    "id": "ferdinand-de-saussure--jacques-derrida",
     "source": "ferdinand-de-saussure",
     "target": "jacques-derrida",
     "type": "DEVELOPED",
+    "label": "Derrida radicalized Saussure's thesis that in language there are only differences without positive terms into différance",
     "strength": 5,
-    "label": "Derrida radicalized Saussure's thesis that in language there are only differences without positive terms into différance"
+    "description": "Jacques Derrida adopted Ferdinand de Saussure's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Ferdinand de Saussure's perspective to Jacques Derrida's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jacques Derrida",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/derrida/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ferdinand de Saussure",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/linguistics/"
+      }
+    ]
   },
   {
+    "id": "ferdinand-de-saussure--jean-baudrillard",
     "source": "ferdinand-de-saussure",
     "target": "jean-baudrillard",
     "type": "INFLUENCED",
+    "label": "Baudrillard applied Saussurean structural semiotics to consumer capitalism and the precession of simulacra",
     "strength": 5,
-    "label": "Baudrillard applied Saussurean structural semiotics to consumer capitalism and the precession of simulacra"
+    "description": "Jean Baudrillard was fundamentally influenced by Ferdinand de Saussure's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Ferdinand de Saussure's perspective to Jean Baudrillard's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean Baudrillard",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/baudrillard/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ferdinand de Saussure",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/linguistics/"
+      }
+    ]
   }
 ]

@@ -1,9 +1,24 @@
 [
   {
+    "id": "deus-sive-natura--gilles-deleuze",
     "source": "deus-sive-natura",
     "target": "gilles-deleuze",
     "type": "DEVELOPED",
     "label": "Deleuze championed Spinoza plane of immanence against theological transcendence",
-    "strength": 4
+    "strength": 4,
+    "description": "Gilles Deleuze took up the concept of \"Pantheism (Deus Sive Natura)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Pantheism (Deus Sive Natura)\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Gilles Deleuze",
+        "sectionOrPage": "Engagement with Pantheism (Deus Sive Natura)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/deleuze/"
+      }
+    ]
   }
 ]

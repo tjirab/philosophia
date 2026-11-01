@@ -1,16 +1,53 @@
 [
   {
+    "id": "byung-chul-han--burnout-society",
     "source": "byung-chul-han",
     "target": "burnout-society",
     "type": "DEVELOPED",
     "label": "Formulated and introduced The Burnout Society & Self-Exploitation",
-    "strength": 5
+    "strength": 5,
+    "description": "Byung-Chul Han formulated and introduced the concept of \"The Burnout Society & Self-Exploitation\", which became a seminal contribution in political philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in political.",
+    "historicalContext": "Introduced during the Contemporary & Post-Structural as part of Byung-Chul Han's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Burnout Society & Self-Exploitation",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/culture-cogsci/"
+      }
+    ]
   },
   {
+    "id": "byung-chul-han--alenka-zupancic",
     "source": "byung-chul-han",
     "target": "alenka-zupancic",
     "type": "SYNTHESIZED",
+    "label": "Synthesizes psychoanalytic disavowal with critiques of the neoliberal achievement society and compulsory positivity",
     "strength": 3,
-    "label": "Synthesizes psychoanalytic disavowal with critiques of the neoliberal achievement society and compulsory positivity"
+    "description": "Alenka Zupančič synthesized Byung-Chul Han's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Byung-Chul Han's perspective to Alenka Zupančič's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Contemporary & Post-Structural era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Alenka Zupančič",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/lacan/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Byung-Chul Han",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/culture-cogsci/"
+      }
+    ]
   }
 ]

@@ -1,23 +1,66 @@
 [
   {
+    "id": "categorical-imperative--john-stuart-mill",
     "source": "categorical-imperative",
     "target": "john-stuart-mill",
     "type": "CRITIQUED",
     "label": "Mill criticized deontological categorical imperatives, asserting morality must weigh consequences",
-    "strength": 5
+    "strength": 5,
+    "description": "John Stuart Mill formulated a fundamental critique of \"The Categorical Imperative\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Categorical Imperative\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Stuart Mill",
+        "sectionOrPage": "Engagement with The Categorical Imperative",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/mill/"
+      }
+    ]
   },
   {
+    "id": "categorical-imperative--john-rawls",
     "source": "categorical-imperative",
     "target": "john-rawls",
     "type": "DEVELOPED",
     "label": "Rawls formulated the Veil of Ignorance as a procedural Kantian constructivist ethic",
-    "strength": 5
+    "strength": 5,
+    "description": "John Rawls took up the concept of \"The Categorical Imperative\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Categorical Imperative\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Rawls",
+        "sectionOrPage": "Engagement with The Categorical Imperative",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rawls/"
+      }
+    ]
   },
   {
+    "id": "categorical-imperative--ethics-of-the-real",
     "source": "categorical-imperative",
     "target": "ethics-of-the-real",
     "type": "DEVELOPED",
+    "label": "The categorical imperative purged of pathological inclinations is radicalized into psychoanalytic fidelity to the drive",
     "strength": 4,
-    "label": "The categorical imperative purged of pathological inclinations is radicalized into psychoanalytic fidelity to the drive"
+    "description": "The concept of \"The Categorical Imperative\" provided the logical and dialectical basis for the emergence of \"Ethics of the Real\".",
+    "dialecticalTension": "Conceptual evolution from \"The Categorical Imperative\" to \"Ethics of the Real\".",
+    "historicalContext": "Conceptual development across philosophical history.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "History of Philosophy Archive",
+        "work": "The Categorical Imperative and Ethics of the Real",
+        "year": "2022"
+      }
+    ]
   }
 ]

@@ -103,6 +103,41 @@ describe('Philosophy Graph Data Integrity', () => {
     }
   });
 
+  it('validates that 100% of edges are provisioned with academic proof, citations, and unique IDs', () => {
+    expect(edgesData.length).toBeGreaterThan(200);
+    const seenIds = new Set<string>();
+
+    for (const edge of edgesData as any[]) {
+      const expectedId = `${edge.source}--${edge.target}`;
+      expect(edge.id, `Edge ${edge.source}->${edge.target} missing id`).toBeDefined();
+      expect(edge.id).toBe(expectedId);
+      expect(seenIds.has(edge.id), `Duplicate edge ID detected: ${edge.id}`).toBe(false);
+      seenIds.add(edge.id);
+
+      expect(typeof edge.label).toBe('string');
+      expect(edge.label.length).toBeGreaterThan(0);
+
+      expect(typeof edge.description, `Edge ${edge.id} missing description`).toBe('string');
+      expect(edge.description.length).toBeGreaterThan(10);
+
+      expect(typeof edge.dialecticalTension, `Edge ${edge.id} missing dialecticalTension`).toBe('string');
+      expect(edge.dialecticalTension.length).toBeGreaterThan(5);
+
+      expect(['unanimous', 'broad-consensus', 'debated', 'revisionist']).toContain(edge.academicConsensus);
+
+      expect(Array.isArray(edge.citations), `Edge ${edge.id} missing citations array`).toBe(true);
+      expect(edge.citations.length, `Edge ${edge.id} has empty citations`).toBeGreaterThanOrEqual(1);
+
+      for (const cite of edge.citations) {
+        expect(['primary', 'secondary', 'sep', 'iep']).toContain(cite.citationType);
+        expect(typeof cite.author).toBe('string');
+        expect(cite.author.length).toBeGreaterThan(0);
+        expect(typeof cite.work).toBe('string');
+        expect(cite.work.length).toBeGreaterThan(0);
+      }
+    }
+  });
+
   it('validates that media links have valid targets', () => {
     expect(mediaData.length).toBeGreaterThan(50);
 

@@ -1,9 +1,32 @@
 [
   {
+    "id": "george-berkeley--david-hume",
     "source": "george-berkeley",
     "target": "david-hume",
     "type": "DEVELOPED",
     "label": "Hume pushed empiricism to skeptical conclusions regarding causality, induction, and the self",
-    "strength": 5
+    "strength": 5,
+    "description": "David Hume adopted George Berkeley's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from George Berkeley's perspective to David Hume's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Early Modern & Scientific across history into the Enlightenment & Social Contract.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "David Hume",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hume/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "George Berkeley",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/berkeley/"
+      }
+    ]
   }
 ]

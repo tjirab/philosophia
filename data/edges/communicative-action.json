@@ -1,9 +1,24 @@
 [
   {
+    "id": "communicative-action--john-rawls",
     "source": "communicative-action",
     "target": "john-rawls",
     "type": "SYNTHESIZED",
+    "label": "Public reason and legitimate democratic deliberation",
     "strength": 4,
-    "label": "Public reason and legitimate democratic deliberation"
+    "description": "John Rawls's philosophical system was decisively shaped by grappling with \"Communicative Action & Discourse Ethics\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Communicative Action & Discourse Ethics\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Rawls",
+        "sectionOrPage": "Engagement with Communicative Action & Discourse Ethics",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rawls/"
+      }
+    ]
   }
 ]

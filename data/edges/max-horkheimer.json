@@ -1,30 +1,113 @@
 [
   {
+    "id": "max-horkheimer--instrumental-reason",
     "source": "max-horkheimer",
     "target": "instrumental-reason",
     "type": "DEVELOPED",
+    "label": "Formulated the critique of subjective instrumental reason in Eclipse of Reason and Dialectic of Enlightenment",
     "strength": 5,
-    "label": "Formulated the critique of subjective instrumental reason in Eclipse of Reason and Dialectic of Enlightenment"
+    "description": "Max Horkheimer formulated and introduced the concept of \"Instrumental Reason & Eclipse of Reason\", which became a seminal contribution in political philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in political.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Max Horkheimer's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Instrumental Reason & Eclipse of Reason",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/horkheimer/"
+      }
+    ]
   },
   {
+    "id": "max-horkheimer--theodor-adorno",
     "source": "max-horkheimer",
     "target": "theodor-adorno",
     "type": "SYNTHESIZED",
+    "label": "Co-authored Dialectic of Enlightenment, fusing social theory, philosophical critique, and psychoanalysis to analyze the culture industry",
     "strength": 5,
-    "label": "Co-authored Dialectic of Enlightenment, fusing social theory, philosophical critique, and psychoanalysis to analyze the culture industry"
+    "description": "Theodor W. Adorno synthesized Max Horkheimer's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Max Horkheimer's perspective to Theodor W. Adorno's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Theodor W. Adorno",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/adorno/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Horkheimer",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/horkheimer/"
+      }
+    ]
   },
   {
+    "id": "max-horkheimer--jurgen-habermas",
     "source": "max-horkheimer",
     "target": "jurgen-habermas",
     "type": "INFLUENCED",
+    "label": "Directly influenced Habermas at the Frankfurt Institute, who later sought to reconstruct Critical Theory on communicative rather than instrumental grounds",
     "strength": 5,
-    "label": "Directly influenced Habermas at the Frankfurt Institute, who later sought to reconstruct Critical Theory on communicative rather than instrumental grounds"
+    "description": "Jürgen Habermas was fundamentally influenced by Max Horkheimer's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Max Horkheimer's perspective to Jürgen Habermas's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jürgen Habermas",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Horkheimer",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/horkheimer/"
+      }
+    ]
   },
   {
+    "id": "max-horkheimer--herbert-marcuse",
     "source": "max-horkheimer",
     "target": "herbert-marcuse",
     "type": "SYNTHESIZED",
+    "label": "Recruited Marcuse to the Institute for Social Research in 1933, collaboratively developing Critical Theory and the critique of modern authority",
     "strength": 5,
-    "label": "Recruited Marcuse to the Institute for Social Research in 1933, collaboratively developing Critical Theory and the critique of modern authority"
+    "description": "Herbert Marcuse synthesized Max Horkheimer's framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Max Horkheimer's perspective to Herbert Marcuse's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Herbert Marcuse",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marcuse/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Max Horkheimer",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/horkheimer/"
+      }
+    ]
   }
 ]

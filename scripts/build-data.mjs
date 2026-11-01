@@ -80,6 +80,9 @@ export function buildData() {
       const key = `${edge.source}->${edge.target}:${edge.type}`;
       if (!seenEdges.has(key)) {
         seenEdges.add(key);
+        if (!edge.id) {
+          edge.id = `${edge.source}--${edge.target}`;
+        }
         edges.push(edge);
       }
     }

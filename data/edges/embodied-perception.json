@@ -1,9 +1,24 @@
 [
   {
+    "id": "embodied-perception--michel-foucault",
     "source": "embodied-perception",
     "target": "michel-foucault",
     "type": "INFLUENCED",
+    "label": "The body as the site of political power and disciplinary conditioning",
     "strength": 4,
-    "label": "The body as the site of political power and disciplinary conditioning"
+    "description": "Michel Foucault's philosophical system was decisively shaped by grappling with \"The Primacy of Embodied Perception (Le Corps Propre)\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Primacy of Embodied Perception (Le Corps Propre)\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Michel Foucault",
+        "sectionOrPage": "Engagement with The Primacy of Embodied Perception (Le Corps Propre)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/foucault/"
+      }
+    ]
   }
 ]

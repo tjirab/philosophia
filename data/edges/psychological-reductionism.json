@@ -1,9 +1,24 @@
 [
   {
+    "id": "psychological-reductionism--nick-bostrom",
     "source": "psychological-reductionism",
     "target": "nick-bostrom",
     "type": "INFLUENCED",
+    "label": "Informed existential risk, future generations ethics, and transhumanist identity",
     "strength": 4,
-    "label": "Informed existential risk, future generations ethics, and transhumanist identity"
+    "description": "Nick Bostrom's philosophical system was decisively shaped by grappling with \"Psychological Reductionism of Personal Identity\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Psychological Reductionism of Personal Identity\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Nick Bostrom",
+        "sectionOrPage": "Engagement with Psychological Reductionism of Personal Identity",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ethics-ai/"
+      }
+    ]
   }
 ]

@@ -1,9 +1,24 @@
 [
   {
+    "id": "butterfly-dream--friedrich-nietzsche",
     "source": "butterfly-dream",
     "target": "friedrich-nietzsche",
     "type": "SYNTHESIZED",
+    "label": "Radical perspectivism and joyful affirmation of becoming",
     "strength": 3,
-    "label": "Radical perspectivism and joyful affirmation of becoming"
+    "description": "Friedrich Nietzsche's philosophical system was decisively shaped by grappling with \"The Butterfly Dream (Transformation of Things)\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Butterfly Dream (Transformation of Things)\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Friedrich Nietzsche",
+        "sectionOrPage": "Engagement with The Butterfly Dream (Transformation of Things)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/nietzsche/"
+      }
+    ]
   }
 ]

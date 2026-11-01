@@ -1,9 +1,24 @@
 [
   {
+    "id": "naturphilosophie--arthur-schopenhauer",
     "source": "naturphilosophie",
     "target": "arthur-schopenhauer",
     "type": "INFLUENCED",
+    "label": "Nature as metaphysical striving without conscious purpose",
     "strength": 4,
-    "label": "Nature as metaphysical striving without conscious purpose"
+    "description": "Arthur Schopenhauer's philosophical system was decisively shaped by grappling with \"Naturphilosophie (Organic Nature as Unconscious Spirit)\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Naturphilosophie (Organic Nature as Unconscious Spirit)\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Arthur Schopenhauer",
+        "sectionOrPage": "Engagement with Naturphilosophie (Organic Nature as Unconscious Spirit)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/schopenhauer/"
+      }
+    ]
   }
 ]

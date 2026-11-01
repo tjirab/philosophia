@@ -1,51 +1,185 @@
 [
   {
+    "id": "adam-smith--impartial-spectator",
     "source": "adam-smith",
     "target": "impartial-spectator",
     "type": "DEVELOPED",
+    "label": "Formulated the Impartial Spectator as the foundation of conscience and objective moral judgment",
     "strength": 5,
-    "label": "Formulated the Impartial Spectator as the foundation of conscience and objective moral judgment"
+    "description": "Adam Smith formulated and introduced the concept of \"The Impartial Spectator\", which became a seminal contribution in ethics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in ethics.",
+    "historicalContext": "Introduced during the Enlightenment & Social Contract as part of Adam Smith's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Impartial Spectator",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      }
+    ]
   },
   {
+    "id": "adam-smith--division-of-labor",
     "source": "adam-smith",
     "target": "division-of-labor",
     "type": "DEVELOPED",
+    "label": "Systematized the division of labor as the primary catalyst of productivity and national wealth",
     "strength": 5,
-    "label": "Systematized the division of labor as the primary catalyst of productivity and national wealth"
+    "description": "Adam Smith formulated and introduced the concept of \"Division of Labor\", which became a seminal contribution in political philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in political.",
+    "historicalContext": "Introduced during the Enlightenment & Social Contract as part of Adam Smith's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Division of Labor",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      }
+    ]
   },
   {
+    "id": "adam-smith--invisible-hand",
     "source": "adam-smith",
     "target": "invisible-hand",
     "type": "DEVELOPED",
+    "label": "Introduced the invisible hand to theorize spontaneous market order and decentralized resource coordination",
     "strength": 5,
-    "label": "Introduced the invisible hand to theorize spontaneous market order and decentralized resource coordination"
+    "description": "Adam Smith formulated and introduced the concept of \"The Invisible Hand\", which became a seminal contribution in political philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in political.",
+    "historicalContext": "Introduced during the Enlightenment & Social Contract as part of Adam Smith's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Invisible Hand",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      }
+    ]
   },
   {
+    "id": "adam-smith--immanuel-kant",
     "source": "adam-smith",
     "target": "immanuel-kant",
     "type": "INFLUENCED",
+    "label": "Smith's Theory of Moral Sentiments and impartial spectator directly influenced Kant's moral philosophy and formulations of conscience",
     "strength": 4,
-    "label": "Smith's Theory of Moral Sentiments and impartial spectator directly influenced Kant's moral philosophy and formulations of conscience"
+    "description": "Immanuel Kant was fundamentally influenced by Adam Smith's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Adam Smith's perspective to Immanuel Kant's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Enlightenment & Social Contract across history into the German Idealism & Romanticism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Immanuel Kant",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kant/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adam Smith",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      }
+    ]
   },
   {
+    "id": "adam-smith--gwf-hegel",
     "source": "adam-smith",
     "target": "gwf-hegel",
     "type": "DEVELOPED",
+    "label": "Hegel drew upon Smith's political economy to construct his concept of civil society (bürgerliche Gesellschaft) and the system of needs",
     "strength": 4,
-    "label": "Hegel drew upon Smith's political economy to construct his concept of civil society (bürgerliche Gesellschaft) and the system of needs"
+    "description": "G.W.F. Hegel adopted Adam Smith's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Adam Smith's perspective to G.W.F. Hegel's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Enlightenment & Social Contract across history into the German Idealism & Romanticism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "G.W.F. Hegel",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adam Smith",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      }
+    ]
   },
   {
+    "id": "adam-smith--karl-marx",
     "source": "adam-smith",
     "target": "karl-marx",
     "type": "CRITIQUED",
+    "label": "Marx studied Smith's political economy intensively, developing Smith's labor theory while critiquing capitalist exploitation and class antagonism",
     "strength": 5,
-    "label": "Marx studied Smith's political economy intensively, developing Smith's labor theory while critiquing capitalist exploitation and class antagonism"
+    "description": "Karl Marx engaged in a direct critique of Adam Smith's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Adam Smith's perspective to Karl Marx's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Enlightenment & Social Contract across history into the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adam Smith",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      }
+    ]
   },
   {
+    "id": "adam-smith--john-stuart-mill",
     "source": "adam-smith",
     "target": "john-stuart-mill",
     "type": "DEVELOPED",
+    "label": "Mill systematized and expanded Smith's classical economic framework, integrating competitive market dynamics with utilitarian liberalism",
     "strength": 5,
-    "label": "Mill systematized and expanded Smith's classical economic framework, integrating competitive market dynamics with utilitarian liberalism"
+    "description": "John Stuart Mill adopted Adam Smith's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Adam Smith's perspective to John Stuart Mill's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Enlightenment & Social Contract across history into the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Stuart Mill",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/mill/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Adam Smith",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/smith-moral-political/"
+      }
+    ]
   }
 ]

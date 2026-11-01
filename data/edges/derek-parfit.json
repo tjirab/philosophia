@@ -1,9 +1,23 @@
 [
   {
+    "id": "derek-parfit--psychological-reductionism",
     "source": "derek-parfit",
     "target": "psychological-reductionism",
     "type": "DEVELOPED",
+    "label": "Formulated psychological connectedness and non-identity problem in Reasons and Persons",
     "strength": 5,
-    "label": "Formulated psychological connectedness and non-identity problem in Reasons and Persons"
+    "description": "Derek Parfit formulated and introduced the concept of \"Psychological Reductionism of Personal Identity\", which became a seminal contribution in mind philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in mind.",
+    "historicalContext": "Introduced during the Contemporary & Post-Structural as part of Derek Parfit's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Psychological Reductionism of Personal Identity",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/identity-personal/"
+      }
+    ]
   }
 ]

@@ -1,23 +1,68 @@
 [
   {
+    "id": "hegelian-dialectic--karl-marx",
     "source": "hegelian-dialectic",
     "target": "karl-marx",
     "type": "CRITIQUED",
     "label": "Marx inverted Hegelian idealist dialectics right side up into historical materialism",
-    "strength": 5
+    "strength": 5,
+    "description": "Karl Marx formulated a fundamental critique of \"Dialectical Historical Reason\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Dialectical Historical Reason\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Engagement with Dialectical Historical Reason",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      }
+    ]
   },
   {
+    "id": "hegelian-dialectic--soren-kierkegaard",
     "source": "hegelian-dialectic",
     "target": "soren-kierkegaard",
     "type": "CRITIQUED",
     "label": "Kierkegaard rejected Hegel totalizing system in defense of individual subjective faith",
-    "strength": 5
+    "strength": 5,
+    "description": "Søren Kierkegaard formulated a fundamental critique of \"Dialectical Historical Reason\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Dialectical Historical Reason\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Søren Kierkegaard",
+        "sectionOrPage": "Engagement with Dialectical Historical Reason",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/kierkegaard/"
+      }
+    ]
   },
   {
+    "id": "hegelian-dialectic--theodor-adorno",
     "source": "hegelian-dialectic",
     "target": "theodor-adorno",
     "type": "CRITIQUED",
     "label": "Adorno formulated Negative Dialectics, rejecting the Hegelian affirmative reconciliation",
-    "strength": 4
+    "strength": 4,
+    "description": "Theodor W. Adorno formulated a fundamental critique of \"Dialectical Historical Reason\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Dialectical Historical Reason\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Theodor W. Adorno",
+        "sectionOrPage": "Engagement with Dialectical Historical Reason",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/adorno/"
+      }
+    ]
   }
 ]

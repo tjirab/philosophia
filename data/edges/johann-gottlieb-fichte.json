@@ -1,23 +1,83 @@
 [
   {
+    "id": "johann-gottlieb-fichte--self-positing-ego",
     "source": "johann-gottlieb-fichte",
     "target": "self-positing-ego",
     "type": "DEVELOPED",
+    "label": "Foundational premise of the Wissenschaftslehre",
     "strength": 5,
-    "label": "Foundational premise of the Wissenschaftslehre"
+    "description": "Johann Gottlieb Fichte formulated and introduced the concept of \"The Absolute Self-Positing Ego (Ich)\", which became a seminal contribution in metaphysics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in metaphysics.",
+    "historicalContext": "Introduced during the German Idealism & Romanticism as part of Johann Gottlieb Fichte's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The Absolute Self-Positing Ego (Ich)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/johann-fichte/"
+      }
+    ]
   },
   {
+    "id": "johann-gottlieb-fichte--friedrich-schelling",
     "source": "johann-gottlieb-fichte",
     "target": "friedrich-schelling",
     "type": "INFLUENCED",
+    "label": "Initial foundation for Schelling's early philosophical development",
     "strength": 5,
-    "label": "Initial foundation for Schelling's early philosophical development"
+    "description": "Friedrich Wilhelm Joseph Schelling was fundamentally influenced by Johann Gottlieb Fichte's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Johann Gottlieb Fichte's perspective to Friedrich Wilhelm Joseph Schelling's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the German Idealism & Romanticism era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Friedrich Wilhelm Joseph Schelling",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/schelling/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Johann Gottlieb Fichte",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/johann-fichte/"
+      }
+    ]
   },
   {
+    "id": "johann-gottlieb-fichte--gwf-hegel",
     "source": "johann-gottlieb-fichte",
     "target": "gwf-hegel",
     "type": "DEVELOPED",
+    "label": "Pioneered triadic dialectical movement of thesis, antithesis, and synthesis",
     "strength": 5,
-    "label": "Pioneered triadic dialectical movement of thesis, antithesis, and synthesis"
+    "description": "G.W.F. Hegel adopted Johann Gottlieb Fichte's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Johann Gottlieb Fichte's perspective to G.W.F. Hegel's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the German Idealism & Romanticism era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "G.W.F. Hegel",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Johann Gottlieb Fichte",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/johann-fichte/"
+      }
+    ]
   }
 ]

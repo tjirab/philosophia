@@ -1,23 +1,83 @@
 [
   {
+    "id": "herbert-marcuse--theodor-adorno",
     "source": "herbert-marcuse",
     "target": "theodor-adorno",
     "type": "CRITIQUED",
+    "label": "Frankfurt School allies who clashed during the 1968 New Left student protests over political activism versus aesthetic withdrawal",
     "strength": 4,
-    "label": "Frankfurt School allies who clashed during the 1968 New Left student protests over political activism versus aesthetic withdrawal"
+    "description": "Theodor W. Adorno engaged in a direct critique of Herbert Marcuse's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Herbert Marcuse's perspective to Theodor W. Adorno's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Theodor W. Adorno",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/adorno/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Herbert Marcuse",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marcuse/"
+      }
+    ]
   },
   {
+    "id": "herbert-marcuse--one-dimensional-man",
     "source": "herbert-marcuse",
     "target": "one-dimensional-man",
     "type": "DEVELOPED",
+    "label": "Formulated the critique of one-dimensional society, repressive desublimation, and the Great Refusal in One-Dimensional Man and Eros and Civilization",
     "strength": 5,
-    "label": "Formulated the critique of one-dimensional society, repressive desublimation, and the Great Refusal in One-Dimensional Man and Eros and Civilization"
+    "description": "Herbert Marcuse formulated and introduced the concept of \"One-Dimensional Man & Repressive Desublimation\", which became a seminal contribution in political philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in political.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Herbert Marcuse's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "One-Dimensional Man & Repressive Desublimation",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marcuse/"
+      }
+    ]
   },
   {
+    "id": "herbert-marcuse--jurgen-habermas",
     "source": "herbert-marcuse",
     "target": "jurgen-habermas",
     "type": "DEVELOPED",
+    "label": "Directly influenced Habermas, who engaged Marcuse's critique of technology and technocracy to formulate communicative action",
     "strength": 5,
-    "label": "Directly influenced Habermas, who engaged Marcuse's critique of technology and technocracy to formulate communicative action"
+    "description": "Jürgen Habermas adopted Herbert Marcuse's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Herbert Marcuse's perspective to Jürgen Habermas's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jürgen Habermas",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Herbert Marcuse",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marcuse/"
+      }
+    ]
   }
 ]

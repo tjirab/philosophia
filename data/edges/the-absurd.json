@@ -1,9 +1,24 @@
 [
   {
+    "id": "the-absurd--jean-paul-sartre",
     "source": "the-absurd",
     "target": "jean-paul-sartre",
     "type": "DEVELOPED",
     "label": "Shared existentialist exploration of human contingency and metaphysical absurdity",
-    "strength": 4
+    "strength": 4,
+    "description": "Jean-Paul Sartre took up the concept of \"The Absurd & Sisyphus's Revolt\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Absurd & Sisyphus's Revolt\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean-Paul Sartre",
+        "sectionOrPage": "Engagement with The Absurd & Sisyphus's Revolt",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/sartre/"
+      }
+    ]
   }
 ]

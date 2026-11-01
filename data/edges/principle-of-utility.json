@@ -1,16 +1,46 @@
 [
   {
+    "id": "principle-of-utility--john-stuart-mill",
     "source": "principle-of-utility",
     "target": "john-stuart-mill",
     "type": "DEVELOPED",
+    "label": "Mill defended and refined Bentham's principle of utility, introducing qualitative distinctions between higher intellectual and lower bodily pleasures",
     "strength": 5,
-    "label": "Mill defended and refined Bentham's principle of utility, introducing qualitative distinctions between higher intellectual and lower bodily pleasures"
+    "description": "John Stuart Mill took up the concept of \"Principle of Utility\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Principle of Utility\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Stuart Mill",
+        "sectionOrPage": "Engagement with Principle of Utility",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/mill/"
+      }
+    ]
   },
   {
+    "id": "principle-of-utility--john-rawls",
     "source": "principle-of-utility",
     "target": "john-rawls",
     "type": "CRITIQUED",
+    "label": "Rawls formulated his Theory of Justice as a direct critique of aggregate utilitarianism, arguing justice as fairness cannot sacrifice individual liberty for net pleasure",
     "strength": 4,
-    "label": "Rawls formulated his Theory of Justice as a direct critique of aggregate utilitarianism, arguing justice as fairness cannot sacrifice individual liberty for net pleasure"
+    "description": "John Rawls formulated a fundamental critique of \"Principle of Utility\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Principle of Utility\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Rawls",
+        "sectionOrPage": "Engagement with Principle of Utility",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rawls/"
+      }
+    ]
   }
 ]

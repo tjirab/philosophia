@@ -1,16 +1,54 @@
 [
   {
+    "id": "arthur-schopenhauer--friedrich-nietzsche",
     "source": "arthur-schopenhauer",
     "target": "friedrich-nietzsche",
     "type": "DEVELOPED",
     "label": "Transformed Schopenhauer's passive Will to Live into active, life-affirming Will to Power",
-    "strength": 5
+    "strength": 5,
+    "description": "The young Nietzsche was profoundly shaken by Schopenhauer's unflinching metaphysical pessimism. In his mature philosophy, Nietzsche inverted Schopenhauer's ascetical denial of the Will into life-affirming Dionysian intoxication and the Will to Power (Wille zur Macht).",
+    "dialecticalTension": "Pessimistic Buddhist-style denial of the will (asceticism and resignation) versus Radical tragic affirmation of life and the Will to Power.",
+    "historicalContext": "Leipzig and Basel, 1865–1886. Nietzsche discovered Schopenhauer's book in a second-hand bookstore in 1865, calling him his 'educator', before breaking with him in Untimely Meditations and Genealogy of Morality.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Friedrich Nietzsche",
+        "work": "Beyond Good and Evil",
+        "sectionOrPage": "Part II, §36; Part V, §198",
+        "year": "1886",
+        "quote": "The world viewed from inside, the world defined and determined according to its 'intelligible character' — it would be 'will to power' and nothing else.",
+        "url": "https://en.wikipedia.org/wiki/Beyond_Good_and_Evil"
+      },
+      {
+        "citationType": "sep",
+        "author": "R. Lanier Anderson",
+        "work": "Friedrich Nietzsche",
+        "sectionOrPage": "Section 4. The Will to Power and Critique of Morals",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/nietzsche/"
+      }
+    ]
   },
   {
+    "id": "arthur-schopenhauer--world-as-will",
     "source": "arthur-schopenhauer",
     "target": "world-as-will",
     "type": "DEVELOPED",
     "label": "Formulated and introduced The World as Will & Metaphysical Pessimism",
-    "strength": 5
+    "strength": 5,
+    "description": "Arthur Schopenhauer formulated and introduced the concept of \"The World as Will & Metaphysical Pessimism\", which became a seminal contribution in metaphysics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in metaphysics.",
+    "historicalContext": "Introduced during the 19th Century Divergences as part of Arthur Schopenhauer's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "The World as Will & Metaphysical Pessimism",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/schopenhauer/"
+      }
+    ]
   }
 ]

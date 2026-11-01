@@ -190,11 +190,13 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
   for (const edge of edges) {
     if (validNodeIds.has(edge.source) && validNodeIds.has(edge.target)) {
       links.push({
+        id: edge.id || `${edge.source}--${edge.target}`,
         source: edge.source,
         target: edge.target,
         type: edge.type,
         label: edge.label,
         strength: edge.strength || 3,
+        edge,
       });
     }
   }
@@ -264,5 +266,68 @@ export function getNodeDetails(nodeId: string): {
     media: linkedMedia,
     era,
     tradition,
+  };
+}
+
+export function getEdgeDetails(edgeId: string): {
+  edge: Edge;
+  sourceNode: Philosopher | Concept | null;
+  targetNode: Philosopher | Concept | null;
+  sourceEra?: Era;
+  targetEra?: Era;
+  sourceTradition?: Tradition;
+  targetTradition?: Tradition;
+  connectedConcepts: Concept[];
+  relatedEdges: Edge[];
+} | null {
+  const edge = edges.find(
+    (e) => e.id === edgeId || `${e.source}--${e.target}` === edgeId
+  );
+  if (!edge) return null;
+
+  const allItems = new Map<string, Philosopher | Concept>();
+  for (const p of philosophers) allItems.set(p.id, p);
+  for (const c of concepts) allItems.set(c.id, c);
+
+  const sourceNode = allItems.get(edge.source) || null;
+  const targetNode = allItems.get(edge.target) || null;
+
+  const sourceEra = sourceNode ? eras.find((e) => e.id === sourceNode.eraId) : undefined;
+  const targetEra = targetNode ? eras.find((e) => e.id === targetNode.eraId) : undefined;
+
+  const sourceTradition =
+    sourceNode && 'traditionId' in sourceNode
+      ? traditions.find((t) => t.id === sourceNode.traditionId)
+      : undefined;
+  const targetTradition =
+    targetNode && 'traditionId' in targetNode
+      ? traditions.find((t) => t.id === targetNode.traditionId)
+      : undefined;
+
+  // Concepts directly linked to either source or target
+  const connectedConcepts: Concept[] = concepts.filter(
+    (c) => c.introducedBy === edge.source || c.introducedBy === edge.target
+  );
+
+  // Other related edges involving either source or target
+  const relatedEdges = edges.filter(
+    (e) =>
+      e !== edge &&
+      (e.source === edge.source ||
+        e.target === edge.target ||
+        e.source === edge.target ||
+        e.target === edge.source)
+  );
+
+  return {
+    edge,
+    sourceNode,
+    targetNode,
+    sourceEra,
+    targetEra,
+    sourceTradition,
+    targetTradition,
+    connectedConcepts,
+    relatedEdges,
   };
 }

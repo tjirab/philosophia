@@ -1,16 +1,46 @@
 [
   {
+    "id": "negative-theology--thomas-aquinas",
     "source": "negative-theology",
     "target": "thomas-aquinas",
     "type": "SYNTHESIZED",
+    "label": "Incorporated via Aquinas's doctrine of divine analogy and apophaticism",
     "strength": 4,
-    "label": "Incorporated via Aquinas's doctrine of divine analogy and apophaticism"
+    "description": "Thomas Aquinas's philosophical system was decisively shaped by grappling with \"Negative Theology (Apophaticism)\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Negative Theology (Apophaticism)\".",
+    "historicalContext": "Inherited and re-evaluated during the Medieval & Islamic Golden Age.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Aquinas",
+        "sectionOrPage": "Engagement with Negative Theology (Apophaticism)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/aquinas/"
+      }
+    ]
   },
   {
+    "id": "negative-theology--baruch-spinoza",
     "source": "negative-theology",
     "target": "baruch-spinoza",
     "type": "CRITIQUED",
+    "label": "Transformed into immanent pantheism (Deus sive Natura)",
     "strength": 4,
-    "label": "Transformed into immanent pantheism (Deus sive Natura)"
+    "description": "Baruch Spinoza formulated a fundamental critique of \"Negative Theology (Apophaticism)\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Negative Theology (Apophaticism)\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Baruch Spinoza",
+        "sectionOrPage": "Engagement with Negative Theology (Apophaticism)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/spinoza/"
+      }
+    ]
   }
 ]

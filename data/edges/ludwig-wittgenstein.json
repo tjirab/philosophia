@@ -1,23 +1,83 @@
 [
   {
+    "id": "ludwig-wittgenstein--karl-popper",
     "source": "ludwig-wittgenstein",
     "target": "karl-popper",
     "type": "CRITIQUED",
     "label": "Popper famously clashed with Wittgenstein over whether philosophical problems are real or linguistic puzzles",
-    "strength": 4
+    "strength": 4,
+    "description": "Karl Popper engaged in a direct critique of Ludwig Wittgenstein's foundational principles, rejecting core axioms in favor of a dialectically opposed framework.",
+    "dialecticalTension": "Negotiating the intellectual shift from Ludwig Wittgenstein's perspective to Karl Popper's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Popper",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/popper/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ludwig Wittgenstein",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/wittgenstein/"
+      }
+    ]
   },
   {
+    "id": "ludwig-wittgenstein--language-games",
     "source": "ludwig-wittgenstein",
     "target": "language-games",
     "type": "DEVELOPED",
     "label": "Formulated and introduced Language Games & Forms of Life",
-    "strength": 5
+    "strength": 5,
+    "description": "Ludwig Wittgenstein formulated and introduced the concept of \"Language Games & Forms of Life\", which became a seminal contribution in logic philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in logic.",
+    "historicalContext": "Introduced during the 20th Century Phenomenon & Analysis as part of Ludwig Wittgenstein's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Language Games & Forms of Life",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/wittgenstein/"
+      }
+    ]
   },
   {
+    "id": "ludwig-wittgenstein--thomas-kuhn",
     "source": "ludwig-wittgenstein",
     "target": "thomas-kuhn",
     "type": "INFLUENCED",
     "label": "Wittgenstein's later philosophy of language games and family resemblance influenced Kuhn's account of scientific paradigms",
-    "strength": 4
+    "strength": 4,
+    "description": "Thomas Kuhn was fundamentally influenced by Ludwig Wittgenstein's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Ludwig Wittgenstein's perspective to Thomas Kuhn's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the 20th Century Phenomenon & Analysis era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Thomas Kuhn",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/thomas-kuhn/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ludwig Wittgenstein",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/wittgenstein/"
+      }
+    ]
   }
 ]

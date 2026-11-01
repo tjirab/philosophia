@@ -1,9 +1,24 @@
 [
   {
+    "id": "rational-equality--john-stuart-mill",
     "source": "rational-equality",
     "target": "john-stuart-mill",
     "type": "INFLUENCED",
+    "label": "Wollstonecraft's arguments on rational equality and institutional subjugation laid the essential groundwork for Mill's The Subjection of Women",
     "strength": 5,
-    "label": "Wollstonecraft's arguments on rational equality and institutional subjugation laid the essential groundwork for Mill's The Subjection of Women"
+    "description": "John Stuart Mill's philosophical system was decisively shaped by grappling with \"Rational Equality of the Sexes\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Rational Equality of the Sexes\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Stuart Mill",
+        "sectionOrPage": "Engagement with Rational Equality of the Sexes",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/mill/"
+      }
+    ]
   }
 ]

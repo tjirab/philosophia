@@ -1,9 +1,24 @@
 [
   {
+    "id": "division-of-labor--karl-marx",
     "source": "division-of-labor",
     "target": "karl-marx",
     "type": "CRITIQUED",
+    "label": "Marx critiqued Smith's division of labor as the institutional root of worker estrangement, deskilling, and alienation",
     "strength": 5,
-    "label": "Marx critiqued Smith's division of labor as the institutional root of worker estrangement, deskilling, and alienation"
+    "description": "Karl Marx formulated a fundamental critique of \"Division of Labor\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Division of Labor\".",
+    "historicalContext": "Inherited and re-evaluated during the 19th Century Divergences.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Karl Marx",
+        "sectionOrPage": "Engagement with Division of Labor",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/marx/"
+      }
+    ]
   }
 ]

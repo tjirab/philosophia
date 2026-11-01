@@ -1,9 +1,24 @@
 [
   {
+    "id": "semiology-signifier-signified--jacques-derrida",
     "source": "semiology-signifier-signified",
     "target": "jacques-derrida",
     "type": "CRITIQUED",
+    "label": "Derrida deconstructed Saussure's phonocentrism and assumption of signified stability, demonstrating the infinite deferral of the sign",
     "strength": 5,
-    "label": "Derrida deconstructed Saussure's phonocentrism and assumption of signified stability, demonstrating the infinite deferral of the sign"
+    "description": "Jacques Derrida formulated a fundamental critique of \"Semiology & The Arbitrary Sign\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Semiology & The Arbitrary Sign\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jacques Derrida",
+        "sectionOrPage": "Engagement with Semiology & The Arbitrary Sign",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/derrida/"
+      }
+    ]
   }
 ]

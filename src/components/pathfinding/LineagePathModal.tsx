@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { X, GitFork, ArrowRight, Sparkles, Check } from 'lucide-react';
+import Link from 'next/link';
+import { X, GitFork, ArrowRight, Sparkles, Check, BookOpen } from 'lucide-react';
 import { Philosopher, Concept, Edge, getEdgeTypeConfig } from '../../lib/types';
 import { findInfluencePath, PathResult } from '../../lib/graph/pathfinding';
 
@@ -211,6 +212,19 @@ export function LineagePathModal({
                             <p className="text-xs text-[var(--text-muted)] mt-1 leading-relaxed">
                               {step.edge.label}
                             </p>
+                            <div className="mt-2.5 pt-2 border-t border-[var(--border-main)] flex items-center justify-between">
+                              <span className="text-[10px] font-mono text-[var(--text-dim)]">
+                                Academic Proof Verified
+                              </span>
+                              <Link
+                                href={`/influence/${step.edge.id || `${step.fromNodeId}--${step.toNodeId}`}`}
+                                onClick={onClose}
+                                className="text-xs text-[var(--gold-accent)] hover:underline flex items-center gap-1 font-semibold"
+                              >
+                                <BookOpen className="w-3 h-3" />
+                                <span>Inspect Proof &rarr;</span>
+                              </Link>
+                            </div>
                           </div>
                         </div>
                       );

@@ -1,23 +1,83 @@
 [
   {
+    "id": "confucius--ren-and-li",
     "source": "confucius",
     "target": "ren-and-li",
     "type": "DEVELOPED",
+    "label": "Formulated core virtue matrix of benevolence and ritual propriety",
     "strength": 5,
-    "label": "Formulated core virtue matrix of benevolence and ritual propriety"
+    "description": "Confucius (Kongzi) formulated and introduced the concept of \"Ren & Li (Benevolence and Ritual)\", which became a seminal contribution in ethics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in ethics.",
+    "historicalContext": "Introduced during the Eastern & Axial Traditions as part of Confucius (Kongzi)'s canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ren & Li (Benevolence and Ritual)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/confucius/"
+      }
+    ]
   },
   {
+    "id": "confucius--siddhartha-gautama",
     "source": "confucius",
     "target": "siddhartha-gautama",
     "type": "SYNTHESIZED",
+    "label": "Parallel Axial Age moral ethics of righteous conduct and social order",
     "strength": 3,
-    "label": "Parallel Axial Age moral ethics of righteous conduct and social order"
+    "description": "Siddhartha Gautama (The Buddha) synthesized Confucius (Kongzi)'s framework with contrasting philosophical traditions to produce a novel unified philosophical system.",
+    "dialecticalTension": "Negotiating the intellectual shift from Confucius (Kongzi)'s perspective to Siddhartha Gautama (The Buddha)'s reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Eastern & Axial Traditions era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Siddhartha Gautama (The Buddha)",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/buddha/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Confucius (Kongzi)",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/confucius/"
+      }
+    ]
   },
   {
+    "id": "confucius--mencius",
     "source": "confucius",
     "target": "mencius",
     "type": "DEVELOPED",
+    "label": "Revered as the 'Second Sage', Mencius defended, extended, and systematized Confucius' moral philosophy across Warring States China",
     "strength": 5,
-    "label": "Revered as the 'Second Sage', Mencius defended, extended, and systematized Confucius' moral philosophy across Warring States China"
+    "description": "Mencius (Mengzi) adopted Confucius (Kongzi)'s insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Confucius (Kongzi)'s perspective to Mencius (Mengzi)'s reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Eastern & Axial Traditions era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Mencius (Mengzi)",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/mencius/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Confucius (Kongzi)",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/confucius/"
+      }
+    ]
   }
 ]

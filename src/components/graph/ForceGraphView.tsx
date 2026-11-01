@@ -45,6 +45,8 @@ interface ForceGraphViewProps {
   links: VisualLink[];
   selectedNodeId: string | null;
   onSelectNode: (nodeId: string | null) => void;
+  selectedEdgeId?: string | null;
+  onSelectEdge?: (edgeId: string | null) => void;
   highlightedPathNodes: string[];
   onClearPath: () => void;
   selectedBranch: Branch | 'all';
@@ -73,6 +75,8 @@ export function ForceGraphView({
   links,
   selectedNodeId,
   onSelectNode,
+  selectedEdgeId,
+  onSelectEdge,
   highlightedPathNodes,
   onClearPath,
   selectedBranch,
@@ -725,11 +729,18 @@ export function ForceGraphView({
             <div style="font-size: 11px; line-height: 1.4; color: ${textSub};">
               ${safeLabel}
             </div>
+            <div style="margin-top: 5px; padding-top: 4px; border-top: 1px dashed ${border}; font-size: 10px; color: ${typeColor}; font-weight: 600;">
+              Click edge to inspect Academic Proof &rarr;
+            </div>
           </div>`;
         }}
         linkDirectionalArrowLength={(link: any) => {
           const srcId = typeof link.source === 'object' ? link.source.id : link.source;
           const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+          const isEdgeSelected =
+            Boolean(selectedEdgeId) &&
+            (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
+          if (isEdgeSelected) return 8.5;
           const isConnectedToFocus =
             selectedNodeId === srcId ||
             selectedNodeId === tgtId ||
@@ -742,6 +753,10 @@ export function ForceGraphView({
         linkDirectionalArrowColor={(link: any) => {
           const srcId = typeof link.source === 'object' ? link.source.id : link.source;
           const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+          const isEdgeSelected =
+            Boolean(selectedEdgeId) &&
+            (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
+          if (isEdgeSelected) return isLight ? '#b45309' : '#fbbf24';
           const isConnectedToFocus =
             selectedNodeId === srcId ||
             selectedNodeId === tgtId ||
@@ -761,18 +776,26 @@ export function ForceGraphView({
         linkColor={(link: any) => {
           const srcId = typeof link.source === 'object' ? link.source.id : link.source;
           const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+          const isEdgeSelected =
+            Boolean(selectedEdgeId) &&
+            (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
+          if (isEdgeSelected) return isLight ? '#b45309' : '#fbbf24';
           const inPath = isLinkInPath(srcId, tgtId);
           const isConnectedToFocus =
             selectedNodeId === srcId ||
             selectedNodeId === tgtId ||
             hoveredNode?.id === srcId ||
             hoveredNode?.id === tgtId;
-          const isDimmed = (selectedNodeId || hoveredNode) && !isConnectedToFocus && !inPath;
+          const isDimmed = (selectedNodeId || hoveredNode || selectedEdgeId) && !isConnectedToFocus && !inPath;
           return getLinkColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath, isPathActive);
         }}
         linkWidth={(link: any) => {
           const srcId = typeof link.source === 'object' ? link.source.id : link.source;
           const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+          const isEdgeSelected =
+            Boolean(selectedEdgeId) &&
+            (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
+          if (isEdgeSelected) return 4.5;
           const inPath = isLinkInPath(srcId, tgtId);
           const isConnectedToFocus =
             selectedNodeId === srcId ||
@@ -792,9 +815,17 @@ export function ForceGraphView({
         }}
         onNodeClick={(node: any) => {
           onSelectNode(node.id);
+          onSelectEdge?.(null);
+        }}
+        onLinkClick={(link: any) => {
+          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+          const edgeId = link.id || `${srcId}--${tgtId}`;
+          onSelectEdge?.(edgeId);
         }}
         onBackgroundClick={() => {
           onSelectNode(null);
+          onSelectEdge?.(null);
         }}
         onNodeHover={(node: any) => {
           setHoveredNode(node || null);

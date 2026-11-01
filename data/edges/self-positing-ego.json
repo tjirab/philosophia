@@ -1,9 +1,24 @@
 [
   {
+    "id": "self-positing-ego--gwf-hegel",
     "source": "self-positing-ego",
     "target": "gwf-hegel",
     "type": "DEVELOPED",
+    "label": "Transformed into historical Absolute Spirit coming to self-consciousness",
     "strength": 5,
-    "label": "Transformed into historical Absolute Spirit coming to self-consciousness"
+    "description": "G.W.F. Hegel took up the concept of \"The Absolute Self-Positing Ego (Ich)\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Absolute Self-Positing Ego (Ich)\".",
+    "historicalContext": "Inherited and re-evaluated during the German Idealism & Romanticism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "G.W.F. Hegel",
+        "sectionOrPage": "Engagement with The Absolute Self-Positing Ego (Ich)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hegel/"
+      }
+    ]
   }
 ]

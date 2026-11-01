@@ -1,16 +1,46 @@
 [
   {
+    "id": "causal-occasionalism--averroes",
     "source": "causal-occasionalism",
     "target": "averroes",
     "type": "CRITIQUED",
+    "label": "Averroes defended Aristotelian causal efficacy and science",
     "strength": 5,
-    "label": "Averroes defended Aristotelian causal efficacy and science"
+    "description": "Ibn Rushd (Averroes) formulated a fundamental critique of \"Incoherence of Necessary Causation\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Incoherence of Necessary Causation\".",
+    "historicalContext": "Inherited and re-evaluated during the Medieval & Islamic Golden Age.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ibn Rushd (Averroes)",
+        "sectionOrPage": "Engagement with Incoherence of Necessary Causation",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/ibn-rushd/"
+      }
+    ]
   },
   {
+    "id": "causal-occasionalism--david-hume",
     "source": "causal-occasionalism",
     "target": "david-hume",
     "type": "DEVELOPED",
+    "label": "Secularized into Humean empirical skepticism of necessary connection",
     "strength": 5,
-    "label": "Secularized into Humean empirical skepticism of necessary connection"
+    "description": "David Hume took up the concept of \"Incoherence of Necessary Causation\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Incoherence of Necessary Causation\".",
+    "historicalContext": "Inherited and re-evaluated during the Enlightenment & Social Contract.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "David Hume",
+        "sectionOrPage": "Engagement with Incoherence of Necessary Causation",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/hume/"
+      }
+    ]
   }
 ]

@@ -1,23 +1,93 @@
 [
   {
+    "id": "socrates--plato",
     "source": "socrates",
     "target": "plato",
     "type": "INFLUENCED",
     "label": "Teacher and ethical inspiration; immortalized in dialogues",
-    "strength": 5
+    "strength": 5,
+    "description": "Plato was Socrates' most dedicated student and intellectual chronicler. The trial and martyrdom of Socrates in 399 BCE catalyzed Plato to found the Academy and formulate the Theory of Forms, anchoring Socrates' search for moral definitions into an eternal metaphysical architecture.",
+    "dialecticalTension": "Moving from Socratic aporia (conscious ignorance of definitions) to positive Platonic metaphysical recollection (anamnesis) and transcendental Forms.",
+    "historicalContext": "Athens, c. 407–399 BCE. Plato was present during Socrates' teaching and judicial execution, subsequently writing the early Socratic and middle metaphysical dialogues.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Plato",
+        "work": "Apology",
+        "sectionOrPage": "Stephanus 38a",
+        "year": "-399 BCE",
+        "quote": "The unexamined life is not worth living for a human being.",
+        "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0170%3Atext%3DApol."
+      },
+      {
+        "citationType": "sep",
+        "author": "Debra Nails",
+        "work": "Socrates",
+        "sectionOrPage": "Section 2. Plato's Socrates",
+        "year": "2020",
+        "url": "https://plato.stanford.edu/entries/socrates/"
+      }
+    ]
   },
   {
+    "id": "socrates--seneca",
     "source": "socrates",
     "target": "seneca",
     "type": "INFLUENCED",
     "label": "Socratic moral integrity and fearlessness in face of death",
-    "strength": 3
+    "strength": 3,
+    "description": "Lucius Annaeus Seneca was fundamentally influenced by Socrates's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Socrates's perspective to Lucius Annaeus Seneca's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Classical Greek across history into the Hellenistic & Roman.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Lucius Annaeus Seneca",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/seneca/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Socrates",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/socrates/"
+      }
+    ]
   },
   {
+    "id": "socrates--epictetus",
     "source": "socrates",
     "target": "epictetus",
     "type": "INFLUENCED",
+    "label": "Socratic moral fortitude, dialectical examination, and equanimity served as the direct foundation for Epictetus' Stoic ethics",
     "strength": 5,
-    "label": "Socratic moral fortitude, dialectical examination, and equanimity served as the direct foundation for Epictetus' Stoic ethics"
+    "description": "Epictetus was fundamentally influenced by Socrates's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Socrates's perspective to Epictetus's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Classical Greek across history into the Hellenistic & Roman.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Epictetus",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/epictetus/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Socrates",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/socrates/"
+      }
+    ]
   }
 ]

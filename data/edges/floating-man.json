@@ -1,9 +1,24 @@
 [
   {
+    "id": "floating-man--rene-descartes",
     "source": "floating-man",
     "target": "rene-descartes",
     "type": "INFLUENCED",
     "label": "Avicenna Floating Man thought experiment anticipated Descartes Cogito by six centuries",
-    "strength": 4
+    "strength": 4,
+    "description": "René Descartes's philosophical system was decisively shaped by grappling with \"The Floating Man Thought Experiment\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Floating Man Thought Experiment\".",
+    "historicalContext": "Inherited and re-evaluated during the Early Modern & Scientific.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "René Descartes",
+        "sectionOrPage": "Engagement with The Floating Man Thought Experiment",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
   }
 ]

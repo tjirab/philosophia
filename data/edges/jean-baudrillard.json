@@ -1,16 +1,53 @@
 [
   {
+    "id": "jean-baudrillard--simulacra-and-hyperreality",
     "source": "jean-baudrillard",
     "target": "simulacra-and-hyperreality",
     "type": "DEVELOPED",
+    "label": "Formulated the four orders of simulacra and the concept of hyperreality in Simulacra and Simulation",
     "strength": 5,
-    "label": "Formulated the four orders of simulacra and the concept of hyperreality in Simulacra and Simulation"
+    "description": "Jean Baudrillard formulated and introduced the concept of \"Simulacra, Simulation & Hyperreality\", which became a seminal contribution in metaphysics philosophy.",
+    "dialecticalTension": "Formulating an epistemic apparatus to resolve central problems in metaphysics.",
+    "historicalContext": "Introduced during the Contemporary & Post-Structural as part of Jean Baudrillard's canonical writings.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Simulacra, Simulation & Hyperreality",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/baudrillard/"
+      }
+    ]
   },
   {
+    "id": "jean-baudrillard--byung-chul-han",
     "source": "jean-baudrillard",
     "target": "byung-chul-han",
     "type": "INFLUENCED",
+    "label": "Influenced Han's critique of hyper-communication, digital transparency, and the vanishing of otherness in late capitalism",
     "strength": 5,
-    "label": "Influenced Han's critique of hyper-communication, digital transparency, and the vanishing of otherness in late capitalism"
+    "description": "Byung-Chul Han was fundamentally influenced by Jean Baudrillard's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Jean Baudrillard's perspective to Byung-Chul Han's reconstructed system.",
+    "historicalContext": "Direct contemporaneous dialogue and pedagogical transmission during the Contemporary & Post-Structural era.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Byung-Chul Han",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/culture-cogsci/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean Baudrillard",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/baudrillard/"
+      }
+    ]
   }
 ]

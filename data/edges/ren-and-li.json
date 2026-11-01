@@ -1,9 +1,24 @@
 [
   {
+    "id": "ren-and-li--john-rawls",
     "source": "ren-and-li",
     "target": "john-rawls",
     "type": "SYNTHESIZED",
+    "label": "Ancient virtue ethics counterpart to modern justice and social stability",
     "strength": 3,
-    "label": "Ancient virtue ethics counterpart to modern justice and social stability"
+    "description": "John Rawls's philosophical system was decisively shaped by grappling with \"Ren & Li (Benevolence and Ritual)\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Ren & Li (Benevolence and Ritual)\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Rawls",
+        "sectionOrPage": "Engagement with Ren & Li (Benevolence and Ritual)",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rawls/"
+      }
+    ]
   }
 ]

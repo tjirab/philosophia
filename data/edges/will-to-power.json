@@ -1,16 +1,46 @@
 [
   {
+    "id": "will-to-power--michel-foucault",
     "source": "will-to-power",
     "target": "michel-foucault",
     "type": "DEVELOPED",
     "label": "Foucault adapted Nietzschean will to power into ubiquitous disciplinary power-knowledge matrices",
-    "strength": 5
+    "strength": 5,
+    "description": "Michel Foucault took up the concept of \"Will to Power & Revaluation of Values\" and systematized its implications for later thought.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Will to Power & Revaluation of Values\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Michel Foucault",
+        "sectionOrPage": "Engagement with Will to Power & Revaluation of Values",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/foucault/"
+      }
+    ]
   },
   {
+    "id": "will-to-power--albert-camus",
     "source": "will-to-power",
     "target": "albert-camus",
     "type": "INFLUENCED",
     "label": "Inspired Camus heroic lucidity and metaphysical revolt against nihilism",
-    "strength": 4
+    "strength": 4,
+    "description": "Albert Camus's philosophical system was decisively shaped by grappling with \"Will to Power & Revaluation of Values\".",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"Will to Power & Revaluation of Values\".",
+    "historicalContext": "Inherited and re-evaluated during the 20th Century Phenomenon & Analysis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Albert Camus",
+        "sectionOrPage": "Engagement with Will to Power & Revaluation of Values",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/camus/"
+      }
+    ]
   }
 ]

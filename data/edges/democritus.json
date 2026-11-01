@@ -1,9 +1,32 @@
 [
   {
+    "id": "democritus--epicurus",
     "source": "democritus",
     "target": "epicurus",
     "type": "INFLUENCED",
     "label": "Adopted physical atomism with the atomic swerve (clinamen) for free will",
-    "strength": 4
+    "strength": 4,
+    "description": "Epicurus was fundamentally influenced by Democritus's central inquiries, which shaped the evolution of their philosophical worldview.",
+    "dialecticalTension": "Negotiating the intellectual shift from Democritus's perspective to Epicurus's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the Pre-Socratic across history into the Hellenistic & Roman.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Epicurus",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/epicurus/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Democritus",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/democritus/"
+      }
+    ]
   }
 ]

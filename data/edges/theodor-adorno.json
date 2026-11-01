@@ -1,16 +1,62 @@
 [
   {
+    "id": "theodor-adorno--jurgen-habermas",
     "source": "theodor-adorno",
     "target": "jurgen-habermas",
     "type": "DEVELOPED",
+    "label": "Succeeded Frankfurt School first generation, rebuilding rationality via communicative action",
     "strength": 5,
-    "label": "Succeeded Frankfurt School first generation, rebuilding rationality via communicative action"
+    "description": "Jürgen Habermas adopted Theodor W. Adorno's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Theodor W. Adorno's perspective to Jürgen Habermas's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jürgen Habermas",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Theodor W. Adorno",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/adorno/"
+      }
+    ]
   },
   {
+    "id": "theodor-adorno--jean-baudrillard",
     "source": "theodor-adorno",
     "target": "jean-baudrillard",
     "type": "DEVELOPED",
+    "label": "Extended Adorno's critique of the culture industry into an analysis of pervasive mass-media simulation",
     "strength": 5,
-    "label": "Extended Adorno's critique of the culture industry into an analysis of pervasive mass-media simulation"
+    "description": "Jean Baudrillard adopted Theodor W. Adorno's insights and systematically extended them into new metaphysical, ethical, or epistemological domains.",
+    "dialecticalTension": "Negotiating the intellectual shift from Theodor W. Adorno's perspective to Jean Baudrillard's reconstructed system.",
+    "historicalContext": "Inter-epochal reception: transmitting insights from the 20th Century Phenomenon & Analysis across history into the Contemporary & Post-Structural.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jean Baudrillard",
+        "sectionOrPage": "Intellectual Lineage and Influences",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/baudrillard/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Theodor W. Adorno",
+        "sectionOrPage": "Historical Impact and Successors",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/adorno/"
+      }
+    ]
   }
 ]

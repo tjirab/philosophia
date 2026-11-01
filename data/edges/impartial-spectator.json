@@ -1,9 +1,24 @@
 [
   {
+    "id": "impartial-spectator--john-rawls",
     "source": "impartial-spectator",
     "target": "john-rawls",
     "type": "CRITIQUED",
+    "label": "Rawls contrasted his 'original position' with Smith's 'impartial spectator', arguing the spectator conflates separate persons into one generalized observer",
     "strength": 4,
-    "label": "Rawls contrasted his 'original position' with Smith's 'impartial spectator', arguing the spectator conflates separate persons into one generalized observer"
+    "description": "John Rawls formulated a fundamental critique of \"The Impartial Spectator\", challenging its coherence and proposing an alternative model.",
+    "dialecticalTension": "Dialectical engagement with the core claims and paradoxes of \"The Impartial Spectator\".",
+    "historicalContext": "Inherited and re-evaluated during the Contemporary & Post-Structural.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "John Rawls",
+        "sectionOrPage": "Engagement with The Impartial Spectator",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/rawls/"
+      }
+    ]
   }
 ]
