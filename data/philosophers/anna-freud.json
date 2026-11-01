@@ -1,0 +1,43 @@
+{
+  "id": "anna-freud",
+  "name": "Anna Freud",
+  "birthYear": 1895,
+  "deathYear": 1982,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Austrian-British psychoanalyst who systematized ego psychology, mapped the repertoire of psychological defense mechanisms, and pioneered developmental child analysis.",
+  "centralQuestion": "How does the ego deploy unconscious defensive mechanisms to mediate between instinctual id impulses, the superego, and external reality?",
+  "keyWorks": [
+    {
+      "title": "The Ego and the Mechanisms of Defence",
+      "year": "1936 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Ego_and_the_Mechanisms_of_Defence",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Ego_and_the_Mechanisms_of_Defence",
+      "description": "Foundational text classifying and explaining ego defenses such as repression, regression, and identification with the aggressor."
+    },
+    {
+      "title": "Normality and Pathology in Childhood",
+      "year": "1965 CE",
+      "url": "https://en.wikipedia.org/wiki/Anna_Freud",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Anna_Freud",
+      "description": "Formulates the diagnostic concept of developmental lines from dependency to emotional self-reliance."
+    },
+    {
+      "title": "The Psychoanalytic Treatment of Children",
+      "year": "1946 CE",
+      "url": "https://en.wikipedia.org/wiki/Anna_Freud",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Anna_Freud",
+      "description": "Clinical lectures detailing technical principles and preparatory phases in child psychoanalysis."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "wikipedia": "Anna_Freud"
+  },
+  "importanceScore": 93,
+  "imageUrl": "/portraits/anna-freud.jpg"
+}

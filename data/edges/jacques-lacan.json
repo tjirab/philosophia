@@ -1,0 +1,178 @@
+[
+  {
+    "id": "jacques-lacan--mirror-stage-and-three-registers",
+    "source": "jacques-lacan",
+    "target": "mirror-stage-and-three-registers",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Articulated the Mirror Stage and the tripartite registers: Imaginary, Symbolic, and Real",
+    "description": "Jacques Lacan established the mirror stage as the genesis of the ego's imaginary alienation and mapped subjectivity across the triad (ISR).",
+    "historicalContext": "Presented at the 14th International Psychoanalytical Congress in Marienbad (1936) and revised in Écrits (1949).",
+    "dialecticalTension": "The ego as an imaginary misrecognition (méconnaissance) contrasted with the speaking subject determined by the Symbolic chain.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jacques Lacan",
+        "work": "Écrits",
+        "sectionOrPage": "The Mirror Stage as Formative of the I Function",
+        "year": "1949",
+        "url": "https://en.wikipedia.org/wiki/%C3%89crits"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--jacques-lacan",
+    "source": "sigmund-freud",
+    "target": "jacques-lacan",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Staged a revolutionary 'Return to Freud', declaring that the unconscious is structured like a language",
+    "description": "Lacan reinterpreted Freud's discovery of the unconscious through the lens of structural linguistics, rescuing it from American ego psychology adaptationism.",
+    "historicalContext": "Inaugurated in the 1953 Rome Discourse: 'The Function and Field of Speech and Language in Psychoanalysis'.",
+    "dialecticalTension": "Rejecting ego strengthening in favor of confronting the unconscious division of the subject and the death drive.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jacques Lacan",
+        "work": "Écrits",
+        "sectionOrPage": "The Instance of the Letter in the Unconscious",
+        "year": "1957",
+        "url": "https://en.wikipedia.org/wiki/%C3%89crits"
+      }
+    ]
+  },
+  {
+    "id": "gwf-hegel--jacques-lacan",
+    "source": "gwf-hegel",
+    "target": "jacques-lacan",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Synthesized Kojève's Hegelian Master-Slave dialectic into desire as the desire of the Other",
+    "description": "Lacan attended Alexandre Kojève's legendary seminars on Hegel in Paris (1933-1939), shaping his view of human desire as fundamentally mediated by the Other.",
+    "historicalContext": "Kojève's reading of Hegel's Phenomenology of Spirit in Paris provided the philosophical foundation for Lacan's Imaginary and Symbolic dialectic.",
+    "dialecticalTension": "Hegelian recognition (Anerkennung) converted into the constitutive lack and perpetual alienation of desire.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Elisabeth Roudinesco",
+        "work": "Jacques Lacan",
+        "sectionOrPage": "Chapter 8: Kojève's Seminar",
+        "year": "1997",
+        "url": "https://en.wikipedia.org/wiki/Jacques_Lacan"
+      }
+    ]
+  },
+  {
+    "id": "ferdinand-de-saussure--jacques-lacan",
+    "source": "ferdinand-de-saussure",
+    "target": "jacques-lacan",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Transposed Saussurean linguistics onto the unconscious: metaphor as condensation and metonymy as displacement",
+    "description": "Lacan inverted Saussure's signifier/signified algorithm, arguing for the supremacy of the signifier over the signified in unconscious operations.",
+    "historicalContext": "Saussure's structural linguistics (along with Jakobson's phonology) provided the technical apparatus for Seminar III (1955-56).",
+    "dialecticalTension": "Inverting Saussure: the signifier bar resists signification, generating the slippage of desire across metonymic chains.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jacques Lacan",
+        "work": "Écrits",
+        "sectionOrPage": "The Agency of the Letter in the Unconscious",
+        "year": "1957",
+        "url": "https://en.wikipedia.org/wiki/%C3%89crits"
+      }
+    ]
+  },
+  {
+    "id": "jacques-lacan--alenka-zupancic",
+    "source": "jacques-lacan",
+    "target": "alenka-zupancic",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Lacan's ethics of the Real and seminar on desire provided the foundation for the Ljubljana School",
+    "description": "Alenka Zupančič grounded her philosophical ethics in Lacan's Seminar VII (The Ethics of Psychoanalysis) and the traversal of fantasy.",
+    "historicalContext": "The Ljubljana School of Psychoanalysis (Zupančič, Žižek, Dolar) synthesized Lacan with German Idealism in the 1990s and 2000s.",
+    "dialecticalTension": "Reading Lacan's Real not as an ineffable beyond, but as an internal structural deadlock within symbolic representation.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Alenka Zupančič",
+        "work": "Ethics of the Real: Kant, Lacan",
+        "sectionOrPage": "Introduction & Chapters 1-2",
+        "year": "2000",
+        "url": "https://en.wikipedia.org/wiki/Alenka_Zupan%C4%8Di%C4%8D"
+      }
+    ]
+  },
+  {
+    "id": "jacques-lacan--bruce-fink",
+    "source": "jacques-lacan",
+    "target": "bruce-fink",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Lacan's clinical structural topology and mathemes directly guided Fink's clinical systematization",
+    "description": "Bruce Fink translated Lacan's Écrits and seminars, authoring the definitive clinical guide to Lacanian technique in the English-speaking world.",
+    "historicalContext": "Fink trained in Paris at the Department of Psychoanalysis at Paris VIII under Jacques-Alain Miller before publishing in the US.",
+    "dialecticalTension": "Demystifying Lacan's notoriously elusive French style into rigorous clinical protocols for English-speaking clinicians.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Bruce Fink",
+        "work": "A Clinical Introduction to Lacanian Psychoanalysis",
+        "sectionOrPage": "Preface & Chapter 1",
+        "year": "1997",
+        "url": "https://en.wikipedia.org/wiki/Bruce_Fink"
+      }
+    ]
+  },
+  {
+    "id": "jacques-lacan--juliet-mitchell",
+    "source": "jacques-lacan",
+    "target": "juliet-mitchell",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Lacanian symbolic phallus and critique of anatomical essentialism informed Mitchell's feminist theory",
+    "description": "Juliet Mitchell introduced Lacan to Anglophone feminist theory, editing 'Feminine Sexuality: Jacques Lacan and the école freudienne'.",
+    "historicalContext": "Mitchell and Jacqueline Rose co-edited and introduced Lacan's key papers on female sexuality in 1982.",
+    "dialecticalTension": "Distinguishing the biological penis from the symbolic phallus to demystify patriarchal kinship relations.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Juliet Mitchell and Jacqueline Rose",
+        "work": "Feminine Sexuality: Jacques Lacan and the école freudienne",
+        "sectionOrPage": "Introduction I by Juliet Mitchell",
+        "year": "1982",
+        "url": "https://en.wikipedia.org/wiki/Juliet_Mitchell"
+      }
+    ]
+  },
+  {
+    "id": "jacques-lacan--paul-ricoeur",
+    "source": "jacques-lacan",
+    "target": "paul-ricoeur",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Engaged in critical dialogue over structuralism, the autonomy of language, and the hermeneutic self",
+    "description": "Ricoeur and Lacan debated in Paris over whether the human subject is entirely dissolved into structural signifiers or retains hermeneutic narrative reflexivity.",
+    "historicalContext": "Ricoeur attended Lacan's seminars at Sainte-Anne, and Lacan critiqued philosophical hermeneutics in Seminar XI.",
+    "dialecticalTension": "Lacanian structural foreclosure and split subjectivity ($) versus Ricoeurian restorative hermeneutics and narrative identity.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Paul Ricoeur",
+        "work": "The Conflict of Interpretations: Essays in Hermeneutics",
+        "sectionOrPage": "Part II: Psychoanalysis",
+        "year": "1969",
+        "url": "https://en.wikipedia.org/wiki/Paul_Ricoeur"
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "id": "d-w-winnicott",
+  "name": "Donald Winnicott (D.W. Winnicott)",
+  "birthYear": 1896,
+  "deathYear": 1971,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "English pediatrician and psychoanalyst of the British Independent Group who introduced the transitional object, the holding environment, the good-enough mother, and the true vs. false self.",
+  "centralQuestion": "How does a facilitating environment enable the infant to transition safely from illusion to reality without splitting into a defensive false self?",
+  "keyWorks": [
+    {
+      "title": "Playing and Reality",
+      "year": "1971 CE",
+      "url": "https://en.wikipedia.org/wiki/Playing_and_Reality",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Playing_and_Reality",
+      "description": "Defines transitional objects, transitional phenomena, potential space, and creative play."
+    },
+    {
+      "title": "The Maturational Processes and the Facilitating Environment",
+      "year": "1965 CE",
+      "url": "https://en.wikipedia.org/wiki/Donald_Winnicott",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Donald_Winnicott",
+      "description": "Explores primary maternal preoccupation, maternal holding, and the etiology of the false self."
+    },
+    {
+      "title": "Through Paediatrics to Psycho-Analysis",
+      "year": "1958 CE",
+      "url": "https://en.wikipedia.org/wiki/Donald_Winnicott",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Donald_Winnicott",
+      "description": "Collected clinical papers linking infant bodily care to psychic integration and hate in the countertransference."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "wikipedia": "Donald_Winnicott"
+  },
+  "importanceScore": 95,
+  "imageUrl": "/portraits/d-w-winnicott.jpg"
+}

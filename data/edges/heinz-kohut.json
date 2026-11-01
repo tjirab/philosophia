@@ -1,0 +1,68 @@
+[
+  {
+    "id": "heinz-kohut--selfobject-and-cohesive-self",
+    "source": "heinz-kohut",
+    "target": "selfobject-and-cohesive-self",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the selfobject concept and the bipolar self supported by mirroring and idealization",
+    "description": "Heinz Kohut formulated the selfobject as an indispensable psychic function sustaining the structural cohesion and vitality of the self.",
+    "historicalContext": "Developed in 'The Analysis of the Self' (1971) and formalized in 'The Restoration of the Self' (1977).",
+    "dialecticalTension": "Narcissism is not an infantile phase to be outgrown, but an autonomous lifelong developmental necessity.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Heinz Kohut",
+        "work": "The Restoration of the Self",
+        "sectionOrPage": "Chapters 1 & 4",
+        "year": "1977",
+        "url": "https://en.wikipedia.org/wiki/Heinz_Kohut"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--heinz-kohut",
+    "source": "sigmund-freud",
+    "target": "heinz-kohut",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Overturned Freud's theory of primary narcissism, positing two separate, parallel developmental lines",
+    "description": "Kohut broke with Freud's drive-discharge view of narcissism as an obstacle to object love, establishing Self Psychology.",
+    "historicalContext": "Kohut presented his breakthrough paper 'Forms and Transformations of Narcissism' in 1966.",
+    "dialecticalTension": "Freud's economic hydraulic drive model versus Kohut's phenomenological immersion through vicarious introspection (empathy).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Heinz Kohut",
+        "work": "The Analysis of the Self",
+        "sectionOrPage": "Chapter 1",
+        "year": "1971",
+        "url": "https://en.wikipedia.org/wiki/The_Analysis_of_the_Self"
+      }
+    ]
+  },
+  {
+    "id": "heinz-kohut--otto-kernberg",
+    "source": "heinz-kohut",
+    "target": "otto-kernberg",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Contested Kernberg on the etiology of narcissism: developmental arrest versus defensive rage structure",
+    "description": "Kohut and Kernberg engaged in a legendary controversy regarding the nature and clinical treatment of narcissistic personality disorder.",
+    "historicalContext": "The Kohut-Kernberg debates dominated American psychoanalytic symposiums and journals throughout the 1970s and 1980s.",
+    "dialecticalTension": "Kohut's empathetic mirroring of a fragile arrested self versus Kernberg's confrontation of split-off grandiose defenses and underlying oral rage.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Arnold M. Cooper",
+        "work": "Narcissism in the Current American Scene",
+        "sectionOrPage": "pp. 112-143",
+        "year": "1986",
+        "url": "https://en.wikipedia.org/wiki/Otto_F._Kernberg"
+      }
+    ]
+  }
+]

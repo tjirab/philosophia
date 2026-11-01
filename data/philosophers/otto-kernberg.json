@@ -1,0 +1,42 @@
+{
+  "id": "otto-kernberg",
+  "name": "Otto Kernberg",
+  "birthYear": 1928,
+  "eraId": "contemporary",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Austrian-American psychoanalyst and psychiatrist who synthesized Kleinian object relations with Freudian ego psychology to develop structural diagnostic criteria for Borderline Personality Organization and Transference-Focused Psychotherapy.",
+  "centralQuestion": "How do primitive defense mechanisms like splitting and projective identification prevent the integration of good and bad internal object representations in severe personality pathology?",
+  "keyWorks": [
+    {
+      "title": "Borderline Conditions and Pathological Narcissism",
+      "year": "1975 CE",
+      "url": "https://en.wikipedia.org/wiki/Otto_F._Kernberg",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Otto_F._Kernberg",
+      "description": "Pioneering clinical treatise defining borderline structural organization and differentiating narcissism from neurotic pathology."
+    },
+    {
+      "title": "Internal World and External Reality: Object Relations Theory Applied",
+      "year": "1980 CE",
+      "url": "https://en.wikipedia.org/wiki/Otto_F._Kernberg",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Otto_F._Kernberg",
+      "description": "Synthesizes drive theory, internalized object relations, and affective neuroscience into personality structure."
+    },
+    {
+      "title": "Severe Personality Disorders: Psychotherapeutic Strategies",
+      "year": "1984 CE",
+      "url": "https://en.wikipedia.org/wiki/Otto_F._Kernberg",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Otto_F._Kernberg",
+      "description": "Outlines clinical strategies, setting boundaries, and interpreting primitive transferences in severe character disorders."
+    }
+  ],
+  "sepSlug": "freud",
+  "externalRefs": {
+    "wikipedia": "Otto_F._Kernberg"
+  },
+  "importanceScore": 92,
+  "imageUrl": "/portraits/otto-kernberg.jpg"
+}

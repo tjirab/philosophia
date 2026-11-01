@@ -1,0 +1,90 @@
+[
+  {
+    "id": "alfred-adler--inferiority-complex",
+    "source": "alfred-adler",
+    "target": "inferiority-complex",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the inferiority complex and compensatory striving for superiority",
+    "description": "Alfred Adler formulated Individual Psychology centered on feelings of inferiority and the vital balance of social interest.",
+    "historicalContext": "Presented in 'The Neurotic Constitution' (1912) and refined in 'Understanding Human Nature' (1927).",
+    "dialecticalTension": "Harmonizing personal teleological striving for mastery with Gemeinschaftsgefühl (community feeling).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Alfred Adler",
+        "work": "The Neurotic Constitution",
+        "sectionOrPage": "Introduction & Chapter 1",
+        "year": "1912",
+        "url": "https://en.wikipedia.org/wiki/Alfred_Adler"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--alfred-adler",
+    "source": "sigmund-freud",
+    "target": "alfred-adler",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Broke with Freud's pan-sexual libido theory, asserting the primacy of ego striving and inferiority",
+    "description": "Adler broke from the Vienna Psychoanalytic Society in 1911, rejecting Freud's infantile sexual etiology in favor of teleological striving and social factors.",
+    "historicalContext": "Adler resigned as president of the Vienna Psychoanalytic Society in 1911 to establish the Society for Free Psychoanalysis (Individual Psychology).",
+    "dialecticalTension": "Biological causal drive determinism (Freud) versus teleological, purposive style of life oriented toward future goals (Adler).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Henri F. Ellenberger",
+        "work": "The Discovery of the Unconscious",
+        "sectionOrPage": "Chapter 8: Alfred Adler and Individual Psychology",
+        "year": "1970",
+        "url": "https://en.wikipedia.org/wiki/Alfred_Adler"
+      }
+    ]
+  },
+  {
+    "id": "alfred-adler--viktor-frankl",
+    "source": "alfred-adler",
+    "target": "viktor-frankl",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Adler's individual psychology directly served as the second Viennese school precursor to logotherapy",
+    "description": "Viktor Frankl studied closely with Adler and published his first academic paper in Adler's International Journal of Individual Psychology.",
+    "historicalContext": "Frankl was part of Adler's inner circle in the 1920s before developing logotherapy (the 'Third Viennese School').",
+    "dialecticalTension": "Expanding Adler's striving for superiority into the existential 'will to meaning'.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Viktor Frankl",
+        "work": "Man's Search for Meaning",
+        "sectionOrPage": "Part Two: Logotherapy in a Nutshell",
+        "year": "1959",
+        "url": "https://en.wikipedia.org/wiki/Viktor_Frankl"
+      }
+    ]
+  },
+  {
+    "id": "alfred-adler--carl-rogers",
+    "source": "alfred-adler",
+    "target": "carl-rogers",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Adlerian holistic style of life and phenomenological client understanding shaped Rogers",
+    "description": "Carl Rogers encountered Adlerian methods at the Institute for Child Guidance in New York, shaping his person-centered therapy.",
+    "historicalContext": "Adler's public clinical demonstrations in New York during the late 1920s profoundly impacted Rogers' clinical orientation.",
+    "dialecticalTension": "From authoritative Adlerian lifestyle assessment toward non-directive unconditional positive regard.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Howard Kirschenbaum",
+        "work": "The Life and Work of Carl Rogers",
+        "sectionOrPage": "pp. 52-64",
+        "year": "1979",
+        "url": "https://en.wikipedia.org/wiki/Carl_Rogers"
+      }
+    ]
+  }
+]

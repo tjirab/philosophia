@@ -1,0 +1,68 @@
+[
+  {
+    "id": "juliet-mitchell--psychoanalytic-feminism-and-sibling-axis",
+    "source": "juliet-mitchell",
+    "target": "psychoanalytic-feminism-and-sibling-axis",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Established psychoanalytic feminism and formulated the lateral sibling axis in psychic development",
+    "description": "Juliet Mitchell formulated the lateral axis of sibling relationships as an autonomous matrix of desire and rivalry alongside parental verticality.",
+    "historicalContext": "Initiated in 'Psychoanalysis and Feminism' (1974) and crystallized in 'Siblings: Sex and Violence' (2003).",
+    "dialecticalTension": "Shifting psychoanalysis from an exclusively vertical parental genealogy to an intersubjective lateral field of peer trauma and solidarity.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Juliet Mitchell",
+        "work": "Siblings: Sex and Violence",
+        "sectionOrPage": "Chapters 1-3",
+        "year": "2003",
+        "url": "https://en.wikipedia.org/wiki/Juliet_Mitchell"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--juliet-mitchell",
+    "source": "sigmund-freud",
+    "target": "juliet-mitchell",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Reclaimed Freud's drive theory and castration complex as an analysis of patriarchal culture",
+    "description": "Mitchell fundamentally rescued Sigmund Freud from feminist dismissal by showing that psychoanalysis describes patriarchal mechanisms rather than endorsing them.",
+    "historicalContext": "Published in 'Psychoanalysis and Feminism' (1974), transforming modern feminist theory across Europe and the Americas.",
+    "dialecticalTension": "Distinguishing between Freud's descriptive diagnostic account of patriarchal culture and a prescriptive ideological doctrine.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Juliet Mitchell",
+        "work": "Psychoanalysis and Feminism",
+        "sectionOrPage": "Introduction & Part I: Freud",
+        "year": "1974",
+        "url": "https://en.wikipedia.org/wiki/Psychoanalysis_and_Feminism"
+      }
+    ]
+  },
+  {
+    "id": "simone-de-beauvoir--juliet-mitchell",
+    "source": "simone-de-beauvoir",
+    "target": "juliet-mitchell",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Integrated Beauvoir's existential feminist critique with psychoanalytic depth structuralism",
+    "description": "Mitchell synthesized Simone de Beauvoir's insight that 'one is not born, but rather becomes, a woman' with Freudian and Lacanian unconscious mechanisms.",
+    "historicalContext": "Mitchell engaged Beauvoir's critique of psychoanalysis in 'The Second Sex', showing how structural psychoanalysis answers Beauvoir's existential inquiry.",
+    "dialecticalTension": "Existential conscious choice versus the deep unconscious internalization of patriarchal symbolic structures.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Juliet Mitchell",
+        "work": "Psychoanalysis and Feminism",
+        "sectionOrPage": "Part IV: The Challenge of Simone de Beauvoir",
+        "year": "1974",
+        "url": "https://en.wikipedia.org/wiki/Psychoanalysis_and_Feminism"
+      }
+    ]
+  }
+]

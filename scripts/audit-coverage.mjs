@@ -209,6 +209,11 @@ export function auditCanon(options = {}) {
     { name: 'Aristotle → Anscombe → Foot', from: 'aristotle', to: 'philippa-foot' },
     { name: 'Sartre → Fanon → Foucault', from: 'jean-paul-sartre', to: 'michel-foucault' },
     { name: 'Wollstonecraft → Simone de Beauvoir → Fanon', from: 'mary-wollstonecraft', to: 'frantz-fanon' },
+    { name: 'Freud → Klein → Winnicott → Mitchell', from: 'sigmund-freud', to: 'stephen-mitchell' },
+    { name: 'Freud → Lacan → Fink', from: 'sigmund-freud', to: 'bruce-fink' },
+    { name: 'Husserl → Ricoeur', from: 'edmund-husserl', to: 'paul-ricoeur' },
+    { name: 'Freud → Anna Freud → Erikson', from: 'sigmund-freud', to: 'erik-erikson' },
+    { name: 'Klein → Kernberg', from: 'melanie-klein', to: 'otto-kernberg' },
   ];
 
   function testPath(start, goal) {

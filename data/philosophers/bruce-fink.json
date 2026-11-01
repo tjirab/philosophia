@@ -1,0 +1,43 @@
+{
+  "id": "bruce-fink",
+  "name": "Bruce Fink",
+  "birthYear": 1956,
+  "eraId": "contemporary",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology",
+    "philosophy"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "American psychoanalyst, translator, and Lacanian scholar who systematized Lacanian clinical technique and theory for the Anglophone world, formalizing the divided subject ($) and the clinical dynamics of jouissance.",
+  "centralQuestion": "How does Lacanian psychoanalytic speech operate through scansion and interpretation to displace neurotic symptoms toward subjective realization and engagement with unconscious desire?",
+  "keyWorks": [
+    {
+      "title": "The Lacanian Subject: Between Language and Jouissance",
+      "year": "1995 CE",
+      "url": "https://en.wikipedia.org/wiki/Bruce_Fink",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bruce_Fink",
+      "description": "Systematic theoretical treatise explaining alienation, separation, and the traversal of fantasy."
+    },
+    {
+      "title": "A Clinical Introduction to Lacanian Psychoanalysis: Theory and Technique",
+      "year": "1997 CE",
+      "url": "https://en.wikipedia.org/wiki/Bruce_Fink",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bruce_Fink",
+      "description": "Definitive clinical guide to punctuation, variable-length sessions, and structural diagnosis."
+    },
+    {
+      "title": "Lacan on Love: An Exploration of Seminar VIII, Transference",
+      "year": "2015 CE",
+      "url": "https://en.wikipedia.org/wiki/Bruce_Fink",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bruce_Fink",
+      "description": "Detailed examination of love, transference, and lack across Plato's Symposium and Lacanian theory."
+    }
+  ],
+  "sepSlug": "lacan",
+  "externalRefs": {
+    "wikipedia": "Bruce_Fink"
+  },
+  "importanceScore": 88,
+  "imageUrl": "/portraits/bruce-fink.jpg"
+}

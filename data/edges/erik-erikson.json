@@ -1,0 +1,68 @@
+[
+  {
+    "id": "erik-erikson--psychosocial-stages",
+    "source": "erik-erikson",
+    "target": "psychosocial-stages",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the epigenetic eight stages of psychosocial development across the life cycle",
+    "description": "Erikson formulated the epigenetic principle where psychosocial development proceeds through normative crises from trust to integrity.",
+    "historicalContext": "Introduced in 'Childhood and Society' (1950) and expanded in 'Identity: Youth and Crisis' (1968).",
+    "dialecticalTension": "Integrating somatic maturation with cultural institutions and communal ritualization.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Erik Erikson",
+        "work": "Childhood and Society",
+        "sectionOrPage": "Chapter 7: Eight Ages of Man",
+        "year": "1950",
+        "url": "https://en.wikipedia.org/wiki/Childhood_and_Society"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--erik-erikson",
+    "source": "sigmund-freud",
+    "target": "erik-erikson",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Expanded Freud's infantile psychosexual stages into a lifespan psychosocial trajectory",
+    "description": "Erikson expanded Freud's biological drive theory by embedding psychosexual milestones in cultural and social matrices.",
+    "historicalContext": "Erikson preserved Freud's oral, anal, phallic, and latency zones while transforming them into psychosocial modalities.",
+    "dialecticalTension": "Moving from deterministic instinctual fixation to lifelong normative psychosocial growth.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Erik Erikson",
+        "work": "Identity and the Life Cycle",
+        "sectionOrPage": "pp. 50-100",
+        "year": "1959",
+        "url": "https://en.wikipedia.org/wiki/Erik_Erikson"
+      }
+    ]
+  },
+  {
+    "id": "erik-erikson--john-bowlby",
+    "source": "erik-erikson",
+    "target": "john-bowlby",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Basic trust vs. mistrust provided the psychological blueprint for secure attachment",
+    "description": "Bowlby drew on Erikson's concept of primary maternal trust to formulate the security dimensions of infant-caregiver attachment.",
+    "historicalContext": "Bowlby cited Erikson's developmental timeline in constructing his ethological model of attachment.",
+    "dialecticalTension": "Translating Erikson's ego virtue of Hope into ethological behavioral proximity seeking.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "John Bowlby",
+        "work": "Attachment and Loss, Vol. 1: Attachment",
+        "sectionOrPage": "Chapter 14",
+        "year": "1969",
+        "url": "https://en.wikipedia.org/wiki/John_Bowlby"
+      }
+    ]
+  }
+]
