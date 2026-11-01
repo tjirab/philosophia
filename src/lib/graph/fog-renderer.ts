@@ -18,7 +18,191 @@ export interface FogAtmosphereOptions {
   isLight: boolean;
   mouseWorldPos?: WorldPoint | null;
   hoveredNodeId?: string | null;
+  selectedNodeId?: string | null;
+  highlightedNodeIds?: Set<string>;
   fogIntensity?: number; // 0.0 to 1.0 (default 0.75)
+  customOffscreen?: {
+    canvas: any;
+    ctx: any;
+  };
+}
+
+let cachedOffscreenCanvas: any = null;
+let cachedOffscreenCtx: any = null;
+
+/**
+ * Provides a cached offscreen canvas instance for rendering the atmospheric fog layer.
+ * Reuses the canvas element to prevent heap churn and garbage collection spikes.
+ */
+export function getOffscreenFogCanvas(width: number, height: number): {
+  canvas: any;
+  ctx: any;
+} {
+  if (typeof document === 'undefined' || typeof document.createElement !== 'function') {
+    return { canvas: null, ctx: null };
+  }
+  try {
+    if (!cachedOffscreenCanvas) {
+      cachedOffscreenCanvas = document.createElement('canvas');
+      cachedOffscreenCtx = cachedOffscreenCanvas.getContext('2d');
+    }
+    if (cachedOffscreenCanvas && (cachedOffscreenCanvas.width !== width || cachedOffscreenCanvas.height !== height)) {
+      cachedOffscreenCanvas.width = width;
+      cachedOffscreenCanvas.height = height;
+    }
+    return { canvas: cachedOffscreenCanvas, ctx: cachedOffscreenCtx };
+  } catch {
+    return { canvas: null, ctx: null };
+  }
+}
+
+/**
+ * Draws the true ambient parchment mist layer across uncharted space.
+ * Citadels, active frontiers, and the user's lantern torchlight dynamically
+ * carve feathered clearings into the mist via destination-out compositing.
+ * Called in onRenderFramePost after nodes and links have been painted.
+ */
+export function drawAmbientParchmentMist(
+  ctx: CanvasRenderingContext2D,
+  options: FogAtmosphereOptions
+): void {
+  const {
+    nodes,
+    globalScale,
+    isLight,
+    mouseWorldPos,
+    hoveredNodeId,
+    selectedNodeId,
+    highlightedNodeIds,
+    fogIntensity = 0.75,
+    customOffscreen,
+  } = options;
+
+  if (nodes.length === 0) return;
+
+  const canvasWidth = ctx.canvas?.width || 1200;
+  const canvasHeight = ctx.canvas?.height || 800;
+
+  const offscreen = customOffscreen || getOffscreenFogCanvas(canvasWidth, canvasHeight);
+  const fogCanvas = offscreen?.canvas;
+  const fogCtx = offscreen?.ctx;
+
+  if (!fogCanvas || !fogCtx) return;
+
+  // 1. Fill offscreen canvas with uniform ambient mist veil
+  if (typeof fogCtx.setTransform === 'function') {
+    fogCtx.setTransform(1, 0, 0, 1, 0, 0);
+  }
+  fogCtx.globalCompositeOperation = 'source-over';
+  fogCtx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+  // Atmospheric mist color:
+  // In light mode: warm antique parchment mist (#ebe3d5)
+  // In dark mode: deep obsidian / cosmic atmospheric veil (#0d0b09)
+  const mistAlpha = isLight ? 0.80 * fogIntensity : 0.84 * fogIntensity;
+  fogCtx.fillStyle = isLight
+    ? `rgba(235, 227, 213, ${mistAlpha})`
+    : `rgba(13, 11, 9, ${mistAlpha})`;
+  fogCtx.fillRect(0, 0, canvasWidth, canvasHeight);
+
+  // 2. Synchronize coordinate space with main canvas world transform
+  if (typeof ctx.getTransform === 'function' && typeof fogCtx.setTransform === 'function') {
+    const currentTransform = ctx.getTransform();
+    if (currentTransform) {
+      fogCtx.setTransform(currentTransform);
+    }
+  }
+
+  // 3. Carve out illumination clearings using destination-out
+  fogCtx.globalCompositeOperation = 'destination-out';
+
+  // Citadel hearth clearance & outpost clearings
+  for (const node of nodes) {
+    if (typeof node.x !== 'number' || typeof node.y !== 'number') continue;
+
+    const state = node.exploration?.state || 'citadel';
+    const baseRadius = Math.max(10, (node.val || 8) * 1.4);
+    const isHovered = node.id === hoveredNodeId;
+    const isSelected = node.id === selectedNodeId;
+    const isOnPath = highlightedNodeIds?.has(node.id) || false;
+
+    let clearRadius = 0;
+    let centerEraseAlpha = 1.0;
+
+    if (isSelected || isOnPath) {
+      // Focus / Path nodes: carve clearings so selected thinkers and lineage paths shine brightly
+      clearRadius = baseRadius * 5.2;
+      centerEraseAlpha = 0.98;
+    } else if (state === 'citadel') {
+      // Citadels: broad permanent clearance around canonical strongholds
+      clearRadius = baseRadius * (isHovered ? 6.5 : 4.8);
+      centerEraseAlpha = 0.98;
+    } else if (state === 'frontier') {
+      // Disputed frontiers: partial clearance
+      clearRadius = baseRadius * (isHovered ? 4.8 : 3.0);
+      centerEraseAlpha = 0.75;
+    } else if (state === 'emerging') {
+      // Pioneer outposts: moderate clearance
+      clearRadius = baseRadius * (isHovered ? 4.4 : 2.8);
+      centerEraseAlpha = 0.80;
+    } else if (state === 'uncharted') {
+      // Terra Incognita: veiled in mist unless hovered
+      if (isHovered) {
+        clearRadius = baseRadius * 4.0;
+        centerEraseAlpha = 0.90;
+      }
+    }
+
+    if (clearRadius > 0) {
+      const grad = fogCtx.createRadialGradient(
+        node.x,
+        node.y,
+        baseRadius * 0.4,
+        node.x,
+        node.y,
+        clearRadius
+      );
+      grad.addColorStop(0, `rgba(0, 0, 0, ${centerEraseAlpha})`);
+      grad.addColorStop(0.5, `rgba(0, 0, 0, ${centerEraseAlpha * 0.5})`);
+      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+
+      fogCtx.beginPath();
+      fogCtx.arc(node.x, node.y, clearRadius, 0, Math.PI * 2);
+      fogCtx.fillStyle = grad;
+      fogCtx.fill();
+    }
+  }
+
+  // Dynamic Lantern Clearance: The cursor acts as a torchlight burning through mist
+  if (mouseWorldPos && Number.isFinite(mouseWorldPos.x) && Number.isFinite(mouseWorldPos.y)) {
+    const lanternRadius = 240 / Math.max(0.7, Math.min(1.4, globalScale));
+    const lanternGrad = fogCtx.createRadialGradient(
+      mouseWorldPos.x,
+      mouseWorldPos.y,
+      25,
+      mouseWorldPos.x,
+      mouseWorldPos.y,
+      lanternRadius
+    );
+    // Erase the mist in the lantern circle with soft radial falloff
+    lanternGrad.addColorStop(0, 'rgba(0, 0, 0, 0.98)');
+    lanternGrad.addColorStop(0.55, 'rgba(0, 0, 0, 0.75)');
+    lanternGrad.addColorStop(0.85, 'rgba(0, 0, 0, 0.35)');
+    lanternGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+
+    fogCtx.beginPath();
+    fogCtx.arc(mouseWorldPos.x, mouseWorldPos.y, lanternRadius, 0, Math.PI * 2);
+    fogCtx.fillStyle = lanternGrad;
+    fogCtx.fill();
+  }
+
+  // 4. Render carved mist onto main canvas in screen coordinates
+  ctx.save();
+  if (typeof ctx.setTransform === 'function') {
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+  }
+  ctx.drawImage(fogCanvas, 0, 0);
+  ctx.restore();
 }
 
 /**
