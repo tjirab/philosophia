@@ -1,0 +1,120 @@
+[
+  {
+    "id": "g-e-m-anscombe--modern-moral-philosophy",
+    "source": "g-e-m-anscombe",
+    "target": "modern-moral-philosophy",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Inaugurated contemporary virtue ethics",
+    "description": "In 'Modern Moral Philosophy' (1958), Anscombe proposed that moral obligation concepts ('ought') are psychologically incoherent without divine law, demanding a return to Aristotelian virtue and human flourishing.",
+    "historicalContext": "Published in Philosophy in 1958 during a period dominated by Oxford emotivism (Ayer) and prescriptivism (Hare).",
+    "dialecticalTension": "Challenged the entire modern moral consensus by uniting Wittgensteinian linguistic philosophy with classical Aristotelian ethics.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "G. E. M. Anscombe",
+        "work": "Modern Moral Philosophy",
+        "sectionOrPage": "Philosophy 33 (124): 1–19",
+        "year": 1958,
+        "quote": "The concepts of obligation, and duty—moral obligation and moral duty, that is to say—and of what is morally right and wrong, ought to be jettisoned if this is psychologically possible.",
+        "url": "https://plato.stanford.edu/entries/anscombe/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Julia Driver",
+        "work": "Gertrude Elizabeth Margaret Anscombe",
+        "url": "https://plato.stanford.edu/entries/anscombe/"
+      }
+    ]
+  },
+  {
+    "id": "ludwig-wittgenstein--g-e-m-anscombe",
+    "source": "ludwig-wittgenstein",
+    "target": "g-e-m-anscombe",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Mentored Anscombe and shaped her philosophy of action and language",
+    "description": "Anscombe was Wittgenstein's most devoted student, his chosen translator of Philosophical Investigations, and applied his method of philosophical psychology to intentional action.",
+    "historicalContext": "Anscombe attended Wittgenstein's Cambridge seminars throughout the 1940s and lived in his house during his final illness.",
+    "dialecticalTension": "Applied Wittgenstein's therapeutic critique of Cartesian private mental states to the concept of intentional action.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "G. E. M. Anscombe",
+        "work": "Intention",
+        "sectionOrPage": "§1–10",
+        "year": 1957,
+        "quote": "What is the characteristic of intentional actions? It is that they are actions to which a certain sense of the question 'Why?' is given application.",
+        "url": "https://en.wikipedia.org/wiki/Intention_(book)"
+      },
+      {
+        "citationType": "sep",
+        "author": "Julia Driver",
+        "work": "Gertrude Elizabeth Margaret Anscombe",
+        "url": "https://plato.stanford.edu/entries/anscombe/"
+      }
+    ]
+  },
+  {
+    "id": "aristotle--g-e-m-anscombe",
+    "source": "aristotle",
+    "target": "g-e-m-anscombe",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Synthesized Aristotelian virtue ethics with analytic linguistic philosophy",
+    "description": "Anscombe brought Aristotelian teleology, eudaimonia, and moral psychology back into the center of 20th-century analytic philosophy.",
+    "historicalContext": "Replaced legalistic Kantian and utilitarian ethics with the Aristotelian question: what traits of character constitute human flourishing?",
+    "dialecticalTension": "Demonstrated that Aristotelian virtue ethics provides a rigorous naturalistic basis for ethics without theological dogma.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "G. E. M. Anscombe",
+        "work": "Modern Moral Philosophy",
+        "sectionOrPage": "p. 15",
+        "year": 1958,
+        "quote": "Aristotle does not have a concept of moral obligation in our modern sense. For him, virtue is a quality that enables a human being to function well qua human.",
+        "url": "https://plato.stanford.edu/entries/anscombe/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Rosalind Hursthouse",
+        "work": "On Virtue Ethics",
+        "year": 1999,
+        "sectionOrPage": "pp. 1–24"
+      }
+    ]
+  },
+  {
+    "id": "g-e-m-anscombe--philippa-foot",
+    "source": "g-e-m-anscombe",
+    "target": "philippa-foot",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Collaborated to launch the Oxford virtue ethics renaissance",
+    "description": "Anscombe and Foot worked closely at Oxford to dismantle non-cognitivism and reconstruct normative ethics around natural virtues and the doctrine of double effect.",
+    "historicalContext": "The wartime and post-war Oxford circle of Anscombe, Foot, Murdoch, and Midgley formed the epicenter of late-20th-century ethical realism.",
+    "dialecticalTension": "United virtue ethics with rigorous normative dilemmas and critiques of consequentialism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Philippa Foot",
+        "work": "Virtues and Vices",
+        "sectionOrPage": "Introduction, pp. xi–xiv",
+        "year": 1978,
+        "quote": "Anyone who has had the good fortune to discuss philosophical problems with Elizabeth Anscombe will know how deep is my debt to her.",
+        "url": "https://plato.stanford.edu/entries/philippa-foot/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Clare Mac Cumhaill and Rachael Wiseman",
+        "work": "Metaphysical Animals: How Four Women Brought Philosophy Back to Life",
+        "year": 2022,
+        "sectionOrPage": "Ch. 8–10"
+      }
+    ]
+  }
+]

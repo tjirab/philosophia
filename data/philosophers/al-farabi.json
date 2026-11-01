@@ -1,0 +1,38 @@
+{
+  "id": "al-farabi",
+  "name": "Al-Farabi",
+  "birthYear": 872,
+  "deathYear": 950,
+  "eraId": "medieval",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Known in the Islamic philosophical tradition as 'The Second Teacher' (after Aristotle), Al-Farabi pioneered Islamic political philosophy, formal logic, and metaphysics.",
+  "centralQuestion": "How can philosophy and prophetic revelation cooperate to establish the virtuous city and lead humanity toward true happiness?",
+  "keyWorks": [
+    {
+      "title": "The Virtuous City (Al-Madina al-Fadila)",
+      "year": "942",
+      "url": "https://en.wikipedia.org/wiki/Al-Farabi#Works",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Al-Farabi#Works",
+      "description": "Political treatise synthesizing Plato's Republic and Aristotle's Politics within an Islamic cosmological framework."
+    },
+    {
+      "title": "The Book of Letters (Kitab al-Huruf)",
+      "year": "930",
+      "url": "https://en.wikipedia.org/wiki/Al-Farabi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Al-Farabi",
+      "description": "Foundational commentary on Aristotle's Metaphysics, linguistic philosophy, and ontology."
+    }
+  ],
+  "sepSlug": "al-farabi",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/al-farabi/",
+    "iep": "https://iep.utm.edu/al-farabi/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Al-Farabi"
+  },
+  "importanceScore": 92,
+  "imageUrl": "/portraits/al-farabi.jpg"
+}

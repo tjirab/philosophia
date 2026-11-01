@@ -98,6 +98,12 @@ const WIKI_TITLES = {
   'michel-de-montaigne': 'Michel_de_Montaigne',
   'blaise-pascal': 'Blaise_Pascal',
   'thomas-kuhn': 'Thomas_Kuhn',
+  'al-farabi': 'Al-Farabi',
+  'ibn-khaldun': 'Ibn_Khaldun',
+  'elisabeth-of-bohemia': 'Elisabeth_of_the_Palatinate',
+  'g-e-m-anscombe': 'G._E._M._Anscombe',
+  'philippa-foot': 'Philippa_Foot',
+  'frantz-fanon': 'Frantz_Fanon',
   // Psychology
   'wilhelm-wundt': 'Wilhelm_Wundt',
   'sigmund-freud': 'Sigmund_Freud',

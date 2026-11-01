@@ -1,0 +1,38 @@
+{
+  "id": "g-e-m-anscombe",
+  "name": "G. E. M. Anscombe",
+  "birthYear": 1919,
+  "deathYear": 2001,
+  "eraId": "twentieth-century",
+  "traditionId": "analytic",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Leading British analytic philosopher, student and literary executor of Ludwig Wittgenstein, who revitalized modern virtue ethics and the philosophy of action.",
+  "centralQuestion": "How can moral philosophy be intelligible without an underlying divine lawgiver, unless grounded in human flourishing and teleological virtues?",
+  "keyWorks": [
+    {
+      "title": "Modern Moral Philosophy",
+      "year": "1958",
+      "url": "https://en.wikipedia.org/wiki/Modern_Moral_Philosophy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Modern_Moral_Philosophy",
+      "description": "Epoch-making article inaugurating contemporary virtue ethics through critique of utilitarianism and Kantian deontology."
+    },
+    {
+      "title": "Intention",
+      "year": "1957",
+      "url": "https://en.wikipedia.org/wiki/Intention_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Intention_(book)",
+      "description": "Foundational monograph in modern action theory exploring intentional action, knowledge without observation, and practical reasoning."
+    }
+  ],
+  "sepSlug": "anscombe",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/anscombe/",
+    "iep": "https://iep.utm.edu/anscombe/",
+    "wikipedia": "https://en.wikipedia.org/wiki/G._E._M._Anscombe"
+  },
+  "importanceScore": 89,
+  "imageUrl": "/portraits/g-e-m-anscombe.jpg"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "elisabeth-of-bohemia",
+  "name": "Princess Elisabeth of Bohemia",
+  "birthYear": 1618,
+  "deathYear": 1680,
+  "eraId": "early-modern",
+  "traditionId": "rationalism",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Philosopher and sovereign princess of Herford, whose acute philosophical correspondence with René Descartes formulated the decisive mind-body interaction critique of Cartesian dualism.",
+  "centralQuestion": "How can the human soul, being an immaterial thinking substance, determine the movements of the bodily spirits to perform voluntary actions?",
+  "keyWorks": [
+    {
+      "title": "Correspondence with René Descartes (1643–1649)",
+      "year": "1643",
+      "url": "https://en.wikipedia.org/wiki/Elisabeth_of_the_Palatinate#Philosophical_correspondence",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Elisabeth_of_the_Palatinate#Philosophical_correspondence",
+      "description": "Celebrated dialectical exchange confronting Cartesian metaphysics with the physical problem of mental causation and moral psychology."
+    }
+  ],
+  "sepSlug": "elisabeth-bohemia",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/elisabeth-bohemia/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Elisabeth_of_the_Palatinate"
+  },
+  "importanceScore": 89,
+  "imageUrl": "/portraits/elisabeth-of-bohemia.jpg"
+}

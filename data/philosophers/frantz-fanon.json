@@ -1,0 +1,40 @@
+{
+  "id": "frantz-fanon",
+  "name": "Frantz Fanon",
+  "birthYear": 1925,
+  "deathYear": 1961,
+  "eraId": "twentieth-century",
+  "traditionId": "existentialism",
+  "domains": [
+    "philosophy",
+    "psychology",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Martinican psychiatrist, existential philosopher, and revolutionary theorist whose works established the foundations of post-colonial theory and the phenomenology of racial oppression.",
+  "centralQuestion": "How does colonial subjugation disfigure human consciousness, and by what psychological and dialectical struggle can colonized subjects liberate their humanity?",
+  "keyWorks": [
+    {
+      "title": "Black Skin, White Masks",
+      "year": "1952",
+      "url": "https://en.wikipedia.org/wiki/Black_Skin,_White_Masks",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Black_Skin,_White_Masks",
+      "description": "Existential psychoanalytic investigation into the psychic trauma, alienation, and internalization of racial inferiority under colonialism."
+    },
+    {
+      "title": "The Wretched of the Earth",
+      "year": "1961",
+      "url": "https://en.wikipedia.org/wiki/The_Wretched_of_the_Earth",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Wretched_of_the_Earth",
+      "description": "Classic treatise on the dialectics of anti-colonial revolution, systemic violence, and the creation of a new humanist consciousness."
+    }
+  ],
+  "sepSlug": "frantz-fanon",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/frantz-fanon/",
+    "iep": "https://iep.utm.edu/fanon/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Frantz_Fanon"
+  },
+  "importanceScore": 90,
+  "imageUrl": "/portraits/frantz-fanon.jpg"
+}

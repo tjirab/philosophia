@@ -1,0 +1,91 @@
+[
+  {
+    "id": "philippa-foot--trolley-problem",
+    "source": "philippa-foot",
+    "target": "trolley-problem",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the classic Trolley Problem thought experiment",
+    "description": "Philippa Foot formulated the Trolley Problem in 1967 to illustrate the ethical asymmetry between positive duties to save lives and negative duties to avoid injuring others.",
+    "historicalContext": "Introduced in her essay 'The Problem of Abortion and the Doctrine of the Double Effect' published in Oxford Review (1967).",
+    "dialecticalTension": "Pits pure consequentialist utility maximization against deontological prohibitions on directly causing harm.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Philippa Foot",
+        "work": "The Problem of Abortion and the Doctrine of the Double Effect",
+        "sectionOrPage": "Oxford Review 5: 5–15",
+        "year": 1967,
+        "quote": "Suppose that a judge or magistrate is faced with rioters demanding that a culprit be found for a certain crime... or suppose that a driver of a runaway tram can only steer from one narrow track on to another.",
+        "url": "https://en.wikipedia.org/wiki/Trolley_problem"
+      },
+      {
+        "citationType": "sep",
+        "author": "Judith Jarvis Thomson",
+        "work": "The Trolley Problem",
+        "year": 1985,
+        "sectionOrPage": "Yale Law Journal 94 (6): 1395–1415",
+        "url": "https://plato.stanford.edu/entries/doing-allowing/"
+      }
+    ]
+  },
+  {
+    "id": "thomas-aquinas--philippa-foot",
+    "source": "thomas-aquinas",
+    "target": "philippa-foot",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Secularized and modernized the Thomistic Doctrine of Double Effect",
+    "description": "Foot drew directly upon Thomas Aquinas's Summa Theologiae discussion of self-defense to formulate her secular defense of double effect in medical ethics and moral dilemmas.",
+    "historicalContext": "Aquinas's distinction between intended consequences and merely foreseen side effects formed the core of Foot's ethical investigation.",
+    "dialecticalTension": "Demonstrated that Thomistic moral distinctions can be defended through secular moral psychology and virtue theory.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Philippa Foot",
+        "work": "The Problem of Abortion and the Doctrine of the Double Effect",
+        "sectionOrPage": "p. 5",
+        "year": 1967,
+        "quote": "The words 'double effect' refer to the two effects that an action may produce: the one aimed at, and the other foreseen but in no way desired.",
+        "url": "https://plato.stanford.edu/entries/double-effect/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Alison McIntyre",
+        "work": "Doctrine of Double Effect",
+        "url": "https://plato.stanford.edu/entries/double-effect/"
+      }
+    ]
+  },
+  {
+    "id": "philippa-foot--john-rawls",
+    "source": "philippa-foot",
+    "target": "john-rawls",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Influenced normative methodology and reflective equilibrium",
+    "description": "Foot's rigorous counterexample methodology and critique of utilitarian aggregative calculations influenced Rawls' formulation of moral intuitions and priority of justice.",
+    "historicalContext": "Rawls engaged closely with Oxford moral debates during the 1960s while drafting A Theory of Justice (1971).",
+    "dialecticalTension": "Both thinkers rejected utilitarian aggregation in favor of structural principles protecting the individual from being sacrificed for the collective.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Thomas Scanlon",
+        "work": "What We Owe to Each Other",
+        "year": 1998,
+        "sectionOrPage": "pp. 11–26",
+        "quote": "Foot's challenges to utilitarianism helped clarify the necessity of non-aggregative principles of rightness that Rawls subsequently systemized.",
+        "url": "https://plato.stanford.edu/entries/rawls/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Leif Wenar",
+        "work": "John Rawls",
+        "url": "https://plato.stanford.edu/entries/rawls/"
+      }
+    ]
+  }
+]

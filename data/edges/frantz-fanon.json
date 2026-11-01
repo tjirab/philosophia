@@ -1,0 +1,149 @@
+[
+  {
+    "id": "frantz-fanon--decolonial-phenomenology",
+    "source": "frantz-fanon",
+    "target": "decolonial-phenomenology",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the decolonial phenomenology of racial subjugation",
+    "description": "Fanon developed decolonial phenomenology to expose how systemic colonial racism shatters the corporeal schema of the colonized, creating an epidermal racial schema of alienation.",
+    "historicalContext": "Articulated in Black Skin, White Masks (1952) while Fanon studied psychiatry at Lyon, drawing upon clinical case studies and lived existential experience.",
+    "dialecticalTension": "Exposes the Eurocentric limitation of classical phenomenology by showing that bodily being-in-the-world is racially stratified under colonialism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Frantz Fanon",
+        "work": "Black Skin, White Masks",
+        "sectionOrPage": "Ch. 5 (The Lived Experience of the Black Man)",
+        "year": 1952,
+        "quote": "In the white world, the man of color encounters difficulties in the development of his bodily schema... Below the corporeal schema I had sketched a historico-racial schema.",
+        "url": "https://plato.stanford.edu/entries/frantz-fanon/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Lewis R. Gordon",
+        "work": "Fanon and the Crisis of European Man: An Essay on Philosophy and the Human Sciences",
+        "year": 1995,
+        "sectionOrPage": "pp. 11–48"
+      }
+    ]
+  },
+  {
+    "id": "jean-paul-sartre--frantz-fanon",
+    "source": "jean-paul-sartre",
+    "target": "frantz-fanon",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Engaged with Sartrean existentialism and the dialectic of anti-colonial struggle",
+    "description": "Fanon utilized Sartre's phenomenology of the Look and Being and Nothingness, while Sartre famously composed the incendiary preface to Fanon's The Wretched of the Earth (1961).",
+    "historicalContext": "Met in Rome in 1961 for intense philosophical debates on existential freedom, Marxist historical stages, and revolutionary violence.",
+    "dialecticalTension": "Fanon critiqued Sartre's 'Black Orpheus' for reducing the Negritude movement to a mere transitional moment in a universal class dialectic.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jean-Paul Sartre",
+        "work": "Preface to Frantz Fanon's The Wretched of the Earth",
+        "year": 1961,
+        "quote": "The European has only been able to become a man through creating slaves and monsters... Fanon reveals the third phase: the native arms himself.",
+        "url": "https://en.wikipedia.org/wiki/The_Wretched_of_the_Earth"
+      },
+      {
+        "citationType": "sep",
+        "author": "Peter Hudis",
+        "work": "Frantz Fanon",
+        "url": "https://plato.stanford.edu/entries/frantz-fanon/"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--frantz-fanon",
+    "source": "sigmund-freud",
+    "target": "frantz-fanon",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Synthesized psychoanalysis with social and political critique",
+    "description": "Fanon applied psychoanalytic models of neurosis, projection, and the unconscious to diagnose the collective sociogenic pathologies produced by colonial domination.",
+    "historicalContext": "As chief of psychiatry at Blida-Joinville Hospital in Algeria, Fanon developed 'sociogeny'—the principle that psychic disorders can originate in oppressive social structures.",
+    "dialecticalTension": "Challenged Freud's individualist and purely ontogenetic psychoanalysis, arguing that colonial pathology is fundamentally sociogenic.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Frantz Fanon",
+        "work": "Black Skin, White Masks",
+        "sectionOrPage": "Introduction, p. 11",
+        "year": 1952,
+        "quote": "Beside phylogeny and ontogeny, there is sociogeny... society, unlike biochemical processes, does not escape human influence.",
+        "url": "https://plato.stanford.edu/entries/frantz-fanon/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "David Macey",
+        "work": "Frantz Fanon: A Biography",
+        "year": 2000,
+        "sectionOrPage": "pp. 156–198"
+      }
+    ]
+  },
+  {
+    "id": "w-e-b-du-bois--frantz-fanon",
+    "source": "w-e-b-du-bois",
+    "target": "frantz-fanon",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Expanded double consciousness into global anti-colonial revolution",
+    "description": "Fanon deepened Du Bois' concept of double consciousness and the Veil into an existential analysis of the psychological fracturing caused by white colonial supremacy.",
+    "historicalContext": "Du Bois and Fanon were key intellectual presences at the First Congress of Black Writers and Artists in Paris (1956).",
+    "dialecticalTension": "Transformed Du Bois' psychological and sociological color line into an internationalist revolutionary struggle.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Frantz Fanon",
+        "work": "Black Skin, White Masks",
+        "sectionOrPage": "Ch. 5",
+        "year": 1952,
+        "quote": "The black man has two dimensions. One with his fellows, the other with the white man... That this self-division is a direct result of colonialist subjugation is beyond question.",
+        "url": "https://plato.stanford.edu/entries/frantz-fanon/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Manning Marable",
+        "work": "W.E.B. Du Bois: Black Radical Democrat",
+        "year": 1986,
+        "sectionOrPage": "pp. 210–225"
+      }
+    ]
+  },
+  {
+    "id": "frantz-fanon--michel-foucault",
+    "source": "frantz-fanon",
+    "target": "michel-foucault",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Influenced theories of institutional discipline, biopolitics, and madness",
+    "description": "Fanon's institutional psychiatry at Blida-Joinville and analysis of colonial disciplinary power influenced French post-structuralist inquiries into madness, medicalization, and state violence.",
+    "historicalContext": "Foucault read Fanon during his early psychiatric research in the 1950s and during the Algerian War, shaping his anti-institutional perspective.",
+    "dialecticalTension": "Connected colonial carceral techniques with domestic European disciplinary institutions.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Ann Laura Stoler",
+        "work": "Race and the Education of Desire: Foucault's History of Sexuality and the Colonial Order of Things",
+        "year": 1995,
+        "sectionOrPage": "pp. 55–94",
+        "quote": "Fanon's insights into the racialized anatomy of power anticipated Foucault's later formulation of biopower.",
+        "url": "https://plato.stanford.edu/entries/foucault/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Gary Gutting",
+        "work": "Michel Foucault",
+        "url": "https://plato.stanford.edu/entries/foucault/"
+      }
+    ]
+  }
+]

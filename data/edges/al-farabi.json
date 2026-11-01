@@ -1,0 +1,118 @@
+[
+  {
+    "id": "al-farabi--the-virtuous-city",
+    "source": "al-farabi",
+    "target": "the-virtuous-city",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the political philosophy of the Virtuous City",
+    "description": "Al-Farabi formalized the Virtuous City (Al-Madina al-Fadila) as a political organism wherein human happiness is attained through philosophical rule and prophetic illumination.",
+    "historicalContext": "Composed in Baghdad and Damascus during the 10th century amidst the Abbasid renaissance, applying Greek political theory to Islamic governance.",
+    "dialecticalTension": "Synthesizes Platonic utopian republicanism with Islamic prophetic leadership and active intellect cosmology.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Al-Farabi",
+        "work": "Principles of the Opinions of the Citizens of the Virtuous City",
+        "sectionOrPage": "Ch. 15, §1–4",
+        "year": 942,
+        "quote": "The city in which people aim through association at that which leads to real happiness is the Virtuous City.",
+        "url": "https://en.wikipedia.org/wiki/Al-Farabi#Works"
+      },
+      {
+        "citationType": "sep",
+        "author": "Therese-Anne Druart",
+        "work": "Al-Farabi's Philosophy of Society and Religion",
+        "url": "https://plato.stanford.edu/entries/al-farabi-soc-rel/"
+      }
+    ]
+  },
+  {
+    "id": "aristotle--al-farabi",
+    "source": "aristotle",
+    "target": "al-farabi",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Transmitted and systematized Aristotelian logic and metaphysics",
+    "description": "Al-Farabi earned the title 'The Second Teacher' by commenting extensively on Aristotle's Organon and reconciling Aristotelian teleology with Islamic monotheism.",
+    "historicalContext": "The Greco-Arabic translation movement centered in Baghdad provided Farabi with access to the full Aristotelian corpus.",
+    "dialecticalTension": "Reconciled Aristotle's eternal cosmos and prime mover with theological creation and celestial hierarchy.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Al-Farabi",
+        "work": "Kitab al-Huruf (The Book of Letters)",
+        "sectionOrPage": "Bk. II, §105–118",
+        "year": 930,
+        "quote": "Logic is an instrument whose function is to direct the intellect so that it may attain truth in all intelligibles.",
+        "url": "https://plato.stanford.edu/entries/al-farabi/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Muhsin Mahdi",
+        "work": "Alfarabi and the Foundation of Islamic Political Philosophy",
+        "year": 2001,
+        "sectionOrPage": "pp. 11–34"
+      }
+    ]
+  },
+  {
+    "id": "al-farabi--avicenna",
+    "source": "al-farabi",
+    "target": "avicenna",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Provided the metaphysical key to Aristotle for Avicenna",
+    "description": "Avicenna explicitly credited Al-Farabi's treatise 'On the Aims of Aristotle's Metaphysics' with enabling him to finally comprehend Aristotelian metaphysics after forty uncomprehending readings.",
+    "historicalContext": "Avicenna recounts in his autobiography that he was on the verge of despairing over the Metaphysics until he purchased Farabi's treatise for three dirhams at a book market.",
+    "dialecticalTension": "Provided the essential distinction between essence and existence that became foundational for Avicennian ontology.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Avicenna (Ibn Sina)",
+        "work": "The Life of Ibn Sina (Sirat al-Shaykh al-Ra'is)",
+        "sectionOrPage": "Autobiography, §3",
+        "year": 1030,
+        "quote": "I read the Metaphysics forty times until I knew it by heart, but could not understand its aim until I found Farabi's On the Aims of the Metaphysics. Thereupon its meaning became transparent to me.",
+        "url": "https://plato.stanford.edu/entries/ibn-sina/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Dimitri Gutas",
+        "work": "Ibn Sina [Avicenna]",
+        "url": "https://plato.stanford.edu/entries/ibn-sina/"
+      }
+    ]
+  },
+  {
+    "id": "al-farabi--moses-maimonides",
+    "source": "al-farabi",
+    "target": "moses-maimonides",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Guided Maimonides' philosophical logic and political theology",
+    "description": "Maimonides singled out Al-Farabi's treatises as flawless works of logic and wisdom, using his political and prophetic theories in the Guide for the Perplexed.",
+    "historicalContext": "In his letter to Samuel ibn Tibbon (1199), Maimonides praised Al-Farabi above all other Islamic Aristotelians.",
+    "dialecticalTension": "Harmonized prophetic legislation with Aristotelian rational perfectionism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Moses Maimonides",
+        "work": "Letter to Samuel Ibn Tibbon",
+        "year": 1199,
+        "quote": "Do not occupy yourself with books on logic except for what was composed by the wise Abu Nasr al-Farabi; all that he composed is pure flour.",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Kenneth Seeskin",
+        "work": "Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      }
+    ]
+  }
+]

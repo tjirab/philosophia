@@ -429,6 +429,87 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const wollstonecraftToMill = findInfluencePath('mary-wollstonecraft', 'john-stuart-mill', edgesData as any);
     expect(wollstonecraftToMill.found).toBe(true);
+
+    // Islamic Golden Age: Aristotle -> Al-Farabi -> Avicenna & Maimonides
+    const aristotleToFarabi = findInfluencePath('aristotle', 'al-farabi', edgesData as any);
+    expect(aristotleToFarabi.found).toBe(true);
+
+    const farabiToAvicenna = findInfluencePath('al-farabi', 'avicenna', edgesData as any);
+    expect(farabiToAvicenna.found).toBe(true);
+
+    const farabiToMaimonides = findInfluencePath('al-farabi', 'moses-maimonides', edgesData as any);
+    expect(farabiToMaimonides.found).toBe(true);
+
+    const farabiToVirtuous = findInfluencePath('al-farabi', 'the-virtuous-city', edgesData as any);
+    expect(farabiToVirtuous.found).toBe(true);
+
+    // Ibn Khaldun: Aristotle / Averroes -> Ibn Khaldun -> Comte & Marx
+    const aristotleToKhaldun = findInfluencePath('aristotle', 'ibn-khaldun', edgesData as any);
+    expect(aristotleToKhaldun.found).toBe(true);
+
+    const averroesToKhaldun = findInfluencePath('averroes', 'ibn-khaldun', edgesData as any);
+    expect(averroesToKhaldun.found).toBe(true);
+
+    const khaldunToComte = findInfluencePath('ibn-khaldun', 'auguste-comte', edgesData as any);
+    expect(khaldunToComte.found).toBe(true);
+
+    const khaldunToMarx = findInfluencePath('ibn-khaldun', 'karl-marx', edgesData as any);
+    expect(khaldunToMarx.found).toBe(true);
+
+    const khaldunToAsabiyyah = findInfluencePath('ibn-khaldun', 'asabiyyah', edgesData as any);
+    expect(khaldunToAsabiyyah.found).toBe(true);
+
+    // Elisabeth of Bohemia: Descartes <-> Elisabeth -> Spinoza
+    const descToElisabeth = findInfluencePath('rene-descartes', 'elisabeth-of-bohemia', edgesData as any);
+    expect(descToElisabeth.found).toBe(true);
+
+    const elisabethToDesc = findInfluencePath('elisabeth-of-bohemia', 'rene-descartes', edgesData as any);
+    expect(elisabethToDesc.found).toBe(true);
+
+    const elisabethToSpinoza = findInfluencePath('elisabeth-of-bohemia', 'baruch-spinoza', edgesData as any);
+    expect(elisabethToSpinoza.found).toBe(true);
+
+    const elisabethToMindBody = findInfluencePath('elisabeth-of-bohemia', 'mind-body-interaction-problem', edgesData as any);
+    expect(elisabethToMindBody.found).toBe(true);
+
+    // Anscombe & Foot: Aristotle / Wittgenstein -> Anscombe -> Foot -> Rawls
+    const wittToFoot = findInfluencePath('ludwig-wittgenstein', 'philippa-foot', edgesData as any);
+    expect(wittToFoot.found).toBe(true);
+    expect(wittToFoot.nodes).toContain('g-e-m-anscombe');
+
+    const aristotleToAnscombe = findInfluencePath('aristotle', 'g-e-m-anscombe', edgesData as any);
+    expect(aristotleToAnscombe.found).toBe(true);
+
+    const anscombeToFoot = findInfluencePath('g-e-m-anscombe', 'philippa-foot', edgesData as any);
+    expect(anscombeToFoot.found).toBe(true);
+
+    const aquinasToFoot = findInfluencePath('thomas-aquinas', 'philippa-foot', edgesData as any);
+    expect(aquinasToFoot.found).toBe(true);
+
+    const footToRawls = findInfluencePath('philippa-foot', 'john-rawls', edgesData as any);
+    expect(footToRawls.found).toBe(true);
+
+    const anscombeToModern = findInfluencePath('g-e-m-anscombe', 'modern-moral-philosophy', edgesData as any);
+    expect(anscombeToModern.found).toBe(true);
+
+    const footToTrolley = findInfluencePath('philippa-foot', 'trolley-problem', edgesData as any);
+    expect(footToTrolley.found).toBe(true);
+
+    // Frantz Fanon: Sartre / Freud / Du Bois -> Fanon -> Foucault
+    const sartreToFanon = findInfluencePath('jean-paul-sartre', 'frantz-fanon', edgesData as any);
+    expect(sartreToFanon.found).toBe(true);
+
+    const freudToFanon = findInfluencePath('sigmund-freud', 'frantz-fanon', edgesData as any);
+    expect(freudToFanon.found).toBe(true);
+
+    const duBoisToFanon = findInfluencePath('w-e-b-du-bois', 'frantz-fanon', edgesData as any);
+    expect(duBoisToFanon.found).toBe(true);
+
+    const fanonToFoucault = findInfluencePath('frantz-fanon', 'michel-foucault', edgesData as any);
+    expect(fanonToFoucault.found).toBe(true);
+
+    const fanonToPhenomenology = findInfluencePath('frantz-fanon', 'decolonial-phenomenology', edgesData as any);
+    expect(fanonToPhenomenology.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {
