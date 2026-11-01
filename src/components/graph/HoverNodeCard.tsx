@@ -106,10 +106,15 @@ export function HoverNodeCard({ node, position }: HoverNodeCardProps) {
               </span>
               <span
                 className="flex items-center gap-1 text-[var(--gold-accent)] font-semibold"
-                title="Degree Centrality: Historical influence density based on total incoming and outgoing connections"
+                title={node.scoreBreakdown ? `${node.scoreBreakdown.methodology.toUpperCase()}: ${node.importanceScore}/100 (Rank #${node.scoreBreakdown.rank} of ${node.scoreBreakdown.totalNodes})` : `Centrality: ${node.importanceScore}/100`}
               >
                 <Compass className="w-3 h-3" />
-                {phil.importanceScore}/100
+                {node.importanceScore}/100
+                {node.scoreBreakdown && (
+                  <span className="text-[9px] text-[var(--text-dim)] font-mono">
+                    (#{node.scoreBreakdown.rank})
+                  </span>
+                )}
               </span>
             </div>
           )}
@@ -128,9 +133,18 @@ export function HoverNodeCard({ node, position }: HoverNodeCardProps) {
       {/* Centrality & Exploration Explanation Pill */}
       {isPhilosopher && (
         <div className="p-2 rounded-lg bg-[var(--bg-subtle)] border border-[var(--border-main)] text-[10px] text-[var(--text-dim)] leading-tight mb-2 space-y-1">
-          <div>
-            <strong className="text-[var(--gold-accent)]">Centrality {phil?.importanceScore}/100:</strong> Measures historical influence density (mentors, disciples, refutations & syntheses).
-          </div>
+          {node.scoreBreakdown ? (
+            <div>
+              <strong className="text-[var(--gold-accent)] capitalize">
+                {node.scoreBreakdown.methodology} Lens ({node.importanceScore}/100, Rank #{node.scoreBreakdown.rank}):
+              </strong>{' '}
+              {node.scoreBreakdown.components.map((c) => `${c.label}: ${c.value}`).join(' • ')}
+            </div>
+          ) : (
+            <div>
+              <strong className="text-[var(--gold-accent)]">Centrality {phil?.importanceScore}/100:</strong> Measures historical influence density (mentors, disciples, refutations & syntheses).
+            </div>
+          )}
           {node.exploration && (
             <div>
               <strong className="text-[var(--text-main)]">Research Horizon ({node.exploration.score}/100):</strong> {node.exploration.tagline}

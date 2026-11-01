@@ -21,8 +21,11 @@ import {
   Branch,
   ExplorationState,
   ExplorationMeta,
+  ScoringMethodology,
+  NodeScoreBreakdown,
 } from '../types';
 import { attachExplorationMetadata, computeNodeExploration } from './exploration-service';
+import { applyScoringMethodology } from './scoring-engine';
 
 export const eras: Era[] = erasData as Era[];
 export const traditions: Tradition[] = traditionsData as Tradition[];
@@ -54,6 +57,7 @@ export interface GraphFilterOptions {
   includeConcepts?: boolean;
   searchQuery?: string;
   explorationFilter?: ExplorationState | 'all';
+  methodology?: ScoringMethodology;
 }
 
 export function getVisualGraph(options: GraphFilterOptions = {}): {
@@ -71,6 +75,7 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     includeConcepts = true,
     searchQuery = '',
     explorationFilter = 'all',
+    methodology = 'canonical',
   } = options;
 
   const traditionMap = new Map(traditions.map((t) => [t.id, t]));
@@ -250,6 +255,9 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
   // Attach hybrid exploration metadata to all nodes
   let finalNodes = attachExplorationMetadata(nodes, links);
 
+  // Apply active scoring methodology (canonical, topology PageRank, or dialectical friction)
+  finalNodes = applyScoringMethodology(finalNodes, links, methodology);
+
   // If filtered by exploration state, filter finalNodes and prune links
   if (explorationFilter !== 'all') {
     finalNodes = finalNodes.filter((n) => n.exploration?.state === explorationFilter);
@@ -265,7 +273,7 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
   return { nodes: finalNodes, links };
 }
 
-export function getNodeDetails(nodeId: string): {
+export function getNodeDetails(nodeId: string, methodology: ScoringMethodology = 'canonical'): {
   node: Philosopher | Concept | null;
   type: 'philosopher' | 'concept' | null;
   predecessors: Array<{ node: Philosopher | Concept; edge: Edge }>;
@@ -274,6 +282,7 @@ export function getNodeDetails(nodeId: string): {
   era?: Era;
   tradition?: Tradition;
   exploration?: ExplorationMeta;
+  scoreBreakdown?: NodeScoreBreakdown;
 } {
   const phil = philosophers.find((p) => p.id === nodeId);
   const conc = concepts.find((c) => c.id === nodeId);
@@ -335,6 +344,33 @@ export function getNodeDetails(nodeId: string): {
     critiqueCount
   );
 
+  // Fast computation of score breakdown for this node
+  const allNodes: VisualNode[] = [
+    ...philosophers.map((p) => ({
+      id: p.id,
+      name: p.name,
+      type: 'philosopher' as const,
+      eraId: p.eraId,
+      importanceScore: p.importanceScore,
+      color: '#3b82f6',
+      summary: p.shortBio,
+      data: p,
+    })),
+    ...concepts.map((c) => ({
+      id: c.id,
+      name: c.title || (c as any).name || c.id,
+      type: 'concept' as const,
+      eraId: c.eraId,
+      importanceScore: 50,
+      color: '#94a3b8',
+      summary: c.summary || (c as any).description || '',
+      data: c,
+    })),
+  ];
+  const scoredNodes = applyScoringMethodology(allNodes, edges, methodology);
+  const matched = scoredNodes.find((n) => n.id === nodeId);
+  const scoreBreakdown = matched?.scoreBreakdown;
+
   return {
     node: targetNode,
     type: nodeType,
@@ -344,6 +380,7 @@ export function getNodeDetails(nodeId: string): {
     era,
     tradition,
     exploration,
+    scoreBreakdown,
   };
 }
 

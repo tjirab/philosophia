@@ -84,6 +84,61 @@ export type SociologyBranch =
 
 export type Branch = PhilosophyBranch | PsychologyBranch | SociologyBranch;
 
+export type ScoringMethodology = 'canonical' | 'topology' | 'friction';
+
+export interface MethodologyMeta {
+  id: ScoringMethodology;
+  name: string;
+  shortLabel: string;
+  icon: string;
+  tagline: string;
+  description: string;
+  formula: string;
+}
+
+export const METHODOLOGY_CONFIG: Record<ScoringMethodology, MethodologyMeta> = {
+  canonical: {
+    id: 'canonical',
+    name: 'Canonical Consensus',
+    shortLabel: 'Canonical',
+    icon: '🏛️',
+    tagline: 'Traditional textbook and Stanford Encyclopedia historical stature.',
+    description: 'Human-curated consensus based on centuries of secondary literature, primary treatises, and academic prominence.',
+    formula: 'Historical canon weight + primary texts + encyclopedic coverage',
+  },
+  topology: {
+    id: 'topology',
+    name: 'Network Topology',
+    shortLabel: 'PageRank',
+    icon: '🕸️',
+    tagline: 'Pure mathematical centrality (directed PageRank and influence conduits).',
+    description: 'Algorithmic centrality computed live from the directed knowledge graph, revealing structural linchpins and forgotten conduits regardless of cultural fame.',
+    formula: 'Directed PageRank (d=0.85, 20 iterations) + degree centrality',
+  },
+  friction: {
+    id: 'friction',
+    name: 'Dialectical Controversy',
+    shortLabel: 'Controversy',
+    icon: '⚔️',
+    tagline: 'Density of philosophical breaks, rebuttals, and paradigm fractures.',
+    description: 'Calculates the intensity of intellectual debate provoked by each thinker—measuring who shattered consensus and spawned opposing traditions.',
+    formula: '(Critique edges × 2 + Synthesis edges) / total connections',
+  },
+};
+
+export interface NodeScoreBreakdown {
+  methodology: ScoringMethodology;
+  score: number; // 0 to 100
+  rank: number;
+  totalNodes: number;
+  percentile: number;
+  components: {
+    label: string;
+    value: string | number;
+    weight?: string;
+  }[];
+}
+
 export type ExplorationState = 'citadel' | 'frontier' | 'emerging' | 'uncharted';
 
 export interface ExplorationMeta {
@@ -299,6 +354,8 @@ export interface VisualNode {
   domains?: DomainId[];
   isInterdisciplinary?: boolean;
   exploration?: ExplorationMeta;
+  methodology?: ScoringMethodology;
+  scoreBreakdown?: NodeScoreBreakdown;
   data: Philosopher | Concept;
   // Graph engine coordinates
   x?: number;

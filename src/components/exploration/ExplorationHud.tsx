@@ -17,6 +17,8 @@ import {
   ExplorationState,
   VisualNode,
   BranchExplorationProfile,
+  ScoringMethodology,
+  METHODOLOGY_CONFIG,
 } from '../../lib/types';
 import {
   getExplorationDistributionStats,
@@ -32,6 +34,8 @@ interface ExplorationHudProps {
   explorationFilter: ExplorationState | 'all';
   onSelectExplorationFilter: (filter: ExplorationState | 'all') => void;
   onSelectBranch?: (branch: any) => void;
+  methodology?: ScoringMethodology;
+  onSelectMethodology?: (methodology: ScoringMethodology) => void;
 }
 
 export function ExplorationHud({
@@ -41,17 +45,23 @@ export function ExplorationHud({
   explorationFilter,
   onSelectExplorationFilter,
   onSelectBranch,
+  methodology = 'canonical',
+  onSelectMethodology,
 }: ExplorationHudProps) {
   const [isAlmanacOpen, setIsAlmanacOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
+  const [isMethodologyOpen, setIsMethodologyOpen] = useState(false);
   const almanacRef = useRef<HTMLDivElement>(null);
   const helpRef = useRef<HTMLDivElement>(null);
+  const methodologyRef = useRef<HTMLDivElement>(null);
 
   useClickOutside(almanacRef, () => setIsAlmanacOpen(false), isAlmanacOpen);
   useClickOutside(helpRef, () => setIsHelpOpen(false), isHelpOpen);
+  useClickOutside(methodologyRef, () => setIsMethodologyOpen(false), isMethodologyOpen);
 
   const stats = getExplorationDistributionStats(nodes);
   const branchProfiles = getBranchExplorationProfiles();
+  const currentMethodology = METHODOLOGY_CONFIG[methodology] || METHODOLOGY_CONFIG.canonical;
 
   return (
     <>
@@ -152,6 +162,65 @@ export function ExplorationHud({
               <BookOpen className="w-3.5 h-3.5" />
               <span>Field Almanac</span>
             </button>
+
+            {/* Methodology Switcher Dropdown */}
+            {onSelectMethodology && (
+              <div className="relative font-serif" ref={methodologyRef}>
+                <button
+                  onClick={() => setIsMethodologyOpen(!isMethodologyOpen)}
+                  className="flex items-center gap-1.5 px-2.5 py-1 text-[var(--text-main)] hover:text-[var(--gold-accent)] hover:bg-[var(--bg-hover)] rounded-lg transition border border-[var(--border-main)] hover:border-[var(--gold-border)]"
+                  title="Switch Historiographical Methodology: Canonical Consensus, Network PageRank, or Dialectical Controversy"
+                >
+                  <span>{currentMethodology.icon}</span>
+                  <span className="font-semibold">{currentMethodology.shortLabel}</span>
+                  <ChevronDown className="w-3 h-3 text-[var(--text-dim)]" />
+                </button>
+
+                {isMethodologyOpen && (
+                  <div className="absolute top-full right-0 mt-2 z-50 w-80 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl shadow-2xl p-2.5 text-[var(--text-main)] font-serif backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150">
+                    <div className="text-[10px] font-semibold uppercase tracking-wider text-[var(--gold-accent)] px-2.5 py-1 mb-1.5 border-b border-[var(--border-main)]">
+                      Historiographical Methodology
+                    </div>
+                    {(Object.keys(METHODOLOGY_CONFIG) as ScoringMethodology[]).map((mId) => {
+                      const m = METHODOLOGY_CONFIG[mId];
+                      const isSelected = methodology === mId;
+                      return (
+                        <button
+                          key={mId}
+                          onClick={() => {
+                            onSelectMethodology(mId);
+                            setIsMethodologyOpen(false);
+                          }}
+                          className={`w-full text-left p-2.5 rounded-xl text-xs transition mb-1 flex items-start gap-2.5 ${
+                            isSelected
+                              ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] border border-[var(--gold-border)] font-semibold'
+                              : 'text-[var(--text-muted)] hover:bg-[var(--bg-hover)] hover:text-[var(--text-main)]'
+                          }`}
+                        >
+                          <span className="text-base shrink-0 mt-0.5">{m.icon}</span>
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center justify-between">
+                              <span className="font-bold text-[var(--text-main)]">{m.name}</span>
+                              {isSelected && (
+                                <span className="text-[10px] uppercase font-mono tracking-tight text-[var(--gold-accent)]">
+                                  Active
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-[11px] text-[var(--text-muted)] mt-0.5 leading-snug">
+                              {m.tagline}
+                            </p>
+                            <p className="text-[10px] text-[var(--text-dim)] font-mono mt-1">
+                              Formula: {m.formula}
+                            </p>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Info / Legend Button */}
             <button
