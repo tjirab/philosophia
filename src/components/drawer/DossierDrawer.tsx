@@ -17,7 +17,7 @@ import {
   GitPullRequest,
 } from 'lucide-react';
 import { getNodeDetails } from '../../lib/graph/graph-service';
-import { Philosopher, Concept, Edge, KeyWork, getEdgeTypeConfig } from '../../lib/types';
+import { Philosopher, Concept, Edge, KeyWork, ScoringMethodology, METHODOLOGY_CONFIG, getEdgeTypeConfig } from '../../lib/types';
 import { AudioPlayer } from '../audio/AudioPlayer';
 import { getAssetUrl } from '../../lib/assets';
 
@@ -28,6 +28,7 @@ interface DossierDrawerProps {
   onSelectEdge?: (edgeId: string) => void;
   onTracePath: (startId: string) => void;
   onOpenSuggestion?: (nodeId: string) => void;
+  methodology?: ScoringMethodology;
 }
 
 export function DossierDrawer({
@@ -37,6 +38,7 @@ export function DossierDrawer({
   onSelectEdge,
   onTracePath,
   onOpenSuggestion,
+  methodology = 'canonical',
 }: DossierDrawerProps) {
   const [activeSection, setActiveSection] = useState<string>('section-synopsis');
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -48,7 +50,7 @@ export function DossierDrawer({
     setImgError(false);
   }, [selectedNodeId]);
 
-  const details = selectedNodeId ? getNodeDetails(selectedNodeId) : null;
+  const details = selectedNodeId ? getNodeDetails(selectedNodeId, methodology) : null;
   const isPhilosopher = details?.type === 'philosopher';
   const phil = isPhilosopher ? (details?.node as Philosopher) : null;
   const conc = !isPhilosopher ? (details?.node as Concept) : null;
@@ -226,20 +228,53 @@ export function DossierDrawer({
                 <div className="relative group/centrality flex items-center gap-1.5 cursor-help">
                   <Compass className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
                   <span className="font-semibold text-[var(--gold-accent)]">
-                    Centrality: {phil.importanceScore}/100
+                    {details?.scoreBreakdown ? (
+                      <>
+                        <span className="capitalize">{details.scoreBreakdown.methodology}</span>: {details.scoreBreakdown.score}/100
+                        <span className="text-[10px] text-[var(--text-dim)] font-mono ml-1">
+                          (#{details.scoreBreakdown.rank})
+                        </span>
+                      </>
+                    ) : (
+                      `Centrality: ${phil.importanceScore}/100`
+                    )}
                   </span>
                   <span className="text-[10px] text-[var(--text-dim)] font-mono border border-[var(--border-main)] rounded px-1">
                     ?
                   </span>
 
                   {/* Tooltip Popup */}
-                  <div className="absolute left-0 top-full mt-1.5 hidden group-hover/centrality:block z-50 w-72 p-3 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed">
-                    <div className="font-bold text-[var(--gold-accent)] mb-1 flex items-center gap-1">
-                      <span>✦ What is Degree Centrality?</span>
+                  <div className="absolute left-0 top-full mt-1.5 hidden group-hover/centrality:block z-50 w-80 p-3.5 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed">
+                    <div className="font-bold text-[var(--gold-accent)] mb-1 flex items-center justify-between">
+                      <span className="flex items-center gap-1">
+                        <span>✦</span>
+                        <span className="capitalize">{details?.scoreBreakdown?.methodology || 'Canonical'} Scoring Lens</span>
+                      </span>
+                      {details?.scoreBreakdown && (
+                        <span className="text-[10px] font-mono font-semibold text-[var(--gold-accent)]">
+                          Rank #{details.scoreBreakdown.rank} of {details.scoreBreakdown.totalNodes}
+                        </span>
+                      )}
                     </div>
-                    <p className="text-[var(--text-muted)]">
-                      Measures historical influence density (0–100) based on total incoming and outgoing intellectual connections (mentorships, critiques, extensions, and syntheses). A higher score indicates a pivotal thinker who shaped or challenged multiple philosophical traditions.
-                    </p>
+                    {details?.scoreBreakdown ? (
+                      <div className="space-y-1.5 mt-2">
+                        <p className="text-[var(--text-muted)] text-[10px]">
+                          {METHODOLOGY_CONFIG[details.scoreBreakdown.methodology]?.description}
+                        </p>
+                        <div className="pt-1.5 border-t border-[var(--border-main)] space-y-1">
+                          {details.scoreBreakdown.components.map((comp, idx) => (
+                            <div key={idx} className="flex items-center justify-between text-[10px]">
+                              <span className="text-[var(--text-dim)]">{comp.label}:</span>
+                              <span className="font-mono font-semibold text-[var(--text-main)]">{comp.value}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <p className="text-[var(--text-muted)]">
+                        Measures historical influence density (0–100) based on total incoming and outgoing intellectual connections (mentorships, critiques, extensions, and syntheses).
+                      </p>
+                    )}
                   </div>
                 </div>
 

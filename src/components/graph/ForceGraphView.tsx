@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react'
 import dynamic from 'next/dynamic';
 import { forceCollide, forceManyBody, forceLink, forceX, forceY } from 'd3-force';
 import { ZoomIn, ZoomOut, Maximize2, Layers, HelpCircle, Expand, Shrink, BookOpen, Check } from 'lucide-react';
-import { VisualNode, VisualLink, Branch, Era, ExplorationState, getEdgeTypeConfig } from '../../lib/types';
+import { VisualNode, VisualLink, Branch, Era, ExplorationState, ScoringMethodology, getEdgeTypeConfig } from '../../lib/types';
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
 import { EpochNavigator } from '../timeline/EpochNavigator';
@@ -65,6 +65,8 @@ interface ForceGraphViewProps {
   onToggleExplorationMode?: (enabled: boolean) => void;
   explorationFilter?: ExplorationState | 'all';
   onSelectExplorationFilter?: (filter: ExplorationState | 'all') => void;
+  methodology?: ScoringMethodology;
+  onSelectMethodology?: (methodology: ScoringMethodology) => void;
 }
 
 function escapeHtml(str: string): string {
@@ -99,6 +101,8 @@ export function ForceGraphView({
   onToggleExplorationMode,
   explorationFilter,
   onSelectExplorationFilter,
+  methodology = 'canonical',
+  onSelectMethodology,
 }: ForceGraphViewProps) {
   const fgRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -147,6 +151,13 @@ export function ForceGraphView({
   const handleMouseLeave = useCallback(() => {
     setMouseWorldPos(null);
   }, []);
+
+  // Reheat physics simulation smoothly when methodology changes so node sizes resize gracefully
+  useEffect(() => {
+    if (fgRef.current && typeof fgRef.current.d3ReheatSimulation === 'function') {
+      fgRef.current.d3ReheatSimulation();
+    }
+  }, [methodology]);
 
   useClickOutside(branchMenuRef, () => setIsBranchMenuOpen(false), isBranchMenuOpen);
 
@@ -782,6 +793,8 @@ export function ForceGraphView({
           explorationFilter={currentExplorationFilter}
           onSelectExplorationFilter={setExplorationFilter}
           onSelectBranch={onSelectBranch}
+          methodology={methodology}
+          onSelectMethodology={onSelectMethodology}
         />
 
         {/* Active Path Alert */}

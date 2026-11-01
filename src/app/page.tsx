@@ -23,7 +23,7 @@ import {
   media,
   getVisualGraph,
 } from '../lib/graph/graph-service';
-import { Branch, EraId, DomainId, ExplorationState } from '../lib/types';
+import { Branch, EraId, DomainId, ExplorationState, ScoringMethodology } from '../lib/types';
 import { ForceGraphView } from '../components/graph/ForceGraphView';
 import { DossierDrawer } from '../components/drawer/DossierDrawer';
 import { EdgeDossierDrawer } from '../components/drawer/EdgeDossierDrawer';
@@ -45,6 +45,7 @@ function HomePageContent() {
   const [showConcepts, setShowConcepts] = useState<boolean>(false);
   const [isExplorationMode, setIsExplorationMode] = useState<boolean>(false);
   const [explorationFilter, setExplorationFilter] = useState<ExplorationState | 'all'>('all');
+  const [methodology, setMethodology] = useState<ScoringMethodology>('canonical');
   const [highlightedPathNodes, setHighlightedPathNodes] = useState<string[]>([]);
 
   // Modals state
@@ -132,8 +133,9 @@ function HomePageContent() {
       branch: selectedBranch,
       includeConcepts: showConcepts,
       explorationFilter: isExplorationMode ? explorationFilter : 'all',
+      methodology,
     });
-  }, [selectedEraId, isolateEra, selectedDomain, interdisciplinaryOnly, selectedBranch, showConcepts, isExplorationMode, explorationFilter]);
+  }, [selectedEraId, isolateEra, selectedDomain, interdisciplinaryOnly, selectedBranch, showConcepts, isExplorationMode, explorationFilter, methodology]);
 
   const handleSelectNode = useCallback((nodeId: string | null) => {
     setSelectedNodeId(nodeId);
@@ -334,6 +336,8 @@ function HomePageContent() {
           onToggleExplorationMode={setIsExplorationMode}
           explorationFilter={explorationFilter}
           onSelectExplorationFilter={setExplorationFilter}
+          methodology={methodology}
+          onSelectMethodology={setMethodology}
         />
       </main>
 
@@ -345,6 +349,7 @@ function HomePageContent() {
         onSelectEdge={handleSelectEdge}
         onTracePath={handleOpenPathModal}
         onOpenSuggestion={handleOpenSuggestion}
+        methodology={methodology}
       />
 
       {/* Slide-out Edge Academic Proof Dossier Drawer */}
