@@ -49,5 +49,39 @@
         "url": "https://plato.stanford.edu/entries/merleau-ponty/"
       }
     ]
+  },
+  {
+    "id": "maurice-merleau-ponty--simone-de-beauvoir",
+    "source": "maurice-merleau-ponty",
+    "target": "simone-de-beauvoir",
+    "type": "DEVELOPED",
+    "label": "Phenomenology of the Lived Body as Historical Situation",
+    "strength": 4,
+    "description": "Simone de Beauvoir and Maurice Merleau-Ponty maintained a mutual phenomenological dialogue regarding the lived body (le corps propre). Beauvoir synthesized Merleau-Ponty's bodily phenomenology with existentialism to conclude that the feminine body is not an anatomical fate, but a historical situation.",
+    "dialecticalTension": "Transforming ontological embodiment into a socio-political and gendered analysis of bodily vulnerability and oppression.",
+    "historicalContext": "Co-founding editors of Les Temps Modernes in post-liberation Paris (1945-1949).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Maurice Merleau-Ponty",
+        "work": "Phenomenology of Perception (Phénoménologie de la perception)",
+        "year": "1945",
+        "sectionOrPage": "Part I: The Body"
+      },
+      {
+        "citationType": "primary",
+        "author": "Simone de Beauvoir",
+        "work": "The Second Sex",
+        "year": "1949",
+        "sectionOrPage": "Chapter 1: Biological Data"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Sara Heinämaa",
+        "work": "Toward a Phenomenology of Sexual Difference: Husserl, Merleau-Ponty, Beauvoir",
+        "year": "2003"
+      }
+    ]
   }
 ]

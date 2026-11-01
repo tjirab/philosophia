@@ -204,7 +204,12 @@ export default async function ConceptPage({ params }: PageProps) {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                   <div>
                     <h2 className="text-xl font-bold text-[var(--text-main)]">
-                      {introducedByPhilosopher.name}
+                      <Link
+                        href={`/thinker/${introducedByPhilosopher.id}`}
+                        className="hover:text-[var(--gold-accent)] transition"
+                      >
+                        {introducedByPhilosopher.name}
+                      </Link>
                     </h2>
                     <div className="text-xs text-[var(--text-muted)] font-mono mt-0.5">
                       {formatLifespan(
@@ -214,13 +219,22 @@ export default async function ConceptPage({ params }: PageProps) {
                     </div>
                   </div>
 
-                  <Link
-                    href={`/?node=${introducedByPhilosopher.id}`}
-                    className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] rounded-lg text-xs font-sans text-[var(--text-main)] transition shrink-0"
-                  >
-                    <Compass className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-                    <span>Locate Thinker in Graph</span>
-                  </Link>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <Link
+                      href={`/thinker/${introducedByPhilosopher.id}`}
+                      className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-[var(--gold-accent)] text-stone-900 rounded-lg text-xs font-bold font-sans hover:brightness-110 transition shadow-xs"
+                    >
+                      <span>Examine Thinker Folio</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                    <Link
+                      href={`/?node=${introducedByPhilosopher.id}`}
+                      className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] rounded-lg text-xs font-sans text-[var(--text-main)] transition shrink-0"
+                    >
+                      <Compass className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+                      <span>Locate in Graph</span>
+                    </Link>
+                  </div>
                 </div>
 
                 {introducedByTradition && (
@@ -294,9 +308,12 @@ export default async function ConceptPage({ params }: PageProps) {
                   >
                     <div className="space-y-1.5">
                       <div className="flex items-center justify-between gap-2">
-                        <span className="text-sm font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition">
+                        <Link
+                          href={isPhil ? `/thinker/${node.id}` : `/concept/${node.id}`}
+                          className="text-sm font-bold text-[var(--text-main)] hover:text-[var(--gold-accent)] transition"
+                        >
                           {nodeName}
-                        </span>
+                        </Link>
                         <span
                           className={`text-[9px] font-mono uppercase px-1.5 py-0.5 rounded border ${edgeConfig.badgeClass}`}
                         >
@@ -318,10 +335,10 @@ export default async function ConceptPage({ params }: PageProps) {
                       </Link>
 
                       <Link
-                        href={isPhil ? `/?node=${node.id}` : `/concept/${node.id}`}
+                        href={isPhil ? `/thinker/${node.id}` : `/concept/${node.id}`}
                         className="text-[var(--text-dim)] hover:text-[var(--text-main)] transition text-[10px] font-mono"
                       >
-                        {isPhil ? 'Locate Thinker' : 'Concept Folio'}
+                        {isPhil ? 'Thinker Folio' : 'Concept Folio'}
                       </Link>
                     </div>
                   </div>
@@ -358,9 +375,12 @@ export default async function ConceptPage({ params }: PageProps) {
                   >
                     <div className="space-y-1.5">
                       <div className="flex items-center justify-between gap-2">
-                        <span className="text-sm font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition">
+                        <Link
+                          href={isPhil ? `/thinker/${node.id}` : `/concept/${node.id}`}
+                          className="text-sm font-bold text-[var(--text-main)] hover:text-[var(--gold-accent)] transition"
+                        >
                           {nodeName}
-                        </span>
+                        </Link>
                         <span
                           className={`text-[9px] font-mono uppercase px-1.5 py-0.5 rounded border ${edgeConfig.badgeClass}`}
                         >
@@ -382,10 +402,10 @@ export default async function ConceptPage({ params }: PageProps) {
                       </Link>
 
                       <Link
-                        href={isPhil ? `/?node=${node.id}` : `/concept/${node.id}`}
+                        href={isPhil ? `/thinker/${node.id}` : `/concept/${node.id}`}
                         className="text-[var(--text-dim)] hover:text-[var(--text-main)] transition text-[10px] font-mono"
                       >
-                        {isPhil ? 'Locate Thinker' : 'Concept Folio'}
+                        {isPhil ? 'Thinker Folio' : 'Concept Folio'}
                       </Link>
                     </div>
                   </div>

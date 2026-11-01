@@ -1,0 +1,107 @@
+[
+  {
+    "id": "simone-de-beauvoir--jean-paul-sartre",
+    "source": "simone-de-beauvoir",
+    "target": "jean-paul-sartre",
+    "type": "DEVELOPED",
+    "label": "Situated Ethics & Reciprocal Intersubjectivity",
+    "strength": 5,
+    "description": "Simone de Beauvoir substantially deepened French existentialism by formulating an ethics of ambiguity, transforming Sartre's early radical Cartesian ontological freedom into an embodied, situated ethics where individual freedom requires the freedom of others.",
+    "dialecticalTension": "Reconciling radical existentialist ontology with the socio-historical reality of oppression and interpersonal interdependency.",
+    "historicalContext": "Developed in Paris during the post-war emergence of Les Temps Modernes and the publication of The Ethics of Ambiguity (1947).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Simone de Beauvoir",
+        "work": "The Ethics of Ambiguity (Pour une morale de l'ambiguïté)",
+        "year": "1947",
+        "sectionOrPage": "Part II: Freedom and Ambiguity",
+        "url": "https://en.wikipedia.org/wiki/The_Ethics_of_Ambiguity"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Simone de Beauvoir",
+        "sectionOrPage": "Existential Ethics and Sartre",
+        "year": "2020",
+        "url": "https://plato.stanford.edu/entries/beauvoir/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Sonia Kruks",
+        "work": "Situation and Human Existence: Freedom, Subjectivity and Society",
+        "year": "1990"
+      }
+    ]
+  },
+  {
+    "id": "simone-de-beauvoir--frantz-fanon",
+    "source": "simone-de-beauvoir",
+    "target": "frantz-fanon",
+    "type": "INFLUENCED",
+    "label": "Alterity, The Colonized Other & Lived Embodiment",
+    "strength": 4,
+    "description": "Frantz Fanon drew directly upon Simone de Beauvoir's analysis of the manufactured Other and bodily alienation in The Second Sex, transposing existential-phenomenological alterity to the racialized lived experience of the colonized subject in Black Skin, White Masks.",
+    "dialecticalTension": "Transposing gendered alterity and the feminine situation into the anti-colonial struggle and racial epidermal schema.",
+    "historicalContext": "Mid-20th-century anti-colonial and existentialist dialogue in post-war Paris and Algiers.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Frantz Fanon",
+        "work": "Black Skin, White Masks",
+        "year": "1952",
+        "sectionOrPage": "Chapter 5: The Lived Experience of the Black Man"
+      },
+      {
+        "citationType": "primary",
+        "author": "Simone de Beauvoir",
+        "work": "The Second Sex",
+        "year": "1949",
+        "sectionOrPage": "Introduction"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Lewis R. Gordon",
+        "work": "Fanon and the Crisis of European Man: An Essay on Philosophy and the Human Sciences",
+        "year": "1995"
+      }
+    ]
+  },
+  {
+    "id": "simone-de-beauvoir--michel-foucault",
+    "source": "simone-de-beauvoir",
+    "target": "michel-foucault",
+    "type": "INFLUENCED",
+    "label": "Discursive Construction of the Disciplined Body",
+    "strength": 3,
+    "description": "Simone de Beauvoir's foundational insight that woman is not a biological fact but a historically produced construct prefigured and catalyzed Michel Foucault's later genealogical analysis of how institutional discourses discipline the body and produce subjectivity.",
+    "dialecticalTension": "Evolving from existentialist phenomenology of situated freedom to post-structuralist genealogy of power-knowledge.",
+    "historicalContext": "Transmission from mid-century French phenomenology into 1970s post-structuralism and the history of sexuality.",
+    "academicConsensus": "debated",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Simone de Beauvoir",
+        "work": "The Second Sex",
+        "year": "1949",
+        "sectionOrPage": "Book II: Lived Experience"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Jana Sawicki",
+        "work": "Disciplining Foucault: Feminism, Power, and the Body",
+        "year": "1991"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Feminist Perspectives on the Body",
+        "sectionOrPage": "Beauvoir and Foucauldian Power",
+        "year": "2021",
+        "url": "https://plato.stanford.edu/entries/feminist-body/"
+      }
+    ]
+  }
+]

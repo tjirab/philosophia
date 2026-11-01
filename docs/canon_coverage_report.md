@@ -1,6 +1,6 @@
 # 📜 Philosophia Canon Coverage & Assessment Report
 
-> **Generated:** `2026-11-01T17:24:20.984Z`  
+> **Generated:** `2026-11-01T19:26:01.082Z`  
 > **Status:** 🟢 Healthy (0 isolated nodes, 1 unified graph)
 
 ---
@@ -12,14 +12,14 @@
 | **Philosophers** | **117** | Primary constellation pillars & bridges |
 | **Concepts** | **96** | Categorized across 7 philosophical branches |
 | **Total Graph Nodes** | **213** | Clean schema compliance |
-| **Dialectical Edges** | **436** | Average **2.05** edges / node |
+| **Dialectical Edges** | **442** | Average **2.08** edges / node |
 | **Media & Audio Resources** | **219** | SEP dossiers, primary links, podcasts |
 | **Isolated Nodes** | **0** | ✅ 0 isolated nodes |
 | **Connected Components** | **1** | ✅ Single unified component |
 
 ### Dialectical Edge Distribution
-- **INFLUENCED** (Lineage & inheritance): `107`
-- **DEVELOPED** (Extension & formalization): `225`
+- **INFLUENCED** (Lineage & inheritance): `111`
+- **DEVELOPED** (Extension & formalization): `227`
 - **CRITIQUED** (Dialectical rebuttal): `67`
 - **SYNTHESIZED** (Integration of disparate traditions): `37`
 
@@ -91,6 +91,7 @@ Automated pathfinding verification across canonical historical transitions:
 | **Descartes → Elisabeth of Bohemia → Spinoza** | ✅ Verified | 1 hops | `rene-descartes → baruch-spinoza` |
 | **Aristotle → Anscombe → Foot** | ✅ Verified | 2 hops | `aristotle → thomas-aquinas → philippa-foot` |
 | **Sartre → Fanon → Foucault** | ✅ Verified | 2 hops | `jean-paul-sartre → frantz-fanon → michel-foucault` |
+| **Wollstonecraft → Simone de Beauvoir → Fanon** | ✅ Verified | 2 hops | `mary-wollstonecraft → simone-de-beauvoir → frantz-fanon` |
 
 ---
 
@@ -106,10 +107,10 @@ Automated pathfinding verification across canonical historical transitions:
 7. **Karl Marx** (8 outgoing links)
 8. **Martin Heidegger** (8 outgoing links)
 9. **Adam Smith** (7 outgoing links)
-10. **Nagarjuna** (6 outgoing links)
+10. **G.W.F. Hegel** (7 outgoing links)
 
 ### Top Synthetic Integrators (Highest In-Degree)
-1. **Michel Foucault** (11 incoming links)
+1. **Michel Foucault** (12 incoming links)
 2. **Jürgen Habermas** (10 incoming links)
 3. **Arthur Schopenhauer** (9 incoming links)
 4. **John Stuart Mill** (9 incoming links)
