@@ -392,6 +392,31 @@ ${topSynthesizersList}
 `;
 }
 
+/**
+ * Generates a concise, high-level PR verification summary without emojis.
+ */
+export function generatePrSummary(report) {
+  const { totals, topology, completeness, lineages } = report;
+  const verifiedLineages = lineages.filter((l) => l.found).length;
+  const totalLineages = lineages.length;
+
+  return `<!-- philosophia-pr-audit-bot -->
+### Philosophia Canon & Graph Verification
+
+| Metric | Current Value | Status |
+| :--- | :--- | :--- |
+| Thinkers | ${totals.philosophers} | Complete |
+| Concepts | ${totals.concepts} | Complete |
+| Total Graph Nodes | ${totals.totalNodes} | Verified (${topology.isolatedTotal} isolated nodes) |
+| Dialectical Edges | ${totals.edges} (mean degree ${totals.meanDegree}) | Verified (${topology.danglingEdgesCount} dangling edges) |
+| Critical Lineage Paths | ${verifiedLineages} / ${totalLineages} verified | ${verifiedLineages === totalLineages ? 'Passed' : 'Gaps Identified'} |
+| Portrait Profiles | ${completeness.portraitCoveragePct}% | Verified |
+| Key Works Coverage | ${completeness.structuredWorksPct}% | Verified |
+| Graph Topology | ${topology.connectedComponentsCount} connected component | ${topology.connectedComponentsCount === 1 ? 'Verified' : 'Multiple components'} |
+
+*Full historiographical report available in docs/canon_coverage_report.md and GitHub Actions Step Summary.*`;
+}
+
 // CLI execution handling
 const isMain = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
 if (isMain) {
@@ -443,6 +468,11 @@ if (isMain) {
     const mdContent = generateMarkdownReport(report);
     fs.writeFileSync(reportPath, mdContent, 'utf-8');
     console.log(`📝 Generated full report at docs/canon_coverage_report.md`);
+
+    const summaryPath = path.join(ROOT_DIR, 'docs', 'canon_pr_summary.md');
+    const summaryContent = generatePrSummary(report);
+    fs.writeFileSync(summaryPath, summaryContent, 'utf-8');
+    console.log(`Generated concise PR summary at docs/canon_pr_summary.md`);
 
     if (process.env.GITHUB_STEP_SUMMARY) {
       try {

@@ -54,14 +54,13 @@ jobs:
           script: |
             const fs = require('fs');
             const path = require('path');
-            const reportPath = path.join(process.env.GITHUB_WORKSPACE, 'docs', 'canon_coverage_report.md');
-            if (!fs.existsSync(reportPath)) {
-              console.log('No canon coverage report found on disk.');
+            const summaryPath = path.join(process.env.GITHUB_WORKSPACE, 'docs', 'canon_pr_summary.md');
+            if (!fs.existsSync(summaryPath)) {
+              console.log('No canon PR summary found on disk.');
               return;
             }
-            const reportContent = fs.readFileSync(reportPath, 'utf8');
+            const body = fs.readFileSync(summaryPath, 'utf8');
             const botHeader = '<!-- philosophia-pr-audit-bot -->';
-            const body = `${botHeader}\n## 🏛️ Philosophia Canon Audit & Research Bot\n\n${reportContent}\n\n---\n*Automated dialectical verification executed by Philosophia CI Engine.*`;
 
             try {
               const { data: comments } = await github.rest.issues.listComments({
