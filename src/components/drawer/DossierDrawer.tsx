@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 import {
   X,
   BookOpen,
@@ -16,6 +17,7 @@ import {
   ChevronDown,
   GitPullRequest,
   ShieldCheck,
+  Maximize2,
 } from 'lucide-react';
 import { getNodeDetails } from '../../lib/graph/graph-service';
 import { Philosopher, Concept, Edge, KeyWork, ScoringMethodology, METHODOLOGY_CONFIG, getEdgeTypeConfig } from '../../lib/types';
@@ -132,13 +134,25 @@ export function DossierDrawer({
     <div className="fixed inset-y-0 right-0 z-50 w-full sm:w-[540px] lg:w-[600px] bg-[var(--bg-card)] border-l border-[var(--border-strong)] backdrop-blur-xl shadow-2xl flex flex-col transition-all duration-300 text-[var(--text-main)] font-serif">
       {/* Header */}
       <div className="p-6 border-b border-[var(--border-main)] relative bg-[var(--bg-card)]">
-        <button
-          onClick={onClose}
-          className="absolute top-5 right-5 p-2 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition z-10"
-          aria-label="Close dossier"
-        >
-          <X className="w-5 h-5" />
-        </button>
+        <div className="absolute top-5 right-5 flex items-center gap-1 z-10">
+          {!isPhilosopher && conc && (
+            <Link
+              href={`/concept/${conc.id}`}
+              className="p-2 text-[var(--text-dim)] hover:text-[var(--gold-accent)] rounded-lg hover:bg-[var(--bg-hover)] transition flex items-center gap-1 text-xs"
+              title="Expand into full concept folio page"
+            >
+              <Maximize2 className="w-4 h-4" />
+              <span className="hidden sm:inline font-sans text-[11px] font-medium">Expand Page</span>
+            </Link>
+          )}
+          <button
+            onClick={onClose}
+            className="p-2 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition"
+            aria-label="Close dossier"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
 
         <div className="flex items-start gap-4">
           {isPhilosopher && phil && (
@@ -470,6 +484,16 @@ export function DossierDrawer({
           })()}
 
           <div className="pt-2 flex flex-col sm:flex-row gap-2">
+            {!isPhilosopher && conc && (
+              <Link
+                href={`/concept/${conc.id}`}
+                className="flex items-center justify-center gap-1.5 py-2 px-3 bg-[var(--gold-accent)] text-stone-900 rounded-xl text-xs font-bold hover:brightness-110 transition shadow-xs font-sans"
+              >
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>Concept Folio</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            )}
             <button
               onClick={() => onTracePath(selectedNodeId)}
               className="flex-1 flex items-center justify-center gap-2 py-2 px-3 bg-[var(--gold-bg)] hover:bg-[var(--bg-hover)] text-[var(--gold-accent)] border border-[var(--gold-border)] rounded-xl text-xs font-semibold tracking-wide transition shadow-sm"

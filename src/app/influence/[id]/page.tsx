@@ -179,15 +179,23 @@ export default async function InfluencePage({ params }: PageProps) {
 
             <div>
               <div className="text-[11px] font-mono uppercase tracking-widest text-[var(--text-dim)]">
-                Originating Thinker
+                {isSourcePhil ? 'Originating Thinker' : 'Originating Concept'}
               </div>
               <h2 className="text-xl font-bold text-[var(--text-main)] mt-0.5">
                 {sourceName}
               </h2>
-              {isSourcePhil && (
+              {isSourcePhil ? (
                 <div className="text-xs text-[var(--text-muted)] mt-0.5">
                   {formatLifespan(sourcePhil?.birthYear, sourcePhil?.deathYear)}
                 </div>
+              ) : (
+                <Link
+                  href={`/concept/${sourceNode?.id}`}
+                  className="inline-flex items-center gap-1 text-xs text-[var(--gold-accent)] hover:underline mt-1 font-sans"
+                >
+                  <span>Examine Concept Folio</span>
+                  <ArrowRight className="w-3 h-3" />
+                </Link>
               )}
               {sourceTradition && (
                 <span className="inline-block mt-2 text-[10px] font-mono px-2 py-0.5 rounded border border-[var(--border-main)] bg-[var(--bg-subtle)] text-[var(--text-dim)]">
@@ -237,15 +245,23 @@ export default async function InfluencePage({ params }: PageProps) {
 
             <div>
               <div className="text-[11px] font-mono uppercase tracking-widest text-[var(--text-dim)]">
-                Downstream Successor
+                {isTargetPhil ? 'Downstream Successor' : 'Downstream Concept'}
               </div>
               <h2 className="text-xl font-bold text-[var(--text-main)] mt-0.5">
                 {targetName}
               </h2>
-              {isTargetPhil && (
+              {isTargetPhil ? (
                 <div className="text-xs text-[var(--text-muted)] mt-0.5">
                   {formatLifespan(targetPhil?.birthYear, targetPhil?.deathYear)}
                 </div>
+              ) : (
+                <Link
+                  href={`/concept/${targetNode?.id}`}
+                  className="inline-flex items-center gap-1 text-xs text-[var(--gold-accent)] hover:underline mt-1 font-sans"
+                >
+                  <span>Examine Concept Folio</span>
+                  <ArrowRight className="w-3 h-3" />
+                </Link>
               )}
               {targetTradition && (
                 <span className="inline-block mt-2 text-[10px] font-mono px-2 py-0.5 rounded border border-[var(--border-main)] bg-[var(--bg-subtle)] text-[var(--text-dim)]">
@@ -395,22 +411,30 @@ export default async function InfluencePage({ params }: PageProps) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {connectedConcepts.map((c) => (
-                <div
+                <Link
                   key={c.id}
-                  className="p-4 rounded-xl bg-[var(--bg-card)] border border-[var(--border-main)] space-y-1.5"
+                  href={`/concept/${c.id}`}
+                  className="p-4 rounded-xl bg-[var(--bg-card)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] hover:border-[var(--gold-border)] transition group flex flex-col justify-between space-y-2 focus:outline-hidden focus:ring-2 focus:ring-[var(--gold-accent)]"
+                  title={`Examine ${c.title} concept folio`}
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm font-bold text-[var(--text-main)]">
-                      ✦ {c.title}
-                    </span>
-                    <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded border border-[var(--border-main)] text-[var(--text-dim)]">
-                      {c.branch}
-                    </span>
+                  <div className="space-y-1.5">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-sm font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition">
+                        ✦ {c.title}
+                      </span>
+                      <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded border border-[var(--border-main)] text-[var(--text-dim)] shrink-0">
+                        {c.branch}
+                      </span>
+                    </div>
+                    <p className="text-xs text-[var(--text-muted)] leading-relaxed line-clamp-3">
+                      {c.summary}
+                    </p>
                   </div>
-                  <p className="text-xs text-[var(--text-muted)] leading-relaxed">
-                    {c.summary}
-                  </p>
-                </div>
+                  <div className="pt-2 border-t border-[var(--border-main)]/60 flex items-center justify-between text-[11px] font-sans text-[var(--gold-accent)] group-hover:brightness-110">
+                    <span className="font-medium">Explore Concept Folio</span>
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition" />
+                  </div>
+                </Link>
               ))}
             </div>
           </section>
