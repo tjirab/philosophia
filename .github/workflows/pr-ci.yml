@@ -10,6 +10,11 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
 jobs:
   validate:
     name: Test, Audit & Build
@@ -31,7 +36,7 @@ jobs:
         run: npm run build:data
 
       - name: Run Coverage & Dialectical Graph Audit
-        run: npm run audit
+        run: npm run audit:report
 
       - name: Run Vitest Test Suite
         run: npm test
@@ -40,3 +45,49 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: ''
         run: npm run build
+
+      - name: Post PR Audit Bot Report
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const reportPath = path.join(process.env.GITHUB_WORKSPACE, 'docs', 'canon_coverage_report.md');
+            if (!fs.existsSync(reportPath)) {
+              console.log('No canon coverage report found on disk.');
+              return;
+            }
+            const reportContent = fs.readFileSync(reportPath, 'utf8');
+            const botHeader = '<!-- philosophia-pr-audit-bot -->';
+            const body = `${botHeader}\n## 🏛️ Philosophia Canon Audit & Research Bot\n\n${reportContent}\n\n---\n*Automated dialectical verification executed by Philosophia CI Engine.*`;
+
+            try {
+              const { data: comments } = await github.rest.issues.listComments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+              });
+
+              const existingComment = comments.find(c => c.body && c.body.includes(botHeader));
+              if (existingComment) {
+                await github.rest.issues.updateComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  comment_id: existingComment.id,
+                  body: body,
+                });
+                console.log(`Updated existing PR audit comment: ID ${existingComment.id}`);
+              } else {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  body: body,
+                });
+                console.log('Created new PR audit comment.');
+              }
+            } catch (err) {
+              console.warn('Could not post PR comment:', err.message);
+            }

@@ -1,0 +1,33 @@
+#!/bin/sh
+# Philosophia pre-push validation hook
+set -e
+
+echo "🏛️  [pre-push] Running Philosophia pre-push quality gates..."
+
+# 1. Prevent direct push to main
+protected_branch='main'
+while read local_ref local_sha remote_ref remote_sha
+do
+    if [ "$remote_ref" = "refs/heads/$protected_branch" ]; then
+        echo "=========================================================="
+        echo "❌ ERROR: Direct push to '$protected_branch' is forbidden!"
+        echo "Push to a feature branch and open a Pull Request instead."
+        echo "=========================================================="
+        exit 1
+    fi
+done
+
+# 2. Verify data compilation & consistency
+echo "🔍 [pre-push] 1/3 Compiling & validating modular data..."
+npm run build:data
+
+# 3. Verify graph audit, invariants, and critical lineage paths
+echo "📊 [pre-push] 2/3 Auditing canon coverage and graph invariants..."
+npm run audit
+
+# 4. Run test suite
+echo "🧪 [pre-push] 3/3 Running test suite..."
+npm test
+
+echo "✅ [pre-push] All checks passed. Proceeding with push."
+exit 0

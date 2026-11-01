@@ -440,8 +440,17 @@ if (isMain) {
 
   if (writeReport) {
     const reportPath = path.join(ROOT_DIR, 'docs', 'canon_coverage_report.md');
-    fs.writeFileSync(reportPath, generateMarkdownReport(report), 'utf-8');
+    const mdContent = generateMarkdownReport(report);
+    fs.writeFileSync(reportPath, mdContent, 'utf-8');
     console.log(`📝 Generated full report at docs/canon_coverage_report.md`);
+
+    if (process.env.GITHUB_STEP_SUMMARY) {
+      try {
+        fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, mdContent, 'utf-8');
+      } catch (err) {
+        console.warn('Could not write to GITHUB_STEP_SUMMARY:', err.message);
+      }
+    }
   }
 
   if (args.includes('--strict') && (report.topology.isolatedTotal > 0 || report.topology.danglingEdgesCount > 0)) {
