@@ -49,5 +49,39 @@
         "url": "https://plato.stanford.edu/entries/wollstonecraft/"
       }
     ]
+  },
+  {
+    "id": "mary-wollstonecraft--simone-de-beauvoir",
+    "source": "mary-wollstonecraft",
+    "target": "simone-de-beauvoir",
+    "type": "INFLUENCED",
+    "label": "From Enlightenment Rational Equality to Existential Feminism",
+    "strength": 4,
+    "description": "Mary Wollstonecraft's critique of artificial femininity and argument for rational equality in A Vindication of the Rights of Woman directly anticipated and anchored Simone de Beauvoir's famous thesis that 'one is not born, but rather becomes, a woman.'",
+    "dialecticalTension": "Elevating 18th-century rationalist rights critique into a 20th-century phenomenological analysis of situation and constructed otherness.",
+    "historicalContext": "Inter-epochal transmission from the Enlightenment to 20th-century existentialism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mary Wollstonecraft",
+        "work": "A Vindication of the Rights of Woman",
+        "year": "1792",
+        "sectionOrPage": "Chapter 2: The Prevailing Opinion of a Sexual Character Discussed"
+      },
+      {
+        "citationType": "primary",
+        "author": "Simone de Beauvoir",
+        "work": "The Second Sex",
+        "year": "1949",
+        "sectionOrPage": "Book II: Lived Experience"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Debra Bergoffen",
+        "work": "The Philosophy of Simone de Beauvoir: Gendered Phenomenologies, Erotic Generosities",
+        "year": "1997"
+      }
+    ]
   }
 ]

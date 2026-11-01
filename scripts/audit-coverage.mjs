@@ -208,6 +208,7 @@ export function auditCanon(options = {}) {
     { name: 'Descartes → Elisabeth of Bohemia → Spinoza', from: 'rene-descartes', to: 'baruch-spinoza' },
     { name: 'Aristotle → Anscombe → Foot', from: 'aristotle', to: 'philippa-foot' },
     { name: 'Sartre → Fanon → Foucault', from: 'jean-paul-sartre', to: 'michel-foucault' },
+    { name: 'Wollstonecraft → Simone de Beauvoir → Fanon', from: 'mary-wollstonecraft', to: 'frantz-fanon' },
   ];
 
   function testPath(start, goal) {

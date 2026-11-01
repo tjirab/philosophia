@@ -182,11 +182,34 @@ export default async function InfluencePage({ params }: PageProps) {
                 {isSourcePhil ? 'Originating Thinker' : 'Originating Concept'}
               </div>
               <h2 className="text-xl font-bold text-[var(--text-main)] mt-0.5">
-                {sourceName}
+                {isSourcePhil ? (
+                  <Link
+                    href={`/thinker/${sourceNode?.id}`}
+                    className="hover:text-[var(--gold-accent)] transition"
+                  >
+                    {sourceName}
+                  </Link>
+                ) : (
+                  <Link
+                    href={`/concept/${sourceNode?.id}`}
+                    className="hover:text-[var(--gold-accent)] transition"
+                  >
+                    {sourceName}
+                  </Link>
+                )}
               </h2>
               {isSourcePhil ? (
-                <div className="text-xs text-[var(--text-muted)] mt-0.5">
-                  {formatLifespan(sourcePhil?.birthYear, sourcePhil?.deathYear)}
+                <div className="space-y-1 mt-0.5">
+                  <div className="text-xs text-[var(--text-muted)]">
+                    {formatLifespan(sourcePhil?.birthYear, sourcePhil?.deathYear)}
+                  </div>
+                  <Link
+                    href={`/thinker/${sourceNode?.id}`}
+                    className="inline-flex items-center gap-1 text-xs text-[var(--gold-accent)] hover:underline font-sans"
+                  >
+                    <span>Examine Thinker Folio</span>
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
                 </div>
               ) : (
                 <Link
@@ -248,11 +271,34 @@ export default async function InfluencePage({ params }: PageProps) {
                 {isTargetPhil ? 'Downstream Successor' : 'Downstream Concept'}
               </div>
               <h2 className="text-xl font-bold text-[var(--text-main)] mt-0.5">
-                {targetName}
+                {isTargetPhil ? (
+                  <Link
+                    href={`/thinker/${targetNode?.id}`}
+                    className="hover:text-[var(--gold-accent)] transition"
+                  >
+                    {targetName}
+                  </Link>
+                ) : (
+                  <Link
+                    href={`/concept/${targetNode?.id}`}
+                    className="hover:text-[var(--gold-accent)] transition"
+                  >
+                    {targetName}
+                  </Link>
+                )}
               </h2>
               {isTargetPhil ? (
-                <div className="text-xs text-[var(--text-muted)] mt-0.5">
-                  {formatLifespan(targetPhil?.birthYear, targetPhil?.deathYear)}
+                <div className="space-y-1 mt-0.5">
+                  <div className="text-xs text-[var(--text-muted)]">
+                    {formatLifespan(targetPhil?.birthYear, targetPhil?.deathYear)}
+                  </div>
+                  <Link
+                    href={`/thinker/${targetNode?.id}`}
+                    className="inline-flex items-center gap-1 text-xs text-[var(--gold-accent)] hover:underline font-sans"
+                  >
+                    <span>Examine Thinker Folio</span>
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
                 </div>
               ) : (
                 <Link

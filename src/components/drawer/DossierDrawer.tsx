@@ -156,6 +156,16 @@ export function DossierDrawer({
       {/* Header */}
       <div className="p-6 border-b border-[var(--border-main)] relative bg-[var(--bg-card)]">
         <div className="absolute top-5 right-5 flex items-center gap-1 z-10">
+          {isPhilosopher && phil && (
+            <Link
+              href={`/thinker/${phil.id}`}
+              className="p-2 text-[var(--text-dim)] hover:text-[var(--gold-accent)] rounded-lg hover:bg-[var(--bg-hover)] transition flex items-center gap-1 text-xs"
+              title="Expand into full thinker folio page"
+            >
+              <Maximize2 className="w-4 h-4" />
+              <span className="hidden sm:inline font-sans text-[11px] font-medium">Expand Page</span>
+            </Link>
+          )}
           {!isPhilosopher && conc && (
             <Link
               href={`/concept/${conc.id}`}

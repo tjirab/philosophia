@@ -169,5 +169,39 @@
         "url": "https://plato.stanford.edu/entries/hegel/"
       }
     ]
+  },
+  {
+    "id": "gwf-hegel--simone-de-beauvoir",
+    "source": "gwf-hegel",
+    "target": "simone-de-beauvoir",
+    "type": "INFLUENCED",
+    "label": "Master-Slave Dialectic & Alterity in The Second Sex",
+    "strength": 5,
+    "description": "Simone de Beauvoir critically appropriated G.W.F. Hegel's Master-Slave dialectic in Phenomenology of Spirit to theorize woman as 'The Other' (L'Autre), demonstrating that unlike Hegel's historical dialectic where the bondsman achieves reciprocal recognition through labor, patriarchal social structures historically denied reciprocal revolt.",
+    "dialecticalTension": "Adapting Hegel's universal dialectic of mutual recognition to diagnose asymmetrical gender subordination lacking reciprocal struggle.",
+    "historicalContext": "Post-war French Hegelian renaissance influenced by Alexandre Kojève's Paris lectures on Phenomenology of Spirit.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Simone de Beauvoir",
+        "work": "The Second Sex",
+        "year": "1949",
+        "sectionOrPage": "Introduction"
+      },
+      {
+        "citationType": "primary",
+        "author": "G.W.F. Hegel",
+        "work": "Phenomenology of Spirit",
+        "year": "1807",
+        "sectionOrPage": "§178-196 (Lordship and Bondage)"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Eva Lundgren-Gothlin",
+        "work": "Sex and Existence: Simone de Beauvoir's The Second Sex",
+        "year": "1996"
+      }
+    ]
   }
 ]

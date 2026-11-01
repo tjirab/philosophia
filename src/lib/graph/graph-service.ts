@@ -24,6 +24,7 @@ import {
   ExplorationMeta,
   ScoringMethodology,
   NodeScoreBreakdown,
+  KeyWork,
 } from '../types';
 import { attachExplorationMetadata, computeNodeExploration } from './exploration-service';
 import { applyScoringMethodology } from './scoring-engine';
@@ -527,3 +528,105 @@ export function getConceptDetails(conceptId: string): {
     scoreBreakdown: nodeDetails.scoreBreakdown,
   };
 }
+
+export function getThinkerDetails(thinkerId: string): {
+  thinker: Philosopher;
+  era?: Era;
+  tradition?: Tradition;
+  predecessors: Array<{ node: Philosopher | Concept; edge: Edge }>;
+  successors: Array<{ node: Philosopher | Concept; edge: Edge }>;
+  formulatedConcepts: Concept[];
+  connectedConcepts: Concept[];
+  keyWorks: KeyWork[];
+  citations: AcademicCitation[];
+  relatedEdges: Edge[];
+  contemporaryThinkers: Philosopher[];
+  media: MediaResource[];
+  exploration?: ExplorationMeta;
+  scoreBreakdown?: NodeScoreBreakdown;
+} | null {
+  const thinker = philosophers.find((p) => p.id === thinkerId);
+  if (!thinker) return null;
+
+  const nodeDetails = getNodeDetails(thinkerId);
+  const era = eras.find((e) => e.id === thinker.eraId) || nodeDetails.era;
+  const tradition = traditions.find((t) => t.id === thinker.traditionId) || nodeDetails.tradition;
+
+  // Formulated concepts: concepts explicitly introduced by this thinker
+  const formulatedConcepts = concepts.filter((c) => c.introducedBy === thinkerId);
+
+  // Connected concepts: concepts linked via predecessors or successors
+  const connectedConceptIds = new Set<string>();
+  const connectedConcepts: Concept[] = [];
+  for (const item of [...nodeDetails.predecessors, ...nodeDetails.successors]) {
+    if ('branch' in item.node) {
+      if (!connectedConceptIds.has(item.node.id)) {
+        connectedConceptIds.add(item.node.id);
+        connectedConcepts.push(item.node as Concept);
+      }
+    }
+  }
+
+  // Key works normalized into KeyWork objects
+  const keyWorks: KeyWork[] = thinker.keyWorks
+    ? thinker.keyWorks.map((w) =>
+        typeof w === 'string'
+          ? {
+              title: w,
+              url: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(w)}`,
+              wikipediaUrl: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(w)}`,
+            }
+          : w
+      )
+    : [];
+
+  // Extract unique citations across predecessors and successors
+  const citations: AcademicCitation[] = [];
+  const seenCitations = new Set<string>();
+  for (const { edge } of [...nodeDetails.predecessors, ...nodeDetails.successors]) {
+    if (edge.citations) {
+      for (const cite of edge.citations) {
+        const key = `${cite.author}--${cite.work}--${cite.sectionOrPage || ''}`;
+        if (!seenCitations.has(key)) {
+          seenCitations.add(key);
+          citations.push(cite);
+        }
+      }
+    }
+  }
+
+  // Related edges
+  const relatedEdges = edges.filter(
+    (e) => e.source === thinkerId || e.target === thinkerId
+  );
+
+  // Contemporary peers in same tradition or era
+  const contemporaryThinkers = philosophers.filter(
+    (p) =>
+      p.id !== thinkerId &&
+      (p.traditionId === thinker.traditionId || p.eraId === thinker.eraId)
+  ).slice(0, 6);
+
+  // Media targeting this thinker
+  const thinkerMedia = media.filter((m) => m.targetId === thinkerId);
+
+  return {
+    thinker,
+    era,
+    tradition,
+    predecessors: nodeDetails.predecessors,
+    successors: nodeDetails.successors,
+    formulatedConcepts,
+    connectedConcepts,
+    keyWorks,
+    citations,
+    relatedEdges,
+    contemporaryThinkers,
+    media: thinkerMedia,
+    exploration: nodeDetails.exploration,
+    scoreBreakdown: nodeDetails.scoreBreakdown,
+  };
+}
+
+export const getPhilosopherDetails = getThinkerDetails;
+
