@@ -1,0 +1,120 @@
+[
+  {
+    "id": "elisabeth-of-bohemia--mind-body-interaction-problem",
+    "source": "elisabeth-of-bohemia",
+    "target": "mind-body-interaction-problem",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the definitive mind-body interaction critique",
+    "description": "Elisabeth of Bohemia formulated the foundational interaction problem against Cartesian substance dualism: how an immaterial, unextended mind can possess physical contact to move an extended body.",
+    "historicalContext": "Articulated in her letter to Descartes on 16 May 1643 from The Hague, initiating six years of rigorous philosophical exchange.",
+    "dialecticalTension": "Demonstrated that Cartesian physics (contact mechanics) directly conflicts with Cartesian metaphysics (unextended immaterial mind).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Princess Elisabeth of Bohemia",
+        "work": "Letter to René Descartes",
+        "sectionOrPage": "16 May 1643, AT III 660–661",
+        "year": 1643,
+        "quote": "I ask you please to tell me how the soul of a human being can determine the bodily spirits in order to bring about voluntary actions, since it seems that all determination of movement is made by the pushing of a thing moved.",
+        "url": "https://plato.stanford.edu/entries/elisabeth-bohemia/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Lisa Shapiro",
+        "work": "Princess Elisabeth of Bohemia",
+        "url": "https://plato.stanford.edu/entries/elisabeth-bohemia/"
+      }
+    ]
+  },
+  {
+    "id": "rene-descartes--elisabeth-of-bohemia",
+    "source": "rene-descartes",
+    "target": "elisabeth-of-bohemia",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Exchanged seminal philosophical correspondence on metaphysics and the passions",
+    "description": "Descartes dedicated his Principles of Philosophy (1644) to Princess Elisabeth and carried on an extensive philosophical correspondence that compelled him to formalize his moral psychology.",
+    "historicalContext": "Descartes found in Elisabeth his most intellectually formidable interlocutor, leading directly to the composition of The Passions of the Soul (1649).",
+    "dialecticalTension": "Descartes attempted to resolve her challenge by introducing the notion of a primitive union of mind and body.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "René Descartes",
+        "work": "Principles of Philosophy (Dedication to Princess Elisabeth)",
+        "year": 1644,
+        "sectionOrPage": "AT VIII-A 1–4",
+        "quote": "The only mind I have found to which both metaphysics and mathematics are equally clear is your own.",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Lisa Shapiro (ed.)",
+        "work": "The Correspondence between Princess Elisabeth of Bohemia and René Descartes",
+        "year": 2007,
+        "sectionOrPage": "pp. 1–28"
+      }
+    ]
+  },
+  {
+    "id": "elisabeth-of-bohemia--rene-descartes",
+    "source": "elisabeth-of-bohemia",
+    "target": "rene-descartes",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Critiqued Cartesian dualism and forced the development of the passions",
+    "description": "Elisabeth rejected Descartes' primitive notions defense, arguing that it would be easier to concede matter and extension to the soul than to accept that an immaterial thing can be affected by the body.",
+    "historicalContext": "Her letters pushed Descartes away from pure abstract metaphysics into empirical psychosomatic medicine and moral philosophy.",
+    "dialecticalTension": "Exposed the ontological fracture in strict substance dualism, paving the way for monist alternatives.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Princess Elisabeth of Bohemia",
+        "work": "Letter to René Descartes",
+        "sectionOrPage": "20 June 1643, AT III 684",
+        "year": 1643,
+        "quote": "I admit it would be easier for me to concede matter and extension to the soul than to concede the capacity to move and be moved to an immaterial thing.",
+        "url": "https://plato.stanford.edu/entries/elisabeth-bohemia/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Lisa Shapiro",
+        "work": "Princess Elisabeth of Bohemia",
+        "url": "https://plato.stanford.edu/entries/elisabeth-bohemia/"
+      }
+    ]
+  },
+  {
+    "id": "elisabeth-of-bohemia--baruch-spinoza",
+    "source": "elisabeth-of-bohemia",
+    "target": "baruch-spinoza",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Anticipated and catalyzed Spinoza's substance monism",
+    "description": "Elisabeth's demonstration of the impossibility of Cartesian mind-body interaction provided the direct historical catalyst for Spinoza's substance monism (mind and body as attributes of one substance).",
+    "historicalContext": "Spinoza explicitly attacked Descartes' interactionist pineal gland theory in the Ethics, echoing Elisabeth's arguments on mechanical causation.",
+    "dialecticalTension": "Resolved Elisabeth's critique by replacing dualism with dual-aspect monism, eliminating mechanical interaction between distinct substances.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Baruch Spinoza",
+        "work": "Ethics",
+        "sectionOrPage": "Part V, Preface",
+        "year": 1677,
+        "quote": "What does Descartes understand by the union of the mind and the body? What clear and distinct concept has he of thought closely united to a certain small portion of quantity?",
+        "url": "https://plato.stanford.edu/entries/spinoza/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Eileen O'Neill",
+        "work": "Disappearing Ink: Early Modern Women Philosophers and Their Fate in History",
+        "year": 1998,
+        "sectionOrPage": "pp. 17–42"
+      }
+    ]
+  }
+]

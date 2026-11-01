@@ -1,0 +1,150 @@
+[
+  {
+    "id": "ibn-khaldun--asabiyyah",
+    "source": "ibn-khaldun",
+    "target": "asabiyyah",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the sociological concept of Asabiyyah",
+    "description": "Ibn Khaldun conceptualized Asabiyyah (group feeling / social cohesion) as the fundamental engine of political rise, state formation, and inevitable dynastic decay.",
+    "historicalContext": "Articulated in the Muqaddimah (1377) during his retreat at the castle of Ibn Salama in modern Algeria after decades observing political turbulence across North Africa and Al-Andalus.",
+    "dialecticalTension": "Contrasts the robust, egalitarian solidarity of rural nomadic life with the enervating, corrupting luxury of sedentary urban civilization.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ibn Khaldun",
+        "work": "The Muqaddimah: An Introduction to History",
+        "sectionOrPage": "Ch. 2, §7–11",
+        "year": 1377,
+        "quote": "Royal authority and dynasties can only be established through group feeling (Asabiyyah). When luxury corrupts group feeling, the dynasty falls.",
+        "url": "https://plato.stanford.edu/entries/ibn-khaldun/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Franz Rosenthal",
+        "work": "The Muqaddimah: An Introduction to History (Translation and Introduction)",
+        "year": 1958,
+        "sectionOrPage": "Vol. 1, pp. 249–286"
+      }
+    ]
+  },
+  {
+    "id": "aristotle--ibn-khaldun",
+    "source": "aristotle",
+    "target": "ibn-khaldun",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Applied Aristotelian naturalism to social history",
+    "description": "Ibn Khaldun transformed Aristotle's premise that humans are social and political animals by nature into an empirical science of human civilization (Ilm al-Umran).",
+    "historicalContext": "Trained in the Maghrebi Aristotelian tradition, Ibn Khaldun sought natural, material causes for historical transformations rather than mythological explanations.",
+    "dialecticalTension": "Extended teleological biological maturation and decay to political institutions and social structures.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ibn Khaldun",
+        "work": "The Muqaddimah",
+        "sectionOrPage": "Ch. 1, Preliminary Discourse",
+        "year": 1377,
+        "quote": "Human society is necessary. The philosophers express this by saying that man is political by nature.",
+        "url": "https://plato.stanford.edu/entries/ibn-khaldun/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Syed Farid Alatas",
+        "work": "Ibn Khaldun",
+        "url": "https://plato.stanford.edu/entries/ibn-khaldun/"
+      }
+    ]
+  },
+  {
+    "id": "averroes--ibn-khaldun",
+    "source": "averroes",
+    "target": "ibn-khaldun",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Inherited Andalusian rationalist historiography",
+    "description": "Ibn Khaldun adopted Averroes' rationalist critique of unverified narrative traditions, applying dialectical scrutiny to historical reporting and causal analysis.",
+    "historicalContext": "The intellectual heritage of Averroistic rationalism survived in the Maghrebi courts where Ibn Khaldun served as jurist and chancellor.",
+    "dialecticalTension": "Shifted Averroistic metaphysics toward an empirical and sociological study of human association.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ibn Khaldun",
+        "work": "The Muqaddimah",
+        "sectionOrPage": "Ch. 6, §18",
+        "year": 1377,
+        "quote": "The inner meaning of history involves speculation and an attempt to touch the truth, subtle explanation of the causes and origins of existing things.",
+        "url": "https://plato.stanford.edu/entries/ibn-khaldun/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Muhsin Mahdi",
+        "work": "Ibn Khaldun's Philosophy of History",
+        "year": 1957,
+        "sectionOrPage": "pp. 63–132"
+      }
+    ]
+  },
+  {
+    "id": "ibn-khaldun--auguste-comte",
+    "source": "ibn-khaldun",
+    "target": "auguste-comte",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Anticipated empirical sociology and social physics",
+    "description": "Ibn Khaldun is recognized as the first thinker to formulate an autonomous science of society governed by universal laws, prefiguring Comte's social physics and sociology.",
+    "historicalContext": "19th-century European orientalists and sociologists, reading de Slane's French translation of the Muqaddimah, recognized Ibn Khaldun as the precursor to positive sociology.",
+    "dialecticalTension": "Constructed a science of social laws centuries before the European Enlightenment positivist movement.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Ludwig Gumplowicz",
+        "work": "Sociological Essays",
+        "year": 1899,
+        "sectionOrPage": "p. 114",
+        "quote": "A pious Muslim took in all seriousness the study of the laws of human society that Auguste Comte later formulated as sociology.",
+        "url": "https://en.wikipedia.org/wiki/Ibn_Khaldun#Sociology"
+      },
+      {
+        "citationType": "sep",
+        "author": "Syed Farid Alatas",
+        "work": "Ibn Khaldun",
+        "url": "https://plato.stanford.edu/entries/ibn-khaldun/"
+      }
+    ]
+  },
+  {
+    "id": "ibn-khaldun--karl-marx",
+    "source": "ibn-khaldun",
+    "target": "karl-marx",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Anticipated materialist and economic cycles of history",
+    "description": "Ibn Khaldun's analysis of labor value, division of labor, surplus value, and economic cycles directly prefigured core tenets of historical materialism.",
+    "historicalContext": "The Muqaddimah's chapters on crafts, commerce, and state taxation analyze social institutions as downstream consequences of production and material subsistence.",
+    "dialecticalTension": "Identified economic modes of production as the material foundation of social and political structures.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ibn Khaldun",
+        "work": "The Muqaddimah",
+        "sectionOrPage": "Ch. 5, §1",
+        "year": 1377,
+        "quote": "Man obtains his sustenance and profit through labor. Without human labor, no profit or capital can be acquired.",
+        "url": "https://plato.stanford.edu/entries/ibn-khaldun/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Yves Lacoste",
+        "work": "Ibn Khaldun: The Birth of History and the Past of the Third World",
+        "year": 1984,
+        "sectionOrPage": "pp. 145–182"
+      }
+    ]
+  }
+]

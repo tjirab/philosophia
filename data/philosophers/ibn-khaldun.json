@@ -1,0 +1,39 @@
+{
+  "id": "ibn-khaldun",
+  "name": "Ibn Khaldun",
+  "birthYear": 1332,
+  "deathYear": 1406,
+  "eraId": "medieval",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "North African polymath, historiographer, and philosopher regarded as the foundational precursor to sociology, demography, and the philosophy of history.",
+  "centralQuestion": "What cyclical laws of social solidarity and political economy govern the rise, flourishing, and decay of human civilizations?",
+  "keyWorks": [
+    {
+      "title": "The Muqaddimah (Prolegomena)",
+      "year": "1377",
+      "url": "https://en.wikipedia.org/wiki/Muqaddimah",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Muqaddimah",
+      "description": "Groundbreaking treatise on historical methodology, political economy, and sociological dynamics of group cohesion."
+    },
+    {
+      "title": "Kitab al-Ibar (Universal History)",
+      "year": "1382",
+      "url": "https://en.wikipedia.org/wiki/Kitab_al-Ibar",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kitab_al-Ibar",
+      "description": "Comprehensive multivolume universal history of the Arab, Berber, and Mediterranean peoples."
+    }
+  ],
+  "sepSlug": "ibn-khaldun",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/ibn-khaldun/",
+    "iep": "https://iep.utm.edu/ibn-khal/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ibn_Khaldun"
+  },
+  "importanceScore": 91,
+  "imageUrl": "/portraits/ibn-khaldun.jpg"
+}

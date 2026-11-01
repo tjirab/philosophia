@@ -1,0 +1,37 @@
+{
+  "id": "philippa-foot",
+  "name": "Philippa Foot",
+  "birthYear": 1920,
+  "deathYear": 2010,
+  "eraId": "twentieth-century",
+  "traditionId": "analytic",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Oxford philosopher who was a central architect of contemporary virtue ethics, moral naturalism, and creator of the famed 'Trolley Problem' thought experiment.",
+  "centralQuestion": "Can moral evaluations be derived objectively from natural human facts and virtues, rather than being mere subjective expressions or prescriptive commands?",
+  "keyWorks": [
+    {
+      "title": "The Problem of Abortion and the Doctrine of the Double Effect",
+      "year": "1967",
+      "url": "https://en.wikipedia.org/wiki/Trolley_problem",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Trolley_problem",
+      "description": "Seminal ethical essay formulating the Trolley Problem to delineate doing vs. allowing harm."
+    },
+    {
+      "title": "Natural Goodness",
+      "year": "2001",
+      "url": "https://en.wikipedia.org/wiki/Philippa_Foot#Natural_Goodness",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Philippa_Foot#Natural_Goodness",
+      "description": "Systematic moral treatise arguing for neo-Aristotelian ethical naturalism and species-relative human flourishing."
+    }
+  ],
+  "sepSlug": "philippa-foot",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/philippa-foot/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Philippa_Foot"
+  },
+  "importanceScore": 88,
+  "imageUrl": "/portraits/philippa-foot.jpg"
+}
