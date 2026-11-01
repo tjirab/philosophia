@@ -19,7 +19,10 @@ import {
   VisualLink,
   EraId,
   Branch,
+  ExplorationState,
+  ExplorationMeta,
 } from '../types';
+import { attachExplorationMetadata, computeNodeExploration } from './exploration-service';
 
 export const eras: Era[] = erasData as Era[];
 export const traditions: Tradition[] = traditionsData as Tradition[];
@@ -50,6 +53,7 @@ export interface GraphFilterOptions {
   branch?: Branch | 'all';
   includeConcepts?: boolean;
   searchQuery?: string;
+  explorationFilter?: ExplorationState | 'all';
 }
 
 export function getVisualGraph(options: GraphFilterOptions = {}): {
@@ -66,6 +70,7 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     branch = 'all',
     includeConcepts = true,
     searchQuery = '',
+    explorationFilter = 'all',
   } = options;
 
   const traditionMap = new Map(traditions.map((t) => [t.id, t]));
@@ -242,7 +247,22 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     }
   }
 
-  return { nodes, links };
+  // Attach hybrid exploration metadata to all nodes
+  let finalNodes = attachExplorationMetadata(nodes, links);
+
+  // If filtered by exploration state, filter finalNodes and prune links
+  if (explorationFilter !== 'all') {
+    finalNodes = finalNodes.filter((n) => n.exploration?.state === explorationFilter);
+    const retainedIds = new Set(finalNodes.map((n) => n.id));
+    const filteredLinks = links.filter((l) => {
+      const sId = typeof l.source === 'object' ? (l.source as any).id : l.source;
+      const tId = typeof l.target === 'object' ? (l.target as any).id : l.target;
+      return retainedIds.has(sId) && retainedIds.has(tId);
+    });
+    return { nodes: finalNodes, links: filteredLinks };
+  }
+
+  return { nodes: finalNodes, links };
 }
 
 export function getNodeDetails(nodeId: string): {
@@ -253,6 +273,7 @@ export function getNodeDetails(nodeId: string): {
   media: MediaResource[];
   era?: Era;
   tradition?: Tradition;
+  exploration?: ExplorationMeta;
 } {
   const phil = philosophers.find((p) => p.id === nodeId);
   const conc = concepts.find((c) => c.id === nodeId);
@@ -299,6 +320,21 @@ export function getNodeDetails(nodeId: string): {
   // Linked media
   const linkedMedia = media.filter((m) => m.targetId === nodeId);
 
+  const edgeCount = predecessors.length + successors.length;
+  const critiqueCount = [...predecessors, ...successors].filter((e) => e.edge.type === 'CRITIQUED').length;
+  const exploration = computeNodeExploration(
+    {
+      id: targetNode.id,
+      type: nodeType,
+      traditionId: (targetNode as Philosopher).traditionId,
+      branch: (targetNode as Concept).branch,
+      importanceScore: (targetNode as Philosopher).importanceScore || 50,
+      keyWorks: (targetNode as Philosopher).keyWorks,
+    },
+    edgeCount,
+    critiqueCount
+  );
+
   return {
     node: targetNode,
     type: nodeType,
@@ -307,6 +343,7 @@ export function getNodeDetails(nodeId: string): {
     media: linkedMedia,
     era,
     tradition,
+    exploration,
   };
 }
 

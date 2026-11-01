@@ -23,7 +23,7 @@ import {
   media,
   getVisualGraph,
 } from '../lib/graph/graph-service';
-import { Branch, EraId, DomainId } from '../lib/types';
+import { Branch, EraId, DomainId, ExplorationState } from '../lib/types';
 import { ForceGraphView } from '../components/graph/ForceGraphView';
 import { DossierDrawer } from '../components/drawer/DossierDrawer';
 import { EdgeDossierDrawer } from '../components/drawer/EdgeDossierDrawer';
@@ -43,6 +43,8 @@ function HomePageContent() {
   const [interdisciplinaryOnly, setInterdisciplinaryOnly] = useState<boolean>(false);
   const [selectedBranch, setSelectedBranch] = useState<Branch | 'all'>('all');
   const [showConcepts, setShowConcepts] = useState<boolean>(false);
+  const [isExplorationMode, setIsExplorationMode] = useState<boolean>(false);
+  const [explorationFilter, setExplorationFilter] = useState<ExplorationState | 'all'>('all');
   const [highlightedPathNodes, setHighlightedPathNodes] = useState<string[]>([]);
 
   // Modals state
@@ -129,8 +131,9 @@ function HomePageContent() {
       interdisciplinaryOnly,
       branch: selectedBranch,
       includeConcepts: showConcepts,
+      explorationFilter: isExplorationMode ? explorationFilter : 'all',
     });
-  }, [selectedEraId, isolateEra, selectedDomain, interdisciplinaryOnly, selectedBranch, showConcepts]);
+  }, [selectedEraId, isolateEra, selectedDomain, interdisciplinaryOnly, selectedBranch, showConcepts, isExplorationMode, explorationFilter]);
 
   const handleSelectNode = useCallback((nodeId: string | null) => {
     setSelectedNodeId(nodeId);
@@ -327,6 +330,10 @@ function HomePageContent() {
           onSelectEra={setSelectedEraId}
           isolateEra={isolateEra}
           onToggleIsolateEra={setIsolateEra}
+          isExplorationMode={isExplorationMode}
+          onToggleExplorationMode={setIsExplorationMode}
+          explorationFilter={explorationFilter}
+          onSelectExplorationFilter={setExplorationFilter}
         />
       </main>
 

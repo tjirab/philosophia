@@ -84,6 +84,31 @@ export type SociologyBranch =
 
 export type Branch = PhilosophyBranch | PsychologyBranch | SociologyBranch;
 
+export type ExplorationState = 'citadel' | 'frontier' | 'emerging' | 'uncharted';
+
+export interface ExplorationMeta {
+  state: ExplorationState;
+  score: number; // 0 to 100
+  label: string; // e.g. "Canonical Citadel", "Disputed Frontier"
+  badgeIcon: string; // "🏛️", "⚔️", "🧭", "🌫️"
+  tagline: string;
+  openQuestions?: string[];
+  estimatedPublications?: number;
+}
+
+export interface BranchExplorationProfile {
+  id: string;
+  name: string;
+  historicalWeight: number;
+  contemporaryVelocity: number;
+  estimatedPublications: number;
+  baseExplorationScore: number;
+  defaultState: ExplorationState;
+  exploredSummary: string;
+  frontierSummary: string;
+  openProblems: string[];
+}
+
 export type EdgeType = 'INFLUENCED' | 'CRITIQUED' | 'DEVELOPED' | 'SYNTHESIZED';
 export type AcademicConsensus = 'unanimous' | 'broad-consensus' | 'debated' | 'revisionist';
 export type CitationType = 'primary' | 'secondary' | 'sep' | 'iep';
@@ -273,6 +298,7 @@ export interface VisualNode {
   imageUrl?: string;
   domains?: DomainId[];
   isInterdisciplinary?: boolean;
+  exploration?: ExplorationMeta;
   data: Philosopher | Concept;
   // Graph engine coordinates
   x?: number;

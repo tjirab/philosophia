@@ -242,6 +242,16 @@ export function DossierDrawer({
                     </p>
                   </div>
                 </div>
+
+                {/* Exploration State Badge */}
+                {details?.exploration && (
+                  <div className="flex items-center gap-1.5 font-mono">
+                    <span className="text-[var(--gold-accent)]">{details.exploration.badgeIcon}</span>
+                    <span className="font-semibold text-[var(--text-main)]">
+                      {details.exploration.label} ({details.exploration.score}/100)
+                    </span>
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -304,6 +314,39 @@ export function DossierDrawer({
               {isPhilosopher ? phil?.shortBio : (conc?.summary || (conc as any)?.description || '')}
             </p>
           </div>
+
+          {/* Cartography of Thought: Research Depth & Horizon */}
+          {details?.exploration && (
+            <div className="p-3.5 rounded-xl border border-[var(--border-main)] bg-[var(--bg-subtle)] text-xs space-y-2">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-1.5 font-bold text-[var(--text-main)]">
+                  <span>{details.exploration.badgeIcon}</span>
+                  <span>{details.exploration.label}</span>
+                </div>
+                <span className="font-mono text-[var(--gold-accent)] font-semibold">
+                  Charted Depth: {details.exploration.score}/100
+                </span>
+              </div>
+              <p className="text-[var(--text-muted)] leading-relaxed">
+                {details.exploration.tagline}
+              </p>
+              {details.exploration.openQuestions && details.exploration.openQuestions.length > 0 && (
+                <div className="pt-2 border-t border-[var(--border-main)]">
+                  <span className="text-[10px] uppercase font-mono font-bold text-[var(--text-dim)] tracking-wider">
+                    ✦ Open Problems & Frontiers:
+                  </span>
+                  <ul className="mt-1 space-y-1">
+                    {details.exploration.openQuestions.map((q, idx) => (
+                      <li key={idx} className="text-xs text-[var(--gold-accent)] flex items-start gap-1.5">
+                        <span className="opacity-60">•</span>
+                        <span>{q}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
 
           <div className="pt-2 flex flex-col sm:flex-row gap-2">
             <button
