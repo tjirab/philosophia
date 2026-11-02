@@ -84,6 +84,49 @@ export type SociologyBranch =
 
 export type Branch = PhilosophyBranch | PsychologyBranch | SociologyBranch;
 
+export interface BranchMeta {
+  id: Branch;
+  label: string;
+  domain: DomainId;
+}
+
+export const BRANCH_METAS: BranchMeta[] = [
+  // Philosophy
+  { id: 'epistemology', label: 'Epistemology', domain: 'philosophy' },
+  { id: 'metaphysics', label: 'Metaphysics', domain: 'philosophy' },
+  { id: 'ethics', label: 'Ethics', domain: 'philosophy' },
+  { id: 'political', label: 'Political Philosophy', domain: 'philosophy' },
+  { id: 'aesthetics', label: 'Aesthetics', domain: 'philosophy' },
+  { id: 'mind', label: 'Philosophy of Mind', domain: 'philosophy' },
+  { id: 'logic', label: 'Logic & Language', domain: 'philosophy' },
+
+  // Psychology
+  { id: 'psychoanalytic', label: 'Psychoanalysis', domain: 'psychology' },
+  { id: 'behavioral', label: 'Behaviorism', domain: 'psychology' },
+  { id: 'cognitive', label: 'Cognitive Science', domain: 'psychology' },
+  { id: 'developmental', label: 'Developmental Psychology', domain: 'psychology' },
+  { id: 'humanistic', label: 'Humanistic Psychology', domain: 'psychology' },
+  { id: 'social-psychology', label: 'Social Psychology', domain: 'psychology' },
+  { id: 'neuropsychology', label: 'Neuropsychology', domain: 'psychology' },
+
+  // Sociology
+  { id: 'social-theory', label: 'Social Theory', domain: 'sociology' },
+  { id: 'structural-functionalism', label: 'Structural Functionalism', domain: 'sociology' },
+  { id: 'conflict-theory', label: 'Conflict Theory', domain: 'sociology' },
+  { id: 'symbolic-interactionism', label: 'Symbolic Interactionism', domain: 'sociology' },
+  { id: 'critical-sociology', label: 'Critical Sociology', domain: 'sociology' },
+  { id: 'macrosociology', label: 'Macrosociology', domain: 'sociology' },
+];
+
+export function getBranchesForDomain(domain: DomainId | 'all'): BranchMeta[] {
+  if (domain === 'all') return BRANCH_METAS;
+  return BRANCH_METAS.filter((b) => b.domain === domain);
+}
+
+export function getDomainForBranch(branch: Branch): DomainId | undefined {
+  return BRANCH_METAS.find((b) => b.id === branch)?.domain;
+}
+
 export type ScoringMethodology = 'canonical' | 'topology' | 'friction';
 
 export interface MethodologyMeta {

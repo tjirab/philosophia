@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react'
 import dynamic from 'next/dynamic';
 import { forceCollide, forceManyBody, forceLink, forceX, forceY } from 'd3-force';
 import { ZoomIn, ZoomOut, Maximize2 } from 'lucide-react';
-import { VisualNode, VisualLink, Branch, Era, ExplorationState, ScoringMethodology, getEdgeTypeConfig } from '../../lib/types';
+import { VisualNode, VisualLink, Branch, DomainId, Era, ExplorationState, ScoringMethodology, getEdgeTypeConfig } from '../../lib/types';
 import { useTheme } from '../../lib/theme-context';
 import { HoverNodeCard } from './HoverNodeCard';
 import { GraphLayersMenu } from './GraphLayersMenu';
@@ -52,6 +52,10 @@ interface ForceGraphViewProps {
   onSelectEdge?: (edgeId: string | null) => void;
   highlightedPathNodes: string[];
   onClearPath: () => void;
+  selectedDomain?: DomainId | 'all';
+  onSelectDomain?: (domain: DomainId | 'all') => void;
+  interdisciplinaryOnly?: boolean;
+  onToggleInterdisciplinaryOnly?: () => void;
   selectedBranch: Branch | 'all';
   onSelectBranch: (branch: Branch | 'all') => void;
   showConcepts: boolean;
@@ -88,6 +92,10 @@ export function ForceGraphView({
   onSelectEdge,
   highlightedPathNodes,
   onClearPath,
+  selectedDomain = 'all',
+  onSelectDomain,
+  interdisciplinaryOnly = false,
+  onToggleInterdisciplinaryOnly,
   selectedBranch,
   onSelectBranch,
   showConcepts,
@@ -687,27 +695,6 @@ export function ForceGraphView({
     [isLight, isLinkInPath, selectedEdgeId]
   );
 
-  const branches: Array<{ id: Branch | 'all'; label: string }> = [
-    { id: 'all', label: 'All Branches' },
-    // Philosophy
-    { id: 'epistemology', label: 'Epistemology' },
-    { id: 'metaphysics', label: 'Metaphysics' },
-    { id: 'ethics', label: 'Ethics' },
-    { id: 'political', label: 'Political Philosophy' },
-    { id: 'mind', label: 'Philosophy of Mind' },
-    { id: 'logic', label: 'Logic & Language' },
-    // Psychology
-    { id: 'psychoanalytic', label: 'Psychoanalysis' },
-    { id: 'behavioral', label: 'Behaviorism' },
-    { id: 'cognitive', label: 'Cognitive Science' },
-    { id: 'humanistic', label: 'Humanistic Psychology' },
-    // Sociology
-    { id: 'social-theory', label: 'Social Theory' },
-    { id: 'structural-functionalism', label: 'Structural Functionalism' },
-    { id: 'symbolic-interactionism', label: 'Symbolic Interactionism' },
-    { id: 'critical-sociology', label: 'Critical Sociology' },
-  ];
-
   return (
     <div
       ref={containerRef}
@@ -732,7 +719,10 @@ export function ForceGraphView({
           onToggleConcepts={onToggleConcepts}
           selectedBranch={selectedBranch}
           onSelectBranch={onSelectBranch}
-          branches={branches}
+          selectedDomain={selectedDomain}
+          onSelectDomain={onSelectDomain}
+          interdisciplinaryOnly={interdisciplinaryOnly}
+          onToggleInterdisciplinaryOnly={onToggleInterdisciplinaryOnly}
           spacingMultiplier={spacingMultiplier}
           onSetSpacingMultiplier={setSpacingMultiplier}
         />
