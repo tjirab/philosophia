@@ -1,0 +1,26 @@
+{
+  "id": "zara-yaqob",
+  "name": "Zara Yaqob",
+  "birthYear": 1599,
+  "deathYear": 1692,
+  "eraId": "early-modern",
+  "traditionId": "africana-philosophy",
+  "shortBio": "17th-century Ethiopian philosopher whose treatise Hatäta (1667) pioneered an independent rationalist epistemology, critiquing religious dogma, asserting universal human equality, and advocating the supremacy of reason.",
+  "centralQuestion": "Can reason and the light of the heart independently discern truth and moral justice without subjection to sectarian dogma or human tradition?",
+  "keyWorks": [
+    {
+      "title": "Hatäta (Inquiry)",
+      "year": "1667",
+      "url": "https://en.wikipedia.org/wiki/Hatata",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hatata",
+      "description": "Autobiographical rationalist manifesto written in Ge'ez, advocating the light of reason ('aql) to dismantle religious prejudice and slavery."
+    }
+  ],
+  "sepSlug": "africana",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/zara-yaqob.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

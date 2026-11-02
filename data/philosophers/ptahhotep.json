@@ -1,0 +1,26 @@
+{
+  "id": "ptahhotep",
+  "name": "Ptahhotep",
+  "birthYear": -2400,
+  "deathYear": -2350,
+  "eraId": "pre-socratic",
+  "traditionId": "africana-philosophy",
+  "shortBio": "Ancient Egyptian vizier and sage during the Fifth Dynasty, author of The Maxims of Ptahhotep, the world's earliest preserved philosophical treatise on Ma'at, moral listening, and civic righteousness.",
+  "centralQuestion": "What are the universal ethical maxims that maintain truth, cosmic order, and humility in human social life?",
+  "keyWorks": [
+    {
+      "title": "The Maxims of Ptahhotep (Instruction of Ptahhotep)",
+      "year": "c. 2400 BCE",
+      "url": "https://en.wikipedia.org/wiki/The_Maxims_of_Ptahhotep",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Maxims_of_Ptahhotep",
+      "description": "Oldest recorded didactic philosophical treatise exploring moral listening, self-control, and cosmic balance (Ma'at)."
+    }
+  ],
+  "sepSlug": "african-ethics",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/ptahhotep.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

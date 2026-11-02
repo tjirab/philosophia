@@ -1,0 +1,34 @@
+{
+  "id": "aime-cesaire",
+  "name": "Aimé Césaire",
+  "birthYear": 1913,
+  "deathYear": 2008,
+  "eraId": "twentieth-century",
+  "traditionId": "africana-philosophy",
+  "shortBio": "Martinican poet, statesman, and anti-colonial philosopher who co-founded the Négritude movement and authored Discourse on Colonialism, diagnosing the dehumanizing boomerang effect of European imperialism.",
+  "centralQuestion": "How does colonial subjugation simultaneously brutalize the colonized and barbarize the European colonizer?",
+  "keyWorks": [
+    {
+      "title": "Discourse on Colonialism",
+      "year": "1950",
+      "url": "https://en.wikipedia.org/wiki/Discourse_on_Colonialism",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Discourse_on_Colonialism",
+      "description": "Foundational anti-colonial philosophical manifesto exposing how colonial domination boomerangs back to produce European barbarism and fascism."
+    },
+    {
+      "title": "Notebook of a Return to the Native Land (Cahier d'un retour au pays natal)",
+      "year": "1939",
+      "url": "https://en.wikipedia.org/wiki/Cahier_d%27un_retour_au_pays_natal",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cahier_d%27un_retour_au_pays_natal",
+      "description": "Epic philosophical and poetic work inaugurating the Négritude movement and radical Black historical consciousness."
+    }
+  ],
+  "sepSlug": "africana",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/aime-cesaire.jpg",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy"
+}

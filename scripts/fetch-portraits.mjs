@@ -104,6 +104,13 @@ const WIKI_TITLES = {
   'g-e-m-anscombe': 'G._E._M._Anscombe',
   'philippa-foot': 'Philippa_Foot',
   'frantz-fanon': 'Frantz_Fanon',
+  // Africana & African Philosophy
+  'ptahhotep': 'Ptahhotep',
+  'zara-yaqob': 'Zera_Yacob',
+  'anton-wilhelm-amo': 'Anton_Wilhelm_Amo',
+  'aime-cesaire': 'Aimé_Césaire',
+  'kwasi-wiredu': 'Kwasi_Wiredu',
+  'achille-mbembe': 'Achille_Mbembe',
   // Latin American & Decolonial Philosophy
   'sor-juana': 'Sor_Juana_Inés_de_la_Cruz',
   'paulo-freire': 'Paulo_Freire',

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "rene-descartes--anton-wilhelm-amo",
+    "source": "rene-descartes",
+    "target": "anton-wilhelm-amo",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Refuted Cartesian mind-body interactionism and sensation",
+    "description": "Amo's 1734 dissertation On the Apatheia of the Human Mind rigorously proved against Descartes that an immaterial mind cannot suffer physical sensations, demonstrating that sensation belongs exclusively to the living, organic body.",
+    "historicalContext": "Defended at the University of Wittenberg in 1734 under the presidency of Martin Gotthelf Löscher, sparking widespread academic debate across German Enlightenment universities.",
+    "dialecticalTension": "Challenges Cartesian dualism by demonstrating an ontological category mistake: attributing bodily passivity and sensory suffering to an active immaterial soul.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Anton Wilhelm Amo",
+        "work": "On the Apatheia of the Human Mind",
+        "year": 1734,
+        "sectionOrPage": "Chapter 1",
+        "quote": "The human mind does not sense material things, nor does it contain the faculty of sensing in itself... To live and to sense are properties of the body.",
+        "url": "https://en.wikipedia.org/wiki/Anton_Wilhelm_Amo"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Justin E. H. Smith",
+        "work": "Nature, Human Nature, and Human Difference: Race in Early Modern Philosophy",
+        "year": 2015,
+        "sectionOrPage": "pp. 210–235"
+      }
+    ]
+  },
+  {
+    "id": "john-locke--anton-wilhelm-amo",
+    "source": "john-locke",
+    "target": "anton-wilhelm-amo",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Synthesized empirical sensation with rationalist cognitive faculties",
+    "description": "Amo integrated Lockean empiricism regarding sensory impressions while defending a Leibnizian-Wolffian systematic logic of cognitive faculties in his 1738 Treatise on the Art of Philosophising Soberly and Accurately.",
+    "historicalContext": "Composed while Amo lectured in philosophy at the University of Halle and the University of Jena during the height of the German Enlightenment.",
+    "dialecticalTension": "Harmonizes physiological empiricism of the senses with rigorous rationalist criteria of logical sobriety and formal inference.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Anton Wilhelm Amo",
+        "work": "Treatise on the Art of Philosophising Soberly and Accurately",
+        "year": 1738,
+        "sectionOrPage": "Part II, Ch. 2",
+        "quote": "All knowledge of things sensible is conveyed to the mind by the organs of sense."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Stephen Menn",
+        "work": "Amo on Mind and Body",
+        "year": 2018,
+        "sectionOrPage": "British Journal for the History of Philosophy, 26(5), pp. 883–902"
+      }
+    ]
+  },
+  {
+    "id": "anton-wilhelm-amo--kwasi-wiredu",
+    "source": "anton-wilhelm-amo",
+    "target": "kwasi-wiredu",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Supplied the historical foundation for modern Akan mind-body philosophy",
+    "description": "Wiredu celebrated Amo as a primary historical precursor to the non-dualistic Akan understanding of mind and body, demonstrating that African philosophical anthropology avoids Cartesian dualism.",
+    "historicalContext": "The 20th-century recovery of Amo's work by African philosophers investigating indigenous West African ontological frameworks.",
+    "dialecticalTension": "Demonstrates that Amo's rejection of Cartesian dualism was rooted in Akan linguistic and philosophical concepts of the mind (adwene) as an active capacity rather than a Cartesian substance.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Kwasi Wiredu",
+        "work": "The Concept of Mind with Particular Reference to the Language and Thought of the Akans",
+        "year": 1987,
+        "sectionOrPage": "Contemporary Philosophy, vol. 5, pp. 153–179",
+        "quote": "Amo's doctrine that the mind cannot suffer sensation is remarkably congruent with the Akan concept of adwene."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Paulin Hountondji",
+        "work": "African Philosophy: Myth and Reality",
+        "year": 1983,
+        "sectionOrPage": "Chapter 5 (African Philosophy, Real and Imagined)"
+      }
+    ]
+  }
+]

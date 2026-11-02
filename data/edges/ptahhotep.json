@@ -1,0 +1,89 @@
+[
+  {
+    "id": "ptahhotep--maat-ethics",
+    "source": "ptahhotep",
+    "target": "maat-ethics",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the ethics of Ma'at and moral listening",
+    "description": "Ptahhotep codified the ancient Kemetic moral philosophy of Ma'at into systematic didactic maxims, teaching that justice, truth, and civic leadership depend upon deep listening, emotional restraint, and cosmic reciprocity.",
+    "historicalContext": "Composed in Old Kingdom Egypt during the Fifth Dynasty (c. 2400 BCE) as an instructional testament for future generations of magistrates and viziers.",
+    "dialecticalTension": "Grounds societal harmony not in arbitrary royal power, but in universal cosmic order and the ethical accountability of the powerful toward the vulnerable.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ptahhotep",
+        "work": "The Maxims of Ptahhotep",
+        "sectionOrPage": "Maxim 1 & Maxim 5",
+        "year": -2400,
+        "quote": "Do not be proud because of your knowledge, but take counsel with the ignorant as well as the wise... Ma'at is great and its efficacy lasts.",
+        "url": "https://en.wikipedia.org/wiki/The_Maxims_of_Ptahhotep"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Maulana Karenga",
+        "work": "Maat, The Moral Ideal in Ancient Egypt: A Study in Classical African Ethics",
+        "year": 2004,
+        "sectionOrPage": "pp. 165–214"
+      }
+    ]
+  },
+  {
+    "id": "ptahhotep--thales",
+    "source": "ptahhotep",
+    "target": "thales",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Transmitted Egyptian cosmological and wisdom traditions to early Ionian philosophy",
+    "description": "Classical historiography records that Thales travelled to Egypt and studied with Nile Valley priests, absorbing Egyptian geometry and cosmological water-arche principles into Presocratic natural philosophy.",
+    "historicalContext": "The 6th-century BCE Mediterranean intellectual exchange connecting archaic Greek seekers to the ancient temples of Memphis and Heliopolis.",
+    "dialecticalTension": "Transitions mytho-theological Kemetic cosmological observation into secularized Ionian naturalistic inquiry (arche).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Diogenes Laërtius",
+        "work": "Lives and Opinions of Eminent Philosophers",
+        "sectionOrPage": "Book I, Thales",
+        "quote": "Thales had no teacher, except that he went to Egypt and spent time with the priests."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Theophile Obenga",
+        "work": "African Philosophy: The Pharaonic Period: 2780–330 BC",
+        "year": 2004,
+        "sectionOrPage": "pp. 45–82"
+      }
+    ]
+  },
+  {
+    "id": "ptahhotep--socrates",
+    "source": "ptahhotep",
+    "target": "socrates",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Prefigured virtue ethics, intellectual humility, and dialogue",
+    "description": "Ptahhotep's insistence that no one is born with complete wisdom and that understanding must be sought even from the unlearned directly prefigured the Socratic doctrine of intellectual humility and examination of conscience.",
+    "historicalContext": "The deep historical continuity of Mediterranean and Nilotic didactic wisdom literatures influencing classical Athenian moral inquiry.",
+    "dialecticalTension": "Anticipates the Socratic paradox that recognizing one's lack of absolute mastery is the true prerequisite for ethical virtue.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ptahhotep",
+        "work": "The Maxims of Ptahhotep",
+        "sectionOrPage": "Maxim 1",
+        "year": -2400,
+        "quote": "No artist possesses perfection; the wise speech is hidden more than emeralds, yet it may be found among maidservants at the grindstones."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Kwasi Wiredu",
+        "work": "A Companion to African Philosophy",
+        "year": 2004,
+        "sectionOrPage": "pp. 110–124"
+      }
+    ]
+  }
+]

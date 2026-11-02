@@ -1,0 +1,90 @@
+[
+  {
+    "id": "zara-yaqob--hatata-rationalism",
+    "source": "zara-yaqob",
+    "target": "hatata-rationalism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Hatäta rationalist methodology",
+    "description": "Zara Yaqob established an autonomous rationalist philosophy in the Hatäta, holding that God gave humans the light of reason to test all truth claims, reject sectarian bigotry, and construct an egalitarian moral life.",
+    "historicalContext": "Written in 1667 in Ge'ez after Yaqob spent two years meditating in isolation in a cave near the Takkaze River to escape religious persecution.",
+    "dialecticalTension": "Asserts the universality and supremacy of the natural light of reason over institutional ecclesiastical revelation and scriptural literalism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Zara Yaqob",
+        "work": "Hatäta",
+        "year": 1667,
+        "sectionOrPage": "Chapter 3",
+        "quote": "God gave us reason so that we might investigate with it all things and judge what is good and what is evil.",
+        "url": "https://en.wikipedia.org/wiki/Hatata"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Claude Sumner",
+        "work": "Ethiopian Philosophy, vol. II: The Treatise of Zara Yaqob and Walda Heywat",
+        "year": 1976,
+        "sectionOrPage": "pp. 61–105"
+      }
+    ]
+  },
+  {
+    "id": "zara-yaqob--rene-descartes",
+    "source": "zara-yaqob",
+    "target": "rene-descartes",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Independent contemporaneous convergence on rationalist doubt and foundational epistemology",
+    "description": "Contemporaneous with Descartes' Discourse on Method and Meditations, Yaqob developed an independent rationalist epistemology in Ethiopia, systematically doubting inherited dogmas and arriving at foundational rational certainty.",
+    "historicalContext": "The 17th-century parallel emergence of rationalist critique in Western Europe and the Ethiopian Highlands without direct institutional contact.",
+    "dialecticalTension": "Demonstrates that modern rationalist critique of scholastic authority was not a European monopoly, but a planetary intellectual emergence.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Zara Yaqob",
+        "work": "Hatäta",
+        "year": 1667,
+        "sectionOrPage": "Chapter 4",
+        "quote": "I thought in my heart: who is the judge of all these things? Is there someone who can distinguish truth from falsehood? I said to myself: it is the intellect that God has placed in us."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Dag Herbjørnsrud",
+        "work": "The African Enlightenment",
+        "year": 2017,
+        "sectionOrPage": "Aeon Magazine",
+        "url": "https://aeon.co/essays/yacob-and-amo-africas-gift-to-the-philosophical-enlightenment"
+      }
+    ]
+  },
+  {
+    "id": "zara-yaqob--anton-wilhelm-amo",
+    "source": "zara-yaqob",
+    "target": "anton-wilhelm-amo",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Established the African rationalist Enlightenment lineage",
+    "description": "Yaqob's defense of autonomous reason, religious tolerance, and human equality established an intellectual precedent for the African philosophical Enlightenment carried forward by Anton Wilhelm Amo in 18th-century Europe.",
+    "historicalContext": "The trans-epochal development of African rationalist philosophy confronting feudal dogma and racialized exclusion.",
+    "dialecticalTension": "Bridges indigenous Nilotic rationalism with academic Enlightenment disputations in European universities.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Kwame Anthony Appiah",
+        "work": "In My Father's House: Africa in the Philosophy of Culture",
+        "year": 1992,
+        "sectionOrPage": "pp. 85–106"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Claude Sumner",
+        "work": "Classical Ethiopian Philosophy",
+        "year": 1985,
+        "sectionOrPage": "pp. 223–250"
+      }
+    ]
+  }
+]

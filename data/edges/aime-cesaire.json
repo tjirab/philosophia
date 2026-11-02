@@ -1,0 +1,117 @@
+[
+  {
+    "id": "aime-cesaire--negritude",
+    "source": "aime-cesaire",
+    "target": "negritude",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated Négritude as an anti-colonial aesthetic and ontology",
+    "description": "Césaire coined and conceptualized Négritude in his seminal poetry and essays, defining it as the active affirmation of Black being, collective historical memory, and radical poetic resistance against colonial assimilation.",
+    "historicalContext": "Coined in the journal L'Étudiant Noir in Paris (1935) alongside Léopold Sédar Senghor and Léon-Gontran Damas, and codified in Cahier d'un retour au pays natal (1939).",
+    "dialecticalTension": "Inverts the derogatory colonial slur into a badge of ontological dignity, poetic revolt, and planetary historical agency.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Aimé Césaire",
+        "work": "Notebook of a Return to the Native Land",
+        "year": 1939,
+        "quote": "My negritude is not a stone, its deafness hurled against the clamor of the day... It plunges into the red flesh of the soil.",
+        "url": "https://en.wikipedia.org/wiki/Cahier_d%27un_retour_au_pays_natal"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Abiola Irele",
+        "work": "The African Experience in Literature and Ideology",
+        "year": 1990,
+        "sectionOrPage": "pp. 67–88"
+      }
+    ]
+  },
+  {
+    "id": "aime-cesaire--frantz-fanon",
+    "source": "aime-cesaire",
+    "target": "frantz-fanon",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Mentored Fanon and catalyzed his critique of colonial alienation",
+    "description": "Césaire taught Fanon at Lycée Schœlcher in Fort-de-France, inspiring his philosophical awakening. Fanon profoundly engaged and re-evaluated Césaire's Négritude in Black Skin, White Masks and The Wretched of the Earth.",
+    "historicalContext": "The intense teacher-student lineage and Caribbean intellectual transmission between Martinican anti-colonial thinkers.",
+    "dialecticalTension": "Fanon embraced Césaire's poetic reclamation of dignity while warning against the risk of turning Négritude into a backward-looking mystical essentialism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Frantz Fanon",
+        "work": "Black Skin, White Masks",
+        "year": 1952,
+        "sectionOrPage": "Chapter 5",
+        "quote": "When I read Césaire, my heart beat to the rhythm of the world... Aimé Césaire is a great Antillean poet, but he is above all a man who has taken upon himself the historical drama of his people."
+      },
+      {
+        "citationType": "secondary",
+        "author": "David Macey",
+        "work": "Frantz Fanon: A Biography",
+        "year": 2000,
+        "sectionOrPage": "pp. 72–95"
+      }
+    ]
+  },
+  {
+    "id": "jean-paul-sartre--aime-cesaire",
+    "source": "jean-paul-sartre",
+    "target": "aime-cesaire",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Debated the dialectical status of Négritude in Black Orpheus",
+    "description": "Sartre composed the landmark preface Black Orpheus (1948) for Senghor and Césaire's anthology, interpreting Négritude through Hegelian-Marxist dialectics as an anti-racist racism that acts as a necessary negative moment toward a raceless society.",
+    "historicalContext": "The post-WWII existentialist engagement with Pan-African anti-colonial poetics in Paris.",
+    "dialecticalTension": "Césaire and Fanon resisted Sartre's reduction of lived Black poetic consciousness to a mere transitional dialectical stepping stone.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jean-Paul Sartre",
+        "work": "Black Orpheus (Orphée Noir)",
+        "year": 1948,
+        "quote": "Négritude appears as the minor moment of a dialectical progression: the theoretical and practical affirmation of white supremacy is the thesis; the position of Négritude as an antithetical value is the moment of negativity."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Lewis R. Gordon",
+        "work": "Existentia Africana: Understanding Africana Existential Thought",
+        "year": 2000,
+        "sectionOrPage": "pp. 62–95"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--aime-cesaire",
+    "source": "karl-marx",
+    "target": "aime-cesaire",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Radicalized Marxist critique of imperialist barbarism",
+    "description": "In Discourse on Colonialism (1950), Césaire adapted Marxist historical materialism to prove that Western capitalism cannot be separated from colonial predation, famously diagnosing fascism as the imperial boomerang effect.",
+    "historicalContext": "Published in 1950 amid the escalation of Cold War anti-colonial struggles in Indochina and Africa.",
+    "dialecticalTension": "Decentered Eurocentric Marxist orthodoxies by insisting that the colonial question is primary, leading to Césaire's famous 1956 Letter to Maurice Thorez resigning from the French Communist Party.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Aimé Césaire",
+        "work": "Discourse on Colonialism",
+        "year": 1950,
+        "quote": "Colonization works to decivilize the colonizer, to brutalize him in the true sense of the word... Nazism before it was inflicted on Europe was applied only to non-white peoples.",
+        "url": "https://en.wikipedia.org/wiki/Discourse_on_Colonialism"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Robin D. G. Kelley",
+        "work": "A Poetics of Anticolonialism (Introduction to Discourse on Colonialism)",
+        "year": 2000,
+        "sectionOrPage": "pp. 7–28"
+      }
+    ]
+  }
+]

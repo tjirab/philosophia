@@ -616,6 +616,60 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const anzalduaToMestiza = findInfluencePath('gloria-anzaldua', 'mestiza-consciousness', edgesData as any);
     expect(anzalduaToMestiza.found).toBe(true);
+
+    // Africana & African Philosophy lineages
+    // 1. Ptahhotep -> Thales / Socrates / Ma'at
+    const ptahhotepToMaat = findInfluencePath('ptahhotep', 'maat-ethics', edgesData as any);
+    expect(ptahhotepToMaat.found).toBe(true);
+
+    const ptahhotepToThales = findInfluencePath('ptahhotep', 'thales', edgesData as any);
+    expect(ptahhotepToThales.found).toBe(true);
+
+    const ptahhotepToSocrates = findInfluencePath('ptahhotep', 'socrates', edgesData as any);
+    expect(ptahhotepToSocrates.found).toBe(true);
+
+    // 2. Zara Yaqob -> Hatäta / Descartes / Amo
+    const yaqobToHatata = findInfluencePath('zara-yaqob', 'hatata-rationalism', edgesData as any);
+    expect(yaqobToHatata.found).toBe(true);
+
+    const yaqobToDescartes = findInfluencePath('zara-yaqob', 'rene-descartes', edgesData as any);
+    expect(yaqobToDescartes.found).toBe(true);
+
+    const yaqobToAmo = findInfluencePath('zara-yaqob', 'anton-wilhelm-amo', edgesData as any);
+    expect(yaqobToAmo.found).toBe(true);
+
+    // 3. Descartes -> Amo -> Wiredu -> conceptual-decolonization
+    const descToAmo = findInfluencePath('rene-descartes', 'anton-wilhelm-amo', edgesData as any);
+    expect(descToAmo.found).toBe(true);
+
+    const amoToWiredu = findInfluencePath('anton-wilhelm-amo', 'kwasi-wiredu', edgesData as any);
+    expect(amoToWiredu.found).toBe(true);
+
+    const wireduToDecol = findInfluencePath('kwasi-wiredu', 'conceptual-decolonization', edgesData as any);
+    expect(wireduToDecol.found).toBe(true);
+
+    // 4. Césaire -> Négritude / Fanon
+    const cesaireToNegritude = findInfluencePath('aime-cesaire', 'negritude', edgesData as any);
+    expect(cesaireToNegritude.found).toBe(true);
+
+    const cesaireToFanon = findInfluencePath('aime-cesaire', 'frantz-fanon', edgesData as any);
+    expect(cesaireToFanon.found).toBe(true);
+
+    const sartreToCesaire = findInfluencePath('jean-paul-sartre', 'aime-cesaire', edgesData as any);
+    expect(sartreToCesaire.found).toBe(true);
+
+    // 5. Fanon / Foucault / Arendt -> Mbembe -> necropolitics
+    const fanonToMbembe = findInfluencePath('frantz-fanon', 'achille-mbembe', edgesData as any);
+    expect(fanonToMbembe.found).toBe(true);
+
+    const foucaultToMbembe = findInfluencePath('michel-foucault', 'achille-mbembe', edgesData as any);
+    expect(foucaultToMbembe.found).toBe(true);
+
+    const arendtToMbembe = findInfluencePath('hannah-arendt', 'achille-mbembe', edgesData as any);
+    expect(arendtToMbembe.found).toBe(true);
+
+    const mbembeToNecro = findInfluencePath('achille-mbembe', 'necropolitics', edgesData as any);
+    expect(mbembeToNecro.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {
