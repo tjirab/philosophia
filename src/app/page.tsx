@@ -23,7 +23,7 @@ import {
   media,
   getVisualGraph,
 } from '../lib/graph/graph-service';
-import { Branch, EraId, DomainId, ExplorationState, ScoringMethodology } from '../lib/types';
+import { Branch, EraId, DomainId, ExplorationState, ScoringMethodology, getDomainForBranch } from '../lib/types';
 import { ForceGraphView } from '../components/graph/ForceGraphView';
 import { DossierDrawer } from '../components/drawer/DossierDrawer';
 import { EdgeDossierDrawer } from '../components/drawer/EdgeDossierDrawer';
@@ -151,6 +151,23 @@ function HomePageContent() {
     });
   }, [selectedEraId, isolateEra, selectedDomain, interdisciplinaryOnly, selectedBranch, showConcepts, isExplorationMode, explorationFilter, methodology]);
 
+  const handleSelectDomain = useCallback((domain: DomainId | 'all') => {
+    setSelectedDomain(domain);
+    if (domain !== 'all' && selectedBranch !== 'all') {
+      const branchDomain = getDomainForBranch(selectedBranch);
+      if (branchDomain && branchDomain !== domain) {
+        setSelectedBranch('all');
+      }
+    }
+  }, [selectedBranch]);
+
+  const handleSelectBranch = useCallback((branch: Branch | 'all') => {
+    setSelectedBranch(branch);
+    if (branch !== 'all') {
+      setShowConcepts(true);
+    }
+  }, []);
+
   const handleSelectNode = useCallback((nodeId: string | null) => {
     setSelectedNodeId(nodeId);
     if (nodeId) {
@@ -213,7 +230,7 @@ function HomePageContent() {
         {/* Global Domain Selector Pill Bar */}
         <div className="hidden xl:flex items-center gap-1 p-1 bg-[var(--bg-subtle)] border border-[var(--border-main)] rounded-2xl shadow-inner font-serif text-xs shrink-0 mx-2">
           <button
-            onClick={() => setSelectedDomain('all')}
+            onClick={() => handleSelectDomain('all')}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
               selectedDomain === 'all'
                 ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] font-semibold border border-[var(--gold-border)] shadow-sm'
@@ -224,7 +241,7 @@ function HomePageContent() {
             <span>All Disciplines</span>
           </button>
           <button
-            onClick={() => setSelectedDomain('philosophy')}
+            onClick={() => handleSelectDomain('philosophy')}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
               selectedDomain === 'philosophy'
                 ? 'bg-blue-500/15 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/30 shadow-sm'
@@ -235,7 +252,7 @@ function HomePageContent() {
             <span>Philosophy</span>
           </button>
           <button
-            onClick={() => setSelectedDomain('psychology')}
+            onClick={() => handleSelectDomain('psychology')}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
               selectedDomain === 'psychology'
                 ? 'bg-teal-500/15 text-teal-600 dark:text-teal-400 font-semibold border border-teal-500/30 shadow-sm'
@@ -247,7 +264,7 @@ function HomePageContent() {
             <span>Psychology</span>
           </button>
           <button
-            onClick={() => setSelectedDomain('sociology')}
+            onClick={() => handleSelectDomain('sociology')}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
               selectedDomain === 'sociology'
                 ? 'bg-purple-500/15 text-purple-600 dark:text-purple-400 font-semibold border border-purple-500/30 shadow-sm'
@@ -334,8 +351,12 @@ function HomePageContent() {
           onSelectEdge={handleSelectEdge}
           highlightedPathNodes={highlightedPathNodes}
           onClearPath={handleClearPath}
+          selectedDomain={selectedDomain}
+          onSelectDomain={handleSelectDomain}
+          interdisciplinaryOnly={interdisciplinaryOnly}
+          onToggleInterdisciplinaryOnly={() => setInterdisciplinaryOnly(!interdisciplinaryOnly)}
           selectedBranch={selectedBranch}
-          onSelectBranch={setSelectedBranch}
+          onSelectBranch={handleSelectBranch}
           showConcepts={showConcepts}
           onToggleConcepts={() => setShowConcepts(!showConcepts)}
           onOpenLegend={() => setIsLegendOpen(true)}
