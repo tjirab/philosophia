@@ -1,0 +1,120 @@
+[
+  {
+    "id": "achille-mbembe--necropolitics",
+    "source": "achille-mbembe",
+    "target": "necropolitics",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the concept of necropolitics and death-worlds",
+    "description": "Mbembe formulated necropolitics to describe the contemporary sovereign power that constructs death-worlds: unique forms of social existence in which vast populations are subjected to living conditions conferring upon them the status of the living dead.",
+    "historicalContext": "Articulated in his seminal 2003 essay in Public Culture and expanded in his 2019 book Necropolitics, addressing global militarization, border regimes, and late-modern occupation.",
+    "dialecticalTension": "Demonstrates that the ultimate expression of sovereignty in late modernity is not the rational protection of life, but the weaponized administration of mortal destruction.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Achille Mbembe",
+        "work": "Necropolitics",
+        "year": 2003,
+        "sectionOrPage": "Public Culture 15(1), pp. 11–40",
+        "quote": "The ultimate expression of sovereignty resides, to a large degree, in the power and the capacity to dictate who may live and who must die... To exercise sovereignty is to exercise control over mortality.",
+        "url": "https://en.wikipedia.org/wiki/Necropolitics"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Judith Butler",
+        "work": "Frames of War: When Is Life Grievable?",
+        "year": 2009,
+        "sectionOrPage": "pp. 25–48"
+      }
+    ]
+  },
+  {
+    "id": "michel-foucault--achille-mbembe",
+    "source": "michel-foucault",
+    "target": "achille-mbembe",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Radicalized Foucault's biopolitics into contemporary necropower",
+    "description": "Mbembe adopted Foucault's conceptualization of biopower—the power to foster life or let die—and demonstrated its radical inadequacy for explaining contemporary colonial wars, border management, and racialized violence, transforming it into necropower.",
+    "historicalContext": "The post-Cold War theoretical expansion of French critical theory into post-colonial and global militarist contexts.",
+    "dialecticalTension": "Pushes biopolitics past the management of biological bodies and populations to show that sovereignty functions primarily through weaponized death-worlds.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Achille Mbembe",
+        "work": "Necropolitics",
+        "year": 2019,
+        "sectionOrPage": "Chapter 1",
+        "quote": "Biopower is insufficient to account for the contemporary ways in which the political, under the guise of war, of resistance, or of the fight against terror, makes the murder of its enemy its primary objective."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Paul Gilroy",
+        "work": "Darker than Blue: On the Moral Economies of Black Atlantic Culture",
+        "year": 2010,
+        "sectionOrPage": "pp. 82–104"
+      }
+    ]
+  },
+  {
+    "id": "frantz-fanon--achille-mbembe",
+    "source": "frantz-fanon",
+    "target": "achille-mbembe",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Extended Fanonian spatial and psychic critique into late-modern coloniality",
+    "description": "Mbembe drew heavily upon Fanon's spatial analysis of the compartmentalized colonial city, expanding it into vertical sovereignty, drone warfare, and the global 'Becoming Black of the World' under late capitalism.",
+    "historicalContext": "The 21st-century resurgence of Fanonian critical theory to understand contemporary hyper-policing, fortress borders, and resource extraction in Africa and the Global South.",
+    "dialecticalTension": "Updates Fanon's classical mid-20th-century anti-colonial liberation categories to address financialized capitalism and automated planetary surveillance.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Achille Mbembe",
+        "work": "Critique of Black Reason",
+        "year": 2013,
+        "sectionOrPage": "Introduction",
+        "quote": "Fanon was the first to recognize that the condition of the native was the absolute laboratory of modern biopolitics and the prototype for the universal subjection of humanity."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Achille Mbembe",
+        "work": "Necropolitics",
+        "year": 2019,
+        "sectionOrPage": "Chapter 2 (Topographies of Cruelty)",
+        "quote": "Fanon's description of colonial spatialization remains the most vivid anatomy of the territorial division of life."
+      }
+    ]
+  },
+  {
+    "id": "hannah-arendt--achille-mbembe",
+    "source": "hannah-arendt",
+    "target": "achille-mbembe",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Synthesized Arendtian imperialism with contemporary colonial sovereignty",
+    "description": "Mbembe synthesized Arendt's insight in The Origins of Totalitarianism that the racialized technologies of European totalitarianism and the death camp were first piloted in the African colonial conquests of the 19th century.",
+    "historicalContext": "Contemporary philosophical re-evaluations linking the Holocaust, colonial genocide, and modern exception states.",
+    "dialecticalTension": "Harmonizes Arendt's political philosophy of totalitarianism with Africana decolonial critique of Western state sovereignty.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Achille Mbembe",
+        "work": "Necropolitics",
+        "year": 2003,
+        "sectionOrPage": "Public Culture 15(1)",
+        "quote": "Hannah Arendt famously noted that the origins of totalitarianism must be sought in the imperial conquest of Africa, where race was first turned into an emergency principle of government."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Hannah Arendt",
+        "work": "The Origins of Totalitarianism",
+        "year": 1951,
+        "sectionOrPage": "Part Two: Imperialism, Chapter 7 (Race and Bureaucracy)"
+      }
+    ]
+  }
+]

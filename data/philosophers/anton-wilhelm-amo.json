@@ -1,0 +1,33 @@
+{
+  "id": "anton-wilhelm-amo",
+  "name": "Anton Wilhelm Amo",
+  "birthYear": 1703,
+  "deathYear": 1759,
+  "eraId": "enlightenment",
+  "traditionId": "africana-philosophy",
+  "shortBio": "Ghanaian philosopher and university professor at Halle, Wittenberg, and Jena who formulated an incisive critique of Cartesian mind-body interactionism and defended natural rights.",
+  "centralQuestion": "Can the immaterial mind truly suffer physical sensations, or does sensation belong exclusively to the living organic body?",
+  "keyWorks": [
+    {
+      "title": "On the Apatheia of the Human Mind",
+      "year": "1734",
+      "url": "https://en.wikipedia.org/wiki/Anton_Wilhelm_Amo",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Anton_Wilhelm_Amo",
+      "description": "Rigorous critique of Cartesian dualism proving that sensation is purely physiological and the human mind is impassive (apathetic)."
+    },
+    {
+      "title": "Treatise on the Art of Philosophising Soberly and Accurately",
+      "year": "1738",
+      "url": "https://en.wikipedia.org/wiki/Anton_Wilhelm_Amo",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Anton_Wilhelm_Amo",
+      "description": "Comprehensive Enlightenment treatise on logic, epistemology, and the cognitive faculties of the intellect."
+    }
+  ],
+  "sepSlug": "africana",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/anton-wilhelm-amo.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

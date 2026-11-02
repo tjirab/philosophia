@@ -1,0 +1,118 @@
+[
+  {
+    "id": "kwasi-wiredu--conceptual-decolonization",
+    "source": "kwasi-wiredu",
+    "target": "conceptual-decolonization",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated conceptual decolonization and consensual democracy",
+    "description": "Wiredu established conceptual decolonization as a vital philosophical program to free African thought from uncritical reliance on Western conceptual frameworks, developing models of non-party consensus democracy rooted in Akan governance.",
+    "historicalContext": "Formulated during Wiredu's professorship at the University of Ghana and the University of South Florida across the 1980s and 1990s.",
+    "dialecticalTension": "Demonstrates how Western philosophical problems (such as the mind-body problem or Cartesian skepticism) can dissolve or be radically transformed when examined through non-Western languages.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Kwasi Wiredu",
+        "work": "Cultural Universals and Particulars: An African Perspective",
+        "year": 1996,
+        "sectionOrPage": "Chapter 11 (Toward Decolonizing African Philosophy and Religion)",
+        "quote": "Conceptual decolonization is the avoiding of unexamined assimilations in our thought of the conceptual frameworks of Western philosophy."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Olúfẹ́mi Táíwò",
+        "work": "How Colonialism Preempted Modernity in Africa",
+        "year": 2010,
+        "sectionOrPage": "pp. 142–165"
+      }
+    ]
+  },
+  {
+    "id": "kwasi-wiredu--achille-mbembe",
+    "source": "kwasi-wiredu",
+    "target": "achille-mbembe",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Inspirited post-colonial critical African social theory",
+    "description": "Wiredu's rigorous critique of authoritarian traditionalism and his structural analysis of post-colonial governance provided foundational momentum for Mbembe's subsequent political theorization of the African postcolony.",
+    "historicalContext": "The generational maturation of academic African philosophy from post-independence national reconstruction to contemporary critical continental theory.",
+    "dialecticalTension": "Moves from Wiredu's normative analytic reconstruction of consensus toward Mbembe's post-structural dissection of sovereignty, violence, and the grotesque in the postcolony.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Achille Mbembe",
+        "work": "On the Postcolony",
+        "year": 2001,
+        "sectionOrPage": "Introduction",
+        "quote": "Contemporary African thought must emerge from the double requirement of critical rigor and historical reality."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Sanya Osha",
+        "work": "Kwasi Wiredu and Beyond: The Text, Writing and Thought in Africa",
+        "year": 2005,
+        "sectionOrPage": "pp. 89–112"
+      }
+    ]
+  },
+  {
+    "id": "william-james--kwasi-wiredu",
+    "source": "william-james",
+    "target": "kwasi-wiredu",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Synthesized pragmatist epistemology of truth with Akan thought",
+    "description": "Wiredu compared the Akan concept of truth (nokware) with American pragmatism, arguing against correspondence theories of truth in favor of an epistemic view of truth as cognitive perspective and warranted assertibility.",
+    "historicalContext": "Wiredu's dialogue with Western pragmatism while studying at Oxford and developing comparative epistemological frameworks in the 1970s and 1980s.",
+    "dialecticalTension": "Affirms with James that truth is tied to human inquiry and lived practice, while grounding it within Akan linguistic and communal ethics.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Kwasi Wiredu",
+        "work": "Philosophy and an African Culture",
+        "year": 1980,
+        "sectionOrPage": "Chapter 9 (Truth as Opinion)",
+        "quote": "To say that something is true is to say that it is held by someone to be the case from a particular cognitive perspective."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Barry Hallen",
+        "work": "A Short History of African Philosophy",
+        "year": 2002,
+        "sectionOrPage": "pp. 63–78"
+      }
+    ]
+  },
+  {
+    "id": "frantz-fanon--kwasi-wiredu",
+    "source": "frantz-fanon",
+    "target": "kwasi-wiredu",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Advanced Fanonian psychological decolonization into meta-philosophy and linguistics",
+    "description": "Wiredu took up Fanon's revolutionary call to decolonize African consciousness, formalizing it into a disciplined program of meta-philosophical, analytical, and linguistic decolonization.",
+    "historicalContext": "The post-colonial African academy's turn from anti-colonial political agitation to systematic epistemological reconstruction.",
+    "dialecticalTension": "Transposes Fanon's psychoanalytic and existential diagnosis of colonized subjectivity into linguistic and conceptual clarification.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Kwasi Wiredu",
+        "work": "Conceptual Decolonization in African Philosophy: 4 Essays",
+        "year": 1995,
+        "sectionOrPage": "Introduction",
+        "quote": "Decolonization must penetrate to the level of concepts, or else political liberation remains fundamentally incomplete."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Kwame Gyekye",
+        "work": "An Essay on African Philosophical Thought: The Akan Conceptual Scheme",
+        "year": 1995,
+        "sectionOrPage": "pp. 12–34"
+      }
+    ]
+  }
+]

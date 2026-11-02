@@ -1,0 +1,33 @@
+{
+  "id": "kwasi-wiredu",
+  "name": "Kwasi Wiredu",
+  "birthYear": 1931,
+  "deathYear": 2022,
+  "eraId": "twentieth-century",
+  "traditionId": "africana-philosophy",
+  "shortBio": "Ghanaian philosopher who pioneered conceptual decolonization, examining Akan epistemology, non-supernaturalist ontology, and consensus-based democratic political philosophy.",
+  "centralQuestion": "How can African philosophy decolonize unexamined Western conceptual categories while cultivating critical reflection grounded in indigenous epistemic resources?",
+  "keyWorks": [
+    {
+      "title": "Philosophy and an African Culture",
+      "year": "1980",
+      "url": "https://en.wikipedia.org/wiki/Kwasi_Wiredu",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kwasi_Wiredu",
+      "description": "Foundational text addressing anachronisms in tradition, truth as cognitive perspective, and the revitalization of African philosophical inquiry."
+    },
+    {
+      "title": "Cultural Universals and Particulars: An African Perspective",
+      "year": "1996",
+      "url": "https://en.wikipedia.org/wiki/Kwasi_Wiredu",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kwasi_Wiredu",
+      "description": "Systematic treatise formulating conceptual decolonization, non-party consensus democracy, and Akan ethical humanism."
+    }
+  ],
+  "sepSlug": "africana",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/kwasi-wiredu.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "achille-mbembe",
+  "name": "Achille Mbembe",
+  "birthYear": 1957,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "shortBio": "Cameroonian philosopher and political theorist whose concept of necropolitics and critique of the postcolony have redefined contemporary sovereignty, biopolitics, and global racial capitalism.",
+  "centralQuestion": "Under what practical conditions is the sovereign right to kill exercised, and how does contemporary power reduce vulnerable populations to living-dead status?",
+  "keyWorks": [
+    {
+      "title": "Necropolitics",
+      "year": "2019",
+      "url": "https://en.wikipedia.org/wiki/Necropolitics",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Necropolitics",
+      "description": "Groundbreaking philosophical investigation of death-worlds, late-modern colonial occupation, and sovereignty as the power to dictate who may live and who must die."
+    },
+    {
+      "title": "On the Postcolony",
+      "year": "2001",
+      "url": "https://en.wikipedia.org/wiki/Achille_Mbembe",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Achille_Mbembe",
+      "description": "Landmark analysis of power, grotesque theatricality, and conviviality in post-colonial African states."
+    },
+    {
+      "title": "Critique of Black Reason",
+      "year": "2013",
+      "url": "https://en.wikipedia.org/wiki/Achille_Mbembe",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Achille_Mbembe",
+      "description": "Planetary critique demonstrating how the historical racialization of the Black subject prefigures the universalization of precarious humanity under financialized capitalism."
+    }
+  ],
+  "sepSlug": "africana",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/achille-mbembe.jpg",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy"
+}
