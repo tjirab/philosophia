@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   X,
   Send,
@@ -13,6 +13,7 @@ import {
   BookOpen,
 } from 'lucide-react';
 import { Philosopher, Concept } from '../../lib/types';
+import { useClickOutside } from '../../lib/hooks/useClickOutside';
 
 interface SuggestionModalProps {
   isOpen: boolean;
@@ -45,6 +46,9 @@ export function SuggestionModal({
     null
   );
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const modalRef = useRef<HTMLDivElement | null>(null);
+  useClickOutside(modalRef, onClose, isOpen);
 
   useEffect(() => {
     if (initialTargetNodeId) {
@@ -133,8 +137,18 @@ ${sources || 'None provided'}
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md">
-      <div className="bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh] text-[var(--text-main)] font-serif">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
+    >
+      <div
+        ref={modalRef}
+        className="bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh] text-[var(--text-main)] font-serif"
+      >
         {/* Header */}
         <div className="p-5 border-b border-[var(--border-main)] flex items-center justify-between bg-[var(--bg-card)]">
           <div className="flex items-center gap-3">
