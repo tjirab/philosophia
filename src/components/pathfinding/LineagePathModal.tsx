@@ -1,10 +1,12 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { X, GitFork, ArrowRight, Sparkles, Check, BookOpen } from 'lucide-react';
+import { X, GitFork, ArrowRight, Sparkles, Check, BookOpen, ArrowRightLeft } from 'lucide-react';
 import { Philosopher, Concept, Edge, getEdgeTypeConfig } from '../../lib/types';
 import { findInfluencePath, PathResult } from '../../lib/graph/pathfinding';
+import { useClickOutside } from '../../lib/hooks/useClickOutside';
+import { NodeAutocomplete } from './NodeAutocomplete';
 
 interface LineagePathModalProps {
   isOpen: boolean;
@@ -13,6 +15,7 @@ interface LineagePathModalProps {
   concepts?: Concept[];
   edges: Edge[];
   initialStartId?: string;
+  initialTargetId?: string;
   onHighlightPath: (pathNodes: string[]) => void;
 }
 
@@ -23,17 +26,42 @@ export function LineagePathModal({
   concepts = [],
   edges,
   initialStartId,
+  initialTargetId,
   onHighlightPath,
 }: LineagePathModalProps) {
   const [startId, setStartId] = useState(initialStartId || 'plato');
-  const [targetId, setTargetId] = useState('arthur-schopenhauer');
+  const [targetId, setTargetId] = useState(initialTargetId || 'arthur-schopenhauer');
   const [pathResult, setPathResult] = useState<PathResult | null>(null);
+
+  const modalRef = useRef<HTMLDivElement | null>(null);
+
+  // Close modal when user clicks outside the modal card or hits Escape
+  useClickOutside(modalRef, onClose, isOpen);
+
+  // Sync state if initial IDs change or modal reopens
+  useEffect(() => {
+    if (isOpen) {
+      if (initialStartId) setStartId(initialStartId);
+      if (initialTargetId) setTargetId(initialTargetId);
+    }
+  }, [isOpen, initialStartId, initialTargetId]);
 
   if (!isOpen) return null;
 
   const handleCompute = () => {
     const result = findInfluencePath(startId, targetId, edges);
     setPathResult(result);
+  };
+
+  const handleSwap = () => {
+    const nextStart = targetId;
+    const nextTarget = startId;
+    setStartId(nextStart);
+    setTargetId(nextTarget);
+    if (pathResult) {
+      const res = findInfluencePath(nextStart, nextTarget, edges);
+      setPathResult(res);
+    }
   };
 
   const philMap = new Map(philosophers.map((p) => [p.id, p]));
@@ -48,8 +76,18 @@ export function LineagePathModal({
   ];
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md">
-      <div className="bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh] text-[var(--text-main)] font-serif">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
+    >
+      <div
+        ref={modalRef}
+        className="bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh] text-[var(--text-main)] font-serif"
+      >
         {/* Header */}
         <div className="p-5 border-b border-[var(--border-main)] flex items-center justify-between bg-[var(--bg-card)]">
           <div className="flex items-center gap-3">
@@ -74,7 +112,7 @@ export function LineagePathModal({
         </div>
 
         {/* Form Body */}
-        <div className="p-6 overflow-y-auto space-y-5 flex-1">
+        <div className="p-6 overflow-y-auto space-y-5 flex-1 min-h-[360px]">
           {/* Quick Presets */}
           <div>
             <div className="text-[11px] font-semibold uppercase tracking-widest text-[var(--gold-accent)] mb-2">
@@ -99,40 +137,47 @@ export function LineagePathModal({
             </div>
           </div>
 
-          {/* Selectors */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-            <div>
-              <label className="block text-xs font-semibold text-[var(--gold-accent)] uppercase tracking-wider mb-1.5">
-                Origin Thinker (Foundation)
-              </label>
-              <select
-                value={startId}
-                onChange={(e) => setStartId(e.target.value)}
-                className="w-full bg-[var(--bg-subtle)] border border-[var(--border-main)] text-[var(--text-main)] rounded-xl px-3 py-2 text-sm focus:border-[var(--gold-accent)] focus:outline-none"
+          {/* Autocomplete Selectors */}
+          <div className="space-y-3 pt-2">
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-semibold uppercase tracking-widest text-[var(--gold-accent)]">
+                Dialectical Coordinates
+              </span>
+              <button
+                type="button"
+                onClick={handleSwap}
+                className="text-xs text-[var(--text-muted)] hover:text-[var(--gold-accent)] flex items-center gap-1.5 transition px-2.5 py-1 rounded-lg hover:bg-[var(--bg-subtle)] border border-transparent hover:border-[var(--border-main)]"
+                title="Swap origin and destination"
               >
-                {philosophers.map((p) => (
-                  <option key={p.id} value={p.id}>
-                    {p.name} ({p.birthYear < 0 ? `${Math.abs(p.birthYear)} BCE` : `${p.birthYear} CE`})
-                  </option>
-                ))}
-              </select>
+                <ArrowRightLeft className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
+                <span>Swap Trajectory</span>
+              </button>
             </div>
 
-            <div>
-              <label className="block text-xs font-semibold text-[var(--gold-accent)] uppercase tracking-wider mb-1.5">
-                Destination Thinker (Successor)
-              </label>
-              <select
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <NodeAutocomplete
+                label="Origin Thinker (Foundation)"
+                placeholder="Search origin thinker or concept..."
+                value={startId}
+                onChange={(id) => {
+                  setStartId(id);
+                  setPathResult(null);
+                }}
+                philosophers={philosophers}
+                concepts={concepts}
+              />
+
+              <NodeAutocomplete
+                label="Destination Thinker (Successor)"
+                placeholder="Search destination thinker or concept..."
                 value={targetId}
-                onChange={(e) => setTargetId(e.target.value)}
-                className="w-full bg-[var(--bg-subtle)] border border-[var(--border-main)] text-[var(--text-main)] rounded-xl px-3 py-2 text-sm focus:border-[var(--gold-accent)] focus:outline-none"
-              >
-                {philosophers.map((p) => (
-                  <option key={p.id} value={p.id}>
-                    {p.name} ({p.birthYear < 0 ? `${Math.abs(p.birthYear)} BCE` : `${p.birthYear} CE`})
-                  </option>
-                ))}
-              </select>
+                onChange={(id) => {
+                  setTargetId(id);
+                  setPathResult(null);
+                }}
+                philosophers={philosophers}
+                concepts={concepts}
+              />
             </div>
           </div>
 

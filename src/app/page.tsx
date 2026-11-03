@@ -52,6 +52,7 @@ function HomePageContent() {
   const [isSuggestionOpen, setIsSuggestionOpen] = useState<boolean>(false);
   const [suggestionTargetId, setSuggestionTargetId] = useState<string | null>(null);
   const [pathStartId, setPathStartId] = useState<string>('plato');
+  const [pathTargetId, setPathTargetId] = useState<string>('arthur-schopenhauer');
 
   // Deep-linking URL parameter handler (e.g. ?focusEdge=socrates--plato or ?node=plato)
   useEffect(() => {
@@ -181,6 +182,7 @@ function HomePageContent() {
 
   const handleOpenPathModal = useCallback((startId?: string, targetId?: string) => {
     if (startId) setPathStartId(startId);
+    if (targetId) setPathTargetId(targetId);
     setIsPathModalOpen(true);
   }, []);
 
@@ -335,6 +337,7 @@ function HomePageContent() {
         concepts={concepts}
         edges={edges}
         initialStartId={pathStartId}
+        initialTargetId={pathTargetId}
         onHighlightPath={handleHighlightPath}
       />
 
