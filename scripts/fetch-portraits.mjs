@@ -117,6 +117,14 @@ const WIKI_TITLES = {
   'enrique-dussel': 'Enrique_Dussel',
   'anibal-quijano': 'Aníbal_Quijano',
   'gloria-anzaldua': 'Gloria_E._Anzaldúa',
+  // Asian Classical Heterodox & Kyoto School
+  'mozi': 'Mozi',
+  'xunzi': 'Xun_Kuang',
+  'han-feizi': 'Han_Feizi',
+  'mahavira': 'Mahavira',
+  'dogen': 'Dōgen',
+  'nishida-kitaro': 'Kitaro_Nishida',
+  'b-r-ambedkar': 'B._R._Ambedkar',
   // Psychology
   'wilhelm-wundt': 'Wilhelm_Wundt',
   'sigmund-freud': 'Sigmund_Freud',

@@ -1,0 +1,33 @@
+{
+  "id": "nishida-kitaro",
+  "name": "Nishida Kitaro",
+  "birthYear": 1870,
+  "deathYear": 1945,
+  "eraId": "twentieth-century",
+  "traditionId": "kyoto-school",
+  "shortBio": "Founding philosopher of the Kyoto School who synthesized Mahayana Buddhist metaphysics with Western phenomenology, articulating the 'Logic of Basho' (Place) and the ontology of Absolute Nothingness (mu).",
+  "centralQuestion": "What is the primordial horizon of 'pure experience' prior to the bifurcation of subject and object, and how is it grounded in Absolute Nothingness?",
+  "keyWorks": [
+    {
+      "title": "An Inquiry into the Good (Zen no Kenkyū)",
+      "year": "1911",
+      "url": "https://en.wikipedia.org/wiki/An_Inquiry_into_the_Good",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/An_Inquiry_into_the_Good",
+      "description": "Foundational text establishing 'pure experience' prior to subject-object distinction as the source of reality, knowledge, and moral goodness."
+    },
+    {
+      "title": "From the Acting to the Seeing (Hataraku mono kara miru mono e)",
+      "year": "1927",
+      "url": "https://en.wikipedia.org/wiki/Kitaro_Nishida",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kitaro_Nishida",
+      "description": "Key formulation of the 'Logic of Basho' (Place), theorizing reality from the ultimate place of Absolute Nothingness."
+    }
+  ],
+  "sepSlug": "nishida-kitaro",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/nishida-kitaro.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

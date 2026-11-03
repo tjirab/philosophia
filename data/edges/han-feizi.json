@@ -1,0 +1,90 @@
+[
+  {
+    "id": "han-feizi--legalism-fajia",
+    "source": "han-feizi",
+    "target": "legalism-fajia",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Synthesized Legalist statecraft combining law (fa), administrative art (shu), and positional power (shi)",
+    "description": "Han Feizi unified the competing strands of Legalism into a comprehensive science of autocratic government, combining Shang Yang's public penal law (fa), Shen Buhai's bureaucratic statecraft (shu), and Shen Dao's circumstantial power (shi).",
+    "historicalContext": "Composed in the State of Han on the eve of the Qin unification of China in 221 BCE.",
+    "dialecticalTension": "Displaces the rule of virtuous men (renzhi) with the objective rule of institutional law and administrative mechanics (fazhi).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Han Feizi",
+        "work": "The Han Feizi",
+        "sectionOrPage": "Chapter 43 (Determining Principles)",
+        "year": -235,
+        "quote": "Law is what is codified in books and proclaimed to the people; statecraft is what is harbored in the ruler's breast to control his ministers secretly.",
+        "url": "https://en.wikipedia.org/wiki/Han_Feizi_(book)"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Yuri Pines",
+        "work": "Envisioning Eternal Empire: Chinese Political Thought of the Warring States Era",
+        "year": 2009,
+        "sectionOrPage": "pp. 82–108"
+      }
+    ]
+  },
+  {
+    "id": "laozi--han-feizi",
+    "source": "laozi",
+    "target": "han-feizi",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Synthesized Daoist non-action (wu-wei) into the ruler's detached institutional posture",
+    "description": "Han Feizi wrote the earliest surviving commentaries on the Daodejing (the Jie Lao and Yu Lao chapters), adapting Laozi's metaphysical wu-wei into the ultimate administrative strategy: the ruler remains inscrutable, allowing the machinery of law to execute itself.",
+    "historicalContext": "The synthesis of Huang-Lao Daoist metaphysics with Legalist institutional governance in pre-Qin China.",
+    "dialecticalTension": "Transmutes Daoist natural quietude into an instrument of imperial state surveillance and total administrative control.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Han Feizi",
+        "work": "The Han Feizi",
+        "sectionOrPage": "Chapter 5 (The Dao of the Sovereign)",
+        "year": -235,
+        "quote": "The Dao abides in non-assertion, yet nothing remains unaccomplished... The enlightened ruler rests in non-action above, while ministers toil in action below."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Sarah A. Queen",
+        "work": "Han Feizi and the Daodejing",
+        "year": 2013,
+        "sectionOrPage": "Dao Companion to the Philosophy of Han Feizi, pp. 197–232"
+      }
+    ]
+  },
+  {
+    "id": "han-feizi--machiavelli",
+    "source": "han-feizi",
+    "target": "machiavelli",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Parallel formulation of cold political realism, institutional law, and statecraft",
+    "description": "Comparative political philosophers highlight the striking parallel between Han Feizi and Niccolò Machiavelli: both stripped politics of moral sentimentalism, analyzing power through fear, objective institutional incentives, and human self-interest.",
+    "historicalContext": "The trans-epochal resonance between ancient Chinese Legalism and early modern Italian Renaissance political theory.",
+    "dialecticalTension": "Han Feizi constructed an impersonal bureaucratic legal order independent of individual genius, whereas Machiavelli retained a focus on virtù and republican contingency.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Han Feizi",
+        "work": "The Han Feizi",
+        "sectionOrPage": "Chapter 48 (Eight Fallacies)",
+        "year": -235,
+        "quote": "The ruler does not value being loved by his subjects, but being feared by them."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Arthur Waley",
+        "work": "Three Ways of Thought in Ancient China",
+        "year": 1939,
+        "sectionOrPage": "pp. 199–246"
+      }
+    ]
+  }
+]

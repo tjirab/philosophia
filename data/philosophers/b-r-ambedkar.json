@@ -1,0 +1,34 @@
+{
+  "id": "b-r-ambedkar",
+  "name": "B. R. Ambedkar",
+  "birthYear": 1891,
+  "deathYear": 1956,
+  "eraId": "twentieth-century",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Indian jurist, social philosopher, and chief architect of the Indian Constitution who formulated Navayana Buddhism, leading the liberation movement for Dalit equality and the radical philosophical critique of the caste system.",
+  "centralQuestion": "How can human society annihilate caste hierarchies and construct a radical moral order rooted in liberty, equality, and fraternity?",
+  "keyWorks": [
+    {
+      "title": "The Annihilation of Caste",
+      "year": "1936",
+      "url": "https://en.wikipedia.org/wiki/Annihilation_of_Caste",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Annihilation_of_Caste",
+      "description": "Indictment of the Hindu caste order demonstrating that caste is not merely a division of labor, but a division of laborers into graded inequality."
+    },
+    {
+      "title": "The Buddha and His Dhamma",
+      "year": "1957",
+      "url": "https://en.wikipedia.org/wiki/The_Buddha_and_His_Dhamma",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Buddha_and_His_Dhamma",
+      "description": "Magnum opus reconstructing Buddhism (Navayana) as an ethical, rationalist, and emancipatory social gospel centered on universal human dignity."
+    }
+  ],
+  "sepSlug": "egalitarianism",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/b-r-ambedkar.jpg",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy"
+}

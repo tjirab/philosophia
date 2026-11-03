@@ -670,6 +670,80 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const mbembeToNecro = findInfluencePath('achille-mbembe', 'necropolitics', edgesData as any);
     expect(mbembeToNecro.found).toBe(true);
+
+    // Asian Classical Heterodox & Kyoto School lineages
+    // 1. Confucius -> Mozi -> jian-ai & Bentham
+    const confuciusToMozi = findInfluencePath('confucius', 'mozi', edgesData as any);
+    expect(confuciusToMozi.found).toBe(true);
+
+    const moziToJianAi = findInfluencePath('mozi', 'jian-ai', edgesData as any);
+    expect(moziToJianAi.found).toBe(true);
+
+    const moziToBentham = findInfluencePath('mozi', 'jeremy-bentham', edgesData as any);
+    expect(moziToBentham.found).toBe(true);
+
+    // 2. Mencius -> Xunzi -> acquired-goodness & Han Feizi
+    const menciusToXunzi = findInfluencePath('mencius', 'xunzi', edgesData as any);
+    expect(menciusToXunzi.found).toBe(true);
+
+    const xunziToAcquiredGoodness = findInfluencePath('xunzi', 'acquired-goodness', edgesData as any);
+    expect(xunziToAcquiredGoodness.found).toBe(true);
+
+    const xunziToHanFeizi = findInfluencePath('xunzi', 'han-feizi', edgesData as any);
+    expect(xunziToHanFeizi.found).toBe(true);
+
+    // 3. Han Feizi -> legalism-fajia & Machiavelli
+    const hanFeiziToLegalism = findInfluencePath('han-feizi', 'legalism-fajia', edgesData as any);
+    expect(hanFeiziToLegalism.found).toBe(true);
+
+    const hanFeiziToMachiavelli = findInfluencePath('han-feizi', 'machiavelli', edgesData as any);
+    expect(hanFeiziToMachiavelli.found).toBe(true);
+
+    // 4. Mahavira -> anekantavada & Nagarjuna
+    const mahaviraToAnekanta = findInfluencePath('mahavira', 'anekantavada', edgesData as any);
+    expect(mahaviraToAnekanta.found).toBe(true);
+
+    const mahaviraToNagarjuna = findInfluencePath('mahavira', 'nagarjuna', edgesData as any);
+    expect(mahaviraToNagarjuna.found).toBe(true);
+
+    // 5. Siddhartha Gautama -> Dogen -> being-time & Nishida
+    const gautamaToDogen = findInfluencePath('siddhartha-gautama', 'dogen', edgesData as any);
+    expect(gautamaToDogen.found).toBe(true);
+
+    const dogenToBeingTime = findInfluencePath('dogen', 'being-time', edgesData as any);
+    expect(dogenToBeingTime.found).toBe(true);
+
+    const dogenToNishida = findInfluencePath('dogen', 'nishida-kitaro', edgesData as any);
+    expect(dogenToNishida.found).toBe(true);
+
+    const dogenToHeidegger = findInfluencePath('dogen', 'martin-heidegger', edgesData as any);
+    expect(dogenToHeidegger.found).toBe(true);
+
+    // 6. William James / Kant -> Nishida Kitaro -> logic-of-basho & Byung-Chul Han
+    const jamesToNishida = findInfluencePath('william-james', 'nishida-kitaro', edgesData as any);
+    expect(jamesToNishida.found).toBe(true);
+
+    const kantToNishida = findInfluencePath('immanuel-kant', 'nishida-kitaro', edgesData as any);
+    expect(kantToNishida.found).toBe(true);
+
+    const nishidaToBasho = findInfluencePath('nishida-kitaro', 'logic-of-basho', edgesData as any);
+    expect(nishidaToBasho.found).toBe(true);
+
+    const nishidaToHan = findInfluencePath('nishida-kitaro', 'byung-chul-han', edgesData as any);
+    expect(nishidaToHan.found).toBe(true);
+
+    // 7. Siddhartha Gautama / Du Bois / James -> Ambedkar -> navayana-buddhism
+    const gautamaToAmbedkar = findInfluencePath('siddhartha-gautama', 'b-r-ambedkar', edgesData as any);
+    expect(gautamaToAmbedkar.found).toBe(true);
+
+    const duBoisToAmbedkar = findInfluencePath('w-e-b-du-bois', 'b-r-ambedkar', edgesData as any);
+    expect(duBoisToAmbedkar.found).toBe(true);
+
+    const jamesToAmbedkar = findInfluencePath('william-james', 'b-r-ambedkar', edgesData as any);
+    expect(jamesToAmbedkar.found).toBe(true);
+
+    const ambedkarToNavayana = findInfluencePath('b-r-ambedkar', 'navayana-buddhism', edgesData as any);
+    expect(ambedkarToNavayana.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {

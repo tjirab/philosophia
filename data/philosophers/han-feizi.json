@@ -1,0 +1,26 @@
+{
+  "id": "han-feizi",
+  "name": "Han Feizi",
+  "birthYear": -280,
+  "deathYear": -233,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Foremost theoretician of Chinese Legalism (Fajia) who synthesized institutional law (fa), administrative statecraft (shu), and political positional power (shi) into a realist philosophy of state authority.",
+  "centralQuestion": "How can a ruler secure public order and state strength through institutional law and objective administrative mechanisms rather than personal moral virtue?",
+  "keyWorks": [
+    {
+      "title": "Han Feizi",
+      "year": "c. 235 BCE",
+      "url": "https://en.wikipedia.org/wiki/Han_Feizi_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Han_Feizi_(book)",
+      "description": "Magnum opus synthesizing the core tenets of Chinese Legalism, analyzing the two handles of reward and punishment, administrative secrecy, and political realism."
+    }
+  ],
+  "sepSlug": "chinese-legalism",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/han-feizi.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

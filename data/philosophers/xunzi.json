@@ -1,0 +1,26 @@
+{
+  "id": "xunzi",
+  "name": "Xunzi (Xun Kuang)",
+  "birthYear": -310,
+  "deathYear": -235,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Major classical Confucian philosopher who argued against Mencius that innate human nature is unruly and selfish (xing e), requiring deliberate cultural transformation through ritual (li) and education.",
+  "centralQuestion": "How can inherently chaotic and selfish human nature be artificially transformed into moral harmony and social order through ritual and discipline?",
+  "keyWorks": [
+    {
+      "title": "Xunzi",
+      "year": "c. 250 BCE",
+      "url": "https://en.wikipedia.org/wiki/Xunzi_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Xunzi_(book)",
+      "description": "Systematic collection of philosophical essays articulating realistic Confucianism, the artificiality of goodness (wei), ritual logic, and the rectification of names."
+    }
+  ],
+  "sepSlug": "xunzi",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/xunzi.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}
