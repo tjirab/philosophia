@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Search, X, BookOpen, User } from 'lucide-react';
 import { Philosopher, Concept } from '../../lib/types';
+import { useClickOutside } from '../../lib/hooks/useClickOutside';
 
 interface SearchPaletteProps {
   isOpen: boolean;
@@ -21,6 +22,9 @@ export function SearchPalette({
 }: SearchPaletteProps) {
   const [query, setQuery] = useState('');
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const paletteRef = useRef<HTMLDivElement | null>(null);
+
+  useClickOutside(paletteRef, onClose, isOpen);
 
   useEffect(() => {
     if (isOpen) {
@@ -61,8 +65,18 @@ export function SearchPalette({
     : concepts.slice(0, 4);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 p-4 bg-black/75 backdrop-blur-md">
-      <div className="bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl w-full max-w-xl overflow-hidden shadow-2xl flex flex-col font-serif text-[var(--text-main)]">
+    <div
+      className="fixed inset-0 z-50 flex items-start justify-center pt-20 p-4 bg-black/75 backdrop-blur-md"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
+      }}
+    >
+      <div
+        ref={paletteRef}
+        className="bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl w-full max-w-xl overflow-hidden shadow-2xl flex flex-col font-serif text-[var(--text-main)]"
+      >
         {/* Search Input Bar */}
         <div className="flex items-center gap-3 p-4 border-b border-[var(--border-main)] bg-[var(--bg-card)]">
           <Search className="w-5 h-5 text-[var(--gold-accent)] shrink-0" />

@@ -36,13 +36,13 @@ describe('Responsive Navigation & Dossier Drawer Architecture', () => {
     expect(dossierDrawerCode).toContain('Expand Page');
   });
 
-  it('verifies main page navigation bar responsively handles limited screen widths', () => {
-    // The large 5-button disciplinary domain switcher must not crowd out header at lg widths
-    expect(mainPageCode).toContain('hidden xl:flex items-center gap-1 p-1');
-    expect(mainPageCode).not.toContain('hidden lg:flex items-center gap-1 p-1');
+  it('verifies main page navigation bar maintains clean architecture without redundant layers pill bar', () => {
+    // Redundant disciplinary domain switcher is consolidated into GraphLayersMenu and removed from header
+    expect(mainPageCode).not.toContain('Global Domain Selector Pill Bar');
+    expect(mainPageCode).not.toContain('hidden xl:flex items-center gap-1 p-1');
 
-    // Subtitle must only appear when ample width exists
-    expect(mainPageCode).toContain('hidden xl:block truncate');
+    // Subtitle displays gracefully without being crowded out by duplicate filters
+    expect(mainPageCode).toContain('hidden sm:block truncate');
 
     // Primary action buttons must support compact icon-only presentation on limited width
     expect(mainPageCode).toContain('<span className="hidden sm:inline">Trace Lineage</span>');

@@ -8,10 +8,6 @@ import {
   Search,
   HelpCircle,
   GitPullRequest,
-  Globe,
-  Brain,
-  Users,
-  Sparkles,
 } from 'lucide-react';
 import {
   eras,
@@ -221,73 +217,10 @@ function HomePageContent() {
                 Lineage of Ideas
               </span>
             </div>
-            <div className="text-[11px] text-[var(--text-dim)] hidden xl:block truncate">
+            <div className="text-[11px] text-[var(--text-dim)] hidden sm:block truncate">
               Mapping intellectual influence from Antiquity to Modernity
             </div>
           </div>
-        </div>
-
-        {/* Global Domain Selector Pill Bar */}
-        <div className="hidden xl:flex items-center gap-1 p-1 bg-[var(--bg-subtle)] border border-[var(--border-main)] rounded-2xl shadow-inner font-serif text-xs shrink-0 mx-2">
-          <button
-            onClick={() => handleSelectDomain('all')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
-              selectedDomain === 'all'
-                ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] font-semibold border border-[var(--gold-border)] shadow-sm'
-                : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
-            }`}
-          >
-            <Globe className="w-3.5 h-3.5" />
-            <span>All Disciplines</span>
-          </button>
-          <button
-            onClick={() => handleSelectDomain('philosophy')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
-              selectedDomain === 'philosophy'
-                ? 'bg-blue-500/15 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/30 shadow-sm'
-                : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
-            }`}
-          >
-            <Compass className="w-3.5 h-3.5 text-blue-500" />
-            <span>Philosophy</span>
-          </button>
-          <button
-            onClick={() => handleSelectDomain('psychology')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
-              selectedDomain === 'psychology'
-                ? 'bg-teal-500/15 text-teal-600 dark:text-teal-400 font-semibold border border-teal-500/30 shadow-sm'
-                : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
-            }`}
-            title="Psychology: Intellectual lineage and cognitive theories (Curated canon)"
-          >
-            <Brain className="w-3.5 h-3.5 text-teal-500" />
-            <span>Psychology</span>
-          </button>
-          <button
-            onClick={() => handleSelectDomain('sociology')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl transition ${
-              selectedDomain === 'sociology'
-                ? 'bg-purple-500/15 text-purple-600 dark:text-purple-400 font-semibold border border-purple-500/30 shadow-sm'
-                : 'text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
-            }`}
-            title="Sociology: Social theory and critical frameworks (Curated canon)"
-          >
-            <Users className="w-3.5 h-3.5 text-purple-500" />
-            <span>Sociology</span>
-          </button>
-          <div className="w-px h-4 bg-[var(--border-main)] mx-0.5" />
-          <button
-            onClick={() => setInterdisciplinaryOnly(!interdisciplinaryOnly)}
-            className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl transition ${
-              interdisciplinaryOnly
-                ? 'bg-amber-500/15 text-amber-600 dark:text-amber-400 font-semibold border border-amber-500/40 shadow-sm'
-                : 'text-[var(--text-dim)] hover:text-[var(--text-main)] hover:bg-[var(--bg-hover)]'
-            }`}
-            title="Filter to thinkers whose work bridges across multiple disciplines"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-            <span>Bridges</span>
-          </button>
         </div>
 
         {/* Action Controls */}

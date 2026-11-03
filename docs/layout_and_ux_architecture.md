@@ -16,10 +16,10 @@ To eliminate visual cacophony, controls are partitioned into four strict non-ove
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [Zone 1: Global Chrome] Logo | Disciplinary Domain Switcher | Search, Trace, Utilities │
+│ [Zone 1: Global Chrome] Logo | Subtitle | Search, Trace, Utilities                    │
 ├────────────────────────────────────────────────────────────────────────────────────────┤
 │ [Zone 2: Canvas Dock]                                                                  │
-│  [Epoch ▾] [Layers ▾] [Cartography ▾] [✦ Lineage]                                      │
+│  [Epoch ▾] [Layers & Branches ▾] [Cartography ▾] [✦ Lineage]                           │
 │                                                                                        │
 │                               GRAPH VIEWPORT CANVAS                                    │
 │                                                                                        │
@@ -32,23 +32,23 @@ To eliminate visual cacophony, controls are partitioned into four strict non-ove
 
 ### Zone 1: Global Chrome (`<header>`, Fixed Top, `h-16`)
 The top bar provides global orientation and discovery:
-* **Left**: Brand mark (Compass icon) + `PHILOSOPHIA` + `Lineage of Ideas`.
-* **Center**: Global Disciplinary Domain Switcher (`All Disciplines` · `Philosophy` · `Psychology` · `Sociology` · `Bridges`).
-  * *Rule*: Keep button labels concise and uniform. Do not add raw tags like `[EXPERIMENTAL]` directly to button labels; use tooltips or discreet indicator dots.
+* **Left**: Brand mark (Compass icon) + `PHILOSOPHIA` + `Lineage of Ideas` + Subtitle.
 * **Right**: Global actions and utilities:
   1. Primary search (`⌘K Search Folio`)
   2. Action trigger (`Trace Lineage`)
   3. Legend (`Folio Key`)
   4. Appearance (`Theme / Font`)
   5. Contribute (`GitPullRequest`)
+*(Note: Disciplinary domain and branch filtering are unified directly inside Zone 2's `GraphLayersMenu` ["Layers & Branches"] to prevent header clutter and duplicate controls).*
 
 ### Zone 2: Viewport Filter Dock (Top-Left Canvas, `top-4 left-4`)
 Controls that slice or filter the visible graph on the canvas:
 * **Maximum 3 Trigger Pills**:
   1. **`EpochNavigator`**: Chronological era selector and guided historical playback.
   2. **`GraphLayersMenu`**: Progressive disclosure popover for:
+     * Disciplinary Domain focus (`All Disciplines`, `Philosophy`, `Psychology`, `Sociology`, `Bridges`).
      * Landmark Concepts toggle (Show/hide diamond concept nodes).
-     * Philosophical Branch & Discipline focus (Epistemology, Metaphysics, Ethics, Mind, Logic, etc.).
+     * Philosophical Branch focus dynamically tailored to the active discipline (Epistemology, Metaphysics, Ethics, Mind, Logic, etc.).
      * Graph density / spread multiplier (Compact 1.4x, Balanced 1.9x, Spacious 2.4x).
   3. **`ExplorationHud`**: Progressive disclosure popover for:
      * Cartography relief map (Terra Incognita / Fog of War toggle).
