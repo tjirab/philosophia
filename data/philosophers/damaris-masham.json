@@ -1,0 +1,29 @@
+{
+  "id": "damaris-masham",
+  "name": "Damaris Cudworth Masham (Lady Masham)",
+  "birthYear": 1659,
+  "deathYear": 1708,
+  "eraId": "early-modern",
+  "traditionId": "empiricism",
+  "shortBio": "English moral philosopher and theologian; close friend and interlocutor of John Locke and correspondent of Leibniz; critiqued Malebranchian occasionalism, defending empirical moral sentimentalism rooted in maternal education and practical love.",
+  "centralQuestion": "How do sensible desires, practical morality, and maternal social education ground moral virtue without relying on occasionalist asceticism or pure intellectual abstractions?",
+  "keyWorks": [
+    {
+      "title": "A Discourse Concerning the Love of God",
+      "year": "1696",
+      "url": "https://en.wikipedia.org/wiki/Damaris_Cudworth_Masham",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Damaris_Cudworth_Masham",
+      "description": "Powerful refutation of John Norris and Nicolas Malebranche's occasionalism, arguing that love of God is expressed through benevolence to fellow humans."
+    },
+    {
+      "title": "Occasional Thoughts in Reference to a Vertuous or Christian Life",
+      "year": "1705",
+      "url": "https://en.wikipedia.org/wiki/Damaris_Cudworth_Masham",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Damaris_Cudworth_Masham",
+      "description": "Treatise on rational religion, maternal responsibility for early education, and the civic necessity of women's enlightenment."
+    }
+  ],
+  "sepSlug": "lady-masham",
+  "importanceScore": 86,
+  "imageUrl": "/portraits/damaris-masham.jpg"
+}

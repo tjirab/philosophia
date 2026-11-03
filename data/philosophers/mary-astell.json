@@ -1,0 +1,29 @@
+{
+  "id": "mary-astell",
+  "name": "Mary Astell",
+  "birthYear": 1666,
+  "deathYear": 1731,
+  "eraId": "early-modern",
+  "traditionId": "rationalism",
+  "shortBio": "English philosopher and pioneer of feminist political and educational theory; utilized Cartesian rationalism to argue for women's intellectual equality, moral autonomy, and institutional self-determination.",
+  "centralQuestion": "If all men are born free, how is it that all women are born slaves; and how does Cartesian rational self-mastery enable women's intellectual and spiritual liberation?",
+  "keyWorks": [
+    {
+      "title": "A Serious Proposal to the Ladies",
+      "year": "1694",
+      "url": "https://en.wikipedia.org/wiki/A_Serious_Proposal_to_the_Ladies",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Serious_Proposal_to_the_Ladies",
+      "description": "Revolutionary call for establishing women's secular academic communities dedicated to philosophical study and moral self-perfection."
+    },
+    {
+      "title": "Some Reflections upon Marriage",
+      "year": "1700",
+      "url": "https://en.wikipedia.org/wiki/Some_Reflections_upon_Marriage",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Some_Reflections_upon_Marriage",
+      "description": "Philosophical critique of marital subjugation, exposing the contradiction between political anti-tyrannical theory and domestic patriarchy."
+    }
+  ],
+  "sepSlug": "astell",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/mary-astell.jpg"
+}

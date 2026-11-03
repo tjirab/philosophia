@@ -842,6 +842,88 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const sadraToHeidegger = findInfluencePath('mulla-sadra', 'martin-heidegger', edgesData as any);
     expect(sadraToHeidegger.found).toBe(true);
+
+    // Early Modern Women Philosophers lineages
+    // 1. Descartes / Hobbes -> Cavendish -> vitalist-materialism & Conway
+    const descToCavendish = findInfluencePath('rene-descartes', 'margaret-cavendish', edgesData as any);
+    expect(descToCavendish.found).toBe(true);
+
+    const hobbesToCavendish = findInfluencePath('thomas-hobbes', 'margaret-cavendish', edgesData as any);
+    expect(hobbesToCavendish.found).toBe(true);
+
+    const cavendishToVitalism = findInfluencePath('margaret-cavendish', 'vitalist-materialism', edgesData as any);
+    expect(cavendishToVitalism.found).toBe(true);
+
+    const cavendishToConway = findInfluencePath('margaret-cavendish', 'anne-conway', edgesData as any);
+    expect(cavendishToConway.found).toBe(true);
+
+    // 2. Descartes / Spinoza -> Conway -> vitalist-monadism & Leibniz
+    const descToConway = findInfluencePath('rene-descartes', 'anne-conway', edgesData as any);
+    expect(descToConway.found).toBe(true);
+
+    const spinozaToConway = findInfluencePath('baruch-spinoza', 'anne-conway', edgesData as any);
+    expect(spinozaToConway.found).toBe(true);
+
+    const conwayToMonadism = findInfluencePath('anne-conway', 'vitalist-monadism', edgesData as any);
+    expect(conwayToMonadism.found).toBe(true);
+
+    const conwayToLeibniz = findInfluencePath('anne-conway', 'gottfried-leibniz', edgesData as any);
+    expect(conwayToLeibniz.found).toBe(true);
+
+    // 3. Descartes / Locke -> Astell -> cartesian-feminist-rationalism & Wollstonecraft
+    const descToAstell = findInfluencePath('rene-descartes', 'mary-astell', edgesData as any);
+    expect(descToAstell.found).toBe(true);
+
+    const lockeToAstell = findInfluencePath('john-locke', 'mary-astell', edgesData as any);
+    expect(lockeToAstell.found).toBe(true);
+
+    const astellToRationalism = findInfluencePath('mary-astell', 'cartesian-feminist-rationalism', edgesData as any);
+    expect(astellToRationalism.found).toBe(true);
+
+    const astellToWollstonecraft = findInfluencePath('mary-astell', 'mary-wollstonecraft', edgesData as any);
+    expect(astellToWollstonecraft.found).toBe(true);
+
+    // 4. Locke -> Masham -> empirical-moral-sentimentalism & Leibniz / Astell
+    const lockeToMasham = findInfluencePath('john-locke', 'damaris-masham', edgesData as any);
+    expect(lockeToMasham.found).toBe(true);
+
+    const mashamToSentimentalism = findInfluencePath('damaris-masham', 'empirical-moral-sentimentalism', edgesData as any);
+    expect(mashamToSentimentalism.found).toBe(true);
+
+    const mashamToLeibniz = findInfluencePath('damaris-masham', 'gottfried-leibniz', edgesData as any);
+    expect(mashamToLeibniz.found).toBe(true);
+
+    const mashamToAstell = findInfluencePath('damaris-masham', 'mary-astell', edgesData as any);
+    expect(mashamToAstell.found).toBe(true);
+
+    // 5. Locke / Hobbes -> Cockburn -> moral-fitness-realism & Hume
+    const lockeToCockburn = findInfluencePath('john-locke', 'catharine-cockburn', edgesData as any);
+    expect(lockeToCockburn.found).toBe(true);
+
+    const hobbesToCockburn = findInfluencePath('thomas-hobbes', 'catharine-cockburn', edgesData as any);
+    expect(hobbesToCockburn.found).toBe(true);
+
+    const cockburnToRealism = findInfluencePath('catharine-cockburn', 'moral-fitness-realism', edgesData as any);
+    expect(cockburnToRealism.found).toBe(true);
+
+    const cockburnToHume = findInfluencePath('catharine-cockburn', 'david-hume', edgesData as any);
+    expect(cockburnToHume.found).toBe(true);
+
+    // 6. Leibniz / Voltaire / Descartes -> Du Châtelet -> newtonian-leibnizian-synthesis & Kant
+    const leibnizToChatelet = findInfluencePath('gottfried-leibniz', 'emilie-du-chatelet', edgesData as any);
+    expect(leibnizToChatelet.found).toBe(true);
+
+    const voltaireToChatelet = findInfluencePath('voltaire', 'emilie-du-chatelet', edgesData as any);
+    expect(voltaireToChatelet.found).toBe(true);
+
+    const descToChatelet = findInfluencePath('rene-descartes', 'emilie-du-chatelet', edgesData as any);
+    expect(descToChatelet.found).toBe(true);
+
+    const chateletToSynthesis = findInfluencePath('emilie-du-chatelet', 'newtonian-leibnizian-synthesis', edgesData as any);
+    expect(chateletToSynthesis.found).toBe(true);
+
+    const chateletToKant = findInfluencePath('emilie-du-chatelet', 'immanuel-kant', edgesData as any);
+    expect(chateletToKant.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {

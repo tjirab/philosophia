@@ -1,0 +1,29 @@
+{
+  "id": "emilie-du-chatelet",
+  "name": "Émilie du Châtelet (Marquise du Châtelet)",
+  "birthYear": 1706,
+  "deathYear": 1749,
+  "eraId": "enlightenment",
+  "traditionId": "enlightenment-social",
+  "shortBio": "French natural philosopher, mathematician, and physicist; translated and annotated Newton's Principia, establishing the groundbreaking philosophical synthesis of Newtonian empirical mechanics with Leibnizian metaphysics of kinetic energy (mv²) and sufficient reason.",
+  "centralQuestion": "How can the empirical mathematical mechanics of Newton be reconciled with and metaphysically grounded by the Leibnizian Principle of Sufficient Reason?",
+  "keyWorks": [
+    {
+      "title": "Institutions de Physique (Foundations of Physics)",
+      "year": "1740",
+      "url": "https://en.wikipedia.org/wiki/Institutions_de_Physique",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Institutions_de_Physique",
+      "description": "Foundational textbook integrating Newtonian physics with Leibnizian metaphysics, defending vis viva (living force) as mv²."
+    },
+    {
+      "title": "Translation and Commentary on Newton's Principia Mathematica",
+      "year": "1756",
+      "url": "https://en.wikipedia.org/wiki/%C3%89milie_du_Ch%C3%A2telet",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/%C3%89milie_du_Ch%C3%A2telet",
+      "description": "Definitive French translation with extensive mathematical and analytical commentaries, remaining the standard French edition to this day."
+    }
+  ],
+  "sepSlug": "emilie-du-chatelet",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/emilie-du-chatelet.jpg"
+}

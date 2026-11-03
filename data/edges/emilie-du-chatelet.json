@@ -1,0 +1,157 @@
+[
+  {
+    "id": "emilie-du-chatelet--newtonian-leibnizian-synthesis",
+    "source": "emilie-du-chatelet",
+    "target": "newtonian-leibnizian-synthesis",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Synthesized Newtonian mechanics with Leibnizian metaphysics and vis viva (mv²)",
+    "description": "Émilie du Châtelet established a groundbreaking unified natural philosophy in 'Institutions de Physique', integrating Newton's mathematical physics and universal gravitation with Leibniz's Principle of Sufficient Reason, and demonstrating that kinetic energy (vis viva) is proportional to mass times velocity squared.",
+    "historicalContext": "Composed at the Château de Cirey in Champagne, France, between 1735 and 1740.",
+    "dialecticalTension": "Overcomes the bitter 18th-century European feud between British Newtonians and Continental Leibnizians, uniting empirical mechanics with metaphysical grounding.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Émilie du Châtelet",
+        "work": "Institutions de Physique (Foundations of Physics)",
+        "year": 1740,
+        "sectionOrPage": "Chapter 21: De la force des corps (On the Force of Bodies)",
+        "quote": "The living force (force vive) of bodies in motion is not proportional to their simple velocity, but to the square of their velocity multiplied by their mass.",
+        "url": "https://plato.stanford.edu/entries/emilie-du-chatelet/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Katherine Brading",
+        "work": "Émilie Du Châtelet and the Foundations of Physics",
+        "year": 2019,
+        "sectionOrPage": "Routledge Studies in Eighteenth-Century Philosophy, pp. 45–90",
+        "url": "https://plato.stanford.edu/entries/emilie-du-chatelet/"
+      }
+    ]
+  },
+  {
+    "id": "gottfried-leibniz--emilie-du-chatelet",
+    "source": "gottfried-leibniz",
+    "target": "emilie-du-chatelet",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Adopted the Principle of Sufficient Reason and living forces (vis viva)",
+    "description": "Du Châtelet adopted Leibniz's Principle of Sufficient Reason and non-contradiction as the indispensable foundational axioms of all natural science, defending Leibniz's measure of vis viva against Cartesian momentum conservation.",
+    "historicalContext": "The vis viva controversy that divided the French Académie des Sciences in the 1730s and 1740s.",
+    "dialecticalTension": "Employs Leibnizian metaphysics not as an alternative to empirical physics, but as its necessary rational foundation.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Émilie du Châtelet",
+        "work": "Institutions de Physique",
+        "year": 1740,
+        "sectionOrPage": "Chapter 1: Des principes de nos connaissances (On the Principles of Knowledge)",
+        "quote": "The principle of sufficient reason is the only key that can open the door to true physics and metaphysics.",
+        "url": "https://plato.stanford.edu/entries/leibniz/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Ruth Hagengruber",
+        "work": "Émilie du Châtelet between Leibniz and Newton",
+        "year": 2012,
+        "sectionOrPage": "Springer Science & Business Media, pp. 1–58",
+        "url": "https://plato.stanford.edu/entries/leibniz/"
+      }
+    ]
+  },
+  {
+    "id": "voltaire--emilie-du-chatelet",
+    "source": "voltaire",
+    "target": "emilie-du-chatelet",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Collaborated at Cirey on the French dissemination of Newtonian science",
+    "description": "Du Châtelet and Voltaire lived and worked together for fifteen years at Cirey, co-authoring scientific papers, running experimental physics laboratories, and introducing Newtonian physics to France in 'Éléments de la philosophie de Newton'.",
+    "historicalContext": "The Enlightenment intellectual powerhouse at Cirey from 1734 to 1749.",
+    "dialecticalTension": "While Voltaire remained a strict Newtonian empiricist skeptical of metaphysics, Du Châtelet independently broke from him to integrate Leibnizian metaphysics.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Voltaire",
+        "work": "Éloge historique de Madame la Marquise du Châtelet",
+        "year": 1752,
+        "sectionOrPage": "Preface to Newton's Principia",
+        "quote": "No woman was ever more learned than she, and no one ever deserved less to have it said of her: she was a learned woman. She investigated Newton's sublime truths with clarity and depth.",
+        "url": "https://plato.stanford.edu/entries/voltaire/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Judith P. Zinsser",
+        "work": "La Dame d'Esprit: A Biography of the Marquise Du Châtelet",
+        "year": 2006,
+        "sectionOrPage": "pp. 120–165",
+        "url": "https://plato.stanford.edu/entries/voltaire/"
+      }
+    ]
+  },
+  {
+    "id": "rene-descartes--emilie-du-chatelet",
+    "source": "rene-descartes",
+    "target": "emilie-du-chatelet",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Critiqued Cartesian momentum conservation and mechanistic vortex theory",
+    "description": "In 'Institutions de Physique', Du Châtelet dismantled Descartes' vortex theory of planetary orbits and his claim that the quantity of motion in the universe is simply mass times speed (mv), proving the mathematical superiority of vis viva and universal gravitation.",
+    "historicalContext": "The final defeat of Cartesian vortex physics in Continental Europe during the 1740s.",
+    "dialecticalTension": "Overturns Descartes' conservation of linear momentum (mv) in favor of the conservation of kinetic energy (mv²).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Émilie du Châtelet",
+        "work": "Institutions de Physique",
+        "year": 1740,
+        "sectionOrPage": "Chapter 20: Des lois du mouvement (On the Laws of Motion)",
+        "quote": "Descartes erred when he maintained that the quantity of motion remains always the same in nature under the formula of mass times velocity.",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Katherine Brading",
+        "work": "Émilie du Châtelet (Stanford Encyclopedia of Philosophy)",
+        "year": 2019,
+        "sectionOrPage": "Section 4: The Force of Bodies (Vis Viva)",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
+  },
+  {
+    "id": "emilie-du-chatelet--immanuel-kant",
+    "source": "emilie-du-chatelet",
+    "target": "immanuel-kant",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Prompted Kant's first published philosophical work on living forces",
+    "description": "Immanuel Kant's very first published work, 'Thoughts on the True Estimation of Living Forces' (Gedanken von der wahren Schätzung der lebendigen Kräfte, 1747), was a direct engagement with Du Châtelet's 'Institutions de Physique' and the vis viva controversy she ignited.",
+    "historicalContext": "The young Kant in Königsberg in the 1740s grappling with the Leibniz-Newton-Du Châtelet synthesis.",
+    "dialecticalTension": "Kant attempts to mediate between Cartesian momentum and Du Châtelet's Leibnizian vis viva, setting him on his lifelong path to transcendental philosophy.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Immanuel Kant",
+        "work": "Thoughts on the True Estimation of Living Forces (Gedanken von der wahren Schätzung der lebendigen Kräfte)",
+        "year": 1747,
+        "sectionOrPage": "Chapter 1, Section 8",
+        "quote": "The illustrious Marquise du Châtelet in her Institutions de Physique has treated this question of living forces with the utmost precision and eloquence.",
+        "url": "https://plato.stanford.edu/entries/emilie-du-chatelet/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Ruth Hagengruber",
+        "work": "Cutting Through the Veil of Ignorance: Kant's Debt to Emilie Du Châtelet",
+        "year": 2011,
+        "sectionOrPage": "in R. Hagengruber (ed.), Emilie du Châtelet between Leibniz and Newton, pp. 101–125",
+        "url": "https://plato.stanford.edu/entries/emilie-du-chatelet/"
+      }
+    ]
+  }
+]

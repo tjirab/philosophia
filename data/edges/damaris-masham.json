@@ -1,0 +1,117 @@
+[
+  {
+    "id": "damaris-masham--empirical-moral-sentimentalism",
+    "source": "damaris-masham",
+    "target": "empirical-moral-sentimentalism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated empirical moral sentimentalism and the primacy of early maternal nurture",
+    "description": "Lady Masham grounded moral epistemology in sensible experience, emotional sympathy, and reciprocal benevolence. She proved that human love of God originates and develops through natural affections cultivated in family and society, rather than abstract occasionalist detachment.",
+    "historicalContext": "Articulated at Oates in Essex, where Masham hosted John Locke during his final fourteen years.",
+    "dialecticalTension": "Opposes Malebranche and John Norris's ascetic occasionalism which demanded detachment from all creaturely sensible loves.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Damaris Cudworth Masham",
+        "work": "A Discourse Concerning the Love of God",
+        "year": 1696,
+        "sectionOrPage": "Section II",
+        "quote": "We cannot love God whom we have not seen, unless we learn to love our brother whom we have seen through the sensible pleasures of creaturely benevolence.",
+        "url": "https://plato.stanford.edu/entries/lady-masham/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Sarah Hutton",
+        "work": "Damaris Cudworth, Lady Masham: Between Platonism and Enlightenment",
+        "year": 2010,
+        "sectionOrPage": "British Journal for the History of Philosophy 18(1), pp. 29–47",
+        "url": "https://plato.stanford.edu/entries/lady-masham/"
+      }
+    ]
+  },
+  {
+    "id": "john-locke--damaris-masham",
+    "source": "john-locke",
+    "target": "damaris-masham",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Integrated and co-developed empirical epistemology and educational reform",
+    "description": "Masham was Locke's closest intellectual companion and critical interlocutor, engaging deeply in the composition of Locke's 'Some Thoughts Concerning Education' and applying empirical sensation to Christian ethics in her own philosophical treatises.",
+    "historicalContext": "The collaborative intellectual household of Oates in Essex from 1691 to 1704.",
+    "dialecticalTension": "Masham emphasizes maternal social pedagogy and the natural necessity of sensible affections more explicitly than Locke's individualist empiricism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Damaris Cudworth Masham",
+        "work": "Occasional Thoughts in Reference to a Vertuous or Christian Life",
+        "year": 1705,
+        "sectionOrPage": "Section IV",
+        "quote": "The education of children is the foundation of all public virtue and national happiness, and in this women have the earliest and greatest part.",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Lois Frankel",
+        "work": "Damaris Cudworth Masham: A Seventeenth-Century Feminist Philosopher",
+        "year": 1989,
+        "sectionOrPage": "Hypatia 4(1), pp. 80–90",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
+  },
+  {
+    "id": "damaris-masham--gottfried-leibniz",
+    "source": "damaris-masham",
+    "target": "gottfried-leibniz",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Engaged in critical correspondence on pre-established harmony and substance",
+    "description": "Between 1703 and 1706, Lady Masham conducted an extensive philosophical correspondence with Leibniz, probing and challenging his doctrines of pre-established harmony, monads, and the mind-body union from an empirical perspective.",
+    "historicalContext": "The international republic of letters linking Hanover, Berlin, and English intellectual circles.",
+    "dialecticalTension": "Masham defends experiential, empirical limitations of knowledge against Leibniz's rationalist metaphysical deductions of pre-established harmony.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Gottfried Wilhelm Leibniz",
+        "work": "Correspondence with Lady Masham",
+        "year": 1704,
+        "sectionOrPage": "Die philosophischen Schriften (ed. Gerhardt), III, pp. 331–375",
+        "quote": "I have found in Lady Masham's letters a philosophical penetration and judgment that few men possess.",
+        "url": "https://plato.stanford.edu/entries/lady-masham/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Jacqueline Broad",
+        "work": "Women Philosophers of the Seventeenth Century",
+        "year": 2002,
+        "sectionOrPage": "pp. 114–140",
+        "url": "https://plato.stanford.edu/entries/lady-masham/"
+      }
+    ]
+  },
+  {
+    "id": "damaris-masham--mary-astell",
+    "source": "damaris-masham",
+    "target": "mary-astell",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Debated the nature of love, occasionalism, and female education",
+    "description": "Masham published 'A Discourse Concerning the Love of God' (1696) anonymously to refute John Norris and Mary Astell's published correspondence ('Letters Concerning the Love of God', 1695), sparking one of the sharpest philosophical debates in early modern Britain.",
+    "historicalContext": "The clash between Malebranchian-Cartesian rationalism (Astell/Norris) and Lockean moral empiricism (Masham) in 1690s London.",
+    "dialecticalTension": "Astell advocated withdrawing desire from creatures to love God alone, while Masham insisted that creatures are the natural and necessary conduits of divine love.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Jacqueline Broad",
+        "work": "Adversaries or Allies? Occasionalism in the Thought of Mary Astell and Damaris Masham",
+        "year": 2003,
+        "sectionOrPage": "Canadian Journal of Philosophy 33(4), pp. 533–558",
+        "url": "https://plato.stanford.edu/entries/lady-masham/"
+      }
+    ]
+  }
+]

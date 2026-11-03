@@ -1,0 +1,29 @@
+{
+  "id": "catharine-cockburn",
+  "name": "Catharine Trotter Cockburn",
+  "birthYear": 1679,
+  "deathYear": 1749,
+  "eraId": "enlightenment",
+  "traditionId": "empiricism",
+  "shortBio": "English philosopher, novelist, and dramatist; mounted the foremost defense of Locke's epistemology, formulating an early moral realist natural-law theory grounding moral obligation in human nature and social fitness.",
+  "centralQuestion": "Can moral obligation be demonstratively proven from the real relations and social nature of human beings within an empirical epistemology, without collapsing into theological voluntarism?",
+  "keyWorks": [
+    {
+      "title": "A Defence of the Essay of Human Understanding",
+      "year": "1702",
+      "url": "https://en.wikipedia.org/wiki/Catharine_Trotter_Cockburn",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Catharine_Trotter_Cockburn",
+      "description": "Brilliant systematic defense of John Locke's epistemology against theological charges of skepticism and materialism."
+    },
+    {
+      "title": "Remarks upon the Principles and Reasonings of Dr. Rutherforth's Essay",
+      "year": "1747",
+      "url": "https://en.wikipedia.org/wiki/Catharine_Trotter_Cockburn",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Catharine_Trotter_Cockburn",
+      "description": "Moral philosophical work grounding ethics in the objective fitness of things and Samuel Clarke's rational realism."
+    }
+  ],
+  "sepSlug": "cockburn",
+  "importanceScore": 85,
+  "imageUrl": "/portraits/catharine-cockburn.jpg"
+}
