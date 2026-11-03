@@ -125,6 +125,14 @@ const WIKI_TITLES = {
   'dogen': 'Dōgen',
   'nishida-kitaro': 'Kitaro_Nishida',
   'b-r-ambedkar': 'B._R._Ambedkar',
+  // Islamic Golden Age & Jewish Andalusian Philosophy
+  'al-kindi': 'Al-Kindi',
+  'ibn-gabirol': 'Solomon_ibn_Gabirol',
+  'ibn-tufayl': 'Ibn_Tufayl',
+  'suhrawardi': 'Shahab_al-Din_Yahya_ibn_Habash_Suhrawardi',
+  'ibn-arabi': 'Ibn_Arabi',
+  'hasdai-crescas': 'Hasdai_Crescas',
+  'mulla-sadra': 'Mulla_Sadra',
   // Psychology
   'wilhelm-wundt': 'Wilhelm_Wundt',
   'sigmund-freud': 'Sigmund_Freud',

@@ -1,0 +1,22 @@
+{
+  "id": "hasdai-crescas",
+  "name": "Hasdai Crescas",
+  "birthYear": 1340,
+  "deathYear": 1410,
+  "eraId": "medieval",
+  "traditionId": "scholasticism",
+  "shortBio": "Catalan-Aragonese Jewish philosopher and communal leader; author of The Light of the Lord, presenting a radical critique of Aristotelian physics and anticipating classical modern mechanics.",
+  "centralQuestion": "Why must Aristotelian physical dogmas on the impossibility of the void, infinite space, and plurality of worlds be rejected to affirm divine omnipotence and unconditional love?",
+  "keyWorks": [
+    {
+      "title": "The Light of the Lord (Or Hashem)",
+      "year": "1410 CE",
+      "url": "https://en.wikipedia.org/wiki/Or_Hashem",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Or_Hashem",
+      "description": "Radical anti-Aristotelian treatise establishing the infinite void, absolute space, causal determinism, and divine joy."
+    }
+  ],
+  "sepSlug": "crescas",
+  "importanceScore": 87,
+  "imageUrl": "/portraits/hasdai-crescas.jpg"
+}

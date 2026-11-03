@@ -1,0 +1,29 @@
+{
+  "id": "ibn-arabi",
+  "name": "Ibn Arabi (Muhyiddin Ibn 'Arabi)",
+  "birthYear": 1165,
+  "deathYear": 1240,
+  "eraId": "medieval",
+  "traditionId": "islamic-golden-age",
+  "shortBio": "Andalusian master philosopher and mystic known as 'Al-Shaykh al-Akbar'; formulated the doctrine of the Unity of Being (Wahdat al-Wujud) and the imaginal realm ('alam al-mithal).",
+  "centralQuestion": "How does the singular transcendent Reality manifest as the kaleidoscopic multiplicity of the cosmos through divine self-disclosure?",
+  "keyWorks": [
+    {
+      "title": "The Bezels of Wisdom (Fusus al-Hikam)",
+      "year": "1229 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Ringstones_of_Wisdom",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Ringstones_of_Wisdom",
+      "description": "Quintessential exposition of the divine attributes, prophetic wisdoms, and the non-dual reality of Wujud."
+    },
+    {
+      "title": "The Meccan Revelations (Al-Futuhat al-Makkiyya)",
+      "year": "1238 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Meccan_Revelations",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Meccan_Revelations",
+      "description": "Monumental encyclopedia of mystical metaphysics, cosmogony, spiritual psychology, and hermeneutics."
+    }
+  ],
+  "sepSlug": "ibn-arabi",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/ibn-arabi.jpg"
+}

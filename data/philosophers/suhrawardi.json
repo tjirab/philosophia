@@ -1,0 +1,29 @@
+{
+  "id": "suhrawardi",
+  "name": "Shahab al-Din Yahya Suhrawardi",
+  "birthYear": 1154,
+  "deathYear": 1191,
+  "eraId": "medieval",
+  "traditionId": "islamic-golden-age",
+  "shortBio": "Persian philosopher and founder of the Illuminationist school (Hikmat al-Ishraq); critiqued Avicennian Peripateticism and formulated the metaphysics of Light and Knowledge by Presence.",
+  "centralQuestion": "Is fundamental reality an intensity gradient of self-manifesting primordial Light, known directly through unmediated presence rather than abstract concepts?",
+  "keyWorks": [
+    {
+      "title": "The Philosophy of Illumination (Hikmat al-Ishraq)",
+      "year": "1186 CE",
+      "url": "https://en.wikipedia.org/wiki/Shahab_al-Din_Yahya_ibn_Habash_Suhrawardi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Shahab_al-Din_Yahya_ibn_Habash_Suhrawardi",
+      "description": "Foundational text of Illuminationism, replacing Peripatetic substance ontology with the gradation of Light and immediate luminous presence."
+    },
+    {
+      "title": "The Book of Intimations (Kitab al-Talwihat)",
+      "year": "c. 1180 CE",
+      "url": "https://en.wikipedia.org/wiki/Shahab_al-Din_Yahya_ibn_Habash_Suhrawardi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Shahab_al-Din_Yahya_ibn_Habash_Suhrawardi",
+      "description": "Detailed Peripatetic foundation and dialectical critique of Avicenna's epistemology."
+    }
+  ],
+  "sepSlug": "suhrawardi",
+  "importanceScore": 88,
+  "imageUrl": "/portraits/suhrawardi.jpg"
+}

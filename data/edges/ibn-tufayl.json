@@ -1,0 +1,131 @@
+[
+  {
+    "id": "ibn-tufayl--autodidactic-empiricism",
+    "source": "ibn-tufayl",
+    "target": "autodidactic-empiricism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated autodidactic empiricism and the tabula rasa through Hayy ibn Yaqzan",
+    "description": "Ibn Tufayl developed the philosophical thought experiment of an isolated human on an uninhabited island who, starting with no prior language or tradition, systematically discovers botany, physics, metaphysics, and contemplative union through sensory observation and pure reason.",
+    "historicalContext": "Written in 12th-century Almohad Andalusia (Granada/Marrakech) during a period of intense theological and philosophical debate.",
+    "dialecticalTension": "Demonstrates that natural human reason and prophetic revelation arrive at the exact same ultimate metaphysical truths.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ibn Tufayl",
+        "work": "Hayy ibn Yaqzan",
+        "year": 1170,
+        "sectionOrPage": "Conclusion",
+        "quote": "He saw that all religious laws and prophetic teachings conform with what he had discovered by his independent intellect without divergence."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Lenn E. Goodman",
+        "work": "Ibn Tufayl's Hayy Ibn Yaqzan: A Philosophical Tale",
+        "year": 2009,
+        "sectionOrPage": "pp. 1–40"
+      }
+    ]
+  },
+  {
+    "id": "avicenna--ibn-tufayl",
+    "source": "avicenna",
+    "target": "ibn-tufayl",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Adapted Avicennian active intellect and visionary narratives",
+    "description": "Ibn Tufayl explicitly took the character names and philosophical framework from Avicenna's allegorical tales ('Hayy ibn Yaqzan' and 'Saliman and Absal'), transforming Avicenna's Eastern philosophy into an empirical and epistemological journey.",
+    "historicalContext": "The deep reception and adaptation of Avicennian psychology and metaphysics in 12th-century Muslim Spain.",
+    "dialecticalTension": "Grounds Avicenna's abstract noetics in concrete biological observation and empirical trial-and-error.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ibn Tufayl",
+        "work": "Hayy ibn Yaqzan",
+        "year": 1170,
+        "sectionOrPage": "Introduction",
+        "quote": "Avicenna touched upon this esoteric wisdom in his Eastern philosophy and mystical treatises."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Sami S. Hawi",
+        "work": "Islamic Naturalism and Mysticism: A Philosophic Study of Ibn Tufayl's Hayy Ibn Yaqzan",
+        "year": 1974,
+        "sectionOrPage": "pp. 65–95"
+      }
+    ]
+  },
+  {
+    "id": "al-ghazali--ibn-tufayl",
+    "source": "al-ghazali",
+    "target": "ibn-tufayl",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Synthesized Ghazalian mystical illumination with Peripatetic science",
+    "description": "Ibn Tufayl sought to reconcile Al-Ghazali's mystical epistemology of direct spiritual tasting (dhawq) with peripatetic natural science, showing that rigorous empirical logic culminates in Ghazalian intuitive ecstasy.",
+    "historicalContext": "The intense debate across the Islamic West sparked by Al-Ghazali's 'Incoherence of the Philosophers'.",
+    "dialecticalTension": "Demonstrates that falsafa (philosophy) and tasawwuf (Sufi illumination) are mutually verifying rather than antithetical.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "George F. Hourani",
+        "work": "The Principal Subject of Ibn Tufayl's Hayy Ibn Yaqzan",
+        "year": 1956,
+        "sectionOrPage": "Journal of Near Eastern Studies, Vol. 15, No. 1, pp. 40–46"
+      }
+    ]
+  },
+  {
+    "id": "ibn-tufayl--averroes",
+    "source": "ibn-tufayl",
+    "target": "averroes",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Patronized and commissioned Averroes's monumental Aristotle commentaries",
+    "description": "As court physician and vizier to the Almohad caliph Abu Yaqub Yusuf, Ibn Tufayl personally introduced the young Ibn Rushd (Averroes) to the sovereign and commissioned him to write the definitive commentaries on Aristotle's works.",
+    "historicalContext": "The famous royal audience in Marrakech around 1168 CE that established Averroes's philosophical career.",
+    "dialecticalTension": "Ibn Tufayl favored allegorical, mystical-rational synthesis, while Averroes insisted on strict, unadulterated peripatetic Aristotelianism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Averroes",
+        "work": "Related in Al-Marrakushi's Al-Mu'jib fi Talkhis Akhbar al-Maghrib",
+        "year": 1224,
+        "sectionOrPage": "Account of the 1168 Marrakech Audience",
+        "quote": "Abu Bakr ibn Tufayl called for me and said: The Commander of the Faithful complains of the difficulty of the expression of Aristotle and desires someone to paraphrase and explain his works."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Oliver Leaman",
+        "work": "Averroes and His Philosophy",
+        "year": 1998,
+        "sectionOrPage": "pp. 12–19"
+      }
+    ]
+  },
+  {
+    "id": "ibn-tufayl--john-locke",
+    "source": "ibn-tufayl",
+    "target": "john-locke",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Inspired the concept of tabula rasa and empirical development in early modern thought",
+    "description": "Edward Pococke's 1671 Latin translation of Hayy ibn Yaqzan ('Philosophus Autodidactus') circulated widely among the Oxford circle of natural philosophers and directly influenced John Locke's formulation of the mind as a blank slate (tabula rasa).",
+    "historicalContext": "The 17th-century European orientalist translation wave and Enlightenment empiricism.",
+    "dialecticalTension": "Locke strips away Ibn Tufayl's culminating mystical Active Intellect, secularizing autodidactic empiricism into psychological associationism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "G. A. Russell",
+        "work": "The 'Arabick' Interest of the Natural Philosophers in Seventeenth-Century England",
+        "year": 1994,
+        "sectionOrPage": "pp. 224–262"
+      }
+    ]
+  }
+]

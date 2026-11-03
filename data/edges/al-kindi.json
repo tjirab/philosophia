@@ -1,0 +1,123 @@
+[
+  {
+    "id": "al-kindi--cosmic-finitude",
+    "source": "al-kindi",
+    "target": "cosmic-finitude",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the proof of cosmic temporal finitude and creation ex nihilo",
+    "description": "Al-Kindi developed rigorous mathematical proofs against the possibility of an actual infinity in physical magnitudes, time, and motion, establishing that the universe must have a temporal beginning and an eternal Creator.",
+    "historicalContext": "Composed in 9th-century Abbasid Baghdad during the height of the translation movement at the House of Wisdom (Bayt al-Hikma).",
+    "dialecticalTension": "Challenges Aristotle's doctrine of the eternity of the world without discarding Aristotelian physical logic.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Al-Kindi",
+        "work": "On First Philosophy (Fi al-Falsafah al-Ula)",
+        "year": 840,
+        "sectionOrPage": "Chapter 2",
+        "quote": "It is impossible for an infinite body to exist, or for an infinite magnitude, motion, or time to exist in actuality."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Peter Adamson",
+        "work": "Al-Kindi (Great Thinkers of the Islamic World)",
+        "year": 2007,
+        "sectionOrPage": "pp. 77–104"
+      }
+    ]
+  },
+  {
+    "id": "aristotle--al-kindi",
+    "source": "aristotle",
+    "target": "al-kindi",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Transmitted and systematized Aristotelian metaphysics in Arabic",
+    "description": "Al-Kindi oversaw the translation of Aristotle's Metaphysics, Categories, and Physics into Arabic, framing falsafa as the highest human pursuit of truth in harmony with monotheism.",
+    "historicalContext": "Commissioned by the Abbasid caliphs Al-Ma'mun and Al-Mu'tasim in Baghdad.",
+    "dialecticalTension": "Adapts pagan Greek peripatetic logic to monotheistic theology while rejecting Aristotle's assertion of eternal cosmic duration.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Al-Kindi",
+        "work": "On First Philosophy",
+        "year": 840,
+        "sectionOrPage": "Prologue",
+        "quote": "We ought not to be ashamed of appreciating the truth and of acquiring it wherever it comes from, even if it comes from foreign races."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Dimitri Gutas",
+        "work": "Greek Thought, Arabic Culture: The Graeco-Arabic Translation Movement in Baghdad",
+        "year": 1998,
+        "sectionOrPage": "pp. 145–150"
+      }
+    ]
+  },
+  {
+    "id": "plotinus--al-kindi",
+    "source": "plotinus",
+    "target": "al-kindi",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Integrated Neoplatonic emanation through the Arabic Theology of Aristotle",
+    "description": "Al-Kindi edited the Arabic paraphrase of Plotinus's Enneads (known as the Theology of Aristotle), synthesizing the Neoplatonic transcendent 'One' with the Islamic concept of Tawhid (divine unity).",
+    "historicalContext": "The circulation of pseudo-Aristotelian Neoplatonica in 9th-century Baghdad deeply shaped early Islamic metaphysics.",
+    "dialecticalTension": "Synthesizes Plotinian hierarchical emanation with the biblical/Quranic doctrine of willful creation ex nihilo.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Cristina D'Ancona",
+        "work": "Pseudo-Theology of Aristotle, Chapter I: Analysed Substance and Text",
+        "year": 1999,
+        "sectionOrPage": "pp. 112–134"
+      }
+    ]
+  },
+  {
+    "id": "al-kindi--al-farabi",
+    "source": "al-kindi",
+    "target": "al-farabi",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Inaugurated the peripatetic Falsafa tradition developed by Al-Farabi",
+    "description": "Al-Kindi's philosophical lexicon, translation methods, and defense of rational inquiry laid the institutional and conceptual foundation upon which Al-Farabi erected his logical and political systems.",
+    "historicalContext": "The transmission of philosophical inquiry from the Kindi circle in Baghdad to Al-Farabi and the Christian Aristotelian school of Yahya ibn 'Adi.",
+    "dialecticalTension": "Al-Farabi sought greater rigor in formal Aristotelian logic than Al-Kindi's mathematically and Neoplatonically slanted synthesis.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Muhsin Mahdi",
+        "work": "Alfarabi and the Foundation of Islamic Political Philosophy",
+        "year": 2001,
+        "sectionOrPage": "pp. 18–35"
+      }
+    ]
+  },
+  {
+    "id": "al-kindi--avicenna",
+    "source": "al-kindi",
+    "target": "avicenna",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Provided early foundational arguments for the uncaused Necessary Existent",
+    "description": "Al-Kindi's arguments for the temporal finitude of the universe and the necessity of an uncaused First Cause directly influenced Ibn Sina's proof of the Necessary Existent (Wajib al-Wujud).",
+    "historicalContext": "The maturation of Islamic metaphysics from 9th-century Baghdad to 11th-century Persia.",
+    "dialecticalTension": "Ibn Sina rejected Al-Kindi's proof of temporal creation in favor of eternal ontological dependence.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Jon McGinnis",
+        "work": "Avicenna (Great Thinkers of the Islamic World)",
+        "year": 2010,
+        "sectionOrPage": "pp. 156–178"
+      }
+    ]
+  }
+]

@@ -744,6 +744,104 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const ambedkarToNavayana = findInfluencePath('b-r-ambedkar', 'navayana-buddhism', edgesData as any);
     expect(ambedkarToNavayana.found).toBe(true);
+
+    // Islamic Golden Age & Jewish Andalusian Philosophy lineages
+    // 1. Aristotle / Plotinus -> Al-Kindi -> cosmic-finitude & Al-Farabi / Avicenna
+    const aristotleToKindi = findInfluencePath('aristotle', 'al-kindi', edgesData as any);
+    expect(aristotleToKindi.found).toBe(true);
+
+    const plotinusToKindi = findInfluencePath('plotinus', 'al-kindi', edgesData as any);
+    expect(plotinusToKindi.found).toBe(true);
+
+    const kindiToFinitude = findInfluencePath('al-kindi', 'cosmic-finitude', edgesData as any);
+    expect(kindiToFinitude.found).toBe(true);
+
+    const kindiToFarabi = findInfluencePath('al-kindi', 'al-farabi', edgesData as any);
+    expect(kindiToFarabi.found).toBe(true);
+
+    const kindiToAvicenna = findInfluencePath('al-kindi', 'avicenna', edgesData as any);
+    expect(kindiToAvicenna.found).toBe(true);
+
+    // 2. Plotinus -> Ibn Gabirol -> universal-hylomorphism & Aquinas / Spinoza
+    const plotinusToGabirol = findInfluencePath('plotinus', 'ibn-gabirol', edgesData as any);
+    expect(plotinusToGabirol.found).toBe(true);
+
+    const gabirolToHylomorphism = findInfluencePath('ibn-gabirol', 'universal-hylomorphism', edgesData as any);
+    expect(gabirolToHylomorphism.found).toBe(true);
+
+    const gabirolToAquinas = findInfluencePath('ibn-gabirol', 'thomas-aquinas', edgesData as any);
+    expect(gabirolToAquinas.found).toBe(true);
+
+    const gabirolToSpinoza = findInfluencePath('ibn-gabirol', 'baruch-spinoza', edgesData as any);
+    expect(gabirolToSpinoza.found).toBe(true);
+
+    // 3. Avicenna / Al-Ghazali -> Ibn Tufayl -> autodidactic-empiricism & Averroes / Locke
+    const avicennaToTufayl = findInfluencePath('avicenna', 'ibn-tufayl', edgesData as any);
+    expect(avicennaToTufayl.found).toBe(true);
+
+    const ghazaliToTufayl = findInfluencePath('al-ghazali', 'ibn-tufayl', edgesData as any);
+    expect(ghazaliToTufayl.found).toBe(true);
+
+    const tufaylToEmpiricism = findInfluencePath('ibn-tufayl', 'autodidactic-empiricism', edgesData as any);
+    expect(tufaylToEmpiricism.found).toBe(true);
+
+    const tufaylToAverroes = findInfluencePath('ibn-tufayl', 'averroes', edgesData as any);
+    expect(tufaylToAverroes.found).toBe(true);
+
+    const tufaylToLocke = findInfluencePath('ibn-tufayl', 'john-locke', edgesData as any);
+    expect(tufaylToLocke.found).toBe(true);
+
+    // 4. Avicenna / Plato -> Suhrawardi -> knowledge-by-presence & Ibn Arabi / Mulla Sadra
+    const avicennaToSuhrawardi = findInfluencePath('avicenna', 'suhrawardi', edgesData as any);
+    expect(avicennaToSuhrawardi.found).toBe(true);
+
+    const platoToSuhrawardi = findInfluencePath('plato', 'suhrawardi', edgesData as any);
+    expect(platoToSuhrawardi.found).toBe(true);
+
+    const suhrawardiToPresence = findInfluencePath('suhrawardi', 'knowledge-by-presence', edgesData as any);
+    expect(suhrawardiToPresence.found).toBe(true);
+
+    const suhrawardiToArabi = findInfluencePath('suhrawardi', 'ibn-arabi', edgesData as any);
+    expect(suhrawardiToArabi.found).toBe(true);
+
+    const suhrawardiToSadra = findInfluencePath('suhrawardi', 'mulla-sadra', edgesData as any);
+    expect(suhrawardiToSadra.found).toBe(true);
+
+    // 5. Averroes / Plotinus / Suhrawardi -> Ibn Arabi -> wahdat-al-wujud & Spinoza
+    const averroesToArabi = findInfluencePath('averroes', 'ibn-arabi', edgesData as any);
+    expect(averroesToArabi.found).toBe(true);
+
+    const arabiToWahdat = findInfluencePath('ibn-arabi', 'wahdat-al-wujud', edgesData as any);
+    expect(arabiToWahdat.found).toBe(true);
+
+    const arabiToSadra = findInfluencePath('ibn-arabi', 'mulla-sadra', edgesData as any);
+    expect(arabiToSadra.found).toBe(true);
+
+    const arabiToSpinoza = findInfluencePath('ibn-arabi', 'baruch-spinoza', edgesData as any);
+    expect(arabiToSpinoza.found).toBe(true);
+
+    // 6. Maimonides / Aristotle -> Hasdai Crescas -> infinite-void-and-space & Spinoza
+    const maimonidesToCrescas = findInfluencePath('moses-maimonides', 'hasdai-crescas', edgesData as any);
+    expect(maimonidesToCrescas.found).toBe(true);
+
+    const aristotleToCrescas = findInfluencePath('aristotle', 'hasdai-crescas', edgesData as any);
+    expect(aristotleToCrescas.found).toBe(true);
+
+    const crescasToSpace = findInfluencePath('hasdai-crescas', 'infinite-void-and-space', edgesData as any);
+    expect(crescasToSpace.found).toBe(true);
+
+    const crescasToSpinoza = findInfluencePath('hasdai-crescas', 'baruch-spinoza', edgesData as any);
+    expect(crescasToSpinoza.found).toBe(true);
+
+    // 7. Avicenna / Suhrawardi / Ibn Arabi -> Mulla Sadra -> primacy-of-existence & Heidegger
+    const avicennaToSadra = findInfluencePath('avicenna', 'mulla-sadra', edgesData as any);
+    expect(avicennaToSadra.found).toBe(true);
+
+    const sadraToExistence = findInfluencePath('mulla-sadra', 'primacy-of-existence', edgesData as any);
+    expect(sadraToExistence.found).toBe(true);
+
+    const sadraToHeidegger = findInfluencePath('mulla-sadra', 'martin-heidegger', edgesData as any);
+    expect(sadraToHeidegger.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {

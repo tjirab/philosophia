@@ -119,7 +119,14 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'mahavira', patterns: [/\bmahavira\b/i] },
   { id: 'dogen', patterns: [/\bd[oō]gen\b/i, /\bsh[oō]b[oō]genz[oō]\b/i] },
   { id: 'nishida-kitaro', patterns: [/\bnishida\b/i, /\bkyoto school\b/i] },
-  { id: 'b-r-ambedkar', patterns: [/\bambedkar\b/i] }
+  { id: 'b-r-ambedkar', patterns: [/\bambedkar\b/i] },
+  { id: 'al-kindi', patterns: [/\bal-kindi\b/i, /\bal kindi\b/i] },
+  { id: 'ibn-gabirol', patterns: [/\bibn gabirol\b/i, /\bgabirol\b/i, /\bavicebron\b/i] },
+  { id: 'ibn-tufayl', patterns: [/\bibn tufayl\b/i, /\btufayl\b/i, /\bhayy ibn yaqzan\b/i] },
+  { id: 'suhrawardi', patterns: [/\bsuhrawardi\b/i, /\bishraq\b/i] },
+  { id: 'ibn-arabi', patterns: [/\bibn arab[ií]\b/i, /\bibn 'arab[ií]\b/i] },
+  { id: 'hasdai-crescas', patterns: [/\bcrescas\b/i, /\bhasdai crescas\b/i] },
+  { id: 'mulla-sadra', patterns: [/\bmulla sadra\b/i, /\bsadr al-din\b/i] }
 ];
 
 async function ingestRSS() {
