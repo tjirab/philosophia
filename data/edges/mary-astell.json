@@ -1,0 +1,117 @@
+[
+  {
+    "id": "mary-astell--cartesian-feminist-rationalism",
+    "source": "mary-astell",
+    "target": "cartesian-feminist-rationalism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated Cartesian feminist rationalism and epistemic equality",
+    "description": "Mary Astell applied the epistemological standards of Descartes and the Port-Royal Logic to women's education, proving that reason is a universal human faculty not differentiated by gender, and establishing that women's subjugation is a product of defective custom rather than nature.",
+    "historicalContext": "Published in London in 1694 and 1697 during the Glorious Revolution aftermath.",
+    "dialecticalTension": "Deconstructs patriarchal traditionalism using strict rationalist criteria of clarity, distinctness, and intellectual self-determination.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mary Astell",
+        "work": "A Serious Proposal to the Ladies, Part II",
+        "year": 1697,
+        "sectionOrPage": "Chapter 3",
+        "quote": "Truth is the same to a female understanding that it is to a male... for mind has no sex.",
+        "url": "https://plato.stanford.edu/entries/astell/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Patricia Springborg",
+        "work": "Mary Astell: Theorist of Freedom from Domination",
+        "year": 2005,
+        "sectionOrPage": "pp. 58–92",
+        "url": "https://plato.stanford.edu/entries/astell/"
+      }
+    ]
+  },
+  {
+    "id": "rene-descartes--mary-astell",
+    "source": "rene-descartes",
+    "target": "mary-astell",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Adapted Cartesian dualism and methodical doubt for feminine emancipation",
+    "description": "Astell seized upon Descartes' mind-body dualism to detach the intellect from bodily sex, employing Cartesian methodical doubt to strip away cultural prejudices that treated women as intellectually inferior.",
+    "historicalContext": "The dissemination of Cartesian epistemology and Port-Royal logic among late 17th-century English intellectuals.",
+    "dialecticalTension": "Transforms Descartes' solitary metaphysical doubt into a social and political critique of patriarchal educational monopolies.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mary Astell",
+        "work": "A Serious Proposal to the Ladies, Part II",
+        "year": 1697,
+        "sectionOrPage": "Chapter 3",
+        "quote": "We ought to examine all our received opinions and take nothing upon trust from custom or authority.",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Ruth Perry",
+        "work": "The Celebrated Mary Astell: An Early English Feminist",
+        "year": 1986,
+        "sectionOrPage": "pp. 75–104",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
+  },
+  {
+    "id": "john-locke--mary-astell",
+    "source": "john-locke",
+    "target": "mary-astell",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Critiqued Locke's thinking matter hypothesis and contractual inconsistency",
+    "description": "Astell sharply critiqued John Locke's suggestion that God could superadd the power of thought to matter, while simultaneously turning Locke's political critique of absolute monarchy against his defense of patriarchal domestic governance in the home.",
+    "historicalContext": "The high Tory and Whig philosophical pamphlet wars of the 1690s and 1700s in London.",
+    "dialecticalTension": "Astell asks the devastating dialectical question: 'If Absolute Sovereignty be not necessary in a State, how comes it to be so in a Family?'",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mary Astell",
+        "work": "Some Reflections upon Marriage",
+        "year": 1700,
+        "sectionOrPage": "Preface to the 3rd Edition (1706)",
+        "quote": "If all Men are born free, how is it that all Women are born Slaves? As they must be if the being subjected to the inconstant, uncertain, unknown, arbitrary Will of Men, be the perfect Condition of Slavery?",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Jacqueline Broad",
+        "work": "Astell, Masham, and Locke: Religion and Reciprocity in Early Modern Feminism",
+        "year": 2006,
+        "sectionOrPage": "Hypatia 21(4), pp. 110–127",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
+  },
+  {
+    "id": "mary-astell--mary-wollstonecraft",
+    "source": "mary-astell",
+    "target": "mary-wollstonecraft",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Laid the intellectual foundations for Wollstonecraft's Vindication",
+    "description": "Astell's arguments that women's apparent triviality and moral vanity are produced by systematic denial of education and patriarchal conditioning directly prefigured Mary Wollstonecraft's core thesis in 'A Vindication of the Rights of Woman'.",
+    "historicalContext": "The lineage of British feminist philosophy spanning the English Enlightenment from 1694 to 1792.",
+    "dialecticalTension": "Astell defended rational autonomy within a Tory Anglican framework, whereas Wollstonecraft radicalized it into democratic republican rights.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Jacqueline Broad",
+        "work": "Women Philosophers of the Seventeenth Century",
+        "year": 2002,
+        "sectionOrPage": "pp. 90–113",
+        "url": "https://plato.stanford.edu/entries/astell/"
+      }
+    ]
+  }
+]

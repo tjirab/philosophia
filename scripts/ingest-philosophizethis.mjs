@@ -126,7 +126,13 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'suhrawardi', patterns: [/\bsuhrawardi\b/i, /\bishraq\b/i] },
   { id: 'ibn-arabi', patterns: [/\bibn arab[ií]\b/i, /\bibn 'arab[ií]\b/i] },
   { id: 'hasdai-crescas', patterns: [/\bcrescas\b/i, /\bhasdai crescas\b/i] },
-  { id: 'mulla-sadra', patterns: [/\bmulla sadra\b/i, /\bsadr al-din\b/i] }
+  { id: 'mulla-sadra', patterns: [/\bmulla sadra\b/i, /\bsadr al-din\b/i] },
+  { id: 'margaret-cavendish', patterns: [/\bmargaret cavendish\b/i, /\bcavendish\b/i] },
+  { id: 'anne-conway', patterns: [/\banne conway\b/i, /\blady conway\b/i] },
+  { id: 'mary-astell', patterns: [/\bmary astell\b/i, /\bastell\b/i] },
+  { id: 'damaris-masham', patterns: [/\bdamaris masham\b/i, /\blady masham\b/i] },
+  { id: 'catharine-cockburn', patterns: [/\bcatharine cockburn\b/i, /\bcatharine trotter\b/i] },
+  { id: 'emilie-du-chatelet', patterns: [/\b[eé]milie du ch[aâ]telet\b/i, /\bdu ch[aâ]telet\b/i] }
 ];
 
 async function ingestRSS() {

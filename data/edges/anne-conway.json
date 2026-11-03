@@ -1,0 +1,126 @@
+[
+  {
+    "id": "anne-conway--vitalist-monadism",
+    "source": "anne-conway",
+    "target": "vitalist-monadism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated vitalist spiritual monism and transmutative monads",
+    "description": "Anne Conway formulated an ontology positing three species of substance: God (immutable), Christ/Logos (mediating), and Creation (a continuous, living spiritual continuum whose individual units undergo perpetual moral and physical transmutation).",
+    "historicalContext": "Composed in Ragley Hall, Warwickshire, in dialogue with Henry More, Francis Mercury van Helmont, and Quaker and Kabbalistic thought.",
+    "dialecticalTension": "Rejects the dualistic divide between dead matter and thinking mind, asserting that body is simply solidified spirit.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Anne Conway",
+        "work": "The Principles of the Most Ancient and Modern Philosophy",
+        "year": 1690,
+        "sectionOrPage": "Chapter 6, Section 11",
+        "quote": "Spirit and body are originally one and the same in their first substance, differing only in degrees of subtlety and grossness.",
+        "url": "https://plato.stanford.edu/entries/conway/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Christia Mercer",
+        "work": "Leibniz's Metaphysics: Its Origins and Development",
+        "year": 2001,
+        "sectionOrPage": "pp. 205–228",
+        "url": "https://plato.stanford.edu/entries/conway/"
+      }
+    ]
+  },
+  {
+    "id": "rene-descartes--anne-conway",
+    "source": "rene-descartes",
+    "target": "anne-conway",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Refuted Cartesian dead matter and mechanical mind-body interaction",
+    "description": "Conway dedicated Chapter 9 of her Principles to refuting Descartes, demonstrating that if matter were purely dead and inert extension as Descartes claimed, no genuine causal interaction between immaterial soul and material body could ever occur.",
+    "historicalContext": "The intense debate surrounding Cartesianism within the Cambridge Platonist circle in the 1670s.",
+    "dialecticalTension": "Solves the Cartesian interaction problem by eliminating dead matter: both mind and body are living spirit at different registers of contraction and expansion.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Anne Conway",
+        "work": "Principles of the Most Ancient and Modern Philosophy",
+        "year": 1690,
+        "sectionOrPage": "Chapter 9, Section 2",
+        "quote": "Descartes says that body is mere dead matter, devoid of all life and perception... which philosophy is entirely contrary to the true knowledge of God and nature.",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Jacqueline Broad",
+        "work": "Women Philosophers of the Seventeenth Century",
+        "year": 2002,
+        "sectionOrPage": "pp. 65–89",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
+  },
+  {
+    "id": "baruch-spinoza--anne-conway",
+    "source": "baruch-spinoza",
+    "target": "anne-conway",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Refuted Spinozistic pantheism and the conflation of God with creatures",
+    "description": "Conway directly engaged and attacked Spinoza's monism, arguing that collapsing God and creation into a single substance destroys moral responsibility, the reality of evil, and divine goodness.",
+    "historicalContext": "Conway read Spinoza's Tractatus Theologico-Politicus and related texts through her collaboration with Francis Mercury van Helmont.",
+    "dialecticalTension": "Maintains a triadic ontological distinction (God, Mediator, Creation) against Spinoza's univocal single substance (Deus sive Natura).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Anne Conway",
+        "work": "Principles of the Most Ancient and Modern Philosophy",
+        "year": 1690,
+        "sectionOrPage": "Chapter 9, Section 3",
+        "quote": "Spinoza confounds God and creatures together, making of both only one substance; but this contradicts the infinite perfection and transcendence of God.",
+        "url": "https://plato.stanford.edu/entries/spinoza/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Sarah Hutton",
+        "work": "Anne Conway: A Woman Philosopher",
+        "year": 2004,
+        "sectionOrPage": "pp. 138–154",
+        "url": "https://plato.stanford.edu/entries/spinoza/"
+      }
+    ]
+  },
+  {
+    "id": "anne-conway--gottfried-leibniz",
+    "source": "anne-conway",
+    "target": "gottfried-leibniz",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Directly inspired Leibniz's monadological metaphysics and living substance",
+    "description": "Gottfried Wilhelm Leibniz read Conway's Principles with great enthusiasm, repeatedly citing the 'Countess of Conway' in his letters and notebooks, adopting her vitalist monism, concept of the monad, and pan-organic worldview.",
+    "historicalContext": "Van Helmont personally delivered Conway's book to Leibniz in Hanover in 1696, sparking intensive discussions on living substances.",
+    "dialecticalTension": "Leibniz formalizes Conway's theological-transmutative spiritual units into windowless, mathematically pre-established monads.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Gottfried Wilhelm Leibniz",
+        "work": "Letter to Thomas Burnett of Kemnay",
+        "year": 1697,
+        "sectionOrPage": "Die philosophischen Schriften von G. W. Leibniz (ed. Gerhardt), III, p. 217",
+        "quote": "My philosophical views approach somewhat closely those of the late Countess of Conway... who maintained that all things are living and perceptive.",
+        "url": "https://plato.stanford.edu/entries/conway/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Stuart Brown",
+        "work": "Leibniz and More's Cabbalistic Circle",
+        "year": 1990,
+        "sectionOrPage": "in S. Hutton (ed.), Henry More (1614–1687): Tercentenary Studies, pp. 77–95",
+        "url": "https://plato.stanford.edu/entries/conway/"
+      }
+    ]
+  }
+]

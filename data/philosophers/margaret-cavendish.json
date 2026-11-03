@@ -1,0 +1,29 @@
+{
+  "id": "margaret-cavendish",
+  "name": "Margaret Cavendish (Duchess of Newcastle)",
+  "birthYear": 1623,
+  "deathYear": 1673,
+  "eraId": "early-modern",
+  "traditionId": "rationalism",
+  "shortBio": "English natural philosopher, poet, and dramatist; developed vitalist materialism, arguing that nature is a unified, self-moving, animate, and perceptive material whole in opposition to mechanistic atomism and Cartesian dualism.",
+  "centralQuestion": "Can organic order, perception, and natural variety be fully explained by an animate, self-moving material continuum without incorporeal minds or lifeless clockwork mechanics?",
+  "keyWorks": [
+    {
+      "title": "Observations upon Experimental Philosophy",
+      "year": "1666",
+      "url": "https://en.wikipedia.org/wiki/Margaret_Cavendish,_Duchess_of_Newcastle-upon-Tyne",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Margaret_Cavendish,_Duchess_of_Newcastle-upon-Tyne",
+      "description": "Systematic treatise critiquing Royal Society experimentalism, microscopes, and mechanistic atomism, defending vitalist natural philosophy."
+    },
+    {
+      "title": "The Description of a New World, Called the Blazing World",
+      "year": "1666",
+      "url": "https://en.wikipedia.org/wiki/The_Blazing_World",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Blazing_World",
+      "description": "Pioneering utopian proto-science-fiction novel exploring natural philosophy, animal-human hybrid societies, and feminine sovereignty."
+    }
+  ],
+  "sepSlug": "margaret-cavendish",
+  "importanceScore": 88,
+  "imageUrl": "/portraits/margaret-cavendish.jpg"
+}

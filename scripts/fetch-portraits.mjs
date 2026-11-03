@@ -133,6 +133,13 @@ const WIKI_TITLES = {
   'ibn-arabi': 'Ibn_Arabi',
   'hasdai-crescas': 'Hasdai_Crescas',
   'mulla-sadra': 'Mulla_Sadra',
+  // Early Modern Women Philosophers
+  'margaret-cavendish': 'Margaret_Cavendish,_Duchess_of_Newcastle-upon-Tyne',
+  'anne-conway': 'Anne_Conway_(philosopher)',
+  'mary-astell': 'Mary_Astell',
+  'damaris-masham': 'Damaris_Cudworth_Masham',
+  'catharine-cockburn': 'Catharine_Trotter_Cockburn',
+  'emilie-du-chatelet': 'Émilie_du_Châtelet',
   // Psychology
   'wilhelm-wundt': 'Wilhelm_Wundt',
   'sigmund-freud': 'Sigmund_Freud',

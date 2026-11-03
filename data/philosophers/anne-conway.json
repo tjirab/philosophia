@@ -1,0 +1,22 @@
+{
+  "id": "anne-conway",
+  "name": "Anne Conway (Viscountess Conway)",
+  "birthYear": 1631,
+  "deathYear": 1679,
+  "eraId": "early-modern",
+  "traditionId": "rationalism",
+  "shortBio": "English metaphysician associated with the Cambridge Platonists; formulated a vitalist spiritual monism of living substances ('monads') that directly influenced Leibniz's philosophy.",
+  "centralQuestion": "How can the reality of physical suffering, divine justice, and cosmic order be reconciled through a continuous hierarchy of living, transmutative spiritual substances?",
+  "keyWorks": [
+    {
+      "title": "The Principles of the Most Ancient and Modern Philosophy",
+      "year": "1690",
+      "url": "https://en.wikipedia.org/wiki/The_Principles_of_the_Most_Ancient_and_Modern_Philosophy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Principles_of_the_Most_Ancient_and_Modern_Philosophy",
+      "description": "Posthumously published metaphysical masterpiece developing a vitalist monism of living substances, refuting Descartes, Hobbes, and Spinoza."
+    }
+  ],
+  "sepSlug": "conway",
+  "importanceScore": 87,
+  "imageUrl": "/portraits/anne-conway.jpg"
+}

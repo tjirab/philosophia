@@ -1,0 +1,117 @@
+[
+  {
+    "id": "catharine-cockburn--moral-fitness-realism",
+    "source": "catharine-cockburn",
+    "target": "moral-fitness-realism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated moral fitness realism and natural law within empirical epistemology",
+    "description": "Catharine Trotter Cockburn established that moral obligation is objectively grounded in the essential natures and mutual relations of rational social beings ('the fitness of things'), demonstrating that moral realism is fully compatible with Lockean empirical epistemology.",
+    "historicalContext": "Articulated in London and Northumberland across five decades of vigorous philosophical publishing (1702–1747).",
+    "dialecticalTension": "Refutes theological voluntarism (the claim that morality is arbitrary divine fiat) and moral egoism, establishing objective natural-law realism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Catharine Trotter Cockburn",
+        "work": "Remarks upon the Principles and Reasonings of Dr. Rutherforth's Essay",
+        "year": 1747,
+        "sectionOrPage": "Section I",
+        "quote": "Moral obligation arises from the essential natures of things and the necessary relations they bear to one another and to their Author.",
+        "url": "https://plato.stanford.edu/entries/cockburn/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Martha Brandt Bolton",
+        "work": "Catharine Trotter Cockburn and the English Enlightenment",
+        "year": 1993,
+        "sectionOrPage": "in M. E. Waithe (ed.), A History of Women Philosophers, Vol. 3, pp. 111–138",
+        "url": "https://plato.stanford.edu/entries/cockburn/"
+      }
+    ]
+  },
+  {
+    "id": "john-locke--catharine-cockburn",
+    "source": "john-locke",
+    "target": "catharine-cockburn",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Defended and systematized Lockean epistemology against clerical critics",
+    "description": "At age 23, Cockburn published 'A Defence of the Essay of Human Understanding' (1702), which John Locke personally praised and rewarded with books and money, recognizing her as his most acute philosophical champion against Edward Stillingfleet and Thomas Burnet.",
+    "historicalContext": "The intense theological crisis over Locke's rejection of innate ideas in early 18th-century England.",
+    "dialecticalTension": "Demonstrates that denying innate ideas does not lead to atheism or moral relativism, but establishes morality upon verifiable human nature.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Catharine Trotter Cockburn",
+        "work": "A Defence of the Essay of Human Understanding",
+        "year": 1702,
+        "sectionOrPage": "Preface & Chapter 1",
+        "quote": "Mr. Locke's principles, so far from being subversive of morality and religion, establish them upon the most solid and demonstrative foundations.",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Patricia Sheridan",
+        "work": "Catharine Trotter Cockburn (Stanford Encyclopedia of Philosophy)",
+        "year": 2018,
+        "sectionOrPage": "Section 2: Epistemology and the Defense of Locke",
+        "url": "https://plato.stanford.edu/entries/locke/"
+      }
+    ]
+  },
+  {
+    "id": "thomas-hobbes--catharine-cockburn",
+    "source": "thomas-hobbes",
+    "target": "catharine-cockburn",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Refuted Hobbesian psychological egoism and conventionalist justice",
+    "description": "Cockburn mounted a sustained philosophical critique against Hobbes's claim that justice and moral law are mere artificial conventions created by state sovereignty, proving that moral relations pre-exist civil government in human social nature.",
+    "historicalContext": "The Enlightenment natural law debates in 18th-century Britain.",
+    "dialecticalTension": "Contrasts Hobbes's state-of-nature war of all against all with Cockburn's natural social benevolence and rational fitness.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Catharine Trotter Cockburn",
+        "work": "Remarks upon the Principles and Reasonings of Dr. Rutherforth's Essay",
+        "year": 1747,
+        "sectionOrPage": "Section II",
+        "quote": "Justice and benevolence are not the arbitrary creatures of civil power; their obligation is antecedent to all human laws.",
+        "url": "https://plato.stanford.edu/entries/hobbes/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Jacqueline Broad",
+        "work": "Women Philosophers of Eighteenth-Century England",
+        "year": 2017,
+        "sectionOrPage": "pp. 145–172",
+        "url": "https://plato.stanford.edu/entries/hobbes/"
+      }
+    ]
+  },
+  {
+    "id": "catharine-cockburn--david-hume",
+    "source": "catharine-cockburn",
+    "target": "david-hume",
+    "type": "INFLUENCED",
+    "strength": 3,
+    "label": "Intervened in the British moral realism debate preceding Scottish sentimentalism",
+    "description": "Cockburn's widely read mid-century treatises defending the social nature of humanity and rational moral fitness formed a crucial part of the British moral philosophy landscape engaging Hutcheson and David Hume.",
+    "historicalContext": "The mid-18th-century Scottish Enlightenment debates between moral rationalism and moral sentimentalism.",
+    "dialecticalTension": "Cockburn maintains that moral distinctions are objects of rational discernment, whereas Hume argues that morality is determined by feeling and sentiment.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Martha Brandt Bolton",
+        "work": "Some Aspects of the Philosophy of Catharine Trotter Cockburn",
+        "year": 1996,
+        "sectionOrPage": "in Hypatia 8(3), pp. 564–578",
+        "url": "https://plato.stanford.edu/entries/cockburn/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "id": "margaret-cavendish--vitalist-materialism",
+    "source": "margaret-cavendish",
+    "target": "vitalist-materialism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated vitalist panorganic materialism and self-moving nature",
+    "description": "Margaret Cavendish developed an original non-mechanistic materialism, positing that all matter is composed of inanimate, sensitive, and rational degrees blended in infinite self-moving nature.",
+    "historicalContext": "Articulated during the mid-17th-century English Civil War and Restoration, challenging the nascent Royal Society.",
+    "dialecticalTension": "Opposes both the Cartesian dualism of lifeless matter and the Hobbesian reductive mechanical push-pull atomism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Margaret Cavendish",
+        "work": "Observations upon Experimental Philosophy",
+        "year": 1666,
+        "sectionOrPage": "Chapter 35",
+        "quote": "Nature is a self-moving, infinite, and eternal material body, composed of rational, sensitive, and inanimate matter.",
+        "url": "https://plato.stanford.edu/entries/margaret-cavendish/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "David Cunning",
+        "work": "Cavendish (The Arguments of the Philosophers)",
+        "year": 2016,
+        "sectionOrPage": "pp. 62–98",
+        "url": "https://plato.stanford.edu/entries/margaret-cavendish/"
+      }
+    ]
+  },
+  {
+    "id": "rene-descartes--margaret-cavendish",
+    "source": "rene-descartes",
+    "target": "margaret-cavendish",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Critiqued Cartesian dualism and the bête-machine hypothesis",
+    "description": "In 'Philosophical Letters', Cavendish vigorously rejected Descartes' mind-body dualism and his claim that animals are unfeeling mechanical automata, arguing that animals and plants possess sensitive and rational perception.",
+    "historicalContext": "Cavendish's direct engagement with Cartesian philosophy during her exile in Paris and Antwerp with the Newcastle circle.",
+    "dialecticalTension": "Replaces Descartes' radical severance of thinking mind and extended matter with an immanently perceptive material continuum.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Margaret Cavendish",
+        "work": "Philosophical Letters",
+        "year": 1664,
+        "sectionOrPage": "Section I, Letter 30",
+        "quote": "It is absurd to think that animals have no sense or reason, but are mere machines; all parts of Nature participate in life and perception.",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Karen Detlefsen",
+        "work": "Margaret Cavendish on the Relation between God and World",
+        "year": 2009,
+        "sectionOrPage": "Philosophy Compass 4(3), pp. 421–438",
+        "url": "https://plato.stanford.edu/entries/descartes/"
+      }
+    ]
+  },
+  {
+    "id": "thomas-hobbes--margaret-cavendish",
+    "source": "thomas-hobbes",
+    "target": "margaret-cavendish",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Critiqued Hobbesian mechanistic materialism and atomism",
+    "description": "Although Cavendish knew Hobbes personally through her husband and shared his commitment to materialism, she fiercely rejected Hobbes's view that matter is inert and moved only by external impact, asserting internal self-motion.",
+    "historicalContext": "Personal debates within the Cavendish/Newcastle philosophical circle in Paris and England.",
+    "dialecticalTension": "Cavendish preserves materialism while rejecting Hobbes's passive mechanical determinism in favor of organic self-motion.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Margaret Cavendish",
+        "work": "Philosophical Letters",
+        "year": 1664,
+        "sectionOrPage": "Section I, Letter 4",
+        "quote": "Mr. Hobbes makes motion an accident caused by pressure and impact; but I say that motion is natural and inherent in matter itself.",
+        "url": "https://plato.stanford.edu/entries/hobbes/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Eileen O'Neill",
+        "work": "Margaret Cavendish, Duchess of Newcastle: Observations upon Experimental Philosophy",
+        "year": 2001,
+        "sectionOrPage": "Introduction, pp. x–xxxv",
+        "url": "https://plato.stanford.edu/entries/hobbes/"
+      }
+    ]
+  },
+  {
+    "id": "margaret-cavendish--anne-conway",
+    "source": "margaret-cavendish",
+    "target": "anne-conway",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Helped spark the 17th-century English vitalist counter-tradition",
+    "description": "Cavendish's prominent vitalist critique of Cartesian mechanism and inert matter contributed significantly to the intellectual climate in which Anne Conway formulated her vitalist spiritual monism.",
+    "historicalContext": "The shared philosophical counter-offensive against dualism and mechanism among 17th-century English women philosophers.",
+    "dialecticalTension": "Cavendish developed a vitalist materialism, whereas Conway developed a vitalist spiritual monism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Sarah Hutton",
+        "work": "Anne Conway: A Woman Philosopher",
+        "year": 2004,
+        "sectionOrPage": "pp. 82–95",
+        "url": "https://plato.stanford.edu/entries/margaret-cavendish/"
+      }
+    ]
+  }
+]
