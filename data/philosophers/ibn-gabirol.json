@@ -1,0 +1,29 @@
+{
+  "id": "ibn-gabirol",
+  "name": "Solomon ibn Gabirol (Avicebron)",
+  "birthYear": 1021,
+  "deathYear": 1058,
+  "eraId": "medieval",
+  "traditionId": "scholasticism",
+  "shortBio": "Sephardic Jewish Neoplatonist poet and philosopher of Málaga and Valencia; formulated Universal Hylomorphism (spiritual matter and form in all created beings) in The Fountain of Life.",
+  "centralQuestion": "Do all created spiritual and corporeal entities share a universal underlying matter shaped by divine will?",
+  "keyWorks": [
+    {
+      "title": "The Fountain of Life (Fons Vitae / Yanbu' al-Hayat)",
+      "year": "c. 1050 CE",
+      "url": "https://en.wikipedia.org/wiki/Solomon_ibn_Gabirol",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Solomon_ibn_Gabirol",
+      "description": "Groundbreaking Neoplatonic dialogue developing universal hylomorphism, influencing Duns Scotus, Bonaventure, and medieval metaphysics."
+    },
+    {
+      "title": "The Crown of Kingdom (Keter Malkhut)",
+      "year": "c. 1055 CE",
+      "url": "https://en.wikipedia.org/wiki/Solomon_ibn_Gabirol",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Solomon_ibn_Gabirol",
+      "description": "Masterwork poem synthesizing Ptolemaic cosmology, philosophical astronomy, and divine unity."
+    }
+  ],
+  "sepSlug": "ibn-gabirol",
+  "importanceScore": 86,
+  "imageUrl": "/portraits/ibn-gabirol.jpg"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "mulla-sadra",
+  "name": "Mulla Sadra (Sadr al-Din Shirazi)",
+  "birthYear": 1571,
+  "deathYear": 1640,
+  "eraId": "early-modern",
+  "traditionId": "islamic-golden-age",
+  "shortBio": "Master of the Safavid School of Isfahan and Transcendent Theosophy; established the Primacy of Existence (Asalat al-Wujud) over essence and Substantial Motion (al-Harakah al-Jawhariyyah).",
+  "centralQuestion": "Does existence constitute the sole fundamental reality of all beings, undergoing continuous internal substantial change toward higher intensities of consciousness?",
+  "keyWorks": [
+    {
+      "title": "The Transcendent Philosophy of the Four Journeys of the Intellect (Al-Asfar al-Arba'a)",
+      "year": "1628 CE",
+      "url": "https://en.wikipedia.org/wiki/Mulla_Sadra",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mulla_Sadra",
+      "description": "Magnum opus systematically synthesizing peripatetic logic, illuminationist metaphysics, and Sufi gnosis."
+    },
+    {
+      "title": "The Book of Metaphysical Penetrations (Kitab al-Masha'ir)",
+      "year": "c. 1630 CE",
+      "url": "https://en.wikipedia.org/wiki/Mulla_Sadra",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mulla_Sadra",
+      "description": "Concise masterwork demonstrating the primacy, univocity, and systematic ambiguity (tashkik) of existence."
+    }
+  ],
+  "sepSlug": "mulla-sadra",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/mulla-sadra.jpg"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "al-kindi",
+  "name": "Al-Kindi (Abu Yusuf Ya'qub ibn Ishaq al-Kindi)",
+  "birthYear": 801,
+  "deathYear": 873,
+  "eraId": "medieval",
+  "traditionId": "islamic-golden-age",
+  "shortBio": "The 'Philosopher of the Arabs' who inaugurated the translation movement at the House of Wisdom; synthesized Aristotle and Neoplatonism, arguing for cosmic finitude and temporal creation.",
+  "centralQuestion": "Can natural philosophy and mathematical reason demonstrate the createdness and temporal finitude of the universe without contradicting rational logic?",
+  "keyWorks": [
+    {
+      "title": "On First Philosophy (Fi al-Falsafah al-Ula)",
+      "year": "c. 840 CE",
+      "url": "https://en.wikipedia.org/wiki/Al-Kindi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Al-Kindi",
+      "description": "Foundational treatise on the First Truth, divine unity, and the logical impossibility of an infinite past or actual infinity in nature."
+    },
+    {
+      "title": "On the Quantity of the Books of Aristotle",
+      "year": "c. 845 CE",
+      "url": "https://en.wikipedia.org/wiki/Al-Kindi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Al-Kindi",
+      "description": "Systematic syllabus introducing Aristotelian corpus and logic to the Arabic-speaking scholarly world."
+    }
+  ],
+  "sepSlug": "al-kindi",
+  "importanceScore": 88,
+  "imageUrl": "/portraits/al-kindi.jpg"
+}

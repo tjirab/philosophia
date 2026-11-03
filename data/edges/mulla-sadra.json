@@ -1,0 +1,81 @@
+[
+  {
+    "id": "mulla-sadra--primacy-of-existence",
+    "source": "mulla-sadra",
+    "target": "primacy-of-existence",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Established the Primacy of Existence (Asalat al-Wujud) and Substantial Motion",
+    "description": "Mulla Sadra overturned centuries of philosophical essentialism by demonstrating that existence (wujud) is the singular, real, and modulated ground of reality, within which physical substances undergo continuous transformative change (al-harakah al-jawhariyyah).",
+    "historicalContext": "The flowering of Islamic metaphysics in 17th-century Isfahan, Persia, under the Safavid dynasty.",
+    "dialecticalTension": "Directly opposes Suhrawardi's and Mir Damad's doctrine of the Primacy of Essence (asalat al-mahiyyah).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mulla Sadra",
+        "work": "The Book of Metaphysical Penetrations (Kitab al-Masha'ir)",
+        "year": 1630,
+        "sectionOrPage": "First Penetration (Mash'ar 1)",
+        "quote": "Existence is that by which everything exists, and it is reality itself, while quiddities are intellectual boundaries and negations."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Fazlur Rahman",
+        "work": "The Philosophy of Mulla Sadra (Shirazi)",
+        "year": 1975,
+        "sectionOrPage": "pp. 27–46"
+      }
+    ]
+  },
+  {
+    "id": "avicenna--mulla-sadra",
+    "source": "avicenna",
+    "target": "mulla-sadra",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Synthesized Avicennian Peripateticism into Transcendent Theosophy",
+    "description": "Mulla Sadra accepted Avicenna's foundational distinction between essence and existence, but radically inverted Avicenna's framework: whereas Avicenna treated existence as an accident happening to essence in the mind, Sadra proved that existence is the sole fundamental reality.",
+    "historicalContext": "The comprehensive integration of the peripatetic tradition with Safavid mystical theology.",
+    "dialecticalTension": "Inverts Avicenna's priority: existence is not an accident of essence, but essence is a limitation of modulated existence.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mulla Sadra",
+        "work": "Al-Asfar al-Arba'a (The Four Journeys)",
+        "year": 1628,
+        "sectionOrPage": "Journey 1, Volume 1",
+        "quote": "Existence is the principle of reality, and essences are abstracted from its limitations."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Seyyed Hossein Nasr",
+        "work": "Sadr al-Din Shirazi and His Transcendent Theosophy",
+        "year": 1978,
+        "sectionOrPage": "pp. 55–84"
+      }
+    ]
+  },
+  {
+    "id": "mulla-sadra--martin-heidegger",
+    "source": "mulla-sadra",
+    "target": "martin-heidegger",
+    "type": "INFLUENCED",
+    "strength": 3,
+    "label": "Anticipated the critique of onto-theology and the question of Being",
+    "description": "Philosopher Henry Corbin, who translated Heidegger into French and studied Mulla Sadra deeply in Tehran, demonstrated remarkable structural convergence between Mulla Sadra's Primacy of Being over essence and Heidegger's revival of the Seinsfrage.",
+    "historicalContext": "20th-century comparative phenomenology and the European reception of Iranian philosophy.",
+    "dialecticalTension": "Sadra formulates an intensificatory, theological metaphysics of Being, while Heidegger pursues a finite, temporal phenomenology.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Henry Corbin",
+        "work": "En Islam Iranien: Aspects spirituels et philosophiques",
+        "year": 1971,
+        "sectionOrPage": "Tome IV: L'Ecole d'Ispahan, pp. 54–122"
+      }
+    ]
+  }
+]

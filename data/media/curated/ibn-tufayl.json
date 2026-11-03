@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sep-ibn-tufayl-natural",
+    "targetId": "ibn-tufayl",
+    "type": "encyclopedia",
+    "title": "Natural Philosophy in Arabic and Islamic Thought - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/arabic-islamic-natural/",
+    "creator": "Stanford University",
+    "summary": "Academic analysis of natural philosophy, empirical psychology, and thought experiments in Arabic thought, examining Ibn Tufayl's Hayy ibn Yaqzan."
+  },
+  {
+    "id": "iep-ibn-tufayl-averroes",
+    "targetId": "ibn-tufayl",
+    "type": "encyclopedia",
+    "title": "Ibn Rushd & Ibn Tufayl - Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/ibn-rushd/",
+    "creator": "Internet Encyclopedia of Philosophy",
+    "summary": "Detailed historical survey of Andalusian philosophy, Ibn Tufayl's patronage, and the harmonization of religion and philosophy under the Almohad caliphate."
+  }
+]

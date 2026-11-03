@@ -1,0 +1,22 @@
+{
+  "id": "ibn-tufayl",
+  "name": "Ibn Tufayl (Abubacer)",
+  "birthYear": 1105,
+  "deathYear": 1185,
+  "eraId": "medieval",
+  "traditionId": "islamic-golden-age",
+  "shortBio": "Andalusian polymath, physician, and vizier; authored Hayy ibn Yaqzan, the philosophical romance exploring empirical tabula rasa, autodidactic reason, and mystical illumination.",
+  "centralQuestion": "Can an unaided individual on an isolated island independently arrive at scientific, philosophical, and metaphysical truth through pure sensory observation and rational contemplation?",
+  "keyWorks": [
+    {
+      "title": "Hayy ibn Yaqzan (The Living Son of the Vigilant / Philosophus Autodidactus)",
+      "year": "c. 1170 CE",
+      "url": "https://en.wikipedia.org/wiki/Hayy_ibn_Yaqzan",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hayy_ibn_Yaqzan",
+      "description": "Philosophical novel tracing the intellectual and spiritual ascension of a feral human on an uninhabited equatorial island."
+    }
+  ],
+  "sepSlug": "arabic-islamic-natural",
+  "importanceScore": 87,
+  "imageUrl": "/portraits/ibn-tufayl.jpg"
+}

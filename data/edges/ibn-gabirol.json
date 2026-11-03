@@ -1,0 +1,131 @@
+[
+  {
+    "id": "ibn-gabirol--universal-hylomorphism",
+    "source": "ibn-gabirol",
+    "target": "universal-hylomorphism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the doctrine of universal hylomorphism and spiritual matter",
+    "description": "Ibn Gabirol formulated the thesis that all created substances, including incorporeal intellects and souls, are composed of universal matter and universal form, distinguishing them from the absolute simplicity of God.",
+    "historicalContext": "Articulated in 11th-century Muslim Andalusia (Zaragoza/Valencia), synthesizing Neoplatonism with Jewish theology.",
+    "dialecticalTension": "Contrasts with the orthodox Aristotelian and Thomistic view that spiritual beings (intellects/angels) are immaterial, subsistent forms without matter.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Solomon ibn Gabirol",
+        "work": "The Fountain of Life (Fons Vitae)",
+        "year": 1050,
+        "sectionOrPage": "Tractate I, Section 10",
+        "quote": "Universal Matter and Universal Form are the foundations of all created things, both spiritual and corporeal."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Sarah Pessin",
+        "work": "Ibn Gabirol's Theology of Desire: Matter and Beyond in Jewish and Islamic Neoplatonism",
+        "year": 2013,
+        "sectionOrPage": "pp. 45–82"
+      }
+    ]
+  },
+  {
+    "id": "plotinus--ibn-gabirol",
+    "source": "plotinus",
+    "target": "ibn-gabirol",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Adapted Plotinian emanation and intelligible matter",
+    "description": "Ibn Gabirol drew directly on the Plotinian tradition (specifically the Enneads' doctrine of intelligible matter) to structure his cosmic hierarchy descending from the Divine Will.",
+    "historicalContext": "Transmission of Neoplatonic texts into medieval Muslim and Jewish philosophy in al-Andalus.",
+    "dialecticalTension": "Elevates the Divine Will (Irada/Ratzon) as a dynamic intermediary between the absolute One and universal matter, departing from Plotinus's non-volitional emanation.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Fernand Brunner",
+        "work": "Métaphysique d'Ibn Gabirol et de la tradition platonicienne",
+        "year": 1997,
+        "sectionOrPage": "pp. 110–135"
+      }
+    ]
+  },
+  {
+    "id": "ibn-gabirol--moses-maimonides",
+    "source": "ibn-gabirol",
+    "target": "moses-maimonides",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Prompted Maimonidean critique of Neoplatonic hypostases and spiritual matter",
+    "description": "Maimonides in his philosophical and rabbinic writing rejected Ibn Gabirol's universal hylomorphism, adhering strictly to Aristotelian physics and the immateriality of the separate intellects.",
+    "historicalContext": "The 12th-century Andalusian transition from early Jewish Neoplatonism to classical Aristotelianism.",
+    "dialecticalTension": "Pits Ibn Gabirol's Neoplatonic universal hylomorphism against Maimonides's strict Aristotelian peripateticism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Moses Maimonides",
+        "work": "The Guide for the Perplexed",
+        "year": 1190,
+        "sectionOrPage": "Part II, Introduction & Chapter 1",
+        "quote": "The separate intellects are incorporeal forms entirely free from matter."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Colette Sirat",
+        "work": "A History of Jewish Philosophy in the Middle Ages",
+        "year": 1985,
+        "sectionOrPage": "pp. 68–81"
+      }
+    ]
+  },
+  {
+    "id": "ibn-gabirol--thomas-aquinas",
+    "source": "ibn-gabirol",
+    "target": "thomas-aquinas",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Sparked Aquinas's refutation of Avicebron's universal hylomorphism",
+    "description": "Thomas Aquinas engaged extensively with Ibn Gabirol (under the Latinized name Avicebron) in 'De Ente et Essentia' and the 'Summa Theologiae', rejecting the idea that immaterial angels possess spiritual matter.",
+    "historicalContext": "The 13th-century Latin Scholastic debate in Paris between Franciscan Augustinians (who embraced Gabirol) and Dominican Thomists.",
+    "dialecticalTension": "Aquinas argues that angels are pure forms whose limitation comes from the distinction between essence and existence, not spiritual matter.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Thomas Aquinas",
+        "work": "De Ente et Essentia (On Being and Essence)",
+        "year": 1256,
+        "sectionOrPage": "Chapter 4",
+        "quote": "Avicebron asserted in the Fons Vitae that the soul and other separate substances are composed of matter and form; but this position cannot stand."
+      },
+      {
+        "citationType": "secondary",
+        "author": "John M. Quinn",
+        "work": "The Thomism of Etienne Gilson: A Critical Study",
+        "year": 1971,
+        "sectionOrPage": "pp. 142–155"
+      }
+    ]
+  },
+  {
+    "id": "ibn-gabirol--baruch-spinoza",
+    "source": "ibn-gabirol",
+    "target": "baruch-spinoza",
+    "type": "INFLUENCED",
+    "strength": 3,
+    "label": "Informed Spinoza's monistic conception of infinite substance and divine unity",
+    "description": "Scholars of Jewish philosophy note that Ibn Gabirol's Keter Malkhut and Fons Vitae, widely studied in the Amsterdam Sephardic community, helped prefigure Spinoza's conception of a single, all-encompassing divine reality.",
+    "historicalContext": "Early modern transmission of medieval Sephardic Hebrew philosophy in 17th-century Amsterdam.",
+    "dialecticalTension": "Transforms Gabirol's theological pantheistic overtones and divine will into Spinoza's deterministic Deus sive Natura.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Shlomo Pines",
+        "work": "Spinoza's Tractatus Theologico-Politicus and Jewish Philosophy",
+        "year": 1967,
+        "sectionOrPage": "pp. 177–190"
+      }
+    ]
+  }
+]

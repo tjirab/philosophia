@@ -1,0 +1,110 @@
+[
+  {
+    "id": "hasdai-crescas--infinite-void-and-space",
+    "source": "hasdai-crescas",
+    "target": "infinite-void-and-space",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the concept of infinite void and absolute continuous space",
+    "description": "Hasdai Crescas dismantled the Aristotelian definition of place (the inner boundary of a containing body) and proved that space is an infinite, continuous incorporeal continuum that can exist empty as a vacuum, anticipating modern physics.",
+    "historicalContext": "Composed in late 14th-century Zaragoza (Crown of Aragon) during a period of profound cultural crisis and philosophical rethinking.",
+    "dialecticalTension": "Directly refutes Aristotle's Physics and Metaphysics on the impossibility of the void and the impossibility of actual infinite extension.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Hasdai Crescas",
+        "work": "The Light of the Lord (Or Hashem)",
+        "year": 1410,
+        "sectionOrPage": "Book I, Part 2, Proposition 1",
+        "quote": "Place is not the surface of the surrounding body, but rather the interval and infinite void capable of receiving corporeal matter."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Warren Zev Harvey",
+        "work": "Physics and Metaphysics in Hasdai Crescas",
+        "year": 1998,
+        "sectionOrPage": "pp. 1–32"
+      }
+    ]
+  },
+  {
+    "id": "moses-maimonides--hasdai-crescas",
+    "source": "moses-maimonides",
+    "target": "hasdai-crescas",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Radically critiqued Maimonides's Aristotelian philosophical propositions",
+    "description": "In 'The Light of the Lord', Crescas methodically scrutinized and demolished the twenty-six physical and metaphysical propositions of Aristotle on which Maimonides erected his Guide for the Perplexed.",
+    "historicalContext": "The profound late-medieval Jewish backlash against radical Aristotelian rationalism in the Iberian Peninsula.",
+    "dialecticalTension": "Liberates Jewish theology from dogmatic dependence on Aristotelian natural philosophy, reasserting divine omnipotence and revelation.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Hasdai Crescas",
+        "work": "The Light of the Lord (Or Hashem)",
+        "year": 1410,
+        "sectionOrPage": "Introduction to Book I",
+        "quote": "The Rabbi [Maimonides] built his proofs of the existence, unity, and incorporeality of God on propositions drawn from Aristotle's books; but several of these propositions are demonstrably false."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Harry Austryn Wolfson",
+        "work": "Crescas' Critique of Aristotle: Problems of Aristotle's Physics in Jewish and Arabic Philosophy",
+        "year": 1929,
+        "sectionOrPage": "pp. 114–146"
+      }
+    ]
+  },
+  {
+    "id": "aristotle--hasdai-crescas",
+    "source": "aristotle",
+    "target": "hasdai-crescas",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Overturned Aristotelian finite cosmology and mechanics",
+    "description": "Crescas systematically attacked Aristotle's arguments against the void, multiple worlds, and infinite physical magnitude, defending the possibility of infinite space and infinite causal series.",
+    "historicalContext": "Anticipates the 14th-century Parisian nominalist critiques of Buridan and Oresme, laying conceptual groundwork for Galileo.",
+    "dialecticalTension": "Breaks the closed, finite geocentric cosmos of Aristotelian physics, opening metaphysics to the infinite universe.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Shlomo Pines",
+        "work": "Scholasticism after Thomas Aquinas and the Teachings of Hasdai Crescas and his Predecessors",
+        "year": 1967,
+        "sectionOrPage": "pp. 24–48"
+      }
+    ]
+  },
+  {
+    "id": "hasdai-crescas--baruch-spinoza",
+    "source": "hasdai-crescas",
+    "target": "baruch-spinoza",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Directly transmitted infinite extension, causal determinism, and intellectual love",
+    "description": "Spinoza explicitly cited Hasdai Crescas in his correspondence (Letter 12 to Lodewijk Meyer), adopting Crescas's view that extension can be infinite and indivisible (an attribute of God), along with Crescas's psychological determinism and doctrine of divine love.",
+    "historicalContext": "The decisive influence of medieval Jewish philosophy on the genesis of Spinoza's Ethics.",
+    "dialecticalTension": "Spinoza secularizes Crescas's theistic determinism into absolute metaphysical naturalism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Baruch Spinoza",
+        "work": "Letter 12 (to Lodewijk Meyer on the Infinite)",
+        "year": 1663,
+        "sectionOrPage": "Gebhardt IV, pp. 52–62",
+        "quote": "A certain Jew, named Rab Chasdai, notes that if an infinite series of causes is posited, all things that are, will still be produced necessarily by God."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Harry Austryn Wolfson",
+        "work": "The Philosophy of Spinoza: Unfolding the Latent Processes of His Reasoning",
+        "year": 1934,
+        "sectionOrPage": "Vol. I, pp. 264–295"
+      }
+    ]
+  }
+]

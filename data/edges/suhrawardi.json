@@ -1,0 +1,123 @@
+[
+  {
+    "id": "suhrawardi--knowledge-by-presence",
+    "source": "suhrawardi",
+    "target": "knowledge-by-presence",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the metaphysics of Light and knowledge by presence (al-'ilm al-huduri)",
+    "description": "Suhrawardi founded the Illuminationist school (Hikmat al-Ishraq), demonstrating that knowledge by presence (unmediated, reflexive self-awareness) is the foundational condition of all knowledge, replacing Peripatetic substance with the ontology of Light.",
+    "historicalContext": "Articulated in 12th-century Aleppo and Persia as a radical reform of post-Avicennian scholasticism.",
+    "dialecticalTension": "Overturns Peripatetic representational epistemology (knowledge by acquired form) in favor of immediate, luminous self-manifestation.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Shahab al-Din Suhrawardi",
+        "work": "The Philosophy of Illumination (Hikmat al-Ishraq)",
+        "year": 1186,
+        "sectionOrPage": "Part II, Discourse 1",
+        "quote": "Light is that which is evident in itself and brings other things to evidence. Nothing is more evident than Light."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Mehdi Ha'iri Yazdi",
+        "work": "The Principles of Epistemology in Islamic Philosophy: Knowledge by Presence",
+        "year": 1992,
+        "sectionOrPage": "pp. 43–76"
+      }
+    ]
+  },
+  {
+    "id": "avicenna--suhrawardi",
+    "source": "avicenna",
+    "target": "suhrawardi",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Critiqued Avicenna's essentialist definitions and Peripatetic noetics",
+    "description": "Suhrawardi took Avicenna's 'Floating Man' argument to its radical conclusion, showing that immediate self-awareness disproves the Aristotelian claim that self-knowledge requires a formal definition through genus and specific difference.",
+    "historicalContext": "Suhrawardi's dialectical engagement with Avicenna's Kitab al-Shifa and Oriental Philosophy.",
+    "dialecticalTension": "Demonstrates that discursive definition leads to infinite regress unless grounded in direct intuitive presence.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Shahab al-Din Suhrawardi",
+        "work": "Hikmat al-Ishraq",
+        "year": 1186,
+        "sectionOrPage": "Part I, Logical Discourses",
+        "quote": "If you do not know yourself through direct presence, no definition composed of genus and difference can ever make you know yourself."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Hossein Ziai",
+        "work": "Knowledge and Illumination: A Study of Suhrawardi's Hikmat al-Ishraq",
+        "year": 1990,
+        "sectionOrPage": "pp. 77–114"
+      }
+    ]
+  },
+  {
+    "id": "plato--suhrawardi",
+    "source": "plato",
+    "target": "suhrawardi",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Revived the Platonic Forms as Archetypal Lights (Muthul Nuriya)",
+    "description": "Suhrawardi claimed to revive the perennial wisdom (al-hikmah al-laduniyyah) of ancient sages, reinterpreting Platonic Forms as living, conscious Archetypal Lights residing in the imaginal realm ('alam al-mithal).",
+    "historicalContext": "The deliberate integration of pre-Socratic, Platonic, and ancient Persian Hermetic wisdom in 12th-century Islamic philosophy.",
+    "dialecticalTension": "Replaces static, abstract Platonic Forms with dynamic, self-conscious luminous hypostases.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "John Walbridge",
+        "work": "The Leaven of the Ancients: Suhrawardi and the Heritage of the Greeks",
+        "year": 2000,
+        "sectionOrPage": "pp. 55–89"
+      }
+    ]
+  },
+  {
+    "id": "suhrawardi--ibn-arabi",
+    "source": "suhrawardi",
+    "target": "ibn-arabi",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Supplied the ontology of the imaginal realm ('alam al-mithal)",
+    "description": "Suhrawardi's formulation of the autonomous, intermediate imaginal world ('alam al-mithal)—where spiritual entities take material shape and physical entities become subtle—deeply influenced Ibn Arabi's mystical cosmology.",
+    "historicalContext": "The eastern transmission of Illuminationist concepts to the Andalusian and Syrian Sufi traditions in the early 13th century.",
+    "dialecticalTension": "Ibn Arabi grounds Suhrawardi's world of images in the comprehensive ontology of the divine names and the Unity of Being.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Henry Corbin",
+        "work": "Alone with the Alone: Creative Imagination in the Sufism of Ibn 'Arabi",
+        "year": 1969,
+        "sectionOrPage": "pp. 179–215"
+      }
+    ]
+  },
+  {
+    "id": "suhrawardi--mulla-sadra",
+    "source": "suhrawardi",
+    "target": "mulla-sadra",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Provided the Illuminationist pillars of Transcendent Theosophy",
+    "description": "Mulla Sadra wrote an extensive commentary on Suhrawardi's Hikmat al-Ishraq, adopting Suhrawardi's concepts of knowledge by presence and ontological gradation while shifting the primary substrate from essence to existence.",
+    "historicalContext": "The philosophical synthesis of the Safavid School of Isfahan in 17th-century Persia.",
+    "dialecticalTension": "Mulla Sadra critiques Suhrawardi's essentialism (asalat al-mahiyyah), transposing Suhrawardi's gradation of Light into the gradation of Being (tashkik al-wujud).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Sajjad H. Rizvi",
+        "work": "Mulla Sadra and Metaphysics: Modulation of Being",
+        "year": 2009,
+        "sectionOrPage": "pp. 31–58"
+      }
+    ]
+  }
+]

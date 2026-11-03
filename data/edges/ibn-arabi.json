@@ -1,0 +1,123 @@
+[
+  {
+    "id": "ibn-arabi--wahdat-al-wujud",
+    "source": "ibn-arabi",
+    "target": "wahdat-al-wujud",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the non-dual metaphysics of the Unity of Being (Wahdat al-Wujud)",
+    "description": "Ibn Arabi formulated the doctrine that Being (Wujud) is singular, indivisible, and transcendentally real; all differentiated entities are specific loci of manifestation (mazahir) through which the Divine Self-Disclosure (tajalli) unfolds eternally.",
+    "historicalContext": "Composed in Damascus and across the Mediterranean world during the early 13th century.",
+    "dialecticalTension": "Resolves the dualism between the transcendent Creator and the contingent creation through a sophisticated non-dual panentheism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ibn Arabi",
+        "work": "The Bezels of Wisdom (Fusus al-Hikam)",
+        "year": 1229,
+        "sectionOrPage": "Chapter on Seth and Divine Giving",
+        "quote": "Nothing is in existence except God, His attributes, and His actions. All is He, through Him, proceeding from Him."
+      },
+      {
+        "citationType": "secondary",
+        "author": "William C. Chittick",
+        "work": "The Sufi Path of Knowledge: Ibn al-'Arabi's Metaphysics of Imagination",
+        "year": 1989,
+        "sectionOrPage": "pp. 77–124"
+      }
+    ]
+  },
+  {
+    "id": "averroes--ibn-arabi",
+    "source": "averroes",
+    "target": "ibn-arabi",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Confronted Peripatetic rationalism in the famed meeting at Cordova",
+    "description": "In an iconic historical encounter in Cordova, the teenage Ibn Arabi met the aging master Averroes, demonstrating that mystical gnosis attains truths beyond the reach of deductive Aristotelian syllogism, which Averroes acknowledged with awe.",
+    "historicalContext": "Cordova, c. 1180 CE, marking the symbolic dialectical hinge between Andalusian rationalist Falsafa and transcendent Sufi metaphysics.",
+    "dialecticalTension": "Pits Averroes's strict Aristotelian rationalism against Ibn Arabi's unitive mystical epistemology of the heart.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ibn Arabi",
+        "work": "The Meccan Revelations (Al-Futuhat al-Makkiyya)",
+        "year": 1238,
+        "sectionOrPage": "Volume I, Chapter 15",
+        "quote": "Averroes asked me: 'How did you find the matter through illumination and divine inspiration? Is it what rational reflection gives us?' I replied: 'Yes and no. Between the yes and the no, spirits take flight from their matter.'"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Claude Addas",
+        "work": "Quest for the Red Sulphur: The Life of Ibn 'Arabi",
+        "year": 1993,
+        "sectionOrPage": "pp. 37–42"
+      }
+    ]
+  },
+  {
+    "id": "plotinus--ibn-arabi",
+    "source": "plotinus",
+    "target": "ibn-arabi",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Synthesized Neoplatonic emanation into perpetual divine self-disclosure (Tajalli)",
+    "description": "Ibn Arabi dynamically transformed the static downward emanation of Plotinian hypostases into a continuous, pulsating breathing of the cosmos (Nafas al-Rahman), where existence is renewed at every instant without repetition.",
+    "historicalContext": "The deep synthesis of Mediterranean Neoplatonism within high Islamic theosophy.",
+    "dialecticalTension": "Replaces the unidirectional, mechanistic Neoplatonic emanation with an intimate, reciprocal ontological love relation between God and creation.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Toshihiko Izutsu",
+        "work": "Sufism and Taoism: A Comparative Study of Key Philosophical Concepts",
+        "year": 1983,
+        "sectionOrPage": "pp. 141–178"
+      }
+    ]
+  },
+  {
+    "id": "ibn-arabi--mulla-sadra",
+    "source": "ibn-arabi",
+    "target": "mulla-sadra",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Provided the mystical foundation of the Primacy of Existence",
+    "description": "Mulla Sadra took Ibn Arabi's intuitive doctrine of Wahdat al-Wujud and formulated it into a rigorous, technically demonstrated metaphysical system in Transcendent Philosophy.",
+    "historicalContext": "The intellectual renaissance of the School of Isfahan in 17th-century Safavid Iran.",
+    "dialecticalTension": "Mulla Sadra bridges Ibn Arabi's gnostic insights with Avicennian peripatetic demonstration, legitimizing Sufi ontology within formal philosophy.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "James Winston Morris",
+        "work": "The Wisdom of the Throne: An Introduction to the Philosophy of Mulla Sadra",
+        "year": 1981,
+        "sectionOrPage": "pp. 23–45"
+      }
+    ]
+  },
+  {
+    "id": "ibn-arabi--baruch-spinoza",
+    "source": "ibn-arabi",
+    "target": "baruch-spinoza",
+    "type": "INFLUENCED",
+    "strength": 3,
+    "label": "Prefigured monistic panentheism and singular substance ontology",
+    "description": "Comparative scholars have documented profound structural parallels between Ibn Arabi's Wahdat al-Wujud and Spinoza's single substance (Deus sive Natura), transmitted through medieval Andalusian-Jewish and Kabbalistic networks into early modern European philosophy.",
+    "historicalContext": "The shared Iberian intellectual heritage linking Andalusian non-dualism with the Sephardic diaspora in the Low Countries.",
+    "dialecticalTension": "Ibn Arabi maintains transcendent divine consciousness and personal manifestation, whereas Spinoza naturalizes and geometrizes the singular substance.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Richard Mason",
+        "work": "The God of Spinoza: A Philosophical Study",
+        "year": 1997,
+        "sectionOrPage": "pp. 182–195"
+      }
+    ]
+  }
+]
