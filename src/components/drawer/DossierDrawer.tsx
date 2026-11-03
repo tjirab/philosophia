@@ -328,7 +328,7 @@ export function DossierDrawer({
                 {/* Tooltip Popup with invisible bridge so hover is never lost when moving cursor into tooltip */}
                 <div
                   onClick={(e) => e.stopPropagation()}
-                  className={`absolute left-0 top-full mt-1.5 z-50 w-80 p-3.5 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 ${
+                  className={`absolute right-0 top-full mt-1.5 z-50 w-80 max-w-[calc(100vw-2.5rem)] p-3.5 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 ${
                     pinnedTooltip === 'centrality' ? 'block' : 'hidden group-hover/centrality:block'
                   }`}
                 >
@@ -395,7 +395,7 @@ export function DossierDrawer({
                   {/* Tooltip Popup with invisible bridge so hover is never lost when moving cursor into tooltip */}
                   <div
                     onClick={(e) => e.stopPropagation()}
-                    className={`absolute left-0 top-full mt-1.5 z-50 w-80 p-3.5 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 ${
+                    className={`absolute right-0 top-full mt-1.5 z-50 w-80 max-w-[calc(100vw-2.5rem)] p-3.5 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-xl shadow-2xl text-[11px] text-[var(--text-main)] font-serif leading-relaxed before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3 ${
                       pinnedTooltip === 'exploration' ? 'block' : 'hidden group-hover/exploration:block'
                     }`}
                   >
