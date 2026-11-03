@@ -130,5 +130,10 @@ describe('Staff Design Engineer Audit & UX Verification', () => {
       expect(edgeDossierDrawerCode).toContain('role="dialog"');
       expect(edgeDossierDrawerCode).toContain('aria-modal="true"');
     });
+
+    it('anchors clarification question tooltips inside drawer bounds to prevent viewport overflow clipping', () => {
+      expect(dossierDrawerCode).toContain('absolute right-0 top-full mt-1.5 z-50 w-80 max-w-[calc(100vw-2.5rem)]');
+      expect(dossierDrawerCode).not.toContain('absolute left-0 top-full mt-1.5 z-50 w-80');
+    });
   });
 });
