@@ -32,6 +32,7 @@ import { SearchPalette } from '../components/search/SearchPalette';
 import { GraphLegendModal } from '../components/legend/GraphLegendModal';
 import { AppearanceSettingsMenu } from '../components/settings/AppearanceSettingsModal';
 import { SuggestionModal } from '../components/submission/SuggestionModal';
+import { GlobalAudioPlayer } from '../components/audio/GlobalAudioPlayer';
 
 function HomePageContent() {
   const searchParams = useSearchParams();
@@ -427,6 +428,16 @@ function HomePageContent() {
         concepts={concepts}
         initialTargetNodeId={suggestionTargetId}
       />
+
+      {/* Persistent Global Folio Audio Player */}
+      <GlobalAudioPlayer onSelectNode={handleSelectNode} />
+
+      {/* Accessible Screen Reader Live Announcements */}
+      <div className="sr-only" aria-live="polite" aria-atomic="true">
+        {selectedNodeId ? `Selected ${selectedNodeId} dossier open` : 'Constellation view active'}
+        {selectedEraId !== 'all' ? `, filtered to era ${selectedEraId}` : ''}
+        {selectedDomain !== 'all' ? `, domain ${selectedDomain}` : ''}
+      </div>
     </div>
   );
 }

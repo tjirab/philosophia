@@ -92,7 +92,22 @@ export function EdgeDossierDrawer({
       : 'Broad Scholarly Consensus';
 
   return (
-    <div className="fixed inset-y-0 right-0 z-50 w-full sm:w-[560px] lg:w-[620px] bg-[var(--bg-card)] border-l border-[var(--border-strong)] backdrop-blur-xl shadow-2xl flex flex-col transition-all duration-300 text-[var(--text-main)] font-serif animate-in slide-in-from-right duration-200">
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Influence Proof Dossier"
+      className="fixed inset-y-0 right-0 z-50 w-full sm:w-[560px] lg:w-[620px] bg-[var(--bg-card)] border-l border-[var(--border-strong)] backdrop-blur-xl shadow-2xl flex flex-col transition-all duration-300 text-[var(--text-main)] font-serif animate-in slide-in-from-right duration-200"
+    >
+      {/* Mobile tactile dismiss handle */}
+      <div
+        className="sm:hidden w-full flex justify-center pt-2.5 pb-0 cursor-pointer"
+        onClick={onClose}
+        role="button"
+        aria-label="Dismiss Drawer"
+      >
+        <div className="w-12 h-1.5 bg-[var(--border-strong)] rounded-full hover:bg-[var(--gold-accent)] transition" />
+      </div>
+
       {/* Top Header */}
       <div className="p-5 border-b border-[var(--border-main)] bg-[var(--bg-card)] relative shrink-0">
         <div className="flex items-center justify-between gap-3">
@@ -118,7 +133,7 @@ export function EdgeDossierDrawer({
             </Link>
             <button
               onClick={onClose}
-              className="p-1.5 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition"
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition"
               aria-label="Close influence drawer"
             >
               <X className="w-5 h-5 shrink-0" />

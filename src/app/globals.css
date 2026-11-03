@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -20,9 +19,9 @@ html.light {
   --border-strong: #bfae99;
   --text-main: #1d1813;
   --text-muted: #5e5040;
-  --text-dim: #847460;
-  --gold-accent: #9a6f14;
-  --gold-hover: #7d590e;
+  --text-dim: #655441; /* Enhanced contrast: 5.8:1 against #f7f3ea (WCAG AA compliant) */
+  --gold-accent: #875d0e; /* Enhanced contrast: 5.1:1 against #f7f3ea (WCAG AA compliant) */
+  --gold-hover: #6d4b09;
   --gold-bg: #faeed4;
   --gold-border: #deb972;
   --grid-line: rgba(140, 100, 30, 0.05);

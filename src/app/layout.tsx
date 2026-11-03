@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { EB_Garamond, Cinzel } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '../lib/theme-context';
+import { AudioProvider } from '../lib/audio-context';
 
 const ebGaramond = EB_Garamond({
   subsets: ['latin'],
@@ -35,7 +36,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${ebGaramond.variable} ${cinzel.variable} dark`}>
       <body className="antialiased font-serif">
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <AudioProvider>{children}</AudioProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
