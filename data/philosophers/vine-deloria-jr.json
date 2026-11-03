@@ -1,0 +1,36 @@
+{
+  "id": "vine-deloria-jr",
+  "name": "Vine Deloria Jr.",
+  "birthYear": 1933,
+  "deathYear": 2005,
+  "eraId": "twentieth-century",
+  "traditionId": "indigenous-philosophy",
+  "shortBio": "Standing Rock Sioux philosopher, theologian, and legal theorist; author of God Is Red and Custer Died for Your Sins, establishing Indigenous spatial metaphysics, treaty rights, and relational ontology against Western linear progressivism.",
+  "centralQuestion": "Why must the Western obsession with linear time and universal teleology be abandoned in favor of a spatial, place-based relational metaphysics rooted in sacred geography?",
+  "keyWorks": [
+    {
+      "title": "Custer Died for Your Sins: An Indian Manifesto",
+      "year": "1969",
+      "url": "https://en.wikipedia.org/wiki/Custer_Died_for_Your_Sins",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Custer_Died_for_Your_Sins",
+      "description": "Foundational manifesto of the Red Power movement, critiquing anthropology, Christian missionization, and federal assimilationist policies."
+    },
+    {
+      "title": "God Is Red: A Native View of Religion",
+      "year": "1973",
+      "url": "https://en.wikipedia.org/wiki/God_Is_Red",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/God_Is_Red",
+      "description": "Philosophical masterwork contrasting spatial Native American metaphysics and reverence for sacred lands with temporal Western historical teleology."
+    },
+    {
+      "title": "The Metaphysics of Modern Existence",
+      "year": "1979",
+      "url": "https://en.wikipedia.org/wiki/Vine_Deloria_Jr.",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Vine_Deloria_Jr.",
+      "description": "Cross-cultural metaphysical inquiry synthesizing indigenous epistemology with modern physics and process philosophy."
+    }
+  ],
+  "sepSlug": "civil-rights",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/vine-deloria-jr.jpg"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "robin-wall-kimmerer",
+  "name": "Robin Wall Kimmerer",
+  "birthYear": 1953,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "shortBio": "Citizen of the Potawatomi Nation, plant ecologist, and environmental philosopher; author of Braiding Sweetgrass, formulating the Grammar of Animacy and the Honorable Harvest through the synthesis of Indigenous wisdom and empirical botany.",
+  "centralQuestion": "How can human culture reawaken to the world as a reciprocal community of sovereign, animate non-human beings through linguistic gratitude and the Honorable Harvest?",
+  "keyWorks": [
+    {
+      "title": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants",
+      "year": "2013",
+      "url": "https://en.wikipedia.org/wiki/Braiding_Sweetgrass",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Braiding_Sweetgrass",
+      "description": "Luminous eco-philosophical treatise demonstrating how ecological science and indigenous traditional ecological knowledge (TEK) converge in kinship and reciprocity."
+    },
+    {
+      "title": "Gathering Moss: A Natural and Cultural History of Mosses",
+      "year": "2003",
+      "url": "https://en.wikipedia.org/wiki/Robin_Wall_Kimmerer",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Robin_Wall_Kimmerer",
+      "description": "Biological and philosophical exploration of smallness, persistence, and non-exploitative ecological coexistence."
+    }
+  ],
+  "sepSlug": "ethics-environmental",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/robin-wall-kimmerer.jpg"
+}

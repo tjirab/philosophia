@@ -1,0 +1,78 @@
+[
+  {
+    "id": "inca-garcilaso-de-la-vega--incan-neoplatonic-cosmology",
+    "source": "inca-garcilaso-de-la-vega",
+    "target": "incan-neoplatonic-cosmology",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated Incan moral rationalism, solar cosmology, and Quechua humanism",
+    "description": "Inca Garcilaso de la Vega demonstrated that the Incan Empire constituted a sophisticated moral and civil society whose worship of the sun led naturally to the philosophical conception of Pachacamac, the invisible divine creator, proving that indigenous peoples were fully rational agents.",
+    "historicalContext": "Composed in Córdoba, Spain, in 1609 by the son of an Inca princess (Chimpu Ocllo) and a Spanish conquistador.",
+    "dialecticalTension": "Contrasts with Spanish scholastic justifications of conquest that depicted indigenous Americans as natural slaves lacking reason.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Inca Garcilaso de la Vega",
+        "work": "Comentarios Reales de los Incas",
+        "year": 1609,
+        "sectionOrPage": "Book II, Chapter 2",
+        "quote": "The Incas by the natural light of reason arrived at the knowledge of one God, creator of all things, whom they named Pachacamac.",
+        "url": "https://en.wikipedia.org/wiki/Comentarios_Reales_de_los_Incas"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Margarita Zamora",
+        "work": "Language, Authority, and Indigenous History in the Comentarios reales de los incas",
+        "year": 1988,
+        "sectionOrPage": "pp. 82–129",
+        "url": "https://plato.stanford.edu/entries/latin-american-philosophy/"
+      }
+    ]
+  },
+  {
+    "id": "plato--inca-garcilaso-de-la-vega",
+    "source": "plato",
+    "target": "inca-garcilaso-de-la-vega",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Integrated Renaissance Neoplatonism to interpret Incan metaphysics",
+    "description": "Garcilaso's first major publication was the acclaimed Spanish translation of León Hebreo's Dialoghi d'Amore (1590); he subsequently utilized Hebreo's Neoplatonic metaphysics of cosmic love and harmony to systematically interpret Incan social and theological institutions.",
+    "historicalContext": "The flowering of Italian and Iberian Renaissance Neoplatonism in the late 16th century.",
+    "dialecticalTension": "Synthesizes classical Mediterranean Neoplatonism with indigenous Andean dual-gendered solar cosmology.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Enrique Pupo-Walker",
+        "work": "Historia, creación y profecía en los textos del Inca Garcilaso de la Vega",
+        "year": 1982,
+        "sectionOrPage": "pp. 45–78",
+        "url": "https://plato.stanford.edu/entries/latin-american-philosophy/"
+      }
+    ]
+  },
+  {
+    "id": "inca-garcilaso-de-la-vega--enrique-dussel",
+    "source": "inca-garcilaso-de-la-vega",
+    "target": "enrique-dussel",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Provided historical proof of pre-Columbian communitarian ethics",
+    "description": "Dussel frequently draws upon Garcilaso's documentation of Incan communal economics (ayllu, mita, and social provisioning) to prove that indigenous American civilizations developed sophisticated communitarian ethical systems prior to European modernity.",
+    "historicalContext": "The recovery of indigenous economic ethics in 20th-century Latin American political philosophy.",
+    "dialecticalTension": "Reclaims pre-capitalist Incan agrarian solidarity as a normative resource for contemporary decolonial ethics.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Enrique Dussel",
+        "work": "Para una ética de la liberación latinoamericana",
+        "year": 1973,
+        "sectionOrPage": "Tomo II, Cap. 4",
+        "quote": "The Inca Garcilaso shows us that the Andean world was not an ethical vacuum, but a highly developed moral community oriented to the preservation of life.",
+        "url": "https://plato.stanford.edu/entries/latin-american-philosophy/"
+      }
+    ]
+  }
+]

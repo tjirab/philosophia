@@ -1,0 +1,22 @@
+{
+  "id": "felipe-guaman-poma",
+  "name": "Felipe Guaman Poma de Ayala",
+  "birthYear": 1535,
+  "deathYear": 1616,
+  "eraId": "early-modern",
+  "traditionId": "indigenous-philosophy",
+  "shortBio": "Indigenous Andean Quechua chronicler and political philosopher; author of El primer nueva corónica y buen gobierno, formulating an early decolonial critique of Spanish rule, spatial justice, and the restoration of reciprocal world order (Pachakuti).",
+  "centralQuestion": "How has colonial exploitation inverted the sacred Andean cosmic equilibrium, and how can reciprocal communal justice (Ayni) and autonomous governance be restored?",
+  "keyWorks": [
+    {
+      "title": "El primer nueva corónica y buen gobierno (The First New Chronicle and Good Government)",
+      "year": "1615",
+      "url": "https://en.wikipedia.org/wiki/El_primer_nueva_cor%C3%B3nica_y_buen_gobierno",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/El_primer_nueva_cor%C3%B3nica_y_buen_gobierno",
+      "description": "Monumental 1,200-page illustrated letter to the King of Spain combining Quechua historiography, Andean visual semiotics, and devastating political critique of colonial abuses."
+    }
+  ],
+  "sepSlug": "colonialism",
+  "importanceScore": 88,
+  "imageUrl": "/portraits/felipe-guaman-poma.jpg"
+}

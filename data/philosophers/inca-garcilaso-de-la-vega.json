@@ -1,0 +1,29 @@
+{
+  "id": "inca-garcilaso-de-la-vega",
+  "name": "Inca Garcilaso de la Vega",
+  "birthYear": 1539,
+  "deathYear": 1616,
+  "eraId": "early-modern",
+  "traditionId": "indigenous-philosophy",
+  "shortBio": "Cuzco-born mestizo Incan philosopher and humanist; author of Comentarios Reales de los Incas, pioneering the intercultural synthesis of Incan imperial cosmology, Quechua hermeneutics, and Renaissance Neoplatonism.",
+  "centralQuestion": "Did pre-conquest Incan civilization possess a rational, natural moral order and monotheistic contemplation of Pachacamac comparable to ancient Greek and Roman philosophy?",
+  "keyWorks": [
+    {
+      "title": "Comentarios Reales de los Incas (Royal Commentaries of the Incas)",
+      "year": "1609",
+      "url": "https://en.wikipedia.org/wiki/Comentarios_Reales_de_los_Incas",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Comentarios_Reales_de_los_Incas",
+      "description": "Masterwork preserving Incan statecraft, agrarian socialism, cosmic religion, and Quechua poetry against Spanish misrepresentation."
+    },
+    {
+      "title": "Translation of León Hebreo's Dialoghi d'Amore (Dialogues of Love)",
+      "year": "1590",
+      "url": "https://en.wikipedia.org/wiki/Inca_Garcilaso_de_la_Vega",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Inca_Garcilaso_de_la_Vega",
+      "description": "Exemplary Spanish translation of the seminal Renaissance Neoplatonic treatise on cosmic love and universal harmony."
+    }
+  ],
+  "sepSlug": "latin-american-philosophy",
+  "importanceScore": 87,
+  "imageUrl": "/portraits/inca-garcilaso-de-la-vega.jpg"
+}

@@ -1,0 +1,126 @@
+[
+  {
+    "id": "vine-deloria-jr--indigenous-spatial-metaphysics",
+    "source": "vine-deloria-jr",
+    "target": "indigenous-spatial-metaphysics",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated Indigenous spatial metaphysics and relational ontology",
+    "description": "Vine Deloria Jr. demonstrated that Native American philosophy is grounded fundamentally in space, sacred geography, and community relationships, contrasting it sharply with Western linear temporal teleology, historical progressivism, and individualized salvation.",
+    "historicalContext": "Articulated during the Native American civil rights and Red Power movements in the 1960s and 1970s.",
+    "dialecticalTension": "Contrasts Western linear historical time with Indigenous circular, place-based sacred space.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Vine Deloria Jr.",
+        "work": "God Is Red: A Native View of Religion",
+        "year": 1973,
+        "sectionOrPage": "Chapter 4: Thinking in Time and Space",
+        "quote": "American Indians hold their lands—places—as having the highest possible meaning, and all their statements are made with this reference point in mind... The Western heritage relies on history and time.",
+        "url": "https://plato.stanford.edu/entries/civil-rights/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Thomas M. Norton-Smith",
+        "work": "The Dance of Person and Place: One Interpretation of American Indian Philosophy",
+        "year": 2010,
+        "sectionOrPage": "pp. 55–82",
+        "url": "https://plato.stanford.edu/entries/civil-rights/"
+      }
+    ]
+  },
+  {
+    "id": "william-james--vine-deloria-jr",
+    "source": "william-james",
+    "target": "vine-deloria-jr",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Synthesized radical empiricism and pluralism to validate Native experiential knowledge",
+    "description": "In 'The Metaphysics of Modern Existence', Deloria drew on William James's radical empiricism and pluralistic universe, arguing that Native oral traditions and sacred experiences are empirically verifiable encounters with a pluralistic cosmos, not mere primitive superstition.",
+    "historicalContext": "The cross-cultural philosophical revival of American Pragmatism in dialogue with Native American epistemologies.",
+    "dialecticalTension": "Utilizes Jamesian pragmatism to dismantle mechanical positivistic reductionism while expanding empiricism to include spiritual experience.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Vine Deloria Jr.",
+        "work": "The Metaphysics of Modern Existence",
+        "year": 1979,
+        "sectionOrPage": "Chapter 12: The Pluralistic Universe",
+        "quote": "William James recognized that reality is a blooming, buzzing confusion that cannot be straitjacketed into a single monistic scheme... Native traditions have always operated in this experiential pluralism.",
+        "url": "https://plato.stanford.edu/entries/civil-rights/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Lee Hester and Jim Cheney",
+        "work": "Truth and Native American Epistemology",
+        "year": 2001,
+        "sectionOrPage": "Social Epistemology 15(4), pp. 319–334",
+        "url": "https://plato.stanford.edu/entries/civil-rights/"
+      }
+    ]
+  },
+  {
+    "id": "w-e-b-du-bois--vine-deloria-jr",
+    "source": "w-e-b-du-bois",
+    "target": "vine-deloria-jr",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Integrated critical race theory and sovereign self-determination against assimilationism",
+    "description": "Deloria in 'Custer Died for Your Sins' built upon Du Bois's critique of the color line and double consciousness, arguing that indigenous liberation requires collective national sovereignty, land restoration, and treaty integrity rather than liberal individualist assimilation.",
+    "historicalContext": "The ideological debates of the 1960s civil rights movement comparing Black civil rights and Native treaty sovereignty.",
+    "dialecticalTension": "Pits assimilationist integration against collective tribal nationalism and land-based sovereignty.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Vine Deloria Jr.",
+        "work": "Custer Died for Your Sins: An Indian Manifesto",
+        "year": 1969,
+        "sectionOrPage": "Chapter 8: The Red and the Black",
+        "quote": "The civil rights movement seeks individual entry into the mainstream; the Indian movement seeks to preserve the tribal community and its land.",
+        "url": "https://plato.stanford.edu/entries/civil-rights/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "David E. Wilkins",
+        "work": "The Life and Legacy of Vine Deloria Jr.",
+        "year": 2006,
+        "sectionOrPage": "pp. 110–135",
+        "url": "https://plato.stanford.edu/entries/civil-rights/"
+      }
+    ]
+  },
+  {
+    "id": "vine-deloria-jr--robin-wall-kimmerer",
+    "source": "vine-deloria-jr",
+    "target": "robin-wall-kimmerer",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Transmitted the foundational framework of relational ecology and sacred geography",
+    "description": "Robin Wall Kimmerer's eco-philosophy builds directly upon Deloria's spatial metaphysics, expanding Deloria's critique of anthropocentrism into botanical science, traditional ecological knowledge, and reciprocal plant-human kinship.",
+    "historicalContext": "The contemporary Native American resurgence in environmental ethics and ecological restoration.",
+    "dialecticalTension": "Bridges Deloria's legal and metaphysical critique of Western science with the actual practice of field botany and ecological restoration.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Robin Wall Kimmerer",
+        "work": "Braiding Sweetgrass",
+        "year": 2013,
+        "sectionOrPage": "Chapter: The Sacred and the Superfund",
+        "quote": "Vine Deloria Jr. taught us that the sacred is not an abstract concept floating in heaven, but a living relationship to this specific soil and water.",
+        "url": "https://plato.stanford.edu/entries/ethics-environmental/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Kyle Powys Whyte",
+        "work": "Indigenous Climate Justice and Food Sovereignty",
+        "year": 2018,
+        "sectionOrPage": "Journal of Human Rights and the Environment 9(2), pp. 143–162",
+        "url": "https://plato.stanford.edu/entries/ethics-environmental/"
+      }
+    ]
+  }
+]

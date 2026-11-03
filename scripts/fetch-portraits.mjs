@@ -140,6 +140,12 @@ const WIKI_TITLES = {
   'damaris-masham': 'Damaris_Cudworth_Masham',
   'catharine-cockburn': 'Catharine_Trotter_Cockburn',
   'emilie-du-chatelet': 'Émilie_du_Châtelet',
+  // Indigenous American & First Nations Philosophy
+  'nezahualcoyotl': 'Nezahualcoyotl',
+  'felipe-guaman-poma': 'Felipe_Guamán_Poma_de_Ayala',
+  'inca-garcilaso-de-la-vega': 'Inca_Garcilaso_de_la_Vega',
+  'vine-deloria-jr': 'Vine_Deloria_Jr.',
+  'robin-wall-kimmerer': 'Robin_Wall_Kimmerer',
   // Psychology
   'wilhelm-wundt': 'Wilhelm_Wundt',
   'sigmund-freud': 'Sigmund_Freud',
@@ -183,6 +189,10 @@ const WIKI_TITLES = {
   'ulrich-beck': 'Ulrich_Beck',
 };
 
+const CUSTOM_IMAGE_URLS = {
+  'nezahualcoyotl': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/NezahualcoyotlGardenTADF.JPG/330px-NezahualcoyotlGardenTADF.JPG',
+};
+
 async function fetchPortraits() {
   fs.mkdirSync(PORTRAITS_DIR, { recursive: true });
   const philosophers = JSON.parse(fs.readFileSync(PHILOSOPHERS_PATH, 'utf-8'));
@@ -206,19 +216,22 @@ async function fetchPortraits() {
     }
 
     try {
-      const summaryUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiTitle)}`;
-      const res = await fetch(summaryUrl, {
-        headers: { 'User-Agent': userAgent },
-      });
+      let thumbUrl = CUSTOM_IMAGE_URLS[phil.id];
+      if (!thumbUrl) {
+        const summaryUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiTitle)}`;
+        const res = await fetch(summaryUrl, {
+          headers: { 'User-Agent': userAgent },
+        });
 
-      if (!res.ok) {
-        console.warn(`[WARN] Failed summary for ${phil.name} (${wikiTitle}): HTTP ${res.status}`);
-        skippedCount++;
-        continue;
+        if (!res.ok) {
+          console.warn(`[WARN] Failed summary for ${phil.name} (${wikiTitle}): HTTP ${res.status}`);
+          skippedCount++;
+          continue;
+        }
+
+        const data = await res.json();
+        thumbUrl = data.thumbnail?.source || data.originalimage?.source;
       }
-
-      const data = await res.json();
-      const thumbUrl = data.thumbnail?.source || data.originalimage?.source;
 
       if (!thumbUrl) {
         console.warn(`[WARN] No thumbnail found for ${phil.name} (${wikiTitle})`);
