@@ -1,0 +1,119 @@
+[
+  {
+    "id": "xunzi--acquired-goodness",
+    "source": "xunzi",
+    "target": "acquired-goodness",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the philosophy of acquired virtue through ritual and cultural discipline",
+    "description": "Xunzi formulated the landmark theory that innate human desires are chaotic, and that morality is not spontaneous nature but an artificial, hard-won achievement (wei) crafted through ritual (li) and sage laws.",
+    "historicalContext": "Composed in the 3rd century BCE at the prestigious Jixia Academy in Qi, where Xunzi served three times as chancellor.",
+    "dialecticalTension": "Demonstrates that civilization and moral order are conscious cultural constructions rather than spontaneous natural developments.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Xunzi",
+        "work": "The Xunzi",
+        "sectionOrPage": "Chapter 23 (Human Nature is Evil)",
+        "year": -250,
+        "quote": "Human nature is evil; whatever is good in it is the result of conscious activity... Crooked wood must be steamed and bent to make it straight.",
+        "url": "https://en.wikipedia.org/wiki/Xunzi_(book)"
+      },
+      {
+        "citationType": "secondary",
+        "author": "John Knoblock",
+        "work": "Xunzi: A Translation and Study of the Complete Works",
+        "year": 1994,
+        "sectionOrPage": "vol. 3, pp. 139–162"
+      }
+    ]
+  },
+  {
+    "id": "mencius--xunzi",
+    "source": "mencius",
+    "target": "xunzi",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Refuted Mencius's thesis of innate human goodness",
+    "description": "Xunzi explicitly attacked Mencius's core claim that humans possess innate moral sprouts of goodness, arguing that if humans were naturally good, rituals, penal laws, and ethical teachers would be entirely superfluous.",
+    "historicalContext": "The monumental internal debate within classical Confucianism between the idealistic Mencian lineage and the realistic Xunqian lineage.",
+    "dialecticalTension": "Pits Mencian moral intuitionism and optimism against Xunzi's realism, institutional discipline, and moral constructivism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Xunzi",
+        "work": "The Xunzi",
+        "sectionOrPage": "Chapter 23",
+        "year": -250,
+        "quote": "Mencius states that man's nature is good. I say: this is not so... He who does not understand the difference between nature and conscious artifice cannot understand human nature."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Eric L. Hutton",
+        "work": "Dao Companion to the Philosophy of Xunzi",
+        "year": 2016,
+        "sectionOrPage": "pp. 173–198"
+      }
+    ]
+  },
+  {
+    "id": "confucius--xunzi",
+    "source": "confucius",
+    "target": "xunzi",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Systematized Confucian ritual (li) as the indispensable technology of moral cultivation",
+    "description": "Xunzi expanded Confucius's reverence for ritual and the rectification of names into a rigorous psychological and political system that balances human desires and regulates social hierarchy.",
+    "historicalContext": "The intellectual consolidation of the Confucian canon toward the end of the Warring States era.",
+    "dialecticalTension": "Elevates ritual (li) from moral etiquette into the fundamental structural architecture of human psychological balance and social stability.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Xunzi",
+        "work": "The Xunzi",
+        "sectionOrPage": "Chapter 19 (Discourse on Ritual)",
+        "year": -250,
+        "quote": "Ritual cuts off what is too long and extends what is too short; it curbs what is too much and augments what is too little."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Paul R. Goldin",
+        "work": "Rituals of the Way: The Philosophy of Xunzi",
+        "year": 1999,
+        "sectionOrPage": "pp. 55–82"
+      }
+    ]
+  },
+  {
+    "id": "xunzi--han-feizi",
+    "source": "xunzi",
+    "target": "han-feizi",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Taught Han Feizi at the Jixia Academy, inspiring realistic institutional statecraft",
+    "description": "Xunzi personally mentored Han Feizi and Li Si. Han Feizi adopted Xunzi's premise that human nature is innately selfish, but discarded Xunzi's faith in moral ritual in favor of coercive legalism and penal codification.",
+    "historicalContext": "The direct teacher-student transmission from the last great classical Confucian to the chief theorist of Legalist statecraft.",
+    "dialecticalTension": "Xunzi believed human nature can be transformed into virtue through education; Han Feizi concluded it must be permanently managed through surveillance and rewards/punishments.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Sima Qian",
+        "work": "Records of the Grand Historian (Shiji)",
+        "sectionOrPage": "Chapter 63 (Biography of Han Feizi)",
+        "year": -94,
+        "quote": "Han Fei was a prince of Han. He together with Li Si studied under Xun Qing (Xunzi)."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Benjamin I. Schwartz",
+        "work": "The World of Thought in Ancient China",
+        "year": 1985,
+        "sectionOrPage": "pp. 321–349"
+      }
+    ]
+  }
+]

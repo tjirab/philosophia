@@ -1,0 +1,118 @@
+[
+  {
+    "id": "dogen--being-time",
+    "source": "dogen",
+    "target": "being-time",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the radical ontology of being-time (Uji) and non-duality of practice and enlightenment",
+    "description": "Dōgen articulated the profound metaphysical thesis that time is not an external container in which beings move, but that all existence is itself time (Uji)—dynamic presence in which every moment is absolute, complete, and flowing.",
+    "historicalContext": "Composed in Kamakura Japan around 1240 in the 'Uji' fascicle of the Shōbōgenzō after returning from Song Dynasty China.",
+    "dialecticalTension": "Overcomes linear temporal progression and instrumentalism by revealing that enlightened awakening is identical with continuous present meditative practice (shusho itto).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Dōgen",
+        "work": "Shōbōgenzō",
+        "sectionOrPage": "Fascicle 11 (Uji / Being-Time)",
+        "year": 1240,
+        "quote": "The so-called being-time means that time is already being, and all being is time... Mountains are time, oceans are time.",
+        "url": "https://en.wikipedia.org/wiki/Sh%C5%8Db%C5%8Dgenz%C5%8D"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Hee-Jin Kim",
+        "work": "Dōgen on Meditation and Thinking: A Reflection on Muga",
+        "year": 2007,
+        "sectionOrPage": "pp. 85–118"
+      }
+    ]
+  },
+  {
+    "id": "siddhartha-gautama--dogen",
+    "source": "siddhartha-gautama",
+    "target": "dogen",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Transmitted and radically deepened Soto Zen monastic practice and original enlightenment",
+    "description": "Dōgen grounded his entire philosophy in the Buddha's realization under the Bodhi tree, radically reinterpreting the Mahaparinirvana Sutra's statement that 'all beings have Buddha-nature' to mean 'all beings are Buddha-nature'.",
+    "historicalContext": "The transmission of Chan/Zen Buddhism from China to Japan during the Kamakura reformation.",
+    "dialecticalTension": "Transforms the potentiality of salvation into an active, immediate phenomenological reality accessible in every posture of body and mind.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Dōgen",
+        "work": "Shōbōgenzō",
+        "sectionOrPage": "Fascicle 22 (Busshō / Buddha-Nature)",
+        "year": 1241,
+        "quote": "Whole-being is Buddha-nature; a part of whole-being is called sentient beings."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Masao Abe",
+        "work": "A Study of Dōgen: His Philosophy and Religion",
+        "year": 1992,
+        "sectionOrPage": "pp. 35–70"
+      }
+    ]
+  },
+  {
+    "id": "dogen--martin-heidegger",
+    "source": "dogen",
+    "target": "martin-heidegger",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Remarkable parallel ontological analysis of Being and Time",
+    "description": "Comparative phenomenologists recognize an extraordinary philosophical resonance between Dōgen's 13th-century Uji (Being-Time) and Heidegger's 1927 Sein und Zeit (Being and Time), both dismantling metaphysical substance to understand existence as pure temporality.",
+    "historicalContext": "The 20th-century East-West dialogue initiated when Kyoto School philosophers brought Japanese Buddhist texts to Heidegger in Freiburg.",
+    "dialecticalTension": "Where Heidegger understood human temporality primarily through Dasein's authentic Being-toward-death, Dōgen recognized all phenomenal existence (mountains, waters, trees) as the self-realization of being-time.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Joan Stambaugh",
+        "work": "Impermanence is Buddha-Nature: Dōgen's Understanding of Temporality",
+        "year": 1990,
+        "sectionOrPage": "pp. 41–68"
+      },
+      {
+        "citationType": "secondary",
+        "author": "David E. Shaner",
+        "work": "The Bodymind Experience in Japanese Buddhism: A Phenomenological Perspective of Kūkai and Dōgen",
+        "year": 1985,
+        "sectionOrPage": "pp. 121–154"
+      }
+    ]
+  },
+  {
+    "id": "dogen--nishida-kitaro",
+    "source": "dogen",
+    "target": "nishida-kitaro",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Supplied the Zen metaphysical and temporal foundation for Kyoto School pure experience",
+    "description": "Nishida drew deeply upon Dōgen's Zen phenomenology of 'dropping off body and mind' (shinjin datsuraku) to articulate his philosophical concepts of pure experience, the acting-seeing self, and Absolute Nothingness.",
+    "historicalContext": "The founding moment of modern Japanese academic philosophy during the Meiji and Taisho eras.",
+    "dialecticalTension": "Transposes medieval monastic Zen awakening into modern systematic philosophical discourse capable of engaging Kant, Hegel, and James.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nishida Kitaro",
+        "work": "Last Writings: Nothingness and the Religious Worldview",
+        "year": 1945,
+        "sectionOrPage": "Section 3",
+        "quote": "Dōgen said: 'To learn the Buddha Way is to learn the self; to learn the self is to forget the self; to forget the self is to be actualized by all things.'"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Thomas P. Kasulis",
+        "work": "Zen Action / Zen Person",
+        "year": 1981,
+        "sectionOrPage": "pp. 65–92"
+      }
+    ]
+  }
+]

@@ -1,0 +1,120 @@
+[
+  {
+    "id": "mozi--jian-ai",
+    "source": "mozi",
+    "target": "jian-ai",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the doctrine of universal care (jian'ai) and early consequentialism",
+    "description": "Mozi formulated jian'ai (universal mutual care) as an objective normative standard, arguing that social turmoil stems from partiality and can only be cured by impartial benevolence toward all people.",
+    "historicalContext": "Articulated during the Warring States period in response to pervasive interstate warfare and social disintegration across the Central Plains of China.",
+    "dialecticalTension": "Opposes Confucian graded love (qinqin) which prioritizes familial kinship above strangers and foreign states.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mozi",
+        "work": "The Mozi",
+        "sectionOrPage": "Chapter 16 (Universal Love III)",
+        "year": -400,
+        "quote": "If everyone in the world loves universally, treating others' countries as their own, who would invade them? There would be no wars.",
+        "url": "https://en.wikipedia.org/wiki/Mozi_(book)"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Chris Fraser",
+        "work": "The Philosophy of the Mozi: The First Consequentialists in Chinese Thought",
+        "year": 2016,
+        "sectionOrPage": "pp. 85–124"
+      }
+    ]
+  },
+  {
+    "id": "confucius--mozi",
+    "source": "confucius",
+    "target": "mozi",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Critiqued Confucian ritualism and partial filial devotion",
+    "description": "Mozi was originally trained in the Confucian tradition but broke away, condemning Confucian lavish funerals, extended mourning rituals, and kinship partiality as wasteful and harmful to the common welfare.",
+    "historicalContext": "The earliest and most formidable philosophical counter-movement against orthodox early Confucianism during the 5th century BCE.",
+    "dialecticalTension": "Pits Confucian aesthetic ritualism (li) and filial partiality against Mohist utilitarian thrift and universal impartial care.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mozi",
+        "work": "The Mozi",
+        "sectionOrPage": "Chapter 39 (Anti-Confucianism)",
+        "year": -400,
+        "quote": "The Confucians corrupt people with elaborate rituals and bankrupt them with lavish funerals... They do not promote the benefit of the world."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Angus Charles Graham",
+        "work": "Disputers of the Tao: Philosophical Argument in Ancient China",
+        "year": 1989,
+        "sectionOrPage": "pp. 33–52"
+      }
+    ]
+  },
+  {
+    "id": "mozi--mencius",
+    "source": "mozi",
+    "target": "mencius",
+    "type": "CRITIQUED",
+    "strength": 5,
+    "label": "Catalyzed Mencius's defense of innate filial benevolence",
+    "description": "Mozi's doctrine of universal care alarmed Mencius, who famously denounced Mohism for advocating 'care without distinction' (wu fu, having no father), thereby threatening filial piety and civilized human relationships.",
+    "historicalContext": "4th-century BCE intellectual warfare between rival schools in the Warring States period seeking patronage from state rulers.",
+    "dialecticalTension": "Mencius argued that moral feeling must naturally radiate outward from natural familial affection, whereas Mozi demanded an impartial rational commitment to all humanity.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mencius",
+        "work": "The Mencius",
+        "sectionOrPage": "Book III, Part B, 9",
+        "year": -320,
+        "quote": "Mozi advocated universal love, which is to acknowledge no father... If one acknowledges no father and no ruler, one is a beast."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Kwong-loi Shun",
+        "work": "Mencius and Early Chinese Thought",
+        "year": 1997,
+        "sectionOrPage": "pp. 112–138"
+      }
+    ]
+  },
+  {
+    "id": "mozi--jeremy-bentham",
+    "source": "mozi",
+    "target": "jeremy-bentham",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Prefigured utilitarian consequentialism maximizing social welfare and minimizing harm",
+    "description": "Comparative philosophers highlight Mozi as humanity's first systematic consequentialist, evaluating laws, policies, and morals strictly by whether they promote benefit (li) and eliminate harm (hai) for the greatest number.",
+    "historicalContext": "The cross-cultural comparative lineage connecting ancient Chinese welfare consequentialism with 19th-century British utilitarianism.",
+    "dialecticalTension": "Mozi grounded utility in the objective will of Heaven (Tian) and practical material sufficiency, while Bentham formulated it around psychological hedonism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mozi",
+        "work": "The Mozi",
+        "sectionOrPage": "Chapter 32 (Exaltation of Unity)",
+        "year": -400,
+        "quote": "The purpose of the benevolent man is to promote what is beneficial to the world and eliminate what is harmful."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Chris Fraser",
+        "work": "Mohism",
+        "year": 2020,
+        "sectionOrPage": "Stanford Encyclopedia of Philosophy",
+        "url": "https://plato.stanford.edu/entries/mohism/"
+      }
+    ]
+  }
+]

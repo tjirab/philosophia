@@ -1,0 +1,88 @@
+[
+  {
+    "id": "mahavira--anekantavada",
+    "source": "mahavira",
+    "target": "anekantavada",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the epistemology of Anekantavada (multi-faceted truth) and Syadvada",
+    "description": "Mahavira established the core Jain epistemic doctrine that truth is multifaceted (anekanta), developing the theory of conditioned predication (syadvada) and the parable of the blind men and the elephant to dismantle absolutist dogmatism.",
+    "historicalContext": "Articulated during the 6th-century BCE Sramana period in the Magadha region of ancient India.",
+    "dialecticalTension": "Demonstrates that every dogmatic assertion captures only a partial, conditioned aspect of reality (naya), requiring epistemic humility and tolerance.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mahavira",
+        "work": "Acharanga Sutra",
+        "sectionOrPage": "Book 1, Lecture 4",
+        "year": -520,
+        "quote": "One who knows one thing knows all things; one who knows all things knows one thing.",
+        "url": "https://en.wikipedia.org/wiki/Acharanga_Sutra"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Bimal Krishna Matilal",
+        "work": "The Central Philosophy of Jainism (Anekānta-vāda)",
+        "year": 1981,
+        "sectionOrPage": "pp. 24–65"
+      }
+    ]
+  },
+  {
+    "id": "mahavira--siddhartha-gautama",
+    "source": "mahavira",
+    "target": "siddhartha-gautama",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Engaged in extensive Sramana debates over asceticism, karma, and the self",
+    "description": "Mahavira (referred to as Nigantha Nataputta in early Pali texts) was the chief philosophical elder contemporary of Siddhartha Gautama. The early Buddhist discourses record numerous intense dialectical encounters between the Buddha and Jain disciples regarding ascetic discipline, intentionality, and karma.",
+    "historicalContext": "The vibrant heterodox Sramana intellectual revolution in the Gangetic plain challenging Vedic ritualism.",
+    "dialecticalTension": "Mahavira maintained the reality of an enduring spiritual soul (jiva) and held that bodily actions incur physical karmic bondage, whereas the Buddha formulated anatta (non-self) and defined karma purely as mental intention (cetana).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Majjhima Nikaya",
+        "work": "Upali Sutta (MN 56)",
+        "sectionOrPage": "MN 56",
+        "quote": "Nigantha Nataputta said: 'I lay down three kinds of rods for the performing of unwholesome action... and the rod of body is the most blameworthy.'"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Padmanabh S. Jaini",
+        "work": "The Jaina Path of Purification",
+        "year": 1979,
+        "sectionOrPage": "pp. 1–41"
+      }
+    ]
+  },
+  {
+    "id": "mahavira--nagarjuna",
+    "source": "mahavira",
+    "target": "nagarjuna",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Prefigured dialectical non-absolutism influencing Madhyamaka middle-way epistemology",
+    "description": "Mahavira's systematic dismantling of dogmatic philosophical positions through multi-perspectival logic (syadvada) paved the way for Nagarjuna's deconstructive tetralemma (catuskoti) and middle-way critique of inherent existence.",
+    "historicalContext": "The ongoing Subcontinental dialectical dialogue between Jain non-absolutism and Buddhist sunyata (emptiness).",
+    "dialecticalTension": "Where Jainism resolves dogmatism through an ontology of infinitely complex real attributes, Nagarjuna deconstructs all ontological positions into dependent origination and emptiness.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Satkari Mookerjee",
+        "work": "The Jaina Philosophy of Non-Absolutism",
+        "year": 1944,
+        "sectionOrPage": "pp. 182–215"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Jay L. Garfield",
+        "work": "Engaging Buddhism: Why It Matters to Philosophy",
+        "year": 2015,
+        "sectionOrPage": "pp. 165–188"
+      }
+    ]
+  }
+]

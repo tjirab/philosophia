@@ -1,0 +1,26 @@
+{
+  "id": "mozi",
+  "name": "Mozi (Mo Di)",
+  "birthYear": -470,
+  "deathYear": -391,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Ancient Chinese philosopher and founder of Mohism, who formulated the doctrine of universal mutual care (jian'ai), anti-militarism, early consequentialism, and the 'Three Models' of epistemological logic.",
+  "centralQuestion": "How can society eliminate war, poverty, and injustice through universal mutual care and rational consequentialist governance?",
+  "keyWorks": [
+    {
+      "title": "Mozi (The Book of Master Mo)",
+      "year": "c. 400 BCE",
+      "url": "https://en.wikipedia.org/wiki/Mozi_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mozi_(book)",
+      "description": "Foundational text of Mohism containing treatises on universal care (jian'ai), non-aggression (feigong), frugality, and early logic."
+    }
+  ],
+  "sepSlug": "mohism",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/mozi.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

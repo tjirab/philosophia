@@ -1,0 +1,20 @@
+[
+  {
+    "id": "iep-b-r-ambedkar",
+    "targetId": "b-r-ambedkar",
+    "type": "encyclopedia",
+    "title": "B. R. Ambedkar - Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/ambedkar/",
+    "creator": "Internet Encyclopedia of Philosophy",
+    "summary": "Academic analysis of Ambedkar's moral philosophy, radical egalitarianism, annihilation of caste, and reconstruction of Navayana Buddhism."
+  },
+  {
+    "id": "sep-b-r-ambedkar-egalitarianism",
+    "targetId": "b-r-ambedkar",
+    "type": "encyclopedia",
+    "title": "Egalitarianism & Social Justice - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/egalitarianism/",
+    "creator": "Stanford University",
+    "summary": "Canonical philosophical survey on egalitarian justice, structural inequality, and rights, foundational to Ambedkar's moral framework."
+  }
+]

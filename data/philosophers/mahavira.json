@@ -1,0 +1,26 @@
+{
+  "id": "mahavira",
+  "name": "Mahavira (Vardhamana)",
+  "birthYear": -599,
+  "deathYear": -527,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "24th Tirthankara of Jainism and elder contemporary of the Buddha, who codified Jain metaphysics, radical non-violence (ahimsa), and the multi-perspectival epistemology of Anekantavada.",
+  "centralQuestion": "How can one liberate the soul (jiva) through radical non-violence and recognize that ultimate truth is multi-faceted and irreducible to dogmatic absolutes?",
+  "keyWorks": [
+    {
+      "title": "Acharanga Sutra",
+      "year": "c. 5th c. BCE",
+      "url": "https://en.wikipedia.org/wiki/Acharanga_Sutra",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Acharanga_Sutra",
+      "description": "Oldest canonical Jain scripture detailing the conduct of ascetics, radical ahimsa toward all living beings, and the philosophy of non-attachment."
+    }
+  ],
+  "sepSlug": "jaina-philosophy",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/mahavira.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "nishida-kitaro--logic-of-basho",
+    "source": "nishida-kitaro",
+    "target": "logic-of-basho",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Logic of Basho (Place) and the metaphysics of Absolute Nothingness",
+    "description": "Nishida formulated the 'Logic of Basho' (Place) to establish a non-dualistic spatial logic that transcends Aristotelian and Kantian subject-predicate logic, demonstrating that consciousness and objects are enveloped by the ultimate horizon of Absolute Nothingness.",
+    "historicalContext": "Developed in Kyoto in the 1920s through seminal essays published in From the Acting to the Seeing.",
+    "dialecticalTension": "Unlike Western substance ontology which grounds reality in Being, Nishida grounds reality in the dynamic, receptive matrix of Absolute Nothingness (zettai mu).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nishida Kitaro",
+        "work": "From the Acting to the Seeing",
+        "year": 1927,
+        "sectionOrPage": "Essay 1 (Basho)",
+        "quote": "The ultimate place which envelops both the knowing subject and the known object cannot be found in Being, but must be Absolute Nothingness.",
+        "url": "https://en.wikipedia.org/wiki/Kitaro_Nishida"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Robert J. J. Wargo",
+        "work": "The Logic of Nothingness: A Study of Nishida Kitarō",
+        "year": 2005,
+        "sectionOrPage": "pp. 112–158"
+      }
+    ]
+  },
+  {
+    "id": "william-james--nishida-kitaro",
+    "source": "william-james",
+    "target": "nishida-kitaro",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Adapted Jamesian 'pure experience' into a metaphysical foundation for Eastern non-dualism",
+    "description": "Nishida adopted William James's concept of 'pure experience' from Essays in Radical Empiricism as the opening cornerstone of An Inquiry into the Good (1911), arguing that direct, immediate experience precedes any distinction between subject and object.",
+    "historicalContext": "The intellectual reception of American pragmatism and radical empiricism in early 20th-century Japan.",
+    "dialecticalTension": "Where James developed pure experience toward pluralistic pragmatism, Nishida universalized it toward Zen non-dualism and absolute metaphysical unity.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nishida Kitaro",
+        "work": "An Inquiry into the Good",
+        "year": 1911,
+        "sectionOrPage": "Part I, Chapter 1 (Pure Experience)",
+        "quote": "To experience means to know facts just as they are, to know in accordance with facts by completely relinquishing one's own fabrications... This is what William James called pure experience."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Michiko Yusa",
+        "work": "Zen & Philosophy: An Intellectual Biography of Nishida Kitarō",
+        "year": 2002,
+        "sectionOrPage": "pp. 82–104"
+      }
+    ]
+  },
+  {
+    "id": "immanuel-kant--nishida-kitaro",
+    "source": "immanuel-kant",
+    "target": "nishida-kitaro",
+    "type": "CRITIQUED",
+    "strength": 4,
+    "label": "Critiqued Kantian epistemological dualism from the standpoint of Absolute Nothingness",
+    "description": "Nishida rigorously engaged Kantian transcendental idealism, rejecting the rigid divide between phenomena and the unknowable thing-in-itself (noumenon) by proving that subject and object arise simultaneously from the deeper intuitive horizon of Nothingness.",
+    "historicalContext": "The intense debate with Neo-Kantianism dominating Japanese philosophical academies during the early 20th century.",
+    "dialecticalTension": "Overcomes the Kantian cognitive divide between the thinking ego and external reality through an ontology of embodied participatory seeing.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nishida Kitaro",
+        "work": "Intuition and Reflection in Self-Consciousness",
+        "year": 1917,
+        "sectionOrPage": "Section 4",
+        "quote": "The Kantian limitation of knowledge to sensory phenomena fails to account for the immediate intuitive reality out of which both the self and objects emerge."
+      },
+      {
+        "citationType": "secondary",
+        "author": "John C. Maraldo",
+        "work": "Japanese Philosophy in the Making 1: Crossing Paths with Nishida",
+        "year": 2017,
+        "sectionOrPage": "pp. 145–172"
+      }
+    ]
+  },
+  {
+    "id": "nishida-kitaro--byung-chul-han",
+    "source": "nishida-kitaro",
+    "target": "byung-chul-han",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Informed contemporary philosophical analysis of Far Eastern nothingness and presence",
+    "description": "Byung-Chul Han's comparative philosophical treatises on Zen, deconstruction, and the philosophy of Far Eastern nothingness build directly upon the Kyoto School tradition pioneered by Nishida.",
+    "historicalContext": "The late 20th and early 21st-century transmission of East Asian philosophy into contemporary German continental thought.",
+    "dialecticalTension": "Han translates Nishida's spatial-ontological nothingness into a cultural and political critique of modern Western hyper-positivity, transparency, and exhaustion.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Byung-Chul Han",
+        "work": "The Philosophy of Zen Buddhism",
+        "year": 2002,
+        "sectionOrPage": "Chapter 2 (Nothingness)",
+        "quote": "Far Eastern nothingness is not a nihilistic void, but a friendly, hospitable space of transformation, as Nishida and the Kyoto School demonstrated."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Rolf Elberfeld",
+        "work": "Phänomenologie der Zeit im Buddhismus: Methoden interkulturellen Philosophierens",
+        "year": 2004,
+        "sectionOrPage": "pp. 210–234"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "dogen",
+  "name": "Dōgen Zenji",
+  "birthYear": 1200,
+  "deathYear": 1253,
+  "eraId": "medieval",
+  "traditionId": "eastern-wisdom",
+  "shortBio": "Founder of Soto Zen in Japan and one of East Asia's deepest philosophical minds, renowned for his radical phenomenological ontology of 'being-time' (Uji) and the non-duality of practice and realization (shusho itto).",
+  "centralQuestion": "If all beings inherently possess Buddha-nature from the beginning, why must one engage in rigorous meditative practice?",
+  "keyWorks": [
+    {
+      "title": "Shōbōgenzō (Treasury of the True Dharma Eye)",
+      "year": "c. 1240",
+      "url": "https://en.wikipedia.org/wiki/Sh%C5%8Db%C5%8Dgenz%C5%8D",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sh%C5%8Db%C5%8Dgenz%C5%8D",
+      "description": "Masterwork of philosophical Zen analyzing the nature of time, existence (Uji), mountains and waters, and the dropping off of body and mind."
+    },
+    {
+      "title": "Fukanzazengi (Universally Recommended Instructions for Zazen)",
+      "year": "1227",
+      "url": "https://en.wikipedia.org/wiki/Fukanzazengi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Fukanzazengi",
+      "description": "Seminal instructional manual establishing zazen sitting meditation as the immediate realization of awakening."
+    }
+  ],
+  "sepSlug": "japanese-zen",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/dogen.jpg",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy"
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "id": "b-r-ambedkar--navayana-buddhism",
+    "source": "b-r-ambedkar",
+    "target": "navayana-buddhism",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated Navayana Buddhism reconstructing the Dhamma around liberty, equality, and fraternity",
+    "description": "Ambedkar formulated Navayana ('New Vehicle') Buddhism as an emancipatory social and moral philosophy, systematically purging supernaturalism and fatalistic karma to interpret Buddhist Dhamma as a radical democratic praxis of human dignity.",
+    "historicalContext": "Articulated in his magnum opus The Buddha and His Dhamma and realized in the mass conversion of over 500,000 Dalits to Buddhism at Nagpur on October 14, 1956.",
+    "dialecticalTension": "Reconstructs religion from metaphysical salvation in an afterlife into the moral transformation of this-worldly social relationships based on justice and equality.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "B. R. Ambedkar",
+        "work": "The Buddha and His Dhamma",
+        "year": 1957,
+        "sectionOrPage": "Book II, Part II (What is Dhamma?)",
+        "quote": "Religion is concerned with the relation between man and God. Dhamma is concerned with the relation between man and man... To remove suffering by cultivating fraternity is Dhamma.",
+        "url": "https://en.wikipedia.org/wiki/The_Buddha_and_His_Dhamma"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Valerian Rodrigues",
+        "work": "The Essential Writings of B. R. Ambedkar",
+        "year": 2002,
+        "sectionOrPage": "pp. 1–44"
+      }
+    ]
+  },
+  {
+    "id": "siddhartha-gautama--b-r-ambedkar",
+    "source": "siddhartha-gautama",
+    "target": "b-r-ambedkar",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Revitalized Buddhist Dhamma into an instrument of social democracy and anti-caste emancipation",
+    "description": "Ambedkar turned to Siddhartha Gautama's original teachings, arguing that the Buddha was the first revolutionary teacher in world history to reject caste hierarchy, priestly authority, and social discrimination.",
+    "historicalContext": "Ambedkar's decades-long search for a spiritual foundation for Dalit emancipation after declaring 'I was born a Hindu, but I will not die a Hindu' in 1935.",
+    "dialecticalTension": "Reclaims the Buddha not as a quietist ascetic, but as the primordial champion of universal human equality, social compassion (karuna), and critical rationality (prajna).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "B. R. Ambedkar",
+        "work": "Buddha and the Future of His Religion",
+        "year": 1950,
+        "sectionOrPage": "Mahabodhi Society Journal, vol. 58",
+        "quote": "The Buddha's religion was based on morality. It replaced God with morality... The Dhamma stands for social equality."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Christopher S. Queen",
+        "work": "Engaged Buddhism in the West: New Conversions, New Visions",
+        "year": 2000,
+        "sectionOrPage": "pp. 15–38"
+      }
+    ]
+  },
+  {
+    "id": "w-e-b-du-bois--b-r-ambedkar",
+    "source": "w-e-b-du-bois",
+    "target": "b-r-ambedkar",
+    "type": "SYNTHESIZED",
+    "strength": 5,
+    "label": "Corresponded on the global solidarity between African American civil rights and the Dalit movement",
+    "description": "Ambedkar wrote to W.E.B. Du Bois in the 1940s, noting the structural parallels between the oppression of Untouchables in India and Black Americans under Jim Crow, creating an early trans-Atlantic anti-racist and anti-caste philosophical alliance.",
+    "historicalContext": "The 1946 direct epistolary correspondence between Du Bois and Ambedkar regarding petitions to the United Nations on human rights for oppressed minorities.",
+    "dialecticalTension": "Synthesizes the critique of racial capitalism and the color line with the sociological critique of graded Brahminical caste inequality.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "B. R. Ambedkar",
+        "work": "Letter to W.E.B. Du Bois",
+        "year": 1946,
+        "quote": "There is a great similarity between the position of the Untouchables in India and of the position of the Negroes in America... The study of the Negro problem has been of profound value to me."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Suraj Yengde",
+        "work": "Caste Matters",
+        "year": 2019,
+        "sectionOrPage": "pp. 78–105"
+      }
+    ]
+  },
+  {
+    "id": "william-james--b-r-ambedkar",
+    "source": "william-james",
+    "target": "b-r-ambedkar",
+    "type": "DEVELOPED",
+    "strength": 4,
+    "label": "Absorbed American pragmatist epistemology and social democracy",
+    "description": "Ambedkar studied under John Dewey (William James's philosophical successor) at Columbia University from 1913 to 1916, thoroughly internalizing the pragmatist philosophy that democracy is not merely a form of government, but a mode of associated living and continuous communicated experience.",
+    "historicalContext": "Ambedkar's intellectual formation during his doctoral studies at Columbia University in New York.",
+    "dialecticalTension": "Applies pragmatic experimentalism and the critique of fixed metaphysical essences to dismantle thousands of years of rigid caste stratification.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "B. R. Ambedkar",
+        "work": "Annihilation of Caste",
+        "year": 1936,
+        "sectionOrPage": "Section 14",
+        "quote": "Democracy is not merely a form of Government. It is primarily a mode of associated living, of conjoint communicated experience."
+      },
+      {
+        "citationType": "secondary",
+        "author": "Arun P. Mukherjee",
+        "work": "B. R. Ambedkar, John Dewey, and the Meaning of Pragmatism in India",
+        "year": 2009,
+        "sectionOrPage": "pp. 345–370"
+      }
+    ]
+  }
+]

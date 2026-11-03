@@ -112,7 +112,14 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'paulo-freire', patterns: [/\bpaulo freire\b/i, /\bfreire\b/i, /\bpedagogy of the oppressed\b/i] },
   { id: 'enrique-dussel', patterns: [/\benrique dussel\b/i, /\bdussel\b/i, /\bphilosophy of liberation\b/i] },
   { id: 'anibal-quijano', patterns: [/\ban[ií]bal quijano\b/i, /\bquijano\b/i, /\bcoloniality of power\b/i] },
-  { id: 'gloria-anzaldua', patterns: [/\bgloria anzald[uú]a\b/i, /\banzald[uú]a\b/i, /\bborderlands\b/i] }
+  { id: 'gloria-anzaldua', patterns: [/\bgloria anzald[uú]a\b/i, /\banzald[uú]a\b/i, /\bborderlands\b/i] },
+  { id: 'mozi', patterns: [/\bmozi\b/i, /\bmohism\b/i, /\bmoci\b/i] },
+  { id: 'xunzi', patterns: [/\bxunzi\b/i, /\bhsun tzu\b/i] },
+  { id: 'han-feizi', patterns: [/\bhan feizi\b/i, /\bhan fei\b/i] },
+  { id: 'mahavira', patterns: [/\bmahavira\b/i] },
+  { id: 'dogen', patterns: [/\bd[oō]gen\b/i, /\bsh[oō]b[oō]genz[oō]\b/i] },
+  { id: 'nishida-kitaro', patterns: [/\bnishida\b/i, /\bkyoto school\b/i] },
+  { id: 'b-r-ambedkar', patterns: [/\bambedkar\b/i] }
 ];
 
 async function ingestRSS() {
