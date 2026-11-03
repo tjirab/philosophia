@@ -924,6 +924,60 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const chateletToKant = findInfluencePath('emilie-du-chatelet', 'immanuel-kant', edgesData as any);
     expect(chateletToKant.found).toBe(true);
+
+    // Indigenous American & First Nations Philosophy lineages
+    // 1. Nezahualcoyotl -> flower-and-song-neltiliztli & Sor Juana / Anzaldúa
+    const nezaToFlower = findInfluencePath('nezahualcoyotl', 'flower-and-song-neltiliztli', edgesData as any);
+    expect(nezaToFlower.found).toBe(true);
+
+    const nezaToSorJuana = findInfluencePath('nezahualcoyotl', 'sor-juana', edgesData as any);
+    expect(nezaToSorJuana.found).toBe(true);
+
+    const nezaToAnzaldua = findInfluencePath('nezahualcoyotl', 'gloria-anzaldua', edgesData as any);
+    expect(nezaToAnzaldua.found).toBe(true);
+
+    // 2. Guaman Poma -> pachakuti-ayni & Dussel / Quijano
+    const pomaToPachakuti = findInfluencePath('felipe-guaman-poma', 'pachakuti-ayni', edgesData as any);
+    expect(pomaToPachakuti.found).toBe(true);
+
+    const pomaToDussel = findInfluencePath('felipe-guaman-poma', 'enrique-dussel', edgesData as any);
+    expect(pomaToDussel.found).toBe(true);
+
+    const pomaToQuijano = findInfluencePath('felipe-guaman-poma', 'anibal-quijano', edgesData as any);
+    expect(pomaToQuijano.found).toBe(true);
+
+    // 3. Plato -> Inca Garcilaso -> incan-neoplatonic-cosmology & Dussel
+    const platoToGarcilaso = findInfluencePath('plato', 'inca-garcilaso-de-la-vega', edgesData as any);
+    expect(platoToGarcilaso.found).toBe(true);
+
+    const garcilasoToCosmology = findInfluencePath('inca-garcilaso-de-la-vega', 'incan-neoplatonic-cosmology', edgesData as any);
+    expect(garcilasoToCosmology.found).toBe(true);
+
+    const garcilasoToDussel = findInfluencePath('inca-garcilaso-de-la-vega', 'enrique-dussel', edgesData as any);
+    expect(garcilasoToDussel.found).toBe(true);
+
+    // 4. William James / Du Bois -> Vine Deloria Jr. -> indigenous-spatial-metaphysics & Kimmerer
+    const jamesToDeloria = findInfluencePath('william-james', 'vine-deloria-jr', edgesData as any);
+    expect(jamesToDeloria.found).toBe(true);
+
+    const duBoisToDeloria = findInfluencePath('w-e-b-du-bois', 'vine-deloria-jr', edgesData as any);
+    expect(duBoisToDeloria.found).toBe(true);
+
+    const deloriaToSpatial = findInfluencePath('vine-deloria-jr', 'indigenous-spatial-metaphysics', edgesData as any);
+    expect(deloriaToSpatial.found).toBe(true);
+
+    const deloriaToKimmerer = findInfluencePath('vine-deloria-jr', 'robin-wall-kimmerer', edgesData as any);
+    expect(deloriaToKimmerer.found).toBe(true);
+
+    // 5. Deloria / Fanon -> Robin Wall Kimmerer -> grammar-of-animacy & C. Thi Nguyen
+    const fanonToKimmerer = findInfluencePath('frantz-fanon', 'robin-wall-kimmerer', edgesData as any);
+    expect(fanonToKimmerer.found).toBe(true);
+
+    const kimmererToAnimacy = findInfluencePath('robin-wall-kimmerer', 'grammar-of-animacy', edgesData as any);
+    expect(kimmererToAnimacy.found).toBe(true);
+
+    const kimmererToNguyen = findInfluencePath('robin-wall-kimmerer', 'c-thi-nguyen', edgesData as any);
+    expect(kimmererToNguyen.found).toBe(true);
   });
 
   it('verifies visual graph generation and node details retrieval', () => {

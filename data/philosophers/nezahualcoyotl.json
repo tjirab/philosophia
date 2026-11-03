@@ -1,0 +1,29 @@
+{
+  "id": "nezahualcoyotl",
+  "name": "Nezahualcoyotl",
+  "birthYear": 1402,
+  "deathYear": 1472,
+  "eraId": "medieval",
+  "traditionId": "indigenous-philosophy",
+  "shortBio": "Texcoco ruler, architect, and philosopher of the Nahua tlamatinime tradition; investigated the transience of earthly life, the search for rooted truth (neltiliztli), and divine communication through 'flower and song'.",
+  "centralQuestion": "Can anything be rooted and truly steadfast on this fleeting, slippery earth, or do humans only dream while awake?",
+  "keyWorks": [
+    {
+      "title": "Cantares Mexicanos (Nahuatl Philosophical Cantos)",
+      "year": "c. 1450 CE",
+      "url": "https://en.wikipedia.org/wiki/Nezahualcoyotl",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nezahualcoyotl",
+      "description": "Lyric poetry corpus exploring the ontological instability of existence, friendship, and communion with the Giver of Life through flower and song."
+    },
+    {
+      "title": "Romances de los Señores de la Nueva España",
+      "year": "c. 1460 CE",
+      "url": "https://en.wikipedia.org/wiki/Nezahualcoyotl",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nezahualcoyotl",
+      "description": "Collection of Nahua intellectual discourses, meditation on mortality, and statecraft laws."
+    }
+  ],
+  "sepSlug": "philosophy-mexico",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/nezahualcoyotl.jpg"
+}

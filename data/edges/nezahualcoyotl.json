@@ -1,0 +1,86 @@
+[
+  {
+    "id": "nezahualcoyotl--flower-and-song-neltiliztli",
+    "source": "nezahualcoyotl",
+    "target": "flower-and-song-neltiliztli",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Nahua doctrine of flower and song (in xochitl in cuicatl) and rooted truth",
+    "description": "Nezahualcoyotl established the philosophical inquiry into neltiliztli (truth as rootedness), demonstrating that in a world of illusion and earthly transience, only poetic and artistic creation can ground the human heart and touch the divine.",
+    "historicalContext": "Articulated in 15th-century Texcoco during the golden age of the Acolhua-Mexica intellectual renaissance.",
+    "dialecticalTension": "Challenges both uncritical dogmatic religion and despairing nihilism through aesthetic epistemology.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nezahualcoyotl",
+        "work": "Cantares Mexicanos",
+        "year": 1450,
+        "sectionOrPage": "Folio 17r",
+        "quote": "Do we really live on earth? Not forever on earth, only a brief moment here... Even jade shatters, even gold breaks, even quetzal plumes tear. Not forever on earth.",
+        "url": "https://en.wikipedia.org/wiki/Nezahualcoyotl"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Miguel León-Portilla",
+        "work": "Aztec Thought and Culture: A Study of the Ancient Nahuatl Mind",
+        "year": 1963,
+        "sectionOrPage": "pp. 71–103",
+        "url": "https://plato.stanford.edu/entries/philosophy-mexico/"
+      }
+    ]
+  },
+  {
+    "id": "nezahualcoyotl--sor-juana",
+    "source": "nezahualcoyotl",
+    "target": "sor-juana",
+    "type": "INFLUENCED",
+    "strength": 4,
+    "label": "Inspirited Mexican lyric inquiry into earthly illusion and intellectual striving",
+    "description": "Octavio Paz demonstrated that Sor Juana's masterwork 'Primero Sueño' inherits the metaphysical atmosphere of Nezahualcoyotl's Nahua cantos, meditating on the ephemeral shadow of the world and the soul's cosmic quest for understanding.",
+    "historicalContext": "The deep continuity between pre-Hispanic Nahua lyric philosophy and the 17th-century Mexican Baroque.",
+    "dialecticalTension": "Transposes Nahua flower-and-song into Cartesian-baroque epistemological dreamwork.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Octavio Paz",
+        "work": "Sor Juana: Or, the Traps of Faith",
+        "year": 1982,
+        "sectionOrPage": "pp. 357–389",
+        "url": "https://plato.stanford.edu/entries/philosophy-mexico/"
+      }
+    ]
+  },
+  {
+    "id": "nezahualcoyotl--gloria-anzaldua",
+    "source": "nezahualcoyotl",
+    "target": "gloria-anzaldua",
+    "type": "INFLUENCED",
+    "strength": 5,
+    "label": "Supplied the Nahuatl linguistic and aesthetic foundations of Borderlands theory",
+    "description": "In 'Borderlands/La Frontera', Anzaldúa explicitly adopted the Nahuatl concept of 'in xochitl in cuicatl' (flower and song) as the transformative method of writing, healing, and achieving mestiza consciousness across cultural borders.",
+    "historicalContext": "The 20th-century Chicana decolonial reclamation of indigenous Mesoamerican philosophy.",
+    "dialecticalTension": "Reclaims ancient pre-Columbian poetic epistemology as a contemporary political tool of liberation.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Gloria Anzaldúa",
+        "work": "Borderlands/La Frontera: The New Mestiza",
+        "year": 1987,
+        "sectionOrPage": "Chapter 6: Tlilli, Tlapalli / The Path of the Red and Black Ink",
+        "quote": "For the ancient Aztecs, in xochitl in cuicatl meant that which gives truth to the earth, the way of the heart.",
+        "url": "https://plato.stanford.edu/entries/philosophy-mexico/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "James Maffie",
+        "work": "Aztec Philosophy: Understanding a World in Motion",
+        "year": 2014,
+        "sectionOrPage": "pp. 12–28",
+        "url": "https://plato.stanford.edu/entries/philosophy-mexico/"
+      }
+    ]
+  }
+]

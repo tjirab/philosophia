@@ -132,7 +132,12 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'mary-astell', patterns: [/\bmary astell\b/i, /\bastell\b/i] },
   { id: 'damaris-masham', patterns: [/\bdamaris masham\b/i, /\blady masham\b/i] },
   { id: 'catharine-cockburn', patterns: [/\bcatharine cockburn\b/i, /\bcatharine trotter\b/i] },
-  { id: 'emilie-du-chatelet', patterns: [/\b[eé]milie du ch[aâ]telet\b/i, /\bdu ch[aâ]telet\b/i] }
+  { id: 'emilie-du-chatelet', patterns: [/\b[eé]milie du ch[aâ]telet\b/i, /\bdu ch[aâ]telet\b/i] },
+  { id: 'nezahualcoyotl', patterns: [/\bnezahualc[oó]yotl\b/i] },
+  { id: 'felipe-guaman-poma', patterns: [/\bguam[aá]n poma\b/i, /\bpoma de ayala\b/i] },
+  { id: 'inca-garcilaso-de-la-vega', patterns: [/\binca garcilaso\b/i, /\bgarcilaso de la vega\b/i] },
+  { id: 'vine-deloria-jr', patterns: [/\bdeloria\b/i, /\bvine deloria\b/i] },
+  { id: 'robin-wall-kimmerer', patterns: [/\bkimmerer\b/i, /\bbraiding sweetgrass\b/i] }
 ];
 
 async function ingestRSS() {

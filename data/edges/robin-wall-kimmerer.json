@@ -1,0 +1,77 @@
+[
+  {
+    "id": "robin-wall-kimmerer--grammar-of-animacy",
+    "source": "robin-wall-kimmerer",
+    "target": "grammar-of-animacy",
+    "type": "DEVELOPED",
+    "strength": 5,
+    "label": "Formulated the Grammar of Animacy and the ethics of the Honorable Harvest",
+    "description": "Robin Wall Kimmerer developed the philosophical framework showing how language shapes ontological perception. In Potawatomi, living beings are grammatically subjects rather than inanimate objects ('it'), establishing an ethics of reciprocity, gratitude, and the Honorable Harvest.",
+    "historicalContext": "Articulated in 21st-century environmental ethics in dialogue between Indigenous language reclamation and contemporary conservation biology.",
+    "dialecticalTension": "Directly confronts capitalist commodity-relations and Cartesian mechanistic objectification of non-human nature.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Robin Wall Kimmerer",
+        "work": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants",
+        "year": 2013,
+        "sectionOrPage": "Chapter: Learning the Grammar of Animacy",
+        "quote": "In English, you are either a human being, or you are an it, a thing. But in Potawatomi, rocks, trees, and rivers are animate persons, deserving of moral consideration.",
+        "url": "https://plato.stanford.edu/entries/ethics-environmental/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Kyle Powys Whyte",
+        "work": "Our Ancestors' Dystopia Now: Indigenous Conservation and the Anthropocene",
+        "year": 2017,
+        "sectionOrPage": "Routledge Companion to the Environmental Humanities, pp. 206–215",
+        "url": "https://plato.stanford.edu/entries/ethics-environmental/"
+      }
+    ]
+  },
+  {
+    "id": "frantz-fanon--robin-wall-kimmerer",
+    "source": "frantz-fanon",
+    "target": "robin-wall-kimmerer",
+    "type": "SYNTHESIZED",
+    "strength": 4,
+    "label": "Extended decolonial liberation from psychological sovereignty to ecological relations",
+    "description": "Kimmerer synthesizes the anti-colonial critique of Fanon by extending the decolonization of the mind to the decolonization of human relationships with the land, showing that genuine sovereignty requires restoring ecological kinship.",
+    "historicalContext": "Contemporary global Indigenous environmental justice movements.",
+    "dialecticalTension": "Expands Fanon's human-centered anti-colonial struggle into a multispecies decolonial environmental ethics.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Kyle Powys Whyte",
+        "work": "Indigenous Science (Fiction) for the Anthropocene: Ancestral Dystopias and Fantasies of Climate Change Crisis",
+        "year": 2018,
+        "sectionOrPage": "Environment and Planning E: Nature and Space 1(1-2), pp. 224–242",
+        "url": "https://plato.stanford.edu/entries/ethics-environmental/"
+      }
+    ]
+  },
+  {
+    "id": "robin-wall-kimmerer--c-thi-nguyen",
+    "source": "robin-wall-kimmerer",
+    "target": "c-thi-nguyen",
+    "type": "INFLUENCED",
+    "strength": 3,
+    "label": "Informed contemporary critiques of metric capture through gift economy reciprocity",
+    "description": "Kimmerer's analysis of gift economies and reciprocal trust provides a crucial contrast to C. Thi Nguyen's critique of value capture, showing how metric-driven, transactional systems alienate human agency from organic reciprocal trust.",
+    "historicalContext": "Contemporary 21st-century philosophy of trust, agency, and value systems.",
+    "dialecticalTension": "Contrasts institutional value capture and quantified scoring with Kimmerer's gift reciprocity and relational gratitude.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "C. Thi Nguyen",
+        "work": "Trust as an Unquestioning Attitude",
+        "year": 2023,
+        "sectionOrPage": "Oxford Studies in Epistemology 7, pp. 210–244",
+        "url": "https://plato.stanford.edu/entries/ethics-environmental/"
+      }
+    ]
+  }
+]
