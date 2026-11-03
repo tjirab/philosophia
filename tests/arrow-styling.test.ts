@@ -6,6 +6,7 @@ import {
   getLinkColor,
   getLinkWidth,
   getLinkLineDash,
+  paintLinkPointerArea,
   GRAYED_OUT_LINK_LIGHT,
   GRAYED_OUT_LINK_DARK,
   GRAYED_OUT_ARROW_LIGHT,
@@ -161,6 +162,103 @@ describe('Edge & Arrow Styling', () => {
     it('returns null (solid) for grayed-out non-path edges to keep background calm', () => {
       expect(getLinkLineDash('CRITIQUED', false, true)).toBeNull();
       expect(getLinkLineDash('SYNTHESIZED', false, true)).toBeNull();
+    });
+  });
+
+  describe('paintLinkPointerArea', () => {
+    const createMockCtx = () => {
+      const calls: Array<{ method: string; args: any[] }> = [];
+      const ctx: any = {
+        save: () => calls.push({ method: 'save', args: [] }),
+        restore: () => calls.push({ method: 'restore', args: [] }),
+        beginPath: () => calls.push({ method: 'beginPath', args: [] }),
+        moveTo: (x: number, y: number) => calls.push({ method: 'moveTo', args: [x, y] }),
+        lineTo: (x: number, y: number) => calls.push({ method: 'lineTo', args: [x, y] }),
+        quadraticCurveTo: (cpx: number, cpy: number, x: number, y: number) =>
+          calls.push({ method: 'quadraticCurveTo', args: [cpx, cpy, x, y] }),
+        bezierCurveTo: (cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number) =>
+          calls.push({ method: 'bezierCurveTo', args: [cp1x, cp1y, cp2x, cp2y, x, y] }),
+        stroke: () => calls.push({ method: 'stroke', args: [] }),
+        strokeStyle: '',
+        lineWidth: 0,
+      };
+      return { ctx, calls };
+    };
+
+    it('draws quadratic curve matching precomputed __controlPoints', () => {
+      const { ctx, calls } = createMockCtx();
+      const link = {
+        source: { x: 100, y: 100 },
+        target: { x: 300, y: 100 },
+        __controlPoints: [200, 50],
+      };
+
+      paintLinkPointerArea(link, '#123456', ctx, 1.0, 0.12);
+
+      expect(ctx.strokeStyle).toBe('#123456');
+      expect(ctx.lineWidth).toBe(16);
+      expect(calls).toEqual([
+        { method: 'save', args: [] },
+        { method: 'beginPath', args: [] },
+        { method: 'moveTo', args: [100, 100] },
+        { method: 'quadraticCurveTo', args: [200, 50, 300, 100] },
+        { method: 'stroke', args: [] },
+        { method: 'restore', args: [] },
+      ]);
+    });
+
+    it('accurately computes control point with positive curvature matching force-graph (not inverted)', () => {
+      const { ctx, calls } = createMockCtx();
+      // Horizontal link from (100, 100) to (300, 100): dx = 200, dy = 0, l = 200
+      // curvature = 0.12 => d = 24
+      // cpX = (100 + 300) / 2 + (0 / 200) * 24 = 200
+      // cpY = (100 + 100) / 2 - (200 / 200) * 24 = 100 - 24 = 76 (arched UPWARDS, not 124 downwards)
+      const link = {
+        source: { x: 100, y: 100 },
+        target: { x: 300, y: 100 },
+      };
+
+      paintLinkPointerArea(link, '#abcdef', ctx, 1.0, 0.12);
+
+      const quadCall = calls.find((c) => c.method === 'quadraticCurveTo');
+      expect(quadCall).toBeDefined();
+      expect(quadCall?.args[0]).toBeCloseTo(200);
+      expect(quadCall?.args[1]).toBeCloseTo(76);
+      expect(quadCall?.args[2]).toBe(300);
+      expect(quadCall?.args[3]).toBe(100);
+    });
+
+    it('scales hit area width with globalScale for effortless pointer interaction', () => {
+      const { ctx: ctxZoomedIn } = createMockCtx();
+      const link = { source: { x: 0, y: 0 }, target: { x: 100, y: 100 } };
+
+      paintLinkPointerArea(link, '#000', ctxZoomedIn, 2.0);
+      expect(ctxZoomedIn.lineWidth).toBe(8); // 16 / 2 = 8
+
+      const { ctx: ctxZoomedOut } = createMockCtx();
+      paintLinkPointerArea(link, '#000', ctxZoomedOut, 0.5);
+      expect(ctxZoomedOut.lineWidth).toBe(32); // 16 / 0.5 = 32
+    });
+
+    it('draws straight line when curvature is 0', () => {
+      const { ctx, calls } = createMockCtx();
+      const link = {
+        source: { x: 50, y: 50 },
+        target: { x: 150, y: 150 },
+      };
+
+      paintLinkPointerArea(link, '#fff', ctx, 1.0, 0);
+
+      const lineCall = calls.find((c) => c.method === 'lineTo');
+      expect(lineCall).toBeDefined();
+      expect(lineCall?.args).toEqual([150, 150]);
+    });
+
+    it('gracefully handles missing or non-numeric source/target endpoints without throwing', () => {
+      const { ctx, calls } = createMockCtx();
+      paintLinkPointerArea({ source: null, target: null }, '#000', ctx, 1.0);
+      paintLinkPointerArea({ source: { x: 'abc' }, target: { x: 10 } }, '#000', ctx, 1.0);
+      expect(calls.length).toBe(0);
     });
   });
 });

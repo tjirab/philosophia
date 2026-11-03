@@ -157,3 +157,61 @@ export function getLinkLineDash(
       return null; // Solid line
   }
 }
+
+/**
+ * Paints an accurate curved hit-testing stroke on the shadow canvas for graph link interactions.
+ * Uses link.__controlPoints directly to match the visible canvas curve to the sub-pixel,
+ * and uses the exact trigonometric control-point formula as fallback.
+ * Fixes inverted hit-box curvature where hover was detected 1-2 cm on the wrong side of the edge.
+ */
+export function paintLinkPointerArea(
+  link: any,
+  color: string,
+  ctx: CanvasRenderingContext2D,
+  globalScale: number = 1,
+  defaultCurvature: number = 0.12
+): void {
+  const start = link.source;
+  const end = link.target;
+  if (!start || !end || typeof start.x !== 'number' || typeof end.x !== 'number') return;
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.moveTo(start.x, start.y);
+
+  const controlPoints = link.__controlPoints;
+  if (controlPoints && controlPoints.length >= 2) {
+    if (controlPoints.length === 2) {
+      ctx.quadraticCurveTo(controlPoints[0], controlPoints[1], end.x, end.y);
+    } else {
+      ctx.bezierCurveTo(controlPoints[0], controlPoints[1], controlPoints[2], controlPoints[3], end.x, end.y);
+    }
+  } else {
+    // If __controlPoints hasn't been cached yet, compute exactly matching force-graph:
+    // a = atan2(dy, dx)
+    // cp.x = midX + d * cos(a - PI/2) = midX + (dy / l) * d
+    // cp.y = midY + d * sin(a - PI/2) = midY - (dx / l) * d
+    const dx = end.x - start.x;
+    const dy = end.y - start.y;
+    const l = Math.hypot(dx, dy);
+    const curvature = typeof link.curvature === 'number' ? link.curvature : defaultCurvature;
+
+    if (l > 0 && curvature) {
+      const d = l * curvature;
+      const cpX = (start.x + end.x) / 2 + (dy / l) * d;
+      const cpY = (start.y + end.y) / 2 - (dx / l) * d;
+      ctx.quadraticCurveTo(cpX, cpY, end.x, end.y);
+    } else {
+      ctx.lineTo(end.x, end.y);
+    }
+  }
+
+  ctx.strokeStyle = color;
+  // Ensure a generous, effortless hit area (16px wide in screen coordinates, min 4 in graph space)
+  const hitWidth = typeof globalScale === 'number' && globalScale > 0
+    ? Math.max(16 / globalScale, 4)
+    : 16;
+  ctx.lineWidth = hitWidth;
+  ctx.stroke();
+  ctx.restore();
+}

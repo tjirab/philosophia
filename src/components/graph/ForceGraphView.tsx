@@ -28,6 +28,7 @@ import {
   getLinkColor,
   getLinkWidth,
   getLinkLineDash,
+  paintLinkPointerArea,
 } from '../../lib/graph/arrow-styling';
 
 // Dynamically import ForceGraph2D with ssr disabled
@@ -959,7 +960,7 @@ export function ForceGraphView({
           ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
           ctx.fill();
         }}
-        linkPointerAreaPaint={(link: any, color: string, ctx: CanvasRenderingContext2D) => {
+        linkPointerAreaPaint={(link: any, color: string, ctx: CanvasRenderingContext2D, globalScale: number) => {
           const src = link.source;
           const tgt = link.target;
           if (!src || !tgt || typeof src.x !== 'number' || typeof tgt.x !== 'number') return;
@@ -967,16 +968,24 @@ export function ForceGraphView({
           ctx.beginPath();
           ctx.strokeStyle = color;
           ctx.lineWidth = 16; // Generous 16px transparent hit area buffer for effortless interaction
-          const dx = tgt.x - src.x;
-          const dy = tgt.y - src.y;
-          const l = Math.hypot(dx, dy);
-          if (l > 0) {
-            const curvature = 0.12;
-            const cx = (src.x + tgt.x) / 2 - (dy / l) * l * curvature;
-            const cy = (src.y + tgt.y) / 2 + (dx / l) * l * curvature;
+          const controlPoints = link.__controlPoints;
+          if (controlPoints && controlPoints.length >= 2) {
             ctx.moveTo(src.x, src.y);
-            ctx.quadraticCurveTo(cx, cy, tgt.x, tgt.y);
+            ctx.quadraticCurveTo(controlPoints[0], controlPoints[1], tgt.x, tgt.y);
             ctx.stroke();
+          } else {
+            const dx = tgt.x - src.x;
+            const dy = tgt.y - src.y;
+            const l = Math.hypot(dx, dy);
+            if (l > 0) {
+              const curvature = 0.12;
+              // Correct control point geometry to match force-graph's visible curve (not inverted)
+              const cx = (src.x + tgt.x) / 2 + (dy / l) * l * curvature;
+              const cy = (src.y + tgt.y) / 2 - (dx / l) * l * curvature;
+              ctx.moveTo(src.x, src.y);
+              ctx.quadraticCurveTo(cx, cy, tgt.x, tgt.y);
+              ctx.stroke();
+            }
           }
           ctx.restore();
         }}
