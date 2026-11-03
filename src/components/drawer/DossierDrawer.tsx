@@ -152,7 +152,22 @@ export function DossierDrawer({
   ];
 
   return (
-    <div className="fixed inset-y-0 right-0 z-50 w-full sm:w-[540px] lg:w-[600px] bg-[var(--bg-card)] border-l border-[var(--border-strong)] backdrop-blur-xl shadow-2xl flex flex-col transition-all duration-300 text-[var(--text-main)] font-serif">
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label={`${isPhilosopher ? phil?.name : conc?.title || 'Concept'} Dossier`}
+      className="fixed inset-y-0 right-0 z-50 w-full sm:w-[540px] lg:w-[600px] bg-[var(--bg-card)] border-l border-[var(--border-strong)] backdrop-blur-xl shadow-2xl flex flex-col transition-all duration-300 text-[var(--text-main)] font-serif"
+    >
+      {/* Mobile tactile dismiss handle */}
+      <div
+        className="sm:hidden w-full flex justify-center pt-2.5 pb-0 cursor-pointer"
+        onClick={onClose}
+        role="button"
+        aria-label="Dismiss Dossier"
+      >
+        <div className="w-12 h-1.5 bg-[var(--border-strong)] rounded-full hover:bg-[var(--gold-accent)] transition" />
+      </div>
+
       {/* Header */}
       <div className="p-5 sm:p-6 border-b border-[var(--border-main)] bg-[var(--bg-card)] relative shrink-0">
         {/* Top utility row: Badges on left, Expand & Close on right */}
@@ -215,7 +230,7 @@ export function DossierDrawer({
             )}
             <button
               onClick={onClose}
-              className="p-1.5 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition"
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2 text-[var(--text-dim)] hover:text-[var(--text-main)] rounded-lg hover:bg-[var(--bg-hover)] transition"
               aria-label="Close dossier"
             >
               <X className="w-5 h-5 shrink-0" />
@@ -688,6 +703,8 @@ export function DossierDrawer({
                       title={ep.title}
                       episodeNumber={ep.episodeNumber}
                       duration={ep.duration}
+                      thinkerId={phil?.id}
+                      thinkerName={phil?.name}
                     />
                   ) : (
                     <div className="p-4 bg-[var(--bg-subtle)] border border-[var(--border-main)] rounded-xl">

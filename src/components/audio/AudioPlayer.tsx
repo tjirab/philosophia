@@ -1,85 +1,56 @@
 'use client';
 
-import React, { useRef, useState, useEffect } from 'react';
-import { Play, Pause, RotateCcw, RotateCw, Volume2, VolumeX, Headphones } from 'lucide-react';
+import React from 'react';
+import { Play, Pause, RotateCcw, RotateCw, Volume2, VolumeX, Headphones, Radio } from 'lucide-react';
+import { useAudio } from '../../lib/audio-context';
 
 interface AudioPlayerProps {
   audioUrl: string;
   title: string;
   episodeNumber?: number;
   duration?: string;
+  thinkerId?: string;
+  thinkerName?: string;
 }
 
-export function AudioPlayer({ audioUrl, title, episodeNumber, duration }: AudioPlayerProps) {
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentTime, setCurrentTime] = useState(0);
-  const [totalDuration, setTotalDuration] = useState(0);
-  const [playbackRate, setPlaybackRate] = useState(1);
-  const [isMuted, setIsMuted] = useState(false);
+export function AudioPlayer({
+  audioUrl,
+  title,
+  episodeNumber,
+  duration,
+  thinkerId,
+  thinkerName,
+}: AudioPlayerProps) {
+  const {
+    currentTrack,
+    isPlaying,
+    currentTime,
+    totalDuration,
+    playbackRate,
+    isMuted,
+    playTrack,
+    togglePlay,
+    seek,
+    skip,
+    cyclePlaybackRate,
+    toggleMute,
+  } = useAudio();
 
-  useEffect(() => {
-    setIsPlaying(false);
-    setCurrentTime(0);
-    if (audioRef.current) {
-      audioRef.current.playbackRate = playbackRate;
-    }
-  }, [audioUrl, playbackRate]);
+  const isCurrentTrack = currentTrack?.audioUrl === audioUrl;
+  const isThisPlaying = isCurrentTrack && isPlaying;
 
-  const togglePlay = () => {
-    if (!audioRef.current) return;
-    if (isPlaying) {
-      audioRef.current.pause();
-      setIsPlaying(false);
+  const handleStartOrToggle = () => {
+    if (isCurrentTrack) {
+      togglePlay();
     } else {
-      audioRef.current.play().then(() => setIsPlaying(true)).catch((err) => {
-        console.warn('Playback error:', err);
+      playTrack({
+        audioUrl,
+        title,
+        episodeNumber,
+        duration,
+        thinkerId,
+        thinkerName,
       });
-    }
-  };
-
-  const handleTimeUpdate = () => {
-    if (audioRef.current) {
-      setCurrentTime(audioRef.current.currentTime);
-      if (!totalDuration && audioRef.current.duration) {
-        setTotalDuration(audioRef.current.duration);
-      }
-    }
-  };
-
-  const handleLoadedMetadata = () => {
-    if (audioRef.current && audioRef.current.duration) {
-      setTotalDuration(audioRef.current.duration);
-    }
-  };
-
-  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newTime = parseFloat(e.target.value);
-    setCurrentTime(newTime);
-    if (audioRef.current) {
-      audioRef.current.currentTime = newTime;
-    }
-  };
-
-  const skipSeconds = (seconds: number) => {
-    if (audioRef.current) {
-      audioRef.current.currentTime = Math.max(0, Math.min(totalDuration || 9999, audioRef.current.currentTime + seconds));
-    }
-  };
-
-  const cyclePlaybackRate = () => {
-    const rates = [1, 1.25, 1.5, 2];
-    const nextRate = rates[(rates.indexOf(playbackRate) + 1) % rates.length];
-    setPlaybackRate(nextRate);
-    if (audioRef.current) {
-      audioRef.current.playbackRate = nextRate;
-    }
-  };
-
-  const toggleMute = () => {
-    if (audioRef.current) {
-      audioRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
     }
   };
 
@@ -90,93 +61,119 @@ export function AudioPlayer({ audioUrl, title, episodeNumber, duration }: AudioP
     return `${m}:${s < 10 ? '0' : ''}${s}`;
   };
 
+  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (isCurrentTrack) {
+      seek(parseFloat(e.target.value));
+    }
+  };
+
   return (
-    <div className="bg-[#1a1714] border border-[#2a241e] rounded-xl p-4 shadow-lg text-[#f4efe6] font-serif">
-      <audio
-        ref={audioRef}
-        src={audioUrl}
-        preload="metadata"
-        onTimeUpdate={handleTimeUpdate}
-        onLoadedMetadata={handleLoadedMetadata}
-        onEnded={() => setIsPlaying(false)}
-      />
-
-      <div className="flex items-center gap-3 mb-2.5">
-        <div className="p-2 bg-[#25201a] text-[#c59b27] rounded-lg border border-[#3d3328]">
-          <Headphones className="w-4 h-4" />
-        </div>
-        <div className="flex-1 min-w-0">
-          <div className="text-[10px] uppercase tracking-widest text-[#c59b27] font-semibold">
-            {episodeNumber ? `Philosophize This! • Episode #${episodeNumber}` : 'Philosophize This!'}
+    <div className={`border rounded-xl p-3.5 shadow-md transition font-serif ${
+      isCurrentTrack
+        ? 'bg-[var(--gold-bg)] border-[var(--gold-border)]'
+        : 'bg-[var(--bg-card)] border-[var(--border-main)] hover:border-[var(--border-strong)]'
+    }`}>
+      <div className="flex items-center justify-between gap-3 mb-2.5">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className={`p-2 rounded-lg border transition ${
+            isCurrentTrack
+              ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] border-[var(--gold-border)]'
+              : 'bg-[var(--bg-subtle)] text-[var(--gold-accent)] border-[var(--border-main)]'
+          }`}>
+            <Headphones className="w-4 h-4" />
           </div>
-          <div className="text-sm font-semibold text-[#f5f0e6] truncate" title={title}>
-            {title}
+          <div className="min-w-0">
+            <div className="text-[10px] uppercase font-mono tracking-widest text-[var(--gold-accent)] font-semibold truncate flex items-center gap-1.5">
+              <span>{episodeNumber ? `Episode #${episodeNumber}` : 'Philosophize This!'}</span>
+              {isThisPlaying && (
+                <span className="inline-flex items-center gap-1 text-[9px] px-1.5 py-0.2 rounded-full bg-[var(--gold-accent)] text-[var(--bg-card)] font-bold animate-pulse">
+                  <Radio className="w-2.5 h-2.5" /> Playing
+                </span>
+              )}
+            </div>
+            <div className="text-sm font-semibold text-[var(--text-main)] truncate" title={title}>
+              {title}
+            </div>
           </div>
         </div>
+
+        <button
+          onClick={handleStartOrToggle}
+          className="px-3 py-1.5 bg-[var(--gold-bg)] hover:bg-[var(--bg-hover)] text-[var(--gold-accent)] border border-[var(--gold-border)] rounded-xl text-xs font-semibold flex items-center gap-1.5 transition active:scale-95 shrink-0 shadow-sm"
+          title={isThisPlaying ? 'Pause Episode' : 'Play Episode in Persistent Player'}
+        >
+          {isThisPlaying ? (
+            <>
+              <Pause className="w-3.5 h-3.5" />
+              <span>Pause</span>
+            </>
+          ) : (
+            <>
+              <Play className="w-3.5 h-3.5 fill-current" />
+              <span>{isCurrentTrack ? 'Resume' : 'Listen'}</span>
+            </>
+          )}
+        </button>
       </div>
 
-      {/* Progress slider */}
-      <div className="flex items-center gap-2 mb-3">
-        <span className="text-[11px] font-mono text-[#a89b88] w-10 text-right">
-          {formatTime(currentTime)}
-        </span>
-        <input
-          type="range"
-          min={0}
-          max={totalDuration || 100}
-          value={currentTime}
-          onChange={handleSeek}
-          className="flex-1 h-1.5 bg-[#25201a] rounded-lg appearance-none cursor-pointer accent-[#c59b27]"
-        />
-        <span className="text-[11px] font-mono text-[#a89b88] w-10">
-          {formatTime(totalDuration || 0)}
-        </span>
-      </div>
+      {/* Progress & Scrub (Active when this track is loaded in player) */}
+      {isCurrentTrack && (
+        <div className="pt-2 border-t border-[var(--border-main)] space-y-2">
+          <div className="flex items-center gap-2">
+            <span className="text-[10px] font-mono text-[var(--text-dim)] w-9 text-right shrink-0">
+              {formatTime(currentTime)}
+            </span>
+            <input
+              type="range"
+              min={0}
+              max={totalDuration || 100}
+              value={currentTime}
+              onChange={handleSeek}
+              aria-label="Seek progress"
+              className="flex-1 h-1.5 bg-[var(--bg-subtle)] rounded-lg appearance-none cursor-pointer accent-[var(--gold-accent)]"
+            />
+            <span className="text-[10px] font-mono text-[var(--text-dim)] w-9 shrink-0">
+              {formatTime(totalDuration || 0)}
+            </span>
+          </div>
 
-      {/* Control Buttons */}
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => skipSeconds(-15)}
-            className="p-1.5 text-[#a89b88] hover:text-[#f5f0e6] transition"
-            title="Rewind 15 seconds"
-          >
-            <RotateCcw className="w-3.5 h-3.5" />
-          </button>
+          <div className="flex items-center justify-between text-xs text-[var(--text-muted)] pt-1">
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => skip(-15)}
+                className="p-1 hover:text-[var(--text-main)] transition"
+                title="Rewind 15 seconds"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+              </button>
+              <button
+                onClick={() => skip(30)}
+                className="p-1 hover:text-[var(--text-main)] transition"
+                title="Skip 30 seconds"
+              >
+                <RotateCw className="w-3.5 h-3.5" />
+              </button>
+            </div>
 
-          <button
-            onClick={togglePlay}
-            className="p-2 bg-[#2a2318] hover:bg-[#352c1e] text-[#e5b94c] border border-[#4a3b25] rounded-full transition active:scale-95 shadow-md"
-            title={isPlaying ? 'Pause' : 'Play'}
-          >
-            {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 ml-0.5" />}
-          </button>
-
-          <button
-            onClick={() => skipSeconds(30)}
-            className="p-1.5 text-[#a89b88] hover:text-[#f5f0e6] transition"
-            title="Forward 30 seconds"
-          >
-            <RotateCw className="w-3.5 h-3.5" />
-          </button>
+            <div className="flex items-center gap-2 font-mono text-[11px]">
+              <button
+                onClick={cyclePlaybackRate}
+                className="px-1.5 py-0.5 rounded bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] transition"
+                title="Cycle playback speed"
+              >
+                {playbackRate}x
+              </button>
+              <button
+                onClick={toggleMute}
+                className="p-1 hover:text-[var(--text-main)] transition"
+                title={isMuted ? 'Unmute' : 'Mute'}
+              >
+                {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
+              </button>
+            </div>
+          </div>
         </div>
-
-        <div className="flex items-center gap-2">
-          <button
-            onClick={cyclePlaybackRate}
-            className="px-2 py-0.5 text-xs font-medium text-[#d8cfc0] bg-[#25201a] hover:bg-[#302920] rounded border border-[#3d3328] transition font-mono"
-          >
-            {playbackRate}x
-          </button>
-          <button
-            onClick={toggleMute}
-            className="p-1.5 text-[#a89b88] hover:text-[#f5f0e6] transition"
-            title={isMuted ? 'Unmute' : 'Mute'}
-          >
-            {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
-          </button>
-        </div>
-      </div>
+      )}
     </div>
   );
 }

@@ -126,6 +126,11 @@ export function ForceGraphView({
   const hasInitialFitRef = useRef<boolean>(false);
   const hasConfiguredForcesRef = useRef<boolean>(false);
 
+  const prefersReducedMotion = useMemo(() => {
+    if (typeof window === 'undefined') return false;
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }, []);
+
   // Local exploration state with props fallback
   const [internalExplorationMode, setInternalExplorationMode] = useState<boolean>(false);
   const [internalExplorationFilter, setInternalExplorationFilter] = useState<ExplorationState | 'all'>('all');
@@ -201,24 +206,46 @@ export function ForceGraphView({
     return () => window.removeEventListener('resize', updateDimensions);
   }, []);
 
-  // Preload philosopher portraits for instant canvas rendering
+  // Preload philosopher portraits with priority tiering to prevent network bottlenecks
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
     let mounted = true;
+    let timerId: any = null;
     const onAnyLoad = () => {
       if (mounted) notifyLoaded();
     };
 
-    nodes.forEach((n) => {
-      if (n.type === 'philosopher') {
+    const philNodes = nodes.filter((n) => n.type === 'philosopher');
+    // Tier 1: Canonical anchors (importanceScore >= 85) loaded immediately
+    const anchors = philNodes.filter((n) => (n.importanceScore || 0) >= 85);
+    const secondary = philNodes.filter((n) => (n.importanceScore || 0) < 85);
+
+    anchors.forEach((n) => {
+      const url = getAssetUrl(n.imageUrl || `/portraits/${n.id}.jpg`);
+      preloadPortrait(url, onAnyLoad, onAnyLoad);
+    });
+
+    // Tier 2: Stagger secondary portraits in small non-blocking chunks
+    let index = 0;
+    const loadNextBatch = () => {
+      if (!mounted || index >= secondary.length) return;
+      const batch = secondary.slice(index, index + 10);
+      batch.forEach((n) => {
         const url = getAssetUrl(n.imageUrl || `/portraits/${n.id}.jpg`);
         preloadPortrait(url, onAnyLoad, onAnyLoad);
+      });
+      index += 10;
+      if (index < secondary.length) {
+        timerId = setTimeout(loadNextBatch, 120);
       }
-    });
+    };
+
+    timerId = setTimeout(loadNextBatch, 80);
 
     return () => {
       mounted = false;
+      if (timerId) clearTimeout(timerId);
       if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
     };
   }, [nodes, notifyLoaded]);
@@ -316,23 +343,30 @@ export function ForceGraphView({
   useEffect(() => {
     const timer = setTimeout(() => {
       if (fgRef.current && !hasInitialFitRef.current) {
-        fgRef.current.zoomToFit(700, 100);
+        fgRef.current.zoomToFit(prefersReducedMotion ? 0 : 700, 100);
       }
     }, 600);
     return () => clearTimeout(timer);
-  }, []);
+  }, [prefersReducedMotion]);
 
-  // When selectedNodeId changes, center camera on it
+  // When selectedNodeId changes, center camera on it with viewport-aware framing (avoiding drawer occlusion)
   useEffect(() => {
     if (selectedNodeId && fgRef.current) {
       const node = nodes.find((n) => n.id === selectedNodeId);
       if (node && typeof node.x === 'number' && typeof node.y === 'number') {
         hasInitialFitRef.current = true;
-        fgRef.current.centerAt(node.x, node.y, 800);
-        fgRef.current.zoom(2.0, 800);
+        const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
+        const isTablet = typeof window !== 'undefined' && window.innerWidth >= 640 && window.innerWidth < 1024;
+        const drawerWidth = isDesktop ? 600 : isTablet ? 540 : 0;
+        const targetZoom = 2.0;
+        const offsetX = (drawerWidth / 2) / targetZoom;
+        const duration = prefersReducedMotion ? 0 : 800;
+
+        fgRef.current.centerAt(node.x + offsetX, node.y, duration);
+        fgRef.current.zoom(targetZoom, duration);
       }
     }
-  }, [selectedNodeId, nodes]);
+  }, [selectedNodeId, nodes, prefersReducedMotion]);
 
   const selectedEdgeEndpoints = useMemo(() => {
     if (!selectedEdgeId) return null;
@@ -343,7 +377,7 @@ export function ForceGraphView({
     return null;
   }, [selectedEdgeId]);
 
-  // When selectedEdgeId changes, center and zoom camera on the connection between source and target
+  // When selectedEdgeId changes, center and zoom camera on the connection between source and target with viewport-aware framing
   useEffect(() => {
     if (selectedEdgeId && fgRef.current && selectedEdgeEndpoints) {
       const centerOnEdge = () => {
@@ -360,8 +394,15 @@ export function ForceGraphView({
           const midX = (srcNode.x + tgtNode.x) / 2;
           const midY = (srcNode.y + tgtNode.y) / 2;
           hasInitialFitRef.current = true;
-          fgRef.current.centerAt(midX, midY, 800);
-          fgRef.current.zoom(2.5, 800);
+          const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
+          const isTablet = typeof window !== 'undefined' && window.innerWidth >= 640 && window.innerWidth < 1024;
+          const drawerWidth = isDesktop ? 620 : isTablet ? 560 : 0;
+          const targetZoom = 2.5;
+          const offsetX = (drawerWidth / 2) / targetZoom;
+          const duration = prefersReducedMotion ? 0 : 800;
+
+          fgRef.current.centerAt(midX + offsetX, midY, duration);
+          fgRef.current.zoom(targetZoom, duration);
         }
       };
 
@@ -373,7 +414,7 @@ export function ForceGraphView({
         clearTimeout(t2);
       };
     }
-  }, [selectedEdgeId, selectedEdgeEndpoints, nodes]);
+  }, [selectedEdgeId, selectedEdgeEndpoints, nodes, prefersReducedMotion]);
 
   const pathNodeSet = useMemo(() => new Set(highlightedPathNodes), [highlightedPathNodes]);
   const isPathActive = pathNodeSet.size > 0;
@@ -417,13 +458,13 @@ export function ForceGraphView({
 
   // Zoom and Spacing controls
   const handleZoomIn = () => {
-    if (fgRef.current) fgRef.current.zoom(fgRef.current.zoom() * 1.3, 400);
+    if (fgRef.current) fgRef.current.zoom(fgRef.current.zoom() * 1.3, prefersReducedMotion ? 0 : 400);
   };
   const handleZoomOut = () => {
-    if (fgRef.current) fgRef.current.zoom(fgRef.current.zoom() / 1.3, 400);
+    if (fgRef.current) fgRef.current.zoom(fgRef.current.zoom() / 1.3, prefersReducedMotion ? 0 : 400);
   };
   const handleFit = () => {
-    if (fgRef.current) fgRef.current.zoomToFit(600, 100);
+    if (fgRef.current) fgRef.current.zoomToFit(prefersReducedMotion ? 0 : 600, 100);
   };
   const toggleSpacing = () => {
     setSpacingMultiplier((prev) => {
@@ -918,6 +959,27 @@ export function ForceGraphView({
           ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
           ctx.fill();
         }}
+        linkPointerAreaPaint={(link: any, color: string, ctx: CanvasRenderingContext2D) => {
+          const src = link.source;
+          const tgt = link.target;
+          if (!src || !tgt || typeof src.x !== 'number' || typeof tgt.x !== 'number') return;
+          ctx.save();
+          ctx.beginPath();
+          ctx.strokeStyle = color;
+          ctx.lineWidth = 16; // Generous 16px transparent hit area buffer for effortless interaction
+          const dx = tgt.x - src.x;
+          const dy = tgt.y - src.y;
+          const l = Math.hypot(dx, dy);
+          if (l > 0) {
+            const curvature = 0.12;
+            const cx = (src.x + tgt.x) / 2 - (dy / l) * l * curvature;
+            const cy = (src.y + tgt.y) / 2 + (dx / l) * l * curvature;
+            ctx.moveTo(src.x, src.y);
+            ctx.quadraticCurveTo(cx, cy, tgt.x, tgt.y);
+            ctx.stroke();
+          }
+          ctx.restore();
+        }}
         onNodeClick={(node: any) => {
           onSelectNode(node.id);
           onSelectEdge?.(null);
@@ -946,7 +1008,7 @@ export function ForceGraphView({
         cooldownTime={3000}
         onEngineStop={() => {
           if (!hasInitialFitRef.current && !selectedEdgeId && !selectedNodeId && fgRef.current) {
-            fgRef.current.zoomToFit(700, 100);
+            fgRef.current.zoomToFit(prefersReducedMotion ? 0 : 700, 100);
             hasInitialFitRef.current = true;
           }
         }}
