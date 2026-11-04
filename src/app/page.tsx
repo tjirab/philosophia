@@ -144,10 +144,11 @@ function HomePageContent() {
       interdisciplinaryOnly,
       branch: selectedBranch,
       includeConcepts: showConcepts,
+      focusedNodeId: selectedNodeId,
       explorationFilter: isExplorationMode ? explorationFilter : 'all',
       methodology,
     });
-  }, [selectedEraId, isolateEra, selectedDomain, interdisciplinaryOnly, selectedBranch, showConcepts, isExplorationMode, explorationFilter, methodology]);
+  }, [selectedEraId, isolateEra, selectedDomain, interdisciplinaryOnly, selectedBranch, showConcepts, selectedNodeId, isExplorationMode, explorationFilter, methodology]);
 
   const handleSelectDomain = useCallback((domain: DomainId | 'all') => {
     setSelectedDomain(domain);
@@ -319,6 +320,8 @@ function HomePageContent() {
         onTracePath={handleOpenPathModal}
         onOpenSuggestion={handleOpenSuggestion}
         methodology={methodology}
+        showConcepts={showConcepts}
+        onToggleConcepts={() => setShowConcepts(!showConcepts)}
       />
 
       {/* Slide-out Edge Academic Proof Dossier Drawer */}
@@ -348,6 +351,7 @@ function HomePageContent() {
         philosophers={philosophers}
         concepts={concepts}
         onSelectNode={handleSelectNode}
+        showConcepts={showConcepts}
       />
 
       {/* Folio Key / Legend Modal */}

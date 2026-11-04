@@ -32,6 +32,8 @@ interface DossierDrawerProps {
   onTracePath: (startId: string) => void;
   onOpenSuggestion?: (nodeId: string) => void;
   methodology?: ScoringMethodology;
+  showConcepts?: boolean;
+  onToggleConcepts?: () => void;
 }
 
 export function DossierDrawer({
@@ -42,6 +44,8 @@ export function DossierDrawer({
   onTracePath,
   onOpenSuggestion,
   methodology = 'canonical',
+  showConcepts = false,
+  onToggleConcepts,
 }: DossierDrawerProps) {
   const [activeSection, setActiveSection] = useState<string>('section-synopsis');
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -237,6 +241,25 @@ export function DossierDrawer({
             </button>
           </div>
         </div>
+
+        {/* Concept Spotlight Feedback Pill */}
+        {!isPhilosopher && conc && !showConcepts && (
+          <div className="flex items-center justify-between px-3.5 py-2 mb-4 rounded-xl bg-[#52b788]/10 border border-[#52b788]/25 text-xs text-[#52b788]">
+            <div className="flex items-center gap-2 font-serif font-medium">
+              <span className="text-sm select-none">◆</span>
+              <span>Spotlighted on canvas</span>
+            </div>
+            {onToggleConcepts && (
+              <button
+                onClick={onToggleConcepts}
+                className="text-[11px] font-sans font-semibold text-[var(--gold-accent)] hover:underline flex items-center gap-1 cursor-pointer"
+              >
+                <span>Show all concepts</span>
+                <span>&rarr;</span>
+              </button>
+            )}
+          </div>
+        )}
 
         {/* Hero Identity: Portrait + Title + Metadata */}
         <div className="flex items-start gap-4">
