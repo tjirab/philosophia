@@ -93,4 +93,13 @@ describe('SearchPalette outside click and component logic', () => {
     expect(emptyResult.matchedPhilosophers.length).toBe(2);
     expect(emptyResult.matchedConcepts.length).toBe(2);
   });
+
+  it('renders spotlight badges and canvas indicators for concepts', () => {
+    // Verifies the concept section includes spotlight messaging and diamond markers
+    expect(searchPaletteCode).toContain('Spotlights on canvas');
+    expect(searchPaletteCode).toContain('Focus on canvas');
+    expect(searchPaletteCode).toContain('Spotlight');
+    expect(searchPaletteCode).toContain('◆');
+    expect(searchPaletteCode).toContain('showConcepts');
+  });
 });

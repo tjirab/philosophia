@@ -60,6 +60,7 @@ export interface GraphFilterOptions {
   searchQuery?: string;
   explorationFilter?: ExplorationState | 'all';
   methodology?: ScoringMethodology;
+  focusedNodeId?: string | null;
 }
 
 export function getVisualGraph(options: GraphFilterOptions = {}): {
@@ -78,6 +79,7 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     searchQuery = '',
     explorationFilter = 'all',
     methodology = 'canonical',
+    focusedNodeId = null,
   } = options;
 
   const traditionMap = new Map(traditions.map((t) => [t.id, t]));
@@ -154,9 +156,7 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
   const timelineEndYear = 2020;
   const totalSpan = timelineEndYear - timelineStartYear;
 
-  for (let idx = 0; idx < filteredPhilosophers.length; idx++) {
-    const p = filteredPhilosophers[idx];
-    validNodeIds.add(p.id);
+  const createVisualPhilosopher = (p: Philosopher, idx: number): VisualNode => {
     const era = eraMap.get(p.eraId);
     const tradition = traditionMap.get(p.traditionId);
 
@@ -172,7 +172,7 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     const pDomains: DomainId[] = (p.domains && p.domains.length > 0 ? p.domains : ['philosophy']) as DomainId[];
     const isInterdisciplinary = pDomains.length >= 2;
 
-    nodes.push({
+    return {
       id: p.id,
       name: p.name,
       type: 'philosopher',
@@ -189,15 +189,11 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
       val: Math.max(8, Math.round(p.importanceScore / 8)),
       x,
       y,
-    });
-  }
+    };
+  };
 
-  for (let idx = 0; idx < filteredConcepts.length; idx++) {
-    const c = filteredConcepts[idx];
-    validNodeIds.add(c.id);
+  const createVisualConcept = (c: Concept, idx: number): VisualNode => {
     const era = eraMap.get(c.eraId);
-
-    // Concept chronology: anchor near introducing philosopher or era midpoint
     const introducingPhil = c.introducedBy ? philosopherMap.get(c.introducedBy) : undefined;
     const cDomains: DomainId[] = (
       c.domainId
@@ -219,7 +215,7 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
     const yMagnitude = 120 + ((idx * 73) % 420);
     const y = ySign * yMagnitude;
 
-    nodes.push({
+    return {
       id: c.id,
       name: c.title || (c as any).name || c.id,
       type: 'concept',
@@ -235,7 +231,49 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
       val: 6,
       x,
       y,
-    });
+    };
+  };
+
+  for (let idx = 0; idx < filteredPhilosophers.length; idx++) {
+    const p = filteredPhilosophers[idx];
+    validNodeIds.add(p.id);
+    nodes.push(createVisualPhilosopher(p, idx));
+  }
+
+  for (let idx = 0; idx < filteredConcepts.length; idx++) {
+    const c = filteredConcepts[idx];
+    validNodeIds.add(c.id);
+    nodes.push(createVisualConcept(c, idx));
+  }
+
+  // Targeted Focal Injection (Spotlight):
+  // When a concept or thinker is specifically focused (e.g. via Search, deep-link, or drawer selection),
+  // ensure it is dynamically injected into the visual graph even if the global concept layer or era filter
+  // is currently inactive. This eliminates ghost selections and allows the camera to center and illuminate its lineage.
+  if (focusedNodeId && !validNodeIds.has(focusedNodeId)) {
+    const focusedConcept = concepts.find((c) => c.id === focusedNodeId);
+    if (focusedConcept) {
+      const cIdx = Math.max(0, concepts.findIndex((c) => c.id === focusedConcept.id));
+      nodes.push(createVisualConcept(focusedConcept, cIdx));
+      validNodeIds.add(focusedConcept.id);
+
+      // If the concept's introducing philosopher exists and is not currently on canvas, inject them too
+      if (focusedConcept.introducedBy && !validNodeIds.has(focusedConcept.introducedBy)) {
+        const introPhil = philosopherMap.get(focusedConcept.introducedBy);
+        if (introPhil) {
+          const pIdx = Math.max(0, philosophers.findIndex((p) => p.id === introPhil.id));
+          nodes.push(createVisualPhilosopher(introPhil, pIdx));
+          validNodeIds.add(introPhil.id);
+        }
+      }
+    } else {
+      const focusedPhil = philosophers.find((p) => p.id === focusedNodeId);
+      if (focusedPhil) {
+        const pIdx = Math.max(0, philosophers.findIndex((p) => p.id === focusedPhil.id));
+        nodes.push(createVisualPhilosopher(focusedPhil, pIdx));
+        validNodeIds.add(focusedPhil.id);
+      }
+    }
   }
 
   // Filter links where both source and target exist in validNodeIds
@@ -261,9 +299,9 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
   // Apply active scoring methodology (canonical, topology PageRank, or dialectical friction)
   finalNodes = applyScoringMethodology(finalNodes, links, methodology);
 
-  // If filtered by exploration state, filter finalNodes and prune links
+  // If filtered by exploration state, filter finalNodes and prune links (retaining focusedNodeId if specified)
   if (explorationFilter !== 'all') {
-    finalNodes = finalNodes.filter((n) => n.exploration?.state === explorationFilter);
+    finalNodes = finalNodes.filter((n) => n.id === focusedNodeId || n.exploration?.state === explorationFilter);
     const retainedIds = new Set(finalNodes.map((n) => n.id));
     const filteredLinks = links.filter((l) => {
       const sId = typeof l.source === 'object' ? (l.source as any).id : l.source;

@@ -133,4 +133,17 @@ describe('GraphLayersMenu logic & Discipline-Branch filtering', () => {
     expect(selectedBranch).toBe('metaphysics');
     expect(showConcepts).toBe(true);
   });
+
+  it('verifies GraphLayersMenu code supports concept spotlight indication', () => {
+    const fs = require('fs');
+    const path = require('path');
+    const menuCode = fs.readFileSync(
+      path.resolve(__dirname, '../src/components/graph/GraphLayersMenu.tsx'),
+      'utf-8'
+    );
+
+    expect(menuCode).toContain('isConceptSpotlighted');
+    expect(menuCode).toContain('focusedConceptTitle');
+    expect(menuCode).toContain('Spotlight active:');
+  });
 });

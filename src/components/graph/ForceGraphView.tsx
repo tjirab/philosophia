@@ -737,6 +737,11 @@ export function ForceGraphView({
     [isLight, isLinkInPath, selectedEdgeId]
   );
 
+  const focusedConceptNode = useMemo(() => {
+    if (showConcepts || !selectedNodeId) return null;
+    return nodes.find((n) => n.id === selectedNodeId && n.type === 'concept') || null;
+  }, [showConcepts, selectedNodeId, nodes]);
+
   return (
     <div
       ref={containerRef}
@@ -767,6 +772,8 @@ export function ForceGraphView({
           onToggleInterdisciplinaryOnly={onToggleInterdisciplinaryOnly}
           spacingMultiplier={spacingMultiplier}
           onSetSpacingMultiplier={setSpacingMultiplier}
+          isConceptSpotlighted={Boolean(focusedConceptNode)}
+          focusedConceptTitle={focusedConceptNode?.name}
         />
 
         {/* Cartography of Thought: Fog of War & Methodology Lens */}

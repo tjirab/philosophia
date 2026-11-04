@@ -11,6 +11,7 @@ interface SearchPaletteProps {
   philosophers: Philosopher[];
   concepts: Concept[];
   onSelectNode: (nodeId: string) => void;
+  showConcepts?: boolean;
 }
 
 export function SearchPalette({
@@ -19,6 +20,7 @@ export function SearchPalette({
   philosophers,
   concepts,
   onSelectNode,
+  showConcepts = false,
 }: SearchPaletteProps) {
   const [query, setQuery] = useState('');
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -140,9 +142,15 @@ export function SearchPalette({
           {/* Concepts */}
           {matchedConcepts.length > 0 && (
             <div>
-              <div className="text-[11px] font-semibold uppercase tracking-widest text-[var(--gold-accent)] px-3 mb-1.5 flex items-center gap-1.5">
-                <BookOpen className="w-3 h-3 text-[#52b788]" />
-                Concepts & Ideas
+              <div className="flex items-center justify-between px-3 mb-1.5">
+                <div className="text-[11px] font-semibold uppercase tracking-widest text-[var(--gold-accent)] flex items-center gap-1.5">
+                  <BookOpen className="w-3 h-3 text-[#52b788]" />
+                  <span>Concepts & Ideas</span>
+                </div>
+                <span className="text-[10px] font-mono text-[var(--text-dim)] flex items-center gap-1">
+                  <span className="text-[#52b788] text-[9px]">◆</span>
+                  <span>{showConcepts ? 'Focus on canvas' : 'Spotlights on canvas'}</span>
+                </span>
               </div>
               <div className="space-y-1">
                 {matchedConcepts.map((c) => (
@@ -154,19 +162,26 @@ export function SearchPalette({
                     }}
                     className="w-full text-left p-2.5 rounded-xl hover:bg-[var(--bg-subtle)] border border-transparent hover:border-[var(--border-main)] transition flex items-center justify-between group"
                   >
-                    <div>
-                      <div className="text-sm font-bold text-[var(--text-main)] group-hover:text-[#52b788] transition">
-                        {c.title || (c as any).name || 'Concept'}
+                    <div className="min-w-0 pr-2">
+                      <div className="text-sm font-bold text-[var(--text-main)] group-hover:text-[#52b788] transition flex items-center gap-1.5">
+                        <span className="text-[#52b788] text-xs shrink-0 select-none">◆</span>
+                        <span className="truncate">{c.title || (c as any).name || 'Concept'}</span>
                       </div>
                       <div className="text-xs text-[var(--text-muted)] truncate max-w-md">
                         {c.summary || (c as any).description || ''}
                       </div>
                     </div>
-                    {c.branch && (
-                      <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-[var(--bg-subtle)] text-[var(--text-dim)] border border-[var(--border-main)]">
-                        {c.branch}
+                    <div className="flex flex-col items-end gap-1 shrink-0 ml-2">
+                      {c.branch && (
+                        <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-[var(--bg-subtle)] text-[var(--text-dim)] border border-[var(--border-main)]">
+                          {c.branch}
+                        </span>
+                      )}
+                      <span className="text-[9px] font-mono text-[#52b788] flex items-center gap-1 bg-[#52b788]/10 px-1.5 py-0.5 rounded border border-[#52b788]/20 group-hover:border-[#52b788]/40 transition">
+                        <span className="text-[7px]">◆</span>
+                        <span>Spotlight</span>
                       </span>
-                    )}
+                    </div>
                   </button>
                 ))}
               </div>

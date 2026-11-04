@@ -23,6 +23,8 @@ export interface GraphLayersMenuProps {
   branches?: Array<{ id: Branch | 'all'; label: string }>;
   spacingMultiplier: number;
   onSetSpacingMultiplier: (spacing: number) => void;
+  isConceptSpotlighted?: boolean;
+  focusedConceptTitle?: string;
 }
 
 export function GraphLayersMenu({
@@ -37,6 +39,8 @@ export function GraphLayersMenu({
   branches,
   spacingMultiplier,
   onSetSpacingMultiplier,
+  isConceptSpotlighted = false,
+  focusedConceptTitle,
 }: GraphLayersMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -99,6 +103,9 @@ export function GraphLayersMenu({
         <span className="truncate max-w-[130px] sm:max-w-[160px]">{triggerLabel}</span>
         {showConcepts && (
           <span className="w-1.5 h-1.5 rounded-full bg-[var(--gold-accent)] shrink-0" title="Concepts visible" />
+        )}
+        {!showConcepts && isConceptSpotlighted && (
+          <span className="w-1.5 h-1.5 rounded-full bg-[#52b788] shrink-0" title={`Spotlight: ${focusedConceptTitle || 'Concept'}`} />
         )}
         <span className="text-[10px] text-[var(--text-dim)] ml-0.5 shrink-0">▾</span>
       </button>
@@ -204,15 +211,28 @@ export function GraphLayersMenu({
               className={`w-full text-left px-2.5 py-2 rounded-xl text-xs flex items-center justify-between transition ${
                 showConcepts
                   ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] border border-[var(--gold-border)] font-semibold'
+                  : isConceptSpotlighted
+                  ? 'bg-[#52b788]/10 text-[#52b788] border border-[#52b788]/25'
                   : 'text-[var(--text-muted)] hover:bg-[var(--bg-hover)] hover:text-[var(--text-main)]'
               }`}
             >
               <div className="flex items-center gap-2">
                 <span className="text-sm">✦</span>
                 <div>
-                  <div className="font-semibold">Landmark Concepts</div>
+                  <div className="font-semibold flex items-center gap-1.5">
+                    <span>Landmark Concepts</span>
+                    {!showConcepts && isConceptSpotlighted && (
+                      <span className="text-[9px] font-mono px-1 py-0.2 bg-[#52b788]/20 text-[#52b788] rounded">
+                        Spotlight
+                      </span>
+                    )}
+                  </div>
                   <div className="text-[10px] text-[var(--text-dim)]">
-                    {showConcepts ? 'Diamond nodes visible' : 'Hidden (Thinkers only)'}
+                    {showConcepts
+                      ? 'Diamond nodes visible'
+                      : isConceptSpotlighted
+                      ? `Spotlight active: ${focusedConceptTitle ? `"${focusedConceptTitle}"` : '1 visible'} • Click to show all`
+                      : 'Hidden (Thinkers only)'}
                   </div>
                 </div>
               </div>
@@ -220,10 +240,12 @@ export function GraphLayersMenu({
                 className={`w-4 h-4 rounded border flex items-center justify-center text-[10px] ${
                   showConcepts
                     ? 'bg-[var(--gold-accent)] text-[var(--bg-card)] border-[var(--gold-accent)]'
+                    : isConceptSpotlighted
+                    ? 'border-[#52b788]/40 text-[#52b788]'
                     : 'border-[var(--border-strong)]'
                 }`}
               >
-                {showConcepts && '✓'}
+                {showConcepts ? '✓' : isConceptSpotlighted ? '◆' : null}
               </span>
             </button>
           </div>
