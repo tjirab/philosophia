@@ -1,0 +1,192 @@
+[
+  {
+    "id": "carl-schmitt--state-of-exception",
+    "source": "carl-schmitt",
+    "target": "state-of-exception",
+    "type": "DEVELOPED",
+    "label": "Formulated the State of Exception and legal decisionism in Political Theology",
+    "strength": 5,
+    "description": "Carl Schmitt formulated and introduced the concept of 'State of Exception & Decisionism', asserting that sovereignty consists in the power to decide on the exception when the normative legal order is suspended.",
+    "dialecticalTension": "Rebutting Kelsenian legal positivism by arguing that no legal norm can dictate its own concrete application without a sovereign decision.",
+    "historicalContext": "Published in Weimar Germany in Political Theology (1922) amid chronic constitutional crises under Article 48 of the Weimar Constitution.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Carl Schmitt",
+        "sectionOrPage": "Sovereignty and the State of Exception",
+        "year": "2024",
+        "url": "https://plato.stanford.edu/entries/schmitt/"
+      },
+      {
+        "citationType": "primary",
+        "author": "Carl Schmitt",
+        "work": "Political Theology: Four Chapters on the Concept of Sovereignty",
+        "sectionOrPage": "Chapter 1: Definition of Sovereignty",
+        "year": "1922"
+      }
+    ]
+  },
+  {
+    "id": "thomas-hobbes--carl-schmitt",
+    "source": "thomas-hobbes",
+    "target": "carl-schmitt",
+    "type": "DEVELOPED",
+    "label": "Radicalized Hobbesian sovereign decisionism and the state of nature as latent enmity",
+    "strength": 5,
+    "description": "Carl Schmitt directly inherited and radicalized Thomas Hobbes's thesis that authority, not truth, creates law (auctoritas non veritas facit legem), seeing Hobbes as the premier modern theorist of sovereign order against civil anarchy.",
+    "dialecticalTension": "Transitioning from Hobbes's rationalist social contract to Schmitt's existential political theology, rejecting liberal individualist interpretations of the Leviathan.",
+    "historicalContext": "Schmitt analyzed Hobbes throughout his career, culminating in his 1938 monograph The Leviathan in the State Theory of Thomas Hobbes.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Carl Schmitt",
+        "work": "The Leviathan in the State Theory of Thomas Hobbes: Failure and Meaning of a Political Symbol",
+        "year": "1938"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Carl Schmitt",
+        "sectionOrPage": "Hobbes and the Concept of Sovereignty",
+        "year": "2024",
+        "url": "https://plato.stanford.edu/entries/schmitt/"
+      }
+    ]
+  },
+  {
+    "id": "machiavelli--carl-schmitt",
+    "source": "machiavelli",
+    "target": "carl-schmitt",
+    "type": "INFLUENCED",
+    "label": "Adapted Machiavellian political autonomy and realism to define the political realm against liberal moralism",
+    "strength": 4,
+    "description": "Schmitt grounded his autonomous definition of the political in Machiavelli's political realism, insisting that politics cannot be subordinated to ethical, economic, or theological morality.",
+    "dialecticalTension": "Affirming the irreducible, conflictual reality of politics against Enlightenment attempts to neutralize political struggles through universal ethics or commerce.",
+    "historicalContext": "Schmitt referenced Machiavelli extensively in The Concept of the Political (1927/1932) to delineate politics from bourgeois normativism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Carl Schmitt",
+        "work": "The Concept of the Political",
+        "year": "1932"
+      },
+      {
+        "citationType": "secondary",
+        "author": "John P. McCormick",
+        "work": "Carl Schmitt's Critique of Liberalism: Against Politics as Technology",
+        "year": "1997"
+      }
+    ]
+  },
+  {
+    "id": "max-weber--carl-schmitt",
+    "source": "max-weber",
+    "target": "carl-schmitt",
+    "type": "DEVELOPED",
+    "label": "Transmuted Weber's monopoly of legitimate violence and charismatic authority into sovereign decisionism",
+    "strength": 4,
+    "description": "Schmitt built upon Max Weber's sociological definition of the state as a monopoly of legitimate physical violence, while turning Weber's charismatic authority and value-pluralism (war of the gods) into an existential friend-enemy criterion.",
+    "dialecticalTension": "Moving from Weber's value-neutral sociological diagnostic of rationalization to Schmitt's normative decisionism and political theology.",
+    "historicalContext": "Schmitt was deeply influenced by Weber's Munich lectures (Politics as a Vocation, 1919) and engaged directly with Weber's circle during the Weimar Republic.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Carl Schmitt",
+        "work": "Political Theology",
+        "year": "1922"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Wolfgang J. Mommsen",
+        "work": "Max Weber and German Politics, 1890–1920",
+        "year": "1984"
+      }
+    ]
+  },
+  {
+    "id": "carl-schmitt--hannah-arendt",
+    "source": "carl-schmitt",
+    "target": "hannah-arendt",
+    "type": "CRITIQUED",
+    "label": "Arendt rejected Schmitt's reduction of politics to sovereign command and friend-enemy violence",
+    "strength": 4,
+    "description": "Hannah Arendt formulated her republican theory of politics as communicative freedom and 'acting in concert' in direct dialectical opposition to Schmitt's glorification of sovereign violence, command, and existential friend-enemy enmity.",
+    "dialecticalTension": "Countering Schmitt's authoritarian premise that violence and exclusion define politics with the view that violence destroys genuine political speech and shared world-building.",
+    "historicalContext": "Arendt engaged Schmitt's constitutional theory and critique of liberalism in On Revolution (1963) and The Human Condition (1958).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Hannah Arendt",
+        "work": "On Revolution",
+        "year": "1963"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Andreas Kalyvas",
+        "work": "Democracy and the Politics of the Extraordinary: Max Weber, Carl Schmitt, and Hannah Arendt",
+        "year": "2008"
+      }
+    ]
+  },
+  {
+    "id": "carl-schmitt--jurgen-habermas",
+    "source": "carl-schmitt",
+    "target": "jurgen-habermas",
+    "type": "CRITIQUED",
+    "label": "Habermas constructed deliberative constitutional democracy to refute Schmitt's sovereign decisionism",
+    "strength": 5,
+    "description": "Jürgen Habermas developed his procedural theory of law, public sphere, and deliberative democracy as an explicit defense of constitutional democracy against Carl Schmitt's influential assertion that liberal parliamentarism is fundamentally bankrupt and reduced to raw sovereign fiat.",
+    "dialecticalTension": "Defending the legitimacy of intersubjective communicative reason and constitutional proceduralism against Schmitt's critique that democratic discussion is mere ideological cover for sovereign decisions.",
+    "historicalContext": "Habermas engaged Schmitt across multiple major works including The Structural Transformation of the Public Sphere (1962) and Between Facts and Norms (1992).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jürgen Habermas",
+        "work": "Between Facts and Norms: Contributions to a Discourse Theory of Law and Democracy",
+        "year": "1996"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Jürgen Habermas",
+        "work": "The Inclusion of the Other: Studies in Political Theory",
+        "sectionOrPage": "Carl Schmitt in the Political Intellectual History of the Federal Republic",
+        "year": "1998"
+      }
+    ]
+  },
+  {
+    "id": "carl-schmitt--jacques-derrida",
+    "source": "carl-schmitt",
+    "target": "jacques-derrida",
+    "type": "CRITIQUED",
+    "label": "Derrida deconstructed Schmitt's friend-enemy dichotomy and concept of sovereign fraternity in The Politics of Friendship",
+    "strength": 4,
+    "description": "Jacques Derrida conducted a thorough deconstructive critique of Carl Schmitt's political ontology, demonstrating how Schmitt's rigid binary of friend (Freund) and enemy (Feind) deconstructs itself and relies on an unexamined androcentric concept of political brotherhood.",
+    "dialecticalTension": "Exposing the structural instability and unavoidable hospitality inherent in the sovereign demarcation between self, ally, and hostile other.",
+    "historicalContext": "Detailed in Derrida's seminal 1994 seminar and text The Politics of Friendship (Politiques de l'amitié).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jacques Derrida",
+        "work": "The Politics of Friendship (Politiques de l'amitié)",
+        "year": "1997"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Jacques Derrida",
+        "sectionOrPage": "Ethics and Politics",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/derrida/"
+      }
+    ]
+  }
+]

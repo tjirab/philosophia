@@ -70,6 +70,7 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'jacques-derrida', patterns: [/\bderrida\b/i, /\bdeconstruction\b/i] },
   { id: 'gilles-deleuze', patterns: [/\bdeleuze\b/i, /\brhizome\b/i] },
   { id: 'hannah-arendt', patterns: [/\barendt\b/i, /\bbanality of evil\b/i] },
+  { id: 'carl-schmitt', patterns: [/\bcarl schmitt\b/i, /\bschmitt\b/i] },
   { id: 'john-rawls', patterns: [/\brawls\b/i, /\bveil of ignorance\b/i] },
   { id: 'byung-chul-han', patterns: [/\bbyung-chul han\b/i, /\bbyung chul han\b/i, /\bburnout society\b/i] },
   { id: 'jean-baudrillard', patterns: [/\bbaudrillard\b/i, /\bsimulacr\b/i, /\bhyperreal\b/i] },
