@@ -167,12 +167,35 @@ function HomePageContent() {
     }
   }, []);
 
-  const handleSelectNode = useCallback((nodeId: string | null) => {
-    setSelectedNodeId(nodeId);
-    if (nodeId) {
-      setSelectedEdgeId(null);
-    }
-  }, []);
+  const handleSelectNode = useCallback(
+    (nodeId: string | null) => {
+      setSelectedNodeId(nodeId);
+      if (nodeId) {
+        setSelectedEdgeId(null);
+        // If the selected node is a concept, ensure concepts are shown on canvas
+        if (concepts.some((c) => c.id === nodeId)) {
+          setShowConcepts(true);
+        }
+        // If the thinker belongs to an era outside the active era filter, reset era filter to 'all' so their contemporaries and links are visible
+        const phil = philosophers.find((p) => p.id === nodeId);
+        if (phil && selectedEraId !== 'all' && phil.eraId !== selectedEraId) {
+          setSelectedEraId('all');
+        }
+        const conc = concepts.find((c) => c.id === nodeId);
+        if (conc && selectedEraId !== 'all' && conc.eraId !== selectedEraId) {
+          setSelectedEraId('all');
+        }
+        // If domain filter is active and excludes this thinker, reset domain filter to 'all'
+        if (phil && selectedDomain !== 'all') {
+          const pDomains = phil.domains || ['philosophy'];
+          if (!pDomains.includes(selectedDomain)) {
+            setSelectedDomain('all');
+          }
+        }
+      }
+    },
+    [selectedEraId, selectedDomain]
+  );
 
   const handleSelectEdge = useCallback((edgeId: string | null) => {
     setSelectedEdgeId(edgeId);

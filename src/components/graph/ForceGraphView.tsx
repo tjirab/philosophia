@@ -173,8 +173,28 @@ export function ForceGraphView({
   }, [methodology]);
 
 
+  // Coordinate cache to preserve live simulation positions across re-renders and filter changes
+  const nodeCoordinatesRef = useRef<Map<string, { x: number; y: number; vx?: number; vy?: number }>>(new Map());
+
+  // Stabilize incoming nodes by preserving live simulation coordinates from physics engine
+  const stabilizedNodes = useMemo(() => {
+    return nodes.map((node) => {
+      const cached = nodeCoordinatesRef.current.get(node.id);
+      if (cached && typeof cached.x === 'number' && typeof cached.y === 'number' && Number.isFinite(cached.x) && Number.isFinite(cached.y)) {
+        return {
+          ...node,
+          x: cached.x,
+          y: cached.y,
+          vx: cached.vx,
+          vy: cached.vy,
+        };
+      }
+      return node;
+    });
+  }, [nodes]);
+
   // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
-  const graphData = useMemo(() => ({ nodes, links }), [nodes, links]);
+  const graphData = useMemo(() => ({ nodes: stabilizedNodes, links }), [stabilizedNodes, links]);
 
   // Request a canvas frame update whenever portrait images finish loading
   const notifyLoaded = useCallback(() => {
@@ -352,22 +372,51 @@ export function ForceGraphView({
 
   // When selectedNodeId changes, center camera on it with viewport-aware framing (avoiding drawer occlusion)
   useEffect(() => {
-    if (selectedNodeId && fgRef.current) {
-      const node = nodes.find((n) => n.id === selectedNodeId);
-      if (node && typeof node.x === 'number' && typeof node.y === 'number') {
+    if (!selectedNodeId || !fgRef.current) return;
+
+    const centerCamera = (animDuration?: number) => {
+      if (!fgRef.current || !selectedNodeId) return;
+
+      const liveNodes = fgRef.current.graphData?.()?.nodes;
+      const liveNode = liveNodes?.find((n: any) => n.id === selectedNodeId);
+      const cachedPos = nodeCoordinatesRef.current.get(selectedNodeId);
+      const propNode = stabilizedNodes.find((n) => n.id === selectedNodeId) || nodes.find((n) => n.id === selectedNodeId);
+
+      const targetX = liveNode?.x ?? cachedPos?.x ?? propNode?.x;
+      const targetY = liveNode?.y ?? cachedPos?.y ?? propNode?.y;
+
+      if (
+        typeof targetX === 'number' &&
+        typeof targetY === 'number' &&
+        Number.isFinite(targetX) &&
+        Number.isFinite(targetY)
+      ) {
         hasInitialFitRef.current = true;
         const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
         const isTablet = typeof window !== 'undefined' && window.innerWidth >= 640 && window.innerWidth < 1024;
         const drawerWidth = isDesktop ? 600 : isTablet ? 540 : 0;
         const targetZoom = 2.0;
         const offsetX = (drawerWidth / 2) / targetZoom;
-        const duration = prefersReducedMotion ? 0 : 800;
+        const duration = animDuration !== undefined ? animDuration : (prefersReducedMotion ? 0 : 800);
 
+        const node = { x: targetX, y: targetY };
         fgRef.current.centerAt(node.x + offsetX, node.y, duration);
         fgRef.current.zoom(targetZoom, duration);
       }
-    }
-  }, [selectedNodeId, nodes, prefersReducedMotion]);
+    };
+
+    // Center immediately on current coordinates
+    centerCamera();
+
+    // Re-align after physics engine simulation ticks and drawer transition progress
+    const timer1 = setTimeout(() => centerCamera(prefersReducedMotion ? 0 : 350), 250);
+    const timer2 = setTimeout(() => centerCamera(0), 600);
+
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
+  }, [selectedNodeId, stabilizedNodes, nodes, prefersReducedMotion]);
 
   const selectedEdgeEndpoints = useMemo(() => {
     if (!selectedEdgeId) return null;
@@ -381,26 +430,39 @@ export function ForceGraphView({
   // When selectedEdgeId changes, center and zoom camera on the connection between source and target with viewport-aware framing
   useEffect(() => {
     if (selectedEdgeId && fgRef.current && selectedEdgeEndpoints) {
-      const centerOnEdge = () => {
-        const srcNode = nodes.find((n) => n.id === selectedEdgeEndpoints.source);
-        const tgtNode = nodes.find((n) => n.id === selectedEdgeEndpoints.target);
+      const centerOnEdge = (animDuration?: number) => {
+        const liveNodes = fgRef.current?.graphData?.()?.nodes;
+        const srcLive = liveNodes?.find((n: any) => n.id === selectedEdgeEndpoints.source);
+        const tgtLive = liveNodes?.find((n: any) => n.id === selectedEdgeEndpoints.target);
+        const srcCached = nodeCoordinatesRef.current.get(selectedEdgeEndpoints.source);
+        const tgtCached = nodeCoordinatesRef.current.get(selectedEdgeEndpoints.target);
+        const srcProp = stabilizedNodes.find((n) => n.id === selectedEdgeEndpoints.source) || nodes.find((n) => n.id === selectedEdgeEndpoints.source);
+        const tgtProp = stabilizedNodes.find((n) => n.id === selectedEdgeEndpoints.target) || nodes.find((n) => n.id === selectedEdgeEndpoints.target);
+
+        const srcX = srcLive?.x ?? srcCached?.x ?? srcProp?.x;
+        const srcY = srcLive?.y ?? srcCached?.y ?? srcProp?.y;
+        const tgtX = tgtLive?.x ?? tgtCached?.x ?? tgtProp?.x;
+        const tgtY = tgtLive?.y ?? tgtCached?.y ?? tgtProp?.y;
+
         if (
-          srcNode &&
-          tgtNode &&
-          typeof srcNode.x === 'number' &&
-          typeof srcNode.y === 'number' &&
-          typeof tgtNode.x === 'number' &&
-          typeof tgtNode.y === 'number'
+          typeof srcX === 'number' &&
+          typeof srcY === 'number' &&
+          typeof tgtX === 'number' &&
+          typeof tgtY === 'number' &&
+          Number.isFinite(srcX) &&
+          Number.isFinite(srcY) &&
+          Number.isFinite(tgtX) &&
+          Number.isFinite(tgtY)
         ) {
-          const midX = (srcNode.x + tgtNode.x) / 2;
-          const midY = (srcNode.y + tgtNode.y) / 2;
+          const midX = (srcX + tgtX) / 2;
+          const midY = (srcY + tgtY) / 2;
           hasInitialFitRef.current = true;
           const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
           const isTablet = typeof window !== 'undefined' && window.innerWidth >= 640 && window.innerWidth < 1024;
           const drawerWidth = isDesktop ? 620 : isTablet ? 560 : 0;
           const targetZoom = 2.5;
           const offsetX = (drawerWidth / 2) / targetZoom;
-          const duration = prefersReducedMotion ? 0 : 800;
+          const duration = animDuration !== undefined ? animDuration : (prefersReducedMotion ? 0 : 800);
 
           fgRef.current.centerAt(midX + offsetX, midY, duration);
           fgRef.current.zoom(targetZoom, duration);
@@ -408,14 +470,14 @@ export function ForceGraphView({
       };
 
       centerOnEdge();
-      const t1 = setTimeout(centerOnEdge, 200);
-      const t2 = setTimeout(centerOnEdge, 600);
+      const t1 = setTimeout(() => centerOnEdge(prefersReducedMotion ? 0 : 350), 200);
+      const t2 = setTimeout(() => centerOnEdge(0), 600);
       return () => {
         clearTimeout(t1);
         clearTimeout(t2);
       };
     }
-  }, [selectedEdgeId, selectedEdgeEndpoints, nodes, prefersReducedMotion]);
+  }, [selectedEdgeId, selectedEdgeEndpoints, stabilizedNodes, nodes, prefersReducedMotion]);
 
   const pathNodeSet = useMemo(() => new Set(highlightedPathNodes), [highlightedPathNodes]);
   const isPathActive = pathNodeSet.size > 0;
@@ -635,6 +697,15 @@ export function ForceGraphView({
       if (!hasConfiguredForcesRef.current && fgRef.current) {
         hasConfiguredForcesRef.current = true;
         applyForces(fgRef.current, spacingMultiplier);
+      }
+      const live = fgRef.current?.graphData?.()?.nodes;
+      if (live) {
+        for (let i = 0; i < live.length; i++) {
+          const n = live[i];
+          if (typeof n.x === 'number' && typeof n.y === 'number') {
+            nodeCoordinatesRef.current.set(n.id, { x: n.x, y: n.y, vx: n.vx, vy: n.vy });
+          }
+        }
       }
       drawCartographicGrid(ctx, globalScale, isLight);
 
@@ -858,6 +929,15 @@ export function ForceGraphView({
           if (!hasConfiguredForcesRef.current && fgRef.current) {
             hasConfiguredForcesRef.current = true;
             applyForces(fgRef.current, spacingMultiplier);
+          }
+          const live = fgRef.current?.graphData?.()?.nodes;
+          if (live) {
+            for (let i = 0; i < live.length; i++) {
+              const n = live[i];
+              if (typeof n.x === 'number' && typeof n.y === 'number') {
+                nodeCoordinatesRef.current.set(n.id, { x: n.x, y: n.y, vx: n.vx, vy: n.vy });
+              }
+            }
           }
         }}
         onRenderFramePre={renderBackground}
