@@ -1,0 +1,45 @@
+{
+  "id": "carl-schmitt",
+  "name": "Carl Schmitt",
+  "birthYear": 1888,
+  "deathYear": 1985,
+  "eraId": "twentieth-century",
+  "traditionId": "decisionism",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "German jurist and political philosopher who formulated legal decisionism, defining sovereignty through the state of exception and the political through the friend-enemy distinction.",
+  "centralQuestion": "Can a constitutional legal order sustain itself purely through abstract procedural norms, or does authentic political authority always rest on a sovereign decision during an existential exception?",
+  "keyWorks": [
+    {
+      "title": "Political Theology: Four Chapters on the Concept of Sovereignty",
+      "year": "1922 CE",
+      "url": "https://en.wikipedia.org/wiki/Political_Theology_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Political_Theology_(book)",
+      "description": "Foundational treatise arguing that modern state concepts are secularized theological concepts and defining the sovereign through the exception."
+    },
+    {
+      "title": "The Concept of the Political",
+      "year": "1932 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Concept_of_the_Political",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Concept_of_the_Political",
+      "description": "Seminal essay defining the autonomous sphere of politics through the existential distinction between friend and enemy."
+    },
+    {
+      "title": "The Nomos of the Earth",
+      "year": "1950 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Nomos_of_the_Earth",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Nomos_of_the_Earth",
+      "description": "Historical and jurisprudence inquiry into the spatial constitution of international law (jus publicum Europaeum) and global order."
+    }
+  ],
+  "sepSlug": "schmitt",
+  "externalRefs": {
+    "sep": "schmitt",
+    "wikipedia": "Carl_Schmitt"
+  },
+  "importanceScore": 89,
+  "imageUrl": "/portraits/carl-schmitt.jpg"
+}

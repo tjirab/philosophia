@@ -530,6 +530,28 @@ describe('Philosophy Graph Data Integrity', () => {
     const nguyenToAgencyAsArt = findInfluencePath('c-thi-nguyen', 'agency-as-art', edgesData as any);
     expect(nguyenToAgencyAsArt.found).toBe(true);
 
+    // Carl Schmitt: Hobbes / Machiavelli / Weber -> Carl Schmitt -> State of Exception / Arendt / Habermas / Derrida
+    const hobbesToSchmitt = findInfluencePath('thomas-hobbes', 'carl-schmitt', edgesData as any);
+    expect(hobbesToSchmitt.found).toBe(true);
+
+    const machiavelliToSchmitt = findInfluencePath('machiavelli', 'carl-schmitt', edgesData as any);
+    expect(machiavelliToSchmitt.found).toBe(true);
+
+    const weberToSchmitt = findInfluencePath('max-weber', 'carl-schmitt', edgesData as any);
+    expect(weberToSchmitt.found).toBe(true);
+
+    const schmittToException = findInfluencePath('carl-schmitt', 'state-of-exception', edgesData as any);
+    expect(schmittToException.found).toBe(true);
+
+    const schmittToArendt = findInfluencePath('carl-schmitt', 'hannah-arendt', edgesData as any);
+    expect(schmittToArendt.found).toBe(true);
+
+    const schmittToHabermas = findInfluencePath('carl-schmitt', 'jurgen-habermas', edgesData as any);
+    expect(schmittToHabermas.found).toBe(true);
+
+    const schmittToDerrida = findInfluencePath('carl-schmitt', 'jacques-derrida', edgesData as any);
+    expect(schmittToDerrida.found).toBe(true);
+
     // Psychoanalytic lineages
     const freudToKlein = findInfluencePath('sigmund-freud', 'melanie-klein', edgesData as any);
     expect(freudToKlein.found).toBe(true);
