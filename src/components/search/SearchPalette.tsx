@@ -87,6 +87,17 @@ export function SearchPalette({
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                if (matchedPhilosophers.length > 0) {
+                  onSelectNode(matchedPhilosophers[0].id);
+                  onClose();
+                } else if (matchedConcepts.length > 0) {
+                  onSelectNode(matchedConcepts[0].id);
+                  onClose();
+                }
+              }
+            }}
             placeholder="Search philosophers, ideas (e.g. Kant, Forms, Will, Dualism)..."
             className="flex-1 bg-transparent text-sm text-[var(--text-main)] placeholder-[var(--text-dim)] focus:outline-none font-serif"
           />
