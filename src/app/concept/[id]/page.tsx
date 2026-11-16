@@ -131,7 +131,9 @@ export default async function ConceptPage({ params }: PageProps) {
             Constellation
           </Link>
           <span>/</span>
-          <span>Concepts</span>
+          <Link href="/concepts" className="hover:underline hover:text-[var(--gold-accent)] transition">
+            Concepts
+          </Link>
           <span>/</span>
           <span className="text-[var(--gold-accent)] font-semibold truncate">
             {concept.title}
