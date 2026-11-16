@@ -411,12 +411,26 @@ export default async function ThinkerPage({ params }: PageProps) {
                     >
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                         <div className="flex items-center gap-2.5">
-                          <Link
-                            href={folioHref}
-                            className="w-8 h-8 rounded-full border border-[var(--border-strong)] bg-[var(--bg-subtle)] flex items-center justify-center font-serif text-xs font-bold text-[var(--gold-accent)] hover:scale-105 transition shrink-0"
-                          >
-                            {getNodeMonogram(nodeName)}
-                          </Link>
+                          {isPhil ? (
+                            <Link
+                              href={folioHref}
+                              className="w-8 h-8 rounded-full border border-[var(--border-strong)] bg-[var(--bg-subtle)] flex items-center justify-center font-serif text-xs font-bold text-[var(--gold-accent)] hover:scale-105 transition shrink-0"
+                            >
+                              {getNodeMonogram(nodeName)}
+                            </Link>
+                          ) : (
+                            <Link
+                              href={folioHref}
+                              className="w-8 h-8 flex items-center justify-center shrink-0 hover:scale-105 transition"
+                              title="Philosophical Concept (Diamond Tablet)"
+                            >
+                              <div className="w-5.5 h-5.5 rotate-45 rounded-[4px] border border-emerald-500/40 bg-emerald-500/10 flex items-center justify-center shadow-xs">
+                                <span className="-rotate-45 text-[10px] text-emerald-500 font-bold select-none">
+                                  ✦
+                                </span>
+                              </div>
+                            </Link>
+                          )}
                           <div>
                             <Link
                               href={folioHref}
@@ -494,12 +508,26 @@ export default async function ThinkerPage({ params }: PageProps) {
                     >
                       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                         <div className="flex items-center gap-2.5">
-                          <Link
-                            href={folioHref}
-                            className="w-8 h-8 rounded-full border border-[var(--border-strong)] bg-[var(--bg-subtle)] flex items-center justify-center font-serif text-xs font-bold text-[var(--gold-accent)] hover:scale-105 transition shrink-0"
-                          >
-                            {getNodeMonogram(nodeName)}
-                          </Link>
+                          {isPhil ? (
+                            <Link
+                              href={folioHref}
+                              className="w-8 h-8 rounded-full border border-[var(--border-strong)] bg-[var(--bg-subtle)] flex items-center justify-center font-serif text-xs font-bold text-[var(--gold-accent)] hover:scale-105 transition shrink-0"
+                            >
+                              {getNodeMonogram(nodeName)}
+                            </Link>
+                          ) : (
+                            <Link
+                              href={folioHref}
+                              className="w-8 h-8 flex items-center justify-center shrink-0 hover:scale-105 transition"
+                              title="Philosophical Concept (Diamond Tablet)"
+                            >
+                              <div className="w-5.5 h-5.5 rotate-45 rounded-[4px] border border-emerald-500/40 bg-emerald-500/10 flex items-center justify-center shadow-xs">
+                                <span className="-rotate-45 text-[10px] text-emerald-500 font-bold select-none">
+                                  ✦
+                                </span>
+                              </div>
+                            </Link>
+                          )}
                           <div>
                             <Link
                               href={folioHref}

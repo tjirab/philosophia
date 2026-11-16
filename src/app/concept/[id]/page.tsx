@@ -139,41 +139,59 @@ export default async function ConceptPage({ params }: PageProps) {
         </div>
 
         {/* Hero Header */}
-        <div className="space-y-4">
-          <div className="flex flex-wrap items-center gap-2.5">
-            <span className="text-xs font-mono uppercase px-3 py-1 rounded-full border border-[var(--gold-border)] bg-[var(--bg-subtle)] text-[var(--gold-accent)] font-semibold">
-              ✦ {formatBranchName(concept.branch)}
-            </span>
-            {era && (
-              <span
-                className="text-xs font-mono uppercase px-3 py-1 rounded-full text-white font-semibold shadow-xs"
-                style={{ backgroundColor: era.color }}
-              >
-                {era.name}
+        <div className="flex flex-col sm:flex-row items-start gap-6">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 shrink-0 flex items-center justify-center">
+            <div
+              className="w-14 h-14 sm:w-16 sm:h-16 rotate-45 rounded-xl border-2 shadow-lg flex items-center justify-center bg-[var(--bg-subtle)]"
+              style={{
+                backgroundColor: `${era?.color || '#2a9d8f'}22`,
+                borderColor: era?.color || '#2a9d8f',
+                boxShadow: `0 4px 16px -2px ${era?.color ? era.color + '40' : 'rgba(42, 157, 143, 0.3)'}`,
+              }}
+              title="Philosophical Concept (Diamond Tablet)"
+            >
+              <span className="-rotate-45 text-2xl font-bold select-none text-[var(--gold-accent)]">
+                ✦
               </span>
-            )}
-            {domain && (
-              <span
-                className={`text-xs font-mono uppercase px-3 py-1 rounded-full border font-semibold ${
-                  domain === 'psychology'
-                    ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
-                    : domain === 'sociology'
-                    ? 'bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/30'
-                    : 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/30'
-                }`}
-              >
-                {domain}
-              </span>
-            )}
+            </div>
           </div>
 
-          <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-[var(--text-main)] leading-tight">
-            {concept.title}
-          </h1>
+          <div className="space-y-4 flex-1 min-w-0">
+            <div className="flex flex-wrap items-center gap-2.5">
+              <span className="text-xs font-mono uppercase px-3 py-1 rounded-full border border-[var(--gold-border)] bg-[var(--bg-subtle)] text-[var(--gold-accent)] font-semibold">
+                ✦ {formatBranchName(concept.branch)}
+              </span>
+              {era && (
+                <span
+                  className="text-xs font-mono uppercase px-3 py-1 rounded-full text-white font-semibold shadow-xs"
+                  style={{ backgroundColor: era.color }}
+                >
+                  {era.name}
+                </span>
+              )}
+              {domain && (
+                <span
+                  className={`text-xs font-mono uppercase px-3 py-1 rounded-full border font-semibold ${
+                    domain === 'psychology'
+                      ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
+                      : domain === 'sociology'
+                      ? 'bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/30'
+                      : 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/30'
+                  }`}
+                >
+                  {domain}
+                </span>
+              )}
+            </div>
 
-          <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed italic">
-            {concept.summary}
-          </p>
+            <h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-[var(--text-main)] leading-tight">
+              {concept.title}
+            </h1>
+
+            <p className="text-base sm:text-lg text-[var(--text-muted)] leading-relaxed italic">
+              {concept.summary}
+            </p>
+          </div>
         </div>
 
         {/* Formulating Thinker Card */}
