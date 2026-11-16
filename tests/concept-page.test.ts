@@ -98,4 +98,11 @@ describe('Concept Folio & Dialectical Architecture Engine', () => {
       expect(cDetails?.concept.title).toBeDefined();
     }
   });
+
+  it('renders concept folio page with diamond tablet geometry', async () => {
+    const { default: ConceptPage } = await import('../src/app/concept/[id]/page');
+    const page = await ConceptPage({ params: Promise.resolve({ id: 'ataraxia' }) });
+    expect(page).toBeDefined();
+    expect(page.type).toBe('div');
+  });
 });

@@ -300,6 +300,24 @@ export function DossierDrawer({
             </div>
           )}
 
+          {!isPhilosopher && conc && (
+            <div className="relative shrink-0 w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center">
+              <div
+                className="w-14 h-14 sm:w-16 sm:h-16 rotate-45 rounded-xl border-2 shadow-lg flex items-center justify-center bg-[var(--bg-subtle)]"
+                style={{
+                  borderColor: details.era?.color || '#2a9d8f',
+                  backgroundColor: `${details.era?.color || '#2a9d8f'}22`,
+                  boxShadow: `0 4px 16px -2px ${details.era?.color ? details.era.color + '40' : 'rgba(42, 157, 143, 0.3)'}`,
+                }}
+                title="Philosophical Concept (Diamond Tablet)"
+              >
+                <span className="-rotate-45 text-2xl font-bold select-none text-[var(--gold-accent)]">
+                  ✦
+                </span>
+              </div>
+            </div>
+          )}
+
           <div className="flex-1 min-w-0">
             <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[var(--text-main)] tracking-tight">
               {isPhilosopher ? phil?.name : (conc?.title || (conc as any)?.name || 'Concept')}
@@ -864,8 +882,10 @@ export function DossierDrawer({
                           </span>
                         </div>
                       ) : (
-                        <div className="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0">
-                          <Sparkles className="w-3 h-3 text-emerald-500" />
+                        <div className="w-5 h-5 flex items-center justify-center shrink-0" title="Concept Diamond">
+                          <div className="w-3.5 h-3.5 rotate-45 rounded-[2px] bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center shadow-xs">
+                            <span className="-rotate-45 text-[8px] text-emerald-500 font-bold leading-none select-none">✦</span>
+                          </div>
                         </div>
                       )}
                       <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition truncate">
@@ -1010,8 +1030,10 @@ export function DossierDrawer({
                           </span>
                         </div>
                       ) : (
-                        <div className="w-5 h-5 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0">
-                          <Sparkles className="w-3 h-3 text-emerald-500" />
+                        <div className="w-5 h-5 flex items-center justify-center shrink-0" title="Concept Diamond">
+                          <div className="w-3.5 h-3.5 rotate-45 rounded-[2px] bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center shadow-xs">
+                            <span className="-rotate-45 text-[8px] text-emerald-500 font-bold leading-none select-none">✦</span>
+                          </div>
                         </div>
                       )}
                       <span className="text-xs font-bold text-[var(--text-main)] group-hover:text-[var(--gold-accent)] transition truncate">

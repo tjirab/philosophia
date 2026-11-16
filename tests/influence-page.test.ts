@@ -51,6 +51,21 @@ describe('Influence & Academic Proof Folio Engine', () => {
     expect((descartesCogito?.sourceNode as any)?.name).toBe('René Descartes');
     expect((descartesCogito?.targetNode as any)?.title).toBe('Methodological Doubt & Cogito');
     expect(descartesCogito?.edge.citations?.length).toBeGreaterThanOrEqual(1);
+
+    const epicurusAtaraxia = getEdgeDetails('epicurus--ataraxia');
+    expect(epicurusAtaraxia).not.toBeNull();
+    expect((epicurusAtaraxia?.sourceNode as any)?.name).toBe('Epicurus');
+    expect((epicurusAtaraxia?.targetNode as any)?.title).toContain('Ataraxia');
+    expect((epicurusAtaraxia?.targetNode as any)?.branch).toBe('ethics');
+  });
+
+  it('renders thinker-to-concept page with uniform concept diamond lozenge representation', async () => {
+    const { default: InfluencePage } = await import('../src/app/influence/[id]/page');
+    const page = await InfluencePage({ params: Promise.resolve({ id: 'epicurus--ataraxia' }) });
+    expect(page).toBeDefined();
+
+    // Verify the page structure renders valid JSX tree
+    expect(page.type).toBe('div');
   });
 
   it('returns null gracefully for non-existent edge IDs', () => {

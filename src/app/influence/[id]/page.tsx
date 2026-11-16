@@ -155,29 +155,48 @@ export default async function InfluencePage({ params }: PageProps) {
           </p>
         </div>
 
-        {/* Grand Thinker Dyad Display */}
+        {/* Grand Dyad Display */}
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-6 p-6 sm:p-8 bg-[var(--bg-card)] border border-[var(--border-strong)] rounded-2xl shadow-xl">
-          {/* Thinker 1 (Source) */}
+          {/* Node 1 (Source) */}
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left space-y-3">
-            <div
-              className="w-20 h-20 rounded-full border-2 border-[var(--border-strong)] overflow-hidden flex items-center justify-center font-serif text-2xl font-bold shadow-md"
-              style={{
-                backgroundColor: `${sourceTradition?.color || sourceEra?.color || '#3b82f6'}22`,
-                borderColor: sourceTradition?.color || sourceEra?.color || '#3b82f6',
-                color: sourceTradition?.color || sourceEra?.color || '#3b82f6',
-              }}
-            >
-              {sourcePhil?.imageUrl ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={getAssetUrl(sourcePhil.imageUrl)}
-                  alt={sourceName}
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                getNodeMonogram(sourceName)
-              )}
-            </div>
+            {isSourcePhil ? (
+              <div
+                className="w-20 h-20 rounded-full border-2 border-[var(--border-strong)] overflow-hidden flex items-center justify-center font-serif text-2xl font-bold shadow-md"
+                style={{
+                  backgroundColor: `${sourceTradition?.color || sourceEra?.color || '#3b82f6'}22`,
+                  borderColor: sourceTradition?.color || sourceEra?.color || '#3b82f6',
+                  color: sourceTradition?.color || sourceEra?.color || '#3b82f6',
+                }}
+              >
+                {sourcePhil?.imageUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={getAssetUrl(sourcePhil.imageUrl)}
+                    alt={sourceName}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  getNodeMonogram(sourceName)
+                )}
+              </div>
+            ) : (
+              <div className="w-20 h-20 flex items-center justify-center shrink-0">
+                <div
+                  className="w-14 h-14 rotate-45 rounded-xl border-2 shadow-md flex items-center justify-center bg-[var(--bg-subtle)]"
+                  style={{
+                    backgroundColor: `${sourceEra?.color || '#2a9d8f'}22`,
+                    borderColor: sourceEra?.color || '#2a9d8f',
+                    color: sourceEra?.color || '#2a9d8f',
+                    boxShadow: `0 4px 14px -2px ${sourceEra?.color ? sourceEra.color + '40' : 'rgba(42, 157, 143, 0.3)'}`,
+                  }}
+                  title="Philosophical Concept (Diamond Tablet)"
+                >
+                  <span className="-rotate-45 text-2xl font-bold select-none text-[var(--gold-accent)]">
+                    ✦
+                  </span>
+                </div>
+              </div>
+            )}
 
             <div>
               <div className="text-[11px] font-mono uppercase tracking-widest text-[var(--text-dim)]">
@@ -227,6 +246,11 @@ export default async function InfluencePage({ params }: PageProps) {
                   {sourceTradition.name}
                 </span>
               )}
+              {!isSourcePhil && (sourceNode as Concept)?.branch && (
+                <span className="inline-block mt-2 text-[10px] font-mono uppercase px-2 py-0.5 rounded border border-[var(--gold-border)] bg-[var(--bg-subtle)] text-[var(--gold-accent)]">
+                  ✦ {((sourceNode as Concept).branch || '').replace('-', ' ')}
+                </span>
+              )}
             </div>
 
             {sourcePhil?.centralQuestion && (
@@ -246,27 +270,46 @@ export default async function InfluencePage({ params }: PageProps) {
             </span>
           </div>
 
-          {/* Thinker 2 (Target) */}
+          {/* Node 2 (Target) */}
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left space-y-3">
-            <div
-              className="w-20 h-20 rounded-full border-2 border-[var(--border-strong)] overflow-hidden flex items-center justify-center font-serif text-2xl font-bold shadow-md"
-              style={{
-                backgroundColor: `${targetTradition?.color || targetEra?.color || '#0d9488'}22`,
-                borderColor: targetTradition?.color || targetEra?.color || '#0d9488',
-                color: targetTradition?.color || targetEra?.color || '#0d9488',
-              }}
-            >
-              {targetPhil?.imageUrl ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={getAssetUrl(targetPhil.imageUrl)}
-                  alt={targetName}
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                getNodeMonogram(targetName)
-              )}
-            </div>
+            {isTargetPhil ? (
+              <div
+                className="w-20 h-20 rounded-full border-2 border-[var(--border-strong)] overflow-hidden flex items-center justify-center font-serif text-2xl font-bold shadow-md"
+                style={{
+                  backgroundColor: `${targetTradition?.color || targetEra?.color || '#0d9488'}22`,
+                  borderColor: targetTradition?.color || targetEra?.color || '#0d9488',
+                  color: targetTradition?.color || targetEra?.color || '#0d9488',
+                }}
+              >
+                {targetPhil?.imageUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={getAssetUrl(targetPhil.imageUrl)}
+                    alt={targetName}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  getNodeMonogram(targetName)
+                )}
+              </div>
+            ) : (
+              <div className="w-20 h-20 flex items-center justify-center shrink-0">
+                <div
+                  className="w-14 h-14 rotate-45 rounded-xl border-2 shadow-md flex items-center justify-center bg-[var(--bg-subtle)]"
+                  style={{
+                    backgroundColor: `${targetEra?.color || '#0d9488'}22`,
+                    borderColor: targetEra?.color || '#0d9488',
+                    color: targetEra?.color || '#0d9488',
+                    boxShadow: `0 4px 14px -2px ${targetEra?.color ? targetEra.color + '40' : 'rgba(13, 148, 136, 0.3)'}`,
+                  }}
+                  title="Philosophical Concept (Diamond Tablet)"
+                >
+                  <span className="-rotate-45 text-2xl font-bold select-none text-[var(--gold-accent)]">
+                    ✦
+                  </span>
+                </div>
+              </div>
+            )}
 
             <div>
               <div className="text-[11px] font-mono uppercase tracking-widest text-[var(--text-dim)]">
@@ -314,6 +357,11 @@ export default async function InfluencePage({ params }: PageProps) {
               {targetTradition && (
                 <span className="inline-block mt-2 text-[10px] font-mono px-2 py-0.5 rounded border border-[var(--border-main)] bg-[var(--bg-subtle)] text-[var(--text-dim)]">
                   {targetTradition.name}
+                </span>
+              )}
+              {!isTargetPhil && (targetNode as Concept)?.branch && (
+                <span className="inline-block mt-2 text-[10px] font-mono uppercase px-2 py-0.5 rounded border border-[var(--gold-border)] bg-[var(--bg-subtle)] text-[var(--gold-accent)]">
+                  ✦ {((targetNode as Concept).branch || '').replace('-', ' ')}
                 </span>
               )}
             </div>
