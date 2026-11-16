@@ -130,7 +130,9 @@ export default async function ThinkerPage({ params }: PageProps) {
             Constellation
           </Link>
           <span>/</span>
-          <span>Thinkers</span>
+          <Link href="/thinkers" className="hover:underline hover:text-[var(--gold-accent)] transition">
+            Thinkers
+          </Link>
           <span>/</span>
           <span className="text-[var(--gold-accent)] font-semibold truncate">
             {thinker.name}

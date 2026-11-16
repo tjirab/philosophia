@@ -125,7 +125,9 @@ export default async function InfluencePage({ params }: PageProps) {
             Constellation
           </Link>
           <span>/</span>
-          <span>Lineages</span>
+          <Link href="/lineages" className="hover:underline hover:text-[var(--gold-accent)] transition">
+            Lineages
+          </Link>
           <span>/</span>
           <span className="text-[var(--gold-accent)] font-semibold truncate">
             {sourceName} ➔ {targetName}
