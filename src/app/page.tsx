@@ -32,14 +32,24 @@ import { GlobalAudioPlayer } from '../components/audio/GlobalAudioPlayer';
 
 function HomePageContent() {
   const searchParams = useSearchParams();
-  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
-  const [selectedEdgeId, setSelectedEdgeId] = useState<string | null>(null);
+  const initialEdge = searchParams.get('focusEdge') || searchParams.get('edge');
+  const initialNode = searchParams.get('node');
+  const initialEdgeObj = initialEdge
+    ? edges.find((e) => e.id === initialEdge || `${e.source}--${e.target}` === initialEdge)
+    : undefined;
+  const isInitialConcept = Boolean(
+    (initialNode && concepts.some((c) => c.id === initialNode)) ||
+    (initialEdgeObj && concepts.some((c) => c.id === initialEdgeObj.source || c.id === initialEdgeObj.target))
+  );
+
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(initialNode || null);
+  const [selectedEdgeId, setSelectedEdgeId] = useState<string | null>(initialEdge || null);
   const [selectedEraId, setSelectedEraId] = useState<string>('all');
   const [isolateEra, setIsolateEra] = useState<boolean>(true);
   const [selectedDomain, setSelectedDomain] = useState<DomainId | 'all'>('all');
   const [interdisciplinaryOnly, setInterdisciplinaryOnly] = useState<boolean>(false);
   const [selectedBranch, setSelectedBranch] = useState<Branch | 'all'>('all');
-  const [showConcepts, setShowConcepts] = useState<boolean>(false);
+  const [showConcepts, setShowConcepts] = useState<boolean>(isInitialConcept);
   const [isExplorationMode, setIsExplorationMode] = useState<boolean>(false);
   const [explorationFilter, setExplorationFilter] = useState<ExplorationState | 'all'>('all');
   const [methodology, setMethodology] = useState<ScoringMethodology>('canonical');
@@ -72,11 +82,34 @@ function HomePageContent() {
         if (concepts.some((c) => c.id === nodeParam)) {
           setShowConcepts(true);
         }
+        const phil = philosophers.find((p) => p.id === nodeParam);
+        if (phil && selectedEraId !== 'all' && phil.eraId !== selectedEraId) {
+          setSelectedEraId('all');
+        }
+        const conc = concepts.find((c) => c.id === nodeParam);
+        if (conc && selectedEraId !== 'all' && conc.eraId !== selectedEraId) {
+          setSelectedEraId('all');
+        }
+        if (phil && selectedDomain !== 'all') {
+          const pDomains = phil.domains || ['philosophy'];
+          if (!pDomains.includes(selectedDomain)) {
+            setSelectedDomain('all');
+          }
+        }
+        if (conc && selectedDomain !== 'all') {
+          const cDomains = conc.domainId ? [conc.domainId] : ['philosophy'];
+          if (!cDomains.includes(selectedDomain)) {
+            setSelectedDomain('all');
+          }
+        }
+        if (conc && selectedBranch !== 'all' && conc.branch !== selectedBranch) {
+          setSelectedBranch('all');
+        }
       }
     };
 
     syncFromUrl();
-  }, [searchParams]);
+  }, [searchParams, selectedEraId, selectedDomain, selectedBranch]);
 
   useEffect(() => {
     const handlePopState = () => {
@@ -97,12 +130,35 @@ function HomePageContent() {
           if (concepts.some((c) => c.id === node)) {
             setShowConcepts(true);
           }
+          const phil = philosophers.find((p) => p.id === node);
+          if (phil && selectedEraId !== 'all' && phil.eraId !== selectedEraId) {
+            setSelectedEraId('all');
+          }
+          const conc = concepts.find((c) => c.id === node);
+          if (conc && selectedEraId !== 'all' && conc.eraId !== selectedEraId) {
+            setSelectedEraId('all');
+          }
+          if (phil && selectedDomain !== 'all') {
+            const pDomains = phil.domains || ['philosophy'];
+            if (!pDomains.includes(selectedDomain)) {
+              setSelectedDomain('all');
+            }
+          }
+          if (conc && selectedDomain !== 'all') {
+            const cDomains = conc.domainId ? [conc.domainId] : ['philosophy'];
+            if (!cDomains.includes(selectedDomain)) {
+              setSelectedDomain('all');
+            }
+          }
+          if (conc && selectedBranch !== 'all' && conc.branch !== selectedBranch) {
+            setSelectedBranch('all');
+          }
         }
       }
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
+  }, [selectedEraId, selectedDomain, selectedBranch]);
 
   // Keyboard shortcut listener for Search (Cmd+K / Ctrl+K)
   useEffect(() => {
@@ -192,9 +248,18 @@ function HomePageContent() {
             setSelectedDomain('all');
           }
         }
+        if (conc && selectedDomain !== 'all') {
+          const cDomains = conc.domainId ? [conc.domainId] : ['philosophy'];
+          if (!cDomains.includes(selectedDomain)) {
+            setSelectedDomain('all');
+          }
+        }
+        if (conc && selectedBranch !== 'all' && conc.branch !== selectedBranch) {
+          setSelectedBranch('all');
+        }
       }
     },
-    [selectedEraId, selectedDomain]
+    [selectedEraId, selectedDomain, selectedBranch]
   );
 
   const handleSelectEdge = useCallback((edgeId: string | null) => {
