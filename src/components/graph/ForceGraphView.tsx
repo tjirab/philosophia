@@ -363,19 +363,22 @@ export function ForceGraphView({
   // Initial camera fit once nodes settle into their spacious layout
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (fgRef.current && !hasInitialFitRef.current) {
+      if (fgRef.current && !hasInitialFitRef.current && !selectedNodeId && !selectedEdgeId) {
         fgRef.current.zoomToFit(prefersReducedMotion ? 0 : 700, 100);
       }
     }, 600);
     return () => clearTimeout(timer);
-  }, [prefersReducedMotion]);
+  }, [prefersReducedMotion, selectedNodeId, selectedEdgeId]);
 
   // When selectedNodeId changes, center camera on it with viewport-aware framing (avoiding drawer occlusion)
   useEffect(() => {
-    if (!selectedNodeId || !fgRef.current) return;
+    if (!selectedNodeId) return;
+
+    let animId: number;
+    let cancelled = false;
 
     const centerCamera = (animDuration?: number) => {
-      if (!fgRef.current || !selectedNodeId) return;
+      if (cancelled || !fgRef.current || !selectedNodeId) return;
 
       const liveNodes = fgRef.current.graphData?.()?.nodes;
       const liveNode = liveNodes?.find((n: any) => n.id === selectedNodeId);
@@ -405,14 +408,24 @@ export function ForceGraphView({
       }
     };
 
-    // Center immediately on current coordinates
-    centerCamera();
+    const attemptCenter = () => {
+      if (cancelled) return;
+      if (fgRef.current) {
+        centerCamera();
+      } else {
+        animId = requestAnimationFrame(attemptCenter);
+      }
+    };
+
+    attemptCenter();
 
     // Re-align after physics engine simulation ticks and drawer transition progress
     const timer1 = setTimeout(() => centerCamera(prefersReducedMotion ? 0 : 350), 250);
     const timer2 = setTimeout(() => centerCamera(0), 600);
 
     return () => {
+      cancelled = true;
+      cancelAnimationFrame(animId);
       clearTimeout(timer1);
       clearTimeout(timer2);
     };
@@ -429,54 +442,70 @@ export function ForceGraphView({
 
   // When selectedEdgeId changes, center and zoom camera on the connection between source and target with viewport-aware framing
   useEffect(() => {
-    if (selectedEdgeId && fgRef.current && selectedEdgeEndpoints) {
-      const centerOnEdge = (animDuration?: number) => {
-        const liveNodes = fgRef.current?.graphData?.()?.nodes;
-        const srcLive = liveNodes?.find((n: any) => n.id === selectedEdgeEndpoints.source);
-        const tgtLive = liveNodes?.find((n: any) => n.id === selectedEdgeEndpoints.target);
-        const srcCached = nodeCoordinatesRef.current.get(selectedEdgeEndpoints.source);
-        const tgtCached = nodeCoordinatesRef.current.get(selectedEdgeEndpoints.target);
-        const srcProp = stabilizedNodes.find((n) => n.id === selectedEdgeEndpoints.source) || nodes.find((n) => n.id === selectedEdgeEndpoints.source);
-        const tgtProp = stabilizedNodes.find((n) => n.id === selectedEdgeEndpoints.target) || nodes.find((n) => n.id === selectedEdgeEndpoints.target);
+    if (!selectedEdgeId || !selectedEdgeEndpoints) return;
 
-        const srcX = srcLive?.x ?? srcCached?.x ?? srcProp?.x;
-        const srcY = srcLive?.y ?? srcCached?.y ?? srcProp?.y;
-        const tgtX = tgtLive?.x ?? tgtCached?.x ?? tgtProp?.x;
-        const tgtY = tgtLive?.y ?? tgtCached?.y ?? tgtProp?.y;
+    let animId: number;
+    let cancelled = false;
 
-        if (
-          typeof srcX === 'number' &&
-          typeof srcY === 'number' &&
-          typeof tgtX === 'number' &&
-          typeof tgtY === 'number' &&
-          Number.isFinite(srcX) &&
-          Number.isFinite(srcY) &&
-          Number.isFinite(tgtX) &&
-          Number.isFinite(tgtY)
-        ) {
-          const midX = (srcX + tgtX) / 2;
-          const midY = (srcY + tgtY) / 2;
-          hasInitialFitRef.current = true;
-          const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
-          const isTablet = typeof window !== 'undefined' && window.innerWidth >= 640 && window.innerWidth < 1024;
-          const drawerWidth = isDesktop ? 620 : isTablet ? 560 : 0;
-          const targetZoom = 2.5;
-          const offsetX = (drawerWidth / 2) / targetZoom;
-          const duration = animDuration !== undefined ? animDuration : (prefersReducedMotion ? 0 : 800);
+    const centerOnEdge = (animDuration?: number) => {
+      if (cancelled || !fgRef.current) return;
+      const liveNodes = fgRef.current?.graphData?.()?.nodes;
+      const srcLive = liveNodes?.find((n: any) => n.id === selectedEdgeEndpoints.source);
+      const tgtLive = liveNodes?.find((n: any) => n.id === selectedEdgeEndpoints.target);
+      const srcCached = nodeCoordinatesRef.current.get(selectedEdgeEndpoints.source);
+      const tgtCached = nodeCoordinatesRef.current.get(selectedEdgeEndpoints.target);
+      const srcProp = stabilizedNodes.find((n) => n.id === selectedEdgeEndpoints.source) || nodes.find((n) => n.id === selectedEdgeEndpoints.source);
+      const tgtProp = stabilizedNodes.find((n) => n.id === selectedEdgeEndpoints.target) || nodes.find((n) => n.id === selectedEdgeEndpoints.target);
 
-          fgRef.current.centerAt(midX + offsetX, midY, duration);
-          fgRef.current.zoom(targetZoom, duration);
-        }
-      };
+      const srcX = srcLive?.x ?? srcCached?.x ?? srcProp?.x;
+      const srcY = srcLive?.y ?? srcCached?.y ?? srcProp?.y;
+      const tgtX = tgtLive?.x ?? tgtCached?.x ?? tgtProp?.x;
+      const tgtY = tgtLive?.y ?? tgtCached?.y ?? tgtProp?.y;
 
-      centerOnEdge();
-      const t1 = setTimeout(() => centerOnEdge(prefersReducedMotion ? 0 : 350), 200);
-      const t2 = setTimeout(() => centerOnEdge(0), 600);
-      return () => {
-        clearTimeout(t1);
-        clearTimeout(t2);
-      };
-    }
+      if (
+        typeof srcX === 'number' &&
+        typeof srcY === 'number' &&
+        typeof tgtX === 'number' &&
+        typeof tgtY === 'number' &&
+        Number.isFinite(srcX) &&
+        Number.isFinite(srcY) &&
+        Number.isFinite(tgtX) &&
+        Number.isFinite(tgtY)
+      ) {
+        const midX = (srcX + tgtX) / 2;
+        const midY = (srcY + tgtY) / 2;
+        hasInitialFitRef.current = true;
+        const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
+        const isTablet = typeof window !== 'undefined' && window.innerWidth >= 640 && window.innerWidth < 1024;
+        const drawerWidth = isDesktop ? 620 : isTablet ? 560 : 0;
+        const targetZoom = 2.5;
+        const offsetX = (drawerWidth / 2) / targetZoom;
+        const duration = animDuration !== undefined ? animDuration : (prefersReducedMotion ? 0 : 800);
+
+        fgRef.current.centerAt(midX + offsetX, midY, duration);
+        fgRef.current.zoom(targetZoom, duration);
+      }
+    };
+
+    const attemptCenter = () => {
+      if (cancelled) return;
+      if (fgRef.current) {
+        centerOnEdge();
+      } else {
+        animId = requestAnimationFrame(attemptCenter);
+      }
+    };
+
+    attemptCenter();
+
+    const t1 = setTimeout(() => centerOnEdge(prefersReducedMotion ? 0 : 350), 200);
+    const t2 = setTimeout(() => centerOnEdge(0), 600);
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(animId);
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
   }, [selectedEdgeId, selectedEdgeEndpoints, stabilizedNodes, nodes, prefersReducedMotion]);
 
   const pathNodeSet = useMemo(() => new Set(highlightedPathNodes), [highlightedPathNodes]);

@@ -254,7 +254,7 @@ export default async function ConceptPage({ params }: PageProps) {
                       className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] rounded-lg text-xs font-sans text-[var(--text-main)] transition shrink-0"
                     >
                       <Compass className="w-3.5 h-3.5 text-[var(--gold-accent)]" />
-                      <span>Locate in Graph</span>
+                      <span>Locate Thinker in Graph</span>
                     </Link>
                   </div>
                 </div>
