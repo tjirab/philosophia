@@ -76,6 +76,8 @@ const WIKI_TITLES = {
   'emmanuel-levinas': 'Emmanuel_Levinas',
   'maurice-merleau-ponty': 'Maurice_Merleau-Ponty',
   'carl-schmitt': 'Carl_Schmitt',
+  'ernst-cassirer': 'Ernst_Cassirer',
+  'leo-strauss': 'Leo_Strauss',
   'hannah-arendt': 'Hannah_Arendt',
   'john-rawls': 'John_Rawls',
   'michel-foucault': 'Michel_Foucault',

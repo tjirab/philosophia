@@ -1,0 +1,43 @@
+{
+  "id": "leo-strauss",
+  "name": "Leo Strauss",
+  "birthYear": 1899,
+  "deathYear": 1973,
+  "eraId": "twentieth-century",
+  "traditionId": "classical-rationalism",
+  "shortBio": "German-American political philosopher who revitalized classical political rationalism against modern historicism and positivism, unearthing the art of esoteric writing and illuminating the perpetual tension between Athens (reason) and Jerusalem (revelation).",
+  "centralQuestion": "Can classical political rationalism rescue Western civilization from the relativistic crisis of modernity and the nihilistic loss of natural right?",
+  "keyWorks": [
+    {
+      "title": "Persecution and the Art of Writing",
+      "year": "1952",
+      "url": "https://en.wikipedia.org/wiki/Persecution_and_the_Art_of_Writing",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Persecution_and_the_Art_of_Writing",
+      "description": "Groundbreaking hermeneutic study demonstrating that pre-modern philosophical masters wrote with exoteric surface teachings for the public and esoteric messages between the lines for philosophical readers."
+    },
+    {
+      "title": "Natural Right and History",
+      "year": "1953",
+      "url": "https://en.wikipedia.org/wiki/Natural_Right_and_History",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Natural_Right_and_History",
+      "description": "Masterwork tracing the intellectual trajectory from classical teleological natural right (Plato, Aristotle) to the modern crisis of relativism initiated by Machiavelli, Hobbes, and Weber."
+    },
+    {
+      "title": "Thoughts on Machiavelli",
+      "year": "1958",
+      "url": "https://en.wikipedia.org/wiki/Thoughts_on_Machiavelli",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Thoughts_on_Machiavelli",
+      "description": "Controversial and meticulous reading identifying Machiavelli as the conscious initiator of the modern break with classical moral teleology and virtue."
+    },
+    {
+      "title": "The City and Man",
+      "year": "1964",
+      "url": "https://en.wikipedia.org/wiki/The_City_and_Man",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_City_and_Man",
+      "description": "Profound close readings of Aristotle's Politics, Plato's Republic, and Thucydides' Peloponnesian War reconstructing classical civic and philosophical horizons."
+    }
+  ],
+  "sepSlug": "strauss-leo",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/leo-strauss.jpg"
+}
