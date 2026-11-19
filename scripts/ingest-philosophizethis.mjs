@@ -71,6 +71,8 @@ const PHILOSOPHER_MATCHERS = [
   { id: 'gilles-deleuze', patterns: [/\bdeleuze\b/i, /\brhizome\b/i] },
   { id: 'hannah-arendt', patterns: [/\barendt\b/i, /\bbanality of evil\b/i] },
   { id: 'carl-schmitt', patterns: [/\bcarl schmitt\b/i, /\bschmitt\b/i] },
+  { id: 'ernst-cassirer', patterns: [/\bcassirer\b/i, /\bsymbolic forms\b/i] },
+  { id: 'leo-strauss', patterns: [/\bleo strauss\b/i, /\bstraussian\b/i] },
   { id: 'john-rawls', patterns: [/\brawls\b/i, /\bveil of ignorance\b/i] },
   { id: 'byung-chul-han', patterns: [/\bbyung-chul han\b/i, /\bbyung chul han\b/i, /\bburnout society\b/i] },
   { id: 'jean-baudrillard', patterns: [/\bbaudrillard\b/i, /\bsimulacr\b/i, /\bhyperreal\b/i] },

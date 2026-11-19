@@ -1,0 +1,219 @@
+[
+  {
+    "id": "leo-strauss--esoteric-writing",
+    "source": "leo-strauss",
+    "target": "esoteric-writing",
+    "type": "DEVELOPED",
+    "label": "Formulated the doctrine of esoteric and exoteric writing under persecution",
+    "strength": 5,
+    "description": "Leo Strauss articulated the hermeneutic concept of 'The Art of Esoteric Writing', arguing that pre-modern philosophers wrote with double meanings to philosophize freely while protecting social order.",
+    "dialecticalTension": "Rejecting historicist surface reading by demonstrating that canonical texts contain veiled teachings decipherable only through attentiveness to omissions, contradictions, and dramatic irony.",
+    "historicalContext": "Introduced in his 1941 article and expanded in his 1952 book Persecution and the Art of Writing.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Leo Strauss",
+        "sectionOrPage": "Esotericism",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/strauss-leo/"
+      },
+      {
+        "citationType": "primary",
+        "author": "Leo Strauss",
+        "work": "Persecution and the Art of Writing",
+        "year": "1952"
+      }
+    ]
+  },
+  {
+    "id": "plato--leo-strauss",
+    "source": "plato",
+    "target": "leo-strauss",
+    "type": "DEVELOPED",
+    "label": "Revival of Platonic political philosophy against modern historicist relativism",
+    "strength": 5,
+    "description": "Strauss made Platonic political philosophy the cornerstone of his thought, demonstrating that the Socratic inquiry into the good and the just represents the pinnacle of philosophic wisdom uncorrupted by modern progressivism.",
+    "dialecticalTension": "Platonic quest for timeless truth and natural right versus modern historicism's reduction of philosophy to its temporal epoch.",
+    "historicalContext": "Elaborated across Strauss's lectures at Chicago and published in The City and Man (1964) and Studies in Platonic Political Philosophy (1983).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Leo Strauss",
+        "sectionOrPage": "Return to Classical Political Philosophy",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/strauss-leo/"
+      },
+      {
+        "citationType": "primary",
+        "author": "Leo Strauss",
+        "work": "The City and Man",
+        "year": "1964"
+      }
+    ]
+  },
+  {
+    "id": "moses-maimonides--leo-strauss",
+    "source": "moses-maimonides",
+    "target": "leo-strauss",
+    "type": "DEVELOPED",
+    "label": "Hermeneutic discovery of esotericism and the Theologico-Political Problem",
+    "strength": 5,
+    "description": "Strauss discovered his hermeneutic key of esoteric writing through his study of Maimonides' Guide for the Perplexed, realizing that medieval Islamic and Jewish philosophers harmonized revelation and philosophy through veiled writing.",
+    "dialecticalTension": "The insoluble dialectic between Jerusalem (unquestioning divine obedience/revelation) and Athens (autonomous philosophical inquiry/reason).",
+    "historicalContext": "Formulated in Strauss's 1935 Berlin work Philosophie und Gesetz and maintained as his central lifelong question.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Leo Strauss",
+        "work": "Philosophy and Law: Contributions to the Understanding of Maimonides and His Predecessors",
+        "year": "1935"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Leo Strauss",
+        "sectionOrPage": "Medieval Jewish and Islamic Philosophy",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/strauss-leo/"
+      }
+    ]
+  },
+  {
+    "id": "machiavelli--leo-strauss",
+    "source": "machiavelli",
+    "target": "leo-strauss",
+    "type": "CRITIQUED",
+    "label": "Identified Machiavelli as initiator of the first wave of modern political degeneration",
+    "strength": 5,
+    "description": "In Thoughts on Machiavelli, Strauss indicted Machiavelli as the 'teacher of evil' who broke with classical virtue, lowering the goals of politics from noble human flourishing to realistic survival and power calculation.",
+    "dialecticalTension": "Classical teleological virtue and justice versus modern realism, techne, and mastery of fortune.",
+    "historicalContext": "Published in 1958 based on Strauss's lectures at the University of Chicago.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Leo Strauss",
+        "work": "Thoughts on Machiavelli",
+        "year": "1958"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Daniel Tanguay",
+        "work": "Leo Strauss: An Intellectual Biography",
+        "year": "2007"
+      }
+    ]
+  },
+  {
+    "id": "thomas-hobbes--leo-strauss",
+    "source": "thomas-hobbes",
+    "target": "leo-strauss",
+    "type": "CRITIQUED",
+    "label": "Diagnosed Hobbesian political science as founding rights on the fear of death",
+    "strength": 5,
+    "description": "Strauss's breakthrough 1936 monograph on Hobbes proved that modern bourgeois natural right originates in Hobbes's replacement of classical natural law with an individual passion—the terror of violent death.",
+    "dialecticalTension": "Classical duty toward perfection in the polis versus modern individual self-preservation and contractarian security.",
+    "historicalContext": "Written during Strauss's exile in England and published as The Political Philosophy of Hobbes (1936).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Leo Strauss",
+        "work": "The Political Philosophy of Hobbes: Its Basis and Its Genesis",
+        "year": "1936"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Leo Strauss",
+        "sectionOrPage": "The Critique of Modern Political Philosophy",
+        "year": "2022",
+        "url": "https://plato.stanford.edu/entries/strauss-leo/"
+      }
+    ]
+  },
+  {
+    "id": "max-weber--leo-strauss",
+    "source": "max-weber",
+    "target": "leo-strauss",
+    "type": "CRITIQUED",
+    "label": "Critique of value-neutral social science and the slide into ethical nihilism",
+    "strength": 5,
+    "description": "In Natural Right and History, Strauss critiqued Weber's fact-value distinction, demonstrating that value-free social science cannot distinguish between noble statesmanship and brutal tyranny, inevitably culminating in nihilism.",
+    "dialecticalTension": "Sociological value-neutrality (Wertfreiheit) versus the classical requirement to judge regimes by substantive standards of natural justice.",
+    "historicalContext": "Delivered as the Walgreen Lectures at the University of Chicago and published in 1953.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Leo Strauss",
+        "work": "Natural Right and History",
+        "sectionOrPage": "Chapter 2: Natural Right and the Distinction Between Facts and Values",
+        "year": "1953"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Shadia Drury",
+        "work": "The Political Ideas of Leo Strauss",
+        "year": "1988"
+      }
+    ]
+  },
+  {
+    "id": "leo-strauss--carl-schmitt",
+    "source": "leo-strauss",
+    "target": "carl-schmitt",
+    "type": "CRITIQUED",
+    "label": "Critique of Schmitt's The Concept of the Political as trapped in liberalism",
+    "strength": 5,
+    "description": "In his famous 1932 commentary, Strauss demonstrated that Schmitt's affirmation of the political and the friend-enemy distinction remained captive to the very modern liberal horizon it sought to dismantle, failing to recover classical philosophy.",
+    "dialecticalTension": "Pure existential decisionism without an objective moral standard versus classical philosophical inquiry into the nature of the good regime.",
+    "historicalContext": "Published in 1932 in the Archiv für Sozialwissenschaft und Sozialpolitik; Schmitt praised it as the most profound critique of his work and revised his 1933 edition in response.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Leo Strauss",
+        "work": "Comments on Carl Schmitt's The Concept of the Political",
+        "year": "1932"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Heinrich Meier",
+        "work": "Carl Schmitt and Leo Strauss: The Hidden Dialogue",
+        "year": "1995"
+      }
+    ]
+  },
+  {
+    "id": "leo-strauss--hannah-arendt",
+    "source": "leo-strauss",
+    "target": "hannah-arendt",
+    "type": "CRITIQUED",
+    "label": "Dialectic on classical antiquity: contemplative philosophy versus political action",
+    "strength": 4,
+    "description": "Both Heidegger students in exile, Strauss and Arendt sharply diverged on classical antiquity: Strauss privileged the philosophical life (bios theoretikos) and the limits of the city, while Arendt privileged civic republican political action (vita activa) in the public sphere.",
+    "dialecticalTension": "Contemplative pursuit of timeless truth beyond the city versus participatory civic speech and action as the pinnacle of human freedom.",
+    "historicalContext": "Parallel intellectual trajectories in post-war America (Chicago and New York) offering competing recoveries of ancient Greek thought.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Dana Villa",
+        "work": "Socratic Citizenship",
+        "year": "2001"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Daniel Tanguay",
+        "work": "Leo Strauss: An Intellectual Biography",
+        "year": "2007"
+      }
+    ]
+  }
+]

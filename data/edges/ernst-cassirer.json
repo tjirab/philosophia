@@ -1,0 +1,167 @@
+[
+  {
+    "id": "ernst-cassirer--symbolic-forms",
+    "source": "ernst-cassirer",
+    "target": "symbolic-forms",
+    "type": "DEVELOPED",
+    "label": "Formulated the Philosophy of Symbolic Forms as a critique of culture",
+    "strength": 5,
+    "description": "Ernst Cassirer developed and introduced the concept of Symbolic Forms, extending the Kantian critique of reason into a comprehensive philosophy of cultural mediation.",
+    "dialecticalTension": "Expanding Kantian transcendental categories beyond mathematical physics to embrace myth, language, and artistic intuition as autonomous modalities of knowing.",
+    "historicalContext": "Developed during his Hamburg professorship and elaborated across the three volumes of Philosophie der symbolischen Formen (1923–1929).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ernst Cassirer",
+        "sectionOrPage": "The Philosophy of Symbolic Forms",
+        "year": "2020",
+        "url": "https://plato.stanford.edu/entries/cassirer/"
+      },
+      {
+        "citationType": "primary",
+        "author": "Ernst Cassirer",
+        "work": "The Philosophy of Symbolic Forms, Volume 1: Language",
+        "year": "1923"
+      }
+    ]
+  },
+  {
+    "id": "immanuel-kant--ernst-cassirer",
+    "source": "immanuel-kant",
+    "target": "ernst-cassirer",
+    "type": "DEVELOPED",
+    "label": "Transformed Kantian transcendental critique into a universal philosophy of culture",
+    "strength": 5,
+    "description": "Cassirer took Kant's transcendental method and epistemological critique, freeing it from 18th-century Newtonian presuppositions to demonstrate how human spirit constructs experience through symbolic systems.",
+    "dialecticalTension": "Shifting from Kant's static, universal categories of understanding to a historical, dynamic pluralism of cultural symbolic forms.",
+    "historicalContext": "Cassirer was trained in the Marburg Neo-Kantian tradition under Hermann Cohen and published Kant's Life and Thought in 1918.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ernst Cassirer",
+        "sectionOrPage": "Transcendental Method and the Question of System",
+        "year": "2020",
+        "url": "https://plato.stanford.edu/entries/cassirer/"
+      },
+      {
+        "citationType": "primary",
+        "author": "Ernst Cassirer",
+        "work": "Kant's Life and Thought",
+        "year": "1918"
+      }
+    ]
+  },
+  {
+    "id": "gottfried-leibniz--ernst-cassirer",
+    "source": "gottfried-leibniz",
+    "target": "ernst-cassirer",
+    "type": "DEVELOPED",
+    "label": "Groundwork of relational expression and symbolic logic in Leibnizian metaphysics",
+    "strength": 4,
+    "description": "Cassirer's foundational 1902 work on Leibniz argued that Leibniz's theory of symbolic representation and relational mathematics laid the indispensable foundation for modern epistemological functionalism.",
+    "dialecticalTension": "Recovering Leibniz's pluralistic expressive monadology to overcome mechanistic Cartesian and Newtonian substance dualism.",
+    "historicalContext": "Cassirer published Leibniz' System in seinen wissenschaftlichen Grundlagen in 1902, establishing his reputation as a preeminent historian of philosophy.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ernst Cassirer",
+        "work": "Leibniz' System in seinen wissenschaftlichen Grundlagen",
+        "year": "1902"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Michael Friedman",
+        "work": "A Parting of the Ways: Carnap, Cassirer, and Heidegger",
+        "year": "2000"
+      }
+    ]
+  },
+  {
+    "id": "ernst-cassirer--martin-heidegger",
+    "source": "ernst-cassirer",
+    "target": "martin-heidegger",
+    "type": "CRITIQUED",
+    "label": "The 1929 Davos Disputation on Kant, human finitude, and cultural freedom",
+    "strength": 5,
+    "description": "At the 1929 Davos encounter, Cassirer defended the Enlightenment legacy of objective reason, ethical freedom, and cultural progress against Heidegger's radical existential analytic of Dasein, anxiety, and ontological finitude.",
+    "dialecticalTension": "Enlightenment Neo-Kantian optimism in objective symbolic knowledge versus existential phenomenology of ontological thrownness and inescapable finitude.",
+    "historicalContext": "The legendary Davos Hochschule disputation in March 1929, widely considered the decisive watershed moment in 20th-century Continental philosophy.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Peter E. Gordon",
+        "work": "Continental Divide: Heidegger, Cassirer, Davos",
+        "year": "2010"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ernst Cassirer",
+        "sectionOrPage": "The Davos Encounter",
+        "year": "2020",
+        "url": "https://plato.stanford.edu/entries/cassirer/"
+      }
+    ]
+  },
+  {
+    "id": "ernst-cassirer--jurgen-habermas",
+    "source": "ernst-cassirer",
+    "target": "jurgen-habermas",
+    "type": "INFLUENCED",
+    "label": "Reconstruction of symbolic mediation into communicative rationality",
+    "strength": 4,
+    "description": "Jürgen Habermas drew extensively on Cassirer's Philosophy of Symbolic Forms, viewing Cassirer's account of symbolic emancipation from mythical thought as the vital precursor to the theory of communicative action.",
+    "dialecticalTension": "Transforming Neo-Kantian transcendental consciousness of symbols into intersubjective linguistic pragmatics.",
+    "historicalContext": "Elaborated in Habermas's philosophical essays, notably The Liberating Power of Symbols: Philosophical Profiles (1997).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jürgen Habermas",
+        "work": "The Liberating Power of Symbols: Philosophical Essays",
+        "sectionOrPage": "The Liberating Power of Symbols: Ernst Cassirer's Humanistic Heritage",
+        "year": "1997"
+      },
+      {
+        "citationType": "sep",
+        "author": "Stanford Encyclopedia of Philosophy",
+        "work": "Ernst Cassirer",
+        "sectionOrPage": "Legacy and Contemporary Reception",
+        "year": "2020",
+        "url": "https://plato.stanford.edu/entries/cassirer/"
+      }
+    ]
+  },
+  {
+    "id": "ernst-cassirer--carl-schmitt",
+    "source": "ernst-cassirer",
+    "target": "carl-schmitt",
+    "type": "CRITIQUED",
+    "label": "Critique of political myth, totalitarianism, and irrational state worship",
+    "description": "In The Myth of the State, Cassirer diagnosed modern totalitarianism and Schmittian political theology as a dangerous reversion from rational symbolic thought back into primitive, weaponized political myth.",
+    "strength": 4,
+    "dialecticalTension": "Rational constitutionalism and ethical humanism versus the existential, myth-fueled sovereign decisionism of the friend-enemy distinction.",
+    "historicalContext": "Written in American exile during World War II and published posthumously in 1946 by Yale University Press.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ernst Cassirer",
+        "work": "The Myth of the State",
+        "year": "1946"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Peter E. Gordon",
+        "work": "Continental Divide: Heidegger, Cassirer, Davos",
+        "year": "2010"
+      }
+    ]
+  }
+]

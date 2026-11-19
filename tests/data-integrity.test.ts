@@ -552,6 +552,73 @@ describe('Philosophy Graph Data Integrity', () => {
     const schmittToDerrida = findInfluencePath('carl-schmitt', 'jacques-derrida', edgesData as any);
     expect(schmittToDerrida.found).toBe(true);
 
+    // Ernst Cassirer: Kant / Leibniz -> Cassirer -> Symbolic Forms / Heidegger (Davos) / Habermas / Schmitt
+    const kantToCassirer = findInfluencePath('immanuel-kant', 'ernst-cassirer', edgesData as any);
+    expect(kantToCassirer.found).toBe(true);
+
+    const leibnizToCassirer = findInfluencePath('gottfried-leibniz', 'ernst-cassirer', edgesData as any);
+    expect(leibnizToCassirer.found).toBe(true);
+
+    const cassirerToForms = findInfluencePath('ernst-cassirer', 'symbolic-forms', edgesData as any);
+    expect(cassirerToForms.found).toBe(true);
+
+    const cassirerToHeidegger = findInfluencePath('ernst-cassirer', 'martin-heidegger', edgesData as any);
+    expect(cassirerToHeidegger.found).toBe(true);
+
+    const cassirerToHabermas = findInfluencePath('ernst-cassirer', 'jurgen-habermas', edgesData as any);
+    expect(cassirerToHabermas.found).toBe(true);
+
+    const cassirerToSchmitt = findInfluencePath('ernst-cassirer', 'carl-schmitt', edgesData as any);
+    expect(cassirerToSchmitt.found).toBe(true);
+
+    // Leo Strauss: Plato / Maimonides / Machiavelli / Hobbes / Weber -> Strauss -> Esoteric Writing / Schmitt / Arendt
+    const platoToStrauss = findInfluencePath('plato', 'leo-strauss', edgesData as any);
+    expect(platoToStrauss.found).toBe(true);
+
+    const maimonidesToStrauss = findInfluencePath('moses-maimonides', 'leo-strauss', edgesData as any);
+    expect(maimonidesToStrauss.found).toBe(true);
+
+    const machiavelliToStrauss = findInfluencePath('machiavelli', 'leo-strauss', edgesData as any);
+    expect(machiavelliToStrauss.found).toBe(true);
+
+    const hobbesToStrauss = findInfluencePath('thomas-hobbes', 'leo-strauss', edgesData as any);
+    expect(hobbesToStrauss.found).toBe(true);
+
+    const weberToStrauss = findInfluencePath('max-weber', 'leo-strauss', edgesData as any);
+    expect(weberToStrauss.found).toBe(true);
+
+    const straussToEsoteric = findInfluencePath('leo-strauss', 'esoteric-writing', edgesData as any);
+    expect(straussToEsoteric.found).toBe(true);
+
+    const straussToSchmitt = findInfluencePath('leo-strauss', 'carl-schmitt', edgesData as any);
+    expect(straussToSchmitt.found).toBe(true);
+
+    const straussToArendt = findInfluencePath('leo-strauss', 'hannah-arendt', edgesData as any);
+    expect(straussToArendt.found).toBe(true);
+
+    // Verify Cassirer and Strauss node details and directionality
+    const cassirerDetails = getNodeDetails('ernst-cassirer');
+    const cassirerPredecessorIds = cassirerDetails.predecessors.map((p) => p.node.id);
+    const cassirerSuccessorIds = cassirerDetails.successors.map((s) => s.node.id);
+    expect(cassirerPredecessorIds).toContain('immanuel-kant');
+    expect(cassirerPredecessorIds).toContain('gottfried-leibniz');
+    expect(cassirerSuccessorIds).toContain('symbolic-forms');
+    expect(cassirerSuccessorIds).toContain('martin-heidegger');
+    expect(cassirerSuccessorIds).toContain('jurgen-habermas');
+    expect(cassirerSuccessorIds).toContain('carl-schmitt');
+
+    const straussDetails = getNodeDetails('leo-strauss');
+    const straussPredecessorIds = straussDetails.predecessors.map((p) => p.node.id);
+    const straussSuccessorIds = straussDetails.successors.map((s) => s.node.id);
+    expect(straussPredecessorIds).toContain('plato');
+    expect(straussPredecessorIds).toContain('moses-maimonides');
+    expect(straussPredecessorIds).toContain('machiavelli');
+    expect(straussPredecessorIds).toContain('thomas-hobbes');
+    expect(straussPredecessorIds).toContain('max-weber');
+    expect(straussSuccessorIds).toContain('esoteric-writing');
+    expect(straussSuccessorIds).toContain('carl-schmitt');
+    expect(straussSuccessorIds).toContain('hannah-arendt');
+
     // Psychoanalytic lineages
     const freudToKlein = findInfluencePath('sigmund-freud', 'melanie-klein', edgesData as any);
     expect(freudToKlein.found).toBe(true);

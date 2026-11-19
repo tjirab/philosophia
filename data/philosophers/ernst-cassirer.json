@@ -1,0 +1,43 @@
+{
+  "id": "ernst-cassirer",
+  "name": "Ernst Cassirer",
+  "birthYear": 1874,
+  "deathYear": 1945,
+  "eraId": "twentieth-century",
+  "traditionId": "neo-kantianism",
+  "shortBio": "German philosopher and prominent Marburg Neo-Kantian who transformed transcendental philosophy into a universal philosophy of culture, arguing that humans construct their world through autonomous symbolic forms including language, myth, art, and science.",
+  "centralQuestion": "How do symbolic forms mediate between human consciousness and reality, transforming sensory chaos into an objective world of culture?",
+  "keyWorks": [
+    {
+      "title": "Substance and Function",
+      "year": "1910",
+      "url": "https://en.wikipedia.org/wiki/Substance_and_Function",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Substance_and_Function",
+      "description": "Epistemological landmark demonstrating how modern mathematical physics replaced classical Aristotelian substance concepts with relational functional concepts."
+    },
+    {
+      "title": "The Philosophy of Symbolic Forms",
+      "year": "1923",
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_Symbolic_Forms",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Philosophy_of_Symbolic_Forms",
+      "description": "Magnum opus in three volumes systematically examining language, mythical thought, and the phenomenology of scientific knowledge as autonomous symbolic worlds."
+    },
+    {
+      "title": "An Essay on Man",
+      "year": "1944",
+      "url": "https://en.wikipedia.org/wiki/An_Essay_on_Man_(Cassirer)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/An_Essay_on_Man_(Cassirer)",
+      "description": "Influential American synthesis defining human beings as 'animal symbolicum' and articulating the structural unity of human cultural life."
+    },
+    {
+      "title": "The Myth of the State",
+      "year": "1946",
+      "url": "https://en.wikipedia.org/wiki/The_Myth_of_the_State",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Myth_of_the_State",
+      "description": "Posthumous political critique analyzing the resurgence of mythical thought and irrational political theology in modern 20th-century totalitarianism."
+    }
+  ],
+  "sepSlug": "cassirer",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/ernst-cassirer.jpg"
+}

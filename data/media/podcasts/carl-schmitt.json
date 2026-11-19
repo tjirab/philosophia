@@ -1,0 +1,24 @@
+[
+  {
+    "id": "pt-ep-133-carl-schmitt",
+    "targetId": "carl-schmitt",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #133 ... Carl Schmitt on Liberalism pt. 2",
+    "url": "https://philosophizethis.libsyn.com/episode-133-carl-schmitt-on-liberalism-pt-2",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Carl_Schmitt_pt_2.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 133,
+    "duration": "22:21"
+  },
+  {
+    "id": "pt-ep-132-carl-schmitt",
+    "targetId": "carl-schmitt",
+    "type": "podcast",
+    "title": "Philosophize This! Episode #132 ... Carl Schmitt on Liberalism pt. 1",
+    "url": "https://philosophizethis.libsyn.com/episode-132-carl-schmitt-on-liberalism-pt-1",
+    "audioUrl": "https://traffic.libsyn.com/secure/philosophizethis/Carl_Schmitt_pt_1.mp3?dest-id=144660",
+    "creator": "Stephen West",
+    "episodeNumber": 132,
+    "duration": "23:45"
+  }
+]
