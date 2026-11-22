@@ -6,6 +6,8 @@
 
 import { VisualNode } from '../types';
 import { getExplorationStateConfig } from './exploration-service';
+import { GridBounds } from './grid-renderer';
+import { isNodeVisibleInViewport } from './canvas-perf';
 
 export interface WorldPoint {
   x: number;
@@ -21,14 +23,88 @@ export interface FogAtmosphereOptions {
   selectedNodeId?: string | null;
   highlightedNodeIds?: Set<string>;
   fogIntensity?: number; // 0.0 to 1.0 (default 0.75)
+  viewportBounds?: GridBounds | null;
   customOffscreen?: {
     canvas: any;
     ctx: any;
   };
 }
 
+export const FOG_RESOLUTION_SCALE = 0.5;
+const RADIAL_SPRITE_SIZE = 128;
+
 let cachedOffscreenCanvas: any = null;
 let cachedOffscreenCtx: any = null;
+const radialSpriteCache = new Map<string, HTMLCanvasElement>();
+
+export function clearFogSpriteCache(): void {
+  radialSpriteCache.clear();
+}
+
+/**
+ * Returns a cached 128x128 offscreen canvas pre-baked with a unit radial gradient.
+ * Stamping a sprite via drawImage is dramatically faster than calling createRadialGradient()
+ * hundreds of times per frame.
+ */
+export function getRadialGradientSprite(
+  key: string,
+  stops: Array<[number, string]>
+): HTMLCanvasElement | null {
+  const existing = radialSpriteCache.get(key);
+  if (existing) return existing;
+
+  if (typeof document === 'undefined' || typeof document.createElement !== 'function') {
+    return null;
+  }
+
+  try {
+    const canvas = document.createElement('canvas');
+    canvas.width = RADIAL_SPRITE_SIZE;
+    canvas.height = RADIAL_SPRITE_SIZE;
+    const sCtx = canvas.getContext('2d');
+    if (!sCtx) return null;
+
+    const half = RADIAL_SPRITE_SIZE / 2;
+    const grad = sCtx.createRadialGradient(half, half, 0, half, half, half);
+    for (const [offset, color] of stops) {
+      grad.addColorStop(offset, color);
+    }
+    sCtx.fillStyle = grad;
+    sCtx.fillRect(0, 0, RADIAL_SPRITE_SIZE, RADIAL_SPRITE_SIZE);
+
+    radialSpriteCache.set(key, canvas);
+    return canvas;
+  } catch {
+    return null;
+  }
+}
+
+function drawRadialEffect(
+  ctx: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  innerRadius: number,
+  outerRadius: number,
+  spriteKey: string,
+  stops: Array<[number, string]>
+): void {
+  if (typeof ctx.drawImage === 'function') {
+    const sprite = getRadialGradientSprite(spriteKey, stops);
+    if (sprite) {
+      ctx.drawImage(sprite, x - outerRadius, y - outerRadius, outerRadius * 2, outerRadius * 2);
+      return;
+    }
+  }
+
+  const grad = ctx.createRadialGradient(x, y, innerRadius, x, y, outerRadius);
+  for (const [offset, color] of stops) {
+    grad.addColorStop(offset, color);
+  }
+  ctx.beginPath();
+  ctx.arc(x, y, outerRadius, 0, Math.PI * 2);
+  ctx.fillStyle = grad;
+  ctx.fill();
+}
 
 /**
  * Provides a cached offscreen canvas instance for rendering the atmospheric fog layer.
@@ -75,6 +151,7 @@ export function drawAmbientParchmentMist(
     selectedNodeId,
     highlightedNodeIds,
     fogIntensity = 0.75,
+    viewportBounds,
     customOffscreen,
   } = options;
 
@@ -83,7 +160,12 @@ export function drawAmbientParchmentMist(
   const canvasWidth = ctx.canvas?.width || 1200;
   const canvasHeight = ctx.canvas?.height || 800;
 
-  const offscreen = customOffscreen || getOffscreenFogCanvas(canvasWidth, canvasHeight);
+  // Render default offscreen fog at half resolution (4x fewer pixels; soft mist scales cleanly)
+  const resolutionScale = customOffscreen ? 1 : FOG_RESOLUTION_SCALE;
+  const offWidth = Math.max(1, Math.round(canvasWidth * resolutionScale));
+  const offHeight = Math.max(1, Math.round(canvasHeight * resolutionScale));
+
+  const offscreen = customOffscreen || getOffscreenFogCanvas(offWidth, offHeight);
   const fogCanvas = offscreen?.canvas;
   const fogCtx = offscreen?.ctx;
 
@@ -94,7 +176,7 @@ export function drawAmbientParchmentMist(
     fogCtx.setTransform(1, 0, 0, 1, 0, 0);
   }
   fogCtx.globalCompositeOperation = 'source-over';
-  fogCtx.clearRect(0, 0, canvasWidth, canvasHeight);
+  fogCtx.clearRect(0, 0, offWidth, offHeight);
 
   // Atmospheric mist color:
   // In light mode: warm antique parchment mist (#ebe3d5)
@@ -103,13 +185,24 @@ export function drawAmbientParchmentMist(
   fogCtx.fillStyle = isLight
     ? `rgba(235, 227, 213, ${mistAlpha})`
     : `rgba(13, 11, 9, ${mistAlpha})`;
-  fogCtx.fillRect(0, 0, canvasWidth, canvasHeight);
+  fogCtx.fillRect(0, 0, offWidth, offHeight);
 
-  // 2. Synchronize coordinate space with main canvas world transform
+  // 2. Synchronize coordinate space with main canvas world transform (scaled for offscreen buffer)
   if (typeof ctx.getTransform === 'function' && typeof fogCtx.setTransform === 'function') {
     const currentTransform = ctx.getTransform();
     if (currentTransform) {
-      fogCtx.setTransform(currentTransform);
+      if (resolutionScale === 1) {
+        fogCtx.setTransform(currentTransform);
+      } else {
+        fogCtx.setTransform(
+          currentTransform.a * resolutionScale,
+          currentTransform.b * resolutionScale,
+          currentTransform.c * resolutionScale,
+          currentTransform.d * resolutionScale,
+          currentTransform.e * resolutionScale,
+          currentTransform.f * resolutionScale
+        );
+      }
     }
   }
 
@@ -153,47 +246,40 @@ export function drawAmbientParchmentMist(
       }
     }
 
-    if (clearRadius > 0) {
-      const grad = fogCtx.createRadialGradient(
+    if (clearRadius > 0 && isNodeVisibleInViewport(node.x, node.y, clearRadius, viewportBounds)) {
+      drawRadialEffect(
+        fogCtx,
         node.x,
         node.y,
         baseRadius * 0.4,
-        node.x,
-        node.y,
-        clearRadius
+        clearRadius,
+        `erase:${centerEraseAlpha}`,
+        [
+          [0, `rgba(0, 0, 0, ${centerEraseAlpha})`],
+          [0.5, `rgba(0, 0, 0, ${centerEraseAlpha * 0.5})`],
+          [1, 'rgba(0, 0, 0, 0)'],
+        ]
       );
-      grad.addColorStop(0, `rgba(0, 0, 0, ${centerEraseAlpha})`);
-      grad.addColorStop(0.5, `rgba(0, 0, 0, ${centerEraseAlpha * 0.5})`);
-      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-
-      fogCtx.beginPath();
-      fogCtx.arc(node.x, node.y, clearRadius, 0, Math.PI * 2);
-      fogCtx.fillStyle = grad;
-      fogCtx.fill();
     }
   }
 
   // Dynamic Lantern Clearance: The cursor acts as a torchlight burning through mist
   if (mouseWorldPos && Number.isFinite(mouseWorldPos.x) && Number.isFinite(mouseWorldPos.y)) {
     const lanternRadius = 240 / Math.max(0.7, Math.min(1.4, globalScale));
-    const lanternGrad = fogCtx.createRadialGradient(
+    drawRadialEffect(
+      fogCtx,
       mouseWorldPos.x,
       mouseWorldPos.y,
       25,
-      mouseWorldPos.x,
-      mouseWorldPos.y,
-      lanternRadius
+      lanternRadius,
+      'erase:lantern',
+      [
+        [0, 'rgba(0, 0, 0, 0.98)'],
+        [0.55, 'rgba(0, 0, 0, 0.75)'],
+        [0.85, 'rgba(0, 0, 0, 0.35)'],
+        [1, 'rgba(0, 0, 0, 0)'],
+      ]
     );
-    // Erase the mist in the lantern circle with soft radial falloff
-    lanternGrad.addColorStop(0, 'rgba(0, 0, 0, 0.98)');
-    lanternGrad.addColorStop(0.55, 'rgba(0, 0, 0, 0.75)');
-    lanternGrad.addColorStop(0.85, 'rgba(0, 0, 0, 0.35)');
-    lanternGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-
-    fogCtx.beginPath();
-    fogCtx.arc(mouseWorldPos.x, mouseWorldPos.y, lanternRadius, 0, Math.PI * 2);
-    fogCtx.fillStyle = lanternGrad;
-    fogCtx.fill();
   }
 
   // 4. Render carved mist onto main canvas in screen coordinates
@@ -201,7 +287,11 @@ export function drawAmbientParchmentMist(
   if (typeof ctx.setTransform === 'function') {
     ctx.setTransform(1, 0, 0, 1, 0, 0);
   }
-  ctx.drawImage(fogCanvas, 0, 0);
+  if (resolutionScale === 1) {
+    ctx.drawImage(fogCanvas, 0, 0);
+  } else {
+    ctx.drawImage(fogCanvas, 0, 0, canvasWidth, canvasHeight);
+  }
   ctx.restore();
 }
 
@@ -221,14 +311,14 @@ export function drawExplorationAtmosphere(
     mouseWorldPos,
     hoveredNodeId,
     fogIntensity = 0.75,
+    viewportBounds,
   } = options;
 
   if (nodes.length === 0) return;
 
   ctx.save();
 
-  // 1. Radiant Citadel & Frontier Luminescence Halos
-  // Group nodes by exploration state to render halos in batches
+  // 1. Radiant Citadel & Frontier Luminescence Halos (viewport-culled & sprite-cached)
   for (const node of nodes) {
     if (typeof node.x !== 'number' || typeof node.y !== 'number') continue;
 
@@ -237,55 +327,71 @@ export function drawExplorationAtmosphere(
     const isHovered = node.id === hoveredNodeId;
 
     if (state === 'citadel') {
-      // Golden / Amber Citadel Hearth Halo
       const haloRadius = baseRadius * (isHovered ? 5.5 : 4.0);
-      const grad = ctx.createRadialGradient(node.x, node.y, baseRadius * 0.8, node.x, node.y, haloRadius);
+      if (!isNodeVisibleInViewport(node.x, node.y, haloRadius, viewportBounds)) continue;
       const innerAlpha = isLight ? (isHovered ? 0.32 : 0.22) : (isHovered ? 0.28 : 0.18);
-      grad.addColorStop(0, isLight ? `rgba(212, 175, 55, ${innerAlpha})` : `rgba(229, 185, 76, ${innerAlpha})`);
-      grad.addColorStop(0.5, isLight ? 'rgba(212, 175, 55, 0.08)' : 'rgba(229, 185, 76, 0.06)');
-      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-
-      ctx.beginPath();
-      ctx.arc(node.x, node.y, haloRadius, 0, Math.PI * 2);
-      ctx.fillStyle = grad;
-      ctx.fill();
+      drawRadialEffect(
+        ctx,
+        node.x,
+        node.y,
+        baseRadius * 0.8,
+        haloRadius,
+        `halo:citadel:${isLight}:${isHovered}`,
+        [
+          [0, isLight ? `rgba(212, 175, 55, ${innerAlpha})` : `rgba(229, 185, 76, ${innerAlpha})`],
+          [0.5, isLight ? 'rgba(212, 175, 55, 0.08)' : 'rgba(229, 185, 76, 0.06)'],
+          [1, 'rgba(0, 0, 0, 0)'],
+        ]
+      );
     } else if (state === 'frontier') {
-      // Disputed Frontier Rose/Crimson Aura
       const haloRadius = baseRadius * (isHovered ? 4.8 : 3.4);
-      const grad = ctx.createRadialGradient(node.x, node.y, baseRadius * 0.8, node.x, node.y, haloRadius);
+      if (!isNodeVisibleInViewport(node.x, node.y, haloRadius, viewportBounds)) continue;
       const innerAlpha = isLight ? (isHovered ? 0.26 : 0.16) : (isHovered ? 0.24 : 0.14);
-      grad.addColorStop(0, isLight ? `rgba(225, 29, 72, ${innerAlpha})` : `rgba(244, 63, 94, ${innerAlpha})`);
-      grad.addColorStop(0.5, isLight ? 'rgba(225, 29, 72, 0.06)' : 'rgba(244, 63, 94, 0.04)');
-      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-
-      ctx.beginPath();
-      ctx.arc(node.x, node.y, haloRadius, 0, Math.PI * 2);
-      ctx.fillStyle = grad;
-      ctx.fill();
+      drawRadialEffect(
+        ctx,
+        node.x,
+        node.y,
+        baseRadius * 0.8,
+        haloRadius,
+        `halo:frontier:${isLight}:${isHovered}`,
+        [
+          [0, isLight ? `rgba(225, 29, 72, ${innerAlpha})` : `rgba(244, 63, 94, ${innerAlpha})`],
+          [0.5, isLight ? 'rgba(225, 29, 72, 0.06)' : 'rgba(244, 63, 94, 0.04)'],
+          [1, 'rgba(0, 0, 0, 0)'],
+        ]
+      );
     } else if (state === 'emerging') {
-      // Pioneer Outpost Teal Aura
       const haloRadius = baseRadius * (isHovered ? 4.2 : 3.0);
-      const grad = ctx.createRadialGradient(node.x, node.y, baseRadius * 0.8, node.x, node.y, haloRadius);
+      if (!isNodeVisibleInViewport(node.x, node.y, haloRadius, viewportBounds)) continue;
       const innerAlpha = isLight ? (isHovered ? 0.24 : 0.14) : (isHovered ? 0.22 : 0.12);
-      grad.addColorStop(0, isLight ? `rgba(13, 148, 136, ${innerAlpha})` : `rgba(45, 212, 191, ${innerAlpha})`);
-      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-
-      ctx.beginPath();
-      ctx.arc(node.x, node.y, haloRadius, 0, Math.PI * 2);
-      ctx.fillStyle = grad;
-      ctx.fill();
+      drawRadialEffect(
+        ctx,
+        node.x,
+        node.y,
+        baseRadius * 0.8,
+        haloRadius,
+        `halo:emerging:${isLight}:${isHovered}`,
+        [
+          [0, isLight ? `rgba(13, 148, 136, ${innerAlpha})` : `rgba(45, 212, 191, ${innerAlpha})`],
+          [1, 'rgba(0, 0, 0, 0)'],
+        ]
+      );
     } else if (state === 'uncharted') {
-      // Uncharted Indigo Beacon Haze
       const haloRadius = baseRadius * (isHovered ? 4.5 : 3.2);
-      const grad = ctx.createRadialGradient(node.x, node.y, baseRadius * 0.8, node.x, node.y, haloRadius);
+      if (!isNodeVisibleInViewport(node.x, node.y, haloRadius, viewportBounds)) continue;
       const innerAlpha = isLight ? (isHovered ? 0.22 : 0.14) : (isHovered ? 0.22 : 0.12);
-      grad.addColorStop(0, isLight ? `rgba(99, 102, 241, ${innerAlpha})` : `rgba(129, 140, 248, ${innerAlpha})`);
-      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-
-      ctx.beginPath();
-      ctx.arc(node.x, node.y, haloRadius, 0, Math.PI * 2);
-      ctx.fillStyle = grad;
-      ctx.fill();
+      drawRadialEffect(
+        ctx,
+        node.x,
+        node.y,
+        baseRadius * 0.8,
+        haloRadius,
+        `halo:uncharted:${isLight}:${isHovered}`,
+        [
+          [0, isLight ? `rgba(99, 102, 241, ${innerAlpha})` : `rgba(129, 140, 248, ${innerAlpha})`],
+          [1, 'rgba(0, 0, 0, 0)'],
+        ]
+      );
     }
   }
 
@@ -293,23 +399,20 @@ export function drawExplorationAtmosphere(
   // If the user's cursor or hovered node is present, cast an active torchlight ring
   if (mouseWorldPos && Number.isFinite(mouseWorldPos.x) && Number.isFinite(mouseWorldPos.y)) {
     const lanternRadius = 240 / Math.max(0.7, Math.min(1.4, globalScale));
-    const lanternGrad = ctx.createRadialGradient(
+    const alpha = isLight ? 0.15 * fogIntensity : 0.12 * fogIntensity;
+    drawRadialEffect(
+      ctx,
       mouseWorldPos.x,
       mouseWorldPos.y,
       20,
-      mouseWorldPos.x,
-      mouseWorldPos.y,
-      lanternRadius
+      lanternRadius,
+      `halo:lantern:${isLight}:${fogIntensity}`,
+      [
+        [0, isLight ? `rgba(255, 248, 220, ${alpha})` : `rgba(254, 240, 138, ${alpha})`],
+        [0.6, isLight ? `rgba(255, 248, 220, ${alpha * 0.4})` : `rgba(254, 240, 138, ${alpha * 0.3})`],
+        [1, 'rgba(0, 0, 0, 0)'],
+      ]
     );
-    const alpha = isLight ? 0.15 * fogIntensity : 0.12 * fogIntensity;
-    lanternGrad.addColorStop(0, isLight ? `rgba(255, 248, 220, ${alpha})` : `rgba(254, 240, 138, ${alpha})`);
-    lanternGrad.addColorStop(0.6, isLight ? `rgba(255, 248, 220, ${alpha * 0.4})` : `rgba(254, 240, 138, ${alpha * 0.3})`);
-    lanternGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-
-    ctx.beginPath();
-    ctx.arc(mouseWorldPos.x, mouseWorldPos.y, lanternRadius, 0, Math.PI * 2);
-    ctx.fillStyle = lanternGrad;
-    ctx.fill();
   }
 
   ctx.restore();

@@ -72,16 +72,18 @@ export function getGridBounds(
 /**
  * Draws the cartographic constellation grid directly onto the canvas context.
  * Called in onRenderFramePre before nodes and links are drawn.
+ * Returns the computed visible world-space bounds for downstream viewport culling.
  */
 export function drawCartographicGrid(
   ctx: CanvasRenderingContext2D,
   globalScale: number,
   isLight: boolean
-): void {
+): GridBounds {
+  let bounds: GridBounds = { minX: 0, maxX: ctx.canvas.width, minY: 0, maxY: ctx.canvas.height };
   ctx.save();
   try {
     const matrix = ctx.getTransform();
-    const bounds = getGridBounds(matrix, ctx.canvas.width, ctx.canvas.height);
+    bounds = getGridBounds(matrix, ctx.canvas.width, ctx.canvas.height);
     const { minX, maxX, minY, maxY } = bounds;
 
     const step = getGridStep(globalScale, 56);
@@ -129,19 +131,27 @@ export function drawCartographicGrid(
       : 'rgba(229, 185, 76, 0.085)';
     ctx.stroke();
 
-    // 3. Intersection stippling dots
-    const dotRadius = 1.3 / globalScale;
-    ctx.beginPath();
-    for (let x = startX; x <= endX; x += step) {
-      for (let y = startY; y <= endY; y += step) {
-        ctx.moveTo(x + dotRadius, y);
-        ctx.arc(x, y, dotRadius, 0, Math.PI * 2);
+    // 3. Intersection stippling dots (skipped at extreme zoom-out; uses fast rect paths when available)
+    if (globalScale >= 0.35) {
+      const dotRadius = 1.3 / globalScale;
+      const dotSize = dotRadius * 2;
+      const hasRect = typeof ctx.rect === 'function';
+      ctx.beginPath();
+      for (let x = startX; x <= endX; x += step) {
+        for (let y = startY; y <= endY; y += step) {
+          if (hasRect) {
+            ctx.rect(x - dotRadius, y - dotRadius, dotSize, dotSize);
+          } else {
+            ctx.moveTo(x + dotRadius, y);
+            ctx.arc(x, y, dotRadius, 0, Math.PI * 2);
+          }
+        }
       }
+      ctx.fillStyle = isLight
+        ? 'rgba(140, 100, 30, 0.18)'
+        : 'rgba(229, 185, 76, 0.16)';
+      ctx.fill();
     }
-    ctx.fillStyle = isLight
-      ? 'rgba(140, 100, 30, 0.18)'
-      : 'rgba(229, 185, 76, 0.16)';
-    ctx.fill();
 
     // 4. Cartographic origin marker (0, 0) if within visible viewport
     if (minX <= 0 && maxX >= 0 && minY <= 0 && maxY >= 0) {
@@ -166,4 +176,5 @@ export function drawCartographicGrid(
   } finally {
     ctx.restore();
   }
+  return bounds;
 }
