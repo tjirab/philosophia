@@ -11,7 +11,7 @@ import { GraphLayersMenu } from './GraphLayersMenu';
 import { EpochNavigator } from '../timeline/EpochNavigator';
 import { ExplorationHud } from '../exploration/ExplorationHud';
 import { useClickOutside } from '../../lib/hooks/useClickOutside';
-import { drawCartographicGrid } from '../../lib/graph/grid-renderer';
+import { drawCartographicGrid, GridBounds } from '../../lib/graph/grid-renderer';
 import { drawExplorationAtmosphere, drawCartographicBeacon, drawAmbientParchmentMist } from '../../lib/graph/fog-renderer';
 import { getAssetUrl } from '../../lib/assets';
 import {
@@ -20,7 +20,13 @@ import {
   drawPortraitMedallion,
   preloadPortrait,
   getPortraitFromCache,
+  getPortraitSprite,
 } from '../../lib/graph/portrait-renderer';
+import {
+  isNodeVisibleInViewport,
+  isSimpleLod,
+  measureLabelWidthCached,
+} from '../../lib/graph/canvas-perf';
 import {
   getArrowLength,
   ARROW_REL_POS,
@@ -122,10 +128,12 @@ export function ForceGraphView({
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(null);
   const [spacingMultiplier, setSpacingMultiplier] = useState<number>(1.9); // 1.9x generous balanced default to ensure zero overlap
   const [portraitsLoadedVersion, setPortraitsLoadedVersion] = useState<number>(0);
-  const rafIdRef = useRef<number | null>(null);
+  const portraitFlushTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const prevSpacingMultiplierRef = useRef<number>(1.9);
   const hasInitialFitRef = useRef<boolean>(false);
   const hasConfiguredForcesRef = useRef<boolean>(false);
+  const viewportBoundsRef = useRef<GridBounds | null>(null);
+  const hoveredNodeIdRef = useRef<string | null>(null);
 
   const prefersReducedMotion = useMemo(() => {
     if (typeof window === 'undefined') return false;
@@ -142,7 +150,8 @@ export function ForceGraphView({
   const currentExplorationFilter = explorationFilter !== undefined ? explorationFilter : internalExplorationFilter;
   const setExplorationFilter = onSelectExplorationFilter || setInternalExplorationFilter;
 
-  const [mouseWorldPos, setMouseWorldPos] = useState<{ x: number; y: number } | null>(null);
+  // Store mouse world position in a ref so Exploration Mode lantern tracking never triggers React re-renders
+  const mouseWorldPosRef = useRef<{ x: number; y: number } | null>(null);
 
   const handleMouseMove = useCallback(
     (e: React.MouseEvent<HTMLDivElement>) => {
@@ -154,7 +163,7 @@ export function ForceGraphView({
       if (typeof fgRef.current.screen2GraphCoords === 'function') {
         const coords = fgRef.current.screen2GraphCoords(clientX, clientY);
         if (coords && Number.isFinite(coords.x) && Number.isFinite(coords.y)) {
-          setMouseWorldPos(coords);
+          mouseWorldPosRef.current = coords;
         }
       }
     },
@@ -162,7 +171,7 @@ export function ForceGraphView({
   );
 
   const handleMouseLeave = useCallback(() => {
-    setMouseWorldPos(null);
+    mouseWorldPosRef.current = null;
   }, []);
 
   // Reheat physics simulation smoothly when methodology changes so node sizes resize gracefully
@@ -196,20 +205,16 @@ export function ForceGraphView({
   // Memoize graphData so ForceGraph2D does not re-trigger physics simulation on component re-renders
   const graphData = useMemo(() => ({ nodes: stabilizedNodes, links }), [stabilizedNodes, links]);
 
-  // Request a canvas frame update whenever portrait images finish loading
+  // Batch canvas repaints when portrait images finish loading (never reheat D3 physics)
   const notifyLoaded = useCallback(() => {
-    if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
-    rafIdRef.current = requestAnimationFrame(() => {
+    if (portraitFlushTimerRef.current) return;
+    portraitFlushTimerRef.current = setTimeout(() => {
+      portraitFlushTimerRef.current = null;
       setPortraitsLoadedVersion((v) => v + 1);
-      if (fgRef.current) {
-        if (typeof fgRef.current.d3ReheatSimulation === 'function') {
-          fgRef.current.d3ReheatSimulation();
-        }
-        if (typeof fgRef.current.resumeAnimation === 'function') {
-          fgRef.current.resumeAnimation();
-        }
+      if (fgRef.current && typeof fgRef.current.resumeAnimation === 'function') {
+        fgRef.current.resumeAnimation();
       }
-    });
+    }, 120);
   }, []);
 
   // Resize listener
@@ -267,7 +272,10 @@ export function ForceGraphView({
     return () => {
       mounted = false;
       if (timerId) clearTimeout(timerId);
-      if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
+      if (portraitFlushTimerRef.current) {
+        clearTimeout(portraitFlushTimerRef.current);
+        portraitFlushTimerRef.current = null;
+      }
     };
   }, [nodes, notifyLoaded]);
 
@@ -286,7 +294,7 @@ export function ForceGraphView({
       return size + basePadding * multiplier;
     };
 
-    fg.d3Force('collide', forceCollide().radius(collisionRadius).iterations(4));
+    fg.d3Force('collide', forceCollide().radius(collisionRadius).iterations(2));
 
     // 3. Generous repulsion charge
     fg.d3Force(
@@ -321,43 +329,36 @@ export function ForceGraphView({
     fg.d3ReheatSimulation();
   }, []);
 
-  // Ensure forces are applied the instant ForceGraph2D mounts (polling raf until ref is bound)
+  // Ensure forces are applied on mount and whenever graphData or spacingMultiplier changes
   useEffect(() => {
     let animId: number;
     let cancelled = false;
 
-    const initForces = () => {
+    const configureForces = () => {
       if (cancelled) return;
       if (fgRef.current) {
         hasConfiguredForcesRef.current = true;
+        // Physical node coordinate expansion/contraction for instant responsiveness
+        const prevMultiplier = prevSpacingMultiplierRef.current;
+        if (prevMultiplier && prevMultiplier !== spacingMultiplier && graphData?.nodes) {
+          const ratio = spacingMultiplier / prevMultiplier;
+          graphData.nodes.forEach((n: any) => {
+            if (typeof n.x === 'number') n.x *= ratio;
+            if (typeof n.y === 'number') n.y *= ratio;
+          });
+        }
+        prevSpacingMultiplierRef.current = spacingMultiplier;
         applyForces(fgRef.current, spacingMultiplier);
       } else {
-        animId = requestAnimationFrame(initForces);
+        animId = requestAnimationFrame(configureForces);
       }
     };
 
-    initForces();
+    configureForces();
     return () => {
       cancelled = true;
       cancelAnimationFrame(animId);
     };
-  }, [applyForces, spacingMultiplier]);
-
-  useEffect(() => {
-    if (fgRef.current) {
-      // Physical node coordinate expansion/contraction for instant responsiveness
-      const prevMultiplier = prevSpacingMultiplierRef.current;
-      if (prevMultiplier && prevMultiplier !== spacingMultiplier && graphData?.nodes) {
-        const ratio = spacingMultiplier / prevMultiplier;
-        graphData.nodes.forEach((n: any) => {
-          if (typeof n.x === 'number') n.x *= ratio;
-          if (typeof n.y === 'number') n.y *= ratio;
-        });
-      }
-      prevSpacingMultiplierRef.current = spacingMultiplier;
-
-      applyForces(fgRef.current, spacingMultiplier);
-    }
   }, [graphData, spacingMultiplier, applyForces]);
 
   // Initial camera fit once nodes settle into their spacious layout
@@ -565,7 +566,7 @@ export function ForceGraphView({
     });
   };
 
-  // Node drawing on Canvas with Distinct Shapes, Monograms, and Anti-Overlap Aesthetics
+  // Node drawing on Canvas with Distinct Shapes, Pre-Clipped Sprites, Viewport Culling, and LOD
   const paintNode = useCallback(
     (node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
       const isSelected = node.id === selectedNodeId;
@@ -575,6 +576,19 @@ export function ForceGraphView({
         selectedEdgeEndpoints &&
         (node.id === selectedEdgeEndpoints.source || node.id === selectedEdgeEndpoints.target)
       );
+
+      const size = getNodeRadius(node.val, node.importanceScore);
+
+      // Viewport culling: skip off-screen nodes (keep focused/path nodes always eligible)
+      if (
+        !isSelected &&
+        !isEdgeEndpoint &&
+        !isOnPath &&
+        !isHovered &&
+        !isNodeVisibleInViewport(node.x, node.y, size + 24, viewportBoundsRef.current)
+      ) {
+        return;
+      }
 
       // Dimming logic
       let alpha = 1;
@@ -586,14 +600,14 @@ export function ForceGraphView({
         alpha = 0.35;
       }
 
+      const isPrimaryThinker = node.importanceScore && node.importanceScore >= 95;
+      const simpleLod = isSimpleLod(globalScale) && !isSelected && !isEdgeEndpoint && !isOnPath && !isHovered;
+
       ctx.save();
       ctx.globalAlpha = alpha;
 
-      const size = getNodeRadius(node.val, node.importanceScore);
-      const isPrimaryThinker = node.importanceScore && node.importanceScore >= 95;
-
       // 1. Outer halo for selected, path, edge endpoints, high-centrality thinkers, or interdisciplinary bridge figures
-      if (isSelected || isEdgeEndpoint || isOnPath || isPrimaryThinker || node.isInterdisciplinary) {
+      if (!simpleLod && (isSelected || isEdgeEndpoint || isOnPath || isPrimaryThinker || node.isInterdisciplinary)) {
         ctx.beginPath();
         ctx.arc(node.x, node.y, size + (isEdgeEndpoint ? 8 : node.isInterdisciplinary ? 7 : 6), 0, 2 * Math.PI, false);
         ctx.fillStyle = isLight
@@ -618,7 +632,7 @@ export function ForceGraphView({
         }
       }
 
-      // 2. Node Shape: Distinct geometry for Thinker (Circle with Portrait) vs Concept (Diamond)
+      // 2. Node Shape: Distinct geometry for Thinker (Circle with Portrait Sprite) vs Concept (Diamond)
       if (node.type === 'concept') {
         const boxSize = size * 1.25;
         ctx.save();
@@ -630,21 +644,25 @@ export function ForceGraphView({
         ctx.fillStyle = node.color || '#2a9d8f';
         ctx.fill();
 
-        ctx.lineWidth = isSelected ? 2.5 : 1.5;
-        ctx.strokeStyle = isSelected
-          ? isLight ? '#9a6f14' : '#fef08a'
-          : isLight ? '#3d3328' : '#ffffff';
-        ctx.stroke();
+        if (!simpleLod) {
+          ctx.lineWidth = isSelected ? 2.5 : 1.5;
+          ctx.strokeStyle = isSelected
+            ? isLight ? '#9a6f14' : '#fef08a'
+            : isLight ? '#3d3328' : '#ffffff';
+          ctx.stroke();
+        }
 
         ctx.restore();
 
-        // Draw concept emblem '✦' in center
-        const iconSize = Math.max(10, size * 0.65);
-        ctx.font = `bold ${iconSize}px serif`;
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#ffffff';
-        ctx.fillText('✦', node.x, node.y);
+        if (!simpleLod) {
+          // Draw concept emblem '✦' in center
+          const iconSize = Math.max(10, size * 0.65);
+          ctx.font = `bold ${iconSize}px serif`;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillStyle = '#ffffff';
+          ctx.fillText('✦', node.x, node.y);
+        }
       } else {
         const portraitUrl = getAssetUrl(node.imageUrl || `/portraits/${node.id}.jpg`);
         let cached = getPortraitFromCache(portraitUrl);
@@ -654,16 +672,20 @@ export function ForceGraphView({
           cached = getPortraitFromCache(portraitUrl);
         }
 
+        const sprite = simpleLod ? null : getPortraitSprite(portraitUrl, cached);
+
         drawPortraitMedallion(ctx, node, cached, {
           isSelected: isSelected || isEdgeEndpoint,
           isPrimaryThinker: !!isPrimaryThinker,
           isLight,
           size,
+          sprite,
+          lodSimple: simpleLod,
         });
       }
 
       // Draw exploration beacon rings or citadel ramparts when cartography mode is active
-      if (isExplorationActive) {
+      if (isExplorationActive && !simpleLod) {
         drawCartographicBeacon(ctx, node, size, isLight, globalScale);
       }
 
@@ -681,7 +703,9 @@ export function ForceGraphView({
 
       if (shouldDrawLabel) {
         const fontSize = Math.max(10.5 / globalScale, 3.8);
-        ctx.font = `${isSelected || isEdgeEndpoint || isOnPath || isAnchorThinker ? 'bold' : 'normal'} ${fontSize}px "EB Garamond", Georgia, serif`;
+        const fontWeight: 'bold' | 'normal' = isSelected || isEdgeEndpoint || isOnPath || isAnchorThinker ? 'bold' : 'normal';
+        const fontFamily = '"EB Garamond", Georgia, serif';
+        ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
 
@@ -689,7 +713,7 @@ export function ForceGraphView({
           ? `${node.exploration.badgeIcon} `
           : '';
         const labelText = `${explorationPrefix}${node.name}`;
-        const textWidth = ctx.measureText(labelText).width;
+        const textWidth = measureLabelWidthCached(ctx, labelText, fontWeight, fontSize, fontFamily);
         const paddingX = 4;
         const paddingY = 1.5;
 
@@ -736,20 +760,21 @@ export function ForceGraphView({
           }
         }
       }
-      drawCartographicGrid(ctx, globalScale, isLight);
+      viewportBoundsRef.current = drawCartographicGrid(ctx, globalScale, isLight);
 
       if (isExplorationActive) {
         drawExplorationAtmosphere(ctx, {
           nodes: graphData.nodes,
           globalScale,
           isLight,
-          mouseWorldPos: hoveredNode ? { x: hoveredNode.x!, y: hoveredNode.y! } : mouseWorldPos,
+          mouseWorldPos: hoveredNode ? { x: hoveredNode.x!, y: hoveredNode.y! } : mouseWorldPosRef.current,
           hoveredNodeId: hoveredNode?.id,
           fogIntensity: 0.75,
+          viewportBounds: viewportBoundsRef.current,
         });
       }
     },
-    [applyForces, isLight, spacingMultiplier, isExplorationActive, graphData.nodes, hoveredNode, mouseWorldPos]
+    [applyForces, isLight, spacingMultiplier, isExplorationActive, graphData.nodes, hoveredNode]
   );
 
   const renderForegroundAtmosphere = React.useCallback(
@@ -760,14 +785,15 @@ export function ForceGraphView({
         nodes: graphData.nodes,
         globalScale,
         isLight,
-        mouseWorldPos: hoveredNode ? { x: hoveredNode.x!, y: hoveredNode.y! } : mouseWorldPos,
+        mouseWorldPos: hoveredNode ? { x: hoveredNode.x!, y: hoveredNode.y! } : mouseWorldPosRef.current,
         hoveredNodeId: hoveredNode?.id,
         selectedNodeId: selectedNodeId || undefined,
         highlightedNodeIds: pathNodeSet,
         fogIntensity: 0.75,
+        viewportBounds: viewportBoundsRef.current,
       });
     },
-    [isExplorationActive, graphData.nodes, isLight, hoveredNode, mouseWorldPos, selectedNodeId, pathNodeSet]
+    [isExplorationActive, graphData.nodes, isLight, hoveredNode, selectedNodeId, pathNodeSet]
   );
 
   // Render classical badge pills directly on active lineage path edges or selected edge
@@ -841,6 +867,226 @@ export function ForceGraphView({
     if (showConcepts || !selectedNodeId) return null;
     return nodes.find((n) => n.id === selectedNodeId && n.type === 'concept') || null;
   }, [showConcepts, selectedNodeId, nodes]);
+
+  const hasLinkOverlay = isPathActive || Boolean(selectedEdgeId);
+
+  const emptyNodeLabel = useCallback(() => '', []);
+  const linkCanvasObjectModeAfter = useCallback(() => 'after' as const, []);
+
+  const handleEngineTick = useCallback(() => {
+    if (!hasConfiguredForcesRef.current && fgRef.current) {
+      hasConfiguredForcesRef.current = true;
+      applyForces(fgRef.current, spacingMultiplier);
+    }
+    const live = fgRef.current?.graphData?.()?.nodes;
+    if (live) {
+      for (let i = 0; i < live.length; i++) {
+        const n = live[i];
+        if (typeof n.x === 'number' && typeof n.y === 'number') {
+          nodeCoordinatesRef.current.set(n.id, { x: n.x, y: n.y, vx: n.vx, vy: n.vy });
+        }
+      }
+    }
+  }, [applyForces, spacingMultiplier]);
+
+  const getLinkLabelHtml = useCallback(
+    (link: any) => {
+      const cfg = getEdgeTypeConfig(link.type);
+      const typeColor = isLight ? cfg.color : cfg.colorDark;
+      const bg = isLight ? 'rgba(247,243,234,0.97)' : 'rgba(20,18,15,0.96)';
+      const border = isLight ? 'rgba(215,205,190,0.9)' : 'rgba(229,185,76,0.35)';
+      const textMain = isLight ? '#1a1815' : '#f5f2eb';
+      const textSub = isLight ? '#524b42' : '#cfc7b8';
+      const safeType = escapeHtml(link.type || 'INFLUENCED');
+      const safeLabel = escapeHtml(link.label || '');
+      return `<div style="padding: 7px 11px; background: ${bg}; border: 1px solid ${border}; border-radius: 9px; font-family: 'EB Garamond', Georgia, serif; font-size: 12px; color: ${textMain}; box-shadow: 0 4px 16px rgba(0,0,0,0.3); max-width: 280px; pointer-events: none;">
+            <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 3px;">
+              <span style="font-weight: 700; text-transform: uppercase; font-family: monospace; font-size: 10px; color: ${typeColor}; letter-spacing: 0.06em;">
+                ${safeType}
+              </span>
+            </div>
+            <div style="font-size: 11px; line-height: 1.4; color: ${textSub};">
+              ${safeLabel}
+            </div>
+            <div style="margin-top: 5px; padding-top: 4px; border-top: 1px dashed ${border}; font-size: 10px; color: ${typeColor}; font-weight: 600;">
+              Click edge to inspect Academic Proof &rarr;
+            </div>
+          </div>`;
+    },
+    [isLight]
+  );
+
+  const getLinkDirectionalArrowLength = useCallback(
+    (link: any) => {
+      const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+      const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+      const isEdgeSelected =
+        Boolean(selectedEdgeId) &&
+        (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
+      if (isEdgeSelected) return 11.0;
+      const isConnectedToFocus =
+        selectedNodeId === srcId ||
+        selectedNodeId === tgtId ||
+        hoveredNode?.id === srcId ||
+        hoveredNode?.id === tgtId;
+      const inPath = isLinkInPath(srcId, tgtId);
+      return getArrowLength(isConnectedToFocus, inPath, isPathActive);
+    },
+    [selectedEdgeId, selectedNodeId, hoveredNode, isLinkInPath, isPathActive]
+  );
+
+  const getLinkDirectionalArrowColor = useCallback(
+    (link: any) => {
+      const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+      const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+      const isEdgeSelected =
+        Boolean(selectedEdgeId) &&
+        (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
+      if (isEdgeSelected) return isLight ? '#b45309' : '#fbbf24';
+      const isConnectedToFocus =
+        selectedNodeId === srcId ||
+        selectedNodeId === tgtId ||
+        hoveredNode?.id === srcId ||
+        hoveredNode?.id === tgtId;
+      const inPath = isLinkInPath(srcId, tgtId);
+      const isDimmed = (selectedNodeId || hoveredNode || selectedEdgeId) && !isConnectedToFocus && !inPath && !isEdgeSelected;
+      return getArrowColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath, isPathActive);
+    },
+    [selectedEdgeId, selectedNodeId, hoveredNode, isLight, isLinkInPath, isPathActive]
+  );
+
+  const getLinkDashPattern = useCallback(
+    (link: any) => {
+      const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+      const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+      const inPath = isLinkInPath(srcId, tgtId);
+      return getLinkLineDash(link.type, inPath, isPathActive);
+    },
+    [isLinkInPath, isPathActive]
+  );
+
+  const getLinkStrokeColor = useCallback(
+    (link: any) => {
+      const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+      const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+      const isEdgeSelected =
+        Boolean(selectedEdgeId) &&
+        (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
+      if (isEdgeSelected) return isLight ? '#b45309' : '#fbbf24';
+      const inPath = isLinkInPath(srcId, tgtId);
+      const isConnectedToFocus =
+        selectedNodeId === srcId ||
+        selectedNodeId === tgtId ||
+        hoveredNode?.id === srcId ||
+        hoveredNode?.id === tgtId;
+      const isDimmed = (selectedNodeId || hoveredNode || selectedEdgeId) && !isConnectedToFocus && !inPath;
+      return getLinkColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath, isPathActive);
+    },
+    [selectedEdgeId, selectedNodeId, hoveredNode, isLight, isLinkInPath, isPathActive]
+  );
+
+  const getLinkStrokeWidth = useCallback(
+    (link: any) => {
+      const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+      const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+      const isEdgeSelected =
+        Boolean(selectedEdgeId) &&
+        (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
+      if (isEdgeSelected) return 5.5;
+      const inPath = isLinkInPath(srcId, tgtId);
+      const isConnectedToFocus =
+        selectedNodeId === srcId ||
+        selectedNodeId === tgtId ||
+        hoveredNode?.id === srcId ||
+        hoveredNode?.id === tgtId;
+      return getLinkWidth(link.strength, isConnectedToFocus, inPath, isPathActive);
+    },
+    [selectedEdgeId, selectedNodeId, hoveredNode, isLinkInPath, isPathActive]
+  );
+
+  const paintNodePointerArea = useCallback((node: any, color: string, ctx: CanvasRenderingContext2D) => {
+    const size = getNodeRadius(node.val, node.importanceScore);
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
+    ctx.fill();
+  }, []);
+
+  const handleLinkPointerAreaPaint = useCallback(
+    (link: any, color: string, ctx: CanvasRenderingContext2D) => {
+      const src = link.source;
+      const tgt = link.target;
+      if (!src || !tgt || typeof src.x !== 'number' || typeof tgt.x !== 'number') return;
+      ctx.save();
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 16; // Generous 16px transparent hit area buffer for effortless interaction
+      const controlPoints = link.__controlPoints;
+      if (controlPoints && controlPoints.length >= 2) {
+        ctx.moveTo(src.x, src.y);
+        ctx.quadraticCurveTo(controlPoints[0], controlPoints[1], tgt.x, tgt.y);
+        ctx.stroke();
+      } else {
+        const dx = tgt.x - src.x;
+        const dy = tgt.y - src.y;
+        const l = Math.hypot(dx, dy);
+        if (l > 0) {
+          const curvature = 0.12;
+          // Correct control point geometry to match force-graph's visible curve (not inverted)
+          const cx = (src.x + tgt.x) / 2 + (dy / l) * l * curvature;
+          const cy = (src.y + tgt.y) / 2 - (dx / l) * l * curvature;
+          ctx.moveTo(src.x, src.y);
+          ctx.quadraticCurveTo(cx, cy, tgt.x, tgt.y);
+          ctx.stroke();
+        }
+      }
+      ctx.restore();
+    },
+    []
+  );
+
+  const handleNodeClick = useCallback(
+    (node: any) => {
+      onSelectNode(node.id);
+      onSelectEdge?.(null);
+    },
+    [onSelectNode, onSelectEdge]
+  );
+
+  const handleLinkClick = useCallback(
+    (link: any) => {
+      const srcId = typeof link.source === 'object' ? link.source.id : link.source;
+      const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
+      const edgeId = link.id || `${srcId}--${tgtId}`;
+      onSelectEdge?.(edgeId);
+    },
+    [onSelectEdge]
+  );
+
+  const handleBackgroundClick = useCallback(() => {
+    onSelectNode(null);
+    onSelectEdge?.(null);
+  }, [onSelectNode, onSelectEdge]);
+
+  const handleNodeHover = useCallback((node: any) => {
+    const nextId = node?.id ?? null;
+    if (hoveredNodeIdRef.current === nextId) return;
+    hoveredNodeIdRef.current = nextId;
+    setHoveredNode(node || null);
+    if (node && fgRef.current && typeof node.x === 'number' && typeof node.y === 'number') {
+      const coords = fgRef.current.graph2ScreenCoords(node.x, node.y);
+      setHoverPosition(coords);
+    } else {
+      setHoverPosition(null);
+    }
+  }, []);
+
+  const handleEngineStop = useCallback(() => {
+    if (!hasInitialFitRef.current && !selectedEdgeId && !selectedNodeId && fgRef.current) {
+      fgRef.current.zoomToFit(prefersReducedMotion ? 0 : 700, 100);
+      hasInitialFitRef.current = true;
+    }
+  }, [selectedEdgeId, selectedNodeId, prefersReducedMotion]);
 
   return (
     <div
@@ -949,194 +1195,37 @@ export function ForceGraphView({
       {/* 2D Force Directed Graph Canvas */}
       <ForceGraph2D
         ref={fgRef}
-        autoPauseRedraw={false}
+        autoPauseRedraw={!isExplorationActive}
         width={dimensions.width}
         height={dimensions.height}
         backgroundColor="rgba(0,0,0,0)"
         graphData={graphData}
-        onEngineTick={() => {
-          if (!hasConfiguredForcesRef.current && fgRef.current) {
-            hasConfiguredForcesRef.current = true;
-            applyForces(fgRef.current, spacingMultiplier);
-          }
-          const live = fgRef.current?.graphData?.()?.nodes;
-          if (live) {
-            for (let i = 0; i < live.length; i++) {
-              const n = live[i];
-              if (typeof n.x === 'number' && typeof n.y === 'number') {
-                nodeCoordinatesRef.current.set(n.id, { x: n.x, y: n.y, vx: n.vx, vy: n.vy });
-              }
-            }
-          }
-        }}
+        onEngineTick={handleEngineTick}
         onRenderFramePre={renderBackground}
         onRenderFramePost={renderForegroundAtmosphere}
         nodeId="id"
-        nodeLabel={() => ''} /* Disable default HTML title tooltip so our custom card handles hover */
+        nodeLabel={emptyNodeLabel}
         nodeCanvasObject={paintNode}
-        linkLabel={(link: any) => {
-          const cfg = getEdgeTypeConfig(link.type);
-          const typeColor = isLight ? cfg.color : cfg.colorDark;
-          const bg = isLight ? 'rgba(247,243,234,0.97)' : 'rgba(20,18,15,0.96)';
-          const border = isLight ? 'rgba(215,205,190,0.9)' : 'rgba(229,185,76,0.35)';
-          const textMain = isLight ? '#1a1815' : '#f5f2eb';
-          const textSub = isLight ? '#524b42' : '#cfc7b8';
-          const safeType = escapeHtml(link.type || 'INFLUENCED');
-          const safeLabel = escapeHtml(link.label || '');
-          return `<div style="padding: 7px 11px; background: ${bg}; border: 1px solid ${border}; border-radius: 9px; font-family: 'EB Garamond', Georgia, serif; font-size: 12px; color: ${textMain}; box-shadow: 0 4px 16px rgba(0,0,0,0.3); max-width: 280px; pointer-events: none;">
-            <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 3px;">
-              <span style="font-weight: 700; text-transform: uppercase; font-family: monospace; font-size: 10px; color: ${typeColor}; letter-spacing: 0.06em;">
-                ${safeType}
-              </span>
-            </div>
-            <div style="font-size: 11px; line-height: 1.4; color: ${textSub};">
-              ${safeLabel}
-            </div>
-            <div style="margin-top: 5px; padding-top: 4px; border-top: 1px dashed ${border}; font-size: 10px; color: ${typeColor}; font-weight: 600;">
-              Click edge to inspect Academic Proof &rarr;
-            </div>
-          </div>`;
-        }}
-        linkDirectionalArrowLength={(link: any) => {
-          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
-          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
-          const isEdgeSelected =
-            Boolean(selectedEdgeId) &&
-            (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
-          if (isEdgeSelected) return 11.0;
-          const isConnectedToFocus =
-            selectedNodeId === srcId ||
-            selectedNodeId === tgtId ||
-            hoveredNode?.id === srcId ||
-            hoveredNode?.id === tgtId;
-          const inPath = isLinkInPath(srcId, tgtId);
-          return getArrowLength(isConnectedToFocus, inPath, isPathActive);
-        }}
+        linkLabel={getLinkLabelHtml}
+        linkDirectionalArrowLength={getLinkDirectionalArrowLength}
         linkDirectionalArrowRelPos={ARROW_REL_POS}
-        linkDirectionalArrowColor={(link: any) => {
-          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
-          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
-          const isEdgeSelected =
-            Boolean(selectedEdgeId) &&
-            (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
-          if (isEdgeSelected) return isLight ? '#b45309' : '#fbbf24';
-          const isConnectedToFocus =
-            selectedNodeId === srcId ||
-            selectedNodeId === tgtId ||
-            hoveredNode?.id === srcId ||
-            hoveredNode?.id === tgtId;
-          const inPath = isLinkInPath(srcId, tgtId);
-          const isDimmed = (selectedNodeId || hoveredNode || selectedEdgeId) && !isConnectedToFocus && !inPath && !isEdgeSelected;
-          return getArrowColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath, isPathActive);
-        }}
-        linkLineDash={(link: any) => {
-          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
-          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
-          const inPath = isLinkInPath(srcId, tgtId);
-          return getLinkLineDash(link.type, inPath, isPathActive);
-        }}
+        linkDirectionalArrowColor={getLinkDirectionalArrowColor}
+        linkLineDash={getLinkDashPattern}
         linkCurvature={0.12}
-        linkColor={(link: any) => {
-          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
-          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
-          const isEdgeSelected =
-            Boolean(selectedEdgeId) &&
-            (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
-          if (isEdgeSelected) return isLight ? '#b45309' : '#fbbf24';
-          const inPath = isLinkInPath(srcId, tgtId);
-          const isConnectedToFocus =
-            selectedNodeId === srcId ||
-            selectedNodeId === tgtId ||
-            hoveredNode?.id === srcId ||
-            hoveredNode?.id === tgtId;
-          const isDimmed = (selectedNodeId || hoveredNode || selectedEdgeId) && !isConnectedToFocus && !inPath;
-          return getLinkColor(link.type, isLight, isConnectedToFocus, !!isDimmed, inPath, isPathActive);
-        }}
-        linkWidth={(link: any) => {
-          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
-          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
-          const isEdgeSelected =
-            Boolean(selectedEdgeId) &&
-            (link.id === selectedEdgeId || `${srcId}--${tgtId}` === selectedEdgeId);
-          if (isEdgeSelected) return 5.5;
-          const inPath = isLinkInPath(srcId, tgtId);
-          const isConnectedToFocus =
-            selectedNodeId === srcId ||
-            selectedNodeId === tgtId ||
-            hoveredNode?.id === srcId ||
-            hoveredNode?.id === tgtId;
-          return getLinkWidth(link.strength, isConnectedToFocus, inPath, isPathActive);
-        }}
-        linkCanvasObjectMode={() => 'after'}
-        linkCanvasObject={paintLinkOverlay}
-        nodePointerAreaPaint={(node: any, color: string, ctx: CanvasRenderingContext2D) => {
-          const size = getNodeRadius(node.val, node.importanceScore);
-          ctx.fillStyle = color;
-          ctx.beginPath();
-          ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
-          ctx.fill();
-        }}
-        linkPointerAreaPaint={(link: any, color: string, ctx: CanvasRenderingContext2D, globalScale: number) => {
-          const src = link.source;
-          const tgt = link.target;
-          if (!src || !tgt || typeof src.x !== 'number' || typeof tgt.x !== 'number') return;
-          ctx.save();
-          ctx.beginPath();
-          ctx.strokeStyle = color;
-          ctx.lineWidth = 16; // Generous 16px transparent hit area buffer for effortless interaction
-          const controlPoints = link.__controlPoints;
-          if (controlPoints && controlPoints.length >= 2) {
-            ctx.moveTo(src.x, src.y);
-            ctx.quadraticCurveTo(controlPoints[0], controlPoints[1], tgt.x, tgt.y);
-            ctx.stroke();
-          } else {
-            const dx = tgt.x - src.x;
-            const dy = tgt.y - src.y;
-            const l = Math.hypot(dx, dy);
-            if (l > 0) {
-              const curvature = 0.12;
-              // Correct control point geometry to match force-graph's visible curve (not inverted)
-              const cx = (src.x + tgt.x) / 2 + (dy / l) * l * curvature;
-              const cy = (src.y + tgt.y) / 2 - (dx / l) * l * curvature;
-              ctx.moveTo(src.x, src.y);
-              ctx.quadraticCurveTo(cx, cy, tgt.x, tgt.y);
-              ctx.stroke();
-            }
-          }
-          ctx.restore();
-        }}
-        onNodeClick={(node: any) => {
-          onSelectNode(node.id);
-          onSelectEdge?.(null);
-        }}
-        onLinkClick={(link: any) => {
-          const srcId = typeof link.source === 'object' ? link.source.id : link.source;
-          const tgtId = typeof link.target === 'object' ? link.target.id : link.target;
-          const edgeId = link.id || `${srcId}--${tgtId}`;
-          onSelectEdge?.(edgeId);
-        }}
-        onBackgroundClick={() => {
-          onSelectNode(null);
-          onSelectEdge?.(null);
-        }}
-        onNodeHover={(node: any) => {
-          setHoveredNode(node || null);
-          if (node && fgRef.current && typeof node.x === 'number' && typeof node.y === 'number') {
-            const coords = fgRef.current.graph2ScreenCoords(node.x, node.y);
-            setHoverPosition(coords);
-          } else {
-            setHoverPosition(null);
-          }
-        }}
-        warmupTicks={0}
-        cooldownTicks={140}
-        cooldownTime={3000}
-        onEngineStop={() => {
-          if (!hasInitialFitRef.current && !selectedEdgeId && !selectedNodeId && fgRef.current) {
-            fgRef.current.zoomToFit(prefersReducedMotion ? 0 : 700, 100);
-            hasInitialFitRef.current = true;
-          }
-        }}
+        linkColor={getLinkStrokeColor}
+        linkWidth={getLinkStrokeWidth}
+        linkCanvasObjectMode={hasLinkOverlay ? linkCanvasObjectModeAfter : undefined}
+        linkCanvasObject={hasLinkOverlay ? paintLinkOverlay : undefined}
+        nodePointerAreaPaint={paintNodePointerArea}
+        linkPointerAreaPaint={handleLinkPointerAreaPaint}
+        onNodeClick={handleNodeClick}
+        onLinkClick={handleLinkClick}
+        onBackgroundClick={handleBackgroundClick}
+        onNodeHover={handleNodeHover}
+        warmupTicks={30}
+        cooldownTicks={100}
+        cooldownTime={2500}
+        onEngineStop={handleEngineStop}
         d3AlphaDecay={0.03}
         d3VelocityDecay={0.35}
         enableNodeDrag={true}

@@ -75,15 +75,63 @@ export function isImageReady(img: unknown): img is HTMLImageElement {
   );
 }
 
-// In-memory global cache for loaded philosopher portraits
+// In-memory global cache for loaded philosopher portraits and pre-clipped circular sprites
 export const portraitCache = new Map<string, PortraitCacheEntry>();
+export const portraitSpriteCache = new Map<string, HTMLCanvasElement>();
+export const PORTRAIT_SPRITE_SIZE = 128;
 
 export function clearPortraitCache(): void {
   portraitCache.clear();
+  portraitSpriteCache.clear();
 }
 
 export function getPortraitFromCache(url: string): PortraitCacheEntry | undefined {
   return portraitCache.get(url);
+}
+
+/**
+ * Pre-renders a portrait image into a circularly clipped offscreen canvas sprite.
+ * Eliminates expensive per-frame ctx.save() / ctx.clip() / downscaling calls.
+ */
+export function createCircularPortraitSprite(
+  img: HTMLImageElement,
+  spriteSize = PORTRAIT_SPRITE_SIZE
+): HTMLCanvasElement | null {
+  if (typeof document === 'undefined' || typeof document.createElement !== 'function') {
+    return null;
+  }
+  const canvas = document.createElement('canvas');
+  canvas.width = spriteSize;
+  canvas.height = spriteSize;
+  const sCtx = canvas.getContext('2d');
+  if (!sCtx) return null;
+
+  const half = spriteSize / 2;
+  const crop = getPortraitCoverCrop(img.naturalWidth, img.naturalHeight);
+
+  sCtx.beginPath();
+  sCtx.arc(half, half, half, 0, Math.PI * 2, false);
+  sCtx.clip();
+  sCtx.drawImage(img, crop.sx, crop.sy, crop.sWidth, crop.sHeight, 0, 0, spriteSize, spriteSize);
+
+  return canvas;
+}
+
+/**
+ * Retrieves (or lazily bakes) the pre-clipped circular portrait sprite for a URL.
+ */
+export function getPortraitSprite(url: string, img?: unknown): HTMLCanvasElement | null {
+  const existing = portraitSpriteCache.get(url);
+  if (existing) return existing;
+
+  const source = img ?? portraitCache.get(url);
+  if (!isImageReady(source)) return null;
+
+  const sprite = createCircularPortraitSprite(source);
+  if (sprite) {
+    portraitSpriteCache.set(url, sprite);
+  }
+  return sprite;
 }
 
 /**
@@ -108,10 +156,16 @@ export function preloadPortrait(
   portraitCache.set(url, 'loading');
   const img = new Image();
 
-  img.onload = () => {
+  const finalizeLoad = () => {
     portraitCache.set(url, img);
+    const sprite = createCircularPortraitSprite(img);
+    if (sprite) {
+      portraitSpriteCache.set(url, sprite);
+    }
     onLoaded?.(img);
   };
+
+  img.onload = finalizeLoad;
 
   img.onerror = () => {
     portraitCache.set(url, 'failed');
@@ -122,8 +176,7 @@ export function preloadPortrait(
 
   // Handle immediate synchronous completion from browser memory cache
   if (isImageReady(img)) {
-    portraitCache.set(url, img);
-    onLoaded?.(img);
+    finalizeLoad();
   }
 }
 
@@ -132,11 +185,14 @@ export interface DrawMedallionOptions {
   isPrimaryThinker?: boolean;
   isLight?: boolean;
   size: number;
+  sprite?: HTMLCanvasElement | null;
+  lodSimple?: boolean;
 }
 
 /**
  * Draws the philosopher portrait medallion or fallback monogram on an HTML5 canvas.
- * Returns true if portrait image was painted, or false if fallback monogram was drawn.
+ * Uses a pre-clipped circular sprite when available to avoid per-frame ctx.clip() overhead.
+ * Returns true if portrait image was painted, or false if fallback monogram or simple LOD was drawn.
  */
 export function drawPortraitMedallion(
   ctx: CanvasRenderingContext2D,
@@ -144,7 +200,7 @@ export function drawPortraitMedallion(
   img: unknown,
   options: DrawMedallionOptions
 ): boolean {
-  const { isSelected = false, isPrimaryThinker = false, isLight = false, size } = options;
+  const { isSelected = false, isPrimaryThinker = false, isLight = false, size, sprite = null, lodSimple = false } = options;
   const portraitRadius = size * 0.86;
 
   // Background node base circle
@@ -152,6 +208,32 @@ export function drawPortraitMedallion(
   ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
   ctx.fillStyle = node.color || '#f4a261';
   ctx.fill();
+
+  // Simplified Level-of-Detail when zoomed far out
+  if (lodSimple) {
+    return false;
+  }
+
+  // Fast path: draw pre-clipped circular portrait sprite without ctx.save/clip/restore
+  if (sprite) {
+    ctx.drawImage(
+      sprite,
+      node.x - portraitRadius,
+      node.y - portraitRadius,
+      portraitRadius * 2,
+      portraitRadius * 2
+    );
+
+    ctx.beginPath();
+    ctx.arc(node.x, node.y, portraitRadius, 0, 2 * Math.PI, false);
+    ctx.lineWidth = isSelected ? 2.5 : isPrimaryThinker ? 2 : 1.2;
+    ctx.strokeStyle = isSelected
+      ? (isLight ? '#9a6f14' : '#fef08a')
+      : (isLight ? 'rgba(90, 70, 45, 0.85)' : 'rgba(235, 215, 175, 0.85)');
+    ctx.stroke();
+
+    return true;
+  }
 
   if (isImageReady(img)) {
     const crop = getPortraitCoverCrop(img.naturalWidth, img.naturalHeight);
