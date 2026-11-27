@@ -1,0 +1,86 @@
+[
+  {
+    "id": "al-ghazali--muhammad-iqbal",
+    "source": "al-ghazali",
+    "target": "muhammad-iqbal",
+    "type": "SYNTHESIZED",
+    "label": "Affirmed Ghazali’s critique of dry rationalism while rejecting fatalistic quietism",
+    "strength": 4,
+    "description": "In The Reconstruction of Religious Thought in Islam, Iqbal praised Al-Ghazali for liberating religious intuition from Greek formalism, yet faulted him for separating thought and intuition.",
+    "dialecticalTension": "Unites Ghazalian spiritual immediacy with active, world-making historical agency.",
+    "historicalContext": "20th-century Islamic philosophical reconstruction (1930).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Muhammad Iqbal",
+        "work": "The Reconstruction of Religious Thought in Islam",
+        "year": 1930,
+        "url": "https://plato.stanford.edu/entries/muhammad-iqbal/"
+      }
+    ]
+  },
+  {
+    "id": "friedrich-nietzsche--muhammad-iqbal",
+    "source": "friedrich-nietzsche",
+    "target": "muhammad-iqbal",
+    "type": "CRITIQUED",
+    "label": "Engaged Nietzsche’s Übermensch while grounding self-creation (Khudi) in ethical theism",
+    "strength": 5,
+    "description": "Iqbal admired Nietzsche’s critique of herd conformity and vitality, yet critiqued Nietzsche as \"a heart that remained believer while his brain denied,\" anchoring Khudi in divine love.",
+    "dialecticalTension": "Transmutes Nietzschean self-overcoming from godless power into ethical co-creation with God.",
+    "historicalContext": "Secrets of the Self (1915) & Reconstruction (1930).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Muhammad Iqbal",
+        "work": "The Reconstruction of Religious Thought in Islam",
+        "year": 1930,
+        "url": "https://plato.stanford.edu/entries/muhammad-iqbal/"
+      }
+    ]
+  },
+  {
+    "id": "muhammad-iqbal--khudi-selfhood",
+    "source": "muhammad-iqbal",
+    "target": "khudi-selfhood",
+    "type": "DEVELOPED",
+    "label": "Formulated Khudi: dynamic moral and creative realization of the human ego",
+    "strength": 5,
+    "description": "Iqbal’s philosophy of Khudi rejected pantheistic self-dissolution, insisting that human individuality matures through creative struggle, freedom, and love.",
+    "dialecticalTension": "Redefines Islamic mysticism as activist self-affirmation rather than world-renunciation.",
+    "historicalContext": "Asrar-i-Khudi (1915).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Muhammad Iqbal",
+        "work": "The Secrets of the Self",
+        "year": 1915,
+        "url": "https://plato.stanford.edu/entries/muhammad-iqbal/"
+      }
+    ]
+  },
+  {
+    "id": "muhammad-iqbal--mohammed-arkoun",
+    "source": "muhammad-iqbal",
+    "target": "mohammed-arkoun",
+    "type": "INFLUENCED",
+    "label": "Inspired modern Islamic philosophical projects reopening dynamic legal and rational ijtihad",
+    "strength": 4,
+    "description": "Iqbal’s call in Reconstruction for the \"principle of movement in the structure of Islam\" (ijtihad) deeply informed later modernist thinkers such as Arkoun and Abu Zayd.",
+    "dialecticalTension": "Launches 20th-century philosophical critique of taqlid (blind imitation).",
+    "historicalContext": "Modern Islamic thought (1930–1984).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Muhammad Iqbal",
+        "work": "The Reconstruction of Religious Thought in Islam",
+        "year": 1930,
+        "url": "https://plato.stanford.edu/entries/muhammad-iqbal/"
+      }
+    ]
+  }
+]

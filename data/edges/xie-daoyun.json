@@ -1,0 +1,65 @@
+[
+  {
+    "id": "zhuangzi--xie-daoyun",
+    "source": "zhuangzi",
+    "target": "xie-daoyun",
+    "type": "DEVELOPED",
+    "label": "Carried Zhuangzian spontaneity and naturalness into Wei-Jin Xuanxue philosophical conversation",
+    "strength": 4,
+    "description": "A celebrated practitioner of Xuanxue (\"Dark Learning\") and pure conversation (qingtan), Xie Daoyun embodied Zhuangzi’s aesthetic spontaneity in philosophical debate.",
+    "dialecticalTension": "Translates classical Daoist spontaneity into elite Wei-Jin dialectical wit.",
+    "historicalContext": "Eastern Jin dynasty (4th century CE).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Liu Yiqing",
+        "work": "Shishuo Xinyu (A New Account of the Tales of the World)",
+        "year": 430,
+        "url": "https://en.wikipedia.org/wiki/Xie_Daoyun"
+      }
+    ]
+  },
+  {
+    "id": "ban-zhao--xie-daoyun",
+    "source": "ban-zhao",
+    "target": "xie-daoyun",
+    "type": "INFLUENCED",
+    "label": "Expanded Ban Zhao’s precedent of female scholarly authority into autonomous philosophical debate",
+    "strength": 4,
+    "description": "While Ban Zhao worked within Han Confucian court historiography, Xie Daoyun publicly bested male literati in Xuanxue metaphysical debate.",
+    "dialecticalTension": "Shifts female intellectual voice from Confucian domestic instruction to dialectical qingtan.",
+    "historicalContext": "Han to Eastern Jin women’s intellectual lineage.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Xie Daoyun",
+        "work": "Recorded Debates in Jinshu & Shishuo Xinyu",
+        "year": 390,
+        "url": "https://en.wikipedia.org/wiki/Xie_Daoyun"
+      }
+    ]
+  },
+  {
+    "id": "xie-daoyun--li-qingzhao",
+    "source": "xie-daoyun",
+    "target": "li-qingzhao",
+    "type": "INFLUENCED",
+    "label": "Established the canonical Chinese archetype of women’s philosophical and poetic genius",
+    "strength": 4,
+    "description": "Song literati—and Li Qingzhao herself—invoked Xie Daoyun’s \"talent for chanting about snow\" as the benchmark of women’s autonomous literary-philosophical intellect.",
+    "dialecticalTension": "Sustains an enduring Chinese counter-canon of female scholarly brilliance.",
+    "historicalContext": "Eastern Jin to Song dynasty.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Li Qingzhao",
+        "work": "Lun Ci (On Song Lyrics)",
+        "year": 1130,
+        "url": "https://en.wikipedia.org/wiki/Xie_Daoyun"
+      }
+    ]
+  }
+]

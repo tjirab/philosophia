@@ -1,0 +1,41 @@
+{
+  "id": "kamaladevi-chattopadhyay",
+  "name": "Kamaladevi Chattopadhyay",
+  "birthYear": 1903,
+  "deathYear": 1988,
+  "eraId": "twentieth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Indian anti-colonial social theorist, feminist organizer, and cultural philosopher who linked women’s cooperative labor, artisanal aesthetics, and decentralized socialist democracy to decolonization.",
+  "centralQuestion": "How can anti-colonial liberation integrate women’s economic autonomy and vernacular artisanal traditions without surrendering to industrial alienation?",
+  "keyWorks": [
+    {
+      "title": "The Awakening of Indian Women",
+      "year": "1939 CE",
+      "url": "https://en.wikipedia.org/wiki/Kamaladevi_Chattopadhyay",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kamaladevi_Chattopadhyay",
+      "description": "Sociological and political treatise examining Indian women’s anti-imperialist organizing, labor rights, and legal equality."
+    },
+    {
+      "title": "Inner Recesses, Outer Spaces",
+      "year": "1986 CE",
+      "url": "https://en.wikipedia.org/wiki/Kamaladevi_Chattopadhyay",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kamaladevi_Chattopadhyay",
+      "description": "Philosophical memoir reflecting on cooperative economics, folk aesthetics, and transnational solidarity."
+    }
+  ],
+  "sepSlug": "colonialism",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/colonialism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kamaladevi_Chattopadhyay"
+  },
+  "imageUrl": "/portraits/kamaladevi-chattopadhyay.jpg"
+}

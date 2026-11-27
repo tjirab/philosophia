@@ -1,0 +1,44 @@
+[
+  {
+    "id": "john-stuart-mill--toshiko-kishida",
+    "source": "john-stuart-mill",
+    "target": "toshiko-kishida",
+    "type": "INFLUENCED",
+    "label": "Adapted Meiji translations of Mill’s gender equality into public Japanese feminist oratory",
+    "strength": 4,
+    "description": "Drawing on Meiji Enlightenment discourse and Mill’s Subjection of Women, Kishida became Japan’s first woman public political orator.",
+    "dialecticalTension": "Fuses liberal natural-rights language with a fierce critique of Tokugawa-Meiji Confucian patriarchy.",
+    "historicalContext": "Freedom and People’s Rights Movement (1882–1884).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Toshiko Kishida",
+        "work": "Daughters in Boxes",
+        "year": 1883,
+        "url": "https://en.wikipedia.org/wiki/Toshiko_Kishida"
+      }
+    ]
+  },
+  {
+    "id": "toshiko-kishida--hiratsuka-raicho",
+    "source": "toshiko-kishida",
+    "target": "hiratsuka-raicho",
+    "type": "INFLUENCED",
+    "label": "Pioneered public feminist critique enabling the 1911 Seito literary-philosophical awakening",
+    "strength": 5,
+    "description": "Kishida’s imprisonment and essays for Jogaku Zasshi broke the Meiji taboo on women’s political speech, paving the way for Hiratsuka’s Seito generation.",
+    "dialecticalTension": "Links first-wave Meiji civil rights feminism to Taisho philosophical interiority.",
+    "historicalContext": "Japanese feminist lineage (1883–1911).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Toshiko Kishida",
+        "work": "Daughters in Boxes",
+        "year": 1883,
+        "url": "https://en.wikipedia.org/wiki/Toshiko_Kishida"
+      }
+    ]
+  }
+]

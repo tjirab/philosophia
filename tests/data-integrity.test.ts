@@ -1542,4 +1542,68 @@ describe('Philosophy Graph Data Integrity', () => {
       expect(thinker.deathYear, `${livingId} should not have deathYear`).toBeUndefined();
     }
   });
+
+  it('verifies Phase 5C South Asian, East Asian, and MENA lineages, living dates, and landmark concepts', () => {
+    // South Asian lineages
+    expect(findInfluencePath('gargi-vachaknavi', 'patanjali', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('patanjali', 'eight-limbs-ashtanga-yoga', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('siddhartha-gautama', 'vasubandhu', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('vasubandhu', 'yogacara-storehouse-consciousness', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('b-r-ambedkar', 'uma-chakravarti', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('uma-chakravarti', 'brahmanical-patriarchy', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('uma-chakravarti', 'sharmila-rege', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('sharmila-rege', 'dalit-feminist-standpoint', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('adam-smith', 'amartya-sen', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('amartya-sen', 'capabilities-approach', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('nagarjuna', 'bimal-krishna-matilal', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('irawati-karve', 'bina-agarwal', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('romila-thapar', 'uma-chakravarti', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('pandita-ramabai', 'rokeya-sakhawat-hossain', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('kamaladevi-chattopadhyay', 'vina-mazumdar', edgesData as any).found).toBe(true);
+
+    // East Asian lineages
+    expect(findInfluencePath('zhuangzi', 'xie-daoyun', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('mencius', 'zhu-xi', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('zhu-xi', 'principle-and-vital-force-li-qi', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('zhu-xi', 'wang-yangming', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('wang-yangming', 'unity-of-knowledge-and-action', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('nishida-kitaro', 'nishitani-keiji', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('toshiko-kishida', 'hiratsuka-raicho', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('hiratsuka-raicho', 'fusae-ichikawa', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('fusae-ichikawa', 'chizuko-ueno', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('kim-il-yeop', 'na-hye-seok', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('chen-hengzhe', 'ding-ling', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('chen-hengzhe', 'lin-huiyin', edgesData as any).found).toBe(true);
+
+    // MENA lineages
+    expect(findInfluencePath('rabia-al-adawiyya', 'aisha-al-taymuriyya', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('aisha-al-taymuriyya', 'zaynab-fawwaz', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('aisha-al-taymuriyya', 'malak-hifni-nasif', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('malak-hifni-nasif', 'may-ziadeh', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('huda-shaarawi', 'doria-shafik', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('al-ghazali', 'muhammad-iqbal', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('muhammad-iqbal', 'khudi-selfhood', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('averroes', 'mohammed-arkoun', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('mohammed-arkoun', 'nasr-hamid-abu-zayd', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('nasr-hamid-abu-zayd', 'humanistic-quranic-hermeneutics', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('frantz-fanon', 'assia-djebar', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('fatema-mernissi', 'lila-abu-lughod', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('lila-abu-lughod', 'saba-mahmood', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('fatema-mernissi', 'nadia-yassine', edgesData as any).found).toBe(true);
+
+    // All living Phase 5C thinkers must omit deathYear
+    for (const livingId of [
+      'romila-thapar',
+      'amartya-sen',
+      'uma-chakravarti',
+      'bina-agarwal',
+      'chizuko-ueno',
+      'lila-abu-lughod',
+      'nadia-yassine',
+    ]) {
+      const thinker = philosophersData.find((p) => p.id === livingId) as any;
+      expect(thinker, `Missing living thinker ${livingId}`).toBeDefined();
+      expect(thinker.deathYear, `${livingId} should not have deathYear`).toBeUndefined();
+    }
+  });
 });

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "karl-marx--chizuko-ueno",
+    "source": "karl-marx",
+    "target": "chizuko-ueno",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Marxist value theory with feminist analysis of patriarchal domestic labor",
+    "strength": 5,
+    "description": "Ueno demonstrated that capitalism relies structurally on the patriarchal family to reproduce labor power without wages, establishing Japan’s dual-systems Marxist feminism.",
+    "dialecticalTension": "Unifies class exploitation and gendered domestic oppression as co-constitutive systems.",
+    "historicalContext": "Japanese feminist sociology (1990–present).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Chizuko Ueno",
+        "work": "Patriarchy and Capitalism",
+        "year": 1990,
+        "url": "https://en.wikipedia.org/wiki/Chizuko_Ueno"
+      }
+    ]
+  },
+  {
+    "id": "simone-de-beauvoir--chizuko-ueno",
+    "source": "simone-de-beauvoir",
+    "target": "chizuko-ueno",
+    "type": "DEVELOPED",
+    "label": "Expanded existential-feminist critiques of woman as Other into Japanese care and aging sociology",
+    "strength": 4,
+    "description": "Translating and extending Western feminist theory into East Asian contexts, Ueno analyzed how Japanese corporate modernity constructs female care obligations and aging.",
+    "dialecticalTension": "Applies structural feminist critique to post-industrial East Asian demographics.",
+    "historicalContext": "Contemporary Japanese sociology.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Chizuko Ueno",
+        "work": "Patriarchy and Capitalism",
+        "year": 1990,
+        "url": "https://en.wikipedia.org/wiki/Chizuko_Ueno"
+      }
+    ]
+  },
+  {
+    "id": "ito-noe--chizuko-ueno",
+    "source": "ito-noe",
+    "target": "chizuko-ueno",
+    "type": "INFLUENCED",
+    "label": "Inherited early Japanese radical feminist anti-statism in critiquing nationalism and family law",
+    "strength": 4,
+    "description": "In Nationalism and Gender, Ueno echoed Itō Noe’s anti-state critique of Japan’s ie family-state ideology and wartime patriarchal mobilization.",
+    "dialecticalTension": "Connects Taisho anarcho-feminism to contemporary sociology of nationalism.",
+    "historicalContext": "20th-century Japanese radical feminist history.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Chizuko Ueno",
+        "work": "Nationalism and Gender",
+        "year": 1998,
+        "url": "https://en.wikipedia.org/wiki/Chizuko_Ueno"
+      }
+    ]
+  }
+]

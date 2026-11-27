@@ -1,0 +1,40 @@
+{
+  "id": "nasr-hamid-abu-zayd",
+  "name": "Nasr Hamid Abu Zayd",
+  "birthYear": 1943,
+  "deathYear": 2010,
+  "eraId": "contemporary",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Egyptian philosopher and Qur’anic hermeneuticist who synthesized Mu’tazilite rationalism with modern semiotics and Gadamerian hermeneutics to interpret revelation as a living dialogical text embedded in human history.",
+  "centralQuestion": "How does reading the Qur’an as a historically situated linguistic and communicative discourse liberate ethical reason from literalist authoritarianism?",
+  "keyWorks": [
+    {
+      "title": "The Concept of the Text (Mafhum al-Nass)",
+      "year": "1990 CE",
+      "url": "https://en.wikipedia.org/wiki/Nasr_Abu_Zayd",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nasr_Abu_Zayd",
+      "description": "Foundational Arabic hermeneutic study analyzing revelation through classical philology, Mu’tazilite theology, and modern semiotics."
+    },
+    {
+      "title": "Critique of Religious Discourse (Naqd al-Khitab al-Dini)",
+      "year": "1992 CE",
+      "url": "https://en.wikipedia.org/wiki/Nasr_Abu_Zayd",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nasr_Abu_Zayd",
+      "description": "Philosophical dissection of dogmatic ideological appropriations of sacred text in contemporary Arab politics."
+    }
+  ],
+  "sepSlug": "hermeneutics",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "man",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/hermeneutics/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nasr_Abu_Zayd"
+  },
+  "imageUrl": "/portraits/nasr-hamid-abu-zayd.jpg"
+}

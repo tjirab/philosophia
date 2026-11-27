@@ -1,0 +1,34 @@
+{
+  "id": "wang-yangming",
+  "name": "Wang Yangming",
+  "birthYear": 1472,
+  "deathYear": 1529,
+  "eraId": "early-modern",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Ming dynasty Neo-Confucian philosopher of Mind (Xinxue) who challenged Zhu Xi’s dualism by arguing that Mind is Principle (xin ji li), innate moral knowing (liangzhi) is universal, and knowledge and action form an indivisible unity.",
+  "centralQuestion": "Why is authentic moral knowledge inseparable from embodied action (zhixing heyi), and how does innate moral knowing (liangzhi) reside in every human mind?",
+  "keyWorks": [
+    {
+      "title": "Instructions for Practical Living (Chuanxi Lu)",
+      "year": "1518 CE",
+      "url": "https://en.wikipedia.org/wiki/Wang_Yangming",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Wang_Yangming",
+      "description": "Dialogues formulating the unity of knowledge and action (zhixing heyi) and the extension of innate moral knowing (zhi liangzhi)."
+    }
+  ],
+  "sepSlug": "wang-yangming",
+  "canonTier": "pillar",
+  "importanceScore": 93,
+  "gender": "man",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/wang-yangming/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wang_Yangming"
+  },
+  "imageUrl": "/portraits/wang-yangming.jpg"
+}

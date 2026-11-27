@@ -1,0 +1,41 @@
+{
+  "id": "assia-djebar",
+  "name": "Assia Djebar",
+  "birthYear": 1936,
+  "deathYear": 2015,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Algerian historian, postcolonial theorist, and Académie française member whose polyphonic counter-archives excavated Maghrebi women’s oral resistance against both French colonial erasure and postcolonial patriarchy.",
+  "centralQuestion": "How can a postcolonial woman speak and recover erased ancestral voices through the very language of the colonizer?",
+  "keyWorks": [
+    {
+      "title": "Fantasia: An Algerian Cavalcade (L'Amour, la fantasia)",
+      "year": "1985 CE",
+      "url": "https://en.wikipedia.org/wiki/Assia_Djebar",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Assia_Djebar",
+      "description": "Counter-archival historiography juxtaposing French colonial military dispatches with Algerian women’s oral memory."
+    },
+    {
+      "title": "Women of Algiers in Their Apartment",
+      "year": "1980 CE",
+      "url": "https://en.wikipedia.org/wiki/Assia_Djebar",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Assia_Djebar",
+      "description": "Deconstructs the Orientalist colonial gaze (Delacroix) and examines women’s solidarity after national independence."
+    }
+  ],
+  "sepSlug": "colonialism",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/colonialism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Assia_Djebar"
+  },
+  "imageUrl": "/portraits/assia-djebar.jpg"
+}

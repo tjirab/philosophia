@@ -1,0 +1,41 @@
+{
+  "id": "sharmila-rege",
+  "name": "Sharmila Rege",
+  "birthYear": 1964,
+  "deathYear": 2013,
+  "eraId": "contemporary",
+  "traditionId": "critical-theory",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Indian feminist sociologist who theorized Dalit Feminist Standpoint epistemology, critiquing both savarna Indian feminism for erasing caste and mainstream sociology for ignoring Ambedkar’s radical archive.",
+  "centralQuestion": "How does centering Dalit women’s lived experience of caste-patriarchal violence transform feminist standpoint epistemology and sociological canon formation?",
+  "keyWorks": [
+    {
+      "title": "Dalit Women Talk Differently: A Critique of Difference and Towards a Dalit Feminist Standpoint Position",
+      "year": "1998 CE",
+      "url": "https://en.wikipedia.org/wiki/Sharmila_Rege",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sharmila_Rege",
+      "description": "Foundational formulation of Dalit feminist standpoint theory bridging Phule-Ambedkarite critique with standpoint epistemology."
+    },
+    {
+      "title": "Writing Caste, Writing Gender: Narrating Dalit Women’s Testimonios",
+      "year": "2006 CE",
+      "url": "https://en.wikipedia.org/wiki/Sharmila_Rege",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sharmila_Rege",
+      "description": "Reconstructs Dalit women’s autobiographical testimonios as counter-hegemonic sociological theory."
+    }
+  ],
+  "sepSlug": "feminist-social-epistemology",
+  "canonTier": "pillar",
+  "importanceScore": 89,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminist-social-epistemology/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sharmila_Rege"
+  },
+  "imageUrl": "/portraits/sharmila-rege.jpg"
+}

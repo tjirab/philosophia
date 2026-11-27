@@ -1,0 +1,40 @@
+{
+  "id": "uma-chakravarti",
+  "name": "Uma Chakravarti",
+  "birthYear": 1941,
+  "eraId": "contemporary",
+  "traditionId": "critical-theory",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Indian feminist historian and social theorist who formulated the concept of Brahmanical patriarchy, analyzing how caste hierarchy and control over women’s sexuality co-constitute social stratification in South Asia.",
+  "centralQuestion": "How do caste endogamy, gendered sexual regulation, and sacred textual authority interlock to reproduce Brahmanical patriarchy?",
+  "keyWorks": [
+    {
+      "title": "Conceptualising Brahmanical Patriarchy in Early India",
+      "year": "1993 CE",
+      "url": "https://en.wikipedia.org/wiki/Uma_Chakravarti",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Uma_Chakravarti",
+      "description": "Seminal theoretical essay demonstrating that caste reproduction depends structurally on policing women’s sexuality and labor."
+    },
+    {
+      "title": "Gendering Caste: Through a Feminist Lens",
+      "year": "2003 CE",
+      "url": "https://en.wikipedia.org/wiki/Uma_Chakravarti",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Uma_Chakravarti",
+      "description": "Synthesizes Ambedkarite anti-caste critique with feminist historiography to examine graded inequality."
+    }
+  ],
+  "sepSlug": "feminism-class",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-class/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Uma_Chakravarti"
+  },
+  "imageUrl": "/portraits/uma-chakravarti.jpg"
+}

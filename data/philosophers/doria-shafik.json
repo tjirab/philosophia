@@ -1,0 +1,41 @@
+{
+  "id": "doria-shafik",
+  "name": "Doria Shafik",
+  "birthYear": 1908,
+  "deathYear": 1975,
+  "eraId": "twentieth-century",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Egyptian Sorbonne-trained philosopher (PhD on Egyptian art and Islamic aesthetics) and leader of the Bint al-Nil suffrage movement whose direct political action secured Egyptian women’s constitutional voting rights in 1956.",
+  "centralQuestion": "Why does Islamic aesthetic and moral philosophy demand women’s full constitutional suffrage and civic sovereignty?",
+  "keyWorks": [
+    {
+      "title": "La Femme et le Droit Religieux de l’Égypte Contemporaine",
+      "year": "1940 CE",
+      "url": "https://en.wikipedia.org/wiki/Doria_Shafik",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Doria_Shafik",
+      "description": "Sorbonne doctoral thesis interrogating the tension between women’s philosophical dignity in Islam and discriminatory personal status law."
+    },
+    {
+      "title": "L'Art pour l'Art dans l'Égypte Antique",
+      "year": "1940 CE",
+      "url": "https://en.wikipedia.org/wiki/Doria_Shafik",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Doria_Shafik",
+      "description": "Philosophical aesthetics defending the autonomy of ancient Egyptian visual form against Eurocentric teleology."
+    }
+  ],
+  "sepSlug": "feminism-liberal",
+  "canonTier": "bridge",
+  "importanceScore": 87,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-liberal/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Doria_Shafik"
+  },
+  "imageUrl": "/portraits/doria-shafik.jpg"
+}

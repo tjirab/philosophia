@@ -1,0 +1,44 @@
+[
+  {
+    "id": "zhu-xi--na-hye-seok",
+    "source": "zhu-xi",
+    "target": "na-hye-seok",
+    "type": "CRITIQUED",
+    "label": "Rejected Joseon Neo-Confucian chastity and three-obediences ideology as dehumanizing to women",
+    "strength": 4,
+    "description": "In Gyeonghui and A Confession About My Divorce, Na dismantled the Joseon Neo-Confucian ideal of the \"wise mother, good wife\" as an instrument of male domination.",
+    "dialecticalTension": "Pits modern existential personhood against Neo-Confucian ritual gender hierarchy.",
+    "historicalContext": "Colonial Korea (1918–1934).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Na Hye-seok",
+        "work": "A Confession About My Divorce",
+        "year": 1934,
+        "url": "https://en.wikipedia.org/wiki/Na_Hyes%C5%8Fk"
+      }
+    ]
+  },
+  {
+    "id": "yosano-akiko--na-hye-seok",
+    "source": "yosano-akiko",
+    "target": "na-hye-seok",
+    "type": "INFLUENCED",
+    "label": "Engaged Yosano Akiko’s Tokyo feminist circle while studying art in Japan",
+    "strength": 4,
+    "description": "Studying in Tokyo in the 1910s, Na drew inspiration from Yosano Akiko and the Seito movement while forging an autonomous Korean anti-colonial feminist voice.",
+    "dialecticalTension": "Cross-pollinates Taisho and Korean feminist philosophies of love and self-expression.",
+    "historicalContext": "1910s Tokyo-Seoul feminist exchange.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Na Hye-seok",
+        "work": "Gyeonghui",
+        "year": 1918,
+        "url": "https://en.wikipedia.org/wiki/Na_Hyes%C5%8Fk"
+      }
+    ]
+  }
+]

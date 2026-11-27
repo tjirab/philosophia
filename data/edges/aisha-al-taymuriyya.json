@@ -1,0 +1,44 @@
+[
+  {
+    "id": "rabia-al-adawiyya--aisha-al-taymuriyya",
+    "source": "rabia-al-adawiyya",
+    "target": "aisha-al-taymuriyya",
+    "type": "INFLUENCED",
+    "label": "Drew on classical Islamic women’s spiritual and literary authority to claim moral voice",
+    "strength": 4,
+    "description": "Writing in Arabic, Persian, and Turkish, Taymuriyya invoked historical models of pious and learned Muslim women to refute claims that female intellect belongs behind silence.",
+    "dialecticalTension": "Transforms classical spiritual autonomy into 19th-century public social critique.",
+    "historicalContext": "Egyptian Nahda (1880s–1902).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Aisha al-Taymuriyya",
+        "work": "Mir'at al-Ta'ammul fi al-Umur",
+        "year": 1892,
+        "url": "https://en.wikipedia.org/wiki/Aisha_Taymur"
+      }
+    ]
+  },
+  {
+    "id": "aisha-al-taymuriyya--malak-hifni-nasif",
+    "source": "aisha-al-taymuriyya",
+    "target": "malak-hifni-nasif",
+    "type": "INFLUENCED",
+    "label": "Inaugurated Egyptian women’s reformist philosophical discourse carried forward by Nasif",
+    "strength": 5,
+    "description": "Taymuriyya’s 1892 critique of male marital irresponsibility and women’s intellectual confinement laid the groundwork for Egypt’s first generation of public feminist theorists.",
+    "dialecticalTension": "Bridges Ottoman-era domestic salon reflection to early 20th-century public lectures.",
+    "historicalContext": "Early Egyptian feminist lineage.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "May Ziadeh",
+        "work": "Aisha al-Taymuriyya",
+        "year": 1925,
+        "url": "https://en.wikipedia.org/wiki/Aisha_Taymur"
+      }
+    ]
+  }
+]

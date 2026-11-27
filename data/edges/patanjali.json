@@ -1,0 +1,107 @@
+[
+  {
+    "id": "siddhartha-gautama--patanjali",
+    "source": "siddhartha-gautama",
+    "target": "patanjali",
+    "type": "INFLUENCED",
+    "label": "Engaged early Buddhist dhyana and mindfulness frameworks in codifying classical Yoga",
+    "strength": 4,
+    "description": "Patanjali’s Yoga Sutras systematized yogic meditative absorption (samadhi) and affliction analysis in close historical dialogue with Sramana and early Buddhist contemplative psychology.",
+    "dialecticalTension": "Synthesizes dualist Samkhya metaphysics with contemplative techniques parallel to Buddhist jhana.",
+    "historicalContext": "Classical India (c. 2nd century BCE – 4th century CE).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Patanjali",
+        "work": "Yoga Sutras of Patanjali",
+        "year": -150,
+        "url": "https://plato.stanford.edu/entries/epistemology-india/"
+      }
+    ]
+  },
+  {
+    "id": "gargi-vachaknavi--patanjali",
+    "source": "gargi-vachaknavi",
+    "target": "patanjali",
+    "type": "INFLUENCED",
+    "label": "Inherited Upanishadic inquiry into witnessing self (purusha) and meditative interiority",
+    "strength": 4,
+    "description": "Building on Upanishadic debates over the imperishable witness (atman/purusha), Patanjali formalized practical disciplines to disentangle pure awareness from mental fluctuations.",
+    "dialecticalTension": "Translates speculative Upanishadic metaphysics into an eight-limbed psychological praxis.",
+    "historicalContext": "Vedic-Upanishadic transition to classical Yoga.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Patanjali",
+        "work": "Yoga Sutras of Patanjali (I.2–4)",
+        "year": -150,
+        "url": "https://en.wikipedia.org/wiki/Yoga_Sutras_of_Patanjali"
+      }
+    ]
+  },
+  {
+    "id": "patanjali--eight-limbs-ashtanga-yoga",
+    "source": "patanjali",
+    "target": "eight-limbs-ashtanga-yoga",
+    "type": "DEVELOPED",
+    "label": "Systematized the eight-limbed discipline of ethical, attentional, and meditative transformation",
+    "strength": 5,
+    "description": "Patanjali codified Ashtanga Yoga into eight progressive limbs culminating in samadhi, offering a rigorous taxonomy of cognitive habits (samskaras) and attentional training.",
+    "dialecticalTension": "Frames liberation as systematic de-conditioning of cognitive fluctuations (citta-vritti).",
+    "historicalContext": "Yoga Sutras Book II–III.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Patanjali",
+        "work": "Yoga Sutras of Patanjali",
+        "year": -150,
+        "url": "https://en.wikipedia.org/wiki/Yoga_Sutras_of_Patanjali"
+      }
+    ]
+  },
+  {
+    "id": "patanjali--adi-shankara",
+    "source": "patanjali",
+    "target": "adi-shankara",
+    "type": "INFLUENCED",
+    "label": "Shankara authored the Vivarana sub-commentary engaging Patanjali’s yogic psychology",
+    "strength": 4,
+    "description": "Advaita Vedanta integrated Patanjali’s contemplative discipline as a preparatory purification of mind while critiquing Yoga’s ultimate metaphysical dualism between purusha and prakriti.",
+    "dialecticalTension": "Adopts Yoga’s mental discipline while rejecting Samkhya-Yoga dualism in favor of non-dual Brahman.",
+    "historicalContext": "8th-century Advaita Vedanta synthesis.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Adi Shankara",
+        "work": "Yogasutrabhashya-vivarana",
+        "year": 800,
+        "url": "https://plato.stanford.edu/entries/shankara/"
+      }
+    ]
+  },
+  {
+    "id": "patanjali--carl-jung",
+    "source": "patanjali",
+    "target": "carl-jung",
+    "type": "INFLUENCED",
+    "label": "Informed Jung’s psychology of individuation, active imagination, and chakra-symbolism seminars",
+    "strength": 3,
+    "description": "Jung studied Patanjali’s Yoga Sutras extensively in his 1930s ETH Zurich lectures, treating yogic psychology as a systematic Western counterpoint for depth-psychological transformation.",
+    "dialecticalTension": "Adapts eastern meditative interiority into analytical psychology while warning against uncritical Western imitation.",
+    "historicalContext": "Jung’s Zurich lectures on Kundalini and Patanjali (1932–1939).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Carl Jung",
+        "work": "The Psychology of Kundalini Yoga / Modern Psychology Lectures",
+        "year": 1938,
+        "url": "https://en.wikipedia.org/wiki/Patanjali"
+      }
+    ]
+  }
+]

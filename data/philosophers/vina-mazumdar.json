@@ -1,0 +1,41 @@
+{
+  "id": "vina-mazumdar",
+  "name": "Vina Mazumdar",
+  "birthYear": 1927,
+  "deathYear": 2013,
+  "eraId": "twentieth-century",
+  "traditionId": "critical-theory",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Indian feminist sociologist and architect of Women’s Studies in India whose landmark Towards Equality report (1974) exposed how postcolonial modernization widened gender and class disparities.",
+  "centralQuestion": "Why did formal constitutional equality in postcolonial India fail to prevent the structural marginalization of rural and working-class women?",
+  "keyWorks": [
+    {
+      "title": "Towards Equality: Report of the Committee on the Status of Women in India",
+      "year": "1974 CE",
+      "url": "https://en.wikipedia.org/wiki/Vina_Mazumdar",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Vina_Mazumdar",
+      "description": "Empirical sociological landmark demonstrating declining female labor participation and institutionalizing feminist policy research in India."
+    },
+    {
+      "title": "Memories of a Rolling Stone",
+      "year": "2010 CE",
+      "url": "https://en.wikipedia.org/wiki/Vina_Mazumdar",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Vina_Mazumdar",
+      "description": "Intellectual autobiography chronicling peasant women’s collective agency and the founding of Indian women’s studies."
+    }
+  ],
+  "sepSlug": "feminism-political",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vina_Mazumdar"
+  },
+  "imageUrl": "/portraits/vina-mazumdar.jpg"
+}

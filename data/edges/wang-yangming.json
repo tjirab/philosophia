@@ -1,0 +1,86 @@
+[
+  {
+    "id": "mencius--wang-yangming",
+    "source": "mencius",
+    "target": "wang-yangming",
+    "type": "DEVELOPED",
+    "label": "Radicalized Mencian moral intuition into the universal innate knowing (liangzhi) of Mind",
+    "strength": 5,
+    "description": "Wang Yangming revived Mencius’s concept of liangzhi (innate moral knowing) as the immediate, self-authenticating moral compass present in every human being.",
+    "dialecticalTension": "Democratizes sagehood by locating ultimate moral authority inside ordinary human conscience.",
+    "historicalContext": "Ming dynasty School of Mind (Xinxue).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Wang Yangming",
+        "work": "Instructions for Practical Living",
+        "year": 1518,
+        "url": "https://plato.stanford.edu/entries/wang-yangming/"
+      }
+    ]
+  },
+  {
+    "id": "dogen--wang-yangming",
+    "source": "dogen",
+    "target": "wang-yangming",
+    "type": "INFLUENCED",
+    "label": "Shared Chan/Zen emphasis on immediate mind-awakening and non-duality of practice and realization",
+    "strength": 3,
+    "description": "Critics and scholars alike note how Wang Yangming’s Xinxue absorbed Chan Buddhist immediacy of mind while insisting on Confucian social engagement.",
+    "dialecticalTension": "Echoes Zen practice-realization non-duality within Neo-Confucian civic ethics.",
+    "historicalContext": "East Asian Buddhist-Confucian synthesis.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Wang Yangming",
+        "work": "Instructions for Practical Living",
+        "year": 1518,
+        "url": "https://plato.stanford.edu/entries/wang-yangming/"
+      }
+    ]
+  },
+  {
+    "id": "wang-yangming--unity-of-knowledge-and-action",
+    "source": "wang-yangming",
+    "target": "unity-of-knowledge-and-action",
+    "type": "DEVELOPED",
+    "label": "Formulated Zhixing Heyi: genuine moral knowing is already enacted in ethical conduct",
+    "strength": 5,
+    "description": "Wang Yangming dissolved the gap between theoretical cognition and moral praxis, arguing that knowing filiality or justice without acting is not yet genuine knowledge.",
+    "dialecticalTension": "Overcomes epistemic-practical dualism in classical ethical psychology.",
+    "historicalContext": "Enlightenment at Longchang (1508).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Wang Yangming",
+        "work": "Instructions for Practical Living (Chuanxi Lu)",
+        "year": 1518,
+        "url": "https://plato.stanford.edu/entries/wang-yangming/"
+      }
+    ]
+  },
+  {
+    "id": "wang-yangming--nishida-kitaro",
+    "source": "wang-yangming",
+    "target": "nishida-kitaro",
+    "type": "INFLUENCED",
+    "label": "Informed modern Japanese philosophical emphasis on pure experience and active intuition",
+    "strength": 4,
+    "description": "Wang Yangming’s philosophy of Mind (Yomeigaku) deeply shaped Meiji and Taisho thinkers, resonating in Nishida’s unified \"pure experience.\"",
+    "dialecticalTension": "Bridges Ming Xinxue to modern Kyoto School phenomenology of action.",
+    "historicalContext": "Tokugawa-Meiji Yomeigaku reception.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Nishida Kitaro",
+        "work": "An Inquiry into the Good",
+        "year": 1911,
+        "url": "https://plato.stanford.edu/entries/nishida-kitaro/"
+      }
+    ]
+  }
+]

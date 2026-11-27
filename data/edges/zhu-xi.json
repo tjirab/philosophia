@@ -1,0 +1,86 @@
+[
+  {
+    "id": "mencius--zhu-xi",
+    "source": "mencius",
+    "target": "zhu-xi",
+    "type": "DEVELOPED",
+    "label": "Elevated the Mencius into the canonical Four Books and grounded moral Principle in human nature",
+    "strength": 5,
+    "description": "Zhu Xi canonized Mencius’s doctrine of innate moral sprouts as direct evidence that heavenly Principle (li) resides inherently within human nature (xing ji li).",
+    "dialecticalTension": "Provides a cosmic metaphysical architecture for Mencian moral psychology.",
+    "historicalContext": "Southern Song Neo-Confucian synthesis (12th century).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Zhu Xi",
+        "work": "Commentaries on the Four Books",
+        "year": 1190,
+        "url": "https://plato.stanford.edu/entries/zhu-xi/"
+      }
+    ]
+  },
+  {
+    "id": "siddhartha-gautama--zhu-xi",
+    "source": "siddhartha-gautama",
+    "target": "zhu-xi",
+    "type": "CRITIQUED",
+    "label": "Absorbed Buddhist metaphysical sophistication while refuting emptiness as nihilistic neglect of ethics",
+    "strength": 4,
+    "description": "Zhu Xi transformed Confucianism by constructing a systematic metaphysics capable of rivaling Buddhism while attacking Buddhist monasticism for abandoning familial and civic duties.",
+    "dialecticalTension": "Appropriates Buddhist speculative depth to defend world-affirming Confucian moral realism.",
+    "historicalContext": "Song Neo-Confucian revival.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Zhu Xi",
+        "work": "Zhuzi Yulei (Classified Conversations of Master Zhu)",
+        "year": 1270,
+        "url": "https://plato.stanford.edu/entries/zhu-xi/"
+      }
+    ]
+  },
+  {
+    "id": "zhu-xi--principle-and-vital-force-li-qi",
+    "source": "zhu-xi",
+    "target": "principle-and-vital-force-li-qi",
+    "type": "DEVELOPED",
+    "label": "Articulated the dual-aspect metaphysics of Li (normative Principle) and Qi (material force)",
+    "strength": 5,
+    "description": "Zhu Xi’s li-qi polarity explained both universal moral order and concrete empirical diversity, shaping Chinese, Korean, and Japanese philosophy for centuries.",
+    "dialecticalTension": "Balances transcendent moral coherence (li) with embodied psychophysical flux (qi).",
+    "historicalContext": "Reflections on Things at Hand (1175).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Zhu Xi",
+        "work": "Reflections on Things at Hand (Jinsi Lu)",
+        "year": 1175,
+        "url": "https://plato.stanford.edu/entries/zhu-xi/"
+      }
+    ]
+  },
+  {
+    "id": "zhu-xi--wang-yangming",
+    "source": "zhu-xi",
+    "target": "wang-yangming",
+    "type": "CRITIQUED",
+    "label": "Provoked Wang Yangming’s Mind-School revolt against externalist \"investigation of things\"",
+    "strength": 5,
+    "description": "After failing to attain sagehood by meditating on bamboo per Zhu Xi’s externalist method, Wang Yangming rejected Zhu Xi’s separation of mind and principle.",
+    "dialecticalTension": "Generates the central Neo-Confucian schism between School of Principle (Lixue) and School of Mind (Xinxue).",
+    "historicalContext": "Song-Ming Neo-Confucian dialectic.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Wang Yangming",
+        "work": "Instructions for Practical Living",
+        "year": 1518,
+        "url": "https://plato.stanford.edu/entries/wang-yangming/"
+      }
+    ]
+  }
+]

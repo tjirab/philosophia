@@ -1,0 +1,107 @@
+[
+  {
+    "id": "siddhartha-gautama--vasubandhu",
+    "source": "siddhartha-gautama",
+    "target": "vasubandhu",
+    "type": "DEVELOPED",
+    "label": "Systematized Early Buddhist Abhidharma and Mahayana consciousness analysis",
+    "strength": 5,
+    "description": "Vasubandhu synthesized centuries of Buddhist psychological analysis first in the Abhidharmakosa and then into Yogacara’s Consciousness-Only phenomenology.",
+    "dialecticalTension": "Transforms early Buddhist no-self (anatman) analysis into a full theory of karmic subconsciousness.",
+    "historicalContext": "4th–5th century CE classical Indian Buddhism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Vasubandhu",
+        "work": "Abhidharmakosakarika",
+        "year": 400,
+        "url": "https://plato.stanford.edu/entries/vasubandhu/"
+      }
+    ]
+  },
+  {
+    "id": "nagarjuna--vasubandhu",
+    "source": "nagarjuna",
+    "target": "vasubandhu",
+    "type": "SYNTHESIZED",
+    "label": "Reinterpreted Madhyamaka emptiness through phenomenological consciousness-only analysis",
+    "strength": 5,
+    "description": "Responding to Nagarjuna’s emptiness (sunyata), Vasubandhu grounded non-duality in the three natures (trisvabhava) and the eradication of subject-object bifurcation.",
+    "dialecticalTension": "Shifts focus from Madhyamaka dialectical negation to phenomenological analysis of mental construction.",
+    "historicalContext": "Gupta-era Indian Mahayana philosophy.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Vasubandhu",
+        "work": "Trisvabhavanirdesa (Treatise on the Three Natures)",
+        "year": 420,
+        "url": "https://plato.stanford.edu/entries/vasubandhu/"
+      }
+    ]
+  },
+  {
+    "id": "vasubandhu--yogacara-storehouse-consciousness",
+    "source": "vasubandhu",
+    "target": "yogacara-storehouse-consciousness",
+    "type": "DEVELOPED",
+    "label": "Formulated the eight-consciousness model centered on subliminal Alayavijnana",
+    "strength": 5,
+    "description": "In the Thirty Verses (Trimsika), Vasubandhu explained how subliminal storehouse consciousness (alaya-vijnana) carries karmic seeds and projects dualistic appearance.",
+    "dialecticalTension": "Explains continuity of memory, karma, and illusion without positing a substantial soul.",
+    "historicalContext": "Yogacara school (4th–5th century CE).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Vasubandhu",
+        "work": "Trimsika-vijnaptimatrata (Thirty Verses)",
+        "year": 420,
+        "url": "https://plato.stanford.edu/entries/vasubandhu/"
+      }
+    ]
+  },
+  {
+    "id": "vasubandhu--dogen",
+    "source": "vasubandhu",
+    "target": "dogen",
+    "type": "INFLUENCED",
+    "label": "Transmitted East Asian Yogacara and Abhidharma foundations to Japanese Zen",
+    "strength": 4,
+    "description": "Via Xuanzang’s Faxiang and Tiantai/Chan syntheses, Vasubandhu’s analysis of mind-only and non-dual realization informed Dogen’s Zen phenomenology of Mind and Buddha-nature.",
+    "dialecticalTension": "Bridges Indian Yogacara epistemology to East Asian Zen non-duality.",
+    "historicalContext": "East Asian Mahayana transmission.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Dōgen",
+        "work": "Shobogenzo",
+        "year": 1240,
+        "url": "https://plato.stanford.edu/entries/vasubandhu/"
+      }
+    ]
+  },
+  {
+    "id": "vasubandhu--edmund-husserl",
+    "source": "vasubandhu",
+    "target": "edmund-husserl",
+    "type": "INFLUENCED",
+    "label": "Prefigured transcendental phenomenology’s reduction of outer objects to intentional consciousness",
+    "strength": 3,
+    "description": "Contemporary comparative philosophers note deep structural resonances between Vasubandhu’s phenomenological epoche of external matter and Husserl’s intentional constitution.",
+    "dialecticalTension": "Illuminates parallel anti-naturalist reductions across Indian Yogacara and European phenomenology.",
+    "historicalContext": "Comparative 20th-century phenomenology.",
+    "academicConsensus": "debated",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Dan Lusthaus",
+        "work": "Buddhist Phenomenology: A Philosophical Investigation of Yogacara Buddhism",
+        "year": 2002,
+        "url": "https://plato.stanford.edu/entries/vasubandhu/"
+      }
+    ]
+  }
+]

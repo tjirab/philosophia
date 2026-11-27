@@ -1,0 +1,107 @@
+[
+  {
+    "id": "adam-smith--amartya-sen",
+    "source": "adam-smith",
+    "target": "amartya-sen",
+    "type": "DEVELOPED",
+    "label": "Retrieved Adam Smith’s Theory of Moral Sentiments and impartial spectator against narrow egoism",
+    "strength": 5,
+    "description": "Sen systematically rescued Smith from caricature as a pure laissez-faire egoist, drawing on Smith’s impartial spectator to ground open impartiality in global justice.",
+    "dialecticalTension": "Integrates Smithian moral sympathy into non-parochial social choice theory.",
+    "historicalContext": "Contemporary moral and political philosophy.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Amartya Sen",
+        "work": "The Idea of Justice",
+        "year": 2009,
+        "url": "https://plato.stanford.edu/entries/capability-approach/"
+      }
+    ]
+  },
+  {
+    "id": "john-rawls--amartya-sen",
+    "source": "john-rawls",
+    "target": "amartya-sen",
+    "type": "CRITIQUED",
+    "label": "Critiqued Rawlsian transcendental institutionalism in favor of comparative capability realization",
+    "strength": 5,
+    "description": "While deeply indebted to Rawls’s Theory of Justice, Sen argued that seeking a single ideally just institutional arrangement is neither necessary nor sufficient to remedy manifest injustices.",
+    "dialecticalTension": "Shifts justice theory from ideal social contracts (niti) to realized human capabilities (nyaya).",
+    "historicalContext": "21st-century theories of justice.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Amartya Sen",
+        "work": "The Idea of Justice",
+        "year": 2009,
+        "url": "https://plato.stanford.edu/entries/capability-approach/"
+      }
+    ]
+  },
+  {
+    "id": "amartya-sen--martha-nussbaum",
+    "source": "amartya-sen",
+    "target": "martha-nussbaum",
+    "type": "INFLUENCED",
+    "label": "Co-originated the Capabilities Approach before diverging on fixed canonical capability lists",
+    "strength": 5,
+    "description": "Sen’s capability framework formed the foundation for Nussbaum’s Aristotelian-liberal list of ten central human capabilities, while Sen insisted on democratic public deliberation over weights.",
+    "dialecticalTension": "Balances open-ended public reasoning (Sen) against thick constitutional capability thresholds (Nussbaum).",
+    "historicalContext": "Capabilities Approach collaboration (1980s–present).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Amartya Sen",
+        "work": "Development as Freedom",
+        "year": 1999,
+        "url": "https://plato.stanford.edu/entries/capability-approach/"
+      }
+    ]
+  },
+  {
+    "id": "amartya-sen--capabilities-approach",
+    "source": "amartya-sen",
+    "target": "capabilities-approach",
+    "type": "DEVELOPED",
+    "label": "Pioneered capability-based evaluation of substantive freedom over aggregate utility or GDP",
+    "strength": 5,
+    "description": "Sen established that well-being and justice must be measured by what people are genuinely able to do and be—their capabilities and functionings.",
+    "dialecticalTension": "Refutes utilitarian income metrics and commodity fetishism.",
+    "historicalContext": "Tanner Lectures (1979) and Development as Freedom (1999).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Amartya Sen",
+        "work": "Development as Freedom",
+        "year": 1999,
+        "url": "https://plato.stanford.edu/entries/capability-approach/"
+      }
+    ]
+  },
+  {
+    "id": "amartya-sen--bina-agarwal",
+    "source": "amartya-sen",
+    "target": "bina-agarwal",
+    "type": "INFLUENCED",
+    "label": "Collaborated on cooperative conflict bargaining models and gender justice metrics",
+    "strength": 4,
+    "description": "Sen’s \"cooperative conflict\" household model and missing-women analysis informed Agarwal’s empirical theory of intrahousehold bargaining and land rights.",
+    "dialecticalTension": "Brings formal feminist bargaining theory into development economics.",
+    "historicalContext": "Gender and development economics (1990s–present).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Bina Agarwal",
+        "work": "A Field of One's Own",
+        "year": 1994,
+        "url": "https://en.wikipedia.org/wiki/Bina_Agarwal"
+      }
+    ]
+  }
+]

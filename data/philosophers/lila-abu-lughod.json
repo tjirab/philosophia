@@ -1,0 +1,40 @@
+{
+  "id": "lila-abu-lughod",
+  "name": "Lila Abu-Lughod",
+  "birthYear": 1952,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "domains": [
+    "sociology",
+    "psychology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Palestinian-American social theorist and anthropologist whose work on emotion, Bedouin poetry, and postcolonial gender politics dismantled Western \"saving Muslim women\" rescue narratives and Eurocentric psychology of affect.",
+  "centralQuestion": "How do cultural poetics of emotion challenge universalist Western psychology, and why do imperial \"saving Muslim women\" discourses obscure structural geopolitics?",
+  "keyWorks": [
+    {
+      "title": "Veiled Sentiments: Honor and Poetry in a Bedouin Society",
+      "year": "1986 CE",
+      "url": "https://en.wikipedia.org/wiki/Lila_Abu-Lughod",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lila_Abu-Lughod",
+      "description": "Landmark study in cultural psychology and sociology showing how Bedouin oral lyric poetry expresses vulnerability within honor codes."
+    },
+    {
+      "title": "Do Muslim Women Need Saving?",
+      "year": "2013 CE",
+      "url": "https://en.wikipedia.org/wiki/Do_Muslim_Women_Need_Saving%3F",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Do_Muslim_Women_Need_Saving%3F",
+      "description": "Critiques Western liberal-imperial humanitarianism that reduces geopolitical violence to \"culture\" or Islam."
+    }
+  ],
+  "sepSlug": "feminism-globalization",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-globalization/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lila_Abu-Lughod"
+  },
+  "imageUrl": "/portraits/lila-abu-lughod.jpg"
+}

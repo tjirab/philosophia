@@ -1,0 +1,41 @@
+{
+  "id": "nishitani-keiji",
+  "name": "Nishitani Keiji",
+  "birthYear": 1900,
+  "deathYear": 1990,
+  "eraId": "twentieth-century",
+  "traditionId": "kyoto-school",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Major Kyoto School philosopher and student of Nishida Kitaro and Martin Heidegger who confronted modern European nihilism through Zen Buddhist emptiness (sunyata) as the existential ground of self-overcoming.",
+  "centralQuestion": "Can Zen emptiness (sunyata) overcome Western nihilism by passing through the \"Great Doubt\" rather than retreating into dogmatism or despair?",
+  "keyWorks": [
+    {
+      "title": "Religion and Nothingness (Shukyo to wa nani ka)",
+      "year": "1961 CE",
+      "url": "https://en.wikipedia.org/wiki/Keiji_Nishitani",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Keiji_Nishitani",
+      "description": "Masterwork staging a cross-cultural encounter between Nietzsche, Heidegger, Nishida, and Mahayana sunyata to overcome nihilism."
+    },
+    {
+      "title": "The Self-Overcoming of Nihilism",
+      "year": "1949 CE",
+      "url": "https://en.wikipedia.org/wiki/Keiji_Nishitani",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Keiji_Nishitani",
+      "description": "Critical study of Stirner, Nietzsche, and Dostoevsky arguing that nihilism points beyond itself toward non-substantial emptiness."
+    }
+  ],
+  "sepSlug": "kyoto-school",
+  "canonTier": "pillar",
+  "importanceScore": 91,
+  "gender": "man",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/kyoto-school/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Keiji_Nishitani"
+  },
+  "imageUrl": "/portraits/nishitani-keiji.jpg"
+}

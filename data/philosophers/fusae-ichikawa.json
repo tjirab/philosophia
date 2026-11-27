@@ -1,0 +1,34 @@
+{
+  "id": "fusae-ichikawa",
+  "name": "Fusae Ichikawa",
+  "birthYear": 1893,
+  "deathYear": 1981,
+  "eraId": "twentieth-century",
+  "traditionId": "enlightenment-social",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Japanese feminist political theorist, suffragist, and co-founder of the New Women’s Association alongside Raicho Hiratsuka who theorized democratic citizenship, women’s suffrage, and anti-militarist civic ethics.",
+  "centralQuestion": "How can women secure political citizenship and dismantle militaristic patriarchy without being co-opted by state nationalism?",
+  "keyWorks": [
+    {
+      "title": "Women’s Suffrage and Civic Reform Essays (Women’s Suffrage League Archives)",
+      "year": "1924 CE",
+      "url": "https://en.wikipedia.org/wiki/Fusae_Ichikawa",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Fusae_Ichikawa",
+      "description": "Political writings articulating universal suffrage, legal reform of Article 5 of the Peace Police Law, and ethical democratic governance."
+    }
+  ],
+  "sepSlug": "feminism-liberal",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-liberal/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Fusae_Ichikawa"
+  },
+  "imageUrl": "/portraits/fusae-ichikawa.jpg"
+}

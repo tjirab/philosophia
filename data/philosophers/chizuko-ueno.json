@@ -1,0 +1,40 @@
+{
+  "id": "chizuko-ueno",
+  "name": "Chizuko Ueno",
+  "birthYear": 1948,
+  "eraId": "contemporary",
+  "traditionId": "critical-theory",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Leading Japanese feminist sociologist who fused Marxist feminism with post-structuralist critique to analyze patriarchy and capitalism as dual systems governing unpaid reproductive labor, family ideology, and care.",
+  "centralQuestion": "How do capitalism and patriarchy collaborate to extract unpaid domestic and elder-care labor inside the modern nuclear family?",
+  "keyWorks": [
+    {
+      "title": "Patriarchy and Capitalism (Kafuchosei to Shihonsei)",
+      "year": "1990 CE",
+      "url": "https://en.wikipedia.org/wiki/Chizuko_Ueno",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chizuko_Ueno",
+      "description": "Foundational Japanese Marxist-feminist treatise demonstrating the structural interdependence of capitalist markets and domestic patriarchy."
+    },
+    {
+      "title": "Nationalism and Gender (Nashonarizumu to Jenda)",
+      "year": "1998 CE",
+      "url": "https://en.wikipedia.org/wiki/Chizuko_Ueno",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chizuko_Ueno",
+      "description": "Deconstructs wartime state mobilization, historical memory, and gendered citizenship in modern Japan."
+    }
+  ],
+  "sepSlug": "feminism-class",
+  "canonTier": "pillar",
+  "importanceScore": 91,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-class/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chizuko_Ueno"
+  },
+  "imageUrl": "/portraits/chizuko-ueno.jpg"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "kim-il-yeop",
+  "name": "Kim Il-yeop",
+  "birthYear": 1896,
+  "deathYear": 1971,
+  "eraId": "twentieth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Korean feminist theorist, New Woman pioneer, and Seon (Zen) Buddhist nun whose writings bridged modern existential critique of patriarchal love with Seon Buddhist psychology of the Great Self (daea).",
+  "centralQuestion": "How does transcending the ego-bound small self (soa) through Seon Buddhist cultivation liberate women from patriarchal desire and existential alienation?",
+  "keyWorks": [
+    {
+      "title": "Reflections of a Zen Buddhist Nun (Eoneu Sudoin-ui Hoesang)",
+      "year": "1960 CE",
+      "url": "https://en.wikipedia.org/wiki/Kim_Il-yeop",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kim_Il-yeop",
+      "description": "Philosophical synthesis of feminist self-determination and Korean Seon Buddhist non-duality, culture, and existential psychology."
+    },
+    {
+      "title": "In Search of Happiness Before Having Lost It",
+      "year": "1964 CE",
+      "url": "https://en.wikipedia.org/wiki/Kim_Il-yeop",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kim_Il-yeop",
+      "description": "Meditations on consciousness, creative emptiness, and spiritual autonomy beyond conventional social roles."
+    }
+  ],
+  "sepSlug": "korean-buddhism",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/korean-buddhism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kim_Il-yeop"
+  },
+  "imageUrl": "/portraits/kim-il-yeop.jpg"
+}

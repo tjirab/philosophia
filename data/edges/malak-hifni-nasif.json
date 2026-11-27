@@ -1,0 +1,44 @@
+[
+  {
+    "id": "malak-hifni-nasif--may-ziadeh",
+    "source": "malak-hifni-nasif",
+    "target": "may-ziadeh",
+    "type": "INFLUENCED",
+    "label": "Inspired May Ziadeh’s foundational critical biography and Arab feminist social theory",
+    "strength": 5,
+    "description": "Nasif’s Al-Nisa’iyyat and 1911 ten-point program for women’s education and marital justice formed the direct subject of Ziadeh’s 1920 philosophical study.",
+    "dialecticalTension": "Establishes an indigenous Arabic feminist canon bridging Egypt and the Levant.",
+    "historicalContext": "Egyptian Nahda (1908–1920).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "May Ziadeh",
+        "work": "Bahithat al-Badiya",
+        "year": 1920,
+        "url": "https://en.wikipedia.org/wiki/Malak_Hifni_Nasif"
+      }
+    ]
+  },
+  {
+    "id": "malak-hifni-nasif--huda-shaarawi",
+    "source": "malak-hifni-nasif",
+    "target": "huda-shaarawi",
+    "type": "INFLUENCED",
+    "label": "Preceded Sha’arawi’s Egyptian Feminist Union with indigenous anti-colonial gender reform",
+    "strength": 5,
+    "description": "Whereas male modernists debated unveiling as Westernization, Nasif centered Egyptian women’s own moral agency, schooling, and mosque participation.",
+    "dialecticalTension": "Pioneers endogenous Arab feminism resisting both patriarchy and colonial mimicry.",
+    "historicalContext": "Cairo feminist mobilization (1909–1923).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Malak Hifni Nasif",
+        "work": "Al-Nisa'iyyat",
+        "year": 1910,
+        "url": "https://en.wikipedia.org/wiki/Malak_Hifni_Nasif"
+      }
+    ]
+  }
+]

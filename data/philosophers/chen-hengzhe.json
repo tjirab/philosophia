@@ -1,0 +1,41 @@
+{
+  "id": "chen-hengzhe",
+  "name": "Chen Hengzhe",
+  "birthYear": 1890,
+  "deathYear": 1976,
+  "eraId": "twentieth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Chinese historian, New Culture Movement philosopher, and China’s first female university professor who synthesized critical Western historiography with Chinese humanistic inquiry to reimagine gender, culture, and modernity.",
+  "centralQuestion": "How can modern Chinese thinkers critically integrate Western scientific historiography with indigenous moral humanism without cultural erasure?",
+  "keyWorks": [
+    {
+      "title": "History of Western Civilization (Xiyang Shi)",
+      "year": "1926 CE",
+      "url": "https://en.wikipedia.org/wiki/Chen_Hengzhe",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chen_Hengzhe",
+      "description": "Influential vernacular Chinese historiography interpreting Europe’s intellectual transformations for May Fourth readers."
+    },
+    {
+      "title": "The Chinese Woman and Other Essays",
+      "year": "1933 CE",
+      "url": "https://en.wikipedia.org/wiki/Chen_Hengzhe",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chen_Hengzhe",
+      "description": "Sociological essays analyzing family reform, women’s intellectual autonomy, and educational modernization in Republican China."
+    }
+  ],
+  "sepSlug": "chinese-social-political",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/chinese-social-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chen_Hengzhe"
+  },
+  "imageUrl": "/portraits/chen-hengzhe.jpg"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "aisha-al-taymuriyya",
+  "name": "Aisha al-Taymuriyya",
+  "birthYear": 1840,
+  "deathYear": 1902,
+  "eraId": "nineteenth-century",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Egyptian trilingual philosopher-poet and Nahda pioneer whose treatise Mir’at al-Ta’ammul fi al-Umur (The Mirror of Contemplation) critiqued male misreadings of Qur’anic guardianship and defended women’s moral and rational parity.",
+  "centralQuestion": "Does Qur’anic ethics ordain male social tyranny, or have men misappropriated religious authority by neglecting their ethical duties and denying women education?",
+  "keyWorks": [
+    {
+      "title": "Mir'at al-Ta'ammul fi al-Umur (The Mirror of Contemplation in Matters)",
+      "year": "1892 CE",
+      "url": "https://en.wikipedia.org/wiki/Aisha_Taymur",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Aisha_Taymur",
+      "description": "Pioneering Islamic feminist exegesis challenging patriarchal interpretations of qiwamah and advocating women’s intellectual formation."
+    }
+  ],
+  "sepSlug": "feminist-philosophy",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminist-philosophy/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Aisha_Taymur"
+  },
+  "imageUrl": "/portraits/aisha-al-taymuriyya.jpg"
+}

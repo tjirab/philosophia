@@ -1,0 +1,34 @@
+{
+  "id": "patanjali",
+  "name": "Patanjali",
+  "birthYear": -200,
+  "deathYear": -150,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Classical Indian philosopher and compiler of the Yoga Sutras (c. 2nd century BCE – 4th century CE) who systematized Ashtanga Yoga as an empirical psychology of attention, cognitive restraint (citta-vritti-nirodha), and liberating discrimination.",
+  "centralQuestion": "How can disciplined attentional and ethical practice quiet the fluctuations of mind (citta-vritti) to uncover pure witnessing consciousness?",
+  "keyWorks": [
+    {
+      "title": "Yoga Sutras of Patanjali",
+      "year": "c. 200 BCE – 400 CE",
+      "url": "https://en.wikipedia.org/wiki/Yoga_Sutras_of_Patanjali",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Yoga_Sutras_of_Patanjali",
+      "description": "Foundational 195-aphorism treatise of Raja Yoga analyzing mental afflictions (kleshas), meditative absorption (samadhi), and the eight-limbed path."
+    }
+  ],
+  "sepSlug": "epistemology-india",
+  "canonTier": "pillar",
+  "importanceScore": 92,
+  "gender": "man",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/epistemology-india/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Patanjali"
+  },
+  "imageUrl": "/portraits/patanjali.jpg"
+}

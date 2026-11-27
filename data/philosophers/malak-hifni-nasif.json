@@ -1,0 +1,34 @@
+{
+  "id": "malak-hifni-nasif",
+  "name": "Malak Hifni Nasif",
+  "birthYear": 1886,
+  "deathYear": 1918,
+  "eraId": "twentieth-century",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Egyptian feminist philosopher and social critic (pen name Bahithat al-Badiya) who articulated an indigenous Islamic reformist feminism opposing both patriarchal conservatism and uncritical mimicry of European colonialism.",
+  "centralQuestion": "How can Arab women achieve legal, educational, and marital justice within indigenous ethical traditions without becoming instruments of colonial cultural domination?",
+  "keyWorks": [
+    {
+      "title": "Al-Nisa'iyyat (Women's Pieces)",
+      "year": "1910 CE",
+      "url": "https://en.wikipedia.org/wiki/Malak_Hifni_Nasif",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Malak_Hifni_Nasif",
+      "description": "Collected lectures and essays presenting a ten-point feminist program for girls’ education, mosque access, and marriage law reform."
+    }
+  ],
+  "sepSlug": "feminism-political",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Malak_Hifni_Nasif"
+  },
+  "imageUrl": "/portraits/malak-hifni-nasif.jpg"
+}

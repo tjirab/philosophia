@@ -1,0 +1,65 @@
+[
+  {
+    "id": "averroes--mohammed-arkoun",
+    "source": "averroes",
+    "target": "mohammed-arkoun",
+    "type": "DEVELOPED",
+    "label": "Retrieved Averroes’s philosophical rationalism to reopen critical inquiry inside Islamic thought",
+    "strength": 4,
+    "description": "Arkoun excavated classical Arabic humanism and Averroist rationalism to show that closed scriptural orthodoxy was a historical political construct, not Islam’s essence.",
+    "dialecticalTension": "Bridges medieval Falsafa to post-structuralist critique of religious reason.",
+    "historicalContext": "Applied Islamology (1970s–2010).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Mohammed Arkoun",
+        "work": "Critique of Islamic Reason",
+        "year": 1984,
+        "url": "https://plato.stanford.edu/entries/arabic-islamic-religion/"
+      }
+    ]
+  },
+  {
+    "id": "michel-foucault--mohammed-arkoun",
+    "source": "michel-foucault",
+    "target": "mohammed-arkoun",
+    "type": "SYNTHESIZED",
+    "label": "Adapted Foucauldian archaeology and discourse theory to excavate the \"unthought\" in Islam",
+    "strength": 5,
+    "description": "Deploying Foucault’s episteme and historical critique, Arkoun mapped how orthodox jurists police the boundary between the thinkable and the unthinkable.",
+    "dialecticalTension": "Applies French archaeological method to Islamic scripture and historical reason.",
+    "historicalContext": "Sorbonne / Paris Applied Islamology (1984–2002).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mohammed Arkoun",
+        "work": "The Unthought in Contemporary Islamic Thought",
+        "year": 2002,
+        "url": "https://en.wikipedia.org/wiki/Mohammed_Arkoun"
+      }
+    ]
+  },
+  {
+    "id": "mohammed-arkoun--nasr-hamid-abu-zayd",
+    "source": "mohammed-arkoun",
+    "target": "nasr-hamid-abu-zayd",
+    "type": "INFLUENCED",
+    "label": "Catalyzed contemporary historical-critical Islamic hermeneutics across the Arab world",
+    "strength": 5,
+    "description": "Arkoun’s distinction between the open Qur’anic event and closed orthodox dogma directly reinforced Abu Zayd’s humanistic hermeneutic project.",
+    "dialecticalTension": "Shared Maghrebi-Egyptian front for historical-critical Islamic philosophy.",
+    "historicalContext": "Contemporary Arabic philosophical reform (1984–2010).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nasr Hamid Abu Zayd",
+        "work": "Critique of Religious Discourse",
+        "year": 1992,
+        "url": "https://en.wikipedia.org/wiki/Nasr_Abu_Zayd"
+      }
+    ]
+  }
+]

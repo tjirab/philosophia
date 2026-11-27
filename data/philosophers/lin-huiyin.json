@@ -1,0 +1,33 @@
+{
+  "id": "lin-huiyin",
+  "name": "Lin Huiyin",
+  "birthYear": 1904,
+  "deathYear": 1955,
+  "eraId": "twentieth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Chinese architectural theorist, aesthetic philosopher, and first female architect of modern China who articulated an East Asian philosophy of spatial form, structural honesty, and historic urban preservation.",
+  "centralQuestion": "How do classical Chinese wooden architectural forms embody cosmic harmony, structural rationality, and living civic memory?",
+  "keyWorks": [
+    {
+      "title": "On the Characteristics of Chinese Architecture",
+      "year": "1932 CE",
+      "url": "https://en.wikipedia.org/wiki/Lin_Huiyin",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lin_Huiyin",
+      "description": "Seminal aesthetic treatise analyzing timber-frame structural grammar, spatial rhythm, and cultural preservation in Chinese architecture."
+    }
+  ],
+  "sepSlug": "aesthetics-of-everyday",
+  "canonTier": "contributor",
+  "importanceScore": 81,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/aesthetics-of-everyday/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lin_Huiyin"
+  },
+  "imageUrl": "/portraits/lin-huiyin.jpg"
+}

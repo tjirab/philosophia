@@ -1,0 +1,65 @@
+[
+  {
+    "id": "vina-mazumdar--bina-agarwal",
+    "source": "vina-mazumdar",
+    "target": "bina-agarwal",
+    "type": "DEVELOPED",
+    "label": "Expanded structural diagnosis of women’s marginalization into land-rights and green governance theory",
+    "strength": 5,
+    "description": "Agarwal moved beyond employment statistics to prove that arable land ownership and commons governance are the decisive material anchors of South Asian women’s empowerment.",
+    "dialecticalTension": "Shifts feminist development theory from wage labor to property rights and ecological governance.",
+    "historicalContext": "South Asian feminist political economy (1990s–2010s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Bina Agarwal",
+        "work": "A Field of One's Own: Gender and Land Rights in South Asia",
+        "year": 1994,
+        "url": "https://plato.stanford.edu/entries/feminism-environmental/"
+      }
+    ]
+  },
+  {
+    "id": "vandana-shiva--bina-agarwal",
+    "source": "vandana-shiva",
+    "target": "bina-agarwal",
+    "type": "CRITIQUED",
+    "label": "Replaced essentialist ecofeminist assumptions with materialist feminist environmentalism",
+    "strength": 4,
+    "description": "While sharing ecological commitments, Agarwal critiqued cultural ecofeminism for romanticizing women’s biological closeness to nature instead of analyzing gendered property and labor.",
+    "dialecticalTension": "Replaces essentialist nature-woman equation with materialist institutional analysis.",
+    "historicalContext": "Feminist Studies debate (1992).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Bina Agarwal",
+        "work": "The Gender and Environment Debate: Lessons from India",
+        "year": 1992,
+        "url": "https://plato.stanford.edu/entries/feminism-environmental/"
+      }
+    ]
+  },
+  {
+    "id": "bina-agarwal--ecofeminism",
+    "source": "bina-agarwal",
+    "target": "ecofeminism",
+    "type": "DEVELOPED",
+    "label": "Pioneered feminist environmentalism grounded in empirical commons governance and property rights",
+    "strength": 4,
+    "description": "Agarwal demonstrated empirically that women’s critical-mass participation in community forest governance improves both equity and ecological conservation.",
+    "dialecticalTension": "Reconstructs ecofeminism on rigorous institutional and empirical foundations.",
+    "historicalContext": "Gender and Green Governance (2010).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Bina Agarwal",
+        "work": "Gender and Green Governance",
+        "year": 2010,
+        "url": "https://plato.stanford.edu/entries/feminism-environmental/"
+      }
+    ]
+  }
+]

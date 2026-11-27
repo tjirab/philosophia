@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ibn-khaldun--assia-djebar",
+    "source": "ibn-khaldun",
+    "target": "assia-djebar",
+    "type": "INFLUENCED",
+    "label": "Engaged Maghrebi historiographical traditions while centering the erased oral memory of Algerian women",
+    "strength": 4,
+    "description": "Trained as a historian, Djebar read North African chronicles alongside Berber and Arabic women’s oral testimonies to counter both colonial and patriarchal amnesia.",
+    "dialecticalTension": "Supplements male dynastic historiography with polyphonic women’s oral archives.",
+    "historicalContext": "Postcolonial Algerian historiography (1980–2015).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Assia Djebar",
+        "work": "Fantasia: An Algerian Cavalcade",
+        "year": 1985,
+        "url": "https://en.wikipedia.org/wiki/Assia_Djebar"
+      }
+    ]
+  },
+  {
+    "id": "frantz-fanon--assia-djebar",
+    "source": "frantz-fanon",
+    "target": "assia-djebar",
+    "type": "CRITIQUED",
+    "label": "Complicated Fanon’s Algerian revolutionary narrative by exposing postwar patriarchal betrayal of women",
+    "strength": 4,
+    "description": "While sharing Fanon’s anti-colonial militancy, Djebar showed how independent Algeria relegated women militants back into silence and domestic enclosure.",
+    "dialecticalTension": "Challenges anti-colonial nationalism to confront internal gender subjugation.",
+    "historicalContext": "Postcolonial Algerian literature and theory (1980–1995).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Assia Djebar",
+        "work": "Women of Algiers in Their Apartment",
+        "year": 1980,
+        "url": "https://plato.stanford.edu/entries/colonialism/"
+      }
+    ]
+  },
+  {
+    "id": "assia-djebar--fatema-mernissi",
+    "source": "assia-djebar",
+    "target": "fatema-mernissi",
+    "type": "INFLUENCED",
+    "label": "Shared Maghrebi feminist archival recovery of Muslim women’s repressed historical agency",
+    "strength": 4,
+    "description": "Writing across Algeria and Morocco, Djebar and Mernissi converged in dismantling Orientalist harems and reclaiming North African women’s historical speech.",
+    "dialecticalTension": "Unites Algerian literary counter-archive with Moroccan sociological history.",
+    "historicalContext": "Maghrebi feminist thought (1980s–2000s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Fatema Mernissi",
+        "work": "The Veil and the Male Elite",
+        "year": 1987,
+        "url": "https://en.wikipedia.org/wiki/Assia_Djebar"
+      }
+    ]
+  }
+]

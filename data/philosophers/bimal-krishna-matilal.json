@@ -1,0 +1,40 @@
+{
+  "id": "bimal-krishna-matilal",
+  "name": "Bimal Krishna Matilal",
+  "birthYear": 1935,
+  "deathYear": 1991,
+  "eraId": "twentieth-century",
+  "traditionId": "analytic",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Indian analytic philosopher and Sanskritist who brought classical Nyaya-Vaisesika logic, epistemological realism, and Buddhist pramana debates into direct dialogue with contemporary Western philosophy of language.",
+  "centralQuestion": "How do classical Nyaya theories of perception, inference, and epistemic warrant solve problems of reference and skepticism in modern analytic philosophy?",
+  "keyWorks": [
+    {
+      "title": "Perception: An Essay on Classical Indian Theories of Knowledge",
+      "year": "1986 CE",
+      "url": "https://en.wikipedia.org/wiki/Bimal_Krishna_Matilal",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bimal_Krishna_Matilal",
+      "description": "Landmark analytical defense of Nyaya direct realism against Buddhist phenomenalism and Western sense-datum theories."
+    },
+    {
+      "title": "The Character of Logic in India",
+      "year": "1998 CE",
+      "url": "https://en.wikipedia.org/wiki/Bimal_Krishna_Matilal",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bimal_Krishna_Matilal",
+      "description": "Demonstrates the formal rigor of non-deductive, debate-centered Indian inference (anumana) and Dignaga’s logic."
+    }
+  ],
+  "sepSlug": "epistemology-india",
+  "canonTier": "bridge",
+  "importanceScore": 87,
+  "gender": "man",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/epistemology-india/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bimal_Krishna_Matilal"
+  },
+  "imageUrl": "/portraits/bimal-krishna-matilal.jpg"
+}

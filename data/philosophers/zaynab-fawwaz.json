@@ -1,0 +1,41 @@
+{
+  "id": "zaynab-fawwaz",
+  "name": "Zaynab Fawwaz",
+  "birthYear": 1860,
+  "deathYear": 1914,
+  "eraId": "nineteenth-century",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Lebanese-Egyptian historian, philosopher of women’s intellect, and Nahda essayist whose biographical encyclopedia Al-Durr al-Manthur recovered 456 global women thinkers to refute biological essentialism.",
+  "centralQuestion": "What does the historical archive of women scholars, poets, and rulers across East and West prove about the universality of rational capacity?",
+  "keyWorks": [
+    {
+      "title": "Al-Durr al-Manthur fi Tabaqat Rabbat al-Khudur (Scattered Pearls)",
+      "year": "1894 CE",
+      "url": "https://en.wikipedia.org/wiki/Zaynab_Fawwaz",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Zaynab_Fawwaz",
+      "description": "Monumental feminist counter-historiography cataloging 456 accomplished Arab, Islamic, and European women intellectuals."
+    },
+    {
+      "title": "Al-Rasa'il al-Zaynabiyya (The Zaynab Epistles)",
+      "year": "1905 CE",
+      "url": "https://en.wikipedia.org/wiki/Zaynab_Fawwaz",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Zaynab_Fawwaz",
+      "description": "Collected social-philosophical essays arguing for women’s equal rights to education, work, and public deliberation."
+    }
+  ],
+  "sepSlug": "feminism-femhist",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-femhist/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zaynab_Fawwaz"
+  },
+  "imageUrl": "/portraits/zaynab-fawwaz.jpg"
+}

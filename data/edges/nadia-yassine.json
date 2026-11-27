@@ -1,0 +1,44 @@
+[
+  {
+    "id": "rabia-al-adawiyya--nadia-yassine",
+    "source": "rabia-al-adawiyya",
+    "target": "nadia-yassine",
+    "type": "INFLUENCED",
+    "label": "Grounded contemporary Moroccan women’s Islamic political agency in Sufi spiritual interiority",
+    "strength": 4,
+    "description": "Drawing on Sufi traditions of spiritual devotion and moral fearlessness, Yassine articulated a non-violent Islamic political ethics led by women.",
+    "dialecticalTension": "Mobilizes Sufi inner purification as anti-authoritarian civic courage.",
+    "historicalContext": "Contemporary Moroccan Islamic thought (1990s–present).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nadia Yassine",
+        "work": "Toutes voiles dehors",
+        "year": 2003,
+        "url": "https://en.wikipedia.org/wiki/Nadia_Yassine"
+      }
+    ]
+  },
+  {
+    "id": "fatema-mernissi--nadia-yassine",
+    "source": "fatema-mernissi",
+    "target": "nadia-yassine",
+    "type": "SYNTHESIZED",
+    "label": "Engaged Moroccan feminist critiques of patriarchal fiqh while advocating endogenous Islamic democracy",
+    "strength": 4,
+    "description": "Working in the same Moroccan public sphere as Mernissi, Yassine rejected secular-liberal imitation while demanding women’s leadership and democratic accountability.",
+    "dialecticalTension": "Bridges secular-historical Moroccan feminism and activist Sufi-democratic reform.",
+    "historicalContext": "Contemporary Moroccan gender and political debate (2000s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nadia Yassine",
+        "work": "Toutes voiles dehors",
+        "year": 2003,
+        "url": "https://en.wikipedia.org/wiki/Nadia_Yassine"
+      }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "qiu-jin--ding-ling",
+    "source": "qiu-jin",
+    "target": "ding-ling",
+    "type": "INFLUENCED",
+    "label": "Inherited radical Chinese feminist rebellion against patriarchal family sacrifice",
+    "strength": 4,
+    "description": "Growing up amid Qiu Jin’s Hunan-region revolutionary legacy, Ding Ling carried feminist militancy into modern psychological realism and socialist critique.",
+    "dialecticalTension": "Shifts from late-Qing nationalist martyrdom to psychological and institutional gender critique.",
+    "historicalContext": "Modern Chinese feminist continuum (1907–1942).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ding Ling",
+        "work": "Miss Sophia's Diary",
+        "year": 1928,
+        "url": "https://en.wikipedia.org/wiki/Ding_Ling"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--ding-ling",
+    "source": "karl-marx",
+    "target": "ding-ling",
+    "type": "CRITIQUED",
+    "label": "Exposed how orthodox Communist practice in Yan’an reproduced patriarchal hypocrisy",
+    "strength": 4,
+    "description": "Committed to socialist revolution, Ding Ling nonetheless indicted male party cadres in Thoughts on March 8 for punishing women whether they married or stayed independent.",
+    "dialecticalTension": "Exposes the blind spot of class-reductionist Marxism toward gendered social reproduction.",
+    "historicalContext": "Yan’an Rectification era (1942).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ding Ling",
+        "work": "Thoughts on March 8",
+        "year": 1942,
+        "url": "https://en.wikipedia.org/wiki/Ding_Ling"
+      }
+    ]
+  }
+]

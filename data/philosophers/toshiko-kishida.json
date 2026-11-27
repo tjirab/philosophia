@@ -1,0 +1,34 @@
+{
+  "id": "toshiko-kishida",
+  "name": "Toshiko Kishida",
+  "birthYear": 1863,
+  "deathYear": 1901,
+  "eraId": "nineteenth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Meiji-era Japanese feminist philosopher and Freedom and People’s Rights orator whose speech \"Daughters in Boxes\" critiqued Confucian household confinement as an obstacle to women’s moral autonomy and civic equality.",
+  "centralQuestion": "How does domestic seclusion (\"daughters in boxes\") violate natural human rights and stunt women’s intellectual and civic capacities?",
+  "keyWorks": [
+    {
+      "title": "Daughters in Boxes (Hakoiri Musume)",
+      "year": "1883 CE",
+      "url": "https://en.wikipedia.org/wiki/Toshiko_Kishida",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Toshiko_Kishida",
+      "description": "Landmark Meiji feminist lecture critiquing patriarchal familial control and demanding women’s education and political participation."
+    }
+  ],
+  "sepSlug": "feminism-political",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Toshiko_Kishida"
+  },
+  "imageUrl": "/portraits/toshiko-kishida.jpg"
+}

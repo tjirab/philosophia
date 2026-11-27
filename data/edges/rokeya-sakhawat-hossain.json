@@ -1,0 +1,65 @@
+[
+  {
+    "id": "mary-wollstonecraft--rokeya-sakhawat-hossain",
+    "source": "mary-wollstonecraft",
+    "target": "rokeya-sakhawat-hossain",
+    "type": "INFLUENCED",
+    "label": "Paralleled Enlightenment feminist critiques of women’s artificial miseducation in colonial Bengal",
+    "strength": 4,
+    "description": "Like Wollstonecraft’s critique of gendered sensibility, Begum Rokeya exposed how domestic confinement (aborodh) deliberately atrophies women’s rational faculties.",
+    "dialecticalTension": "Translates feminist rationalism into an anti-colonial Bengali Muslim social context.",
+    "historicalContext": "Early 20th-century Bengal Renaissance and Muslim women’s reform.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Begum Rokeya",
+        "work": "Motichur",
+        "year": 1904,
+        "url": "https://en.wikipedia.org/wiki/Begum_Rokeya"
+      }
+    ]
+  },
+  {
+    "id": "pandita-ramabai--rokeya-sakhawat-hossain",
+    "source": "pandita-ramabai",
+    "target": "rokeya-sakhawat-hossain",
+    "type": "INFLUENCED",
+    "label": "Continued 19th-century Indian women’s structural critique of domestic seclusion and illiteracy",
+    "strength": 4,
+    "description": "Following Ramabai’s institutional battles for women’s schools in western India, Rokeya founded the Sakhawat Memorial Girls’ School in Calcutta in 1911.",
+    "dialecticalTension": "Advances cross-community South Asian women’s educational emancipation.",
+    "historicalContext": "South Asian women’s reform (1880s–1920s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Begum Rokeya",
+        "work": "The Secluded Ones (Abarodhbasini)",
+        "year": 1931,
+        "url": "https://en.wikipedia.org/wiki/Begum_Rokeya"
+      }
+    ]
+  },
+  {
+    "id": "rokeya-sakhawat-hossain--uma-chakravarti",
+    "source": "rokeya-sakhawat-hossain",
+    "target": "uma-chakravarti",
+    "type": "INFLUENCED",
+    "label": "Anticipated feminist historiography of patriarchal seclusion and domestic ideology in South Asia",
+    "strength": 4,
+    "description": "Rokeya’s sharp material analysis of purdah and unequal intellectual labor laid foundational groundwork for later Indian feminist sociology.",
+    "dialecticalTension": "Connects early 20th-century anti-seclusion critique to contemporary structural gender history.",
+    "historicalContext": "South Asian feminist genealogy.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Uma Chakravarti",
+        "work": "Gendering Caste",
+        "year": 2003,
+        "url": "https://en.wikipedia.org/wiki/Begum_Rokeya"
+      }
+    ]
+  }
+]

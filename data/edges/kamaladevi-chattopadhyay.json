@@ -1,0 +1,65 @@
+[
+  {
+    "id": "pandita-ramabai--kamaladevi-chattopadhyay",
+    "source": "pandita-ramabai",
+    "target": "kamaladevi-chattopadhyay",
+    "type": "INFLUENCED",
+    "label": "Inherited pioneering Indian women’s institutional organizing and social reform",
+    "strength": 4,
+    "description": "Born in Mangalore where Ramabai’s reform legacy resonated, Chattopadhyay expanded women’s educational reform into anti-colonial mass mobilization and socialist cooperatives.",
+    "dialecticalTension": "Moves from social-reformist rescue toward anti-imperialist democratic citizenship.",
+    "historicalContext": "Indian independence movement (1920s–1940s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Kamaladevi Chattopadhyay",
+        "work": "The Awakening of Indian Women",
+        "year": 1939,
+        "url": "https://en.wikipedia.org/wiki/Kamaladevi_Chattopadhyay"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--kamaladevi-chattopadhyay",
+    "source": "karl-marx",
+    "target": "kamaladevi-chattopadhyay",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized socialist critique of labor exploitation with Gandhian decentralized artisanal economics",
+    "strength": 4,
+    "description": "As a founder of the Congress Socialist Party, Chattopadhyay fused socialist attention to class exploitation with decentralized village craft cooperatives.",
+    "dialecticalTension": "Reconciles socialist labor emancipation with non-industrial vernacular aesthetics.",
+    "historicalContext": "Congress Socialist Party & cooperative movement (1930s–1960s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Kamaladevi Chattopadhyay",
+        "work": "Inner Recesses, Outer Spaces",
+        "year": 1986,
+        "url": "https://en.wikipedia.org/wiki/Kamaladevi_Chattopadhyay"
+      }
+    ]
+  },
+  {
+    "id": "kamaladevi-chattopadhyay--vandana-shiva",
+    "source": "kamaladevi-chattopadhyay",
+    "target": "vandana-shiva",
+    "type": "INFLUENCED",
+    "label": "Prefigured Indian ecofeminist defense of women’s indigenous craft and ecological knowledge",
+    "strength": 4,
+    "description": "Chattopadhyay’s defense of women-led decentralized craft cooperatives against colonial industrial centralization directly foreshadowed Shiva’s ecofeminist critique.",
+    "dialecticalTension": "Bridges anti-colonial cooperative economics to postcolonial ecological feminism.",
+    "historicalContext": "20th-century Indian social thought.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Kamaladevi Chattopadhyay",
+        "work": "The Awakening of Indian Women",
+        "year": 1939,
+        "url": "https://en.wikipedia.org/wiki/Kamaladevi_Chattopadhyay"
+      }
+    ]
+  }
+]
