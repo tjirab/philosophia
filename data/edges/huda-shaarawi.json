@@ -1,0 +1,44 @@
+[
+  {
+    "id": "john-stuart-mill--huda-shaarawi",
+    "source": "john-stuart-mill",
+    "target": "huda-shaarawi",
+    "type": "SYNTHESIZED",
+    "label": "Integrated constitutional rights discourse with anti-colonial Egyptian nationalism",
+    "strength": 3,
+    "description": "Sha'arawi synthesized liberal constitutionalism and universal suffrage ideals with Qasim Amin's and Saad Zaghlul's anti-colonial movement, insisting Egyptian independence required women's full civic equality.",
+    "dialecticalTension": "Adapts constitutional rights claims to challenge both British occupation and domestic patriarchy.",
+    "historicalContext": "Founding of the Egyptian Feminist Union (1923) following the 1919 Revolution.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Margot Badran",
+        "work": "Feminists, Islam, and Nation: Gender and the Making of Modern Egypt",
+        "year": 1995,
+        "url": "https://en.wikipedia.org/wiki/Huda_Sha%27arawi"
+      }
+    ]
+  },
+  {
+    "id": "huda-shaarawi--nawal-el-saadawi",
+    "source": "huda-shaarawi",
+    "target": "nawal-el-saadawi",
+    "type": "INFLUENCED",
+    "label": "Established secular-civic Arab feminist mobilization later radicalized by El Saadawi",
+    "strength": 4,
+    "description": "Sha'arawi's public unveiling and institutionalization of Egyptian women's political organizing created the historical arena that Nawal El Saadawi pushed beyond aristocratic reform toward anti-capitalist and bodily liberation.",
+    "dialecticalTension": "Moves from elite civic constitutionalism toward systemic medical and class critique.",
+    "historicalContext": "Continuity and rupture across twentieth-century Egyptian feminisms.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Margot Badran",
+        "work": "Feminists, Islam, and Nation",
+        "year": 1995,
+        "url": "https://en.wikipedia.org/wiki/Nawal_El_Saadawi"
+      }
+    ]
+  }
+]

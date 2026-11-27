@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ban-zhao--qiu-jin",
+    "source": "ban-zhao",
+    "target": "qiu-jin",
+    "type": "CRITIQUED",
+    "label": "Rejected Ban Zhao's Confucian \"Three Obediences\" in favor of women's emancipation",
+    "strength": 4,
+    "description": "Qiu Jin explicitly attacked traditional Confucian didactic manuals tracing back to Ban Zhao's Lessons for Women, condemning ritual female subordination and footbinding as instruments of patriarchal bondage.",
+    "dialecticalTension": "Breaks sharply from classical Confucian harmony to demand revolutionary civic equality.",
+    "historicalContext": "Chinese Women's Journal (Zhongguo nübao, 1907).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Lydia H. Liu, Rebecca E. Karl & Dorothy Ko",
+        "work": "The Birth of Chinese Feminism: Essential Texts in Transnational Theory",
+        "year": 2013,
+        "url": "https://en.wikipedia.org/wiki/Qiu_Jin"
+      }
+    ]
+  },
+  {
+    "id": "qiu-jin--he-yin-zhen",
+    "source": "qiu-jin",
+    "target": "he-yin-zhen",
+    "type": "INFLUENCED",
+    "label": "Catalyzed radical late-Qing feminist print discourse preceding Natural Justice",
+    "strength": 4,
+    "description": "Qiu Jin's founding of the Chinese Women's Journal and revolutionary martyrdom in 1907 electrified Chinese feminist circles in Tokyo, where He-Yin Zhen launched Tianyi bao (Natural Justice) the same year.",
+    "dialecticalTension": "Prepares the radical transition from nationalist feminist reform to structural anarcho-feminism.",
+    "historicalContext": "1904–1907 Sino-Japanese radical intellectual networks in Tokyo and Shanghai.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Lydia H. Liu, Rebecca E. Karl & Dorothy Ko",
+        "work": "The Birth of Chinese Feminism",
+        "year": 2013,
+        "url": "https://en.wikipedia.org/wiki/He-Yin_Zhen"
+      }
+    ]
+  }
+]

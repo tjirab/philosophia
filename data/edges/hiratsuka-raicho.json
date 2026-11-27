@@ -1,0 +1,44 @@
+[
+  {
+    "id": "dogen--hiratsuka-raicho",
+    "source": "dogen",
+    "target": "hiratsuka-raicho",
+    "type": "INFLUENCED",
+    "label": "Grounded Seitō feminist awakening in Zen meditative direct experience",
+    "strength": 4,
+    "description": "Raichō Hiratsuka practiced intensive Rinzai-Sōtō Zen kenshō prior to founding Seitō (1911), framing women's creative self-awakening as dissolving dualistic subject-object alienation.",
+    "dialecticalTension": "Transforms Zen non-dual inwardness into modern feminist cultural assertion.",
+    "historicalContext": "Seitō inaugural manifesto (\"In the Beginning, Woman Was the Sun\", 1911).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Raichō Hiratsuka",
+        "work": "In the Beginning, Woman Was the Sun (Autobiography)",
+        "year": 1971,
+        "url": "https://en.wikipedia.org/wiki/Raich%C5%8D_Hiratsuka"
+      }
+    ]
+  },
+  {
+    "id": "friedrich-nietzsche--hiratsuka-raicho",
+    "source": "friedrich-nietzsche",
+    "target": "hiratsuka-raicho",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Nietzschean self-overcoming with Japanese feminist subjectivity",
+    "strength": 3,
+    "description": "Hiratsuka drew enthusiastically on Nietzsche's Thus Spoke Zarathustra alongside Ellen Key to challenge conventional Japanese feminine modesty and proclaim autonomous self-creation.",
+    "dialecticalTension": "Appropriates individualist self-overcoming for collective women's liberation.",
+    "historicalContext": "Early Seitō intellectual circle (1911–1915).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Jan Bardsley",
+        "work": "The Bluestockings of Japan: New Woman Essays and Fiction from Seitō",
+        "year": 2007,
+        "url": "https://en.wikipedia.org/wiki/Raich%C5%8D_Hiratsuka"
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "maria-lugones",
+  "name": "María Lugones",
+  "birthYear": 1944,
+  "deathYear": 2020,
+  "eraId": "contemporary",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Argentine-American decolonial feminist philosopher who formulated the \"coloniality of gender\" and \"world-travelling,\" exposing how modern-colonial capitalism invented binary racialized gender hierarchies.",
+  "centralQuestion": "How was binary hierarchical gender imposed as a colonial instrument alongside race, and how can coalition across \"worlds of sense\" resist fragmentation?",
+  "keyWorks": [
+    {
+      "title": "Heterosexualism and the Colonial/Modern Gender System",
+      "year": "2007 CE",
+      "url": "https://en.wikipedia.org/wiki/Mar%C3%ADa_Lugones",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mar%C3%ADa_Lugones",
+      "description": "Critiques Quijano's coloniality of power to define the coloniality of gender as a racialized and heterosexist axis of domination."
+    },
+    {
+      "title": "Pilgrimages / Peregrinajes: Theorizing Coalition Against Multiple Oppressions",
+      "year": "2003 CE",
+      "url": "https://en.wikipedia.org/wiki/Mar%C3%ADa_Lugones",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mar%C3%ADa_Lugones",
+      "description": "Collects \"Playfulness, World-Travelling, and Loving Perception\" alongside spatial theories of resistant multiplicity."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "pillar",
+  "importanceScore": 91,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://en.wikipedia.org/wiki/María_Lugones"
+  },
+  "imageUrl": "/portraits/maria-lugones.jpg"
+}

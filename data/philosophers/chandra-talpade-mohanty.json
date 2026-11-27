@@ -1,0 +1,40 @@
+{
+  "id": "chandra-talpade-mohanty",
+  "name": "Chandra Talpade Mohanty",
+  "birthYear": 1955,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Indian-born postcolonial and transnational feminist theorist whose critique of Western feminist universalism transformed comparative sociology, intersectionality, and anti-capitalist global solidarity.",
+  "centralQuestion": "How does Western feminist scholarship homogenize diverse \"Third World women\" into a monolithic victim category, and how can transnational solidarity avoid discursive colonization?",
+  "keyWorks": [
+    {
+      "title": "Under Western Eyes: Feminist Scholarship and Colonial Discourses",
+      "year": "1984 CE",
+      "url": "https://en.wikipedia.org/wiki/Chandra_Talpade_Mohanty",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chandra_Talpade_Mohanty",
+      "description": "Seminal critique exposing Eurocentric power-knowledge biases in Western feminist analyses of Global South women."
+    },
+    {
+      "title": "Feminism Without Borders: Decolonizing Theory, Practicing Solidarity",
+      "year": "2003 CE",
+      "url": "https://en.wikipedia.org/wiki/Chandra_Talpade_Mohanty",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Chandra_Talpade_Mohanty",
+      "description": "Develops transnational feminist praxis linking anti-racist, decolonial, and anti-capitalist methodology across borders."
+    }
+  ],
+  "sepSlug": "feminism-globalization",
+  "canonTier": "bridge",
+  "importanceScore": 87,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-globalization/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chandra_Talpade_Mohanty"
+  },
+  "imageUrl": "/portraits/chandra-talpade-mohanty.jpg"
+}

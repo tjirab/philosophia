@@ -1,0 +1,40 @@
+{
+  "id": "sueli-carneiro",
+  "name": "Sueli Carneiro",
+  "birthYear": 1950,
+  "eraId": "contemporary",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Brazilian philosopher and founder of Geledés who adapted Foucault's biopower to formulate the \"dispositivo de racialidade\" and theorized epistemicide—the systematic destruction of Black and non-Western knowledge systems.",
+  "centralQuestion": "How does the raciality apparatus (dispositivo de racialidade) enact epistemicide by disqualifying Black subjects as knowers while subordinating their bodily labor?",
+  "keyWorks": [
+    {
+      "title": "Dispositivo de racialidade: A construção do outro como não ser como fundamento do ser",
+      "year": "2005 CE",
+      "url": "https://en.wikipedia.org/wiki/Sueli_Carneiro",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sueli_Carneiro",
+      "description": "Doctoral philosophy thesis synthesizing Foucauldian biopolitics and Charles Mills's Racial Contract to conceptualize raciality and epistemicide in Brazil."
+    },
+    {
+      "title": "Blackening Feminism (Enegrecer o feminismo)",
+      "year": "2003 CE",
+      "url": "https://en.wikipedia.org/wiki/Sueli_Carneiro",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sueli_Carneiro",
+      "description": "Argues that Eurocentric Latin American feminism must be fundamentally transformed by Afro-Brazilian women's historical struggles."
+    }
+  ],
+  "sepSlug": "feminism-race",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-race/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sueli_Carneiro"
+  },
+  "imageUrl": "/portraits/sueli-carneiro.jpg"
+}

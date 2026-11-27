@@ -1,0 +1,64 @@
+[
+  {
+    "id": "frantz-fanon--wangari-maathai",
+    "source": "frantz-fanon",
+    "target": "wangari-maathai",
+    "type": "DEVELOPED",
+    "label": "Extended critique of postcolonial elite corruption to ecological sovereignty",
+    "strength": 4,
+    "description": "Building on Fanon's warning against the postcolonial national bourgeoisie's extraction of public wealth, Maathai argued that forest grabbing, authoritarianism, and cultural alienation reproduce colonial exploitation from within.",
+    "dialecticalTension": "Expands anti-colonial national liberation into living ecological stewardship.",
+    "historicalContext": "Green Belt Movement struggle against the Moi regime (1977–2002).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Wangari Maathai",
+        "work": "The Challenge for Africa",
+        "year": 2009,
+        "url": "https://en.wikipedia.org/wiki/Wangari_Maathai"
+      }
+    ]
+  },
+  {
+    "id": "wangari-maathai--green-belt-environmental-stewardship",
+    "source": "wangari-maathai",
+    "target": "green-belt-environmental-stewardship",
+    "type": "DEVELOPED",
+    "label": "Created the Green Belt framework uniting ecology, democracy, and peace",
+    "strength": 5,
+    "description": "Maathai conceptualized the three-legged stool of environmental conservation, good governance, and culture of peace, demonstrating how planting indigenous trees builds democratic agency.",
+    "dialecticalTension": "Dissolves false dichotomy between human survival needs and biodiversity restoration.",
+    "historicalContext": "Founded 1977; Nobel Peace Prize Lecture (2004).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Wangari Maathai",
+        "work": "Nobel Lecture & The Green Belt Movement",
+        "year": 2004,
+        "url": "https://en.wikipedia.org/wiki/Wangari_Maathai"
+      }
+    ]
+  },
+  {
+    "id": "wangari-maathai--vandana-shiva",
+    "source": "wangari-maathai",
+    "target": "vandana-shiva",
+    "type": "INFLUENCED",
+    "label": "Pioneered Southern women's ecological commons praxis alongside Shiva's Chipko work",
+    "strength": 4,
+    "description": "Maathai's Green Belt Movement (1977) formed a flagship African pillar of Global South ecofeminism that Vandana Shiva championed globally alongside India's Chipko forest movement.",
+    "dialecticalTension": "Unites African land-regeneration praxis with South Asian anti-biopiracy philosophy.",
+    "historicalContext": "Transnational Global South ecofeminist alliance (1977–2011).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Lori Gruen",
+        "work": "Feminist Environmental Philosophy",
+        "url": "https://plato.stanford.edu/entries/feminism-environmental/"
+      }
+    ]
+  }
+]

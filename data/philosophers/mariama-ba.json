@@ -1,0 +1,41 @@
+{
+  "id": "mariama-ba",
+  "name": "Mariama Bâ",
+  "birthYear": 1929,
+  "deathYear": 1981,
+  "eraId": "twentieth-century",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Senegalese philosopher-novelist and feminist critic whose epistolary classic So Long a Letter interrogated post-independence African nationalism, polygamy, and caste prejudice from the standpoint of women's moral autonomy.",
+  "centralQuestion": "Why did postcolonial African emancipation leave domestic patriarchal hierarchy and caste stratification intact, and how can female solidarity transform civic modernity?",
+  "keyWorks": [
+    {
+      "title": "So Long a Letter (Une si longue lettre)",
+      "year": "1979 CE",
+      "url": "https://en.wikipedia.org/wiki/So_Long_a_Letter",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/So_Long_a_Letter",
+      "description": "Philosophical-literary critique of postcolonial Senegalese bourgeois hypocrisy, polygamous abandonment, and caste exclusion."
+    },
+    {
+      "title": "Scarlet Song (Un chant écarlate)",
+      "year": "1981 CE",
+      "url": "https://en.wikipedia.org/wiki/Mariama_B%C3%A2",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mariama_B%C3%A2",
+      "description": "Examines intercultural alienation, patriarchal nationalism, and social norms in post-independence Senegal."
+    }
+  ],
+  "sepSlug": "africana",
+  "canonTier": "contributor",
+  "importanceScore": 80,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/africana/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mariama_Bâ"
+  },
+  "imageUrl": "/portraits/mariama-ba.jpg"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "gayatri-chakravorty-spivak",
+  "name": "Gayatri Chakravorty Spivak",
+  "birthYear": 1942,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Indian literary theorist and postcolonial philosopher whose synthesis of Marxism, feminism, and Derridean deconstruction established subaltern studies and exposed epistemic violence in Western representation.",
+  "centralQuestion": "Why are subaltern subjects systematically rendered unable to speak within colonial and Western radical intellectual frameworks?",
+  "keyWorks": [
+    {
+      "title": "Can the Subaltern Speak?",
+      "year": "1988 CE",
+      "url": "https://en.wikipedia.org/wiki/Can_the_Subaltern_Speak%3F",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Can_the_Subaltern_Speak%3F",
+      "description": "Foundational essay dissecting epistemic violence, imperial historiography, and Western intellectuals' erasure of subaltern gendered agency."
+    },
+    {
+      "title": "A Critique of Postcolonial Reason",
+      "year": "1999 CE",
+      "url": "https://en.wikipedia.org/wiki/Gayatri_Chakravorty_Spivak",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Gayatri_Chakravorty_Spivak",
+      "description": "Deconstructive reading of Kant, Hegel, and Marx tracking the foreclosure of the \"native informant\" in European philosophy."
+    }
+  ],
+  "sepSlug": "colonialism",
+  "canonTier": "pillar",
+  "importanceScore": 93,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/colonialism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gayatri_Chakravorty_Spivak"
+  },
+  "imageUrl": "/portraits/gayatri-chakravorty-spivak.jpg"
+}

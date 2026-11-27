@@ -1,0 +1,42 @@
+{
+  "id": "nawal-el-saadawi",
+  "name": "Nawal El Saadawi",
+  "birthYear": 1931,
+  "deathYear": 2021,
+  "eraId": "contemporary",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "sociology",
+    "psychology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Egyptian physician, psychiatrist, and radical feminist sociologist whose clinical and philosophical works dissected patriarchy as an interlocking system of global capitalism, religious orthodoxy, and bodily control.",
+  "centralQuestion": "How do global imperialism, class hierarchy, and patriarchal religious interpretation co-produce bodily and psychological trauma in women?",
+  "keyWorks": [
+    {
+      "title": "The Hidden Face of Eve: Women in the Arab World",
+      "year": "1977 CE",
+      "url": "https://en.wikipedia.org/wiki/Nawal_El_Saadawi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nawal_El_Saadawi",
+      "description": "Pioneering sociological and medical-psychological critique of patriarchal bodily violence, economic dependency, and cultural silence."
+    },
+    {
+      "title": "Woman at Point Zero",
+      "year": "1975 CE",
+      "url": "https://en.wikipedia.org/wiki/Woman_at_Point_Zero",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Woman_at_Point_Zero",
+      "description": "Existential-sociological narrative drawn from psychiatric prison interviews exposing carceral and patriarchal power."
+    }
+  ],
+  "sepSlug": "feminism-globalization",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-globalization/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nawal_El_Saadawi"
+  },
+  "imageUrl": "/portraits/nawal-el-saadawi.jpg"
+}

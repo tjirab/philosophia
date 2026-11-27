@@ -1,0 +1,40 @@
+{
+  "id": "vandana-shiva",
+  "name": "Vandana Shiva",
+  "birthYear": 1952,
+  "eraId": "contemporary",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Indian physicist, philosopher of science, and ecofeminist thinker who traced ecological crisis and agrarian dispossession to Western mechanistic reductionism and intellectual property enclosures (\"biopiracy\").",
+  "centralQuestion": "How do capitalist scientific reductionism and patriarchal development models construct \"monocultures of the mind\" that destroy biodiversity and women's ecological knowledge?",
+  "keyWorks": [
+    {
+      "title": "Staying Alive: Women, Ecology and Development",
+      "year": "1988 CE",
+      "url": "https://en.wikipedia.org/wiki/Vandana_Shiva",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Vandana_Shiva",
+      "description": "Landmark Global South ecofeminist text linking Baconian science, maldevelopment, and indigenous women's regenerative ecological knowledge (Prakriti)."
+    },
+    {
+      "title": "Monocultures of the Mind",
+      "year": "1993 CE",
+      "url": "https://en.wikipedia.org/wiki/Vandana_Shiva",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Vandana_Shiva",
+      "description": "Philosophical critique of epistemic homogenization in modern industrial agriculture and biotechnology."
+    }
+  ],
+  "sepSlug": "feminism-environmental",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-environmental/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vandana_Shiva"
+  },
+  "imageUrl": "/portraits/vandana-shiva.jpg"
+}

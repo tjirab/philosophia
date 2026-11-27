@@ -1,0 +1,40 @@
+{
+  "id": "li-qingzhao",
+  "name": "Li Qingzhao",
+  "birthYear": 1084,
+  "deathYear": 1155,
+  "eraId": "medieval",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Song-dynasty Chinese philosopher of aesthetics, epigrapher, and ci poet whose Treatise on Ci Poetry (Cilun) formulated rigorous formal principles of musical-linguistic harmony while asserting female scholarly parity.",
+  "centralQuestion": "How do sonic cadence, emotional sincerity, and historical memory synthesize into an autonomous aesthetics beyond orthodox Confucian didacticism?",
+  "keyWorks": [
+    {
+      "title": "Treatise on Ci Poetry (Cìlùn)",
+      "year": "c. 1120 CE",
+      "url": "https://en.wikipedia.org/wiki/Li_Qingzhao",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Li_Qingzhao",
+      "description": "Pioneering aesthetic theory distinguishing lyric ci poetics as a distinct, rule-governed philosophical art form (\"biejia\")."
+    },
+    {
+      "title": "Afterword to Jinshi Lu (Records on Metal and Stone)",
+      "year": "1132 CE",
+      "url": "https://en.wikipedia.org/wiki/Li_Qingzhao",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Li_Qingzhao",
+      "description": "Philosophical memoir reflecting on impermanence, material culture, and textual preservation amid dynastic collapse."
+    }
+  ],
+  "sepSlug": "chinese-ethics",
+  "canonTier": "contributor",
+  "importanceScore": 80,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/chinese-ethics/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Li_Qingzhao"
+  },
+  "imageUrl": "/portraits/li-qingzhao.jpg"
+}

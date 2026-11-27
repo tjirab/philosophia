@@ -1,0 +1,65 @@
+[
+  {
+    "id": "frantz-fanon--leila-ahmed",
+    "source": "frantz-fanon",
+    "target": "leila-ahmed",
+    "type": "SYNTHESIZED",
+    "label": "Exposed \"colonial feminism\" as imperial weaponization of the veil",
+    "strength": 4,
+    "description": "Extending Fanon's analysis of colonial unveiling strategy in \"Algeria Unveiled,\" Leila Ahmed showed how Lord Cromer and British imperialism co-opted Western feminist rhetoric to justify colonial domination in Egypt.",
+    "dialecticalTension": "Reveals how feminist slogans can function simultaneously as emancipation and imperial alibi.",
+    "historicalContext": "Women and Gender in Islam (1992).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Leila Ahmed",
+        "work": "Women and Gender in Islam: Historical Roots of a Modern Debate",
+        "year": 1992,
+        "url": "https://en.wikipedia.org/wiki/Leila_Ahmed"
+      }
+    ]
+  },
+  {
+    "id": "huda-shaarawi--leila-ahmed",
+    "source": "huda-shaarawi",
+    "target": "leila-ahmed",
+    "type": "CRITIQUED",
+    "label": "Reassessed early Egyptian feminism's entanglement with Westernizing elites",
+    "strength": 4,
+    "description": "Leila Ahmed traced Huda Sha'arawi's Egyptian Feminist Union to show both its vital anti-colonial nationalism and the class-bound Westernizing assumptions that alienated subaltern piety movements.",
+    "dialecticalTension": "Balances appreciation of civic suffrage struggles against critique of Eurocentric modernity.",
+    "historicalContext": "Chapter 9 of Women and Gender in Islam (1992).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Leila Ahmed",
+        "work": "Women and Gender in Islam",
+        "year": 1992,
+        "url": "https://en.wikipedia.org/wiki/Leila_Ahmed"
+      }
+    ]
+  },
+  {
+    "id": "leila-ahmed--saba-mahmood",
+    "source": "leila-ahmed",
+    "target": "saba-mahmood",
+    "type": "INFLUENCED",
+    "label": "Grounded historical genealogy of modern Muslim piety and re-veiling",
+    "strength": 4,
+    "description": "Ahmed's historical demonstration that Islamic revivalism and veiling carried non-colonial civic meanings directly informed Saba Mahmood's anthropological-philosophical study of Cairo's mosque movement.",
+    "dialecticalTension": "Bridges historical intellectual genealogy with ethnographic theory of moral agency.",
+    "historicalContext": "Ahmed (1992) and Mahmood (2005).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Saba Mahmood",
+        "work": "Politics of Piety",
+        "year": 2005,
+        "url": "https://en.wikipedia.org/wiki/Saba_Mahmood"
+      }
+    ]
+  }
+]

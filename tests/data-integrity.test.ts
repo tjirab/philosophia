@@ -1408,4 +1408,61 @@ describe('Philosophy Graph Data Integrity', () => {
       expect(socIds.has(id)).toBe(true);
     }
   });
+
+  it('verifies Phase 5A global women lineages, cultural spheres, living dates, and landmark concepts', () => {
+    // South Asian lineages
+    expect(findInfluencePath('gargi-vachaknavi', 'adi-shankara', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('adi-shankara', 'akka-mahadevi', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('akka-mahadevi', 'savitribai-phule', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('savitribai-phule', 'b-r-ambedkar', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('jacques-derrida', 'gayatri-chakravorty-spivak', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('gayatri-chakravorty-spivak', 'subalternity-and-epistemic-violence', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('francis-bacon', 'vandana-shiva', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('vandana-shiva', 'ecofeminism', edgesData as any).found).toBe(true);
+
+    // East Asian lineages
+    expect(findInfluencePath('siddhartha-gautama', 'murasaki-shikibu', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('murasaki-shikibu', 'dogen', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('ban-zhao', 'li-qingzhao', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('confucius', 'he-yin-zhen', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('he-yin-zhen', 'nannu-and-anarcho-feminism', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('hiratsuka-raicho', 'ito-noe', edgesData as any).found).toBe(true);
+
+    // MENA lineages
+    expect(findInfluencePath('rabia-al-adawiyya', 'al-ghazali', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('rabia-al-adawiyya', 'disinterested-divine-love', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('ibn-khaldun', 'fatema-mernissi', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('fatema-mernissi', 'saba-mahmood', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('jurgen-habermas', 'seyla-benhabib', edgesData as any).found).toBe(true);
+
+    // African, Latin American, and Indigenous lineages
+    expect(findInfluencePath('w-e-b-du-bois', 'funmilayo-ransome-kuti', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('funmilayo-ransome-kuti', 'wangari-maathai', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('wangari-maathai', 'green-belt-environmental-stewardship', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('frantz-fanon', 'lelia-gonzalez', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('lelia-gonzalez', 'amefricanidade', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('anibal-quijano', 'maria-lugones', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('maria-lugones', 'coloniality-of-gender', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('felipe-guaman-poma', 'silvia-rivera-cusicanqui', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('silvia-rivera-cusicanqui', 'chixi-decoloniality', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('vine-deloria-jr', 'winona-laduke', edgesData as any).found).toBe(true);
+
+    // All living Phase 5A thinkers must omit deathYear
+    for (const livingId of [
+      'gayatri-chakravorty-spivak',
+      'vandana-shiva',
+      'chandra-talpade-mohanty',
+      'leila-ahmed',
+      'seyla-benhabib',
+      'amina-wadud',
+      'silvia-rivera-cusicanqui',
+      'sueli-carneiro',
+      'rigoberta-menchu',
+      'winona-laduke',
+    ]) {
+      const thinker = philosophersData.find((p) => p.id === livingId) as any;
+      expect(thinker, `Missing living thinker ${livingId}`).toBeDefined();
+      expect(thinker.deathYear, `${livingId} should not have deathYear`).toBeUndefined();
+    }
+  });
 });

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "hiratsuka-raicho--ito-noe",
+    "source": "hiratsuka-raicho",
+    "target": "ito-noe",
+    "type": "CRITIQUED",
+    "label": "Radicalized Seitō beyond maternalist reform toward anarcho-feminist abolition",
+    "strength": 4,
+    "description": "After taking over Seitō, Noe Itō increasingly challenged Hiratsuka's institutional maternalist campaigns, arguing with Emma Goldman and Sakae Ōsugi that state protection merely legitimizes authoritarian family and state control.",
+    "dialecticalTension": "Contrasts state-mediated feminist reform with anti-statist free association.",
+    "historicalContext": "Japanese feminist-anarchist debates (1915–1923).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Vera Mackie",
+        "work": "Feminism in Modern Japan",
+        "year": 2003,
+        "url": "https://en.wikipedia.org/wiki/Noe_It%C5%8D"
+      }
+    ]
+  }
+]

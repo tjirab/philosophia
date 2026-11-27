@@ -1,0 +1,65 @@
+[
+  {
+    "id": "felipe-guaman-poma--rigoberta-menchu",
+    "source": "felipe-guaman-poma",
+    "target": "rigoberta-menchu",
+    "type": "INFLUENCED",
+    "label": "Continued the Mesoamerican-Andean testimonial tradition against dispossession",
+    "strength": 3,
+    "description": "Following the lineage of colonial Indigenous chronicles like Guaman Poma's appeal to imperial conscience, Menchú's I, Rigoberta Menchú deployed testimonial narrative on a global stage to bear collective witness to Mayan genocide.",
+    "dialecticalTension": "Transforms historical chronicle into contemporary global human-rights testimonio.",
+    "historicalContext": "Longue-durée Indigenous testimonial tradition in Latin America.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "John Beverley",
+        "work": "Testimonio: On the Politics of Truth",
+        "year": 2004,
+        "url": "https://en.wikipedia.org/wiki/Rigoberta_Mench%C3%BA"
+      }
+    ]
+  },
+  {
+    "id": "paulo-freire--rigoberta-menchu",
+    "source": "paulo-freire",
+    "target": "rigoberta-menchu",
+    "type": "DEVELOPED",
+    "label": "Embodied critical consciousness and collective narrative praxis (testimonio)",
+    "strength": 4,
+    "description": "Menchú's testimonial philosophy operationalized Freirean conscientization by speaking in the first-person plural of K'iche' Maya community survival, triggering widespread philosophical debate on collective truth.",
+    "dialecticalTension": "Challenges Western individualistic verification models with communal testimonial truth.",
+    "historicalContext": "Guatemalan civil conflict and liberation theology / popular education networks (1983).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Rigoberta Menchú & Elisabeth Burgos-Debray",
+        "work": "I, Rigoberta Menchú",
+        "year": 1983,
+        "url": "https://en.wikipedia.org/wiki/Rigoberta_Mench%C3%BA"
+      }
+    ]
+  },
+  {
+    "id": "enrique-dussel--rigoberta-menchu",
+    "source": "enrique-dussel",
+    "target": "rigoberta-menchu",
+    "type": "SYNTHESIZED",
+    "label": "Informed Latin American liberation ethics of the exteriorized Indigenous victim",
+    "strength": 3,
+    "description": "Enrique Dussel's philosophy of liberation explicitly invoked Rigoberta Menchú's testimony as the concrete ethical voice of the marginalized Indigenous \"Other\" interrupting modern colonial totality.",
+    "dialecticalTension": "Bridges Dussel's ethical exteriority with lived Maya ecological and civic resistance.",
+    "historicalContext": "Ethics of Liberation (1998) and late-20th-century Indigenous human rights.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Enrique Dussel",
+        "work": "Ethics of Liberation in the Age of Globalization and Exclusion",
+        "year": 1998,
+        "url": "https://en.wikipedia.org/wiki/Rigoberta_Mench%C3%BA"
+      }
+    ]
+  }
+]

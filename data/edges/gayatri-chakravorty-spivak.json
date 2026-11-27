@@ -1,0 +1,107 @@
+[
+  {
+    "id": "jacques-derrida--gayatri-chakravorty-spivak",
+    "source": "jacques-derrida",
+    "target": "gayatri-chakravorty-spivak",
+    "type": "DEVELOPED",
+    "label": "Translated Of Grammatology and extended deconstruction into postcolonial critique",
+    "strength": 5,
+    "description": "Spivak's landmark English translation and critical preface to Derrida's Of Grammatology (1976) introduced deconstruction to the Anglophone world before redirecting Derridean aporia toward the colonial \"native informant.\"",
+    "dialecticalTension": "Politicizes textual différance into a critique of imperial epistemic violence.",
+    "historicalContext": "From Of Grammatology (1976) through A Critique of Postcolonial Reason (1999).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Gayatri Chakravorty Spivak",
+        "work": "Translator's Preface to Of Grammatology / Can the Subaltern Speak?",
+        "year": 1976,
+        "url": "https://en.wikipedia.org/wiki/Gayatri_Chakravorty_Spivak"
+      }
+    ]
+  },
+  {
+    "id": "michel-foucault--gayatri-chakravorty-spivak",
+    "source": "michel-foucault",
+    "target": "gayatri-chakravorty-spivak",
+    "type": "CRITIQUED",
+    "label": "Indicted First-World intellectuals for effacing ideology and subaltern silence",
+    "strength": 5,
+    "description": "In \"Can the Subaltern Speak?\" (1988), Spivak famously critiqued Foucault and Deleuze's conversation on intellectuals and power, arguing that by collapsing representation (Vertretung/Darstellung), Western post-structuralists smuggle back a transparent sovereign subject.",
+    "dialecticalTension": "Reveals how even radical European anti-essentialism reproduces epistemic Eurocentrism.",
+    "historicalContext": "Core intervention in Marxism and the Interpretation of Culture (1988).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Gayatri Chakravorty Spivak",
+        "work": "Can the Subaltern Speak?",
+        "year": 1988,
+        "url": "https://en.wikipedia.org/wiki/Can_the_Subaltern_Speak%3F"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--gayatri-chakravorty-spivak",
+    "source": "karl-marx",
+    "target": "gayatri-chakravorty-spivak",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Marxian value and subaltern labor critique with feminist deconstruction",
+    "strength": 4,
+    "description": "Spivak repeatedly returned to Marx's distinction between political proxy (Vertretung) and aesthetic portrait (Darstellung) as well as international divisions of gendered labor to critique global capitalism.",
+    "dialecticalTension": "Maintains Marxian materialism in productive tension with Derridean deconstruction.",
+    "historicalContext": "In Other Worlds (1987) and A Critique of Postcolonial Reason (1999).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Gayatri Chakravorty Spivak",
+        "work": "A Critique of Postcolonial Reason",
+        "year": 1999,
+        "url": "https://en.wikipedia.org/wiki/Gayatri_Chakravorty_Spivak"
+      }
+    ]
+  },
+  {
+    "id": "gayatri-chakravorty-spivak--subalternity-and-epistemic-violence",
+    "source": "gayatri-chakravorty-spivak",
+    "target": "subalternity-and-epistemic-violence",
+    "type": "DEVELOPED",
+    "label": "Theorized subaltern foreclosure and epistemic violence under empire",
+    "strength": 5,
+    "description": "Spivak defined epistemic violence as the systemic disqualification of colonized subjects' ways of knowing, demonstrating why the gendered subaltern cannot be heard within dominant colonial or nationalist archives.",
+    "dialecticalTension": "Shifts ethics from \"giving voice\" to unlearning First-World intellectual privilege.",
+    "historicalContext": "Introduced in \"Can the Subaltern Speak?\" (1988).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Gayatri Chakravorty Spivak",
+        "work": "Can the Subaltern Speak?",
+        "year": 1988,
+        "url": "https://plato.stanford.edu/entries/colonialism/"
+      }
+    ]
+  },
+  {
+    "id": "gayatri-chakravorty-spivak--judith-butler",
+    "source": "gayatri-chakravorty-spivak",
+    "target": "judith-butler",
+    "type": "INFLUENCED",
+    "label": "Co-theorized statelessness, vulnerability, and transnational solidarity",
+    "strength": 4,
+    "description": "Spivak's deconstructive transnationalism shaped Judith Butler's later global turn, culminating in their co-authored philosophical dialogue Who Sings the Nation-State? (2007) on statelessness and performative assembly.",
+    "dialecticalTension": "Brings postcolonial subaltern analysis into dialogue with performative politics of precariousness.",
+    "historicalContext": "Spivak and Butler co-authored Who Sings the Nation-State? in 2007.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Judith Butler & Gayatri Chakravorty Spivak",
+        "work": "Who Sings the Nation-State?: Language, Politics, Belonging",
+        "year": 2007,
+        "url": "https://en.wikipedia.org/wiki/Gayatri_Chakravorty_Spivak"
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "yosano-akiko",
+  "name": "Akiko Yosano",
+  "birthYear": 1878,
+  "deathYear": 1942,
+  "eraId": "twentieth-century",
+  "traditionId": "kyoto-school",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Japanese feminist essayist, anti-war philosopher, and classical translator who championed female economic independence, pacifist individualism, and bodily autonomy during Japan's Taisho debates.",
+  "centralQuestion": "Does maternal welfare dependence on the state compromise women's ethical autonomy compared to equal education and independent economic labor?",
+  "keyWorks": [
+    {
+      "title": "On the Protection of Motherhood (Bosei Hogo Ronsō Essays)",
+      "year": "1918 CE",
+      "url": "https://en.wikipedia.org/wiki/Akiko_Yosano",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Akiko_Yosano",
+      "description": "Key philosophical intervention arguing against state-paternalist subsidies in favor of full gender economic independence."
+    },
+    {
+      "title": "Modern Japanese Translation of The Tale of Genji",
+      "year": "1912 CE",
+      "url": "https://en.wikipedia.org/wiki/Akiko_Yosano",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Akiko_Yosano",
+      "description": "Reclaimed Heian female aesthetic philosophy for modern Japanese cultural consciousness."
+    }
+  ],
+  "sepSlug": "japanese-aesthetics",
+  "canonTier": "contributor",
+  "importanceScore": 79,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/japanese-aesthetics/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Akiko_Yosano"
+  },
+  "imageUrl": "/portraits/yosano-akiko.jpg"
+}

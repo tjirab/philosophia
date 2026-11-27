@@ -123,8 +123,22 @@ export function evaluateDiversity(options = {}) {
     }
   }
 
+  const meetsTargets =
+    womenPct >= policy.targetWomenPct && nonWesternPct >= policy.targetNonWesternPct;
+  const deficitWomen = Math.max(
+    0,
+    Math.ceil((policy.targetWomenPct / 100) * total - genderCounts.woman)
+  );
+  const deficitNonWestern = Math.max(
+    0,
+    Math.ceil((policy.targetNonWesternPct / 100) * total - nonWesternCount)
+  );
+
   return {
     passed: violations.length === 0,
+    meetsTargets,
+    deficitWomen,
+    deficitNonWestern,
     total,
     genderCounts,
     menToWomenRatio,
@@ -166,6 +180,7 @@ const isMain = process.argv[1] && fileURLToPath(import.meta.url) === path.resolv
 if (isMain) {
   const args = process.argv.slice(2);
   const stagedMode = args.includes('--staged');
+  const strictTargets = args.includes('--strict-targets');
   const jsonMode = args.includes('--json');
 
   let stagedNewFiles = [];
@@ -181,7 +196,8 @@ if (isMain) {
 
   if (jsonMode) {
     console.log(JSON.stringify(report, null, 2));
-    process.exit(report.passed ? 0 : 1);
+    const ok = strictTargets ? report.passed && report.meetsTargets : report.passed;
+    process.exit(ok ? 0 : 1);
   }
 
   console.log(
@@ -189,12 +205,21 @@ if (isMain) {
   );
 
   if (!report.passed) {
-    console.error('\n❌ Diversity & Schema Guardrail Failed:');
+    console.error('\n❌ Diversity Ratchet & Schema Guardrail Failed:');
     for (const v of report.violations) {
       console.error(`   • ${v}`);
     }
     process.exit(1);
   }
 
-  console.log('✅ Diversity & schema guardrail passed.');
+  if (!report.meetsTargets) {
+    const msg = `⚠️  Ratchet passed (${report.policy.minWomenPct}% / ${report.policy.minNonWesternPct}%), but BELOW target guardrails: Women ${report.womenPct}% < ${report.policy.targetWomenPct}% (need +${report.deficitWomen} women at current size), Non-Western ${report.nonWesternPct}% < ${report.policy.targetNonWesternPct}% (need +${report.deficitNonWestern} non-Western thinkers).`;
+    if (strictTargets) {
+      console.error(`\n${msg}`);
+      process.exit(1);
+    }
+    console.warn(msg);
+  } else {
+    console.log('✅ Diversity ratchet AND 40%/50% target guardrails met.');
+  }
 }

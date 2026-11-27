@@ -1,0 +1,41 @@
+{
+  "id": "fatema-mernissi",
+  "name": "Fatema Mernissi",
+  "birthYear": 1940,
+  "deathYear": 2015,
+  "eraId": "contemporary",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Moroccan Islamic feminist sociologist and historian whose historical-critical methodology excavated early Islamic egalitarian memory while deconstructing spatial segregation (hudud) and patriarchal hadith transmission.",
+  "centralQuestion": "Is gender hierarchy intrinsic to foundational Islamic scripture, or is it a later historical fabrication of patriarchal political elites?",
+  "keyWorks": [
+    {
+      "title": "Beyond the Veil: Male-Female Dynamics in Modern Muslim Society",
+      "year": "1975 CE",
+      "url": "https://en.wikipedia.org/wiki/Fatema_Mernissi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Fatema_Mernissi",
+      "description": "Landmark sociological study of gender space, sexuality, and modernization in postcolonial North Africa."
+    },
+    {
+      "title": "The Veil and the Male Elite: A Feminist Interpretation of Women's Rights in Islam",
+      "year": "1987 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Veil_and_the_Male_Elite",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Veil_and_the_Male_Elite",
+      "description": "Rigorous historical-philological critique of misogynistic hadith isnads, reclaiming Medina's egalitarian political memory."
+    }
+  ],
+  "sepSlug": "feminism-political",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Fatema_Mernissi"
+  },
+  "imageUrl": "/portraits/fatema-mernissi.jpg"
+}

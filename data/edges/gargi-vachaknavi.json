@@ -1,0 +1,42 @@
+[
+  {
+    "id": "gargi-vachaknavi--siddhartha-gautama",
+    "source": "gargi-vachaknavi",
+    "target": "siddhartha-gautama",
+    "type": "INFLUENCED",
+    "label": "Pioneered Upanishadic dialectical questioning of cosmological foundations",
+    "strength": 3,
+    "description": "Gargi Vachaknavi's famous cross-examination of Yajnavalkya in the Brihadaranyaka Upanishad established non-dogmatic regress questioning in ancient Indian philosophy, forming part of the sramana-Upanishadic dialectical milieu that shaped Siddhartha Gautama.",
+    "dialecticalTension": "Transforms Vedic ritual cosmology into relentless epistemological interrogation of what underpins all conditioned phenomena.",
+    "historicalContext": "Brihadaranyaka Upanishad (c. 700 BCE) precedes early Buddhist Pali dialogues (5th century BCE).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Brihadaranyaka Upanishad",
+        "work": "Book 3, Chapters 6 & 8 (Dialogues of Gargi and Yajnavalkya)",
+        "url": "https://en.wikipedia.org/wiki/Gargi_Vachaknavi"
+      }
+    ]
+  },
+  {
+    "id": "gargi-vachaknavi--adi-shankara",
+    "source": "gargi-vachaknavi",
+    "target": "adi-shankara",
+    "type": "INFLUENCED",
+    "label": "Articulated the Akshara (Imperishable Brahman) doctrine central to Advaita",
+    "strength": 4,
+    "description": "Adi Shankara wrote an extensive commentary on Gargi's Brihadaranyaka dialogue (3.8), treating her interrogation of the \"imperishable\" (Akshara) beyond space and time as an authoritative scriptural anchor for Advaita Vedanta non-dualism.",
+    "dialecticalTension": "Demonstrates that ultimate reality transcends empirical spatial containment through infinite-regress critique.",
+    "historicalContext": "Adi Shankara's Brihadaranyaka Upanishad Bhashya (8th century CE) directly glosses Gargi's arguments.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Adi Shankara",
+        "work": "Brihadaranyakopanishad-bhashya (3.8)",
+        "url": "https://plato.stanford.edu/entries/shankara/"
+      }
+    ]
+  }
+]

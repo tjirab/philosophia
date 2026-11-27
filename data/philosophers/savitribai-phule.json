@@ -1,0 +1,41 @@
+{
+  "id": "savitribai-phule",
+  "name": "Savitribai Phule",
+  "birthYear": 1831,
+  "deathYear": 1897,
+  "eraId": "nineteenth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Pioneering Indian anti-caste philosopher, feminist educator, and co-founder of the Satyashodhak Samaj who established India's first schools for girls and marginalized castes and theorized education as liberation from Brahmanical patriarchy.",
+  "centralQuestion": "How do caste stratification and the denial of literacy jointly reproduce social subjugation, and why is universal education the primary emancipatory praxis?",
+  "keyWorks": [
+    {
+      "title": "Kavya Phule (Blossoms of Poetry)",
+      "year": "1854 CE",
+      "url": "https://en.wikipedia.org/wiki/Savitribai_Phule",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Savitribai_Phule",
+      "description": "Philosophical poems urging Shudras, Dalits, and women to break ideological slavery through rational inquiry and education."
+    },
+    {
+      "title": "Bavankashi Subodh Ratnakar",
+      "year": "1892 CE",
+      "url": "https://en.wikipedia.org/wiki/Savitribai_Phule",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Savitribai_Phule",
+      "description": "Poetic historiography of anti-caste truth-seeking praxis and egalitarian social reconstruction in nineteenth-century Maharashtra."
+    }
+  ],
+  "sepSlug": "egalitarianism",
+  "canonTier": "pillar",
+  "importanceScore": 89,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/egalitarianism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Savitribai_Phule"
+  },
+  "imageUrl": "/portraits/savitribai-phule.jpg"
+}

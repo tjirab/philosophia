@@ -1,0 +1,40 @@
+{
+  "id": "leila-ahmed",
+  "name": "Leila Ahmed",
+  "birthYear": 1940,
+  "eraId": "contemporary",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Egyptian-American historian and philosopher of gender in Islam whose genealogy traced how colonial officials co-opted \"feminist\" rhetoric (\"colonial feminism\") to legitimize Western imperial rule while silencing indigenous women's ethical voices.",
+  "centralQuestion": "How was the discourse of Muslim women's liberation co-opted by Western imperialism, and what ethical egalitarianism endures inside Islamic tradition?",
+  "keyWorks": [
+    {
+      "title": "Women and Gender in Islam: Historical Roots of a Modern Debate",
+      "year": "1992 CE",
+      "url": "https://en.wikipedia.org/wiki/Leila_Ahmed",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Leila_Ahmed",
+      "description": "Foundational intellectual history distinguishing Islam's ethical voice from androcentric Abbasid jurisprudence and European \"colonial feminism.\""
+    },
+    {
+      "title": "A Quiet Revolution: The Veil's Resurgence, from the Middle East to America",
+      "year": "2011 CE",
+      "url": "https://en.wikipedia.org/wiki/Leila_Ahmed",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Leila_Ahmed",
+      "description": "Sociological genealogy of contemporary Muslim women's diverse ethical and civic negotiations of dress and piety."
+    }
+  ],
+  "sepSlug": "colonialism",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/colonialism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Leila_Ahmed"
+  },
+  "imageUrl": "/portraits/leila-ahmed.jpg"
+}

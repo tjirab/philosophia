@@ -1,0 +1,42 @@
+{
+  "id": "lelia-gonzalez",
+  "name": "Lélia Gonzalez",
+  "birthYear": 1935,
+  "deathYear": 1994,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Afro-Brazilian philosopher, psychoanalyst, and Black feminist sociologist who forged Amefricanidade and Pretuguês, synthesizing Fanon and Lacan to dismantle Brazil's myth of \"racial democracy.\"",
+  "centralQuestion": "How does the ideology of \"racial democracy\" mask structural anti-Blackness in the Americas, and how does Amefricanidade center Afro-Indigenous agency?",
+  "keyWorks": [
+    {
+      "title": "Racism and Sexism in Brazilian Culture (Racismo e sexismo na cultura brasileira)",
+      "year": "1984 CE",
+      "url": "https://en.wikipedia.org/wiki/L%C3%A9lia_Gonzalez",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/L%C3%A9lia_Gonzalez",
+      "description": "Psychoanalytic-sociological critique diagnosing Brazil's \"cultural neurosis\" of disavowing Black and female foundational subjectivity."
+    },
+    {
+      "title": "The Political-Cultural Category of Amefricanidade",
+      "year": "1988 CE",
+      "url": "https://en.wikipedia.org/wiki/L%C3%A9lia_Gonzalez",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/L%C3%A9lia_Gonzalez",
+      "description": "Proposes Amefricanidade as a transnational epistemic horizon unifying Black and Indigenous resistance across the Americas."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lélia_Gonzalez"
+  },
+  "imageUrl": "/portraits/lelia-gonzalez.jpg"
+}

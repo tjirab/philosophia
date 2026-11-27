@@ -1,0 +1,33 @@
+{
+  "id": "rigoberta-menchu",
+  "name": "Rigoberta Menchú",
+  "birthYear": 1959,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "K'iche' Maya human rights philosopher, Nobel Peace Laureate, and testimonial theorist whose I, Rigoberta Menchú catalyzed global debates on collective Indigenous testimony (testimonio), memory, and state violence.",
+  "centralQuestion": "How does collective Indigenous testimonio challenge Western individualized historiography and articulate communal moral claims to life and land?",
+  "keyWorks": [
+    {
+      "title": "I, Rigoberta Menchú: An Indian Woman in Guatemala",
+      "year": "1983 CE",
+      "url": "https://en.wikipedia.org/wiki/Rigoberta_Mench%C3%BA",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rigoberta_Mench%C3%BA",
+      "description": "Canonical testimonial work chronicling K'iche' Maya communal cosmology, agrarian struggle, and resistance to state terror."
+    }
+  ],
+  "sepSlug": "civil-rights",
+  "canonTier": "bridge",
+  "importanceScore": 84,
+  "gender": "woman",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/civil-rights/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rigoberta_Menchú"
+  },
+  "imageUrl": "/portraits/rigoberta-menchu.jpg"
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "michel-foucault--sueli-carneiro",
+    "source": "michel-foucault",
+    "target": "sueli-carneiro",
+    "type": "DEVELOPED",
+    "label": "Adapted Foucauldian biopower and dispositif into the \"raciality apparatus\"",
+    "strength": 5,
+    "description": "In her landmark 2005 philosophical dissertation, Sueli Carneiro reworked Foucault's dispositif and biopolitics to show how Brazilian raciality distributes death and commits \"epistemicide\" against Black knowledge.",
+    "dialecticalTension": "Corrects Foucault's omission of colonial anti-Blackness in theories of biopower.",
+    "historicalContext": "University of São Paulo dissertation (2005) & Geledés Black Women's Institute.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Sueli Carneiro",
+        "work": "Dispositivo de racialidade",
+        "year": 2005,
+        "url": "https://en.wikipedia.org/wiki/Sueli_Carneiro"
+      }
+    ]
+  }
+]

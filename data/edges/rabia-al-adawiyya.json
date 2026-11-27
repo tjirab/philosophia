@@ -1,0 +1,63 @@
+[
+  {
+    "id": "rabia-al-adawiyya--al-ghazali",
+    "source": "rabia-al-adawiyya",
+    "target": "al-ghazali",
+    "type": "INFLUENCED",
+    "label": "Provided the doctrine of disinterested divine love central to Ihya Ulum al-Din",
+    "strength": 5,
+    "description": "Al-Ghazali explicitly cited Rabi'a al-Adawiyya at length in the Book of Love (Kitab al-Mahabba) of his Ihya Ulum al-Din, adopting her distinction between mercenary devotion for reward and pure love of God's essence.",
+    "dialecticalTension": "Elevates affective purity of intention (ikhlas) above legalistic moral calculation.",
+    "historicalContext": "Transmitted from 8th-century Basra into 11th-century Sunni Sufi synthesis.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Al-Ghazali",
+        "work": "Ihya Ulum al-Din (The Book of Love, Longing, Intimacy and Contentment)",
+        "url": "https://plato.stanford.edu/entries/arabic-islamic-mysticism/"
+      }
+    ]
+  },
+  {
+    "id": "rabia-al-adawiyya--ibn-arabi",
+    "source": "rabia-al-adawiyya",
+    "target": "ibn-arabi",
+    "type": "INFLUENCED",
+    "label": "Revered as foundational Sufi authority on ontological love (mahabba)",
+    "strength": 4,
+    "description": "Ibn Arabi honored Rabi'a in al-Futuhat al-Makkiyya as an unsurpassed exemplar of divine love and spiritual station, weaving her mahabba ethics into his metaphysics of the Unity of Being.",
+    "dialecticalTension": "Unites passionate devotional love with cosmic ontological unity.",
+    "historicalContext": "Foundational Sufi canon from Basra to Andalusia.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Margaret Smith",
+        "work": "Rabi'a the Mystic & Her Fellow-Saints in Islam",
+        "year": 1928,
+        "url": "https://en.wikipedia.org/wiki/Rabia_of_Basra"
+      }
+    ]
+  },
+  {
+    "id": "rabia-al-adawiyya--disinterested-divine-love",
+    "source": "rabia-al-adawiyya",
+    "target": "disinterested-divine-love",
+    "type": "DEVELOPED",
+    "label": "Originated the philosophical ethics of unconditional disinterested divine love",
+    "strength": 5,
+    "description": "Rabi'a formulated the doctrine that true devotion loves the Divine solely for divine beauty and majesty, rejecting both fear of Hellfire and desire for Paradise.",
+    "dialecticalTension": "Transforms ethics from transactional salvation into pure non-instrumental love.",
+    "historicalContext": "8th-century Basra ascetic and Sufi transformation.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Sajjad Rizvi / Sara Sviri",
+        "work": "Mysticism in Arabic and Islamic Philosophy",
+        "url": "https://plato.stanford.edu/entries/arabic-islamic-mysticism/"
+      }
+    ]
+  }
+]

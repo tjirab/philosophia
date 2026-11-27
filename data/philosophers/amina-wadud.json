@@ -1,0 +1,39 @@
+{
+  "id": "amina-wadud",
+  "name": "Amina Wadud",
+  "birthYear": 1952,
+  "eraId": "contemporary",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "African-American Islamic philosopher and scholar of Qur'anic hermeneutics who pioneered the \"gender jihad\" and tawhidic hermeneutical method, arguing that divine unity (tawhid) precludes patriarchal hierarchy among human moral agents.",
+  "centralQuestion": "How does a holistic tawhidic hermeneutics of the Qur'an resolve historical tension between revelation's universal moral equality and patriarchal legal exegesis?",
+  "keyWorks": [
+    {
+      "title": "Qur'an and Woman: Rereading the Sacred Text from a Woman's Perspective",
+      "year": "1992 CE",
+      "url": "https://en.wikipedia.org/wiki/Amina_Wadud",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Amina_Wadud",
+      "description": "Seminal hermeneutical philosophy challenging atomistic male tafsir through contextual, linguistic, and moral-theological synthesis."
+    },
+    {
+      "title": "Inside the Gender Jihad: Women's Reform in Islam",
+      "year": "2006 CE",
+      "url": "https://en.wikipedia.org/wiki/Amina_Wadud",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Amina_Wadud",
+      "description": "Synthesizes tawhidic ethics with embodied justice praxis in global Muslim communities."
+    }
+  ],
+  "sepSlug": "feminist-philosophy",
+  "canonTier": "bridge",
+  "importanceScore": 84,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminist-philosophy/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Amina_Wadud"
+  },
+  "imageUrl": "/portraits/amina-wadud.jpg"
+}

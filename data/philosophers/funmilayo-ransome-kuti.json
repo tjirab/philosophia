@@ -1,0 +1,34 @@
+{
+  "id": "funmilayo-ransome-kuti",
+  "name": "Funmilayo Ransome-Kuti",
+  "birthYear": 1900,
+  "deathYear": 1978,
+  "eraId": "twentieth-century",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Nigerian anti-colonial political thinker, Pan-Africanist, and founder of the Abeokuta Women's Union who theorized and organized grassroots mass collective solidarity against colonial taxation and autocratic native authorities.",
+  "centralQuestion": "How do colonial taxation and indirect-rule chieftaincy extract wealth from women's labor, and how does grassroots collective solidarity restore democratic accountability?",
+  "keyWorks": [
+    {
+      "title": "We Are Not Asking for Charity: AWU Petitions and Anti-Taxation Manifestos",
+      "year": "1947 CE",
+      "url": "https://en.wikipedia.org/wiki/Funmilayo_Ransome-Kuti",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Funmilayo_Ransome-Kuti",
+      "description": "Collected civic petitions and Pan-African speeches articulating no-taxation-without-representation and Yoruba women's economic democracy."
+    }
+  ],
+  "sepSlug": "africana",
+  "canonTier": "bridge",
+  "importanceScore": 84,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/africana/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Funmilayo_Ransome-Kuti"
+  },
+  "imageUrl": "/portraits/funmilayo-ransome-kuti.jpg"
+}

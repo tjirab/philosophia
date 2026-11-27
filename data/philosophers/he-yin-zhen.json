@@ -1,0 +1,41 @@
+{
+  "id": "he-yin-zhen",
+  "name": "He-Yin Zhen",
+  "birthYear": 1884,
+  "deathYear": 1920,
+  "eraId": "twentieth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Chinese anarcho-feminist philosopher and founder of Natural Justice (Tianyi bao) who formulated a pathbreaking historical-structural critique of nannü (the hierarchical male/female distinction) as the root of property, state, and class domination.",
+  "centralQuestion": "How does the hierarchical binary category of nannü (man/woman) constitute the foundational grammar of private property, state authority, and economic exploitation?",
+  "keyWorks": [
+    {
+      "title": "On the Question of Women's Liberation (Nüzi jiefang wenti)",
+      "year": "1907 CE",
+      "url": "https://en.wikipedia.org/wiki/He-Yin_Zhen",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/He-Yin_Zhen",
+      "description": "Defines true feminist revolution (nüjie geming) as the simultaneous abolition of state, capital, and Confucian patriarchal domination."
+    },
+    {
+      "title": "On the Revenge of Women & Economic Revolution in Women's Liberation",
+      "year": "1907 CE",
+      "url": "https://en.wikipedia.org/wiki/He-Yin_Zhen",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/He-Yin_Zhen",
+      "description": "Deconstructs nannü as a historical regime of inequality rather than a natural essence."
+    }
+  ],
+  "sepSlug": "anarchism",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/anarchism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/He-Yin_Zhen"
+  },
+  "imageUrl": "/portraits/he-yin-zhen.jpg"
+}

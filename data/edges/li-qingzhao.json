@@ -1,0 +1,65 @@
+[
+  {
+    "id": "confucius--li-qingzhao",
+    "source": "confucius",
+    "target": "li-qingzhao",
+    "type": "DEVELOPED",
+    "label": "Engaged classical literary-historical canon while asserting female critical autonomy",
+    "strength": 3,
+    "description": "Immersed in Song neo-classical scholarship and the Confucian poetic archive, Li Qingzhao defended lyric ci poetry (Cìlùn) as an intellectually rigorous genre independent of moralizing orthodoxy.",
+    "dialecticalTension": "Claims canonical critical authority from within a male-dominated literary tradition.",
+    "historicalContext": "Northern-to-Southern Song aesthetic debates (c. 1120 CE).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Ronald Egan",
+        "work": "The Burden of Female Talent: The Poet Li Qingzhao and Her History in China",
+        "year": 2013,
+        "url": "https://en.wikipedia.org/wiki/Li_Qingzhao"
+      }
+    ]
+  },
+  {
+    "id": "ban-zhao--li-qingzhao",
+    "source": "ban-zhao",
+    "target": "li-qingzhao",
+    "type": "DEVELOPED",
+    "label": "Built upon Han female historiographical precedent toward independent aesthetic critique",
+    "strength": 3,
+    "description": "Inheriting Ban Zhao's legacy as China's preeminent female scholar-historian, Li Qingzhao moved beyond domestic moral instruction to author foundational aesthetic criticism and epigraphic scholarship.",
+    "dialecticalTension": "Shifts female intellectual authority from didactic propriety to sovereign critical judgment.",
+    "historicalContext": "Longue-durée Chinese women's literary and scholarly lineage.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Ronald Egan",
+        "work": "The Burden of Female Talent",
+        "year": 2013,
+        "url": "https://en.wikipedia.org/wiki/Li_Qingzhao"
+      }
+    ]
+  },
+  {
+    "id": "li-qingzhao--qiu-jin",
+    "source": "li-qingzhao",
+    "target": "qiu-jin",
+    "type": "INFLUENCED",
+    "label": "Modeled fearless female scholarly voice admired by late-Qing feminist writers",
+    "strength": 3,
+    "description": "Li Qingzhao's uncompromising poetic persona and refusal of intellectual obscurity made her an enduring touchstone for Qiu Jin and early twentieth-century Chinese feminist literary revolutionaries.",
+    "dialecticalTension": "Transforms classical literary brilliance into modern revolutionary self-assertion.",
+    "historicalContext": "Reclamation of historical Chinese women writers during the late-Qing reform era.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Hu Ying",
+        "work": "Tales of Translation: Composing the New Woman in China, 1899–1918",
+        "year": 2000,
+        "url": "https://en.wikipedia.org/wiki/Qiu_Jin"
+      }
+    ]
+  }
+]

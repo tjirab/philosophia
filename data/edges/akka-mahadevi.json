@@ -1,0 +1,44 @@
+[
+  {
+    "id": "adi-shankara--akka-mahadevi",
+    "source": "adi-shankara",
+    "target": "akka-mahadevi",
+    "type": "CRITIQUED",
+    "label": "Transformed Advaitic non-dualism into egalitarian vernacular Virashaiva bhakti",
+    "strength": 4,
+    "description": "While inheriting South Indian non-dual (Advaita) ontology of ultimate oneness, Akka Mahadevi and the Lingayat Anubhava Mantapa repudiated Shankara's Brahmanical caste restrictions on Vedic renunciation, opening mystical realization to women and lower castes.",
+    "dialecticalTension": "Replaces Sanskritic monastic elitism with embodied Kannada vachana egalitarianism.",
+    "historicalContext": "12th-century Virashaiva movement in Karnataka.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "A. K. Ramanujan",
+        "work": "Speaking of Śiva",
+        "year": 1973,
+        "url": "https://en.wikipedia.org/wiki/Akka_Mahadevi"
+      }
+    ]
+  },
+  {
+    "id": "akka-mahadevi--mirabai",
+    "source": "akka-mahadevi",
+    "target": "mirabai",
+    "type": "INFLUENCED",
+    "label": "Prefigured bridal mysticism and radical defiance of patriarchal marriage",
+    "strength": 4,
+    "description": "Akka Mahadevi's refusal of earthly royal marriage in favor of exclusive devotion to Chennamallikarjuna established the paradigmatic South Asian female Bhakti ethic later echoed across North India by Mirabai.",
+    "dialecticalTension": "Asserts female spiritual sovereignty by subverting patriarchal kinship obligations.",
+    "historicalContext": "Trans-regional Bhakti continuum from 12th-century Karnataka to 16th-century Rajasthan.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Vijaya Ramaswamy",
+        "work": "Walking Naked: Women, Society, Spirituality in South India",
+        "year": 1997,
+        "url": "https://en.wikipedia.org/wiki/Akka_Mahadevi"
+      }
+    ]
+  }
+]
