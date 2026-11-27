@@ -1,0 +1,40 @@
+{
+  "id": "djamila-ribeiro",
+  "name": "Djamila Ribeiro",
+  "birthYear": 1980,
+  "eraId": "contemporary",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Afro-Brazilian philosopher and public intellectual who synthesized Lélia Gonzalez, Sueli Carneiro, and Black feminist standpoint theory into the widely influential epistemology of Lugar de Fala (Standpoint).",
+  "centralQuestion": "How does acknowledging one’s social locus of enunciation (lugar de fala) dismantle epistemic privilege and democratize speech?",
+  "keyWorks": [
+    {
+      "title": "Lugar de Fala (Where We Stand)",
+      "year": "2017 CE",
+      "url": "https://en.wikipedia.org/wiki/Djamila_Ribeiro",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Djamila_Ribeiro",
+      "description": "Philosophical exposition of Black feminist standpoint epistemology and critique of universalized white male speech."
+    },
+    {
+      "title": "Pequeno Manual Antirracista",
+      "year": "2019 CE",
+      "url": "https://en.wikipedia.org/wiki/Djamila_Ribeiro",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Djamila_Ribeiro",
+      "description": "Applies structural anti-racist philosophy to everyday institutions, history, and epistemic ethics in Brazil."
+    }
+  ],
+  "sepSlug": "feminism-race",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-race/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Djamila_Ribeiro"
+  },
+  "imageUrl": "/portraits/djamila-ribeiro.jpg"
+}

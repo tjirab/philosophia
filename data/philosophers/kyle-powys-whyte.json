@@ -1,0 +1,40 @@
+{
+  "id": "kyle-powys-whyte",
+  "name": "Kyle Powys Whyte",
+  "birthYear": 1982,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Citizen Potawatomi environmental philosopher who theorized anthropogenic climate change as intensified colonialism and formulated \"collective continuance\" and relational tipping points.",
+  "centralQuestion": "Why must climate justice confront settler colonialism and restore Indigenous \"collective continuance\" rather than reproducing urgent eco-colonialism?",
+  "keyWorks": [
+    {
+      "title": "Indigenous Climate Change Studies: Indigenizing Futures, Decolonizing the Anthropocene",
+      "year": "2017 CE",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Powys_Whyte",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kyle_Powys_Whyte",
+      "description": "Frames environmental crisis through Indigenous seasonal kinship, collective continuance, and colonial déjà vu."
+    },
+    {
+      "title": "Too Late for Indigenous Climate Justice: Ecological and Relational Tipping Points",
+      "year": "2020 CE",
+      "url": "https://en.wikipedia.org/wiki/Kyle_Powys_Whyte",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kyle_Powys_Whyte",
+      "description": "Argues that climate urgency without consent, trust, and reciprocity risks replicating colonial harms."
+    }
+  ],
+  "sepSlug": "ethics-environmental",
+  "canonTier": "bridge",
+  "importanceScore": 87,
+  "gender": "man",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/ethics-environmental/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kyle_Powys_Whyte"
+  },
+  "imageUrl": "/portraits/kyle-powys-whyte.jpg"
+}

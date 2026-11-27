@@ -1,0 +1,34 @@
+{
+  "id": "zitkala-sa",
+  "name": "Zitkala-Ša",
+  "birthYear": 1876,
+  "deathYear": 1938,
+  "eraId": "twentieth-century",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Yankton Dakota philosopher, writer, and Indigenous rights advocate whose critiques of federal boarding schools and colonial Christianity defended Dakota spiritual and civic autonomy.",
+  "centralQuestion": "How does forced assimilation disguise cultural erasure as \"civilization,\" and how does Indigenous memory resist moral colonization?",
+  "keyWorks": [
+    {
+      "title": "American Indian Stories",
+      "year": "1921 CE",
+      "url": "https://en.wikipedia.org/wiki/Zitkala-%C5%A0a",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Zitkala-%C5%A0a",
+      "description": "Includes \"Why I Am a Pagan,\" a philosophical defense of Dakota ecological-spiritual immanence against colonial dogma."
+    }
+  ],
+  "sepSlug": "civil-rights",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/civil-rights/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zitkala-%C5%A0a"
+  },
+  "imageUrl": "/portraits/zitkala-sa.jpg"
+}

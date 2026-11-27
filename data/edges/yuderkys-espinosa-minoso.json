@@ -1,0 +1,44 @@
+[
+  {
+    "id": "lelia-gonzalez--yuderkys-espinosa-minoso",
+    "source": "lelia-gonzalez",
+    "target": "yuderkys-espinosa-minoso",
+    "type": "DEVELOPED",
+    "label": "Extended Gonzalez’s Amefricanidade into systematic Caribbean decolonial feminism",
+    "strength": 5,
+    "description": "Claiming Lélia Gonzalez as a foundational predecessor, Espinosa Miñoso exposed how hegemonic Latin American feminism marginalized Afro-descendant and Indigenous women.",
+    "dialecticalTension": "Connects Afro-Brazilian Amefricanidade with GLEFAS decolonial feminist theory.",
+    "historicalContext": "GLEFAS (Grupo Latinoamericano de Estudio, Formación y Acción Feminista), 2007–2022.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Yuderkys Espinosa Miñoso",
+        "work": "De por qué es necesario un feminismo descolonial",
+        "year": 2022,
+        "url": "https://es.wikipedia.org/wiki/Yuderkys_Espinosa_Mi%C3%B1oso"
+      }
+    ]
+  },
+  {
+    "id": "maria-lugones--yuderkys-espinosa-minoso",
+    "source": "maria-lugones",
+    "target": "yuderkys-espinosa-minoso",
+    "type": "DEVELOPED",
+    "label": "Developed Lugones’s coloniality of gender against Eurocentric feminist reason",
+    "strength": 5,
+    "description": "Collaborating closely with Lugones, Espinosa Miñoso formulated a rigorous epistemic critique of white-mestizo feminist universalism.",
+    "dialecticalTension": "Institutionalizes decolonial feminism across the Americas.",
+    "historicalContext": "Tejiendo de otro modo (2014).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Yuderkys Espinosa Miñoso",
+        "work": "Tejiendo de otro modo: Feminismo, epistemología y apuestas descoloniales",
+        "year": 2014,
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

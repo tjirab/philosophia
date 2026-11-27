@@ -1,0 +1,43 @@
+[
+  {
+    "id": "aime-cesaire--nadia-yala-kisukidi",
+    "source": "aime-cesaire",
+    "target": "nadia-yala-kisukidi",
+    "type": "DEVELOPED",
+    "label": "Reconstructed Césairean Négritude as vitalist-decolonial creative humanity",
+    "strength": 5,
+    "description": "Kisukidi reads Aimé Césaire alongside Bergsonian vitalism to show how Négritude invents an open, non-essentialist universalism from colonial rupture.",
+    "dialecticalTension": "Revitalizes Négritude for contemporary Francophone African philosophy.",
+    "historicalContext": "Paris VIII / Dialogue with Césaire and Bergson (2013–2020s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nadia Yala Kisukidi",
+        "work": "Bergson ou l’humanité créatrice",
+        "year": 2013,
+        "url": "https://fr.wikipedia.org/wiki/Nadia_Yala_Kisukidi"
+      }
+    ]
+  },
+  {
+    "id": "valentin-yves-mudimbe--nadia-yala-kisukidi",
+    "source": "valentin-yves-mudimbe",
+    "target": "nadia-yala-kisukidi",
+    "type": "DEVELOPED",
+    "label": "Extended Congolese critique of colonial epistemology into aesthetic politics",
+    "strength": 4,
+    "description": "Continuing Mudimbe’s interrogation of European universalism, Kisukidi explores how diasporic aesthetics and curatorial praxis contest Western epistemic monopoly.",
+    "dialecticalTension": "Bridges Congolese archaeology of knowledge with contemporary political aesthetics.",
+    "historicalContext": "Contemporary Francophone Africana philosophy.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Souleymane Bachir Diagne",
+        "work": "Négritude",
+        "url": "https://plato.stanford.edu/entries/negritude/"
+      }
+    ]
+  }
+]

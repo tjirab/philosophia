@@ -1,0 +1,40 @@
+{
+  "id": "lee-maracle",
+  "name": "Lee Maracle",
+  "birthYear": 1950,
+  "deathYear": 2021,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Stó:lō First Nation philosopher, feminist theorist, and orator who theorized Indigenous storywork, internalized colonial patriarchy, and Salish relational ontology.",
+  "centralQuestion": "How do Indigenous oral memory and storywork dismantle both settler-colonial erasure and internalized patriarchy?",
+  "keyWorks": [
+    {
+      "title": "I Am Woman: A Native Perspective on Sociology and Feminism",
+      "year": "1988 CE",
+      "url": "https://en.wikipedia.org/wiki/Lee_Maracle",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lee_Maracle",
+      "description": "Pioneering Indigenous feminist philosophy diagnosing internalized oppression and reclaiming Salish womanhood."
+    },
+    {
+      "title": "Memory Serves: Oratories",
+      "year": "2015 CE",
+      "url": "https://en.wikipedia.org/wiki/Lee_Maracle",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lee_Maracle",
+      "description": "Philosophical oratories on Stó:lō epistemology, ecological law, and collective healing."
+    }
+  ],
+  "sepSlug": "feminism-race",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-race/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lee_Maracle"
+  },
+  "imageUrl": "/portraits/lee-maracle.jpg"
+}

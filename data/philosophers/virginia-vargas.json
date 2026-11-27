@@ -1,0 +1,33 @@
+{
+  "id": "virginia-vargas",
+  "name": "Virginia Vargas",
+  "birthYear": 1945,
+  "eraId": "contemporary",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Peruvian feminist sociologist and theorist of transnational citizenship who shaped Latin American feminist encuentros and pluralist democratic theory.",
+  "centralQuestion": "How can Latin American feminist movements sustain autonomous solidarity across class, race, and regional borders without collapsing into state co-optation?",
+  "keyWorks": [
+    {
+      "title": "El aporte de la rebeldía de las mujeres",
+      "year": "1989 CE",
+      "url": "https://en.wikipedia.org/wiki/Virginia_Vargas",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Virginia_Vargas",
+      "description": "Theorizes women’s autonomous political rebellion as foundational to Peruvian and Latin American democratic transformation."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "bridge",
+  "importanceScore": 84,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Virginia_Vargas"
+  },
+  "imageUrl": "/portraits/virginia-vargas.jpg"
+}

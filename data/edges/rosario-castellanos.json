@@ -1,0 +1,63 @@
+[
+  {
+    "id": "sor-juana--rosario-castellanos",
+    "source": "sor-juana",
+    "target": "rosario-castellanos",
+    "type": "DEVELOPED",
+    "label": "Revived Sor Juana’s Mexican feminist claim to philosophical reason",
+    "strength": 5,
+    "description": "Castellanos explicitly invoked Sor Juana Inés de la Cruz as her intellectual foremother, diagnosing how colonial-patriarchal society continued to deny women cultural authorship.",
+    "dialecticalTension": "Connects Baroque New Spain feminism to 20th-century Mexican existential feminism.",
+    "historicalContext": "Sobre cultura femenina (1950) & Mujer que sabe latín (1973).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Amy Oliver & Ofelia Schutte",
+        "work": "Feminist Philosophy in Latin America",
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  },
+  {
+    "id": "simone-de-beauvoir--rosario-castellanos",
+    "source": "simone-de-beauvoir",
+    "target": "rosario-castellanos",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Beauvoirian existential feminism with Mexican and Chiapas realities",
+    "strength": 5,
+    "description": "Writing Sobre cultura femenina right alongside The Second Sex, Castellanos engaged Beauvoir to critique how women are made immanent \"Other\" in Mexican society.",
+    "dialecticalTension": "Grounds existentialist critique of \"feminine mystique\" in Latin American race and class.",
+    "historicalContext": "UNAM thesis (1950) & Balún Canán (1957).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Rosario Castellanos",
+        "work": "Sobre cultura femenina",
+        "year": 1950,
+        "url": "https://en.wikipedia.org/wiki/Rosario_Castellanos"
+      }
+    ]
+  },
+  {
+    "id": "rosario-castellanos--graciela-hierro",
+    "source": "rosario-castellanos",
+    "target": "graciela-hierro",
+    "type": "INFLUENCED",
+    "label": "Catalyzed Mexican feminist moral philosophy pioneered by Hierro",
+    "strength": 5,
+    "description": "Hierro built directly on Castellanos’s interrogation of Mexican gender culture to establish academic feminist ethics at UNAM.",
+    "dialecticalTension": "Establishes continuous 20th-century Mexican feminist philosophy lineage.",
+    "historicalContext": "UNAM Faculty of Philosophy and Letters (1950s–1980s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Ofelia Schutte",
+        "work": "Feminist Philosophy in Latin America",
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "julieta-paredes",
+  "name": "Julieta Paredes",
+  "birthYear": 1967,
+  "eraId": "contemporary",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Aymara-Bolivian decolonial feminist philosopher and co-founder of Feminismo Comunitario who theorized the \"patriarchal junction\" (entronque patriarcal) linking ancestral and colonial domination.",
+  "centralQuestion": "How do women decolonize both Western neoliberalism and romanticized ancestral patriarchies through community feminism (feminismo comunitario)?",
+  "keyWorks": [
+    {
+      "title": "Hilando fino desde el feminismo comunitario",
+      "year": "2010 CE",
+      "url": "https://en.wikipedia.org/wiki/Julieta_Paredes",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Julieta_Paredes",
+      "description": "Foundational manifesto of Aymara community feminism proposing body-space-time-movement-memory as relational categories."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Julieta_Paredes"
+  },
+  "imageUrl": "/portraits/julieta-paredes.jpg"
+}

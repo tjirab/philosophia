@@ -1,0 +1,85 @@
+[
+  {
+    "id": "simone-de-beauvoir--oyeronke-oyewumi",
+    "source": "simone-de-beauvoir",
+    "target": "oyeronke-oyewumi",
+    "type": "CRITIQUED",
+    "label": "Refuted universalized biological gender determinism via Yorùbá ontology",
+    "strength": 5,
+    "description": "In The Invention of Women, Oyěwùmí critiqued Western feminist theory from Beauvoir onward for assuming biological sex universally produces hierarchical gender.",
+    "dialecticalTension": "Exposes \"bio-logic\" as a culturally provincial Western visual episteme.",
+    "historicalContext": "The Invention of Women (1997).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Oyèrónkẹ́ Oyěwùmí",
+        "work": "The Invention of Women",
+        "year": 1997,
+        "url": "https://en.wikipedia.org/wiki/Oy%C3%A8r%C3%B3nk%E1%BA%B9%CC%81_Oy%C4%9Bw%C3%B9m%C3%AD"
+      }
+    ]
+  },
+  {
+    "id": "molara-ogundipe--oyeronke-oyewumi",
+    "source": "molara-ogundipe",
+    "target": "oyeronke-oyewumi",
+    "type": "INFLUENCED",
+    "label": "Extended Nigerian feminist critique of colonial gender categories",
+    "strength": 4,
+    "description": "Building on Ogundipe’s Stiwanist critique of Western feminism, Oyěwùmí carried the challenge to the epistemological level of Yorùbá grammar and kinship.",
+    "dialecticalTension": "Deepens Nigerian feminist critique from social transformation to ontology.",
+    "historicalContext": "Nigerian feminist philosophy (1990s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Heidi Grasswick",
+        "work": "Feminist Social Epistemology",
+        "url": "https://plato.stanford.edu/entries/feminist-social-epistemology/"
+      }
+    ]
+  },
+  {
+    "id": "oyeronke-oyewumi--yoruba-non-gendered-relationality",
+    "source": "oyeronke-oyewumi",
+    "target": "yoruba-non-gendered-relationality",
+    "type": "DEVELOPED",
+    "label": "Formulated Yorùbá non-gendered seniority and relationality thesis",
+    "strength": 5,
+    "description": "Oyěwùmí showed that precolonial Yorùbá institutions privileged seniority (egbon/aburo) and maternal relationality (iyá) rather than Western binary gender.",
+    "dialecticalTension": "Decolonizes social ontology beyond biological sex.",
+    "historicalContext": "The Invention of Women (1997).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Oyèrónkẹ́ Oyěwùmí",
+        "work": "The Invention of Women",
+        "year": 1997,
+        "url": "https://en.wikipedia.org/wiki/Oy%C3%A8r%C3%B3nk%E1%BA%B9%CC%81_Oy%C4%9Bw%C3%B9m%C3%AD"
+      }
+    ]
+  },
+  {
+    "id": "oyeronke-oyewumi--maria-lugones",
+    "source": "oyeronke-oyewumi",
+    "target": "maria-lugones",
+    "type": "INFLUENCED",
+    "label": "Provided empirical-philosophical cornerstone for Lugones’s coloniality of gender",
+    "strength": 5,
+    "description": "María Lugones explicitly anchored her theory of the \"coloniality of gender\" on Oyěwùmí’s demonstration that gender was imposed through European colonization.",
+    "dialecticalTension": "Transatlantic South-South bridge between Yorùbá epistemology and Latin American decoloniality.",
+    "historicalContext": "Hypatia (2007) & The Invention of Women (1997).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "María Lugones",
+        "work": "Heterosexualism and the Colonial/Modern Gender System",
+        "year": 2007,
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

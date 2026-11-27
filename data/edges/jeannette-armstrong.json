@@ -1,0 +1,43 @@
+[
+  {
+    "id": "vine-deloria-jr--jeannette-armstrong",
+    "source": "vine-deloria-jr",
+    "target": "jeannette-armstrong",
+    "type": "DEVELOPED",
+    "label": "Grounded Indigenous land-centered metaphysics in Syilx En’owkin pedagogy",
+    "strength": 4,
+    "description": "Sharing Deloria’s emphasis on place-based Indigenous knowledge, Armstrong formalized the Syilx Okanagan En’owkin ecological consensus process.",
+    "dialecticalTension": "Translates spatial metaphysics into participatory land-language education.",
+    "historicalContext": "En’owkin Centre, Penticton (1980s–2000s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jeannette Armstrong",
+        "work": "Whispering in Shadows",
+        "year": 2000,
+        "url": "https://en.wikipedia.org/wiki/Jeannette_Armstrong"
+      }
+    ]
+  },
+  {
+    "id": "jeannette-armstrong--robin-wall-kimmerer",
+    "source": "jeannette-armstrong",
+    "target": "robin-wall-kimmerer",
+    "type": "INFLUENCED",
+    "label": "Pioneered Indigenous land-language reciprocity echoed in Kimmerer’s work",
+    "strength": 4,
+    "description": "Armstrong’s insistence that Indigenous languages encode ecological obligations directly complements Kimmerer’s grammar of animacy.",
+    "dialecticalTension": "Connects Syilx ecological philosophy with Potawatomi botanical ethics.",
+    "historicalContext": "Contemporary North American Indigenous environmental philosophy.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Andrew Brennan & Yeuk-Sze Lo",
+        "work": "Environmental Ethics",
+        "url": "https://plato.stanford.edu/entries/ethics-environmental/"
+      }
+    ]
+  }
+]

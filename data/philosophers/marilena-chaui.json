@@ -1,0 +1,40 @@
+{
+  "id": "marilena-chaui",
+  "name": "Marilena Chaui",
+  "birthYear": 1941,
+  "eraId": "contemporary",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Brazilian philosopher of Spinoza, Merleau-Ponty, and democratic ideology critique who diagnosed Brazil’s foundational authoritarian myths and defended public cultural autonomy.",
+  "centralQuestion": "How do foundational national myths conceal structural authoritarianism, and how does Spinozist immanence ground radical democracy?",
+  "keyWorks": [
+    {
+      "title": "Cultura e Democracia: o discurso competente e outras falas",
+      "year": "1980 CE",
+      "url": "https://en.wikipedia.org/wiki/Marilena_de_Souza_Chaui",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Marilena_de_Souza_Chaui",
+      "description": "Critiques technocratic \"competent discourse\" and develops a philosophy of democratic cultural citizenship."
+    },
+    {
+      "title": "A Nervura do Real: Imanência e Liberdade em Espinosa",
+      "year": "1999 CE",
+      "url": "https://en.wikipedia.org/wiki/Marilena_de_Souza_Chaui",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Marilena_de_Souza_Chaui",
+      "description": "Monumental interpretation of Spinoza’s ontology of immanence and political freedom."
+    }
+  ],
+  "sepSlug": "latin-american-philosophy",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/latin-american-philosophy/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Marilena_de_Souza_Chaui"
+  },
+  "imageUrl": "/portraits/marilena-chaui.jpg"
+}

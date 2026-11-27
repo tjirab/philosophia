@@ -1,0 +1,43 @@
+[
+  {
+    "id": "vine-deloria-jr--kim-tallbear",
+    "source": "vine-deloria-jr",
+    "target": "kim-tallbear",
+    "type": "DEVELOPED",
+    "label": "Extended Deloria’s critique of settler science to DNA politics and genomics",
+    "strength": 5,
+    "description": "Building on Deloria’s challenge to Western scientific authority over Native identity, TallBear exposed how DNA testing commodifies Indigenous belonging into racial biology.",
+    "dialecticalTension": "Shifts Indigenous philosophy of science from archaeology to molecular genomics.",
+    "historicalContext": "Native American DNA (2013).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Kim TallBear",
+        "work": "Native American DNA",
+        "year": 2013,
+        "url": "https://en.wikipedia.org/wiki/Kim_TallBear"
+      }
+    ]
+  },
+  {
+    "id": "robin-wall-kimmerer--kim-tallbear",
+    "source": "robin-wall-kimmerer",
+    "target": "kim-tallbear",
+    "type": "SYNTHESIZED",
+    "label": "Aligned Indigenous relationality with multispecies kinship beyond settler property",
+    "strength": 4,
+    "description": "Alongside Kimmerer’s animate ecological kinship, TallBear theorizes \"making kin\" across human and more-than-human worlds against settler-colonial extraction.",
+    "dialecticalTension": "Weaves Dakota/Anishinaabe relational ontologies across STS and ecology.",
+    "historicalContext": "Contemporary Indigenous STS & relationality (2010s–2020s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Heidi Grasswick",
+        "work": "Feminist Social Epistemology",
+        "url": "https://plato.stanford.edu/entries/feminist-social-epistemology/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "rosario-castellanos",
+  "name": "Rosario Castellanos",
+  "birthYear": 1925,
+  "deathYear": 1974,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Mexican existentialist feminist philosopher and writer whose master’s thesis Sobre cultura femenina and indigenist works laid the foundation for modern Mexican feminist philosophy.",
+  "centralQuestion": "Can women claim full philosophical and cultural agency without mimicking patriarchal \"masculine culture\" or erasing Indigenous women?",
+  "keyWorks": [
+    {
+      "title": "Sobre cultura femenina (On Feminine Culture)",
+      "year": "1950 CE",
+      "url": "https://en.wikipedia.org/wiki/Rosario_Castellanos",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rosario_Castellanos",
+      "description": "Pioneering Mexican feminist philosophical thesis interrogating women’s exclusion from cultural creation and existential transcendence."
+    },
+    {
+      "title": "Balún Canán (The Nine Guardians)",
+      "year": "1957 CE",
+      "url": "https://en.wikipedia.org/wiki/Rosario_Castellanos",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rosario_Castellanos",
+      "description": "Examines Ladino-Maya hierarchies, gender subjugation, and land reform in Chiapas."
+    }
+  ],
+  "sepSlug": "philosophy-mexico",
+  "canonTier": "pillar",
+  "importanceScore": 89,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/philosophy-mexico/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rosario_Castellanos"
+  },
+  "imageUrl": "/portraits/rosario-castellanos.jpg"
+}

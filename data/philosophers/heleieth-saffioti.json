@@ -1,0 +1,41 @@
+{
+  "id": "heleieth-saffioti",
+  "name": "Heleieth Saffioti",
+  "birthYear": 1934,
+  "deathYear": 2010,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Brazilian Marxist feminist sociologist whose Women in Class Society analyzed the co-constitutive \"knot\" of patriarchy, racism, and capitalism in Latin America.",
+  "centralQuestion": "How do patriarchy, racism, and peripheral capitalism interlock as a single structural \"knot\" rather than separate systems of oppression?",
+  "keyWorks": [
+    {
+      "title": "Women in Class Society (A Mulher na Sociedade de Classes)",
+      "year": "1969 CE",
+      "url": "https://en.wikipedia.org/wiki/Heleieth_Saffioti",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Heleieth_Saffioti",
+      "description": "Landmark Brazilian Marxist-feminist treatise demonstrating how capitalist class reproduction relies on domestic patriarchal subordination."
+    },
+    {
+      "title": "Gênero, patriarcado, violência",
+      "year": "2004 CE",
+      "url": "https://en.wikipedia.org/wiki/Heleieth_Saffioti",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Heleieth_Saffioti",
+      "description": "Formulates the patriarchy-racism-capitalism \"knot\" (nó) driving structural gender violence."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "pillar",
+  "importanceScore": 89,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Heleieth_Saffioti"
+  },
+  "imageUrl": "/portraits/heleieth-saffioti.jpg"
+}

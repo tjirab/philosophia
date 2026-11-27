@@ -1,0 +1,33 @@
+{
+  "id": "oyeronke-oyewumi",
+  "name": "Oyèrónkẹ́ Oyěwùmí",
+  "birthYear": 1957,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Nigerian feminist philosopher and sociologist who demonstrated that precolonial Yorùbá society was organized by seniority rather than biological gender, exposing Western feminism’s bio-logical universalism.",
+  "centralQuestion": "Is \"gender\" a universal human ontology, or a Western visual-biological construct imposed onto non-Western cultures through colonialism?",
+  "keyWorks": [
+    {
+      "title": "The Invention of Women: Making an African Sense of Western Gender Discourses",
+      "year": "1997 CE",
+      "url": "https://en.wikipedia.org/wiki/Oy%C3%A8r%C3%B3nk%E1%BA%B9%CC%81_Oy%C4%9Bw%C3%B9m%C3%AD",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Oy%C3%A8r%C3%B3nk%E1%BA%B9%CC%81_Oy%C4%9Bw%C3%B9m%C3%AD",
+      "description": "Challenges Western \"bio-logic\" by showing Yorùbá kinship categories (obinrin/okunrin, iyá) lacked hierarchical Western gender."
+    }
+  ],
+  "sepSlug": "feminist-social-epistemology",
+  "canonTier": "pillar",
+  "importanceScore": 91,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminist-social-epistemology/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Oy%C3%A8r%C3%B3nk%E1%BA%B9%CC%81_Oy%C4%9Bw%C3%B9m%C3%AD"
+  },
+  "imageUrl": "/portraits/oyeronke-oyewumi.jpg"
+}

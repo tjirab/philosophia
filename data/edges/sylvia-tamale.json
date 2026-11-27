@@ -1,0 +1,44 @@
+[
+  {
+    "id": "molara-ogundipe--sylvia-tamale",
+    "source": "molara-ogundipe",
+    "target": "sylvia-tamale",
+    "type": "DEVELOPED",
+    "label": "Extended Stiwanist African feminism into decolonial law and Ubuntu ethics",
+    "strength": 4,
+    "description": "Tamale advanced Ogundipe’s call for endogenous African feminist transformation by dismantling colonial penal codes through Ubuntu jurisprudence.",
+    "dialecticalTension": "Operationalizes Afro-feminist theory inside constitutional and customary law.",
+    "historicalContext": "Decolonization and Afro-Feminism (2020).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Sylvia Tamale",
+        "work": "Decolonization and Afro-Feminism",
+        "year": 2020,
+        "url": "https://en.wikipedia.org/wiki/Sylvia_Tamale"
+      }
+    ]
+  },
+  {
+    "id": "valentin-yves-mudimbe--sylvia-tamale",
+    "source": "valentin-yves-mudimbe",
+    "target": "sylvia-tamale",
+    "type": "DEVELOPED",
+    "label": "Applied critique of colonial gnosis to African jurisprudence and sexuality",
+    "strength": 4,
+    "description": "Drawing on Mudimbe’s deconstruction of the colonial library, Tamale showed how Victorian missionary law invented rigid sexual binaries in Africa.",
+    "dialecticalTension": "Brings archaeological decolonial critique to legal philosophy.",
+    "historicalContext": "African Sexualities (2011) & Decolonization and Afro-Feminism (2020).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Sylvia Tamale",
+        "work": "Decolonization and Afro-Feminism",
+        "year": 2020,
+        "url": "https://en.wikipedia.org/wiki/Sylvia_Tamale"
+      }
+    ]
+  }
+]

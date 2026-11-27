@@ -1,0 +1,40 @@
+{
+  "id": "graciela-hierro",
+  "name": "Graciela Hierro",
+  "birthYear": 1928,
+  "deathYear": 2003,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Mexican moral philosopher who pioneered institutional feminist philosophy in Mexico, developing an ethics of female autonomy, joy, and self-determination.",
+  "centralQuestion": "How can moral philosophy replace self-sacrificial patriarchal norms with a feminist ethics of pleasure, autonomy, and mutual care?",
+  "keyWorks": [
+    {
+      "title": "Ética y feminismo (Ethics and Feminism)",
+      "year": "1985 CE",
+      "url": "https://es.wikipedia.org/wiki/Graciela_Hierro",
+      "wikipediaUrl": "https://es.wikipedia.org/wiki/Graciela_Hierro",
+      "description": "Systematic Mexican feminist ethics redefining moral agency and women’s right to self-affirmation."
+    },
+    {
+      "title": "La ética del placer",
+      "year": "2001 CE",
+      "url": "https://es.wikipedia.org/wiki/Graciela_Hierro",
+      "wikipediaUrl": "https://es.wikipedia.org/wiki/Graciela_Hierro",
+      "description": "Articulates a feminist philosophy of embodied joy and autonomy beyond ascetic moralism."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://es.wikipedia.org/wiki/Graciela_Hierro"
+  },
+  "imageUrl": "/portraits/graciela-hierro.jpg"
+}

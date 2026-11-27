@@ -1,0 +1,40 @@
+{
+  "id": "ama-ata-aidoo",
+  "name": "Ama Ata Aidoo",
+  "birthYear": 1942,
+  "deathYear": 2023,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Ghanaian feminist philosopher, playwright, and essayist who inverted the colonial anthropological gaze to critique neocolonial alienation, elite mimicry, and African women’s erasure.",
+  "centralQuestion": "What happens to postcolonial African self-knowledge when educated elites internalize Europe’s contempt for African languages and women?",
+  "keyWorks": [
+    {
+      "title": "Our Sister Killjoy: or Reflections from a Black-eyed Squint",
+      "year": "1977 CE",
+      "url": "https://en.wikipedia.org/wiki/Our_Sister_Killjoy",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Our_Sister_Killjoy",
+      "description": "Experimental philosophical-literary critique reversing the European travelogue to interrogate Western modernity and postcolonial brain drain."
+    },
+    {
+      "title": "Changes: A Love Story",
+      "year": "1991 CE",
+      "url": "https://en.wikipedia.org/wiki/Ama_Ata_Aidoo",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ama_Ata_Aidoo",
+      "description": "Explores modern African womanhood, autonomy, and the tensions between inherited marriage norms and professional agency."
+    }
+  ],
+  "sepSlug": "africana",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/africana/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ama_Ata_Aidoo"
+  },
+  "imageUrl": "/portraits/ama-ata-aidoo.jpg"
+}

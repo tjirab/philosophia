@@ -1,0 +1,85 @@
+[
+  {
+    "id": "frantz-fanon--steve-biko",
+    "source": "frantz-fanon",
+    "target": "steve-biko",
+    "type": "DEVELOPED",
+    "label": "Translated Fanonian psychic decolonization into Black Consciousness praxis",
+    "strength": 5,
+    "description": "Drawing on Fanon’s Wretched of the Earth and Black Skin, White Masks, Biko argued that Black South Africans had to overcome psychological subjugation before political freedom was possible.",
+    "dialecticalTension": "Operationalizes Fanonian phenomenology inside apartheid South Africa.",
+    "historicalContext": "South African Students’ Organisation (SASO), 1969–1977.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Steve Biko",
+        "work": "I Write What I Like",
+        "year": 1978,
+        "url": "https://en.wikipedia.org/wiki/Steve_Biko"
+      }
+    ]
+  },
+  {
+    "id": "aime-cesaire--steve-biko",
+    "source": "aime-cesaire",
+    "target": "steve-biko",
+    "type": "INFLUENCED",
+    "label": "Reclaimed Black cultural pride from Négritude for anti-apartheid struggle",
+    "strength": 4,
+    "description": "Echoing Césaire’s poetic reclamation of Black dignity, Biko forged Black Consciousness as a political-philosophical affirmation against white supremacy.",
+    "dialecticalTension": "Shifts cultural Négritude into militant anti-apartheid consciousness.",
+    "historicalContext": "Late 1960s–1970s Black Consciousness Movement.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Chike Jeffers",
+        "work": "Africana Philosophy",
+        "url": "https://plato.stanford.edu/entries/africana/"
+      }
+    ]
+  },
+  {
+    "id": "steve-biko--black-consciousness",
+    "source": "steve-biko",
+    "target": "black-consciousness",
+    "type": "DEVELOPED",
+    "label": "Founded Black Consciousness Philosophy",
+    "strength": 5,
+    "description": "Biko defined Black Consciousness as an inward-looking process of psychological liberation and solidarity uniting all oppressed peoples against apartheid.",
+    "dialecticalTension": "Centers epistemic self-definition as precondition for liberation.",
+    "historicalContext": "I Write What I Like (1978).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Steve Biko",
+        "work": "I Write What I Like",
+        "year": 1978,
+        "url": "https://en.wikipedia.org/wiki/I_Write_What_I_Like"
+      }
+    ]
+  },
+  {
+    "id": "steve-biko--achille-mbembe",
+    "source": "steve-biko",
+    "target": "achille-mbembe",
+    "type": "INFLUENCED",
+    "label": "Informed Mbembe’s analysis of racial sovereignty and non-racial futures",
+    "strength": 4,
+    "description": "Writing from South Africa, Mbembe engages Biko’s legacy on psychic freedom and the critique of race to envision decolonized planetary futures.",
+    "dialecticalTension": "Connects anti-apartheid Black Consciousness to 21st-c. critique of Black reason.",
+    "historicalContext": "Critique of Black Reason (2013/2017).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Achille Mbembe",
+        "work": "Critique of Black Reason",
+        "year": 2017,
+        "url": "https://plato.stanford.edu/entries/africana/"
+      }
+    ]
+  }
+]

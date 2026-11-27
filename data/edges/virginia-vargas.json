@@ -1,0 +1,43 @@
+[
+  {
+    "id": "jose-carlos-mariategui--virginia-vargas",
+    "source": "jose-carlos-mariategui",
+    "target": "virginia-vargas",
+    "type": "INFLUENCED",
+    "label": "Engaged Peruvian socialist tradition while centering autonomous feminist citizenship",
+    "strength": 4,
+    "description": "Emerging from Peru’s critical left, Vargas challenged class-reductionist politics by theorizing women’s autonomous democratic mobilization.",
+    "dialecticalTension": "Transforms Peruvian socialist critique into pluralist feminist democracy.",
+    "historicalContext": "Flora Tristán Center & Peruvian feminist movement (1979–2000s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Virginia Vargas",
+        "work": "El aporte de la rebeldía de las mujeres",
+        "year": 1989,
+        "url": "https://en.wikipedia.org/wiki/Virginia_Vargas"
+      }
+    ]
+  },
+  {
+    "id": "paulo-freire--virginia-vargas",
+    "source": "paulo-freire",
+    "target": "virginia-vargas",
+    "type": "DEVELOPED",
+    "label": "Extended Freirian popular conscientization to transnational feminist forums",
+    "strength": 4,
+    "description": "Applying participatory pedagogy to feminist NGOs and the World Social Forum, Vargas theorized cross-border democratic solidarity across the Global South.",
+    "dialecticalTension": "Connects popular pedagogy to transnational feminist citizenship.",
+    "historicalContext": "Latin American Feminist Encuentros & World Social Forum.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Ofelia Schutte",
+        "work": "Feminist Philosophy in Latin America",
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

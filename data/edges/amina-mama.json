@@ -1,0 +1,44 @@
+[
+  {
+    "id": "frantz-fanon--amina-mama",
+    "source": "frantz-fanon",
+    "target": "amina-mama",
+    "type": "DEVELOPED",
+    "label": "Transformed Fanonian colonial psychology into Black feminist discourse analysis",
+    "strength": 5,
+    "description": "In Beyond the Masks, Amina Mama critiqued essentialist models of Black identity and adapted Fanon to show how Black women actively negotiate racialized and gendered subject positions.",
+    "dialecticalTension": "Synthesizes postcolonial psychology with African feminist politics.",
+    "historicalContext": "Beyond the Masks (1995).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Amina Mama",
+        "work": "Beyond the Masks: Race, Gender and Subjectivity",
+        "year": 1995,
+        "url": "https://en.wikipedia.org/wiki/Amina_Mama"
+      }
+    ]
+  },
+  {
+    "id": "amina-mama--sylvia-tamale",
+    "source": "amina-mama",
+    "target": "sylvia-tamale",
+    "type": "INFLUENCED",
+    "label": "Built African Gender Institute networks shaping Tamale’s Afro-feminist praxis",
+    "strength": 4,
+    "description": "Through Feminist Africa and African feminist epistemology, Mama forged pan-African scholarly solidarities central to Sylvia Tamale’s work.",
+    "dialecticalTension": "Connects psychological subjectivity critique to African legal decolonization.",
+    "historicalContext": "African Gender Institute, University of Cape Town (1990s–2010s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Sylvia Tamale",
+        "work": "Decolonization and Afro-Feminism",
+        "year": 2020,
+        "url": "https://en.wikipedia.org/wiki/Sylvia_Tamale"
+      }
+    ]
+  }
+]

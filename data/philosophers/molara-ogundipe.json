@@ -1,0 +1,34 @@
+{
+  "id": "molara-ogundipe",
+  "name": "Molara Ogundipe",
+  "birthYear": 1940,
+  "deathYear": 2019,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Nigerian feminist theorist, critic, and poet who coined Stiwanism (Social Transformation Including Women in Africa) to ground African women’s liberation in indigenous social structures rather than Western individualism.",
+  "centralQuestion": "Why must African gender liberation pursue structural social transformation with African men rather than imitating Western liberal individualism?",
+  "keyWorks": [
+    {
+      "title": "Re-Creating Ourselves: African Women & Critical Transformations",
+      "year": "1994 CE",
+      "url": "https://en.wikipedia.org/wiki/Molara_Ogundipe",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Molara_Ogundipe",
+      "description": "Formulates Stiwanism and diagnoses the six mountains on the back of the African woman under colonialism and patriarchy."
+    }
+  ],
+  "sepSlug": "africana",
+  "canonTier": "pillar",
+  "importanceScore": 89,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/africana/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Molara_Ogundipe"
+  },
+  "imageUrl": "/portraits/molara-ogundipe.jpg"
+}

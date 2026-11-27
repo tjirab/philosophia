@@ -1,0 +1,85 @@
+[
+  {
+    "id": "anibal-quijano--rita-segato",
+    "source": "anibal-quijano",
+    "target": "rita-segato",
+    "type": "DEVELOPED",
+    "label": "Historicized coloniality of power as transformation of communal into lethal patriarchy",
+    "strength": 5,
+    "description": "Engaging Quijano’s coloniality of power, Segato demonstrated that European colonization converted low-intensity Indigenous gender dualities into modern lethal patriarchy.",
+    "dialecticalTension": "Adds historical-anthropological depth to decolonial gender theory.",
+    "historicalContext": "University of Brasília & La guerra contra las mujeres (2003–2016).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Rita Segato",
+        "work": "La guerra contra las mujeres",
+        "year": 2016,
+        "url": "https://en.wikipedia.org/wiki/Rita_Laura_Segato"
+      }
+    ]
+  },
+  {
+    "id": "oyeronke-oyewumi--rita-segato",
+    "source": "oyeronke-oyewumi",
+    "target": "rita-segato",
+    "type": "SYNTHESIZED",
+    "label": "Debated Oyěwùmí’s non-gender thesis to formulate Indigenous dual-gender historicity",
+    "strength": 4,
+    "description": "Engaging Oyěwùmí’s Yorùbá findings, Segato argued that many precolonial American societies exhibited \"low-intensity patriarchy\" radically restructured by colonial state power.",
+    "dialecticalTension": "Productive South-South debate between Yorùbá non-gender and Andean-Amazonian gender duality.",
+    "historicalContext": "Contemporary decolonial feminist anthropology (2010s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Rita Segato",
+        "work": "La crítica de la colonialidad en ocho ensayos",
+        "year": 2013,
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  },
+  {
+    "id": "rita-segato--pedagogy-of-cruelty",
+    "source": "rita-segato",
+    "target": "pedagogy-of-cruelty",
+    "type": "DEVELOPED",
+    "label": "Formulated the Pedagogy of Cruelty",
+    "strength": 5,
+    "description": "Segato theorized feminicide and paramilitary terror as pedagogical rituals that train subjects in callousness to serve extractive sovereignty.",
+    "dialecticalTension": "Diagnoses patriarchal violence as structural sovereign communication, not private deviance.",
+    "historicalContext": "La guerra contra las mujeres (2016).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Rita Segato",
+        "work": "La guerra contra las mujeres",
+        "year": 2016,
+        "url": "https://en.wikipedia.org/wiki/Rita_Laura_Segato"
+      }
+    ]
+  },
+  {
+    "id": "rita-segato--yuderkys-espinosa-minoso",
+    "source": "rita-segato",
+    "target": "yuderkys-espinosa-minoso",
+    "type": "INFLUENCED",
+    "label": "Informed Caribbean and Latin American decolonial feminist critiques of white feminism",
+    "strength": 4,
+    "description": "Segato’s analysis of coloniality, race, and patriarchal mandates enters into ongoing dialogue with Espinosa Miñoso’s decolonial feminist school.",
+    "dialecticalTension": "Links anthropological coloniality of gender with Afro-Caribbean decolonial feminism.",
+    "historicalContext": "Contemporary Latin American decolonial feminism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Roque, Lugones & Schutte",
+        "work": "Feminist Philosophy in Latin America",
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

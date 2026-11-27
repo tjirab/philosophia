@@ -1,0 +1,33 @@
+{
+  "id": "kim-tallbear",
+  "name": "Kim TallBear",
+  "birthYear": 1968,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Sisseton Wahpeton Oyate philosopher of science and Indigenous STS scholar who dismantled genetic determinism in Native American DNA and articulated Indigenous relationality.",
+  "centralQuestion": "Why does reducing Indigenous kinship and nationhood to molecular DNA sequences perpetuate settler-colonial race science?",
+  "keyWorks": [
+    {
+      "title": "Native American DNA: Tribal Belonging and the False Promise of Genetic Science",
+      "year": "2013 CE",
+      "url": "https://en.wikipedia.org/wiki/Kim_TallBear",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Kim_TallBear",
+      "description": "Epistemological and political critique of commercial genomics vs. Indigenous relational governance and tribal citizenship."
+    }
+  ],
+  "sepSlug": "feminist-social-epistemology",
+  "canonTier": "bridge",
+  "importanceScore": 87,
+  "gender": "woman",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminist-social-epistemology/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kim_TallBear"
+  },
+  "imageUrl": "/portraits/kim-tallbear.jpg"
+}

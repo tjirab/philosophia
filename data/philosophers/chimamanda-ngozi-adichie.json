@@ -1,0 +1,33 @@
+{
+  "id": "chimamanda-ngozi-adichie",
+  "name": "Chimamanda Ngozi Adichie",
+  "birthYear": 1977,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Nigerian public philosopher and writer whose critiques of \"the danger of a single story\" and global gender norms popularized epistemic justice and African feminist ethics.",
+  "centralQuestion": "How do asymmetrical narratives produce epistemic injustice, and why does feminism require dismantling single-story stereotypes?",
+  "keyWorks": [
+    {
+      "title": "We Should All Be Feminists",
+      "year": "2014 CE",
+      "url": "https://en.wikipedia.org/wiki/We_Should_All_Be_Feminists",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/We_Should_All_Be_Feminists",
+      "description": "Influential philosophical essay diagnosing everyday patriarchal conditioning and proposing an inclusive 21st-century feminist ethics."
+    }
+  ],
+  "sepSlug": "epistemic-injustice",
+  "canonTier": "contributor",
+  "importanceScore": 81,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/epistemic-injustice/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Chimamanda_Ngozi_Adichie"
+  },
+  "imageUrl": "/portraits/chimamanda-ngozi-adichie.jpg"
+}

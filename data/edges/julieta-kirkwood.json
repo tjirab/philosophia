@@ -1,0 +1,44 @@
+[
+  {
+    "id": "simone-de-beauvoir--julieta-kirkwood",
+    "source": "simone-de-beauvoir",
+    "target": "julieta-kirkwood",
+    "type": "DEVELOPED",
+    "label": "Extended feminist critique of private domination to anti-dictatorship politics",
+    "strength": 4,
+    "description": "Drawing on feminist theory against authoritarianism, Kirkwood argued in Chile that resisting Pinochet required dismantling patriarchy inside political parties and homes alike.",
+    "dialecticalTension": "Unites anti-dictatorial democratic theory with feminist domestic critique.",
+    "historicalContext": "FLACSO Chile & MEMCH-83 (1978–1985).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Julieta Kirkwood",
+        "work": "Ser política en Chile",
+        "year": 1986,
+        "url": "https://en.wikipedia.org/wiki/Julieta_Kirkwood"
+      }
+    ]
+  },
+  {
+    "id": "julieta-kirkwood--virginia-vargas",
+    "source": "julieta-kirkwood",
+    "target": "virginia-vargas",
+    "type": "INFLUENCED",
+    "label": "Shaped Latin American feminist democratic theory and encuentros praxis",
+    "strength": 5,
+    "description": "Kirkwood’s formulation of feminist \"knots\" and autonomous mobilization directly influenced Virginia Vargas’s theorization of Latin American feminist citizenship.",
+    "dialecticalTension": "Connects Chilean anti-dictatorship feminism to Peruvian and regional democratic movements.",
+    "historicalContext": "Latin American Feminist Encuentros (1981–1990s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Virginia Vargas",
+        "work": "El aporte de la rebeldía de las mujeres",
+        "year": 1989,
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "tsitsi-dangarembga",
+  "name": "Tsitsi Dangarembga",
+  "birthYear": 1959,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Zimbabwean postcolonial feminist thinker, novelist, and filmmaker whose Nervous Conditions deepened Sartre and Fanon’s diagnosis of colonial neurosis through gendered Shona experience.",
+  "centralQuestion": "How does the \"nervous condition\" of colonial education fracture African women between assimilation, hunger, and self-recovery?",
+  "keyWorks": [
+    {
+      "title": "Nervous Conditions",
+      "year": "1988 CE",
+      "url": "https://en.wikipedia.org/wiki/Nervous_Conditions",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nervous_Conditions",
+      "description": "Philosophical novel extending Sartre’s preface to Fanon to trace embodied alienation and rebellion in colonial Rhodesia."
+    }
+  ],
+  "sepSlug": "africana",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/africana/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Tsitsi_Dangarembga"
+  },
+  "imageUrl": "/portraits/tsitsi-dangarembga.jpg"
+}

@@ -1465,4 +1465,81 @@ describe('Philosophy Graph Data Integrity', () => {
       expect(thinker.deathYear, `${livingId} should not have deathYear`).toBeUndefined();
     }
   });
+
+  it('verifies Phase 5B African, Latin American, and Indigenous lineages, living dates, and landmark concepts', () => {
+    // African lineages
+    expect(findInfluencePath('w-e-b-du-bois', 'fatima-meer', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('fatima-meer', 'steve-biko', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('frantz-fanon', 'steve-biko', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('steve-biko', 'black-consciousness', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('michel-foucault', 'valentin-yves-mudimbe', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('valentin-yves-mudimbe', 'colonial-gnosis', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('valentin-yves-mudimbe', 'achille-mbembe', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('funmilayo-ransome-kuti', 'molara-ogundipe', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('molara-ogundipe', 'stiwanism', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('simone-de-beauvoir', 'oyeronke-oyewumi', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('oyeronke-oyewumi', 'yoruba-non-gendered-relationality', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('oyeronke-oyewumi', 'maria-lugones', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('frantz-fanon', 'amina-mama', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('jean-paul-sartre', 'tsitsi-dangarembga', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('molara-ogundipe', 'sylvia-tamale', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('aime-cesaire', 'nadia-yala-kisukidi', edgesData as any).found).toBe(true);
+
+    // Latin American & Caribbean lineages
+    expect(findInfluencePath('karl-marx', 'jose-carlos-mariategui', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('jose-carlos-mariategui', 'indo-american-socialism', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('jose-carlos-mariategui', 'anibal-quijano', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('martin-heidegger', 'rodolfo-kusch', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('rodolfo-kusch', 'enrique-dussel', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('sor-juana', 'rosario-castellanos', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('rosario-castellanos', 'graciela-hierro', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('graciela-hierro', 'francesca-gargallo', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('francesca-gargallo', 'julieta-paredes', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('karl-marx', 'heleieth-saffioti', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('julieta-kirkwood', 'virginia-vargas', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('baruch-spinoza', 'marilena-chaui', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('anibal-quijano', 'rita-segato', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('rita-segato', 'pedagogy-of-cruelty', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('lelia-gonzalez', 'yuderkys-espinosa-minoso', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('lelia-gonzalez', 'djamila-ribeiro', edgesData as any).found).toBe(true);
+
+    // Indigenous lineages
+    expect(findInfluencePath('zitkala-sa', 'vine-deloria-jr', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('vine-deloria-jr', 'paula-gunn-allen', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('vine-deloria-jr', 'jeannette-armstrong', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('frantz-fanon', 'haunani-kay-trask', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('haunani-kay-trask', 'linda-tuhiwai-smith', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('linda-tuhiwai-smith', 'decolonizing-methodologies', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('linda-tuhiwai-smith', 'kim-tallbear', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('lee-maracle', 'leanne-betasamosake-simpson', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('winona-laduke', 'leanne-betasamosake-simpson', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('leanne-betasamosake-simpson', 'grounded-normativity', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('leanne-betasamosake-simpson', 'kyle-powys-whyte', edgesData as any).found).toBe(true);
+
+    // All living Phase 5B thinkers must omit deathYear
+    for (const livingId of [
+      'awa-thiam',
+      'oyeronke-oyewumi',
+      'amina-mama',
+      'tsitsi-dangarembga',
+      'sylvia-tamale',
+      'chimamanda-ngozi-adichie',
+      'nadia-yala-kisukidi',
+      'marilena-chaui',
+      'virginia-vargas',
+      'rita-segato',
+      'julieta-paredes',
+      'yuderkys-espinosa-minoso',
+      'djamila-ribeiro',
+      'jeannette-armstrong',
+      'linda-tuhiwai-smith',
+      'kim-tallbear',
+      'leanne-betasamosake-simpson',
+      'kyle-powys-whyte',
+    ]) {
+      const thinker = philosophersData.find((p) => p.id === livingId) as any;
+      expect(thinker, `Missing living thinker ${livingId}`).toBeDefined();
+      expect(thinker.deathYear, `${livingId} should not have deathYear`).toBeUndefined();
+    }
+  });
 });

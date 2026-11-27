@@ -1,0 +1,64 @@
+[
+  {
+    "id": "vine-deloria-jr--kyle-powys-whyte",
+    "source": "vine-deloria-jr",
+    "target": "kyle-powys-whyte",
+    "type": "DEVELOPED",
+    "label": "Translated Deloria’s spatial metaphysics into Indigenous climate justice",
+    "strength": 5,
+    "description": "Building on Deloria’s spatial-ecological worldview, Whyte defines \"collective continuance\" as a society’s adaptive capacity rooted in dynamic relationships with land.",
+    "dialecticalTension": "Brings 1970s Indigenous spatial ontology into Anthropocene ethics.",
+    "historicalContext": "Indigenous Climate Change Studies (2017).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Kyle Powys Whyte",
+        "work": "Indigenous Climate Change Studies",
+        "year": 2017,
+        "url": "https://en.wikipedia.org/wiki/Kyle_Powys_Whyte"
+      }
+    ]
+  },
+  {
+    "id": "robin-wall-kimmerer--kyle-powys-whyte",
+    "source": "robin-wall-kimmerer",
+    "target": "kyle-powys-whyte",
+    "type": "DEVELOPED",
+    "label": "Applied Potawatomi kinship ethics to anthropogenic climate crisis and tipping points",
+    "strength": 5,
+    "description": "Sharing Citizen Potawatomi heritage with Kimmerer, Whyte translates botanical reciprocity into structural climate justice criteria of trust, consent, and accountability.",
+    "dialecticalTension": "Formalizes Potawatomi kinship ethics inside global environmental policy philosophy.",
+    "historicalContext": "Contemporary Potawatomi environmental philosophy (2015–2020s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Andrew Brennan & Yeuk-Sze Lo",
+        "work": "Environmental Ethics",
+        "url": "https://plato.stanford.edu/entries/ethics-environmental/"
+      }
+    ]
+  },
+  {
+    "id": "winona-laduke--kyle-powys-whyte",
+    "source": "winona-laduke",
+    "target": "kyle-powys-whyte",
+    "type": "INFLUENCED",
+    "label": "Extended Anishinaabe fossil-capitalism critique into climate colonialism theory",
+    "strength": 4,
+    "description": "Whyte builds on LaDuke’s environmental justice work to frame climate disruption as a continuation of settler-colonial extraction.",
+    "dialecticalTension": "Links grassroots pipeline resistance with formal environmental philosophy.",
+    "historicalContext": "Great Lakes Indigenous environmental ethics.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Kyle Powys Whyte",
+        "work": "Indigenous Climate Change Studies",
+        "year": 2017,
+        "url": "https://en.wikipedia.org/wiki/Kyle_Powys_Whyte"
+      }
+    ]
+  }
+]

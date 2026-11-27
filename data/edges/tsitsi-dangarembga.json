@@ -1,0 +1,44 @@
+[
+  {
+    "id": "jean-paul-sartre--tsitsi-dangarembga",
+    "source": "jean-paul-sartre",
+    "target": "tsitsi-dangarembga",
+    "type": "DEVELOPED",
+    "label": "Adopted Sartre’s \"nervous condition\" preface to Fanon to theorize gendered colonialism",
+    "strength": 5,
+    "description": "Dangarembga titled Nervous Conditions directly after Sartre’s introduction to Fanon’s Wretched of the Earth, examining how colonial assimilation splits African women.",
+    "dialecticalTension": "Expands existentialist anti-colonialism to encompass Shona patriarchy and bodily starvation.",
+    "historicalContext": "Nervous Conditions (1988).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Tsitsi Dangarembga",
+        "work": "Nervous Conditions",
+        "year": 1988,
+        "url": "https://en.wikipedia.org/wiki/Nervous_Conditions"
+      }
+    ]
+  },
+  {
+    "id": "frantz-fanon--tsitsi-dangarembga",
+    "source": "frantz-fanon",
+    "target": "tsitsi-dangarembga",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Fanonian colonial alienation with Zimbabwean feminist consciousness",
+    "strength": 5,
+    "description": "Through Tambu and Nyasha, Dangarembga dramatized Fanon’s pathology of the colonized intellectual across gendered generational conflict.",
+    "dialecticalTension": "Rewrites Fanon’s masculine colonized subject through Black women’s embodied rebellion.",
+    "historicalContext": "Nervous Conditions (1988).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Tsitsi Dangarembga",
+        "work": "Nervous Conditions",
+        "year": 1988,
+        "url": "https://en.wikipedia.org/wiki/Tsitsi_Dangarembga"
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "francesca-gargallo",
+  "name": "Francesca Gargallo",
+  "birthYear": 1956,
+  "deathYear": 2022,
+  "eraId": "contemporary",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Sicilian-born Mexican feminist philosopher and historian of ideas who documented Latin American feminist philosophy and Indigenous women’s autonomous philosophies across Abya Yala.",
+  "centralQuestion": "What happens to the canon of feminist philosophy when we center the collective epistemologies of Indigenous and popular women across Abya Yala?",
+  "keyWorks": [
+    {
+      "title": "Las ideas feministas latinoamericanas",
+      "year": "2004 CE",
+      "url": "https://en.wikipedia.org/wiki/Francesca_Gargallo",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Francesca_Gargallo",
+      "description": "Intellectual history reconstructing autonomous Latin American feminist philosophical lineages."
+    },
+    {
+      "title": "Feminismos desde Abya Yala",
+      "year": "2012 CE",
+      "url": "https://en.wikipedia.org/wiki/Francesca_Gargallo",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Francesca_Gargallo",
+      "description": "Dialogical philosophical study of Indigenous women’s political cosmologies across 600+ nations of Abya Yala."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Francesca_Gargallo"
+  },
+  "imageUrl": "/portraits/francesca-gargallo.jpg"
+}

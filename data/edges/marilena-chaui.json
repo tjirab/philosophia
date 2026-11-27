@@ -1,0 +1,65 @@
+[
+  {
+    "id": "baruch-spinoza--marilena-chaui",
+    "source": "baruch-spinoza",
+    "target": "marilena-chaui",
+    "type": "DEVELOPED",
+    "label": "Reconstructed Spinozist immanence as ontology of radical democratic freedom",
+    "strength": 5,
+    "description": "Across A Nervura do Real and decades of scholarship, Chaui developed Spinoza’s immanent causality into a major Latin American political philosophy of collective potency.",
+    "dialecticalTension": "Reclaims Spinoza against authoritarian political theology in Brazil.",
+    "historicalContext": "University of São Paulo (1970s–2020s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Marilena Chaui",
+        "work": "A Nervura do Real",
+        "year": 1999,
+        "url": "https://en.wikipedia.org/wiki/Marilena_de_Souza_Chaui"
+      }
+    ]
+  },
+  {
+    "id": "maurice-merleau-ponty--marilena-chaui",
+    "source": "maurice-merleau-ponty",
+    "target": "marilena-chaui",
+    "type": "DEVELOPED",
+    "label": "Extended Merleau-Ponty’s phenomenology of culture to democratic ideology critique",
+    "strength": 4,
+    "description": "Studying Merleau-Ponty’s embodied expression, Chaui analyzed how technocratic \"competent discourse\" silences democratic participation.",
+    "dialecticalTension": "Connects French phenomenology of expression to Brazilian cultural politics.",
+    "historicalContext": "Cultura e Democracia (1980).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Marilena Chaui",
+        "work": "Cultura e Democracia",
+        "year": 1980,
+        "url": "https://en.wikipedia.org/wiki/Marilena_de_Souza_Chaui"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--marilena-chaui",
+    "source": "karl-marx",
+    "target": "marilena-chaui",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Marxist ideology critique with Spinoza to diagnose Brazilian authoritarianism",
+    "strength": 4,
+    "description": "Chaui analyzed Brazil’s \"founding myth\" of harmonious cordiality as an ideological veil masking violent class and racial hierarchy.",
+    "dialecticalTension": "Bridges Spinoza, Merleau-Ponty, and Marx against Brazilian authoritarianism.",
+    "historicalContext": "Brasil: Mito Fundador e Sociedade Autoritária (2000).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Marilena Chaui",
+        "work": "Brasil: Mito Fundador e Sociedade Autoritária",
+        "year": 2000,
+        "url": "https://en.wikipedia.org/wiki/Marilena_de_Souza_Chaui"
+      }
+    ]
+  }
+]

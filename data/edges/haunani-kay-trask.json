@@ -1,0 +1,65 @@
+[
+  {
+    "id": "frantz-fanon--haunani-kay-trask",
+    "source": "frantz-fanon",
+    "target": "haunani-kay-trask",
+    "type": "DEVELOPED",
+    "label": "Adapted Fanonian anti-colonial critique to Pacific and Hawaiian sovereignty",
+    "strength": 5,
+    "description": "In From a Native Daughter, Trask mobilized Fanon’s diagnosis of settler colonialism and native intellectuals to expose U.S. militarism and tourism in Hawaiʻi.",
+    "dialecticalTension": "Extends anti-colonial liberation philosophy into Oceania.",
+    "historicalContext": "From a Native Daughter (1993).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Haunani-Kay Trask",
+        "work": "From a Native Daughter",
+        "year": 1993,
+        "url": "https://en.wikipedia.org/wiki/Haunani-Kay_Trask"
+      }
+    ]
+  },
+  {
+    "id": "vine-deloria-jr--haunani-kay-trask",
+    "source": "vine-deloria-jr",
+    "target": "haunani-kay-trask",
+    "type": "INFLUENCED",
+    "label": "Shared critique of settler-colonial anthropology and tribal/national sovereignty",
+    "strength": 4,
+    "description": "Echoing Deloria’s Custer Died for Your Sins, Trask mounted a fierce philosophical critique of Western historians and anthropologists claiming authority over Native peoples.",
+    "dialecticalTension": "Unites Continental Native American and Kanaka Maoli critiques of epistemic extraction.",
+    "historicalContext": "1980s–1990s Indigenous sovereignty theory.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Haunani-Kay Trask",
+        "work": "From a Native Daughter",
+        "year": 1993,
+        "url": "https://en.wikipedia.org/wiki/Haunani-Kay_Trask"
+      }
+    ]
+  },
+  {
+    "id": "haunani-kay-trask--linda-tuhiwai-smith",
+    "source": "haunani-kay-trask",
+    "target": "linda-tuhiwai-smith",
+    "type": "INFLUENCED",
+    "label": "Catalyzed Polynesian-Māori critique of imperial research and historiography",
+    "strength": 5,
+    "description": "Trask’s confrontation with settler scholarship in Hawaiʻi directly resonated with Māori philosopher Linda Tuhiwai Smith’s Decolonizing Methodologies.",
+    "dialecticalTension": "Forges trans-Polynesian Indigenous epistemic sovereignty.",
+    "historicalContext": "Pacific Indigenous epistemology (1993–1999).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Linda Tuhiwai Smith",
+        "work": "Decolonizing Methodologies",
+        "year": 1999,
+        "url": "https://en.wikipedia.org/wiki/Linda_Tuhiwai_Smith"
+      }
+    ]
+  }
+]

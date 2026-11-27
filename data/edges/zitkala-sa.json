@@ -1,0 +1,65 @@
+[
+  {
+    "id": "felipe-guaman-poma--zitkala-sa",
+    "source": "felipe-guaman-poma",
+    "target": "zitkala-sa",
+    "type": "INFLUENCED",
+    "label": "Shared hemispheric Indigenous testimonial critique of colonial hypocrisy",
+    "strength": 3,
+    "description": "Like Guaman Poma’s Andean letter to the Crown, Zitkala-Ša’s essays deployed the colonizer’s language and print culture to expose Christian-settler violence.",
+    "dialecticalTension": "Trans-hemispheric continuity of Indigenous testimonial sovereignty.",
+    "historicalContext": "American Indian Stories (1921).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Zitkala-Ša",
+        "work": "American Indian Stories",
+        "year": 1921,
+        "url": "https://en.wikipedia.org/wiki/Zitkala-%C5%A0a"
+      }
+    ]
+  },
+  {
+    "id": "zitkala-sa--vine-deloria-jr",
+    "source": "zitkala-sa",
+    "target": "vine-deloria-jr",
+    "type": "INFLUENCED",
+    "label": "Foreshadowed Deloria’s Dakota critique of missionary assimilation and federal policy",
+    "strength": 4,
+    "description": "Zitkala-Ša’s \"Why I Am a Pagan\" and National Council of American Indians advocacy anticipated fellow Yankton/Standing Rock Dakota thinker Vine Deloria Jr.’s critique of colonial religion.",
+    "dialecticalTension": "Establishes Dakota philosophical resistance from early 20th c. to Red Power era.",
+    "historicalContext": "Sioux intellectual tradition (1902–1970s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Vine Deloria Jr.",
+        "work": "God Is Red",
+        "year": 1973,
+        "url": "https://plato.stanford.edu/entries/civil-rights/"
+      }
+    ]
+  },
+  {
+    "id": "zitkala-sa--paula-gunn-allen",
+    "source": "zitkala-sa",
+    "target": "paula-gunn-allen",
+    "type": "INFLUENCED",
+    "label": "Pioneered Native American women’s philosophical memoir and cultural defense",
+    "strength": 4,
+    "description": "Gunn Allen recognized Zitkala-Ša as a key foremother of Native American women’s intellectual and spiritual resistance.",
+    "dialecticalTension": "Links early 20th-c. Dakota critique to late 20th-c. Native feminist philosophy.",
+    "historicalContext": "The Sacred Hoop (1986).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Paula Gunn Allen",
+        "work": "The Sacred Hoop",
+        "year": 1986,
+        "url": "https://en.wikipedia.org/wiki/Paula_Gunn_Allen"
+      }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "w-e-b-du-bois--fatima-meer",
+    "source": "w-e-b-du-bois",
+    "target": "fatima-meer",
+    "type": "INFLUENCED",
+    "label": "Extended Du Boisian racial sociology to apartheid South Africa",
+    "strength": 4,
+    "description": "Applying empirical sociological inquiry to South African racial segregation, Meer analyzed how apartheid legal stratification fragmented Black and Indian communities.",
+    "dialecticalTension": "Translates North American color-line sociology into anti-apartheid structural analysis.",
+    "historicalContext": "University of Natal sociology and Durban anti-apartheid activism (1950s–1970s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Fatima Meer",
+        "work": "Portrait of Indian South Africans",
+        "year": 1969,
+        "url": "https://en.wikipedia.org/wiki/Fatima_Meer"
+      }
+    ]
+  },
+  {
+    "id": "fatima-meer--steve-biko",
+    "source": "fatima-meer",
+    "target": "steve-biko",
+    "type": "INFLUENCED",
+    "label": "Mentored and supported Durban anti-apartheid and Black Consciousness circles",
+    "strength": 4,
+    "description": "As a leading Durban sociologist and co-founder of the Black Women’s Federation, Meer collaborated with and championed Steve Biko’s Black Consciousness generation.",
+    "dialecticalTension": "Bridges earlier non-racial anti-apartheid Congress politics with Black Consciousness.",
+    "historicalContext": "Durban, South Africa (late 1960s–1977).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Fatima Meer",
+        "work": "Black Consciousness and South African Resistance",
+        "year": 1978,
+        "url": "https://en.wikipedia.org/wiki/Fatima_Meer"
+      }
+    ]
+  }
+]

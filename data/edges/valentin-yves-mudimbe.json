@@ -1,0 +1,85 @@
+[
+  {
+    "id": "michel-foucault--valentin-yves-mudimbe",
+    "source": "michel-foucault",
+    "target": "valentin-yves-mudimbe",
+    "type": "DEVELOPED",
+    "label": "Adapted Foucauldian archaeology to expose the colonial invention of Africa",
+    "strength": 5,
+    "description": "Using Foucault’s archaeology of epistemes, Mudimbe excavated how Western missionary, anthropological, and philosophical texts produced \"Africa\" as a foil for European reason.",
+    "dialecticalTension": "Turns post-structural archaeology against Eurocentric Africanist knowledge regimes.",
+    "historicalContext": "The Invention of Africa (1988).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "V. Y. Mudimbe",
+        "work": "The Invention of Africa",
+        "year": 1988,
+        "url": "https://en.wikipedia.org/wiki/V._Y._Mudimbe"
+      }
+    ]
+  },
+  {
+    "id": "aime-cesaire--valentin-yves-mudimbe",
+    "source": "aime-cesaire",
+    "target": "valentin-yves-mudimbe",
+    "type": "CRITIQUED",
+    "label": "Interrogated Négritude’s counter-discourse for remaining tethered to colonial binaries",
+    "strength": 4,
+    "description": "While honoring Césaire’s revolt, Mudimbe showed how early Négritude and ethnophilosophy risked reproducing Western essentialist categories in inverted form.",
+    "dialecticalTension": "Moves from anti-colonial reversal to deconstructive critique of Africanist gnosis.",
+    "historicalContext": "Late 20th-century African philosophy debates.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Kwasi Wiredu & Chike Jeffers",
+        "work": "Africana Philosophy",
+        "url": "https://plato.stanford.edu/entries/africana/"
+      }
+    ]
+  },
+  {
+    "id": "valentin-yves-mudimbe--colonial-gnosis",
+    "source": "valentin-yves-mudimbe",
+    "target": "colonial-gnosis",
+    "type": "DEVELOPED",
+    "label": "Conceptualized colonial gnosis and the colonial library",
+    "strength": 5,
+    "description": "Mudimbe defined the colonial library as the institutional apparatus of European concepts through which Africa was classified and governed.",
+    "dialecticalTension": "Reveals epistemic colonization underlying modern disciplines.",
+    "historicalContext": "The Invention of Africa (1988) & The Idea of Africa (1994).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "V. Y. Mudimbe",
+        "work": "The Invention of Africa",
+        "year": 1988,
+        "url": "https://en.wikipedia.org/wiki/V._Y._Mudimbe"
+      }
+    ]
+  },
+  {
+    "id": "valentin-yves-mudimbe--achille-mbembe",
+    "source": "valentin-yves-mudimbe",
+    "target": "achille-mbembe",
+    "type": "INFLUENCED",
+    "label": "Laid the epistemological groundwork for Mbembe’s critique of the postcolony",
+    "strength": 5,
+    "description": "Mbembe’s On the Postcolony directly builds upon Mudimbe’s archaeology of colonial gnosis to interrogate postcolonial sovereignty and African self-writing.",
+    "dialecticalTension": "Bridges archaeological deconstruction of \"Africa\" with necropolitical theory.",
+    "historicalContext": "Contemporary Francophone African philosophy (1988–2001).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Achille Mbembe",
+        "work": "On the Postcolony",
+        "year": 2001,
+        "url": "https://plato.stanford.edu/entries/africana/"
+      }
+    ]
+  }
+]

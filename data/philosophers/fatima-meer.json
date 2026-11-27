@@ -1,0 +1,41 @@
+{
+  "id": "fatima-meer",
+  "name": "Fatima Meer",
+  "birthYear": 1928,
+  "deathYear": 2010,
+  "eraId": "twentieth-century",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "South African sociologist, anti-apartheid theorist, and founding voice of Black women’s civic resistance who analyzed racialized apartheid stratification and cross-community solidarity.",
+  "centralQuestion": "How do racialized legal hierarchies fragment oppressed communities, and how can empirical sociology serve anti-apartheid liberation?",
+  "keyWorks": [
+    {
+      "title": "Portrait of Indian South Africans",
+      "year": "1969 CE",
+      "url": "https://en.wikipedia.org/wiki/Fatima_Meer",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Fatima_Meer",
+      "description": "Sociological study documenting South African Indian political consciousness and resistance to apartheid segregation."
+    },
+    {
+      "title": "Higher Than Hope",
+      "year": "1988 CE",
+      "url": "https://en.wikipedia.org/wiki/Fatima_Meer",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Fatima_Meer",
+      "description": "Authorized intellectual biography of Nelson Mandela situating anti-apartheid struggle in ethical and historical context."
+    }
+  ],
+  "sepSlug": "africana",
+  "canonTier": "bridge",
+  "importanceScore": 84,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/africana/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Fatima_Meer"
+  },
+  "imageUrl": "/portraits/fatima-meer.jpg"
+}
