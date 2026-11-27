@@ -1,0 +1,113 @@
+[
+  {
+    "id": "sigmund-freud--karen-horney",
+    "source": "sigmund-freud",
+    "target": "karen-horney",
+    "type": "CRITIQUED",
+    "label": "Dismantled Freudian phallocentric drive theory in favor of cultural-relational psychology",
+    "strength": 5,
+    "description": "In Feminine Psychology and New Ways in Psychoanalysis (1939), Karen Horney refuted Freud's biological determinism and 'penis envy', countering with womb envy and showing how patriarchal culture shapes psychic conflict.",
+    "dialecticalTension": "Replaces classical libido determinism with interpersonal, cultural, and feminist psychoanalysis.",
+    "historicalContext": "Major split in mid-20th-century psychoanalysis leading to neo-Freudian culturalist schools.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Karen Horney",
+        "work": "New Ways in Psychoanalysis",
+        "year": 1939,
+        "url": "https://en.wikipedia.org/wiki/Karen_Horney"
+      },
+      {
+        "citationType": "sep",
+        "author": "Sarah Tyson",
+        "work": "Feminist Perspectives on Psychoanalysis",
+        "url": "https://plato.stanford.edu/entries/feminism-psychoanalysis/"
+      }
+    ]
+  },
+  {
+    "id": "alfred-adler--karen-horney",
+    "source": "alfred-adler",
+    "target": "karen-horney",
+    "type": "INFLUENCED",
+    "label": "Informed social-interpersonal departure from classical instinct theory",
+    "strength": 4,
+    "description": "Horney acknowledged Alfred Adler's pioneering shift toward social insecurity, compensatory strivings for power, and holistic personality organization rather than isolated libidinal drives.",
+    "dialecticalTension": "Synthesizes Adlerian social insecurity with deep dynamic anxiety analysis.",
+    "historicalContext": "Neo-Freudian culturalist convergence in 1930s–1940s New York.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Karen Horney",
+        "work": "The Neurotic Personality of Our Time",
+        "year": 1937,
+        "url": "https://en.wikipedia.org/wiki/Karen_Horney"
+      }
+    ]
+  },
+  {
+    "id": "karen-horney--basic-anxiety-and-neurotic-needs",
+    "source": "karen-horney",
+    "target": "basic-anxiety-and-neurotic-needs",
+    "type": "DEVELOPED",
+    "label": "Formulated basic anxiety and the three interpersonal neurotic trends",
+    "strength": 5,
+    "description": "Horney defined basic anxiety as the feeling of being isolated and helpless in a potentially hostile world, motivating rigid defensive orientations: moving toward, against, or away from people.",
+    "dialecticalTension": "Reconceptualizes neurosis as an interpersonal relational strategy rather than instinctual fixation.",
+    "historicalContext": "Systematized in Our Inner Conflicts (1945) and Neurosis and Human Growth (1950).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Karen Horney",
+        "work": "Neurosis and Human Growth",
+        "year": 1950,
+        "url": "https://en.wikipedia.org/wiki/Neurosis_and_Human_Growth"
+      }
+    ]
+  },
+  {
+    "id": "karen-horney--carl-rogers",
+    "source": "karen-horney",
+    "target": "carl-rogers",
+    "type": "INFLUENCED",
+    "label": "Prefigured humanistic psychology's 'real self' and self-realization drive",
+    "strength": 4,
+    "description": "Horney's distinction in Neurosis and Human Growth between the constructive 'real self' and the alienated 'idealized self' directly helped shape Carl Rogers's humanistic theory of self-actualization.",
+    "dialecticalTension": "Bridges psychoanalytic conflict theory with optimistic humanistic self-realization.",
+    "historicalContext": "Mid-20th-century American clinical psychology transition (1945–1961).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Karen Horney",
+        "work": "Neurosis and Human Growth",
+        "year": 1950,
+        "sectionOrPage": "Ch. 1 & Ch. 15"
+      }
+    ]
+  },
+  {
+    "id": "karen-horney--erik-erikson",
+    "source": "karen-horney",
+    "target": "erik-erikson",
+    "type": "INFLUENCED",
+    "label": "Advanced cultural-historical psychoanalysis of identity and social trust",
+    "strength": 4,
+    "description": "Horney's insistence that culture and early relational safety shape personality development helped open American psychoanalysis toward Erik Erikson's psychosocial stages of basic trust vs. mistrust.",
+    "dialecticalTension": "Connects cultural psychoanalysis with lifespan psychosocial development.",
+    "historicalContext": "Mid-20th-century American psychoanalytic circles.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Bernard J. Paris",
+        "work": "Karen Horney: A Psychoanalyst's Search for Self-Understanding",
+        "year": 1994,
+        "sectionOrPage": "Ch. 7–8"
+      }
+    ]
+  }
+]

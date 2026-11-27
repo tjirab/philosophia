@@ -1,0 +1,39 @@
+{
+  "id": "rosa-luxemburg",
+  "name": "Rosa Luxemburg",
+  "birthYear": 1871,
+  "deathYear": 1919,
+  "eraId": "nineteenth-century",
+  "traditionId": "existentialism-early",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Polish-German Marxist philosopher, economist, and revolutionary theorist who formulated an anti-authoritarian theory of mass democratic spontaneity and analyzed imperialism as structurally necessary for capital accumulation.",
+  "centralQuestion": "Why does genuine socialist emancipation require radical democratic pluralism and spontaneous mass agency rather than substitutionist vanguard dictatorship?",
+  "keyWorks": [
+    {
+      "title": "Reform or Revolution",
+      "year": "1900 CE",
+      "url": "https://en.wikipedia.org/wiki/Reform_or_Revolution",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Reform_or_Revolution",
+      "description": "Critique of Eduard Bernstein's evolutionary revisionism defending dialectical contradiction and structural transformation."
+    },
+    {
+      "title": "The Accumulation of Capital",
+      "year": "1913 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Accumulation_of_Capital",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Accumulation_of_Capital",
+      "description": "Macroeconomic critique arguing that capitalism permanently depends on non-capitalist peripheries and imperial expansion."
+    }
+  ],
+  "sepSlug": "luxemburg",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/luxemburg/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rosa_Luxemburg"
+  },
+  "canonTier": "bridge",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/rosa-luxemburg.jpg"
+}

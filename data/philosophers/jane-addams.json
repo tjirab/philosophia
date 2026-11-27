@@ -1,0 +1,39 @@
+{
+  "id": "jane-addams",
+  "name": "Jane Addams",
+  "birthYear": 1860,
+  "deathYear": 1935,
+  "eraId": "twentieth-century",
+  "traditionId": "pragmatism",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "American pragmatist philosopher, public sociologist, and co-founder of Hull House who fused empirical urban sociology with participatory democratic ethics and peace philosophy.",
+  "centralQuestion": "How can democratic solidarity and 'sympathetic knowledge' bridge class, cultural, and gendered divides through shared civic practice?",
+  "keyWorks": [
+    {
+      "title": "Democracy and Social Ethics",
+      "year": "1902 CE",
+      "url": "https://en.wikipedia.org/wiki/Jane_Addams",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jane_Addams",
+      "description": "Articulates social democracy as an everyday moral commitment grounded in reciprocal civic experience rather than abstract individualism."
+    },
+    {
+      "title": "Twenty Years at Hull-House",
+      "year": "1910 CE",
+      "url": "https://en.wikipedia.org/wiki/Twenty_Years_at_Hull-House",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Twenty_Years_at_Hull-House",
+      "description": "Classic synthesis of settlement-house urban ethnography, labor reform, and pragmatist social philosophy."
+    }
+  ],
+  "sepSlug": "pragmatism",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/pragmatism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jane_Addams"
+  },
+  "canonTier": "pillar",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/jane-addams.jpg"
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "aristotle--christine-de-pizan",
+    "source": "aristotle",
+    "target": "christine-de-pizan",
+    "type": "CRITIQUED",
+    "label": "Refuted Aristotelian-scholastic claims of women's natural rational inferiority",
+    "strength": 5,
+    "description": "In The Book of the City of Ladies (1405), Christine de Pizan systematically dismantled medieval Aristotelian and clerical authorities who portrayed women as defective males lacking full reason.",
+    "dialecticalTension": "Uses Aristotelian logical demonstration against Aristotelian biological-gender prejudice.",
+    "historicalContext": "Inaugurated the pan-European Querelle des Femmes in late medieval Paris.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Christine de Pizan",
+        "work": "The Book of the City of Ladies",
+        "year": 1405,
+        "sectionOrPage": "Part I, Ch. 1–9",
+        "url": "https://en.wikipedia.org/wiki/The_Book_of_the_City_of_Ladies"
+      },
+      {
+        "citationType": "sep",
+        "author": "Noëlle McAfee",
+        "work": "Feminist Philosophy",
+        "url": "https://plato.stanford.edu/entries/feminist-philosophy/"
+      }
+    ]
+  },
+  {
+    "id": "boethius--christine-de-pizan",
+    "source": "boethius",
+    "target": "christine-de-pizan",
+    "type": "INFLUENCED",
+    "label": "Modeled allegorical philosophical consolation and Lady Reason's dialogue",
+    "strength": 4,
+    "description": "Christine explicitly modeled the opening despair and allegorical visitation of Lady Reason in Le Livre de la Cité des Dames and L'Avision Christine on Boethius's Consolation of Philosophy.",
+    "dialecticalTension": "Transforms Boethian philosophical consolation from personal misfortune to collective gender justice.",
+    "historicalContext": "Late medieval French humanism at the court of Charles VI.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Karen Green",
+        "work": "The Woman of Reason: Feminism, Humanism and Political Thought",
+        "year": 1995,
+        "sectionOrPage": "Ch. 2"
+      }
+    ]
+  },
+  {
+    "id": "christine-de-pizan--mary-astell",
+    "source": "christine-de-pizan",
+    "target": "mary-astell",
+    "type": "INFLUENCED",
+    "label": "Prefigured autonomous women's scholarly communities and defense of female reason",
+    "strength": 4,
+    "description": "Christine's allegorical City of Ladies—a fortress built by women's intellectual achievements—directly foreshadowed Mary Astell's Serious Proposal for a women's philosophical academy.",
+    "dialecticalTension": "Links late medieval Querelle des Femmes to early modern feminist rationalism.",
+    "historicalContext": "Continuity in European feminist philosophical defenses of education (1405–1694).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Jacqueline Broad and Karen Green",
+        "work": "A History of Women's Political Thought in Europe, 1400–1700",
+        "year": 2009,
+        "sectionOrPage": "Ch. 1 & Ch. 11"
+      }
+    ]
+  },
+  {
+    "id": "christine-de-pizan--mary-wollstonecraft",
+    "source": "christine-de-pizan",
+    "target": "mary-wollstonecraft",
+    "type": "INFLUENCED",
+    "label": "Established the foundational argument that female inferiority is cultural, not natural",
+    "strength": 4,
+    "description": "Christine de Pizan's argument that unequal education explains apparent intellectual differences anticipated Mary Wollstonecraft's Enlightenment Vindication by nearly four centuries.",
+    "dialecticalTension": "Connects late-medieval feminist argumentation with Enlightenment political philosophy.",
+    "historicalContext": "Longue durée of European feminist philosophy from 1405 to 1792.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Noëlle McAfee",
+        "work": "Feminist Philosophy",
+        "url": "https://plato.stanford.edu/entries/feminist-philosophy/"
+      }
+    ]
+  }
+]

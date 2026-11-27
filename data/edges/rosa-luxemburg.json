@@ -1,0 +1,91 @@
+[
+  {
+    "id": "karl-marx--rosa-luxemburg",
+    "source": "karl-marx",
+    "target": "rosa-luxemburg",
+    "type": "DEVELOPED",
+    "label": "Extended Marxian political economy to imperialism and mass democratic spontaneity",
+    "strength": 5,
+    "description": "Rosa Luxemburg developed Marx's reproduction schemas in Capital Vol. II into a structural theory of imperialism, while defending revolutionary mass democracy against bureaucratic centralism.",
+    "dialecticalTension": "Pits democratic mass spontaneity against both parliamentary reformism and Leninist vanguard substitutionism.",
+    "historicalContext": "Formulated in Reform or Revolution (1900), The Accumulation of Capital (1913), and The Russian Revolution (1918).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Rosa Luxemburg",
+        "work": "The Accumulation of Capital",
+        "year": 1913,
+        "url": "https://plato.stanford.edu/entries/luxemburg/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Peter Hudis",
+        "work": "Rosa Luxemburg",
+        "url": "https://plato.stanford.edu/entries/luxemburg/"
+      }
+    ]
+  },
+  {
+    "id": "rosa-luxemburg--hannah-arendt",
+    "source": "rosa-luxemburg",
+    "target": "hannah-arendt",
+    "type": "INFLUENCED",
+    "label": "Inspired Arendt's council-democracy model and critique of party bureaucracy",
+    "strength": 5,
+    "description": "Hannah Arendt devoted a celebrated portrait to Rosa Luxemburg in Men in Dark Times and drew directly on Luxemburg's defense of spontaneous revolutionary councils and political freedom ('freedom for the one who thinks differently').",
+    "dialecticalTension": "Channels anti-authoritarian revolutionary councils into Arendtian civic republicanism.",
+    "historicalContext": "Engaged across The Origins of Totalitarianism (1951), On Revolution (1963), and Men in Dark Times (1968).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Hannah Arendt",
+        "work": "Men in Dark Times ('Rosa Luxemburg: 1871–1919')",
+        "year": 1968,
+        "url": "https://plato.stanford.edu/entries/luxemburg/"
+      }
+    ]
+  },
+  {
+    "id": "rosa-luxemburg--herbert-marcuse",
+    "source": "rosa-luxemburg",
+    "target": "herbert-marcuse",
+    "type": "INFLUENCED",
+    "label": "Shaped Frankfurt School libertarian socialism and anti-imperialist critique",
+    "strength": 4,
+    "description": "As a young soldier-council participant in Berlin 1918, Marcuse drew lifelong inspiration from Luxemburg's humanistic, anti-authoritarian Marxism against Stalinist orthodoxy.",
+    "dialecticalTension": "Preserves emancipatory spontaneity against bureaucratic domination.",
+    "historicalContext": "German Revolution of 1918–1919 and Frankfurt School critical theory.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Peter Hudis",
+        "work": "Rosa Luxemburg",
+        "url": "https://plato.stanford.edu/entries/luxemburg/"
+      }
+    ]
+  },
+  {
+    "id": "rosa-luxemburg--historical-materialism",
+    "source": "rosa-luxemburg",
+    "target": "historical-materialism",
+    "type": "DEVELOPED",
+    "label": "Expanded historical materialism with a theory of global primitive accumulation",
+    "strength": 4,
+    "description": "Luxemburg argued that Marx's primitive accumulation is not merely a pre-capitalist stage, but a continuous violent appropriation of non-capitalist peripheries required to realize surplus value.",
+    "dialecticalTension": "Globalizes historical materialism to account for colonialism and imperialism.",
+    "historicalContext": "Articulated in The Accumulation of Capital (1913).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Rosa Luxemburg",
+        "work": "The Accumulation of Capital",
+        "year": 1913,
+        "url": "https://en.wikipedia.org/wiki/The_Accumulation_of_Capital"
+      }
+    ]
+  }
+]

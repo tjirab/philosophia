@@ -1,0 +1,112 @@
+[
+  {
+    "id": "edmund-husserl--edith-stein",
+    "source": "edmund-husserl",
+    "target": "edith-stein",
+    "type": "DEVELOPED",
+    "label": "Mentored Stein's foundational phenomenological analysis of empathy and intersubjectivity",
+    "strength": 5,
+    "description": "As Edmund Husserl's doctoral student and first assistant at Freiburg, Edith Stein investigated the problem of empathy (Einfühlung) left unresolved in Husserl's Ideas I, laying key groundwork for intersubjective phenomenology.",
+    "dialecticalTension": "Overcomes solipsistic tendencies in transcendental phenomenology through direct experiential empathy.",
+    "historicalContext": "Freiburg phenomenological circle (1913–1918), published as On the Problem of Empathy (1917).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Edith Stein",
+        "work": "On the Problem of Empathy",
+        "year": 1917,
+        "url": "https://plato.stanford.edu/entries/stein/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Thomas Szanto and Dermot Moran",
+        "work": "Edith Stein",
+        "url": "https://plato.stanford.edu/entries/stein/"
+      }
+    ]
+  },
+  {
+    "id": "thomas-aquinas--edith-stein",
+    "source": "thomas-aquinas",
+    "target": "edith-stein",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Thomistic ontology of essence and existence with Husserlian phenomenology",
+    "strength": 5,
+    "description": "In Finite and Eternal Being (1950), Stein brought Thomas Aquinas's act-potency metaphysics into dialogue with phenomenology to examine personal individuality and communal being.",
+    "dialecticalTension": "Bridges medieval realist metaphysics and 20th-century transcendental phenomenology.",
+    "historicalContext": "Composed in the 1930s after Stein's translation of Aquinas's Quaestiones Disputatae de Veritate.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Thomas Szanto and Dermot Moran",
+        "work": "Edith Stein",
+        "url": "https://plato.stanford.edu/entries/stein/"
+      }
+    ]
+  },
+  {
+    "id": "edith-stein--intersubjective-empathy",
+    "source": "edith-stein",
+    "target": "intersubjective-empathy",
+    "type": "DEVELOPED",
+    "label": "Defined empathy as non-inferential apprehension of another subject's experience",
+    "strength": 5,
+    "description": "Stein distinguished genuine empathy from emotional contagion and analogical inference, analyzing it as a three-step phenomenological presentation of another's lived feeling.",
+    "dialecticalTension": "Refutes simulationist and inference-by-analogy theories of other minds.",
+    "historicalContext": "Inaugurated in On the Problem of Empathy (1917).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Edith Stein",
+        "work": "On the Problem of Empathy",
+        "year": 1917,
+        "sectionOrPage": "Part II",
+        "url": "https://plato.stanford.edu/entries/stein/"
+      }
+    ]
+  },
+  {
+    "id": "edith-stein--martin-heidegger",
+    "source": "edith-stein",
+    "target": "martin-heidegger",
+    "type": "CRITIQUED",
+    "label": "Critiqued Heideggerian Being-toward-death for neglecting communal relationality",
+    "strength": 4,
+    "description": "In an appendix to Finite and Eternal Being, Stein offered one of the earliest systematic phenomenological critiques of Heidegger's Being and Time, arguing that Dasein's existential isolation ignores communal and empathetic being-with.",
+    "dialecticalTension": "Pits solitary existential finitude against empathetic, communal personhood.",
+    "historicalContext": "Composed in 1936 as an explicit philosophical engagement with Heidegger's Sein und Zeit.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Thomas Szanto and Dermot Moran",
+        "work": "Edith Stein",
+        "url": "https://plato.stanford.edu/entries/stein/"
+      }
+    ]
+  },
+  {
+    "id": "edith-stein--emmanuel-levinas",
+    "source": "edith-stein",
+    "target": "emmanuel-levinas",
+    "type": "INFLUENCED",
+    "label": "Prefigured phenomenological ethics of irreducible alterity of the Other",
+    "strength": 4,
+    "description": "Stein's insistence that empathy preserves the non-identity of the foreign 'I' rather than absorbing the Other into the self anticipated Levinas's ethical phenomenology of alterity.",
+    "dialecticalTension": "Links Freiburg intersubjective phenomenology to post-war ethics of the Other.",
+    "historicalContext": "Phenomenological trajectory from Husserl and Stein (1917) to Levinas (1961).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Antonio Calcagno",
+        "work": "The Philosophy of Edith Stein",
+        "year": 2007,
+        "sectionOrPage": "Ch. 3"
+      }
+    ]
+  }
+]

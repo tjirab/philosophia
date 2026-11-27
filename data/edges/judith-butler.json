@@ -1,0 +1,130 @@
+[
+  {
+    "id": "simone-de-beauvoir--judith-butler",
+    "source": "simone-de-beauvoir",
+    "target": "judith-butler",
+    "type": "DEVELOPED",
+    "label": "Radicalized Beauvoir's 'becomes a woman' into performative gender theory",
+    "strength": 5,
+    "description": "Judith Butler took Beauvoir's thesis that 'one is not born, but rather becomes, a woman' as the point of departure for Gender Trouble, stripping away residual Cartesian voluntarism to argue that both sex and gender are discursively produced.",
+    "dialecticalTension": "Moves from existentialist project of becoming to Foucauldian-Derridean iterative performativity.",
+    "historicalContext": "Opening argument of Gender Trouble (1990) and 'Sex and Gender in Simone de Beauvoir's Second Sex' (1986).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Judith Butler",
+        "work": "Gender Trouble",
+        "year": 1990,
+        "sectionOrPage": "Ch. 1 ('Subjects of Sex/Gender/Desire')",
+        "url": "https://plato.stanford.edu/entries/feminism-gender/"
+      }
+    ]
+  },
+  {
+    "id": "michel-foucault--judith-butler",
+    "source": "michel-foucault",
+    "target": "judith-butler",
+    "type": "DEVELOPED",
+    "label": "Adapted Foucauldian productive power to explain regulatory sex/gender norms",
+    "strength": 5,
+    "description": "Drawing on Foucault's History of Sexuality, Butler argued that juridical power does not merely repress a pre-existing sexed subject, but productively materializes the very subject it claims to represent.",
+    "dialecticalTension": "Explains how subversion remains possible from within productive disciplinary norms.",
+    "historicalContext": "Core post-structuralist architecture of Gender Trouble (1990) and Bodies That Matter (1993).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Judith Butler",
+        "work": "Gender Trouble",
+        "year": 1990,
+        "sectionOrPage": "Ch. 1 & Ch. 3",
+        "url": "https://en.wikipedia.org/wiki/Gender_Trouble"
+      }
+    ]
+  },
+  {
+    "id": "jacques-derrida--judith-butler",
+    "source": "jacques-derrida",
+    "target": "judith-butler",
+    "type": "INFLUENCED",
+    "label": "Supplied iterability and citationality for performative norm subversion",
+    "strength": 4,
+    "description": "Butler adapted Derrida's reading of Austin's speech acts ('Signature Event Context') to argue that gender operates via citational repetition, whose inherent iterability opens space for parodic misfire and resignification.",
+    "dialecticalTension": "Turns linguistic iterability into a theory of embodied political and sexual agency.",
+    "historicalContext": "Elaborated in Bodies That Matter (1993) and Excitable Speech (1997).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Judith Butler",
+        "work": "Bodies That Matter",
+        "year": 1993,
+        "sectionOrPage": "Introduction & Ch. 1"
+      }
+    ]
+  },
+  {
+    "id": "gwf-hegel--judith-butler",
+    "source": "gwf-hegel",
+    "target": "judith-butler",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Hegelian recognition and desire with post-structuralist ethics",
+    "strength": 4,
+    "description": "Starting from her dissertation Subjects of Desire (1987) through Giving an Account of Oneself (2005), Butler reworked Hegel's master-slave dialectic of recognition to theorize mutual vulnerability and ethical responsibility.",
+    "dialecticalTension": "Reconciles Hegelian relational recognition with Foucauldian opacity of the subject.",
+    "historicalContext": "Spans Butler's early Hegelian scholarship and later ethical turn.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Judith Butler",
+        "work": "Subjects of Desire: Hegelian Reflections in Twentieth-Century France",
+        "year": 1987,
+        "url": "https://en.wikipedia.org/wiki/Judith_Butler"
+      }
+    ]
+  },
+  {
+    "id": "judith-butler--gender-performativity",
+    "source": "judith-butler",
+    "target": "gender-performativity",
+    "type": "DEVELOPED",
+    "label": "Formulated the philosophical theory of gender performativity",
+    "strength": 5,
+    "description": "Butler coined and systematized gender performativity as the compulsory repetition of gendered norms that produces the illusion of an abiding internal gender core.",
+    "dialecticalTension": "Dissolves biological-determinist and expressive models of identity.",
+    "historicalContext": "Introduced in Gender Trouble (1990).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Judith Butler",
+        "work": "Gender Trouble",
+        "year": 1990,
+        "url": "https://plato.stanford.edu/entries/feminism-gender/"
+      }
+    ]
+  },
+  {
+    "id": "judith-butler--alenka-zupancic",
+    "source": "judith-butler",
+    "target": "alenka-zupancic",
+    "type": "CRITIQUED",
+    "label": "Provoked Ljubljana School psychoanalytic critique of pure discursive performativity",
+    "strength": 4,
+    "description": "Alenka Zupančič engaged Butler's performative constructivism in What Is Sex? (2017), arguing from Lacanian psychoanalysis that sexual difference is not merely a discursive norm, but an ontological Real/impasse within signification itself.",
+    "dialecticalTension": "Pits post-structuralist discursive performativity against Lacanian ontology of the non-discursive Real.",
+    "historicalContext": "Contemporary debate between American queer theory and Ljubljana School psychoanalysis.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Alenka Zupančič",
+        "work": "What Is Sex?",
+        "year": 2017,
+        "sectionOrPage": "Ch. 2"
+      }
+    ]
+  }
+]

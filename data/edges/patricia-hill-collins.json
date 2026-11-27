@@ -1,0 +1,86 @@
+[
+  {
+    "id": "w-e-b-du-bois--patricia-hill-collins",
+    "source": "w-e-b-du-bois",
+    "target": "patricia-hill-collins",
+    "type": "DEVELOPED",
+    "label": "Extended Du Boisian double consciousness into intersectional Black feminist epistemology",
+    "strength": 5,
+    "description": "Patricia Hill Collins built upon Du Bois's analysis of the 'veil' and double consciousness to conceptualize Black women's 'outsider within' standpoint and intersectional sociology.",
+    "dialecticalTension": "Transforms Du Bois's racialized double consciousness into a multi-axis analysis of race, gender, and class.",
+    "historicalContext": "Articulated in 'Learning from the Outsider Within' (1986) and Black Feminist Thought (1990).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Patricia Hill Collins",
+        "work": "Black Feminist Thought",
+        "year": 1990,
+        "sectionOrPage": "Ch. 1 & Ch. 11",
+        "url": "https://plato.stanford.edu/entries/feminism-race/"
+      }
+    ]
+  },
+  {
+    "id": "gloria-anzaldua--patricia-hill-collins",
+    "source": "gloria-anzaldua",
+    "target": "patricia-hill-collins",
+    "type": "INFLUENCED",
+    "label": "Reinforced multiracial feminist coalition and borderland standpoint theory",
+    "strength": 4,
+    "description": "Anzaldúa's Borderlands/La Frontera and This Bridge Called My Back helped shape Collins's dialogical framework of interlocking oppressions and coalitional politics.",
+    "dialecticalTension": "Unites Chicana borderlands theory with Black feminist sociology.",
+    "historicalContext": "Late 20th-century U.S. women-of-color feminist philosophy (1980s–1990s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Patricia Hill Collins",
+        "work": "Black Feminist Thought",
+        "year": 1990,
+        "sectionOrPage": "Ch. 10–11"
+      }
+    ]
+  },
+  {
+    "id": "patricia-hill-collins--matrix-of-domination",
+    "source": "patricia-hill-collins",
+    "target": "matrix-of-domination",
+    "type": "DEVELOPED",
+    "label": "Formulated the matrix of domination and Black feminist epistemology",
+    "strength": 5,
+    "description": "Collins introduced the 'matrix of domination' to model how intersecting oppressions are organized across structural, disciplinary, hegemonic, and interpersonal domains of power.",
+    "dialecticalTension": "Replaces additive models of oppression with an integrated multi-domain social ontology.",
+    "historicalContext": "Introduced in Black Feminist Thought (1990, rev. 2000).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Patricia Hill Collins",
+        "work": "Black Feminist Thought",
+        "year": 1990,
+        "url": "https://en.wikipedia.org/wiki/Black_Feminist_Thought"
+      }
+    ]
+  },
+  {
+    "id": "patricia-hill-collins--judith-butler",
+    "source": "patricia-hill-collins",
+    "target": "judith-butler",
+    "type": "INFLUENCED",
+    "label": "Challenged unitary gender categories via intersectional power analysis",
+    "strength": 4,
+    "description": "Black feminist intersectionality articulated by Collins and contemporaries pushed post-structuralist gender theory—including Judith Butler's later work—to account for how race and social vulnerability co-constitute gender.",
+    "dialecticalTension": "Forces post-structuralist performativity theory to grapple with material racialized domination.",
+    "historicalContext": "Dialogue between intersectional critical sociology and queer/feminist post-structuralism (1990s–2000s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Mari Mikkola",
+        "work": "Feminist Perspectives on Sex and Gender",
+        "url": "https://plato.stanford.edu/entries/feminism-gender/"
+      }
+    ]
+  }
+]

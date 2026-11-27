@@ -1,0 +1,85 @@
+[
+  {
+    "id": "augustine--hildegard-of-bingen",
+    "source": "augustine",
+    "target": "hildegard-of-bingen",
+    "type": "INFLUENCED",
+    "label": "Shaped Christian Neoplatonic cosmology and rational anthropology",
+    "strength": 4,
+    "description": "Hildegard drew on Augustinian illumination and Trinitarian psychology while elevating material nature and bodily vitality as active reflections of divine wisdom.",
+    "dialecticalTension": "Counters dualistic contempt for physical matter with sacramental affirmation of ecological vitality.",
+    "historicalContext": "12th-century monastic renaissance in the Rhineland.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Barbara Newman",
+        "work": "Sister of Wisdom: St. Hildegard's Theology of the Feminine",
+        "year": 1987,
+        "sectionOrPage": "Ch. 2–3"
+      }
+    ]
+  },
+  {
+    "id": "boethius--hildegard-of-bingen",
+    "source": "boethius",
+    "target": "hildegard-of-bingen",
+    "type": "INFLUENCED",
+    "label": "Transmitted cosmic harmony and the personification of Wisdom (Sapientia)",
+    "strength": 4,
+    "description": "Boethius's Consolation of Philosophy and cosmic music theory resonated deeply in Hildegard's Liber Divinorum Operum and Symphonia, uniting cosmic order, sound, and soul.",
+    "dialecticalTension": "Connects late-antique cosmic harmony with medieval natural philosophy and medicine.",
+    "historicalContext": "Medieval monastic curriculum centered on Boethian treatises.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "John Marenbon",
+        "work": "Medieval Philosophy / Boethius",
+        "url": "https://plato.stanford.edu/entries/medieval-philosophy/"
+      }
+    ]
+  },
+  {
+    "id": "hildegard-of-bingen--viriditas-cosmology",
+    "source": "hildegard-of-bingen",
+    "target": "viriditas-cosmology",
+    "type": "DEVELOPED",
+    "label": "Formulated the metaphysical concept of viriditas (cosmic greening vitality)",
+    "strength": 5,
+    "description": "Hildegard conceived viriditas as the verdant, self-renewing power connecting botanical life, human bodily health, and moral-spiritual flourishing.",
+    "dialecticalTension": "Bridges medieval metaphysics, ecology, and holistic natural philosophy.",
+    "historicalContext": "Developed in Scivias (1151), Physica, and Liber Divinorum Operum (1174).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Hildegard of Bingen",
+        "work": "Liber Divinorum Operum",
+        "year": 1174,
+        "url": "https://en.wikipedia.org/wiki/Hildegard_of_Bingen"
+      }
+    ]
+  },
+  {
+    "id": "hildegard-of-bingen--anne-conway",
+    "source": "hildegard-of-bingen",
+    "target": "anne-conway",
+    "type": "INFLUENCED",
+    "label": "Prefigured vitalist monism of living, interconnected created nature",
+    "strength": 3,
+    "description": "Hildegard's rejection of inert matter in favor of pervasive living vitality (viriditas) prefigured early modern vitalist philosophies such as Anne Conway's vitalist monadism.",
+    "dialecticalTension": "Traces a cross-century lineage of vitalist non-mechanistic natural philosophy.",
+    "historicalContext": "Historical continuity from 12th-century natural philosophy to 17th-century vitalism.",
+    "academicConsensus": "revisionist",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Constant J. Mews",
+        "work": "Hildegard of Bingen and Gendered Theology in the Twelfth Century",
+        "year": 2001,
+        "sectionOrPage": "Ch. 4"
+      }
+    ]
+  }
+]

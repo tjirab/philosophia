@@ -1342,4 +1342,60 @@ describe('Philosophy Graph Data Integrity', () => {
       expect(String(work.year)).not.toContain('1906');
     }
   });
+
+  it('verifies Phase 4 canon expansion lineages, living-thinker life dates, and sociology/era balance', () => {
+    // 1. Sociology: Comte -> Harriet Martineau -> Jane Addams -> G.H. Mead & Du Bois -> Collins -> Butler
+    expect(findInfluencePath('auguste-comte', 'harriet-martineau', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('harriet-martineau', 'jane-addams', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('jane-addams', 'george-h-mead', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('w-e-b-du-bois', 'patricia-hill-collins', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('dorothy-smith', 'patricia-hill-collins', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('simone-de-beauvoir', 'judith-butler', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('judith-butler', 'gender-performativity', edgesData as any).found).toBe(true);
+
+    // 2. 19th Century: Wollstonecraft -> Harriet Taylor Mill -> J.S. Mill; Marx -> Rosa Luxemburg -> Arendt
+    expect(findInfluencePath('mary-wollstonecraft', 'harriet-taylor-mill', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('harriet-taylor-mill', 'john-stuart-mill', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('karl-marx', 'rosa-luxemburg', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('rosa-luxemburg', 'hannah-arendt', edgesData as any).found).toBe(true);
+
+    // 3. Eastern & Medieval: Confucius -> Ban Zhao; Boethius -> Hildegard -> Conway; Aristotle -> Christine de Pizan -> Wollstonecraft
+    expect(findInfluencePath('confucius', 'ban-zhao', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('boethius', 'hildegard-of-bingen', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('hildegard-of-bingen', 'anne-conway', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('aristotle', 'christine-de-pizan', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('christine-de-pizan', 'mary-wollstonecraft', edgesData as any).found).toBe(true);
+
+    // 4. 20th c. Psychology & Philosophy: Freud -> Horney -> Rogers; Husserl -> Stein -> Levinas; Plato -> Murdoch -> Nussbaum
+    expect(findInfluencePath('sigmund-freud', 'karen-horney', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('karen-horney', 'carl-rogers', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('edmund-husserl', 'edith-stein', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('edith-stein', 'emmanuel-levinas', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('plato', 'iris-murdoch', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('iris-murdoch', 'martha-nussbaum', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('martha-nussbaum', 'capabilities-approach', edgesData as any).found).toBe(true);
+
+    // 5. Living thinkers must omit deathYear
+    for (const livingId of ['patricia-hill-collins', 'judith-butler', 'martha-nussbaum']) {
+      const thinker = philosophersData.find((p) => p.id === livingId) as any;
+      expect(thinker).toBeDefined();
+      expect(thinker.deathYear).toBeUndefined();
+    }
+
+    // 6. Sociology multi-domain coverage includes Beauvoir, Arendt, and newly added sociologists
+    const socGraph = getVisualGraph({ domainId: 'sociology', includeConcepts: false });
+    const socIds = new Set(socGraph.nodes.map((n) => n.id));
+    for (const id of [
+      'harriet-martineau',
+      'jane-addams',
+      'dorothy-smith',
+      'patricia-hill-collins',
+      'judith-butler',
+      'rosa-luxemburg',
+      'hannah-arendt',
+      'simone-de-beauvoir',
+    ]) {
+      expect(socIds.has(id)).toBe(true);
+    }
+  });
 });

@@ -1,0 +1,45 @@
+{
+  "id": "judith-butler",
+  "name": "Judith Butler",
+  "birthYear": 1956,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "American philosopher and gender theorist whose theory of gender performativity transformed feminist philosophy, queer theory, social ontology, and theories of precariousness and political assembly.",
+  "centralQuestion": "How do reiterated social norms and discursive practices materialize sexed and gendered subjects rather than merely expressing a pre-given inner essence?",
+  "keyWorks": [
+    {
+      "title": "Gender Trouble: Feminism and the Subversion of Identity",
+      "year": "1990 CE",
+      "url": "https://en.wikipedia.org/wiki/Gender_Trouble",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Gender_Trouble",
+      "description": "Landmark text introducing gender performativity—arguing that gender is an effect of stylized repetition of acts regulated by normative power."
+    },
+    {
+      "title": "Bodies That Matter: On the Discursive Limits of 'Sex'",
+      "year": "1993 CE",
+      "url": "https://en.wikipedia.org/wiki/Bodies_That_Matter",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bodies_That_Matter",
+      "description": "Clarifies materialization and citationality in response to constructivist critiques, bridging Foucault, Derrida, and psychoanalysis."
+    },
+    {
+      "title": "Precarious Life: The Powers of Mourning and Violence",
+      "year": "2004 CE",
+      "url": "https://en.wikipedia.org/wiki/Precarious_Life",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Precarious_Life",
+      "description": "Develops a social ethics of grievability and shared bodily vulnerability rooted in Levinasian responsibility."
+    }
+  ],
+  "sepSlug": "feminism-gender",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-gender/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Judith_Butler"
+  },
+  "canonTier": "pillar",
+  "importanceScore": 94,
+  "imageUrl": "/portraits/judith-butler.jpg"
+}

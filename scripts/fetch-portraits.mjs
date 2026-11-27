@@ -191,6 +191,21 @@ const WIKI_TITLES = {
   'anthony-giddens': 'Anthony_Giddens',
   'zygmunt-bauman': 'Zygmunt_Bauman',
   'ulrich-beck': 'Ulrich_Beck',
+  // Phase 4 canon expansion
+  'harriet-martineau': 'Harriet_Martineau',
+  'jane-addams': 'Jane_Addams',
+  'dorothy-smith': 'Dorothy_E._Smith',
+  'patricia-hill-collins': 'Patricia_Hill_Collins',
+  'judith-butler': 'Judith_Butler',
+  'harriet-taylor-mill': 'Harriet_Taylor_Mill',
+  'rosa-luxemburg': 'Rosa_Luxemburg',
+  'ban-zhao': 'Ban_Zhao',
+  'hildegard-of-bingen': 'Hildegard_of_Bingen',
+  'christine-de-pizan': 'Christine_de_Pizan',
+  'karen-horney': 'Karen_Horney',
+  'edith-stein': 'Edith_Stein',
+  'iris-murdoch': 'Iris_Murdoch',
+  'martha-nussbaum': 'Martha_Nussbaum',
 };
 
 const CUSTOM_IMAGE_URLS = {

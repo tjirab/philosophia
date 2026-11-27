@@ -1,0 +1,107 @@
+[
+  {
+    "id": "aristotle--martha-nussbaum",
+    "source": "aristotle",
+    "target": "martha-nussbaum",
+    "type": "DEVELOPED",
+    "label": "Grounded the Capabilities Approach in Aristotelian human functioning and flourishing",
+    "strength": 5,
+    "description": "Martha Nussbaum developed her Neo-Aristotelian Capabilities Approach by translating Aristotle's ergon (human functioning) and civic eudaimonia into universal constitutional entitlements across cultures.",
+    "dialecticalTension": "Transforms ancient polis-centered virtue politics into universalist cosmopolitan social justice.",
+    "historicalContext": "Formulated from The Fragility of Goodness (1986) through Women and Human Development (2000).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Martha Nussbaum",
+        "work": "Women and Human Development: The Capabilities Approach",
+        "year": 2000,
+        "sectionOrPage": "Ch. 1",
+        "url": "https://plato.stanford.edu/entries/capability-approach/"
+      }
+    ]
+  },
+  {
+    "id": "seneca--martha-nussbaum",
+    "source": "seneca",
+    "target": "martha-nussbaum",
+    "type": "SYNTHESIZED",
+    "label": "Reworked Stoic cognitive theory of emotions alongside tragic vulnerability",
+    "strength": 4,
+    "description": "In The Therapy of Desire (1994) and Upheavals of Thought (2001), Nussbaum adopted the Stoic insight that emotions are evaluative value judgments while rejecting Stoic detachment in favor of Aristotelian vulnerability.",
+    "dialecticalTension": "Synthesizes Stoic cognitive appraisal of emotions with Aristotelian openness to attachment and grief.",
+    "historicalContext": "Contemporary revival of Hellenistic moral psychology in analytic philosophy.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Martha Nussbaum",
+        "work": "Upheavals of Thought: The Intelligence of Emotions",
+        "year": 2001,
+        "sectionOrPage": "Ch. 1"
+      }
+    ]
+  },
+  {
+    "id": "philippa-foot--martha-nussbaum",
+    "source": "philippa-foot",
+    "target": "martha-nussbaum",
+    "type": "INFLUENCED",
+    "label": "Advanced neo-Aristotelian ethical naturalism into global political justice",
+    "strength": 4,
+    "description": "Building on Foot's Natural Goodness and neo-Aristotelian species-flourishing, Nussbaum extended human-capabilities naturalism into international development ethics and constitutional law.",
+    "dialecticalTension": "Bridges Oxford virtue naturalism with Rawlsian political liberalism.",
+    "historicalContext": "Late 20th- and early 21st-century neo-Aristotelian ethics.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Ingrid Robeyns and Morten Fibieger Byskov",
+        "work": "The Capability Approach",
+        "url": "https://plato.stanford.edu/entries/capability-approach/"
+      }
+    ]
+  },
+  {
+    "id": "john-rawls--martha-nussbaum",
+    "source": "john-rawls",
+    "target": "martha-nussbaum",
+    "type": "CRITIQUED",
+    "label": "Critiqued Rawlsian contractarianism for excluding disability, global justice, and animals",
+    "strength": 5,
+    "description": "While deeply indebted to Rawls's political liberalism, Nussbaum argued in Frontiers of Justice (2006) that social contract models built on mutual advantage among roughly equal adults fail to secure justice for disabled people, poor nations, and non-human animals.",
+    "dialecticalTension": "Replaces procedural contractarian reciprocity with substantive threshold capabilities.",
+    "historicalContext": "Major post-Rawlsian debate in contemporary political philosophy (2006).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Martha Nussbaum",
+        "work": "Frontiers of Justice: Disability, Nationality, Species Membership",
+        "year": 2006,
+        "sectionOrPage": "Ch. 1–2",
+        "url": "https://plato.stanford.edu/entries/capability-approach/"
+      }
+    ]
+  },
+  {
+    "id": "martha-nussbaum--capabilities-approach",
+    "source": "martha-nussbaum",
+    "target": "capabilities-approach",
+    "type": "DEVELOPED",
+    "label": "Systematized the ten central human capabilities as constitutional justice thresholds",
+    "strength": 5,
+    "description": "Nussbaum articulated ten central capabilities—from bodily integrity and practical reason to affiliation and political control—as non-negotiable minimum entitlements for human dignity.",
+    "dialecticalTension": "Operationalizes flourishing as measurable substantive freedoms rather than utilitarian preference satisfaction.",
+    "historicalContext": "Developed in Women and Human Development (2000) and Creating Capabilities (2011).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Ingrid Robeyns and Morten Fibieger Byskov",
+        "work": "The Capability Approach",
+        "url": "https://plato.stanford.edu/entries/capability-approach/"
+      }
+    ]
+  }
+]

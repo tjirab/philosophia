@@ -1,0 +1,38 @@
+{
+  "id": "christine-de-pizan",
+  "name": "Christine de Pizan",
+  "birthYear": 1364,
+  "deathYear": 1430,
+  "eraId": "medieval",
+  "traditionId": "scholasticism",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Late medieval Venetian-French philosopher and political writer who inaugurated Europe's Querelle des Femmes in The Book of the City of Ladies, refuting scholastic misogyny through rational equality and civic virtue.",
+  "centralQuestion": "If moral capacity and intellect are not determined by bodily sex, why do authoritative literary and philosophical canons construct women as inferior by nature?",
+  "keyWorks": [
+    {
+      "title": "The Book of the City of Ladies",
+      "year": "1405 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Book_of_the_City_of_Ladies",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Book_of_the_City_of_Ladies",
+      "description": "Allegorical philosophical defense of women's rational, civic, and moral equality guided by Lady Reason, Lady Rectitude, and Lady Justice."
+    },
+    {
+      "title": "The Book of the Body Politic",
+      "year": "1407 CE",
+      "url": "https://en.wikipedia.org/wiki/Christine_de_Pizan",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Christine_de_Pizan",
+      "description": "Political treatise outlining mutual civic obligations across rulers, nobles, and commoners."
+    }
+  ],
+  "sepSlug": "feminist-philosophy",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminist-philosophy/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Christine_de_Pizan"
+  },
+  "canonTier": "bridge",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/christine-de-pizan.jpg"
+}

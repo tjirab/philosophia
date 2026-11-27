@@ -5,6 +5,11 @@
   "deathYear": 1986,
   "eraId": "twentieth-century",
   "traditionId": "existentialism",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
   "shortBio": "Existentialist and pioneering feminist philosopher; formulated that 'one is not born, but rather becomes, a woman'.",
   "centralQuestion": "How do social situations construct otherness and constrain human freedom?",
   "keyWorks": [

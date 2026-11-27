@@ -1,0 +1,73 @@
+[
+  {
+    "id": "confucius--ban-zhao",
+    "source": "confucius",
+    "target": "ban-zhao",
+    "type": "DEVELOPED",
+    "label": "Extended Confucian moral self-cultivation to women's classical education",
+    "strength": 5,
+    "description": "Writing in the Eastern Han dynasty, Ban Zhao drew upon Confucian ethics of harmony, ritual propriety (li), and self-cultivation to argue explicitly that daughters must be educated alongside sons.",
+    "dialecticalTension": "Applies universal Confucian learning within patriarchal Han household norms to secure female literacy.",
+    "historicalContext": "Composed in Lessons for Women (Nüjie, c. 106 CE) at the imperial Han court.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ban Zhao",
+        "work": "Lessons for Women (Nüjie)",
+        "sectionOrPage": "Ch. 2 (Husband and Wife)",
+        "year": 106,
+        "url": "https://en.wikipedia.org/wiki/Lessons_for_Women"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Nancy Lee Swann",
+        "work": "Pan Chao: Foremost Woman Scholar of China",
+        "year": 1932,
+        "sectionOrPage": "Ch. 6"
+      }
+    ]
+  },
+  {
+    "id": "mencius--ban-zhao",
+    "source": "mencius",
+    "target": "ban-zhao",
+    "type": "INFLUENCED",
+    "label": "Informed Confucian virtue psychology and moral education",
+    "strength": 4,
+    "description": "Ban Zhao shared Mencius's conviction that moral virtue requires deliberate scholarly cultivation and ritual reflection across human relationships.",
+    "dialecticalTension": "Extends Mencian moral pedagogy to female scholars and household educators.",
+    "historicalContext": "Han-dynasty transmission of Mencian Confucianism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Robin R. Wang",
+        "work": "Images of Women in Chinese Thought and Culture",
+        "year": 2003,
+        "sectionOrPage": "pp. 177–188"
+      }
+    ]
+  },
+  {
+    "id": "ban-zhao--ren-and-li",
+    "source": "ban-zhao",
+    "target": "ren-and-li",
+    "type": "DEVELOPED",
+    "label": "Applied Ren and Li to reciprocal spousal respect and female education",
+    "strength": 4,
+    "description": "In Nüjie, Ban Zhao argued that harmony (he) and ritual propriety (li) break down if women are denied the classical texts required to cultivate moral judgment.",
+    "dialecticalTension": "Reveals an internal tension within Confucian ritualism between hierarchy and universal moral education.",
+    "historicalContext": "Han Confucian ethical literature (106 CE).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ban Zhao",
+        "work": "Lessons for Women (Nüjie)",
+        "year": 106,
+        "url": "https://en.wikipedia.org/wiki/Ban_Zhao"
+      }
+    ]
+  }
+]
