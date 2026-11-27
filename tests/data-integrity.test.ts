@@ -1067,6 +1067,66 @@ describe('Philosophy Graph Data Integrity', () => {
 
     const kimmererToNguyen = findInfluencePath('robin-wall-kimmerer', 'c-thi-nguyen', edgesData as any);
     expect(kimmererToNguyen.found).toBe(true);
+
+    // Slavoj Žižek & Ljubljana School lineages
+    const hegelToZizek = findInfluencePath('gwf-hegel', 'slavoj-zizek', edgesData as any);
+    expect(hegelToZizek.found).toBe(true);
+
+    const lacanToZizek = findInfluencePath('jacques-lacan', 'slavoj-zizek', edgesData as any);
+    expect(lacanToZizek.found).toBe(true);
+
+    const marxToZizek = findInfluencePath('karl-marx', 'slavoj-zizek', edgesData as any);
+    expect(marxToZizek.found).toBe(true);
+
+    const schellingToZizek = findInfluencePath('friedrich-schelling', 'slavoj-zizek', edgesData as any);
+    expect(schellingToZizek.found).toBe(true);
+
+    const kantToZizek = findInfluencePath('immanuel-kant', 'slavoj-zizek', edgesData as any);
+    expect(kantToZizek.found).toBe(true);
+
+    const freudToZizek = findInfluencePath('sigmund-freud', 'slavoj-zizek', edgesData as any);
+    expect(freudToZizek.found).toBe(true);
+
+    const adornoToZizek = findInfluencePath('theodor-adorno', 'slavoj-zizek', edgesData as any);
+    expect(adornoToZizek.found).toBe(true);
+
+    const derridaToZizek = findInfluencePath('jacques-derrida', 'slavoj-zizek', edgesData as any);
+    expect(derridaToZizek.found).toBe(true);
+
+    const deleuzeToZizek = findInfluencePath('gilles-deleuze', 'slavoj-zizek', edgesData as any);
+    expect(deleuzeToZizek.found).toBe(true);
+
+    const zizekToSublime = findInfluencePath('slavoj-zizek', 'sublime-object-of-ideology', edgesData as any);
+    expect(zizekToSublime.found).toBe(true);
+
+    const zizekToZupancic = findInfluencePath('slavoj-zizek', 'alenka-zupancic', edgesData as any);
+    expect(zizekToZupancic.found).toBe(true);
+
+    const zizekToHan = findInfluencePath('slavoj-zizek', 'byung-chul-han', edgesData as any);
+    expect(zizekToHan.found).toBe(true);
+
+    // Verify chronological directionality for Slavoj Žižek relations
+    const zizekDetails = getNodeDetails('slavoj-zizek');
+    const zizekPredecessorIds = zizekDetails.predecessors.map((p) => p.node.id);
+    const zizekSuccessorIds = zizekDetails.successors.map((s) => s.node.id);
+
+    expect(zizekPredecessorIds).toContain('gwf-hegel');
+    expect(zizekPredecessorIds).toContain('jacques-lacan');
+    expect(zizekPredecessorIds).toContain('karl-marx');
+    expect(zizekPredecessorIds).toContain('friedrich-schelling');
+    expect(zizekPredecessorIds).toContain('immanuel-kant');
+    expect(zizekPredecessorIds).toContain('sigmund-freud');
+    expect(zizekPredecessorIds).toContain('theodor-adorno');
+    expect(zizekPredecessorIds).toContain('jacques-derrida');
+    expect(zizekPredecessorIds).toContain('gilles-deleuze');
+
+    expect(zizekSuccessorIds).toContain('sublime-object-of-ideology');
+    expect(zizekSuccessorIds).toContain('alenka-zupancic');
+    expect(zizekSuccessorIds).toContain('byung-chul-han');
+    expect(zizekSuccessorIds).not.toContain('gwf-hegel');
+    expect(zizekSuccessorIds).not.toContain('jacques-lacan');
+    expect(zizekSuccessorIds).not.toContain('karl-marx');
+    expect(zizekSuccessorIds).not.toContain('immanuel-kant');
   });
 
   it('verifies visual graph generation and node details retrieval', () => {
@@ -1147,7 +1207,7 @@ describe('Philosophy Graph Data Integrity', () => {
   });
 
   it('validates that living philosophers do not have a deathYear set', () => {
-    const livingIds = ['byung-chul-han', 'alenka-zupancic', 'nick-bostrom', 'jurgen-habermas'];
+    const livingIds = ['slavoj-zizek', 'byung-chul-han', 'alenka-zupancic', 'nick-bostrom', 'jurgen-habermas'];
     for (const id of livingIds) {
       const phil = philosophersData.find((p) => p.id === id);
       expect(phil, `Living philosopher ${id} should exist in dataset`).toBeDefined();
@@ -1162,6 +1222,7 @@ describe('Philosophy Graph Data Integrity', () => {
     const nodeIds = new Set(nodes.map((n) => n.id));
 
     expect(nodeIds.has('jurgen-habermas')).toBe(true);
+    expect(nodeIds.has('slavoj-zizek')).toBe(true);
     expect(nodeIds.has('byung-chul-han')).toBe(true);
     expect(nodeIds.has('alenka-zupancic')).toBe(true);
     expect(nodeIds.has('nick-bostrom')).toBe(true);

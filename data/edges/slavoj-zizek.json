@@ -1,0 +1,402 @@
+[
+  {
+    "id": "slavoj-zizek--sublime-object-of-ideology",
+    "source": "slavoj-zizek",
+    "target": "sublime-object-of-ideology",
+    "type": "DEVELOPED",
+    "label": "Formulated the Sublime Object of Ideology, redefining ideology as unconscious fantasy structuring social reality",
+    "strength": 5,
+    "description": "Slavoj Žižek formulated the concept of the Sublime Object of Ideology, inverting Marx's classic formula ('they do not know it, nevertheless they are doing it') via Sloterdijk and Lacan to show that ideology resides not in conscious knowledge, but in the unconscious fantasy structuring material social practice itself.",
+    "dialecticalTension": "Overcoming classical Enlightenment ideology critique (unmasking false consciousness) to explain why subjects persist in ideological practices even after cynical demystification.",
+    "historicalContext": "Introduced in Žižek's 1989 English debut The Sublime Object of Ideology during the final crisis of Yugoslav state socialism and the global triumph of neoliberalism.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "The Sublime Object of Ideology",
+        "sectionOrPage": "Chapter 1: How Did Marx Invent the Symptom?",
+        "year": "1989",
+        "quote": "The illusion is not on the side of knowledge, it is already on the side of reality itself, of what the people are doing.",
+        "url": "https://en.wikipedia.org/wiki/The_Sublime_Object_of_Ideology"
+      },
+      {
+        "citationType": "iep",
+        "author": "Matthew Sharpe",
+        "work": "Slavoj Žižek",
+        "sectionOrPage": "2. Critique of Ideology",
+        "url": "https://iep.utm.edu/zizek/"
+      }
+    ]
+  },
+  {
+    "id": "gwf-hegel--slavoj-zizek",
+    "source": "gwf-hegel",
+    "target": "slavoj-zizek",
+    "type": "SYNTHESIZED",
+    "label": "Rehabilitated Hegel via Lacanian psychoanalysis as the supreme philosopher of ontological incompleteness and negativity",
+    "strength": 5,
+    "description": "Žižek staged a major contemporary revival of G.W.F. Hegel, refuting textbook caricatures of Hegel as a closed panlogicist totalitarian and reading Hegelian Absolute Knowing through Lacan as the radical acceptance of constitutive antagonism and ontological non-All.",
+    "dialecticalTension": "Turning Hegel from an idealist synthesizer who swallows all contingency into a dialectical materialist thinker of irreconcilable rupture and 'tarrying with the negative'.",
+    "historicalContext": "Developed across four decades by the Ljubljana School, culminating in Tarrying with the Negative (1993) and Less Than Nothing (2012).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "Less Than Nothing: Hegel and the Shadow of Dialectical Materialism",
+        "sectionOrPage": "Introduction & Part II: The Thing Itself: Hegel",
+        "year": "2012",
+        "url": "https://en.wikipedia.org/wiki/Less_Than_Nothing"
+      },
+      {
+        "citationType": "iep",
+        "author": "Matthew Sharpe",
+        "work": "Slavoj Žižek",
+        "sectionOrPage": "3. German Idealism and the Subject",
+        "url": "https://iep.utm.edu/zizek/"
+      }
+    ]
+  },
+  {
+    "id": "jacques-lacan--slavoj-zizek",
+    "source": "jacques-lacan",
+    "target": "slavoj-zizek",
+    "type": "DEVELOPED",
+    "label": "Transformed Lacanian clinical concepts of the Real, jouissance, and objet petit a into a general ontology and critique of ideology",
+    "strength": 5,
+    "description": "Having trained in Paris under Jacques-Alain Miller, Žižek transposed Lacan's late teachings on the traumatic Real, surplus-enjoyment (plus-de-jouir), and master-signifiers (points de capiton) from the analytic clinic onto geopolitics, cinema, and German Idealism.",
+    "dialecticalTension": "Deploying Lacanian psychoanalysis not as psychological therapy for adapting the ego, but as a subversive philosophical weapon exposing the structural deadlocks of the Symbolic order.",
+    "historicalContext": "Initiated at Paris VIII in the early 1980s and institutionalized through the Society for Theoretical Psychoanalysis in Ljubljana.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "How to Read Lacan",
+        "year": "2006",
+        "url": "https://en.wikipedia.org/wiki/How_to_Read_Lacan"
+      },
+      {
+        "citationType": "sep",
+        "author": "Adrian Johnston",
+        "work": "Jacques Lacan",
+        "year": "2023",
+        "url": "https://plato.stanford.edu/entries/lacan/"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--slavoj-zizek",
+    "source": "karl-marx",
+    "target": "slavoj-zizek",
+    "type": "SYNTHESIZED",
+    "label": "Fused Marxian commodity fetishism and class antagonism with the Freudian-Lacanian symptom",
+    "strength": 5,
+    "description": "Following Lacan's claim that Marx invented the psychoanalytic symptom, Žižek synthesized Marx's analysis of commodity fetishism—where social relations appear as relations between things—with unconscious fantasy to critique global late capitalism.",
+    "dialecticalTension": "Rejecting deterministic orthodox historical materialism while insisting on the primacy of capitalist antagonism against depoliticized postmodern cultural politics.",
+    "historicalContext": "Articulated in The Sublime Object of Ideology (1989) and First as Tragedy, Then as Farce (2009) following the 2008 global financial crash.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "The Sublime Object of Ideology",
+        "sectionOrPage": "Chapter 1: How Did Marx Invent the Symptom?",
+        "year": "1989",
+        "url": "https://en.wikipedia.org/wiki/The_Sublime_Object_of_Ideology"
+      },
+      {
+        "citationType": "primary",
+        "author": "Karl Marx",
+        "work": "Capital: Critique of Political Economy, Vol. I",
+        "sectionOrPage": "Ch. 1, Sec. 4: The Fetishism of Commodities and the Secret Thereof",
+        "year": "1867"
+      }
+    ]
+  },
+  {
+    "id": "friedrich-schelling--slavoj-zizek",
+    "source": "friedrich-schelling",
+    "target": "slavoj-zizek",
+    "type": "DEVELOPED",
+    "label": "Retrieved Schelling's Weltalter myth of pre-ontological drives and the abyss of freedom to bridge German Idealism and psychoanalysis",
+    "strength": 4,
+    "description": "Žižek excavated F.W.J. Schelling's middle-period Ages of the World (Weltalter) drafts and Freedom Essay, reading Schelling's dark rotary motion of contraction and expansion in God prior to Logos as a speculative precursor to the Freudian-Lacanian drive.",
+    "dialecticalTension": "Accounting for how the Symbolic order of Logos emerges out of a traumatic, chaotic pre-ontological Real through a primordial act of decision/repression.",
+    "historicalContext": "Detailed in Žižek's 1996 monograph The Indivisible Remainder and his essay in The Abyss of Freedom / Ages of the World (1997).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "The Indivisible Remainder: An Essay on Schelling and Related Matters",
+        "sectionOrPage": "Chapter 1: Schelling-in-Itself",
+        "year": "1996",
+        "url": "https://en.wikipedia.org/wiki/Slavoj_%C5%BDi%C5%BEek_bibliography"
+      },
+      {
+        "citationType": "sep",
+        "author": "Andrew Bowie",
+        "work": "Friedrich Wilhelm Joseph von Schelling",
+        "url": "https://plato.stanford.edu/entries/schelling/"
+      }
+    ]
+  },
+  {
+    "id": "immanuel-kant--slavoj-zizek",
+    "source": "immanuel-kant",
+    "target": "slavoj-zizek",
+    "type": "DEVELOPED",
+    "label": "Ontologized Kantian transcendental antinomies, the sublime, and the nocturnal 'madness' of transcendental imagination",
+    "strength": 4,
+    "description": "Žižek reads Kant's Critique of Pure Reason and Critique of Judgment as discovering the crack of finitude and the sublime gap between phenomenal representation and the Thing-in-itself—then follows Hegel in shifting that epistemic limit into reality itself.",
+    "dialecticalTension": "Moving from Kant's epistemological modesty before an inaccessible Thing-in-itself to the Hegelian-Lacanian thesis that the antinomy is inscribed within Being itself.",
+    "historicalContext": "Examined across Tarrying with the Negative (1993), The Ticklish Subject (1999), and The Parallax View (2006).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "Tarrying with the Negative: Kant, Hegel, and the Critique of Ideology",
+        "sectionOrPage": "Part I: Cogito: The Void Called Subject",
+        "year": "1993",
+        "url": "https://en.wikipedia.org/wiki/Tarrying_with_the_Negative"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Adrian Johnston",
+        "work": "Žižek's Ontology: A Transcendental Materialist Theory of Subjectivity",
+        "year": "2008",
+        "sectionOrPage": "Part I: Kant's Unruly Offspring"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--slavoj-zizek",
+    "source": "sigmund-freud",
+    "target": "slavoj-zizek",
+    "type": "INFLUENCED",
+    "label": "Grounded ideology critique in Freudian dream-work form, unconscious disavowal, and the death drive",
+    "strength": 4,
+    "description": "Žižek builds directly on Sigmund Freud's discovery in The Interpretation of Dreams that the unconscious resides not in a hidden latent thought behind the dream, but in the formal 'dream-work' distortion itself, as well as the compulsive repetition of the death drive (Todestrieb).",
+    "dialecticalTension": "Rejecting biologistic readings of Freud's death drive to reinterpret it as the undead, repetitive excess of symbolic subjectivity beyond organic homeostasis.",
+    "historicalContext": "Central to Žižek's homology between Freudian dream-work and Marxian commodity-form in The Sublime Object of Ideology (1989).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Sigmund Freud",
+        "work": "The Interpretation of Dreams",
+        "sectionOrPage": "Ch. VI: The Dream-Work",
+        "year": "1900"
+      },
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "The Sublime Object of Ideology",
+        "sectionOrPage": "pp. 11–16",
+        "year": "1989"
+      }
+    ]
+  },
+  {
+    "id": "theodor-adorno--slavoj-zizek",
+    "source": "theodor-adorno",
+    "target": "slavoj-zizek",
+    "type": "CRITIQUED",
+    "label": "Extended Frankfurt School culture-industry analysis while critiquing Adorno's pessimistic recoil from Hegelian political acts",
+    "strength": 4,
+    "description": "While inheriting the Frankfurt School's synthesis of Marx and psychoanalysis to dissect mass culture, Žižek critiques Adorno and Horkheimer for misreading instrumental totalitarianism as an excess rather than a deficit of modern subjectivity and for retreating into elitist melancholia.",
+    "dialecticalTension": "Frankfurt School negative dialectics that resists closure versus Žižekian fidelity to the radical emancipatory political Act.",
+    "historicalContext": "Engaged across Mapping Ideology (1994), Did Somebody Say Totalitarianism? (2001), and Less Than Nothing (2012).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "Mapping Ideology",
+        "sectionOrPage": "Introduction: The Spectre of Ideology",
+        "year": "1994"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Fabio Vighi",
+        "work": "On Žižek's Dialectics: Surplus, Subtraction, Sublimation",
+        "year": "2010",
+        "sectionOrPage": "Ch. 2: Adorno and Žižek"
+      }
+    ]
+  },
+  {
+    "id": "jacques-derrida--slavoj-zizek",
+    "source": "jacques-derrida",
+    "target": "slavoj-zizek",
+    "type": "CRITIQUED",
+    "label": "Critiqued deconstruction and Derridean-Levinasian ethics of infinite alterity in defense of the Cartesian-Lacanian subject",
+    "strength": 4,
+    "description": "Against the post-structuralist consensus that deconstructed the modern subject as a metaphysical illusion, Žižek opened The Ticklish Subject (1999) with a provocative defense of the Cartesian cogito as the empty void ($) of negativity and critiqued Derrida's messianic deferral.",
+    "dialecticalTension": "Derridean différance and infinite ethical deference to the Other versus Lacanian-Hegelian punctuation via the Master-Signifier and decisive political rupture.",
+    "historicalContext": "Staged in For They Know Not What They Do (1991), The Ticklish Subject (1999), and The Puppet and the Dwarf (2003).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "The Ticklish Subject: The Absent Centre of Political Ontology",
+        "sectionOrPage": "Introduction: A Spectre Is Haunting Western Academia...",
+        "year": "1999",
+        "quote": "A spectre is haunting Western academia, the spectre of the Cartesian subject.",
+        "url": "https://en.wikipedia.org/wiki/The_Ticklish_Subject"
+      },
+      {
+        "citationType": "iep",
+        "author": "Matthew Sharpe",
+        "work": "Slavoj Žižek",
+        "sectionOrPage": "3. German Idealism and the Subject",
+        "url": "https://iep.utm.edu/zizek/"
+      }
+    ]
+  },
+  {
+    "id": "gilles-deleuze--slavoj-zizek",
+    "source": "gilles-deleuze",
+    "target": "slavoj-zizek",
+    "type": "CRITIQUED",
+    "label": "Countered Deleuzo-Guattarian vitalist immanence by reading The Logic of Sense against Anti-Oedipus",
+    "strength": 4,
+    "description": "In Organs without Bodies (2003), Žižek challenged Deleuze and Guattari's Anti-Oedipus—calling its rhizomatic multiplicity 'the ideology of late capitalism'—while claiming the early Deleuze of The Logic of Sense as a covert thinker of sterile, incorporeal Lacanian surface-effects.",
+    "dialecticalTension": "Productive vitalist immanence and desiring-machines versus Hegelian negativity and the quasi-cause of incorporeal events.",
+    "historicalContext": "Published in Organs without Bodies: On Deleuze and Consequences (2003), sparking intense debate across contemporary continental philosophy.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "Organs without Bodies: On Deleuze and Consequences",
+        "sectionOrPage": "Part I: Deleuze",
+        "year": "2003",
+        "url": "https://en.wikipedia.org/wiki/Organs_without_Bodies"
+      },
+      {
+        "citationType": "sep",
+        "author": "Daniel Smith, John Protevi, and Daniela Voss",
+        "work": "Gilles Deleuze",
+        "url": "https://plato.stanford.edu/entries/deleuze/"
+      }
+    ]
+  },
+  {
+    "id": "slavoj-zizek--alenka-zupancic",
+    "source": "slavoj-zizek",
+    "target": "alenka-zupancic",
+    "type": "INFLUENCED",
+    "label": "Co-founded the Ljubljana School of Psychoanalysis, catalyzing Zupančič's Lacanian-Hegelian ontology and ethics",
+    "strength": 5,
+    "description": "Alongside Mladen Dolar, Slavoj Žižek established the Ljubljana School's distinctive philosophical program—reading German Idealism through Jacques Lacan—within which Alenka Zupančič developed her groundbreaking treatises on Kantian-Lacanian ethics, comedy, and sexuality.",
+    "dialecticalTension": "Extending Žižek's ideological and political dialectics into Zupančič's rigorous formalization of moral philosophy, drive, and ontological difference.",
+    "historicalContext": "Collaborated closely at the Institute of Philosophy of the Slovenian Academy of Sciences and Arts and in the Verso 'Wo Es War' book series edited by Žižek.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Alenka Zupančič",
+        "work": "Ethics of the Real: Kant, Lacan",
+        "sectionOrPage": "Foreword by Slavoj Žižek & Introduction",
+        "year": "2000",
+        "url": "https://en.wikipedia.org/wiki/Alenka_Zupan%C4%8Di%C4%8D"
+      },
+      {
+        "citationType": "iep",
+        "author": "Matthew Sharpe",
+        "work": "Slavoj Žižek",
+        "sectionOrPage": "1. Intellectual Biography",
+        "url": "https://iep.utm.edu/zizek/"
+      }
+    ]
+  },
+  {
+    "id": "slavoj-zizek--byung-chul-han",
+    "source": "slavoj-zizek",
+    "target": "byung-chul-han",
+    "type": "CRITIQUED",
+    "label": "Debated whether neoliberal domination operates via permissive superego enjoyment or post-immunological achievement burnout",
+    "strength": 4,
+    "description": "Žižek's diagnosis of the postmodern superego injunction 'Enjoy!'—where apparent permissiveness masks deeper ideological subjugation—stands in sharp contemporary dialogue and tension with Byung-Chul Han's thesis that disciplinary negativity has dissolved into auto-exploitative positivity and burnout.",
+    "dialecticalTension": "Žižekian class antagonism and superego jouissance versus Han's psychopolitical critique of voluntary self-optimization without an external Master.",
+    "historicalContext": "A central fault line in 21st-century European cultural criticism between Lacanian-Marxist dialectics and post-Heideggerian media theory.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Byung-Chul Han",
+        "work": "Psychopolitics: Neoliberalism and New Technologies of Power",
+        "year": "2014",
+        "url": "https://en.wikipedia.org/wiki/Byung-Chul_Han"
+      },
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "The Ticklish Subject: The Absent Centre of Political Ontology",
+        "sectionOrPage": "Ch. 6: Whither Oedipus? (The Superego Injunction to Enjoy)",
+        "year": "1999"
+      }
+    ]
+  },
+  {
+    "id": "jacques-lacan--sublime-object-of-ideology",
+    "source": "jacques-lacan",
+    "target": "sublime-object-of-ideology",
+    "type": "INFLUENCED",
+    "label": "Provided the psychoanalytic apparatus of objet petit a, fantasy ($ <> a), and the point de capiton",
+    "strength": 5,
+    "description": "Lacan's concepts of the object-cause of desire (objet petit a), unconscious fantasy, and quilting points (points de capiton) supply the structural architecture for Žižek's theory of how ideological fields stitch floating signifiers around an impossible kernel of enjoyment.",
+    "dialecticalTension": "Translating clinical structures of neurotic desire and fantasy into collective socio-symbolic formations.",
+    "historicalContext": "Drawn from Lacan's Écrits (1966) and Seminars XI and XX, synthesized by Žižek in 1989.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "The Sublime Object of Ideology",
+        "sectionOrPage": "Chapter 3: Che Vuoi?",
+        "year": "1989",
+        "url": "https://en.wikipedia.org/wiki/The_Sublime_Object_of_Ideology"
+      },
+      {
+        "citationType": "sep",
+        "author": "Adrian Johnston",
+        "work": "Jacques Lacan",
+        "url": "https://plato.stanford.edu/entries/lacan/"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--sublime-object-of-ideology",
+    "source": "karl-marx",
+    "target": "sublime-object-of-ideology",
+    "type": "INFLUENCED",
+    "label": "Commodity fetishism modeled how ideological illusion is inscribed directly into material social practices",
+    "strength": 4,
+    "description": "Marx's critique of commodity fetishism in Capital demonstrated that individuals may know rationally that money is merely a social token while acting in market exchange as if value were a magical property of the object itself—the exact prototype for Žižek's ideological fantasy.",
+    "dialecticalTension": "Shifting ideology critique from subjective epistemological error ('false consciousness') to objective fetishistic inversion in practice.",
+    "historicalContext": "Reinterpreted from Marx's Capital Vol. I (1867) through Sohn-Rethel's 'real abstraction' and Lacanian theory in 1989.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Karl Marx",
+        "work": "Capital: Critique of Political Economy, Vol. I",
+        "sectionOrPage": "Chapter 1, Section 4",
+        "year": "1867"
+      },
+      {
+        "citationType": "primary",
+        "author": "Slavoj Žižek",
+        "work": "The Sublime Object of Ideology",
+        "sectionOrPage": "pp. 18–33",
+        "year": "1989"
+      }
+    ]
+  }
+]
