@@ -1,0 +1,38 @@
+{
+  "id": "karen-horney",
+  "name": "Karen Horney",
+  "birthYear": 1885,
+  "deathYear": 1952,
+  "eraId": "twentieth-century",
+  "traditionId": "psychoanalysis",
+  "domains": [
+    "psychology"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "German-American psychoanalyst who founded feminist psychology, dismantled Freudian biological determinism ('penis envy'), and theorized basic anxiety, neurotic needs, and cultural origins of psychic conflict.",
+  "centralQuestion": "How do early interpersonal insecurities and cultural hierarchies—rather than innate biological drives—generate basic anxiety and neurotic self-alienation?",
+  "keyWorks": [
+    {
+      "title": "The Neurotic Personality of Our Time",
+      "year": "1937 CE",
+      "url": "https://en.wikipedia.org/wiki/Karen_Horney",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Karen_Horney",
+      "description": "Reorients psychoanalysis toward cultural and interpersonal sources of anxiety, competitiveness, and alienation."
+    },
+    {
+      "title": "Neurosis and Human Growth",
+      "year": "1950 CE",
+      "url": "https://en.wikipedia.org/wiki/Neurosis_and_Human_Growth",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Neurosis_and_Human_Growth",
+      "description": "Articulates the clash between the 'real self' and the 'tyranny of the should' alongside the three neurotic trends (moving toward, against, or away from people)."
+    }
+  ],
+  "sepSlug": "feminism-psychoanalysis",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-psychoanalysis/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Karen_Horney"
+  },
+  "canonTier": "bridge",
+  "importanceScore": 91,
+  "imageUrl": "/portraits/karen-horney.jpg"
+}

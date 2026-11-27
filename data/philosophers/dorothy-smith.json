@@ -1,0 +1,38 @@
+{
+  "id": "dorothy-smith",
+  "name": "Dorothy E. Smith",
+  "birthYear": 1926,
+  "deathYear": 2022,
+  "eraId": "contemporary",
+  "traditionId": "contemporary-sociology",
+  "domains": [
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Canadian sociologist who founded feminist standpoint theory in sociology and institutional ethnography, exposing how 'relations of ruling' organize everyday lived experience through textual mediation.",
+  "centralQuestion": "How do seemingly neutral sociological concepts and institutional texts conceal the standpoint of ruling power from the actualities of everyday lived work?",
+  "keyWorks": [
+    {
+      "title": "The Everyday World as Problematic: A Feminist Sociology",
+      "year": "1987 CE",
+      "url": "https://en.wikipedia.org/wiki/Dorothy_E._Smith",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Dorothy_E._Smith",
+      "description": "Establishes institutional ethnography and feminist standpoint sociology starting from embodied everyday experience rather than abstract bureaucratic categories."
+    },
+    {
+      "title": "The Conceptual Practices of Power",
+      "year": "1990 CE",
+      "url": "https://en.wikipedia.org/wiki/Dorothy_E._Smith",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Dorothy_E._Smith",
+      "description": "Investigates how sociological texts construct objectified 'ruling relations' that erase situated knowers."
+    }
+  ],
+  "sepSlug": "feminism-epistemology",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-epistemology/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dorothy_E._Smith"
+  },
+  "canonTier": "bridge",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/dorothy-smith.jpg"
+}

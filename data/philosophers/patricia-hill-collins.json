@@ -1,0 +1,38 @@
+{
+  "id": "patricia-hill-collins",
+  "name": "Patricia Hill Collins",
+  "birthYear": 1948,
+  "eraId": "contemporary",
+  "traditionId": "critical-race-sociology",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "American sociologist and social theorist whose landmark work Black Feminist Thought formalized intersectional epistemology, the 'outsider within' standpoint, and the 'matrix of domination'.",
+  "centralQuestion": "How do interlocking systems of race, class, gender, and sexuality operate together as a matrix of domination while generating distinct subjugated knowledges?",
+  "keyWorks": [
+    {
+      "title": "Black Feminist Thought: Knowledge, Consciousness, and the Politics of Empowerment",
+      "year": "1990 CE",
+      "url": "https://en.wikipedia.org/wiki/Black_Feminist_Thought",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Black_Feminist_Thought",
+      "description": "Foundational treatise defining Black feminist epistemology, the matrix of domination, and dialogical validation of lived experiential knowledge."
+    },
+    {
+      "title": "Intersectionality as Critical Social Theory",
+      "year": "2019 CE",
+      "url": "https://en.wikipedia.org/wiki/Patricia_Hill_Collins",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Patricia_Hill_Collins",
+      "description": "Systematic philosophical and sociological account of intersectionality as an evolving critical social theory."
+    }
+  ],
+  "sepSlug": "feminism-race",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-race/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Patricia_Hill_Collins"
+  },
+  "canonTier": "pillar",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/patricia-hill-collins.jpg"
+}

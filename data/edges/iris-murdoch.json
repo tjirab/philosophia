@@ -1,0 +1,113 @@
+[
+  {
+    "id": "plato--iris-murdoch",
+    "source": "plato",
+    "target": "iris-murdoch",
+    "type": "DEVELOPED",
+    "label": "Revived Platonic Good and eros as the foundation of modern moral realism",
+    "strength": 5,
+    "description": "In The Sovereignty of Good (1970), Iris Murdoch drew on Plato's allegory of the Cave and Form of the Good to argue that morality is grounded in loving perception of objective value rather than arbitrary choice.",
+    "dialecticalTension": "Reclaims Platonic moral metaphysics against mid-20th-century analytic non-cognitivism.",
+    "historicalContext": "Oxford moral philosophy debates of the 1950s–1970s.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Iris Murdoch",
+        "work": "The Sovereignty of Good",
+        "year": 1970,
+        "url": "https://plato.stanford.edu/entries/murdoch/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Julia Driver",
+        "work": "Iris Murdoch",
+        "url": "https://plato.stanford.edu/entries/murdoch/"
+      }
+    ]
+  },
+  {
+    "id": "ludwig-wittgenstein--iris-murdoch",
+    "source": "ludwig-wittgenstein",
+    "target": "iris-murdoch",
+    "type": "CRITIQUED",
+    "label": "Engaged Wittgensteinian anti-Cartesianism while defending private moral attention",
+    "strength": 4,
+    "description": "While admiring Wittgenstein's critique of inner Cartesian objects, Murdoch argued that analytic philosophy over-corrected by reducing moral life to public behavioral rules and neglecting inner moral vision.",
+    "dialecticalTension": "Balances ordinary-language publicness with inward moral imagination and attention.",
+    "historicalContext": "Articulated in 'Vision and Choice in Morality' (1956) and The Sovereignty of Good (1970).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Julia Driver",
+        "work": "Iris Murdoch",
+        "url": "https://plato.stanford.edu/entries/murdoch/"
+      }
+    ]
+  },
+  {
+    "id": "g-e-m-anscombe--iris-murdoch",
+    "source": "g-e-m-anscombe",
+    "target": "iris-murdoch",
+    "type": "INFLUENCED",
+    "label": "Co-launched the Oxford quartet dismantling fact-value non-cognitivism",
+    "strength": 5,
+    "description": "Close friends and intellectual allies at Somerville College, Oxford, Anscombe and Murdoch (alongside Foot and Midgley) overturned emotivist orthodoxy by restoring thick moral concepts and moral psychology.",
+    "dialecticalTension": "Combines Wittgensteinian moral psychology with Platonic attention to human flourishing.",
+    "historicalContext": "Post-war Oxford philosophical circle (1940s–1970s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Clare Mac Cumhaill and Rachael Wiseman",
+        "work": "Metaphysical Animals: How Four Women Brought Philosophy Back to Life",
+        "year": 2022,
+        "sectionOrPage": "Ch. 11–13"
+      }
+    ]
+  },
+  {
+    "id": "iris-murdoch--moral-attention-and-unselfing",
+    "source": "iris-murdoch",
+    "target": "moral-attention-and-unselfing",
+    "type": "DEVELOPED",
+    "label": "Formulated loving moral attention and unselfing as core ethical practice",
+    "strength": 5,
+    "description": "Borrowing and secularizing Simone Weil's concept of attention, Murdoch defined 'unselfing' as the disciplined redirection of consciousness away from the 'fat relentless ego' toward the real individuality of others.",
+    "dialecticalTension": "Replaces Kantian-existentialist isolated willpower with perceptual moral cultivation.",
+    "historicalContext": "Central thesis of The Sovereignty of Good (1970).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Iris Murdoch",
+        "work": "The Sovereignty of Good",
+        "year": 1970,
+        "sectionOrPage": "Ch. 1 & Ch. 2",
+        "url": "https://en.wikipedia.org/wiki/The_Sovereignty_of_Good"
+      }
+    ]
+  },
+  {
+    "id": "iris-murdoch--martha-nussbaum",
+    "source": "iris-murdoch",
+    "target": "martha-nussbaum",
+    "type": "INFLUENCED",
+    "label": "Inspired Nussbaum's synthesis of literary attention and Aristotelian moral perception",
+    "strength": 4,
+    "description": "Martha Nussbaum drew directly on Iris Murdoch's defense of literature and loving attention as indispensable modes of ethical perception in Love's Knowledge (1990).",
+    "dialecticalTension": "Integrates Murdochian attentive perception into contemporary Aristotelian ethics.",
+    "historicalContext": "Late 20th-century revival of narrative ethics and moral perception.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Martha Nussbaum",
+        "work": "Love's Knowledge: Essays on Philosophy and Literature",
+        "year": 1990,
+        "sectionOrPage": "Ch. 1 & Ch. 5"
+      }
+    ]
+  }
+]

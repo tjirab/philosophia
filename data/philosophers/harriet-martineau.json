@@ -1,0 +1,39 @@
+{
+  "id": "harriet-martineau",
+  "name": "Harriet Martineau",
+  "birthYear": 1802,
+  "deathYear": 1876,
+  "eraId": "nineteenth-century",
+  "traditionId": "positivism-sociology",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "British social theorist widely recognized as the first female sociologist; pioneered empirical sociological field methodology, translated Auguste Comte's Cours de Philosophie Positive, and analyzed institutional hypocrisy across race, class, and gender.",
+  "centralQuestion": "How can empirical observation of everyday manners, institutions, and economic arrangements uncover whether a society lives up to its professed moral principles?",
+  "keyWorks": [
+    {
+      "title": "Society in America",
+      "year": "1837 CE",
+      "url": "https://en.wikipedia.org/wiki/Society_in_America",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Society_in_America",
+      "description": "Foundational comparative empirical study examining slavery, women's subordination, and democratic institutions in the early United States."
+    },
+    {
+      "title": "How to Observe Morals and Manners",
+      "year": "1838 CE",
+      "url": "https://en.wikipedia.org/wiki/How_to_Observe_Morals_and_Manners",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/How_to_Observe_Morals_and_Manners",
+      "description": "The first systematic treatise on sociological research methodology, establishing principles of bias awareness, representative sampling, and institutional analysis."
+    }
+  ],
+  "sepSlug": "feminism-political",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Harriet_Martineau"
+  },
+  "canonTier": "pillar",
+  "importanceScore": 93,
+  "imageUrl": "/portraits/harriet-martineau.jpg"
+}

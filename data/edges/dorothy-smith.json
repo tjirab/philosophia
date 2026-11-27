@@ -1,0 +1,108 @@
+[
+  {
+    "id": "karl-marx--dorothy-smith",
+    "source": "karl-marx",
+    "target": "dorothy-smith",
+    "type": "DEVELOPED",
+    "label": "Adapted historical materialism into feminist standpoint sociology",
+    "strength": 5,
+    "description": "Dorothy Smith drew upon Marx and Engels's German Ideology to ground sociology not in ideological abstractions, but in the actual embodied activities and material labor of everyday life.",
+    "dialecticalTension": "Extends Marxian critique of alienated labor to unpaid domestic work and textualized bureaucratic power.",
+    "historicalContext": "Formulated in The Everyday World as Problematic (1987).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Dorothy E. Smith",
+        "work": "The Everyday World as Problematic: A Feminist Sociology",
+        "year": 1987,
+        "sectionOrPage": "Ch. 2–3",
+        "url": "https://plato.stanford.edu/entries/feminism-epistemology/"
+      }
+    ]
+  },
+  {
+    "id": "maurice-merleau-ponty--dorothy-smith",
+    "source": "maurice-merleau-ponty",
+    "target": "dorothy-smith",
+    "type": "INFLUENCED",
+    "label": "Informed embodied phenomenology of the situated sociological subject",
+    "strength": 4,
+    "description": "Smith synthesized Merleau-Ponty's phenomenology of embodied perception with ethnomethodology to show how knowing always begins from a specific bodily location in the material world.",
+    "dialecticalTension": "Counters disembodied 'Archimedean' sociology with embodied phenomenological presence.",
+    "historicalContext": "Integrated across Smith's Institutional Ethnography methodology (1987–2005).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Dorothy E. Smith",
+        "work": "Institutional Ethnography: A Sociology for People",
+        "year": 2005,
+        "sectionOrPage": "Ch. 1–2"
+      }
+    ]
+  },
+  {
+    "id": "erving-goffman--dorothy-smith",
+    "source": "erving-goffman",
+    "target": "dorothy-smith",
+    "type": "INFLUENCED",
+    "label": "Mentored Smith's micro-sociological attention to everyday institutional order",
+    "strength": 4,
+    "description": "Trained at UC Berkeley where Goffman taught, Smith built upon Goffmanian micro-sociology while expanding it to map how local interactions are coordinated by trans-local textual relations of ruling.",
+    "dialecticalTension": "Connects micro-interactional order to macro-institutional structures of gendered and class power.",
+    "historicalContext": "Berkeley sociological formation (1960s) transformed into feminist institutional ethnography.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Dorothy E. Smith",
+        "work": "The Conceptual Practices of Power",
+        "year": 1990,
+        "sectionOrPage": "Introduction"
+      }
+    ]
+  },
+  {
+    "id": "dorothy-smith--standpoint-epistemology",
+    "source": "dorothy-smith",
+    "target": "standpoint-epistemology",
+    "type": "DEVELOPED",
+    "label": "Founded feminist standpoint sociology and institutional ethnography",
+    "strength": 5,
+    "description": "Smith demonstrated that orthodox sociology's objective gaze reproduced a bifurcated consciousness, and designed institutional ethnography to trace how texts coordinate people's everyday work.",
+    "dialecticalTension": "Replaces detached theoretical categorization with empirically mapped relations of ruling.",
+    "historicalContext": "Inaugurated in 'Women's Perspective as a Radical Critique of Sociology' (1974) and The Everyday World as Problematic (1987).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Elizabeth Anderson",
+        "work": "Feminist Epistemology and Philosophy of Science",
+        "url": "https://plato.stanford.edu/entries/feminism-epistemology/"
+      }
+    ]
+  },
+  {
+    "id": "dorothy-smith--patricia-hill-collins",
+    "source": "dorothy-smith",
+    "target": "patricia-hill-collins",
+    "type": "INFLUENCED",
+    "label": "Catalyzed sociological standpoint theory extended into Black feminist epistemology",
+    "strength": 4,
+    "description": "Patricia Hill Collins engaged Smith's critique of objectified sociological knowledge to articulate how Black women's 'outsider within' location generates distinct intersectional standpoint insights.",
+    "dialecticalTension": "Expands standpoint methodology from gender-and-class bifurcation to interlocking racial, class, and gender oppression.",
+    "historicalContext": "Cross-pollination of feminist standpoint theory during the 1980s–1990s.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Patricia Hill Collins",
+        "work": "Black Feminist Thought",
+        "year": 1990,
+        "sectionOrPage": "Ch. 11 (Black Feminist Epistemology)",
+        "url": "https://plato.stanford.edu/entries/feminism-race/"
+      }
+    ]
+  }
+]

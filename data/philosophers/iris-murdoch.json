@@ -1,0 +1,38 @@
+{
+  "id": "iris-murdoch",
+  "name": "Iris Murdoch",
+  "birthYear": 1919,
+  "deathYear": 1999,
+  "eraId": "twentieth-century",
+  "traditionId": "analytic",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Irish-British moral philosopher and novelist of the Oxford quartet (alongside Anscombe and Foot) who challenged existentialist and behaviorist voluntarism with a Platonic ethics of loving attention and 'unselfing'.",
+  "centralQuestion": "Why does moral life depend less on isolated moments of autonomous choice than on the patient, selfless discipline of loving attention to reality?",
+  "keyWorks": [
+    {
+      "title": "The Sovereignty of Good",
+      "year": "1970 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Sovereignty_of_Good",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Sovereignty_of_Good",
+      "description": "Seminal defense of moral realism, Platonic Good, and 'unselfing' through attentive perception of art, nature, and other persons."
+    },
+    {
+      "title": "Metaphysics as a Guide to Morals",
+      "year": "1992 CE",
+      "url": "https://en.wikipedia.org/wiki/Iris_Murdoch",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Iris_Murdoch",
+      "description": "Wide-ranging meditation uniting Plato, Kant, Wittgenstein, and Weil to defend moral consciousness against reductive structuralism."
+    }
+  ],
+  "sepSlug": "murdoch",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/murdoch/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Iris_Murdoch"
+  },
+  "canonTier": "bridge",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/iris-murdoch.jpg"
+}

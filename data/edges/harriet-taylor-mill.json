@@ -1,0 +1,90 @@
+[
+  {
+    "id": "mary-wollstonecraft--harriet-taylor-mill",
+    "source": "mary-wollstonecraft",
+    "target": "harriet-taylor-mill",
+    "type": "INFLUENCED",
+    "label": "Transmitted Enlightenment feminist critique into 19th-century liberal reform",
+    "strength": 4,
+    "description": "Harriet Taylor Mill carried forward Wollstonecraft's demand for women's intellectual and civic emancipation, pushing beyond educational reform to demand full political suffrage and independent economic self-support.",
+    "dialecticalTension": "Advances Enlightenment moral equality into concrete democratic enfranchisement and labor rights.",
+    "historicalContext": "19th-century British radical liberal and feminist thought (1832–1851).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Dale E. Miller",
+        "work": "Harriet Taylor Mill",
+        "url": "https://plato.stanford.edu/entries/harriet-mill/"
+      }
+    ]
+  },
+  {
+    "id": "jeremy-bentham--harriet-taylor-mill",
+    "source": "jeremy-bentham",
+    "target": "harriet-taylor-mill",
+    "type": "INFLUENCED",
+    "label": "Supplied utilitarian egalitarianism expanded to women's suffrage and domestic freedom",
+    "strength": 4,
+    "description": "Working within Benthamite philosophical radicalism, Taylor Mill applied equal-consideration utilitarianism to dismantle legal coverture and patriarchal marriage.",
+    "dialecticalTension": "Pushes classical utilitarianism past male-centered political reforms.",
+    "historicalContext": "British Unitarian and philosophical radical circles (1830s–1850s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Dale E. Miller",
+        "work": "Harriet Taylor Mill",
+        "url": "https://plato.stanford.edu/entries/harriet-mill/"
+      }
+    ]
+  },
+  {
+    "id": "harriet-taylor-mill--john-stuart-mill",
+    "source": "harriet-taylor-mill",
+    "target": "john-stuart-mill",
+    "type": "INFLUENCED",
+    "label": "Co-shaped On Liberty, Principles of Political Economy, and utilitarian feminism",
+    "strength": 5,
+    "description": "John Stuart Mill explicitly credited Harriet Taylor Mill as co-author of the core ideas in On Liberty and Principles of Political Economy, and her 1851 Enfranchisement of Women laid the foundation for his Subjection of Women.",
+    "dialecticalTension": "Synthesizes radical feminist egalitarianism and cooperative socialism into canonical liberalism.",
+    "historicalContext": "Twenty-eight-year philosophical partnership culminating in On Liberty (1859).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "John Stuart Mill",
+        "work": "On Liberty (Dedication)",
+        "year": 1859,
+        "url": "https://plato.stanford.edu/entries/harriet-mill/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Dale E. Miller",
+        "work": "Harriet Taylor Mill",
+        "url": "https://plato.stanford.edu/entries/harriet-mill/"
+      }
+    ]
+  },
+  {
+    "id": "harriet-taylor-mill--rational-equality",
+    "source": "harriet-taylor-mill",
+    "target": "rational-equality",
+    "type": "DEVELOPED",
+    "label": "Extended rational equality to universal suffrage and economic independence",
+    "strength": 4,
+    "description": "In The Enfranchisement of Women (1851), Taylor Mill argued that true equality requires women's full participation in political voting and paid professions rather than confining them to domesticity.",
+    "dialecticalTension": "Deepens abstract equality of reason into concrete economic and political rights.",
+    "historicalContext": "Published in the Westminster Review (1851) inspired by the Worcester Women's Rights Convention.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Harriet Taylor Mill",
+        "work": "The Enfranchisement of Women",
+        "year": 1851,
+        "url": "https://plato.stanford.edu/entries/harriet-mill/"
+      }
+    ]
+  }
+]

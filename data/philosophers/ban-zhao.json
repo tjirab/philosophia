@@ -1,0 +1,38 @@
+{
+  "id": "ban-zhao",
+  "name": "Ban Zhao",
+  "birthYear": 45,
+  "deathYear": 116,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Han-dynasty Chinese historian and Confucian philosopher who completed the Book of Han and authored Lessons for Women (Nüjie), advocating classical education for women within Confucian moral cultivation.",
+  "centralQuestion": "How can women cultivate Confucian moral virtue, scholarly literacy, and intellectual authority within classical family and civic ethics?",
+  "keyWorks": [
+    {
+      "title": "Lessons for Women (Nüjie)",
+      "year": "106 CE",
+      "url": "https://en.wikipedia.org/wiki/Lessons_for_Women",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lessons_for_Women",
+      "description": "Influential Han Confucian treatise arguing that women require equal intellectual education alongside men to fulfill moral and familial duties."
+    },
+    {
+      "title": "Book of Han (Hanshu)",
+      "year": "111 CE",
+      "url": "https://en.wikipedia.org/wiki/Book_of_Han",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Book_of_Han",
+      "description": "Monumental dynastic history and philosophical chronicle of the Western Han completed by Ban Zhao."
+    }
+  ],
+  "sepSlug": "chinese-epistemology",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/chinese-epistemology/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ban_Zhao"
+  },
+  "canonTier": "bridge",
+  "importanceScore": 88,
+  "imageUrl": "/portraits/ban-zhao.jpg"
+}

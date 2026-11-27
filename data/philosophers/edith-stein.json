@@ -1,0 +1,39 @@
+{
+  "id": "edith-stein",
+  "name": "Edith Stein",
+  "birthYear": 1891,
+  "deathYear": 1942,
+  "eraId": "twentieth-century",
+  "traditionId": "phenomenology",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "German phenomenologist and Edmund Husserl's assistant who authored On the Problem of Empathy, pioneering phenomenological psychology of intersubjectivity before synthesizing Husserl with Thomistic metaphysics.",
+  "centralQuestion": "How is the immediate, non-inferential experience of another person's conscious feelings possible through embodied empathy (Einfühlung)?",
+  "keyWorks": [
+    {
+      "title": "On the Problem of Empathy",
+      "year": "1917 CE",
+      "url": "https://en.wikipedia.org/wiki/Edith_Stein",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Edith_Stein",
+      "description": "Doctoral dissertation supervised by Husserl defining empathy as a primordial, non-projective experience of foreign consciousness."
+    },
+    {
+      "title": "Finite and Eternal Being",
+      "year": "1950 CE",
+      "url": "https://en.wikipedia.org/wiki/Edith_Stein",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Edith_Stein",
+      "description": "Posthumously published synthesis uniting Husserlian phenomenology with Aquinas's ontology of essence and existence."
+    }
+  ],
+  "sepSlug": "stein",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/stein/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Edith_Stein"
+  },
+  "canonTier": "bridge",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/edith-stein.jpg"
+}

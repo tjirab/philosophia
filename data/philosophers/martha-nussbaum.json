@@ -1,0 +1,44 @@
+{
+  "id": "martha-nussbaum",
+  "name": "Martha Nussbaum",
+  "birthYear": 1947,
+  "eraId": "contemporary",
+  "traditionId": "analytic",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "American philosopher who bridged Aristotelian virtue ethics, Stoic moral psychology, and global justice by co-developing the Capabilities Approach alongside Amartya Sen.",
+  "centralQuestion": "What central human capabilities must every political constitution secure so that each person—including women, disabled persons, and non-human animals—can live a life worthy of dignity?",
+  "keyWorks": [
+    {
+      "title": "The Fragility of Goodness",
+      "year": "1986 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Fragility_of_Goodness",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Fragility_of_Goodness",
+      "description": "Examines Greek tragedy, Plato, and Aristotle on moral luck, vulnerability, and the limits of rational self-sufficiency."
+    },
+    {
+      "title": "Women and Human Development: The Capabilities Approach",
+      "year": "2000 CE",
+      "url": "https://en.wikipedia.org/wiki/Capability_approach",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Capability_approach",
+      "description": "Articulates ten central human capabilities as universal constitutional thresholds for global gender justice."
+    },
+    {
+      "title": "Frontiers of Justice",
+      "year": "2006 CE",
+      "url": "https://en.wikipedia.org/wiki/Martha_Nussbaum",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Martha_Nussbaum",
+      "description": "Critiques Rawlsian social contract theory for neglecting disability, global poverty, and non-human animal entitlements."
+    }
+  ],
+  "sepSlug": "capability-approach",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/capability-approach/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Martha_Nussbaum"
+  },
+  "canonTier": "pillar",
+  "importanceScore": 92,
+  "imageUrl": "/portraits/martha-nussbaum.jpg"
+}

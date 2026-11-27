@@ -1,6 +1,6 @@
 # 📜 Philosophia Canon Coverage & Assessment Report
 
-> **Generated:** `2026-11-27T11:37:38.517Z`  
+> **Generated:** `2026-11-27T19:48:33.997Z`  
 > **Status:** 🟢 Healthy (0 isolated nodes, 1 unified graph)
 
 ---
@@ -9,19 +9,19 @@
 
 | Metric | Value | Target / Health Status |
 | :--- | :--- | :--- |
-| **Philosophers** | **173** | Primary constellation pillars & bridges |
-| **Concepts** | **151** | Categorized across 7 philosophical branches |
-| **Total Graph Nodes** | **324** | Clean schema compliance |
-| **Dialectical Edges** | **678** | Average **2.09** edges / node |
-| **Media & Audio Resources** | **283** | SEP dossiers, primary links, podcasts |
+| **Philosophers** | **187** | Primary constellation pillars & bridges |
+| **Concepts** | **161** | Categorized across 7 philosophical branches |
+| **Total Graph Nodes** | **348** | Clean schema compliance |
+| **Dialectical Edges** | **749** | Average **2.15** edges / node |
+| **Media & Audio Resources** | **297** | SEP dossiers, primary links, podcasts |
 | **Isolated Nodes** | **0** | ✅ 0 isolated nodes |
 | **Connected Components** | **1** | ✅ Single unified component |
 
 ### Dialectical Edge Distribution
-- **INFLUENCED** (Lineage & inheritance): `175`
-- **DEVELOPED** (Extension & formalization): `320`
-- **CRITIQUED** (Dialectical rebuttal): `110`
-- **SYNTHESIZED** (Integration of disparate traditions): `73`
+- **INFLUENCED** (Lineage & inheritance): `207`
+- **DEVELOPED** (Extension & formalization): `346`
+- **CRITIQUED** (Dialectical rebuttal): `119`
+- **SYNTHESIZED** (Integration of disparate traditions): `77`
 
 ---
 
@@ -31,31 +31,37 @@
 | :--- | :--- | :--- |
 | **SEP Slug Coverage** | **100.0%** | All thinkers have canonical SEP slugs |
 | **Central Question** | **100.0%** | Core inquiry phrased as inquiry question |
-| **Structured Key Works** | **100.0%** | 376 works total (100.0% with primary/Wikipedia links) |
-| **Key Works Spread** | **100% $\ge 1$ work** | • 1 work: `36`<br>• 2 works: `79`<br>• 3+ works: `58` |
-| **Portrait Profiles** | **100.0%** | Classical medallion portraits for nodes & dossiers (173 thinkers) |
-| **Audio / Media Coverage** | **86.1%** | Podcast episodes, encyclopedia entries, and classic archives |
+| **Structured Key Works** | **100.0%** | 406 works total (100.0% with primary/Wikipedia links) |
+| **Key Works Spread** | **100% $\ge 1$ work** | • 1 work: `36`<br>• 2 works: `91`<br>• 3+ works: `60` |
+| **Portrait Profiles** | **100.0%** | Classical medallion portraits for nodes & dossiers (187 thinkers) |
+| **Audio / Media Coverage** | **87.2%** | Podcast episodes, encyclopedia entries, and classic archives |
 
 > [!NOTE]
 > Thinkers awaiting media/podcast integration: `auguste-comte`, `wilhelm-wundt`, `ivan-pavlov`, `sigmund-freud`, `emile-durkheim`, `georg-simmel`, `george-h-mead`, `max-weber`, `w-e-b-du-bois`, `carl-jung`, `john-b-watson`, `jean-piaget`, `lev-vygotsky`, `carl-rogers`, `talcott-parsons`, `b-f-skinner`, `viktor-frankl`, `erving-goffman`, `zygmunt-bauman`, `noam-chomsky`, `pierre-bourdieu`, `daniel-kahneman`, `anthony-giddens`, `ulrich-beck`.
 
 ---
 
-## 🌐 3. Temporal Era Distribution
+## 🌐 3. Temporal Era & Domain Distribution
+
+### Disciplinary Domain Coverage
+- **Philosophy:** `162` thinkers
+- **Psychology:** `36` thinkers
+- **Sociology:** `37` thinkers
+- **Interdisciplinary Bridges (2+ domains):** `44` thinkers
 
 | Era | Timeline | Thinkers | Concepts | Total Nodes |
 | :--- | :--- | :--- | :--- | :--- |
 | **Pre-Socratic** | 624 BCE – 470 BCE | 7 | 3 | **10** |
 | **Classical Greek** | 470 BCE – 322 BCE | 3 | 3 | **6** |
 | **Hellenistic & Roman** | 323 BCE – 400 CE | 6 | 2 | **8** |
-| **Eastern & Axial Traditions** | 600 BCE – 800 CE | 11 | 9 | **20** |
-| **Medieval & Islamic Golden Age** | 400 CE – 1450 CE | 19 | 16 | **35** |
+| **Eastern & Axial Traditions** | 600 BCE – 800 CE | 12 | 9 | **21** |
+| **Medieval & Islamic Golden Age** | 400 CE – 1450 CE | 21 | 17 | **38** |
 | **Early Modern & Scientific** | 1450 CE – 1700 CE | 20 | 15 | **35** |
 | **Enlightenment & Social Contract** | 1700 CE – 1780 CE | 10 | 11 | **21** |
 | **German Idealism & Romanticism** | 1781 CE – 1840 CE | 4 | 6 | **10** |
-| **19th Century Divergences** | 1819 CE – 1900 CE | 14 | 13 | **27** |
-| **20th Century Phenomenon & Analysis** | 1900 CE – 1980 CE | 54 | 49 | **103** |
-| **Contemporary & Post-Structural** | 1980 CE – 2026 CE | 25 | 24 | **49** |
+| **19th Century Divergences** | 1819 CE – 1900 CE | 17 | 14 | **31** |
+| **20th Century Phenomenon & Analysis** | 1900 CE – 1980 CE | 58 | 53 | **111** |
+| **Contemporary & Post-Structural** | 1980 CE – 2026 CE | 29 | 28 | **57** |
 
 ---
 
@@ -99,6 +105,14 @@ Automated pathfinding verification across canonical historical transitions:
 | **Klein → Kernberg** | ✅ Verified | 1 hops | `melanie-klein → otto-kernberg` |
 | **Hegel → Slavoj Žižek → Sublime Object of Ideology** | ✅ Verified | 2 hops | `gwf-hegel → karl-marx → sublime-object-of-ideology` |
 | **Freud → Lacan → Slavoj Žižek → Alenka Zupančič** | ✅ Verified | 1 hops | `sigmund-freud → alenka-zupancic` |
+| **Comte → Harriet Martineau → Jane Addams → G.H. Mead** | ✅ Verified | 3 hops | `auguste-comte → harriet-martineau → jane-addams → george-h-mead` |
+| **Du Bois → Patricia Hill Collins → Judith Butler** | ✅ Verified | 2 hops | `w-e-b-du-bois → patricia-hill-collins → judith-butler` |
+| **Confucius → Ban Zhao → Ren & Li** | ✅ Verified | 1 hops | `confucius → ren-and-li` |
+| **Boethius → Hildegard of Bingen → Anne Conway** | ✅ Verified | 2 hops | `boethius → hildegard-of-bingen → anne-conway` |
+| **Aristotle → Christine de Pizan → Mary Wollstonecraft** | ✅ Verified | 2 hops | `aristotle → christine-de-pizan → mary-wollstonecraft` |
+| **Freud → Karen Horney → Carl Rogers** | ✅ Verified | 2 hops | `sigmund-freud → alfred-adler → carl-rogers` |
+| **Husserl → Edith Stein → Levinas** | ✅ Verified | 1 hops | `edmund-husserl → emmanuel-levinas` |
+| **Plato → Iris Murdoch → Martha Nussbaum** | ✅ Verified | 2 hops | `plato → iris-murdoch → martha-nussbaum` |
 
 ---
 
@@ -106,27 +120,27 @@ Automated pathfinding verification across canonical historical transitions:
 
 ### Top Dialectical Catalysts (Highest Out-Degree)
 1. **Immanuel Kant** (23 outgoing links)
-2. **Sigmund Freud** (19 outgoing links)
+2. **Sigmund Freud** (20 outgoing links)
 3. **René Descartes** (18 outgoing links)
-4. **Aristotle** (14 outgoing links)
-5. **John Locke** (13 outgoing links)
-6. **Karl Marx** (13 outgoing links)
-7. **G.W.F. Hegel** (10 outgoing links)
-8. **Friedrich Nietzsche** (9 outgoing links)
-9. **Martin Heidegger** (9 outgoing links)
-10. **David Hume** (8 outgoing links)
+4. **Aristotle** (17 outgoing links)
+5. **Karl Marx** (16 outgoing links)
+6. **John Locke** (13 outgoing links)
+7. **G.W.F. Hegel** (11 outgoing links)
+8. **Martin Heidegger** (10 outgoing links)
+9. **Friedrich Nietzsche** (9 outgoing links)
+10. **Plato** (8 outgoing links)
 
 ### Top Synthetic Integrators (Highest In-Degree)
-1. **Jürgen Habermas** (13 incoming links)
+1. **Jürgen Habermas** (14 incoming links)
 2. **Michel Foucault** (12 incoming links)
 3. **Baruch Spinoza** (10 incoming links)
-4. **Jacques Derrida** (10 incoming links)
-5. **Thomas Aquinas** (9 incoming links)
-6. **Arthur Schopenhauer** (9 incoming links)
-7. **John Stuart Mill** (9 incoming links)
-8. **John Rawls** (9 incoming links)
-9. **Slavoj Žižek** (9 incoming links)
-10. **Alenka Zupančič** (9 incoming links)
+4. **John Stuart Mill** (10 incoming links)
+5. **Jacques Derrida** (10 incoming links)
+6. **Alenka Zupančič** (10 incoming links)
+7. **Thomas Aquinas** (9 incoming links)
+8. **Arthur Schopenhauer** (9 incoming links)
+9. **John Rawls** (9 incoming links)
+10. **Slavoj Žižek** (9 incoming links)
 
 ---
 

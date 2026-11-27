@@ -180,6 +180,21 @@ export function auditCanon(options = {}) {
     };
   }).sort((a, b) => b.philosopherCount - a.philosopherCount);
 
+  // 3b. Domain & Interdisciplinary Balance
+  const domainCounts = {
+    philosophy: 0,
+    psychology: 0,
+    sociology: 0,
+    interdisciplinary: 0,
+  };
+  for (const p of philosophers) {
+    const doms = Array.isArray(p.domains) && p.domains.length > 0 ? p.domains : ['philosophy'];
+    for (const d of doms) {
+      if (domainCounts[d] !== undefined) domainCounts[d]++;
+    }
+    if (doms.length >= 2) domainCounts.interdisciplinary++;
+  }
+
   // 4. Dialectical Lineage Verification
   const criticalLineages = [
     { name: 'Socrates → Nietzsche', from: 'socrates', to: 'friedrich-nietzsche' },
@@ -216,6 +231,14 @@ export function auditCanon(options = {}) {
     { name: 'Klein → Kernberg', from: 'melanie-klein', to: 'otto-kernberg' },
     { name: 'Hegel → Slavoj Žižek → Sublime Object of Ideology', from: 'gwf-hegel', to: 'sublime-object-of-ideology' },
     { name: 'Freud → Lacan → Slavoj Žižek → Alenka Zupančič', from: 'sigmund-freud', to: 'alenka-zupancic' },
+    { name: 'Comte → Harriet Martineau → Jane Addams → G.H. Mead', from: 'auguste-comte', to: 'george-h-mead' },
+    { name: 'Du Bois → Patricia Hill Collins → Judith Butler', from: 'w-e-b-du-bois', to: 'judith-butler' },
+    { name: 'Confucius → Ban Zhao → Ren & Li', from: 'confucius', to: 'ren-and-li' },
+    { name: 'Boethius → Hildegard of Bingen → Anne Conway', from: 'boethius', to: 'anne-conway' },
+    { name: 'Aristotle → Christine de Pizan → Mary Wollstonecraft', from: 'aristotle', to: 'mary-wollstonecraft' },
+    { name: 'Freud → Karen Horney → Carl Rogers', from: 'sigmund-freud', to: 'carl-rogers' },
+    { name: 'Husserl → Edith Stein → Levinas', from: 'edmund-husserl', to: 'emmanuel-levinas' },
+    { name: 'Plato → Iris Murdoch → Martha Nussbaum', from: 'plato', to: 'martha-nussbaum' },
   ];
 
   function testPath(start, goal) {
@@ -289,6 +312,7 @@ export function auditCanon(options = {}) {
     },
     eras: eraStats,
     traditions: traditionStats,
+    domains: domainCounts,
     lineages: lineageResults,
   };
 }
@@ -297,7 +321,7 @@ export function auditCanon(options = {}) {
  * Generates Markdown representation of the audit report.
  */
 export function generateMarkdownReport(report) {
-  const { totals, topology, completeness, eras, traditions, lineages, timestamp } = report;
+  const { totals, topology, completeness, eras, traditions, domains, lineages, timestamp } = report;
 
   const lineageRows = lineages
     .map(
@@ -365,7 +389,13 @@ ${completeness.missingMedia.length > 0 ? `> [!NOTE]\n> Thinkers awaiting media/p
 
 ---
 
-## 🌐 3. Temporal Era Distribution
+## 🌐 3. Temporal Era & Domain Distribution
+
+### Disciplinary Domain Coverage
+- **Philosophy:** \`${domains?.philosophy ?? 0}\` thinkers
+- **Psychology:** \`${domains?.psychology ?? 0}\` thinkers
+- **Sociology:** \`${domains?.sociology ?? 0}\` thinkers
+- **Interdisciplinary Bridges (2+ domains):** \`${domains?.interdisciplinary ?? 0}\` thinkers
 
 | Era | Timeline | Thinkers | Concepts | Total Nodes |
 | :--- | :--- | :--- | :--- | :--- |

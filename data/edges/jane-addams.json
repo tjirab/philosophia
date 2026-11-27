@@ -1,0 +1,92 @@
+[
+  {
+    "id": "william-james--jane-addams",
+    "source": "william-james",
+    "target": "jane-addams",
+    "type": "INFLUENCED",
+    "label": "Inspired pragmatist verification of democratic ethics in lived urban experience",
+    "strength": 5,
+    "description": "William James praised Jane Addams's Democracy and Social Ethics as one of the purest realizations of pragmatist philosophy, while Addams anchored Jamesian pluralism in concrete immigrant neighborhoods at Hull House.",
+    "dialecticalTension": "Tests pragmatist epistemology in the crucible of industrial poverty and urban municipal reform.",
+    "historicalContext": "Mutual philosophical exchange between Cambridge pragmatism and Chicago Hull-House sociology (1890s–1910).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jane Addams",
+        "work": "Democracy and Social Ethics",
+        "year": 1902,
+        "url": "https://plato.stanford.edu/entries/pragmatism/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Maurice Hamington",
+        "work": "Jane Addams / Pragmatism",
+        "url": "https://plato.stanford.edu/entries/pragmatism/"
+      }
+    ]
+  },
+  {
+    "id": "jane-addams--george-h-mead",
+    "source": "jane-addams",
+    "target": "george-h-mead",
+    "type": "INFLUENCED",
+    "label": "Co-shaped Chicago School social psychology and perspective-taking",
+    "strength": 5,
+    "description": "As close collaborators in Chicago civic reform and Hull House, Addams's practice of 'sympathetic knowledge' directly informed George Herbert Mead's theory of role-taking and the social emergence of the self.",
+    "dialecticalTension": "Connects grassroots urban settlement practice with formal symbolic interactionist theory.",
+    "historicalContext": "Chicago School sociology and philosophy collaboration (1894–1931).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Mary Jo Deegan",
+        "work": "Jane Addams and the Men of the Chicago School, 1892–1918",
+        "year": 1988,
+        "sectionOrPage": "Ch. 5"
+      }
+    ]
+  },
+  {
+    "id": "jane-addams--sympathetic-knowledge-praxis",
+    "source": "jane-addams",
+    "target": "sympathetic-knowledge-praxis",
+    "type": "DEVELOPED",
+    "label": "Formulated sympathetic knowledge as reciprocal democratic epistemology",
+    "strength": 5,
+    "description": "Addams defined sympathetic knowledge as knowing with rather than merely about marginalized neighbors, arguing that moral perplexity arises wherever elites isolate themselves from lived social labor.",
+    "dialecticalTension": "Challenges detached academic positivism with participatory civic solidarity.",
+    "historicalContext": "Developed across Democracy and Social Ethics (1902) and Newer Ideals of Peace (1907).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jane Addams",
+        "work": "Democracy and Social Ethics",
+        "year": 1902,
+        "url": "https://en.wikipedia.org/wiki/Jane_Addams"
+      }
+    ]
+  },
+  {
+    "id": "jane-addams--patricia-hill-collins",
+    "source": "jane-addams",
+    "target": "patricia-hill-collins",
+    "type": "INFLUENCED",
+    "label": "Anticipated community-grounded social epistemology and intersectional praxis",
+    "strength": 4,
+    "description": "Addams's insistence that social knowledge is forged through concrete democratic engagement across hierarchies prefigured Patricia Hill Collins's public sociology and dialogical ethic of care.",
+    "dialecticalTension": "Links classical pragmatist public sociology with contemporary Black feminist social theory.",
+    "historicalContext": "Traced in contemporary feminist pragmatist and critical sociological scholarship.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Patricia Hill Collins",
+        "work": "On Intellectual Activism",
+        "year": 2012,
+        "sectionOrPage": "Ch. 1–2"
+      }
+    ]
+  }
+]

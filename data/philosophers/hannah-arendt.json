@@ -5,6 +5,11 @@
   "deathYear": 1975,
   "eraId": "contemporary",
   "traditionId": "post-structuralism",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
   "shortBio": "Political theorist who analyzed totalitarianism, civic action in the public realm, and the terrifying 'banality of evil'.",
   "centralQuestion": "What preserves the space of public freedom and prevents thoughtless totalitarian evil?",
   "keyWorks": [

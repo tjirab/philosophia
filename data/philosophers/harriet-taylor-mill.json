@@ -1,0 +1,38 @@
+{
+  "id": "harriet-taylor-mill",
+  "name": "Harriet Taylor Mill",
+  "birthYear": 1807,
+  "deathYear": 1858,
+  "eraId": "nineteenth-century",
+  "traditionId": "utilitarianism",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "English philosopher and women's rights theorist who authored 'The Enfranchisement of Women' and deeply shaped John Stuart Mill's On Liberty, Principles of Political Economy, and utilitarian feminism.",
+  "centralQuestion": "How can liberal utilitarianism realize authentic individuality and civic justice while denying women equal political rights, education, and economic independence?",
+  "keyWorks": [
+    {
+      "title": "The Enfranchisement of Women",
+      "year": "1851 CE",
+      "url": "https://en.wikipedia.org/wiki/Harriet_Taylor_Mill",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Harriet_Taylor_Mill",
+      "description": "Pathbreaking philosophical argument for women's suffrage, equal occupational access, and abolition of domestic legal subordination."
+    },
+    {
+      "title": "Essays on Sex Equality",
+      "year": "1832 CE",
+      "url": "https://en.wikipedia.org/wiki/Harriet_Taylor_Mill",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Harriet_Taylor_Mill",
+      "description": "Early manuscripts analyzing marriage law, custom-bound conformity, and moral autonomy."
+    }
+  ],
+  "sepSlug": "harriet-mill",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/harriet-mill/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Harriet_Taylor_Mill"
+  },
+  "canonTier": "bridge",
+  "importanceScore": 90,
+  "imageUrl": "/portraits/harriet-taylor-mill.jpg"
+}

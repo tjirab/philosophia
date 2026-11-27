@@ -1,0 +1,38 @@
+{
+  "id": "hildegard-of-bingen",
+  "name": "Hildegard of Bingen",
+  "birthYear": 1098,
+  "deathYear": 1179,
+  "eraId": "medieval",
+  "traditionId": "scholasticism",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "German Benedictine abbess, natural philosopher, and visionary polymath who articulated 'viriditas'—the greening, life-giving cosmic vitality uniting ecological nature, human embodiment, and divine wisdom.",
+  "centralQuestion": "How does cosmic vitality (viriditas) weave together human embodiment, natural healing, and rational participation in the order of creation?",
+  "keyWorks": [
+    {
+      "title": "Scivias (Know the Ways)",
+      "year": "1151 CE",
+      "url": "https://en.wikipedia.org/wiki/Scivias",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Scivias",
+      "description": "Systematic theological and cosmological work uniting visionary metaphysics with moral anthropology."
+    },
+    {
+      "title": "Liber Divinorum Operum (Book of Divine Works)",
+      "year": "1174 CE",
+      "url": "https://en.wikipedia.org/wiki/Liber_Divinorum_Operum",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Liber_Divinorum_Operum",
+      "description": "Articulates microcosm-macrocosm cosmology and the generative vitality of viriditas across nature and soul."
+    }
+  ],
+  "sepSlug": "medieval-philosophy",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/medieval-philosophy/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hildegard_of_Bingen"
+  },
+  "canonTier": "bridge",
+  "importanceScore": 89,
+  "imageUrl": "/portraits/hildegard-of-bingen.jpg"
+}

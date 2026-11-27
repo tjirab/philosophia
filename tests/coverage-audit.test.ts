@@ -50,10 +50,13 @@ describe('Philosophia Canon Coverage & Audit Engine', () => {
     expect(md).toContain('# 📜 Philosophia Canon Coverage & Assessment Report');
     expect(md).toContain('1. Canon Inventory & High-Level Metrics');
     expect(md).toContain('2. Content Completeness & Richness');
-    expect(md).toContain('3. Temporal Era Distribution');
+    expect(md).toContain('3. Temporal Era & Domain Distribution');
     expect(md).toContain('4. Critical Dialectical Lineage Verification');
     expect(md).toContain('5. Network Hubs & Centrality');
     expect(md).toContain('✅ Verified');
+    expect(report.domains.philosophy).toBeGreaterThan(100);
+    expect(report.domains.psychology).toBeGreaterThan(20);
+    expect(report.domains.sociology).toBeGreaterThan(25);
   });
 
   it('generates a concise, high-level PR summary without emojis', () => {

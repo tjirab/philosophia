@@ -1,0 +1,136 @@
+[
+  {
+    "id": "auguste-comte--harriet-martineau",
+    "source": "auguste-comte",
+    "target": "harriet-martineau",
+    "type": "DEVELOPED",
+    "label": "Translated, condensed, and popularized Comtian positivist sociology across the English-speaking world",
+    "strength": 5,
+    "description": "Harriet Martineau's 1853 English condensation of Auguste Comte's Cours de Philosophie Positive was so lucid that Comte himself adopted it back into French, while Martineau independently grounded sociology in systematic empirical fieldwork.",
+    "dialecticalTension": "Shifts Comtian abstract social physics toward concrete empirical observation of marginalized institutions.",
+    "historicalContext": "Published in 1853 following Martineau's own methodological treatise How to Observe Morals and Manners (1838).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Harriet Martineau",
+        "work": "The Positive Philosophy of Auguste Comte (Freely Translated and Condensed)",
+        "year": 1853,
+        "url": "https://en.wikipedia.org/wiki/Harriet_Martineau"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Michael R. Hill",
+        "work": "Harriet Martineau: Theoretical and Methodological Perspectives",
+        "year": 2002,
+        "sectionOrPage": "Ch. 1–3"
+      }
+    ]
+  },
+  {
+    "id": "adam-smith--harriet-martineau",
+    "source": "adam-smith",
+    "target": "harriet-martineau",
+    "type": "DEVELOPED",
+    "label": "Extended classical political economy into public moral and empirical social science",
+    "strength": 4,
+    "description": "Martineau's Illustrations of Political Economy translated Smithian and Ricardian economic analysis into empirical social narratives while critiquing how laissez-faire rhetoric coexisted with slavery and gender inequality.",
+    "dialecticalTension": "Tests classical market theory against the empirical realities of labor, household economy, and colonial slavery.",
+    "historicalContext": "Published between 1832 and 1834 in 25 monthly volumes across Britain.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Harriet Martineau",
+        "work": "Illustrations of Political Economy",
+        "year": 1832,
+        "url": "https://en.wikipedia.org/wiki/Harriet_Martineau"
+      }
+    ]
+  },
+  {
+    "id": "mary-wollstonecraft--harriet-martineau",
+    "source": "mary-wollstonecraft",
+    "target": "harriet-martineau",
+    "type": "INFLUENCED",
+    "label": "Inherited Enlightenment feminist critique of artificial female subordination",
+    "strength": 4,
+    "description": "Martineau carried Wollstonecraft's rationalist critique of women's domestic confinement into systematic sociological fieldwork in Society in America.",
+    "dialecticalTension": "Transforms philosophical argument for women's rights into empirical institutional sociology.",
+    "historicalContext": "Articulated in the 'Political Non-Existence of Women' chapter of Society in America (1837).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Harriet Martineau",
+        "work": "Society in America",
+        "sectionOrPage": "Vol. I, Part II ('Political Non-Existence of Women')",
+        "year": 1837,
+        "url": "https://plato.stanford.edu/entries/feminism-political/"
+      }
+    ]
+  },
+  {
+    "id": "harriet-martineau--empirical-sociological-method",
+    "source": "harriet-martineau",
+    "target": "empirical-sociological-method",
+    "type": "DEVELOPED",
+    "label": "Authored the first systematic treatise on sociological research methodology",
+    "strength": 5,
+    "description": "In How to Observe Morals and Manners (1838), Martineau formalized principles of observer bias control, discourse vs. institutional practice comparison, and representative sampling decades before Durkheim's Rules.",
+    "dialecticalTension": "Establishes sociological empiricism as a disciplined science of observable social facts rather than traveler's anecdote.",
+    "historicalContext": "Published in 1838 in London based on her multi-year fieldwork across the United States.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Harriet Martineau",
+        "work": "How to Observe Morals and Manners",
+        "year": 1838,
+        "url": "https://en.wikipedia.org/wiki/How_to_Observe_Morals_and_Manners"
+      }
+    ]
+  },
+  {
+    "id": "harriet-martineau--w-e-b-du-bois",
+    "source": "harriet-martineau",
+    "target": "w-e-b-du-bois",
+    "type": "INFLUENCED",
+    "label": "Pioneered empirical abolitionist sociology examining American racial contradiction",
+    "strength": 4,
+    "description": "Martineau's comparative empirical critique of American democracy's contradiction between universal liberty and chattel slavery anticipated Du Bois's empirical urban and racial sociology.",
+    "dialecticalTension": "Exposes the structural gap between democratic constitutional ideals and racialized institutions.",
+    "historicalContext": "Continuity in empirical anti-slavery and racial-justice sociology from 1837 to 1899.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Patricia Madoo Lengermann and Jill Niebrugge",
+        "work": "The Women Founders: Sociology and Social Theory 1830–1930",
+        "year": 1998,
+        "sectionOrPage": "Ch. 2"
+      }
+    ]
+  },
+  {
+    "id": "harriet-martineau--jane-addams",
+    "source": "harriet-martineau",
+    "target": "jane-addams",
+    "type": "INFLUENCED",
+    "label": "Established the precedent of women-led empirical social inquiry and reform",
+    "strength": 4,
+    "description": "Martineau's model of studying concrete domestic, labor, and civic institutions paved the way for Jane Addams and the Hull-House Maps and Papers empirical sociology project.",
+    "dialecticalTension": "Bridges 19th-century observational sociology with 20th-century participatory settlement sociology.",
+    "historicalContext": "Lineage of women founders in sociology recognized in classical feminist sociological historiography.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Patricia Madoo Lengermann and Jill Niebrugge",
+        "work": "The Women Founders: Sociology and Social Theory 1830–1930",
+        "year": 1998,
+        "sectionOrPage": "Ch. 2 & Ch. 3"
+      }
+    ]
+  }
+]
