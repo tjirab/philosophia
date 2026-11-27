@@ -4,15 +4,19 @@ import {
   computeDialecticalFriction,
   applyScoringMethodology,
 } from '../src/lib/graph/scoring-engine';
+import {
+  computeHybridCanonicalScores,
+  compareByDeterministicRank,
+  inferCanonTier,
+} from '../src/lib/graph/scoring-algorithms.mjs';
 import { VisualNode, VisualLink, METHODOLOGY_CONFIG } from '../src/lib/types';
 import philosophersData from '../data/philosophers.json';
+import conceptsData from '../data/concepts.json';
 import edgesData from '../data/edges.json';
 
 describe('Runtime Scoring Engine & Historiographical Methodology Calculator', () => {
   it('computes directed PageRank correctly across an intellectual network', () => {
     const nodeIds = ['plato', 'aristotle', 'kant', 'fichte'];
-    // In historical influence: Plato influenced Aristotle, Kant influenced Fichte
-    // In citation authority: Aristotle cites Plato, Fichte cites Kant
     const links = [
       { source: 'plato', target: 'aristotle' },
       { source: 'aristotle', target: 'kant' },
@@ -27,28 +31,31 @@ describe('Runtime Scoring Engine & Historiographical Methodology Calculator', ()
     for (const val of pr.values()) {
       sum += val;
     }
-    // PageRank probability distribution sums to 1.0
     expect(sum).toBeCloseTo(1.0, 3);
 
-    // Plato is cited by Aristotle and Kant, so Plato should have substantial authority
     const platoPr = pr.get('plato') || 0;
     const fichtePr = pr.get('fichte') || 0;
     expect(platoPr).toBeGreaterThan(fichtePr);
   });
 
-  it('computes dialectical friction and controversy scores based on critique edges', () => {
-    const nodeIds = ['dogmatist', 'rebel', 'synthesizer'];
+  it('computes Bayesian-smoothed dialectical friction without 2-edge ratio saturation', () => {
+    const nodeIds = ['dogmatist', 'rebel', 'synthesizer', 'sparse-contrarian', 'other'];
     const links = [
       { source: 'dogmatist', target: 'rebel', type: 'CRITIQUED' },
       { source: 'dogmatist', target: 'synthesizer', type: 'SYNTHESIZED' },
       { source: 'rebel', target: 'synthesizer', type: 'DEVELOPED' },
+      { source: 'sparse-contrarian', target: 'other', type: 'CRITIQUED' },
     ];
 
     const friction = computeDialecticalFriction(nodeIds, links);
-    expect(friction.size).toBe(3);
+    expect(friction.size).toBe(5);
 
     const dogmatistFriction = friction.get('dogmatist')?.score || 0;
     expect(dogmatistFriction).toBeGreaterThan(30);
+
+    // A 1-edge node should be damped well below 100 by the Laplace +3 smoothing prior
+    const sparseScore = friction.get('sparse-contrarian')?.score || 0;
+    expect(sparseScore).toBeLessThan(60);
 
     const rebelFriction = friction.get('rebel')?.critiqueCount;
     expect(rebelFriction).toBe(1);
@@ -106,6 +113,60 @@ describe('Runtime Scoring Engine & Historiographical Methodology Calculator', ()
     expect(plato.scoreBreakdown?.components.length).toBeGreaterThan(0);
   });
 
+  it('computes Hybrid Canonical Consensus identically between build-time compiler and runtime engine', () => {
+    const allNodes: VisualNode[] = [
+      ...philosophersData.map((p: any) => ({
+        id: p.id,
+        name: p.name,
+        type: 'philosopher' as const,
+        eraId: p.eraId,
+        traditionId: p.traditionId,
+        domains: p.domains,
+        canonTier: p.canonTier,
+        importanceScore: p.importanceScore,
+        color: '#d4af37',
+        summary: p.shortBio,
+        data: p,
+      })),
+      ...conceptsData.map((c: any) => ({
+        id: c.id,
+        name: c.title,
+        type: 'concept' as const,
+        eraId: c.eraId,
+        branch: c.branch,
+        importanceScore: 50,
+        color: '#94a3b8',
+        summary: c.summary,
+        data: c,
+      })),
+    ];
+
+    const hybridMap = computeHybridCanonicalScores(allNodes, edgesData as any);
+    const runtimeScored = applyScoringMethodology(allNodes, edgesData as any, 'canonical');
+
+    for (const p of philosophersData as any[]) {
+      const runtimeNode = runtimeScored.find((n) => n.id === p.id)!;
+      const buildEntry = hybridMap.get(p.id)!;
+      expect(runtimeNode.importanceScore).toBe(p.importanceScore);
+      expect(runtimeNode.importanceScore).toBe(buildEntry.score);
+      expect(runtimeNode.scoreBreakdown?.components.length).toBe(5);
+    }
+  });
+
+  it('resolves ties deterministically without relying on birthYear ordering', () => {
+    const a = { id: 'z-thinker', name: 'Z Thinker', score: 94, rawScore: 93.8, degree: 8 };
+    const b = { id: 'a-thinker', name: 'A Thinker', score: 94, rawScore: 93.6, degree: 6 };
+    const c = { id: 'b-thinker', name: 'B Thinker', score: 94, rawScore: 93.6, degree: 9 };
+    const d = { id: 'c-thinker', name: 'C Thinker', score: 94, rawScore: 93.6, degree: 9 };
+
+    const sorted = [d, b, a, c].sort(compareByDeterministicRank);
+    expect(sorted.map((x) => x.id)).toEqual(['z-thinker', 'b-thinker', 'c-thinker', 'a-thinker']);
+    expect(inferCanonTier({ canonTier: 'pillar', importanceScore: 70 })).toBe('pillar');
+    expect(inferCanonTier({ importanceScore: 95 })).toBe('pillar');
+    expect(inferCanonTier({ importanceScore: 91 })).toBe('bridge');
+    expect(inferCanonTier({ importanceScore: 84 })).toBe('contributor');
+  });
+
   it('provides complete metadata and formulas for all three methodologies', () => {
     const methodologies = ['canonical', 'topology', 'friction'] as const;
     for (const m of methodologies) {
@@ -119,22 +180,27 @@ describe('Runtime Scoring Engine & Historiographical Methodology Calculator', ()
   });
 
   it('runs on full dataset in under 50ms', () => {
-    const nodes: VisualNode[] = philosophersData.map((p) => ({
+    const nodes: VisualNode[] = philosophersData.map((p: any) => ({
       id: p.id,
       name: p.name,
       type: 'philosopher',
-      eraId: p.eraId as any,
+      eraId: p.eraId,
+      traditionId: p.traditionId,
+      domains: p.domains,
+      canonTier: p.canonTier,
       importanceScore: p.importanceScore,
       color: '#d4af37',
       summary: p.shortBio,
-      data: p as any,
+      data: p,
     }));
 
     const start = performance.now();
+    const scoredCanonical = applyScoringMethodology(nodes, edgesData as any, 'canonical');
     const scoredTopology = applyScoringMethodology(nodes, edgesData as any, 'topology');
     const scoredFriction = applyScoringMethodology(nodes, edgesData as any, 'friction');
     const elapsed = performance.now() - start;
 
+    expect(scoredCanonical.length).toBe(philosophersData.length);
     expect(scoredTopology.length).toBe(philosophersData.length);
     expect(scoredFriction.length).toBe(philosophersData.length);
     expect(elapsed).toBeLessThan(50);

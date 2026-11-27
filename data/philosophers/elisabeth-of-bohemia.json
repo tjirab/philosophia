@@ -25,6 +25,7 @@
     "sep": "https://plato.stanford.edu/entries/elisabeth-bohemia/",
     "wikipedia": "https://en.wikipedia.org/wiki/Elisabeth_of_the_Palatinate"
   },
+  "canonTier": "bridge",
   "importanceScore": 89,
   "imageUrl": "/portraits/elisabeth-of-bohemia.jpg"
 }

@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { computeHybridCanonicalScores } from '../src/lib/graph/scoring-algorithms.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -136,6 +137,26 @@ export function buildData() {
     console.log(`✓ Compiled ${media.length} media items -> data/media.json`);
   }
 
+  // 4b. Compile Hybrid Canonical-Topological Scores across the unified graph
+  // so compiled philosophers.json, per-thinker chunks, and graph-index.json
+  // match runtime scoring-engine calculations identically.
+  if (philosophers.length > 0 && edges.length > 0) {
+    const allScoringNodes = [
+      ...philosophers.map((p) => ({ ...p, type: 'philosopher' })),
+      ...concepts.map((c) => ({ ...c, type: 'concept' })),
+    ];
+    const hybridScores = computeHybridCanonicalScores(allScoringNodes, edges);
+    for (const p of philosophers) {
+      const entry = hybridScores.get(p.id);
+      if (entry) {
+        p.canonTier = entry.canonTier;
+        p.importanceScore = entry.score;
+      }
+    }
+    writeJsonAtomic(path.join(DATA_DIR, 'philosophers.json'), philosophers);
+    console.log(`✓ Applied Hybrid Canonical-Topological scores across ${philosophers.length} thinkers`);
+  }
+
   // 5. Stage 2: Static Chunks Compilation
   const thinkersChunkDir = path.join(CHUNKS_DIR, 'thinkers');
   const conceptsChunkDir = path.join(CHUNKS_DIR, 'concepts');
@@ -200,6 +221,7 @@ export function buildData() {
       traditionId: p.traditionId,
       domains: p.domains,
       primaryDomain: p.primaryDomain,
+      canonTier: p.canonTier,
       importanceScore: p.importanceScore,
       imageUrl: p.imageUrl,
     })),

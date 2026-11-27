@@ -127,6 +127,8 @@ export function getDomainForBranch(branch: Branch): DomainId | undefined {
   return BRANCH_METAS.find((b) => b.id === branch)?.domain;
 }
 
+export type CanonTier = 'pillar' | 'bridge' | 'contributor';
+
 export type ScoringMethodology = 'canonical' | 'topology' | 'friction';
 
 export interface MethodologyMeta {
@@ -142,12 +144,12 @@ export interface MethodologyMeta {
 export const METHODOLOGY_CONFIG: Record<ScoringMethodology, MethodologyMeta> = {
   canonical: {
     id: 'canonical',
-    name: 'Canonical Consensus',
-    shortLabel: 'Canonical',
+    name: 'Hybrid Canonical Consensus',
+    shortLabel: 'Hybrid',
     icon: '🏛️',
-    tagline: 'Traditional textbook and Stanford Encyclopedia historical stature.',
-    description: 'Human-curated consensus based on centuries of secondary literature, primary treatises, and academic prominence.',
-    formula: 'Historical canon weight + primary texts + encyclopedic coverage',
+    tagline: 'Coarse editorial canon tier blended with live bidirectional network centrality.',
+    description: 'Balances a 3-tier historical stature prior (48%) with bidirectional log-degree & PageRank centrality (32%), cross-era/domain reach (12%), and primary corpus coverage (8%).',
+    formula: '72 + 28 × (0.48·T + 0.32·C_bi + 0.12·R_cross + 0.08·A)',
   },
   topology: {
     id: 'topology',
@@ -156,7 +158,7 @@ export const METHODOLOGY_CONFIG: Record<ScoringMethodology, MethodologyMeta> = {
     icon: '🕸️',
     tagline: 'Pure mathematical centrality (directed PageRank and influence conduits).',
     description: 'Algorithmic centrality computed live from the directed knowledge graph, revealing structural linchpins and forgotten conduits regardless of cultural fame.',
-    formula: 'Directed PageRank (d=0.85, 20 iterations) + degree centrality',
+    formula: 'Directed PageRank (d=0.85, 25 iterations) rescaled to [25, 99]',
   },
   friction: {
     id: 'friction',
@@ -164,14 +166,17 @@ export const METHODOLOGY_CONFIG: Record<ScoringMethodology, MethodologyMeta> = {
     shortLabel: 'Controversy',
     icon: '⚔️',
     tagline: 'Density of philosophical breaks, rebuttals, and paradigm fractures.',
-    description: 'Calculates the intensity of intellectual debate provoked by each thinker—measuring who shattered consensus and spawned opposing traditions.',
-    formula: '(Critique edges × 2 + Synthesis edges) / total connections',
+    description: 'Calculates the intensity of intellectual debate provoked by each thinker using Bayesian-smoothed critique & synthesis ratios.',
+    formula: '55 × (2·Critiques + Syntheses) / (Total + 3) + min(45, 4·(2·Critiques + Syntheses))',
   },
 };
 
 export interface NodeScoreBreakdown {
   methodology: ScoringMethodology;
   score: number; // 0 to 100
+  rawScore?: number;
+  degree?: number;
+  canonTier?: CanonTier;
   rank: number;
   totalNodes: number;
   percentile: number;
@@ -328,6 +333,7 @@ export interface Philosopher {
   keyWorks: (string | KeyWork)[];
   sepSlug: string;
   externalRefs?: ExternalReferences;
+  canonTier?: CanonTier;
   importanceScore: number;
   imageUrl?: string;
 }
@@ -390,6 +396,7 @@ export interface VisualNode {
   traditionId?: string;
   branch?: Branch;
   year?: number;
+  canonTier?: CanonTier;
   importanceScore: number;
   color: string;
   summary: string;

@@ -1,7 +1,7 @@
 /**
  * Runtime Scoring Engine & Historiographical Methodology Calculator
- * Provides pure mathematical algorithms (Directed PageRank, Degree Centrality,
- * Dialectical Friction) and dynamically rescales nodes and ranks in real-time.
+ * Delegates core mathematical algorithms to scoring-algorithms.mjs so build-time
+ * compilation and client/SSR runtime produce identical scores and deterministic ranks.
  */
 
 import {
@@ -10,8 +10,13 @@ import {
   VisualNode,
   VisualLink,
   Edge,
-  METHODOLOGY_CONFIG,
 } from '../types';
+import {
+  computeDirectedPageRank,
+  computeDialecticalFrictionScores,
+  computeHybridCanonicalScores,
+  compareByDeterministicRank,
+} from './scoring-algorithms.mjs';
 
 export interface PageRankOptions {
   dampingFactor?: number;
@@ -29,72 +34,12 @@ export function computePageRank(
   links: Array<{ source: string | { id: string }; target: string | { id: string } }>,
   options: PageRankOptions = {}
 ): Map<string, number> {
-  const { dampingFactor = 0.85, iterations = 25 } = options;
-  const N = nodeIds.length;
-  if (N === 0) return new Map();
-
-  const idSet = new Set(nodeIds);
-  const outDegree = new Map<string, number>();
-  const inEdges = new Map<string, string[]>();
-
-  for (const id of nodeIds) {
-    outDegree.set(id, 0);
-    inEdges.set(id, []);
-  }
-
-  // Construct citation network: successor (target) cites predecessor (source)
-  for (const link of links) {
-    const src = typeof link.source === 'object' ? link.source.id : link.source;
-    const tgt = typeof link.target === 'object' ? link.target.id : link.target;
-
-    if (idSet.has(src) && idSet.has(tgt) && src !== tgt) {
-      // tgt cites src -> tgt has outgoing citation, src has incoming citation
-      outDegree.set(tgt, (outDegree.get(tgt) || 0) + 1);
-      inEdges.get(src)?.push(tgt);
-    }
-  }
-
-  // Initial uniform distribution
-  let scores = new Map<string, number>();
-  const initialScore = 1 / N;
-  for (const id of nodeIds) {
-    scores.set(id, initialScore);
-  }
-
-  // Power iteration
-  for (let iter = 0; iter < iterations; iter++) {
-    const nextScores = new Map<string, number>();
-    let sinkMass = 0;
-
-    // Distribute sink mass (nodes with outDegree === 0)
-    for (const id of nodeIds) {
-      if ((outDegree.get(id) || 0) === 0) {
-        sinkMass += scores.get(id) || 0;
-      }
-    }
-
-    const baseShare = (1 - dampingFactor) / N + (dampingFactor * sinkMass) / N;
-
-    for (const id of nodeIds) {
-      let incomingShare = 0;
-      const inboundNodes = inEdges.get(id) || [];
-      for (const inId of inboundNodes) {
-        const outDeg = outDegree.get(inId) || 1;
-        incomingShare += (scores.get(inId) || 0) / outDeg;
-      }
-
-      nextScores.set(id, baseShare + dampingFactor * incomingShare);
-    }
-
-    scores = nextScores;
-  }
-
-  return scores;
+  return computeDirectedPageRank(nodeIds, links, options);
 }
 
 /**
- * Computes Dialectical Friction: measures controversy and intensity of paradigm breaks.
- * Ranks thinkers by who provoked the most rebuttals (CRITIQUED) and syntheses (SYNTHESIZED).
+ * Computes Dialectical Friction: measures controversy and intensity of paradigm breaks
+ * using Bayesian-smoothed critique & synthesis ratios.
  */
 export function computeDialecticalFriction(
   nodeIds: string[],
@@ -104,54 +49,23 @@ export function computeDialecticalFriction(
     type: string;
   }>
 ): Map<string, { score: number; critiqueCount: number; synthesisCount: number; totalCount: number }> {
+  const raw = computeDialecticalFrictionScores(nodeIds, links);
   const result = new Map<string, { score: number; critiqueCount: number; synthesisCount: number; totalCount: number }>();
-  const idSet = new Set(nodeIds);
-
-  const critiques = new Map<string, number>();
-  const syntheses = new Map<string, number>();
-  const totals = new Map<string, number>();
-
-  for (const id of nodeIds) {
-    critiques.set(id, 0);
-    syntheses.set(id, 0);
-    totals.set(id, 0);
-  }
-
-  for (const link of links) {
-    const src = typeof link.source === 'object' ? link.source.id : link.source;
-    const tgt = typeof link.target === 'object' ? link.target.id : link.target;
-
-    if (idSet.has(src)) totals.set(src, (totals.get(src) || 0) + 1);
-    if (idSet.has(tgt)) totals.set(tgt, (totals.get(tgt) || 0) + 1);
-
-    if (link.type === 'CRITIQUED') {
-      if (idSet.has(src)) critiques.set(src, (critiques.get(src) || 0) + 1);
-      if (idSet.has(tgt)) critiques.set(tgt, (critiques.get(tgt) || 0) + 1);
-    } else if (link.type === 'SYNTHESIZED') {
-      if (idSet.has(src)) syntheses.set(src, (syntheses.get(src) || 0) + 1);
-      if (idSet.has(tgt)) syntheses.set(tgt, (syntheses.get(tgt) || 0) + 1);
-    }
-  }
-
-  for (const id of nodeIds) {
-    const c = critiques.get(id) || 0;
-    const s = syntheses.get(id) || 0;
-    const tot = totals.get(id) || 0;
-
-    // Friction formula: combination of controversy ratio and total dialectical volume
-    const ratio = tot > 0 ? (c * 2 + s) / tot : 0;
-    const volumeBonus = Math.min(45, (c * 2 + s) * 4);
-    const score = Math.max(10, Math.min(100, Math.round(ratio * 55 + volumeBonus)));
-
+  for (const [id, entry] of raw.entries()) {
     result.set(id, {
-      score,
-      critiqueCount: c,
-      synthesisCount: s,
-      totalCount: tot,
+      score: entry.score,
+      critiqueCount: entry.critiqueCount,
+      synthesisCount: entry.synthesisCount,
+      totalCount: entry.totalCount,
     });
   }
-
   return result;
+}
+
+function formatTierLabel(tier: string): string {
+  if (tier === 'pillar') return 'Foundational Pillar';
+  if (tier === 'bridge') return 'Dialectical Bridge';
+  return 'Canonical Contributor';
 }
 
 /**
@@ -167,19 +81,28 @@ export function applyScoringMethodology(
 
   const nodeIds = nodes.map((n) => n.id);
   const totalNodes = nodes.length;
+  const nodeMap = new Map(nodes.map((n) => [n.id, n]));
+
+  // Compute undirected degrees once for deterministic tie-breaking across all lenses
+  const degrees = new Map<string, number>();
+  for (const id of nodeIds) degrees.set(id, 0);
+  for (const l of links) {
+    const src = typeof l.source === 'object' ? l.source.id : l.source;
+    const tgt = typeof l.target === 'object' ? l.target.id : l.target;
+    if (degrees.has(src)) degrees.set(src, (degrees.get(src) || 0) + 1);
+    if (degrees.has(tgt)) degrees.set(tgt, (degrees.get(tgt) || 0) + 1);
+  }
 
   if (methodology === 'topology') {
     // 1. Pure Network Topology (Directed PageRank)
     const rawPageRank = computePageRank(nodeIds, links);
 
-    // Calculate in-degree for additional authority breakdown
     const inDegrees = new Map<string, number>();
     for (const l of links) {
       const src = typeof l.source === 'object' ? l.source.id : l.source;
       inDegrees.set(src, (inDegrees.get(src) || 0) + 1);
     }
 
-    // Min/Max scaling with logarithmic smoothing to keep visual spread balanced
     let maxPr = 0;
     let minPr = Infinity;
     for (const pr of rawPageRank.values()) {
@@ -188,22 +111,28 @@ export function applyScoringMethodology(
     }
     const prRange = maxPr > minPr ? maxPr - minPr : 1;
 
-    // Map each node to 0-100 score
     const scores = new Map<string, number>();
+    const rawScores = new Map<string, number>();
     for (const id of nodeIds) {
       const pr = rawPageRank.get(id) || 0;
-      // Normalization formula: scaled between 25 and 99
-      const normalized = Math.round(25 + ((pr - minPr) / prRange) * 74);
-      scores.set(id, Math.max(20, Math.min(99, normalized)));
+      const rawNormalized = 25 + ((pr - minPr) / prRange) * 74;
+      const clamped = Math.max(20, Math.min(99, Math.round(rawNormalized)));
+      scores.set(id, clamped);
+      rawScores.set(id, rawNormalized);
     }
 
-    // Sort to determine ranks
-    const sorted = [...nodeIds].sort((a, b) => (scores.get(b) || 0) - (scores.get(a) || 0));
+    const sorted = [...nodeIds].sort((a, b) =>
+      compareByDeterministicRank(
+        { id: a, name: nodeMap.get(a)?.name, score: scores.get(a), rawScore: rawScores.get(a), degree: degrees.get(a) },
+        { id: b, name: nodeMap.get(b)?.name, score: scores.get(b), rawScore: rawScores.get(b), degree: degrees.get(b) }
+      )
+    );
     const ranks = new Map<string, number>();
     sorted.forEach((id, idx) => ranks.set(id, idx + 1));
 
     return nodes.map((node) => {
       const score = scores.get(node.id) || 50;
+      const rawScore = rawScores.get(node.id) || score;
       const rank = ranks.get(node.id) || totalNodes;
       const rawPr = rawPageRank.get(node.id) || 0;
       const citations = inDegrees.get(node.id) || 0;
@@ -212,6 +141,8 @@ export function applyScoringMethodology(
       const breakdown: NodeScoreBreakdown = {
         methodology: 'topology',
         score,
+        rawScore,
+        degree: degrees.get(node.id) || 0,
         rank,
         totalNodes,
         percentile,
@@ -233,25 +164,36 @@ export function applyScoringMethodology(
   }
 
   if (methodology === 'friction') {
-    // 2. Dialectical Friction & Controversy
-    const frictionData = computeDialecticalFriction(nodeIds, links);
+    // 2. Dialectical Friction & Controversy (Bayesian-smoothed)
+    const frictionData = computeDialecticalFrictionScores(nodeIds, links);
     const sorted = [...nodeIds].sort((a, b) => {
-      const sA = frictionData.get(a)?.score || 0;
-      const sB = frictionData.get(b)?.score || 0;
-      return sB - sA;
+      const fA = frictionData.get(a);
+      const fB = frictionData.get(b);
+      return compareByDeterministicRank(
+        { id: a, name: nodeMap.get(a)?.name, score: fA?.score || 0, rawScore: fA?.rawScore || 0, degree: fA?.totalCount || 0 },
+        { id: b, name: nodeMap.get(b)?.name, score: fB?.score || 0, rawScore: fB?.rawScore || 0, degree: fB?.totalCount || 0 }
+      );
     });
 
     const ranks = new Map<string, number>();
     sorted.forEach((id, idx) => ranks.set(id, idx + 1));
 
     return nodes.map((node) => {
-      const data = frictionData.get(node.id) || { score: 50, critiqueCount: 0, synthesisCount: 0, totalCount: 0 };
+      const data = frictionData.get(node.id) || {
+        score: 50,
+        rawScore: 50,
+        critiqueCount: 0,
+        synthesisCount: 0,
+        totalCount: 0,
+      };
       const rank = ranks.get(node.id) || totalNodes;
       const percentile = Math.round(((totalNodes - rank) / totalNodes) * 100);
 
       const breakdown: NodeScoreBreakdown = {
         methodology: 'friction',
         score: data.score,
+        rawScore: data.rawScore,
+        degree: data.totalCount,
         rank,
         totalNodes,
         percentile,
@@ -273,36 +215,50 @@ export function applyScoringMethodology(
     });
   }
 
-  // 3. Canonical Consensus (Default)
+  // 3. Hybrid Canonical-Topological Consensus (Default — Recommendation A)
+  const hybridData = computeHybridCanonicalScores(nodes, links);
   const sorted = [...nodeIds].sort((a, b) => {
-    const sA = nodes.find((n) => n.id === a)?.importanceScore || 50;
-    const sB = nodes.find((n) => n.id === b)?.importanceScore || 50;
-    return sB - sA;
+    const hA = hybridData.get(a);
+    const hB = hybridData.get(b);
+    return compareByDeterministicRank(
+      { id: a, name: nodeMap.get(a)?.name, score: hA?.score || 50, rawScore: hA?.rawScore || 50, degree: hA?.degree || 0 },
+      { id: b, name: nodeMap.get(b)?.name, score: hB?.score || 50, rawScore: hB?.rawScore || 50, degree: hB?.degree || 0 }
+    );
   });
 
   const ranks = new Map<string, number>();
   sorted.forEach((id, idx) => ranks.set(id, idx + 1));
 
   return nodes.map((node) => {
-    const score = node.importanceScore || 50;
+    const h = hybridData.get(node.id);
+    const score = h?.score ?? node.importanceScore ?? 50;
+    const rawScore = h?.rawScore ?? score;
     const rank = ranks.get(node.id) || totalNodes;
     const percentile = Math.round(((totalNodes - rank) / totalNodes) * 100);
 
     const breakdown: NodeScoreBreakdown = {
       methodology: 'canonical',
       score,
+      rawScore,
+      degree: h?.degree ?? (degrees.get(node.id) || 0),
+      canonTier: h?.canonTier,
       rank,
       totalNodes,
       percentile,
       components: [
-        { label: 'Historical Canon Weight', value: `${score}/100`, weight: '60%' },
-        { label: 'Canonical Works Recorded', value: (node.data as any)?.keyWorks?.length || 0, weight: '25%' },
-        { label: 'Canonical Rank', value: `#${rank} of ${totalNodes}` },
+        { label: 'Canon Tier Prior', value: h ? formatTierLabel(h.canonTier) : 'Contributor', weight: '48%' },
+        { label: 'Bidirectional Centrality', value: h ? `${Math.round(h.bidirectionalCentrality * 100)}/100` : '0/100', weight: '32%' },
+        { label: 'Cross-Boundary Reach', value: h ? `${h.distinctNeighborEras} eras · ${h.distinctNeighborTraditions} traditions` : '0', weight: '12%' },
+        { label: 'Scholarly Apparatus', value: h ? `${Math.round(h.scholarlyApparatus * 100)}%` : '0%', weight: '8%' },
+        { label: 'Hybrid Consensus Rank', value: `#${rank} of ${totalNodes}` },
       ],
     };
 
     return {
       ...node,
+      canonTier: h?.canonTier ?? node.canonTier,
+      importanceScore: score,
+      val: node.type === 'philosopher' ? Math.max(8, Math.round(score / 8)) : node.val,
       methodology: 'canonical',
       scoreBreakdown: breakdown,
     };

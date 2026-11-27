@@ -215,13 +215,17 @@ export default async function ThinkerPage({ params }: PageProps) {
                 </span>
 
                 {scoreBreakdown && (
-                  <span className="flex items-center gap-1.5 text-[var(--gold-accent)] font-semibold">
+                  <Link
+                    href="/methodology"
+                    className="flex items-center gap-1.5 text-[var(--gold-accent)] font-semibold hover:underline"
+                    title="Inspect mathematical scoring formulas and methodology"
+                  >
                     <Compass className="w-3.5 h-3.5" />
                     <span>Centrality: {scoreBreakdown.score}/100</span>
                     <span className="text-[var(--text-dim)]">
                       (#{scoreBreakdown.rank})
                     </span>
-                  </span>
+                  </Link>
                 )}
 
                 {exploration && (

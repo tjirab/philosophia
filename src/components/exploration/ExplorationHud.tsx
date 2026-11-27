@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef } from 'react';
+import Link from 'next/link';
 import {
   Map,
   Compass,
@@ -191,8 +192,17 @@ export function ExplorationHud({
             {/* Section 2: Historiographical Methodology */}
             {onSelectMethodology && (
               <div className="mb-3 pt-2.5 border-t border-[var(--border-main)]">
-                <div className="text-[10px] uppercase font-mono font-bold tracking-wider text-[var(--text-dim)] mb-1.5 px-1">
-                  Historiographical Lens
+                <div className="flex items-center justify-between mb-1.5 px-1">
+                  <span className="text-[10px] uppercase font-mono font-bold tracking-wider text-[var(--text-dim)]">
+                    Historiographical Lens
+                  </span>
+                  <Link
+                    href="/methodology"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-[10px] font-mono text-[var(--gold-accent)] hover:underline"
+                  >
+                    Formulas →
+                  </Link>
                 </div>
                 <div className="space-y-1">
                   {(Object.keys(METHODOLOGY_CONFIG) as ScoringMethodology[]).map((mId) => {

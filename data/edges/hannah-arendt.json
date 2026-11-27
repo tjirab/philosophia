@@ -19,5 +19,119 @@
         "url": "https://plato.stanford.edu/entries/arendt/"
       }
     ]
+  },
+  {
+    "id": "martin-heidegger--hannah-arendt",
+    "source": "martin-heidegger",
+    "target": "hannah-arendt",
+    "type": "CRITIQUED",
+    "label": "Reversed Heidegger's being-toward-death with political natality and plurality",
+    "strength": 5,
+    "description": "Trained directly under Martin Heidegger at Marburg, Hannah Arendt broke decisively with his solitary Dasein and withdrawal from politics, grounding the human condition instead in natality, plurality, and shared public action.",
+    "dialecticalTension": "Confronts existential phenomenology's solitary concern with mortality against the public world of plural political beginnings.",
+    "historicalContext": "Formulated across The Human Condition (1958) and Arendt's post-war political essays in dialogue with Being and Time.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Hannah Arendt",
+        "work": "The Human Condition",
+        "sectionOrPage": "Ch. 1 & Ch. 5 (Natality & Action)",
+        "year": 1958,
+        "quote": "Since action is the political activity par excellence, natality, and not mortality, may be the central category of political, as distinguished from metaphysical, thought.",
+        "url": "https://plato.stanford.edu/entries/arendt/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Maurizio Passerin d'Entrèves",
+        "work": "Hannah Arendt",
+        "url": "https://plato.stanford.edu/entries/arendt/"
+      }
+    ]
+  },
+  {
+    "id": "aristotle--hannah-arendt",
+    "source": "aristotle",
+    "target": "hannah-arendt",
+    "type": "DEVELOPED",
+    "label": "Revived Aristotelian praxis and bios politikos for modern political theory",
+    "strength": 5,
+    "description": "Arendt drew upon Aristotle's distinction between praxis (action in the polis) and poiesis (fabrication) to diagnose how modern mass society reduces civic freedom to economic labor.",
+    "dialecticalTension": "Reclaims classical political action as an end in itself against modern instrumentalist and bureaucratic politics.",
+    "historicalContext": "Central architectural scaffold of The Human Condition (1958).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Hannah Arendt",
+        "work": "The Human Condition",
+        "sectionOrPage": "§24–27",
+        "year": 1958,
+        "url": "https://plato.stanford.edu/entries/arendt/"
+      },
+      {
+        "citationType": "secondary",
+        "author": "Dana Villa",
+        "work": "Arendt and Heidegger: The Fate of the Political",
+        "year": 1996,
+        "sectionOrPage": "Ch. 1–2"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--hannah-arendt",
+    "source": "karl-marx",
+    "target": "hannah-arendt",
+    "type": "CRITIQUED",
+    "label": "Critiqued Marx's elevation of labor over political action",
+    "strength": 4,
+    "description": "While respecting Marx's analysis of alienation, Arendt argued that Marx collapsed genuine political action and fabrication into biological labor (animal laborans) and deterministic historical necessity.",
+    "dialecticalTension": "Questions whether emancipatory politics can be reduced to socio-economic metabolism without eroding civic plurality.",
+    "historicalContext": "Detailed in Chapter III ('Labor') of The Human Condition (1958) and On Revolution (1963).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Hannah Arendt",
+        "work": "The Human Condition",
+        "sectionOrPage": "Ch. III (Labor)",
+        "year": 1958,
+        "url": "https://plato.stanford.edu/entries/arendt/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Maurizio Passerin d'Entrèves",
+        "work": "Hannah Arendt",
+        "url": "https://plato.stanford.edu/entries/arendt/"
+      }
+    ]
+  },
+  {
+    "id": "hannah-arendt--jurgen-habermas",
+    "source": "hannah-arendt",
+    "target": "jurgen-habermas",
+    "type": "INFLUENCED",
+    "label": "Shaped communicative power and democratic public sphere theory",
+    "strength": 5,
+    "description": "Arendt's conception of power as collective concert among speaking equals directly informed Jürgen Habermas's theory of communicative action and deliberative democracy.",
+    "dialecticalTension": "Transforms Arendt's agonistic civic republicanism into a procedural discourse ethics of rational consensus.",
+    "historicalContext": "Engaged extensively by Habermas in 'Hannah Arendt's Communications Concept of Power' (1977) and Between Facts and Norms (1992).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Jürgen Habermas",
+        "work": "Hannah Arendt's Communications Concept of Power",
+        "sectionOrPage": "Social Research 44 (1): 3–24",
+        "year": 1977,
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      },
+      {
+        "citationType": "sep",
+        "author": "James Bohman and William Rehg",
+        "work": "Jürgen Habermas",
+        "url": "https://plato.stanford.edu/entries/habermas/"
+      }
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { philosophers, eras, traditions } from '../../lib/graph/graph-service';
+import { philosophers, concepts, edges, eras, traditions } from '../../lib/graph/graph-service';
 import { ThinkersCatalogView } from '../../components/catalog/ThinkersCatalogView';
 
 export const metadata: Metadata = {
@@ -13,6 +13,8 @@ export default function ThinkersPage() {
   return (
     <ThinkersCatalogView
       initialThinkers={philosophers}
+      concepts={concepts}
+      edges={edges}
       eras={eras}
       traditions={traditions}
     />
