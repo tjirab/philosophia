@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { Philosopher, Era, Tradition } from '../../lib/types';
 import { getAssetUrl } from '../../lib/assets';
+import { matchesPhilosopherQuery } from '../../lib/search';
 
 interface ThinkersCatalogViewProps {
   initialThinkers: Philosopher[];
@@ -65,13 +66,8 @@ export function ThinkersCatalogView({
         }
         // Search query
         if (searchQuery.trim()) {
-          const q = searchQuery.toLowerCase();
-          const matchName = p.name.toLowerCase().includes(q);
-          const matchBio = (p.shortBio || '').toLowerCase().includes(q);
-          const matchQuestion = (p.centralQuestion || '').toLowerCase().includes(q);
           const tradition = traditionMap.get(p.traditionId);
-          const matchTradition = (tradition?.name || '').toLowerCase().includes(q);
-          return matchName || matchBio || matchQuestion || matchTradition;
+          return matchesPhilosopherQuery(p, searchQuery, [tradition?.name]);
         }
         return true;
       })

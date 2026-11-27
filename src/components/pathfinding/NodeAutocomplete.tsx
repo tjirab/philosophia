@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Search, X, User, BookOpen, Check, ChevronDown } from 'lucide-react';
 import { Philosopher, Concept } from '../../lib/types';
 import { useClickOutside } from '../../lib/hooks/useClickOutside';
+import { matchesConceptQuery, matchesPhilosopherQuery, normalizeSearchText } from '../../lib/search';
 
 export interface NodeAutocompleteProps {
   id?: string;
@@ -60,8 +61,8 @@ export function NodeAutocomplete({
 
   // Filter thinkers and concepts based on search term
   const { filteredPhilosophers, filteredConcepts, isQuerying } = useMemo(() => {
-    const q = searchTerm.trim().toLowerCase();
-    const querying = q.length > 0 && q !== currentDisplayName.toLowerCase();
+    const q = normalizeSearchText(searchTerm.trim());
+    const querying = q.length > 0 && q !== normalizeSearchText(currentDisplayName);
 
     if (!querying) {
       return {
@@ -71,35 +72,20 @@ export function NodeAutocomplete({
       };
     }
 
-    const matchedP = philosophers.filter((p) => {
-      return (
-        p.name.toLowerCase().includes(q) ||
-        (p.shortBio || '').toLowerCase().includes(q) ||
-        (p.centralQuestion || '').toLowerCase().includes(q) ||
-        (p.eraId || '').toLowerCase().includes(q) ||
-        (p.keyWorks || []).some((w) => {
-          const title = typeof w === 'string' ? w : w.title || '';
-          return title.toLowerCase().includes(q);
-        })
-      );
-    });
+    const matchedP = philosophers.filter((p) =>
+      matchesPhilosopherQuery(p, q, [p.eraId])
+    );
 
     // Prioritize prefix matches, then substring matches
     matchedP.sort((a, b) => {
-      const aStarts = a.name.toLowerCase().startsWith(q);
-      const bStarts = b.name.toLowerCase().startsWith(q);
+      const aStarts = normalizeSearchText(a.name).startsWith(q);
+      const bStarts = normalizeSearchText(b.name).startsWith(q);
       if (aStarts && !bStarts) return -1;
       if (!aStarts && bStarts) return 1;
       return a.name.localeCompare(b.name);
     });
 
-    const matchedC = concepts.filter((c) => {
-      return (
-        (c.title || '').toLowerCase().includes(q) ||
-        (c.summary || '').toLowerCase().includes(q) ||
-        (c.branch || '').toLowerCase().includes(q)
-      );
-    });
+    const matchedC = concepts.filter((c) => matchesConceptQuery(c, q));
 
     return {
       filteredPhilosophers: matchedP.slice(0, 20),

@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { Edge, Philosopher, Concept, getEdgeTypeConfig } from '../../lib/types';
 import { getAssetUrl } from '../../lib/assets';
+import { matchesEdgeQuery } from '../../lib/search';
 
 interface LineagesCatalogViewProps {
   initialEdges: Edge[];
@@ -54,7 +55,6 @@ export function LineagesCatalogView({
       }
       // Search query
       if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase();
         const srcPhil = philMap.get(edge.source);
         const tgtPhil = philMap.get(edge.target);
         const srcConc = conceptMap.get(edge.source);
@@ -62,10 +62,7 @@ export function LineagesCatalogView({
 
         const srcName = srcPhil?.name || srcConc?.title || edge.source;
         const tgtName = tgtPhil?.name || tgtConc?.title || edge.target;
-        const matchNodes = srcName.toLowerCase().includes(q) || tgtName.toLowerCase().includes(q);
-        const matchLabel = (edge.label || '').toLowerCase().includes(q);
-        const matchDesc = (edge.description || '').toLowerCase().includes(q);
-        return matchNodes || matchLabel || matchDesc;
+        return matchesEdgeQuery(edge, srcName, tgtName, searchQuery);
       }
       return true;
     });

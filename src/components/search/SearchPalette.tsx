@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Search, X, BookOpen, User } from 'lucide-react';
 import { Philosopher, Concept } from '../../lib/types';
 import { useClickOutside } from '../../lib/hooks/useClickOutside';
+import { matchesConceptQuery, matchesPhilosopherQuery } from '../../lib/search';
 
 interface SearchPaletteProps {
   isOpen: boolean;
@@ -38,32 +39,14 @@ export function SearchPalette({
 
   if (!isOpen) return null;
 
-  const q = query.trim().toLowerCase();
+  const q = query.trim();
 
   const matchedPhilosophers = q
-    ? philosophers.filter(
-        (p) =>
-          (p.name || '').toLowerCase().includes(q) ||
-          (p.shortBio || '').toLowerCase().includes(q) ||
-          (p.centralQuestion || '').toLowerCase().includes(q) ||
-          (p.keyWorks || []).some((w) => {
-            const title = typeof w === 'string' ? w : (w as any)?.title || '';
-            return title.toLowerCase().includes(q);
-          })
-      )
+    ? philosophers.filter((p) => matchesPhilosopherQuery(p, q))
     : philosophers.slice(0, 6);
 
   const matchedConcepts = q
-    ? concepts.filter((c) => {
-        const title = c.title || (c as any).name || '';
-        const summary = c.summary || (c as any).description || '';
-        const branch = c.branch || '';
-        return (
-          title.toLowerCase().includes(q) ||
-          summary.toLowerCase().includes(q) ||
-          branch.toLowerCase().includes(q)
-        );
-      })
+    ? concepts.filter((c) => matchesConceptQuery(c, q))
     : concepts.slice(0, 4);
 
   return (

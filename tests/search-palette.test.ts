@@ -102,4 +102,9 @@ describe('SearchPalette outside click and component logic', () => {
     expect(searchPaletteCode).toContain('◆');
     expect(searchPaletteCode).toContain('showConcepts');
   });
+
+  it('uses diacritic-insensitive shared search matching in SearchPalette', () => {
+    expect(searchPaletteCode).toContain('matchesPhilosopherQuery');
+    expect(searchPaletteCode).toContain('matchesConceptQuery');
+  });
 });

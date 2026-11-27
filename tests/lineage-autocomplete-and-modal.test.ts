@@ -184,6 +184,8 @@ describe('LineagePathModal and NodeAutocomplete integration', () => {
       expect(autocompleteCode).toContain('role="option"');
       expect(autocompleteCode).toContain('useClickOutside');
       expect(autocompleteCode).toContain('e.stopPropagation()'); // inside Escape key handler
+      expect(autocompleteCode).toContain('normalizeSearchText');
+      expect(autocompleteCode).toContain('matchesPhilosopherQuery');
     });
   });
 });

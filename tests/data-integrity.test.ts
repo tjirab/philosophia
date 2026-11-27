@@ -1150,13 +1150,19 @@ describe('Philosophy Graph Data Integrity', () => {
   });
 
   it('verifies search query filtering on philosophers and concepts without throwing exceptions', () => {
-    const testQueries = ['kant', 'peirce', 'ontological', 'wager', 'butterfly', 'ego', 'forms', 'zeno', 'x'];
+    const testQueries = ['kant', 'peirce', 'ontological', 'wager', 'butterfly', 'ego', 'forms', 'zeno', 'zizek', 'x'];
     for (const q of testQueries) {
       expect(() => {
         const result = getVisualGraph({ searchQuery: q, includeConcepts: true });
         expect(result.nodes).toBeDefined();
       }).not.toThrow();
     }
+
+    const zizekResult = getVisualGraph({ searchQuery: 'zizek', includeConcepts: true });
+    expect(zizekResult.nodes.some((n) => n.id === 'slavoj-zizek')).toBe(true);
+
+    const zupancicResult = getVisualGraph({ searchQuery: 'zupancic', includeConcepts: true });
+    expect(zupancicResult.nodes.some((n) => n.id === 'alenka-zupancic')).toBe(true);
   });
 
   it('verifies chronological coordinate seeding for visual nodes', () => {

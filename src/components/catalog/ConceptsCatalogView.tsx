@@ -12,6 +12,7 @@ import {
   BookOpen,
 } from 'lucide-react';
 import { Concept, Era, Philosopher } from '../../lib/types';
+import { matchesConceptQuery } from '../../lib/search';
 
 interface ConceptsCatalogViewProps {
   initialConcepts: Concept[];
@@ -55,13 +56,8 @@ export function ConceptsCatalogView({
         }
         // Search query
         if (searchQuery.trim()) {
-          const q = searchQuery.toLowerCase();
-          const matchTitle = c.title.toLowerCase().includes(q);
-          const matchSummary = (c.summary || '').toLowerCase().includes(q);
-          const matchBranch = (c.branch || '').toLowerCase().includes(q);
           const introPhil = c.introducedBy ? philMap.get(c.introducedBy) : null;
-          const matchPhil = (introPhil?.name || '').toLowerCase().includes(q);
-          return matchTitle || matchSummary || matchBranch || matchPhil;
+          return matchesConceptQuery(c, searchQuery, [introPhil?.name]);
         }
         return true;
       })
