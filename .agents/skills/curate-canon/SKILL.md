@@ -18,11 +18,11 @@ Not every historical commentator or peripheral figure belongs in the primary con
 2. **Indispensable Dialectical Bridge**: The proximate historical catalyst without whom their successor's ideas lack parentage (e.g. Boethius bridging Aristotle/Augustine to Aquinas; Fichte & Schelling bridging Kant to Hegel; Frege bridging Kant to Wittgenstein).
 3. **Conceptual Innovator**: Formulated a landmark argument or epistemic distinction that remains a staple of philosophical debate (e.g. Anselm's Ontological Argument, Ghazali's critique of causality, Pascal's Wager).
 
-### Importance Score Calibration (0–100)
-- **100**: Founding titans of world philosophy (Plato, Aristotle, Kant, Nietzsche).
-- **95–99**: Epoch-defining pillars (Descartes, Hume, Wittgenstein, Hegel, Spinoza).
-- **90–94**: Major bridge figures, tradition founders, and systematic thinkers (Frege, Boethius, Anselm, Pascal, Maimonides, Al-Ghazali, Merleau-Ponty).
-- **80–89**: Essential secondary contributors, specialized catalysts (Adorno, Deleuze, Popper, James).
+### Canon Tier & Importance Score Calibration
+Instead of hand-tuning 0–100 integers across PRs, assign a coarse `canonTier` (`"pillar" | "bridge" | "contributor"`). `scripts/build-data.mjs` and `scoring-engine.ts` compute the final Hybrid Canonical-Topological `importanceScore` (72–100) from that tier prior (48%), bidirectional graph centrality (32%), cross-era/domain reach (12%), and scholarly apparatus (8%):
+- **`pillar`**: Founding titans and epoch-defining pillars across any domain (e.g., Plato, Aristotle, Kant, Descartes, Marx, Freud, Simone de Beauvoir, Hannah Arendt, Melanie Klein, Mary Wollstonecraft).
+- **`bridge`**: Major dialectical bridges, tradition founders, and systematic thinkers (e.g., Frege, Boethius, Al-Ghazali, Merleau-Ponty, Elisabeth of Bohemia, G.E.M. Anscombe, Philippa Foot, Sor Juana Inés de la Cruz).
+- **`contributor`**: Essential secondary contributors and specialized catalysts.
 
 ---
 

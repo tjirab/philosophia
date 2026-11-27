@@ -116,5 +116,33 @@
         "sectionOrPage": "Ch. 8–10"
       }
     ]
+  },
+  {
+    "id": "g-e-m-anscombe--derek-parfit",
+    "source": "g-e-m-anscombe",
+    "target": "derek-parfit",
+    "type": "CRITIQUED",
+    "label": "Challenged consequentialist aggregation, prompting Parfit's normative defense",
+    "strength": 4,
+    "description": "Anscombe coined the term 'consequentialism' in 1958 to indict moral theories that permit intrinsically unjust acts for better outcomes, framing the core Oxford debate Derek Parfit confronted in Reasons and Persons and On What Matters.",
+    "dialecticalTension": "Pits non-negotiable deontic and virtue constraints against consequentialist welfare maximization.",
+    "historicalContext": "Anscombe's 1958 essay shaped late 20th-century Oxford normative ethics where Parfit developed his synthesis of Kantianism, contractualism, and consequentialism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "G. E. M. Anscombe",
+        "work": "Modern Moral Philosophy",
+        "sectionOrPage": "Philosophy 33 (124): 9–13",
+        "year": 1958,
+        "url": "https://plato.stanford.edu/entries/anscombe/"
+      },
+      {
+        "citationType": "sep",
+        "author": "Julia Driver",
+        "work": "Gertrude Elizabeth Margaret Anscombe",
+        "url": "https://plato.stanford.edu/entries/anscombe/"
+      }
+    ]
   }
 ]

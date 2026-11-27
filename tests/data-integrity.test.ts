@@ -1319,4 +1319,27 @@ describe('Philosophy Graph Data Integrity', () => {
     expect(hegelToBourdieu.nodes).toContain('karl-marx');
     expect(hegelToBourdieu.nodes).toContain('pierre-bourdieu');
   });
+
+  it('verifies enriched dialectical lineages and accurate publication years for under-wired women thinkers', () => {
+    // Hannah Arendt: Aristotle / Heidegger / Marx -> Arendt -> Habermas
+    expect(findInfluencePath('martin-heidegger', 'hannah-arendt', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('aristotle', 'hannah-arendt', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('karl-marx', 'hannah-arendt', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('hannah-arendt', 'jurgen-habermas', edgesData as any).found).toBe(true);
+
+    // G. E. M. Anscombe -> Derek Parfit
+    expect(findInfluencePath('g-e-m-anscombe', 'derek-parfit', edgesData as any).found).toBe(true);
+
+    // Sor Juana: Aquinas -> Sor Juana -> Cartesian Feminist Rationalism
+    expect(findInfluencePath('thomas-aquinas', 'sor-juana', edgesData as any).found).toBe(true);
+    expect(findInfluencePath('sor-juana', 'cartesian-feminist-rationalism', edgesData as any).found).toBe(true);
+
+    // Verify Hannah Arendt keyWorks publication years are not copy-pasted from birthYear (1906)
+    const arendt = philosophersData.find((p) => p.id === 'hannah-arendt') as any;
+    expect(arendt).toBeDefined();
+    expect(arendt.canonTier).toBe('pillar');
+    for (const work of arendt.keyWorks) {
+      expect(String(work.year)).not.toContain('1906');
+    }
+  });
 });

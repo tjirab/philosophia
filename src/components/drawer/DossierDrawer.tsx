@@ -397,6 +397,14 @@ export function DossierDrawer({
                           </div>
                         ))}
                       </div>
+                      <div className="pt-1.5 border-t border-[var(--border-main)]/60 flex justify-end">
+                        <Link
+                          href="/methodology"
+                          className="text-[10px] font-mono text-[var(--gold-accent)] hover:underline"
+                        >
+                          Mathematical formulas &amp; methodology →
+                        </Link>
+                      </div>
                     </div>
                   ) : (
                     <p className="text-[var(--text-muted)]">

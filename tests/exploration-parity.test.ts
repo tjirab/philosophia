@@ -11,7 +11,7 @@ describe('Cartographic Exploration State Parity (Map vs Dossier & Thinker Folio)
     expect(kNodeNoConcepts?.exploration?.state).toBe('citadel');
     expect(kNodeNoConcepts?.exploration?.label).toBe('Canonical Citadel');
     expect(kNodeNoConcepts?.exploration?.badgeIcon).toBe('🏛️');
-    expect(kNodeNoConcepts?.exploration?.score).toBe(87);
+    expect(kNodeNoConcepts?.exploration?.score).toBe(85);
 
     // Test with concepts visible
     const graphWithConcepts = getVisualGraph({ includeConcepts: true });
@@ -19,21 +19,21 @@ describe('Cartographic Exploration State Parity (Map vs Dossier & Thinker Folio)
 
     expect(kNodeWithConcepts).toBeDefined();
     expect(kNodeWithConcepts?.exploration?.state).toBe('citadel');
-    expect(kNodeWithConcepts?.exploration?.score).toBe(87);
+    expect(kNodeWithConcepts?.exploration?.score).toBe(85);
 
     // Test drawer node details
     const nodeDetails = getNodeDetails('soren-kierkegaard');
     expect(nodeDetails.exploration).toBeDefined();
     expect(nodeDetails.exploration?.state).toBe('citadel');
     expect(nodeDetails.exploration?.label).toBe('Canonical Citadel');
-    expect(nodeDetails.exploration?.score).toBe(87);
+    expect(nodeDetails.exploration?.score).toBe(85);
 
     // Test thinker folio page details
     const thinkerDetails = getThinkerDetails('soren-kierkegaard');
     expect(thinkerDetails).not.toBeNull();
     expect(thinkerDetails?.exploration?.state).toBe('citadel');
     expect(thinkerDetails?.exploration?.label).toBe('Canonical Citadel');
-    expect(thinkerDetails?.exploration?.score).toBe(87);
+    expect(thinkerDetails?.exploration?.score).toBe(85);
 
     // Verify absolute parity across all representations
     expect(kNodeNoConcepts?.exploration?.state).toBe(nodeDetails.exploration?.state);

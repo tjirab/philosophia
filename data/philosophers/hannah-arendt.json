@@ -10,27 +10,28 @@
   "keyWorks": [
     {
       "title": "The Origins of Totalitarianism",
-      "year": "1906 CE",
-      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Origins%20of%20Totalitarianism",
-      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Origins%20of%20Totalitarianism",
-      "description": "Major work by Hannah Arendt."
+      "year": "1951 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Origins_of_Totalitarianism",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Origins_of_Totalitarianism",
+      "description": "Landmark historical-political analysis of imperialism, antisemitism, and the novel institutional mechanics of totalitarian terror."
     },
     {
       "title": "The Human Condition",
-      "year": "1906 CE",
-      "url": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Human%20Condition",
-      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=The%20Human%20Condition",
-      "description": "Major work by Hannah Arendt."
+      "year": "1958 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Human_Condition_(Arendt_book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Human_Condition_(Arendt_book)",
+      "description": "Foundational treatise distinguishing labor, work, and political action (vita activa) as the locus of human plurality and natality."
     },
     {
       "title": "Eichmann in Jerusalem",
-      "year": "1906 CE",
-      "url": "https://en.wikipedia.org/wiki/Special:Search?search=Eichmann%20in%20Jerusalem",
-      "wikipediaUrl": "https://en.wikipedia.org/wiki/Special:Search?search=Eichmann%20in%20Jerusalem",
-      "description": "Major work by Hannah Arendt."
+      "year": "1963 CE",
+      "url": "https://en.wikipedia.org/wiki/Eichmann_in_Jerusalem",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Eichmann_in_Jerusalem",
+      "description": "Philosophical reportage introducing the 'banality of evil'—demonstrating how thoughtless bureaucratic conformity enables catastrophic atrocity."
     }
   ],
   "sepSlug": "arendt",
+  "canonTier": "pillar",
   "importanceScore": 94,
   "imageUrl": "/portraits/hannah-arendt.jpg"
 }

@@ -9,15 +9,29 @@ import {
   X,
   Compass,
   Calendar,
-  Layers,
   Sparkles,
+  BookOpen,
 } from 'lucide-react';
-import { Philosopher, Era, Tradition } from '../../lib/types';
+import {
+  Philosopher,
+  Concept,
+  Edge,
+  Era,
+  Tradition,
+  ScoringMethodology,
+  METHODOLOGY_CONFIG,
+  VisualNode,
+  NodeScoreBreakdown,
+} from '../../lib/types';
 import { getAssetUrl } from '../../lib/assets';
 import { matchesPhilosopherQuery } from '../../lib/search';
+import { applyScoringMethodology } from '../../lib/graph/scoring-engine';
+import { compareByDeterministicRank } from '../../lib/graph/scoring-algorithms.mjs';
 
 interface ThinkersCatalogViewProps {
   initialThinkers: Philosopher[];
+  concepts?: Concept[];
+  edges?: Edge[];
   eras: Era[];
   traditions: Tradition[];
 }
@@ -40,6 +54,8 @@ function formatLifespan(birth?: number, death?: number): string {
 
 export function ThinkersCatalogView({
   initialThinkers,
+  concepts = [],
+  edges = [],
   eras,
   traditions,
 }: ThinkersCatalogViewProps) {
@@ -47,24 +63,124 @@ export function ThinkersCatalogView({
   const [selectedDomain, setSelectedDomain] = useState<string>('all');
   const [selectedEra, setSelectedEra] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'chronological' | 'importance' | 'name'>('chronological');
+  const [methodology, setMethodology] = useState<ScoringMethodology>('canonical');
 
   const eraMap = useMemo(() => new Map(eras.map((e) => [e.id, e])), [eras]);
   const traditionMap = useMemo(() => new Map(traditions.map((t) => [t.id, t])), [traditions]);
 
+  // Compute live scores across the full graph so ranks remain consistent with
+  // individual thinker folios and re-rank dynamically when switching lenses.
+  const scoredByThinkerId = useMemo(() => {
+    const map = new Map<string, { score: number; breakdown?: NodeScoreBreakdown }>();
+
+    if (edges.length === 0) {
+      const fallback = initialThinkers.map((p) => ({
+        id: p.id,
+        name: p.name,
+        score: p.importanceScore ?? 50,
+        rawScore: p.importanceScore ?? 50,
+        degree: 0,
+      })).sort(compareByDeterministicRank);
+
+      fallback.forEach((entry, idx) => {
+        map.set(entry.id, {
+          score: entry.score,
+          breakdown: {
+            methodology,
+            score: entry.score,
+            rawScore: entry.rawScore,
+            degree: 0,
+            rank: idx + 1,
+            totalNodes: fallback.length,
+            percentile: Math.round(((fallback.length - (idx + 1)) / fallback.length) * 100),
+            components: [],
+          },
+        });
+      });
+      return map;
+    }
+
+    const visualNodes: VisualNode[] = [
+      ...initialThinkers.map((p) => ({
+        id: p.id,
+        name: p.name,
+        type: 'philosopher' as const,
+        eraId: p.eraId,
+        traditionId: p.traditionId,
+        domains: p.domains,
+        canonTier: p.canonTier,
+        importanceScore: p.importanceScore,
+        color: '#3b82f6',
+        summary: p.shortBio,
+        data: p,
+      })),
+      ...concepts.map((c) => ({
+        id: c.id,
+        name: c.title || (c as any).name || c.id,
+        type: 'concept' as const,
+        eraId: c.eraId,
+        branch: c.branch,
+        importanceScore: 50,
+        color: '#94a3b8',
+        summary: c.summary || (c as any).description || '',
+        data: c,
+      })),
+    ];
+
+    const scoredAll = applyScoringMethodology(visualNodes, edges, methodology);
+    const scoredThinkers = scoredAll
+      .filter((n) => n.type === 'philosopher')
+      .sort((a, b) =>
+        compareByDeterministicRank(
+          {
+            id: a.id,
+            name: a.name,
+            score: a.importanceScore,
+            rawScore: a.scoreBreakdown?.rawScore,
+            degree: a.scoreBreakdown?.degree,
+          },
+          {
+            id: b.id,
+            name: b.name,
+            score: b.importanceScore,
+            rawScore: b.scoreBreakdown?.rawScore,
+            degree: b.scoreBreakdown?.degree,
+          }
+        )
+      );
+
+    const totalThinkers = scoredThinkers.length;
+    scoredThinkers.forEach((n, idx) => {
+      const rank = idx + 1;
+      map.set(n.id, {
+        score: n.importanceScore,
+        breakdown: n.scoreBreakdown
+          ? {
+              ...n.scoreBreakdown,
+              rank,
+              totalNodes: totalThinkers,
+              percentile: Math.round(((totalThinkers - rank) / totalThinkers) * 100),
+            }
+          : undefined,
+      });
+    });
+
+    return map;
+  }, [initialThinkers, concepts, edges, methodology]);
+
+  const activeMethodologyMeta = METHODOLOGY_CONFIG[methodology];
+
   const filteredThinkers = useMemo(() => {
     return initialThinkers
       .filter((p) => {
-        // Domain filter
         if (selectedDomain !== 'all') {
           if (!p.domains?.includes(selectedDomain as any)) {
             return false;
           }
         }
-        // Era filter
         if (selectedEra !== 'all' && p.eraId !== selectedEra) {
           return false;
         }
-        // Search query
         if (searchQuery.trim()) {
           const tradition = traditionMap.get(p.traditionId);
           return matchesPhilosopherQuery(p, searchQuery, [tradition?.name]);
@@ -73,14 +189,32 @@ export function ThinkersCatalogView({
       })
       .sort((a, b) => {
         if (sortBy === 'chronological') {
-          return (a.birthYear ?? 0) - (b.birthYear ?? 0);
+          const yearDiff = (a.birthYear ?? 0) - (b.birthYear ?? 0);
+          return yearDiff !== 0 ? yearDiff : a.name.localeCompare(b.name);
         }
         if (sortBy === 'importance') {
-          return (b.importanceScore ?? 50) - (a.importanceScore ?? 50);
+          const sA = scoredByThinkerId.get(a.id);
+          const sB = scoredByThinkerId.get(b.id);
+          return compareByDeterministicRank(
+            {
+              id: a.id,
+              name: a.name,
+              score: sA?.score ?? a.importanceScore ?? 50,
+              rawScore: sA?.breakdown?.rawScore,
+              degree: sA?.breakdown?.degree,
+            },
+            {
+              id: b.id,
+              name: b.name,
+              score: sB?.score ?? b.importanceScore ?? 50,
+              rawScore: sB?.breakdown?.rawScore,
+              degree: sB?.breakdown?.degree,
+            }
+          );
         }
         return a.name.localeCompare(b.name);
       });
-  }, [initialThinkers, searchQuery, selectedDomain, selectedEra, sortBy, traditionMap]);
+  }, [initialThinkers, searchQuery, selectedDomain, selectedEra, sortBy, traditionMap, scoredByThinkerId]);
 
   return (
     <div className="min-h-screen w-full overflow-y-auto bg-[var(--bg-main)] text-[var(--text-main)] font-serif">
@@ -97,9 +231,13 @@ export function ThinkersCatalogView({
           </Link>
 
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            <span className="hidden sm:inline-block text-xs font-mono uppercase tracking-widest text-[var(--text-dim)]">
-              Roster of Thinkers
-            </span>
+            <Link
+              href="/methodology"
+              className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-sans text-[var(--text-muted)] hover:text-[var(--gold-accent)] hover:bg-[var(--bg-hover)] border border-[var(--border-main)] transition"
+            >
+              <BookOpen className="w-3.5 h-3.5 shrink-0" />
+              <span>Scoring Formulas</span>
+            </Link>
             <Link
               href="/"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[var(--gold-accent)] text-stone-900 rounded-lg text-xs font-bold font-sans hover:brightness-110 transition shadow-xs"
@@ -172,7 +310,7 @@ export function ThinkersCatalogView({
                 className="px-3 py-2 bg-[var(--bg-subtle)] border border-[var(--border-main)] rounded-xl text-xs font-sans text-[var(--text-main)] focus:outline-none focus:border-[var(--gold-accent)] cursor-pointer"
               >
                 <option value="chronological">Chronological (Oldest First)</option>
-                <option value="importance">Centrality / Importance</option>
+                <option value="importance">Importance ({activeMethodologyMeta.shortLabel})</option>
                 <option value="name">Alphabetical (A–Z)</option>
               </select>
             </div>
@@ -213,6 +351,44 @@ export function ThinkersCatalogView({
               </select>
             </div>
           </div>
+
+          {/* Runtime Scoring Lens Bar */}
+          <div className="pt-3 border-t border-[var(--border-main)]/60 flex flex-wrap items-center justify-between gap-3 text-xs font-sans">
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="text-[11px] font-mono text-[var(--text-dim)] uppercase mr-1">
+                Scoring Lens:
+              </span>
+              {(Object.keys(METHODOLOGY_CONFIG) as ScoringMethodology[]).map((mId) => {
+                const meta = METHODOLOGY_CONFIG[mId];
+                const isSelected = methodology === mId;
+                return (
+                  <button
+                    key={mId}
+                    onClick={() => {
+                      setMethodology(mId);
+                      setSortBy('importance');
+                    }}
+                    title={meta.tagline}
+                    className={`px-2.5 py-1 rounded-lg text-xs font-medium transition cursor-pointer inline-flex items-center gap-1.5 ${
+                      isSelected
+                        ? 'bg-[var(--gold-bg)] text-[var(--gold-accent)] border border-[var(--gold-border)] font-semibold'
+                        : 'bg-[var(--bg-subtle)] hover:bg-[var(--bg-hover)] text-[var(--text-muted)] border border-[var(--border-main)]'
+                    }`}
+                  >
+                    <span>{meta.shortLabel}</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            <Link
+              href="/methodology"
+              className="text-[11px] font-mono text-[var(--gold-accent)] hover:underline inline-flex items-center gap-1"
+            >
+              <span>How scores &amp; ranks are calculated</span>
+              <ArrowRight className="w-3 h-3" />
+            </Link>
+          </div>
         </div>
 
         {/* Results Counter */}
@@ -220,13 +396,14 @@ export function ThinkersCatalogView({
           <span>
             Displaying {filteredThinkers.length} of {initialThinkers.length} canonical thinkers
           </span>
-          {(searchQuery || selectedDomain !== 'all' || selectedEra !== 'all') && (
+          {(searchQuery || selectedDomain !== 'all' || selectedEra !== 'all' || methodology !== 'canonical') && (
             <button
               onClick={() => {
                 setSearchQuery('');
                 setSelectedDomain('all');
                 setSelectedEra('all');
                 setSortBy('chronological');
+                setMethodology('canonical');
               }}
               className="text-[var(--gold-accent)] hover:underline cursor-pointer"
             >
@@ -257,6 +434,9 @@ export function ThinkersCatalogView({
             {filteredThinkers.map((thinker) => {
               const era = eraMap.get(thinker.eraId);
               const tradition = traditionMap.get(thinker.traditionId);
+              const scored = scoredByThinkerId.get(thinker.id);
+              const displayScore = scored?.score ?? thinker.importanceScore;
+              const displayRank = scored?.breakdown?.rank;
 
               return (
                 <Link
@@ -339,7 +519,8 @@ export function ThinkersCatalogView({
 
                   <div className="pt-3 border-t border-[var(--border-main)]/60 flex items-center justify-between text-xs font-sans">
                     <span className="text-[11px] font-mono text-[var(--text-dim)]">
-                      Centrality: {thinker.importanceScore}/100
+                      {activeMethodologyMeta.shortLabel}: {displayScore}/100
+                      {displayRank ? ` (#${displayRank})` : ''}
                     </span>
                     <span className="inline-flex items-center gap-1 text-[var(--gold-accent)] group-hover:underline font-semibold">
                       <span>Examine Folio</span>

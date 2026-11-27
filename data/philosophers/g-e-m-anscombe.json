@@ -33,6 +33,7 @@
     "iep": "https://iep.utm.edu/anscombe/",
     "wikipedia": "https://en.wikipedia.org/wiki/G._E._M._Anscombe"
   },
+  "canonTier": "bridge",
   "importanceScore": 89,
   "imageUrl": "/portraits/g-e-m-anscombe.jpg"
 }
