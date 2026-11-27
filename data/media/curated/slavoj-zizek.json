@@ -1,0 +1,20 @@
+[
+  {
+    "id": "iep-slavoj-zizek",
+    "targetId": "slavoj-zizek",
+    "type": "encyclopedia",
+    "title": "Slavoj Žižek - Internet Encyclopedia of Philosophy",
+    "url": "https://iep.utm.edu/zizek/",
+    "creator": "Internet Encyclopedia of Philosophy",
+    "summary": "Peer-reviewed academic overview of Slavoj Žižek's critique of ideology, Lacanian psychoanalysis, German Idealist ontology, and political philosophy."
+  },
+  {
+    "id": "sep-slavoj-zizek",
+    "targetId": "slavoj-zizek",
+    "type": "encyclopedia",
+    "title": "Jacques Lacan & The Ljubljana School (Slavoj Žižek) - Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/entries/lacan/",
+    "creator": "Stanford University",
+    "summary": "Canonical Stanford Encyclopedia overview of Lacanian psychoanalytic registers, surplus-enjoyment, and their philosophical reception in the Ljubljana School."
+  }
+]

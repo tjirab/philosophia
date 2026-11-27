@@ -89,6 +89,7 @@ const WIKI_TITLES = {
   'max-horkheimer': 'Max_Horkheimer',
   'jean-baudrillard': 'Jean_Baudrillard',
   'byung-chul-han': 'Byung-Chul_Han',
+  'slavoj-zizek': 'Slavoj_Žižek',
   'alenka-zupancic': 'Alenka_Zupančič',
   'nick-bostrom': 'Nick_Bostrom',
   'laozi': 'Laozi',

@@ -1,0 +1,57 @@
+{
+  "id": "slavoj-zizek",
+  "name": "Slavoj Žižek",
+  "birthYear": 1949,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "domains": [
+    "philosophy",
+    "psychology",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Slovenian philosopher, cultural theorist, and co-founder of the Ljubljana School of Psychoanalysis who synthesizes Hegelian dialectics, Marxian political economy, and Lacanian psychoanalysis to expose how unconscious fantasy and enjoyment sustain contemporary ideology.",
+  "centralQuestion": "If contemporary subjects already maintain a cynical, ironic distance toward official power, how does ideology nonetheless grip our unconscious enjoyment and structure social reality itself?",
+  "keyWorks": [
+    {
+      "title": "The Sublime Object of Ideology",
+      "year": "1989 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Sublime_Object_of_Ideology",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Sublime_Object_of_Ideology",
+      "isbn": "978-1844673001",
+      "description": "Landmark English-language debut reconceiving ideology not as naive false consciousness, but as an unconscious Lacanian social fantasy anchored by a sublime object (objet petit a)."
+    },
+    {
+      "title": "Tarrying with the Negative: Kant, Hegel, and the Critique of Ideology",
+      "year": "1993 CE",
+      "url": "https://en.wikipedia.org/wiki/Tarrying_with_the_Negative",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Tarrying_with_the_Negative",
+      "isbn": "978-0822313953",
+      "description": "Reclaims the Cartesian cogito and German Idealist negativity through Lacan, analyzing nationalist enjoyment ('theft of enjoyment') in post-communist Eastern Europe."
+    },
+    {
+      "title": "The Parallax View",
+      "year": "2006 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Parallax_View_(book)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Parallax_View_(book)",
+      "isbn": "978-0262740296",
+      "description": "Systematic philosophical magnum opus articulating dialectical materialism through the 'parallax gap'—the irreducible ontological shift between two incompatible perspectives with no neutral common ground."
+    },
+    {
+      "title": "Less Than Nothing: Hegel and the Shadow of Dialectical Materialism",
+      "year": "2012 CE",
+      "url": "https://en.wikipedia.org/wiki/Less_Than_Nothing",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Less_Than_Nothing",
+      "isbn": "978-1844678976",
+      "description": "Monumental reinterpretation of G.W.F. Hegel via Jacques Lacan, arguing that reality itself is ontologically incomplete ('less than nothing') and constituted by antagonism."
+    }
+  ],
+  "sepSlug": "lacan",
+  "externalRefs": {
+    "iep": "https://iep.utm.edu/zizek/",
+    "sep": "https://plato.stanford.edu/entries/lacan/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Slavoj_%C5%BDi%C5%BEek"
+  },
+  "importanceScore": 89,
+  "imageUrl": "/portraits/slavoj-zizek.jpg"
+}

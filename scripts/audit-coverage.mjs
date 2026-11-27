@@ -214,6 +214,8 @@ export function auditCanon(options = {}) {
     { name: 'Husserl → Ricoeur', from: 'edmund-husserl', to: 'paul-ricoeur' },
     { name: 'Freud → Anna Freud → Erikson', from: 'sigmund-freud', to: 'erik-erikson' },
     { name: 'Klein → Kernberg', from: 'melanie-klein', to: 'otto-kernberg' },
+    { name: 'Hegel → Slavoj Žižek → Sublime Object of Ideology', from: 'gwf-hegel', to: 'sublime-object-of-ideology' },
+    { name: 'Freud → Lacan → Slavoj Žižek → Alenka Zupančič', from: 'sigmund-freud', to: 'alenka-zupancic' },
   ];
 
   function testPath(start, goal) {

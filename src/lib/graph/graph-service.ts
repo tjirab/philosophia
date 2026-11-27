@@ -28,6 +28,7 @@ import {
 } from '../types';
 import { attachExplorationMetadata, computeNodeExploration } from './exploration-service';
 import { applyScoringMethodology } from './scoring-engine';
+import { matchesConceptQuery, matchesPhilosopherQuery } from '../search';
 
 export const eras: Era[] = erasData as Era[];
 export const traditions: Tradition[] = traditionsData as Tradition[];
@@ -126,27 +127,12 @@ export function getVisualGraph(options: GraphFilterOptions = {}): {
 
   // Text search filter if present
   if (searchQuery.trim()) {
-    const q = searchQuery.toLowerCase();
-    filteredPhilosophers = filteredPhilosophers.filter(
-      (p) =>
-        p.name.toLowerCase().includes(q) ||
-        p.shortBio.toLowerCase().includes(q) ||
-        p.centralQuestion.toLowerCase().includes(q) ||
-        p.keyWorks.some((w) => {
-          const title = typeof w === 'string' ? w : w.title;
-          return title.toLowerCase().includes(q);
-        })
+    filteredPhilosophers = filteredPhilosophers.filter((p) =>
+      matchesPhilosopherQuery(p, searchQuery)
     );
-    filteredConcepts = filteredConcepts.filter((c) => {
-      const title = c.title || (c as any).name || '';
-      const summary = c.summary || (c as any).description || '';
-      const branch = c.branch || '';
-      return (
-        title.toLowerCase().includes(q) ||
-        summary.toLowerCase().includes(q) ||
-        branch.toLowerCase().includes(q)
-      );
-    });
+    filteredConcepts = filteredConcepts.filter((c) =>
+      matchesConceptQuery(c, searchQuery)
+    );
   }
 
   const validNodeIds = new Set<string>();
