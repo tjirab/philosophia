@@ -1,0 +1,33 @@
+{
+  "id": "gargi-vachaknavi",
+  "name": "Gargi Vachaknavi",
+  "birthYear": -700,
+  "deathYear": -630,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Vedic-era Indian natural philosopher and brahmavadini celebrated in the Brihadaranyaka Upanishad for cross-examining the sage Yajnavalkya on the ultimate metaphysical ground of reality (Brahman) and cosmic imperishable order (Akshara).",
+  "centralQuestion": "What serves as the unconditioned metaphysical warp and woof upholding all manifest elements, cosmic worlds, and consciousness itself?",
+  "keyWorks": [
+    {
+      "title": "Brihadaranyaka Upanishad Dialogues (3.6 & 3.8)",
+      "year": "c. 700 BCE",
+      "url": "https://en.wikipedia.org/wiki/Gargi_Vachaknavi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Gargi_Vachaknavi",
+      "description": "Classic Upanishadic philosophical disputation in which Gargi presses Yajnavalkya through regress arguments toward the imperishable Brahman (Akshara)."
+    }
+  ],
+  "sepSlug": "shankara",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/shankara/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Gargi_Vachaknavi"
+  },
+  "imageUrl": "/portraits/gargi-vachaknavi.jpg"
+}

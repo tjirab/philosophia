@@ -1,0 +1,44 @@
+[
+  {
+    "id": "al-ghazali--amina-wadud",
+    "source": "al-ghazali",
+    "target": "amina-wadud",
+    "type": "CRITIQUED",
+    "label": "Challenged classical patriarchal atomistic exegesis via tawhidic hermeneutics",
+    "strength": 3,
+    "description": "Amina Wadud critiqued classical medieval jurisprudence and tafsir traditions exemplified by Al-Ghazali for enshrining hierarchal gender assumptions, proposing instead a holistic tawhidic paradigm grounded in horizontal human moral agency (khilafah).",
+    "dialecticalTension": "Refutes hierarchical cosmic gender ontology while remaining grounded in Qur'anic monotheism.",
+    "historicalContext": "Qur'an and Woman (1992) and Inside the Gender Jihad (2006).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Amina Wadud",
+        "work": "Inside the Gender Jihad: Women's Reform in Islam",
+        "year": 2006,
+        "url": "https://en.wikipedia.org/wiki/Amina_Wadud"
+      }
+    ]
+  },
+  {
+    "id": "paul-ricoeur--amina-wadud",
+    "source": "paul-ricoeur",
+    "target": "amina-wadud",
+    "type": "SYNTHESIZED",
+    "label": "Applied philosophical hermeneutics of text, context, and horizon to sacred reading",
+    "strength": 3,
+    "description": "Drawing on modern philosophical hermeneutics of textual world-disclosure and reader situatedness, Wadud distinguished universal ethical principles of the Qur'an from seventh-century Arabian patriarchal customs.",
+    "dialecticalTension": "Bridges contemporary Continental hermeneutics with Fazlur Rahman's double-movement Islamic method.",
+    "historicalContext": "Qur'an and Woman (1992).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Amina Wadud",
+        "work": "Qur'an and Woman: Rereading the Sacred Text from a Woman's Perspective",
+        "year": 1992,
+        "url": "https://en.wikipedia.org/wiki/Amina_Wadud"
+      }
+    ]
+  }
+]

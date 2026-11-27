@@ -1,0 +1,34 @@
+{
+  "id": "hiratsuka-raicho",
+  "name": "Raichō Hiratsuka",
+  "birthYear": 1886,
+  "deathYear": 1971,
+  "eraId": "twentieth-century",
+  "traditionId": "kyoto-school",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Japanese philosopher, Zen practitioner, and founder of the feminist journal Seitō (Bluestocking) who fused Zen self-awakening and Nietzschean self-creation into Japan's foundational philosophy of women's inner genius.",
+  "centralQuestion": "How can women recover autonomous creative subjectivity (\"In the beginning, woman was the sun\") while transforming state social reproduction?",
+  "keyWorks": [
+    {
+      "title": "In the Beginning, Woman Was the Sun (Genshi, josei wa taiyō de atta)",
+      "year": "1911 CE",
+      "url": "https://en.wikipedia.org/wiki/Raich%C5%8D_Hiratsuka",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Raich%C5%8D_Hiratsuka",
+      "description": "Founding Seitō manifesto blending Zen interiority and feminist rebellion against patriarchal alienation."
+    }
+  ],
+  "sepSlug": "feminist-philosophy",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminist-philosophy/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Raichō_Hiratsuka"
+  },
+  "imageUrl": "/portraits/hiratsuka-raicho.jpg"
+}

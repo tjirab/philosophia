@@ -1,0 +1,64 @@
+[
+  {
+    "id": "francis-bacon--vandana-shiva",
+    "source": "francis-bacon",
+    "target": "vandana-shiva",
+    "type": "CRITIQUED",
+    "label": "Indicted Baconian mechanistic science as patriarchal domination of nature and women",
+    "strength": 4,
+    "description": "In Staying Alive (1988), Vandana Shiva traced the ecological crisis to Francis Bacon's programmatic metaphor of torturing and subjugating a feminized \"Nature,\" contrasting it with Indian Prakriti cosmology.",
+    "dialecticalTension": "Challenges value-neutral scientific objectivity as an ideology of capitalist-patriarchal extraction.",
+    "historicalContext": "Core historical argument of Staying Alive (1988).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Vandana Shiva",
+        "work": "Staying Alive: Women, Ecology and Development",
+        "year": 1988,
+        "url": "https://plato.stanford.edu/entries/feminism-environmental/"
+      }
+    ]
+  },
+  {
+    "id": "thomas-kuhn--vandana-shiva",
+    "source": "thomas-kuhn",
+    "target": "vandana-shiva",
+    "type": "CRITIQUED",
+    "label": "Critiqued hegemonic scientific paradigms as \"monocultures of the mind\"",
+    "strength": 3,
+    "description": "Trained in philosophy of science and quantum foundations, Shiva extended critiques of normal scientific paradigms to show how industrial agronomy erases non-Western plural ecological knowledges.",
+    "dialecticalTension": "Replaces single-paradigm technological dominance with cognitive biodiversity.",
+    "historicalContext": "Monocultures of the Mind (1993).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Vandana Shiva",
+        "work": "Monocultures of the Mind",
+        "year": 1993,
+        "url": "https://en.wikipedia.org/wiki/Vandana_Shiva"
+      }
+    ]
+  },
+  {
+    "id": "vandana-shiva--ecofeminism",
+    "source": "vandana-shiva",
+    "target": "ecofeminism",
+    "type": "DEVELOPED",
+    "label": "Formulated Global South ecofeminism grounded in seed sovereignty and Prakriti",
+    "strength": 5,
+    "description": "Shiva became a foundational architect of Global South ecofeminism, uniting biodiversity defense, women's subsistence agricultural knowledge, and legal resistance to corporate patenting of life.",
+    "dialecticalTension": "Bridges ecological ontology with anti-globalization political economy.",
+    "historicalContext": "Staying Alive (1988) and Biopiracy (1997).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Lori Gruen",
+        "work": "Feminist Environmental Philosophy",
+        "url": "https://plato.stanford.edu/entries/feminism-environmental/"
+      }
+    ]
+  }
+]

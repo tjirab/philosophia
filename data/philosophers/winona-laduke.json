@@ -1,0 +1,40 @@
+{
+  "id": "winona-laduke",
+  "name": "Winona LaDuke",
+  "birthYear": 1959,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Anishinaabe (Ojibwe) environmental philosopher, economist, and land sovereignty activist whose work articulates Indigenous ecological governance, the Eighth Fire prophecy, and legal defense of ancestral seed and water commons.",
+  "centralQuestion": "How can Indigenous relational sovereignty and Seventh-Generation ethics dismantle extractive fossil capitalism (\"Waniikwe\" / ecological amnesia)?",
+  "keyWorks": [
+    {
+      "title": "All Our Relations: Native Struggles for Land and Life",
+      "year": "1999 CE",
+      "url": "https://en.wikipedia.org/wiki/Winona_LaDuke",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Winona_LaDuke",
+      "description": "Examines environmental racism across Indigenous nations, grounding restorative ecology in reciprocal kinship with the living world."
+    },
+    {
+      "title": "Recovering the Sacred: The Power of Naming and Claiming",
+      "year": "2005 CE",
+      "url": "https://en.wikipedia.org/wiki/Winona_LaDuke",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Winona_LaDuke",
+      "description": "Articulates Anishinaabe land ethics, manoomin (wild rice) seed sovereignty, and resistance to biopiracy and extractivism."
+    }
+  ],
+  "sepSlug": "ethics-environmental",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/ethics-environmental/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Winona_LaDuke"
+  },
+  "imageUrl": "/portraits/winona-laduke.jpg"
+}

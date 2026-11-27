@@ -1,0 +1,41 @@
+{
+  "id": "ito-noe",
+  "name": "Noe Itō",
+  "birthYear": 1895,
+  "deathYear": 1923,
+  "eraId": "twentieth-century",
+  "traditionId": "kyoto-school",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Japanese anarcho-feminist philosopher, Seitō editor, and social critic murdered in the Amakasu Incident whose essays rejected legalized marriage, state militarism, and institutional feminism in favor of decentralized mutual aid.",
+  "centralQuestion": "Can genuine gender and social freedom emerge through state reform, or must marriage, nation-state law, and capital be dismantled together?",
+  "keyWorks": [
+    {
+      "title": "The Facts of Anarchy (Museifu no jijitsu)",
+      "year": "1921 CE",
+      "url": "https://en.wikipedia.org/wiki/Noe_It%C5%8D",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Noe_It%C5%8D",
+      "description": "Philosophical defense of spontaneous cooperative communities against authoritarian state coercion."
+    },
+    {
+      "title": "Critique of the Ie Family System (Seitō Essays)",
+      "year": "1915 CE",
+      "url": "https://en.wikipedia.org/wiki/Noe_It%C5%8D",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Noe_It%C5%8D",
+      "description": "Radical essays challenging patriarchal household law, reproductive coercion, and bourgeois reformism."
+    }
+  ],
+  "sepSlug": "anarchism",
+  "canonTier": "contributor",
+  "importanceScore": 79,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/anarchism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Noe_Itō"
+  },
+  "imageUrl": "/portraits/ito-noe.jpg"
+}

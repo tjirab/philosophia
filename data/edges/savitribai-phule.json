@@ -1,0 +1,44 @@
+[
+  {
+    "id": "savitribai-phule--b-r-ambedkar",
+    "source": "savitribai-phule",
+    "target": "b-r-ambedkar",
+    "type": "INFLUENCED",
+    "label": "Laid anti-caste educational and Satyashodhak foundations for Ambedkarite liberation",
+    "strength": 5,
+    "description": "Savitribai and Jyotirao Phule's Satyashodhak Samaj dismantling of Brahmanical epistemic monopoly and founding of universal schools directly inspired B. R. Ambedkar, who honored the Phules as his preeminent modern gurus alongside the Buddha and Kabir.",
+    "dialecticalTension": "Connects 19th-century grassroots anti-caste pedagogy to 20th-century constitutional and Navayana liberation.",
+    "historicalContext": "Pune Satyashodhak tradition (1848–1897) feeding Ambedkar's Mahad and Annihilation of Caste movement.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Braj Ranjan Mani & Pamela Sardar",
+        "work": "A Forgotten Liberator: The Life and Struggle of Savitribai Phule",
+        "year": 2008,
+        "url": "https://en.wikipedia.org/wiki/Savitribai_Phule"
+      }
+    ]
+  },
+  {
+    "id": "savitribai-phule--pandita-ramabai",
+    "source": "savitribai-phule",
+    "target": "pandita-ramabai",
+    "type": "INFLUENCED",
+    "label": "Pioneered women's schooling and widow protection in Pune prior to Mukti Mission",
+    "strength": 4,
+    "description": "Savitribai Phule's girls' schools and Balhatya Pratibandhak Griha (home for destitute pregnant widows, 1863) established the institutional and philosophical blueprint in Maharashtra upon which Pandita Ramabai later built Sharada Sadan and Mukti Mission.",
+    "dialecticalTension": "Combines anti-caste structural critique with feminist social welfare reform.",
+    "historicalContext": "19th-century Pune feminist and anti-caste social reform networks.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Uma Chakravarti",
+        "work": "Rewriting History: The Life and Times of Pandita Ramabai",
+        "year": 1998,
+        "url": "https://en.wikipedia.org/wiki/Pandita_Ramabai"
+      }
+    ]
+  }
+]

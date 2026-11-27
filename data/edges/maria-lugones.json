@@ -1,0 +1,85 @@
+[
+  {
+    "id": "anibal-quijano--maria-lugones",
+    "source": "anibal-quijano",
+    "target": "maria-lugones",
+    "type": "CRITIQUED",
+    "label": "Critiqued Quijano's \"coloniality of power\" for assuming biological gender naturalism",
+    "strength": 5,
+    "description": "In \"Heterosexualism and the Colonial/Modern Gender System\" (2007), María Lugones exposed Quijano's model of coloniality as blind to the colonial invention of binary sex/gender itself, formulating the \"coloniality of gender.\"",
+    "dialecticalTension": "Corrects decolonial theory's gender blindness by centering Indigenous and Black feminist archives.",
+    "historicalContext": "Published in Hypatia (2007).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "María Lugones",
+        "work": "Heterosexualism and the Colonial/Modern Gender System",
+        "year": 2007,
+        "url": "https://en.wikipedia.org/wiki/Mar%C3%ADa_Lugones"
+      }
+    ]
+  },
+  {
+    "id": "gloria-anzaldua--maria-lugones",
+    "source": "gloria-anzaldua",
+    "target": "maria-lugones",
+    "type": "DEVELOPED",
+    "label": "Transformed Anzaldúa's borderlands into \"world-travelling\" and coalitional praxis",
+    "strength": 5,
+    "description": "Drawing directly on Gloria Anzaldúa's mestiza consciousness, Lugones conceptualized \"curdling\" (versus purity logic) and playful \"world-travelling\" as epistemological tools for women-of-color solidarity.",
+    "dialecticalTension": "Turns borderland hybridity into a method of anti-fragmentation political coalition.",
+    "historicalContext": "Pilgrimages / Peregrinajes (2003).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "María Lugones",
+        "work": "Pilgrimages / Peregrinajes: Theorizing Coalition Against Multiple Oppressions",
+        "year": 2003,
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  },
+  {
+    "id": "maria-lugones--coloniality-of-gender",
+    "source": "maria-lugones",
+    "target": "coloniality-of-gender",
+    "type": "DEVELOPED",
+    "label": "Formulated the \"coloniality of gender\" framework of modern-colonial domination",
+    "strength": 5,
+    "description": "Lugones coined the coloniality of gender to show how European colonialism imposed dimorphic biological sex, racialized dehumanization, and compulsory heterosexuality onto colonized societies.",
+    "dialecticalTension": "Integrates decolonial world-systems critique with radical feminist ontology.",
+    "historicalContext": "Hypatia (2007) and \"Toward a Decolonial Feminism\" (2010).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "María Lugones",
+        "work": "Toward a Decolonial Feminism",
+        "year": 2010,
+        "url": "https://en.wikipedia.org/wiki/Mar%C3%ADa_Lugones"
+      }
+    ]
+  },
+  {
+    "id": "maria-lugones--silvia-rivera-cusicanqui",
+    "source": "maria-lugones",
+    "target": "silvia-rivera-cusicanqui",
+    "type": "SYNTHESIZED",
+    "label": "Converged on non-essentialist Latin American decolonial feminist critique",
+    "strength": 4,
+    "description": "Lugones and Rivera Cusicanqui form twin pillars of Latin American decolonial feminism—combining Lugones's \"curdling\" against purity with Rivera Cusicanqui's ch'ixi coexistence of unassimilated worlds.",
+    "dialecticalTension": "Debates academic decoloniality while defending resistant Indigenous-feminist multiplicity.",
+    "historicalContext": "2000s–2010s South-North Latin American feminist dialogues.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Latin American Feminist Philosophy Contributors",
+        "work": "Feminist Philosophy in Latin America",
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

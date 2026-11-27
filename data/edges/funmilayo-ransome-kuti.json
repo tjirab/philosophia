@@ -1,0 +1,64 @@
+[
+  {
+    "id": "w-e-b-du-bois--funmilayo-ransome-kuti",
+    "source": "w-e-b-du-bois",
+    "target": "funmilayo-ransome-kuti",
+    "type": "SYNTHESIZED",
+    "label": "United Pan-African liberation solidarity with Yoruba market women's democracy",
+    "strength": 4,
+    "description": "Active in international Pan-African and anti-imperial networks shaped by W. E. B. Du Bois and Kwame Nkrumah, Funmilayo Ransome-Kuti translated Pan-African self-determination into militant Yoruba women's tax resistance.",
+    "dialecticalTension": "Grounds transnational Pan-African theory in concrete female peasant and market labor.",
+    "historicalContext": "1947 Abeokuta Women's Union revolt and 1940s–1950s Pan-African congresses.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Cheryl Johnson-Odim & Nina Emma Mba",
+        "work": "For Women and the Nation: Funmilayo Ransome-Kuti of Nigeria",
+        "year": 1997,
+        "url": "https://en.wikipedia.org/wiki/Funmilayo_Ransome-Kuti"
+      }
+    ]
+  },
+  {
+    "id": "funmilayo-ransome-kuti--kwasi-wiredu",
+    "source": "funmilayo-ransome-kuti",
+    "target": "kwasi-wiredu",
+    "type": "INFLUENCED",
+    "label": "Exemplified grassroots African democratic accountability beyond colonial chieftaincy",
+    "strength": 3,
+    "description": "Ransome-Kuti's exposure of how British indirect rule distorted indigenous West African governance into unaccountable autocracy prefigured Kwasi Wiredu's philosophical defense of consensual African democracy.",
+    "dialecticalTension": "Distinguishes authentic indigenous civic accountability from colonial-invented authoritarianism.",
+    "historicalContext": "West African political philosophy from anti-colonial mass action to postcolonial critique.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Chike Jeffers / Lucius Outlaw",
+        "work": "Africana Philosophy",
+        "url": "https://plato.stanford.edu/entries/africana/"
+      }
+    ]
+  },
+  {
+    "id": "funmilayo-ransome-kuti--wangari-maathai",
+    "source": "funmilayo-ransome-kuti",
+    "target": "wangari-maathai",
+    "type": "INFLUENCED",
+    "label": "Set continent-wide precedent for rural African women's civic-ecological mobilization",
+    "strength": 4,
+    "description": "The Abeokuta Women's Union's mass democratic mobilization led by Funmilayo Ransome-Kuti served as a foundational African precedent for Wangari Maathai's grassroots women's mobilization in Kenya's Green Belt Movement.",
+    "dialecticalTension": "Links anti-colonial fiscal democracy to postcolonial ecological democracy.",
+    "historicalContext": "Pan-African women's grassroots political lineage.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Judith Byfield",
+        "work": "The Bluest Hands: A Social and Economic History of Women Dyers in Abeokuta",
+        "year": 2002,
+        "url": "https://en.wikipedia.org/wiki/Funmilayo_Ransome-Kuti"
+      }
+    ]
+  }
+]

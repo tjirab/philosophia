@@ -1,0 +1,86 @@
+[
+  {
+    "id": "simone-de-beauvoir--nawal-el-saadawi",
+    "source": "simone-de-beauvoir",
+    "target": "nawal-el-saadawi",
+    "type": "SYNTHESIZED",
+    "label": "Merged existential critique of female Othering with Arab anti-imperialist materialism",
+    "strength": 4,
+    "description": "While admiring Beauvoir's philosophical dismantling of female immanence, El Saadawi insisted that women's bodily oppression in the Global South cannot be separated from global neoliberalism and imperial geopolitics.",
+    "dialecticalTension": "Contextualizes existential-feminist liberation inside anti-colonial political economy.",
+    "historicalContext": "1970s–1990s comparative Arab and transnational feminist theory.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nawal El Saadawi",
+        "work": "The Hidden Face of Eve",
+        "year": 1977,
+        "url": "https://en.wikipedia.org/wiki/Nawal_El_Saadawi"
+      }
+    ]
+  },
+  {
+    "id": "sigmund-freud--nawal-el-saadawi",
+    "source": "sigmund-freud",
+    "target": "nawal-el-saadawi",
+    "type": "CRITIQUED",
+    "label": "Clinically refuted Freudian theories of female psychological passivity",
+    "strength": 4,
+    "description": "Drawing on her psychiatric clinical practice in Egypt, El Saadawi attacked Freud's naturalization of female masochism and penis envy, demonstrating that women's psychic trauma stems from patriarchal bodily control and socio-economic oppression.",
+    "dialecticalTension": "Substitutes socio-political trauma etiology for biological-psychosexual determinism.",
+    "historicalContext": "Women and Sex (1969) and The Hidden Face of Eve (1977).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nawal El Saadawi",
+        "work": "The Hidden Face of Eve: Women in the Arab World",
+        "year": 1977,
+        "url": "https://en.wikipedia.org/wiki/Nawal_El_Saadawi"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--nawal-el-saadawi",
+    "source": "karl-marx",
+    "target": "nawal-el-saadawi",
+    "type": "DEVELOPED",
+    "label": "Analyzed patriarchy as structurally bound to class exploitation and imperialism",
+    "strength": 4,
+    "description": "El Saadawi linked Marxian political economy with bodily-cultural critique, arguing that class oppression, state authoritarianism, and religious fundamentalism mutually reinforce patriarchal domination.",
+    "dialecticalTension": "Integrates gendered bodily sovereignty into historical-materialist critique.",
+    "historicalContext": "Arab Women's Solidarity Association philosophical platform (1982).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nawal El Saadawi",
+        "work": "The Nawal El Saadawi Reader",
+        "year": 1997,
+        "url": "https://en.wikipedia.org/wiki/Nawal_El_Saadawi"
+      }
+    ]
+  },
+  {
+    "id": "nawal-el-saadawi--fatema-mernissi",
+    "source": "nawal-el-saadawi",
+    "target": "fatema-mernissi",
+    "type": "INFLUENCED",
+    "label": "Catalyzed contemporary Maghrebi-Mashriqi feminist sociological critique of patriarchy",
+    "strength": 4,
+    "description": "El Saadawi's fearless sociological and clinical exposure of Arab patriarchal taboos helped open regional critical space alongside and ahead of Fatema Mernissi's Moroccan historical sociology.",
+    "dialecticalTension": "Contrasts secular-materialist bodily critique with Mernissi's Islamic hermeneutical reclamation.",
+    "historicalContext": "1970s–1990s North African feminist sociology.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Miriam Cooke",
+        "work": "Women Claim Islam: Creating Islamic Feminism through Literature",
+        "year": 2001,
+        "url": "https://en.wikipedia.org/wiki/Fatema_Mernissi"
+      }
+    ]
+  }
+]

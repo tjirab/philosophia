@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ibn-khaldun--fatema-mernissi",
+    "source": "ibn-khaldun",
+    "target": "fatema-mernissi",
+    "type": "DEVELOPED",
+    "label": "Applied Khaldunian historical sociology to dismantle patriarchal hadith memory",
+    "strength": 4,
+    "description": "Working inside the Maghrebi sociological tradition traced to Ibn Khaldun, Mernissi examined how state power, tribal politics (asabiyyah), and Umayyad/Abbasid elites reshaped religious memory and gender spatial boundaries.",
+    "dialecticalTension": "Turns historical-materialist historiography toward critical hadith and gender analysis.",
+    "historicalContext": "Beyond the Veil (1975) and The Veil and the Male Elite (1987).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Fatema Mernissi",
+        "work": "The Veil and the Male Elite",
+        "year": 1987,
+        "url": "https://en.wikipedia.org/wiki/The_Veil_and_the_Male_Elite"
+      }
+    ]
+  },
+  {
+    "id": "fatema-mernissi--amina-wadud",
+    "source": "fatema-mernissi",
+    "target": "amina-wadud",
+    "type": "INFLUENCED",
+    "label": "Opened historical-critical Islamic feminism foundational to Wadud's Qur'anic method",
+    "strength": 5,
+    "description": "Mernissi's demonstration that patriarchal biases entered Islamic orthodoxy through post-prophetic historical transmission paved the methodological path for Amina Wadud's holistic gender-egalitarian Qur'anic hermeneutics.",
+    "dialecticalTension": "Shifts from critiquing male hadith chains to reconstructing systematic Qur'anic hermeneutics.",
+    "historicalContext": "1987–1992 emergence of transnational Islamic feminist philosophy.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Ziba Mir-Hosseini",
+        "work": "Muslim Women's Quest for Equality: Between Islamic Law and Feminism",
+        "year": 2006,
+        "url": "https://en.wikipedia.org/wiki/Amina_Wadud"
+      }
+    ]
+  },
+  {
+    "id": "fatema-mernissi--saba-mahmood",
+    "source": "fatema-mernissi",
+    "target": "saba-mahmood",
+    "type": "CRITIQUED",
+    "label": "Critiqued modernist Islamic feminism's reliance on liberal-autonomous subject norms",
+    "strength": 4,
+    "description": "While honoring Mernissi's scholarship, Saba Mahmood scrutinized reformist assumptions that Muslim women's flourishing can only be measured by resistance to traditional piety, highlighting instead embodied ethical cultivation.",
+    "dialecticalTension": "Debates whether Islamic agency requires liberating scriptural modernity or non-liberal habituation.",
+    "historicalContext": "Politics of Piety (2005) engagement with Muslim feminist historiography.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Saba Mahmood",
+        "work": "Politics of Piety",
+        "year": 2005,
+        "url": "https://en.wikipedia.org/wiki/Politics_of_Piety"
+      }
+    ]
+  }
+]

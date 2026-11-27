@@ -1,0 +1,40 @@
+{
+  "id": "silvia-rivera-cusicanqui",
+  "name": "Silvia Rivera Cusicanqui",
+  "birthYear": 1949,
+  "eraId": "contemporary",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Bolivian Aymara-descended sociologist, historian, and decolonial theorist who developed ch'ixi epistemology—a mottled coexistence of unassimilated Indigenous and Western worlds—while critiquing academic \"decoloniality\" elites.",
+  "centralQuestion": "How can ch'ixi—holding irreconcilable Indigenous and colonial contradictions in productive tension without false mestizaje synthesis—ground genuine decolonization?",
+  "keyWorks": [
+    {
+      "title": "Ch'ixinakax utxiwa: On Practices and Discourses of Decolonization",
+      "year": "2010 CE",
+      "url": "https://en.wikipedia.org/wiki/Silvia_Rivera_Cusicanqui",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Silvia_Rivera_Cusicanqui",
+      "description": "Formulates ch'ixi decoloniality and internal colonialism while indicting Northern academic co-optation of Latin American decolonial thought."
+    },
+    {
+      "title": "Oppressed but Not Defeated: Peasant Struggles Among the Aymara and Quechua in Bolivia",
+      "year": "1984 CE",
+      "url": "https://en.wikipedia.org/wiki/Silvia_Rivera_Cusicanqui",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Silvia_Rivera_Cusicanqui",
+      "description": "Sociological historiography of Andean anti-colonial rebellions and long/short historical memory."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "pillar",
+  "importanceScore": 89,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Silvia_Rivera_Cusicanqui"
+  },
+  "imageUrl": "/portraits/silvia-rivera-cusicanqui.jpg"
+}

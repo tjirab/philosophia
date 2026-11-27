@@ -1,0 +1,65 @@
+[
+  {
+    "id": "gayatri-chakravorty-spivak--chandra-talpade-mohanty",
+    "source": "gayatri-chakravorty-spivak",
+    "target": "chandra-talpade-mohanty",
+    "type": "INFLUENCED",
+    "label": "Informed postcolonial critique of Western epistemic representation of Global South women",
+    "strength": 4,
+    "description": "Building alongside Spivak's critique of discursive colonization, Mohanty demonstrated in \"Under Western Eyes\" how Western feminist texts homogenize diverse women across the Global South into a singular victimized subject.",
+    "dialecticalTension": "Applies postcolonial deconstruction directly to sociological methodology.",
+    "historicalContext": "Postcolonial feminist wave of the mid-1980s.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Chandra Talpade Mohanty",
+        "work": "Under Western Eyes",
+        "year": 1984,
+        "url": "https://plato.stanford.edu/entries/feminism-globalization/"
+      }
+    ]
+  },
+  {
+    "id": "michel-foucault--chandra-talpade-mohanty",
+    "source": "michel-foucault",
+    "target": "chandra-talpade-mohanty",
+    "type": "DEVELOPED",
+    "label": "Adapted Foucauldian discourse power analysis to feminist colonial scholarship",
+    "strength": 4,
+    "description": "Mohanty utilized Foucault's power/knowledge analytic to show that Western academic categories are not neutral descriptions, but discursive acts producing geopolitical hierarchy.",
+    "dialecticalTension": "Redirects Foucauldian genealogy toward transnational anti-imperialist solidarity.",
+    "historicalContext": "Under Western Eyes (1984) and Feminism Without Borders (2003).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Chandra Talpade Mohanty",
+        "work": "Feminism Without Borders",
+        "year": 2003,
+        "url": "https://en.wikipedia.org/wiki/Chandra_Talpade_Mohanty"
+      }
+    ]
+  },
+  {
+    "id": "chandra-talpade-mohanty--saba-mahmood",
+    "source": "chandra-talpade-mohanty",
+    "target": "saba-mahmood",
+    "type": "INFLUENCED",
+    "label": "Prefigured anti-Eurocentric critiques of liberal autonomy norms in transnational feminism",
+    "strength": 4,
+    "description": "Mohanty's warning against judging Global South women's agency by Western liberal-individualist yardsticks laid methodological groundwork for Saba Mahmood's ethnography of non-liberal Islamic piety.",
+    "dialecticalTension": "Opens feminist philosophy to historically situated, non-Western modalities of agency.",
+    "historicalContext": "From \"Under Western Eyes\" (1984) to Politics of Piety (2005).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Saba Mahmood",
+        "work": "Politics of Piety: The Islamic Revival and the Feminist Subject",
+        "year": 2005,
+        "url": "https://en.wikipedia.org/wiki/Politics_of_Piety"
+      }
+    ]
+  }
+]

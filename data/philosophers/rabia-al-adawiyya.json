@@ -1,0 +1,33 @@
+{
+  "id": "rabia-al-adawiyya",
+  "name": "Rabi'a al-Adawiyya",
+  "birthYear": 714,
+  "deathYear": 801,
+  "eraId": "medieval",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Eighth-century Basran philosopher-mystic and founding architect of Sufi metaphysics of divine love (mahabba), redefining moral and religious action as disinterested devotion beyond fear of Hell or desire for Paradise.",
+  "centralQuestion": "Can ethical and spiritual devotion be purified of instrumental fear and reward into unconditional love of the Divine for its own sake?",
+  "keyWorks": [
+    {
+      "title": "Discourses and Prayers on Disinterested Love (Mahabba)",
+      "year": "c. 780 CE",
+      "url": "https://en.wikipedia.org/wiki/Rabia_of_Basra",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rabia_of_Basra",
+      "description": "Preserved sayings and mystical poetry transmitted through Attar and Al-Ghazali establishing pure disinterested divine love as foundational Sufi ethics."
+    }
+  ],
+  "sepSlug": "arabic-islamic-mysticism",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/arabic-islamic-mysticism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rabia_of_Basra"
+  },
+  "imageUrl": "/portraits/rabia-al-adawiyya.jpg"
+}

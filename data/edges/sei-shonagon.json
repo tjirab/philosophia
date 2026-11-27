@@ -1,0 +1,23 @@
+[
+  {
+    "id": "zhuangzi--sei-shonagon",
+    "source": "zhuangzi",
+    "target": "sei-shonagon",
+    "type": "INFLUENCED",
+    "label": "Inspired playful attentiveness to fleeting particulars and unconventional taxonomy",
+    "strength": 3,
+    "description": "Classical Chinese Daoist sensibility—especially Zhuangzi's delight in spontaneous transformation and unexpected perspectives—resonates throughout Sei Shōnagon's zuihitsu lists in The Pillow Book.",
+    "dialecticalTension": "Transposes Daoist wandering spontaneity into Heian urban aesthetic perception.",
+    "historicalContext": "Sino-Japanese literary canon circulating in the Heian imperial court.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Ivan Morris",
+        "work": "The World of the Shining Prince & The Pillow Book Commentary",
+        "year": 1967,
+        "url": "https://en.wikipedia.org/wiki/The_Pillow_Book"
+      }
+    ]
+  }
+]

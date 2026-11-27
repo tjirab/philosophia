@@ -14,6 +14,7 @@
     "ingest": "node scripts/ingest-philosophizethis.mjs",
     "audit": "node scripts/audit-coverage.mjs",
     "audit:diversity": "node scripts/check-diversity.mjs",
+    "audit:diversity:targets": "node scripts/check-diversity.mjs --strict-targets",
     "audit:report": "node scripts/audit-coverage.mjs --report",
     "prepare": "git config core.hooksPath .githooks 2>/dev/null || true"
   },

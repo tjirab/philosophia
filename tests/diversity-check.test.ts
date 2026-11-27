@@ -2,6 +2,7 @@ import { describe, it, expect, afterEach } from 'vitest';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import {
   evaluateDiversity,
   VALID_GENDERS,
@@ -39,11 +40,50 @@ describe('Diversity & Global Representation Pre-Commit Guardrail', () => {
     const report = evaluateDiversity();
     expect(report.passed).toBe(true);
     expect(report.violations).toHaveLength(0);
-    expect(report.total).toBeGreaterThanOrEqual(187);
+    expect(report.total).toBeGreaterThanOrEqual(220);
     expect(report.policy.targetWomenPct).toBe(40);
     expect(report.policy.targetNonWesternPct).toBe(50);
     expect(report.womenPct).toBeGreaterThanOrEqual(report.policy.minWomenPct);
     expect(report.nonWesternPct).toBeGreaterThanOrEqual(report.policy.minNonWesternPct);
+    expect(report.meetsTargets).toBe(false);
+    expect(report.deficitWomen).toBeGreaterThan(0);
+    expect(report.deficitNonWestern).toBeGreaterThan(0);
+  });
+
+  it('distinguishes passing the progressive ratchet from meeting 40%/50% targets in CLI and programmatic checks', () => {
+    const dirMet = createTempRepo(
+      [
+        { id: 'w1', gender: 'woman', culturalSphere: 'african' },
+        { id: 'w2', gender: 'woman', culturalSphere: 'east-asian' },
+        { id: 'm1', gender: 'man', culturalSphere: 'western' },
+        { id: 'm2', gender: 'man', culturalSphere: 'western' },
+      ],
+      {
+        targetWomenPct: 40,
+        targetNonWesternPct: 50,
+        minWomenPct: 30,
+        minNonWesternPct: 35,
+        blockWesternMaleOnlyAdditionsBelowTarget: true,
+      }
+    );
+
+    const metReport = evaluateDiversity({ rootDir: dirMet });
+    expect(metReport.passed).toBe(true);
+    expect(metReport.meetsTargets).toBe(true);
+    expect(metReport.deficitWomen).toBe(0);
+    expect(metReport.deficitNonWestern).toBe(0);
+
+    // Live repo currently passes ratchet (30% / 35.45%) but fails --strict-targets (40% / 50%)
+    const cliScript = path.resolve(__dirname, '../scripts/check-diversity.mjs');
+    const warnOut = execFileSync(process.execPath, [cliScript], { encoding: 'utf-8' });
+    expect(warnOut).toContain('Thinkers:');
+
+    expect(() =>
+      execFileSync(process.execPath, [cliScript, '--strict-targets'], {
+        encoding: 'utf-8',
+        stdio: 'pipe',
+      })
+    ).toThrow();
   });
 
   it('rejects thinker files missing valid gender or culturalSphere metadata', () => {

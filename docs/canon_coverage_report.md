@@ -1,6 +1,6 @@
 # 📜 Philosophia Canon Coverage & Assessment Report
 
-> **Generated:** `2026-11-27T20:14:26.299Z`  
+> **Generated:** `2026-11-27T20:49:12.980Z`  
 > **Status:** 🟢 Healthy (0 isolated nodes, 1 unified graph)
 
 ---
@@ -9,19 +9,19 @@
 
 | Metric | Value | Target / Health Status |
 | :--- | :--- | :--- |
-| **Philosophers** | **187** | Primary constellation pillars & bridges |
-| **Concepts** | **161** | Categorized across 7 philosophical branches |
-| **Total Graph Nodes** | **348** | Clean schema compliance |
-| **Dialectical Edges** | **749** | Average **2.15** edges / node |
-| **Media & Audio Resources** | **297** | SEP dossiers, primary links, podcasts |
+| **Philosophers** | **220** | Primary constellation pillars & bridges |
+| **Concepts** | **169** | Categorized across 7 philosophical branches |
+| **Total Graph Nodes** | **389** | Clean schema compliance |
+| **Dialectical Edges** | **839** | Average **2.16** edges / node |
+| **Media & Audio Resources** | **330** | SEP dossiers, primary links, podcasts |
 | **Isolated Nodes** | **0** | ✅ 0 isolated nodes |
 | **Connected Components** | **1** | ✅ Single unified component |
 
 ### Dialectical Edge Distribution
-- **INFLUENCED** (Lineage & inheritance): `207`
-- **DEVELOPED** (Extension & formalization): `346`
-- **CRITIQUED** (Dialectical rebuttal): `119`
-- **SYNTHESIZED** (Integration of disparate traditions): `77`
+- **INFLUENCED** (Lineage & inheritance): `237`
+- **DEVELOPED** (Extension & formalization): `372`
+- **CRITIQUED** (Dialectical rebuttal): `138`
+- **SYNTHESIZED** (Integration of disparate traditions): `92`
 
 ---
 
@@ -31,10 +31,10 @@
 | :--- | :--- | :--- |
 | **SEP Slug Coverage** | **100.0%** | All thinkers have canonical SEP slugs |
 | **Central Question** | **100.0%** | Core inquiry phrased as inquiry question |
-| **Structured Key Works** | **100.0%** | 406 works total (100.0% with primary/Wikipedia links) |
-| **Key Works Spread** | **100% $\ge 1$ work** | • 1 work: `36`<br>• 2 works: `91`<br>• 3+ works: `60` |
-| **Portrait Profiles** | **100.0%** | Classical medallion portraits for nodes & dossiers (187 thinkers) |
-| **Audio / Media Coverage** | **87.2%** | Podcast episodes, encyclopedia entries, and classic archives |
+| **Structured Key Works** | **100.0%** | 463 works total (100.0% with primary/Wikipedia links) |
+| **Key Works Spread** | **100% $\ge 1$ work** | • 1 work: `45`<br>• 2 works: `115`<br>• 3+ works: `60` |
+| **Portrait Profiles** | **100.0%** | Classical medallion portraits for nodes & dossiers (220 thinkers) |
+| **Audio / Media Coverage** | **89.1%** | Podcast episodes, encyclopedia entries, and classic archives |
 
 > [!NOTE]
 > Thinkers awaiting media/podcast integration: `auguste-comte`, `wilhelm-wundt`, `ivan-pavlov`, `sigmund-freud`, `emile-durkheim`, `georg-simmel`, `george-h-mead`, `max-weber`, `w-e-b-du-bois`, `carl-jung`, `john-b-watson`, `jean-piaget`, `lev-vygotsky`, `carl-rogers`, `talcott-parsons`, `b-f-skinner`, `viktor-frankl`, `erving-goffman`, `zygmunt-bauman`, `noam-chomsky`, `pierre-bourdieu`, `daniel-kahneman`, `anthony-giddens`, `ulrich-beck`.
@@ -44,30 +44,30 @@
 ## 🌐 3. Temporal Era & Domain Distribution
 
 ### Disciplinary Domain Coverage
-- **Philosophy:** `162` thinkers
-- **Psychology:** `36` thinkers
-- **Sociology:** `37` thinkers
-- **Interdisciplinary Bridges (2+ domains):** `44` thinkers
+- **Philosophy:** `195` thinkers
+- **Psychology:** `38` thinkers
+- **Sociology:** `60` thinkers
+- **Interdisciplinary Bridges (2+ domains):** `67` thinkers
 
 ### Diversity & Global Representation Balance
-- **Women Thinkers:** `33 / 187` (**17.65%** | ratchet floor `17.6%`, target **40%**)
-- **Men-to-Women Ratio:** `4.67:1`
-- **Non-Western / Global South:** `45 / 187` (**24.06%** | ratchet floor `24%`, target **50%**)
-- **Cultural Spheres:** Western `142`, MENA `13`, East Asian `10`, African `7`, Latin American `6`, South Asian `5`, Indigenous `4`
+- **Women Thinkers:** `66 / 220` (**30%** | ratchet floor `30%`, target **40%**)
+- **Men-to-Women Ratio:** `2.33:1`
+- **Non-Western / Global South:** `78 / 220` (**35.45%** | ratchet floor `35.4%`, target **50%**)
+- **Cultural Spheres:** Western `142`, MENA `21`, East Asian `18`, African `10`, Latin American `10`, South Asian `13`, Indigenous `6`
 
 | Era | Timeline | Thinkers | Concepts | Total Nodes |
 | :--- | :--- | :--- | :--- | :--- |
 | **Pre-Socratic** | 624 BCE – 470 BCE | 7 | 3 | **10** |
 | **Classical Greek** | 470 BCE – 322 BCE | 3 | 3 | **6** |
 | **Hellenistic & Roman** | 323 BCE – 400 CE | 6 | 2 | **8** |
-| **Eastern & Axial Traditions** | 600 BCE – 800 CE | 12 | 9 | **21** |
-| **Medieval & Islamic Golden Age** | 400 CE – 1450 CE | 21 | 17 | **38** |
-| **Early Modern & Scientific** | 1450 CE – 1700 CE | 20 | 15 | **35** |
+| **Eastern & Axial Traditions** | 600 BCE – 800 CE | 13 | 9 | **22** |
+| **Medieval & Islamic Golden Age** | 400 CE – 1450 CE | 26 | 18 | **44** |
+| **Early Modern & Scientific** | 1450 CE – 1700 CE | 21 | 15 | **36** |
 | **Enlightenment & Social Contract** | 1700 CE – 1780 CE | 10 | 11 | **21** |
 | **German Idealism & Romanticism** | 1781 CE – 1840 CE | 4 | 6 | **10** |
-| **19th Century Divergences** | 1819 CE – 1900 CE | 17 | 14 | **31** |
-| **20th Century Phenomenon & Analysis** | 1900 CE – 1980 CE | 58 | 53 | **111** |
-| **Contemporary & Post-Structural** | 1980 CE – 2026 CE | 29 | 28 | **57** |
+| **19th Century Divergences** | 1819 CE – 1900 CE | 20 | 14 | **34** |
+| **20th Century Phenomenon & Analysis** | 1900 CE – 1980 CE | 66 | 55 | **121** |
+| **Contemporary & Post-Structural** | 1980 CE – 2026 CE | 44 | 33 | **77** |
 
 ---
 
@@ -119,6 +119,15 @@ Automated pathfinding verification across canonical historical transitions:
 | **Freud → Karen Horney → Carl Rogers** | ✅ Verified | 2 hops | `sigmund-freud → alfred-adler → carl-rogers` |
 | **Husserl → Edith Stein → Levinas** | ✅ Verified | 1 hops | `edmund-husserl → emmanuel-levinas` |
 | **Plato → Iris Murdoch → Martha Nussbaum** | ✅ Verified | 2 hops | `plato → iris-murdoch → martha-nussbaum` |
+| **Gargi Vachaknavi → Adi Shankara → Akka Mahadevi → Savitribai Phule → Ambedkar** | ✅ Verified | 2 hops | `gargi-vachaknavi → siddhartha-gautama → b-r-ambedkar` |
+| **Confucius → He-Yin Zhen → Nannü & Anarcho-Feminism** | ✅ Verified | 2 hops | `confucius → he-yin-zhen → nannu-and-anarcho-feminism` |
+| **Rabi'a al-Adawiyya → Al-Ghazali → Amina Wadud** | ✅ Verified | 2 hops | `rabia-al-adawiyya → al-ghazali → amina-wadud` |
+| **Ibn Khaldun → Fatema Mernissi → Saba Mahmood** | ✅ Verified | 2 hops | `ibn-khaldun → fatema-mernissi → saba-mahmood` |
+| **Du Bois → Funmilayo Ransome-Kuti → Wangari Maathai → Green Belt Stewardship** | ✅ Verified | 3 hops | `w-e-b-du-bois → frantz-fanon → wangari-maathai → green-belt-environmental-stewardship` |
+| **Fanon → Lélia Gonzalez → Amefricanidade** | ✅ Verified | 2 hops | `frantz-fanon → lelia-gonzalez → amefricanidade` |
+| **Quijano → María Lugones → Coloniality of Gender** | ✅ Verified | 2 hops | `anibal-quijano → maria-lugones → coloniality-of-gender` |
+| **Guaman Poma → Silvia Rivera Cusicanqui → Ch'ixi Decoloniality** | ✅ Verified | 2 hops | `felipe-guaman-poma → silvia-rivera-cusicanqui → chixi-decoloniality` |
+| **Vine Deloria Jr. → Winona LaDuke** | ✅ Verified | 1 hops | `vine-deloria-jr → winona-laduke` |
 
 ---
 
@@ -126,15 +135,15 @@ Automated pathfinding verification across canonical historical transitions:
 
 ### Top Dialectical Catalysts (Highest Out-Degree)
 1. **Immanuel Kant** (23 outgoing links)
-2. **Sigmund Freud** (20 outgoing links)
-3. **René Descartes** (18 outgoing links)
-4. **Aristotle** (17 outgoing links)
-5. **Karl Marx** (16 outgoing links)
+2. **Sigmund Freud** (21 outgoing links)
+3. **Karl Marx** (19 outgoing links)
+4. **René Descartes** (18 outgoing links)
+5. **Aristotle** (17 outgoing links)
 6. **John Locke** (13 outgoing links)
 7. **G.W.F. Hegel** (11 outgoing links)
-8. **Martin Heidegger** (10 outgoing links)
-9. **Friedrich Nietzsche** (9 outgoing links)
-10. **Plato** (8 outgoing links)
+8. **Friedrich Nietzsche** (10 outgoing links)
+9. **Martin Heidegger** (10 outgoing links)
+10. **Michel Foucault** (10 outgoing links)
 
 ### Top Synthetic Integrators (Highest In-Degree)
 1. **Jürgen Habermas** (14 incoming links)

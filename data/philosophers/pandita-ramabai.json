@@ -1,0 +1,41 @@
+{
+  "id": "pandita-ramabai",
+  "name": "Pandita Ramabai",
+  "birthYear": 1858,
+  "deathYear": 1922,
+  "eraId": "nineteenth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Sanskrit scholar and Indian feminist social reformer whose empirical critique of high-caste Hindu patriarchy, child marriage, and colonial law laid foundations for modern South Asian feminist sociology.",
+  "centralQuestion": "How do scriptural patriarchy and colonial legal codification intersect to disenfranchise high-caste widows and women across India?",
+  "keyWorks": [
+    {
+      "title": "The High-Caste Hindu Woman",
+      "year": "1887 CE",
+      "url": "https://en.wikipedia.org/wiki/Pandita_Ramabai",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pandita_Ramabai",
+      "description": "Sociological and ethical indictment of child marriage, enforced widowhood, and systematic denial of female education in colonial India."
+    },
+    {
+      "title": "Stri Dharma Niti (Morals for Women)",
+      "year": "1882 CE",
+      "url": "https://en.wikipedia.org/wiki/Pandita_Ramabai",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pandita_Ramabai",
+      "description": "Marathi treatise urging Indian women toward intellectual self-reliance and moral agency."
+    }
+  ],
+  "sepSlug": "feminism-political",
+  "canonTier": "bridge",
+  "importanceScore": 84,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pandita_Ramabai"
+  },
+  "imageUrl": "/portraits/pandita-ramabai.jpg"
+}

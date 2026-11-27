@@ -1,0 +1,33 @@
+{
+  "id": "sei-shonagon",
+  "name": "Sei Shōnagon",
+  "birthYear": 966,
+  "deathYear": 1017,
+  "eraId": "medieval",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Heian Japanese court philosopher and essayist who pioneered the zuihitsu (\"following the brush\") genre in The Pillow Book, developing an aesthetics of ephemeral particulars, wit (okashi), and phenomenological taxonomy.",
+  "centralQuestion": "How can fragmentary attentiveness to fleeting sensory details and witty aesthetic judgment (okashi) illuminate lived experience without totalizing systems?",
+  "keyWorks": [
+    {
+      "title": "The Pillow Book (Makura no Sōshi)",
+      "year": "c. 1002 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Pillow_Book",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Pillow_Book",
+      "description": "Foundational zuihitsu philosophical collection cataloging perceptual nuances, aesthetic sensibilities, and courtly social observation."
+    }
+  ],
+  "sepSlug": "japanese-aesthetics",
+  "canonTier": "contributor",
+  "importanceScore": 80,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/japanese-aesthetics/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sei_Shōnagon"
+  },
+  "imageUrl": "/portraits/sei-shonagon.jpg"
+}

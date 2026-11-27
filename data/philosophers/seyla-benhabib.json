@@ -1,0 +1,40 @@
+{
+  "id": "seyla-benhabib",
+  "name": "Seyla Benhabib",
+  "birthYear": 1950,
+  "eraId": "contemporary",
+  "traditionId": "critical-theory",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Turkish-born American critical theorist and political philosopher who transformed Habermasian discourse ethics with the \"concrete other\" and synthesized Hannah Arendt's \"right to have rights\" into cosmopolitan democratic iterations.",
+  "centralQuestion": "How can universal human rights and deliberative democracy be reconciled with cultural plurality and the ethical demands of embodied \"concrete others\"?",
+  "keyWorks": [
+    {
+      "title": "Situating the Self: Gender, Community and Postmodernism in Contemporary Ethics",
+      "year": "1992 CE",
+      "url": "https://en.wikipedia.org/wiki/Seyla_Benhabib",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Seyla_Benhabib",
+      "description": "Develops interactive universalism distinguishing the \"generalized other\" of formal justice from the \"concrete other\" of narrative care."
+    },
+    {
+      "title": "The Rights of Others: Aliens, Residents, and Citizens",
+      "year": "2004 CE",
+      "url": "https://en.wikipedia.org/wiki/Seyla_Benhabib",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Seyla_Benhabib",
+      "description": "Advances cosmopolitan federalism and democratic iterations grounded in Arendt's right to have rights."
+    }
+  ],
+  "sepSlug": "critical-theory",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/critical-theory/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Seyla_Benhabib"
+  },
+  "imageUrl": "/portraits/seyla-benhabib.jpg"
+}

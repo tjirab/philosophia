@@ -1,0 +1,65 @@
+[
+  {
+    "id": "jurgen-habermas--seyla-benhabib",
+    "source": "jurgen-habermas",
+    "target": "seyla-benhabib",
+    "type": "DEVELOPED",
+    "label": "Reframed Habermasian discourse ethics around the embodied \"concrete other\"",
+    "strength": 5,
+    "description": "Seyla Benhabib corrected the abstract rationalism of Habermas's universalization principle by introducing the \"concrete other,\" demanding that communicative ethics attend to situated gender, narrative history, and relational needs.",
+    "dialecticalTension": "Reconciles universalizable moral validity with feminist ethics of care and particularity.",
+    "historicalContext": "Critique, Norm, and Utopia (1986) and Situating the Self (1992).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Seyla Benhabib",
+        "work": "Situating the Self",
+        "year": 1992,
+        "url": "https://plato.stanford.edu/entries/critical-theory/"
+      }
+    ]
+  },
+  {
+    "id": "hannah-arendt--seyla-benhabib",
+    "source": "hannah-arendt",
+    "target": "seyla-benhabib",
+    "type": "DEVELOPED",
+    "label": "Converted Arendt's \"right to have rights\" into cosmopolitan democratic iterations",
+    "strength": 5,
+    "description": "In The Reluctant Modernism of Hannah Arendt (1996) and The Rights of Others (2004), Benhabib turned Arendt's critique of statelessness into a juridical-political theory of migrant citizenship and porous democratic borders.",
+    "dialecticalTension": "Mediates tension between bounded democratic self-determination and universal cosmopolitan hospitality.",
+    "historicalContext": "Late-20th/early-21st-century Critical Theory and migration ethics.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Seyla Benhabib",
+        "work": "The Rights of Others: Aliens, Residents, and Citizens",
+        "year": 2004,
+        "url": "https://en.wikipedia.org/wiki/Seyla_Benhabib"
+      }
+    ]
+  },
+  {
+    "id": "seyla-benhabib--judith-butler",
+    "source": "seyla-benhabib",
+    "target": "judith-butler",
+    "type": "CRITIQUED",
+    "label": "Debated normative agency vs. post-structuralist dissolution of the subject",
+    "strength": 4,
+    "description": "In Feminist Contentions (1995), Benhabib challenged Judith Butler's performativity theory, arguing that strong post-structuralist death-of-the-subject claims undermine normative feminist accounts of agency and critical emancipation.",
+    "dialecticalTension": "Canonical exchange between Frankfurt School critical universalism and post-structuralist performativity.",
+    "historicalContext": "The Feminist Contentions debate (1990–1995).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Seyla Benhabib & Judith Butler",
+        "work": "Feminist Contentions: A Philosophical Exchange",
+        "year": 1995,
+        "url": "https://en.wikipedia.org/wiki/Seyla_Benhabib"
+      }
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "murasaki-shikibu--yosano-akiko",
+    "source": "murasaki-shikibu",
+    "target": "yosano-akiko",
+    "type": "DEVELOPED",
+    "label": "Translated The Tale of Genji into modern Japanese and reclaimed female aesthetics",
+    "strength": 4,
+    "description": "Akiko Yosano's 1912 modern Japanese translation of Murasaki Shikibu's Tale of Genji democratized Heian aesthetics and centered women's subjective emotional and philosophical agency.",
+    "dialecticalTension": "Bridges classical courtly mono no aware with modern Taishō feminist individualism.",
+    "historicalContext": "First modern translation of Genji Monogatari (1912–1913).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "G. G. Rowley",
+        "work": "Yosano Akiko and The Tale of Genji",
+        "year": 2000,
+        "url": "https://en.wikipedia.org/wiki/Akiko_Yosano"
+      }
+    ]
+  },
+  {
+    "id": "yosano-akiko--hiratsuka-raicho",
+    "source": "yosano-akiko",
+    "target": "hiratsuka-raicho",
+    "type": "CRITIQUED",
+    "label": "Debated economic autonomy vs. state motherhood protection (Bosei Hogo Ronsō)",
+    "strength": 5,
+    "description": "In the historic 1918–1919 Motherhood Protection Debate, Akiko Yosano and Raichō Hiratsuka clashed over whether state subsidies for mothers protect women or deepen patriarchal state dependency.",
+    "dialecticalTension": "Pits liberal-individualist economic self-reliance against social-democratic reproductive justice.",
+    "historicalContext": "Published across Fujin Kōron and Taiyō in Taishō Japan (1918–1919).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Vera Mackie",
+        "work": "Feminism in Modern Japan: Citizenship, Embodiment and Sexuality",
+        "year": 2003,
+        "url": "https://en.wikipedia.org/wiki/Akiko_Yosano"
+      }
+    ]
+  }
+]

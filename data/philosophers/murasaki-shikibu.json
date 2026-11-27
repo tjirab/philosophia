@@ -1,0 +1,40 @@
+{
+  "id": "murasaki-shikibu",
+  "name": "Murasaki Shikibu",
+  "birthYear": 973,
+  "deathYear": 1014,
+  "eraId": "medieval",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Heian Japanese novelist, Buddhist thinker, and aesthetic theorist whose The Tale of Genji articulated mono no aware (the pathos of impermanent things) as a profound ethical and phenomenological sensibility.",
+  "centralQuestion": "How does sensitive attunement to Buddhist impermanence (mujo) generate ethical empathy (mono no aware) and self-knowledge across human desire and loss?",
+  "keyWorks": [
+    {
+      "title": "The Tale of Genji (Genji Monogatari)",
+      "year": "c. 1008 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Tale_of_Genji",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Tale_of_Genji",
+      "description": "Monumental philosophical narrative exploring karma, emotional resonance, and aesthetic awareness in Heian court society, including its defense of fiction as truth."
+    },
+    {
+      "title": "The Diary of Lady Murasaki",
+      "year": "c. 1010 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Diary_of_Lady_Murasaki",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Diary_of_Lady_Murasaki",
+      "description": "Reflective journal examining female court subjectivity, literary judgment, and philosophical critique of contemporaries."
+    }
+  ],
+  "sepSlug": "japanese-aesthetics",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/japanese-aesthetics/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Murasaki_Shikibu"
+  },
+  "imageUrl": "/portraits/murasaki-shikibu.jpg"
+}

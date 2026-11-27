@@ -1,0 +1,33 @@
+{
+  "id": "mirabai",
+  "name": "Mirabai",
+  "birthYear": 1498,
+  "deathYear": 1547,
+  "eraId": "early-modern",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Sixteenth-century Rajasthani Hindu mystic and Bhakti philosopher whose vernacular bhajans defended spiritual egalitarianism, affective knowledge, and female moral autonomy against Rajput courtly patriarchy.",
+  "centralQuestion": "Can radical devotional love (prema-bhakti) supersede hereditary caste, royal authority, and patriarchal enclosure as an ethical path?",
+  "keyWorks": [
+    {
+      "title": "Padavali (Bhajans of Mirabai)",
+      "year": "c. 1540 CE",
+      "url": "https://en.wikipedia.org/wiki/Meera",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Meera",
+      "description": "Devotional lyric corpus challenging caste and marital confinement through vernacular nirguna-saguna synthesis."
+    }
+  ],
+  "sepSlug": "mysticism",
+  "canonTier": "contributor",
+  "importanceScore": 79,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/mysticism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Meera"
+  },
+  "imageUrl": "/portraits/mirabai.jpg"
+}

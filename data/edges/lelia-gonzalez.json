@@ -1,0 +1,106 @@
+[
+  {
+    "id": "frantz-fanon--lelia-gonzalez",
+    "source": "frantz-fanon",
+    "target": "lelia-gonzalez",
+    "type": "SYNTHESIZED",
+    "label": "Combined Fanonian psychopathology of race with Brazilian Black feminist critique",
+    "strength": 5,
+    "description": "Drawing deeply on Fanon's Black Skin, White Masks, Lélia Gonzalez diagnosed Brazilian society's \"racial democracy\" ideology as a collective neurosis of disavowal that splits and racializes Black women.",
+    "dialecticalTension": "Translates Fanonian colonial psychology into Afro-Brazilian and Amefrican intersectionality.",
+    "historicalContext": "Unified Black Movement (MNU) and Brazilian critical theory (1978–1994).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Lélia Gonzalez",
+        "work": "Racismo e sexismo na cultura brasileira",
+        "year": 1984,
+        "url": "https://en.wikipedia.org/wiki/L%C3%A9lia_Gonzalez"
+      }
+    ]
+  },
+  {
+    "id": "jacques-lacan--lelia-gonzalez",
+    "source": "jacques-lacan",
+    "target": "lelia-gonzalez",
+    "type": "DEVELOPED",
+    "label": "Adapted Lacanian psychoanalysis (infans/lalangue) to theorize Pretuguês",
+    "strength": 4,
+    "description": "Applying Lacan's concepts of infans, denegation, and linguistic unconscious, Gonzalez formulated \"Pretuguês\" (Blackened Portuguese) to reveal how African mothers shaped the very unconscious tongue of Brazilian culture.",
+    "dialecticalTension": "Subverts Eurocentric Lacanian psychoanalysis to center repressed Afro-diasporic speech.",
+    "historicalContext": "Delivered at ANPOCS and published in Revista Ciências Sociais Hoje (1984).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Lélia Gonzalez",
+        "work": "Racismo e sexismo na cultura brasileira",
+        "year": 1984,
+        "url": "https://en.wikipedia.org/wiki/L%C3%A9lia_Gonzalez"
+      }
+    ]
+  },
+  {
+    "id": "lelia-gonzalez--amefricanidade",
+    "source": "lelia-gonzalez",
+    "target": "amefricanidade",
+    "type": "DEVELOPED",
+    "label": "Coined Amefricanidade as transnational Afro-Indigenous political epistemology",
+    "strength": 5,
+    "description": "Gonzalez invented Amefricanidade (1988) to replace Eurocentric \"Latin America,\" uniting the historical consciousness of African and Indigenous survival across the entire hemisphere.",
+    "dialecticalTension": "Reframes American modernity from the epistemic vantage of quilombos and palenques.",
+    "historicalContext": "Published in Tempo Brasileiro (1988).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Lélia Gonzalez",
+        "work": "A categoria político-cultural de amefricanidade",
+        "year": 1988,
+        "url": "https://en.wikipedia.org/wiki/L%C3%A9lia_Gonzalez"
+      }
+    ]
+  },
+  {
+    "id": "lelia-gonzalez--sueli-carneiro",
+    "source": "lelia-gonzalez",
+    "target": "sueli-carneiro",
+    "type": "INFLUENCED",
+    "label": "Mentored and pioneered Black feminist epistemology inherited by Sueli Carneiro",
+    "strength": 5,
+    "description": "As intellectual pioneer of Brazil's Black women's movement, Gonzalez laid the conceptual foundation upon which Sueli Carneiro constructed her theory of the raciality apparatus and epistemicide.",
+    "dialecticalTension": "Continuity from psychoanalytic-cultural Amefricanidade to Foucauldian anti-epistemicide philosophy.",
+    "historicalContext": "Lineage from MNU (1978) to Geledés (1988).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Sueli Carneiro",
+        "work": "Enegrecer o feminismo / Escritos de uma vida",
+        "year": 2003,
+        "url": "https://en.wikipedia.org/wiki/Sueli_Carneiro"
+      }
+    ]
+  },
+  {
+    "id": "lelia-gonzalez--patricia-hill-collins",
+    "source": "lelia-gonzalez",
+    "target": "patricia-hill-collins",
+    "type": "SYNTHESIZED",
+    "label": "Pioneered interlocking race-gender-class critique parallel to Black feminist standpoint",
+    "strength": 4,
+    "description": "Working in the 1980s alongside and prior to Anglo-American formulations of intersectionality, Gonzalez's analysis of the Black woman's structural position in Brazil profoundly complements Patricia Hill Collins's matrix of domination.",
+    "dialecticalTension": "Bridges North American Black Feminist Thought with South American Amefricanidade.",
+    "historicalContext": "1980s–2000s transatlantic Black feminist dialogue.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Roque, Lugones & Schutte",
+        "work": "Feminist Philosophy in Latin America",
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

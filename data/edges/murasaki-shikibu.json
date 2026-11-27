@@ -1,0 +1,82 @@
+[
+  {
+    "id": "siddhartha-gautama--murasaki-shikibu",
+    "source": "siddhartha-gautama",
+    "target": "murasaki-shikibu",
+    "type": "INFLUENCED",
+    "label": "Grounded Heian aesthetics of mono no aware in Buddhist impermanence (mujo)",
+    "strength": 4,
+    "description": "Tendai Buddhist doctrines of impermanence (mujo), karmic attachment, and awakening permeate The Tale of Genji, transforming metaphysical transience into an ethics of compassionate sensitivity.",
+    "dialecticalTension": "Fuses world-renouncing Buddhist insight with deep emotional attunement to worldly beauty.",
+    "historicalContext": "Heian court Buddhism and literary aesthetics (c. 1008 CE).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Graham Parkes",
+        "work": "Japanese Aesthetics",
+        "url": "https://plato.stanford.edu/entries/japanese-aesthetics/"
+      }
+    ]
+  },
+  {
+    "id": "sei-shonagon--murasaki-shikibu",
+    "source": "sei-shonagon",
+    "target": "murasaki-shikibu",
+    "type": "CRITIQUED",
+    "label": "Contrasted empathetic depth (aware) against Shōnagon's superficial courtly wit",
+    "strength": 4,
+    "description": "In The Diary of Lady Murasaki, Murasaki Shikibu famously critiqued Sei Shōnagon's showy erudition and detached aesthetic wit, modeling an alternative literary philosophy rooted in tragic empathy and moral introspection.",
+    "dialecticalTension": "Pits detached aesthetic brilliance (okashi) against tragic emotional depth (mono no aware).",
+    "historicalContext": "Rivalry of Heian imperial court salons around Empress Shōshi and Empress Teishi (c. 1000–1010 CE).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Murasaki Shikibu",
+        "work": "The Diary of Lady Murasaki",
+        "url": "https://en.wikipedia.org/wiki/The_Diary_of_Lady_Murasaki"
+      }
+    ]
+  },
+  {
+    "id": "murasaki-shikibu--dogen",
+    "source": "murasaki-shikibu",
+    "target": "dogen",
+    "type": "INFLUENCED",
+    "label": "Shaped medieval Japanese Zen attunement to fleeting impermanent phenomena",
+    "strength": 3,
+    "description": "The Heian philosophical sensibility of mono no aware cultivated by Murasaki Shikibu directly nourished Kamakura Zen thinkers like Dōgen, who reconceived impermanence itself as Buddha-nature.",
+    "dialecticalTension": "Elevates aesthetic poignancy over loss into non-dual Zen presence.",
+    "historicalContext": "Continuity of Japanese Buddhist aesthetics from Heian to Kamakura periods.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Graham Parkes",
+        "work": "Japanese Aesthetics",
+        "url": "https://plato.stanford.edu/entries/japanese-aesthetics/"
+      }
+    ]
+  },
+  {
+    "id": "murasaki-shikibu--nishida-kitaro",
+    "source": "murasaki-shikibu",
+    "target": "nishida-kitaro",
+    "type": "INFLUENCED",
+    "label": "Informing Kyoto School philosophy of affective immediacy and pure experience",
+    "strength": 3,
+    "description": "Mediated through Motoori Norinaga's reclamation of The Tale of Genji, Murasaki Shikibu's mono no aware became a canonical touchstone for Nishida Kitaro and the Kyoto School's aesthetics of non-dual intuition.",
+    "dialecticalTension": "Connects classical Heian literary psychology to modern Japanese phenomenology.",
+    "historicalContext": "Edo Kokugaku revival feeding early-20th-century Kyoto philosophy.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Graham Parkes",
+        "work": "Japanese Aesthetics",
+        "url": "https://plato.stanford.edu/entries/japanese-aesthetics/"
+      }
+    ]
+  }
+]

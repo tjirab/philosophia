@@ -1,0 +1,44 @@
+[
+  {
+    "id": "john-stuart-mill--pandita-ramabai",
+    "source": "john-stuart-mill",
+    "target": "pandita-ramabai",
+    "type": "CRITIQUED",
+    "label": "Engaged liberal rights discourse while exposing colonial-patriarchal collusion in India",
+    "strength": 3,
+    "description": "While drawing on nineteenth-century liberal egalitarian arguments for women's education and self-reliance, Pandita Ramabai demonstrated in The High-Caste Hindu Woman how British colonial courts actively reinforced orthodox patriarchal law rather than liberating Indian women.",
+    "dialecticalTension": "Exposes the blind spots of metropolitan liberalism when mediated by imperial indirect rule.",
+    "historicalContext": "Written during Ramabai's travels in Britain and the United States (1883–1888).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Pandita Ramabai",
+        "work": "The High-Caste Hindu Woman",
+        "year": 1887,
+        "url": "https://en.wikipedia.org/wiki/Pandita_Ramabai"
+      }
+    ]
+  },
+  {
+    "id": "pandita-ramabai--chandra-talpade-mohanty",
+    "source": "pandita-ramabai",
+    "target": "chandra-talpade-mohanty",
+    "type": "INFLUENCED",
+    "label": "Provided early South Asian feminist critique of imperial saviorism",
+    "strength": 3,
+    "description": "Postcolonial Indian and transnational feminist scholars, including Chandra Talpade Mohanty, draw on historical figures like Pandita Ramabai to show autonomous South Asian feminist theorizing preceding Western academic feminism.",
+    "dialecticalTension": "Counters Eurocentric narratives that treat feminism as a late Western export to the Global South.",
+    "historicalContext": "Transnational feminist historiography.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Meera Kosambi",
+        "work": "Pandita Ramabai Through Her Own Words",
+        "year": 2000,
+        "url": "https://en.wikipedia.org/wiki/Pandita_Ramabai"
+      }
+    ]
+  }
+]

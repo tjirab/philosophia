@@ -1,0 +1,65 @@
+[
+  {
+    "id": "aime-cesaire--mariama-ba",
+    "source": "aime-cesaire",
+    "target": "mariama-ba",
+    "type": "CRITIQUED",
+    "label": "Exposed postcolonial male Negritude's blind spots toward African patriarchy",
+    "strength": 4,
+    "description": "Writing from Senghor's Senegal after the triumph of Francophone Negritude championed by Aimé Césaire and Senghor, Mariama Bâ showed in So Long a Letter how cultural decolonization preserved domestic patriarchy and caste prejudice.",
+    "dialecticalTension": "Complements anti-colonial cultural affirmation with unflinching internal feminist critique.",
+    "historicalContext": "Post-independence Francophone West African philosophy and literature (1979).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Mariama Bâ",
+        "work": "So Long a Letter (Une si longue lettre)",
+        "year": 1979,
+        "url": "https://en.wikipedia.org/wiki/So_Long_a_Letter"
+      }
+    ]
+  },
+  {
+    "id": "simone-de-beauvoir--mariama-ba",
+    "source": "simone-de-beauvoir",
+    "target": "mariama-ba",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized existential critique of immanence with Wolof ethical solidarity",
+    "strength": 3,
+    "description": "Engaging French existential feminism in Dakar's intellectual milieu, Bâ reworked the critique of women's domestic confinement through Senegalese Islamic-modernist values and female friendship.",
+    "dialecticalTension": "Rejects Western individualism while demanding African women's moral sovereignty.",
+    "historicalContext": "1970s Senegalese feminist letters and essays.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Obioma Nnaemeka",
+        "work": "Sisterhood, Feminisms and Power: From Africa to the Diaspora",
+        "year": 1998,
+        "url": "https://en.wikipedia.org/wiki/Mariama_B%C3%A2"
+      }
+    ]
+  },
+  {
+    "id": "mariama-ba--achille-mbembe",
+    "source": "mariama-ba",
+    "target": "achille-mbembe",
+    "type": "INFLUENCED",
+    "label": "Diagnosed postcolonial bourgeois mimicry and intimate alienation in West Africa",
+    "strength": 3,
+    "description": "Mariama Bâ's literary-sociological dissection of the postcolonial African elite's moral compromises anticipated Achille Mbembe's later philosophical diagnosis of the \"postcolony\" and intimate power.",
+    "dialecticalTension": "Reads state-level post-independence crisis through intimate domestic power relations.",
+    "historicalContext": "Francophone African critical thought (1979–2001).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Achille Mbembe",
+        "work": "On the Postcolony",
+        "year": 2001,
+        "url": "https://en.wikipedia.org/wiki/Achille_Mbembe"
+      }
+    ]
+  }
+]

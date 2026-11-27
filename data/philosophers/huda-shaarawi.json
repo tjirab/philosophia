@@ -1,0 +1,34 @@
+{
+  "id": "huda-shaarawi",
+  "name": "Huda Sha'arawi",
+  "birthYear": 1879,
+  "deathYear": 1947,
+  "eraId": "twentieth-century",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Egyptian feminist philosopher, constitutionalist organizer, and founder of the Egyptian Feminist Union who articulated an anti-colonial nationalist ethics linking women's civil rights, educational parity, and national sovereignty.",
+  "centralQuestion": "How do anti-colonial national liberation and reform of Islamic and civic family law mutually condition women's public citizenship?",
+  "keyWorks": [
+    {
+      "title": "Harem Years: The Memoirs of an Egyptian Feminist",
+      "year": "1945 CE",
+      "url": "https://en.wikipedia.org/wiki/Huda_Sha%27arawi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Huda_Sha%27arawi",
+      "description": "Autobiographical and socio-political account documenting Egyptian women's anti-colonial mobilization and emergence into public civic life."
+    }
+  ],
+  "sepSlug": "feminism-political",
+  "canonTier": "bridge",
+  "importanceScore": 83,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Huda_Sha%27arawi"
+  },
+  "imageUrl": "/portraits/huda-shaarawi.jpg"
+}

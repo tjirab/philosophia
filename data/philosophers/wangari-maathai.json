@@ -1,0 +1,41 @@
+{
+  "id": "wangari-maathai",
+  "name": "Wangari Maathai",
+  "birthYear": 1940,
+  "deathYear": 2011,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Kenyan environmental philosopher, biologist, Nobel Peace Laureate, and founder of the Green Belt Movement who unified ecological restoration, anti-corruption civic democracy, and African women's empowerment.",
+  "centralQuestion": "Why are ecological degradation, postcolonial authoritarianism, and rural women's disenfranchisement structurally inseparable?",
+  "keyWorks": [
+    {
+      "title": "The Green Belt Movement: Sharing the Approach and the Experience",
+      "year": "1988 CE",
+      "url": "https://en.wikipedia.org/wiki/Wangari_Maathai",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Wangari_Maathai",
+      "description": "Articulates grassroots tree-planting as an integrated praxis of ecological regeneration, civic education, and anti-authoritarian accountability."
+    },
+    {
+      "title": "The Challenge for Africa",
+      "year": "2009 CE",
+      "url": "https://en.wikipedia.org/wiki/Wangari_Maathai",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Wangari_Maathai",
+      "description": "Philosophical diagnosis of postcolonial governance, cultural reclamation (kibagi/mothertongue), and sustainable African self-determination."
+    }
+  ],
+  "sepSlug": "feminism-environmental",
+  "canonTier": "pillar",
+  "importanceScore": 89,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-environmental/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wangari_Maathai"
+  },
+  "imageUrl": "/portraits/wangari-maathai.jpg"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "michel-foucault--saba-mahmood",
+    "source": "michel-foucault",
+    "target": "saba-mahmood",
+    "type": "DEVELOPED",
+    "label": "Extended Foucauldian subjectivation and \"care of the self\" to religious piety",
+    "strength": 5,
+    "description": "In Politics of Piety (2005), Saba Mahmood mobilized Foucault's late ethics of subjectivation alongside Aristotelian habitus to analyze how disciplined bodily rituals cultivate pious ethical desire rather than mere repression.",
+    "dialecticalTension": "Decouples Foucauldian subject-formation from strictly secular-transgressive politics.",
+    "historicalContext": "Ethnography of the Cairo women's mosque movement (2005).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Saba Mahmood",
+        "work": "Politics of Piety",
+        "year": 2005,
+        "url": "https://en.wikipedia.org/wiki/Politics_of_Piety"
+      }
+    ]
+  },
+  {
+    "id": "judith-butler--saba-mahmood",
+    "source": "judith-butler",
+    "target": "saba-mahmood",
+    "type": "CRITIQUED",
+    "label": "Refuted reduction of ethical agency to normative resistance or subversion",
+    "strength": 5,
+    "description": "Engaging Butler's performativity theory, Mahmood argued that equating agency with subverting norms reflects a parochial secular-liberal teleology that obscures how non-liberal traditions form ethical subjects through norm inhabitation.",
+    "dialecticalTension": "Pits performative subversion against embodied devotional habituation.",
+    "historicalContext": "Chapter 1 of Politics of Piety (2005).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Saba Mahmood",
+        "work": "Politics of Piety",
+        "year": 2005,
+        "url": "https://en.wikipedia.org/wiki/Politics_of_Piety"
+      }
+    ]
+  }
+]

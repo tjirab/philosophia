@@ -1,0 +1,41 @@
+{
+  "id": "saba-mahmood",
+  "name": "Saba Mahmood",
+  "birthYear": 1961,
+  "deathYear": 2018,
+  "eraId": "contemporary",
+  "traditionId": "post-structuralism",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Pakistani-born anthropologist and social theorist whose study of Cairo's women's mosque movement radically challenged secular-liberal assumptions that moral agency exists only as resistance or subversion of norms.",
+  "centralQuestion": "Can ethical agency consist in the bodily cultivation and inhabitation of non-liberal religious norms rather than solely in their subversion?",
+  "keyWorks": [
+    {
+      "title": "Politics of Piety: The Islamic Revival and the Feminist Subject",
+      "year": "2005 CE",
+      "url": "https://en.wikipedia.org/wiki/Politics_of_Piety",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Politics_of_Piety",
+      "description": "Rethinks Aristotelian habitus and Foucauldian subjectivation through Muslim women's piety practices, reshaping contemporary social and feminist theory."
+    },
+    {
+      "title": "Religious Difference in a Secular Age: A Minority Report",
+      "year": "2015 CE",
+      "url": "https://en.wikipedia.org/wiki/Saba_Mahmood",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Saba_Mahmood",
+      "description": "Genealogy of modern secular governance demonstrating how the postcolonial state regulates religious difference."
+    }
+  ],
+  "sepSlug": "feminism-globalization",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-globalization/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Saba_Mahmood"
+  },
+  "imageUrl": "/portraits/saba-mahmood.jpg"
+}

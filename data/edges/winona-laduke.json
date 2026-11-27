@@ -1,0 +1,65 @@
+[
+  {
+    "id": "vine-deloria-jr--winona-laduke",
+    "source": "vine-deloria-jr",
+    "target": "winona-laduke",
+    "type": "DEVELOPED",
+    "label": "Translated spatial Indigenous sovereignty into Anishinaabe ecological recovery",
+    "strength": 5,
+    "description": "Inheriting Vine Deloria Jr.'s paradigm of land-centered sacred geography and tribal sovereignty, Winona LaDuke forged practical and philosophical resistance around wild rice (manoomin) protection, land buybacks, and post-carbon energy.",
+    "dialecticalTension": "Grounds Indigenous metaphysical spatiality in contemporary environmental economics and law.",
+    "historicalContext": "White Earth Land Recovery Project (founded 1989) & All Our Relations (1999).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Winona LaDuke",
+        "work": "All Our Relations: Native Struggles for Land and Life",
+        "year": 1999,
+        "url": "https://en.wikipedia.org/wiki/Winona_LaDuke"
+      }
+    ]
+  },
+  {
+    "id": "robin-wall-kimmerer--winona-laduke",
+    "source": "robin-wall-kimmerer",
+    "target": "winona-laduke",
+    "type": "SYNTHESIZED",
+    "label": "Shared Anishinaabe-Potawatomi ethics of kinship and botanical reciprocity",
+    "strength": 4,
+    "description": "Rooted in parallel Great Lakes Anishinaabe/Potawatomi traditions, Kimmerer's \"grammar of animacy\" and LaDuke's seed sovereignty / Seventh Generation economics together define contemporary North American Indigenous environmental philosophy.",
+    "dialecticalTension": "Pairs botanical-phenomenological reciprocity with frontline political-economic activism.",
+    "historicalContext": "Contemporary Great Lakes Indigenous environmental philosophy.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Winona LaDuke",
+        "work": "Recovering the Sacred: The Power of Naming and Claiming",
+        "year": 2005,
+        "url": "https://plato.stanford.edu/entries/ethics-environmental/"
+      }
+    ]
+  },
+  {
+    "id": "vandana-shiva--winona-laduke",
+    "source": "vandana-shiva",
+    "target": "winona-laduke",
+    "type": "SYNTHESIZED",
+    "label": "Built transnational Indigenous-Global South front against biopiracy and patenting",
+    "strength": 4,
+    "description": "LaDuke collaborated directly with Vandana Shiva in international forums against corporate patenting of staple seeds (connecting India's basmati struggles with Anishinaabe manoomin wild rice defense).",
+    "dialecticalTension": "Forges solidarity between Indigenous land ethics and Global South agrarian commons.",
+    "historicalContext": "International anti-biopiracy coalitions (1990s–2000s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Winona LaDuke",
+        "work": "Recovering the Sacred",
+        "year": 2005,
+        "url": "https://en.wikipedia.org/wiki/Winona_LaDuke"
+      }
+    ]
+  }
+]

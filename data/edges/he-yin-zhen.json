@@ -1,0 +1,86 @@
+[
+  {
+    "id": "confucius--he-yin-zhen",
+    "source": "confucius",
+    "target": "he-yin-zhen",
+    "type": "CRITIQUED",
+    "label": "Dismantled Neo-Confucian nannü hierarchy as the root of all social oppression",
+    "strength": 5,
+    "description": "He-Yin Zhen launched a foundational philosophical assault on Confucian ritual hierarchy (nannü differentiation), demonstrating that classifying human beings into superior/inferior sexed roles anchored state and property domination.",
+    "dialecticalTension": "Exposes patriarchal hierarchy not as timeless moral order but as historical domination.",
+    "historicalContext": "Published in Tianyi bao (Natural Justice), Tokyo, 1907–1908.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "He-Yin Zhen",
+        "work": "On the Question of Women's Liberation (1907)",
+        "year": 1907,
+        "url": "https://en.wikipedia.org/wiki/He-Yin_Zhen"
+      }
+    ]
+  },
+  {
+    "id": "karl-marx--he-yin-zhen",
+    "source": "karl-marx",
+    "target": "he-yin-zhen",
+    "type": "SYNTHESIZED",
+    "label": "Combined socialist critique of private property with primacy of nannü domination",
+    "strength": 4,
+    "description": "Engaging socialist and Marxist translations circulating in Tokyo (including the first Chinese translation of The Communist Manifesto in Tianyi bao), He-Yin Zhen argued that patriarchy cannot be reduced merely to capitalism—both must fall together.",
+    "dialecticalTension": "Refuses class-only reductionism while insisting on economic revolution for women's liberation.",
+    "historicalContext": "Tokyo anarchist-socialist debates (1907–1908).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Lydia H. Liu, Rebecca E. Karl & Dorothy Ko",
+        "work": "The Birth of Chinese Feminism: Essential Texts in Transnational Theory",
+        "year": 2013,
+        "url": "https://en.wikipedia.org/wiki/He-Yin_Zhen"
+      }
+    ]
+  },
+  {
+    "id": "he-yin-zhen--nannu-and-anarcho-feminism",
+    "source": "he-yin-zhen",
+    "target": "nannu-and-anarcho-feminism",
+    "type": "DEVELOPED",
+    "label": "Formulated structural deconstruction of nannü and total anarcho-feminism",
+    "strength": 5,
+    "description": "He-Yin Zhen conceptualized nannü as a historical regime producing gendered hierarchy prior to and alongside state-capitalist power, founding non-Western anarcho-feminist theory.",
+    "dialecticalTension": "Synthesizes sex/gender deconstruction with anti-statist economic egalitarianism.",
+    "historicalContext": "Natural Justice (Tianyi bao), 1907.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "He-Yin Zhen",
+        "work": "On the Revenge of Women",
+        "year": 1907,
+        "url": "https://en.wikipedia.org/wiki/He-Yin_Zhen"
+      }
+    ]
+  },
+  {
+    "id": "he-yin-zhen--ito-noe",
+    "source": "he-yin-zhen",
+    "target": "ito-noe",
+    "type": "INFLUENCED",
+    "label": "Cross-pollinated East Asian anarcho-feminist critique of state and family law",
+    "strength": 4,
+    "description": "Tokyo's early twentieth-century transnational anarchist milieu linked Chinese Tianyi bao writers like He-Yin Zhen with Japanese radicals like Noe Itō in a shared rejection of patriarchal family registration and state coercion.",
+    "dialecticalTension": "Connects Chinese and Japanese radical critiques of East Asian state patriarchy.",
+    "historicalContext": "1907–1923 Tokyo anarcho-feminist intellectual networks.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Peter Zarrow",
+        "work": "Anarchism and Chinese Political Culture",
+        "year": 1990,
+        "url": "https://en.wikipedia.org/wiki/He-Yin_Zhen"
+      }
+    ]
+  }
+]

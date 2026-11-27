@@ -1,0 +1,23 @@
+[
+  {
+    "id": "mirabai--savitribai-phule",
+    "source": "mirabai",
+    "target": "savitribai-phule",
+    "type": "INFLUENCED",
+    "label": "Supplied vernacular Bhakti egalitarian critique of caste and gender orthodoxy",
+    "strength": 3,
+    "description": "The anti-caste Bhakti traditions championed by figures like Mirabai and Kabir in western India gave nineteenth-century Satyashodhak thinkers, including Savitribai Phule, an indigenous moral vocabulary challenging Brahmanical exclusion.",
+    "dialecticalTension": "Bridges devotional anti-caste spirituality with rationalist educational emancipation.",
+    "historicalContext": "Bhakti egalitarian heritage invoked across 19th-century Maharashtrian social reform.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Gail Omvedt",
+        "work": "Seeking Begumpura: The Social Vision of Anticaste Intellectuals",
+        "year": 2008,
+        "url": "https://en.wikipedia.org/wiki/Savitribai_Phule"
+      }
+    ]
+  }
+]

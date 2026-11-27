@@ -1,0 +1,86 @@
+[
+  {
+    "id": "anibal-quijano--silvia-rivera-cusicanqui",
+    "source": "anibal-quijano",
+    "target": "silvia-rivera-cusicanqui",
+    "type": "CRITIQUED",
+    "label": "Indicted US-academic \"decoloniality\" discourse for co-opting Andean struggle",
+    "strength": 5,
+    "description": "In Ch'ixinakax utxiwa (2010), Silvia Rivera Cusicanqui sharply critiqued Northern academic circles surrounding Quijano and Mignolo for turning lived Aymara anticolonial struggles into a depoliticized academic canon.",
+    "dialecticalTension": "Pits embodied Aymara sociopolitical struggle against institutional Northern academic theory.",
+    "historicalContext": "Ch'ixinakax utxiwa (2010).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Silvia Rivera Cusicanqui",
+        "work": "Ch'ixinakax utxiwa: A Reflection on the Practices and Discourses of Decolonization",
+        "year": 2010,
+        "url": "https://en.wikipedia.org/wiki/Silvia_Rivera_Cusicanqui"
+      }
+    ]
+  },
+  {
+    "id": "felipe-guaman-poma--silvia-rivera-cusicanqui",
+    "source": "felipe-guaman-poma",
+    "target": "silvia-rivera-cusicanqui",
+    "type": "DEVELOPED",
+    "label": "Reclaimed Guaman Poma's visual chronicle as foundational sociology of the image",
+    "strength": 4,
+    "description": "Rivera Cusicanqui treated Felipe Guaman Poma de Ayala's 1615 illustrated manuscript as an ancestor of Andean \"sociology of the image,\" demonstrating how Indigenous visuality theorizes colonial trauma beyond alphabetic writing.",
+    "dialecticalTension": "Elevates non-alphabetic Andean iconography to critical epistemological theory.",
+    "historicalContext": "Sociología de la imagen (2015) and Taller de Historia Oral Andina (THOA).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Silvia Rivera Cusicanqui",
+        "work": "Ch'ixinakax utxiwa / Sociología de la imagen",
+        "year": 2010,
+        "url": "https://en.wikipedia.org/wiki/Silvia_Rivera_Cusicanqui"
+      }
+    ]
+  },
+  {
+    "id": "paulo-freire--silvia-rivera-cusicanqui",
+    "source": "paulo-freire",
+    "target": "silvia-rivera-cusicanqui",
+    "type": "DEVELOPED",
+    "label": "Adapted participatory liberation pedagogy to Aymara oral history (THOA)",
+    "strength": 3,
+    "description": "Integrating Freirean popular conscientization with Aymara communal memory, Rivera Cusicanqui co-founded the Andean Oral History Workshop (THOA) to co-produce sociological knowledge outside elite universities.",
+    "dialecticalTension": "Replaces top-down academic expertise with collective Aymara co-theorizing.",
+    "historicalContext": "Andean Oral History Workshop (THOA), La Paz, 1983–present.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Silvia Rivera Cusicanqui",
+        "work": "Oppressed but Not Defeated (THOA)",
+        "year": 1984,
+        "url": "https://en.wikipedia.org/wiki/Silvia_Rivera_Cusicanqui"
+      }
+    ]
+  },
+  {
+    "id": "silvia-rivera-cusicanqui--chixi-decoloniality",
+    "source": "silvia-rivera-cusicanqui",
+    "target": "chixi-decoloniality",
+    "type": "DEVELOPED",
+    "label": "Articulated ch'ixi ontology of unassimilated Andean-modern coexistence",
+    "strength": 5,
+    "description": "Drawing on the Aymara term ch'ixi (a mottled gray formed of black and white dots that never merge), Rivera Cusicanqui theorized decolonial subjectivity as holding conflictual worlds in creative tension.",
+    "dialecticalTension": "Refuses both nostalgic purity and homogenizing state mestizaje.",
+    "historicalContext": "Ch'ixinakax utxiwa (2010).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Silvia Rivera Cusicanqui",
+        "work": "Ch'ixinakax utxiwa",
+        "year": 2010,
+        "url": "https://en.wikipedia.org/wiki/Silvia_Rivera_Cusicanqui"
+      }
+    ]
+  }
+]

@@ -3,13 +3,13 @@
 
 | Metric | Current Value | Status |
 | :--- | :--- | :--- |
-| Thinkers | 187 | Complete |
-| Concepts | 161 | Complete |
-| Total Graph Nodes | 348 | Verified (0 isolated nodes) |
-| Dialectical Edges | 749 (mean degree 2.15) | Verified (0 dangling edges) |
-| Gender Balance | 33 women (17.65%, M:W 4.67:1) | Target 40% (Ratchet OK) |
-| Cultural Balance | 45 non-Western (24.06%) | Target 50% (Ratchet OK) |
-| Critical Lineage Paths | 42 / 42 verified | Passed |
+| Thinkers | 220 | Complete |
+| Concepts | 169 | Complete |
+| Total Graph Nodes | 389 | Verified (0 isolated nodes) |
+| Dialectical Edges | 839 (mean degree 2.16) | Verified (0 dangling edges) |
+| Gender Balance | 66 women (30%, M:W 2.33:1) | Below 40% Target (Ratchet OK) |
+| Cultural Balance | 78 non-Western (35.45%) | Below 50% Target (Ratchet OK) |
+| Critical Lineage Paths | 51 / 51 verified | Passed |
 | Portrait Profiles | 100.0% | Verified |
 | Key Works Coverage | 100.0% | Verified |
 | Graph Topology | 1 connected component | Verified |

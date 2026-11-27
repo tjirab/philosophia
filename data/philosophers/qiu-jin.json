@@ -1,0 +1,41 @@
+{
+  "id": "qiu-jin",
+  "name": "Qiu Jin",
+  "birthYear": 1875,
+  "deathYear": 1907,
+  "eraId": "nineteenth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Late-Qing Chinese feminist philosopher and anti-imperial revolutionary who attacked footbinding, Confucian patriarchal subordination, and dynastic autocracy as inseparable barriers to human emancipation.",
+  "centralQuestion": "Why must political revolution against imperial autocracy be inseparable from the bodily and educational liberation of women?",
+  "keyWorks": [
+    {
+      "title": "Respectful Announcement to China's Two Hundred Million Women Comrades",
+      "year": "1904 CE",
+      "url": "https://en.wikipedia.org/wiki/Qiu_Jin",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Qiu_Jin",
+      "description": "Manifesto condemning footbinding, arranged marriage, and intellectual confinement as systemic slavery undermining collective self-rule."
+    },
+    {
+      "title": "Stones of the Jingwei Bird (Jingwei Shi)",
+      "year": "1906 CE",
+      "url": "https://en.wikipedia.org/wiki/Qiu_Jin",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Qiu_Jin",
+      "description": "Allegorical philosophical narrative envisioning egalitarian civic solidarity and women's self-emancipation."
+    }
+  ],
+  "sepSlug": "chinese-social-political",
+  "canonTier": "bridge",
+  "importanceScore": 84,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/chinese-social-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Qiu_Jin"
+  },
+  "imageUrl": "/portraits/qiu-jin.jpg"
+}

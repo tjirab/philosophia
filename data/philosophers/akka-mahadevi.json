@@ -1,0 +1,33 @@
+{
+  "id": "akka-mahadevi",
+  "name": "Akka Mahadevi",
+  "birthYear": 1130,
+  "deathYear": 1160,
+  "eraId": "medieval",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Twelfth-century Kannada poet-philosopher of the Virashaiva (Lingayat) movement whose vachanas radicalized non-dual devotional metaphysics while repudiating caste hierarchy and patriarchal domesticity.",
+  "centralQuestion": "How does ecstatic devotion to the divine absolute shatter social conventions of caste, gender, and embodied possession?",
+  "keyWorks": [
+    {
+      "title": "Vachanas of Akka Mahadevi",
+      "year": "c. 1155 CE",
+      "url": "https://en.wikipedia.org/wiki/Akka_Mahadevi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Akka_Mahadevi",
+      "description": "Collected Kannada philosophical prose-poems articulated in dialogues with Basavanna and the Anubhava Mantapa rejecting social ritualism for direct spiritual equality."
+    }
+  ],
+  "sepSlug": "mysticism",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/mysticism/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Akka_Mahadevi"
+  },
+  "imageUrl": "/portraits/akka-mahadevi.jpg"
+}
