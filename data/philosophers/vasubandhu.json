@@ -1,0 +1,41 @@
+{
+  "id": "vasubandhu",
+  "name": "Vasubandhu",
+  "birthYear": 350,
+  "deathYear": 430,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Indian Buddhist philosopher and co-founder of the Yogacara school whose Abhidharmakosa and Consciousness-Only (vijnapti-matra) treatises mapped the eight layers of consciousness and perceptual projection.",
+  "centralQuestion": "If all experience arises within the stream of karmically conditioned awareness, how does storehouse consciousness (alaya-vijnana) construct the appearance of dualistic subject and object?",
+  "keyWorks": [
+    {
+      "title": "Abhidharmakosakarika (Treasury of Abhidharma)",
+      "year": "4th–5th century CE",
+      "url": "https://en.wikipedia.org/wiki/Abhidharmako%C5%9Bak%C4%81rik%C4%81",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Abhidharmako%C5%9Bak%C4%81rik%C4%81",
+      "description": "Comprehensive dialectical compendium of Buddhist metaphysics, causation, perception, and mental factors."
+    },
+    {
+      "title": "Vimsatika & Trimsika (Twenty & Thirty Verses on Consciousness-Only)",
+      "year": "4th–5th century CE",
+      "url": "https://en.wikipedia.org/wiki/Vasubandhu",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Vasubandhu",
+      "description": "Classic Yogacara phenomenology defending cognitive idealism and analyzing the eight consciousnesses."
+    }
+  ],
+  "sepSlug": "vasubandhu",
+  "canonTier": "pillar",
+  "importanceScore": 92,
+  "gender": "man",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/vasubandhu/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vasubandhu"
+  },
+  "imageUrl": "/portraits/vasubandhu.jpg"
+}

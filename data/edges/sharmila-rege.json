@@ -1,0 +1,65 @@
+[
+  {
+    "id": "savitribai-phule--sharmila-rege",
+    "source": "savitribai-phule",
+    "target": "sharmila-rege",
+    "type": "DEVELOPED",
+    "label": "Recovered Phule-Ambedkarite anti-caste feminist pedagogy as foundational Indian social theory",
+    "strength": 5,
+    "description": "Rege led the Krantijyoti Savitribai Phule Women’s Studies Centre and centered Phule’s Satyashodhak tradition against upper-caste academic hegemony.",
+    "dialecticalTension": "Reclaims anti-caste grassroots pedagogy as canonical sociological epistemology.",
+    "historicalContext": "University of Pune / Dalit feminist scholarship (1991–2013).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Sharmila Rege",
+        "work": "Writing Caste, Writing Gender",
+        "year": 2006,
+        "url": "https://en.wikipedia.org/wiki/Sharmila_Rege"
+      }
+    ]
+  },
+  {
+    "id": "patricia-hill-collins--sharmila-rege",
+    "source": "patricia-hill-collins",
+    "target": "sharmila-rege",
+    "type": "SYNTHESIZED",
+    "label": "Adapted Black feminist standpoint epistemology into Dalit Feminist Standpoint theory",
+    "strength": 4,
+    "description": "Engaging Black feminist critiques of white feminism, Rege articulated how Dalit women’s marginality exposes interlocking caste, class, and patriarchal power.",
+    "dialecticalTension": "Translates intersectional standpoint theory into the specific grammar of Indian caste.",
+    "historicalContext": "Comparative global feminist sociology (1998–2006).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Sharmila Rege",
+        "work": "Dalit Women Talk Differently",
+        "year": 1998,
+        "url": "https://plato.stanford.edu/entries/feminist-social-epistemology/"
+      }
+    ]
+  },
+  {
+    "id": "sharmila-rege--dalit-feminist-standpoint",
+    "source": "sharmila-rege",
+    "target": "dalit-feminist-standpoint",
+    "type": "DEVELOPED",
+    "label": "Formulated Dalit Feminist Standpoint as an anti-caste, non-essentialist epistemic stance",
+    "strength": 5,
+    "description": "Rege defined Dalit feminist standpoint not as a closed identity claim, but as an accountable epistemic commitment to reading society from the struggles of Dalit women.",
+    "dialecticalTension": "Bridges lived testimonio with structural sociological critique.",
+    "historicalContext": "Dalit Women Talk Differently (1998).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Sharmila Rege",
+        "work": "Dalit Women Talk Differently",
+        "year": 1998,
+        "url": "https://en.wikipedia.org/wiki/Sharmila_Rege"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "xie-daoyun",
+  "name": "Xie Daoyun",
+  "birthYear": 349,
+  "deathYear": 409,
+  "eraId": "eastern",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Eastern Jin Chinese philosopher, poet, and Neo-Daoist Xuanxue dialectician celebrated for mastering pure conversation (qingtan) metaphysics and demonstrating women’s equal philosophical acuity in classical China.",
+  "centralQuestion": "How do poetic metaphor and dialectical pure conversation (qingtan) disclose the spontaneous patterns of Daoist naturalness (ziran)?",
+  "keyWorks": [
+    {
+      "title": "Qingtan Dialectics & Climbing the Mountain (Recorded in Shishuo Xinyu)",
+      "year": "c. 390 CE",
+      "url": "https://en.wikipedia.org/wiki/Xie_Daoyun",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Xie_Daoyun",
+      "description": "Surviving Xuanxue philosophical debates and nature poetry exemplifying Wei-Jin Neo-Daoist aesthetic and metaphysical wit."
+    }
+  ],
+  "sepSlug": "chinese-epistemology",
+  "canonTier": "bridge",
+  "importanceScore": 84,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/chinese-epistemology/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Xie_Daoyun"
+  },
+  "imageUrl": "/portraits/xie-daoyun.jpg"
+}

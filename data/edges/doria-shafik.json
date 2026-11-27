@@ -1,0 +1,44 @@
+[
+  {
+    "id": "huda-shaarawi--doria-shafik",
+    "source": "huda-shaarawi",
+    "target": "doria-shafik",
+    "type": "DEVELOPED",
+    "label": "Radicalized Sha’arawi’s suffrage advocacy through direct-action civic militancy",
+    "strength": 5,
+    "description": "Mentored early by Sha’arawi, Shafik founded Bint al-Nil and staged the 1951 parliamentary sit-in and hunger strikes that won Egyptian women the vote in 1956.",
+    "dialecticalTension": "Escalates elite salon reform into confrontational constitutional suffrage praxis.",
+    "historicalContext": "Egyptian women’s suffrage struggle (1945–1956).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Doria Shafik",
+        "work": "La Femme et le Droit Religieux",
+        "year": 1940,
+        "url": "https://en.wikipedia.org/wiki/Doria_Shafik"
+      }
+    ]
+  },
+  {
+    "id": "doria-shafik--nawal-el-saadawi",
+    "source": "doria-shafik",
+    "target": "nawal-el-saadawi",
+    "type": "INFLUENCED",
+    "label": "Set the uncompromising precedent for Egyptian feminist resistance against state-enforced silencing",
+    "strength": 4,
+    "description": "Shafik’s solitary hunger strikes against authoritarian censorship under Nasser directly prefigured El Saadawi’s fearless critique of state patriarchy.",
+    "dialecticalTension": "Links 1950s constitutional suffrage struggles to postcolonial feminist dissent.",
+    "historicalContext": "Modern Egyptian feminist continuum.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Doria Shafik",
+        "work": "Bint al-Nil Archives",
+        "year": 1954,
+        "url": "https://en.wikipedia.org/wiki/Doria_Shafik"
+      }
+    ]
+  }
+]

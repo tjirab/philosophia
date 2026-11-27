@@ -1,0 +1,44 @@
+[
+  {
+    "id": "kamaladevi-chattopadhyay--vina-mazumdar",
+    "source": "kamaladevi-chattopadhyay",
+    "target": "vina-mazumdar",
+    "type": "DEVELOPED",
+    "label": "Institutionalized anti-colonial women’s movement demands into empirical Women’s Studies",
+    "strength": 4,
+    "description": "Building on the independence generation’s constitutional promises, Mazumdar led the Committee on the Status of Women to audit postcolonial reality.",
+    "dialecticalTension": "Tests nationalist egalitarian ideals against hard demographic and labor data.",
+    "historicalContext": "Post-independence India (1971–1974).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Vina Mazumdar",
+        "work": "Towards Equality",
+        "year": 1974,
+        "url": "https://en.wikipedia.org/wiki/Vina_Mazumdar"
+      }
+    ]
+  },
+  {
+    "id": "vina-mazumdar--sharmila-rege",
+    "source": "vina-mazumdar",
+    "target": "sharmila-rege",
+    "type": "INFLUENCED",
+    "label": "Institutionalized Indian Women’s Studies centers later transformed by Dalit feminist scholarship",
+    "strength": 4,
+    "description": "Mazumdar’s founding of the Indian Association for Women’s Studies created the institutional arena within which Rege advanced Dalit feminist standpoint critiques.",
+    "dialecticalTension": "Bridges state-policy feminist empiricism to anti-caste epistemological critique.",
+    "historicalContext": "Indian Women’s Studies movement (1980s–2000s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Vina Mazumdar",
+        "work": "Memories of a Rolling Stone",
+        "year": 2010,
+        "url": "https://en.wikipedia.org/wiki/Vina_Mazumdar"
+      }
+    ]
+  }
+]

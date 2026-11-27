@@ -1,0 +1,44 @@
+[
+  {
+    "id": "aisha-al-taymuriyya--zaynab-fawwaz",
+    "source": "aisha-al-taymuriyya",
+    "target": "zaynab-fawwaz",
+    "type": "DEVELOPED",
+    "label": "Documented and expanded Taymuriyya’s feminist intellectual precedent into encyclopedic history",
+    "strength": 4,
+    "description": "Fawwaz included Taymuriyya in Al-Durr al-Manthur, constructing a systematic counter-archive proving women’s historical leadership across civilizations.",
+    "dialecticalTension": "Moves from moral treatise to empirical feminist counter-historiography.",
+    "historicalContext": "Cairo-Beirut Nahda (1890s–1914).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Zaynab Fawwaz",
+        "work": "Al-Durr al-Manthur fi Tabaqat Rabbat al-Khudur",
+        "year": 1894,
+        "url": "https://en.wikipedia.org/wiki/Zaynab_Fawwaz"
+      }
+    ]
+  },
+  {
+    "id": "zaynab-fawwaz--huda-shaarawi",
+    "source": "zaynab-fawwaz",
+    "target": "huda-shaarawi",
+    "type": "INFLUENCED",
+    "label": "Articulated equal educational and civic rights foundational to Egypt’s organized feminist movement",
+    "strength": 4,
+    "description": "Fawwaz’s polemics in Cairo newspapers demanding women’s public work and legal autonomy directly preceded Sha’arawi’s Egyptian Feminist Union.",
+    "dialecticalTension": "Links 19th-century print-public feminism to 20th-century political mobilization.",
+    "historicalContext": "Egyptian feminist genealogy (1894–1923).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Zaynab Fawwaz",
+        "work": "Al-Rasa'il al-Zaynabiyya",
+        "year": 1905,
+        "url": "https://en.wikipedia.org/wiki/Zaynab_Fawwaz"
+      }
+    ]
+  }
+]

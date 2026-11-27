@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ibn-arabi--nasr-hamid-abu-zayd",
+    "source": "ibn-arabi",
+    "target": "nasr-hamid-abu-zayd",
+    "type": "DEVELOPED",
+    "label": "Drew on Ibn Arabi’s polysemic Sufi hermeneutics to defend open interpretive pluralism",
+    "strength": 4,
+    "description": "Writing early monographs on Ibn Arabi, Abu Zayd recovered classical Sufi openness to infinite textual meanings against literalist closure.",
+    "dialecticalTension": "Links medieval mystical polysemy to modern linguistic hermeneutics.",
+    "historicalContext": "Cairo University & Leiden hermeneutic scholarship (1980s–2010).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nasr Hamid Abu Zayd",
+        "work": "The Concept of the Text",
+        "year": 1990,
+        "url": "https://en.wikipedia.org/wiki/Nasr_Abu_Zayd"
+      }
+    ]
+  },
+  {
+    "id": "ferdinand-de-saussure--nasr-hamid-abu-zayd",
+    "source": "ferdinand-de-saussure",
+    "target": "nasr-hamid-abu-zayd",
+    "type": "SYNTHESIZED",
+    "label": "Applied structural semiotics and communication theory to Qur’anic discourse analysis",
+    "strength": 4,
+    "description": "Using Saussurean linguistics and Russian/Czech semiotics, Abu Zayd analyzed revelation as a communicative code grounded in 7th-century Arabic culture.",
+    "dialecticalTension": "Synthesizes modern semiotics with Mu’tazilite linguistics of the created word.",
+    "historicalContext": "Mafhum al-Nass (1990).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nasr Hamid Abu Zayd",
+        "work": "The Concept of the Text",
+        "year": 1990,
+        "url": "https://en.wikipedia.org/wiki/Nasr_Abu_Zayd"
+      }
+    ]
+  },
+  {
+    "id": "nasr-hamid-abu-zayd--humanistic-quranic-hermeneutics",
+    "source": "nasr-hamid-abu-zayd",
+    "target": "humanistic-quranic-hermeneutics",
+    "type": "DEVELOPED",
+    "label": "Pioneered Humanistic Qur’anic Hermeneutics grounded in historical linguistics and ethics",
+    "strength": 5,
+    "description": "Abu Zayd argued that reading scripture as humanly intelligible discourse restores ethical autonomy, pluralism, and gender justice inside Islamic thought.",
+    "dialecticalTension": "Replaces authoritarian textual literalism with dialogical hermeneutic reason.",
+    "historicalContext": "Rethinking the Qur’an: Towards a Humanistic Hermeneutics (2004).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Nasr Hamid Abu Zayd",
+        "work": "Rethinking the Qur’an: Towards a Humanistic Hermeneutics",
+        "year": 2004,
+        "url": "https://plato.stanford.edu/entries/hermeneutics/"
+      }
+    ]
+  },
+  {
+    "id": "nasr-hamid-abu-zayd--amina-wadud",
+    "source": "nasr-hamid-abu-zayd",
+    "target": "amina-wadud",
+    "type": "INFLUENCED",
+    "label": "Reinforced historical-linguistic foundations for gender-egalitarian Qur’anic hermeneutics",
+    "strength": 4,
+    "description": "Wadud’s tawhidic hermeneutics and Abu Zayd’s humanistic hermeneutics jointly established rigorous textual methodologies challenging patriarchal exegesis.",
+    "dialecticalTension": "Converges Arabic semiotic critique with Islamic feminist theology.",
+    "historicalContext": "Contemporary Islamic hermeneutics (1990s–2010).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Amina Wadud",
+        "work": "Inside the Gender Jihad",
+        "year": 2006,
+        "url": "https://en.wikipedia.org/wiki/Nasr_Abu_Zayd"
+      }
+    ]
+  }
+]

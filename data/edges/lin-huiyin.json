@@ -1,0 +1,44 @@
+[
+  {
+    "id": "confucius--lin-huiyin",
+    "source": "confucius",
+    "target": "lin-huiyin",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized classical Chinese spatial harmony with modernist architectural rationalism",
+    "strength": 3,
+    "description": "Drawing on classical Chinese aesthetic proportion and Song architectural manuals (Yingzao Fashi), Lin formulated a modern philosophy of structural honesty and urban heritage.",
+    "dialecticalTension": "Reconciles classical Chinese spatial order with 20th-century architectural theory.",
+    "historicalContext": "Republican China architectural movement (1930s–1950s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Lin Huiyin",
+        "work": "On the Characteristics of Chinese Architecture",
+        "year": 1932,
+        "url": "https://en.wikipedia.org/wiki/Lin_Huiyin"
+      }
+    ]
+  },
+  {
+    "id": "chen-hengzhe--lin-huiyin",
+    "source": "chen-hengzhe",
+    "target": "lin-huiyin",
+    "type": "INFLUENCED",
+    "label": "Continued first-generation Chinese women scholars’ East-West intellectual synthesis",
+    "strength": 3,
+    "description": "Following Chen Hengzhe’s pioneering academic path, Lin became one of China’s foremost public intellectuals bridging Western aesthetics and Chinese heritage.",
+    "dialecticalTension": "Extends New Culture women’s scholarship into aesthetics and spatial philosophy.",
+    "historicalContext": "1920s–1950s Chinese intellectual history.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Lin Huiyin",
+        "work": "On the Characteristics of Chinese Architecture",
+        "year": 1932,
+        "url": "https://en.wikipedia.org/wiki/Lin_Huiyin"
+      }
+    ]
+  }
+]

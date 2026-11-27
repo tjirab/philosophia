@@ -1,0 +1,40 @@
+{
+  "id": "romila-thapar",
+  "name": "Romila Thapar",
+  "birthYear": 1931,
+  "eraId": "contemporary",
+  "traditionId": "critical-theory",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Preeminent Indian historian and historiographical philosopher who dismantled colonial Orientalist periodizations of ancient India by analyzing state formation, dissent traditions, and social-historical memory.",
+  "centralQuestion": "How do colonial and nationalist historiographies invent monolithic religious pasts that obscure ancient India’s pluralist social transformations and heterodox dissent?",
+  "keyWorks": [
+    {
+      "title": "A History of India, Volume 1",
+      "year": "1966 CE",
+      "url": "https://en.wikipedia.org/wiki/Romila_Thapar",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Romila_Thapar",
+      "description": "Reoriented ancient Indian historiography from dynastic myth toward social, agrarian, and ideological formations."
+    },
+    {
+      "title": "The Past Before Us: Historical Traditions of Early North India",
+      "year": "2013 CE",
+      "url": "https://en.wikipedia.org/wiki/Romila_Thapar",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Romila_Thapar",
+      "description": "Refutes the Orientalist thesis that early India lacked historical consciousness, mapping embedded and externalized modes of historical reason."
+    }
+  ],
+  "sepSlug": "history",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/history/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Romila_Thapar"
+  },
+  "imageUrl": "/portraits/romila-thapar.jpg"
+}

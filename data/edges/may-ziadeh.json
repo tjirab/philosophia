@@ -1,0 +1,44 @@
+[
+  {
+    "id": "jean-jacques-rousseau--may-ziadeh",
+    "source": "jean-jacques-rousseau",
+    "target": "may-ziadeh",
+    "type": "SYNTHESIZED",
+    "label": "Engaged Enlightenment egalitarianism within cosmopolitan Arab Nahda humanism",
+    "strength": 4,
+    "description": "In Equality (Al-Musawat, 1923), Ziadeh critically assessed Rousseauian and socialist theories of inequality alongside Arab social reform.",
+    "dialecticalTension": "Synthesizes European Enlightenment social critique with Arabic literary-philosophical modernism.",
+    "historicalContext": "Cairo Literary Salon (1912–1930).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "May Ziadeh",
+        "work": "Al-Musawat (Equality)",
+        "year": 1923,
+        "url": "https://en.wikipedia.org/wiki/May_Ziadeh"
+      }
+    ]
+  },
+  {
+    "id": "may-ziadeh--nawal-el-saadawi",
+    "source": "may-ziadeh",
+    "target": "nawal-el-saadawi",
+    "type": "INFLUENCED",
+    "label": "Forged a bold Arab woman’s public intellectual voice defending egalitarian thought against backlash",
+    "strength": 4,
+    "description": "Ziadeh’s institutional battles—and tragic psychiatric confinement—became a touchstone for later Arab feminist critics like El Saadawi analyzing patriarchal policing of women’s minds.",
+    "dialecticalTension": "Exposes the intersection of intellectual autonomy and patriarchal psychiatric control.",
+    "historicalContext": "20th-century Arab feminist history.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Nawal El Saadawi",
+        "work": "The Hidden Face of Eve",
+        "year": 1977,
+        "url": "https://en.wikipedia.org/wiki/May_Ziadeh"
+      }
+    ]
+  }
+]

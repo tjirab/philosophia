@@ -1,0 +1,40 @@
+{
+  "id": "zhu-xi",
+  "name": "Zhu Xi",
+  "birthYear": 1130,
+  "deathYear": 1200,
+  "eraId": "medieval",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Song dynasty Neo-Confucian master whose synthesis of rational Principle (li) and vital material force (qi) codified the Four Books and dominated East Asian metaphysics, ethics, and civil examination culture for seven centuries.",
+  "centralQuestion": "How do the timeless normative coherence of Principle (li) and the dynamic materiality of Vital Force (qi) unite in human nature and moral self-cultivation?",
+  "keyWorks": [
+    {
+      "title": "Commentaries on the Four Books (Sishu Zhangju Jizhu)",
+      "year": "1190 CE",
+      "url": "https://en.wikipedia.org/wiki/Zhu_Xi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Zhu_Xi",
+      "description": "Authoritative Neo-Confucian synthesis organizing the Analects, Mencius, Great Learning, and Doctrine of the Mean."
+    },
+    {
+      "title": "Reflections on Things at Hand (Jinsi Lu)",
+      "year": "1175 CE",
+      "url": "https://en.wikipedia.org/wiki/Zhu_Xi",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Zhu_Xi",
+      "description": "Systematic anthology of Song Neo-Confucian metaphysics, investigation of things (gewu), and moral self-cultivation."
+    }
+  ],
+  "sepSlug": "zhu-xi",
+  "canonTier": "pillar",
+  "importanceScore": 94,
+  "gender": "man",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/zhu-xi/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zhu_Xi"
+  },
+  "imageUrl": "/portraits/zhu-xi.jpg"
+}

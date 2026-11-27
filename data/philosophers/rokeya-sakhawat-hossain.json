@@ -1,0 +1,41 @@
+{
+  "id": "rokeya-sakhawat-hossain",
+  "name": "Begum Rokeya",
+  "birthYear": 1880,
+  "deathYear": 1932,
+  "eraId": "twentieth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Bengali feminist philosopher, educator, and social reformer whose speculative utopia Sultana’s Dream and critical essays diagnosed purdah seclusion and educational deprivation as structural instruments of patriarchal subjugation.",
+  "centralQuestion": "What happens to scientific reason, public ethics, and civic peace when women’s intellect is emancipated from domestic seclusion (aborodh)?",
+  "keyWorks": [
+    {
+      "title": "Sultana's Dream",
+      "year": "1905 CE",
+      "url": "https://en.wikipedia.org/wiki/Sultana%27s_Dream",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sultana%27s_Dream",
+      "description": "Pioneering feminist philosophical utopia envisioning Ladyland, a society governed by women through solar science and non-violent reason."
+    },
+    {
+      "title": "Motichur (A String of Sweet Pearls)",
+      "year": "1904 CE",
+      "url": "https://en.wikipedia.org/wiki/Begum_Rokeya",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Begum_Rokeya",
+      "description": "Essays critiquing internalised gender subordination and advocating equal intellectual cultivation for South Asian women."
+    }
+  ],
+  "sepSlug": "feminism-political",
+  "canonTier": "pillar",
+  "importanceScore": 89,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Begum_Rokeya"
+  },
+  "imageUrl": "/portraits/rokeya-sakhawat-hossain.jpg"
+}

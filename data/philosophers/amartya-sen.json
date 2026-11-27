@@ -1,0 +1,40 @@
+{
+  "id": "amartya-sen",
+  "name": "Amartya Sen",
+  "birthYear": 1933,
+  "eraId": "contemporary",
+  "traditionId": "analytic",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Indian philosopher and Nobel laureate economist who pioneered social choice theory, the Capabilities Approach with Martha Nussbaum, and comparative anti-transcendental theories of justice rooted in Indian deliberative traditions.",
+  "centralQuestion": "Why must justice evaluate real human capabilities and comparative reductions of manifest injustice rather than idealized transcendental institutions?",
+  "keyWorks": [
+    {
+      "title": "Development as Freedom",
+      "year": "1999 CE",
+      "url": "https://en.wikipedia.org/wiki/Development_as_Freedom",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Development_as_Freedom",
+      "description": "Articulates the Capabilities Approach, defining development as the expansion of substantive freedoms rather than income growth alone."
+    },
+    {
+      "title": "The Idea of Justice",
+      "year": "2009 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Idea_of_Justice",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Idea_of_Justice",
+      "description": "Critiques Rawlsian transcendental institutionalism by synthesizing social choice theory with classical Indian niti-nyaya jurisprudence."
+    }
+  ],
+  "sepSlug": "capability-approach",
+  "canonTier": "pillar",
+  "importanceScore": 94,
+  "gender": "man",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/capability-approach/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Amartya_Sen"
+  },
+  "imageUrl": "/portraits/amartya-sen.jpg"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "may-ziadeh",
+  "name": "May Ziadeh",
+  "birthYear": 1886,
+  "deathYear": 1941,
+  "eraId": "twentieth-century",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Lebanese-Palestinian philosopher, essayist, and convener of Cairo’s premier Nahda literary-philosophical salon who articulated cosmopolitan Arab humanism and wrote foundational feminist biographies of Aisha al-Taymuriyya and Malak Hifni Nasif.",
+  "centralQuestion": "How can cross-cultural philosophical dialogue and women’s intellectual salons forge an egalitarian Arab modernity?",
+  "keyWorks": [
+    {
+      "title": "Bahithat al-Badiya: Dirasat Naqdiyya (Critical Study of Malak Hifni Nasif)",
+      "year": "1920 CE",
+      "url": "https://en.wikipedia.org/wiki/May_Ziadeh",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/May_Ziadeh",
+      "description": "Philosophical assessment of Nasif’s feminist social ethics and the intellectual genealogy of early Arab women thinkers."
+    },
+    {
+      "title": "Equality (Al-Musawat)",
+      "year": "1923 CE",
+      "url": "https://en.wikipedia.org/wiki/May_Ziadeh",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/May_Ziadeh",
+      "description": "Comparative treatise analyzing class hierarchy, aristocracy, socialism, and moral equality across East and West."
+    }
+  ],
+  "sepSlug": "feminism-political",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/May_Ziadeh"
+  },
+  "imageUrl": "/portraits/may-ziadeh.jpg"
+}

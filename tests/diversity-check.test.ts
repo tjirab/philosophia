@@ -45,45 +45,44 @@ describe('Diversity & Global Representation Pre-Commit Guardrail', () => {
     expect(report.policy.targetNonWesternPct).toBe(50);
     expect(report.womenPct).toBeGreaterThanOrEqual(report.policy.minWomenPct);
     expect(report.nonWesternPct).toBeGreaterThanOrEqual(report.policy.minNonWesternPct);
-    expect(report.meetsTargets).toBe(false);
-    expect(report.deficitWomen).toBeGreaterThan(0);
-    expect(report.deficitNonWestern).toBeGreaterThan(0);
+    expect(report.meetsTargets).toBe(true);
+    expect(report.deficitWomen).toBe(0);
+    expect(report.deficitNonWestern).toBe(0);
   });
 
   it('distinguishes passing the progressive ratchet from meeting 40%/50% targets in CLI and programmatic checks', () => {
-    const dirMet = createTempRepo(
+    const dirBelow = createTempRepo(
       [
         { id: 'w1', gender: 'woman', culturalSphere: 'african' },
-        { id: 'w2', gender: 'woman', culturalSphere: 'east-asian' },
         { id: 'm1', gender: 'man', culturalSphere: 'western' },
         { id: 'm2', gender: 'man', culturalSphere: 'western' },
+        { id: 'm3', gender: 'man', culturalSphere: 'western' },
       ],
       {
         targetWomenPct: 40,
         targetNonWesternPct: 50,
-        minWomenPct: 30,
-        minNonWesternPct: 35,
+        minWomenPct: 20,
+        minNonWesternPct: 20,
         blockWesternMaleOnlyAdditionsBelowTarget: true,
       }
     );
 
-    const metReport = evaluateDiversity({ rootDir: dirMet });
-    expect(metReport.passed).toBe(true);
-    expect(metReport.meetsTargets).toBe(true);
-    expect(metReport.deficitWomen).toBe(0);
-    expect(metReport.deficitNonWestern).toBe(0);
+    const belowReport = evaluateDiversity({ rootDir: dirBelow });
+    expect(belowReport.passed).toBe(true);
+    expect(belowReport.meetsTargets).toBe(false);
+    expect(belowReport.deficitWomen).toBeGreaterThan(0);
+    expect(belowReport.deficitNonWestern).toBeGreaterThan(0);
 
-    // Live repo currently passes ratchet (30% / 35.45%) but fails --strict-targets (40% / 50%)
+    // Live repo now meets both ratchet floors (40% / 50%) and --strict-targets
     const cliScript = path.resolve(__dirname, '../scripts/check-diversity.mjs');
     const warnOut = execFileSync(process.execPath, [cliScript], { encoding: 'utf-8' });
     expect(warnOut).toContain('Thinkers:');
 
-    expect(() =>
-      execFileSync(process.execPath, [cliScript, '--strict-targets'], {
-        encoding: 'utf-8',
-        stdio: 'pipe',
-      })
-    ).toThrow();
+    const strictOut = execFileSync(process.execPath, [cliScript, '--strict-targets'], {
+      encoding: 'utf-8',
+      stdio: 'pipe',
+    });
+    expect(strictOut).toContain('40%/50% target guardrails met');
   });
 
   it('rejects thinker files missing valid gender or culturalSphere metadata', () => {

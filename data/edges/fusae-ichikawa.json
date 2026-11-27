@@ -1,0 +1,44 @@
+[
+  {
+    "id": "hiratsuka-raicho--fusae-ichikawa",
+    "source": "hiratsuka-raicho",
+    "target": "fusae-ichikawa",
+    "type": "DEVELOPED",
+    "label": "Co-founded the New Women’s Association to translate feminist awakening into suffrage law",
+    "strength": 5,
+    "description": "Collaborating with Hiratsuka in 1919–1920, Ichikawa focused organizational theory on overturning Article 5’s ban on women’s political assembly and winning the vote.",
+    "dialecticalTension": "Bridges cultural-philosophical self-awakening with institutional democratic citizenship.",
+    "historicalContext": "Taisho-Showa women’s suffrage movement (1919–1945).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Fusae Ichikawa",
+        "work": "New Women’s Association Manifesto & Suffrage Writings",
+        "year": 1920,
+        "url": "https://en.wikipedia.org/wiki/Fusae_Ichikawa"
+      }
+    ]
+  },
+  {
+    "id": "fusae-ichikawa--chizuko-ueno",
+    "source": "fusae-ichikawa",
+    "target": "chizuko-ueno",
+    "type": "INFLUENCED",
+    "label": "Established Japanese democratic feminist citizenship later interrogated by second-wave Marxist feminism",
+    "strength": 4,
+    "description": "Ichikawa’s lifelong struggle against political corruption and for women’s parliamentary power set the civic terrain later critiqued and expanded by Ueno.",
+    "dialecticalTension": "Advances from formal political suffrage to structural critique of unpaid domestic labor.",
+    "historicalContext": "20th-century Japanese feminism.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Chizuko Ueno",
+        "work": "Patriarchy and Capitalism",
+        "year": 1990,
+        "url": "https://en.wikipedia.org/wiki/Fusae_Ichikawa"
+      }
+    ]
+  }
+]

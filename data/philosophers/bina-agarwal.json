@@ -1,0 +1,40 @@
+{
+  "id": "bina-agarwal",
+  "name": "Bina Agarwal",
+  "birthYear": 1951,
+  "eraId": "contemporary",
+  "traditionId": "critical-theory",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Indian development economist and feminist political theorist whose empirical and conceptual work established the link between women’s independent land rights, intrahousehold bargaining power, and ecological stewardship.",
+  "centralQuestion": "Why does transforming gender inequality require securing women’s independent property and commons governance rather than relying on unitary household models?",
+  "keyWorks": [
+    {
+      "title": "A Field of One's Own: Gender and Land Rights in South Asia",
+      "year": "1994 CE",
+      "url": "https://en.wikipedia.org/wiki/Bina_Agarwal",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bina_Agarwal",
+      "description": "Pathbreaking comparative study proving that independent land titles reshape women’s bargaining power and social agency."
+    },
+    {
+      "title": "Gender and Green Governance",
+      "year": "2010 CE",
+      "url": "https://en.wikipedia.org/wiki/Bina_Agarwal",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bina_Agarwal",
+      "description": "Advances feminist environmentalism via empirical analysis of women’s participation in community forest institutions."
+    }
+  ],
+  "sepSlug": "feminism-environmental",
+  "canonTier": "pillar",
+  "importanceScore": 89,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-environmental/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bina_Agarwal"
+  },
+  "imageUrl": "/portraits/bina-agarwal.jpg"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "muhammad-iqbal",
+  "name": "Muhammad Iqbal",
+  "birthYear": 1877,
+  "deathYear": 1938,
+  "eraId": "twentieth-century",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "South Asian Islamic philosopher-poet whose Reconstruction of Religious Thought in Islam synthesized classical Islamic philosophy, Rumi, Bergson, and Nietzsche into a dynamic metaphysics of creative selfhood (Khudi) and ijtihad.",
+  "centralQuestion": "How can Islamic philosophy recover dynamic creativity and moral agency (Khudi) by uniting spiritual intuition with modern scientific and democratic reason?",
+  "keyWorks": [
+    {
+      "title": "The Reconstruction of Religious Thought in Islam",
+      "year": "1930 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Reconstruction_of_Religious_Thought_in_Islam",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Reconstruction_of_Religious_Thought_in_Islam",
+      "description": "Systematic philosophical lectures reinterpreting Islamic epistemology, dynamic time, human egohood, and legal ijtihad."
+    },
+    {
+      "title": "The Secrets of the Self (Asrar-i-Khudi)",
+      "year": "1915 CE",
+      "url": "https://en.wikipedia.org/wiki/The_Secrets_of_the_Self",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Secrets_of_the_Self",
+      "description": "Philosophical poetry rejecting passive self-negation in favor of active, world-transforming ego cultivation (Khudi)."
+    }
+  ],
+  "sepSlug": "muhammad-iqbal",
+  "canonTier": "pillar",
+  "importanceScore": 93,
+  "gender": "man",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/muhammad-iqbal/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Muhammad_Iqbal"
+  },
+  "imageUrl": "/portraits/muhammad-iqbal.jpg"
+}

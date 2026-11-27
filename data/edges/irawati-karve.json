@@ -1,0 +1,65 @@
+[
+  {
+    "id": "emile-durkheim--irawati-karve",
+    "source": "emile-durkheim",
+    "target": "irawati-karve",
+    "type": "DEVELOPED",
+    "label": "Applied comparative sociological morphology to India’s regional kinship and caste systems",
+    "strength": 4,
+    "description": "Trained in comparative anthropology and sociology, Karve systematically mapped how regional marriage rules and clan structures govern social solidarity across India.",
+    "dialecticalTension": "Adapts European sociological method to non-Western polycentric kinship orders.",
+    "historicalContext": "Founding of Indian sociology (1930s–1950s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Irawati Karve",
+        "work": "Kinship Organisation in India",
+        "year": 1953,
+        "url": "https://en.wikipedia.org/wiki/Irawati_Karve"
+      }
+    ]
+  },
+  {
+    "id": "irawati-karve--uma-chakravarti",
+    "source": "irawati-karve",
+    "target": "uma-chakravarti",
+    "type": "INFLUENCED",
+    "label": "Provided empirical kinship foundations for analyzing caste endogamy and women’s vulnerability",
+    "strength": 5,
+    "description": "Karve’s distinction between northern exogamous patrilocal kinship and southern cross-cousin marriage directly informed Chakravarti’s analysis of Brahmanical patriarchy.",
+    "dialecticalTension": "Transforms descriptive kinship sociology into feminist structural critique of caste.",
+    "historicalContext": "Indian feminist sociology (1953–1993).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Uma Chakravarti",
+        "work": "Gendering Caste",
+        "year": 2003,
+        "url": "https://en.wikipedia.org/wiki/Irawati_Karve"
+      }
+    ]
+  },
+  {
+    "id": "irawati-karve--bina-agarwal",
+    "source": "irawati-karve",
+    "target": "bina-agarwal",
+    "type": "INFLUENCED",
+    "label": "Empirically established the north-south kinship divide later linked to women’s land rights",
+    "strength": 4,
+    "description": "Agarwal built directly upon Karve’s mapping of northern versus southern/northeastern kinship norms to explain regional disparities in women’s agricultural land claims.",
+    "dialecticalTension": "Connects classical kinship anthropology to feminist political economy.",
+    "historicalContext": "South Asian gender and property studies.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Bina Agarwal",
+        "work": "A Field of One's Own",
+        "year": 1994,
+        "url": "https://en.wikipedia.org/wiki/Bina_Agarwal"
+      }
+    ]
+  }
+]

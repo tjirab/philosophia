@@ -1,0 +1,41 @@
+{
+  "id": "ding-ling",
+  "name": "Ding Ling",
+  "birthYear": 1904,
+  "deathYear": 1986,
+  "eraId": "twentieth-century",
+  "traditionId": "critical-theory",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Chinese feminist writer and social critic whose May Fourth and Yan’an essays exposed psychological contradictions of female desire and the persistence of patriarchal hierarchy within revolutionary socialist institutions.",
+  "centralQuestion": "Why do revolutionary movements that promise class emancipation continue to enforce patriarchal double standards against women’s intellectual and sexual autonomy?",
+  "keyWorks": [
+    {
+      "title": "Miss Sophia's Diary (Shafei Nüshi de Riji)",
+      "year": "1928 CE",
+      "url": "https://en.wikipedia.org/wiki/Miss_Sophia%27s_Diary",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Miss_Sophia%27s_Diary",
+      "description": "Psychological exploration of modern female subjectivity, desire, and alienation in Republican Beijing."
+    },
+    {
+      "title": "Thoughts on March 8 (Sanbajie Yougan)",
+      "year": "1942 CE",
+      "url": "https://en.wikipedia.org/wiki/Ding_Ling",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ding_Ling",
+      "description": "Courageous socialist-feminist critique of gender hypocrisy and political repression inside Yan’an."
+    }
+  ],
+  "sepSlug": "confucian-gender",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/confucian-gender/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ding_Ling"
+  },
+  "imageUrl": "/portraits/ding-ling.jpg"
+}

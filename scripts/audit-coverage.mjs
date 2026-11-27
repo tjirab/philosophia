@@ -259,6 +259,15 @@ export function auditCanon(options = {}) {
     { name: 'Zitkala-Ša → Vine Deloria Jr. → Linda Tuhiwai Smith → Decolonizing Methodologies', from: 'zitkala-sa', to: 'decolonizing-methodologies' },
     { name: 'Winona LaDuke → Leanne Betasamosake Simpson → Grounded Normativity', from: 'winona-laduke', to: 'grounded-normativity' },
     { name: 'Robin Wall Kimmerer → Kyle Powys Whyte', from: 'robin-wall-kimmerer', to: 'kyle-powys-whyte' },
+    { name: 'Patanjali → Adi Shankara → Ashtanga Yoga', from: 'gargi-vachaknavi', to: 'eight-limbs-ashtanga-yoga' },
+    { name: 'Buddha → Vasubandhu → Alayavijnana', from: 'siddhartha-gautama', to: 'yogacara-storehouse-consciousness' },
+    { name: 'B.R. Ambedkar → Uma Chakravarti → Sharmila Rege → Dalit Feminist Standpoint', from: 'b-r-ambedkar', to: 'dalit-feminist-standpoint' },
+    { name: 'Adam Smith → Amartya Sen → Capabilities Approach', from: 'adam-smith', to: 'capabilities-approach' },
+    { name: 'Mencius → Zhu Xi → Wang Yangming → Unity of Knowledge and Action', from: 'mencius', to: 'unity-of-knowledge-and-action' },
+    { name: 'Nishida Kitaro → Nishitani Keiji → Logic of Basho', from: 'nishida-kitaro', to: 'logic-of-basho' },
+    { name: 'Al-Ghazali → Muhammad Iqbal → Khudi', from: 'al-ghazali', to: 'khudi-selfhood' },
+    { name: 'Averroes → Mohammed Arkoun → Nasr Hamid Abu Zayd → Humanistic Qur’anic Hermeneutics', from: 'averroes', to: 'humanistic-quranic-hermeneutics' },
+    { name: 'Fatema Mernissi → Lila Abu-Lughod → Saba Mahmood', from: 'fatema-mernissi', to: 'saba-mahmood' },
   ];
 
   function testPath(start, goal) {

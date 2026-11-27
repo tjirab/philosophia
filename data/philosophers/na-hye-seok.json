@@ -1,0 +1,41 @@
+{
+  "id": "na-hye-seok",
+  "name": "Na Hye-seok",
+  "birthYear": 1896,
+  "deathYear": 1948,
+  "eraId": "twentieth-century",
+  "traditionId": "eastern-wisdom",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Korean feminist philosopher, writer, and painter who challenged Neo-Confucian chastity norms and colonial patriarchy, arguing that women are autonomous human beings prior to maternal or marital roles.",
+  "centralQuestion": "How can women claim moral personhood and creative self-authorship against Neo-Confucian chastity ideology and colonial gender double standards?",
+  "keyWorks": [
+    {
+      "title": "Gyeonghui",
+      "year": "1918 CE",
+      "url": "https://en.wikipedia.org/wiki/Na_Hyes%C5%8Fk",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Na_Hyes%C5%8Fk",
+      "description": "Philosophical narrative interrogating women’s existential vocation and rejection of domestic servitude in colonial Korea."
+    },
+    {
+      "title": "A Confession About My Divorce (Ihon Gobaekjang)",
+      "year": "1934 CE",
+      "url": "https://en.wikipedia.org/wiki/Na_Hyes%C5%8Fk",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Na_Hyes%C5%8Fk",
+      "description": "Radical critique of patriarchal chastity norms, demanding equal ethical standards for men and women in marriage and desire."
+    }
+  ],
+  "sepSlug": "korean-philosophy",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "east-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/korean-philosophy/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Na_Hyes%C5%8Fk"
+  },
+  "imageUrl": "/portraits/na-hye-seok.jpg"
+}

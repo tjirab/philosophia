@@ -1,0 +1,41 @@
+{
+  "id": "irawati-karve",
+  "name": "Irawati Karve",
+  "birthYear": 1905,
+  "deathYear": 1970,
+  "eraId": "twentieth-century",
+  "traditionId": "structural-functionalism",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Pioneering Indian sociologist and anthropologist who mapped regional kinship structures, caste endogamy, and linguistic geography across India while reading the Mahabharata as secular human ethics.",
+  "centralQuestion": "How do regional kinship regimes and caste-marriage networks shape moral obligation, gender status, and social cohesion across Indian civilization?",
+  "keyWorks": [
+    {
+      "title": "Kinship Organisation in India",
+      "year": "1953 CE",
+      "url": "https://en.wikipedia.org/wiki/Irawati_Karve",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Irawati_Karve",
+      "description": "Foundational comparative sociological analysis of northern, southern, and eastern Indian kinship systems and women’s household agency."
+    },
+    {
+      "title": "Yuganta: The End of an Epoch",
+      "year": "1967 CE",
+      "url": "https://en.wikipedia.org/wiki/Yuganta:_The_End_of_an_Epoch",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Yuganta:_The_End_of_an_Epoch",
+      "description": "Anthropological and secular-humanist re-reading of Mahabharata figures as historical moral agents rather than mythic archetypes."
+    }
+  ],
+  "sepSlug": "feminism-globalization",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "south-asian",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-globalization/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Irawati_Karve"
+  },
+  "imageUrl": "/portraits/irawati-karve.jpg"
+}

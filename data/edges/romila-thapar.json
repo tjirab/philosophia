@@ -1,0 +1,44 @@
+[
+  {
+    "id": "karl-marx--romila-thapar",
+    "source": "karl-marx",
+    "target": "romila-thapar",
+    "type": "DEVELOPED",
+    "label": "Adapted historical-materialist analysis of agrarian surplus and state formation to ancient India",
+    "strength": 4,
+    "description": "Rejecting rigid European Asiatic Mode of Production dogmas, Thapar used materialist social history to explain the transition from lineage societies to Mauryan states.",
+    "dialecticalTension": "Replaces colonial static-Orient tropes with dynamic South Asian socio-economic historiography.",
+    "historicalContext": "Post-independence Indian historiography (1960s–2013).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Romila Thapar",
+        "work": "From Lineage to State",
+        "year": 1984,
+        "url": "https://en.wikipedia.org/wiki/Romila_Thapar"
+      }
+    ]
+  },
+  {
+    "id": "romila-thapar--uma-chakravarti",
+    "source": "romila-thapar",
+    "target": "uma-chakravarti",
+    "type": "INFLUENCED",
+    "label": "Mentored feminist social history examining early Buddhist and Upanishadic class-gender formations",
+    "strength": 5,
+    "description": "Thapar’s non-communal social history of ancient India provided the methodological matrix for Chakravarti’s early work on social dimensions of Buddhism and patriarchy.",
+    "dialecticalTension": "Extends critical social historiography into feminist analysis of caste and gender.",
+    "historicalContext": "Jawaharlal Nehru University historical school (1970s–1990s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Romila Thapar",
+        "work": "The Past Before Us",
+        "year": 2013,
+        "url": "https://en.wikipedia.org/wiki/Romila_Thapar"
+      }
+    ]
+  }
+]

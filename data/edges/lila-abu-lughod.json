@@ -1,0 +1,65 @@
+[
+  {
+    "id": "michel-foucault--lila-abu-lughod",
+    "source": "michel-foucault",
+    "target": "lila-abu-lughod",
+    "type": "DEVELOPED",
+    "label": "Applied Foucauldian power/knowledge critique to cultural anthropology of emotion and empire",
+    "strength": 4,
+    "description": "Drawing on Foucault’s analytics of power and resistance, Abu-Lughod exposed how sentimental human-rights discourses justify imperial intervention in Muslim societies.",
+    "dialecticalTension": "Replaces cultural essentialism with genealogies of power and embodied discourse.",
+    "historicalContext": "Postcolonial anthropology & social theory (1990–2013).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Lila Abu-Lughod",
+        "work": "Do Muslim Women Need Saving?",
+        "year": 2013,
+        "url": "https://plato.stanford.edu/entries/feminism-globalization/"
+      }
+    ]
+  },
+  {
+    "id": "fatema-mernissi--lila-abu-lughod",
+    "source": "fatema-mernissi",
+    "target": "lila-abu-lughod",
+    "type": "DEVELOPED",
+    "label": "Extended critique of Orientalist veil tropes into ethnographic analysis of Bedouin affect and geopolitics",
+    "strength": 4,
+    "description": "Building on Mernissi’s deconstruction of Western fantasies of the veil, Abu-Lughod documented how Arab women express agency through poetry, kinship, and everyday politics.",
+    "dialecticalTension": "Shifts focus from textual history to lived ethnographic poetics of emotion.",
+    "historicalContext": "MENA feminist social theory (1986–2013).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Lila Abu-Lughod",
+        "work": "Veiled Sentiments",
+        "year": 1986,
+        "url": "https://en.wikipedia.org/wiki/Lila_Abu-Lughod"
+      }
+    ]
+  },
+  {
+    "id": "lila-abu-lughod--saba-mahmood",
+    "source": "lila-abu-lughod",
+    "target": "saba-mahmood",
+    "type": "INFLUENCED",
+    "label": "Mentored postcolonial critique of liberal-feminist agency and Western rescue narratives",
+    "strength": 5,
+    "description": "Abu-Lughod’s critique of romanticizing resistance and colonial rescue narratives deeply shaped Mahmood’s landmark rethinking of agency in Politics of Piety.",
+    "dialecticalTension": "Bridges cultural psychology of sentiment to postcolonial ethics of piety.",
+    "historicalContext": "Contemporary anthropology & feminist theory (1990–2005).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Saba Mahmood",
+        "work": "Politics of Piety",
+        "year": 2005,
+        "url": "https://plato.stanford.edu/entries/feminism-globalization/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "nadia-yassine",
+  "name": "Nadia Yassine",
+  "birthYear": 1958,
+  "eraId": "contemporary",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Moroccan Islamic political thinker and Sufi-inspired reformer advocating women’s spiritual and civic leadership, non-violent democratic participation, and critical ijtihad against authoritarianism and patriarchal jurisprudence.",
+  "centralQuestion": "How can Sufi spirituality and prophetic ethical renewal ground non-violent democratic resistance and women’s egalitarian leadership within contemporary Muslim societies?",
+  "keyWorks": [
+    {
+      "title": "Toutes voiles dehors (Full Sails Ahead)",
+      "year": "2003 CE",
+      "url": "https://en.wikipedia.org/wiki/Nadia_Yassine",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nadia_Yassine",
+      "description": "Articulates an endogenous Islamic political philosophy uniting Sufi moral self-critique, women’s agency, and anti-authoritarian democracy."
+    }
+  ],
+  "sepSlug": "feminism-political",
+  "canonTier": "bridge",
+  "importanceScore": 84,
+  "gender": "woman",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-political/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nadia_Yassine"
+  },
+  "imageUrl": "/portraits/nadia-yassine.jpg"
+}

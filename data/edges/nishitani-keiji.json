@@ -1,0 +1,86 @@
+[
+  {
+    "id": "nishida-kitaro--nishitani-keiji",
+    "source": "nishida-kitaro",
+    "target": "nishitani-keiji",
+    "type": "DEVELOPED",
+    "label": "Deepened Nishida’s Logic of Basho into an existential-ontological philosophy of Sunyata",
+    "strength": 5,
+    "description": "As Nishida’s foremost Kyoto School successor, Nishitani shifted the axis from pure experience and basho to the existential passage through nihility into Emptiness (ku/sunyata).",
+    "dialecticalTension": "Systematizes Kyoto School philosophy as an explicit answer to European nihilism.",
+    "historicalContext": "Kyoto School (1940s–1990).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Nishitani Keiji",
+        "work": "Religion and Nothingness",
+        "year": 1961,
+        "url": "https://plato.stanford.edu/entries/kyoto-school/"
+      }
+    ]
+  },
+  {
+    "id": "martin-heidegger--nishitani-keiji",
+    "source": "martin-heidegger",
+    "target": "nishitani-keiji",
+    "type": "CRITIQUED",
+    "label": "Studied under Heidegger in Freiburg, then critiqued Western ontology for halting at nihility",
+    "strength": 5,
+    "description": "Nishitani engaged Heidegger’s Being and Time directly in 1937–1939, arguing that Heidegger’s \"nothingness\" remained tethered to a standpoint of finitude rather than sunyata’s self-emptying.",
+    "dialecticalTension": "Stages the premier 20th-century dialogue between Continental phenomenology and Zen ontology.",
+    "historicalContext": "Freiburg-Kyoto philosophical encounter (1937–1961).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Nishitani Keiji",
+        "work": "Religion and Nothingness",
+        "year": 1961,
+        "url": "https://plato.stanford.edu/entries/kyoto-school/"
+      }
+    ]
+  },
+  {
+    "id": "friedrich-nietzsche--nishitani-keiji",
+    "source": "friedrich-nietzsche",
+    "target": "nishitani-keiji",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Nietzsche’s active nihilism with Mahayana emptiness to overcome ego-centered will",
+    "strength": 4,
+    "description": "Nishitani credited Nietzsche with diagnosing European nihilism, yet argued that the Will to Power remains trapped in self-assertion unless emptied into non-substantial sunyata.",
+    "dialecticalTension": "Transforms Nietzschean self-overcoming into Buddhist non-ego realization.",
+    "historicalContext": "The Self-Overcoming of Nihilism (1949).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Nishitani Keiji",
+        "work": "The Self-Overcoming of Nihilism",
+        "year": 1949,
+        "url": "https://plato.stanford.edu/entries/kyoto-school/"
+      }
+    ]
+  },
+  {
+    "id": "nishitani-keiji--logic-of-basho",
+    "source": "nishitani-keiji",
+    "target": "logic-of-basho",
+    "type": "DEVELOPED",
+    "label": "Reframed Basho as the field of Sunyata where every entity interpenetrates without substance",
+    "strength": 4,
+    "description": "In Religion and Nothingness, Nishitani articulated the field of emptiness (sunyata) as the circuminsessional ground unifying Nishida’s basho with Huayan interpenetration.",
+    "dialecticalTension": "Connects Kyoto School spatial logic to classical Mahayana emptiness.",
+    "historicalContext": "Religion and Nothingness (1961).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Nishitani Keiji",
+        "work": "Religion and Nothingness",
+        "year": 1961,
+        "url": "https://plato.stanford.edu/entries/kyoto-school/"
+      }
+    ]
+  }
+]

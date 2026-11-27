@@ -1,0 +1,65 @@
+[
+  {
+    "id": "nagarjuna--bimal-krishna-matilal",
+    "source": "nagarjuna",
+    "target": "bimal-krishna-matilal",
+    "type": "INFLUENCED",
+    "label": "Engaged Madhyamaka skepticism and Buddhist pramana debates from a Nyaya-analytic perspective",
+    "strength": 4,
+    "description": "Matilal reconstructed the centuries-long epistemological debate between Buddhist anti-realists (Nagarjuna, Dignaga) and Nyaya realists on perception and emptiness.",
+    "dialecticalTension": "Stages rigorous analytic confrontation between Buddhist deconstruction and Nyaya realism.",
+    "historicalContext": "Comparative Indian-analytic philosophy (1970s–1991).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Bimal Krishna Matilal",
+        "work": "Perception: An Essay on Classical Indian Theories of Knowledge",
+        "year": 1986,
+        "url": "https://plato.stanford.edu/entries/epistemology-india/"
+      }
+    ]
+  },
+  {
+    "id": "gottlob-frege--bimal-krishna-matilal",
+    "source": "gottlob-frege",
+    "target": "bimal-krishna-matilal",
+    "type": "SYNTHESIZED",
+    "label": "Brought Navya-Nyaya semantic analysis into dialogue with Fregean logic and reference",
+    "strength": 4,
+    "description": "Matilal demonstrated that Navya-Nyaya technical analyses of qualifier-qualificand relations address problems of sense, reference, and intensionality parallel to Frege.",
+    "dialecticalTension": "Bridges Sanskrit logical formalism with twentieth-century analytic philosophy.",
+    "historicalContext": "Oxford comparative logic (1977–1991).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Bimal Krishna Matilal",
+        "work": "The Character of Logic in India",
+        "year": 1998,
+        "url": "https://en.wikipedia.org/wiki/Bimal_Krishna_Matilal"
+      }
+    ]
+  },
+  {
+    "id": "bimal-krishna-matilal--amartya-sen",
+    "source": "bimal-krishna-matilal",
+    "target": "amartya-sen",
+    "type": "INFLUENCED",
+    "label": "Co-explored classical Indian rationalism, ethical dilemmas, and argumentative pluralism",
+    "strength": 4,
+    "description": "Close intellectual interlocutors at Oxford and Calcutta, Matilal’s studies of Indian logic and epics informed Sen’s Argumentative Indian and ethical relativism critiques.",
+    "dialecticalTension": "Links classical Indian debate traditions to contemporary ethical pluralism.",
+    "historicalContext": "Oxford-Calcutta philosophical dialogue (1980s–1991).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Amartya Sen",
+        "work": "The Argumentative Indian",
+        "year": 2005,
+        "url": "https://en.wikipedia.org/wiki/Bimal_Krishna_Matilal"
+      }
+    ]
+  }
+]

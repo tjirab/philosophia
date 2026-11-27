@@ -1,0 +1,44 @@
+[
+  {
+    "id": "confucius--chen-hengzhe",
+    "source": "confucius",
+    "target": "chen-hengzhe",
+    "type": "CRITIQUED",
+    "label": "Joined the May Fourth New Culture Movement in dismantling rigid Confucian gender hierarchy",
+    "strength": 4,
+    "description": "As China’s first woman university professor and contributor to New Youth, Chen critiqued oppressive Confucian lineage norms while preserving humanist learning.",
+    "dialecticalTension": "Balances May Fourth anti-Confucian emancipation with selective cultural synthesis.",
+    "historicalContext": "May Fourth / New Culture Movement (1917–1933).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Chen Hengzhe",
+        "work": "The Chinese Woman and Other Essays",
+        "year": 1933,
+        "url": "https://en.wikipedia.org/wiki/Chen_Hengzhe"
+      }
+    ]
+  },
+  {
+    "id": "chen-hengzhe--ding-ling",
+    "source": "chen-hengzhe",
+    "target": "ding-ling",
+    "type": "INFLUENCED",
+    "label": "Pioneered modern Chinese vernacular women’s writing and feminist intellectual voice",
+    "strength": 4,
+    "description": "Publishing China’s first modern vernacular short story in 1917, Chen opened the literary-philosophical space for Ding Ling’s radical exploration of female subjectivity.",
+    "dialecticalTension": "Transitions from cosmopolitan educational reform to revolutionary psychological critique.",
+    "historicalContext": "Modern Chinese literary and social thought (1917–1928).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Chen Hengzhe",
+        "work": "One Day (Yi Ri)",
+        "year": 1917,
+        "url": "https://en.wikipedia.org/wiki/Chen_Hengzhe"
+      }
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "b-r-ambedkar--uma-chakravarti",
+    "source": "b-r-ambedkar",
+    "target": "uma-chakravarti",
+    "type": "DEVELOPED",
+    "label": "Extended Ambedkar’s insight that endogamy is the essence of caste into feminist historical theory",
+    "strength": 5,
+    "description": "Drawing on Ambedkar’s 1916 Castes in India, Chakravarti demonstrated how controlling women’s sexuality through endogamy and ritual hierarchy sustains caste supremacy.",
+    "dialecticalTension": "Synthesizes Ambedkarite anti-caste critique with feminist social history.",
+    "historicalContext": "Contemporary Indian feminist theory (1993–2003).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Uma Chakravarti",
+        "work": "Conceptualising Brahmanical Patriarchy in Early India",
+        "year": 1993,
+        "url": "https://en.wikipedia.org/wiki/Uma_Chakravarti"
+      }
+    ]
+  },
+  {
+    "id": "uma-chakravarti--brahmanical-patriarchy",
+    "source": "uma-chakravarti",
+    "target": "brahmanical-patriarchy",
+    "type": "DEVELOPED",
+    "label": "Coined Brahmanical patriarchy to explain the structural fusion of caste and gender control",
+    "strength": 5,
+    "description": "Chakravarti proved that patriarchy in South Asia cannot be analyzed independently of graded caste hierarchy, ritual purity, and agrarian property.",
+    "dialecticalTension": "Replaces caste-blind universal patriarchy with a historically specific intersectional model.",
+    "historicalContext": "Economic and Political Weekly (1993).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Uma Chakravarti",
+        "work": "Conceptualising Brahmanical Patriarchy in Early India",
+        "year": 1993,
+        "url": "https://en.wikipedia.org/wiki/Uma_Chakravarti"
+      }
+    ]
+  },
+  {
+    "id": "uma-chakravarti--sharmila-rege",
+    "source": "uma-chakravarti",
+    "target": "sharmila-rege",
+    "type": "INFLUENCED",
+    "label": "Laid conceptual foundations for Rege’s Dalit feminist standpoint critique of savarna feminism",
+    "strength": 5,
+    "description": "Chakravarti’s mapping of Brahmanical patriarchy catalyzed Rege’s project of centering Dalit women’s epistemologies and anti-caste feminism.",
+    "dialecticalTension": "Moves from structural critique of Brahmanical patriarchy to Dalit feminist standpoint methodology.",
+    "historicalContext": "Indian feminist sociology (1990s–2000s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Sharmila Rege",
+        "work": "Dalit Women Talk Differently",
+        "year": 1998,
+        "url": "https://en.wikipedia.org/wiki/Sharmila_Rege"
+      }
+    ]
+  }
+]

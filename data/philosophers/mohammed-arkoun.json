@@ -1,0 +1,41 @@
+{
+  "id": "mohammed-arkoun",
+  "name": "Mohammed Arkoun",
+  "birthYear": 1928,
+  "deathYear": 2010,
+  "eraId": "contemporary",
+  "traditionId": "islamic-golden-age",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Algerian-French philosopher of Islam who pioneered Applied Islamology, deploying historical epistemology and discourse analysis to distinguish the open Qur’anic event from closed orthodoxies of \"Islamic Reason.\"",
+  "centralQuestion": "What becomes thinkable in Islamic philosophy when we examine the \"unthought\" and \"unthinkable\" boundaries constructed by medieval orthodoxies?",
+  "keyWorks": [
+    {
+      "title": "Pour une critique de la raison islamique (Critique of Islamic Reason)",
+      "year": "1984 CE",
+      "url": "https://en.wikipedia.org/wiki/Mohammed_Arkoun",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mohammed_Arkoun",
+      "description": "Applies historical-critical epistemology and Foucault’s archaeology to excavate classical Arabic humanism and marginalized heterodoxy."
+    },
+    {
+      "title": "The Unthought in Contemporary Islamic Thought",
+      "year": "2002 CE",
+      "url": "https://en.wikipedia.org/wiki/Mohammed_Arkoun",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mohammed_Arkoun",
+      "description": "Programmatic manifesto for Applied Islamology bridging critical theory, hermeneutics, and Mediterranean intellectual history."
+    }
+  ],
+  "sepSlug": "arabic-islamic-religion",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "man",
+  "culturalSphere": "mena",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/arabic-islamic-religion/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mohammed_Arkoun"
+  },
+  "imageUrl": "/portraits/mohammed-arkoun.jpg"
+}
