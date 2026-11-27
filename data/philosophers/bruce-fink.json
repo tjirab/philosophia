@@ -39,5 +39,7 @@
     "wikipedia": "Bruce_Fink"
   },
   "importanceScore": 88,
-  "imageUrl": "/portraits/bruce-fink.jpg"
+  "imageUrl": "/portraits/bruce-fink.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

@@ -53,5 +53,7 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Slavoj_%C5%BDi%C5%BEek"
   },
   "importanceScore": 89,
-  "imageUrl": "/portraits/slavoj-zizek.jpg"
+  "imageUrl": "/portraits/slavoj-zizek.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

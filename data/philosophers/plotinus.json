@@ -18,5 +18,7 @@
   ],
   "sepSlug": "plotinus",
   "importanceScore": 80,
-  "imageUrl": "/portraits/plotinus.jpg"
+  "imageUrl": "/portraits/plotinus.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

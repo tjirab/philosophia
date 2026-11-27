@@ -26,5 +26,7 @@
   ],
   "sepSlug": "rawls",
   "importanceScore": 93,
-  "imageUrl": "/portraits/john-rawls.jpg"
+  "imageUrl": "/portraits/john-rawls.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

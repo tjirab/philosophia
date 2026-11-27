@@ -19,5 +19,7 @@
   ],
   "sepSlug": "marcus-aurelius",
   "importanceScore": 90,
-  "imageUrl": "/portraits/marcus-aurelius.jpg"
+  "imageUrl": "/portraits/marcus-aurelius.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

@@ -18,5 +18,7 @@
   ],
   "sepSlug": "zeno-elea",
   "importanceScore": 91,
-  "imageUrl": "/portraits/zeno-of-elea.jpg"
+  "imageUrl": "/portraits/zeno-of-elea.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

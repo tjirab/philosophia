@@ -35,5 +35,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 90,
-  "imageUrl": "/portraits/edith-stein.jpg"
+  "imageUrl": "/portraits/edith-stein.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

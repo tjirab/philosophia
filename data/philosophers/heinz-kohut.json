@@ -39,5 +39,7 @@
     "wikipedia": "Heinz_Kohut"
   },
   "importanceScore": 93,
-  "imageUrl": "/portraits/heinz-kohut.jpg"
+  "imageUrl": "/portraits/heinz-kohut.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

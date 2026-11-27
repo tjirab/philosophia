@@ -25,5 +25,7 @@
   ],
   "sepSlug": "montaigne",
   "importanceScore": 92,
-  "imageUrl": "/portraits/michel-de-montaigne.jpg"
+  "imageUrl": "/portraits/michel-de-montaigne.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

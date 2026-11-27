@@ -39,5 +39,7 @@
     "wikipedia": "Heinrich_Racker"
   },
   "importanceScore": 89,
-  "imageUrl": "/portraits/heinrich-racker.jpg"
+  "imageUrl": "/portraits/heinrich-racker.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

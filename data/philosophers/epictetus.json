@@ -27,5 +27,7 @@
   ],
   "sepSlug": "epictetus",
   "importanceScore": 86,
-  "imageUrl": "/portraits/epictetus.jpg"
+  "imageUrl": "/portraits/epictetus.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

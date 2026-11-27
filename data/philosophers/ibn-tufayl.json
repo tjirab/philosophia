@@ -18,5 +18,7 @@
   ],
   "sepSlug": "arabic-islamic-natural",
   "importanceScore": 87,
-  "imageUrl": "/portraits/ibn-tufayl.jpg"
+  "imageUrl": "/portraits/ibn-tufayl.jpg",
+  "gender": "man",
+  "culturalSphere": "mena"
 }

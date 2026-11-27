@@ -18,5 +18,7 @@
   ],
   "sepSlug": "ockham",
   "importanceScore": 84,
-  "imageUrl": "/portraits/william-of-ockham.jpg"
+  "imageUrl": "/portraits/william-of-ockham.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

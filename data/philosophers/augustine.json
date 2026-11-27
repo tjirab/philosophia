@@ -34,5 +34,7 @@
   ],
   "sepSlug": "augustine",
   "importanceScore": 92,
-  "imageUrl": "/portraits/augustine.jpg"
+  "imageUrl": "/portraits/augustine.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

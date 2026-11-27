@@ -25,5 +25,7 @@
   ],
   "sepSlug": "shankara",
   "importanceScore": 80,
-  "imageUrl": "/portraits/adi-shankara.jpg"
+  "imageUrl": "/portraits/adi-shankara.jpg",
+  "gender": "man",
+  "culturalSphere": "south-asian"
 }

@@ -25,5 +25,7 @@
   ],
   "sepSlug": "ethics-ai",
   "importanceScore": 82,
-  "imageUrl": "/portraits/nick-bostrom.jpg"
+  "imageUrl": "/portraits/nick-bostrom.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

@@ -27,5 +27,7 @@
   ],
   "sepSlug": "hume",
   "importanceScore": 98,
-  "imageUrl": "/portraits/david-hume.jpg"
+  "imageUrl": "/portraits/david-hume.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

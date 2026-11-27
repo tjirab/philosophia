@@ -1,0 +1,7 @@
+{
+  "targetWomenPct": 40,
+  "targetNonWesternPct": 50,
+  "minWomenPct": 17.6,
+  "minNonWesternPct": 24.0,
+  "blockWesternMaleOnlyAdditionsBelowTarget": true
+}

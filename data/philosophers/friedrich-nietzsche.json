@@ -41,5 +41,7 @@
   ],
   "sepSlug": "nietzsche",
   "importanceScore": 100,
-  "imageUrl": "/portraits/friedrich-nietzsche.jpg"
+  "imageUrl": "/portraits/friedrich-nietzsche.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

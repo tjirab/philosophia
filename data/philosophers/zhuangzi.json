@@ -18,5 +18,7 @@
   ],
   "sepSlug": "zhuangzi",
   "importanceScore": 94,
-  "imageUrl": "/portraits/zhuangzi.jpg"
+  "imageUrl": "/portraits/zhuangzi.jpg",
+  "gender": "man",
+  "culturalSphere": "east-asian"
 }

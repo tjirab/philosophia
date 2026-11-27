@@ -32,5 +32,7 @@
   ],
   "sepSlug": "thomas-kuhn",
   "importanceScore": 90,
-  "imageUrl": "/portraits/thomas-kuhn.jpg"
+  "imageUrl": "/portraits/thomas-kuhn.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

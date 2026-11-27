@@ -18,5 +18,7 @@
   ],
   "sepSlug": "colonialism",
   "importanceScore": 88,
-  "imageUrl": "/portraits/felipe-guaman-poma.jpg"
+  "imageUrl": "/portraits/felipe-guaman-poma.jpg",
+  "gender": "man",
+  "culturalSphere": "indigenous"
 }

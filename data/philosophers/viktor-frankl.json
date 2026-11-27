@@ -34,5 +34,7 @@
     "wikipedia": "Viktor_Frankl"
   },
   "importanceScore": 91,
-  "imageUrl": "/portraits/viktor-frankl.jpg"
+  "imageUrl": "/portraits/viktor-frankl.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

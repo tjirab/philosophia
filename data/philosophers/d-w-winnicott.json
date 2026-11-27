@@ -39,5 +39,7 @@
     "wikipedia": "Donald_Winnicott"
   },
   "importanceScore": 95,
-  "imageUrl": "/portraits/d-w-winnicott.jpg"
+  "imageUrl": "/portraits/d-w-winnicott.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

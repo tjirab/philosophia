@@ -34,5 +34,7 @@
   },
   "canonTier": "pillar",
   "importanceScore": 93,
-  "imageUrl": "/portraits/patricia-hill-collins.jpg"
+  "imageUrl": "/portraits/patricia-hill-collins.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

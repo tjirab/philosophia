@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { evaluateDiversity } from './check-diversity.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -271,6 +272,8 @@ export function auditCanon(options = {}) {
     };
   });
 
+  const diversity = evaluateDiversity({ rootDir: root });
+
   return {
     timestamp: new Date().toISOString(),
     totals: {
@@ -313,6 +316,7 @@ export function auditCanon(options = {}) {
     eras: eraStats,
     traditions: traditionStats,
     domains: domainCounts,
+    diversity,
     lineages: lineageResults,
   };
 }
@@ -321,7 +325,7 @@ export function auditCanon(options = {}) {
  * Generates Markdown representation of the audit report.
  */
 export function generateMarkdownReport(report) {
-  const { totals, topology, completeness, eras, traditions, domains, lineages, timestamp } = report;
+  const { totals, topology, completeness, eras, traditions, domains, diversity, lineages, timestamp } = report;
 
   const lineageRows = lineages
     .map(
@@ -397,6 +401,12 @@ ${completeness.missingMedia.length > 0 ? `> [!NOTE]\n> Thinkers awaiting media/p
 - **Sociology:** \`${domains?.sociology ?? 0}\` thinkers
 - **Interdisciplinary Bridges (2+ domains):** \`${domains?.interdisciplinary ?? 0}\` thinkers
 
+### Diversity & Global Representation Balance
+- **Women Thinkers:** \`${diversity?.genderCounts?.woman ?? 0} / ${diversity?.total ?? totals.philosophers}\` (**${diversity?.womenPct ?? 0}%** | ratchet floor \`${diversity?.policy?.minWomenPct ?? 0}%\`, target **${diversity?.policy?.targetWomenPct ?? 40}%**)
+- **Men-to-Women Ratio:** \`${diversity?.menToWomenRatio ?? 0}:1\`
+- **Non-Western / Global South:** \`${diversity?.nonWesternCount ?? 0} / ${diversity?.total ?? totals.philosophers}\` (**${diversity?.nonWesternPct ?? 0}%** | ratchet floor \`${diversity?.policy?.minNonWesternPct ?? 0}%\`, target **${diversity?.policy?.targetNonWesternPct ?? 50}%**)
+- **Cultural Spheres:** Western \`${diversity?.sphereCounts?.western ?? 0}\`, MENA \`${diversity?.sphereCounts?.mena ?? 0}\`, East Asian \`${diversity?.sphereCounts?.['east-asian'] ?? 0}\`, African \`${diversity?.sphereCounts?.african ?? 0}\`, Latin American \`${diversity?.sphereCounts?.['latin-american'] ?? 0}\`, South Asian \`${diversity?.sphereCounts?.['south-asian'] ?? 0}\`, Indigenous \`${diversity?.sphereCounts?.indigenous ?? 0}\`
+
 | Era | Timeline | Thinkers | Concepts | Total Nodes |
 | :--- | :--- | :--- | :--- | :--- |
 ${eraRows}
@@ -434,7 +444,7 @@ ${topSynthesizersList}
  * Generates a concise, high-level PR verification summary without emojis.
  */
 export function generatePrSummary(report) {
-  const { totals, topology, completeness, lineages } = report;
+  const { totals, topology, completeness, diversity, lineages } = report;
   const verifiedLineages = lineages.filter((l) => l.found).length;
   const totalLineages = lineages.length;
 
@@ -447,6 +457,8 @@ export function generatePrSummary(report) {
 | Concepts | ${totals.concepts} | Complete |
 | Total Graph Nodes | ${totals.totalNodes} | Verified (${topology.isolatedTotal} isolated nodes) |
 | Dialectical Edges | ${totals.edges} (mean degree ${totals.meanDegree}) | Verified (${topology.danglingEdgesCount} dangling edges) |
+| Gender Balance | ${diversity?.genderCounts?.woman ?? 0} women (${diversity?.womenPct ?? 0}%, M:W ${diversity?.menToWomenRatio ?? 0}:1) | Target ${diversity?.policy?.targetWomenPct ?? 40}% (${diversity?.passed ? 'Ratchet OK' : 'Regressed'}) |
+| Cultural Balance | ${diversity?.nonWesternCount ?? 0} non-Western (${diversity?.nonWesternPct ?? 0}%) | Target ${diversity?.policy?.targetNonWesternPct ?? 50}% (${diversity?.passed ? 'Ratchet OK' : 'Regressed'}) |
 | Critical Lineage Paths | ${verifiedLineages} / ${totalLineages} verified | ${verifiedLineages === totalLineages ? 'Passed' : 'Gaps Identified'} |
 | Portrait Profiles | ${completeness.portraitCoveragePct}% | Verified |
 | Key Works Coverage | ${completeness.structuredWorksPct}% | Verified |

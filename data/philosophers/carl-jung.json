@@ -33,5 +33,7 @@
     "wikipedia": "Carl_Jung"
   },
   "importanceScore": 92,
-  "imageUrl": "/portraits/carl-jung.jpg"
+  "imageUrl": "/portraits/carl-jung.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

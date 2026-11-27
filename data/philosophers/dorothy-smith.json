@@ -34,5 +34,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 89,
-  "imageUrl": "/portraits/dorothy-smith.jpg"
+  "imageUrl": "/portraits/dorothy-smith.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

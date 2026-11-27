@@ -39,5 +39,7 @@
     "wikipedia": "Stephen_A._Mitchell_(psychoanalyst)"
   },
   "importanceScore": 90,
-  "imageUrl": "/portraits/stephen-mitchell.jpg"
+  "imageUrl": "/portraits/stephen-mitchell.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

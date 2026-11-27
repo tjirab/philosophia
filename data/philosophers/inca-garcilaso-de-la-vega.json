@@ -25,5 +25,7 @@
   ],
   "sepSlug": "latin-american-philosophy",
   "importanceScore": 87,
-  "imageUrl": "/portraits/inca-garcilaso-de-la-vega.jpg"
+  "imageUrl": "/portraits/inca-garcilaso-de-la-vega.jpg",
+  "gender": "man",
+  "culturalSphere": "latin-american"
 }

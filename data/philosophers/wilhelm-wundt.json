@@ -34,5 +34,7 @@
     "wikipedia": "Wilhelm_Wundt"
   },
   "importanceScore": 92,
-  "imageUrl": "/portraits/wilhelm-wundt.jpg"
+  "imageUrl": "/portraits/wilhelm-wundt.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

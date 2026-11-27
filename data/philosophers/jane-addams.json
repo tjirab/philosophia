@@ -35,5 +35,7 @@
   },
   "canonTier": "pillar",
   "importanceScore": 92,
-  "imageUrl": "/portraits/jane-addams.jpg"
+  "imageUrl": "/portraits/jane-addams.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

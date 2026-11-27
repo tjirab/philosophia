@@ -18,5 +18,7 @@
   ],
   "sepSlug": "maimonides",
   "importanceScore": 92,
-  "imageUrl": "/portraits/moses-maimonides.jpg"
+  "imageUrl": "/portraits/moses-maimonides.jpg",
+  "gender": "man",
+  "culturalSphere": "mena"
 }

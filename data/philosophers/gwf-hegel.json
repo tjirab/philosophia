@@ -33,5 +33,7 @@
   ],
   "sepSlug": "hegel",
   "importanceScore": 97,
-  "imageUrl": "/portraits/gwf-hegel.jpg"
+  "imageUrl": "/portraits/gwf-hegel.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

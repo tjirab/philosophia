@@ -26,5 +26,7 @@
   ],
   "sepSlug": "aquinas",
   "importanceScore": 96,
-  "imageUrl": "/portraits/thomas-aquinas.jpg"
+  "imageUrl": "/portraits/thomas-aquinas.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

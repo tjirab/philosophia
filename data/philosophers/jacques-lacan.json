@@ -41,5 +41,7 @@
     "wikipedia": "Jacques_Lacan"
   },
   "importanceScore": 97,
-  "imageUrl": "/portraits/jacques-lacan.jpg"
+  "imageUrl": "/portraits/jacques-lacan.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

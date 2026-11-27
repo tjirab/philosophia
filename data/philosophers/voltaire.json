@@ -33,5 +33,7 @@
   ],
   "sepSlug": "voltaire",
   "importanceScore": 88,
-  "imageUrl": "/portraits/voltaire.jpg"
+  "imageUrl": "/portraits/voltaire.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

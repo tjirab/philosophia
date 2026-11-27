@@ -18,5 +18,7 @@
   ],
   "sepSlug": "laozi",
   "importanceScore": 88,
-  "imageUrl": "/portraits/laozi.jpg"
+  "imageUrl": "/portraits/laozi.jpg",
+  "gender": "man",
+  "culturalSphere": "east-asian"
 }

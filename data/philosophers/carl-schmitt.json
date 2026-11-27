@@ -41,5 +41,7 @@
     "wikipedia": "Carl_Schmitt"
   },
   "importanceScore": 89,
-  "imageUrl": "/portraits/carl-schmitt.jpg"
+  "imageUrl": "/portraits/carl-schmitt.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

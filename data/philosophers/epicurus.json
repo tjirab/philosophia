@@ -25,5 +25,7 @@
   ],
   "sepSlug": "epicurus",
   "importanceScore": 82,
-  "imageUrl": "/portraits/epicurus.jpg"
+  "imageUrl": "/portraits/epicurus.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

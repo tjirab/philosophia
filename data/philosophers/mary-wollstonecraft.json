@@ -26,5 +26,7 @@
   "sepSlug": "wollstonecraft",
   "canonTier": "pillar",
   "importanceScore": 92,
-  "imageUrl": "/portraits/mary-wollstonecraft.jpg"
+  "imageUrl": "/portraits/mary-wollstonecraft.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

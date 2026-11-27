@@ -5,7 +5,10 @@
   "deathYear": 1979,
   "eraId": "twentieth-century",
   "traditionId": "critical-theory",
-  "domains": ["philosophy", "sociology"],
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
   "primaryDomain": "philosophy",
   "shortBio": "German-American philosopher, political theorist, and leading member of the Frankfurt School whose critique of advanced capitalism and technocracy became the intellectual catalyst of the New Left.",
   "centralQuestion": "\"How can authentic human liberation be achieved when advanced industrial society pacifies dissent through consumerism and false needs?\"",
@@ -34,5 +37,7 @@
   ],
   "sepSlug": "marcuse",
   "importanceScore": 88,
-  "imageUrl": "/portraits/herbert-marcuse.jpg"
+  "imageUrl": "/portraits/herbert-marcuse.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

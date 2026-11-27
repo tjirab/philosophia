@@ -21,8 +21,9 @@ done
 echo "🔍 [pre-push] 1/3 Compiling & validating modular data..."
 npm run build:data
 
-# 3. Verify graph audit, invariants, and critical lineage paths
-echo "📊 [pre-push] 2/3 Auditing canon coverage and graph invariants..."
+# 3. Verify graph audit, diversity guardrail, invariants, and critical lineage paths
+echo "📊 [pre-push] 2/3 Auditing canon coverage, diversity & graph invariants..."
+npm run audit:diversity
 npm run audit
 
 # 4. Run test suite

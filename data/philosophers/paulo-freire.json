@@ -37,5 +37,7 @@
     "philosophy",
     "sociology"
   ],
-  "primaryDomain": "philosophy"
+  "primaryDomain": "philosophy",
+  "gender": "man",
+  "culturalSphere": "latin-american"
 }

@@ -18,5 +18,7 @@
   ],
   "sepSlug": "socrates",
   "importanceScore": 98,
-  "imageUrl": "/portraits/socrates.jpg"
+  "imageUrl": "/portraits/socrates.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

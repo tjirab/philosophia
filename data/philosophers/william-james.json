@@ -5,7 +5,10 @@
   "deathYear": 1910,
   "eraId": "nineteenth-century",
   "traditionId": "pragmatism",
-  "domains": ["philosophy", "psychology"],
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
   "primaryDomain": "philosophy",
   "shortBio": "Pioneer of American pragmatism and psychology; formulated the stream of consciousness and the 'cash value' theory of truth.",
   "centralQuestion": "What difference does an idea make in concrete human experience?",
@@ -34,5 +37,7 @@
   ],
   "sepSlug": "james",
   "importanceScore": 88,
-  "imageUrl": "/portraits/william-james.jpg"
+  "imageUrl": "/portraits/william-james.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

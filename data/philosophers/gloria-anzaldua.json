@@ -37,5 +37,7 @@
   "domains": [
     "philosophy"
   ],
-  "primaryDomain": "philosophy"
+  "primaryDomain": "philosophy",
+  "gender": "woman",
+  "culturalSphere": "latin-american"
 }

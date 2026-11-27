@@ -34,5 +34,7 @@
     "wikipedia": "Auguste_Comte"
   },
   "importanceScore": 93,
-  "imageUrl": "/portraits/auguste-comte.jpg"
+  "imageUrl": "/portraits/auguste-comte.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

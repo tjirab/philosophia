@@ -25,5 +25,7 @@
   ],
   "sepSlug": "schelling",
   "importanceScore": 91,
-  "imageUrl": "/portraits/friedrich-schelling.jpg"
+  "imageUrl": "/portraits/friedrich-schelling.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

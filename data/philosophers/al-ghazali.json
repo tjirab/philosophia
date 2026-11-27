@@ -25,5 +25,7 @@
   ],
   "sepSlug": "al-ghazali",
   "importanceScore": 93,
-  "imageUrl": "/portraits/al-ghazali.jpg"
+  "imageUrl": "/portraits/al-ghazali.jpg",
+  "gender": "man",
+  "culturalSphere": "mena"
 }

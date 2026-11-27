@@ -39,5 +39,7 @@
     "wikipedia": "Ronald_Fairbairn"
   },
   "importanceScore": 91,
-  "imageUrl": "/portraits/ronald-fairbairn.jpg"
+  "imageUrl": "/portraits/ronald-fairbairn.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

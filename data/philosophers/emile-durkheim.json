@@ -40,5 +40,7 @@
     "wikipedia": "Émile_Durkheim"
   },
   "importanceScore": 97,
-  "imageUrl": "/portraits/emile-durkheim.jpg"
+  "imageUrl": "/portraits/emile-durkheim.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

@@ -25,5 +25,7 @@
   ],
   "sepSlug": "derrida",
   "importanceScore": 90,
-  "imageUrl": "/portraits/jacques-derrida.jpg"
+  "imageUrl": "/portraits/jacques-derrida.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

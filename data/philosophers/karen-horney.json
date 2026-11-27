@@ -34,5 +34,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 91,
-  "imageUrl": "/portraits/karen-horney.jpg"
+  "imageUrl": "/portraits/karen-horney.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

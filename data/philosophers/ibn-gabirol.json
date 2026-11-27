@@ -25,5 +25,7 @@
   ],
   "sepSlug": "ibn-gabirol",
   "importanceScore": 86,
-  "imageUrl": "/portraits/ibn-gabirol.jpg"
+  "imageUrl": "/portraits/ibn-gabirol.jpg",
+  "gender": "man",
+  "culturalSphere": "mena"
 }

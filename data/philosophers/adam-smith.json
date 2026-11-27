@@ -32,5 +32,7 @@
   ],
   "sepSlug": "smith-moral-political",
   "importanceScore": 93,
-  "imageUrl": "/portraits/adam-smith.jpg"
+  "imageUrl": "/portraits/adam-smith.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

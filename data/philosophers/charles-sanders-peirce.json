@@ -18,5 +18,7 @@
   ],
   "sepSlug": "peirce",
   "importanceScore": 91,
-  "imageUrl": "/portraits/charles-sanders-peirce.jpg"
+  "imageUrl": "/portraits/charles-sanders-peirce.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

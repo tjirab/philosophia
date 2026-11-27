@@ -1,0 +1,13 @@
+#!/bin/sh
+# Philosophia pre-commit validation hook
+# Runs ONLY when thinker files (data/philosophers/*.json) or diversity policy change.
+set -e
+
+STAGED_THINKER_FILES=$(git diff --cached --name-only -- 'data/philosophers/*.json' 'data/diversity-policy.json')
+
+if [ -z "$STAGED_THINKER_FILES" ]; then
+  exit 0
+fi
+
+echo "⚖️  [pre-commit] Thinker files modified; running diversity & schema check..."
+node scripts/check-diversity.mjs --staged

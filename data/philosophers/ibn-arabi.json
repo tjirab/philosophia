@@ -25,5 +25,7 @@
   ],
   "sepSlug": "ibn-arabi",
   "importanceScore": 91,
-  "imageUrl": "/portraits/ibn-arabi.jpg"
+  "imageUrl": "/portraits/ibn-arabi.jpg",
+  "gender": "man",
+  "culturalSphere": "mena"
 }

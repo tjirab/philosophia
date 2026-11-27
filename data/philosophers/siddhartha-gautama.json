@@ -18,5 +18,7 @@
   ],
   "sepSlug": "buddha",
   "importanceScore": 95,
-  "imageUrl": "/portraits/siddhartha-gautama.jpg"
+  "imageUrl": "/portraits/siddhartha-gautama.jpg",
+  "gender": "man",
+  "culturalSphere": "south-asian"
 }

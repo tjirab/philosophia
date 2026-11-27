@@ -34,5 +34,7 @@
     "wikipedia": "W._E._B._Du_Bois"
   },
   "importanceScore": 95,
-  "imageUrl": "/portraits/w-e-b-du-bois.jpg"
+  "imageUrl": "/portraits/w-e-b-du-bois.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

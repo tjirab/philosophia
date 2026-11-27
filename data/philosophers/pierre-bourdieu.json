@@ -34,5 +34,7 @@
     "wikipedia": "Pierre_Bourdieu"
   },
   "importanceScore": 95,
-  "imageUrl": "/portraits/pierre-bourdieu.jpg"
+  "imageUrl": "/portraits/pierre-bourdieu.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

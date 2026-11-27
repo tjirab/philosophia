@@ -18,5 +18,7 @@
   ],
   "sepSlug": "democritus",
   "importanceScore": 70,
-  "imageUrl": "/portraits/democritus.jpg"
+  "imageUrl": "/portraits/democritus.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

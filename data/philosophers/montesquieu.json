@@ -25,5 +25,7 @@
   ],
   "sepSlug": "montesquieu",
   "importanceScore": 93,
-  "imageUrl": "/portraits/montesquieu.jpg"
+  "imageUrl": "/portraits/montesquieu.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

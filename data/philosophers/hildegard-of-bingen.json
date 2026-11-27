@@ -34,5 +34,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 89,
-  "imageUrl": "/portraits/hildegard-of-bingen.jpg"
+  "imageUrl": "/portraits/hildegard-of-bingen.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

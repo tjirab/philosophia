@@ -25,5 +25,7 @@
   ],
   "sepSlug": "frege",
   "importanceScore": 94,
-  "imageUrl": "/portraits/gottlob-frege.jpg"
+  "imageUrl": "/portraits/gottlob-frege.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

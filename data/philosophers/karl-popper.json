@@ -25,5 +25,7 @@
   ],
   "sepSlug": "popper",
   "importanceScore": 89,
-  "imageUrl": "/portraits/karl-popper.jpg"
+  "imageUrl": "/portraits/karl-popper.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

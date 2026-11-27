@@ -35,5 +35,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 91,
-  "imageUrl": "/portraits/rosa-luxemburg.jpg"
+  "imageUrl": "/portraits/rosa-luxemburg.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

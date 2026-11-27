@@ -25,5 +25,7 @@
   ],
   "sepSlug": "husserl",
   "importanceScore": 90,
-  "imageUrl": "/portraits/edmund-husserl.jpg"
+  "imageUrl": "/portraits/edmund-husserl.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

@@ -33,5 +33,7 @@
   ],
   "sepSlug": "kierkegaard",
   "importanceScore": 92,
-  "imageUrl": "/portraits/soren-kierkegaard.jpg"
+  "imageUrl": "/portraits/soren-kierkegaard.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

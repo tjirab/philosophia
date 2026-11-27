@@ -26,5 +26,7 @@
     "wikipedia": "Ivan_Pavlov"
   },
   "importanceScore": 90,
-  "imageUrl": "/portraits/ivan-pavlov.jpg"
+  "imageUrl": "/portraits/ivan-pavlov.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

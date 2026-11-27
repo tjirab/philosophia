@@ -19,5 +19,7 @@
   ],
   "sepSlug": "hobbes",
   "importanceScore": 91,
-  "imageUrl": "/portraits/thomas-hobbes.jpg"
+  "imageUrl": "/portraits/thomas-hobbes.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

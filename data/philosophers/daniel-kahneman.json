@@ -34,5 +34,7 @@
     "wikipedia": "Daniel_Kahneman"
   },
   "importanceScore": 94,
-  "imageUrl": "/portraits/daniel-kahneman.jpg"
+  "imageUrl": "/portraits/daniel-kahneman.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

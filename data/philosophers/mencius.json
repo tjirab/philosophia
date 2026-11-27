@@ -18,5 +18,7 @@
   ],
   "sepSlug": "mencius",
   "importanceScore": 93,
-  "imageUrl": "/portraits/mencius.jpg"
+  "imageUrl": "/portraits/mencius.jpg",
+  "gender": "man",
+  "culturalSphere": "east-asian"
 }

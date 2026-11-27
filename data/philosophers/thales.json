@@ -18,5 +18,7 @@
   ],
   "sepSlug": "presocratics",
   "importanceScore": 60,
-  "imageUrl": "/portraits/thales.jpg"
+  "imageUrl": "/portraits/thales.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

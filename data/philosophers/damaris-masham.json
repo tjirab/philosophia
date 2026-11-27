@@ -25,5 +25,7 @@
   ],
   "sepSlug": "lady-masham",
   "importanceScore": 86,
-  "imageUrl": "/portraits/damaris-masham.jpg"
+  "imageUrl": "/portraits/damaris-masham.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

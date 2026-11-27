@@ -34,5 +34,7 @@
     "wikipedia": "Max_Weber"
   },
   "importanceScore": 98,
-  "imageUrl": "/portraits/max-weber.jpg"
+  "imageUrl": "/portraits/max-weber.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

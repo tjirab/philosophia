@@ -1,6 +1,6 @@
 # 📜 Philosophia Canon Coverage & Assessment Report
 
-> **Generated:** `2026-11-27T19:48:33.997Z`  
+> **Generated:** `2026-11-27T20:14:26.299Z`  
 > **Status:** 🟢 Healthy (0 isolated nodes, 1 unified graph)
 
 ---
@@ -48,6 +48,12 @@
 - **Psychology:** `36` thinkers
 - **Sociology:** `37` thinkers
 - **Interdisciplinary Bridges (2+ domains):** `44` thinkers
+
+### Diversity & Global Representation Balance
+- **Women Thinkers:** `33 / 187` (**17.65%** | ratchet floor `17.6%`, target **40%**)
+- **Men-to-Women Ratio:** `4.67:1`
+- **Non-Western / Global South:** `45 / 187` (**24.06%** | ratchet floor `24%`, target **50%**)
+- **Cultural Spheres:** Western `142`, MENA `13`, East Asian `10`, African `7`, Latin American `6`, South Asian `5`, Indigenous `4`
 
 | Era | Timeline | Thinkers | Concepts | Total Nodes |
 | :--- | :--- | :--- | :--- | :--- |

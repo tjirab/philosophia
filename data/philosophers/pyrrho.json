@@ -18,5 +18,7 @@
   ],
   "sepSlug": "pyrrho",
   "importanceScore": 72,
-  "imageUrl": "/portraits/pyrrho.jpg"
+  "imageUrl": "/portraits/pyrrho.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

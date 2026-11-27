@@ -26,5 +26,7 @@
   ],
   "sepSlug": "spinoza",
   "importanceScore": 95,
-  "imageUrl": "/portraits/baruch-spinoza.jpg"
+  "imageUrl": "/portraits/baruch-spinoza.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

@@ -25,5 +25,7 @@
   ],
   "sepSlug": "anselm",
   "importanceScore": 92,
-  "imageUrl": "/portraits/anselm-of-canterbury.jpg"
+  "imageUrl": "/portraits/anselm-of-canterbury.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

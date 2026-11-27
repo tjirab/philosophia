@@ -39,5 +39,7 @@
     "wikipedia": "John_Bowlby"
   },
   "importanceScore": 95,
-  "imageUrl": "/portraits/john-bowlby.jpg"
+  "imageUrl": "/portraits/john-bowlby.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

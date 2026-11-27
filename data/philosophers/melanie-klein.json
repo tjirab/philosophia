@@ -40,5 +40,7 @@
   },
   "canonTier": "pillar",
   "importanceScore": 94,
-  "imageUrl": "/portraits/melanie-klein.jpg"
+  "imageUrl": "/portraits/melanie-klein.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

@@ -39,5 +39,7 @@
     "wikipedia": "Erik_Erikson"
   },
   "importanceScore": 93,
-  "imageUrl": "/portraits/erik-erikson.jpg"
+  "imageUrl": "/portraits/erik-erikson.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }
