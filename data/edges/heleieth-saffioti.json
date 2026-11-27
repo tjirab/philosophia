@@ -1,0 +1,64 @@
+[
+  {
+    "id": "karl-marx--heleieth-saffioti",
+    "source": "karl-marx",
+    "target": "heleieth-saffioti",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized historical materialism with feminist critique of peripheral capitalism",
+    "strength": 5,
+    "description": "In Women in Class Society (1969), Saffioti showed that Brazilian capitalism relies structurally on women’s unpaid and marginalized labor within a patriarchal-racial knot.",
+    "dialecticalTension": "Pioneers Latin American Marxist-feminist social theory.",
+    "historicalContext": "University of São Paulo & UNESP (1969–2004).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Heleieth Saffioti",
+        "work": "Women in Class Society",
+        "year": 1969,
+        "url": "https://en.wikipedia.org/wiki/Heleieth_Saffioti"
+      }
+    ]
+  },
+  {
+    "id": "simone-de-beauvoir--heleieth-saffioti",
+    "source": "simone-de-beauvoir",
+    "target": "heleieth-saffioti",
+    "type": "DEVELOPED",
+    "label": "Anchored Beauvoir’s critique of gender subordination in Brazilian class sociology",
+    "strength": 4,
+    "description": "Saffioti combined Beauvoir’s insight into women’s social construction with empirical Marxist sociology of Brazilian labor.",
+    "dialecticalTension": "Bridges existential gender critique and Latin American structural sociology.",
+    "historicalContext": "A Mulher na Sociedade de Classes (1969).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Heleieth Saffioti",
+        "work": "A Mulher na Sociedade de Classes",
+        "year": 1969,
+        "url": "https://en.wikipedia.org/wiki/Heleieth_Saffioti"
+      }
+    ]
+  },
+  {
+    "id": "heleieth-saffioti--lelia-gonzalez",
+    "source": "heleieth-saffioti",
+    "target": "lelia-gonzalez",
+    "type": "INFLUENCED",
+    "label": "Provided structural Brazilian sociology of gender-race-class alongside Gonzalez",
+    "strength": 4,
+    "description": "Saffioti’s early formulation of the patriarchy-racism-capitalism knot intersected directly with Lélia Gonzalez’s Black feminist sociology in 1970s–80s Brazil.",
+    "dialecticalTension": "Cross-fertilizes Brazilian Marxist feminism and Afro-Brazilian Amefricanidade.",
+    "historicalContext": "Brazilian feminist sociology (1970s–1990s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Roque, Lugones & Schutte",
+        "work": "Feminist Philosophy in Latin America",
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

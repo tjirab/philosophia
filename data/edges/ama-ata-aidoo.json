@@ -1,0 +1,44 @@
+[
+  {
+    "id": "kwasi-wiredu--ama-ata-aidoo",
+    "source": "kwasi-wiredu",
+    "target": "ama-ata-aidoo",
+    "type": "SYNTHESIZED",
+    "label": "Paired Akan conceptual decolonization with postcolonial feminist cultural critique",
+    "strength": 4,
+    "description": "Alongside Wiredu’s call for conceptual decolonization in Ghana, Aidoo used literary-philosophical satire to expose Western epistemic arrogance and elite cultural alienation.",
+    "dialecticalTension": "Unites Akan philosophical self-recovery with anti-colonial feminist voice.",
+    "historicalContext": "Post-independence Ghana (1965–1990s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Ama Ata Aidoo",
+        "work": "Our Sister Killjoy",
+        "year": 1977,
+        "url": "https://en.wikipedia.org/wiki/Our_Sister_Killjoy"
+      }
+    ]
+  },
+  {
+    "id": "ama-ata-aidoo--tsitsi-dangarembga",
+    "source": "ama-ata-aidoo",
+    "target": "tsitsi-dangarembga",
+    "type": "INFLUENCED",
+    "label": "Pioneered African women’s critique of colonial education and cultural alienation",
+    "strength": 4,
+    "description": "Aidoo’s exploration of African women’s autonomy and colonial mimicry helped clear the intellectual horizon for Dangarembga’s Nervous Conditions.",
+    "dialecticalTension": "Establishes Pan-African feminist literary-philosophical lineage.",
+    "historicalContext": "African feminist letters (1970s–1990s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Ama Ata Aidoo",
+        "work": "Our Sister Killjoy / Changes",
+        "year": 1991,
+        "url": "https://en.wikipedia.org/wiki/Ama_Ata_Aidoo"
+      }
+    ]
+  }
+]

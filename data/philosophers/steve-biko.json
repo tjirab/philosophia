@@ -1,0 +1,34 @@
+{
+  "id": "steve-biko",
+  "name": "Steve Biko",
+  "birthYear": 1946,
+  "deathYear": 1977,
+  "eraId": "twentieth-century",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "psychology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "South African anti-apartheid philosopher and founder of the Black Consciousness Movement who argued that political liberation requires overcoming psychological servitude first.",
+  "centralQuestion": "Why is the most potent weapon in the hands of the oppressor the mind of the oppressed, and how does Black Consciousness reclaim existential agency?",
+  "keyWorks": [
+    {
+      "title": "I Write What I Like",
+      "year": "1978 CE",
+      "url": "https://en.wikipedia.org/wiki/I_Write_What_I_Like",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/I_Write_What_I_Like",
+      "description": "Posthumous collection articulating Black Consciousness as an existential philosophy of self-definition, solidarity, and critique of white liberalism."
+    }
+  ],
+  "sepSlug": "africana",
+  "canonTier": "pillar",
+  "importanceScore": 91,
+  "gender": "man",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/africana/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Steve_Biko"
+  },
+  "imageUrl": "/portraits/steve-biko.jpg"
+}

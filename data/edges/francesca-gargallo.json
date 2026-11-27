@@ -1,0 +1,44 @@
+[
+  {
+    "id": "rosario-castellanos--francesca-gargallo",
+    "source": "rosario-castellanos",
+    "target": "francesca-gargallo",
+    "type": "DEVELOPED",
+    "label": "Reconstructed Mexican and Latin American feminist philosophy from Castellanos onward",
+    "strength": 4,
+    "description": "In Las ideas feministas latinoamericanas, Gargallo traced Castellanos as a foundational node in Latin America’s autonomous feminist philosophical tradition.",
+    "dialecticalTension": "Transforms fragmented essays into a recognized continental philosophical historiography.",
+    "historicalContext": "Mexico City / UACM (2004).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Francesca Gargallo",
+        "work": "Las ideas feministas latinoamericanas",
+        "year": 2004,
+        "url": "https://en.wikipedia.org/wiki/Francesca_Gargallo"
+      }
+    ]
+  },
+  {
+    "id": "francesca-gargallo--julieta-paredes",
+    "source": "francesca-gargallo",
+    "target": "julieta-paredes",
+    "type": "SYNTHESIZED",
+    "label": "Co-theorized and documented Abya Yala Indigenous and community feminisms",
+    "strength": 4,
+    "description": "In Feminismos desde Abya Yala, Gargallo engaged Julieta Paredes’s Aymara community feminism to articulate non-Eurocentric feminist epistemologies.",
+    "dialecticalTension": "Bridges urban Mexican feminist philosophy with Aymara and Mayan community feminisms.",
+    "historicalContext": "Feminismos desde Abya Yala (2012).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Francesca Gargallo",
+        "work": "Feminismos desde Abya Yala",
+        "year": 2012,
+        "url": "https://en.wikipedia.org/wiki/Francesca_Gargallo"
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "id": "valentin-yves-mudimbe",
+  "name": "V. Y. Mudimbe",
+  "birthYear": 1941,
+  "deathYear": 2025,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Congolese philosopher and philologist whose landmark archaeology of the \"colonial library\" exposed how European anthropology and theology constructed Africa as an epistemic Other.",
+  "centralQuestion": "How can African philosophy speak authentically when the very categories used to define \"Africa\" were forged inside the colonial library?",
+  "keyWorks": [
+    {
+      "title": "The Invention of Africa: Gnosis, Philosophy, and the Order of Knowledge",
+      "year": "1988 CE",
+      "url": "https://en.wikipedia.org/wiki/V._Y._Mudimbe",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/V._Y._Mudimbe",
+      "description": "Foucauldian archaeology of Africanist discourse distinguishing colonial gnosis from autonomous African philosophical practice."
+    },
+    {
+      "title": "The Idea of Africa",
+      "year": "1994 CE",
+      "url": "https://en.wikipedia.org/wiki/V._Y._Mudimbe",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/V._Y._Mudimbe",
+      "description": "Traces Greek, Roman, and modern European textual constructions of Africa alongside African counter-memory."
+    }
+  ],
+  "sepSlug": "africana",
+  "canonTier": "pillar",
+  "importanceScore": 91,
+  "gender": "man",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/africana/",
+    "wikipedia": "https://en.wikipedia.org/wiki/V._Y._Mudimbe"
+  },
+  "imageUrl": "/portraits/valentin-yves-mudimbe.jpg"
+}

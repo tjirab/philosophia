@@ -1,0 +1,40 @@
+{
+  "id": "jeannette-armstrong",
+  "name": "Jeannette Armstrong",
+  "birthYear": 1948,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Syilx Okanagan philosopher, educator, and ecologist who articulated the En’owkin ecological decision-making process and land-rooted Syilx epistemology.",
+  "centralQuestion": "How can consensus ethics (En’owkin) weave divergent human perspectives into sustainable stewardship of the living land?",
+  "keyWorks": [
+    {
+      "title": "Slash",
+      "year": "1985 CE",
+      "url": "https://en.wikipedia.org/wiki/Jeannette_Armstrong",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jeannette_Armstrong",
+      "description": "Chronicles Indigenous sovereignty movements and the philosophical tension between extractive assimilation and Syilx land ethics."
+    },
+    {
+      "title": "Whispering in Shadows",
+      "year": "2000 CE",
+      "url": "https://en.wikipedia.org/wiki/Jeannette_Armstrong",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jeannette_Armstrong",
+      "description": "Explores Indigenous eco-justice, toxic colonialism, and the healing continuity of Okanagan land-language memory."
+    }
+  ],
+  "sepSlug": "ethics-environmental",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/ethics-environmental/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jeannette_Armstrong"
+  },
+  "imageUrl": "/portraits/jeannette-armstrong.jpg"
+}

@@ -249,6 +249,16 @@ export function auditCanon(options = {}) {
     { name: 'Quijano → María Lugones → Coloniality of Gender', from: 'anibal-quijano', to: 'coloniality-of-gender' },
     { name: "Guaman Poma → Silvia Rivera Cusicanqui → Ch'ixi Decoloniality", from: 'felipe-guaman-poma', to: 'chixi-decoloniality' },
     { name: 'Vine Deloria Jr. → Winona LaDuke', from: 'vine-deloria-jr', to: 'winona-laduke' },
+    { name: 'Fanon → Steve Biko → Black Consciousness', from: 'frantz-fanon', to: 'black-consciousness' },
+    { name: 'Foucault → V. Y. Mudimbe → Colonial Gnosis', from: 'michel-foucault', to: 'colonial-gnosis' },
+    { name: 'Funmilayo Ransome-Kuti → Molara Ogundipe → Stiwanism', from: 'funmilayo-ransome-kuti', to: 'stiwanism' },
+    { name: 'Beauvoir → Oyèrónkẹ́ Oyěwùmí → María Lugones', from: 'simone-de-beauvoir', to: 'maria-lugones' },
+    { name: 'Marx → Mariátegui → Aníbal Quijano → Rita Segato → Pedagogy of Cruelty', from: 'karl-marx', to: 'pedagogy-of-cruelty' },
+    { name: 'Sor Juana → Rosario Castellanos → Graciela Hierro → Francesca Gargallo → Julieta Paredes', from: 'sor-juana', to: 'julieta-paredes' },
+    { name: 'Lélia Gonzalez → Djamila Ribeiro', from: 'lelia-gonzalez', to: 'djamila-ribeiro' },
+    { name: 'Zitkala-Ša → Vine Deloria Jr. → Linda Tuhiwai Smith → Decolonizing Methodologies', from: 'zitkala-sa', to: 'decolonizing-methodologies' },
+    { name: 'Winona LaDuke → Leanne Betasamosake Simpson → Grounded Normativity', from: 'winona-laduke', to: 'grounded-normativity' },
+    { name: 'Robin Wall Kimmerer → Kyle Powys Whyte', from: 'robin-wall-kimmerer', to: 'kyle-powys-whyte' },
   ];
 
   function testPath(start, goal) {

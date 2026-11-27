@@ -1,0 +1,85 @@
+[
+  {
+    "id": "karl-marx--jose-carlos-mariategui",
+    "source": "karl-marx",
+    "target": "jose-carlos-mariategui",
+    "type": "SYNTHESIZED",
+    "label": "Translated Marxism to Andean reality via Indigenous ayllu communalism",
+    "strength": 5,
+    "description": "Rejecting rigid Soviet stageism, Mariátegui fused Marx’s critique of political economy with Peru’s Indigenous communal traditions to formulate Indo-American socialism.",
+    "dialecticalTension": "Breaks Eurocentric Marxism by treating Indigenous land collectives as revolutionary subjects.",
+    "historicalContext": "Seven Interpretive Essays on Peruvian Reality (1928).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "José Carlos Mariátegui",
+        "work": "Seven Interpretive Essays on Peruvian Reality",
+        "year": 1928,
+        "url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Carlos_Mari%C3%A1tegui"
+      }
+    ]
+  },
+  {
+    "id": "jose-carlos-mariategui--indo-american-socialism",
+    "source": "jose-carlos-mariategui",
+    "target": "indo-american-socialism",
+    "type": "DEVELOPED",
+    "label": "Formulated Indo-American Socialism",
+    "strength": 5,
+    "description": "Mariátegui argued that Latin American socialism could not be a \"copy or imitation\" of Europe, but a heroic creation rooted in Andean Indigenous solidarity.",
+    "dialecticalTension": "Establishes anti-colonial, non-Eurocentric Latin American Marxism.",
+    "historicalContext": "Amauta journal & Seven Interpretive Essays (1928).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Susana Nuccetelli & Jorge Gracia",
+        "work": "Latin American Philosophy",
+        "url": "https://plato.stanford.edu/entries/latin-american-philosophy/"
+      }
+    ]
+  },
+  {
+    "id": "jose-carlos-mariategui--anibal-quijano",
+    "source": "jose-carlos-mariategui",
+    "target": "anibal-quijano",
+    "type": "INFLUENCED",
+    "label": "Provided foundational Peruvian analysis of race-land coloniality for Quijano",
+    "strength": 5,
+    "description": "Quijano’s concept of the coloniality of power directly inherits Mariátegui’s insight that Peruvian capitalism remained entangled with colonial racial hierarchy and servile land tenure.",
+    "dialecticalTension": "Connects early 20th-c. Peruvian Marxism to decolonial world-systems theory.",
+    "historicalContext": "Lima intellectual lineage (1928–1992).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Aníbal Quijano",
+        "work": "Prólogo a 7 ensayos de interpretación de la realidad peruana",
+        "year": 1979,
+        "url": "https://plato.stanford.edu/entries/latin-american-philosophy/"
+      }
+    ]
+  },
+  {
+    "id": "jose-carlos-mariategui--enrique-dussel",
+    "source": "jose-carlos-mariategui",
+    "target": "enrique-dussel",
+    "type": "INFLUENCED",
+    "label": "Pioneered Latin American liberation Marxism informing Dussel",
+    "strength": 4,
+    "description": "Dussel recognized Mariátegui as the seminal Latin American thinker who decolonized historical materialism from the perspective of the Indigenous periphery.",
+    "dialecticalTension": "Anchors Philosophy of Liberation in Mariátegui’s peripheral Marxism.",
+    "historicalContext": "Latin American Philosophy of Liberation (1970s–2000s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Enrique Dussel",
+        "work": "Ethics of Liberation",
+        "year": 1998,
+        "url": "https://plato.stanford.edu/entries/liberation/"
+      }
+    ]
+  }
+]

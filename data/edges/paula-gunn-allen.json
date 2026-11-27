@@ -1,0 +1,44 @@
+[
+  {
+    "id": "vine-deloria-jr--paula-gunn-allen",
+    "source": "vine-deloria-jr",
+    "target": "paula-gunn-allen",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized Indigenous spatial sovereignty with Pueblo gynocratic cosmology",
+    "strength": 4,
+    "description": "Parallel to Deloria’s spatial metaphysics, Gunn Allen recovered gynocratic Pueblo-Sioux philosophies that center feminine creative power and ecological balance.",
+    "dialecticalTension": "Genders Indigenous metaphysics beyond patriarchal Western spirituality.",
+    "historicalContext": "The Sacred Hoop (1986).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Paula Gunn Allen",
+        "work": "The Sacred Hoop",
+        "year": 1986,
+        "url": "https://en.wikipedia.org/wiki/Paula_Gunn_Allen"
+      }
+    ]
+  },
+  {
+    "id": "paula-gunn-allen--lee-maracle",
+    "source": "paula-gunn-allen",
+    "target": "lee-maracle",
+    "type": "INFLUENCED",
+    "label": "Helped catalyze Indigenous feminist reclamation of oral philosophy",
+    "strength": 4,
+    "description": "Gunn Allen’s centering of Indigenous women’s cosmology deeply resonated with Lee Maracle’s Stó:lō feminist theory in I Am Woman.",
+    "dialecticalTension": "Forwards transnational North American Indigenous feminist philosophy.",
+    "historicalContext": "Late 1980s–1990s Indigenous feminist theory.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Lee Maracle",
+        "work": "I Am Woman",
+        "year": 1988,
+        "url": "https://en.wikipedia.org/wiki/Lee_Maracle"
+      }
+    ]
+  }
+]

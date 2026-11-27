@@ -1,0 +1,86 @@
+[
+  {
+    "id": "robin-wall-kimmerer--leanne-betasamosake-simpson",
+    "source": "robin-wall-kimmerer",
+    "target": "leanne-betasamosake-simpson",
+    "type": "DEVELOPED",
+    "label": "Radicalized Great Lakes ecological kinship into anti-capitalist Nishnaabeg resurgence",
+    "strength": 4,
+    "description": "Sharing Anishinaabe/Potawatomi plant and land ethics with Kimmerer, Simpson argues that reciprocal ecological relations demand dismantling settler capitalism.",
+    "dialecticalTension": "Connects botanical reciprocity to militant Indigenous political resurgence.",
+    "historicalContext": "As We Have Always Done (2017).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Leanne Betasamosake Simpson",
+        "work": "As We Have Always Done",
+        "year": 2017,
+        "url": "https://en.wikipedia.org/wiki/Leanne_Betasamosake_Simpson"
+      }
+    ]
+  },
+  {
+    "id": "winona-laduke--leanne-betasamosake-simpson",
+    "source": "winona-laduke",
+    "target": "leanne-betasamosake-simpson",
+    "type": "DEVELOPED",
+    "label": "Built on Anishinaabe land defense to codify grounded normativity",
+    "strength": 5,
+    "description": "Extending Winona LaDuke’s grassroots Anishinaabe land and seed sovereignty struggles, Simpson theorized everyday land-based Nishnaabeg ethics as political philosophy.",
+    "dialecticalTension": "Bridges White Earth ecological activism and Michi Saagiig Nishnaabeg theory.",
+    "historicalContext": "Great Lakes Anishinaabe resurgence (1999–2017).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Leanne Betasamosake Simpson",
+        "work": "As We Have Always Done",
+        "year": 2017,
+        "url": "https://en.wikipedia.org/wiki/Leanne_Betasamosake_Simpson"
+      }
+    ]
+  },
+  {
+    "id": "leanne-betasamosake-simpson--grounded-normativity",
+    "source": "leanne-betasamosake-simpson",
+    "target": "grounded-normativity",
+    "type": "DEVELOPED",
+    "label": "Theorized Grounded Normativity and Kwe as Method",
+    "strength": 5,
+    "description": "Simpson articulated grounded normativity (alongside Glen Coulthard) as ethical intelligence generated directly through land, story, and non-authoritarian Indigenous kinship.",
+    "dialecticalTension": "Replaces state-centric recognition politics with land-generated Indigenous law.",
+    "historicalContext": "As We Have Always Done (2017).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Leanne Betasamosake Simpson",
+        "work": "As We Have Always Done",
+        "year": 2017,
+        "url": "https://en.wikipedia.org/wiki/Leanne_Betasamosake_Simpson"
+      }
+    ]
+  },
+  {
+    "id": "leanne-betasamosake-simpson--kyle-powys-whyte",
+    "source": "leanne-betasamosake-simpson",
+    "target": "kyle-powys-whyte",
+    "type": "INFLUENCED",
+    "label": "Informed Potawatomi relational climate ethics and collective continuance",
+    "strength": 5,
+    "description": "Whyte directly engages Simpson’s Nishnaabeg resurgence and grounded normativity to argue that climate resilience depends on Indigenous kinship and consent.",
+    "dialecticalTension": "Transfers Nishnaabeg political resurgence into Indigenous climate justice.",
+    "historicalContext": "Great Lakes Indigenous philosophy (2017–2020s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Kyle Powys Whyte",
+        "work": "Too Late for Indigenous Climate Justice",
+        "year": 2020,
+        "url": "https://en.wikipedia.org/wiki/Kyle_Powys_Whyte"
+      }
+    ]
+  }
+]

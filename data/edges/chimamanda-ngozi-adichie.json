@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ama-ata-aidoo--chimamanda-ngozi-adichie",
+    "source": "ama-ata-aidoo",
+    "target": "chimamanda-ngozi-adichie",
+    "type": "INFLUENCED",
+    "label": "Inherited West African feminist critique of Western epistemic stereotyping",
+    "strength": 4,
+    "description": "Echoing Aidoo’s reversal of the Western gaze, Adichie diagnosed \"the danger of a single story\" as an epistemic harm flattening African lives.",
+    "dialecticalTension": "Translates West African feminist critique into global public philosophy.",
+    "historicalContext": "TED Global (2009) & We Should All Be Feminists (2014).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Chimamanda Ngozi Adichie",
+        "work": "We Should All Be Feminists",
+        "year": 2014,
+        "url": "https://en.wikipedia.org/wiki/Chimamanda_Ngozi_Adichie"
+      }
+    ]
+  },
+  {
+    "id": "molara-ogundipe--chimamanda-ngozi-adichie",
+    "source": "molara-ogundipe",
+    "target": "chimamanda-ngozi-adichie",
+    "type": "INFLUENCED",
+    "label": "Built on Nigerian feminist traditions centering everyday women’s agency",
+    "strength": 4,
+    "description": "Adichie’s public philosophy of gender equality and Igbo cultural memory resonates with Ogundipe’s Nigerian feminist legacy.",
+    "dialecticalTension": "Carries Nigerian feminist discourse into 21st-century global public sphere.",
+    "historicalContext": "Contemporary Nigerian feminist thought.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Chimamanda Ngozi Adichie",
+        "work": "We Should All Be Feminists",
+        "year": 2014,
+        "url": "https://en.wikipedia.org/wiki/We_Should_All_Be_Feminists"
+      }
+    ]
+  }
+]

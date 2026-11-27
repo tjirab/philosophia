@@ -1,0 +1,40 @@
+{
+  "id": "sylvia-tamale",
+  "name": "Sylvia Tamale",
+  "birthYear": 1962,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Ugandan feminist legal philosopher and sociologist who theorized Afro-feminist jurisprudence, Ubuntu relationality, and the decolonization of African law and sexualities.",
+  "centralQuestion": "How can African jurisprudence shed Victorian colonial moralism by centering Ubuntu ethics and Afro-feminist pluralism?",
+  "keyWorks": [
+    {
+      "title": "Decolonization and Afro-Feminism",
+      "year": "2020 CE",
+      "url": "https://en.wikipedia.org/wiki/Sylvia_Tamale",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sylvia_Tamale",
+      "description": "Integrates Ubuntu philosophy, decolonial legal theory, and African feminist praxis to reimagine justice beyond Eurocentric law."
+    },
+    {
+      "title": "African Sexualities: A Reader",
+      "year": "2011 CE",
+      "url": "https://en.wikipedia.org/wiki/Sylvia_Tamale",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sylvia_Tamale",
+      "description": "Foundational edited volume reclaiming African epistemologies of gender, desire, and bodily sovereignty."
+    }
+  ],
+  "sepSlug": "african-ethics",
+  "canonTier": "bridge",
+  "importanceScore": 87,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/african-ethics/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sylvia_Tamale"
+  },
+  "imageUrl": "/portraits/sylvia-tamale.jpg"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "frantz-fanon--lee-maracle",
+    "source": "frantz-fanon",
+    "target": "lee-maracle",
+    "type": "SYNTHESIZED",
+    "label": "Synthesized anti-colonial psychology with Salish Indigenous feminist healing",
+    "strength": 4,
+    "description": "In I Am Woman, Maracle interrogated how settler colonialism produces internalized lateral violence and patriarchal shame among Indigenous nations.",
+    "dialecticalTension": "Unites Fanonian decolonization with Stó:lō oral philosophy.",
+    "historicalContext": "I Am Woman (1988).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Lee Maracle",
+        "work": "I Am Woman",
+        "year": 1988,
+        "url": "https://en.wikipedia.org/wiki/Lee_Maracle"
+      }
+    ]
+  },
+  {
+    "id": "lee-maracle--leanne-betasamosake-simpson",
+    "source": "lee-maracle",
+    "target": "leanne-betasamosake-simpson",
+    "type": "INFLUENCED",
+    "label": "Mentored Nishnaabeg feminist resurgence through Salish storywork and oratory",
+    "strength": 5,
+    "description": "Leanne Betasamosake Simpson credits Lee Maracle’s Indigenous feminist theory and storywork as foundational to her own radical resurgence praxis.",
+    "dialecticalTension": "Transmits Indigenous feminist orality from Stó:lō to Nishnaabeg philosophy.",
+    "historicalContext": "Indigenous feminist theory in Canada (1988–2021).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Leanne Betasamosake Simpson",
+        "work": "As We Have Always Done",
+        "year": 2017,
+        "url": "https://en.wikipedia.org/wiki/Lee_Maracle"
+      }
+    ]
+  }
+]

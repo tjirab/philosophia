@@ -1,0 +1,33 @@
+{
+  "id": "awa-thiam",
+  "name": "Awa Thiam",
+  "birthYear": 1950,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Senegalese feminist philosopher, anthropologist, and politician whose Speak Out, Black Sisters pioneered Francophone African feminist critique of bodily control, patriarchy, and double oppression.",
+  "centralQuestion": "How do traditional patriarchal controls and colonial hierarchies converge on the bodies of Black African women, and how do women reclaim testimonial voice?",
+  "keyWorks": [
+    {
+      "title": "La Parole aux Négresses (Speak Out, Black Sisters)",
+      "year": "1978 CE",
+      "url": "https://en.wikipedia.org/wiki/Awa_Thiam",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Awa_Thiam",
+      "description": "Groundbreaking feminist philosophical inquiry centering African women’s lived testimony against FGM, forced marriage, and colonial racism."
+    }
+  ],
+  "sepSlug": "feminism-race",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-race/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Awa_Thiam"
+  },
+  "imageUrl": "/portraits/awa-thiam.jpg"
+}

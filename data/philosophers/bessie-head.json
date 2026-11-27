@@ -1,0 +1,40 @@
+{
+  "id": "bessie-head",
+  "name": "Bessie Head",
+  "birthYear": 1937,
+  "deathYear": 1986,
+  "eraId": "twentieth-century",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "South African-born Botswanan philosopher-novelist of exile, psychological fracture, and agrarian communal ethics who interrogated the metaphysics of good, evil, and belonging.",
+  "centralQuestion": "How does the stateless exile survive psychic colonization to forge an ordinary, egalitarian ethics of the village?",
+  "keyWorks": [
+    {
+      "title": "Maru",
+      "year": "1971 CE",
+      "url": "https://en.wikipedia.org/wiki/Maru_(novel)",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Maru_(novel)",
+      "description": "Philosophical examination of intra-African racial prejudice, marginality, and moral courage in postcolonial Botswana."
+    },
+    {
+      "title": "A Question of Power",
+      "year": "1973 CE",
+      "url": "https://en.wikipedia.org/wiki/A_Question_of_Power",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Question_of_Power",
+      "description": "Autobiographical phenomenology of madness, apartheid trauma, and the struggle between absolute power and everyday human reverence."
+    }
+  ],
+  "sepSlug": "africana",
+  "canonTier": "bridge",
+  "importanceScore": 85,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/africana/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bessie_Head"
+  },
+  "imageUrl": "/portraits/bessie-head.jpg"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "amina-mama",
+  "name": "Amina Mama",
+  "birthYear": 1958,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "psychology",
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "psychology",
+  "shortBio": "Nigerian-British feminist psychologist and theorist of postcolonial subjectivity who bridged Black psychology, African feminist epistemology, and critiques of state militarism.",
+  "centralQuestion": "How do racialized and gendered power structures shape Black women’s interior subjectivity without reducing them to passive victims?",
+  "keyWorks": [
+    {
+      "title": "Beyond the Masks: Race, Gender and Subjectivity",
+      "year": "1995 CE",
+      "url": "https://en.wikipedia.org/wiki/Amina_Mama",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Amina_Mama",
+      "description": "Critiques Eurocentric psychology and develops a discourse-analytic account of Black women’s dynamic postcolonial subjectivity."
+    }
+  ],
+  "sepSlug": "feminism-race",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-race/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Amina_Mama"
+  },
+  "imageUrl": "/portraits/amina-mama.jpg"
+}

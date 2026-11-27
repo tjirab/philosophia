@@ -1,0 +1,44 @@
+[
+  {
+    "id": "w-e-b-du-bois--bessie-head",
+    "source": "w-e-b-du-bois",
+    "target": "bessie-head",
+    "type": "INFLUENCED",
+    "label": "Deepened diasporic double consciousness into stateless southern African exile",
+    "strength": 4,
+    "description": "Head’s reflections on racialized outcast status in South Africa and Botswana extend Du Bois’s divided-self phenomenology into postcolonial exile.",
+    "dialecticalTension": "Transforms national double consciousness into border-crossing existential survival.",
+    "historicalContext": "Exile in Serowe, Botswana (1964–1986).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Bessie Head",
+        "work": "Maru",
+        "year": 1971,
+        "url": "https://en.wikipedia.org/wiki/Bessie_Head"
+      }
+    ]
+  },
+  {
+    "id": "frantz-fanon--bessie-head",
+    "source": "frantz-fanon",
+    "target": "bessie-head",
+    "type": "DEVELOPED",
+    "label": "Extended Fanonian colonial psychopathology to gendered exile in A Question of Power",
+    "strength": 4,
+    "description": "In A Question of Power, Head dramatized the psychic torment of apartheid racialization and patriarchal exclusion as an inner metaphysical battleground.",
+    "dialecticalTension": "Shifts anti-colonial psychiatry toward everyday agrarian ethics and inner spiritual resilience.",
+    "historicalContext": "Published 1973; postcolonial Southern African philosophy and literature.",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Bessie Head",
+        "work": "A Question of Power",
+        "year": 1973,
+        "url": "https://en.wikipedia.org/wiki/A_Question_of_Power"
+      }
+    ]
+  }
+]

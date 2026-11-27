@@ -1,0 +1,40 @@
+{
+  "id": "leanne-betasamosake-simpson",
+  "name": "Leanne Betasamosake Simpson",
+  "birthYear": 1971,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Michi Saagiig Nishnaabeg philosopher and theorist of \"grounded normativity\" who argued that Indigenous resurgence must be generated from Nishnaabeg intelligence and land-based kinship rather than state recognition.",
+  "centralQuestion": "How does grounded normativity—ethical intelligence generated directly through land and Nishnaabeg kinship—replace settler-colonial recognition politics?",
+  "keyWorks": [
+    {
+      "title": "As We Have Always Done: Indigenous Freedom through Radical Resistance",
+      "year": "2017 CE",
+      "url": "https://en.wikipedia.org/wiki/Leanne_Betasamosake_Simpson",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Leanne_Betasamosake_Simpson",
+      "description": "Formulates Nishnaabeg grounded normativity and \"kwe as method\" as an anti-capitalist philosophy of Indigenous resurgence."
+    },
+    {
+      "title": "Dancing on Our Turtle’s Back",
+      "year": "2011 CE",
+      "url": "https://en.wikipedia.org/wiki/Leanne_Betasamosake_Simpson",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Leanne_Betasamosake_Simpson",
+      "description": "Reconstructs Nishnaabeg stories, language, and ethical renewal beyond settler reconciliation."
+    }
+  ],
+  "sepSlug": "sovereignty",
+  "canonTier": "pillar",
+  "importanceScore": 90,
+  "gender": "woman",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/sovereignty/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Leanne_Betasamosake_Simpson"
+  },
+  "imageUrl": "/portraits/leanne-betasamosake-simpson.jpg"
+}

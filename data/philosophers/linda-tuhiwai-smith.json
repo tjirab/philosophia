@@ -1,0 +1,33 @@
+{
+  "id": "linda-tuhiwai-smith",
+  "name": "Linda Tuhiwai Smith",
+  "birthYear": 1950,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Māori (Ngāti Awa, Ngāti Porou) philosopher of science and education whose Decolonizing Methodologies transformed global Indigenous epistemology and research ethics.",
+  "centralQuestion": "How has Western \"research\" functioned as an instrument of imperial extraction, and how does Kaupapa Māori methodology reclaim epistemic sovereignty?",
+  "keyWorks": [
+    {
+      "title": "Decolonizing Methodologies: Research and Indigenous Peoples",
+      "year": "1999 CE",
+      "url": "https://en.wikipedia.org/wiki/Linda_Tuhiwai_Smith",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Linda_Tuhiwai_Smith",
+      "description": "Landmark critique of colonial knowledge production establishing 25 Indigenous research projects rooted in self-determination."
+    }
+  ],
+  "sepSlug": "epistemology-social",
+  "canonTier": "pillar",
+  "importanceScore": 92,
+  "gender": "woman",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/epistemology-social/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Linda_Tuhiwai_Smith"
+  },
+  "imageUrl": "/portraits/linda-tuhiwai-smith.jpg"
+}

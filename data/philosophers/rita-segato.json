@@ -1,0 +1,40 @@
+{
+  "id": "rita-segato",
+  "name": "Rita Segato",
+  "birthYear": 1951,
+  "eraId": "contemporary",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Argentine-Brazilian feminist anthropologist and philosopher who theorized the \"pedagogy of cruelty\" and showed how colonial modernity transformed low-intensity Indigenous gender dualities into lethal patriarchy.",
+  "centralQuestion": "Why is contemporary violence against women not private pathology, but an expressive mandate of patriarchal sovereignty and colonial-capitalist pedagogy of cruelty?",
+  "keyWorks": [
+    {
+      "title": "Las estructuras elementales de la violencia",
+      "year": "2003 CE",
+      "url": "https://en.wikipedia.org/wiki/Rita_Laura_Segato",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rita_Laura_Segato",
+      "description": "Establishes the structural grammar of patriarchal violence as a vertical and horizontal mandate of masculine brotherhood."
+    },
+    {
+      "title": "La guerra contra las mujeres",
+      "year": "2016 CE",
+      "url": "https://en.wikipedia.org/wiki/Rita_Laura_Segato",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rita_Laura_Segato",
+      "description": "Theorizes feminicide and the \"pedagogy of cruelty\" as core instruments of contemporary extractive capitalism."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "pillar",
+  "importanceScore": 91,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rita_Laura_Segato"
+  },
+  "imageUrl": "/portraits/rita-segato.jpg"
+}

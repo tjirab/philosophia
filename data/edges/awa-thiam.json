@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mariama-ba--awa-thiam",
+    "source": "mariama-ba",
+    "target": "awa-thiam",
+    "type": "DEVELOPED",
+    "label": "Extended Senegalese feminist testimonial critique into structural bodily politics",
+    "strength": 4,
+    "description": "Sharing Senegal’s Francophone feminist horizon with Mariama Bâ, Thiam combined anthropological interviews with militant feminist philosophy in La Parole aux Négresses.",
+    "dialecticalTension": "Moves from epistolary critique of polygamy to radical bodily sovereignty.",
+    "historicalContext": "Dakar & Paris (1978).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Awa Thiam",
+        "work": "La Parole aux Négresses",
+        "year": 1978,
+        "url": "https://en.wikipedia.org/wiki/Awa_Thiam"
+      }
+    ]
+  },
+  {
+    "id": "awa-thiam--sylvia-tamale",
+    "source": "awa-thiam",
+    "target": "sylvia-tamale",
+    "type": "INFLUENCED",
+    "label": "Pioneered African women’s bodily autonomy discourse inherited by Tamale",
+    "strength": 4,
+    "description": "Thiam’s insistence that African women themselves speak and theorize bodily integrity paved the way for Tamale’s Afro-feminist sexualities and legal scholarship.",
+    "dialecticalTension": "Links Francophone West African bodily critique to East African decolonial law.",
+    "historicalContext": "Transcontinental African feminism (1978–2020).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Sylvia Tamale",
+        "work": "African Sexualities: A Reader",
+        "year": 2011,
+        "url": "https://en.wikipedia.org/wiki/Sylvia_Tamale"
+      }
+    ]
+  }
+]

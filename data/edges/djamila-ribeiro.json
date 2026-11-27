@@ -1,0 +1,65 @@
+[
+  {
+    "id": "lelia-gonzalez--djamila-ribeiro",
+    "source": "lelia-gonzalez",
+    "target": "djamila-ribeiro",
+    "type": "DEVELOPED",
+    "label": "Revitalized Gonzalez’s Black feminist epistemology in Lugar de Fala",
+    "strength": 5,
+    "description": "Ribeiro foregrounded Lélia Gonzalez’s critique of Brazilian racial democracy as the direct philosophical foundation for her concept of locus of enunciation (lugar de fala).",
+    "dialecticalTension": "Brings 1980s Amefricanidade into 21st-century Brazilian public philosophy.",
+    "historicalContext": "Feminismos Plurais / Lugar de Fala (2017).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Djamila Ribeiro",
+        "work": "Lugar de Fala",
+        "year": 2017,
+        "url": "https://en.wikipedia.org/wiki/Djamila_Ribeiro"
+      }
+    ]
+  },
+  {
+    "id": "sueli-carneiro--djamila-ribeiro",
+    "source": "sueli-carneiro",
+    "target": "djamila-ribeiro",
+    "type": "DEVELOPED",
+    "label": "Built on Carneiro’s critique of epistemicide to democratize philosophical speech",
+    "strength": 5,
+    "description": "Extending Carneiro’s concept of epistemicide, Ribeiro analyzed how marginalized Black women’s knowledge is systematically silenced as \"particular\" while white speech poses as \"universal.\"",
+    "dialecticalTension": "Operationalizes anti-epistemicide philosophy into contemporary Brazilian standpoint ethics.",
+    "historicalContext": "Lugar de Fala (2017).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Djamila Ribeiro",
+        "work": "Lugar de Fala",
+        "year": 2017,
+        "url": "https://en.wikipedia.org/wiki/Djamila_Ribeiro"
+      }
+    ]
+  },
+  {
+    "id": "patricia-hill-collins--djamila-ribeiro",
+    "source": "patricia-hill-collins",
+    "target": "djamila-ribeiro",
+    "type": "INFLUENCED",
+    "label": "Adapted Black feminist standpoint epistemology to Lusophone contexts",
+    "strength": 5,
+    "description": "Ribeiro directly engaged Patricia Hill Collins’s Black Feminist Thought alongside Brazilian thinkers to clarify that standpoint is structural positionality, not mere personal opinion.",
+    "dialecticalTension": "Synthesizes North American and Afro-Brazilian standpoint epistemologies.",
+    "historicalContext": "Lugar de Fala (2017).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Djamila Ribeiro",
+        "work": "Lugar de Fala",
+        "year": 2017,
+        "url": "https://en.wikipedia.org/wiki/Djamila_Ribeiro"
+      }
+    ]
+  }
+]

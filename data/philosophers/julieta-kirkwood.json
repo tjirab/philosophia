@@ -1,0 +1,34 @@
+{
+  "id": "julieta-kirkwood",
+  "name": "Julieta Kirkwood",
+  "birthYear": 1936,
+  "deathYear": 1985,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "sociology",
+    "philosophy"
+  ],
+  "primaryDomain": "sociology",
+  "shortBio": "Chilean feminist political theorist and sociologist who catalyzed Latin American feminist democratic thought under dictatorship with the maxim \"Democracy in the country and in the home.\"",
+  "centralQuestion": "Why does political democratization fail if authoritarian patriarchal power remains untouched inside the private household?",
+  "keyWorks": [
+    {
+      "title": "Ser política en Chile: las feministas y los partidos",
+      "year": "1986 CE",
+      "url": "https://en.wikipedia.org/wiki/Julieta_Kirkwood",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Julieta_Kirkwood",
+      "description": "Analyzes feminist \"knots\" (nudos) and critiques authoritarianism across both Pinochet’s state and leftist party patriarchy."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Julieta_Kirkwood"
+  },
+  "imageUrl": "/portraits/julieta-kirkwood.jpg"
+}

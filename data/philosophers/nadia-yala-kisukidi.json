@@ -1,0 +1,32 @@
+{
+  "id": "nadia-yala-kisukidi",
+  "name": "Nadia Yala Kisukidi",
+  "birthYear": 1978,
+  "eraId": "contemporary",
+  "traditionId": "africana-philosophy",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Franco-Congolese philosopher of Négritude, Henri Bergson, and Africana political aesthetics who theorizes creative humanity and decolonized universalism.",
+  "centralQuestion": "How can Négritude’s poetics and Bergsonian creative evolution forge a concrete universalism after colonialism?",
+  "keyWorks": [
+    {
+      "title": "Bergson ou l’humanité créatrice",
+      "year": "2013 CE",
+      "url": "https://fr.wikipedia.org/wiki/Nadia_Yala_Kisukidi",
+      "wikipediaUrl": "https://fr.wikipedia.org/wiki/Nadia_Yala_Kisukidi",
+      "description": "Reconstructs Bergson’s philosophy of open morality and creative humanity in dialogue with postcolonial and Négritude thought."
+    }
+  ],
+  "sepSlug": "negritude",
+  "canonTier": "bridge",
+  "importanceScore": 84,
+  "gender": "woman",
+  "culturalSphere": "african",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/negritude/",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Nadia_Yala_Kisukidi"
+  },
+  "imageUrl": "/portraits/nadia-yala-kisukidi.jpg"
+}

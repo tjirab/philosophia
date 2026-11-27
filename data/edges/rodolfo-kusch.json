@@ -1,0 +1,64 @@
+[
+  {
+    "id": "martin-heidegger--rodolfo-kusch",
+    "source": "martin-heidegger",
+    "target": "rodolfo-kusch",
+    "type": "CRITIQUED",
+    "label": "Contrasted Heideggerian European \"ser\" with Indigenous-American \"estar\"",
+    "strength": 5,
+    "description": "Engaging Heidegger’s ontology, Kusch argued that Western philosophy privileges manipulative being (ser), whereas Andean Indigenous thought dwells inside cosmic uncertainty (estar).",
+    "dialecticalTension": "Decolonizes fundamental ontology from the Andean altiplano.",
+    "historicalContext": "América profunda (1962) & Indigenous and Popular Thinking (1970).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Rodolfo Kusch",
+        "work": "América profunda",
+        "year": 1962,
+        "url": "https://es.wikipedia.org/wiki/Rodolfo_Kusch"
+      }
+    ]
+  },
+  {
+    "id": "rodolfo-kusch--enrique-dussel",
+    "source": "rodolfo-kusch",
+    "target": "enrique-dussel",
+    "type": "INFLUENCED",
+    "label": "Shaped Dussel’s early Philosophy of Liberation through popular American ontology",
+    "strength": 4,
+    "description": "Kusch’s turn toward Indigenous and popular Latin American symbolic life deeply influenced the Argentine Philosophy of Liberation movement co-founded by Dussel.",
+    "dialecticalTension": "Links ontological critique of Eurocentrism to liberation ethics.",
+    "historicalContext": "Argentine Philosophy of Liberation (1970s).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Eduardo Mendieta",
+        "work": "Philosophy of Liberation",
+        "url": "https://plato.stanford.edu/entries/liberation/"
+      }
+    ]
+  },
+  {
+    "id": "rodolfo-kusch--silvia-rivera-cusicanqui",
+    "source": "rodolfo-kusch",
+    "target": "silvia-rivera-cusicanqui",
+    "type": "INFLUENCED",
+    "label": "Foreshadowed Andean ch’ixi philosophy of contradiction and Indigenous estar",
+    "strength": 4,
+    "description": "Kusch’s philosophical fieldwork in Bolivia and northern Argentina informed later Andean decolonial thinkers exploring non-Western epistemic ambivalence.",
+    "dialecticalTension": "Connects phenomenological fieldwork in the Andes with ch’ixi decoloniality.",
+    "historicalContext": "Andean philosophical continuum (1960s–2010s).",
+    "academicConsensus": "broad-consensus",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Walter Mignolo & Silvia Rivera Cusicanqui",
+        "work": "Indigenous and Popular Thinking in América (Introduction)",
+        "year": 2010,
+        "url": "https://es.wikipedia.org/wiki/Rodolfo_Kusch"
+      }
+    ]
+  }
+]

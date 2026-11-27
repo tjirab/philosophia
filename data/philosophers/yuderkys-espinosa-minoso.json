@@ -1,0 +1,33 @@
+{
+  "id": "yuderkys-espinosa-minoso",
+  "name": "Yuderkys Espinosa Miñoso",
+  "birthYear": 1967,
+  "eraId": "contemporary",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Afro-Dominican decolonial feminist philosopher and co-founder of GLEFAS who critiqued the \"coloniality of feminist reason\" for universalizing white bourgeois subjectivity.",
+  "centralQuestion": "Why does hegemonic feminism reproduce colonial racism when it treats gender as separable from racialization and capitalist modernity?",
+  "keyWorks": [
+    {
+      "title": "De por qué es necesario un feminismo descolonial",
+      "year": "2022 CE",
+      "url": "https://es.wikipedia.org/wiki/Yuderkys_Espinosa_Mi%C3%B1oso",
+      "wikipediaUrl": "https://es.wikipedia.org/wiki/Yuderkys_Espinosa_Mi%C3%B1oso",
+      "description": "Systematic critique of Eurocentric feminist epistemology and articulation of anti-racist decolonial feminism."
+    }
+  ],
+  "sepSlug": "feminism-latin-america",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-latin-america/",
+    "wikipedia": "https://es.wikipedia.org/wiki/Yuderkys_Espinosa_Mi%C3%B1oso"
+  },
+  "imageUrl": "/portraits/yuderkys-espinosa-minoso.jpg"
+}

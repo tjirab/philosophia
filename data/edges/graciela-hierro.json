@@ -1,0 +1,44 @@
+[
+  {
+    "id": "simone-de-beauvoir--graciela-hierro",
+    "source": "simone-de-beauvoir",
+    "target": "graciela-hierro",
+    "type": "DEVELOPED",
+    "label": "Adapted Beauvoirian autonomy into a Mexican feminist ethics of pleasure",
+    "strength": 4,
+    "description": "Building on existentialist freedom, Hierro rejected self-sacrificial Catholic-patriarchal morality to propose an ethics centered on female autonomy and embodied joy.",
+    "dialecticalTension": "Transforms existential freedom into Latin American feminist moral philosophy.",
+    "historicalContext": "Ética y feminismo (1985) & La ética del placer (2001).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Graciela Hierro",
+        "work": "Ética y feminismo",
+        "year": 1985,
+        "url": "https://es.wikipedia.org/wiki/Graciela_Hierro"
+      }
+    ]
+  },
+  {
+    "id": "graciela-hierro--francesca-gargallo",
+    "source": "graciela-hierro",
+    "target": "francesca-gargallo",
+    "type": "INFLUENCED",
+    "label": "Institutionalized Mexican feminist philosophy supporting Gargallo’s generation",
+    "strength": 4,
+    "description": "By founding the Asociación Filosófica Feminista de México and UNAM’s PUEG, Hierro created the scholarly space in which Gargallo chronicled Latin American feminist ideas.",
+    "dialecticalTension": "Institutional bridge from Mexican feminist ethics to Abya Yala feminist history.",
+    "historicalContext": "UNAM Mexico City (1978–2003).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Francesca Gargallo",
+        "work": "Las ideas feministas latinoamericanas",
+        "year": 2004,
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

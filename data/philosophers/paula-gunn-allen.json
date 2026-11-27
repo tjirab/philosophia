@@ -1,0 +1,33 @@
+{
+  "id": "paula-gunn-allen",
+  "name": "Paula Gunn Allen",
+  "birthYear": 1939,
+  "deathYear": 2008,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Laguna Pueblo–Sioux philosopher and literary theorist whose The Sacred Hoop recovered gynocratic Indigenous cosmologies and non-hierarchical relational metaphysics.",
+  "centralQuestion": "How do gynocratic Indigenous traditions challenge Western patriarchal binaries of spirit versus matter and human versus nature?",
+  "keyWorks": [
+    {
+      "title": "The Sacred Hoop: Recovering the Feminine in American Indian Traditions",
+      "year": "1986 CE",
+      "url": "https://en.wikipedia.org/wiki/Paula_Gunn_Allen",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Paula_Gunn_Allen",
+      "description": "Foundational text of Native American feminist philosophy exploring Pueblo gynocratic cosmology and sacred relationality."
+    }
+  ],
+  "sepSlug": "feminism-race",
+  "canonTier": "bridge",
+  "importanceScore": 86,
+  "gender": "woman",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/feminism-race/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Paula_Gunn_Allen"
+  },
+  "imageUrl": "/portraits/paula-gunn-allen.jpg"
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "funmilayo-ransome-kuti--molara-ogundipe",
+    "source": "funmilayo-ransome-kuti",
+    "target": "molara-ogundipe",
+    "type": "DEVELOPED",
+    "label": "Theorized Nigerian women’s anti-colonial mobilization into Stiwanism",
+    "strength": 5,
+    "description": "Inheriting Ransome-Kuti’s Abeokuta grassroots women’s struggle, Ogundipe articulated Stiwanism to anchor African feminism in collective social transformation.",
+    "dialecticalTension": "Translates Nigerian anti-colonial women’s praxis into systematic African feminist theory.",
+    "historicalContext": "Post-independence Nigerian feminist theory (1980s–1994).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Molara Ogundipe",
+        "work": "Re-Creating Ourselves: African Women & Critical Transformations",
+        "year": 1994,
+        "url": "https://en.wikipedia.org/wiki/Molara_Ogundipe"
+      }
+    ]
+  },
+  {
+    "id": "simone-de-beauvoir--molara-ogundipe",
+    "source": "simone-de-beauvoir",
+    "target": "molara-ogundipe",
+    "type": "CRITIQUED",
+    "label": "Critiqued Western individualistic feminism for ignoring colonial class and kinship realities",
+    "strength": 4,
+    "description": "While engaging global feminist theory, Ogundipe rejected Euro-American models that isolate gender from neocolonialism, race, and communal African sociality.",
+    "dialecticalTension": "Replaces Western individualist emancipation with Social Transformation Including Women in Africa.",
+    "historicalContext": "Re-Creating Ourselves (1994).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Molara Ogundipe",
+        "work": "Re-Creating Ourselves",
+        "year": 1994,
+        "url": "https://en.wikipedia.org/wiki/Molara_Ogundipe"
+      }
+    ]
+  },
+  {
+    "id": "molara-ogundipe--stiwanism",
+    "source": "molara-ogundipe",
+    "target": "stiwanism",
+    "type": "DEVELOPED",
+    "label": "Formulated Stiwanism as endogenous African feminist framework",
+    "strength": 5,
+    "description": "Ogundipe coined STIWA (Social Transformation Including Women in Africa) to center African women’s structural empowerment alongside men against neocolonial inequities.",
+    "dialecticalTension": "Synthesizes gender equity with anti-imperial communal transformation.",
+    "historicalContext": "Coined in 1994.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Molara Ogundipe",
+        "work": "Re-Creating Ourselves: African Women & Critical Transformations",
+        "year": 1994,
+        "url": "https://en.wikipedia.org/wiki/Molara_Ogundipe"
+      }
+    ]
+  }
+]

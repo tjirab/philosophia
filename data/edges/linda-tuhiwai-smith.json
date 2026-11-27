@@ -1,0 +1,107 @@
+[
+  {
+    "id": "michel-foucault--linda-tuhiwai-smith",
+    "source": "michel-foucault",
+    "target": "linda-tuhiwai-smith",
+    "type": "CRITIQUED",
+    "label": "Interrogated Western regimes of truth from Māori epistemic sovereignty",
+    "strength": 4,
+    "description": "Engaging post-structural critiques of power/knowledge, Smith showed that Western research itself remains an imperial technology unless governed by Kaupapa Māori ethics.",
+    "dialecticalTension": "Replaces Eurocentric critique of power with Indigenous methodological self-determination.",
+    "historicalContext": "Decolonizing Methodologies (1999).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Linda Tuhiwai Smith",
+        "work": "Decolonizing Methodologies",
+        "year": 1999,
+        "url": "https://en.wikipedia.org/wiki/Linda_Tuhiwai_Smith"
+      }
+    ]
+  },
+  {
+    "id": "vine-deloria-jr--linda-tuhiwai-smith",
+    "source": "vine-deloria-jr",
+    "target": "linda-tuhiwai-smith",
+    "type": "DEVELOPED",
+    "label": "Systematized critique of colonial anthropology into Kaupapa Māori methodology",
+    "strength": 5,
+    "description": "Building on Deloria’s indictment of extractive academic research, Smith developed a comprehensive international philosophy of Indigenous research sovereignty.",
+    "dialecticalTension": "Transforms anti-anthropological critique into positive Indigenous philosophy of science.",
+    "historicalContext": "Decolonizing Methodologies (1999).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Linda Tuhiwai Smith",
+        "work": "Decolonizing Methodologies",
+        "year": 1999,
+        "url": "https://en.wikipedia.org/wiki/Linda_Tuhiwai_Smith"
+      }
+    ]
+  },
+  {
+    "id": "linda-tuhiwai-smith--decolonizing-methodologies",
+    "source": "linda-tuhiwai-smith",
+    "target": "decolonizing-methodologies",
+    "type": "DEVELOPED",
+    "label": "Founded Decolonizing Methodologies paradigm",
+    "strength": 5,
+    "description": "Smith codified 25 Indigenous research practices—claiming, storytelling, indigenizing, reframing—that treat research as ethical kinship with colonized communities.",
+    "dialecticalTension": "Redefines objectivity around relational accountability rather than colonial detachment.",
+    "historicalContext": "Published 1999.",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Linda Tuhiwai Smith",
+        "work": "Decolonizing Methodologies",
+        "year": 1999,
+        "url": "https://en.wikipedia.org/wiki/Linda_Tuhiwai_Smith"
+      }
+    ]
+  },
+  {
+    "id": "linda-tuhiwai-smith--kim-tallbear",
+    "source": "linda-tuhiwai-smith",
+    "target": "kim-tallbear",
+    "type": "INFLUENCED",
+    "label": "Provided methodological blueprint for TallBear’s Indigenous STS critique",
+    "strength": 5,
+    "description": "Kim TallBear directly draws on Smith’s Decolonizing Methodologies to study settler genetic science \"from standing with\" Indigenous communities.",
+    "dialecticalTension": "Bridges Kaupapa Māori epistemology and North American Indigenous STS.",
+    "historicalContext": "Native American DNA (2013).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Kim TallBear",
+        "work": "Native American DNA",
+        "year": 2013,
+        "url": "https://en.wikipedia.org/wiki/Kim_TallBear"
+      }
+    ]
+  },
+  {
+    "id": "linda-tuhiwai-smith--leanne-betasamosake-simpson",
+    "source": "linda-tuhiwai-smith",
+    "target": "leanne-betasamosake-simpson",
+    "type": "INFLUENCED",
+    "label": "Informed Nishnaabeg epistemic resurgence and community-grounded inquiry",
+    "strength": 4,
+    "description": "Simpson extends Smith’s call to center Indigenous intelligence systems outside colonial academic extraction.",
+    "dialecticalTension": "Connects Māori methodological sovereignty with Nishnaabeg grounded normativity.",
+    "historicalContext": "As We Have Always Done (2017).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "secondary",
+        "author": "Leanne Betasamosake Simpson",
+        "work": "As We Have Always Done",
+        "year": 2017,
+        "url": "https://en.wikipedia.org/wiki/Leanne_Betasamosake_Simpson"
+      }
+    ]
+  }
+]

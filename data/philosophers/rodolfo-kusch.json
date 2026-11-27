@@ -1,0 +1,40 @@
+{
+  "id": "rodolfo-kusch",
+  "name": "Rodolfo Kusch",
+  "birthYear": 1922,
+  "deathYear": 1979,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Argentine philosopher and anthropologist of América profunda who contrasted European ontology of mastery (ser) with Indigenous and popular American grounded dwelling (estar).",
+  "centralQuestion": "What happens to ontology when we begin not from European \"being someone\" (ser), but from Indigenous American \"being-here in the cosmos\" (estar)?",
+  "keyWorks": [
+    {
+      "title": "América profunda",
+      "year": "1962 CE",
+      "url": "https://es.wikipedia.org/wiki/Rodolfo_Kusch",
+      "wikipediaUrl": "https://es.wikipedia.org/wiki/Rodolfo_Kusch",
+      "description": "Contrasts Western technological ser with Andean Indigenous estar as foundational polarity of American thought."
+    },
+    {
+      "title": "Indigenous and Popular Thinking in América",
+      "year": "1970 CE",
+      "url": "https://es.wikipedia.org/wiki/Rodolfo_Kusch",
+      "wikipediaUrl": "https://es.wikipedia.org/wiki/Rodolfo_Kusch",
+      "description": "Phenomenological investigation of Quechua-Aymara symbolic reason and popular Latin American philosophy."
+    }
+  ],
+  "sepSlug": "latin-american-philosophy",
+  "canonTier": "bridge",
+  "importanceScore": 87,
+  "gender": "man",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/latin-american-philosophy/",
+    "wikipedia": "https://es.wikipedia.org/wiki/Rodolfo_Kusch"
+  },
+  "imageUrl": "/portraits/rodolfo-kusch.jpg"
+}

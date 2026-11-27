@@ -1,0 +1,34 @@
+{
+  "id": "jose-carlos-mariategui",
+  "name": "José Carlos Mariátegui",
+  "birthYear": 1894,
+  "deathYear": 1930,
+  "eraId": "twentieth-century",
+  "traditionId": "latin-american-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Peruvian Marxist philosopher (\"El Amauta\") who rejected Eurocentric historical determinism to root Indo-American socialism in Andean Indigenous communalism (the ayllu).",
+  "centralQuestion": "How must historical materialism be transformed in the Andes when Indigenous communal land tenure, rather than European industrialism, anchors liberation?",
+  "keyWorks": [
+    {
+      "title": "Seven Interpretive Essays on Peruvian Reality",
+      "year": "1928 CE",
+      "url": "https://en.wikipedia.org/wiki/Seven_Interpretive_Essays_on_Peruvian_Reality",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Seven_Interpretive_Essays_on_Peruvian_Reality",
+      "description": "Foundational Latin American Marxist synthesis connecting the Indigenous land question, colonial feudalism, and Indo-American socialism."
+    }
+  ],
+  "sepSlug": "latin-american-philosophy",
+  "canonTier": "pillar",
+  "importanceScore": 91,
+  "gender": "man",
+  "culturalSphere": "latin-american",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/latin-american-philosophy/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Jos%C3%A9_Carlos_Mari%C3%A1tegui"
+  },
+  "imageUrl": "/portraits/jose-carlos-mariategui.jpg"
+}

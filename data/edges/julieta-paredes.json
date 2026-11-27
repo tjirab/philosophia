@@ -1,0 +1,43 @@
+[
+  {
+    "id": "silvia-rivera-cusicanqui--julieta-paredes",
+    "source": "silvia-rivera-cusicanqui",
+    "target": "julieta-paredes",
+    "type": "DEVELOPED",
+    "label": "Expanded Aymara-Bolivian decolonial critique into community feminism",
+    "strength": 4,
+    "description": "Sharing La Paz’s insurgent Aymara intellectual milieu with Rivera Cusicanqui, Paredes developed feminismo comunitario to confront both colonial racism and internal Indigenous patriarchy.",
+    "dialecticalTension": "Articulates body-territory politics against dual colonial and ancestral patriarchies.",
+    "historicalContext": "Mujeres Creando & Comunidad Mujeres Creando Comunidad (1992–2010).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "primary",
+        "author": "Julieta Paredes",
+        "work": "Hilando fino desde el feminismo comunitario",
+        "year": 2010,
+        "url": "https://en.wikipedia.org/wiki/Julieta_Paredes"
+      }
+    ]
+  },
+  {
+    "id": "maria-lugones--julieta-paredes",
+    "source": "maria-lugones",
+    "target": "julieta-paredes",
+    "type": "SYNTHESIZED",
+    "label": "Paired coloniality of gender critique with Aymara entronque patriarcal",
+    "strength": 4,
+    "description": "While engaging Lugones’s decoloniality of gender, Paredes stressed that precolonial communities also held patriarchal hierarchies that fused (entronque) with European colonialism.",
+    "dialecticalTension": "Refines decolonial feminism against romanticized precolonial innocence.",
+    "historicalContext": "Hilando fino (2010).",
+    "academicConsensus": "unanimous",
+    "citations": [
+      {
+        "citationType": "sep",
+        "author": "Roque, Lugones & Schutte",
+        "work": "Feminist Philosophy in Latin America",
+        "url": "https://plato.stanford.edu/entries/feminism-latin-america/"
+      }
+    ]
+  }
+]

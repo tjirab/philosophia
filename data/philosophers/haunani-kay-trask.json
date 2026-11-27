@@ -1,0 +1,34 @@
+{
+  "id": "haunani-kay-trask",
+  "name": "Haunani-Kay Trask",
+  "birthYear": 1949,
+  "deathYear": 2021,
+  "eraId": "contemporary",
+  "traditionId": "indigenous-philosophy",
+  "domains": [
+    "philosophy",
+    "sociology"
+  ],
+  "primaryDomain": "philosophy",
+  "shortBio": "Kanaka Maoli (Native Hawaiian) political philosopher and sovereignty theorist who exposed U.S. settler colonialism, corporate tourism, and Western feminist universalism in the Pacific.",
+  "centralQuestion": "Why does genuine Hawaiian sovereignty demand rejecting settler-state multiculturalism and restoring Kanaka Maoli genealogical kinship with land (āina)?",
+  "keyWorks": [
+    {
+      "title": "From a Native Daughter: Colonialism and Sovereignty in Hawaiʻi",
+      "year": "1993 CE",
+      "url": "https://en.wikipedia.org/wiki/Haunani-Kay_Trask",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Haunani-Kay_Trask",
+      "description": "Incisive anti-colonial philosophy dismantling settler historiography, anthropological extraction, and militarized tourism."
+    }
+  ],
+  "sepSlug": "sovereignty",
+  "canonTier": "pillar",
+  "importanceScore": 89,
+  "gender": "woman",
+  "culturalSphere": "indigenous",
+  "externalRefs": {
+    "sep": "https://plato.stanford.edu/entries/sovereignty/",
+    "wikipedia": "https://en.wikipedia.org/wiki/Haunani-Kay_Trask"
+  },
+  "imageUrl": "/portraits/haunani-kay-trask.jpg"
+}
