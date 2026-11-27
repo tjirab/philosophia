@@ -25,5 +25,7 @@
   ],
   "sepSlug": "philosophy-mexico",
   "importanceScore": 89,
-  "imageUrl": "/portraits/nezahualcoyotl.jpg"
+  "imageUrl": "/portraits/nezahualcoyotl.jpg",
+  "gender": "man",
+  "culturalSphere": "indigenous"
 }

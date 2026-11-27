@@ -27,5 +27,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 89,
-  "imageUrl": "/portraits/elisabeth-of-bohemia.jpg"
+  "imageUrl": "/portraits/elisabeth-of-bohemia.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

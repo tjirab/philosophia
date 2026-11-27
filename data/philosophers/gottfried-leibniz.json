@@ -33,5 +33,7 @@
   ],
   "sepSlug": "leibniz",
   "importanceScore": 91,
-  "imageUrl": "/portraits/gottfried-leibniz.jpg"
+  "imageUrl": "/portraits/gottfried-leibniz.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

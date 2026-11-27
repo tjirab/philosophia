@@ -33,5 +33,7 @@
     "wikipedia": "Talcott_Parsons"
   },
   "importanceScore": 90,
-  "imageUrl": "/portraits/talcott-parsons.jpg"
+  "imageUrl": "/portraits/talcott-parsons.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

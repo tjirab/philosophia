@@ -40,5 +40,7 @@
     "wikipedia": "Noam_Chomsky"
   },
   "importanceScore": 96,
-  "imageUrl": "/portraits/noam-chomsky.jpg"
+  "imageUrl": "/portraits/noam-chomsky.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

@@ -32,5 +32,7 @@
   ],
   "sepSlug": "baudrillard",
   "importanceScore": 90,
-  "imageUrl": "/portraits/jean-baudrillard.jpg"
+  "imageUrl": "/portraits/jean-baudrillard.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

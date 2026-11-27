@@ -39,5 +39,7 @@
     "wikipedia": "Anna_Freud"
   },
   "importanceScore": 93,
-  "imageUrl": "/portraits/anna-freud.jpg"
+  "imageUrl": "/portraits/anna-freud.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

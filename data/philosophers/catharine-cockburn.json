@@ -25,5 +25,7 @@
   ],
   "sepSlug": "cockburn",
   "importanceScore": 85,
-  "imageUrl": "/portraits/catharine-cockburn.jpg"
+  "imageUrl": "/portraits/catharine-cockburn.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

@@ -26,5 +26,7 @@
   ],
   "sepSlug": "heidegger",
   "importanceScore": 96,
-  "imageUrl": "/portraits/martin-heidegger.jpg"
+  "imageUrl": "/portraits/martin-heidegger.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

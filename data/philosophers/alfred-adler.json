@@ -39,5 +39,7 @@
     "wikipedia": "Alfred_Adler"
   },
   "importanceScore": 94,
-  "imageUrl": "/portraits/alfred-adler.jpg"
+  "imageUrl": "/portraits/alfred-adler.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

@@ -39,5 +39,7 @@
     "wikipedia": "Juliet_Mitchell"
   },
   "importanceScore": 90,
-  "imageUrl": "/portraits/juliet-mitchell.jpg"
+  "imageUrl": "/portraits/juliet-mitchell.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

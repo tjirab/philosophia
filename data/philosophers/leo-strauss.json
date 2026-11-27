@@ -39,5 +39,7 @@
   ],
   "sepSlug": "strauss-leo",
   "importanceScore": 91,
-  "imageUrl": "/portraits/leo-strauss.jpg"
+  "imageUrl": "/portraits/leo-strauss.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

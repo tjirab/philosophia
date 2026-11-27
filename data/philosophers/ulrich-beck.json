@@ -33,5 +33,7 @@
     "wikipedia": "Ulrich_Beck"
   },
   "importanceScore": 90,
-  "imageUrl": "/portraits/ulrich-beck.jpg"
+  "imageUrl": "/portraits/ulrich-beck.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

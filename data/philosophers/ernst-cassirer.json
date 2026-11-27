@@ -39,5 +39,7 @@
   ],
   "sepSlug": "cassirer",
   "importanceScore": 91,
-  "imageUrl": "/portraits/ernst-cassirer.jpg"
+  "imageUrl": "/portraits/ernst-cassirer.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

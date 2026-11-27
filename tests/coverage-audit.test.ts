@@ -57,6 +57,9 @@ describe('Philosophia Canon Coverage & Audit Engine', () => {
     expect(report.domains.philosophy).toBeGreaterThan(100);
     expect(report.domains.psychology).toBeGreaterThan(20);
     expect(report.domains.sociology).toBeGreaterThan(25);
+    expect(report.diversity.passed).toBe(true);
+    expect(report.diversity.policy.targetWomenPct).toBe(40);
+    expect(report.diversity.policy.targetNonWesternPct).toBe(50);
   });
 
   it('generates a concise, high-level PR summary without emojis', () => {

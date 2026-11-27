@@ -51,5 +51,7 @@
   ],
   "sepSlug": "plato",
   "importanceScore": 100,
-  "imageUrl": "/portraits/plato.jpg"
+  "imageUrl": "/portraits/plato.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

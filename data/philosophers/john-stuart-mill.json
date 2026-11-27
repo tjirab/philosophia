@@ -33,5 +33,7 @@
   ],
   "sepSlug": "mill",
   "importanceScore": 92,
-  "imageUrl": "/portraits/john-stuart-mill.jpg"
+  "imageUrl": "/portraits/john-stuart-mill.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

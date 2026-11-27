@@ -27,5 +27,7 @@
   ],
   "sepSlug": "locke",
   "importanceScore": 96,
-  "imageUrl": "/portraits/john-locke.jpg"
+  "imageUrl": "/portraits/john-locke.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

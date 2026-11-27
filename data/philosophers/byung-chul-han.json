@@ -32,5 +32,7 @@
   ],
   "sepSlug": "culture-cogsci",
   "importanceScore": 86,
-  "imageUrl": "/portraits/byung-chul-han.jpg"
+  "imageUrl": "/portraits/byung-chul-han.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

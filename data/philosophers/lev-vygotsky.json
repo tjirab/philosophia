@@ -34,5 +34,7 @@
     "wikipedia": "Lev_Vygotsky"
   },
   "importanceScore": 90,
-  "imageUrl": "/portraits/lev-vygotsky.jpg"
+  "imageUrl": "/portraits/lev-vygotsky.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

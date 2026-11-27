@@ -18,5 +18,7 @@
   ],
   "sepSlug": "levinas",
   "importanceScore": 91,
-  "imageUrl": "/portraits/emmanuel-levinas.jpg"
+  "imageUrl": "/portraits/emmanuel-levinas.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

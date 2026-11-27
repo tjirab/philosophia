@@ -34,5 +34,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 90,
-  "imageUrl": "/portraits/christine-de-pizan.jpg"
+  "imageUrl": "/portraits/christine-de-pizan.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

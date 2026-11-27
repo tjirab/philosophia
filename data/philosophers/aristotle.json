@@ -51,5 +51,7 @@
   ],
   "sepSlug": "aristotle",
   "importanceScore": 100,
-  "imageUrl": "/portraits/aristotle.jpg"
+  "imageUrl": "/portraits/aristotle.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

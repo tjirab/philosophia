@@ -31,6 +31,16 @@ describe('Philosophy Graph Data Integrity', () => {
       }
       expect(p.imageUrl, `Philosopher ${p.id} is missing imageUrl`).toBeDefined();
       expect(p.imageUrl).toMatch(/^\/portraits\/[a-z0-9-]+\.jpg$/);
+      expect(['woman', 'man', 'non-binary']).toContain((p as any).gender);
+      expect([
+        'western',
+        'east-asian',
+        'south-asian',
+        'mena',
+        'african',
+        'latin-american',
+        'indigenous',
+      ]).toContain((p as any).culturalSphere);
     }
   });
 

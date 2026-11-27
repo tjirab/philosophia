@@ -18,5 +18,7 @@
   ],
   "sepSlug": "heraclitus",
   "importanceScore": 75,
-  "imageUrl": "/portraits/heraclitus.jpg"
+  "imageUrl": "/portraits/heraclitus.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

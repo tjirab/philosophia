@@ -35,5 +35,7 @@
   ],
   "sepSlug": "seneca",
   "importanceScore": 85,
-  "imageUrl": "/portraits/seneca.jpg"
+  "imageUrl": "/portraits/seneca.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

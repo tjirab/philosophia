@@ -33,5 +33,7 @@
     "wikipedia": "John_B._Watson"
   },
   "importanceScore": 88,
-  "imageUrl": "/portraits/john-b-watson.jpg"
+  "imageUrl": "/portraits/john-b-watson.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

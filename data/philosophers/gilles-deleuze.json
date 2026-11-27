@@ -32,5 +32,7 @@
   ],
   "sepSlug": "deleuze",
   "importanceScore": 91,
-  "imageUrl": "/portraits/gilles-deleuze.jpg"
+  "imageUrl": "/portraits/gilles-deleuze.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

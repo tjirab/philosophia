@@ -25,5 +25,7 @@
   ],
   "sepSlug": "astell",
   "importanceScore": 89,
-  "imageUrl": "/portraits/mary-astell.jpg"
+  "imageUrl": "/portraits/mary-astell.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

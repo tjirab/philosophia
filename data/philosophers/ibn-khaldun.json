@@ -35,5 +35,7 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Ibn_Khaldun"
   },
   "importanceScore": 91,
-  "imageUrl": "/portraits/ibn-khaldun.jpg"
+  "imageUrl": "/portraits/ibn-khaldun.jpg",
+  "gender": "man",
+  "culturalSphere": "mena"
 }

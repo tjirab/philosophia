@@ -319,6 +319,17 @@ export interface ExternalReferences {
   wikipedia?: string;
 }
 
+export type ThinkerGender = 'woman' | 'man' | 'non-binary';
+
+export type CulturalSphere =
+  | 'western'
+  | 'east-asian'
+  | 'south-asian'
+  | 'mena'
+  | 'african'
+  | 'latin-american'
+  | 'indigenous';
+
 export interface Philosopher {
   id: string;
   name: string;
@@ -328,6 +339,8 @@ export interface Philosopher {
   traditionId: string;
   domains?: DomainId[];
   primaryDomain?: DomainId;
+  gender?: ThinkerGender;
+  culturalSphere?: CulturalSphere;
   shortBio: string;
   centralQuestion: string;
   keyWorks: (string | KeyWork)[];

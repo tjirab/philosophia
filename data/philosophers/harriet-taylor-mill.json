@@ -34,5 +34,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 90,
-  "imageUrl": "/portraits/harriet-taylor-mill.jpg"
+  "imageUrl": "/portraits/harriet-taylor-mill.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

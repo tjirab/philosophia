@@ -25,5 +25,7 @@
   ],
   "sepSlug": "ludwig-feuerbach",
   "importanceScore": 91,
-  "imageUrl": "/portraits/ludwig-feuerbach.jpg"
+  "imageUrl": "/portraits/ludwig-feuerbach.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

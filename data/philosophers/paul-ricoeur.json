@@ -41,5 +41,7 @@
     "wikipedia": "Paul_Ricoeur"
   },
   "importanceScore": 94,
-  "imageUrl": "/portraits/paul-ricoeur.jpg"
+  "imageUrl": "/portraits/paul-ricoeur.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

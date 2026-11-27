@@ -32,5 +32,7 @@
     "wikipedia": "Anthony_Giddens"
   },
   "importanceScore": 89,
-  "imageUrl": "/portraits/anthony-giddens.jpg"
+  "imageUrl": "/portraits/anthony-giddens.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

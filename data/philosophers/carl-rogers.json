@@ -33,5 +33,7 @@
     "wikipedia": "Carl_Rogers"
   },
   "importanceScore": 89,
-  "imageUrl": "/portraits/carl-rogers.jpg"
+  "imageUrl": "/portraits/carl-rogers.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

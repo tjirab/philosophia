@@ -32,5 +32,7 @@
   ],
   "sepSlug": "civil-rights",
   "importanceScore": 90,
-  "imageUrl": "/portraits/vine-deloria-jr.jpg"
+  "imageUrl": "/portraits/vine-deloria-jr.jpg",
+  "gender": "man",
+  "culturalSphere": "indigenous"
 }

@@ -36,5 +36,7 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Frantz_Fanon"
   },
   "importanceScore": 90,
-  "imageUrl": "/portraits/frantz-fanon.jpg"
+  "imageUrl": "/portraits/frantz-fanon.jpg",
+  "gender": "man",
+  "culturalSphere": "african"
 }

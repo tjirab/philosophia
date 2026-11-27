@@ -25,5 +25,7 @@
   ],
   "sepSlug": "boethius",
   "importanceScore": 92,
-  "imageUrl": "/portraits/boethius.jpg"
+  "imageUrl": "/portraits/boethius.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

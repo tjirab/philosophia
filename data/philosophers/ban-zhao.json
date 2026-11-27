@@ -34,5 +34,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 88,
-  "imageUrl": "/portraits/ban-zhao.jpg"
+  "imageUrl": "/portraits/ban-zhao.jpg",
+  "gender": "woman",
+  "culturalSphere": "east-asian"
 }

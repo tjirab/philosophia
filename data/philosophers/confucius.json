@@ -18,5 +18,7 @@
   ],
   "sepSlug": "confucius",
   "importanceScore": 97,
-  "imageUrl": "/portraits/confucius.jpg"
+  "imageUrl": "/portraits/confucius.jpg",
+  "gender": "man",
+  "culturalSphere": "east-asian"
 }

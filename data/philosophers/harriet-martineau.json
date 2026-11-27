@@ -35,5 +35,7 @@
   },
   "canonTier": "pillar",
   "importanceScore": 93,
-  "imageUrl": "/portraits/harriet-martineau.jpg"
+  "imageUrl": "/portraits/harriet-martineau.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

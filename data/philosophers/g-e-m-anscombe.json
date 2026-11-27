@@ -35,5 +35,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 89,
-  "imageUrl": "/portraits/g-e-m-anscombe.jpg"
+  "imageUrl": "/portraits/g-e-m-anscombe.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

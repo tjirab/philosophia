@@ -34,5 +34,7 @@
     "wikipedia": "Zygmunt_Bauman"
   },
   "importanceScore": 91,
-  "imageUrl": "/portraits/zygmunt-bauman.jpg"
+  "imageUrl": "/portraits/zygmunt-bauman.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

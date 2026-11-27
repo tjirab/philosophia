@@ -36,5 +36,7 @@
     "philosophy",
     "sociology"
   ],
-  "primaryDomain": "philosophy"
+  "primaryDomain": "philosophy",
+  "gender": "man",
+  "culturalSphere": "african"
 }

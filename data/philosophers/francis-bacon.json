@@ -25,5 +25,7 @@
   ],
   "sepSlug": "francis-bacon",
   "importanceScore": 82,
-  "imageUrl": "/portraits/francis-bacon.jpg"
+  "imageUrl": "/portraits/francis-bacon.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

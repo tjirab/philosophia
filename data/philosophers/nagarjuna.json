@@ -25,5 +25,7 @@
   ],
   "sepSlug": "nagarjuna",
   "importanceScore": 90,
-  "imageUrl": "/portraits/nagarjuna.jpg"
+  "imageUrl": "/portraits/nagarjuna.jpg",
+  "gender": "man",
+  "culturalSphere": "south-asian"
 }

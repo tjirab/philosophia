@@ -25,5 +25,7 @@
   ],
   "sepSlug": "emilie-du-chatelet",
   "importanceScore": 90,
-  "imageUrl": "/portraits/emilie-du-chatelet.jpg"
+  "imageUrl": "/portraits/emilie-du-chatelet.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

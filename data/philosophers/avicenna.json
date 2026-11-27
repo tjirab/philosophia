@@ -25,5 +25,7 @@
   ],
   "sepSlug": "ibn-sina",
   "importanceScore": 89,
-  "imageUrl": "/portraits/avicenna.jpg"
+  "imageUrl": "/portraits/avicenna.jpg",
+  "gender": "man",
+  "culturalSphere": "mena"
 }

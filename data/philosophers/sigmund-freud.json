@@ -40,5 +40,7 @@
     "wikipedia": "Sigmund_Freud"
   },
   "importanceScore": 98,
-  "imageUrl": "/portraits/sigmund-freud.jpg"
+  "imageUrl": "/portraits/sigmund-freud.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

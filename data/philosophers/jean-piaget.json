@@ -34,5 +34,7 @@
     "wikipedia": "Jean_Piaget"
   },
   "importanceScore": 93,
-  "imageUrl": "/portraits/jean-piaget.jpg"
+  "imageUrl": "/portraits/jean-piaget.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

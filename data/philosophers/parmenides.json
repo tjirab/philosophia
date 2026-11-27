@@ -18,5 +18,7 @@
   ],
   "sepSlug": "parmenides",
   "importanceScore": 80,
-  "imageUrl": "/portraits/parmenides.jpg"
+  "imageUrl": "/portraits/parmenides.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

@@ -25,5 +25,7 @@
   ],
   "sepSlug": "ibn-rushd",
   "importanceScore": 87,
-  "imageUrl": "/portraits/averroes.jpg"
+  "imageUrl": "/portraits/averroes.jpg",
+  "gender": "man",
+  "culturalSphere": "mena"
 }

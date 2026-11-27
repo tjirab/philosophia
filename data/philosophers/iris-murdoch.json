@@ -34,5 +34,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 90,
-  "imageUrl": "/portraits/iris-murdoch.jpg"
+  "imageUrl": "/portraits/iris-murdoch.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

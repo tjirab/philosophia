@@ -25,5 +25,7 @@
   ],
   "sepSlug": "al-kindi",
   "importanceScore": 88,
-  "imageUrl": "/portraits/al-kindi.jpg"
+  "imageUrl": "/portraits/al-kindi.jpg",
+  "gender": "man",
+  "culturalSphere": "mena"
 }

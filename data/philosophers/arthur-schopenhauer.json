@@ -26,5 +26,7 @@
   ],
   "sepSlug": "schopenhauer",
   "importanceScore": 95,
-  "imageUrl": "/portraits/arthur-schopenhauer.jpg"
+  "imageUrl": "/portraits/arthur-schopenhauer.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

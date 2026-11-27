@@ -18,5 +18,7 @@
   ],
   "sepSlug": "pascal",
   "importanceScore": 93,
-  "imageUrl": "/portraits/blaise-pascal.jpg"
+  "imageUrl": "/portraits/blaise-pascal.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

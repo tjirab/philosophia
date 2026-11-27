@@ -41,5 +41,7 @@
     "wikipedia": "Erving_Goffman"
   },
   "importanceScore": 94,
-  "imageUrl": "/portraits/erving-goffman.jpg"
+  "imageUrl": "/portraits/erving-goffman.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

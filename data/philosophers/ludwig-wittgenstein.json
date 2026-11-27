@@ -27,5 +27,7 @@
   ],
   "sepSlug": "wittgenstein",
   "importanceScore": 99,
-  "imageUrl": "/portraits/ludwig-wittgenstein.jpg"
+  "imageUrl": "/portraits/ludwig-wittgenstein.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

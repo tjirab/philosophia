@@ -27,5 +27,7 @@
   ],
   "sepSlug": "descartes",
   "importanceScore": 99,
-  "imageUrl": "/portraits/rene-descartes.jpg"
+  "imageUrl": "/portraits/rene-descartes.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

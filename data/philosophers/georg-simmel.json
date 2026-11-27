@@ -34,5 +34,7 @@
     "wikipedia": "Georg_Simmel"
   },
   "importanceScore": 91,
-  "imageUrl": "/portraits/georg-simmel.jpg"
+  "imageUrl": "/portraits/georg-simmel.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

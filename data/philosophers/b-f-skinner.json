@@ -40,5 +40,7 @@
     "wikipedia": "B._F._Skinner"
   },
   "importanceScore": 94,
-  "imageUrl": "/portraits/b-f-skinner.jpg"
+  "imageUrl": "/portraits/b-f-skinner.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

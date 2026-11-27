@@ -18,5 +18,7 @@
   ],
   "sepSlug": "conway",
   "importanceScore": 87,
-  "imageUrl": "/portraits/anne-conway.jpg"
+  "imageUrl": "/portraits/anne-conway.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

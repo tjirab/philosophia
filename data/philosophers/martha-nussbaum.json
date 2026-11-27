@@ -40,5 +40,7 @@
   },
   "canonTier": "pillar",
   "importanceScore": 92,
-  "imageUrl": "/portraits/martha-nussbaum.jpg"
+  "imageUrl": "/portraits/martha-nussbaum.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

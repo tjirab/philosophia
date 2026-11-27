@@ -41,5 +41,7 @@
   },
   "canonTier": "pillar",
   "importanceScore": 94,
-  "imageUrl": "/portraits/judith-butler.jpg"
+  "imageUrl": "/portraits/judith-butler.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

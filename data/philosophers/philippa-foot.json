@@ -34,5 +34,7 @@
   },
   "canonTier": "bridge",
   "importanceScore": 88,
-  "imageUrl": "/portraits/philippa-foot.jpg"
+  "imageUrl": "/portraits/philippa-foot.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

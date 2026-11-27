@@ -38,5 +38,7 @@
   "sepSlug": "arendt",
   "canonTier": "pillar",
   "importanceScore": 94,
-  "imageUrl": "/portraits/hannah-arendt.jpg"
+  "imageUrl": "/portraits/hannah-arendt.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

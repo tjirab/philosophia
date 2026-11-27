@@ -28,5 +28,7 @@
     "wikipedia": "George_Herbert_Mead"
   },
   "importanceScore": 92,
-  "imageUrl": "/portraits/george-h-mead.jpg"
+  "imageUrl": "/portraits/george-h-mead.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

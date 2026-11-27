@@ -52,6 +52,8 @@ Create `data/philosophers/<id>.json`:
   "deathYear": -322,
   "eraId": "classical-greek",
   "traditionId": "aristotelianism",
+  "gender": "man",
+  "culturalSphere": "western",
   "shortBio": "Concise 1-2 sentence biographical and intellectual summary.",
   "centralQuestion": "Core inquiry phrased as a question?",
   "keyWorks": [
@@ -68,8 +70,10 @@ Create `data/philosophers/<id>.json`:
   "imageUrl": "/portraits/kebab-case-id.jpg"
 }
 ```
-*Valid `eraId`: `pre-socratic`, `classical-greek`, `hellenistic`, `eastern`, `medieval`, `early-modern`, `enlightenment`, `german-idealism`, `nineteenth-century`, `twentieth-century`, `contemporary`.*
-*Valid `traditionId`: Consult `data/traditions.json`.*
+*Valid `eraId`: `pre-socratic`, `classical-greek`, `hellenistic`, `eastern`, `medieval`, `early-modern`, `enlightenment`, `german-idealism`, `nineteenth-century`, `twentieth-century`, `contemporary`.*  
+*Valid `traditionId`: Consult `data/traditions.json`.*  
+*Valid `gender`: `woman`, `man`, `non-binary`.*  
+*Valid `culturalSphere`: `western`, `east-asian`, `south-asian`, `mena`, `african`, `latin-american`, `indigenous`.*
 
 ### B. Concept (`data/concepts/<id>.json`)
 > [!CAUTION]

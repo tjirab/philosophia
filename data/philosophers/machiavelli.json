@@ -26,5 +26,7 @@
   ],
   "sepSlug": "machiavelli",
   "importanceScore": 88,
-  "imageUrl": "/portraits/machiavelli.jpg"
+  "imageUrl": "/portraits/machiavelli.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

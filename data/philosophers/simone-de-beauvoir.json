@@ -32,5 +32,7 @@
   "sepSlug": "beauvoir",
   "canonTier": "pillar",
   "importanceScore": 94,
-  "imageUrl": "/portraits/simone-de-beauvoir.jpg"
+  "imageUrl": "/portraits/simone-de-beauvoir.jpg",
+  "gender": "woman",
+  "culturalSphere": "western"
 }

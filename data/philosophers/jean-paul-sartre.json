@@ -33,5 +33,7 @@
   ],
   "sepSlug": "sartre",
   "importanceScore": 95,
-  "imageUrl": "/portraits/jean-paul-sartre.jpg"
+  "imageUrl": "/portraits/jean-paul-sartre.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

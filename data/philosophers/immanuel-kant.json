@@ -35,5 +35,7 @@
   ],
   "sepSlug": "kant",
   "importanceScore": 100,
-  "imageUrl": "/portraits/immanuel-kant.jpg"
+  "imageUrl": "/portraits/immanuel-kant.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

@@ -18,5 +18,7 @@
   ],
   "sepSlug": "johann-fichte",
   "importanceScore": 91,
-  "imageUrl": "/portraits/johann-gottlieb-fichte.jpg"
+  "imageUrl": "/portraits/johann-gottlieb-fichte.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

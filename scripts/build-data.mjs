@@ -221,6 +221,8 @@ export function buildData() {
       traditionId: p.traditionId,
       domains: p.domains,
       primaryDomain: p.primaryDomain,
+      gender: p.gender,
+      culturalSphere: p.culturalSphere,
       canonTier: p.canonTier,
       importanceScore: p.importanceScore,
       imageUrl: p.imageUrl,

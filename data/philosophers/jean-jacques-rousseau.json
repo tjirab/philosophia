@@ -33,5 +33,7 @@
   ],
   "sepSlug": "rousseau",
   "importanceScore": 93,
-  "imageUrl": "/portraits/jean-jacques-rousseau.jpg"
+  "imageUrl": "/portraits/jean-jacques-rousseau.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

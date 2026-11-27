@@ -34,5 +34,7 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Al-Farabi"
   },
   "importanceScore": 92,
-  "imageUrl": "/portraits/al-farabi.jpg"
+  "imageUrl": "/portraits/al-farabi.jpg",
+  "gender": "man",
+  "culturalSphere": "mena"
 }

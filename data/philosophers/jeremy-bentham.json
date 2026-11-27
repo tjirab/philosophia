@@ -25,5 +25,7 @@
   ],
   "sepSlug": "bentham",
   "importanceScore": 94,
-  "imageUrl": "/portraits/jeremy-bentham.jpg"
+  "imageUrl": "/portraits/jeremy-bentham.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

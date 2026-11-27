@@ -18,5 +18,7 @@
   ],
   "sepSlug": "presocratics",
   "importanceScore": 90,
-  "imageUrl": "/portraits/anaximander.jpg"
+  "imageUrl": "/portraits/anaximander.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

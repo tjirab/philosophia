@@ -33,5 +33,7 @@
   ],
   "sepSlug": "camus",
   "importanceScore": 93,
-  "imageUrl": "/portraits/albert-camus.jpg"
+  "imageUrl": "/portraits/albert-camus.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

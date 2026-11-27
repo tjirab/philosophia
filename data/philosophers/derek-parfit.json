@@ -25,5 +25,7 @@
   ],
   "sepSlug": "parfit",
   "importanceScore": 90,
-  "imageUrl": "/portraits/derek-parfit.jpg"
+  "imageUrl": "/portraits/derek-parfit.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

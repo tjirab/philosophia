@@ -4,7 +4,9 @@
   "birthYear": 1978,
   "eraId": "contemporary",
   "traditionId": "analytic",
-  "domains": ["philosophy"],
+  "domains": [
+    "philosophy"
+  ],
   "primaryDomain": "philosophy",
   "shortBio": "American philosopher of games, aesthetics, and social epistemology investigating how games function as the art form of agency, how external metrics provoke value capture, and how echo chambers systematically isolate epistemic trust.",
   "centralQuestion": "How do games sculpt human agency, and how do quantified metrics and echo chambers capture and distort our epistemic lives?",
@@ -39,5 +41,7 @@
     "wikipedia": "https://en.wikipedia.org/wiki/C._Thi_Nguyen"
   },
   "importanceScore": 84,
-  "imageUrl": "/portraits/c-thi-nguyen.jpg"
+  "imageUrl": "/portraits/c-thi-nguyen.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }

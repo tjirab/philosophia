@@ -38,5 +38,7 @@
     "wikipedia": "Otto_F._Kernberg"
   },
   "importanceScore": 92,
-  "imageUrl": "/portraits/otto-kernberg.jpg"
+  "imageUrl": "/portraits/otto-kernberg.jpg",
+  "gender": "man",
+  "culturalSphere": "western"
 }
